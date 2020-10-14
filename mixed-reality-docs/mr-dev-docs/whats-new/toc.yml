@@ -1,0 +1,21 @@
+# - name: Learn about Azure Services 
+- name: 新しい Microsoft Edge の準備
+  href: new-microsoft-edge.md
+- name: プログラムとイベント
+  items:
+    - name: Mixed Reality Speaker シリーズ
+      href: sf-academy-events.md
+    - name: Mixed Reality Dev Days
+      items:
+        - name: Mixed Reality Dev Days
+          href: mr-dev-days.md
+        - name: セッションの記録
+          href: mr-dev-days-sessions.md
+- name: 最新の Mixed Reality のリリース ノート
+  href: release-notes-may-2020.md
+- name: コミュニティのリソース
+  href: ../discover/community.md
+- name: このドキュメントに寄稿する
+  href: contributing.md
+- name: 大規模な HoloLens のデプロイ
+  href: 'https://docs.microsoft.com/hololens/'

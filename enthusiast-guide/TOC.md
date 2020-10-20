@@ -43,8 +43,7 @@
 ### [WebVR](webvr-questions.md)
 ### [その他の質問](other-questions.md)
 
-## 付録
+## リソース
 ### [バグとフィードバックを提出する](filing-feedback.md)
 ### [Mixed Reality ソフトウェアの概要とリリース履歴](mixed-reality-software.md)
-### [モーション コントローラーのしくみ](motion-controllers.md)
 ### [インサイドアウト追跡のしくみ](tracking-system.md)

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、前払い、研究、購入、購入前
 appliesto:
 - Windows 10
-ms.openlocfilehash: 3adaf5e3bef3144d23a57ce8729f3f169ec630f3
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: de697bc7002ab342241acc2bdc989a3e1e397632
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174476"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293039"
 ---
 # <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -308,8 +308,6 @@ Mixed Reality の詳細については、こちらを参照してください。
 ### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>Windows Mixed Reality プラットフォームは Rift and Naopak ハードウェアをサポートしていますか。
 
 **クイック回答:** Windows Mixed Reality は、承認された Windows Mixed Reality ヘッドセット/コントローラーでのみ機能します。 「<https://www.microsoft.com/en-us/store/b/virtualreality>」を参照してください。
-
-
 
 ## <a name="motion-controllers"></a>モーションコントローラー
 

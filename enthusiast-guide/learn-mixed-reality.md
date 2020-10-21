@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、チュートリアル、はじめに
 appliesto:
 - Windows 10
-ms.openlocfilehash: 847ed83b4abf39e515359eca43672b3f2708b1c8
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 94b23785861ad70630a14d26668164fdf699fcce
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174455"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92292984"
 ---
 # <a name="learn-mixed-reality"></a>Mixed Reality について学習する
 
@@ -41,7 +41,7 @@ Mixed Reality はアプリです。 アプリは、いつでも [mixed reality �
 3. [Mixed Reality の学習] を選択します。
 4. マウスで左クリックして、アプリをホームに配置し、アプリを起動します。
 
-モーションコントローラーを使用した mixed reality を回避する方法の詳細については、「 [mixed reality でのモーションコントローラー](controllers-in-wmr.md)のレビュー」を参照してください。
+モーションコントローラーを使用した mixed reality を回避する方法の詳細については、「 [Mixed reality でのモーションコントローラー](controllers-in-wmr.md)のレビュー」を参照してください。
 
 ## <a name="use-voice-commands-and-cortana-inside-of-the-windows-mixed-reality-home"></a>Windows Mixed Reality ホーム内で音声コマンドと Cortana を使用する
 

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、互換性、互換性、はじめに、セットアップ、PC、システム要件
 appliesto:
 - Windows 10
-ms.openlocfilehash: c76f670230a4a19b53b7e8f938b13e79bb7c8db7
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: b10fc9962d899b0a2c2ee15e6d039fc6bfb6d503
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174446"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293057"
 ---
 # <a name="before-you-start"></a>開始する前に
 
@@ -48,11 +48,11 @@ PC を最新の状態に保つ方法の詳細について[は、こちら](https
 
 ## <a name="make-sure-your-pc-is-connected-to-the-internet"></a>PC がインターネットに接続されていることを確認する
 
-PC がインターネットに接続されていることを確認します。 Windows Mixed Reality を稼働させるには、ドライバーといくつかの追加のソフトウェアをダウンロードする必要があります。  Wi-Fi ネットワーク接続が従量制課金に設定されている場合は、従量制課金に変更します。 [詳しくはこちらをご覧ください](https://support.microsoft.com/en-us/help/4028458/windows-metered-connections-in-windows-10)。
+PC がインターネットに接続されていることを確認します。 Windows Mixed Reality を稼働させるには、ドライバーといくつかの追加のソフトウェアをダウンロードする必要があります。  Wi-Fi ネットワーク接続が従量制課金に設定されている場合は、従量制課金に変更します。 [詳細については、こちらを参照してください](https://support.microsoft.com/en-us/help/4028458/windows-metered-connections-in-windows-10)。
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>互換性のあるグラフィックスドライバーがあることを確認します。
 
-Mixed Reality セットアップを完了するには、PC に WDDM 2.2 以降のグラフィックスドライバーが必要です。 互換性のあるグラフィックスドライバーがまだない場合は、次のソースを試してください。
+Windows Mixed Reality セットアップを完了するには、PC に WDDM 2.2 以降のグラフィックスドライバーが必要です。 互換性のあるグラフィックスドライバーがまだない場合は、次のソースを試してください。
 
 * Windows Update を使用して、最新の重要なドライバーの更新プログラムを確認します (**> Windows 設定 > 更新プログラムとセキュリティ > 更新プログラムを確認**します)。
 * オプションのドライバーの最新の更新プログラムを確認します。
@@ -64,7 +64,7 @@ Mixed Reality セットアップを完了するには、PC に WDDM 2.2 以降�
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>必要なアダプターがあることを確認する
 
-Windows Mixed Reality 互換 PC には、イマーシブヘッドセットの接続に必要な完全な HDMI および USB 3.0 ポートが搭載されていない可能性があります。 または、Mixed Reality ポータルの要件を満たすために Bluetooth アダプターが必要になる場合があります。  その場合は、ヘッドセットとモーションコントローラーを接続するアダプターが必要になります。 必要になる可能性があるアダプターの種類の一覧と、特定のアダプターモデルに関する推奨事項については、 [こちら](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)を参照してください。
+Windows Mixed Reality 互換 PC には、イマーシブヘッドセットの接続に必要な完全な HDMI および USB 3.0 ポートが搭載されていない可能性があります。 または、Windows Mixed Reality ポータルの要件を満たすために Bluetooth アダプターが必要になる場合があります。  その場合は、ヘッドセットとモーションコントローラーを接続するアダプターが必要になります。 [必要になる可能性があるアダプターの種類の一覧と、特定のアダプターモデルに関する推奨事項](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)を確認してください。
 
 ## <a name="make-sure-that-you-have-input-devices"></a>入力デバイスがあることを確認する
 
@@ -76,7 +76,7 @@ Samsung HMD Odyssey、HP リバーブ、または HP リバーブ G2 ヘッド�
 
 ## <a name="make-sure-that-you-have-a-large-open-space"></a>大きな空き領域があることを確認します。
 
-Windows Mixed Reality を使用しながら移動する場合は、大きな空き領域が必要になります。  セットアップ中に、"固定された" または "すべてのエクスペリエンス" のいずれかを選択するよう求められます。 [すべてのエクスペリエンス] を選択し、移動する場合は境界を設定します。
+Windows Mixed Reality を使用しながら移動する場合は、大きな空き領域が必要になります。  セットアップ中に、"固定された" または "すべてのエクスペリエンス" のいずれかを選択するよう求められます。 [すべてのエクスペリエンス] を選択し、移動する場合は境界を設定します。 [イマーシブヘッドセットの正常性、安全性、および快適なガイドライン](wmr-health-safety-comfort.md)を確認して、領域の要件を理解します。
 
 ### <a name="seated-and-standing-no-boundary"></a>固定された状態 (境界なし)
 

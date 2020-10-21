@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56238f302074bb4de21acbc0575f4ab913cb84b1
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 360b8fea1744e2753aaa5310d79e82f978d92f67
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174432"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293121"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality のモーションコントローラー
 
@@ -42,7 +42,6 @@ Windows Mixed Reality は、混合現実のモーションコントローラー�
 4. 画面に表示される指示に従います。
 
 > [!NOTE]
-
 > * PC に直接ペアリングされているコントローラーの場合は、電源をオンにして、ライトが点滅するまでバッテリコンパートメント内のペアリングボタンを押すことで、ペアリングモードに設定する必要があります。  
 > * モーションコントローラーは、一度に1台のコンピューターまたは PC とペアリングすることのみをサポートしています。 異なるヘッドセットでそれらを使用する必要がある場合は、ペアリングプロセスを実行する必要があります。 「 [Windows Mixed Reality のセットアップ」を](set-up-windows-mixed-reality.md)参照してください。
 
@@ -95,7 +94,7 @@ HP リバーブ G2 ヘッドセットを使用している場合は、コント�
 |  目的  |  モーション コントローラー  | ゲームパッド | マウス + キーボード |
 | --- | --- | --- | --- |
 | 遠距離 | サムスティックを前方に押し、移動先のコントローラーをポイントします。 サムスティックを離します。 | 左スティックを順方向に押し、移動先を確認します。 サムスティックを離します。 | 右のボタンをクリックしたまま、マウスをポイントして移動します。 ボタンを離します。 |
-| Select | コントローラーをポイントし、トリガーをプルするか、タッチパッドをクリックします。 | ターゲットを見つめ、を押します。 | マウスをポイントし、左クリックします。 |
+| 選択 | コントローラーをポイントし、トリガーをプルするか、タッチパッドをクリックします。 | ターゲットを見つめ、を押します。 | マウスをポイントし、左クリックします。 |
 | [スタート] メニューを開く | **Windows**ボタンを押します。 | **Xbox**ボタンを押します。 | **Windows ロゴキー**を押します。 |
 | イマーシブアプリを終了する | **Windows**ボタンを押します。 次に、[クイックアクション] メニューの [ **Mixed reality ホーム** ] を選択します。 | **Xbox**ボタンを押します。 次に、[クイックアクション] メニューの [ **Mixed reality ホーム** ] ボタンを選択します。 | **Windows ロゴキー**を押します。次に、表示される [クイックアクション] メニューの [ **Mixed reality ホーム**] ボタンを選択します。 |
 | Rotate | サムスティックを左または右に移動します。 | 右スティックを左または右に移動します。 | 使用できません。 |

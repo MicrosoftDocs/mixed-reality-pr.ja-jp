@@ -1,0 +1,49 @@
+### YamlMime:Hub
+title: Windows Mixed Reality VR のドキュメント
+summary: 中級から上級の顧客を対象としており、Windows Mixed Reality を最大限に活用する方法を示します。
+brand: windows
+metadata:
+  title: Windows Mixed Reality VR のドキュメント
+  description: 中級から上級の顧客を対象としており、Windows Mixed Reality を最大限に活用する方法を示します。
+  services: guidance
+  ms.service: guidance
+  ms.topic: hub-page
+  ms.prod: mixed-reality
+  ms.technology: enthusiast-guide
+  author: mattwojo
+  ms.author: mattwoj
+  ms.openlocfilehash: b791970df40711c298501b2db09cff8ec342de8a
+  ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/19/2020
+  ms.locfileid: "92174380"
+highlightedContent:
+  items:
+  - title: 購入する前に
+    itemType: learn
+    url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
+  - title: 作業開始
+    itemType: get-started
+    url: before-you-start.md
+  - title: Mixed Reality について学習する
+    itemType: how-to-guide
+    url: learn-mixed-reality.md
+  - title: Windows Mixed Reality アカデミー
+    itemType: video
+    url: https://developer.microsoft.com/en-us/windows/mixed-reality/academy
+additionalContent:
+  sections:
+  - title: その他のリソース
+    summary: トラブルシューティング、開発ドキュメント、フォーラムへの関連リンクを検索できます。
+    items:
+    - title: トラブルシューティング
+      summary: Windows Mixed Reality のすべての領域でのトラブルシューティング
+      url: installation_errors.md
+    - title: フィードバック
+      summary: 有益なフィードバックの作成からサブシステムのしくみに至るまで、Windows Mixed Reality をより詳しく調べるための追加の記事を収集します。
+      url: filing-feedback.md
+    - title: 開発ドキュメント
+      summary: 開発と設計に関するドキュメント
+      url: https://developer.microsoft.com/windows/mixed-reality
+  footer: サイトで問題が見つかりましたか。 [ぜひご意見をお寄せください。](https://forums.hololens.com/categories/using-windows-mixed-reality)

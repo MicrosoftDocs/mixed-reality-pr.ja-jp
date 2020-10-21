@@ -14,7 +14,6 @@
 ### [Windows Mixed Reality をインストールする](install-windows-mixed-reality.md)
 ### [Windows Mixed Reality を設定する](set-up-windows-mixed-reality.md)
 ### [Windows Mixed Reality の設定に関する FAQ](wmr-setup-faq.md)
-### [イマーシブ ヘッドセットの正常性、安全性、快適さ](wmr-health-safety-comfort.md)
 
 ## Windows Mixed Reality の使用
 ### [Mixed Reality について学習する](learn-mixed-reality.md)
@@ -28,6 +27,7 @@
 ### [Windows Mixed Reality の使用に関する FAQ](using-wmr-faq.md)
 
 ## トラブルシューティングに関する FAQ
+### [バグとフィードバックを提出する](filing-feedback.md)
 ### [一般的な FAQ](troubleshooting-windows-mixed-reality.md)
 ### [インストール エラー](installation_errors.md)
 ### [セットアップ](set-up-questions.md)
@@ -44,6 +44,6 @@
 ### [その他の質問](other-questions.md)
 
 ## リソース
-### [バグとフィードバックを提出する](filing-feedback.md)
+### [イマーシブ ヘッドセットの正常性、安全性、快適さ](wmr-health-safety-comfort.md)
 ### [Mixed Reality ソフトウェアの概要とリリース履歴](mixed-reality-software.md)
 ### [インサイドアウト追跡のしくみ](tracking-system.md)

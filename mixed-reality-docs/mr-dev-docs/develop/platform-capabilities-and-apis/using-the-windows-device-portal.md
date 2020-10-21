@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows デバイス ポータル, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 398b9ee312c8d49e3468980e5e2c1be556c17162
-ms.sourcegitcommit: 252b52f7541a6e15aa33322286855af8a3924fc1
+ms.openlocfilehash: 98030e55736d423d1fb84d2b965f6ed40246d8f4
+ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862991"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92011479"
 ---
 # <a name="using-the-windows-device-portal"></a>Windows デバイス ポータルを使用する
 
@@ -374,3 +374,20 @@ HoloLens での Wi-Fi 接続を管理します。
 ## <a name="device-portal-rest-apis"></a>Device Portal REST API
 
 デバイス ポータルの機能はすべて、[REST API](device-portal-api-reference.md) の上に構築されています。REST API は、必要に応じて、プログラムからデータにアクセスしてデバイスを制御するために使用できます。
+
+## <a name="troubleshooting"></a>トラブルシューティング
+
+### <a name="how-to-fix-the-its-lonely-here-message"></a>"It's lonely here" メッセージの修正方法
+
+> [!NOTE]
+> HoloLens 2 から HoloLens (第 1 世代) へ移動する場合、HoloLens (第 1 世代) で使用する前に HoloLens 2 で使用されていると、ページが見つからない場合があります。
+
+![デバイス ポータル ページでの "It's lonely here" メッセージ](images/using-windows-portal-img-19.png)
+
+1. 左上のメニューから **[Reset layout]\(レイアウトのリセット\)** を選択します。
+
+![デバイス ポータル メニューから [Reset layout]\(レイアウトのリセット\) を選択する](images/using-windows-portal-img-20.png)
+
+2. **[Reset workspace]\(ワークスペースのリセット\)** 見出しの下にある **[Reset layout]\(レイアウトのリセット\)** をクリックします。 ポータル ページは自動的に更新され、コンテンツが表示されます。
+
+![[Reset workspace]\(ワークスペースのリセット\) ページで [Reset layout]\(レイアウトのリセット\) を選択する](images/using-windows-portal-img-21.png)

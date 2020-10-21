@@ -1,0 +1,138 @@
+---
+title: 設計とプロトタイプ作成を始める
+description: 何かを作成する準備ができたら、設計とプロトタイプ作成を開始するために必要な基本的な概念について学習しましょう。
+author: grbury
+ms.author: grbury
+ms.date: 08/24/2019
+ms.topic: article
+ms.localizationpriority: high
+keywords: Mixed Reality, 検出, 配布, インデックス, ランディング ページ, 設計, 開発, チュートリアル, サンプル アプリ, 基本事項, ケース スタディ, リソース, HoloLens の使い方, オープン ソース プロジェクト, 主要な概念, 操作
+ms.openlocfilehash: 947d9378cd65ceda11cf5dbb1d103a8f9bcc6e63
+ms.sourcegitcommit: 8aa3b0034f9f2ff0973d49061c669a82c2c8d7e6
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92058586"
+---
+# <a name="start-designing-and-prototyping"></a>設計とプロトタイプ作成を始める
+
+![Mixed Reality の設計の概要](images/design-hero-image.png)
+
+Mixed Reality アプリケーションはまったく新しいものであるため、その設計は困難な作業です。 作成する仮想世界と現実世界をどのように組み合わせていくかについてだけでなく、それによってどのような種類のユーザー エクスペリエンスを新しく実現するかについても考慮する必要があります。 Mixed Reality の領域は広いため、設計範囲に沿って選択した重要なポイントを一連のチェックポイントとして次に示すことにしました。 これらは順番に取り組むことを想定していますが、既に十分な知識がある場合は、ご自由に後続の好きなセクションにスキップしてかまいません。
+
+## <a name="design-checkpoints"></a>設計のチェックポイント
+
+次のチェックポイントを使用して、アプリケーションのアイデアや概念を Mixed Reality の世界に移植することができます。
+
+### <a name="1-getting-started"></a>1.はじめに
+
+あらゆる作業と同様に、Mixed Reality アプリケーションの設計も基礎から始めます。 イマーシブ デザインに取りかかる前に、「[Mixed Reality とは](../discover/mixed-reality.md)」と「[ホログラムとは](../discover/hologram.md)」の記事を理解しておくことをお勧めします。 読み終えれば、Mixed Reality の設計作業を開始する準備が整っているでしょう。
+
+![Designing Holograms アプリの紹介 GIF](images/HandTracking2.gif)
+
+|  Checkpoint  |  結果  |
+| --- | --- |
+| [デザイン プロセスを展開する](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Microsoft 内外の Mixed Reality 開発者から収集した手法、知見、設計理論を直に確認する |
+| [Mixed Reality アプリの種類](types-of-mixed-reality-apps.md) | Mixed Reality の範囲のうち、どの領域のアプリ エクスペリエンスを実現するかを決定する |
+| [Designing Holograms アプリ](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Mixed Reality の動作、優れた HoloLens アプリを作成するためのヒントや推奨事項について、Mixed Reality UX Design を実際に使用して、その基礎を理解する |
+
+### <a name="2-core-concepts"></a>2. 主要な概念
+
+開発対象が VR でも AR でも、柔軟なイマーシブ エクスペリエンスの設計には、いくつかの主要な概念が適用されます。 ユーザーの視点を理解し、オブジェクトを配置し、すべてのユーザーの快適性と安全性を確保することが、お客様の作業のこの段階における最優先事項です。 このセクションが完了する頃には、操作の設計まで全体を通して役に立つ強固な基盤が手に入ります。
+
+![主要な概念の例の画像](images/fragments-750px.jpg)
+
+|  概念  |  結果  |
+| --- | --- |
+| [ホログラフィック フレーム](holographic-frame.md) | ヘッドセットの装着時、現実世界に重ねて表示されたコンテンツがユーザーにどのように見えるかを理解する |
+| [座標系](coordinate-systems.md) | 物理的な部屋であれ、自分が作成した仮想領域であれ、ユーザーにとって意味のある空間内の位置にホログラムを配置する方法を学習する |
+| [空間マッピング](spatial-mapping.md) | オブジェクトをユーザーの世界に固定し、現実世界の奥行きの手がかりを利用する |
+| [快適性に関する考慮事項](comfort.md) | 自然世界を模倣した方法でイマーシブ コンテンツの作成と提示を行うことで、ユーザーの快適性と安全性を確保する |
+
+### <a name="3-interaction-design"></a>3.操作の設計
+
+仮想エクスペリエンスがどれほど美しく臨場感にあふれていても、操作ができなければ役に立ちません。 このセクションでは、基本的な操作モデル、手とモーション コントローラー、音声入力の使用、ユーザーからの視線追跡データの収集について説明します。 このセクションが完了する頃には、設計作業における最後の大きなトピックであるユーザー エクスペリエンスに取り組む準備が整います。
+
+![操作の設計の要素](images/UX_Hero_Manipulation.jpg)
+
+|  概念  |  結果  |
+| --- | --- |
+| [相互作用モデル](interaction-fundamentals.md) | 手、視線、音声による入力を使用した直感的な操作をユーザーに提供する |
+| [手とモーション コントローラー](hands-and-tools.md) | ユーザーの手で近くのホログラムに触れて操作を行う方法と、遠くから正確に操作を行う方法について学習する |
+| [音声入力](voice-input.md) | 音声コマンドをイマーシブ アプリの入力として使用して、周囲のホログラムと環境をコントロールする  |
+| [視線追跡](eye-tracking.md) | ユーザーが見ているものに関する情報を使用して、ホログラフィック エクスペリエンスに新しいレベルのコンテキストを追加し、人間による理解を深める |
+
+### <a name="4-user-experience-elements"></a>4.ユーザー エクスペリエンス要素
+
+基本的な操作を習得したので、ここからはユーザー エクスペリエンス要素のより詳細なポイントに注目して、それらを Mixed Reality 特有の環境に適合させていくことができます。 可能な限りアプリをユーザーにとって直感的に操作できるものにすることを念頭に置いて、一般的な動作、資産の設計、オブジェクトのスケーリング、タイポグラフィについて説明します。 このセクションで Mixed Reality の正式な設計作業は終了します。さらに理解を深めたい場合は、「[次の操作](#whats-next)」セクションにある、その他のリソースをご利用ください。
+
+![UX 要素](images/UX_Hero_BoundingBox.jpg)
+
+|  概念  |  結果  |
+| --- | --- |
+| [一般的なコントロールと動作](app-patterns-landingpage.md) | 頻繁に使用される空間操作と UI 構成要素について学習する |
+| [色、ライト、マテリアル](color-light-and-materials.md) | 色、照明、素材を考慮して、Mixed Reality 用の高品質な資産を設計する |
+| [オブジェクトのスケーリング](scale.md) | オブジェクトの場所、大きさ、材料をユーザーが理解しやすいように、現実世界の視覚的な手がかりを可能な限り組み込む |
+| [文字体裁](typography.md) | はっきりと見える読みやすいテキストを 3 次元空間で使用して、ユーザーが必要とする重要な情報を提供する |
+
+## <a name="whats-next"></a>次の操作
+
+設計者の仕事に終わりはありません。新しいパラダイムでイマーシブ エクスペリエンスを作成する場合はなおさらです。 次のセクションでは、ここまでで説明しなかった中級以上の設計資料と、Mixed Reality の開発環境についてご紹介します。 これらのトピックとリソースに決まった順序はないので、お好きなものをご覧ください。
+
+### <a name="choose-a-prototyping-option"></a>プロトタイプ作成のオプションを選択する  
+
+:::row:::   
+    :::column:::    
+       [![Unity について学習する](images/logo-unity.png)](https://learn.unity.com/)<br>
+        **[Unity について学習する](https://learn.unity.com/)**<br>
+        Unity で対話型エクスペリエンスを作成する方法について学習します。 最初から最後まで、実践によって学習できます。
+    :::column-end:::    
+    :::column:::    
+        [![Mixed Reality ツールキット (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        **[Mixed Reality ツールキット (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>  
+        空間操作と UI 構成ブロックを使用すると、Unity での Mixed Reality の設計と開発をすぐに始めることができます。   
+    :::column-end:::
+    :::column:::    
+        [![Mixed Reality Design Labs](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        **[Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>  
+        MRTK の構成要素を使用して美しい Mixed Reality エクスペリエンスを作成する方法を示すサンプル アプリを入手できます。
+    :::column-end:::        
+    :::column:::    
+        [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
+        **[Microsoft Maquette](https://www.maquette.ms/)**<br>  
+        VR 向けの設計。 Microsoft Maquette を使用すると、空間のプロトタイプ作成をすばやく、簡単、かつイマーシブに実行できます。 
+    :::column-end:::    
+:::row-end:::
+
+<br>
+
+---
+
+### <a name="additional-resources"></a>その他の技術情報
+
+:::row:::
+    :::column:::
+       [![基本を理解する](images/icon-lightbulb.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
+        **[基本を理解する](../discover/get-started-with-mr.md#understand-the-basics)**<br>
+        Mixed Reality が何によって定義され、どのように使用されているかについて理解を深めます。
+    :::column-end:::
+    :::column:::
+        [![イベントに参加する](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
+         **[イベントに参加する](../whats-new/sf-academy-events.md)**<br>
+        最初の HoloLens 2 アプリケーションを作成するには、ハードウェアを参照し、ハンズオン チュートリアルを入手してください。
+    :::column-end:::
+    :::column:::
+        [![ツールのインストール](images/icon-design.png)](../develop/install-the-tools.md)<br>
+         **[ツールのインストール](../develop/install-the-tools.md)**<br>
+        インストール チェックリストを使用して、HoloLens や Mixed Reality 用のアプリを構築するのに必要なツールを取得します。
+    :::column-end:::
+    :::column:::
+        [![開発を始める](images/icon-developer.png)](../develop/development.md)<br>
+        **[開発を始める](../develop/development.md)**<br>
+        スキル レベル、ワーク スタイル、プラットフォームへの関心に基づいて、開発パスを選択します。
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+<br>

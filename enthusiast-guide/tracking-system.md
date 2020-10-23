@@ -3,12 +3,12 @@ title: インサイドアウト追跡のしくみ
 description: Windows Mixed Reality ヘッドセットで使用される、カメラベースの内部 out 追跡システムに関する情報。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、インサイド out、インサイド out、追跡、カメラ
-ms.openlocfilehash: a91b5fba399e9bb328fd579811a64aee03b49efd
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174331"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434607"
 ---
 # <a name="inside-out-tracking"></a>内部 out 追跡
 
@@ -72,6 +72,6 @@ Windows Mixed Reality での追跡は簡単に使用できます。 インフラ
 
 ## <a name="see-also"></a>関連項目
 * [追跡システムのトラブルシューティング](tracking.md)
-* [モーション コントローラーのしくみ](controller-in-wmr.md)
+* [モーション コントローラー](controller-in-wmr.md)
 * [お使いの Windows Mixed Reality ホーム](your-mixed-reality-home.md)
 * [Windows Mixed Reality でのゲームとアプリの使用](using-games-and-apps-in-windows-mixed-reality.md)

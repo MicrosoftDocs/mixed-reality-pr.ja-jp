@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、アダプタ、ドングル、HDMI、USB、DisplayPort
 appliesto:
 - Windows 10
-ms.openlocfilehash: bcdc25c0f6e678666a713d01aaa4fb15da31e90c
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: ea0cd3c87fecda310ec72ba50d8f5982d1782b31
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174403"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434589"
 ---
 # <a name="recommended-adapters"></a>推奨されるアダプター
 > [!NOTE]
@@ -28,7 +28,7 @@ ms.locfileid: "92174403"
 
 <table>
 <tr>
-<th style="width:30%">種類</th><th style="width:40%">アダプター</th><th style="width:15%">60Hz 対応</th><th style="width:15%">90Hz 対応</th>
+<th style="width:30%">Type</th><th style="width:40%">アダプター</th><th style="width:15%">60Hz 対応</th><th style="width:15%">90Hz 対応</th>
 </tr><tr>
 <td rowspan="2" style="vertical-align: middle;">DisplayPort (フルサイズ) から HDMI 2.0</td><td>Club3D DisplayPort 1.2 から HDMI 2.0 アクティブアダプター</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -78,7 +78,7 @@ ms.locfileid: "92174403"
     <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
     <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
     <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="border: 1px solid black">なし</td>
+    <td style="border: 1px solid black">None</td>
   </tr>
   <tr style="border: 1px solid black">
     <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
@@ -165,7 +165,7 @@ ms.locfileid: "92174403"
     <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
     <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
     <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="border: 1px solid black;">なし</td>
+    <td style="border: 1px solid black;">None</td>
 </tr>
   <tr style="border: 1px solid black;">
     <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
@@ -185,7 +185,7 @@ ms.locfileid: "92174403"
     <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
     <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
     <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="border: 1px solid black;">なし</td>
+    <td style="border: 1px solid black;">None</td>
   </tr>
   <tr style="border: 1px solid black;">
     <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
@@ -263,7 +263,7 @@ ms.locfileid: "92174403"
 
 2018の後にヘッドセットがリリースされた場合、アダプターは不要で、コントローラーはヘッドセットとペアになります。
 
-2017以前に出荷されたデバイスには、コントローラー用のアダプターが必要です。 PC に [Windows Mixed Reality モーションコントローラー](controllers-in-wmr.md)のペアリング用の Bluetooth が搭載されていない場合は、Plugable USB Bluetooth 4.0 低エネルギーマイクロアダプターのようなアダプターを使用できます。
+2017以前に出荷されたデバイスには、コントローラー用のアダプターが必要です。 PC に [Windows Mixed Reality モーションコントローラー](controllers-in-wmr.md#Pair-motion-controllers)のペアリング用の Bluetooth が搭載されていない場合は、Plugable USB Bluetooth 4.0 低エネルギーマイクロアダプターのようなアダプターを使用できます。
 
 > [!NOTE]
 > Microsoft では、どのアダプターの機能、信頼性、または品質の製造、テスト、認定、または保証も行いません。 任意のアダプターの質問、懸念事項、または問題については、アダプターの販売者または製造元にお問い合わせください。

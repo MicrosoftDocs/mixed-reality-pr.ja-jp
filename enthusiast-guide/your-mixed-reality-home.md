@@ -3,18 +3,18 @@ title: Mixed reality ホーム
 description: Windows Mixed Reality ホーム内を移動およびテレポートする方法、アプリとゲームを起動する方法、ホームをカスタマイズする方法、およびビジュアル、オーディオ、音声設定を変更する方法。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、Home、Navigate、Get、アプリ、ゲーム
-ms.openlocfilehash: 6537bca13a7eb133d7f78e7922ea91304fdc90f2
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293083"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434627"
 ---
 # <a name="your-windows-mixed-reality-home"></a>お使いの Windows Mixed Reality ホーム
 
 ## <a name="what-is-the-windows-mixed-reality-home"></a>Windows Mixed Reality ホームとは
 
-Windows Mixed Reality は、最初の空間オペレーティングシステムです。 フラット画面と2D インターフェイスを使用する代わりに、3次元空間を移動するための instinctual 機能を活用しています。 すべての場所には目的があり、コンテンツにはコンテキストがあります。 PC がデスクトップインターフェイスから起動し、電話がホーム画面から開始するのと同様に、Windows Mixed Reality は Mixed Reality ホームから開始されます。 これは、移動して独自に作成できる環境です。 これは、Microsoft Store で利用可能な数千ものアプリのキャンバスです。 これらのアプリでマルチタスクを行うことができます。これまでは、3D では、スペースがほとんど無制限であるようになっています。
+Windows Mixed Reality は、最初の空間オペレーティングシステムです。 フラット画面と2D インターフェイスを使用する代わりに、3次元空間を移動するための instinctual 機能を活用しています。 すべての場所には目的があり、コンテンツにはコンテキストがあります。 PC がデスクトップインターフェイスから起動し、電話がホーム画面から開始するのと同様に、Windows Mixed Reality は Mixed Reality ホームから開始されます。 これは、移動して独自に作成できる環境です。 これは、Microsoft Store または SteamVR で利用できる数千台のアプリのキャンバスです。 これらのアプリでマルチタスクを行うことができます。これまでは、3D では、スペースがほとんど無制限であるようになっています。
 
 ## <a name="move-through-the-windows-mixed-reality-home"></a>Windows Mixed Reality ホーム内を移動する
 
@@ -26,7 +26,7 @@ Windows Mixed Reality は、最初の空間オペレーティングシステム�
   * 便利な機能として、アプリウィンドウとの対話に最適な位置に移動できる "アプリにスナップ" があります。 ここでは、ユーザーの円弧をウィンドウにポイントして行きます。 その対象ウィンドウの内容を利用するために、最適な場所に自動的に配置されます。
 * **実際のウォーク:** 実際には、サムスティックを押したまま連続的に移動できます (クリックすると、モーションコントローラーまたはゲームパッドで移動し、目的の方向に移動できます)。
 
-## <a name="launch-an-app"></a>アプリを起動する
+## <a name="launch-an-app"></a>アプリの起動
 
 1. Windows Mixed Reality ホームから、コントローラーの Windows ボタンを押して [スタート] メニューを起動します。
 2. 起動するアプリを選択します。
@@ -73,7 +73,7 @@ Windows Mixed Reality ホームに Microsoft Store バッグがあることが�
 
 ## <a name="turn-off-the-boundary"></a>境界をオフにする
 
-Windows Mixed Reality ポータルに移動し、画面の左上にあるメニューを開きます。 [ **実行設定] [> ルーム境界**] を選択します。 切り替えをオフに切り替えます。 境界を無効にした場合は、デスクに座ったままにしておく必要があります。
+Mixed Reality ポータルに移動し、画面の左上にあるメニューを開きます。 [ **実行設定] [> ルーム境界**] を選択します。 切り替えをオフに切り替えます。 境界を無効にした場合は、デスクに座ったままにしておく必要があります。
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality ホームの空間サウンド
 

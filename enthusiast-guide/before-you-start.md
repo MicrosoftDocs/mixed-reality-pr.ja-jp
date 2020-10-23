@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、互換性、互換性、はじめに、セットアップ、PC、システム要件
 appliesto:
 - Windows 10
-ms.openlocfilehash: b10fc9962d899b0a2c2ee15e6d039fc6bfb6d503
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 84001a46826ada06e315f1707ee9516c3da063bd
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293057"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434576"
 ---
 # <a name="before-you-start"></a>開始する前に
 
@@ -35,10 +35,12 @@ PC の互換性の問題の詳細については、 [こちら](https://support.
 
 ## <a name="make-sure-you-have-the-windows-10-version-1709-or-newer-installed"></a>Windows 10 バージョン1709以降がインストールされていることを確認します。
 
-Windows Mixed Reality を使用するには、Windows 10 バージョン 1709 (秋の作成者の更新プログラム) 以降を実行している必要があります。 互換性のある Windows 10 のバージョンは次のとおりです。
-* Windows 10 バージョン 1709 (作成者の更新プログラム、ビルド 16299)
-* Windows 10 バージョン 1803 (Spring Update、ビルド 17134)
-* Windows 10 バージョン 1809 (10 月の更新プログラム、ビルド 17763)
+Windows Mixed Reality を使用するには、Windows 10 バージョン1903以降を実行している必要があります。 互換性のある Windows 10 のバージョンは次のとおりです。
+
+* Windows 10 バージョン1903
+* Windows 10 バージョン1909
+* Windows 10 バージョン2004
+* Windows 10 バージョン20H2
 
 現在デバイスが実行されている Windows 10 のバージョンを確認するには、[ **スタート** ] ボタンを選択し、[ **設定] > [システム > について**] の順に選択します。
 
@@ -48,7 +50,7 @@ PC を最新の状態に保つ方法の詳細について[は、こちら](https
 
 ## <a name="make-sure-your-pc-is-connected-to-the-internet"></a>PC がインターネットに接続されていることを確認する
 
-PC がインターネットに接続されていることを確認します。 Windows Mixed Reality を稼働させるには、ドライバーといくつかの追加のソフトウェアをダウンロードする必要があります。  Wi-Fi ネットワーク接続が従量制課金に設定されている場合は、従量制課金に変更します。 [詳細については、こちらを参照してください](https://support.microsoft.com/en-us/help/4028458/windows-metered-connections-in-windows-10)。
+PC がインターネットに接続されていることを確認します。 Windows Mixed Reality を稼働させるには、ドライバーといくつかの追加のソフトウェアをダウンロードする必要があります。
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>互換性のあるグラフィックスドライバーがあることを確認します。
 
@@ -69,10 +71,6 @@ Windows Mixed Reality 互換 PC には、イマーシブヘッドセットの接
 ## <a name="make-sure-that-you-have-input-devices"></a>入力デバイスがあることを確認する
 
 Windows Mixed Reality は、Windows Mixed Reality のモーションコントローラーで最適に動作するように設計されています。これは、壁にハードウェアを取り付ける必要のない、自然で正確な対話を実現します。 ただし、Xbox コントローラーまたはマウスとキーボードを使用することもできます。
-
-## <a name="get-headphones-if-your-headset-didnt-come-with-them"></a>ヘッドセットに付属していないヘッドホンを取得する
-
-Samsung HMD Odyssey、HP リバーブ、または HP リバーブ G2 ヘッドセット (AKG ヘッドホンと統合デュアルアレイマイクが統合されている) を購入していない場合は、オーディオヘッドセットを取得する必要があります。このヘッドフォンは、HMD のヘッドのヘッドセットに接続できるヘッドホンのペアです。
 
 ## <a name="make-sure-that-you-have-a-large-open-space"></a>大きな空き領域があることを確認します。
 

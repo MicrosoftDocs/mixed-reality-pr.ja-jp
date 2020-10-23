@@ -3,12 +3,12 @@ title: Windows Mixed Reality を設定する
 description: Windows Mixed Reality のモーションコントローラー、音声、オーディオを設定し、安全な再生スペース用の部屋の境界を定義する方法。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、はじめに、セットアップ、モーションコントローラー、コントローラー、音声、オーディオ、取り付け済み、継続的、境界、グラフィックスドライバー、Microsoft Edge、chromium
-ms.openlocfilehash: 71775ba03cb143b83f1a4514f62f20df903df96d
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: cd59fd34dd00edc98d209681cc1239895c36ada2
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174469"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434628"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Windows Mixed Reality を設定する
 
@@ -86,7 +86,7 @@ Xbox ゲームパッド、キーボード、およびマウスを使用するこ
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>境界の最大サイズは何ですか。
 
-Windows Mixed Reality で現在サポートされている最大境界サイズは、中央から 18x18ft (5.7 x 5.7 m) または 13ft (4 分) 半径です。  境界のサイズはアンカーポイントに依存し、アンカーポイントからの距離によって、境界の安定性が危険にさらされる前に移動できます。  Windows Mixed Reality は、プラットフォームのステージの抽象化に基づいて構築されています。ステージは移動先の場所であり、そのステージは1つのアンカーに依存します (ほとんどのアプリでは、1つの座標系しかないため、Naopak と Oculus の動作も同じです)。  これが重要な理由は、内部の追跡では、アンカーポイントからさらに移動するときに、境界線の追跡が安定した状態で維持されるためです。  境界は、物理的な障害を回避することを目的としています。そのため、中心からさらに多くの問題が発生します。  境界の最大サイズを決定するために、2つの要素がありました。Windows Mixed Reality ヘッドセットが、境界とヘッドセットケーブルの長さに最適なルームスケールエクスペリエンスを提供できる最大距離。ほとんどの Windows Mixed Reality ヘッドセットは 10ft (3m) です。 
+Windows Mixed Reality で現在サポートされている最大境界サイズは、中央から 18x18ft (5.7 x 5.7 m) または 13ft (4 分) 半径です。  境界のサイズはアンカーポイントに依存し、アンカーポイントからの距離によって、境界の安定性が危険にさらされる前に移動できます。  Windows Mixed Reality は、プラットフォームのステージの抽象化に基づいて構築されています。ステージは移動先の場所であり、そのステージは1つのアンカーに依存します (ほとんどのアプリでは、1つの座標系しかないため、Naopak と Oculus の動作も同じです)。  これが重要な理由は、内部の追跡では、アンカーポイントからさらに移動するときに、境界線の追跡が安定した状態で維持されるためです。  境界は、物理的な障害を回避することを目的としています。そのため、中心からさらに多くの問題が発生します。  境界の最大サイズを決定するために、2つの要素がありました。Windows Mixed Reality ヘッドセットが、境界とヘッドセットケーブルの長さに最適なルームスケールエクスペリエンスを提供できる最大距離。ほとんどの Windows Mixed Reality ヘッドセットは 10ft (3m) です。
 
 ## <a name="set-up-speech"></a>音声の設定
 
@@ -112,7 +112,7 @@ Windows Mixed Reality では、PC のハードウェア構成に基づいて、�
 
 高解像度のディスプレイでヘッドセットを接続した場合 (たとえば、4320x2160 と表示されるヘッドセットが PC に接続されている場合)、Mixed reality の表示解像度を調整するための設定が表示されます。
 
-* この設定では、Windows Mixed Reality コンポジションスタックをネイティブにレンダリングするオプション (たとえば、4320x2160) を指定することも、コンポジションスタックを低解像度でレンダリングするようにすることもできます (たとえば、2upscale 0x1440 と upscale を4320x2160 に設定します)。
+* この設定では、Windows Mixed Reality コンポジションスタックをネイティブにレンダリングするオプション (たとえば、4320x2160) を使用するか、コンポジションスタックを低解像度でレンダリングするか (たとえば、2upscale 0x1440 ではレンダリングし、upscale を4320x2160 にする) を指定できます。
 * 既定の設定では、(たとえば、 **4320 x 2160 (最高品質)** オプションを) ネイティブにレンダリングして、ヘッドセットの画質を最大限に高めることができます。
 * PC が、高解像度のディスプレイでヘッドセットの最小グラフィックスハードウェア要件を満たしていない場合、または、グラフィックスパフォーマンスの問題が発生している場合は、 **自動アップスケール (最適なパフォーマンス)** オプションを選択してみてください。
 
@@ -131,9 +131,7 @@ Windows Mixed Reality では、PC のハードウェア構成に基づいて、�
 * **90Hz**
 
 >[!Note]
->HP リバーブ G2 の自動更新率の設定は90Hz です。
-
-Mixed Reality ポータルプレビューや、より大規模なヘッドセット表示の視界など、一部の Windows Mixed Reality 機能は、90Hz エクスペリエンスでのみ使用できます。
+>HP リバーブ G2 ヘッドセットを最初に設定すると、エクスペリエンスが最高になるように90Hz に変更されます。  必要に応じて、これを自動に変更できます。
 
 ### <a name="input-switching"></a>入力の切り替え
 
@@ -180,5 +178,5 @@ Windows Mixed Reality ホームで新しい Chromium ベースの Microsoft Edge
 * [インストールのトラブルシューティング](installation_errors.md)
 * [セットアップのトラブルシューティング](set-up-questions.md)
 * [Mixed Reality について学習する](learn-mixed-reality.md)
-* [モーション コントローラーのしくみ](controllers-in-wmr.md)
+* [モーション コントローラー](controllers-in-wmr.md)
 * [インサイドアウト追跡のしくみ](tracking-system.md)

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、前払い、研究、購入、購入前
 appliesto:
 - Windows 10
-ms.openlocfilehash: de697bc7002ab342241acc2bdc989a3e1e397632
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293039"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434611"
 ---
 # <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -31,15 +31,11 @@ ms.locfileid: "92293039"
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>どの製造元が Windows Mixed Reality デバイスを販売していますか。
 
-**クイック回答:** ヘッドセットとモーションコントローラーは、現在、Acer、ASUS、Samsung、および HP から入手できます。 「<https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>」を参照してください。
+**クイック回答:** ヘッドセットとモーションコントローラーは、現在、HP から入手できます。 「<https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>」を参照してください。
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>スタンドアロンのモーションコントローラーはどこで購入できますか。
 
 **クイック回答:** 残念ながら、現時点では、スタンドアロンの運動コントローラーを販売している小売業者は認識していません。
-
-### <a name="what-is-the-price-point"></a>価格ポイントとは何ですか?
-
-**クイック回答:** ヘッドセットとコントローラーの価格は製造元と小売業者によって異なります。 <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>現在 Microsoft から販売を行っている Mixed Reality デバイスについては、「」を参照してください。
 
 ### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Windows Mixed Reality PC と Windows Mixed Reality ウルトラ PC の違いは何ですか。
 
@@ -47,7 +43,7 @@ ms.locfileid: "92293039"
 
 ### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>デバイスが "仮想現実" のエクスペリエンスを提供しているように見える場合、Windows の "Mixed Reality" と呼ばれるのはなぜですか。
 
-**クイック回答:** Mixed Reality とは、拡張された現実やホログラムから仮想現実まで、あらゆる空間コンピューティングを指します。 マイクロソフト Mixed Reality プラットフォームは、仮想現実と拡張された現実の両方をサポートしています。 現在、2つのデバイスの種類がサポートされています。これは、HoloLens (AR) および Windows Mixed Reality (VR) とモーションコントローラーのヘッドホンです。
+**クイック回答:** Mixed Reality とは、拡張された現実やホログラムから仮想現実まで、あらゆる空間コンピューティングを指します。 Windows Mixed Reality プラットフォームでは、仮想現実 (VR) と拡張現実 (AR) のデバイスをサポートしています。 現在、2つのデバイスの種類がサポートされています。これは、HoloLens (AR) および Windows Mixed Reality (VR) とモーションコントローラーのヘッドホンです。
 
 Mixed Reality の詳細については、こちらを参照してください。 <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
 
@@ -61,9 +57,9 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 **クイック回答:** いいえ。 Windows Mixed Reality ヘッドセットの内部 out カメラは、位置追跡のみに使用されます。 Windows Mixed Reality ヘッドセットは、仮想現実のものであり、現実の世界や拡張された現実のビューを提供しないことを意味する occluded です。 
 
-### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>内部の追跡とは 外部での追跡や Lighthouse の追跡とはどのように違いますか。
+### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>内部の追跡とは 外部での追跡や lighthouse の追跡とはどのように違いますか。
 
-* **内部 Out 追跡** Windows Mixed Reality は、内部 out 追跡を使用します。 内部での追跡カメラはヘッドセットに組み込まれており、環境の変化を追跡して、環境に関連するヘッドセットの位置を特定します。
+* **内部 out 追跡** Windows Mixed Reality は、内部 out 追跡を使用します。 内部での追跡カメラはヘッドセットに組み込まれており、環境の変化を追跡して、環境に関連するヘッドセットの位置を特定します。
 
 * **外部での追跡** Oculus、Naopak、その他は、外部での追跡を使用します。  外部では、ヘッドセットが1つ以上の外部デバイスによって追跡されます。 カメラは、環境に合わせてこれらの外部デバイスに組み込まれており、環境に対するヘッドセットの位置を決定するために使用されます。
 
@@ -71,7 +67,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>カメラの視界が原因でゲームのプレイに影響する、モーションコントローラーの内部での追跡は可能ですか。
 
- ヘッドセットと同様に、Windows Mixed Reality モーションコントローラーでは、外部の追跡センサーを設定する必要がありません。 代わりに、コントローラーはヘッドセット自体のセンサーによって追跡されます。 ユーザーがヘッドセットのビューのフィールドからコントローラーを移動した場合、ほとんどの場合、Windows はコントローラーの位置を推測してアプリに提供し続けます。 コントローラーのビジュアル追跡が十分に失われた場合、コントローラーの位置はおおよその精度の位置にドロップします。 この時点で、システムはコントローラーをユーザーにボディロックし、ユーザーが移動したときの位置を追跡しながら、内部方向センサーを使用してコントローラーの真向きを公開します。 UI 要素をポイントしてアクティブ化するためにコントローラーを使用する多くのアプリは、ユーザーが気付かなくても、おおよその精度で正常に動作できます。 これを実現する最善の方法は、自分で試してみることです。 お近くの Microsoft ストアにアクセスして、ご確認ください。 それまでの間、さまざまな追跡状態においてモーションコントローラーで動作するイマーシブコンテンツの例を紹介したビデオをご覧ください。
+ ヘッドセットと同様に、Windows Mixed Reality モーションコントローラーでは、外部の追跡センサーを設定する必要がありません。 代わりに、コントローラーはヘッドセット自体のセンサーによって追跡されます。 ユーザーがヘッドセットのビューのフィールドからコントローラーを移動した場合、ほとんどの場合、Windows はコントローラーの位置を推測してアプリに提供し続けます。 コントローラーのビジュアル追跡が十分に失われた場合、コントローラーの位置はおおよその精度の位置にドロップします。 この時点で、システムはコントローラーをユーザーにボディロックし、ユーザーが移動したときの位置を追跡しながら、内部方向センサーを使用してコントローラーの真向きを公開します。 UI 要素をポイントしてアクティブ化するためにコントローラーを使用する多くのアプリは、ユーザーが気付かなくても、おおよその精度で正常に動作できます。 これを実現する最善の方法は、自分で試してみることです。
 
 ### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Windows Mixed Reality と Samsung 歯車 VR の違いはどのようなものですか。
 
@@ -86,7 +82,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <tr>
 <th style="width:25%"> Headset </th>
 <th style="width:15%"> 解像度 </th>
-<th style="width:10%"> ディスプレイ </th>
+<th style="width:10%"> 表示 </th>
 <th style="width:10%"> 更新間隔 </th>
 <th style="width:10%"> 視界 </th>
 <th style="width:15%"> オーディオ </th>
@@ -103,7 +99,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 100° </td>
 <td> 3.5 mm ジャック </td>
-<td> なし </td>
+<td> None </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">社</a> </td>
@@ -129,7 +125,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 95° </td>
 <td> 3.5 mm ジャック </td>
-<td> なし </td>
+<td> None </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">ASUS</a> </td>
@@ -142,7 +138,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 105° </td>
 <td> 3.5 mm ジャック </td>
-<td> なし </td>
+<td> None </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">プレミア</a> </td>
@@ -155,7 +151,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 105° </td>
 <td> 3.5 mm ジャック </td>
-<td> なし </td>
+<td> None </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">Fujitsu</a> </td>
@@ -181,7 +177,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 105° </td>
 <td> 3.5 mm ジャック </td>
-<td> なし </td>
+<td> None </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">HP</a> </td>
@@ -194,7 +190,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 105° </td>
 <td> 3.5 mm ジャック </td>
-<td> なし </td>
+<td> None </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">Lenovo</a> </td>
@@ -207,7 +203,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 105° </td>
 <td> 3.5 mm ジャック </td>
-<td> なし </td>
+<td> None </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
@@ -220,7 +216,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 110° </td>
 <td> 統合 </td>
-<td> なし </td>
+<td> None </td>
 <td style="text-align: center;">機械的</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">Samsung</a> </td>
@@ -246,7 +242,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 105° </td>
 <td> 3.5 mm ジャック </td>
-<td> なし </td>
+<td> None </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="http://3glasses.com/goods.action?gid=30">3Glasses</a> </td>
@@ -315,7 +311,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 **クイック回答:** Windows Mixed Reality モーションコントローラーは Bluetooth を使用します。 ヘッドセットによっては、モーションコントローラーはヘッドセットの Bluetooth ラジオ (搭載されている場合) または PC の Bluetooth ラジオとペアになります。
 
-* Acer OJO 500、Samsung Odyssey + および HP リバーブなど、一部の Windows Mixed Reality ヘッドセットには、モーションコントローラーで使用するための組み込みの Bluetooth ラジオが組み込まれています。 これらのヘッドセットに付属しているモーションコントローラーは、工場出荷時のヘッドセットとペアリングされており、別の Bluetooth ラジオを使用する必要はありません。
+* 一部の Windows Mixed Reality ヘッドセットには、Acer OJO 500、Samsung Odyssey +、HP リバーブ、HP リバーブ G2 の機能が搭載されています。これには、モーションコントローラーで使用する組み込みの Bluetooth ラジオが組み込まれています。 これらのヘッドセットに付属しているモーションコントローラーは、工場出荷時のヘッドセットとペアリングされており、別の Bluetooth ラジオを使用する必要はありません。
 * その他の Windows Mixed Reality ヘッドセットは、お使いの PC で Bluetooth ラジオとペアリングされている必要があります。
 
 ### <a name="are-windows-mixed-reality-motion-controllers-cross-compatible-between-windows-mixed-reality-headsets"></a>Windows mixed reality のモーションコントローラーは、Windows Mixed Reality ヘッドセット間で相互に互換性がありますか。

@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Windows Mixed Reality VR のドキュメント
-summary: 中級から上級の顧客を対象としており、Windows Mixed Reality を最大限に活用する方法を示します。
+summary: ゲーム、旅行、ストリーミングで仮想現実のスリルを体験してください。 ここでは、Windows Mixed Reality で VR の使用を開始し、そして活用する方法を学ぶことができます。
 brand: windows
 metadata:
   title: Windows Mixed Reality VR のドキュメント
-  description: 中級から上級の顧客を対象としており、Windows Mixed Reality を最大限に活用する方法を示します。
+  description: ゲーム、旅行、ストリーミングで仮想現実のスリルを体験してください。 ここでは、Windows Mixed Reality で VR の使用を開始し、そして活用する方法を学ぶことができます
   services: guidance
   ms.service: guidance
   ms.topic: hub-page
@@ -12,38 +12,90 @@ metadata:
   ms.technology: enthusiast-guide
   author: mattwojo
   ms.author: mattwoj
-  ms.openlocfilehash: b791970df40711c298501b2db09cff8ec342de8a
-  ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+  ms.openlocfilehash: 3c485d7214da9109d8f1120e88cb02449b386cff
+  ms.sourcegitcommit: 1aae69e26ae872b724be1bd1ae0b3158c49dc7e2
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/19/2020
-  ms.locfileid: "92174380"
+  ms.lasthandoff: 10/24/2020
+  ms.locfileid: "92499577"
 highlightedContent:
   items:
-  - title: 購入する前に
+  - title: Windows Mixed Reality VR について
+    itemType: overview
+    url: vr-journey.md
+  - title: ヘッドセットの購入方法
+    itemType: learn
+    url: https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?rtc=1
+  - title: ハードウェアの要件を理解する
     itemType: learn
     url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
-  - title: 作業開始
+  - title: 仮想現実の使用開始
     itemType: get-started
-    url: before-you-start.md
-  - title: Mixed Reality について学習する
-    itemType: how-to-guide
-    url: learn-mixed-reality.md
-  - title: Windows Mixed Reality アカデミー
-    itemType: video
-    url: https://developer.microsoft.com/en-us/windows/mixed-reality/academy
+    url: set-up-windows-mixed-reality.md
+  - title: 正常性と安全性に関するガイダンス
+    itemType: concept
+    url: wmr-health-safety-comfort.md
+  - title: Mixed Reality ソフトウェアの概要とリリース履歴
+    itemType: concept
+    url: mixed-reality-software.md
+conceptualContent:
+  title: Windows Mixed Reality の使用を開始する
+  summary: Mixed Reality のソフトウェア、ハードウェア、およびトラブルシューティングに関する追加情報を紹介します。
+  items:
+  - title: 使用方法
+    links:
+    - url: plug-in-your-headset.md
+      itemType: quickstart
+      text: ヘッドセットを接続する
+    - url: install-windows-mixed-reality.md
+      itemType: quickstart
+      text: Windows Mixed Reality ソフトウェアをインストールする
+    - url: learn-mixed-reality.md
+      itemType: quickstart
+      text: 学習エクスペリエンスを実行する
+    - url: using-games-and-apps-in-windows-mixed-reality.md
+      itemType: quickstart
+      text: ゲームとアプリを使用する
+  - title: References
+    links:
+    - url: your-mixed-reality-home.md
+      itemType: concept
+      text: Mixed Reality ホーム
+    - url: controllers-in-wmr.md
+      itemType: concept
+      text: Windows Mixed Reality のモーション コントローラー
+    - url: using-steamvr-with-windows-mixed-reality.md
+      itemType: concept
+      text: Windows Mixed Reality を使用した SteamVR
+    - url: using-speech-in-wmr.md
+      itemType: concept
+      text: Windows Mixed Reality での音声
+  - title: トラブルシューティング
+    links:
+    - url: troubleshooting-windows-mixed-reality.md
+      itemType: concept
+      text: 一般的な FAQ
+    - url: filing-feedback.md
+      itemType: concept
+      text: バグとフィードバックを提出する
+    - url: error-codes.md
+      itemType: concept
+      text: エラー コード
+    - url: installation_errors.md
+      itemType: concept
+      text: インストール エラー
 additionalContent:
   sections:
   - title: その他のリソース
-    summary: トラブルシューティング、開発ドキュメント、フォーラムへの関連リンクを検索できます。
+    summary: その他のリソースの開発ドキュメントやフォーラムへの関連リンクを紹介します。
     items:
-    - title: トラブルシューティング
-      summary: Windows Mixed Reality のすべての領域でのトラブルシューティング
-      url: installation_errors.md
-    - title: フィードバック
-      summary: 有益なフィードバックの作成からサブシステムのしくみに至るまで、Windows Mixed Reality をより詳しく調べるための追加の記事を収集します。
-      url: filing-feedback.md
-    - title: 開発ドキュメント
+    - title: インサイドアウト追跡
+      summary: インサイドアウト追跡のしくみについて説明します
+      url: tracking-system.md
+    - title: Mixed Reality ソフトウェアの概要
+      summary: Mixed Reality ソフトウェアの概要とリリース履歴
+      url: mixed-reality-software.md
+    - title: Windows Mixed Reality での開発
       summary: 開発と設計に関するドキュメント
-      url: https://developer.microsoft.com/windows/mixed-reality
+      url: https://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity
   footer: サイトで問題が見つかりましたか。 [ぜひご意見をお寄せください。](https://forums.hololens.com/categories/using-windows-mixed-reality)

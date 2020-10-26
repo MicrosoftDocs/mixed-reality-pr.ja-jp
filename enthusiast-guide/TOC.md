@@ -16,14 +16,14 @@
 ### [Windows Mixed Reality の設定に関する FAQ](wmr-setup-faq.md)
 
 ## Windows Mixed Reality の使用
-### [Mixed Reality について学習する](learn-mixed-reality.md)
-### [お使いの Windows Mixed Reality ホーム](your-mixed-reality-home.md)
+### [Mixed Reality の学習エクスペリエンス](learn-mixed-reality.md)
+### [Mixed Reality ホーム](your-mixed-reality-home.md)
 ### [Windows Mixed Reality のコントローラー](controllers-in-wmr.md)
 ### [音声入力の使用](using-speech-in-wmr.md)
-### [ゲーム、360°動画、アプリ](using-games-and-apps-in-windows-mixed-reality.md)
-### [SteamVR](using-steamvr-with-windows-mixed-reality.md)
-### [Microsoft Edge の使用](using-microsoft-edge.md)  
-### [WebVR](webvr.md)
+### [ゲーム、360°動画、アプリの使用](using-games-and-apps-in-windows-mixed-reality.md)
+### [SteamVR の使用](using-steamvr-with-windows-mixed-reality.md)
+### [Microsoft Edge の使用](using-microsoft-edge.md)
+### [WebVR とは](webvr.md)
 ### [Windows Mixed Reality の使用に関する FAQ](using-wmr-faq.md)
 
 ## トラブルシューティングに関する FAQ

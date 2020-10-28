@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 検出, 配布, インデックス, ランディング ページ, 設計, 開発, チュートリアル, サンプル アプリ, 基本事項, ケース スタディ, リソース, HoloLens の使い方, オープン ソース プロジェクト, 主要な概念, 操作
-ms.openlocfilehash: 947d9378cd65ceda11cf5dbb1d103a8f9bcc6e63
-ms.sourcegitcommit: 8aa3b0034f9f2ff0973d49061c669a82c2c8d7e6
+ms.openlocfilehash: 7333163a01496f41c4cb3cd98f54012e5c58a8d4
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92058586"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293131"
 ---
 # <a name="start-designing-and-prototyping"></a>設計とプロトタイプ作成を始める
 
@@ -32,9 +32,9 @@ Mixed Reality アプリケーションはまったく新しいものであるた
 
 |  Checkpoint  |  結果  |
 | --- | --- |
-| [デザイン プロセスを展開する](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Microsoft 内外の Mixed Reality 開発者から収集した手法、知見、設計理論を直に確認する |
+| [デザイン プロセスを展開する](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Microsoft 内外の設計者から収集された Mixed Reality のデザイン プロセスを直接確認する |
 | [Mixed Reality アプリの種類](types-of-mixed-reality-apps.md) | Mixed Reality の範囲のうち、どの領域のアプリ エクスペリエンスを実現するかを決定する |
-| [Designing Holograms アプリ](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Mixed Reality の動作、優れた HoloLens アプリを作成するためのヒントや推奨事項について、Mixed Reality UX Design を実際に使用して、その基礎を理解する |
+| [Designing Holograms アプリ](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Mixed Reality の動作、優れた HoloLens アプリ (Microsoft Store の HoloLens 2 からダウンロード可能) を作成するためのヒントや推奨事項について、Mixed Reality UX Design を実際に使用して、その基礎を理解する |
 
 ### <a name="2-core-concepts"></a>2. 主要な概念
 
@@ -46,7 +46,7 @@ Mixed Reality アプリケーションはまったく新しいものであるた
 | --- | --- |
 | [ホログラフィック フレーム](holographic-frame.md) | ヘッドセットの装着時、現実世界に重ねて表示されたコンテンツがユーザーにどのように見えるかを理解する |
 | [座標系](coordinate-systems.md) | 物理的な部屋であれ、自分が作成した仮想領域であれ、ユーザーにとって意味のある空間内の位置にホログラムを配置する方法を学習する |
-| [空間マッピング](spatial-mapping.md) | オブジェクトをユーザーの世界に固定し、現実世界の奥行きの手がかりを利用する |
+| [空間マッピング](spatial-mapping.md) | オブジェクトをユーザーの世界に固定し、現実世界の物理サーフェスを利用する |
 | [快適性に関する考慮事項](comfort.md) | 自然世界を模倣した方法でイマーシブ コンテンツの作成と提示を行うことで、ユーザーの快適性と安全性を確保する |
 
 ### <a name="3-interaction-design"></a>3.操作の設計

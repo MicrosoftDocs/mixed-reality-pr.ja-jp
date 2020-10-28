@@ -13,6 +13,6 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92638499"
 ---
-# <a name="porting-overview"></a><span data-ttu-id="92d46-104">移植の概要</span><span class="sxs-lookup"><span data-stu-id="92d46-104">Porting overview</span></span>
+# <a name="porting-overview"></a><span data-ttu-id="87d34-104">移植の概要</span><span class="sxs-lookup"><span data-stu-id="87d34-104">Porting overview</span></span>
 
-<span data-ttu-id="92d46-105">[//TODO: ヘッダーイメージが必要]</span><span class="sxs-lookup"><span data-stu-id="92d46-105">[//TODO: Need header image]</span></span>
+<span data-ttu-id="87d34-105">[//TODO: ヘッダーイメージが必要]</span><span class="sxs-lookup"><span data-stu-id="87d34-105">[//TODO: Need header image]</span></span>

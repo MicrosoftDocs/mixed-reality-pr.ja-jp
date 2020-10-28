@@ -13,6 +13,6 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92638519"
 ---
-# <a name="distribution-overview"></a><span data-ttu-id="f17b2-104">配布の概要</span><span class="sxs-lookup"><span data-stu-id="f17b2-104">Distribution overview</span></span>
+# <a name="distribution-overview"></a><span data-ttu-id="08fd4-104">配布の概要</span><span class="sxs-lookup"><span data-stu-id="08fd4-104">Distribution overview</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f17b2-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="f17b2-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="08fd4-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="08fd4-105">See also</span></span>

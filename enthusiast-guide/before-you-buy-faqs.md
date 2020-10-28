@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、前払い、研究、購入、購入前
 appliesto:
 - Windows 10
-ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: a38b6ed8625fbb419ad24f2e27acec881d7b85a7
+ms.sourcegitcommit: ea7d806c9aa88d1295493a25f47e58bb72a4000a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434611"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92907444"
 ---
 # <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -21,17 +21,17 @@ ms.locfileid: "92434611"
 
 ### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Windows Mixed Reality の準備完了 PC またはヘッドセットはどこで購入できますか。
 
-**クイック回答:** Windows Mixed Reality の準備ができた PC またはヘッドセットは、承認されたローカルの小売業者またはオンラインで、Microsoft Store を含むさまざまな小売業者から購入できます。 Windows Mixed Reality の準備ができている PC またはヘッドセットをオンラインで検索する: <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**クイック回答:** Windows Mixed Reality の準備ができた PC またはヘッドセットは、承認されたローカルの小売業者またはオンラインで、Microsoft Store を含むさまざまな小売業者から購入できます。 Windows Mixed Reality の準備ができている PC またはヘッドセットをオンラインで検索する: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-try-windows-mixed-reality"></a>Windows Mixed Reality はどこで試すことができますか。
 
-**クイック回答:** Windows Mixed Reality は、お近くの [Microsoft リアクター](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) で試すことができます。  
-* ローカルの Microsoft リアクターを検索します。 <https://www.microsoft.com/en-us/store/locations/all-locations>
+**クイック回答:** Windows Mixed Reality は、お近くの [Microsoft リアクター](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) で試すことができます。
+
 * Meetup.com での Microsoft リアクターイベントの検索: <https://www.meetup.com/pro/microsoft-reactor>
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>どの製造元が Windows Mixed Reality デバイスを販売していますか。
 
-**クイック回答:** ヘッドセットとモーションコントローラーは、現在、HP から入手できます。 「<https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>」を参照してください。
+**クイック回答:** ヘッドセットとモーションコントローラーは、現在、HP から入手できます。 「<https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>」を参照してください。
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>スタンドアロンのモーションコントローラーはどこで購入できますか。
 
@@ -51,7 +51,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 **クイック回答:** Windows Mixed Reality ヘッドセット機能の内部 out 追跡 (トラッキングカメラはヘッドセットにあります) とプラグアンドプレイセットアップを Windows 10 で実行します。
 
-**詳細: Windows**Mixed Reality では、簡単なセットアップ (外部センサーを使用してコントローラーを追跡する必要はありません)、お客様の快適さと価格を満たすヘッドセットの選択、競争力のある Microsoft Store 解像度のヘッドセットなど、さまざまな機能が提供されます
+**詳細: Windows** Mixed Reality では、簡単なセットアップ (外部センサーを使用してコントローラーを追跡する必要はありません)、お客様の快適さと価格を満たすヘッドセットの選択、競争力のある Microsoft Store 解像度のヘッドセットなど、さまざまな機能が提供されます
 
 ### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>Mixed Reality は、内部のカメラがパススルーであることを意味しますか。 仮想現実に加えて、さらに現実を経験することはできますか。
 
@@ -99,7 +99,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 100° </td>
 <td> 3.5 mm ジャック </td>
-<td> None </td>
+<td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">社</a> </td>
@@ -125,7 +125,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 95° </td>
 <td> 3.5 mm ジャック </td>
-<td> None </td>
+<td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">ASUS</a> </td>
@@ -138,7 +138,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 105° </td>
 <td> 3.5 mm ジャック </td>
-<td> None </td>
+<td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">プレミア</a> </td>
@@ -151,7 +151,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 105° </td>
 <td> 3.5 mm ジャック </td>
-<td> None </td>
+<td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">Fujitsu</a> </td>
@@ -177,7 +177,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 105° </td>
 <td> 3.5 mm ジャック </td>
-<td> None </td>
+<td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">HP</a> </td>
@@ -190,7 +190,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 105° </td>
 <td> 3.5 mm ジャック </td>
-<td> None </td>
+<td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">Lenovo</a> </td>
@@ -203,7 +203,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 105° </td>
 <td> 3.5 mm ジャック </td>
-<td> None </td>
+<td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
@@ -216,7 +216,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 110° </td>
 <td> 統合 </td>
-<td> None </td>
+<td> なし </td>
 <td style="text-align: center;">機械的</td>
 <td> 2017をフォールする </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">Samsung</a> </td>
@@ -242,7 +242,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 最大90Hz </td>
 <td> 105° </td>
 <td> 3.5 mm ジャック </td>
-<td> None </td>
+<td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
 <td> <a href="http://3glasses.com/goods.action?gid=30">3Glasses</a> </td>
@@ -257,7 +257,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 ### <a name="do-the-mixed-reality-headsets-have-ipd-adjustment"></a>Mixed reality ヘッドセットには IPD 調整がありますか。
 
-**クイック回答:** ヘッドセットによっては、一部の mixed reality ヘッドセット機能の機械的 IPD 調整があります。 その他のヘッドセット機能 software IPD 調整により、IPD に基づいて画像の歪みと深度精度が向上します。 ユーザーは、設定 > 使用してカスタムの IPD を設定できます。これには、 **> ヘッドセットの表示 > 調整の組み合わせ**があります。
+**クイック回答:** ヘッドセットによっては、一部の mixed reality ヘッドセット機能の機械的 IPD 調整があります。 その他のヘッドセット機能 software IPD 調整により、IPD に基づいて画像の歪みと深度精度が向上します。 ユーザーは、設定 > 使用してカスタムの IPD を設定できます。これには、 **> ヘッドセットの表示 > 調整の組み合わせ** があります。
 
 ### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>Mixed reality ヘッドセットには、視線の調整がありますか。
 
@@ -368,7 +368,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 **クイック回答:** はい。 Windows Mixed Reality は、十分なスペースがない場合でも機能します。 この設定は、セットアップ中に "デスクスケール" エクスペリエンスを選択することによって行うことができます。
 
-## <a name="content"></a>Content
+## <a name="content"></a>コンテンツ
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Windows Mixed Reality ではどのようなゲームとアプリが実行されますか。
 

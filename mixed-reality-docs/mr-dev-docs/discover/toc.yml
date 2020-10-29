@@ -1,0 +1,28 @@
+- name: Mixed Reality の概要
+  href: get-started-with-mr.md
+- name: Mixed Reality とは
+  href: mixed-reality.md
+- name: ホログラムとは
+  href: hologram.md
+- name: デザイン プロセスを展開する
+  href: case-study-expanding-the-design-process-for-mixed-reality.md
+- name: HoloLens ハードウェア
+  items:
+    - name: HoloLens 2 ハードウェアの詳細
+      href: 'https://docs.microsoft.com/hololens/hololens2-hardware'
+    - name: HoloLens (第 1 世代) ハードウェアの詳細
+      href: 'https://docs.microsoft.com/hololens/hololens1-hardware'
+- name: イマーシブ ヘッドセット
+  items:
+    - name: イマーシブ ヘッドセット ハードウェアの詳細
+      href: immersive-headset-hardware-details.md
+    - name: Windows Mixed Reality ホームのナビゲーション
+      href: navigating-the-windows-mixed-reality-home.md
+    - name: VR 技術者向けガイド
+      href: 'https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/'
+    - name: 場所に基づいたエンターテインメント
+      href: location-based-experiences.md
+- name: コミュニティのリソース
+  href: community.md
+- name: ハードウェア アクセサリ
+  href: hardware-accessories.md

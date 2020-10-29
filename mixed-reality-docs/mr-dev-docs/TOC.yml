@@ -1,0 +1,12 @@
+- name: Mixed Reality へようこそ
+  href: index.yml
+- name: 発見
+  href: discover/toc.yml
+- name: デザイン
+  href: design/toc.yml
+- name: 開発
+  href: develop/toc.yml
+- name: 配布
+  href: distribute/toc.yml
+- name: 新機能
+  href: whats-new/toc.yml

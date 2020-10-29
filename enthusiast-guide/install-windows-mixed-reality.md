@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality ソフトウェアのインストール
+title: Windows Mixed Reality ソフトウェアをインストールする
 description: Windows Mixed reality ヘッドセットにプラグインした後、Mixed Reality ポータルアプリを使用して、Windows Mixed Reality 機能を開始およびダウンロードします。
 author: hferrone
 ms.author: v-hferrone
@@ -8,14 +8,17 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、はじめに、セットアップ、Mixed Reality ポータル
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5e04f29f834b2220f51f1748aa59e4188d8ad38d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b07e1a90247072952969cb2e2fc845bdb906bcae
+ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686530"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915567"
 ---
-# <a name="install-windows-mixed-reality-software"></a>Windows Mixed Reality ソフトウェアのインストール
+# <a name="install-windows-mixed-reality-software"></a>Windows Mixed Reality ソフトウェアをインストールする
+
+> [!div class="nextstepaction"]
+> [Mixed Reality ポータルを取得する](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)
 
 ## <a name="launch-mixed-reality-portal"></a>Mixed Reality ポータルを起動する
 
@@ -92,4 +95,4 @@ Windows Mixed Reality のサイズは約 1 GB です。ダウンロードにか�
 * [サポートについては、お問い合わせください](https://support.microsoft.com/contactus/)
 * [インストールのトラブルシューティング](installation_errors.md)
 * [セットアップのトラブルシューティング](set-up-questions.md)
-* [Windows Mixed Reality のセットアップ](set-up-windows-mixed-reality.md)
+* [Windows Mixed Reality を設定する](set-up-windows-mixed-reality.md)

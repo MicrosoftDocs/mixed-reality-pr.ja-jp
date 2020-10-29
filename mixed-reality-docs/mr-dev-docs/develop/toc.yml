@@ -1,0 +1,450 @@
+- name: Mixed Reality 開発の概要
+  href: development.md
+- name: Azure クラウド サービス
+  href: mixed-reality-cloud-services.md
+- name: ツールのインストール
+  href: install-the-tools.md
+- name: アプリの移植
+  items:
+    - name: 既存のアプリを HoloLens 2 で利用できるようにする
+      href: unity/mrtk-porting-guide.md
+    - name: イマーシブ アプリの移植ガイド
+      href: porting-apps/porting-guides.md
+    - name: SteamVR の更新
+      href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
+    - name: Mixed Reality の 2D UWP アプリを更新する
+      href: porting-apps/building-2d-apps.md
+- name: Unity
+  items:
+    - name: Unity 開発の概要
+      href: unity/unity-development-overview.md
+    - name: 作業の開始
+      items:
+        - name: Mixed Reality Toolkit v2 の概要
+          href: unity/mrtk-getting-started.md
+        - name: Windows Mixed Reality 用に Unity プロジェクトを構成する
+          href: unity/configure-unity-project.md
+        - name: 既存のアプリを HoloLens 2 で利用できるようにする
+          href: unity/mrtk-porting-guide.md
+    - name: チュートリアル
+      items:
+        - name: 概要
+          href: unity/tutorials.md
+        - name: HoloLens 2 のチュートリアル
+          items:
+            - name: 入門チュートリアル
+              items:
+                - name: 1. はじめに
+                  href: unity/tutorials/mr-learning-base-01.md
+                - name: 2. プロジェクトと最初のアプリケーションの初期化
+                  href: unity/tutorials/mr-learning-base-02.md
+                - name: 3. Mixed Reality ツールキット プロファイルの構成
+                  href: unity/tutorials/mr-learning-base-03.md
+                - name: 4. シーンへのオブジェクトの配置
+                  href: unity/tutorials/mr-learning-base-04.md
+                - name: 5. ソルバーを使用した動的なコンテンツの作成
+                  href: unity/tutorials/mr-learning-base-05.md
+                - name: 6. ユーザー インターフェイスの作成
+                  href: unity/tutorials/mr-learning-base-06.md
+                - name: 7. 3D オブジェクトの操作
+                  href: unity/tutorials/mr-learning-base-07.md
+                - name: 8. 視線追跡の使用
+                  href: unity/tutorials/mr-learning-base-08.md
+                - name: 9. 音声コマンドの使用
+                  href: unity/tutorials/mr-learning-base-09.md
+            - name: Azure Spatial Anchors チュートリアル
+              items:
+                - name: 1. はじめに
+                  href: unity/tutorials/mr-learning-asa-01.md
+                - name: 2. Azure Spatial Anchors をお使いになる前に
+                  href: unity/tutorials/mr-learning-asa-02.md
+                - name: 3. Azure Spatial Anchors の保存、取得、共有
+                  href: unity/tutorials/mr-learning-asa-03.md
+                - name: 4. Azure Spatial Anchors のフィードバックの表示
+                  href: unity/tutorials/mr-learning-asa-04.md
+                - name: 5. Android と iOS 用の Azure Spatial Anchors
+                  href: unity/tutorials/mr-learning-asa-05.md
+            - name: マルチユーザー機能のチュートリアル
+              items:
+                - name: 1. はじめに
+                  href: unity/tutorials/mr-learning-sharing-01.md
+                - name: 2. Photon Unity Networking の設定
+                  href: unity/tutorials/mr-learning-sharing-02.md
+                - name: 3. 複数のユーザーの接続
+                  href: unity/tutorials/mr-learning-sharing-03.md
+                - name: 4. 複数のユーザーとオブジェクトの移動を共有する
+                  href: unity/tutorials/mr-learning-sharing-04.md
+                - name: 5. Azure Spatial Anchors の共有エクスペリエンスへの統合
+                  href: unity/tutorials/mr-learning-sharing-05.md
+            - name: Azure 音声認識サービス チュートリアル
+              items:
+                - name: 1. 音声認識と文字起こしの統合と使用
+                  href: unity/tutorials/mrlearning-speechsdk-ch1.md
+                - name: 2. ローカル音声テキスト変換用のオフライン モードの追加
+                  href: unity/tutorials/mrlearning-speechsdk-ch2.md
+                - name: 3. Azure 認識サービスの音声変換コンポーネントの追加
+                  href: unity/tutorials/mrlearning-speechsdk-ch3.md
+                - name: 4. インテントの設定と自然言語の理解
+                  href: unity/tutorials/mrlearning-speechsdk-ch4.md
+            - name: 立体オーディオのチュートリアル
+              items:
+                - name: 1. プロジェクトへの立体オーディオの追加
+                  href: unity/tutorials/unity-spatial-audio-ch1.md
+                - name: 2. ボタンの対話式操作サウンドの立体化
+                  href: unity/tutorials/unity-spatial-audio-ch2.md
+                - name: 3. ビデオからオーディオの立体化
+                  href: unity/tutorials/unity-spatial-audio-ch3.md
+                - name: 4. 実行時の立体オーディオの有効化と無効化
+                  href: unity/tutorials/unity-spatial-audio-ch4.md
+                - name: 5. リバーブを使用して立体オーディオに距離を追加する
+                  href: unity/tutorials/unity-spatial-audio-ch5.md
+            - name: Azure Cloud Services チュートリアル
+              items:
+                - name: 1. HoloLens 2 用の Azure Cloud Services
+                  href: unity/tutorials/mr-learning-azure-01.md
+                - name: 2. Azure Storage の統合
+                  href: unity/tutorials/mr-learning-azure-02.md
+                - name: 3. Azure Custom Vision の統合
+                  href: unity/tutorials/mr-learning-azure-03.md
+                - name: 4. Azure Spatial Anchors の統合
+                  href: unity/tutorials/mr-learning-azure-04.md
+                - name: 5. Azure Bot Service の統合
+                  href: unity/tutorials/mr-learning-azure-05.md
+            - name: PC Holographic Remoting のチュートリアル
+              items:
+                - name: 1. PC Holographic Remoting の概要
+                  href: unity/tutorials/mr-learning-pc-holographic-remoting-01.md
+                - name: 2. Holographic Remoting PC アプリケーションの作成
+                  href: unity/tutorials/mr-learning-pc-holographic-remoting-02.md
+        - name: HoloLens (第 1 世代) とイマーシブ ヘッドセットのチュートリアル
+          items:
+            - name: MR の基本 100 - Unity の概要
+              href: unity/tutorials/holograms-100.md
+            - name: MR の基本 101 - デバイスを使用した完全なプロジェクト
+              href: unity/tutorials/holograms-101.md
+            - name: MR の基本 101E - エミュレーターを使用した完全なプロジェクト
+              href: unity/tutorials/holograms-101e.md
+            - name: MR 入力 210 - 視線入力
+              href: unity/tutorials/holograms-210.md
+            - name: MR 入力 211 - ジェスチャ
+              href: unity/tutorials/holograms-211.md
+            - name: MR 入力 212 - 音声
+              href: unity/tutorials/holograms-212.md
+            - name: MR 空間 220 - 立体音響
+              href: unity/tutorials/holograms-220.md
+            - name: MR 空間 230 - 空間マッピング
+              href: unity/tutorials/holograms-230.md
+            - name: MR 共有 240 - 複数の HoloLens デバイス
+              href: unity/tutorials/holograms-240.md
+        - name: Mixed Reality および Azure サービスのチュートリアル
+          items:
+            - name: MR と Azure 301 - 言語翻訳
+              href: unity/tutorials/mr-azure-301.md
+            - name: MR と Azure 302 - コンピューター ビジョン
+              href: unity/tutorials/mr-azure-302.md
+            - name: MR と Azure 302b - カスタム ビジョン
+              href: unity/tutorials/mr-azure-302b.md
+            - name: MR と Azure 303 - 自然言語の理解
+              href: unity/tutorials/mr-azure-303.md
+            - name: MR と Azure 304 - 顔認識
+              href: unity/tutorials/mr-azure-304.md
+            - name: MR と Azure 305 - 機能とストレージ
+              href: unity/tutorials/mr-azure-305.md
+            - name: MR と Azure 306 - ビデオのストリーミング
+              href: unity/tutorials/mr-azure-306.md
+            - name: MR と Azure 307 - Machine Learning
+              href: unity/tutorials/mr-azure-307.md
+            - name: MR と Azure 308 - クロスデバイス通知
+              href: unity/tutorials/mr-azure-308.md
+            - name: MR と Azure 309 - アプリケーションの分析情報
+              href: unity/tutorials/mr-azure-309.md
+            - name: MR と Azure 310 - 物体検出
+              href: unity/tutorials/mr-azure-310.md
+            - name: MR と Azure 311 - Microsoft Graph
+              href: unity/tutorials/mr-azure-311.md
+            - name: MR と Azure 312 - ボットの統合
+              href: unity/tutorials/mr-azure-312.md
+            - name: MR と Azure 313 - IoT Hub サービス
+              href: unity/tutorials/mr-azure-301.md
+    - name: コア構成要素
+      items:
+        - name: MRTK 101 - 基本的な操作に Mixed Reality ツールキット Unity を使用する方法
+          href: unity/mrtk-101.md
+        - name: Unity のカメラ
+          href: unity/camera-in-unity.md
+        - name: Unity の座標系
+          href: unity/coordinate-systems-in-unity.md
+        - name: Unity の永続化
+          href: unity/persistence-in-unity.md
+        - name: Unity の視線入力
+          href: unity/gaze-in-unity.md
+        - name: Unity のテキスト
+          href: unity/text-in-unity.md
+        - name: Unity でのジェスチャとモーション コントローラー
+          href: unity/gestures-and-motion-controllers-in-unity.md
+        - name: Unity での手と視点の追跡
+          href: unity/hand-eye-in-unit.md
+        - name: Unity の音声入力
+          href: unity/voice-input-in-unity.md
+        - name: Unity の空間マッピング
+          href: unity/spatial-mapping-in-unity.md
+        - name: Unity の立体音響
+          href: unity/spatial-sound-in-unity.md
+    - name: プラットフォームの機能と API
+      items:
+        - name: Unity での共有エクスペリエンス
+          href: unity/shared-experiences-in-unity.md
+        - name: Unity での場所を特定できるカメラ
+          href: unity/locatable-camera-in-unity.md
+        - name: Unity でのフォーカス ポイント
+          href: unity/focus-point-in-unity.md
+        - name: Unity での損失の追跡
+          href: unity/tracking-loss-in-unity.md
+        - name: Unity でのキーボード入力
+          href: unity/keyboard-input-in-unity.md
+        - name: Windows 名前空間と HoloLens 用 Unity アプリの使用
+          href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
+        - name: Unity での Mixed Reality ネイティブ オブジェクト
+          href: unity/unity-xrdevice-advanced.md
+        - name: Vuforia と Unity の使用
+          href: unity/vuforia-development-overview.md
+    - name: イマーシブ VR
+      items:
+        - name: Unity の HP Reverb G2 コントローラー
+          href: unity/unity-reverb-g2-controllers.md
+    - name: サンプル アプリ
+      items:
+        - name: 概要
+          href: unity/samples.md
+        - name: HoloLens 2
+          items:
+            - name: Surfaces
+              href: null
+            - name: 元素周期表 2.0
+              href: 'https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158'
+            - name: Galaxy Explorer 2.0
+              href: unity/galaxy-explorer-update.md
+        - name: HoloLens (第 1 世代)
+          items:
+            - name: 要素の定期的なテーブル
+              href: unity/periodic-table-of-the-elements.md
+            - name: Galaxy Explorer 1.0
+              href: unity/galaxy-explorer.md
+            - name: 月着陸船
+              href: unity/lunar-module.md
+    - name: 設定とデバッグ
+      items:
+        - name: Unity IL2CPP を使用したマネージド デバッグ
+          href: unity/managed-debugging-with-unity-il2cpp.md
+        - name: Unity で推奨される設定
+          href: unity/recommended-settings-for-unity.md
+        - name: Unity の再生モード
+          href: unity/unity-play-mode.md
+    - name: Visual Studio ソリューション
+      items:
+        - name: Unity Visual Studio ソリューションのエクスポートとビルド
+          href: unity/exporting-and-building-a-unity-visual-studio-solution.md
+        - name: Unity と Visual Studio を使用するためのベスト プラクティス
+          href: unity/best-practices-for-working-with-unity-and-visual-studio.md
+- name: Unreal
+  items:
+    - name: Unreal 開発の概要
+      href: unreal/unreal-development-overview.md
+    - name: チュートリアル
+      items:
+        - name: MRTK UX ツールでチェス アプリを構築する
+          items:
+            - name: 作業の開始
+              href: unreal/tutorials/unreal-uxt-ch1.md
+            - name: プロジェクトの初期化
+              href: unreal/tutorials/unreal-uxt-ch2.md
+            - name: Mixed Reality の設定
+              href: unreal/tutorials/unreal-uxt-ch3.md
+            - name: 対話機能の追加
+              href: unreal/tutorials/unreal-uxt-ch4.md
+            - name: UI と関数
+              href: unreal/tutorials/unreal-uxt-ch5.md
+            - name: パッケージ化とデプロイ
+              href: unreal/tutorials/unreal-uxt-ch6.md
+    - name: コア構成要素
+      items:
+        - name: Unreal での視線入力
+          href: unreal/unreal-gaze-input.md
+        - name: Unreal での手の追跡
+          href: unreal/unreal-hand-tracking.md
+        - name: Unreal での空間マッピング
+          href: unreal/unreal-spatial-mapping.md
+        - name: Unreal での空間オーディオ
+          href: unreal/unreal-spatial-audio.md
+        - name: Unreal でのローカル空間アンカー
+          href: unreal/unreal-spatial-anchors.md
+        - name: Unreal での Azure Spatial Anchors
+          href: unreal/unreal-azure-spatial-anchors.md
+        - name: Unreal での音声入力
+          href: unreal/unreal-voice-input.md
+    - name: プラットフォームの機能と API
+      items:
+        - name: Unreal での HoloLens 写真/ビデオ カメラ
+          href: unreal/unreal-hololens-camera.md
+        - name: Unreal での QR コード
+          href: unreal/unreal-qr-codes.md
+        - name: Unreal での WinRT
+          href: unreal/unreal-winrt.md
+    - name: イマーシブ VR
+      items:
+        - name: Unreal の HP Reverb G2 コントローラー
+          href: unreal/unreal-reverb-g2-controllers.md
+    - name: サンプル アプリ
+      items:
+        - name: 概要
+          href: unreal/unreal-samples.md
+        - name: Kippy's Escape
+          href: unreal/unreal-kippys-escape.md
+    - name: デプロイとパフォーマンス
+      items:
+        - name: Unreal でのデバイスへのデプロイ
+          href: unreal/unreal-deploying.md
+        - name: Unreal のパフォーマンスに関する推奨事項
+          href: unreal/performance-recommendations-for-unreal.md
+        - name: Unreal の素材に関する推奨事項
+          href: unreal/unreal-materials.md
+        - name: Unreal でのストリーミング
+          href: unreal/unreal-streaming.md
+- name: Web
+  items:
+    - name: Web 開発の概要
+      href: web/javascript-development-overview.md
+    - name: WebXR
+      href: web/webxr-overview.md
+    - name: WebVR
+      href: web/webvr-overview.md
+- name: ネイティブ
+  items:
+    - name: ネイティブ開発の概要
+      href: native/directx-development-overview.md
+    - name: OpenXR
+      items:
+        - name: OpenXR の概要
+          href: native/openxr.md
+        - name: OpenXR の概要
+          href: native/openxr-getting-started.md
+        - name: OpenXR ベスト プラクティス
+          href: native/openxr-best-practices.md
+        - name: OpenXR パフォーマンス
+          href: native/openxr-performance.md
+        - name: OpenXR トラブルシューティング
+          href: native/openxr-troubleshooting.md
+    - name: WinRT (レガシ)
+      items:
+        - name: 作業の開始
+          items:
+            - name: ネイティブ ホログラフィック プロジェクトを作成する
+              href: native/creating-a-holographic-directx-project.md
+            - name: HolographicSpace を入手する
+              href: native/getting-a-holographicspace.md
+            - name: ネイティブ レンダリング
+              href: native/rendering-in-directx.md
+            - name: 座標系
+              href: native/coordinate-systems-in-directx.md
+        - name: コア構成要素
+          items:
+            - name: 手と目の視線入力
+              href: native/gaze-in-directx.md
+            - name: 手とモーション コントローラー
+              href: native/hands-and-motion-controllers-in-directx.md
+            - name: 音声入力
+              href: native/voice-input-in-directx.md
+            - name: 空間マッピング
+              href: native/spatial-mapping-in-directx.md
+- name: プラットフォームの機能と API
+  items:
+    - name: コア構成要素
+      items:
+        - name: シーンの理解
+          href: platform-capabilities-and-apis/scene-understanding-sdk.md
+        - name: 共有空間アンカー
+          href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
+        - name: キーボード、マウス、コントローラー入力
+          href: platform-capabilities-and-apis/keyboard-mouse-and-controller-input-in-directx.md
+        - name: XAML とホログラフィック DirectX アプリの使用
+          href: platform-capabilities-and-apis/using-xaml-with-holographic-directx-apps.md
+        - name: QR コードの追跡
+          href: platform-capabilities-and-apis/qr-code-tracking.md
+    - name: Mixed Reality での共有エクスペリエンス
+      items:
+        - name: Mixed Reality での共有エクスペリエンス
+          href: platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md
+        - name: Azure Spatial Anchors
+          href: 'https://docs.microsoft.com/azure/spatial-anchors/'
+        - name: Spectator View
+          href: platform-capabilities-and-apis/spectator-view.md
+        - name: WebRTC
+          href: 'https://github.com/microsoft/MixedReality-WebRTC'
+    - name: カメラとキャプチャ
+      items:
+        - name: 場所を特定できるカメラ
+          href: platform-capabilities-and-apis/locatable-camera.md
+        - name: 開発者向け Mixed Reality キャプチャ
+          href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
+        - name: そのしくみ - 複合現実キャプチャ スタジオ
+          href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
+    - name: ホログラフィック リモート
+      items:
+        - name: Holographic Remoting Player
+          href: platform-capabilities-and-apis/holographic-remoting-player.md
+        - name: Holographic Remoting リモート アプリの作成
+          href: platform-capabilities-and-apis/holographic-remoting-create-host.md
+        - name: カスタム Holographic リモート処理プレーヤーアプリの作成
+          href: platform-capabilities-and-apis/holographic-remoting-create-player.md
+        - name: カスタムの Holographic Remoting データ チャネル
+          href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
+        - name: Holographic Remoting によりセキュリティ保護された接続
+          href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
+        - name: トラブルシューティングと制限事項
+          href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
+        - name: バージョン履歴
+          href: platform-capabilities-and-apis/holographic-remoting-version-history.md
+        - name: Holographic Remoting ソフトウェア ライセンス条項
+          href: 'https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms'
+        - name: HoloLens (第 1 世代) 用ホログラフィック リモート
+          href: 'https://docs.microsoft.com'
+        - name: Holographic Remoting の追加
+          href: platform-capabilities-and-apis/add-holographic-remoting.md
+    - name: アプリの品質とテスト
+      items:
+        - name: アプリの品質基準
+          href: platform-capabilities-and-apis/app-quality-criteria.md
+        - name: ホログラフィック レンダリング
+          href: platform-capabilities-and-apis/rendering.md
+        - name: ボリューム レンダリング
+          href: platform-capabilities-and-apis/volume-rendering.md
+        - name: ホログラムの安定性
+          href: platform-capabilities-and-apis/hologram-stability.md
+        - name: 手ブレ補正平面を使用してホログラフィックの乱れを削減する
+          href: platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md
+        - name: Mixed Reality のパフォーマンスを理解する
+          href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
+        - name: Unity のパフォーマンスに関する推奨事項
+          href: unity/performance-recommendations-for-unity.md
+        - name: Visual Studio を使用した配置とデバッグ
+          href: platform-capabilities-and-apis/using-visual-studio.md
+        - name: HoloLens でアプリをテストする
+          href: platform-capabilities-and-apis/testing-your-app-on-hololens.md
+        - name: HoloLens エミュレーターを使用する
+          href: platform-capabilities-and-apis/using-the-hololens-emulator.md
+        - name: Windows Mixed Reality シミュレーターを使用する
+          href: platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md
+        - name: 高度な HoloLens エミュレーターと Mixed Reality Simulator の入力
+          href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
+        - name: HoloLens エミュレーターのアーカイブ
+          href: platform-capabilities-and-apis/hololens-emulator-archive.md
+        - name: 認識シミュレーション
+          href: platform-capabilities-and-apis/perception-simulation.md
+    - name: 調査ツール
+      items:
+        - name: Windows デバイス ポータルを使用する
+          href: platform-capabilities-and-apis/using-the-windows-device-portal.md
+        - name: Device Portal API リファレンス
+          href: platform-capabilities-and-apis/device-portal-api-reference.md
+        - name: HoloLens Research モード
+          href: platform-capabilities-and-apis/research-mode.md

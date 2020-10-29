@@ -1,0 +1,30 @@
+---
+ms.openlocfilehash: cdd2b613535080b371807020670a2785274c29f5
+ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "91699562"
+---
+# <a name="available-in-mrtk"></a>[<span data-ttu-id="a38c0-101">MRTK で利用可能</span><span class="sxs-lookup"><span data-stu-id="a38c0-101">Available in MRTK</span></span>](#tab/mrtk)
+
+|  <span data-ttu-id="a38c0-102">機能</span><span class="sxs-lookup"><span data-stu-id="a38c0-102">Feature</span></span>  |  <span data-ttu-id="a38c0-103">機能</span><span class="sxs-lookup"><span data-stu-id="a38c0-103">Capabilities</span></span>  |
+| --- | --- |
+| [<span data-ttu-id="a38c0-104">入力シミュレーション</span><span class="sxs-lookup"><span data-stu-id="a38c0-104">Input simulation</span></span>](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/InputSimulation.md) | <span data-ttu-id="a38c0-105">エディターでマウスとキーボードの入力を使用して、ヘッドマウント ディスプレイ (HMD) およびハンド トラッキング機能をシミュレートします</span><span class="sxs-lookup"><span data-stu-id="a38c0-105">Use mouse and keyboard input in the editor to simulate a Head-Mounted Display (HMD) and hand tracking features</span></span> |
+| [<span data-ttu-id="a38c0-106">ハンド インタラクション</span><span class="sxs-lookup"><span data-stu-id="a38c0-106">Hand interaction</span></span>](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/HandInteraction.md) | <span data-ttu-id="a38c0-107">多関節ハンド入力を使用して UX コンポーネントと対話します</span><span class="sxs-lookup"><span data-stu-id="a38c0-107">Interact with UX components using articulated hand inputs</span></span> |
+| [<span data-ttu-id="a38c0-108">押しボタン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="a38c0-108">Pressable button component</span></span>](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/PressableButton.md) | <span data-ttu-id="a38c0-109">低レベルのコンポーネントを通じてボタンのブループリントの状態を移行します</span><span class="sxs-lookup"><span data-stu-id="a38c0-109">Drive the state of button blueprints through low level components</span></span> |
+| [<span data-ttu-id="a38c0-110">マニピュレーター コンポーネント</span><span class="sxs-lookup"><span data-stu-id="a38c0-110">Manipulator component</span></span>](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/Manipulator.md) | <span data-ttu-id="a38c0-111">片手または両手操作入力を使用してアクターを移動および回転します</span><span class="sxs-lookup"><span data-stu-id="a38c0-111">Move and rotate an actor with one or two-hand manipulation input</span></span> |
+| [<span data-ttu-id="a38c0-112">動作追従コンポーネント</span><span class="sxs-lookup"><span data-stu-id="a38c0-112">Follow behavior component</span></span>](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/FollowComponent.md) | <span data-ttu-id="a38c0-113">アクターまたはコンポーネントを別のコンポーネントの視野内に維持します</span><span class="sxs-lookup"><span data-stu-id="a38c0-113">Keep an actor or component within sight of another component</span></span> |
+
+# <a name="standalone-features"></a>[<span data-ttu-id="a38c0-114">スタンドアロンの機能</span><span class="sxs-lookup"><span data-stu-id="a38c0-114">Standalone features</span></span>](#tab/standalone)
+
+|  <span data-ttu-id="a38c0-115">機能</span><span class="sxs-lookup"><span data-stu-id="a38c0-115">Feature</span></span>  |  <span data-ttu-id="a38c0-116">機能</span><span class="sxs-lookup"><span data-stu-id="a38c0-116">Capabilities</span></span>  |
+| --- | --- |
+| [<span data-ttu-id="a38c0-117">視線入力</span><span class="sxs-lookup"><span data-stu-id="a38c0-117">Gaze</span></span>](../unreal/unreal-gaze-input.md) | <span data-ttu-id="a38c0-118">ホログラムを見ることによってユーザーがホログラムを対象とすることができるようにします</span><span class="sxs-lookup"><span data-stu-id="a38c0-118">Let users target holograms with by looking at them</span></span> |
+| [<span data-ttu-id="a38c0-119">ハンド トラッキング</span><span class="sxs-lookup"><span data-stu-id="a38c0-119">Hand tracking</span></span>](../unreal/unreal-hand-tracking.md) | <span data-ttu-id="a38c0-120">ユーザーの視線入力に空間アクションを追加します</span><span class="sxs-lookup"><span data-stu-id="a38c0-120">Add spatial actions to your users gaze input</span></span> |
+| [<span data-ttu-id="a38c0-121">ローカル空間アンカー</span><span class="sxs-lookup"><span data-stu-id="a38c0-121">Local Spatial Anchors</span></span>](../unreal/unreal-spatial-anchors.md) | <span data-ttu-id="a38c0-122">アプリケーション セッション間で、現実世界の空間にあるホログラムをローカルに保存します</span><span class="sxs-lookup"><span data-stu-id="a38c0-122">Save holograms locally in real-world space between application sessions</span></span> |
+| [<span data-ttu-id="a38c0-123">Azure Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="a38c0-123">Azure Spatial Anchors</span></span>](../unreal/unreal-azure-spatial-anchors.md) | <span data-ttu-id="a38c0-124">アプリケーション セッション間で、現実世界の空間にあるホログラムをクラウドに保存します</span><span class="sxs-lookup"><span data-stu-id="a38c0-124">Save holograms to the cloud in real-world space between application sessions</span></span> |
+| [<span data-ttu-id="a38c0-125">空間マッピング</span><span class="sxs-lookup"><span data-stu-id="a38c0-125">Spatial mapping</span></span>](../unreal/unreal-spatial-mapping.md) | <span data-ttu-id="a38c0-126">仮想メッシュ オーバーレイを使用して物理領域をマップし、環境の境界をマークします</span><span class="sxs-lookup"><span data-stu-id="a38c0-126">Map your physical space with a virtual mesh overlay to mark the boundaries of your environment</span></span> |
+| [<span data-ttu-id="a38c0-127">空間オーディオ</span><span class="sxs-lookup"><span data-stu-id="a38c0-127">Spatial audio</span></span>](../unreal/unreal-spatial-audio.md) | <span data-ttu-id="a38c0-128">没入型の 3D オーディオを使用してアプリを強化します</span><span class="sxs-lookup"><span data-stu-id="a38c0-128">Enhance your apps with immersive 3D audio</span></span> |
+| [<span data-ttu-id="a38c0-129">音声入力</span><span class="sxs-lookup"><span data-stu-id="a38c0-129">Voice input</span></span>](../unreal/unreal-voice-input.md) | <span data-ttu-id="a38c0-130">ユーザーが話したキーワード、フレーズ、ディクテーションをキャプチャします</span><span class="sxs-lookup"><span data-stu-id="a38c0-130">Capture spoken keywords, phrases, and dictation from your users</span></span>|
+

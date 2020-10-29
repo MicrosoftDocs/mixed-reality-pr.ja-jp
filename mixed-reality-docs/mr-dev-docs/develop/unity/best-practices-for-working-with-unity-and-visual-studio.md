@@ -1,0 +1,63 @@
+---
+title: Unity と Visual Studio を使用するためのベスト プラクティス
+description: Unity と Visual Studio を使用した mixed reality アプリケーションの作成のワークフローを効率化するためのヒントとテクニックです。
+author: mattzmsft
+ms.author: mazeller
+ms.date: 03/21/2018
+ms.topic: article
+keywords: デプロイ、unity、visual studio、HoloLens、HoloLens 2、イマーシブヘッドセット
+ms.openlocfilehash: 4d145568190ea43cf2ec43442a1c3d5ca4d92251
+ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "91683242"
+---
+# <a name="best-practices-for-working-with-unity-and-visual-studio"></a><span data-ttu-id="349c4-104">Unity と Visual Studio を使用するためのベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="349c4-104">Best practices for working with Unity and Visual Studio</span></span>
+
+<span data-ttu-id="349c4-105">Unity で mixed reality アプリケーションを作成する開発者は、Unity と Visual Studio を切り替えて、HoloLens やイマーシブヘッドセットにデプロイされたアプリケーションパッケージを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="349c4-105">A developer creating a mixed reality application with Unity will need to switch between Unity and Visual Studio to build the application package that is deployed to HoloLens and/or an immersive headset.</span></span> <span data-ttu-id="349c4-106">既定では、Visual Studio の2つのインスタンスが必要です (Unity スクリプトを変更し、1つをデバイスに配置してデバッグします)。</span><span class="sxs-lookup"><span data-stu-id="349c4-106">By default, two instances of Visual Studio are required (one to modify Unity scripts and one to deploy to the device and debug).</span></span> <span data-ttu-id="349c4-107">次の手順では、単一の Visual Studio インスタンスを使用して開発を行い、Unity プロジェクトをエクスポートする頻度を下げ、デバッグエクスペリエンスを向上させます。</span><span class="sxs-lookup"><span data-stu-id="349c4-107">The following procedure allows development using single Visual Studio instance, reduces the frequency of exporting Unity projects, and improves the debugging experience.</span></span>
+
+## <a name="improving-iteration-time"></a><span data-ttu-id="349c4-108">イテレーション時間の向上</span><span class="sxs-lookup"><span data-stu-id="349c4-108">Improving iteration time</span></span>
+
+<span data-ttu-id="349c4-109">Unity での .NET スクリプティングバックエンドのサポートは、unity 2018 で非推奨とされ、Unity 2019 + で削除されました。</span><span class="sxs-lookup"><span data-stu-id="349c4-109">Support for .NET scripting back-end in Unity is being deprecated in Unity 2018 and removed in Unity 2019+.</span></span> <span data-ttu-id="349c4-110">そのため、 [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html)に切り替えることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="349c4-110">Thus, it is advised to switch to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html).</span></span> <span data-ttu-id="349c4-111">ただし、Unity から Visual Studio へのビルド時間が長くなる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="349c4-111">However, this may incur longer build times from Unity to Visual Studio.</span></span> <span data-ttu-id="349c4-112">反復処理を高速化するために、最適なコンパイル結果を得るために環境を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="349c4-112">To improve for faster iteration, one should set up their environment for best compilation results.</span></span>
+
+1) <span data-ttu-id="349c4-113">毎回同じディレクトリにプロジェクトをビルドして、インクリメンタルビルドを活用し、ビルド済みのファイルを再利用します。</span><span class="sxs-lookup"><span data-stu-id="349c4-113">Leverage incremental building by building your project to the same directory every time, re-using the pre-built files there</span></span>
+2) <span data-ttu-id="349c4-114">プロジェクト & ビルドフォルダーに対するマルウェア対策ソフトウェアスキャンを無効にする</span><span class="sxs-lookup"><span data-stu-id="349c4-114">Disable anti-malware software scans for your project & build folders</span></span>
+   - <span data-ttu-id="349c4-115">Windows 10 設定アプリで **ウイルス & 脅威保護** を開く</span><span class="sxs-lookup"><span data-stu-id="349c4-115">Open **Virus & threat protection** under your Windows 10 settings app</span></span>
+   - <span data-ttu-id="349c4-116">[ **ウイルス & 脅威保護の設定** ] の下の [ **設定の管理** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="349c4-116">Select **Manage Settings** under **Virus & threat protection settings**</span></span>
+   - <span data-ttu-id="349c4-117">[ **除外** ] セクションで [ **除外の追加または削除** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="349c4-117">Select **Add or remove exclusions** under the **Exclusions** section</span></span>
+   - <span data-ttu-id="349c4-118">[ **除外の追加** ] をクリックし、Unity プロジェクトコードとビルド出力を含むフォルダーを選択します。</span><span class="sxs-lookup"><span data-stu-id="349c4-118">Click **Add an exclusion** and select the folder containing your Unity project code and build outputs</span></span>
+3) <span data-ttu-id="349c4-119">SSD を使用してビルドする</span><span class="sxs-lookup"><span data-stu-id="349c4-119">Utilize an SSD for building</span></span>
+
+<span data-ttu-id="349c4-120">詳細については、「 [IL2CPP のビルド時間の最適化](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) 」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="349c4-120">Review [Optimizing Build Times for IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) for more info.</span></span> <span data-ttu-id="349c4-121">また、 [IL2CPP Scripting バックエンドでのデバッグについて](https://docs.unity3d.com/Manual/windowsstore-debugging-il2cpp.html)も確認してください。</span><span class="sxs-lookup"><span data-stu-id="349c4-121">Also, review [Debugging on IL2CPP Scripting Back-end](https://docs.unity3d.com/Manual/windowsstore-debugging-il2cpp.html).</span></span>
+
+<span data-ttu-id="349c4-122">さらに、 [ *Unityscriptanalyzer* Visual Studio 拡張機能](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer)をインストールすることを検討してください。</span><span class="sxs-lookup"><span data-stu-id="349c4-122">Furthermore, consider installing the [*UnityScriptAnalyzer* Visual Studio extension](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer).</span></span> <span data-ttu-id="349c4-123">このツールは、より最適化された方法で記述できる可能性のあるコードの Unity C# スクリプトを分析します。</span><span class="sxs-lookup"><span data-stu-id="349c4-123">This tool analyzes your Unity C# scripts for code that may be able to be written in a more optimized manner.</span></span>
+
+## <a name="visual-studio-tools-for-unity"></a><span data-ttu-id="349c4-124">Visual Studio Tools for Unity</span><span class="sxs-lookup"><span data-stu-id="349c4-124">Visual Studio Tools for Unity</span></span>
+
+<span data-ttu-id="349c4-125">ダウンロード [Visual Studio Tools for Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)</span><span class="sxs-lookup"><span data-stu-id="349c4-125">Download [Visual Studio Tools for Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)</span></span>
+
+<span data-ttu-id="349c4-126">**Visual Studio Tools for Unity の利点**</span><span class="sxs-lookup"><span data-stu-id="349c4-126">**Benefits of Visual Studio Tools for Unity**</span></span>
+* <span data-ttu-id="349c4-127">ブレークポイントを配置し、変数や複雑な式を評価することで、Visual Studio から Unity のエディター内再生モードをデバッグします。</span><span class="sxs-lookup"><span data-stu-id="349c4-127">Debug Unity in-editor play mode from Visual Studio by putting breakpoints, evaluating variables and complex expressions.</span></span>
+* <span data-ttu-id="349c4-128">Unity プロジェクトエクスプローラーを使用して、Unity に表示されるのとまったく同じ階層のスクリプトを検索します。</span><span class="sxs-lookup"><span data-stu-id="349c4-128">Use the Unity Project Explorer to find your script with the exact same hierarchy that Unity displays.</span></span>
+* <span data-ttu-id="349c4-129">Unity コンソールを Visual Studio 内で直接取得します。</span><span class="sxs-lookup"><span data-stu-id="349c4-129">Get the Unity console directly inside Visual Studio.</span></span>
+* <span data-ttu-id="349c4-130">ウィザードを使用すると、スクリプトをすばやく作成したり、スクリプトに移動したりできます。</span><span class="sxs-lookup"><span data-stu-id="349c4-130">Use wizards to quickly create or navigate to scripts.</span></span>
+
+## <a name="expose-c-class-variables-for-easy-tuning"></a><span data-ttu-id="349c4-131">簡単にチューニングできるように C# クラス変数を公開する</span><span class="sxs-lookup"><span data-stu-id="349c4-131">Expose C# class variables for easy tuning</span></span>
+
+<span data-ttu-id="349c4-132">クラス変数を公開するには、2つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="349c4-132">There are two ways to expose class variables.</span></span> <span data-ttu-id="349c4-133">[SerializeField] 属性をプライベート変数に追加することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="349c4-133">The recommended way is to add the [SerializeField] attribute to your private variables.</span></span> <span data-ttu-id="349c4-134">これにより、エディターからアクセスできますが、プログラムで公開することはできません。</span><span class="sxs-lookup"><span data-stu-id="349c4-134">This allows them to be accessed from the editor but not programmatically exposed.</span></span>  <span data-ttu-id="349c4-135">もう1つの方法は、C# クラスの変数をパブリックにして、エディターの UI で公開することです。</span><span class="sxs-lookup"><span data-stu-id="349c4-135">The other option is to make C# class variables public to expose them in the editor UI.</span></span> 
+
+<span data-ttu-id="349c4-136">どちらの方法でも、エディターでの再生中に変数を簡単に調整できるようになります。</span><span class="sxs-lookup"><span data-stu-id="349c4-136">Both approaches make it possible to easily tweak variables while playing in-editor.</span></span> <span data-ttu-id="349c4-137">これは特に、整備士プロパティを調整する場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="349c4-137">This is especially useful for tuning interaction mechanic properties.</span></span>
+
+## <a name="regenerate-uwp-visual-studio-solutions-after-windows-sdk-or-unity-upgrade"></a><span data-ttu-id="349c4-138">Windows SDK または Unity アップグレード後に UWP Visual Studio ソリューションを再生成する</span><span class="sxs-lookup"><span data-stu-id="349c4-138">Regenerate UWP Visual Studio solutions after Windows SDK or Unity upgrade</span></span>
+
+<span data-ttu-id="349c4-139">ソース管理にチェックインされた UWP Visual Studio ソリューションは、新しい Windows SDK または Unity エンジンにアップグレードした後に最新の状態になります。</span><span class="sxs-lookup"><span data-stu-id="349c4-139">UWP Visual Studio solutions checked in to source control can get out-of-date after upgrading to a new Windows SDK or Unity engine.</span></span> <span data-ttu-id="349c4-140">アップグレード後にこの問題を解決するには、Unity から新しい UWP ソリューションを構築し、すべての相違点をチェックインソリューションにマージします。</span><span class="sxs-lookup"><span data-stu-id="349c4-140">You can resolve this after the upgrade by building a new UWP solution from Unity, then merging any differences into the checked-in solution.</span></span>
+
+## <a name="use-text-format-assets-for-easy-comparison-of-content-changes"></a><span data-ttu-id="349c4-141">テキスト形式のアセットを使用して、コンテンツの変更を簡単に比較する</span><span class="sxs-lookup"><span data-stu-id="349c4-141">Use text-format assets for easy comparison of content changes</span></span>
+
+<span data-ttu-id="349c4-142">アセットをテキスト形式で保存すると、Visual Studio でのコンテンツ変更の相違点を簡単に確認できるようになります。</span><span class="sxs-lookup"><span data-stu-id="349c4-142">Storing assets in text format makes it easier to review content change diffs in Visual Studio.</span></span> <span data-ttu-id="349c4-143">これは、 **資産のシリアル化** モードを [ **テキストを強制** する] に変更することで、[プロジェクト設定の編集 > > エディター] で有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="349c4-143">You can enable this in "Edit > Project Settings > Editor" by changing **Asset Serialization** mode to **Force Text** .</span></span> <span data-ttu-id="349c4-144">ただし、テキスト資産ファイルの変更をマージすると、エラーが発生しやすく、推奨されません。そのため、ソース管理システムで排他的なバイナリのチェックアウトを有効にすることを検討してください。</span><span class="sxs-lookup"><span data-stu-id="349c4-144">However, merging text asset file changes is error-prone and not recommended, so consider enabling exclusive binary checkouts in your source control system.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="349c4-145">関連項目</span><span class="sxs-lookup"><span data-stu-id="349c4-145">See also</span></span>
+- [<span data-ttu-id="349c4-146">Visual Studio Tools for Unity</span><span class="sxs-lookup"><span data-stu-id="349c4-146">Visual Studio Tools for Unity</span></span>](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
+- [<span data-ttu-id="349c4-147">IL2CPP のビルド時間の最適化</span><span class="sxs-lookup"><span data-stu-id="349c4-147">Optimizing Build Times for IL2CPP</span></span>](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
+- [<span data-ttu-id="349c4-148">*Unityscriptanalyzer* Visual Studio 拡張機能</span><span class="sxs-lookup"><span data-stu-id="349c4-148">*UnityScriptAnalyzer* Visual Studio extension</span></span>](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer)

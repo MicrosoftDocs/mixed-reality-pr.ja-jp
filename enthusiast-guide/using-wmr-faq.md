@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: 62b6b61f74abfd77ba61563639ff719576551f07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: cf02ccfc92d80ee1d1a8f6ca3d4ab55650f4a62c
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685631"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044437"
 ---
 # <a name="using-windows-mixed-reality-faq"></a>Windows Mixed Reality の使用に関する FAQ
 
@@ -61,7 +61,7 @@ Windows Mixed Reality は、カードを装着してヘッドホンを接続し�
     * [準備完了]: すべてのコントローラーが設定されています。
     * 失われた追跡– Mixed Reality ポータルがコントローラーを見つけることができません。 ヘッドセットの前に保持し、4秒間、2秒間、もう一度 [ **Windows** ] ボタンを押して再起動します。
     * バッテリ低下-コントローラーのバッテリを交換します。
-* Wi-fi を使用している場合は、ワイヤレスの干渉を減らすために PC を 5GHz Wi-fi ネットワークに接続してみてください。 
+* Wi-fi を使用している場合は、ワイヤレスの干渉を減らすために、PC を 5GHz Wi-Fi ネットワークに接続してみてください。 
 * コントローラーに直接ペアリングされている新しいヘッドセットの場合は、[ **...]** を選択します。 ボタンを **クリックし、[** **コントローラーの設定** ] を選択します。 これにより、コントローラーをヘッドセットにペアリングするヘッドセットアプリに移動します。  
 * 次のように、コントローラーが直接ペアリングする Bluetooth が組み込まれていない古いヘッドセットの場合は、次のようになります。  
     * [設定] を選択して、PC の [Bluetooth & 他のデバイス > デバイスを > し、コントローラーがペアリングされていることを確認します。それ以外の場合は、ペアにする必要があります。 
@@ -93,9 +93,9 @@ Mixed reality のビジュアルが最適ではない場合は、次の操作を
 
 フロアがオフになっている場合 (たとえば、浮動小数点表示のような場合) は、ヘッドセットを装着して変更を行うときに、[ **> の部屋の調整を開始** する] を選択します。
 
-## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>「PC に接続して充電する」というメッセージが表示されていました。 なぜですか?
+## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>「PC に接続して充電する」というメッセージが表示されていました。 なぜでしょうか。
 
-ラップトップを使用している場合、Windows Mixed Reality は、PC が完全に充電され、電源が接続されている場合に最適に動作します。 
+ラップトップを使用している場合、Windows Mixed Reality は、PC が完全に充電され、電源が接続されている場合に最適に動作します。
 
 ## <a name="how-do-i-uninstall-windows-mixed-reality"></a>Windows Mixed Reality をアンインストール操作方法には
 
@@ -106,14 +106,14 @@ Mixed reality のビジュアルが最適ではない場合は、次の操作を
 > [!NOTE]
 > "Windows Mixed Reality の削除を完了できませんでした" というメッセージが表示された場合は、環境に関する情報など、一部のファイルがまだコンピューター上に存在している可能性があります。 Windows Mixed Reality を後で再インストールする場合は、問題が発生する可能性があります。
 > 
-> PC から残りの Windows Mixed Reality 情報を手動で削除する方法については、こちらの **[記事](troubleshooting-windows-mixed-reality.md#how-to-uninstall-windows-mixed-reality)** を参照してください。 
+> PC から残りの Windows Mixed Reality 情報を手動で削除する方法については、こちらの **[記事](installation_errors.md)** を参照してください。
 
-## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Windows Mixed Reality を使用しているときに Wi-fi の速度が低下する
+## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Windows Mixed Reality を使用しているときに Wi-Fi 速度が低下する
 
-2.4 GHz の Wi-fi 接続を使用している場合は、動作コントローラーによって Wi-fi の速度が低下する可能性があります。 次のいずれかの操作を試してください。
+2.4 GHz の Wi-Fi 接続を使用している場合は、動作コントローラーによって Wi-fi の速度が低下する可能性があります。 次のいずれかの操作を試してください。
 
 <!-- TODO: Use Windows Mixed Reality PC hardware guidelines interlink -->
-* 5GHz Wi-fi 接続 (使用可能な場合) に切り替えます。 [詳細情報](https://support.microsoft.com/help/4000461)
+* 5GHz Wi-Fi 接続を使用できる場合は、その接続に切り替えます。 [詳細情報](https://support.microsoft.com/help/4000461)
 * 別の Bluetooth アダプターを使用して、動きコントローラーを PC に接続します。 [推奨されるアダプターの表示](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ## <a name="what-is-the-experience-options-setting"></a>エクスペリエンスオプションの設定は何ですか?

@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: e968b311ca93ccf3f197fbc4a6d2abec7284a686
-  ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+  ms.openlocfilehash: 7d5ba4ded77079858ef36c62a4c90e2fdd5794f5
+  ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/03/2020
-  ms.locfileid: "91674797"
+  ms.lasthandoff: 10/30/2020
+  ms.locfileid: "93036278"
 highlightedContent:
   items:
   - title: Mixed Reality とは
@@ -42,9 +42,9 @@ highlightedContent:
   - title: VR 愛好者
     itemType: how-to-guide
     url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
-  - title: サンプル アプリを試す
-    itemType: sample
-    url: develop/unity/samples.md
+  - title: Mixed Reality の Learn モジュール
+    itemType: learn
+    url: develop/mr-learning-overview.md
 productDirectory:
   title: Mixed Reality を使ってみる
   summary: デザイナー、開発者、IT 専門家それぞれが使用を開始するためのパスが用意されています。

@@ -1,18 +1,18 @@
 ---
 title: 音声とオーディオに関する Faq
-description: Windows Mixed Reality の高度なトラブルシューティングは、標準のコンシューマーサポートドキュメントを超えています。
+description: 音声とオーディオの Windows Mixed Reality のトラブルシューティングは、標準のコンシューマーサポートドキュメントを超えています。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、オーディオの問題、音声の問題
-ms.openlocfilehash: 98537d7c8fb1da9f582b7a55c4a9c7f3180c7855
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 811c58196073a2a55af58978a4248033a1c4aef2
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685735"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131846"
 ---
 # <a name="speech-and-audio-faqs"></a>音声とオーディオに関する Faq
 
-## <a name="i-cant-hear-any-sound-in-my-headset-or-sound-is-playing-through-my-computer-instead-of-my-headset"></a>ヘッドセット内のサウンドが聞こえないか、またはサウンドがヘッドセットではなくコンピューターを使用して再生されています。
+## <a name="i-cant-hear-any-sound-in-my-headset-or-sound-is-playing-through-my-computer-instead-of-my-headset"></a>ヘッドセットのサウンドが聞こえない、またはサウンドが自分のヘッドセットではなくコンピューターを使用して再生されている
 
 * イマーシブヘッドセットに内蔵ヘッドホンが含まれていない場合は、ヘッドホンをヘッドホンのオーディオジャックに接続します。 このジャックは、ヘッドセットのバイザーまたはレンズの内側または下に配置されることがよくあります。 ヘッドセットの製造元に確認してください (見つからない場合)。
 * オーディオヘッドセットの中には、音量を調整するための物理的なボタンがあるものもあります。 オーディオが動作していない場合は、ボリュームが有効になっているかミュートされているかを確認します。
@@ -22,11 +22,11 @@ ms.locfileid: "91685735"
 * [設定] の [サウンド] コントロールパネルには、無効になっているエンドポイントではなく、有効になっているオーディオエンドポイントのみが表示されます。 [ **> >** ヘッドセットを装着していない場合、ヘッドセットオーディオデバイスは無効になります。 これを表示するには、コントロールパネルの [サウンド] を右クリックし、[無効なデバイスの表示] を選択します。 デバイス名は "Realtek USB 2.0 Audio" です ([プロパティ] ページで名前を変更できます)。 これは、[再生] タブと [記録] タブの両方に対して実行できます。
 * オーディオが混合の現実のアプリ (Netflix など) で動作していない場合は、Windows Mixed Reality が OS のバージョンと一致するように自動的に更新されないという既知の問題が原因である可能性があります。 この問題を解決して、最適な Mixed Reality エクスペリエンスを得るには、[設定] [ **& のセキュリティ > の更新] Windows Update > 更新プログラムの確認] の >** に移動します。
 
-注: Windows Mixed Reality 空間オーディオは、イマーシブヘッドセットに内蔵または直接接続されているヘッドホンで最適に動作します。 Pc スピーカーまたは PC に接続されているヘッドホンが、空間オーディオで適切に動作しないことがあります。
+> [!NOTE]
+> * Windows Mixed Reality 空間オーディオは、イマーシブヘッドセットに内蔵または直接接続されているヘッドホンで最適に動作します。 Pc スピーカーまたは PC に接続されているヘッドホンが、空間オーディオで適切に動作しないことがあります。
+> * Windows Mixed Reality は、Bluetooth オーディオヘッドセットをサポートしていません。
 
-注: Windows Mixed Reality では、Bluetooth オーディオヘッドセットはサポートされていません。
-
-## <a name="im-experiencing-sudden-volume-changes-lost-audio-or-buzzing"></a>突然、大量の変更、オーディオの紛失、またはブーンが発生しています。
+## <a name="im-experiencing-sudden-volume-changes-lost-audio-or-buzzing"></a>突然のボリューム変更、オーディオの紛失、またはブーンが発生しています
 
 * 複数のアプリ (SteamVR を通じて起動されるものの多くを含む) は、混合 Reality ポータルの開始時または停止時にオーディオデバイスが変更されたときにオーディオを紛失したり、ハングしたりする可能性があります。 これを修正するには、Mixed Reality ポータルを再度開き、アプリを再起動します。
 * 別のマルチメディア USB デバイス (web cam など) が Windows Mixed Reality ヘッドセットと同じ内部または外部の USB ハブを共有している場合、ヘッドセットオーディオジャックまたはヘッドホンが、音が聞こえない場合や音声がまったくない場合があります。 別のハブを使用している USB ポートにヘッドセットを接続するか、他の USB マルチメディアデバイスを切断/無効にします。
@@ -35,24 +35,24 @@ ms.locfileid: "91685735"
     * 専用の外付け USB 3.0 ハブを使用する
     * PC の別の USB ポート
 
-## <a name="my-bluetooth-audio-headset-isnt-working-as-expected"></a>Bluetooth オーディオヘッドセットが想定どおりに動作していません。
+## <a name="my-bluetooth-audio-headset-isnt-working-as-expected"></a>Bluetooth オーディオヘッドセットが想定どおりに動作していません
 
-Windows Mixed Reality では、Bluetooth オーディオヘッドセットを使用しないことをお勧めします。 Bluetooth オーディオ周辺機器は、Windows Mixed Reality の音声と空間サウンドエクスペリエンスではうまく機能しません。 Bluetooth オーディオヘッドセットでは、マイク入力とステレオ出力を同時にサポートできないため、gamechat やその他の音声入力に使用したときに、ステレオまたは spatialized サウンドが聞こえません。 Bluetooth オーディオヘッドセットは、モーションコントローラーのエクスペリエンスに悪影響を与えることもあります。 
+Windows Mixed Reality では、Bluetooth オーディオヘッドセットを使用しないことをお勧めします。 Bluetooth オーディオ周辺機器は、Windows Mixed Reality の音声と空間サウンドエクスペリエンスではうまく機能しません。 Bluetooth オーディオヘッドセットでは、マイク入力とステレオ出力を同時にサポートできないため、gamechat やその他の音声入力に使用したときに、ステレオまたは spatialized サウンドが聞こえません。 Bluetooth オーディオヘッドセットは、モーションコントローラーのエクスペリエンスに悪影響を与えることもあります。
 
-## <a name="sound-isnt-coming-from-expected-directions"></a>サウンドが想定された方向から来ていません。
+## <a name="sound-isnt-coming-from-expected-directions"></a>サウンドが想定された方向から来ていません
 
 Windows Mixed Reality ホームには、空間サウンド (自宅に配置されているアプリケーションのような音を鳴らすオーディオ) が含まれています。 各アプリから前後に移動していくと、サウンドの方向とレベルは写実的な意味に変わります。 予期しない音の原因として考えられる理由を次に示します。
 
-* 自宅でバックグラウンド対応の音楽アプリ (Groove Music など) から音楽を開いて再生し、ゲームのようなイマーシブ VR エクスペリエンスを開くと、音楽アプリからのサウンドが空間サウンドからステレオにクロスフェードされます。 お客様とサウンド間の距離がなくなったため、音量が大きくなることがあります。 
+* 自宅でバックグラウンド対応の音楽アプリ (Groove Music など) から音楽を開いて再生し、ゲームのようなイマーシブ VR エクスペリエンスを開くと、音楽アプリからのサウンドが空間サウンドからステレオにクロスフェードされます。 お客様とサウンド間の距離がなくなったため、音量が大きくなることがあります。
 * Windows Mixed Reality ヘッドセットを使用する前に Cortana が有効になっている場合は、Windows Mixed Reality ホームのアプリに適用される空間サウンドが失われる可能性があります。 この問題を解決するには、Windows Mixed Reality を起動する前に、デスクトップの [ **> 設定** ] で [cortana による cortana への応答を許可する] をオフにするか、"windows Sonic for ヘッドホン" を有効にします。
     1. Windows Mixed Reality ホームのデスクトップアプリウィンドウにアクセスします。
     2. デスクトップタスクバーのスピーカーアイコンを左クリックし、オーディオデバイスの一覧から選択します。
     3. デスクトップタスクバーのスピーカーアイコンを右クリックし、[スピーカーのセットアップ] メニューの [ヘッドホン用 Windows] を選択します。
     4. すべてのオーディオデバイス (エンドポイント) に対して、この手順を繰り返します。
 
-## <a name="speech-commands-are-not-working-as-expected"></a>音声コマンドが想定どおりに動作していません。
+## <a name="speech-commands-are-not-working-as-expected"></a>音声コマンドが想定どおりに動作していません
 
-* 音声コマンドを使用するには、PC の音声と言語の設定が [Windows Mixed Reality でサポートされる言語](https://support.microsoft.com/en-us/help/4039262/windows-10-mixed-reality-setup-faq#Languages)に設定されている必要があります。 Windows の音声と言語の設定を確認するには、[設定] > [時刻] & [言語 **> 地域 & 言語** と設定] を選択し、[ **> & 言語 > 音声** ] を選択します。
+* 音声コマンドを使用するには、PC の音声と言語の設定が [Windows Mixed Reality でサポートされる言語](https://support.microsoft.com/help/4039262/windows-10-mixed-reality-setup-faq#Languages)に設定されている必要があります。 Windows の音声と言語の設定を確認するには、[設定] > [時刻] & [言語 **> 地域 & 言語** と設定] を選択し、[ **> & 言語 > 音声** ] を選択します。
 * ヘッドセットにマイクが内蔵されていない場合は、ヘッドホンをヘッドホンまたは PC に接続する必要があります。 マイクの入力を磨耗したときにヘッドセットに自動的に切り替えるには、[設定] に移動して、[ **オーディオと音声] > [オーディオと音声** ] の [設定] に移動し、[ヘッドセットを磨耗するときにヘッドセットの mic に切り替える] をオンに > ます。
 * オーディオヘッドセットには、マイクのミュートとミュート解除を行うための物理的なボタンがあります。 音声コマンドが動作していない場合は、マイクがミュートされているかどうかを確認します。
 * マイクを使用したオーディオヘッドセットは、dangles というケーブルから、周囲のノイズを持つ環境の音声コマンドには適していません。
@@ -60,13 +60,13 @@ Windows Mixed Reality ホームには、空間サウンド (自宅に配置さ�
 * 一部の Pc では、ヘッドセット接続マイクの既定の音声キャプチャのゲインが低すぎることがあります。 信頼性の低い音声コマンドまたはディクテーションが発生した場合は、マイクのセットアップのトラブルシューティングツールを実行します。
     1. ヘッドセットを装着したまま、Windows Mixed Reality ホームのデスクトップアプリにアクセスします (Windows Mixed Reality で使用するマイクに影響を与える場合)。
     2. [設定] [>] [ **言語 > 音声 &** ] に表示されます。
-    3. [マイク] セクションで [はじめに] を選択します。 
+    3. [マイク] セクションで [はじめに] を選択します。
     4. トラブルシューティングウィザードで適切なエンドポイントを選択します。
 
-## <a name="i-only-have-one-audio-headset-and-i-want-to-use-it-for-both-desktop-and-my-headset"></a>オーディオヘッドセットは1つだけで、デスクトップと自分のヘッドセットの両方に使用します。
+## <a name="i-only-have-one-audio-headset-and-i-want-to-use-it-for-both-desktop-and-my-headset"></a>オーディオヘッドセットが1つだけあり、デスクトップとマイヘッドセットの両方に使用する
 
 オーディオヘッドセットが1つしかなく、ヘッドホンが内蔵されていない場合は、ヘッドセットの代わりにオーディオヘッドセットを PC に接続します。 次に、Mixed Reality ポータルの設定で、[ヘッドセットオーディオに切り替える] をオフにします。
 
-## <a name="i-want-to-switch-to-dolby-atmos-for-headphones"></a>ヘッドフォン用に Dolby Atmos に切り替える必要があります。
+## <a name="i-want-to-switch-to-dolby-atmos-for-headphones"></a>ヘッドフォン用の Dolby Atmos に切り替えたい
 
 Windows Mixed Reality 環境とそのアプリでは、Windows Sonic for ヘッドホン空間オーディオテクノロジを使用します。これは、mixed reality エクスペリエンス用にカスタマイズされています。 他の空間オーディオテクノロジ (Dolby Atmos for ヘッドホンなど) は、SteamVR ゲームのような全画面アプリに適用できますが、windows の混合現実シェル環境やアプリ (たとえば、Loft の壁に web ブラウザーを配置するなど) や、ヘッドホンの空間サウンドと acoustics を使用するように設計されています。

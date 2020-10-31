@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、Windows Mixed Reality のアンインストール、サポートされる言語
 appliesto:
 - Windows 10
-ms.openlocfilehash: aa61148a115ae295c1dc64b575a2fae7b0111470
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: a49008cb7d6a51385cb0d4ece7dfae3018aefe88
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044456"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131866"
 ---
 # <a name="other-questions"></a>その他の質問
 
@@ -29,7 +29,7 @@ ms.locfileid: "93044456"
     * Windows Update を使用してドライバーを更新します。
     * 更新プログラムによって問題が解決されない場合は、製造元の web サイトにアクセスして、最新のドライバー更新プログラムをインストールしてください。 
     * GPU で更新プログラムが利用できない場合、デバイスで WMR がサポートされていない可能性があります。 必要な場合は、 [サポート](https://support.microsoft.com)にお問い合わせください。
-    
+
 Windows Mixed Reality セットアップでグラフィックスカードが要件を満たしていないと思われる場合は、ヘッドセットが正しいカードに接続されていることを確認します。
 
 ## <a name="my-samsung-odyssey-or-odyssey-headset-firmware-update-is-stuck"></a>Samsung Odyssey または Odyssey + ヘッドセットファームウェアの更新がスタックしています。
@@ -37,6 +37,7 @@ Windows Mixed Reality セットアップでグラフィックスカードが要�
 Samsung は、"Samsung HMD Odyssey セットアップ" と "Samsung HMD Odyssey + セットアップ" デバイスコンパニオンアプリを通じて配信されるヘッドセットファームウェアの更新プログラムを所有および発行します。 Samsung のファームウェア更新に関する問題の詳細については、Samsung カスタマサービスにお問い合わせください。
 
 ファームウェアの更新プロセスがスタックし、5分以上経過していない場合は、次の手順を実行します。
+
 * 他のすべての USB デバイスを一時的に取り外し、ファームウェアの更新を再試行してください。
 * Samsung ヘッドセットを PC の別の USB 3.0 ポートに接続します。
 * ギガバイトの AORUS App Center など、ファームウェアの更新を妨げる可能性のあるソフトウェアがインストールされている場合は、無効にするか、アンインストールします。
@@ -45,28 +46,32 @@ Samsung は、"Samsung HMD Odyssey セットアップ" と "Samsung HMD Odyssey 
 ## <a name="how-do-i-access-my-pc-desktop-in-mixed-reality"></a>Mixed reality で PC デスクトップにアクセス操作方法には、
 Windows のヘッドセットでデスクトップアプリを起動し、[ **すべてのアプリ] > [デスクトップ] >** て、mixed REALITY で PC デスクトップにアクセスします。
 
-## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>混合現実に複数のモニターを表示するにはどうすればよいですか。
-既定では、デスクトップアプリが自動的に切り替えられ、フォーカスがあるモニターが表示されます。 すべてのモニターを mixed reality で表示するには、次のようにします。 
+## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>Mixed Reality で複数のモニターを表示する方法はありますか
+
+既定では、デスクトップアプリが自動的に切り替えられ、フォーカスがあるモニターが表示されます。 すべてのモニターを mixed reality で表示するには、次のようにします。
+
 * アプリの左上隅にある [モニター] アイコンをクリックします。
 * [モニターを自動的に切り替える] を無効にします。
 * 表示するモニターを選択します。
 * デスクトップアプリの別のインスタンスを起動します。
 * そのインスタンスに表示するモニターを選択します。
 * すべての物理モニターについて、この手順を繰り返します。
-混合現実を再起動するたびに、各デスクトップアプリに表示するモニターを再選択する必要があることに注意してください。 
+混合現実を再起動するたびに、各デスクトップアプリに表示するモニターを再選択する必要があることに注意してください。
 
-## <a name="my-desktop-app-only-shows-a-black-screen"></a>デスクトップアプリでは、黒い画面のみが表示されます。
+## <a name="my-desktop-app-only-shows-a-black-screen"></a>デスクトップアプリが黒い画面のみを表示する
+
 PC に Nvidia ハイブリッド GPU が搭載されている場合、この問題は、Nvidia デバイスが、統合された GPU ではなく、個別の GPU で runtimebroker.exe を実行していることが原因である可能性があります。 この問題を解決するには、「[新しいプログラムに対して最適な設定を作成操作方法](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)には」の手順に従います。 C:\windows\system32\runtimebroker.exe を追加し、それを "統合グラフィックス" プロセッサ上で強制的に実行します。 
 
 ## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Windows Mixed Reality を使用すると Wi-Fi 速度が低下します。
 
 2.4 GHz の Wi-Fi 接続を使用している場合は、動作コントローラーによって Wi-fi の速度が低下する可能性があります。 次のいずれかの操作を試してください。
-* 5GHz Wi-Fi 接続を使用できる場合は、その接続に切り替えます。 [詳細については、こちらを参照してください](https://support.microsoft.com/en-us/help/4000461)。
-* 別の Bluetooth アダプターを使用して、動きコントローラーを PC に接続します。 [推奨されるアダプター](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)を参照してください。
+
+* 5GHz Wi-Fi 接続を使用できる場合は、その接続に切り替えます。 [詳細については、こちらを参照してください](https://support.microsoft.com/help/4000461)。
+* 別の Bluetooth アダプターを使用して、動きコントローラーを PC に接続します。 [推奨されるアダプター](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)を参照してください。
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>「PC に接続して充電する」というメッセージが表示されていました。 なぜでしょうか。
 
-ラップトップを使用している場合、Windows Mixed Reality は、PC が完全に充電され、電源が接続されている場合に最適に動作します。 
+ラップトップを使用している場合、Windows Mixed Reality は、PC が完全に充電され、電源が接続されている場合に最適に動作します。
 
 ## <a name="what-is-the-experience-options-setting"></a>エクスペリエンスオプションの設定は何ですか?
 
@@ -75,9 +80,10 @@ PC に Nvidia ハイブリッド GPU が搭載されている場合、この問�
 * 60Hz: [リフレッシュレート] を60Hz に設定し、Mixed Reality ポータルでのビデオキャプチャやプレビューなどの特定の機能をオフにします。
 * 90Hz: リフレッシュレートを90Hz に設定します。
 
-## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Windows Mixed Reality ではどの言語がサポートされていますか。
+## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Windows Mixed Reality でサポートされる言語
 
 Windows Mixed Reality は、次の言語で使用できます。
+
 * 簡体字中国語 (中国)
 * 英語 (オーストラリア)
 * 英語 (カナダ)

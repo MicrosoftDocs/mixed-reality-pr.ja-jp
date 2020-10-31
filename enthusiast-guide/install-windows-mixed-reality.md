@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、はじめに、セットアップ、Mixed Reality ポータル
 appliesto:
 - Windows 10
-ms.openlocfilehash: b07e1a90247072952969cb2e2fc845bdb906bcae
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: a9333e9f4d80ea73724e2530f2e94c3d0e32d0d4
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915567"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132106"
 ---
 # <a name="install-windows-mixed-reality-software"></a>Windows Mixed Reality ソフトウェアをインストールする
 
@@ -51,9 +51,10 @@ Windows Mixed Reality のサイズは約 1 GB です。ダウンロードにか�
 
 **PC でヘッドセットが認識されていることを確認する**
 
-再起動がうまくいかない場合は、ヘッドセットが PC で認識されていることを確認してください。 [スタート] を選択し、検索ボックスに「device manager」と入力して、一覧から選択します。 [Mixed reality デバイス] を展開し、ヘッドセットが表示されているかどうかを確認します。 
+再起動がうまくいかない場合は、ヘッドセットが PC で認識されていることを確認してください。 [スタート] を選択し、検索ボックスに「device manager」と入力して、一覧から選択します。 [Mixed reality デバイス] を展開し、ヘッドセットが表示されているかどうかを確認します。
 
 一覧に表示されていない場合は、次の操作を試してください。
+
 * 使用可能な場合は、ヘッドセットを PC の別のポートに接続します。
 * [Windows Update](https://support.microsoft.com/help/12373)から、最新のソフトウェア更新プログラムを確認します。
 * Windows Mixed Reality をアンインストールして再インストールします。
@@ -91,8 +92,9 @@ Windows Mixed Reality のサイズは約 1 GB です。ダウンロードにか�
 ![セットアップの準備をしています](images/1050px-gettingsetup.png)
 
 ## <a name="see-also"></a>関連項目
+
 * [コミュニティへの質問](https://answers.microsoft.com)
 * [サポートについては、お問い合わせください](https://support.microsoft.com/contactus/)
 * [インストールのトラブルシューティング](installation_errors.md)
-* [セットアップのトラブルシューティング](set-up-questions.md)
+* [セットアップのトラブルシューティング](wmr-setup-faq.md)
 * [Windows Mixed Reality を設定する](set-up-windows-mixed-reality.md)

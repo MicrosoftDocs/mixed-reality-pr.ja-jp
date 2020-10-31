@@ -1,18 +1,18 @@
 ---
 title: WebVR に関する Faq
-description: Windows Mixed Reality の高度なトラブルシューティングは、標準のコンシューマーサポートドキュメントを超えています。
+description: Web Mixed Reality のトラブルシューティングは、標準のコンシューマーサポートドキュメントを超えています。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、WebVR
-ms.openlocfilehash: 8bc7ab010c1f6ebddf899262b09ba1d08f4ab3ae
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e03051008921f87e18cae3a9f6db369e54c56b94
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685623"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131936"
 ---
 # <a name="webvr-faqs"></a>WebVR に関する Faq
 
-## <a name="why-cant-i-see-my-controllers-when-viewing-vr-content-from-edge"></a>Edge から VR コンテンツを表示するときにコントローラーが表示できないのはなぜですか。
+## <a name="why-cant-i-see-my-controllers-when-viewing-vr-content-from-edge"></a>Edge から VR コンテンツを表示するときにコントローラーが表示できないのはなぜですか
 
 すべての WebVR コンテンツは、モーションコントローラーをサポートするために作成されるわけではありません。 WebVR を使用すると、コンテンツ開発者は、ゲームコントローラーやモーションコントローラーなど、さまざまな種類の入力をサポートできます。 サイトにコントローラーが表示されない場合は、モーションコントローラーがサポートされていない可能性があります。
 
@@ -31,6 +31,7 @@ WebVR は、現時点では Edge の Windows Mixed Reality デバイスでのみ
 ## <a name="when-i-enter-vr-from-a-website-why-do-i-see-a-blank-screen-in-my-headset"></a>Web サイトから VR を入力したときに、ヘッドセットに空の画面が表示されるのはなぜですか。
 
 Web サイトで、マルチ GPU マシン (ハイブリッド GPU ラップトップを含む) のサポートが実装されていない可能性があります。 試行する操作:
+
 * ページを再度読み込みます。
 * デスクトップコンピューターで、Microsoft Edge を表示しているモニターと同じグラフィックスアダプターにヘッドセットを接続します。 両方を高電力グラフィックスカードに接続し、統合されたグラフィックスアダプターには挿入しません。
 
@@ -38,13 +39,14 @@ Web サイトで、マルチ GPU マシン (ハイブリッド GPU ラップト�
 
 これは、Mixed Reality 崖ハウスのエッジから WebVR を実行するときの既知の問題です。 これを解決するには、windows のボタンを押して WebVR エクスペリエンスを終了する代わりに、キーボードの esc キーを押すか、またはグレー表示のエッジウィンドウを選択してビデオを停止します。
 
-## <a name="can-i-use-webvr-on-the-hololens"></a>HoloLens で WebVR を使用できますか。
+## <a name="can-i-use-webvr-on-the-hololens"></a>HoloLens で WebVR を使用できます
 
 この時点で、Microsoft は HoloLens での WebVR について何も発表していません。
 
-## <a name="why-is-my-view-at-floor-level-when-viewing-webvr-content-from-edge"></a>Edge から WebVR コンテンツを表示するときに、ビューが floor レベルで表示されるのはなぜですか。
+## <a name="why-is-my-view-at-floor-level-when-viewing-webvr-content-from-edge"></a>Edge から WebVR コンテンツを表示するときに、ビューが floor レベルで表示される理由
 
 この web サイトでは、Windows Mixed Reality ヘッドセットは正しくサポートされていません。 これを解決するには、次のようにします。
+
 1. ヘッドセットをスペースの床に配置します。
 2. (Mixed reality ではなく) デスクトップで Microsoft Edge を使用して WebVR ページに移動します。
 3. [Enter VR] を選択します。
@@ -54,20 +56,20 @@ Web サイトで、マルチ GPU マシン (ハイブリッド GPU ラップト�
 ## <a name="the-display-is-very-low-resolution-in-some-webvr-experiences"></a>一部の WebVR エクスペリエンスでは、表示が非常に低解像度です。
 
 これらの web サイトは、高解像度ヘッドセットを正しくサポートしていません。 回避するには、次のようにします。
+
 * (Mixed reality 崖家ではなく) デスクトップから WebVR を起動する場合は、[Enter VR] を選択する前にウィンドウが最大化されていることを確認します。
 * VR を入力した後、Microsoft Edge ウィンドウのサイズを変更しないようにします。
 
-## <a name="why-does-the-webvr-immersive-view-exit-when-i-change-browser-tabs"></a>ブラウザータブを変更すると WebVR イマーシブビューが終了するのはなぜですか。
+## <a name="why-does-the-webvr-immersive-view-exit-when-i-change-browser-tabs"></a>ブラウザータブを変更すると WebVR イマーシブビューが終了するのはなぜですか
 
-これは正しい動作です。 セキュリティ上の理由から、接続されているヘッドセットにアクセスできるのは、[アクティブブラウザー] タブだけです。
+これは通常の動作です。 セキュリティ上の理由から、接続されているヘッドセットにアクセスできるのは、[アクティブブラウザー] タブだけです。
 
 ## <a name="why-cant-i-hear-audio-on-a-particular-webvr-experience"></a>特定の WebVR エクスペリエンスでオーディオを再生できないのはなぜですか。
 
 Web サイトでは、Microsoft Edge で現在サポートされていない OGG オーディオファイル形式が使用されている可能性があります。
 
-破損したサイトは、 [問題の追跡ツール](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/)で Microsoft Edge ブラウザーチームに直接、または [#EdgeBug ハッシュタグ](https://blogs.windows.com/msedgedev/2016/08/11/edgebug-twitter/)を使用して twitter 経由で報告できます。
+破損したサイトは、 [問題の追跡ツール](https://developer.microsoft.com/microsoft-edge/platform/issues/)で Microsoft Edge ブラウザーチームに直接、または [#EdgeBug ハッシュタグ](https://blogs.windows.com/msedgedev/2016/08/11/edgebug-twitter/)を使用して twitter 経由で報告できます。
 
-## <a name="why-does-haptic-feedback-not-work-in-webvr-with-motion-controllers"></a>Haptic のフィードバックが、motion controller と WebVR で動作しないのはなぜですか。
+## <a name="why-does-haptic-feedback-not-work-in-webvr-with-motion-controllers"></a>Haptic フィードバックが WebVR とモーションコントローラーで動作しないのはなぜですか。
 
 Microsoft Edge では、現在、WebVR ゲームパッド API 拡張機能の haptics はサポートされていません。
-

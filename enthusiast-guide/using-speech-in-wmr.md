@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: cd7a1ba20fa695bf5c13adef301f63491b1ca586
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b65be6082967b49ee9d3c8b97cb0a18f9149a3ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685647"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131956"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Windows Mixed Reality での音声の使用
 
@@ -88,7 +88,7 @@ Windows Mixed Reality 全体を通じて、より迅速に使用できます。 
 | [スタート] メニューに戻る (すべてのアプリから) | 戻る |
 | 写真を撮って | カメラ |
 | ビデオを見る | ビデオ |
-| デスクトップの混合 Reality ポータルでヘッドセットビューを表示する | [プレビュー] |
+| デスクトップの混合 Reality ポータルでヘッドセットビューを表示する | プレビュー |
 | 開始時にボリュームコントロールを開く | 音量を変更する |
 | Mute | Mute |
 | Unmute | Unmute |
@@ -123,9 +123,9 @@ Windows Mixed Reality 全体を通じて、より迅速に使用できます。 
 キーボードがアクティブになっているときはいつでもディクテーションモードに切り替えて、簡単に入力できるようにします。 キーボードの [マイク] を選択するか、[開始] をクリックして開始します。
 
 > [!NOTE]
-> Mixed reality キーボードは英語でのみ使用できますが、サポートされているすべての [Windows Mixed reality 言語](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality)でディクテーションを使用できます。
+> Mixed reality キーボードは英語でのみ使用できますが、サポートされているすべての [Windows Mixed reality 言語](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)でディクテーションを使用できます。
 
-### <a name="keyboard-dictation-commands"></a>キーボードディクテーションコマンド 
+### <a name="keyboard-dictation-commands"></a>キーボードディクテーションコマンド
 
 | 目的 | 言う言葉 |
 | --- | --- |
@@ -136,6 +136,7 @@ Windows Mixed Reality 全体を通じて、より迅速に使用できます。 
 | [ディクテーション] ボックス内のすべてを選択します。 | すべて選択する |
 
 ### <a name="punctuation"></a>句読点
+
 使用する句読点の名前を言う必要があります。 たとえば、" **質問マーク** について **コンマ** を入力してください" と表示される場合があります。
 
 使用できる句読点のキーワードを次に示します。
@@ -146,12 +147,12 @@ Windows Mixed Reality 全体を通じて、より迅速に使用できます。 
 * 引用符を開き、引用符を閉じます
 * ハッシュタグ、スマイル、スマイル、しかめっ、ウィンク
 * ドル、パーセント
- 
-場合によっては、電子メールアドレスなどをスペルチェックすると便利です。 たとえば、 example@outlook.com "E X A M P L E at outlook dot com" と言います。
 
+場合によっては、電子メールアドレスなどをスペルチェックすると便利です。 たとえば、 example@outlook.com "E X A M P L E at outlook dot com" と言います。
 
 ディクテーションを停止するには、[ **完了** ] を選択します。
 
 ## <a name="see-also"></a>関連項目
+
 * [コミュニティへの質問](https://answers.microsoft.com)
 * [サポートについては、お問い合わせください](https://support.microsoft.com/contactus/)

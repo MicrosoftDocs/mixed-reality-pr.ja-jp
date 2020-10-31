@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、チュートリアル、はじめに
 appliesto:
 - Windows 10
-ms.openlocfilehash: 94b23785861ad70630a14d26668164fdf699fcce
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92292984"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132066"
 ---
 # <a name="learn-mixed-reality"></a>Mixed Reality について学習する
 
@@ -45,7 +45,7 @@ Mixed Reality はアプリです。 アプリは、いつでも [mixed reality �
 
 ## <a name="use-voice-commands-and-cortana-inside-of-the-windows-mixed-reality-home"></a>Windows Mixed Reality ホーム内で音声コマンドと Cortana を使用する
 
-[Windows Mixed Reality ホームで使用できる音声コマンドについて説明します。](https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality)
+[Windows Mixed Reality ホームで使用できる音声コマンドについて説明します。](https://support.microsoft.com/help/4041322/windows-10-speech-in-windows-mixed-reality)
 
 ## <a name="show-a-preview-of-what-im-seeing-in-my-headset-on-my-desktops-screen"></a>自分のデスクトップの画面で、ヘッドセットに表示される内容のプレビューを表示する
 
@@ -54,5 +54,5 @@ Mixed Reality ポータルアプリの下部にある [ **再生** ] アイコ�
 ## <a name="see-also"></a>関連項目
 
 * [インストールのトラブルシューティング](installation_errors.md)
-* [セットアップのトラブルシューティング](set-up-questions.md)
+* [セットアップのトラブルシューティング](wmr-setup-faq.md)
 * [Mixed reality ホーム](your-mixed-reality-home.md)

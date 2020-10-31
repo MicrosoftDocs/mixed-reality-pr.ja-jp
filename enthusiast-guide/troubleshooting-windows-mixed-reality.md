@@ -3,12 +3,12 @@ title: Windows Mixed Reality のトラブルシューティング
 description: Windows Mixed Reality のトラブルシューティングは、標準のコンシューマーサポートドキュメントを超えています。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート
-ms.openlocfilehash: d51b5fab0759ab58b9becfd9287582d126bd629e
-ms.sourcegitcommit: e8b0c18c293d7ee22c06fd5ed8c9ab212e6205da
+ms.openlocfilehash: 75f1365b8cc0acc540db8932d6672ab11219749a
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93061840"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131946"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Windows Mixed Reality のトラブルシューティング (Faq)
 
@@ -16,7 +16,7 @@ ms.locfileid: "93061840"
 問題が発生している領域については、次の記事を参照してください。
 
 - [インストール エラー](installation_errors.md)
-- [セットアップ](set-up-questions.md)
+- [セットアップ](wmr-setup-faq.md)
 - [境界](boundary-questions.md)
 - [ヘッドセットの接続](headset-connectivity.md)
 - [ヘッドセット ディスプレイ](headset-display.md)

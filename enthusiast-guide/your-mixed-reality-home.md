@@ -3,12 +3,12 @@ title: Mixed reality ホーム
 description: Windows Mixed Reality ホーム内を移動およびテレポートする方法、アプリとゲームを起動する方法、ホームをカスタマイズする方法、およびビジュアル、オーディオ、音声設定を変更する方法。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、Home、Navigate、Get、アプリ、ゲーム
-ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: ce4774f4a8f752d5e508d8daa66c050b2a6f28ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434627"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132116"
 ---
 # <a name="your-windows-mixed-reality-home"></a>お使いの Windows Mixed Reality ホーム
 
@@ -69,11 +69,11 @@ Windows Mixed Reality ホームに Microsoft Store バッグがあることが�
 
 1. ヘッドセットの取り外し
 2. Windows Mixed Reality ポータルを閉じる
-3. [設定] [ **Mixed reality > アンインストール > アンインストール**] を > て、 ![ mixed reality をアンインストールします。](images/1050px-uninstall2.png)
+3. [設定] [ **Mixed reality > アンインストール > アンインストール** ] を > て、 ![ mixed reality をアンインストールします。](images/1050px-uninstall2.png)
 
 ## <a name="turn-off-the-boundary"></a>境界をオフにする
 
-Mixed Reality ポータルに移動し、画面の左上にあるメニューを開きます。 [ **実行設定] [> ルーム境界**] を選択します。 切り替えをオフに切り替えます。 境界を無効にした場合は、デスクに座ったままにしておく必要があります。
+Mixed Reality ポータルに移動し、画面の左上にあるメニューを開きます。 [ **実行設定] [> ルーム境界** ] を選択します。 切り替えをオフに切り替えます。 境界を無効にした場合は、デスクに座ったままにしておく必要があります。
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality ホームの空間サウンド
 
@@ -84,7 +84,7 @@ Windows Mixed Reality ホームには、各アプリからのサウンドがア�
 
 ## <a name="see-also"></a>関連項目
 
-* [Windows Mixed Reality ホームのトラブルシューティング](set-up-questions.md#my-controllers-arent-showing-in-my-windows-mixed-reality-home)
+* [Windows Mixed Reality ホームのトラブルシューティング](wmr-setup-faq.md#my-motion-controllers-arent-working)
 * [Windows Mixed Reality でのゲームとアプリの使用](using-games-and-apps-in-windows-mixed-reality.md)
 * [インサイドアウト追跡のしくみ](tracking-system.md)
 * [モーション コントローラーのしくみ](controllers-in-wmr.md)

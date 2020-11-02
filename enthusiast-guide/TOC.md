@@ -26,13 +26,12 @@
 ### [WebVR とは](webvr.md)
 ### [Windows Mixed Reality の使用に関する FAQ](using-wmr-faq.md)
 
-## トラブルシューティングに関する FAQ
+## トラブルシューティングと FAQ
 ### [バグとフィードバックを提出する](filing-feedback.md)
+### [エラー コード](error-codes.md)
 ### [一般的な FAQ](troubleshooting-windows-mixed-reality.md)
 ### [インストール エラー](installation_errors.md)
-### [セットアップ](set-up-questions.md)
 ### [境界](boundary-questions.md)
-### [エラー コード](error-codes.md)
 ### [ヘッドセットの接続](headset-connectivity.md)
 ### [ヘッドセット ディスプレイ](headset-display.md)
 ### [モーション コントローラー](motion-controller-problems.md)
@@ -42,8 +41,11 @@
 ### [追跡システム](tracking.md)
 ### [WebVR](webvr-questions.md)
 ### [その他の質問](other-questions.md)
+### [HP Reverb G2 に関する FAQ](reverbG2-faq.md)
 
 ## リソース
 ### [イマーシブ ヘッドセットの正常性、安全性、快適さ](wmr-health-safety-comfort.md)
 ### [Mixed Reality ソフトウェアの概要とリリース履歴](mixed-reality-software.md)
 ### [インサイドアウト追跡のしくみ](tracking-system.md)
+### [Unity の HP Reverb G2 コントローラー](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+### [Unreal の HP Reverb G2 コントローラー](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)

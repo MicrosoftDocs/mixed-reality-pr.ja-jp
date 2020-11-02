@@ -2,6 +2,8 @@
   href: development.md
 - name: Azure クラウド サービス
   href: mixed-reality-cloud-services.md
+- name: Mixed Reality Learning の概要
+  href: mr-learning-overview.md
 - name: ツールのインストール
   href: install-the-tools.md
 - name: アプリの移植

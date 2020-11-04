@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, 開発, 概要, 新しいプロジェクト, 移植, 機能, カメラ, シミュレーション, エミュレーション, ドキュメント
-ms.openlocfilehash: ed6e3482194b17ec3b6dfa2abe309f3519c64662
-ms.sourcegitcommit: 9ab467e36d7d9fad51b0e93a56038a6421a7b09d
+ms.openlocfilehash: 006814c17d7e2e7c343f28b83de845674c079a95
+ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91980313"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92638569"
 ---
 # <a name="unity-development-overview"></a>Unity 開発の概要
 
@@ -21,7 +21,7 @@ ms.locfileid: "91980313"
 [Unity](https://unity.com) で [Mixed Reality アプリ](../../design/app-views.md)を最速で構築するには、Mixed Reality Toolkit を使用します。 Unity を初めて使用する場合は、続行する前に、Unity Learn プラットフォームで初級レベルの[チュートリアル](https://unity3d.com/learn/tutorials)を確認することをお勧めします。 また、包括的な[資産ストア](https://www.assetstore.unity3d.com/)のほか、Mixed Reality アプリを構築しているオンライン コミュニティとやり取りできる [Unity Mixed Reality フォーラム](https://forum.unity3d.com/forums/hololens.102/)にアクセスすることもお勧めします。 想像を超えたすばらしい資産やソリューションを見つけることができます。 MRTK の使用を開始する準備ができたら、次の開発チェックポイントに進んでください。
 
 > [!IMPORTANT]
-> HoloLens 2 に移植する必要がある既存の Unity プロジェクトがある場合は、Microsoft の **[移植ガイド](../porting-apps/porting-guides.md)** を参照してください。 HTK、MRTK v1、SteamVR を使用するプロジェクト向けのガイドや、Oculus Rift や HTC Naopak などのイマーシブ ヘッドセット用に開発されたプロジェクト向けのガイドが用意されています。
+> HoloLens 2 に移植する必要がある既存の Unity プロジェクトがある場合は、Microsoft の **[移植ガイド](../porting-apps/porting-overview.md)** を参照してください。 HTK、MRTK v1、SteamVR を使用するプロジェクト向けのガイドや、Reverb G2、Oculus Rift、HTC Vive などのイマーシブ ヘッドセット用に開発されたプロジェクト向けのガイドが用意されています。
 
 ## <a name="development-checkpoints"></a>開発チェックポイント
 

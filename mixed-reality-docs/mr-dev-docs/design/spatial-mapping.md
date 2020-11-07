@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 空間マッピング、HoloLens、mixed reality、surface 再構築、メッシュ
-ms.openlocfilehash: 83c235cb7a5111be2b7e01d6c5864c1d06e9c6dc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686098"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340670"
 ---
 # <a name="spatial-mapping"></a>空間マッピング
 
@@ -129,7 +129,7 @@ HoloLens 2 では、 [シーンを理解する SDK](../develop/platform-capabili
 
 Unity の組み込みのナビゲーションメッシュ機能は、空間マッピングサーフェイスでは使用できないことに注意してください。 これは、アプリケーションが開始されるまで空間マッピングサーフェイスが知られていないのに対して、ナビゲーションデータファイルは事前にソースアセットから生成する必要があるためです。 また、空間マッピングシステムは、ユーザーの現在の場所から離れた場所にある [サーフェイスに関する情報](spatial-mapping.md#the-environment-scanning-experience) を提供しないことにも注意してください。 そのため、非常に大きな領域のマップを作成する場合は、アプリケーションがそのサーフェイス自体を記憶する必要があります。
 
-### <a name="visualization"></a>グラフ
+### <a name="visualization"></a>視覚化
 
 ほとんどの場合、空間サーフェスを非表示にするのが適切です。見た目が乱雑にならないようにして、現実世界の声を聞くことができます。 ただし、実際の対応するものが既に表示されているとしても、空間マッピングサーフェイスを直接視覚化すると便利な場合があります。
 
@@ -200,7 +200,7 @@ Surface オブザーバーによって提供される "変化したサーフェ�
 * 空間サーフェスは、追跡が失われることによって一時的に消去される場合もあるため、アプリケーションは、追跡の損失中に削除された空間サーフェスの破棄を延期します。
 * 一般に、アプリケーションでは、更新処理の減少とメモリ使用量の増加のトレードオフを評価して、最適なキャッシュ戦略を決定する必要があります。
 
-## <a name="rendering"></a>レンダリング
+## <a name="rendering"></a>表示
 
 空間マッピングメッシュがレンダリングに使用される傾向がある主な方法には、次の3つがあります。
 * Surface の視覚化の場合
@@ -368,6 +368,13 @@ Surface オブザーバーによって提供される "変化したサーフェ�
 ## <a name="troubleshooting"></a>トラブルシューティング
 * サーフェスメッシュを適切に配置するためには、各 SurfaceObserver オブジェクトをアクティブにしてから、メッシュが構築されるようにする必要があります。 そうしないと、メッシュはスペースに表示されますが、回転角度は変わってきます。
 * SurfaceObserver と通信するスクリプトを実行するオブジェクトは、オリジンに設定する必要があります。 そうしないと、メッシュを構築するために作成して SurfaceObserver に送信するすべてのゲームオブジェクトが、親 Game オブジェクトのオフセットと同じオフセットを持つことになります。 これにより、メッシュがいくつかのメーターを表示して、何が起こっているかを簡単にデバッグできるようになります。
+
+## <a name="next-discovery-checkpoint"></a>次回の検出チェックポイント
+
+ここまでに説明した [探索](../discover/get-started-with-mr.md) の方法に従っている場合は、Mixed Reality の基本を確認しています。 ここから、次の基本トピックに進むことができます。 
+
+> [!div class="nextstepaction"]
+> [オブジェクトのスケールを示す - (スケール)](../design/scale.md)
 
 ## <a name="see-also"></a>関連項目
 * [座標系](coordinate-systems.md)

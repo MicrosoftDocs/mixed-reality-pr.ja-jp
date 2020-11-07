@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、ケーススタディ、ビジョン、シナリオ
-ms.openlocfilehash: 9e142d72866079e34e6f4a8df78b79d6f846275e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e08026dbb490f8581118b1bf6351231eeffba92a
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687159"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340680"
 ---
 # <a name="case-study---the-pursuit-of-more-personal-computing"></a>ケーススタディ-よりパーソナルコンピューティングの追求
 
@@ -149,6 +149,18 @@ Volvo は、最新の自動車モデル (さまざまな色と構成の目ざま
 ## <a name="start-building-today"></a>今すぐ構築を始める
 
 コンシューマーにとっては、これまでの混合現実の未来がどのようになるかを説明するのは困難ですが、固有の問題に焦点を当てること、実際のハードウェアを使用し、今日の実験を行い、 **mixed reality、音声、AI の共通部分 *today*** を活用することが重要です。 Microsoft では、mixed reality を使い始めていますが、今日の企業によって実現される成功から学ぶことは、明日のエクスペリエンスの作成に役立ちます。
+
+## <a name="next-discovery-checkpoint"></a>次回の検出チェックポイント
+
+ここまでに説明した [探索](../discover/get-started-with-mr.md) の方法に従っている場合は、Mixed Reality の基本を確認しています。 ここから、次の基本トピックに進むことができます。 
+
+> [!div class="nextstepaction"]
+> [イマーシブ、人間工学的、直感的、接続不要](https://www.microsoft.com//hololens/hardware)
+
+または、Mixed Reality コアエクスペリエンスにジャンプします。
+
+> [!div class="nextstepaction"]
+> [ユーザーの快適さを維持する (快適さ)](../design/comfort.md)
 
 ## <a name="about-the-author"></a>著者について
 

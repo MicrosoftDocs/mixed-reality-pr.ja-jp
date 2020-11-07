@@ -8,20 +8,21 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、互換性、互換性、PC、システム要件
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5cf84768984691c253a557f6576685e89fb61078
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 464a2709600f7fff076053026797ce809b8fbf73
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684434"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340630"
 ---
 # <a name="windows-mixed-reality-pc-check-app"></a>Windows Mixed Reality PC チェックアプリ
 
-**[Windows Mixed REALITY Pc チェック](windows-mixed-reality-pc-check-app.md)** アプリは、Pc が Windows mixed reality を実行する準備ができているかどうかを確認するための最適な方法です。 
+**[Windows Mixed REALITY Pc チェック](windows-mixed-reality-pc-check-app.md)** アプリは、Pc が Windows mixed reality を実行する準備ができているかどうかを確認するための最適な方法です。
 
 <a href="https://www.microsoft.com/store/productid/9NZVL19N7CNC"><img alt="Download Windows Mixed Reality PC Check app" src="images/WMR-PC-Check-app.png"/></a>
 
 アプリを実行すると、次のいずれかのメッセージが表示されます。
+
 * **これで問題ありません。** PC には、Windows Mixed Reality を実行するために必要なものがあります。
 * **近くにあります。** この PC は Windows Mixed Reality を実行できますが、一部の機能が制限される場合があります。
 * **Mixed reality を実行できません。** この PC は、Windows Mixed Reality を実行するために必要な最小要件を満たしていません。
@@ -43,19 +44,18 @@ ms.locfileid: "91684434"
 
 ## <a name="get-help-with-windows-mixed-reality-pc-check-results"></a>Windows Mixed Reality PC チェックの結果に関するヘルプを表示する
 
-Windows Mixed Reality をセットアップするか、Windows Mixed Reality PC チェックアプリをコンピューターで実行すると、PC で実行準備が整っているかどうかをレポートするレポートが作成されます。 ここでは、表示される内容について詳しく説明します。 
+Windows Mixed Reality をセットアップするか、Windows Mixed Reality PC チェックアプリをコンピューターで実行すると、PC で実行準備が整っているかどうかをレポートするレポートが作成されます。 ここでは、表示される内容について詳しく説明します。
 
 ### <a name="youre-good-to-go"></a>![お待ちください](images/glyph-succeeded.png)
 
-すばらしいニュース: PC で Windows Mixed Reality を実行できます。 しかし、コンピューターのハードウェアと構成の間には変化があることに注意してください。そのため、すべての PC で mixed reality エクスペリエンスが同じであるとは限りません。 
+すばらしいニュース: PC で Windows Mixed Reality を実行できます。 しかし、コンピューターのハードウェアと構成の間には変化があることに注意してください。そのため、すべての PC で mixed reality エクスペリエンスが同じであるとは限りません。
 
 >[!NOTE]
 >"このハードウェア構成は Windows Mixed Reality で動作する可能性がありますが、まだテストされていません" というメッセージが表示された場合は、Windows Mixed Reality を長時間セッションに対して実行すると、パフォーマンスの問題が発生する可能性があります。
 
-
 ### <a name="youre-nearly-there"></a>![近くにいます](images/glyph-warning.png)
 
-お使いの PC では、Windows Mixed Reality を実行できますが、最適なエクスペリエンスが得られない場合があります。 グラフィックスが遅れる可能性があり、一部のアプリとゲームがうまく動作しない可能性があります。 
+お使いの PC では、Windows Mixed Reality を実行できますが、最適なエクスペリエンスが得られない場合があります。 グラフィックスが遅れる可能性があり、一部のアプリとゲームがうまく動作しない可能性があります。
 
 表示される可能性があるメッセージとその対処方法を次に示します。
 
@@ -64,28 +64,30 @@ Windows Mixed Reality をセットアップするか、Windows Mixed Reality PC 
 統合グラフィックスカードは、デュアルチャネル RAM を搭載した Pc で、最適な Windows Mixed Reality エクスペリエンスを提供します。 パフォーマンスの問題が発生した場合は、次のいずれかを試してください。
 
 * 互換性の [ある独立したグラフィックスカード](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)をインストールします。
-* 追加の RAM スティックを取り付けて、デュアルチャネル RAM を作成します。 
-* 互換性のある [PC](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices)に切り替えます。
+* 追加の RAM スティックを取り付けて、デュアルチャネル RAM を作成します。
+* 互換性のある [PC](https://www.microsoft.com/windows/windows-mixed-reality-devices)に切り替えます。
 
-#### <a name="this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link"></a>この PC には、互換性のない PCIe リンクを備えたハイブリッドグラフィックス構成があります。
+#### <a name="this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link"></a>この PC には、互換性のない PCIe リンクを備えたハイブリッドグラフィックス構成があります
 
-PCIe は、 *周辺コンポーネントの相互接続 Express* を表します。 これは、グラフィックスカードとの通信に PC が使用する接続です。 構成が機能する場合もありますが、問題が発生した場合は、互換性のある [PC](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices)に切り替える必要があります。
+PCIe は、 *周辺コンポーネントの相互接続 Express* を表します。 これは、グラフィックスカードとの通信に PC が使用する接続です。 構成が機能する場合もありますが、問題が発生した場合は、互換性のある [PC](https://www.microsoft.com/windows/windows-mixed-reality-devices)に切り替える必要があります。
 
-#### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a>この PC のグラフィックドライバーは、Windows Mixed Reality では正しく機能しない可能性があります。
+#### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a>この PC のグラフィックドライバーは、Windows Mixed Reality では正しく機能しない可能性があります
 
-問題が発生した場合は、Windows Update を使用して新しいグラフィックスドライバーをダウンロードしてみてください ([ **> 設定の開始] > & セキュリティ > 更新プログラムを確認** してください)。または、PC の製造元またはグラフィックスカードの製造元の web サイトにアクセスしてください。 
+問題が発生した場合は、Windows Update を使用して新しいグラフィックスドライバーをダウンロードしてみてください ([ **> 設定の開始] > & セキュリティ > 更新プログラムを確認** してください)。または、PC の製造元またはグラフィックスカードの製造元の web サイトにアクセスしてください。
 
-それでもうまくいかない場合は、互換性のある [グラフィックスカード](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) を追加するか、互換性のある [PC](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices)に切り替える必要があります。
+それでもうまくいかない場合は、互換性のある [グラフィックスカード](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) を追加するか、互換性のある [PC](https://www.microsoft.com/windows/windows-mixed-reality-devices)に切り替える必要があります。
 
-#### <a name="this-pcs-processor-might-not-work-well-with-windows-mixed-reality"></a>この PC のプロセッサは、Windows Mixed Reality ではうまく機能しない可能性があります。
+#### <a name="this-pcs-processor-might-not-work-well-with-windows-mixed-reality"></a>この PC のプロセッサは、Windows Mixed Reality では正しく機能しない可能性があります
 
-この PC のプロセッサは、十分なコアがないため、Windows Mixed Reality ではうまく機能しない可能性があります。 Windows Mixed Reality が正常に動作しない場合は、プロセッサを互換性のある [もの](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) に置き換えるか、互換性のある [PC](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices)に切り替えます。
+この PC のプロセッサは、十分なコアがないため、Windows Mixed Reality ではうまく機能しない可能性があります。 Windows Mixed Reality が正常に動作しない場合は、プロセッサを互換性のある [もの](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) に置き換えるか、互換性のある [PC](https://www.microsoft.com/windows/windows-mixed-reality-devices)に切り替えます。
 
-#### <a name="this-pc-might-not-have-a-compatible-usb-configuration"></a>この PC には、互換性のある USB 構成がない可能性があります。
+#### <a name="this-pc-might-not-have-a-compatible-usb-configuration"></a>この PC は、互換性のある USB 構成を持っていない可能性があります
 
 Windows Mixed Reality の実行で問題が発生した場合は、次の操作を試してください。
+
 * 使用可能な場合は、別の USB ポートにヘッドセットを接続します。
 * それでもうまくいかない場合は、PC の現在の USB ドライバーをアンインストールしてから、Microsoft ドライバーを再インストールします。
+
 1. [ **スタート** ] を選択し、検索ボックスに **「デバイスマネージャー」** と入力します。
 1. 結果から [ **デバイスマネージャー** ] を選択します。
 1. ユニバーサルシリアルバスコントローラーのカテゴリを展開し、一覧表示されているデバイスを確認して、互換性のないドライバーをアンインストールします。 

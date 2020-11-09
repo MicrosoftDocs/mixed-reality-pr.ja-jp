@@ -27,9 +27,9 @@
 ### [Windows Mixed Reality の使用に関する FAQ](using-wmr-faq.md)
 
 ## トラブルシューティングと FAQ
+### [FAQ の概要](troubleshooting-windows-mixed-reality.md)
 ### [バグとフィードバックを提出する](filing-feedback.md)
 ### [エラー コード](error-codes.md)
-### [一般的な FAQ](troubleshooting-windows-mixed-reality.md)
 ### [インストール エラー](installation_errors.md)
 ### [境界](boundary-questions.md)
 ### [ヘッドセットの接続](headset-connectivity.md)

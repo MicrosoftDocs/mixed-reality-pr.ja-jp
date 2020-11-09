@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、ホログラム、設計、相互作用
-ms.openlocfilehash: 5e0ef2768b6e79136f8144492d6825107a6ed88e
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+ms.openlocfilehash: c26cbbaa011c9e7ec92ea45dfd9491dbd178a025
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340700"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386238"
 ---
 # <a name="what-is-a-hologram"></a>ホログラムとは
 
@@ -131,14 +131,8 @@ HoloLens が [レンダリング](../develop/platform-capabilities-and-apis/rend
 ここまでに説明した [探索](get-started-with-mr.md) の方法に従っている場合は、Mixed Reality の基本を確認しています。 ここから、次の基本トピックに進むことができます。 
 
 > [!div class="nextstepaction"]
-> [仕事のための新しいビジョン](https://dynamics.microsoft.com//mixed-reality/overview/)
-
-または、にジャンプします。
-
-> [!div class="nextstepaction"]
-> [よりパーソナルなコンピューティングの追求](../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md)
+> [デザイン プロセスを展開する](case-study-expanding-the-design-process-for-mixed-reality.md)
 
 ## <a name="see-also"></a>関連項目
-* [デザイン プロセスを展開する](case-study-expanding-the-design-process-for-mixed-reality.md)
 * [立体音響](../design/spatial-sound.md)
 * [色、ライト、マテリアル](../color,-light-and-materials.md)

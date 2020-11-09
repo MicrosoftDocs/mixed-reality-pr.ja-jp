@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、プロセス、ケーススタディ
-ms.openlocfilehash: ee6bf2ad9f76e25c678458ca00505a95b406bfc6
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: f08115879d09d0be7ef8cae12ea0a4c15991a576
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293172"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386248"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>Mixed Reality での考え方の違い
 Microsoft では、2016の開発者の方に HoloLens (第1世代) を設立したときに、デバイスの起動エクスペリエンスを構築するために、Microsoft の内部および外部のスタジオと提携しています。 これらのチームは、Mixed Reality の設計の新しいフィールドにおける機会と課題の両方を明らかにして学習しました。
@@ -43,7 +43,7 @@ Microsoft のチームは、より効果的にチームを追加し、複雑な�
 従来の2D デバイスの世界を超えて、現実世界で発生するイベントについてチームに考えていくことは、革新的な mixed reality エクスペリエンスを開発するうえで重要です。 Microsoft では、実際の領域で物理的な props との対話を奨励するための最善の方法を見つけました。 シンプルで安価な資料を使用して、物理的な props を構築し、デジタルオブジェクト、ユーザーインターフェイス、アニメーションを提案されたエクスペリエンスで表現します。 この手法は bodystorming と呼ばれ、数十年にわたり工業設計で製品を作成することはできませんでした。
 
 ![](images/academyWork1000.png)
-*Bodystorming で使用される、Mixed Reality Academy のシンプルで安価なアート用品*で資料を扱うチーム
+*Bodystorming で使用される、Mixed Reality Academy のシンプルで安価なアート用品* で資料を扱うチーム
 
 単純で、物理的には、参加者向けの再生現場のレベルを設定します。さまざまなスキルセットと背景を持つユーザーは、2D 思考のパラダイムにロックされるのではなく、混合の現実エクスペリエンスに固有のアイデアを投稿し、その機会を明らかにすることができます。 技術的なプロトタイプや忠実性の高い storyboarding には、スキルの高い3D 開発者やアーティストが必要ですが、いくつかの Styrofoam ボールやボールは、インターフェイスが物理空間にどのように展開されるかを説明するのに十分な場合があります。 これらの手法は、HoloLens とイマーシブヘッドセットを使用した mixed reality 開発の両方に適用されます。 たとえば、プラスティックのコネクタのセットは、HoloLens エクスペリエンスに表示されるホログラムのサイズ、または仮想世界での対話型要素やモーション設計を行動させるための props として大まかに表現できます。
 
@@ -127,6 +127,13 @@ HoloLens の初期の時代では、デバイスの初期のプロトタイプ�
 * Twine
 * 鉛筆
 * Sharpies
+
+## <a name="next-discovery-checkpoint"></a>次回の検出チェックポイント
+
+ここまでに説明した [探索](get-started-with-mr.md) の方法に従っている場合は、Mixed Reality の基本を確認しています。 ここから、次の基本トピックに進むことができます。 
+
+> [!div class="nextstepaction"]
+> [ユーザーに快適に](../design/comfort.md)
 
 ## <a name="see-also"></a>関連項目
 * [ケーススタディ-HoloLens 設計チームの最初の年](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, mixed reality, 開発, 作業の開始, 新しいプロジェクト
-ms.openlocfilehash: 3ddca223df94f4aa748ee510c3198389acecdedc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f1465dcb31718b9d3faeb64d24e33d9f9ffeb7cc
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683255"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386218"
 ---
 # <a name="configure-a-new-unity-project-for-windows-mixed-reality"></a>Windows Mixed Reality 用の新しい Unity プロジェクトを構成する 
 
@@ -19,7 +19,7 @@ ms.locfileid: "91683255"
 
 Windows Mixed Reality (WMR) は、Windows 10 オペレーティングシステムの一部として導入された Microsoft プラットフォームです。 WMR プラットフォームを使用すると、holographic および VR 表示デバイスでデジタルコンテンツをレンダリングするアプリケーションを作成できます。
 
-WMR の設定時に実行できるパスは2つあります。 最初のオプションは、 [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) (mrtk) v2 をインストールすることです。これにより、wmr 環境が自動的に設定されます。 2つ目のオプションは、いくつかの Unity 設定を手動で変更して、WMR をロールします。 
+WMR の設定時に実行できるパスは2つあります。 最初のオプションとして、 [Mixed Reality Toolkit (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)をインストールします。これにより、wmr 環境が自動的に設定されます。 2つ目のオプションは、いくつかの Unity 設定を手動で変更して、WMR をロールします。 
 
 > [!NOTE]
 > MRTK は、後でいつでもインポートできます。そのため、最初に手動による処理による影響はありません。
@@ -36,7 +36,7 @@ WMR の最初の設定を変更する必要があるのは、プロジェクト�
 5. **ビルドの種類** を **D3D** に設定
 6. **UWP SDK** を **最新のインストール** に設定する
 
-![Unity XR の設定](images/unity-uwp-settings.png)<br>
+<img src="images/unity-uwp-settings.png" width="550px" alt="Unity XR Settings">
 *Unity XR の設定*
 
 プラットフォームが正しく構成されたら、アプリがエクスポート時に2D ビューではなく、 [イマーシブビュー](../../design/app-views.md) を作成する必要があることを Unity に知らせる必要があります。
@@ -91,5 +91,7 @@ HoloLens には、モバイルクラスの GPU があります。 アプリが H
 > 新しいカメラを削除して作成する場合は、新しいカメラが **maincamera** としてタグ付けされていることを確認してください。
 
 ## <a name="see-also"></a>関連項目
-* [Mixed Reality Toolkit v2](mrtk-getting-started.md)
+* [MRTK-インストールガイド (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK-ドキュメントホーム (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [ツールのインストール](../install-the-tools.md)
 * [Unity 開発の概要](unity-development-overview.md)

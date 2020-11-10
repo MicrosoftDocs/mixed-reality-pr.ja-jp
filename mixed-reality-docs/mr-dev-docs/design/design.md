@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 検出, 配布, インデックス, ランディング ページ, 設計, 開発, チュートリアル, サンプル アプリ, 基本事項, ケース スタディ, リソース, HoloLens の使い方, オープン ソース プロジェクト, 主要な概念, 操作
-ms.openlocfilehash: 7333163a01496f41c4cb3cd98f54012e5c58a8d4
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 2ee127b05a8ad88e49eda6d088f84e895aeaf511
+ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293131"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94361724"
 ---
 # <a name="start-designing-and-prototyping"></a>設計とプロトタイプ作成を始める
 
@@ -88,17 +88,17 @@ Mixed Reality アプリケーションはまったく新しいものであるた
         Unity で対話型エクスペリエンスを作成する方法について学習します。 最初から最後まで、実践によって学習できます。
     :::column-end:::    
     :::column:::    
-        [![Mixed Reality ツールキット (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        [![Mixed Reality ツールキット (MRTK)](images/74-12.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
         **[Mixed Reality ツールキット (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>  
         空間操作と UI 構成ブロックを使用すると、Unity での Mixed Reality の設計と開発をすぐに始めることができます。   
     :::column-end:::
     :::column:::    
-        [![Mixed Reality Design Labs](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![Mixed Reality Design Labs](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
         **[Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>  
         MRTK の構成要素を使用して美しい Mixed Reality エクスペリエンスを作成する方法を示すサンプル アプリを入手できます。
     :::column-end:::        
     :::column:::    
-        [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
+        [![Microsoft Maquette](images/74-14.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>  
         VR 向けの設計。 Microsoft Maquette を使用すると、空間のプロトタイプ作成をすばやく、簡単、かつイマーシブに実行できます。 
     :::column-end:::    
@@ -112,22 +112,22 @@ Mixed Reality アプリケーションはまったく新しいものであるた
 
 :::row:::
     :::column:::
-       [![基本を理解する](images/icon-lightbulb.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
+       [![基本を理解する](images/74-15.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
         **[基本を理解する](../discover/get-started-with-mr.md#understand-the-basics)**<br>
         Mixed Reality が何によって定義され、どのように使用されているかについて理解を深めます。
     :::column-end:::
     :::column:::
-        [![イベントに参加する](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
+        [![イベントに参加する](images/74-16.png)](../whats-new/sf-academy-events.md)<br>
          **[イベントに参加する](../whats-new/sf-academy-events.md)**<br>
         最初の HoloLens 2 アプリケーションを作成するには、ハードウェアを参照し、ハンズオン チュートリアルを入手してください。
     :::column-end:::
     :::column:::
-        [![ツールのインストール](images/icon-design.png)](../develop/install-the-tools.md)<br>
+        [![ツールのインストール](images/74-17.png)](../develop/install-the-tools.md)<br>
          **[ツールのインストール](../develop/install-the-tools.md)**<br>
         インストール チェックリストを使用して、HoloLens や Mixed Reality 用のアプリを構築するのに必要なツールを取得します。
     :::column-end:::
     :::column:::
-        [![開発を始める](images/icon-developer.png)](../develop/development.md)<br>
+        [![開発を始める](images/74-18.png)](../develop/development.md)<br>
         **[開発を始める](../develop/development.md)**<br>
         スキル レベル、ワーク スタイル、プラットフォームへの関心に基づいて、開発パスを選択します。
     :::column-end:::

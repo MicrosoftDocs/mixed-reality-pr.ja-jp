@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、パフォーマンス
 appliesto:
 - Windows 10
-ms.openlocfilehash: c24f6766cab242332e79a0c5cf5ed3cd92c4687d
-ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
+ms.openlocfilehash: 77d1d7273d1e73af4655ef45bd102220e15d2355
+ms.sourcegitcommit: af1e5c9003fc3b7dd0a2f67531f91f954b6a9ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482400"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94498287"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP リバーブ G2 に関してよく寄せられる質問
 
@@ -68,11 +68,7 @@ HP は次のことを推奨します。
 
 ## <a name="why-are-my-hp-motion-controller-models-not-showing-up-correctly-in-a-game"></a>HP Motion Controller モデルがゲームで正しく表示されないのはなぜですか。
 
-多くのゲームは HP Motion Controller ですぐに機能しますが、一部のゲームでは既存のコントローラー機能に依存しているため、いくつかの問題が発生する可能性があります。
-
-- 間違ったモデルが表示されています: これを修正するにはゲームの更新が必要です。 通常、これはゲームのすべての機能をブロックするわけではありませんが、混乱や視覚的な成果物につながる可能性があります。
-- タッチパッドへの依存関係、またはコントローラーの入力レイアウトでの一般的な関係。 SteamVR では、この種の問題を回避するために、カスタムバインドを作成できます。
-    - SteamVR の Windows Mixed Reality には、一部のゲームのカスタムバインドが含まれています。 これらのバインドは、ゲームの開始時に自動的に使用され、ユーザーの操作は必要ありません。
+ほとんどのゲームはコントローラーを表示せず、ドライバーによってインストールされたモデルを使用しませんが、一部のゲームでは独自のバージョンのコントローラーモデルを使用して、それらをカスタマイズしたり、使用可能な入力のコンテキストヘルプを表示したりします。 通常、これはゲームのすべての機能をブロックするわけではありませんが、混乱や視覚的な成果物につながる可能性があります。 これは、ゲーム自体の更新プログラムでのみ修正できます。
 
 ## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>私の SteamVR ゲームが HP Motion controller で正常に動作していないように見える
 

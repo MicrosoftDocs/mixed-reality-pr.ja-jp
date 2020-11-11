@@ -5,19 +5,19 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 08/04/2020
 ms.topic: article
-keywords: edge、新規、イマーシブ web、microsoft edge、browser、vr
-ms.openlocfilehash: 0f4ecdd26624e9b1e5b8e151e1ac074ece9c9769
-ms.sourcegitcommit: 1aae69e26ae872b724be1bd1ae0b3158c49dc7e2
+keywords: edge、new、イマーシブ web、microsoft edge、browser、vr、360、360 video、360 viewer、webxr、webvr
+ms.openlocfilehash: b20d21a3cd4cc77af86021e2b82555ba9c48478e
+ms.sourcegitcommit: 434ed0621af05307bb67b15cabf164561ec96ead
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92499587"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94520779"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality と新しい Microsoft Edge
 
 [新しい Microsoft Edge をダウンロードできるようになりました](https://blogs.windows.com/windowsexperience/?p=173496)が、今後数か月の間に測定されたロールアウトアプローチに従って、 [Windows 10 の今後の更新プログラムにインストールされるのを待つ](https://blogs.windows.com/msedgedev/2020/01/15/upgrading-new-microsoft-edge-79-chromium/)こともできます。 
 
-この記事では、 **Windows Mixed reality のヘッドセットのお客様に、新しい Microsoft Edge から期待されることを知らせ、Windows Mixed reality での web 閲覧エクスペリエンスを向上させる保留中の更新**について通知します。
+この記事では、 **Windows Mixed reality のヘッドセットのお客様に、新しい Microsoft Edge から期待されることを知らせ、Windows Mixed reality での web 閲覧エクスペリエンスを向上させる保留中の更新** について通知します。
 
 ## <a name="introducing-the-new-microsoft-edge"></a>新しい Microsoft Edge の紹介
 
@@ -30,7 +30,7 @@ ms.locfileid: "92499587"
 
 Mixed reality ホームで新しい Microsoft Edge を使用する windows Mixed Reality VR ヘッドセットのお客様は、mixed reality ホームで **Win32 アプリケーション (新しい Microsoft edge など) をネイティブでサポートするために、windows 10 バージョン1903以降にアップグレード** する必要があります。 Windows Update を確認 [するか、Windows 10 の最新バージョンを手動でインストールして](https://www.microsoft.com/en-us/software-download/windows10)ください。
 
-混合現実のホームで Microsoft Edge エクスペリエンスを最大限に活用するために、windows **10 バージョン 1903 (またはそれ以降) の2020-01 累積的な更新プログラムが適用された新しい Microsoft edge の Windows Mixed reality 最適化の主要**な部分を待機することもお勧めします。これは、1月の最後まで Windows Update で利用可能になります。
+混合現実のホームで Microsoft Edge エクスペリエンスを最大限に活用するために、windows **10 バージョン 1903 (またはそれ以降) の2020-01 累積的な更新プログラムが適用された新しい Microsoft edge の Windows Mixed reality 最適化の主要** な部分を待機することもお勧めします。これは、1月の最後まで Windows Update で利用可能になります。
 
 >[!IMPORTANT]
 >これらの更新を行う前に新しい Microsoft Edge をダウンロードすることを選択した場合は、Windows Mixed Reality でのその動作に関する既知の問題がいくつかあります (下記を参照してください)。
@@ -69,7 +69,7 @@ Windows [10 月2019更新プログラム](https://docs.microsoft.com/windows/mix
 
 仮想モニタの事前割り当てを無効にするには:
 1. 上記の Windows 10 の累積的な更新プログラムのプレビューバージョンのいずれかを **Windows Update** 確認し、使用可能な場合は更新プログラムをインストールします ([Windows Update の設定] ページの [ **オプションの更新プログラム** または **詳細オプション** ] に更新プログラムが表示される場合があります)。
-2. **レジストリエディター**の起動
+2. **レジストリエディター** の起動
 3. [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic] に移動します。 \"
 4. "PreallocateVirtualMonitors" REG_DWORD が存在しない場合は、[ **Edit > New > DWORD (32 ビット) 値** ] を選択し、名前として preallocatevirtualmonitors を入力して作成します。
 5. "PreallocateVirtualMonitors" REG_DWORD が存在する (または作成した) 場合は、エントリをダブルクリックし、[値のデータ] を 1 (既定値) から 0 (ゼロ) に変更します。
@@ -81,6 +81,6 @@ Windows [10 月2019更新プログラム](https://docs.microsoft.com/windows/mix
 ### <a name="additional-known-issues"></a>その他の既知の問題
 
 -   Windows Mixed reality で開かれている web サイトは、Mixed reality ポータルが閉じたときに失われます。ただし、Microsoft Edge ウィンドウは、mixed reality ホームに配置された場所に残ります。
-- 360 Viewer 拡張機能などの WebXR エクスペリエンスは、ハイブリッド GPU セットアップを使用している Pc では正常に起動しない可能性があります。 グラフィックスカードソフトウェアの既定の GPU として専用 GPU を選択することで、この問題を回避できる場合があります。
+- 360 Viewer 拡張機能などの WebXR エクスペリエンスは、ハイブリッド GPU セットアップを使用している Pc では正常に起動しない可能性があります。 新しい Microsoft Edge でプレビュー機能を有効にすることで、この問題を回避できる場合があります。 に移動し `edge://flags` 、"マルチ gpu" を検索して、 **WEBXR マルチ gpu サポート** と呼ばれるフラグを有効にします。
 -   Microsoft Edge ウィンドウからのオーディオは spatialized ません。
--   **360 Viewer 拡張機能のバージョン 2.3.8**: Windows Mixed Reality で YouTube から360ビデオを開くと、ヘッドセットでビデオがゆがんでしまう可能性があります。 Edge を再起動して、この問題を解決するには、360 Viewer 拡張機能を非表示にする必要があります。 `edge://system/`アドレスバーに「」と入力し、[拡張機能] の横にある**展開**ボタンを選択すると、拡張機能のバージョンを確認できます。
+-   **360 Viewer 拡張機能のバージョン 2.3.8** : Windows Mixed Reality で YouTube から360ビデオを開くと、ヘッドセットでビデオがゆがんでしまう可能性があります。 Edge を再起動して、この問題を解決するには、360 Viewer 拡張機能を非表示にする必要があります。 `edge://system/`アドレスバーに「」と入力し、[拡張機能] の横にある **展開** ボタンを選択すると、拡張機能のバージョンを確認できます。

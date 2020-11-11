@@ -22,7 +22,7 @@
       href: unity/unity-development-overview.md
     - name: 作業の開始
       items:
-        - name: Mixed Reality Toolkit v2 の概要
+        - name: MRTK の概要
           href: unity/mrtk-getting-started.md
         - name: Windows Mixed Reality 用に Unity プロジェクトを構成する
           href: unity/configure-unity-project.md
@@ -170,7 +170,7 @@
               href: unity/tutorials/mr-azure-301.md
     - name: コア構成要素
       items:
-        - name: MRTK 101 - 基本的な操作に Mixed Reality ツールキット Unity を使用する方法
+        - name: MRTK 101 - Mixed Reality Toolkit Unity を使用したコアの対話式操作のビルド
           href: unity/mrtk-101.md
         - name: Unity のカメラ
           href: unity/camera-in-unity.md

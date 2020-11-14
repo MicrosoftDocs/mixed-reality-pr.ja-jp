@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、ホログラム、設計、相互作用
-ms.openlocfilehash: c26cbbaa011c9e7ec92ea45dfd9491dbd178a025
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386238"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631470"
 ---
 # <a name="what-is-a-hologram"></a>ホログラムとは
 
@@ -133,6 +133,3 @@ HoloLens が [レンダリング](../develop/platform-capabilities-and-apis/rend
 > [!div class="nextstepaction"]
 > [デザイン プロセスを展開する](case-study-expanding-the-design-process-for-mixed-reality.md)
 
-## <a name="see-also"></a>関連項目
-* [立体音響](../design/spatial-sound.md)
-* [色、ライト、マテリアル](../color,-light-and-materials.md)

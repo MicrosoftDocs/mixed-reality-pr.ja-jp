@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、サンプルアプリ、コントロール
-ms.openlocfilehash: 2f7120aaf92a6e3d7b6ace301aae7392b67fa00b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 82ffa19b27c1d2687b67df659cb3bb50544748fc
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690167"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573266"
 ---
 # <a name="periodic-table-of-the-elements"></a>要素の定期的なテーブル
 
@@ -21,6 +21,11 @@ ms.locfileid: "91690167"
 [要素の定期テーブル](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) は、Microsoft の混合現実設計ラボのオープンソースのサンプルアプリです。 このプロジェクトでは、 **[オブジェクトコレクション](../../design/object-collection.md)** を使用して、さまざまな種類の種類の3d 空間にオブジェクトの配列をレイアウトする方法を学習できます。 また、HoloLens から標準入力に応答する対話型オブジェクトを作成する方法についても説明します。 このプロジェクトのコンポーネントを使用して、独自の mixed reality アプリエクスペリエンスを作成することができます。
 
 ![Elements アプリの期間テーブル](images/640px-periodictable-hero.jpg)
+
+## <a name="demo-video"></a>デモ ビデオ 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCF]
+
+Mixed Reality キャプチャを使用して HoloLens 2 で記録
 
 ## <a name="about-the-app"></a>アプリについて
 
@@ -60,52 +65,31 @@ ms.locfileid: "91690167"
 
 ![オブジェクト コレクション](images/640px-periodictable-collections.jpg)
 
-### <a name="fitbox"></a>[Fitbox]
-
-既定では、ホログラムは、アプリケーションが起動された時点でユーザーが使用している場所に配置されます。 これは、たとえば、ホログラムが壁の内側またはテーブルの中央に配置されているなど、望ましくない結果につながることがあります。 [Fitbox] を使用すると、ユーザーは、宝石を使用して、ホログラムが配置される場所を決定できます。 これは、独自のイメージまたは3D オブジェクトを使用して簡単にカスタマイズできる単純な PNG イメージテクスチャを使用して作成されます。
-
-![[Fitbox]](../../design/images/450px-periodictable-fitbox.jpg)
-
 ## <a name="technical-details"></a>技術的な詳細
 
 [Mixed Reality Design Labs GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable)では、Elements アプリの周期テーブルのスクリプトと prefabs を見つけることができます。
 
-## <a name="application-examples"></a>アプリケーションの例
+## <a name="porting-story-for-hololens-2"></a>HoloLens 2 用の移植のストーリー
 
-ここでは、このプロジェクトのコンポーネントを利用して作成できるものについて、いくつかのアイデアを示します。
+HoloLens 2 の instinctual 対話により、Elements アプリの周期テーブルがどのように更新されたかについてのストーリーをお読みください。
 
-### <a name="stock-data-visualization-app"></a>株価データ可視化アプリ
+[元素周期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 
-Elements サンプルの定期テーブルと同じコントロールと相互作用モデルを使用して、株式市場データを視覚化するアプリを作成できます。 この例では、オブジェクトコレクションコントロールを使用して、球体図形にストックデータを配置します。 各在庫に関する追加情報が興味深い方法で表示されるような詳細ビューを想像することができます。
 
-![アプリケーションの例: Finance (1/3)](images/640px-periodictable-applicationexamples-finance1.jpg)
 
-![アプリケーションの例: Finance (2/3)](images/640px-periodictable-applicationexamples-finance2.jpg)
 
-![アプリケーションの例: Finance (3/3)](images/640px-periodictable-applicationexamples-finance3.jpg)<br>
-*Elements サンプルアプリの定期テーブルで使用されるオブジェクトコレクションを finance アプリで使用する方法の例*
-
-### <a name="sports-app"></a>スポーツアプリ
-
-ここでは、オブジェクトコレクションや、Elements サンプルアプリの定期テーブルのその他のコンポーネントを使用して、スポーツデータを視覚化する例を示します。
-
-![アプリケーションの例: スポーツ (1/3)](images/640px-periodictable-applicationexamples-sports0.jpg)
-
-![アプリケーションの例: スポーツ (2/3)](images/640px-periodictable-applicationexamples-sports1.jpg)
-
-![アプリケーションの例: スポーツ (3/3)](images/640px-periodictable-applicationexamples-sports3.jpg)<br>
-*要素の定期テーブルで使用されるオブジェクトコレクションをスポーツアプリで使用する方法の例*
-
-## <a name="about-the-author"></a>著者について
+## <a name="about-the-author"></a>筆者について
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>駐車中</b><br>UX デザイナー @Microsoft</td>
+<td style="border-style: none"><b>Dong Yoon Park</b><br>UX デザイナー @Microsoft</td>
 </tr>
 </table>
 
 ## <a name="see-also"></a>関連項目
 
-* [対話可能なオブジェクト](../../design/interactable-object.md)
-* [オブジェクト コレクション](../../design/object-collection.md)
+* [MRTK Examples Hub](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Microsoft Store の HoloLens 2 からダウンロード)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Surfaces](sampleapp-surfaces.md) - [(Microsoft Store の HoloLens 2 からダウンロード)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [元素周期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

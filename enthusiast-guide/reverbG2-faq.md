@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、パフォーマンス
 appliesto:
 - Windows 10
-ms.openlocfilehash: 77d1d7273d1e73af4655ef45bd102220e15d2355
-ms.sourcegitcommit: af1e5c9003fc3b7dd0a2f67531f91f954b6a9ea3
+ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94498287"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573206"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP リバーブ G2 に関してよく寄せられる質問
 
@@ -36,13 +36,15 @@ HP は次のことを推奨します。
 
 ## <a name="i-am-getting-a-7-14-something-went-wrong-error-when-i-plug-in-my-headset"></a>ヘッドセットに接続したときに 7-14 "問題が発生しました" というエラーが発生する
 
+7-14 の問題が発生した場合は、必要な USB2 コンポーネントの一部が見つからなかったことを意味します。  HP リバーブ G2 の長いケーブルによって、USB 信号の許容範囲の一部が厳密になります。  これは、コンピューターの1つのポートが別のポートよりも信頼性の高い方法で動作する可能性があることを意味します。
+
 7-14 "問題が発生しました" というエラーが表示される場合は、次の手順を試してください。
 
-- 最新のドライバーがインストールされていることを確認します。
-- ケーブルを別の USB-3.0 ポートに接続してみてください。
-- 別のポートを試すには、USB C を使用してアダプターを追加してください。
-
-ケーブルを別の USB ハブに接続してみてください。  
+- ヘッドセットと USB コントローラー用に最新のドライバーがインストールされていることを確認します。
+- Microsoft USB ドライバーを使用していることを確認してください。 "拡張可能なホストコントローラー" デバイスの名前に "Microsoft" が含まれている必要があります。
+- お使いのコンピューターの別の USB-3.0 ポートにケーブルを接続してみてください。 (USB タイプ-C とタイプ-A ポートを試す)
+- 含まれている USB C を使用して、別のポートを試すアダプターを使用します。
+- USB ハブを使用してコンピューターにヘッドセットを接続してみてください。
 
 > [!NOTE]
 > HP では、リバーブ G2 デバイスを搭載したマザーボードに組み込まれている USB コントローラーのみを使用することをお勧めします。

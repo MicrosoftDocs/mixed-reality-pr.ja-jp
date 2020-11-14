@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, サンプルアプリ, 設計, HoloLens
-ms.openlocfilehash: 4ab408d23ca932e73c0939f8a5cdc48184666f78
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d4014e1300b60d61dfba38ee5c5b0c8a530fbe08
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684671"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573256"
 ---
 # <a name="lunar-module"></a>月着陸船
 
@@ -19,6 +19,11 @@ ms.locfileid: "91684671"
 >この記事では、 [Mixed Reality 設計ラボ](https://github.com/Microsoft/MRDesignLabs_Unity)で作成した探索的サンプルについて説明します。これは、学習の概要と、mixed reality アプリの開発に関する提案を共有する場所です。 設計関連の記事とコードは、新しい検出を行うと進化します。
 
 [旧暦モジュール](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) は、Microsoft の混合現実設計ラボのオープンソースのサンプルアプリです。 このプロジェクトでは、2つのききの追跡と Xbox コントローラー入力を使用して HoloLens の基本ジェスチャを拡張する方法を学習できます。また、画面のマッピングとプレーンに反応するオブジェクトを作成し、単純なメニューシステムを検索して実装することができます。 プロジェクトのすべてのコンポーネントは、独自の mixed reality アプリエクスペリエンスで使用できます。
+
+## <a name="demo-video"></a>デモ ビデオ 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
+
+Mixed Reality キャプチャを使用して HoloLens 2 で記録
 
 ## <a name="rethinking-classic-experiences-for-windows-mixed-reality"></a>Windows Mixed Reality の再考クラシックエクスペリエンス
 
@@ -104,6 +109,7 @@ HoloLens の手のジェスチャには、細かい設定が可能なコント�
 </table>
 
 ## <a name="see-also"></a>関連項目
-* [モーション コントローラー](../../design/motion-controllers.md)
-* [頭の視線入力とコミット](../../design/gaze-and-commit.md)
-* [複合現実アプリの種類](../../design/types-of-mixed-reality-apps.md)
+* [MRTK Examples Hub](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Microsoft Store の HoloLens 2 からダウンロード)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Surfaces](sampleapp-surfaces.md) - [(Microsoft Store の HoloLens 2 からダウンロード)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [元素周期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

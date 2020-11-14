@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、
-ms.openlocfilehash: def16b5bff13fec13ce0ebb503ec88dfca22e0b8
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: c2a00b88992fde3e599020d930ef950222e87099
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293065"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573216"
 ---
 # <a name="start-your-vr-journey"></a>VR の体験を開始する
 
@@ -41,7 +41,7 @@ ms.locfileid: "92293065"
 
 |  Checkpoint  |  結果  |
 | --- | --- |
-| [Windows Mixed Reality を設定する](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | 新しい VR デバイスで、コントローラー、部屋の境界、音声入力、Microsoft Edge に慣れる |
+| [Windows Mixed Reality を設定する](set-up-windows-mixed-reality.md) | 新しい VR デバイスで、コントローラー、部屋の境界、音声入力、Microsoft Edge に慣れる |
 | [Windows Mixed Reality セットアップに関する Faq](wmr-setup-faq.md) | Windows Mixed Reality のセットアップ時に、既知の問題に関する回答とトラブルシューティングのヘルプを得る |
 | [正常性、安全性、および快適なガイドライン](wmr-health-safety-comfort.md) | ヘッドセットを使用する前に Windows Mixed Reality を使用したまま安全にするための推奨事項  |
 
@@ -51,7 +51,7 @@ Windows Mixed Reality とイマーシブ VR ヘッドセットを通じて利用
 
 <br>
 
-|  Checkpoint  |  特徴量  |
+|  Checkpoint  |  機能  |
 | --- | --- |
 | [Mixed Reality について学習する](learn-mixed-reality.md) | 見つめ、音声、コントローラー、およびキーボードとマウスの入力を使用する方法について説明します。 |
 | [Windows Mixed Reality ホーム内を移動する](your-mixed-reality-home.md) | Windows Mixed Reality ホームの仮想環境を調べる  |

@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、プロセス、ケーススタディ
-ms.openlocfilehash: f08115879d09d0be7ef8cae12ea0a4c15991a576
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: 4cde36c8b5c3914c63e0c588e76dc4b782dcdcb9
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386248"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631510"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>Mixed Reality での考え方の違い
 Microsoft では、2016の開発者の方に HoloLens (第1世代) を設立したときに、デバイスの起動エクスペリエンスを構築するために、Microsoft の内部および外部のスタジオと提携しています。 これらのチームは、Mixed Reality の設計の新しいフィールドにおける機会と課題の両方を明らかにして学習しました。
@@ -130,11 +130,10 @@ HoloLens の初期の時代では、デバイスの初期のプロトタイプ�
 
 ## <a name="next-discovery-checkpoint"></a>次回の検出チェックポイント
 
-ここまでに説明した [探索](get-started-with-mr.md) の方法に従っている場合は、Mixed Reality の基本を確認しています。 ここから、次の基本トピックに進むことができます。 
+これで、Mixed Reality 検出体験の中核を完了できました。 メインの検出の取り組み [ページ](get-started-with-mr.md) に戻り、 [業界パートナーが混合現実をどのように使用](get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality) しているかを確認し、HoloLens を [調べ](get-started-with-mr.md#explore-hololens-and-mixed-reality-services)たり、設計または開発の体験を開始したりすることができます。
 
 > [!div class="nextstepaction"]
-> [ユーザーに快適に](../design/comfort.md)
+> [デザインの体験を始める](../design/design.md)
 
-## <a name="see-also"></a>関連項目
-* [ケーススタディ-HoloLens 設計チームの最初の年](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)
-* [ケーススタディ-現在のプロセス構想、プロトタイプ作成、ビルド](https://developer.microsoft.com/windows/mixed-reality/case_study_-_afternow's_process_-_envisioning,_prototyping,_building)
+> [!div class="nextstepaction"]
+> [開発作業の開始](../develop/development.md)

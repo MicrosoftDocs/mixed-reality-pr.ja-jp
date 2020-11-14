@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, ストリーミング, リモート処理, Mixed Reality, 開発, 入門, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 特徴, ホログラム, ゲームの開発
-ms.openlocfilehash: d7c94ebb7fc6cc16916f1f577b8e54e374b9db1f
-ms.sourcegitcommit: e1de7caa7bd46afe9766186802fa4254d33d1ca6
+ms.openlocfilehash: 09d90af95d9433772563fdc292f31d118b3dd846
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92240769"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573296"
 ---
 # <a name="winrt-in-unreal"></a>Unreal での WinRT
 
@@ -26,12 +26,12 @@ HoloLens 開発の過程で、WinRT を使用して機能を作成すること�
 
 ## <a name="getting-started"></a>作業の開始
 1. すべての [必要なツール](tutorials/unreal-uxt-ch1.md) がインストールされていることを確認する
-2. [新しい Unreal プロジェクトを作成](tutorials/unreal-uxt-ch2.md#creating-a-new-unreal-project)し、 **Consumewinrt**という名前を指定します。
+2. [新しい Unreal プロジェクトを作成](tutorials/unreal-uxt-ch2.md#creating-a-new-unreal-project)し、 **Consumewinrt** という名前を指定します。
 3. HoloLens 開発に [必要なプラグイン](tutorials/unreal-uxt-ch2.md#enabling-required-plugins) を有効にする
 4. デバイスまたはエミュレーターに[配置するためのセットアップ](tutorials/unreal-uxt-ch6.md)
 
 ## <a name="creating-a-winrt-dll"></a>WinRT DLL の作成 
-1. 新しい Visual Studio プロジェクトを開き、Unreal game の**uproject**ファイルと同じディレクトリに**DLL (ユニバーサル Windows)** プロジェクトを作成します。 
+1. 新しい Visual Studio プロジェクトを開き、Unreal game の **uproject** ファイルと同じディレクトリに **DLL (ユニバーサル Windows)** プロジェクトを作成します。 
 
 ![DLL の作成](images/unreal-winrt-img-01.png)
 
@@ -44,18 +44,18 @@ HoloLens 開発の過程で、WinRT を使用して機能を作成すること�
 > 新しいプロジェクトがコンパイルされた後、空白の cpp ファイルとヘッダーファイルに特に注意する必要があります。これには、それぞれ **HoloLensWinrtDLL** と **HoloLensWinrtDLL** という名前が付けられます。 ヘッダーは、Unreal の DLL を使用するインクルードファイルです。 cpp は、エクスポートした関数の本体を保持し、それ以外の場合はコンパイルできない WinRT コードを含みます。 
 
 3. コードを追加する前に、必要な WinRT コードをコンパイルできるように、プロジェクトのプロパティを更新する必要があります。 
-    * HoloLensWinrtDLL プロジェクトを右クリックし、[**プロパティ**] を選択します。  
-    * **構成**ドロップダウンを [**すべての構成**] に変更し、[**プラットフォーム**] ドロップダウンを [**すべてのプラットフォーム**] に変更します。  
-    * [ **構成プロパティ] で> C/c + +> すべてのオプション**] を選択します。
+    * HoloLensWinrtDLL プロジェクトを右クリックし、[ **プロパティ** ] を選択します。  
+    * **構成** ドロップダウンを [ **すべての構成** ] に変更し、[ **プラットフォーム** ] ドロップダウンを [ **すべてのプラットフォーム** ] に変更します。  
+    * [ **構成プロパティ] で> C/c + +> すべてのオプション** ] を選択します。
         * 非同期タスクを待機できるように、 **await** を **追加のオプション** に追加します。  
-        * **C++ 言語標準**を**ISO c++ 17 標準 (/std: C++ 17)** に変更して WinRT コードを含める
+        * **C++ 言語標準** を **ISO c++ 17 標準 (/std: C++ 17)** に変更して WinRT コードを含める
 
 ![プロジェクトプロパティのアップグレード](images/unreal-winrt-img-03.png)
 
 プロジェクトは、ファイルダイアログを開き、ファイルを HoloLens ディスクに保存する WinRT コードを使用して、DLL のソースを更新する準備ができています。  
 
 ## <a name="adding-the-dll-code"></a>DLL コードの追加
-1. **HoloLensWinrtDLL**を開き、dll のエクスポート関数を追加して、unreal に使用します。 
+1. **HoloLensWinrtDLL** を開き、dll のエクスポート関数を追加して、unreal に使用します。 
 
 ```cpp
 #pragma once
@@ -67,7 +67,7 @@ public:
 };
 ```
 
-2. **HoloLensWinrtDLL**を開き、クラスで使用するすべてのヘッダーを追加します。  
+2. **HoloLensWinrtDLL** を開き、クラスで使用するすべてのヘッダーを追加します。  
 
 ```cpp
 #include "pch.h"
@@ -87,7 +87,7 @@ public:
 > [!NOTE]
 > すべての WinRT コードは **HoloLensWinrtDLL** に格納されているため、unreal はヘッダーを参照するときに winrt コードを含めようとしません。 
 
-3. **HoloLensWinrtDLL**の中で、OpenFileDialogue () およびサポートされているすべてのコードの関数本体を追加します。 
+3. **HoloLensWinrtDLL** の中で、OpenFileDialogue () およびサポートされているすべてのコードの関数本体を追加します。 
 
 ```cpp
 // sgm is declared outside of OpenFileDialogue so it doesn't
@@ -168,24 +168,24 @@ private:
 };
 ```
 
-5. **Release > ARM64**のソリューションをビルドして、dll ソリューションから ARM64/Release/HoloLensWinrtDLL 子ディレクトリに dll をビルドします。 
+5. **Release > ARM64** のソリューションをビルドして、dll ソリューションから ARM64/Release/HoloLensWinrtDLL 子ディレクトリに dll をビルドします。 
 
 ## <a name="adding-the-winrt-binary-to-unreal"></a>WinRT バイナリを Unreal に追加する 
 アン Real で DLL をリンクして使用するには、C++ プロジェクトが必要です。 ブループリントプロジェクトを使用している場合は、C++ クラスを追加することで、C++ プロジェクトに簡単に変換できます。  
 
-1. Unreal エディターで、[**ファイル > 新しい C++ クラス...** ] を開きます。 次に、 **Winrtactor**という名前の新しい**アクター**を作成し、DLL 内のコードを実行します。 
+1. Unreal エディターで、[ **ファイル > 新しい C++ クラス...** ] を開きます。 次に、 **Winrtactor** という名前の新しい **アクター** を作成し、DLL 内のコードを実行します。 
 
 ![新しいアクターの作成](images/unreal-winrt-img-04.png)
 
 > [!NOTE]
 > Uproject ファイルと同じディレクトリに、Source/ConsumeWinRT/ConsumeWinRT という名前の新しいビルドスクリプトと共にソリューションが作成されました。
 
-2. ソリューションを開き、 **game/ConsumeWinRT/Source/consumewinrt** フォルダーを参照し、 **ConsumeWinRT.build.cs**を開きます。
+2. ソリューションを開き、 **game/ConsumeWinRT/Source/consumewinrt** フォルダーを参照し、 **ConsumeWinRT.build.cs** を開きます。
 
 ![ConsumeWinRT.build.cs ファイルを開く](images/unreal-winrt-img-05.png)
 
 ### <a name="linking-the-dll"></a>DLL のリンク
-1. **ConsumeWinRT.build.cs**で、プロパティを追加して、DLL のインクルードパス (HoloLensWinrtDLL を含むディレクトリ) を検索します。 DLL は、インクルードパスの子ディレクトリにあるため、このプロパティはバイナリルートディレクトリとして使用されます。
+1. **ConsumeWinRT.build.cs** で、プロパティを追加して、DLL のインクルードパス (HoloLensWinrtDLL を含むディレクトリ) を検索します。 DLL は、インクルードパスの子ディレクトリにあるため、このプロパティはバイナリルートディレクトリとして使用されます。
 
 ```cs
 using System.IO;
@@ -240,17 +240,32 @@ public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 }
 ```
 
-3. **Winrtactor**を開き、2つの関数定義を追加します。1つはブループリントで使用でき、もう1つは DLL コードを使用します。 
+3. **Winrtactor** を開き、1つの関数定義を追加します。1つは、ブループリントによって呼び出されます。 
+
 ```cpp
 public:
     UFUNCTION(BlueprintCallable)
-    static void OpenFileDialogue;
+    static void OpenFileDialogue();
 ```
 
-4. **Winrtactor**を開き、DLL を beginplay に読み込みます。 
+4. **Winrtactor** を開き、beginplay を更新して DLL を読み込みます。 
 
 ```cpp
-void AWinfrtActor::BeginPlay()
+void AWinrtActor::BeginPlay()
+{
+    Super::BeginPlay();
+
+    // Gets path to DLL location
+    const FString BinDir = FPaths::ProjectDir() / 
+        "ThirdParty" / "HoloLensWinrtDLL" / 
+        "arm64" / "Release" / "HoloLensWinrtDLL";
+
+    // Loads DLL into application
+    void * dllHandle = FPlatformProcess::GetDllHandle(
+        *(BinDir / "HoloLensWinrtDLL.dll"));
+}
+
+void AWinrtActor::OpenFileDialogue()
 {
 #if PLATFORM_HOLOLENS
     HoloLensWinrtDLL::OpenFileDialogue();
@@ -264,15 +279,15 @@ void AWinfrtActor::BeginPlay()
 ### <a name="building-the-game"></a>ゲームを構築する
 1. ゲームソリューションをビルドして、game プロジェクトで開かれている Unreal エディターを起動します。 
     * [ **アクターの配置** ] タブで、新しい **winrtactor** を検索し、シーンにドラッグします。 
-    * レベルブループリントを開き、 **Winrtactor**でブループリント呼び出し可能関数を実行します。 
+    * レベルブループリントを開き、 **Winrtactor** でブループリント呼び出し可能関数を実行します。 
 
 ![WinrtActor をシーンに配置する](images/unreal-winrt-img-06.png)
 
-2. **世界**中では、前にシーンにドロップした**Windrtactor**を見つけて、レベルのブループリントにドラッグします。 
+2. **世界** 中では、前にシーンにドロップした **Windrtactor** を見つけて、レベルのブループリントにドラッグします。 
 
 ![WinrtActor をレベルブループリントにドラッグする](images/unreal-winrt-img-07.png)
 
-3. レベルブループリントで、[出力] ノードを WinrtActor からドラッグし、[ **ファイルを開く] ダイアログ**を検索して、任意のユーザー入力からノードをルーティングします。  この場合、[ファイルを開く] ダイアログが音声イベントから呼び出されます。 
+3. レベルブループリントで、[出力] ノードを WinrtActor からドラッグし、[ **ファイルを開く] ダイアログ** を検索して、任意のユーザー入力からノードをルーティングします。  この場合、[ファイルを開く] ダイアログが音声イベントから呼び出されます。 
 
 ![レベルブループリントでのノードの構成](images/unreal-winrt-img-08.png)
 

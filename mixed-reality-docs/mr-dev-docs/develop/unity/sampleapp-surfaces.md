@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、mrtk、design、sample app、controls
-ms.openlocfilehash: ee410e16a578efa53a38da2fb6b6477e109ac101
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1c6cb4579bbd3d6124cf36b21226ffa803f39f00
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690522"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573186"
 ---
 # <a name="surfaces"></a>Surfaces
 
@@ -21,6 +21,11 @@ ms.locfileid: "91690522"
 Surface は、Microsoft の混合現実設計ラボのオープンソースのサンプル[アプリです。](https://github.com/microsoft/MRDL_Unity_Surfaces) ここでは、ビジュアル、オーディオ、および完全に手を付けて tactile 人気を作成する方法について説明します。
 
 ![Surfaces](images/MRDL_Surfaces_1.jpg)
+
+## <a name="demo-video"></a>デモ ビデオ 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IhWQ]
+
+Mixed Reality キャプチャを使用して HoloLens 2 で記録
 
 ## <a name="about-the-app"></a>アプリについて
 Surface は、Mixed Reality Toolkit (MRTK) の入力システムと構成要素を使用して、HoloLens 2 のアプリエクスペリエンスを作成する方法を示しています。 このプロジェクトでは、次の例を確認できます。
@@ -42,16 +47,18 @@ https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overview
 
 (アプリは HoloLens 2 でのみ利用可能)
 
-## <a name="about-the-author"></a>著者について
+## <a name="about-the-author"></a>筆者について
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>駐車中</b><br>UX デザイナー @Microsoft</td>
+<td style="border-style: none"><b>Dong Yoon Park</b><br>UX デザイナー @Microsoft</td>
 </tr>
 </table>
 
 ## <a name="see-also"></a>関連項目
 
-* [対話可能なオブジェクト](../../design/interactable-object.md)
-* [オブジェクト コレクション](../../design/object-collection.md)
+* [MRTK Examples Hub](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Microsoft Store の HoloLens 2 からダウンロード)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Surfaces](sampleapp-surfaces.md) - [(Microsoft Store の HoloLens 2 からダウンロード)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [元素周期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

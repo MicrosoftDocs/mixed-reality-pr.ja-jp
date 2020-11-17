@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens、リモート処理、Holographic リモート処理
-ms.openlocfilehash: 844a5dc36b480791296f17db067cd71ece307a2b
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+keywords: HoloLens、リモート処理、Holographic リモート処理、バージョン履歴、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
+ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011435"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677851"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic リモート処理のバージョン履歴
 
@@ -45,8 +45,8 @@ ms.locfileid: "92011435"
 * 以前のバージョンでは、Holographic リモート処理プレーヤーによって、プレーヤー側で予測が完全に処理されました。 バージョン2.2.0 以降では、Holographic リモート処理に時間の同期があり、予測はリモートアプリケーションによって完全に実行されます。 また、複雑なネットワークの状況下では、ユーザーがホログラムの安定性を向上させる必要があります。
 
 ## <a name="version-213-may-25-2020"></a>バージョン 2.1.3 (2020 年5月 25) <a name="v2.1.3"></a>
-* [HolographicSpace CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded)イベントの動作が変更されました。 以前のバージョンでは、追加された[HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera)には、 [HolographicSpace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)を使用して次のフレームを作成するときに有効な[HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose)があることは保証されて**いません**でした。 バージョン 2.1.3 HolographicSpace は、Holographic Remoting Player から来たポーズデータと同期されてい [ます。](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) また、カメラが追加されると、そのカメラでは次のフレームに有効な [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) も使用できます。
-* DepthBufferStreamResolution に **無効** にされました。これを使用して、RemoteContext.ConfigureDepthVideoStream を介した深度バッファーストリーミングを無効にすることができます。 HolographicCameraRenderingParameters を使用すると、 [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) は *E_ILLEGAL_METHOD_CALL*で失敗します。
+* [HolographicSpace CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded)イベントの動作が変更されました。 以前のバージョンでは、追加された [HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera)には、 [HolographicSpace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)を使用して次のフレームを作成するときに有効な [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose)があることは保証されて **いません** でした。 バージョン 2.1.3 HolographicSpace は、Holographic Remoting Player から来たポーズデータと同期されてい [ます。](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) また、カメラが追加されると、そのカメラでは次のフレームに有効な [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) も使用できます。
+* DepthBufferStreamResolution に **無効** にされました。これを使用して、RemoteContext.ConfigureDepthVideoStream を介した深度バッファーストリーミングを無効にすることができます。 HolographicCameraRenderingParameters を使用すると、 [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) は *E_ILLEGAL_METHOD_CALL* で失敗します。
 * Holographic リモート処理プレーヤーのスタートアップ画面が再設計され、ユーザービューをブロックしないようになりました。
 * 安定性の向上とバグの修正。
 

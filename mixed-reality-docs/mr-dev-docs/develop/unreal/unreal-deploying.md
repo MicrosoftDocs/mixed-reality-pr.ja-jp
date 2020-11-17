@@ -5,15 +5,15 @@ author: sw5813
 ms.author: suwu
 ms.date: 7/10/2020
 ms.topic: article
-keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、デバイスへのデプロイ、PC、ドキュメント
+keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、デバイスへの展開、PC、ドキュメント、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: abd5e5c28ec5e66c4f73df8edf5e0ac0212d170a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9d32dff121899d40175af813fac4f7be1acc66c3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684791"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679121"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Unreal でのデバイスへのデプロイ
 
@@ -52,11 +52,11 @@ HoloLens 2 に Unreal アプリケーションを展開するには、次の2つ
 
 [アプリのパッケージ化とデプロイ](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal)に関する詳細な手順については、「unreal チュートリアルシリーズを使用したはじめに」の最後のセクションを参照してください。
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
 まだデプロイされていない開発チェックポイントについて説明している場合は、デプロイ段階の途中です。 ここから、高度なサービスの追加に進むことができます。
 
 > [!div class="nextstepaction"]
 > [高度なサービス](unreal-development-overview.md#5-adding-services)
 
-いつでも、 [Unreal の開発チェックポイント](unreal-development-overview.md#4-deploying-to-a-device) に戻ることができます。
+いつでも [Unreal 開発チェックポイント](unreal-development-overview.md#4-deploying-to-a-device)に戻ることができます。

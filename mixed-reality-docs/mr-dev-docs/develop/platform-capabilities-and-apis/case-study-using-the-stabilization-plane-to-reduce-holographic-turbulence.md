@@ -5,13 +5,13 @@ author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、ホログラム、安定化、ケーススタディ
-ms.openlocfilehash: 4eb61cb37ef087dc5fbeb6b4ef6ca1c507719205
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、ホログラム、安定化、ケーススタディ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット
+ms.openlocfilehash: c268e7ee83fdcbb8c5ddd09cd643f4354d05ec29
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683794"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679611"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>ケーススタディ-安定化平面を使用して holographic 乱気流を減らす
 
@@ -88,7 +88,7 @@ HoloLens を所有していて、この記事内の概念を試したい場合�
 * 可能な限り、ターゲット間で平面をスムーズに移動します。 遠くのターゲットを瞬時に切り替えると、シーンが視覚的に中断される可能性があります。
 * 平面の設定ロジックで、非常に具体的なターゲットにロックするオプションを使用することを検討してください。 そうすることで、必要に応じて、ロゴやタイトル画面などのオブジェクトでプレーンをロックすることができます。
 
-## <a name="about-the-author"></a>著者について
+## <a name="about-the-author"></a>筆者について
 
 <table style="border-collapse:collapse">
 <tr>

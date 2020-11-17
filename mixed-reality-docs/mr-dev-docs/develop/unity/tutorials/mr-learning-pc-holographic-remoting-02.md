@@ -1,18 +1,18 @@
 ---
 title: PC Holographic Remoting のチュートリアル - 2. Holographic Remoting PC アプリケーションを作成する
-description: このコースを完了すると、Mixed Reality エクスペリエンスを PC から HoloLens 2 にリモート処理する方法を学習できます。
+description: このコースを完了すると、PC アプリケーションを作成して Mixed Reality エクスペリエンスを PC から HoloLens 2 にリモート処理する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 6d11d91a0e08c48c09f676171dcb9bb8a0ff74de
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 30ef793511285fe2fe52810912f6c5c06c8550dc
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701709"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353460"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2.Holographic Remoting PC アプリケーションの作成
 
@@ -28,9 +28,9 @@ ms.locfileid: "91701709"
 
 このセクションでは、Wi-Fi 接続を使用して、PC から HoloLens 2 デバイスに Mixed Reality エクスペリエンスをリアルタイムにストリーミングできるようにプロジェクトを構成します。
 
-[プロジェクト] ウィンドウで、 **[アセット]**  >  **[MRTK.Tutorials.PCHolograhicRemoting]**  >  **[Prefabs]\(プレハブ\)** フォルダーの順に移動します。次に、 **HolographicRemoting** プレハブをクリックしてシーンにドラッグします。
+[プロジェクト] ウィンドウで、 **[アセット]**  >  **[MRTK.Tutorials.PCHolograhicRemoting]**  >  **[Prefabs]\(プレハブ\)** フォルダーの順に移動します。次に、**HolographicRemoting** プレハブをクリックしてシーンにドラッグします。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section1-Step1-1.png)
+![新しく追加された HolographicRemoting プレハブがまだ選択されている Unity](images/mrlearning-pc-holographic-remoting/Tutorial2-Section1-Step1-1.png)
 
 ## <a name="build-your-application-to-pc"></a>アプリケーションを PC にビルドする
 
@@ -42,38 +42,38 @@ Unity メニューで、[編集] > [プロジェクトの設定] の順に選択
 
 **[XR Settings]\(XR 設定\)** セクションで、 **[WSA Holographic Remoting Supported]\(WSA Holographic Remoting のサポート\)** チェックボックスをオンにして、Holographic Remoting を有効にします。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step1-1.png)
+![[WSA Holographic Remoting Supported]\(WSA Holographic Remoting のサポート\) が有効にされている [XR Settings]\(XR 設定\) ウィンドウが表示された Unity](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step1-1.png)
 
 ### <a name="2-build-the-unity-project"></a>2.Unity プロジェクトをビルドする
 
 Unity メニューで、[ファイル] > [ビルド設定] の順に選択して、[ビルド設定] ウィンドウを開きます。
 
-[ビルド設定] ウィンドウで、 ***[Add Open Scenes]\(開いているシーンの追加\)*** ボタンをクリックして、現在のシーンを [シーン] に追加します。 ビルドの一覧で、 ***[ビルド] ボタン*** をクリックして、[Build Universal Windows Platform]\(ユニバーサル Windows プラットフォームのビルド\) ウィンドウを開きます。
+[Build Settings]\(ビルド設定\) ウィンドウで、**_[Add Open Scenes]\(開いているシーンの追加\)_* ボタンをクリックして、現在のシーンを [シーン] に追加します。 ビルドの一覧で、_*_[ビルド] ボタン_*_ をクリックして、[Build Universal Windows Platform]\(ユニバーサル Windows プラットフォームのビルド\) ウィンドウを開きます。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
+![シーンが追加されている [Build Settings]\(ビルド設定\) ウィンドウが表示された Unity](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
 
-[Build Universal Windows Platform]\(ユニバーサル Windows プラットフォームのビルド\) ウィンドウで、ビルドを格納するのに適切な場所 (Documents\MixedRealityLearning など) を選択します。 新しいフォルダーを作成し、PCHolographicRemoting などの適切な名前を付けます。 次に、 ***[フォルダーの選択]*** ボタンをクリックして、ビルド処理を開始します。
+[Build Universal Windows Platform]\(ユニバーサル Windows プラットフォームのビルド\) ウィンドウで、ビルドを格納するのに適切な場所 (Documents\MixedRealityLearning など) を選択します。 新しいフォルダーを作成し、PCHolographicRemoting などの適切な名前を付けます。 次に、_*_[フォルダーの選択]_*_ ボタンをクリックして、ビルド処理を開始します。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-2.png)
+![[フォルダーの選択] プロンプト ウィンドウが表示されている [Build Settings]\(ビルド設定\) ウィンドウが表示された Unity](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-2.png)
 
 Unity でビルド処理が完了するまで待ちます。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-3.png)
+![ビルド処理が進行中の Unity](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-3.png)
 
 ### <a name="3-build-and-deploy-the-application"></a>3.アプリのビルドと配置
 
 ビルド処理が完了すると、Unity は、ビルドを格納した場所を開くように Windows ファイル エクスプローラーを表示します。 フォルダー内を移動し、.sln ファイルをダブルクリックして Visual Studio で開きます。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-1.png)
+![新しく作成された Visual Studio ソリューションが選択された Windows エクスプローラー](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-1.png)
 
 > [!NOTE]
 > Visual Studio から新しいコンポーネントをインストールするよう求められたら、少し時間を取って、ツールのインストールに関するドキュメントで示されている、前提条件となるすべてのコンポーネントがインストールされていることをご確認ください。
 
 [リリース] 構成、[x64] アーキテクチャ、ターゲットとして [ローカル コンピューター] を選択して、PC 用に Visual Studio を構成します。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-2.png)
+![ローカル コンピューター用に構成された Visual Studio](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-2.png)
 
-***[ローカル コンピューター]*** と表示されているボタンをクリックします。 PC 上でアプリケーションのビルドとデプロイが開始されます。 既定では、アプリケーションはお使いの PC にインストールされます。
+_*_[ローカル コンピューター]_*_ と表示されているボタンをクリックします。 PC 上でアプリケーションのビルドとデプロイが開始されます。 既定では、アプリケーションはお使いの PC にインストールされます。
 
 ## <a name="testing-holographic-remoting-remote-application"></a>Holographic Remoting リモート アプリケーションのテスト
 
@@ -81,16 +81,16 @@ PC アプリケーションを HoloLens 2 に接続するには、次の手順�
 
 ### <a name="1-install-the-remoting-player-application-on-hololens-2-device"></a>1.Remoting Player アプリケーションを HoloLens 2 デバイスにインストールする
 
-* HoloLens 2 で、Store アプリにアクセスし、" **Remoting Player** " を検索します。
+_ HoloLens 2 で、Store アプリにアクセスし、"**Remoting Player**" を検索します。
 * **Remoting Player** アプリを選択します。
 * **[インストール]** をタップし、アプリをダウンロードしてインストールします。
 
 ### <a name="2-connect-the-holographic-remoting-pc-app-to-the-remoting-player"></a>2.Holographic Remoting PC アプリを Remoting Player に接続する
 
 * HoloLens で **Remoting Player** を起動します。
-* HoloLens の **IP アドレス** をメモしておきます。 これは、 **Remoting Player** が起動した直後に Remoting Player によってホログラムとして表示されます。
+* HoloLens の **IP アドレス** をメモしておきます。 これは、**Remoting Player** が起動した直後に Remoting Player によってホログラムとして表示されます。
 * Holographic Remoting PC アプリケーションを PC で開きます。
-* アプリケーションが起動したら、 **IP アドレス** を入力し、 **[接続]** ボタンをクリックして接続します。
+* アプリケーションが起動したら、**IP アドレス** を入力し、 **[接続]** ボタンをクリックして接続します。
 
 ## <a name="congratulations"></a>結論
 

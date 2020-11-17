@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity、損失の追跡、損失の追跡の画像
-ms.openlocfilehash: 5aa17def844735088bcee6137a7b76a586107e44
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity、損失の追跡、損失の画像の追跡、ポーリング、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
+ms.openlocfilehash: 52b81069e6b9f94a2a6a4fb552be4234cf43d1f0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683119"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678421"
 ---
 # <a name="tracking-loss-in-unity"></a>Unity での損失の追跡
 
@@ -25,12 +25,12 @@ ms.locfileid: "91683119"
 
 ## <a name="manual-handling"></a>手動処理
 
-追跡の損失を手動で処理するには、 **Edit** [  >  **プロジェクト設定** の編集]、[  >  **Player**  >  **設定] タブの [ユニバーサル Windows プラットフォーム設定] タブ** の [スプラッシュイメージ] [Windows Holographic] の方にアクセスし、[  >  **Splash Image**  >  **Windows Holographic** 追跡損失の一時停止と画像の表示] をオフにします。 その後、以下で指定した Api を使用して、変更の追跡を処理する必要があります。
+追跡の損失を手動で処理するには、 **Edit**[  >  **プロジェクト設定** の編集]、[  >  **Player**  >  **設定] タブの [ユニバーサル Windows プラットフォーム設定] タブ** の [スプラッシュイメージ] [Windows Holographic] の方にアクセスし、[  >  **Splash Image**  >  **Windows Holographic** 追跡損失の一時停止と画像の表示] をオフにします。 その後、以下で指定した Api を使用して、変更の追跡を処理する必要があります。
 
 **名前空間:** *UNITYENGINE. XR*<br>
 **型:** *WorldManager*
 
-* World Manager は、紛失/獲得された追跡 ( *WorldManager OnPositionalLocatorStateChanged* ) を検出するイベントを公開し、プロパティを表示して現在の状態 (WorldManager) を照会し *ます。*
+* World Manager は、紛失/獲得された追跡 (*WorldManager OnPositionalLocatorStateChanged*) を検出するイベントを公開し、プロパティを表示して現在の状態 (WorldManager) を照会し *ます。*
 * 追跡状態がアクティブでない場合、カメラは、ユーザーが変換した場合でも、仮想環境では変換されないように見えます。 これは、オブジェクトが物理的な場所に対応しなくなり、すべての本文がロックされることを意味します。
 
 変更の追跡を自分で処理する場合は、各フレームの状態プロパティをポーリングするか、 *OnPositionalLocatorStateChanged* イベントを処理する必要があります。

@@ -1,20 +1,20 @@
 ---
-title: Azure Spatial Anchors チュートリアル - 1. はじめに
-description: このコースを完了すると Mixed Reality アプリケーション内に Azure Spatial Anchors を実装できます。
+title: Azure Spatial Anchors チュートリアル - 1. Azure Spatial Anchors チュートリアルの概要
+description: このコースを完了すると、Mixed Reality アプリケーション内に Azure Spatial Anchors を実装する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 088987e0b43908abecfd66b9dbb0a4de8fcf472e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: fcea8bd02c81437dd7337ee94838f44f299f1927
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702449"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353400"
 ---
-# <a name="1-introduction"></a>1.はじめに
+# <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1. Azure Spatial Anchors チュートリアルの概要
 
 ## <a name="overview"></a>概要
 

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: ジェスチャ、モーションコントローラー、unity、宝石、入力
-ms.openlocfilehash: 6c41de0a0b5d2879b2f3a0be90c9456100599d2b
-ms.sourcegitcommit: 8b16945d6a551f174a65fa3980ba392682ca45d4
+keywords: ジェスチャ、モーションコントローラー、unity、宝石、入力、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: e1a2ae10638bb8dbd35eed7e9a0a1d2a05181f0c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886275"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678651"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Unity でのジェスチャとモーション コントローラー
 
@@ -109,12 +109,12 @@ Windows Mixed Reality では、さまざまなフォームファクターでモ�
 イマーシブヘッドセットでは、グリップは、 **ユーザーの手** や、剣や銃など、 **ユーザーの手に保持** されているオブジェクトをレンダリングするために最適です。 また、このグリップは、モーションコントローラーを視覚化するときにも使用されます。これは、モーションコントローラー用に Windows によって提供される **描画モデル** が、グリップを原点と回転の中心として使用するためです。
 
 グリップは、次のように明確に定義されます。
-* **グリップの位置** : コントローラーを自然に保持するときのパーム重心。グリップ内の位置を中央に配置するように左右に調整されます。 Windows Mixed Reality モーションコントローラーでは、通常、この位置はボタンをつかみに揃えて配置されます。
-* **グリップの向きの右軸** : 手を完全に開いて平らな5本の指を作成した場合 (左側のパームから前方、右側のパームから後方)、
-* **グリップの向きの前方軸** : ハンドを部分的に閉じた場合 (コントローラーを保持している場合と同様)、非表示の指で形成されたチューブを通過する光線。
-* **グリップの向きの上位軸** : 右および順方向の定義によって暗黙的に示される上位軸。
+* **グリップの位置**: コントローラーを自然に保持するときのパーム重心。グリップ内の位置を中央に配置するように左右に調整されます。 Windows Mixed Reality モーションコントローラーでは、通常、この位置はボタンをつかみに揃えて配置されます。
+* **グリップの向きの右軸**: 手を完全に開いて平らな5本の指を作成した場合 (左側のパームから前方、右側のパームから後方)、
+* **グリップの向きの前方軸**: ハンドを部分的に閉じた場合 (コントローラーを保持している場合と同様)、非表示の指で形成されたチューブを通過する光線。
+* **グリップの向きの上位軸**: 右および順方向の定義によって暗黙的に示される上位軸。
 
-このグリップには、Unity のクロスベンダ入力 API (XR) を使用してアクセスでき *[ます。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/Rotation* ) または WINDOWS MR 固有の API ( *TryGetPosition/rotation* ) を使用して、 **グリップ** ノードのポーズデータを要求します。
+このグリップには、Unity のクロスベンダ入力 API (XR) を使用してアクセスでき *[ます。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/Rotation*) または WINDOWS MR 固有の API (*TryGetPosition/rotation*) を使用して、 **グリップ** ノードのポーズデータを要求します。
 
 ### <a name="pointer-pose"></a>ポインターのポーズ
 
@@ -159,13 +159,13 @@ Windows Mixed Reality では、さまざまなフォームファクターでモ�
 これらのモーションコントローラーの追跡状態は、次のように定義されています。
 * **高精度:** モーションコントローラーは、ヘッドセットのビューに含まれていますが、通常、ビジュアルの追跡に基づいて高精度の位置を提供します。 ビューまたはのフィールドから瞬間的に見えない移動コントローラーは、(ユーザーの他の手によって) ヘッドセットセンサーから瞬間的に見えなくなっていることに注意してください。これは、コントローラー自体の慣性追跡に基づいて、短時間で高精度のポーズを返します。
 * **高精度 (損失のリスク):** ユーザーが、ヘッドセットのビューの端を越えてモーションコントローラーを動かすと、ヘッドセットはすぐにコントローラーの位置を視覚的に追跡できなくなります。 アプリでは、 **SourceLossRisk** が1.0 に到達して、コントローラーがこの視界の境界に達したことを認識します。 その時点で、アプリは、非常に高品質なポーズの安定したストリームを必要とするコントローラージェスチャを一時停止することを選択できます。
-* **おおよその精度:** コントローラーのビジュアル追跡が十分に失われた場合、コントローラーの位置はおおよその精度の位置にドロップします。 この時点で、システムはコントローラーをユーザーにボディロックし、ユーザーが移動したときの位置を追跡しながら、内部方向センサーを使用してコントローラーの真向きを公開します。 UI 要素をポイントしてアクティブ化するためにコントローラーを使用する多くのアプリは、ユーザーに気付かずに正確な精度で、通常どおりに動作できます。 入力要件が重いアプリでは、 **positionaccuracy** プロパティを調べることによって、精度が **高い** ことを **意味します** 。たとえば、この期間中にユーザーに対して、オフスクリーンのターゲットに対してより多くのヒットボックスを与えることができます。
+* **おおよその精度:** コントローラーのビジュアル追跡が十分に失われた場合、コントローラーの位置はおおよその精度の位置にドロップします。 この時点で、システムはコントローラーをユーザーにボディロックし、ユーザーが移動したときの位置を追跡しながら、内部方向センサーを使用してコントローラーの真向きを公開します。 UI 要素をポイントしてアクティブ化するためにコントローラーを使用する多くのアプリは、ユーザーに気付かずに正確な精度で、通常どおりに動作できます。 入力要件が重いアプリでは、 **positionaccuracy** プロパティを調べることによって、精度が **高い** ことを **意味します**。たとえば、この期間中にユーザーに対して、オフスクリーンのターゲットに対してより多くのヒットボックスを与えることができます。
 * **位置なし:** コントローラーは長時間の精度で実行できますが、本体でロックされている位置が現時点では意味を持たないことをシステムが認識している場合があります。 たとえば、電源が入っていたコントローラーが視覚的に観察されていない場合や、ユーザーがコントローラーを停止した後に他のユーザーが選択した場合などです。 これらのタイミングでは、システムはアプリに位置を提供せず、 *TryGetPosition* は false を返します。
 
 ## <a name="common-unity-apis-inputgetbuttongetaxis"></a>共通 Unity Api (Input. GetButton/GetAxis)
 
-**名前空間:** *unityengine* 、 *unityengine XR*<br>
-**型** : *Input* 、 *XR。InputTracking*
+**名前空間:** *unityengine*、 *unityengine XR*<br>
+**型**: *Input*、 *XR。InputTracking*
 
 Unity では、現在、一般的な *入力. GetButton/GetAxis* api を使用して、 [Oculus Sdk](https://docs.unity3d.com/Manual/OculusControllers.html)、 [Openvr SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html) 、および Windows Mixed Reality の入力を公開しています。これには、ハンドアンドモーションコントローラーも含まれます。 アプリがこれらの Api を入力に使用する場合、Windows Mixed Reality を含む複数の XR Sdk 間で、モーションコントローラーを簡単にサポートできます。
 
@@ -186,7 +186,7 @@ if (Input.GetButton("Submit"))
   // ...
 }
 ```
-論理ボタンを追加するには、[ **軸** ] の [ **サイズ** ] プロパティを変更します。
+論理ボタンを追加するには、[**軸**] の [**サイズ**] プロパティを変更します。
 
 ### <a name="getting-a-physical-buttons-pressed-state-directly"></a>物理的なボタンの押された状態を直接取得する
 
@@ -201,7 +201,7 @@ if (Input.GetKey("joystick button 8"))
 
 ### <a name="getting-a-hand-or-motion-controllers-pose"></a>手や運動コントローラーのポーズ
 
-XR を使用して、コントローラーの位置と回転にアクセスでき *ます。InputTracking* :
+XR を使用して、コントローラーの位置と回転にアクセスでき *ます。InputTracking*:
 
 ```cs
 Vector3 leftPosition = InputTracking.GetLocalPosition(XRNode.LeftHand);
@@ -215,7 +215,7 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 ## <a name="windows-specific-apis-xrwsainput"></a>Windows 固有の Api (XR。付い.代入
 
 **名前空間:** *UNITYENGINE. XR*<br>
-**型** : *interactionmanager* 、 *interactionsourcestate* 、 *interactionmanager* 、 *interactionsourceproperties* 、 *interactionsourcekind* 、 *interactionmanager*
+**型**: *interactionmanager*、 *interactionsourcestate*、 *interactionmanager*、 *interactionsourceproperties*、 *interactionsourcekind*、 *interactionmanager*
 
 Windows Mixed Reality の入力 (HoloLens) とモーションコントローラーの詳細情報を取得するには、 *XR* 名前空間で windows 固有の空間入力 api を使用することを選択できます。 これにより、位置の精度やソースの種類などの追加情報にアクセスして、ハンドとコントローラーを区別できます。
 
@@ -333,7 +333,7 @@ InteractionManager.InteractionSourcePressed -= InteractionManager_InteractionSou
 ユーザーが手やコントローラーを押したときの本来の目的に基づいて正確にターゲットを指定するには、その *Interactionsourcepressed* れたイベントまたは *InteractionSourceReleased* 入力イベントからの履歴ソースの発生元またはヘッドポーズを使用する必要があります。
 
 ユーザーのヘッドまたはコントローラーの履歴リーダーデータを使用して、プレスまたはリリースを対象にすることができます。
-* ジェスチャまたはコントローラーの押下が発生した時点で、 [ユーザーがどの](../../design/gaze-and-commit.md)ようにしているかを **判断するため** に使用できます。
+* ジェスチャまたはコントローラーの押下が発生した時点で、[ユーザーがどの](../../design/gaze-and-commit.md)ようにしているかを **判断するため** に使用できます。
 
    ```cs
    void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs args) {
@@ -427,7 +427,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 ## <a name="high-level-composite-gesture-apis-gesturerecognizer"></a>高レベル複合ジェスチャ Api (GestureRecognizer)
 
 **名前空間:** *UNITYENGINE. XR*<br>
-**型** : *GestureRecognizer* 、 *GestureSettings* 、 *interactionsourcekind*
+**型**: *GestureRecognizer*、 *GestureSettings*、 *interactionsourcekind*
 
 アプリでは、空間入力ソース、タップ、ホールド、操作、およびナビゲーションジェスチャに対する高レベルの複合ジェスチャを認識することもできます。 GestureRecognizer を使用して、[ハンド](../../design/gaze-and-commit.md#composite-gestures)[コントローラーとモーションコントローラー](../../design/motion-controllers.md)の両方でこれらの複合ジェスチャを認識できます。
 

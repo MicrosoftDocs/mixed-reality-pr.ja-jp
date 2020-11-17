@@ -1,19 +1,19 @@
 ---
-title: Unreal のマテリアルに関する推奨事項
+title: Unreal の素材に関する推奨事項
 description: Unreal engine のマテリアルの概要。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/18/2020
 ms.topic: article
-keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、開発、マテリアル、ドキュメント、ガイド、特徴、ホログラム、ゲーム開発
-ms.openlocfilehash: bfce6e6bf8acd58821dba1213e1f1ab571d85a0c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、開発、マテリアル、ドキュメント、ガイド、機能、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
+ms.openlocfilehash: d57689e9427ab5877e3afb49b0d19f35df6c47d2
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684546"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678941"
 ---
-# <a name="material-recommendations-in-unreal"></a>Unreal のマテリアルに関する推奨事項
+# <a name="material-recommendations-in-unreal"></a>Unreal の素材に関する推奨事項
 
 Unreal Engine では、マテリアルはパフォーマンスを向上させることができます。 このページは、最高のパフォーマンスを得るために使用する必要がある基本設定のクイックスタートとして機能します。
 
@@ -73,7 +73,7 @@ Unreal Engine では、マテリアルはパフォーマンスを向上させる
 
 素材のインスタンスを作成するときは、マテリアルインスタンスの **定数** を動的に使用するように設定する必要があります。 **Material Instance Constant** は、ランタイムの前に1回だけ計算する、インスタンス化された素材です。
 
-コンテンツブラウザーを使用して作成された素材インスタンス ( **右クリック > Create Material instance** ) は、素材インスタンス定数です。 マテリアルインスタンス動的は、コードを使用して作成されます。 マテリアルインスタンスの詳細については、 [Unreal Engine のドキュメント](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)を参照してください。
+コンテンツブラウザーを使用して作成された素材インスタンス (**右クリック > Create Material instance**) は、素材インスタンス定数です。 マテリアルインスタンス動的は、コードを使用して作成されます。 マテリアルインスタンスの詳細については、 [Unreal Engine のドキュメント](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)を参照してください。
 
 ![Unreal での素材インスタンスの作成](images/unreal-materials-img-08.png)
 

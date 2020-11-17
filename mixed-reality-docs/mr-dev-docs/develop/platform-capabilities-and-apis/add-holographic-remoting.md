@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 05/24/2019
 ms.topic: article
-keywords: Windows Mixed Reality, ホログラム, holographic リモート処理, リモートレンダリング, ネットワークレンダリング, HoloLens, リモートホログラム
-ms.openlocfilehash: 0a6cdf34a797a7113c780dee0049125861dd7c32
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, ホログラム, holographic リモート処理, リモートレンダリング, ネットワークレンダリング, HoloLens, リモートホログラム, Mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
+ms.openlocfilehash: ec03a349959f9bde71a2c8a600d513fb21c533a8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685903"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679631"
 ---
 # <a name="add-holographic-remoting-hololens-1st-gen"></a>Holographic リモート処理 (HoloLens (第1世代)) の追加
 
@@ -43,8 +43,8 @@ Holographic remoting を使用すると、アプリはデスクトップ PC ま�
 1. Visual Studio でプロジェクトにアクセスします。
 2. プロジェクトノードを右クリックし、[ **NuGet パッケージの管理...** ] を選択します。
 3. 表示されるパネルで、[ **参照** ] をクリックし、"Holographic Remoting" を検索します。
-4. **Holographic** を選択し、[ **インストール** ] をクリックします。
-5. [ **プレビュー** ] ダイアログが表示されたら、[ **OK** ] をクリックします。
+4. **Holographic** を選択し、[**インストール**] をクリックします。
+5. [ **プレビュー** ] ダイアログが表示されたら、[ **OK**] をクリックします。
 6. 次に表示されるダイアログは、使用許諾契約書です。 [ **同意** する] をクリックして、使用許諾契約書に同意します。
 
 ### <a name="create-the-holographicstreamerhelpers"></a>HolographicStreamerHelpers を作成する

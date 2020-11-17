@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality、ホログラム、HoloLens 2、視線追跡、宝石入力、ヘッドマウントディスプレイ、Unreal engine
-ms.openlocfilehash: 477fbdc9c7ddb3b4e890e62150651d9227d4c19e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、ホログラム、HoloLens 2、視線追跡、宝石入力、ヘッドマウントディスプレイ、Unreal engine、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット
+ms.openlocfilehash: 2ea55e3c53275f6150ca7f2def10d71634119e2e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684858"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679051"
 ---
 # <a name="gaze-input"></a>見つめ入力
 
@@ -44,19 +44,19 @@ Unreal の Api を使用するには、HoloLens の入力を HoloLens プロジ�
 
 これで、HoloLens の入力を HoloLens 2 のアプリに Unreal に追加する必要があります。 より簡単な入力と、それが混合現実のユーザーに与える影響の詳細については、以下のリンクを参照してください。 対話型エクスペリエンスを構築するときは、これらのことを考慮してください。
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-デプロイされていない実際のチェックポイントの旅に従っている場合、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。 
+私たちが用意した Unreal 開発チェックポイント体験に従っている場合、読者は MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素に進むことができます。 
 
 > [!div class="nextstepaction"]
 > [ハンド トラッキング](unreal-hand-tracking.md)
 
-または、Mixed Reality プラットフォームの機能と Api に移動します。
+または、Mixed Reality プラットフォームの機能と API に移動します。
 
 > [!div class="nextstepaction"]
 > [HoloLens カメラ](unreal-hololens-camera.md)
 
-いつでも、 [Unreal の開発チェックポイント](unreal-development-overview.md#2-core-building-blocks) に戻ることができます。
+いつでも [Unreal 開発チェックポイント](unreal-development-overview.md#2-core-building-blocks)に戻ることができます。
 
 ## <a name="see-also"></a>関連項目
 * [調整](../../calibration.md)

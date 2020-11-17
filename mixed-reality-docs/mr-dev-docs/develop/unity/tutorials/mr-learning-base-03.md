@@ -1,18 +1,18 @@
 ---
 title: 入門チュートリアル - 3. MRTK プロファイルの構成
-description: このコースでは、Mixed Reality Toolkit (MRTK) を使用して複合現実のアプリケーションを作成する方法について説明します。
+description: このコースでは、Mixed Reality Toolkit (MRTK) プロファイルを構成する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 028da6e0dd920e90cb353c22d22ab985de56bb81
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 15fa4285fd6dd60aac9ba3869430649db5b40f91
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700002"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353260"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3.MRTK プロファイルの構成
 
@@ -20,7 +20,11 @@ ms.locfileid: "91700002"
 
 このチュートリアルでは、MRTK プロファイルをカスタマイズして構成する方法について学習します。
 
+<a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html" target="_blank">MRTK プロファイル</a>は入れ子になったプロファイルのツリーであり、MRTK システムと機能の初期化方法に関する構成情報を構成しています。 最上位レベルのプロファイルである構成プロファイルには、各プライマリ コア システムに対する入れ子になったプロファイルが含まれています。 入れ子になった各プロファイルは、対応するシステムの動作を構成するように設計されています。
+
 この特定の例では、空間メッシュ オブザーバーの設定を変更して、空間認識メッシュを非表示にする方法を示します。 ただし、次の同じ原則に従って、MRTK プロファイルのすべての設定または値をカスタマイズできます。
+
+[前のチュートリアル](mr-learning-base-02.md#congratulations)の間にプロジェクトを HoloLens 2 に展開したときのように、<a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">空間認識</a>メッシュは環境のジオメトリを表すメッシュのコレクションです。 これは最初に見ておくと役に立つ視覚情報ですが、見た目が繁雑になるのと、パフォーマンスに影響するのを避けるため、通常はオフになっています。
 
 ## <a name="objectives"></a>目標
 
@@ -45,21 +49,21 @@ ms.locfileid: "91700002"
 > [!NOTE]
 > 構成プロファイルは最上位のプロファイルです。 そのため、他のプロファイルを編集できるようにするには、まず構成プロファイルを複製する必要があります。
 
-[Hierarchy]\(階層\) ウィンドウで **MixedRealityToolkit** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで、 **MixedRealityToolkit** の構成プロファイルを **DefaultHoloLens2ConfigurationProfile** に変更します。
+[Hierarchy]\(階層\) ウィンドウで **MixedRealityToolkit** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで、**MixedRealityToolkit** の構成プロファイルを **DefaultHoloLens2ConfigurationProfile** に変更します。
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step1-1.png)
+![DefaultHoloLens2ConfigurationProfile が選択された Unity MixedRealityToolkit コンポーネント](images/mr-learning-base/base-03-section1-step1-1.png)
 
 **MixedRealityToolkit** オブジェクトを選択した状態で、[Inspector]\(インスペクター\) ウィンドウで **[Copy & Customize]\(コピーしてカスタマイズ\)** ボタンをクリックして、[Clone Profile]\(プロファイルの複製\) ウィンドウを開きます。
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step1-2.png)
+![Unity MixedRealityToolkit コンポーネントの [Copy & Customize]\(コピーしてカスタマイズ\) ボタン](images/mr-learning-base/base-03-section1-step1-2.png)
 
-[Clone Profile]\(プロファイルのクローン\) ウィンドウで、適切な **[Profile Name]\(プロファイル名\)** (例: _GettingStarted_HoloLens2ConfigurationProfile_ ) を入力し、 **[Clone]\(クローン\)** ボタンをクリックし、 **DefaultHololens2ConfigurationProfile** の編集可能なコピーを作成します。
+[Clone Profile]\(プロファイルのクローン\) ウィンドウで、適切な **[Profile Name]\(プロファイル名\)** (例: _GettingStarted_HoloLens2ConfigurationProfile_) を入力し、 **[Clone]\(クローン\)** ボタンをクリックし、**DefaultHololens2ConfigurationProfile** の編集可能なコピーを作成します。
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step1-3.png)
+![Unity MixedRealityToolkit の構成プロファイルのクローン ポップアップ ウィンドウ](images/mr-learning-base/base-03-section1-step1-3.png)
 
 新しく作成された構成プロファイルが、シーンの構成プロファイルとして割り当てられました。
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step1-4.png)
+![新しく作成したカスタム HoloLens2ConfigurationProfile が適用されている Unity MixedRealityToolkit コンポーネント](images/mr-learning-base/base-03-section1-step1-4.png)
 
 Unity メニューで、 **[File]\(ファイル\)**  >  **[Save]\(保存\)** の順に選択してシーンを保存します。
 
@@ -70,41 +74,44 @@ Unity メニューで、 **[File]\(ファイル\)**  >  **[Save]\(保存\)** の
 
 [Hierarchy]\(階層\) ウィンドウで **MixedRealityToolkit** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで **[Spatial Awareness]\(空間認識\)** タブを選択し、次に **[Enable Spatial Awareness System]\(空間認識システムを有効にする\)** チェックボックスをオンにします。
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step2-1.png)
+![空間認識システムが有効になっている Unity MixedRealityToolkit コンポーネント](images/mr-learning-base/base-03-section1-step2-1.png)
+
+> [!NOTE]
+> 今後のプロジェクトのアプリで、環境に応答したり環境と対話したりする必要がない場合は、パフォーマンス コストを減らすため、空間認識をオフにしておくことをお勧めします。
 
 ### <a name="3-clone-the-default-spatial-awareness-system-profile"></a>3.既定の空間認識システムのプロファイルを複製する
 
 **[Spatial Awareness]\(空間認識\)** タブで、 **[Clone]\(複製\)** ボタンをクリックして [Clone Profile]\(プロファイルの複製\) ウィンドウを開きます。
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step3-1.png)
+![[Spatial Awareness]\(空間認識\) タブが選択された Unity MixedRealityToolkit コンポーネント](images/mr-learning-base/base-03-section1-step3-1.png)
 
-[Clone Profile]\(プロファイルのクローン\) ウィンドウで、適切な **[Profile Name]\(プロファイル名\)** (例: _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_ ) を入力し、 **[Clone]\(クローン\)** ボタンをクリックし、 **DefaultMixedRealitySpatialAwarenessSystemProfile** の編集可能なコピーを作成します。
+[Clone Profile]\(プロファイルのクローン\) ウィンドウで、適切な **[Profile Name]\(プロファイル名\)** (例: _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_) を入力し、 **[Clone]\(クローン\)** ボタンをクリックし、**DefaultMixedRealitySpatialAwarenessSystemProfile** の編集可能なコピーを作成します。
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step3-2.png)
+![Unity MixedRealityToolkit 空間認識システム プロファイル クローン ポップアップ ウィンドウ](images/mr-learning-base/base-03-section1-step3-2.png)
 
 これで、新しく作成された空間認識システム プロファイルが、構成プロファイルに自動的に割り当てられるようになりました。
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step3-3.png)
+![新しく作成したカスタム MixedRealitySpatialAwarenessSystemProfile が適用されている Unity MixedRealityToolkit コンポーネント](images/mr-learning-base/base-03-section1-step3-3.png)
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4.既定の空間認識メッシュ オブザーバーのプロファイルを複製する
 
 **[Spatial Awareness]\(空間認識\)** タブを引き続き選択した状態で、 **[Windows Mixed Reality Spatial Mesh Observer]\(Windows Mixed Reality 空間メッシュ オブザーバー\)** セクションを展開し、 **[Clone]\(複製\)** ボタンをクリックして、[Clone Profile]\(プロファイルの複製\) ウィンドウを開きます。
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step4-1.png)
+![Windows Mixed Reality 空間メッシュ オブザーバー セクションが展開された Unity MixedRealityToolkit コンポーネント](images/mr-learning-base/base-03-section1-step4-1.png)
 
-[Clone Profile]\(プロファイルのクローン\) ウィンドウで、適切な **[Profile Name]\(プロファイル名\)** (例: _GettingStarted_MixedRealitySpatialAwarenessMeshObserverProfile_ ) を入力し、 **[Clone]\(クローン\)** ボタンをクリックし、 **DefaultMixedRealitySpatialAwarenessMeshObserverProfile** の編集可能なコピーを作成します。
+[Clone Profile]\(プロファイルのクローン\) ウィンドウで、適切な **[Profile Name]\(プロファイル名\)** (例: _GettingStarted_MixedRealitySpatialAwarenessMeshObserverProfile_) を入力し、 **[Clone]\(クローン\)** ボタンをクリックし、**DefaultMixedRealitySpatialAwarenessMeshObserverProfile** の編集可能なコピーを作成します。
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step4-2.png)
+![Unity MixedRealityToolkit 空間メッシュ オブザーバー プロファイル クローン ポップアップ ウィンドウ](images/mr-learning-base/base-03-section1-step4-2.png)
 
 これで、新しく作成された空間認識メッシュ オブザーバーが、空間認識システム プロファイルに自動的に割り当てられるようになりました。
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step4-3.png)
+![新しく作成したカスタム MixedRealitySpatialAwarenessMeshObserverProfile が適用されている Unity MixedRealityToolkit コンポーネント](images/mr-learning-base/base-03-section1-step4-3.png)
 
 ### <a name="5-change-the-visibility-of-the-spatial-awareness-mesh"></a>5.空間認識メッシュの可視性を変更する
 
 **[Spatial Mesh Observer Settings]\(空間メッシュ オブザーバーの設定\)** で、 **[Display Option]\(表示オプション\)** を **[Occlusion]\(オクルージョン\)** に変更して、空間マッピング メッシュを、機能している状態のまま非表示にします。
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step5-1.png)
+![空間メッシュ オブザーバーの表示オプションがオクルージョンに設定される Unity MixedRealityToolkit コンポーネント](images/mr-learning-base/base-03-section1-step5-1.png)
 
 > [!NOTE]
 > 空間マッピング メッシュは非表示になっていますが、引き続き存在して、機能しています。 たとえば、物理的な壁の後ろのホログラムなど、空間マッピング メッシュの背後にあるホログラムは表示されません。

@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ
-ms.openlocfilehash: 25386819826efc6f25182e0780ff148206248a06
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、ヘッド関連の転送関数、リバーブ、Microsoft Spatializer、prefabs、volume curve
+ms.openlocfilehash: eb550c3127e13926d73428b337abfd7cf9872eb7
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689815"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678191"
 ---
 # <a name="spatializing-button-interaction-sounds"></a>ボタンの対話式操作サウンドの立体化
 
@@ -25,15 +25,15 @@ HoloLens 2 チュートリアルの空間オーディオモジュールの2番�
 
 ![アセット内のボタンの事前 fab](images/spatial-audio/button-prefab-in-assets.png)
 
-ボタン prefab は、白いアイコンではなく、青いアイコンで表されるエントリです。 **PressableButtonHoloLens2** という名前の prefab を [ **階層** ] ペインにドラッグします。 新しいボタンの [ **インスペクター** ] ウィンドウで、[ **Position** ] プロパティを (0,-0.4, 2) に設定して、アプリケーションの起動時にユーザーの前に表示されるようにします。 ボタンの **変換** コンポーネントは次のようになります。
+ボタン prefab は、白いアイコンではなく、青いアイコンで表されるエントリです。 **PressableButtonHoloLens2** という名前の prefab を [**階層**] ペインにドラッグします。 新しいボタンの [ **インスペクター** ] ウィンドウで、[ **Position** ] プロパティを (0,-0.4, 2) に設定して、アプリケーションの起動時にユーザーの前に表示されるようにします。 ボタンの **変換** コンポーネントは次のようになります。
 
 ![ボタンの変換](images/spatial-audio/button-transform.png)
 
 ## <a name="spatialize-button-feedback"></a>Spatialize button のフィードバック
 この手順では、ボタンの音声フィードバックを spatialize します。 関連する設計の提案については、「 [空間サウンドの設計](../../../design/spatial-sound-design.md)」を参照してください。 
 
-オーディオ **ミキサー** ウィンドウでは、 **オーディオソース** コンポーネントからのオーディオ再生用に **ミキサーグループ** と呼ばれる宛先を定義します。 
-* メニューバーの [audio **> Audio ミキサー] >** を使用して、[ **オーディオミキサー** ] ウィンドウを開きます。
+オーディオ **ミキサー** ウィンドウでは、**オーディオソース** コンポーネントからのオーディオ再生用に **ミキサーグループ** と呼ばれる宛先を定義します。 
+* メニューバーの [audio **> Audio ミキサー] >** を使用して、[**オーディオミキサー** ] ウィンドウを開きます。
 * **ミキサー** の横にある [+] をクリックして、ミキサーを作成 **します。** 新しいミキサーには、 **Master** という名前の既定の **グループ** が含まれます。
 
 **ミキサー** ウィンドウは次のようになります。
@@ -43,14 +43,14 @@ HoloLens 2 チュートリアルの空間オーディオモジュールの2番�
 > [!NOTE]
 > [5 章](unity-spatial-audio-ch5.md)のリバーブが有効になるまで、ミキサーのボリュームメーターには、Microsoft Spatializer で再生されるサウンドのアクティビティが表示されません。
 
-[ **階層** ] ペインで **PressableButtonHoloLens2** をクリックします。 [ **インスペクター** ] ウィンドウで次のようにします。
+[**階層**] ペインで **PressableButtonHoloLens2** をクリックします。 [ **インスペクター** ] ウィンドウで次のようにします。
 1. **オーディオソース** コンポーネントを検索する
 2. [ **出力** ] プロパティで、セレクターをクリックし、ミキサーを選択します。
 3. **Spatialize** チェックボックスをオンにする
 4. [ **空間 Blend** ] スライダーを 3d (1) に移動します。
 
 > [!NOTE]
-> 2019より前のバージョンの Unity では、[Spatialize] チェックボックスは、 **オーディオソース** の [ **インスペクター** ] ウィンドウの下部にあります。
+> 2019より前のバージョンの Unity では、[Spatialize] チェックボックスは、**オーディオソース** の [**インスペクター** ] ウィンドウの下部にあります。
 
 これらの変更が完了すると、 **PressableButtonHoloLens2** の **オーディオソース** コンポーネントは次のようになります。
 
@@ -62,7 +62,7 @@ HoloLens 2 チュートリアルの空間オーディオモジュールの2番�
 ## <a name="adjust-the-volume-curve"></a>ボリューム曲線を調整する
 既定では、Unity はリスナーから遠く離れた spatialized サウンドを減衰します。 この減衰が相互作用フィードバックのサウンドに適用されると、インターフェイスの使用が困難になる可能性があります。
 
-この減衰を無効にするには、 **ボリューム** 曲線を調整します。 **PressableButtonHoloLens2** の [ **インスペクター** ] ウィンドウの [ **オーディオソース** ] コンポーネントには、[ **3d サウンド設定** ] というセクションがあります。 そのセクション内:
+この減衰を無効にするには、 **ボリューム** 曲線を調整します。 **PressableButtonHoloLens2** の [**インスペクター** ] ウィンドウの [**オーディオソース**] コンポーネントには、[ **3d サウンド設定**] というセクションがあります。 そのセクション内:
 1. ボリュームの **ロールロール** のプロパティを線形に設定する
 2. Y 軸の "0" から "1" までの **ボリューム** 曲線 (赤の曲線) のエンドポイントをドラッグします。
 3. **ボリューム** 曲線の形状をフラットに調整するには、[白い曲線図形] コントロールを [X 軸] に平行にドラッグします。
@@ -70,6 +70,15 @@ HoloLens 2 チュートリアルの空間オーディオモジュールの2番�
 これらの変更が完了すると、 **PressableButtonHoloLens2** の **オーディオソース** プロパティの **3d サウンド設定** セクションは次のようになります。
 
 ![Button 3D サウンド設定](images/spatial-audio/button-3d-sound-settings.png)
+
+## <a name="testing-the-spatialize-audio"></a>Spatialize オーディオのテスト
+
+新しい spatialized ボタンの相互作用音を自由に試してください。
+
+* Unity エディターでゲームモードに入る (理想的にはシーンのループオーディオサンプルを使用する)
+* オーディオソースを持つオブジェクトを左から右へ移動し、空間オーディオを有効にした場合と比較した場合の比較を行います。 テストのオーディオソース設定を変更するには、次の方法があります。
+    * 0-1 (2D spatialized と 3D spatialized sound) 間の空間ブレンドプロパティの移動
+    * Spatialize プロパティをチェックしてオフにする
 
 ## <a name="next-steps"></a>次のステップ
 

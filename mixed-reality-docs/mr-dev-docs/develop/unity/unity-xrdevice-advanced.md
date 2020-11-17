@@ -5,13 +5,13 @@ author: vladkol
 ms.author: vladkol
 ms.date: 05/20/2018
 ms.topic: article
-keywords: unity、mixed reality、native、xrdevice、spatialcoordinatesystem、holographicframe、holographiccamera、ispatialcoordinatesystem、iholographicframe、iholographiccamera、get ptr
-ms.openlocfilehash: 36a26bbc16c6b854cd2fa5f36b063b9014a28d97
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: unity、mixed reality、native、xrdevice、spatialcoordinatesystem、holographicframe、holographiccamera、ispatialcoordinatesystem、iholographicframe、iholographiccamera、get ptr、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
+ms.openlocfilehash: a64deb46db82e6d0401a803e45dcbbd854476745
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687266"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679931"
 ---
 # <a name="mixed-reality-native-objects-in-unity"></a>Unity での Mixed Reality ネイティブ オブジェクト
 
@@ -24,7 +24,7 @@ ms.locfileid: "91687266"
 **名前空間:** *unityengine. XR*<br>
 **型:** *XRDevice*
 
-*XRDevice* 型を使用すると、 <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">表示 ptr</a>メソッドを使用して、基になるネイティブオブジェクトにアクセスできます。 Getによって返される値は、プラットフォームによって異なります。 ユニバーサル Windows プラットフォームで、Windows Mixed Reality XR SDK を対象とする場合、XRDevice は次の構造にポインター (IntPtr) を返します。 
+*XRDevice* 型を使用すると、<a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">表示 ptr</a>メソッドを使用して、基になるネイティブオブジェクトにアクセスできます。 Getによって返される値は、プラットフォームによって異なります。 ユニバーサル Windows プラットフォームで、Windows Mixed Reality XR SDK を対象とする場合、XRDevice は次の構造にポインター (IntPtr) を返します。 
 
 ```cs
 using System;
@@ -128,7 +128,7 @@ public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 * [Windows 名前空間と HoloLens 用 Unity アプリの使用](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 * <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>

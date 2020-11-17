@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: ジェスチャ、モーションコントローラー、unity、宝石、入力
-ms.openlocfilehash: b184cf1d9e6f35e3750015b51374058df79ed19d
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: ジェスチャ、モーションコントローラー、unity、宝石、入力、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: 244d1ef27d9aa68d971fa8372bda301fccab0704
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683238"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677591"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Unity での手と視点の追跡
 

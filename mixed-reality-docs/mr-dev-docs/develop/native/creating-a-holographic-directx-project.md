@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, holographic アプリ, 新しいアプリ, UWP アプリ, テンプレートアプリ, ホログラム, 新しいプロジェクト, チュートリアル, ダウンロード, サンプルコード
-ms.openlocfilehash: 3cca7cedfcf90299049653426a497abbd2dede74
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, holographic アプリ, 新しいアプリ, UWP アプリ, テンプレートアプリ, ホログラム, 新しいプロジェクト, チュートリアル, ダウンロード, サンプルコード, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
+ms.openlocfilehash: 08adbf6a4148e0e1d3b808d993011a7407fbf086
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683903"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678131"
 ---
 # <a name="creating-a-holographic-directx-project"></a>ホログラフィック DirectX プロジェクトを作成する
 
@@ -40,15 +40,15 @@ DirectX 11 holographic UWP アプリテンプレートは DirectX 11 UWP アプ�
 
 Visual Studio 2019 で新しいプロジェクトを作成するには:
 1. **Visual Studio** を起動します。
-2. 右側の [ **はじめ** に] セクションで、[ **新しいプロジェクトの作成** ] を選択します。
-3. [ **新しいプロジェクトの作成** ] ダイアログボックスのドロップダウンメニューで、[ **C++** ]、[ **Windows Mixed Reality** ]、[ **UWP** ] の順に選択します。
+2. 右側の [ **はじめ** に] セクションで、[ **新しいプロジェクトの作成**] を選択します。
+3. [ **新しいプロジェクトの作成** ] ダイアログボックスのドロップダウンメニューで、[ **C++**]、[ **Windows Mixed Reality**]、[ **UWP**] の順に選択します。
 4. **Holographic DirectX 11 アプリ (ユニバーサル Windows) (C++/WinRT)** を選択します。
    ![Visual Studio 2019 の Holographic DirectX 11 C++/WinRT UWP アプリプロジェクトテンプレートのスクリーンショット](images/holographic-directx-app-cpp-new-project-2019.png)<br>
    *Visual Studio 2019 の Holographic DirectX 11 C++/WinRT UWP アプリプロジェクトテンプレート*
    >[!IMPORTANT]
    >プロジェクトテンプレートの名前に "(C++/WinRT)" が含まれていることを確認してください。  それ以外の場合は、古いバージョンの holographic プロジェクトテンプレートがインストールされています。  最新のプロジェクトテンプレートを入手するには、Visual Studio 2019 の拡張機能として [インストール](../install-the-tools.md) します。
 5. **[次へ]** をクリックします。
-5. [ **プロジェクト名** ] と [ **場所** ] のテキストボックスに入力し、[ **作成** ] をクリックまたはタップします。 Holographic app プロジェクトが作成されます。
+5. [ **プロジェクト名** ] と [ **場所** ] のテキストボックスに入力し、[ **作成**] をクリックまたはタップします。 Holographic app プロジェクトが作成されます。
 6. HoloLens 2 のみを対象とする開発では、 **ターゲットバージョン** と **最小バージョン** が **Windows 10 バージョン 1903** に設定されていることを確認します。  HoloLens (第1世代) またはデスクトップ Windows Mixed Reality ヘッドセットも対象としている場合は、代わりに、 **最小バージョン** を **Windows 10 バージョン 1809** に設定できます。ただし、hololens 2 の新機能を使用する場合は、コードに <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">バージョンのアダプティブチェック</a> が必要になります。
    ![ターゲットバージョンと最小バージョンとして Windows 10 バージョン1903を設定するスクリーンショット](images/new-uwp-project.png)<br>
    *ターゲットバージョンと最小バージョンとして **Windows 10 バージョン1903を** 設定する*
@@ -59,12 +59,12 @@ Visual Studio 2017 で新しいプロジェクトを作成するには:
 1. **Visual Studio** を起動します。
 2. [ **ファイル** ] メニューの [ **新規作成** ] をポイントし、コンテキストメニューの [ **プロジェクト** ] をクリックします。 **[新しいプロジェクト]** ダイアログ ボックスが開きます。
 3. 左側の [ **インストール済み** ] を展開し、[ **Visual C++** 言語] ノードを展開します。
-4. [ **Windows Universal > Holographic** ] ノードに移動し、[ **Holographic DirectX 11 App (ユニバーサル Windows) (C++/WinRT)** ] を選択します。
+4. [ **Windows Universal > Holographic** ] ノードに移動し、[ **Holographic DirectX 11 App (ユニバーサル Windows) (C++/WinRT)**] を選択します。
    ![Visual Studio 2017 の Holographic DirectX 11 C++/WinRT UWP アプリプロジェクトテンプレートのスクリーンショット](images/holographic-directx-app-cpp-new-project.png)<br>
    *Visual Studio 2017 の Holographic DirectX 11 C++/WinRT UWP アプリプロジェクトテンプレート*
    >[!IMPORTANT]
    >プロジェクトテンプレートの名前に "(C++/WinRT)" が含まれていることを確認してください。  それ以外の場合は、古いバージョンの holographic プロジェクトテンプレートがインストールされています。  最新のプロジェクトテンプレートを入手するには、Visual Studio 2017 の拡張機能として [インストール](../install-the-tools.md) します。
-5. [ **名前** ] と [ **場所** ] のテキストボックスに入力し、[ **OK** ] をクリックまたはタップします。 Holographic app プロジェクトが作成されます。
+5. [ **名前** ] と [ **場所** ] のテキストボックスに入力し、[ **OK**] をクリックまたはタップします。 Holographic app プロジェクトが作成されます。
 6. HoloLens 2 のみを対象とする開発では、 **ターゲットバージョン** と **最小バージョン** が **Windows 10 バージョン 1903** に設定されていることを確認します。  HoloLens (第1世代) またはデスクトップ Windows Mixed Reality ヘッドセットも対象としている場合は、代わりに、 **最小バージョン** を **Windows 10 バージョン 1809** に設定できます。ただし、hololens 2 の新機能を使用する場合は、コードに <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">バージョンのアダプティブチェック</a> が必要になります。
    ![ターゲットバージョンと最小バージョンとして Windows 10 バージョン1903を設定するスクリーンショット](images/new-uwp-project.png)<br>
    *ターゲットバージョンと最小バージョンとして **Windows 10 バージョン1903を** 設定する*
@@ -143,9 +143,9 @@ int APIENTRY wWinMain(
 
 ## <a name="render-holographic-content"></a>Holographic コンテンツのレンダリング
 
-プロジェクトの **コンテンツ** フォルダーには、 [holographic 空間](getting-a-holographicspace.md)にホログラムをレンダリングするためのクラスが含まれています。 テンプレートの既定のホログラムは、ユーザーから2メートル離れた位置にある回転する立方体です。 このキューブの描画は、次の主要なメソッドを含む SpinningCubeRenderer に実装されてい **ます** 。
+プロジェクトの **コンテンツ** フォルダーには、 [holographic 空間](getting-a-holographicspace.md)にホログラムをレンダリングするためのクラスが含まれています。 テンプレートの既定のホログラムは、ユーザーから2メートル離れた位置にある回転する立方体です。 このキューブの描画は、次の主要なメソッドを含む SpinningCubeRenderer に実装されてい **ます**。
 
-|  Method  |  説明 | 
+|  メソッド  |  説明 | 
 |----------|----------|
 |  `CreateDeviceDependentResources` |  シェーダーを読み込み、キューブメッシュを作成します。 | 
 |  `PositionHologram` |  指定した <a href="https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose" target="_blank">SpatialPointerPose</a>によって指定された場所にホログラムを配置します。 | 
@@ -177,9 +177,9 @@ int APIENTRY wWinMain(
 
 の **Render** メソッドは、 `AppMain.cpp` 現在のアプリと空間ポジショニングの状態に従って、 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> を受け取り、現在のフレームを各 holographic カメラにレンダリングします。
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>メモ
 
-Windows Mixed Reality アプリケーションテンプレートで、Spectre 軽減フラグが有効になっているコンパイル (/Qspectre) がサポートされるようになりました。 Spectre 軽減策が有効になっている構成をコンパイルする前に、Microsoft Visual C++ Spectre (MSVC) ランタイムライブラリを必ずインストールしてください。 Spectre の緩和された C++ ライブラリをインストールするには、Visual Studio インストーラーを起動し、[ **変更** ] を選択します。 個々の **コンポーネント** に移動し、"spectre" を検索します。 Spectre コードをコンパイルするために必要なターゲットプラットフォームと MSVC のバージョンに対応するボックスを選択し、[ **変更** ] をクリックしてインストールを開始します。
+Windows Mixed Reality アプリケーションテンプレートで、Spectre 軽減フラグが有効になっているコンパイル (/Qspectre) がサポートされるようになりました。 Spectre 軽減策が有効になっている構成をコンパイルする前に、Microsoft Visual C++ Spectre (MSVC) ランタイムライブラリを必ずインストールしてください。 Spectre の緩和された C++ ライブラリをインストールするには、Visual Studio インストーラーを起動し、[ **変更**] を選択します。 個々の **コンポーネント** に移動し、"spectre" を検索します。 Spectre コードをコンパイルするために必要なターゲットプラットフォームと MSVC のバージョンに対応するボックスを選択し、[ **変更** ] をクリックしてインストールを開始します。
 
 ## <a name="see-also"></a>関連項目
 * [HolographicSpace を入手する](getting-a-holographicspace.md)

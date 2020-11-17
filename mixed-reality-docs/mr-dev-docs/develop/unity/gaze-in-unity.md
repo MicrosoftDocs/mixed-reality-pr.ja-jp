@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 視線、頭を見つめ、unity、ホログラム、mixed reality
-ms.openlocfilehash: 8c1a6cb0847cd0e6e776c6d4e1f7c1efdc126279
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 視線、ヘッド・宝石、unity、ホログラム、mixed reality、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、unity、Mixed Reality ツールキット
+ms.openlocfilehash: 0c62de9cb1b7ea892831ea2cedbeb23be5ea7b37
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684706"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677511"
 ---
 # <a name="head-gaze-in-unity"></a>Unity でのヘッドを見つめます
 
@@ -56,19 +56,19 @@ void Update()
 ## <a name="head-gaze-in-the-mixed-reality-toolkit-v2"></a>Mixed Reality Toolkit v2 でのヘッドを見つめます
 MRTK v2 の [入力マネージャー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) から、ヘッドを使用してアクセスできます。
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-これまでに説明した Unity 開発チェックポイントの旅に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。
+私たちが用意した Unity 開発チェックポイント体験に従っている場合、読者は MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素に進むことができます。
 
 > [!div class="nextstepaction"]
 > [ジェスチャとモーション コントローラー](gestures-and-motion-controllers-in-unity.md)
 
-または、Mixed Reality プラットフォームの機能と Api に移動します。
+または、Mixed Reality プラットフォームの機能と API に移動します。
 
 > [!div class="nextstepaction"]
 > [共有エクスペリエンス](shared-experiences-in-unity.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks) に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks)に戻ることができます。
 
 ## <a name="see-also"></a>関連項目
 * [カメラ](camera-in-unity.md)

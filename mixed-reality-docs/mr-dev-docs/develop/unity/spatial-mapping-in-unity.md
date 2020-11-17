@@ -5,13 +5,13 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity、空間マッピング、レンダラー、collider、メッシュ、スキャン、コンポーネント
-ms.openlocfilehash: 15948870d3150614aefa071ce07cf51c29d284fc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity、空間マッピング、レンダラー、collider、メッシュ、スキャン、コンポーネント、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: 60196a85689ce6c4c190acdfe305fc12982ace4c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690066"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677401"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity の空間マッピング
 
@@ -53,12 +53,12 @@ Unity には、次の方法で開発者に公開される空間マッピング�
 SpatialPerception 機能を有効にする方法:
 1. Unity エディターで、 **[プレーヤーの設定** ] ウィンドウを開きます (> プロジェクトの設定を編集し > player)
 2. [ **Windows ストア** ] タブをクリックします。
-3. [ **発行の設定]** を展開し、 **[機能]** ボックスの一覧の **"SpatialPerception"** 機能を確認します。
+3. [**発行の設定]** を展開し、 **[機能]** ボックスの一覧の **"SpatialPerception"** 機能を確認します。
 
 既に Unity プロジェクトを Visual Studio ソリューションにエクスポートしている場合は、新しいフォルダーにエクスポートするか、 [Visual studio の package.appxmanifest でこの機能](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)を手動で設定する必要があることに注意してください。
 
 空間マッピングでは、少なくとも10.0.10586.0 の MaxVersionTested が必要です。
-1. Visual Studio でソリューションエクスプローラーで package.appxmanifest を右クリックし、[ **コードの表示** ] を選択し **ます。**
+1. Visual Studio でソリューションエクスプローラーで package.appxmanifest を右クリックし、[**コードの表示**] を選択し **ます。**
 2. **TargetDeviceFamily** を指定する行を探し、 **maxversiontested = ""** を **maxversiontested 済み = "10.0.10586.0"** に変更します。
 3. Package.appxmanifest を **保存** します。
 
@@ -84,13 +84,13 @@ Unity には、アプリに空間マッピングを簡単に追加するため�
 
 Unity アプリでこれらの2つのコンポーネントを使用するには、次の手順を実行します。
 1. 空間サーフェスメッシュを検出する領域の中央にある [ユーザー] オブジェクトを選択します。
-2. [インスペクター] ウィンドウで、 **コンポーネント**  >  **XR**  >  **空間マッピング Collider**   または **空間マッピングレンダラー** を追加します。
+2. [インスペクター] ウィンドウで、**コンポーネント**  >  **XR**  >  **空間マッピング Collider** または **空間マッピングレンダラー** を追加します。
 
 これらのコンポーネントの使用方法の詳細については、 <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">Unity ドキュメントサイト</a>を参照してください。
 
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>組み込みの空間マッピングコンポーネント以外に
 
-これらのコンポーネントを使用すると、空間マッピングを簡単に開始できるように、ドラッグアンドドロップ操作を簡単に行うことができます。 詳細に進むには、次の2つの主要なパスを参照してください。
+これらのコンポーネントを使用すると、空間マッピングを簡単に開始できるように、ドラッグアンドドロップ操作を簡単に行うことができます。  詳細に進むには、次の2つの主要なパスを参照してください。
 * 独自の下位レベルのメッシュ処理を行うには、以下の「低レベルの空間マッピングスクリプト API について」セクションを参照してください。
 * 上位レベルのメッシュ分析を行うには、 <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>の SpatialUnderstanding ライブラリに関する以下のセクションを参照してください。
 
@@ -99,7 +99,7 @@ Unity アプリでこれらの2つのコンポーネントを使用するには�
 空間マッピングレンダラーコンポーネントと空間マッピング Collider コンポーネントから取得するよりも制御が必要な場合は、低レベルの空間マッピングスクリプト Api を使用できます。
 
 **名前空間:** *UNITYENGINE. XR*<br>
-**型** : *SurfaceObserver* 、 *SurfaceChange* 、 *SurfaceData* 、 *SurfaceId*
+**型**: *SurfaceObserver*、 *SurfaceChange*、 *SurfaceData*、 *SurfaceId*
 
 空間マッピング Api を使用するアプリケーションで推奨されるフローの概要を次に示します。
 
@@ -226,7 +226,7 @@ void Start () {
 
 ### <a name="understanding-modules"></a>モジュールについて
 
-モジュールによって公開される3つの主要なインターフェイスは、単純な surface と空間クエリのトポロジ、オブジェクト検出のための図形、およびオブジェクトセットの配置に基づくオブジェクト配置ソルバーです。 これらのそれぞれについて以下に説明します。 3つの主要なモジュールインターフェイスに加えて、射線のキャストインターフェイスを使用してタグ付きサーフェス型を取得し、カスタムの watertight playspace メッシュをコピーすることができます。
+モジュールによって公開される3つの主要なインターフェイスは、単純な surface と空間クエリのトポロジ、オブジェクト検出のための図形、およびオブジェクトセットの配置に基づくオブジェクト配置ソルバーです。 以下で、これらのそれぞれについて説明します。 3つの主要なモジュールインターフェイスに加えて、射線のキャストインターフェイスを使用してタグ付きサーフェス型を取得し、カスタムの watertight playspace メッシュをコピーすることができます。
 
 ### <a name="ray-casting"></a>射線のキャスト
 
@@ -477,19 +477,19 @@ Dll を理解すると、内部的に再生スペースが8cm サイズの voxel
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>混合 Reality ツールキットでの空間マッピング
 混合 Reality Toolkit v2 での空間マッピングの使用の詳細については、MRTK ドキュメントの「 <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">空間認識」セクション</a> を参照してください。
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-これまでに説明した Unity 開発チェックポイントの旅に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。 
+私たちが用意した Unity 開発チェックポイント体験に従っている場合、読者は MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素に進むことができます。 
 
 > [!div class="nextstepaction"]
 > [[テキスト]](text-in-unity.md)
 
-または、Mixed Reality プラットフォームの機能と Api に移動します。
+または、Mixed Reality プラットフォームの機能と API に移動します。
 
 > [!div class="nextstepaction"]
 > [共有エクスペリエンス](shared-experiences-in-unity.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks) に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks)に戻ることができます。
 
 ## <a name="see-also"></a>関連項目
 * [座標系](../../design/coordinate-systems.md)

@@ -5,18 +5,18 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, フォーカスポイント, フォーカスプレーン, 安定化平面, 安定化ポイント, reprojection, LSR, 深度バッファー
-ms.openlocfilehash: 4d8c8a232d12a8d6f0a7694fbc0ed8f66395163a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, フォーカスポイント, フォーカスプレーン, 安定化平面, 安定化ポイント, reprojection, LSR, 深度バッファー, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
+ms.openlocfilehash: 48c0d26e89124b9dbfc1d108354fb6e751e51783
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683111"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678691"
 ---
 # <a name="focus-point-in-unity"></a>Unity でのフォーカス ポイント
 
 **名前空間:** *UNITYENGINE. XR*<br>
-**型** : *HolographicSettings*
+**型**: *HolographicSettings*
 
 [フォーカスポイント](../platform-capabilities-and-apis/hologram-stability.md#reprojection)は、現在表示されているホログラムに対して安定化を最適に実行する方法について、HoloLens にヒントを提供するように設定できます。
 
@@ -50,19 +50,19 @@ void Update()
 
 上の単純なコードでは、フォーカスがあるオブジェクトがユーザーの背後にある場合に、ホログラムの安定性が低下する可能性があることに注意してください。  このため、通常は、フォーカスポイントを手動で指定するのではなく、"深度バッファーの共有を有効にする" を設定する必要があります。
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
 ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality プラットフォームの機能と Api の調査が途中で終了しています。 ここから、次のトピックに進むことができます。
 
 > [!div class="nextstepaction"]
 > [追跡の損失](tracking-loss-in-unity.md)
 
-または、デバイスまたはエミュレーターへのアプリのデプロイに直接移動します。
+または、デバイスまたはエミュレーターへのアプリの配置操作に直接移動します。
 
 > [!div class="nextstepaction"]
 > [HoloLens または Windows Mixed Reality イマーシブヘッドセットへのデプロイ](../platform-capabilities-and-apis/using-visual-studio.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-platform-capabilities-and-apis) に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-platform-capabilities-and-apis)に戻ることができます。
 
 ### <a name="see-also"></a>関連項目
 * [安定化平面](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

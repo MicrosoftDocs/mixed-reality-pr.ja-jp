@@ -7,18 +7,18 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Azure, Mixed Reality, Unity, チュートリアル, Hololens, Hololens 2, Azure Blob Storage, Azure Table Storage, Azure Spatial Anchors, Azure Bot Framework
 ms.localizationpriority: high
-ms.openlocfilehash: 115044aa8fa5f143358b8014442bce26d4f3fec5
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: 878fd92a946b70ba3b0a867722f86ab801a79032
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915577"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416978"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1.HoloLens 2 用の Azure Cloud Services
 
 ## <a name="overview"></a>概要
 
-このチュートリアル シリーズへようこそ。ここでは、 **Azure クラウド** サービスを **HoloLens 2** アプリケーションに導入することに重点を置いています。 この 5 部構成のチュートリアル シリーズでは、複数の **Azure クラウド** サービスを **HoloLens 2** 用の **Unity** プロジェクトに統合する方法について学習します。 連続する各章では、新しい **Azure クラウド** サービスを追加して、アプリケーションの機能とユーザー エクスペリエンスを拡張しながら、各 **Azure クラウド** サービスの基礎について学びます。
+このチュートリアル シリーズへようこそ。ここでは、**Azure クラウド** サービスを **HoloLens 2** アプリケーションに導入することに重点を置いています。 この 5 部構成のチュートリアル シリーズでは、複数の **Azure クラウド** サービスを **HoloLens 2** 用の **Unity** プロジェクトに統合する方法について学習します。 連続する各章では、新しい **Azure クラウド** サービスを追加して、アプリケーションの機能とユーザー エクスペリエンスを拡張しながら、各 **Azure クラウド** サービスの基礎について学びます。
 
 > [!NOTE]
 > このチュートリアル シリーズでは **HoloLens 2** に重点を置いていますが、Unity のクロスプラットフォームの性質により、学習内容のほとんどがデスクトップおよび Smartphone アプリケーションにも適用されます。
@@ -35,7 +35,7 @@ ms.locfileid: "92915577"
 
 ## <a name="application-goals"></a>アプリケーションの目標
 
-このチュートリアル シリーズでは、画像からオブジェクトを検出し、その空間位置を見つけることができる **HoloLens 2** アプリケーションをビルドします。 ドメインの言語を設定するために、 **追跡対象オブジェクト** からこのようなエンティティを呼び出すことができます。
+このチュートリアル シリーズでは、画像からオブジェクトを検出し、その空間位置を見つけることができる **HoloLens 2** アプリケーションをビルドします。 ドメインの言語を設定するために、**追跡対象オブジェクト** からこのようなエンティティを呼び出すことができます。
 ユーザーは **追跡対象オブジェクト** を作成し、コンピューター ビジョンまたは空間位置、あるいはその両方を使用して画像のセットを関連付けることができます。 すべてのデータをクラウドに保存する必要があります。 さらに、アプリケーションの一部の側面は、ボットを通じてサポートされる自然言語によって制御されることもあります。
 
 ### <a name="features"></a>機能
@@ -55,11 +55,11 @@ ms.locfileid: "92915577"
 
 ### <a name="azure-custom-vision"></a>Azure Custom Vision
 
-[Azure Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) ( [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) の一部) を使用すると、画像のセットを " *追跡対象オブジェクト* " に関連付けたり、そのセットで機械学習モデルをトレーニングしたり、" *追跡対象オブジェクト* " を検出したりすることができます。
+[Azure Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) ([Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) の一部) を使用すると、画像のセットを "*追跡対象オブジェクト*" に関連付けたり、そのセットで機械学習モデルをトレーニングしたり、"*追跡対象オブジェクト*" を検出したりすることができます。
 
 ### <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-" *追跡対象オブジェクト* " の場所を格納し、それを見つけられるようにガイドするには、 [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/) を使用します。
+"*追跡対象オブジェクト*" の場所を格納し、それを見つけられるようにガイドするには、[Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/) を使用します。
 
 ### <a name="azure-bot-service"></a>Azure Bot Service
 
@@ -75,10 +75,10 @@ ms.locfileid: "92915577"
 * 基本的な C# プログラミング能力
 * [開発用に構成された](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) HoloLens 2 デバイス
 * Unity エディターからテストする場合は、接続された Web カメラ
-* Unity 2019.3.X がインストールされ、ユニバーサル Windows プラットフォーム ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
+* Unity 2019 LTS がインストールされ、ユニバーサル Windows プラットフォーム ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 
 > [!CAUTION]
-> このチュートリアル シリーズで推奨されている Unity バージョンは、Unity 2019.3.X です。 これは、上のリンクされた前提条件に記載されている Unity のバージョン要件または推奨事項に代わるものです。
+> このチュートリアル シリーズで推奨されている Unity バージョンは、Unity 2019 LTS です。 これは、上のリンクされた前提条件に記載されている Unity のバージョン要件または推奨事項に代わるものです。
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Unity プロジェクトの作成と準備
 
@@ -86,14 +86,14 @@ ms.locfileid: "92915577"
 
 このためには、まず「[プロジェクトと最初のアプリケーションの初期化](mr-learning-base-02.md)」に従ってください (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-your-application-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
 
-1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、" *Azure クラウド チュートリアル* " などの適切な名前を付ける
+1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、"*Azure クラウド チュートリアル*" などの適切な名前を付ける
 2. [ビルド プラットフォームを切り替える](mr-learning-base-02.md#configuring-the-unity-project)
 3. [TextMeshPro の重要なリソースをインポートする](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 5. [Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)
 6. [シーンを作成して構成](mr-learning-base-02.md#creating-and-configuring-the-scene)し、シーンに *AzureCloudServices* などの適切な名前を付ける
 
-その後、「 [空間認識表示オプションの変更](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)」の手順に従って、シーンの MRTK 構成プロファイルを **[DefaultHoloLens2ConfigurationProfile]** に変更し、空間認識メッシュの表示オプションを **[Occlusion]\(オクルージョン\)** に変更します。
+その後、「[空間認識表示オプションの変更](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)」の手順に従って、シーンの MRTK 構成プロファイルを **[DefaultHoloLens2ConfigurationProfile]** に変更し、空間認識メッシュの表示オプションを **[Occlusion]\(オクルージョン\)** に変更します。
 
 ## <a name="installing-inbuilt-unity-packages"></a>組み込みの Unity パッケージのインストール
 
@@ -106,7 +106,7 @@ Unity メニューで、 **[ウィンドウ]**  >  **[パッケージ マネー�
 
 ## <a name="importing-the-tutorial-assets"></a>チュートリアルのアセットのインポート
 
-次の Unity カスタム パッケージを、 **記載されている順で** ダウンロードして **インポート** します。
+次の Unity カスタム パッケージを、**記載されている順で** ダウンロードして **インポート** します。
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage)
 * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
@@ -127,11 +127,11 @@ Unity メニューで、 **[ウィンドウ]**  >  **[パッケージ マネー�
 
 このセクションでは、チュートリアルのプレハブをいくつか追加してシーンを準備します。
 
-[プロジェクト] ウィンドウで、 **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** フォルダーの順に移動します。 CTRL ボタンを押したまま、 **[SceneController]** 、 **[RootMenu]** および **[DataManager]** をクリックして、3 つのプレハブを選択します。
+[プロジェクト] ウィンドウで、**Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** フォルダーの順に移動します。 CTRL ボタンを押したまま、 **[SceneController]** 、 **[RootMenu]** および **[DataManager]** をクリックして、3 つのプレハブを選択します。
 
 ![SceneController、RootMenu、DataManager の各プレハブが選択されている Unity](images/mr-learning-azure/tutorial1-section5-step1-1.png)
 
-**SceneController (プレハブ)** には、 **SceneController (スクリプト)** と **UnityDispatcher (スクリプト)** の 2 つのスクリプトが含まれています。 **SceneController** スクリプト コンポーネントには、いくつかの UX 関数が含まれており、写真キャプチャ機能が促進されますが、 **UnityDispatcher** は、Unity メイン スレッドでのアクションの実行を許可するヘルパー クラスです。
+**SceneController (プレハブ)** には、**SceneController (スクリプト)** と **UnityDispatcher (スクリプト)** の 2 つのスクリプトが含まれています。 **SceneController** スクリプト コンポーネントには、いくつかの UX 関数が含まれており、写真キャプチャ機能が促進されますが、**UnityDispatcher** は、Unity メイン スレッドでのアクションの実行を許可するヘルパー クラスです。
 
 **RootMenu (プレハブ)** は、さまざまな小さいスクリプト コンポーネントを介して相互に接続され、アプリケーションの一般的な UX フローを制御する UI ウィンドウをすべて保持する主要な UI プレハブです。
 
@@ -141,7 +141,7 @@ Unity メニューで、 **[ウィンドウ]**  >  **[パッケージ マネー�
 
 ![新しく追加された SceneController、RootMenu、DataManager の各プレハブがまだ選択されている Unity](images/mr-learning-azure/tutorial1-section5-step1-2.png)
 
-シーン内のオブジェクトに焦点を合わせるために、 **RootMenu** オブジェクトをダブルクリックし、もう一度少しズームアウトすることができます。
+シーン内のオブジェクトに焦点を合わせるために、**RootMenu** オブジェクトをダブルクリックし、もう一度少しズームアウトすることができます。
 
 ![RootMenu オブジェクトが選択されている Unity](images/mr-learning-azure/tutorial1-section5-step1-3.png)
 
@@ -150,19 +150,19 @@ Unity メニューで、 **[ウィンドウ]**  >  **[パッケージ マネー�
 
 ## <a name="configuring-the-scene"></a>シーンの構成
 
-このセクションでは、 *SceneManager* 、 *DataManager* および *RootMenu* を一緒に接続し、作業シーンを次の「 [Azure Storage の統合](mr-learning-azure-01.md)」チュートリアルのために準備します。
+このセクションでは、*SceneManager*、*DataManager* および *RootMenu* を一緒に接続し、作業シーンを次の「[Azure Storage の統合](mr-learning-azure-01.md)」チュートリアルのために準備します。
 
 ### <a name="connect-the-objects"></a>オブジェクトを接続する
 
-[階層] ウィンドウで、 **DataManager** オブジェクトを選択します。
+[階層] ウィンドウで、**DataManager** オブジェクトを選択します。
 
 ![DataManager オブジェクトが選択されている Unity](images/mr-learning-azure/tutorial1-section6-step1-1.png)
 
-[インスペクター] ウィンドウで、 **DataManager (Script)** コンポーネントを見つけます。 **On Data Manager Ready ()** イベントには空のスロットが表示されます。 ここで、[階層] ウィンドウから、 **SceneController** オブジェクトを **On Data Manager Ready ()** イベントにドラッグします。
+[インスペクター] ウィンドウで、**DataManager (Script)** コンポーネントを見つけます。**On Data Manager Ready ()** イベントには空のスロットが表示されます。 ここで、[階層] ウィンドウから、**SceneController** オブジェクトを **On Data Manager Ready ()** イベントにドラッグします。
 
 ![DataManager イベント リスナーが追加された Unity](images/mr-learning-azure/tutorial1-section6-step1-2.png)
 
-イベントのドロップダウン メニューがアクティブになったことがわかります。このドロップダウン メニューをクリックして、 **SceneController** に移動し、サブ メニューで **[Init ()]** オプションを選択します。
+イベントのドロップダウン メニューがアクティブになったことがわかります。このドロップダウン メニューをクリックして、**SceneController** に移動し、サブ メニューで **[Init ()]** オプションを選択します。
 
 ![DataManager イベント アクションが追加された Unity](images/mr-learning-azure/tutorial1-section6-step1-3.png)
 
@@ -170,7 +170,7 @@ Unity メニューで、 **[ウィンドウ]**  >  **[パッケージ マネー�
 
 ![SceneController が選択されている Unity](images/mr-learning-azure/tutorial1-section6-step1-4.png)
 
-設定されていないフィールドがいくつかあることがわかります。これを変更してみましょう。 **DataManager** オブジェクトを [階層] から *[データ マネージャー]* フィールドに移動し、 **RootMenu** GameObject を [階層] から *[メイン メニュー]* フィールドに移動します。
+設定されていないフィールドがいくつかあることがわかります。これを変更してみましょう。 **DataManager** オブジェクトを [階層] から *[データ マネージャー]* フィールドに移動し、**RootMenu** GameObject を [階層] から *[メイン メニュー]* フィールドに移動します。
 
 ![SceneController が構成された Unity](images/mr-learning-azure/tutorial1-section6-step1-5.png)
 
@@ -190,7 +190,7 @@ Unity メニューで、 **[Edit]\(編集\)**  >  **[Project Settings...]\(プ�
 
 ![Unity の [Publishing Settings]\(公開の設定\)](images/mr-learning-azure/tutorial1-section7-step1-2.png)
 
-**[Publishing Settings]\(公開の設定\)** で、 **[Capabilities]\(機能\)** セクションまで下にスクロールし、チュートリアルの最初にプロジェクトを作成したときに有効にした **InternetClient** 、 **Microphone** および **SpatialPerception** の機能が有効になっていることを再確認します。 その後、 **InternetClientServer** 、 **PrivateNetworkClientServer** 、および **Webcam** の機能を有効にします。
+**[Publishing Settings]\(公開の設定\)** で、 **[Capabilities]\(機能\)** セクションまで下にスクロールし、チュートリアルの最初にプロジェクトを作成したときに有効にした **InternetClient**、**Microphone** および **SpatialPerception** の機能が有効になっていることを再確認します。 その後、**InternetClientServer**、**PrivateNetworkClientServer**、および **Webcam** の機能を有効にします。
 
 ![Unity の機能](images/mr-learning-azure/tutorial1-section7-step1-3.png)
 
@@ -211,11 +211,11 @@ Unity メニューで、 **[Edit]\(編集\)**  >  **[Project Settings...]\(プ�
 * マイク
 * カメラ
 
-これらの機能は、" *チャット ボット* " や *Custom Vision* などのサービスを正しく機能させるために必要です。
+これらの機能は、"*チャット ボット*" や *Custom Vision* などのサービスを正しく機能させるために必要です。
 
 ## <a name="congratulations"></a>結論
 
-このチュートリアルでは、チュートリアル シリーズの概要を確認し、実装する機能についてと、 *HoloLens 2* アプリケーションの実行と **Azure クラウド** サービスがどのように結び付いているかについて学習しました。 必要なコンポーネントをプロジェクトに追加し、このチュートリアル シリーズのためにシーンを準備しました。
+このチュートリアルでは、チュートリアル シリーズの概要を確認し、実装する機能についてと、*HoloLens 2* アプリケーションの実行と **Azure クラウド** サービスがどのように結び付いているかについて学習しました。 必要なコンポーネントをプロジェクトに追加し、このチュートリアル シリーズのためにシーンを準備しました。
 
 次のレッスンでは、データと画像を格納するためのクラウド ベースの永続化ソリューションとして、Azure Storage を使用します。
 

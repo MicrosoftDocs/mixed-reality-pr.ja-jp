@@ -1,18 +1,18 @@
 ---
 title: マルチユーザー機能のチュートリアル - 5. Azure Spatial Anchors の共有エクスペリエンスへの統合
-description: このコースでは、HoloLens 2 アプリケーション内でマルチユーザー共有エクスペリエンスを実装する方法を学習します。
+description: このコースを完了すると、Azure Spatial Anchors を使用して共有マルチユーザー HoloLens 2 アプリケーション内でオブジェクトを固定する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: fc8e20a9ddaa595db0a3d59975e7c785d01c0a6d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 65672bad9a967e11e7feb7efc45759608e9c9e76
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701616"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353430"
 ---
 # <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5.Azure Spatial Anchors の共有エクスペリエンスへの統合
 
@@ -25,61 +25,61 @@ ms.locfileid: "91701616"
 
 ## <a name="preparing-the-scene"></a>シーンの準備
 
-[Hierarchy]\(ヒエラルキー\) ウィンドウで **SharedPlayground** オブジェクトを展開し、 **TableAnchor** オブジェクトを展開してその子オブジェクトを公開します。
+[Hierarchy]\(ヒエラルキー\) ウィンドウで **SharedPlayground** オブジェクトを展開し、**TableAnchor** オブジェクトを展開してその子オブジェクトを公開します。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section1-step1-1.png)
+![SharedPlayground と TableAnchor オブジェクトが展開された Unity](images/mr-learning-sharing/sharing-05-section1-step1-1.png)
 
-[Project]\(プロジェクト\) ウィンドウで **[Assets]\(アセット\)**  >  **[MRTK.Tutorials.MultiUserCapabilities]**  >  **[Prefabs]\(プレハブ\)** フォルダーの順に移動して、 **Buttons** プレハブを **TableAnchor** 子オブジェクト上にドラッグし、TableAnchor オブジェクトの子としてシーンに追加します。
+[Project]\(プロジェクト\) ウィンドウで **[Assets]\(アセット\)**  >  **[MRTK.Tutorials.MultiUserCapabilities]**  >  **[Prefabs]\(プレハブ\)** フォルダーの順に移動して、**Buttons** プレハブを **TableAnchor** 子オブジェクト上にドラッグし、TableAnchor オブジェクトの子としてシーンに追加します。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section1-step1-2.png)
+![新しく追加された Buttons プレハブが選択されている Unity](images/mr-learning-sharing/sharing-05-section1-step1-2.png)
 
 ## <a name="configuring-the-buttons-to-operate-the-scene"></a>シーンを操作するためのボタンの構成
 
 このセクションでは一連のボタン イベントを構成して、Azure Spatial Anchors を使用して共有エクスペリエンスでの空間的な位置合わせを実現する方法の基本を示します。
 
-[Hierarchy]\(ヒエラルキー\) ウィンドウで **Button** オブジェクトを展開し、 **StartAzureSession** という名前の最初の子ボタン オブジェクトを選択します。
+[Hierarchy]\(ヒエラルキー\) ウィンドウで **Button** オブジェクトを展開し、**StartAzureSession** という名前の最初の子ボタン オブジェクトを選択します。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
+![StartAzureSession ボタン オブジェクトが選択されている Unity](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
 
-[Inspector]\(インスペクター\) ウィンドウで **Interactable (Script)** コンポーネントを探し、 **OnClick ()** イベントを次のように構成します。
+[Inspector]\(インスペクター\) ウィンドウで **Interactable (Script)** コンポーネントを探し、**OnClick ()** イベントを次のように構成します。
 
-* **[None (Object)]\(なし (オブジェクト))\** フィールドに、 **TableAnchor** オブジェクトを割り当てる
+* **[None (Object)]\(なし (オブジェクト))\** フィールドに、**TableAnchor** オブジェクトを割り当てる
 * **[No Function]\(関数なし\)** ドロップダウンから、 **[AnchorModuleScript]**  > **StartAzureSession ()** 関数の順に選択する
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-2.png)
+![StartAzureSession ボタンの OnClick イベントが構成された Unity](images/mr-learning-sharing/sharing-05-section2-step1-2.png)
 
 [Hierarchy]\(ヒエラルキー\) ウィンドウで **CreateAzureAnchor** という名前の 2 番目の子ボタン オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで **Interactable (Script)** コンポーネントを探して **OnClick ()** イベントを次のように構成します。
 
-* **[None (Object)]\(なし (オブジェクト))\** フィールドに、 **TableAnchor** オブジェクトを割り当てる
+* **[None (Object)]\(なし (オブジェクト))\** フィールドに、**TableAnchor** オブジェクトを割り当てる
 * **[No Function]\(関数なし\)** ドロップダウンから、 **[AnchorModuleScript]**  > **CreateAzureAnchor()** 関数の順に選択する
-* 表示される新しい **"None (Game Object)"(なし (ゲーム オブジェクト))** フィールドに、 **TableAnchor** オブジェクトを割り当てる
+* 表示される新しい **"None (Game Object)"(なし (ゲーム オブジェクト))** フィールドに、**TableAnchor** オブジェクトを割り当てる
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-3.png)
+![CreateAzureAnchor ボタンの OnClick イベントが構成された Unity](images/mr-learning-sharing/sharing-05-section2-step1-3.png)
 
 [Hierarchy]\(ヒエラルキー\) ウィンドウで **ShareAzureAnchor** という名前の 3 番目の子ボタン オブジェクトを選択して、[Inspector]\(インスペクター\) ウィンドウで **Interactable (Script)** コンポーネントを探して **OnClick ()** イベントを次のように構成します。
 
-* **[None (Object)]\(なし (オブジェクト))\** フィールドに、 **TableAnchor** オブジェクトを割り当てる
+* **[None (Object)]\(なし (オブジェクト))\** フィールドに、**TableAnchor** オブジェクトを割り当てる
 * **[No Function]** (関数なし) ドロップダウンから、 **[SharingModuleScript]**  > **ShareAzureAnchor()** 関数の順に選択する
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-4.png)
+![ShareAzureAnchor ボタンの OnClick イベントが構成された Unity](images/mr-learning-sharing/sharing-05-section2-step1-4.png)
 
 [Hierarchy]\(階層\) ウィンドウで **GetAzureAnchor** という名前の 4 番目の子ボタン オブジェクトを選択して、[Inspector]\(インスペクター\) ウィンドウで **Interactable (Script)** コンポーネントを探して **OnClick ()** イベントを次のように構成します。
 
-* **[None (Object)]\(なし (オブジェクト))\** フィールドに、 **TableAnchor** オブジェクトを割り当てる
+* **[None (Object)]\(なし (オブジェクト))\** フィールドに、**TableAnchor** オブジェクトを割り当てる
 * **[No Function]** (関数なし) ドロップダウンから、 **[SharingModuleScript]**  > **GetAzureAnchor()** 関数の順に選択する
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-5.png)
+![GetAzureAnchor ボタンの OnClick イベントが構成された Unity](images/mr-learning-sharing/sharing-05-section2-step1-5.png)
 
 ## <a name="connecting-the-scene-to-the-azure-resource"></a>シーンを Azure リソースに接続する
 
-[Hierarchy]\(ヒエラルキー\) ウィンドウで **SharedPlayground** オブジェクトを展開し、 **TableAnchor** オブジェクトを選択します。
+[Hierarchy]\(ヒエラルキー\) ウィンドウで **SharedPlayground** オブジェクトを展開し、**TableAnchor** オブジェクトを選択します。
 
-[Inspector]\(インスペクター\) ウィンドウで **Spatial Anchor Manager (Script)** コンポーネントを探し、このチュートリアル シリーズの「 [前提条件](mr-learning-sharing-01.md#prerequisites)」の部分で作成した Azure Spatial Anchors アカウントからの資格情報を使用して、 **[Credentials]\(資格情報\)** セクションを構成します。
+[Inspector]\(インスペクター\) ウィンドウで **Spatial Anchor Manager (Script)** コンポーネントを探し、このチュートリアル シリーズの「[前提条件](mr-learning-sharing-01.md#prerequisites)」の部分で作成した Azure Spatial Anchors アカウントからの資格情報を使用して、 **[Credentials]\(資格情報\)** セクションを構成します。
 
 * **"Spatial Anchors Account ID"(Spatial Anchors アカウント ID)** フィールドに、Azure Spatial Anchors アカウントからの **アカウント ID** を貼り付ける
 * **"Spatial Anchors Account Key"(Spatial Anchors アカウント キー)** フィールドに、Azure Spatial Anchors アカウントからのプライマリまたはセカンダリ **アクセス キー** を貼り付ける
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-1.png)
+![Spatial Anchor Manager が構成された Unity](images/mr-learning-sharing/sharing-05-section3-step1-1.png)
 
 > [!TIP]
 > シーン内で空間アンカー アカウント ID およびキーを設定するのでなく、プロジェクト全体に対してそれを設定することもできます。ASA を使用して複数のシーンを用意する場合は、これが有利です。 それを行うには、[Project]\(プロジェクト\) ウィンドウで、[Assets]\(アセット\) > [AzureSpatialAnchors.SDK] > [Resources]\(リソース\) > **[SpatialAnchorConfig]** アセットの順に移動し、次に [Inspector]\(インスペクター\) ウィンドウで値を設定します。
@@ -88,7 +88,7 @@ ms.locfileid: "91701616"
 
 * **[Public Sharing Pin]\(パブリック共有ピン\)** フィールドで、いくつかの数字を変更します。これにより、ピンが自分のプロジェクトに固有のものとなります。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
+![Anchor Module Script が構成された Unity](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
 
 **TableAnchor** オブジェクトを選択したまま、[Inspector]\(インスペクター\) ウィンドウですべてのスクリプト コンポーネントが **有効** になっていることを確認します。
 
@@ -96,7 +96,7 @@ ms.locfileid: "91701616"
 * **Anchor Module Script (Script)** コンポーネントの隣にあるチェックボックスをオンにして有効にする
 * **Sharing Module Script (Script)** コンポーネントの隣にあるチェックボックスをオンにして有効にする
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-3.png)
+![TableAnchor スクリプト コンポーネントが有効にされた Unity](images/mr-learning-sharing/sharing-05-section3-step1-3.png)
 
 ## <a name="trying-the-experience-with-spatial-alignment"></a>空間的な位置合わせのエクスペリエンスを試す
 

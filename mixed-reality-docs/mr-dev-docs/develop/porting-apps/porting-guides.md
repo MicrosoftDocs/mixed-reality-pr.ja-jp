@@ -5,13 +5,13 @@ author: JBrentJ
 ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
-keywords: ポート、移植、unity、ミドルウェア、エンジン、UWP、Win32
-ms.openlocfilehash: 9822976ab7dac9ae7567e5f38ca44ceee646d098
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: ポート、unity、unreal、ミドルウェア、エンジン、UWP、Win32、移植、HoloLens ファースト世代、mixed reality ヘッドセット、windows mixed reality ヘッドセット、移行、Windows 10、入力マッピング、
+ms.openlocfilehash: 18129151b1e3d11f9e9c7bb3c3420c23b5fd1dd0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638546"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677731"
 ---
 # <a name="porting-guides"></a>移植ガイド
 
@@ -38,7 +38,7 @@ Windows Mixed Reality プラットフォームは、まだアクティブな開�
 1. Windows 10 の作成者の[更新プログラム](https://www.microsoft.com/software-download/windows10)をインストールする
 2. Windows Insider プログラムに[参加](https://insider.windows.com/)します。
 3. [開発者モード](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)を有効にする
-4. [ **設定 > 更新 & セキュリティ] セクション** で、 [Windows Insider Fast のフライト](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview)に切り替えます。
+4. [**設定 > 更新 & セキュリティ] セクション** で、 [Windows Insider Fast のフライト](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview)に切り替えます。
 
 ### <a name="3-upgrade-to-the-most-recent-build-of-visual-studio"></a>3. Visual Studio の最新のビルドにアップグレードする
 * Visual Studio を使用している場合は、最新のビルドにアップグレードします。

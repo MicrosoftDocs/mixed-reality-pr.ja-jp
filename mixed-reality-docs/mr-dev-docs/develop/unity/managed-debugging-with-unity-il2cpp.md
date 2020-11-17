@@ -5,13 +5,13 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: unity、visual studio、デバッグ、il2cpp
-ms.openlocfilehash: 970d3000df995e7c6e331a41d10e25dc5aa370a8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: unity, visual studio, デバッグ, il2cpp, HoloLens, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想 reality ヘッドセット, UWP
+ms.openlocfilehash: 96a2c21fc6f8b2bdab199e65c9b1a31ffb6e029b
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684618"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678591"
 ---
 # <a name="managed-debugging-with-unity-il2cpp"></a>Unity IL2CPP を使用したマネージド デバッグ
 

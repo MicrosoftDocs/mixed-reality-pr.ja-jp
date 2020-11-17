@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 音声入力、KeywordRecognizer、GrammarRecognizer、マイク、ディクテーション、音声
-ms.openlocfilehash: b6930b35046e32beb1a4ca9f9ca29996487fcf4d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 音声入力、KeywordRecognizer、GrammarRecognizer、マイク、ディクテーション、音声、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、MRTK、Mixed Reality ツールキット
+ms.openlocfilehash: 20e2b8d4b8a18f38e72db7889a5d00cf15bfc0eb
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687250"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679891"
 ---
 # <a name="voice-input-in-unity"></a>Unity の音声入力
 
@@ -41,7 +41,7 @@ KeywordRecognizer (2 種類の PhraseRecognizers のいずれか) では、ア�
 ### <a name="keywordrecognizer"></a>KeywordRecognizer
 
 **名前空間:** *Unityengine。 Windows. Speech*<br>
-**型:** *KeywordRecognizer* 、 *PhraseRecognizedEventArgs* 、 *SpeechError* 、 *SpeechSystemStatus*
+**型:** *KeywordRecognizer*、 *PhraseRecognizedEventArgs*、 *SpeechError*、 *SpeechSystemStatus*
 
 一部のキーストロークを保存するには、いくつかの using ステートメントが必要です。
 
@@ -103,7 +103,7 @@ keywordRecognizer.Start();
 ### <a name="grammarrecognizer"></a>GrammarRecognizer
 
 **名前空間:** *Unityengine。 Windows. Speech*<br>
-**型** : *GrammarRecognizer* 、 *PhraseRecognizedEventArgs* 、 *SpeechError* 、 *SpeechSystemStatus*
+**型**: *GrammarRecognizer*、 *PhraseRecognizedEventArgs*、 *SpeechError*、 *SpeechSystemStatus*
 
 GrammarRecognizer は、SRGS を使用して認識文法を指定する場合に使用します。 これは、アプリにいくつかのキーワードしか含まれていない場合、より複雑な語句を認識する場合、またはコマンドのセットを簡単にオン/オフにする場合に便利です。 詳細については、「 [SRGS XML を使用して](https://msdn.microsoft.com/library/hh378349(v=office.14).aspx) ファイル形式情報を作成する」を参照してください。
 
@@ -145,7 +145,7 @@ grammarRecognizer.Start();
 ## <a name="dictation"></a>ディクテーション
 
 **名前空間:** *Unityengine。 Windows. Speech*<br>
-**型** : *DictationRecognizer* 、 *SpeechError* 、 *SpeechSystemStatus*
+**型**: *DictationRecognizer*、 *SpeechError*、 *SpeechSystemStatus*
 
 DictationRecognizer を使用して、ユーザーの音声をテキストに変換します。 DictationRecognizer は [ディクテーション](../../design/voice-input.md#dictation) 機能を公開しており、仮説と語句の完了イベントの登録とリッスンをサポートしているので、ユーザーが話すときと後の両方でユーザーにフィードバックを提供できます。 Start () メソッドと Stop () メソッドは、それぞれディクテーション認識を有効または無効にします。 レコグナイザーを使用したら、Dispose () メソッドを使用して破棄し、使用するリソースを解放する必要があります。 これらのリソースは、それより前にリリースされていない場合、追加のパフォーマンスコストで、ガベージコレクション中に自動的に解放されます。
 
@@ -301,11 +301,11 @@ GitHub の Mixed Reality Toolkit には、システムに使用可能なマイ�
 
 - [HoloToolkit-Examples/Input/シーン/SpeechInputSource](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity)
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
 ここまでに説明した Unity 開発チェックポイントの旅に従っている場合、次のタスクでは、Mixed Reality プラットフォームの機能と Api について説明します。
 
 > [!div class="nextstepaction"]
 > [共有エクスペリエンス](shared-experiences-in-unity.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks) に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks)に戻ることができます。

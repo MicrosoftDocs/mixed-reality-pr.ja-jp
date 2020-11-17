@@ -1,5 +1,5 @@
 ---
-title: 入門チュートリアル - 1. はじめに
+title: 入門チュートリアル - 1. 入門チュートリアルの概要
 description: このコースでは、Mixed Reality ツールキット (MRTK) を使用して Mixed Reality アプリケーションを最初から作成する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 6d6be08aa532de22a30e70274859eda466a78204
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 992d864d7e016c3d0906366d10993ff0559afc06
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699994"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416900"
 ---
-# <a name="1-introduction"></a>1.はじめに
+# <a name="1-introduction-to-the-getting-started-tutorials"></a>1. 入門チュートリアルの概要
 
 ## <a name="overview"></a>概要
 
@@ -44,13 +44,13 @@ ms.locfileid: "91699994"
 * 正しい[ツールがインストールされている](../../install-the-tools.md)構成済みの Windows 10 PC
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 以降
 * [開発用に構成された](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) HoloLens 2 デバイス
-* Unity 2019.3.15 がインストールされ、ユニバーサル Windows プラットフォーム ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
+* Unity 2019 LTS がインストールされ、ユニバーサル Windows プラットフォーム ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 
 > [!CAUTION]
 > このチュートリアル シリーズで推奨される MRTK のバージョンは MRTK 2.4.0 です。
 
 > [!CAUTION]
-> このチュートリアル シリーズで推奨される Unity バージョンは Unity 2019.3.15 です。 これは、上の前提条件のリンクに記載されているすべての Unity のバージョンに優先されます。
+> このチュートリアル シリーズで推奨されている Unity バージョンは、Unity 2019 LTS です。 これは、上の前提条件のリンクに記載されているすべての Unity のバージョンに優先されます。
 
 > [!div class="nextstepaction"]
 > [次のチュートリアル:2.プロジェクトの初期化と最初のアプリケーションの配置](mr-learning-base-02.md)

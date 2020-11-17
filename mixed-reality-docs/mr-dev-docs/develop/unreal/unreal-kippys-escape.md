@@ -5,15 +5,15 @@ author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
 ms.topic: article
-keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、デバイスへのデプロイ、PC、ドキュメント
+keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、デバイスへの展開、PC、ドキュメント、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5c029e91bb33192b02dd32aca224a23fc4b5289d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f5abfca4d5f85fd65aee77857d94a989122df310
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684530"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678951"
 ---
 # <a name="the-making-of-kippys-escape"></a>Kippy のエスケープの作成
 

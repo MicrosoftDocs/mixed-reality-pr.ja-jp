@@ -1,19 +1,19 @@
 ---
-title: 複合現実の 2D UWP アプリを更新する
+title: 混合現実向けに 2D UWP アプリを更新する
 description: この記事では、既存の2D ユニバーサル Windows プラットフォームアプリを更新して、HoloLens および Windows Mixed Reality のイマーシブヘッドセットで実行する方法について説明します。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 2D アプリ、UWP、フラットアプリ、HoloLens、イマーシブヘッドセット、アプリモデル、戻るボタン、アプリバー、dpi、解像度、スケール
-ms.openlocfilehash: af262527c957dda57f0c8a3252a2f63207d6ca39
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 2D アプリ、UWP、フラットアプリ、HoloLens、イマーシブヘッドセット、アプリモデル、戻るボタン、アプリバー、dpi、解像度、スケール、移植、HoloLens 1 世代、HoloLens 2、mixed reality ヘッドセット、windows mixed reality ヘッドセット、移行、Windows 10
+ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683407"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677801"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>複合現実の 2D UWP アプリを更新する
+# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>混合現実向けに 2D UWP アプリを更新する
 
 Windows Mixed Reality を使用すると、ユーザーは、お客様の物理的またはデジタルの世界において、ホログラムを適切なものとして表示できます。 主に、HoloLens とデスクトップ Pc の両方を Windows 10 デバイスとして接続します。これは、ストア内のほぼすべてのユニバーサル Windows プラットフォーム (UWP) アプリを2D アプリとして実行できることを意味します。
 
@@ -51,7 +51,7 @@ Mixed reality ヘッドセット内の [スタート] メニューにアクセ�
 
 ## <a name="targeting-both-immersive-headsets-and-hololens"></a>イマーシブヘッドセットと HoloLens の両方を対象とする
 
-お疲れさまでした。 これで、アプリは Windows 10 ユニバーサル Windows プラットフォーム (UWP) を使用しています。
+おめでとうございます。 これで、アプリは Windows 10 ユニバーサル Windows プラットフォーム (UWP) を使用しています。
 
 これで、アプリは現在の windows デバイス (デスクトップ、モバイル、Xbox、Windows Mixed Reality イマーシブヘッドセット、HoloLens など) で実行できるようになり、今後の Windows デバイスでも実行できるようになりました。 ただし、これらのデバイスをすべてターゲットにするには、アプリが Windows のユニバーサルデバイスファミリを対象としていることを確認する必要があります。
 
@@ -59,7 +59,7 @@ Mixed reality ヘッドセット内の [スタート] メニューにアクセ�
 
 次に、AppX マニフェストに移動して、Windows 10 UWP アプリが HoloLens で実行できることを確認します。
 * **Visual Studio** でアプリのソリューションファイルを開き、アプリのパッケージマニフェストに移動します。
-* ソリューション内の package.appxmanifest ファイルを右クリックして、[ **コードの表示** ] にアクセスし **ます。**<br>
+* ソリューション内の package.appxmanifest ファイルを右クリックして、[**コードの表示**] にアクセスし **ます。**<br>
   ![ソリューションエクスプローラーの package.appxmanifest](images/openappxmanifest-500px.png)<br>
 * [依存関係] セクションで、ターゲットプラットフォームが Windows. Universal であることを確認します。
   ```
@@ -74,11 +74,11 @@ Mixed reality ヘッドセット内の [スタート] メニューにアクセ�
 ### <a name="run-in-the-hololens-emulator"></a>HoloLens エミュレーターでの実行
 
 UWP アプリが "Windows. Universal" を対象とするようになったので、アプリをビルドして [HoloLens エミュレーター](../platform-capabilities-and-apis/using-the-hololens-emulator.md)で実行しましょう。
-* [HoloLens Emulator をインストール済み](../install-the-tools.md)であることを確認します。
+* [HoloLens Emulator をインストール済み](../install-the-tools.md) であることを確認します。
 * Visual Studio で、アプリの **x86** ビルド構成を選択します。
 
   ![Visual Studio の [x86] ビルド構成](../platform-capabilities-and-apis/images/x86setting.png)<br>
-* [配置ターゲット] ドロップダウンメニューで [ **HoloLens Emulator** ] を選択します。
+* [配置ターゲット] ドロップダウン メニューで **[HoloLens エミュレーター]** を選択します
 
   ![展開ターゲットリストの HoloLens エミュレーター](images/deployemulator-500px.png)<br>
 * [デバッグ **> 開始** ] を選択して、アプリを配置し、デバッグを開始します。
@@ -108,7 +108,7 @@ UWP アプリが HoloLens で開始されない原因の概要を把握するに
 
 ## <a name="update-your-ui"></a>UI を更新する
 
-UWP アプリが2D ホログラムとしてイマーシブヘッドセットや HoloLens で実行されるようになったので、次は見栄えが良いことを確認します。 考慮事項をいくつか以下に示します。
+UWP アプリが2D ホログラムとしてイマーシブヘッドセットや HoloLens で実行されるようになったので、次は見栄えが良いことを確認します。 次の点を考慮することをお勧めします。
 * Windows Mixed Reality は、853x480 有効ピクセルに相当する固定解像度および DPI ですべての2D アプリを実行します。 このスケールで設計を改良する必要があるかどうかを検討し、以下の設計ガイダンスを確認して、HoloLens とイマーシブヘッドセットのエクスペリエンスを向上させてください。
 * Windows Mixed Reality では、2d ライブタイル [はサポートされていません](../../design/app-model.md) 。 コア機能がライブタイルに関する情報を表示している場合は、その情報をアプリに戻したり、 [3d アプリランチャー](../../distribute/3d-app-launcher-design-guidance.md)を調べたりすることを検討してください。
 

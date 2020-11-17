@@ -1,18 +1,18 @@
 ---
 title: マルチユーザー機能のチュートリアル - 3. 複数のユーザーの接続
-description: このコースでは、HoloLens 2 アプリケーション内でマルチユーザー共有エクスペリエンスを実装する方法を学習します。
+description: このコースを完了すると、HoloLens 2 アプリケーション内で複数のユーザーを接続する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: cffcc326fadcc9cdbf406adde093e055aef83706
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5ebb3ffd66422a5e38bc62ada0f040e00f52671d
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701699"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353470"
 ---
 # <a name="3-connecting-multiple-users"></a>3.複数のユーザーの接続
 
@@ -31,13 +31,13 @@ ms.locfileid: "91701699"
 * **NetworkLobby** プレハブ
 * **SharedPlayground** プレハブ
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section1-step1-1.png)
+![新しく追加された NetworkLobby と SharedPlayground プレハブが選択されている Unity](images/mr-learning-sharing/sharing-03-section1-step1-1.png)
 
 [Project]\(プロジェクト\) ウィンドウで、 **[Assets]\(アセット\)**  >  **[MRTK.Tutorials.AzureSpatialAnchors]**  >  **[Prefabs]\(プレハブ\)** フォルダーに移動し、次のプレハブを [Hierarchy]\(階層\) ウィンドウにドラッグしてシーンに追加します。
 
 * **DebugWindow** プレハブ
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section1-step1-2.png)
+![新しく追加された DebugWindow プレハブが選択されている Unity](images/mr-learning-sharing/sharing-03-section1-step1-2.png)
 
 ## <a name="creating-the-user-prefab"></a>ユーザー プレハブを作成する
 
@@ -45,53 +45,53 @@ ms.locfileid: "91701699"
 
 ### <a name="1-create-and-configure-the-user"></a>1.ユーザーの作成と構成
 
-[Hierarchy]\(ヒエラルキー\) ウィンドウで空の領域を右クリックし、 **[Create Empty]\(空のユーザーを作成\)** を選択してシーンに空のオブジェクトを追加し、オブジェクトに「 **PhotonUser** 」という名前を付けて、次のように構成します。
+[Hierarchy]\(ヒエラルキー\) ウィンドウで空の領域を右クリックし、 **[Create Empty]\(空のユーザーを作成\)** を選択してシーンに空のオブジェクトを追加し、オブジェクトに「**PhotonUser**」という名前を付けて、次のように構成します。
 
 * [Transform]\(変換\) の **[Position]\(位置\)** が、X = 0、Y = 0、Z = 0 に設定されていることを確認する
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-1.png)
+![新しく作成された PhotonUser オブジェクトが選択されている Unity](images/mr-learning-sharing/sharing-03-section2-step1-1.png)
 
-[Hierarchy]\(階層\) ウィンドウで、 **PhotonUser** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウの **[Add Component]\(コンポーネントの追加\)** ボタンを使用して **Photon User (Script)** コンポーネントを PhotonUser オブジェクトに追加します。
+[Hierarchy]\(階層\) ウィンドウで、**PhotonUser** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウの **[Add Component]\(コンポーネントの追加\)** ボタンを使用して **Photon User (Script)** コンポーネントを PhotonUser オブジェクトに追加します。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-2.png)
+![Photon User コンポーネントが追加された Unity](images/mr-learning-sharing/sharing-03-section2-step1-2.png)
 
 [Inspector]\(インスペクター\) ウィンドウで、 **[Add Component]\(コンポーネントの追加\)** ボタンを使用して PhotonUser オブジェクトに **Generic Net Sync (Script)** コンポーネントを追加し、次のように構成します。
 
 * **[Is User]\(ユーザーである\)** チェックボックスをオンにする
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-3.png)
+![Generic Net Sync コンポーネントが追加され構成された Unity](images/mr-learning-sharing/sharing-03-section2-step1-3.png)
 
 [Inspector]\(インスペクター\) ウィンドウで、 **[Add Component]\(コンポーネントの追加\)** ボタンを使用して PhotonUser オブジェクトに **Photon View (Script)** コンポーネントを追加し、次のように構成します。
 
-* **[Observed Components]\(観察されるコンポーネント\)** フィールドに、 **Generic Net Sync (Script)** コンポーネントを割り当てる
+* **[Observed Components]\(観察されるコンポーネント\)** フィールドに、**Generic Net Sync (Script)** コンポーネントを割り当てる
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
+![Photon View コンポーネントが追加され構成された Unity](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### <a name="2-create-the-avatar"></a>2.アバターを作成する
 
 [Project]\(プロジェクト\) ウィンドウで、 **[Assets]\(アセット\)**  > **MRTK** > **SDK** > **StandardAssets** >  **[Materials]\(素材\)** に移動し、MRTK の素材を見つけます。
 
-次に、[Hierarchy]\(階層\) ウィンドウで、 **PhotonUser** オブジェクトを右クリックして **[3D Object]\(3D オブジェクト\)**  >  **[Sphere]\(球体\)** を選択し、PhotonUser オブジェクトの子として球体オブジェクトを作成して次のように構成します。
+次に、[Hierarchy]\(階層\) ウィンドウで、**PhotonUser** オブジェクトを右クリックして **[3D Object]\(3D オブジェクト\)**  >  **[Sphere]\(球体\)** を選択し、PhotonUser オブジェクトの子として球体オブジェクトを作成して次のように構成します。
 
 * [Transform]\(変換\) の **[Position]\(位置\)** が、X = 0、Y = 0、Z = 0 に設定されていることを確認する
 * [Transform]\(変換\) の **[Scale]\(スケール\)** を適切なサイズに変更する。例: X = 0.15、Y = 0.15、Z = 0.15
-* [MeshRenderer] > [Materials]\(素材\) > **[Element 0]\(要素 0\)** フィールドに、 **MRTK_Standard_White** 素材を割り当てる
+* [MeshRenderer] > [Materials]\(素材\) > **[Element 0]\(要素 0\)** フィールドに、**MRTK_Standard_White** 素材を割り当てる
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
+![新しく作成され構成されたアバター球体が表示された Unity](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
 
 ### <a name="3-create-the-prefab"></a>3.プレハブを作成する
 
 [Project]\(プロジェクト\) ウィンドウで **[Assets]\(アセット\)**  >  **[MRTK.Tutorials.MultiUserCapabilities]**  >  **[Resources]\(リソース\)** フォルダーに移動します。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
+![[Resources]\(リソース\) フォルダーが選択されているプロジェクト ウィンドウが表示された Unity](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
 
 [Resources]\(リソース\) フォルダーを選択したまま、[Hierarchy]\(ヒエラルキー\) ウィンドウから **PhotonUser** オブジェクトを **[Resources]\(リソース\)** フォルダーに **クリックしてドラッグ** し、PhotonUser オブジェクトをプレハブにします。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-2.png)
+![新しく作成された PhotonUser プレハブが選択されている Unity](images/mr-learning-sharing/sharing-03-section2-step3-2.png)
 
 [Hierarchy]\(ヒエラルキー\) ウィンドウで **PhotonUser** オブジェクトを右クリックし、 **[Delete]\(削除\)** を選択してシーンから削除します。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-3.png)
+![新しく作成された PhotonUser プレハブ オブジェクトがシーンから削除されている Unity](images/mr-learning-sharing/sharing-03-section2-step3-3.png)
 
 ## <a name="configuring-pun-to-instantiate-the-user-prefab"></a>PUN を構成してユーザー プレハブのインスタンスを作成する
 
@@ -103,13 +103,13 @@ ms.locfileid: "91701699"
 
 * **"Photon User Prefab"(Photon ユーザー プレハブ)** フィールドに、[Resources]\(リソース\) フォルダーから **PhotonUser** プレハブを割り当てる
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section3-step1-1.png)
+![Photon Room コンポーネントが部分的に構成された Unity](images/mr-learning-sharing/sharing-03-section3-step1-1.png)
 
 ## <a name="trying-the-experience-with-multiple-users"></a>複数のユーザーのエクスペリエンスを試す
 
 Unity プロジェクトをビルドして HoloLens に配置してから Unity に戻り、HoloLens でアプリが実行されている間にゲーム モードに入ると、頭 (HoloLens) を動かした時に HoloLens のユーザー アバターが動くのを確認できます。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
+![ネットワーク接続されたユーザーが表示された Unity を表示するアニメーション](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
 > HoloLens 2 に Unity プロジェクトをビルドして配置する方法を再確認するには、[HoloLens 2 にアプリをビルドする](mr-learning-base-02.md#building-your-application-to-your-hololens-2)手順に関する記事を参照してください。

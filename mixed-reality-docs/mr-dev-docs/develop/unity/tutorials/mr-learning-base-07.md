@@ -1,18 +1,18 @@
 ---
 title: 入門チュートリアル - 7. 3D オブジェクトの操作
-description: このコースでは、Mixed Reality ツールキット (MRTK) を使用して Mixed Reality アプリケーションを作成する方法について説明します。
+description: このコースでは、Mixed Reality ツールキット (MRTK) を使用して 3D オブジェクトを操作する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 0cedd731fc795341532a8a330f4fdcce9fba47b0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1e91cc97f68a4d4b5bcb015184e96582533d1f96
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699795"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353520"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7.3D オブジェクトの操作
 
@@ -39,7 +39,7 @@ ms.locfileid: "91699795"
 > * **Collider** コンポーネント、たとえばボックス コライダー
 > * **Object Manipulator (Script)** コンポーネント
 >
-> オブジェクトを **操作** し、 **追跡対象の手でオブジェクトをつかむ** ことができるようにするには、オブジェクトに次のコンポーネントが必要です。
+> オブジェクトを **操作** し、**追跡対象の手でオブジェクトをつかむ** ことができるようにするには、オブジェクトに次のコンポーネントが必要です。
 >
 > * **Collider** コンポーネント、たとえばボックス コライダー
 > * **Object Manipulator (Script)** コンポーネント
@@ -53,7 +53,7 @@ ms.locfileid: "91699795"
 * **NearInteractionGrabbable** コンポーネント
 * **Part Assembly Controller (Script)** コンポーネント
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-1.png)
+![RoverAssembly とすべての探査車パーツ オブジェクトが選択され、コンポーネントが追加されている Unity](images/mr-learning-base/base-07-section1-step1-1.png)
 
 > [!TIP]
 > 互いに隣接していない複数のオブジェクトを選択するには、CTRL キーを押しながらマウスを使用して、任意のオブジェクトを選択します。
@@ -68,47 +68,47 @@ ms.locfileid: "91699795"
 
 * **[両手を使った操作の種類]** ドロップダウンで、[スケール] をオフにし、 **[移動]** と **[回転]** のみが有効になるようにします
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-2.png)
+![[Two Handed Manipulation Type]\(両手を使った操作の種類\) が構成された Unity](images/mr-learning-base/base-07-section1-step1-2.png)
 
 > [!NOTE]
 > この時点で、すべての探査車のパーツ オブジェクトと RoverAssembly オブジェクトのオブジェクト操作が有効になりました。
 
-[プロジェクト] ウィンドウで、 **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Audio** フォルダーの順に移動して、オーディオ クリップを見つけます。
+[プロジェクト] ウィンドウで、**Assets** > **MRTK** > **SDK** > **StandardAssets** > **Audio** フォルダーの順に移動して、オーディオ クリップを見つけます。
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-3.png)
+![[Audio] フォルダーが選択されているプロジェクト ウィンドウが表示された Unity](images/mr-learning-base/base-07-section1-step1-3.png)
 
-[階層] ウィンドウで、すべての **探査車のパーツ オブジェクト** をもう一度選択します。その後、[インスペクター] ウィンドウで、 **[コンポーネントの追加]** ボタンを使用し、 **Audio Sources** コンポーネントを追加して、次のように構成します。
+[階層] ウィンドウで、すべての **探査車のパーツ オブジェクト** をもう一度選択します。その後、[インスペクター] ウィンドウで、 **[コンポーネントの追加]** ボタンを使用し、**Audio Sources** コンポーネントを追加して、次のように構成します。
 
 * **MRTK_Scale_Start** オーディオ クリップを **AudioClip** フィールドに割り当てます
 * **[Play On Awake]\(起動時に再生\)** チェックボックスをオフにします
 * **[Spatial Blend]\(空間ブレンド\)** を 1 に変更します
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-4.png)
+![すべての探査車パーツ オブジェクトが選択され、Audio Source コンポーネントが追加され構成されている Unity](images/mr-learning-base/base-07-section1-step1-4.png)
 
-[階層] ウィンドウで、RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** オブジェクトの順に展開し、すべての配置ヒント オブジェクトを表示します。その後、最初の探査車のパーツである、RoverParts > **Camera_Part** の順に選択し、 **Part Assembly Controller (Script)** コンポーネントを次のように構成します。
+[階層] ウィンドウで、RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** オブジェクトの順に展開し、すべての配置ヒント オブジェクトを表示します。その後、最初の探査車のパーツである、RoverParts > **Camera_Part** の順に選択し、**Part Assembly Controller (Script)** コンポーネントを次のように構成します。
 
 * **Camera_PlacementHint** オブジェクトを **[Location To Place]\(配置する場所\)** フィールドに割り当てます
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-5.png)
+![Camera_Part PartAssemblyController コンポーネントが構成された Unity](images/mr-learning-base/base-07-section1-step1-5.png)
 
-残りの探査車のパーツ オブジェクトと RoverAssembly オブジェクトのそれぞれに対して、この手順を **繰り返し** 、次のように **Part Assembly Controller (Script)** コンポーネントを構成します。
+残りの探査車のパーツ オブジェクトと RoverAssembly オブジェクトのそれぞれに対して、この手順を **繰り返し**、次のように **Part Assembly Controller (Script)** コンポーネントを構成します。
 
-* **Generator_Part** については、 **Generator_PlacementHint** オブジェクトを **[Location To Place]\(配置する場所\)** フィールドに割り当てます
-* **Lights_Part** については、 **Lights_PlacementHint** オブジェクトを **[Location To Place]\(配置する場所\)** フィールドに割り当てます
-* **UHFAntenna_Part** については、 **UHFAntenna_PlacementHint** オブジェクトを **[Location To Place]\(配置する場所\)** フィールドに割り当てます
-* **Spectrometer_Part** については、 **Spectrometer_PlacementHint** オブジェクトを **[Location To Place]\(配置する場所\)** フィールドに割り当てます
+* **Generator_Part** については、**Generator_PlacementHint** オブジェクトを **[Location To Place]\(配置する場所\)** フィールドに割り当てます
+* **Lights_Part** については、**Lights_PlacementHint** オブジェクトを **[Location To Place]\(配置する場所\)** フィールドに割り当てます
+* **UHFAntenna_Part** については、**UHFAntenna_PlacementHint** オブジェクトを **[Location To Place]\(配置する場所\)** フィールドに割り当てます
+* **Spectrometer_Part** については、**Spectrometer_PlacementHint** オブジェクトを **[Location To Place]\(配置する場所\)** フィールドに割り当てます
 * **RoverAssembly** については、オブジェクト自体 (つまり、同じ **RoverAssembly** オブジェクト) を **[Location To Place]\(配置する場所\)** フィールドに割り当てます
 
 [階層] ウィンドウで、[RoverExplorer] > [ボタン] > **[リセット]** ボタン オブジェクトの順に選択します。その後、[インスペクター] ウィンドウで、次のように Interactable **OnClick ()** イベントを構成します。
 
 * **RoverAssembly** オブジェクトを **[None (Object)]\(なし (オブジェクト)\)** フィールドに割り当てます
-* **[No Function]\(関数なし\)** ドロップダウンから、 **PartAssemblyController** > **ResetPlacement ()** の順に選択し、イベントがトリガーされたときに実行するアクションとして、この関数を設定します
+* **[No Function]\(関数なし\)** ドロップダウンから、**PartAssemblyController** > **ResetPlacement ()** の順に選択し、イベントがトリガーされたときに実行するアクションとして、この関数を設定します
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-6.png)
+![[リセット] ボタン オブジェクトの OnClick イベントが構成された Unity](images/mr-learning-base/base-07-section1-step1-6.png)
 
 ゲーム モードになったら、近距離または遠距離操作を使用して、探査車のパーツを Rover に配置できます。 パーツは、対応する配置ヒントに近づくと、自動的に所定の位置にはめ込まれ、Rover の一部になります。 配置をリセットする場合は、[リセット] ボタンを押すことができます。
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-7.png)
+![[リセット] ボタンが押されている再生モードの分割ビューが表示された Unity](images/mr-learning-base/base-07-section1-step1-7.png)
 
 Object Manipulator コンポーネントとその関連プロパティの詳細については、[MRTK ドキュメント ポータル](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)の「[オブジェクト マニピュレーター](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)」のガイドを参照してください。
 
@@ -125,7 +125,7 @@ Object Manipulator コンポーネントとその関連プロパティの詳細�
 
 その後、両方のコンポーネントの横にあるチェックボックスを **オフ** にして、既定で **無効** になるようにします。
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-1.png)
+![RoverExplorer オブジェクトが選択され、コンポーネントが追加され無効にされている Unity](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
 > 境界ボックスの視覚エフェクトは実行時に作成されるため、ゲーム モードに入る前は表示されません。
@@ -133,7 +133,7 @@ Object Manipulator コンポーネントとその関連プロパティの詳細�
 > [!NOTE]
 > BoundingBox コンポーネントによって、実行時に NearInteractionGrabbable コンポーネントが自動的に追加されます。 したがって、このコンポーネントを追加して、追跡対象の手で囲まれたオブジェクトをつかむ必要はありません。
 
-[階層] ウィンドウで、[メニュー] > **[ButtonCollection]** オブジェクトの順に展開して 4 つのボタンを表示し、3 番目のボタンの名前を **BoundingBox_Enable** に変更します。その後、[インスペクター] ウィンドウで、 **Button Config Helper (Script)** コンポーネントを次のように構成します。
+[階層] ウィンドウで、[メニュー] > **[ButtonCollection]** オブジェクトの順に展開して 4 つのボタンを表示し、3 番目のボタンの名前を **BoundingBox_Enable** に変更します。その後、[インスペクター] ウィンドウで、**Button Config Helper (Script)** コンポーネントを次のように構成します。
 
 * **[Main Label Text]\(メイン ラベル テキスト\)** を **[有効]** に変更します
 * **RoverExplorer** オブジェクトを **[None (Object)]\(なし (オブジェクト)\)** フィールドに割り当てます
@@ -145,7 +145,7 @@ Object Manipulator コンポーネントとその関連プロパティの詳細�
 * 引数チェックボックスが **オン** になっていることを確認します
 * **[アイコン]** は、'境界ボックスがあるキューブ' アイコンのままにしておきます
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-2.png)
+![BoundingBox_Enable ボタン オブジェクトが選択され、Button Config Helper コンポーネントが構成された Unity](images/mr-learning-base/base-07-section2-step1-2.png)
 
 4 番目と最後のボタンの名前を **BoundingBox_Disable** に変更します。その後、[インスペクター] ウィンドウで、次のように **Button Config Helper (Script)** コンポーネントを構成します。
 
@@ -159,11 +159,11 @@ Object Manipulator コンポーネントとその関連プロパティの詳細�
 * 引数チェックボックスが **オフ** になっていることを確認します
 * **[アイコン]** を、'境界ボックスがあるキューブ' アイコンに変更します
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-3.png)
+![BoundingBox_Disable オブジェクトが選択され、Button Config Helper コンポーネントが構成された Unity](images/mr-learning-base/base-07-section2-step1-3.png)
 
 ゲーム モードに入り、[有効] ボタンをクリックして境界ボックスを有効にしたら、近距離または遠距離操作を使用して、境界ボックスの移動、回転、およびスケーリングを行い、[無効] ボタンを使用して、境界ボックスをもう一度無効にすることができます。
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-4.png)
+![境界ボックスが操作されている再生モードの分割ビューが表示された Unity](images/mr-learning-base/base-07-section2-step1-4.png)
 
 Bounding Box コンポーネントとその関連プロパティの詳細については、[MRTK ドキュメントポータル](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)の[境界ボックス](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)に関するガイドを参照してください。
 

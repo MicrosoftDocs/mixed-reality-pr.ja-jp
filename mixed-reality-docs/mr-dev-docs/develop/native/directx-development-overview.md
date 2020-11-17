@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: DirectX, holographic レンダリング, ネイティブ, ネイティブアプリ, WinRT, WinRT アプリ, プラットフォーム Api, カスタムエンジン, ミドルウェア
-ms.openlocfilehash: fb51dfe15de26b80db255f0daca69e913f9ad35c
-ms.sourcegitcommit: c199872c11adae7de24929ed043ea90dea087b3e
+keywords: DirectX, holographic レンダリング, ネイティブ, ネイティブアプリ, WinRT, WinRT アプリ, プラットフォーム Api, カスタムエンジン, ミドルウェア, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
+ms.openlocfilehash: 0d5e364fdb4faac73f28649f5c009823a74ac595
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903125"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679651"
 ---
 # <a name="native-development-overview"></a>ネイティブ開発の概要
 
@@ -29,8 +29,8 @@ ms.locfileid: "92903125"
 ### <a name="1-getting-started"></a>1.はじめに
 
 Windows Mixed Reality は [、次の2種類のアプリを](../../design/app-views.md)サポートしています。
-* [HOLOGRAPHICSPACE api](getting-a-holographicspace.md)または [OpenXR api](openxr.md)を使用して、ヘッドセットの表示を満たすユーザーに [イマーシブビュー](../../design/app-views.md)をレンダリングする **Mixed reality アプリケーション** (UWP または Win32)
-* DirectX、XAML、または別のフレームワークを使用して、Windows Mixed Reality ホームのスレートに [2d ビュー](../../design/app-views.md#2d-views)をレンダリングする **2d アプリ** (UWP)
+* [HOLOGRAPHICSPACE api](getting-a-holographicspace.md)または [OpenXR api](openxr.md)を使用して、ヘッドセットの表示を満たすユーザーに [イマーシブビュー](../../design/app-views.md)をレンダリングする **Mixed reality アプリケーション**(UWP または Win32)
+* DirectX、XAML、または別のフレームワークを使用して、Windows Mixed Reality ホームのスレートに [2d ビュー](../../design/app-views.md#2d-views)をレンダリングする **2d アプリ**(UWP)
 
 [2d ビューとイマーシブビュー](../../design/app-views.md)の DirectX 開発の違いは、主に holographic のレンダリングと空間入力に関係しています。 UWP アプリケーションの [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) または Win32 アプリケーションの HWND が必要であり、ほぼ同じです。 アプリで使用できる WinRT Api にも同じことが当てはまります。 ただし、holographic 機能を利用するには、これらの Api の異なるサブセットを使用する必要があります。 たとえば、存在するスワップチェーンと frame は、holographic アプリケーション用にシステムによって管理されます。これにより、予測可能なフレームループが有効になります。
 

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens、永続化、Unity
-ms.openlocfilehash: bb1a9b0544f9325a60c86c7424b7b451b6b4335b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens、永続化、Unity、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
+ms.openlocfilehash: cff7f05a5a5695ae8e379ed681c3b7320622968c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690079"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678531"
 ---
 # <a name="persistence-in-unity"></a>Unity の永続化
 
@@ -107,21 +107,21 @@ Unity で共有エクスペリエンスの構築を開始するには、5分間�
 
 Azure 空間アンカーを使用して実行した後は、 <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity でアンカーを作成して見つける</a>ことができます。
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality コアの構成要素を調査しています。 ここから、次のビルディングブロックに進むことができます。
+ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality コアの構成要素を調査しています。 ここから、次の構成要素に進むことができます。
 
 > [!div class="nextstepaction"]
 > [空間マッピング](spatial-mapping-in-unity.md)
 
-または、Mixed Reality プラットフォームの機能と Api に移動します。
+または、Mixed Reality プラットフォームの機能と API に移動します。
 
 > [!div class="nextstepaction"]
 > [共有エクスペリエンス](shared-experiences-in-unity.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks) に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks)に戻ることができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 * [空間アンカーの永続性](../../design/coordinate-systems.md#spatial-anchor-persistence)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure 空間アンカー SDK for Unity</a>

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: 座標系、空間座標システム、方向専用、取り付けられている規模、拡大/縮小、部屋規模、ワールドスケール、360度、取り付け済み、部屋、室内、拡大/縮小、位置、向き、Unity、アンカー、空間アンカー、ワールドアンカー、ワールドロック、ワールドロック、ボディロック、ボディロック、追跡損失、locatability、境界、recenter
-ms.openlocfilehash: 59fae57f3ca5048f4027ed96fca03255683c1fe3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 座標系、空間座標系、方向専用、固定スケール、継続スケール、部屋規模、ワールドスケール、360度、取り付けられている、継続的、部屋、ワールド、スケール、位置、向き、Unity、アンカー、空間アンカー、ワールドアンカー、ワールドロック、ワールドロック、ボディロック、ボディロック、追跡の損失、分離機能、境界、recenter、混合現実ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
+ms.openlocfilehash: 92b132bb75e88711fb4bf9fda3dee5b778a0be6e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683135"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678681"
 ---
 # <a name="coordinate-systems-in-unity"></a>Unity の座標系
 
@@ -168,21 +168,21 @@ Unity で共有エクスペリエンスの構築を開始するには、5分間�
 
 Azure 空間アンカーを使用して実行した後は、 <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity でアンカーを作成して見つける</a>ことができます。
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality コアの構成要素を調査しています。 ここから、次のビルディングブロックに進むことができます。
+ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality コアの構成要素を調査しています。 ここから、次の構成要素に進むことができます。
 
 > [!div class="nextstepaction"]
 > [視線入力](gaze-in-unity.md)
 
-または、Mixed Reality プラットフォームの機能と Api に移動します。
+または、Mixed Reality プラットフォームの機能と API に移動します。
 
 > [!div class="nextstepaction"]
 > [共有エクスペリエンス](shared-experiences-in-unity.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks) に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks)に戻ることができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 * [エクスペリエンススケール](../../design/coordinate-systems.md#mixed-reality-experience-scales)
 * [空間ステージ](../../design/coordinate-systems.md#stage-frame-of-reference)
 * [Unity での損失の追跡](tracking-loss-in-unity.md)

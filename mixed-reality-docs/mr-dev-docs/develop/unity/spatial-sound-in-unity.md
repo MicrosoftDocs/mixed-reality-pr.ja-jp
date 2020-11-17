@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/07/2019
 ms.topic: article
-keywords: Unity、空間サウンド、HRTF、部屋サイズ
-ms.openlocfilehash: 9c5f71b2d9d13fa40f0d1674237d2da6c769e584
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity、空間サウンド、HRTF、部屋サイズ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit、spatializer、リバーブ
+ms.openlocfilehash: db01fe81457d0f46b7f287458b4d48af4a98f2bc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684610"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678441"
 ---
 # <a name="spatial-sound-in-unity"></a>Unity の立体音響
 
@@ -19,10 +19,10 @@ ms.locfileid: "91684610"
 
 ## <a name="spatializer-options"></a>Spatializer オプション
 Mixed reality アプリケーションの Spatializer オプションは次のとおりです。
-* *MS HRTF Spatializer* 。 Unity は、これを *Windows Mixed Reality* のオプションパッケージの一部として提供します。
+* *MS HRTF Spatializer*。 Unity は、これを *Windows Mixed Reality* のオプションパッケージの一部として提供します。
   * これは、高コストの ' 単一ソース ' アーキテクチャの CPU 上で実行されます。
   * これは、元の HoloLens アプリケーションとの下位互換性のために用意されています。
-* *Microsoft Spatializer* 。 これは、 [Microsoft Spatializer GitHub リポジトリ](https://github.com/microsoft/spatialaudio-unity)から入手できます。
+* *Microsoft Spatializer*。 これは、 [Microsoft Spatializer GitHub リポジトリ](https://github.com/microsoft/spatialaudio-unity)から入手できます。
   * これは、低コストの ' マルチソース ' アーキテクチャを使用します。
   * HoloLens 2 では、これはハードウェアアクセラレータにオフロードされます。
 
@@ -30,11 +30,11 @@ Mixed reality アプリケーションの Spatializer オプションは次の�
 
 ## <a name="enable-spatialization"></a>Spatialization を有効にする
 
-[Unity の NuGet](https://github.com/GlitchEnzo/NuGetForUnity/releases/latest)を使用して _SpatialAudio_ をインストールし、プロジェクトのオーディオ設定で **microsoft Spatializer** を選択します。 その後、以下を実行します。
+[Unity の NuGet](https://github.com/GlitchEnzo/NuGetForUnity/releases/latest)を使用して _SpatialAudio_ をインストールし、プロジェクトのオーディオ設定で **microsoft Spatializer** を選択します。 次のことを行います。
 * 階層内のオブジェクトに **オーディオソース** をアタッチする
 * [ **Enable spatialization** ] チェックボックスをオンにします。
 * **空間ブレンド** スライダーを ' 1 ' に移動します
-* 開発者ワークステーションで空間オーディオが有効になっていることを確認します。 これを有効にするには、タスクバーのボリュームアイコンを右クリックし、[空間サウンド] が "オフ" 以外に設定されていることを確認します。 HoloLens 2 で聞く内容を最適に表示するには、[ **ヘッドホン用 Windows Sonic** ] を選択します。
+* 開発者ワークステーションで空間オーディオが有効になっていることを確認します。 これを有効にするには、タスクバーのボリュームアイコンを右クリックし、[空間サウンド] が "オフ" 以外に設定されていることを確認します。 HoloLens 2 で聞く内容を最適に表示するには、[ **ヘッドホン用 Windows Sonic**] を選択します。
 
 >[!NOTE]
 >Unity で、その依存関係の1つが見つからないために SpatialAudio を読み込めないというエラーが表示される場合は、最新バージョンの [Microsoft Visual C++ 再頒布可能パッケージ](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) が PC にインストールされていることを確認します。
@@ -62,19 +62,19 @@ Unity の空間サウンドの例については、次を参照してくださ�
 * [MRTK デモ](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/Audio)
 * [Microsoft Spatializer サンプルプロジェクト](https://github.com/microsoft/spatialaudio-unity/tree/master/Samples/MicrosoftSpatializerSample)
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality コアの構成要素を調査しています。 ここから、次のビルディングブロックに進むことができます。
+ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality コアの構成要素を調査しています。 ここから、次の構成要素に進むことができます。
 
 > [!div class="nextstepaction"]
 > [[テキスト]](text-in-unity.md)
 
-または、Mixed Reality プラットフォームの機能と Api に移動します。
+または、Mixed Reality プラットフォームの機能と API に移動します。
 
 > [!div class="nextstepaction"]
 > [共有エクスペリエンス](shared-experiences-in-unity.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks) に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks)に戻ることができます。
 
 ## <a name="see-also"></a>関連項目
 * [混合現実におけるサウンドのデザイン](../../design/spatial-sound-design.md)

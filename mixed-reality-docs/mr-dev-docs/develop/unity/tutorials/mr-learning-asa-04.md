@@ -1,18 +1,18 @@
 ---
 title: Azure Spatial Anchors チュートリアル - 4. Azure Spatial Anchors フィードバックの表示
-description: このコースを完了すると Mixed Reality アプリケーション内に Azure Spatial Anchors を実装する方法を学習できます。
+description: このコースを完了すると、Mixed Reality アプリケーション内で Azure Spatial Anchors からのフィードバックを表示する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: c36fa20ae6438aee92d5d853febd683e01e81ea7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4c35af1f5a2a723df6603fbdf41dd18a2e9ee45d
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700314"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353340"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4.Azure Spatial Anchors からのフィードバックを表示する
 
@@ -27,7 +27,7 @@ ms.locfileid: "91700314"
 
 [階層] ウィンドウで、 **[手順]** の **[TextContent]** オブジェクトを右クリックします。 **[3D オブジェクト]** 、 **[テキスト - TextMeshPro]** の順に選択し、[指示] の [TextContent] オブジェクトの子として TextMeshPro テキスト オブジェクトを作成します。
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-1.png)
+![新しく作成された TextMeshPro オブジェクトが選択されている Unity](images/mr-learning-asa/asa-04-section1-step1-1.png)
 
 > [!TIP]
 > シーンを簡単に操作できるようにするには、ParentAnchor オブジェクトの左側にある目のアイコンをクリックして、そのオブジェクトの<a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">シーンの可視性</a>をオフに設定します。 これにより、ゲーム中の可視性を変更することなく、[Scene]\(シーン\) ウィンドウ内のオブジェクトが非表示になります。
@@ -44,13 +44,13 @@ ms.locfileid: "91700314"
 * [TextMeshPro - テキスト] コンポーネントの **[フォント サイズ]** を 0.17 に変更します。
 * [TextMeshPro - テキスト] コンポーネントの **[配置]** を中央揃えに変更します。
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-2.png)
+![Feedback オブジェクトが構成された Unity](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
 [階層] ウィンドウで、 **[フィードバック]** オブジェクトを選択します。次に、[Inspector]\(インスペクター\) ウィンドウで **[コンポーネントの追加]** ボタンを使用し、 **[Anchor Feedback Script (Script)]\(Anchor フィードバック スクリプト (スクリプト)\)** コンポーネントを配置して、次のように構成します。
 
 * **Feedback** オブジェクト自体を **Anchor Feedback Script (Script)** コンポーネントの **[Feedback Text]\(フィードバック テキスト\)** フィールドに割り当てます。
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-3.png)
+![Anchor Feedback Script コンポーネントが構成された Unity](images/mr-learning-asa/asa-04-section1-step1-3.png)
 
 ## <a name="congratulations"></a>結論
 

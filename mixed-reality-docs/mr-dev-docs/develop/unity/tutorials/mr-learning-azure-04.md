@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, HoloLens, HoloLens 2, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 2c10d7458fc956cb8974319cd5355260179f10b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700090"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353250"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4.Azure Spatial Anchors の統合
 
-このチュートリアルでは、 **Azure Spatial Anchors** を使用する方法を学習します。 **追跡対象のオブジェクト** の場所を Azure Spatial Anchor として格納します。 アンカーに対してクエリを実行すると、場所を指す矢印が表示されます。
+このチュートリアルでは、**Azure Spatial Anchors** を使用する方法を学習します。 **追跡対象のオブジェクト** の場所を Azure Spatial Anchor として格納します。 アンカーに対してクエリを実行すると、場所を指す矢印が表示されます。
 
 ## <a name="objectives"></a>目標
 
@@ -26,7 +26,7 @@ ms.locfileid: "91700090"
 
 ## <a name="understanding-azure-spatial-anchors"></a>Azure Spatial Anchors について
 
- **Azure Spatial Anchors** は Azure Cloud Services ファミリーに含まれており、アンカーの場所を保存するために使用します。 保存されたアンカーの場所は、 *アンカー ID* に基づいてクラウドから取得できます。 このアンカーの場所は、HoloLens、iOS、Android デバイスなどのマルチプラットフォーム デバイスで共有およびアクセスできます。
+ **Azure Spatial Anchors** は Azure Cloud Services ファミリーに含まれており、アンカーの場所を保存するために使用します。 保存されたアンカーの場所は、*アンカー ID* に基づいてクラウドから取得できます。 このアンカーの場所は、HoloLens、iOS、Android デバイスなどのマルチプラットフォーム デバイスで共有およびアクセスできます。
 
 [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) の詳細をご確認ください。
 
@@ -41,17 +41,17 @@ ms.locfileid: "91700090"
 
 [プロジェクト] ウィンドウで、 **[アセット] > [MRTK.Tutorials.AzureCloudServices] > [Prefabs]\(プレハブ\) > [マネージャー]** に移動します
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![AnchorManager プレハブが選択されている Unity](images/mr-learning-azure/tutorial4-section1-step1-1.png)
 
 **[マネージャー]** フォルダーで、プレハブ **[Anchor Manager]** をシーン階層にドラッグ アンド ドロップします。
 
 階層内の **[Anchor Manager]** GameObject を選択すると、[インスペクター] セクションに **[Spatial Anchor Manager]** (Script) が表示されます。 アカウント ID とキー フィールドを検索し、前の段階で前提条件に作成した資格情報を追加します。
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step2-1.png)
+![新しく追加された AnchorManager プレハブがまだ選択されている Unity](images/mr-learning-azure/tutorial4-section1-step2-1.png)
 
 ここで、シーン階層で **[Scene Controller]\(シーン コントローラー\)** オブジェクトを見つけて選択します。 **[Scene Controller]\(シーン コントローラー\)** インスペクターが表示されます。
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step3-1.png)
+![SceneController スクリプト コンポーネントが構成された Unity](images/mr-learning-azure/tutorial4-section1-step3-1.png)
 
 **[Scene Controller]\(シーン コントローラー\)** コンポーネントの **[Anchor Manager]** フィールドが空であることを確認し、 **[Anchor Manager]** をシーンの階層からそのフィールドにドラッグ アンド ドロップしてシーンを保存します。
 
@@ -70,7 +70,7 @@ Azure Spatial Anchors は Unity では実行できないため、Azure Spatial A
 
 アプリケーションを実行し、エクスペリエンスのメイン メニューで **[Set Object]\(オブジェクトの設定\)** をクリックします。
 
-保存するオブジェクトの **名前** を指定し、 **[Set Object]\(オブジェクトの設定\)** をクリックして続行します。 オブジェクトに関する詳細情報を追加するには、 **画像** を選択し、オブジェクトについて説明します。
+保存するオブジェクトの **名前** を指定し、 **[Set Object]\(オブジェクトの設定\)** をクリックして続行します。 オブジェクトに関する詳細情報を追加するには、**画像** を選択し、オブジェクトについて説明します。
 
 場所を保存するには **[場所の保存]** をクリックします
 
@@ -90,15 +90,15 @@ Azure Spatial Anchors は Unity では実行できないため、Azure Spatial A
 
 これで、 **[Show Location]\(場所の表示\)** をクリックしてオブジェクトを検索できるようになります。 **[Show Location]\(場所の表示\)** をクリックすると、システムによってクラウド ストレージからオブジェクト アドレスに対してクエリが実行されます。
 
-場所を正常に取得できたら、 **矢印** に従ってオブジェクトの場所に移動します。 オブジェクトの場所が見つかるまで、矢印マークに従います。
+場所を正常に取得できたら、**矢印** に従ってオブジェクトの場所に移動します。 オブジェクトの場所が見つかるまで、矢印マークに従います。
 
-オブジェクトが見つかったら、オブジェクト名が上部に表示され、矢印マークが消えます。これで、 **オブジェクト タグ** をクリックしてオブジェクトの詳細を確認できます。
+オブジェクトが見つかったら、オブジェクト名が上部に表示され、矢印マークが消えます。これで、**オブジェクト タグ** をクリックしてオブジェクトの詳細を確認できます。
 
 ## <a name="congratulations"></a>結論
 
 このチュートリアルでは、Azure Spatial Anchors を使用して、Hololense 2 でオブジェクトの場所を保存および取得する方法を学習しました。
 
-最後のチュートリアルでは、 **Azure Bot Service** を使用して、アプリケーションの新しい相互作用方式として自然言語を追加する方法を学習します。
+最後のチュートリアルでは、**Azure Bot Service** を使用して、アプリケーションの新しい相互作用方式として自然言語を追加する方法を学習します。
 
 > [!div class="nextstepaction"]
 > [次のチュートリアル: 5.Azure Bot Service と LUIS との統合](mr-learning-azure-05.md)

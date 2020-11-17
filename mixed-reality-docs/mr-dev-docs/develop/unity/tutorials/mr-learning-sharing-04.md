@@ -1,18 +1,18 @@
 ---
 title: マルチユーザー機能のチュートリアル - 4. 複数のユーザーとオブジェクトの移動を共有する
-description: このコースでは、HoloLens 2 アプリケーション内でマルチユーザー共有エクスペリエンスを実装する方法について学習します。
+description: このコースを完了すると、HoloLens 2 アプリケーション内でオブジェクトの移動を複数のユーザーで共有する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: b080522e25d933aeb979c3d9a851beaaac4da57f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4a8d98bbabd3061e8fb9f4262e202dac680d584b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701686"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353420"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4.複数のユーザーとオブジェクトの移動を共有する
 
@@ -27,9 +27,9 @@ ms.locfileid: "91701686"
 
 このセクションでは、チュートリアルのプレハブを追加してシーンを準備します。
 
-プロジェクト ウィンドウで **アセット** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs\(プレハブ\)** フォルダーの順に移動して、 **TableAnchor** プレハブを 階層 ウィンドウの **SharedPlayground** オブジェクト上にドラッグし、SharedPlayground オブジェクトの子としてシーンに追加します。
+プロジェクト ウィンドウで **アセット** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs\(プレハブ\)** フォルダーの順に移動して、**TableAnchor** プレハブを 階層 ウィンドウの **SharedPlayground** オブジェクト上にドラッグし、SharedPlayground オブジェクトの子としてシーンに追加します。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+![新しく追加された TableAnchor プレハブが選択されている Unity](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>PUN を構成してオブジェクトのインスタンスを作成する
 
@@ -41,19 +41,19 @@ ms.locfileid: "91701686"
 
 * **Rover Explorer の [Prefab]\(プレハブ\)** フィールドに、[リソース] フォルダーから **RoverExplorer_Complete_Variant** プレハブを割り当てます
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
+![Photon Room コンポーネントが部分的に構成された Unity](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
 
 **NetworkRoom** 子オブジェクトを選択したまま [Hierarchy]\(ヒエラルキー\) ウィンドウで **TableAnchor** オブジェクトを展開し、[Inspector]\(インスペクター\) ウィンドウで **Photon Room (Script)** コンポーネントを探して次のように構成します。
 
 * **Rover Explorer の [場所]** フィールドに、[階層] ウィンドウから TableAnchor > **Table** 子オブジェクトを割り当てます
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
+![Photon Room コンポーネントが構成された Unity](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
 
 ## <a name="trying-the-experience-with-shared-object-movement"></a>共有オブジェクト移動のエクスペリエンスを試す
 
 Unity プロジェクトをビルドして HoloLens にデプロイしてから Unity に戻り、HoloLens でアプリが実行されている間に [再生] ボタンを押してゲーム モードに入ると、HoloLens でオブジェクトを動かした時に Unity でオブジェクトが移動するのを確認できます。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
+![ネットワーク接続されたオブジェクトが表示された Unity を表示するアニメーション](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
 
 ## <a name="congratulations"></a>結論
 

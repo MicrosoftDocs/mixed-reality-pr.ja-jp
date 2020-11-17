@@ -5,13 +5,13 @@ author: jonmlyons
 ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, リモート処理, holographic リモート処理, holographic リモート処理プレーヤー
-ms.openlocfilehash: 4239eba84bd94c0bdc596392fdf7a0c780778850
-ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
+keywords: Unity, リモート処理, holographic リモート処理, holographic リモート処理プレーヤー, HoloLens, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, unity 再生モード
+ms.openlocfilehash: 88ffa172c03dea6544ce8475612426e126415908
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94549095"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679061"
 ---
 # <a name="unity-play-mode"></a>Unity の再生モード
 
@@ -22,9 +22,9 @@ Unity プロジェクトですばやく作業を行うには、"Play Mode" を�
 Holographic リモート処理を使用すると、PC の Unity エディターでアプリを実行しながら、HoloLens でアプリを体験できます。 宝石、ジェスチャ、音声、および空間マッピングの入力は、HoloLens から PC に送信されます。 レンダリングされたフレームが HoloLens に返されます。 これは、完全なプロジェクトをビルドして配置することなく、アプリをすばやくデバッグできる優れた方法です。
 1. HoloLens で、 **Microsoft Store** にアクセスし、 **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** アプリをインストールします。
 2. HoloLens で、 **Holographic Remoting Player** アプリを起動します。
-3. Unity で、[ **ウィンドウ** ] メニューの [ **XR** ] サブメニューを展開し、[ **Holographic エミュレーション** ] を選択します。
+3. Unity で、[ **ウィンドウ** ] メニューの [ **XR** ] サブメニューを展開し、[ **Holographic エミュレーション**] を選択します。
 4. **エミュレーションモード** を **リモートからデバイスに** 設定します。
-5. [ **リモートコンピューター** ] には、HOLOLENS の IP アドレスを入力します。
+5. [ **リモートコンピューター**] には、HOLOLENS の IP アドレスを入力します。
 6. **[Connect]** をクリックします。 **接続の状態** が [接続済み] に変わり、HoloLens で画面が空白になって **いる** ことを確認します。
 7. [ **再生** ] ボタンをクリックして再生モードを開始し、HoloLens でアプリを体験します。
 

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, イマーシブヘッドセット, アプリ, uwp, 送信, 送信, フィルター, メタデータ, システム要件, キーワード, wack, 認定, パッケージ, appx, 販売促進
-ms.openlocfilehash: 1ea3a125bed26cabbf617585c0e87399c772e24a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+ms.openlocfilehash: f5dae379deee54056595c291363b5b1e3e83f25e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631480"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678791"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Microsoft Store へのアプリの送信
 
@@ -38,9 +38,9 @@ Appx ビルドツールでアプリケーションを appx パッケージに組
 
 | 必要な資産 | 推奨される小数点以下桁数 | イメージ形式 | 資産はどこに表示されますか。 | 
 |----------|----------|----------|------------------|
-| 71x71 正方形の正方形のロゴ | Any |  PNG | 該当なし | 
+| 71x71 正方形の正方形のロゴ | Any |  PNG | なし | 
 | 150x150 正方形の正方形のロゴ | 150x150 正方形 (100% scale) または 225x225 (150% scale) | PNG | 開始 pin とすべてのアプリ (310x310 のが提供されていない場合)、ストア検索候補、ストアリストページ、ストア参照、ストア検索 | 
-|  310x150 ワイドのワイドロゴ |  Any  |  PNG  |  該当なし | 
+|  310x150 ワイドのワイドロゴ |  Any  |  PNG  |  なし | 
 |  ストア ロゴ |  75 x 75 (150% スケール)  |  PNG  |  パートナーセンター, レポートアプリ, レビューの作成, マイライブラリ | 
 |  スプラッシュ スクリーン |  930x450 (150% scale)  |  PNG  |  2D アプリランチャー (スレート) | 
 
@@ -60,16 +60,16 @@ Mixed Reality アプリに Windows のバージョンに固有の機能が含ま
 
 **[Windows Mixed Reality のイマーシブヘッドセット](../discover/immersive-headset-hardware-details.md)を対象とするアプリに特に注意を払ってください。少なくとも windows 10 の秋の作成者の更新プログラム (10.0;ビルド 16299) が正常に機能するようにします。**
 
-Visual Studio で新しいユニバーサル Windows プロジェクトを作成するときに、Windows のターゲットと最小バージョンを設定するように求められます。 既存のプロジェクトの場合、この設定を変更するには、ドロップダウンメニューの下部にある [ **アプリ名の> のプロパティ** ] を選択して、[ **プロジェクト** ] メニューの [<ます。
+Visual Studio で新しいユニバーサル Windows プロジェクトを作成するときに、Windows のターゲットと最小バージョンを設定するように求められます。 既存のプロジェクトの場合、この設定を変更するには、ドロップダウンメニューの下部にある [**アプリ名の> のプロパティ**] を選択して、[**プロジェクト**] メニューの [<ます。
 
 ![Visual Studio 2019 での最小バージョンとターゲットプラットフォームのバージョンの設定](images/visual-studio-min-version-500px.png)<br>
 *Visual Studio での最小バージョンとターゲットプラットフォームのバージョンの設定*
 
 ### <a name="specifying-target-device-families"></a>ターゲットデバイスファミリの指定
 
-Windows Mixed Reality アプリケーション ( [HoloLens](../hololens-hardware-details.md)と [イマーシブヘッドセット](../discover/immersive-headset-hardware-details.md)の両方) はユニバーサル Windows プラットフォームの一部であるため、 **windows ユニバーサル**[ターゲットデバイスファミリ](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx)キャビネットを使用するすべてのアプリパッケージは、イマーシブヘッドセットを使用して HoloLens または windows 10 pc 上で実行されます。 アプリマニフェストでターゲットデバイスファミリを指定しないと、意図しない Windows 10 デバイスまでアプリを開けないことがあります。 次の手順に従って、目的の Windows 10 デバイスファミリを指定し、 [パートナーセンターでアプリケーションパッケージをアップロードして Microsoft Store 送信するときに、正しいデバイスファミリが設定されていることを再確認します。](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Windows Mixed Reality アプリケーション ( [HoloLens](../hololens-hardware-details.md)と [イマーシブヘッドセット](../discover/immersive-headset-hardware-details.md)の両方) はユニバーサル Windows プラットフォームの一部であるため、 **windows ユニバーサル**[ターゲットデバイスファミリ](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx)を使用するすべてのアプリパッケージは、イマーシブヘッドセットを使用する HoloLens または windows 10 pc で実行できます。 アプリマニフェストでターゲットデバイスファミリを指定しないと、意図しない Windows 10 デバイスまでアプリを開けないことがあります。 次の手順に従って、目的の Windows 10 デバイスファミリを指定し、 [パートナーセンターでアプリケーションパッケージをアップロードして Microsoft Store 送信するときに、正しいデバイスファミリが設定されていることを再確認します。](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
-* Visual Studio でこのフィールドを設定するには、 **package.appxmanifest** を右クリックして [ **コードの表示** ] をクリックし、[ **TargetDeviceFamily Name** ] フィールドを探します。 既定では、次のエントリのようになります。
+* Visual Studio でこのフィールドを設定するには、 **package.appxmanifest** を右クリックして [ **コードの表示**] をクリックし、[ **TargetDeviceFamily Name** ] フィールドを探します。 既定では、次のエントリのようになります。
 
 ```
 <Dependencies>
@@ -120,7 +120,7 @@ Windows Mixed Reality アプリケーション ( [HoloLens](../hololens-hardware
 * パッケージ名
 * パブリッシャー ID
 * 発行者表示名
-* バージョン
+* Version
 
 独自のカスタム .xml ファイルを使用して既定の package.appxmanifest ファイルをオーバーライドしている場合は、アプリを Microsoft Store に関連付けることはできません。 カスタムマニフェストファイルをストアに関連付けると、エラーメッセージが表示されます。
 
@@ -174,9 +174,9 @@ Unity プロジェクトに基づく Mixed Reality アプリを送信する場�
 最初に行うことの1つは、Mixed Reality エクスペリエンスの [カテゴリとサブカテゴリを選択](https://docs.microsoft.com/windows/uwp/publish/category-and-subcategory-table) することです。 **アプリに最も正確なカテゴリを選択** することが重要です。 カテゴリを使用すると、アプリケーションを適切なストアカテゴリに分類し、関連する検索クエリを使用して表示されるようにすることができます。 **VR タイトルをゲームとして一覧表示すると、アプリの露出が向上しません** 。これにより、より多くの調整が行われ、混雑が少なくなるカテゴリには表示されなくなる可能性があります。
 
 ただし、発行プロセスには、次の4つの重要な領域があります。これにより、現実的に固有の選択を行うことができます。
-1. [ [プロパティ](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)] の [ **[Product 宣言](submitting-an-app-to-the-microsoft-store.md#mixed-reality-product-declarations)** ] セクションを参照してください。
-2. [ [プロパティ](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)] の [ **[システム要件](submitting-an-app-to-the-microsoft-store.md#mixed-reality-system-requirements)** ] セクションを参照してください。
-3. [ [パッケージ](https://docs.microsoft.com/windows/uwp/publish/upload-app-packages)] の [ **[デバイスファミリの可用性](submitting-an-app-to-the-microsoft-store.md#device-family-availability)** ] セクションを参照してください。
+1. [[プロパティ](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)] の [ **[Product 宣言](submitting-an-app-to-the-microsoft-store.md#mixed-reality-product-declarations)**] セクションを参照してください。
+2. [[プロパティ](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)] の [**[システム要件](submitting-an-app-to-the-microsoft-store.md#mixed-reality-system-requirements)**] セクションを参照してください。
+3. [[パッケージ](https://docs.microsoft.com/windows/uwp/publish/upload-app-packages)] の [**[デバイスファミリの可用性](submitting-an-app-to-the-microsoft-store.md#device-family-availability)**] セクションを参照してください。
 4. いくつかの **[ストアの一覧ページ](submitting-an-app-to-the-microsoft-store.md#store-listing-page)** のフィールド。
 
 ### <a name="mixed-reality-product-declarations"></a>Mixed Reality 製品宣言
@@ -208,7 +208,7 @@ Mixed Reality 製品宣言
 
 **入力ハードウェア:**
 
-アプリケーションで [音声入力](../design/voice-input.md)用の **マイク** がサポートされている場合は、チェックボックスを使用して、潜在顧客に、 **[Xbox コントローラーまたはゲームパッド](../discover/hardware-accessories.md#bluetooth-gamepads)** 、または **[Windows Mixed Reality モーションコントローラー](../design/motion-controllers.md)** を指定します。 この情報は、アプリの製品詳細ページにストアに表示され、アプリが適切なアプリ/ゲームコレクションに含まれるようになります。 たとえば、モーションコントローラーをサポートするすべてのゲームにコレクションが存在する場合があります。
+アプリケーションで [音声入力](../design/voice-input.md)用の **マイク** がサポートされている場合は、チェックボックスを使用して、潜在顧客に、 **[Xbox コントローラーまたはゲームパッド](../discover/hardware-accessories.md#bluetooth-gamepads)**、または **[Windows Mixed Reality モーションコントローラー](../design/motion-controllers.md)** を指定します。 この情報は、アプリの製品詳細ページにストアに表示され、アプリが適切なアプリ/ゲームコレクションに含まれるようになります。 たとえば、モーションコントローラーをサポートするすべてのゲームにコレクションが存在する場合があります。
 
 入力の種類については、[ハードウェアの最小値] または [推奨されるハードウェア] のチェックボックスをオンにすることをお勧めします。 
 

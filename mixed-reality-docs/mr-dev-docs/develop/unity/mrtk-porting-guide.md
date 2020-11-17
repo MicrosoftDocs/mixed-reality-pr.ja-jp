@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, テスト, MRTK, MRTK バージョン 2, HoloLens 2
-ms.openlocfilehash: ca7c46f8d3c6b85125be3d6aa9d57e6f0d72fb82
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 88bee12196099837f46164552c690a6b326f9ba7
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699778"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386228"
 ---
 # <a name="get-your-existing-app-ready-for-hololens-2"></a>既存のアプリを HoloLens 2 で利用できるようにする
 
@@ -24,12 +24,12 @@ ms.locfileid: "91699778"
 
 | 手順 1 | 手順 2 | 手順 3 | 手順 4 |
 |----------|-------------------|-------------------|-------------------|
-| ![Visual Studio のロゴ](../images/visualstudio_logo.png) | ![Unity のロゴ](../../design/images/final_unity_logo.png)| ![Unity のアイコン](images/hololens2_icon.jpg) | ![MRTK のロゴ](../../design/images/final_mrtk-small_logo.png) |
+| ![Visual Studio のロゴ](../images/visualstudio_logo.png) | ![Unity のロゴ](../../design/images/logo-unity.png)| ![Unity のアイコン](images/hololens2_icon.jpg) | ![MRTK のロゴ](../../design/images/74-12.png) |
 | 最新のツールのダウンロード | Unity プロジェクトの更新 | ARM 用にコンパイル | MRTK v2 に移行
 
 前提条件:
 
-移植プロセスを開始する前に、ソース管理を使用してアプリケーションの元の状態のスナップショットを保存しておくことを **強くお勧めします** 。 さらに、プロセス中のさまざまな時点でチェックポイントの状態を *保存* することをお勧めします。 また、元のアプリケーションの別の Unity インスタンスがあると、移植プロセス中に並べて比較できて便利です。 
+移植プロセスを開始する前に、ソース管理を使用してアプリケーションの元の状態のスナップショットを保存しておくことを **強くお勧めします**。 さらに、プロセス中のさまざまな時点でチェックポイントの状態を *保存* することをお勧めします。 また、元のアプリケーションの別の Unity インスタンスがあると、移植プロセス中に並べて比較できて便利です。 
 
 > [!NOTE]
 > 移植の前に、Windows Mixed Reality の開発用に最新のツールがインストールされていることを確認します。 ほとんどの既存 HoloLens 開発者は、最新バージョンの Visual Studio 2019 への更新と適切な Windows SDK のインストールを行うことになります。 以下の内容では、Unity のさまざまなバージョンと Mixed Reality Toolkit (MRTK) バージョン 2 についてさらに詳しく説明します。
@@ -57,7 +57,7 @@ To help clarify additional differences between [Unity 2018 LTS](https://unity3d.
 
 デバイスで最適な結果を得るために、[Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) に更新した後、Unity の特定の設定を更新することをお勧めします。 これらの設定の詳細については、「[Unity で推奨される設定](Recommended-settings-for-Unity.md)」を参照してください。
 
-もう一度お伝えしますが、 [.NET スクリプト バックエンド](https://docs.unity3d.com/Manual/windowsstore-dotnet.html)は、Unity 2018 で非推奨となり、Unity 2019 で *削除* されます。 開発者の皆様には、プロジェクトの [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html) への切り替えを検討することを強くお勧めします。
+もう一度お伝えしますが、[.NET スクリプト バックエンド](https://docs.unity3d.com/Manual/windowsstore-dotnet.html)は、Unity 2018 で非推奨となり、Unity 2019 で *削除* されます。 開発者の皆様には、プロジェクトの [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html) への切り替えを検討することを強くお勧めします。
 
 > [!NOTE]
 > IL2CPP スクリプト バックエンドを使用すると、Unity から Visual Studio へのビルド時間が長くなる場合があります。そのため、開発者は、[IL2CPP ビルド時間の最適化](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)のために開発者のコンピューターをセットアップする必要があります。
@@ -82,14 +82,14 @@ HoloLens (第 1 世代) は、x86 プロセッサ上でアプリケーション�
 
 MRTK バージョン 2 の使用方法の詳細については、以下のリソースを参照してください。
 
-- [MRTK のランディング ページ](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-- [MRTK をお使いになる前に](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-- [MRTK の手](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
-- [MRTK の視線追跡](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
+- [MRTK - ドキュメント ホーム (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+- [インストール ガイド (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+- [MRTK - ハンド トラッキング (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
+- [MRTK - 視線追跡 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
 
 ### <a name="prepare-for-the-migration"></a>移行を準備する
 
-新しい [MRTK v2 用の *.unitypackage ファイル](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)を取り込む前に、 **1) MRTK v1 を組み込んだ任意のカスタム ビルド コード** と、 **2) 入力操作や UX コンポーネントのカスタム ビルド コード** のインベントリを取得することを推奨します。 Mixed Reality 開発者が MRTK v2 を取り込む際に最も競合が起きやすいのは、入力と操作に関係する部分です。 [MRTK v2 入力モデル](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)を読んで理解しておくことをお勧めします。
+新しい [MRTK v2 用の *.unitypackage ファイル](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)を取り込む前に、**1) MRTK v1 を組み込んだ任意のカスタム ビルド コード** と、**2) 入力操作や UX コンポーネントのカスタム ビルド コード** のインベントリを取得することを推奨します。 Mixed Reality 開発者が MRTK v2 を取り込む際に最も競合が起きやすいのは、入力と操作に関係する部分です。 [MRTK v2 入力モデル](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)を読んで理解しておくことをお勧めします。
 
 最後に、新しい [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) は、スクリプトのモデルおよびシーン内マネージャー オブジェクトから、構成およびサービス プロバイダー アーキテクチャに移行されています。 これにより、シーンの階層とアーキテクチャのモデルがクリーンになりますが、新しい構成プロファイルを習得する必要があります。 したがって、重要な設定やプロファイルについて理解し、アプリケーションのニーズに合わせて調整することができるように、[Mixed Reality ツールキット構成ガイド](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html)を参照してください。
 
@@ -107,7 +107,7 @@ HTK/MRTK と MRTK v2 の具体的な API の相違点については、[MRTK バ
 - 可能な場合は既定の MRTK UX (ボタン、スレートなど) を使用する。
 - MRTK ファイルを直接変更するのは避け、MRTK コンポーネントのラッパーを作成する。
     - この操作をすると、将来の MRTK インジェストや更新が容易になります。
-- MRTK で提供されているサンプルのシーンを確認する (特に *HandInteractionExamples.scene* )。
+- MRTK で提供されているサンプルのシーンを確認する (特に *HandInteractionExamples.scene*)。
 - キャンバス ベースの UI を四角形、コライダー、TextMeshPro テキストで再構築する。
 - [深度バッファーの共有](camera-in-unity.md#sharing-your-depth-buffers-with-windows)、または[フォーカス ポイントの設定](focus-point-in-unity.md)を有効にする。パフォーマンスを向上させたい場合は、16 ビットの深度バッファーを使用します。 色をレンダリングするとき、深度もレンダリングするようにする。 Unity では、一般的に、透明なゲームオブジェクトとテキスト ゲームオブジェクトの深度は書き込まれません。 
 - 単一パスのインスタンス化レンダリング パスを設定する。
@@ -150,8 +150,9 @@ HoloLens (第 1 世代) では、アプリケーションで視線入力とコ�
 
 ## <a name="see-also"></a>関連項目
 * [ツールのインストール](../install-the-tools.md)
-* [MRTK バージョン 2 をお使いになる前に](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-* [HTK API 対 MRTK API](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [MRTK - インストール ガイド (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK - ドキュメント ホーム (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [HoloToolkit/MRTK から MRTK バージョン 2 への移植 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
 * [Unity で推奨される設定](recommended-settings-for-unity.md)
 * [Mixed Reality のパフォーマンスを理解する](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 

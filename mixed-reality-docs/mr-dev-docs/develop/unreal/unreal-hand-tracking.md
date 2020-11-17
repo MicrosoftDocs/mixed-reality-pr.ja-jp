@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality、手動追跡、Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、Mixed Reality、開発、機能、ドキュメント、ガイド、ホログラム、ゲーム開発
-ms.openlocfilehash: 5bc120f802c2160282befd1ce6cb8025be21cbaa
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、手動追跡、Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、Mixed Reality、開発、機能、ドキュメント、ガイド、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
+ms.openlocfilehash: 0a16a0291261277cb09e736e60b25f8ba71382e3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683082"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679211"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal での手の追跡
 
@@ -68,7 +68,7 @@ enum class EWMRHandKeypoint : uint8
  
 ### <a name="supporting-hand-tracking"></a>ハンドトラッキングのサポート
 
-手動追跡機能を追加することによって、ブループリントで **手動追跡を** 使用することができます **> Windows Mixed Reality** :
+手動追跡機能を追加することによって、ブループリントで **手動追跡を** 使用することができます **> Windows Mixed Reality**:
 
 ![ハンドトラッキング BP](images/unreal/hand-tracking-bp.png)
 
@@ -107,11 +107,11 @@ static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransfo
 
 Windows Mixed Reality とライブリンクプラグインが有効になっている場合: 
 1. [ **ウィンドウ > ライブリンク** ] を選択して、ライブリンクエディターウィンドウを開きます。 
-2. [ **ソース** ] をクリックし、[ **Windows Mixed Reality ハンドトラッキングソース** を有効にする]
+2. [**ソース**] をクリックし、[ **Windows Mixed Reality ハンドトラッキングソース** を有効にする]
 
 ![ライブリンクのソース](images/unreal/live-link-source.png)
  
-ソースを有効にし、アニメーションのアセットを開くと、[ **プレビューシーン** ] タブの [ **アニメーション** ] セクションが表示されなくなります (詳細については、「ライブリンクのドキュメント」を参照してください。プラグインがベータ版であるため、プロセスは後で変更される可能性があります)。
+ソースを有効にし、アニメーションのアセットを開くと、[**プレビューシーン**] タブの [**アニメーション**] セクションが表示されなくなります (詳細については、「ライブリンクのドキュメント」を参照してください。プラグインがベータ版であるため、プロセスは後で変更される可能性があります)。
 
 ![ライブリンクアニメーション](images/unreal/live-link-animation.png)
  
@@ -203,7 +203,7 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 C++ でこれらのファイルにアクセスするには、 `WindowsMixedRealityFunctionLibrary.h` 呼び出し元のコードファイルの先頭にを含めます。
 
 ### <a name="enum"></a>列挙型
-また、[ **Ehmdinputコントローラー** ] の下にある入力ケースにアクセスできます。このボタンは、ブループリントで使用できます。
+また、[ **Ehmdinputコントローラー**] の下にある入力ケースにアクセスできます。このボタンは、ブループリントで使用できます。
 
 ![入力コントローラーボタン](images/unreal/input-controller-buttons.png)
 
@@ -263,7 +263,7 @@ struct FPointerPoseInfo
 };
 ```
 
-### <a name="functions"></a>関数
+### <a name="functions"></a>機能
 
 次に示すすべての関数は、継続的な監視を可能にするすべてのフレームに対して呼び出すことができます。 
 
@@ -300,7 +300,7 @@ C++:
 static bool UWindowsMixedRealityFunctionLibrary::IsSelectPressed(EControllerHand hand);
 ```
 
-4. 現在のフレームでイベントまたはボタンがトリガーされた場合、 **ボタンがクリックされる** と true が返されます。
+4. 現在のフレームでイベントまたはボタンがトリガーされた場合、**ボタンがクリックされる** と true が返されます。
 
 建築
 
@@ -405,16 +405,16 @@ const FKey FSpatialInputKeys::RightNavigationYGesture(RightNavigationYGestureNam
 const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureName);
 ```
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-デプロイされていない実際のチェックポイントの旅に従っている場合、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。 
+私たちが用意した Unreal 開発チェックポイント体験に従っている場合、読者は MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素に進むことができます。 
 
 > [!div class="nextstepaction"]
 > [ローカル空間アンカー](unreal-spatial-anchors.md)
 
-または、Mixed Reality プラットフォームの機能と Api に移動します。
+または、Mixed Reality プラットフォームの機能と API に移動します。
 
 > [!div class="nextstepaction"]
 > [HoloLens カメラ](unreal-hololens-camera.md)
 
-いつでも、 [Unreal の開発チェックポイント](unreal-development-overview.md#2-core-building-blocks) に戻ることができます。
+いつでも [Unreal 開発チェックポイント](unreal-development-overview.md#2-core-building-blocks)に戻ることができます。

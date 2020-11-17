@@ -5,13 +5,13 @@ author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
-keywords: HoloLens、Windows デバイスポータル、API
-ms.openlocfilehash: 6b8f99fbc6f1965639ceef218f5c516d2e6ba467
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens、Windows デバイスポータル、API、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
+ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683770"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677971"
 ---
 # <a name="device-portal-api-reference"></a>Device Portal API リファレンス
 
@@ -33,7 +33,7 @@ ms.locfileid: "91683770"
 パラメーター
 * パッケージ: インストールするパッケージのファイル名。
 
-Payload
+ペイロード
 * マルチパート準拠の http 本文
 
 **/api/app/packagemanager/packages (GET)**
@@ -159,7 +159,7 @@ Websocket のアップグレードを受け入れ、30 fps で更新を送信す
 
 デバイスの温度ステージを取得する (通常は0、1ウォーム、2重大)
 
-## <a name="map-manager"></a>マップマネージャー
+## <a name="map-manager"></a>Map Manager
 
 **/api/holographic/mapmanager/mapFiles (GET)**
 
@@ -355,7 +355,7 @@ Mixed reality の写真を取得し、デバイスにファイルを作成しま
 
 Windows デバイスポータル内の mixed reality キャプチャの状態を取得します。
 
-***Response***
+**_応答_* _
 
 応答には、Windows デバイスポータルがビデオを記録しているかどうかを示す JSON プロパティが含まれています。
 
@@ -363,7 +363,7 @@ Windows デバイスポータル内の mixed reality キャプチャの状態を
 {"IsRecording" : boolean}
 ```
 
-**/api/holographic/mrc/thumbnail (GET)**
+_ */api/holographic/mrc/thumbnail (GET)**
 
 指定したファイルのサムネイルイメージを取得します。
 
@@ -663,7 +663,7 @@ HoloLens は、フラグメント化された mp4 のチャンクダウンロー
 
 WPR プロファイルをアップロードし、アップロードされたプロファイルを使用してトレースを開始します。
 
-Payload
+ペイロード
 * マルチパート準拠の http 本文
 
 データを返します

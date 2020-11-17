@@ -5,13 +5,13 @@ author: hferrone
 ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
-keywords: Unreal、Unreal Engine 4、UE4、リバーブ、リバーブ G2、HP リバーブ G2、mixed reality、development、motion controller、user input、features、new project、emulator、documentation、ガイド、features、ホログラム、game development
-ms.openlocfilehash: c9d3ea3a8dd52ed0712f9df5c1a789121a68fd35
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: Unreal、Unreal Engine 4、UE4、リバーブ、リバーブ G2、HP リバーブ G2、mixed reality、development、motion controller、ユーザー入力、機能、新しいプロジェクト、エミュレーター、ドキュメント、ガイド、機能、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
+ms.openlocfilehash: 6a56b11e6738dd6359508d0cdfc1560bddfaff2e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638722"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678931"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Unreal の HP リバーブ G2 コントローラー 
 

@@ -5,13 +5,13 @@ author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
-keywords: galaxy エクスプローラー、ケーススタディ、プロジェクト、サンプル
-ms.openlocfilehash: 1e04b27ff0382d87f8e6a15ae2b7b2284fa020e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: galaxy エクスプローラー, ケーススタディ, プロジェクト, サンプル, MRTK, Mixed Reality Toolkit, Unity, サンプルアプリ, サンプルアプリ, オープンソース, Microsoft Store, HoloLens, mixed reality ヘッドセット, windows Mixed reality ヘッドセット, 仮想現実のヘッドセット
+ms.openlocfilehash: 00bf30224a820bd85394c4b97136f81b52fe4128
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686703"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677631"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>HoloLens 2 用 Galaxy エクスプローラーの作成
 
@@ -96,7 +96,7 @@ HoloLens 2 で実験しているように、新しい相互作用は自然で直
 ![惑星での Visual affordances](images/ge-update-planet-affordances.png)
 
 ### <a name="adding-affordances-for-force-grab"></a>強制グラブの affordances を追加しています
- 
+ 
 オーディオと visual affordances で基本的な force グラブメカニズムを作成したら、選択した惑星をよりわかりやすくする方法を検討しました。 主な対処方法は2つありました。太陽システムが3D 移動インターフェイスであるため、ユーザーがオブジェクトを一貫して対象にする方法を習得するための複雑さが増加しています。 これは、オブジェクトを選択したときに手の光が非常に高速であるという事実によって、非常に高速になりました。
 
 ここでは、3つのソリューションについて説明します。 1つ目は非常に直感的で、惑星がより自然なペースでアプローチできるように、選択プロセスの速度が低下しています。 速度が調整されたら、オーディオと visual affordances にもう一度問い合わせて、ユーザーに対して追跡されている地球と同様にオーディオフィードバックを追加する必要がありました。
@@ -151,7 +151,7 @@ HoloLens 2 で実験しているように、新しい相互作用は自然で直
 ストリームを個別に回転させることで、視覚的に優れた印象を与えましたが、近い範囲で観察された場合には詳細が不足していました。
 
 最も目を引く部分は、木星のすばらしい Red スポットで、これを紹介するために特別にメッシュとテクスチャのセットを作成しました。
- 
+ 
 ここでは、木星のバンドと同様のメカニズムを使用しました。回転する部品のセットは相互に構成されていますが、"マスターレイヤー" の下にグループ化されているので、残りの速度に関係なく、それらの要素の位置を維持することができます。
 
 メッシュが設定され、配置されると、なごやか渦の異なるレイヤーが適用され、各ディスクが個別にアニメーション化されます。その後、中心の破片は最も高速に動き、残りは徐々に動きが遅くなります。
@@ -202,4 +202,4 @@ HoloLens 2 用の Galaxy エクスプローラーを作成し、HoloLens (第1�
 
 ### <a name="mixed-reality-studios"></a>Mixed Reality スタジオ
 
-米国、ヨーロッパ、およびアジア太平洋に配置されている Microsoft Mixed Reality Studio チームは、ユーザーエクスペリエンス設計、holographic computing、AR/VR テクノロジ、3D 開発の専門家です。3D アセットの作成、DirectX、Unity、Unreal など。 お客様が組織全体に大きな影響を与えることを可能にすると同時に、必要なフューチャの計画、設計、構築、および提供を支援します。 スタジオは、エンタープライズアプリケーションの統合、導入、運用、およびサポートのために、22000を超える Microsoft サービスプロフェッショナルと密接に連携しています。
+米国、ヨーロッパ、および Asia-Pacific にある Microsoft Mixed Reality Studio チームは、ユーザーエクスペリエンス設計、holographic computing、AR/VR テクノロジ、3D 開発の専門家です。3D アセットの作成、DirectX、Unity、Unreal など。 お客様が組織全体に大きな影響を与えることを可能にすると同時に、必要なフューチャの計画、設計、構築、および提供を支援します。 スタジオは、エンタープライズアプリケーションの統合、導入、運用、およびサポートのために、22000を超える Microsoft サービスプロフェッショナルと密接に連携しています。

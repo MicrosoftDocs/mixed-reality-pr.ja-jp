@@ -1,18 +1,18 @@
 ---
 title: Azure Spatial Anchors チュートリアル - 2. Azure Spatial Anchors をお使いになる前に
-description: このコースを完了すると、Mixed Reality アプリケーション内で Azure Spatial Anchors を実装する方法を学習できます。
+description: このコースを完了すると、Azure Spatial Anchors を使用して Mixed Reality アプリケーション内でオブジェクトを固定する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: e5553df4256e0535d5becb94f22b9ce8eac228dc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c73ddec2fc1be20a4a2c582948cd240be7fe23db
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700339"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353450"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2.Azure Spatial Anchors をお使いになる前に
 
@@ -31,7 +31,7 @@ ms.locfileid: "91700339"
 
 このためには、まず「[プロジェクトの初期化と最初のアプリケーションの配置](mr-learning-base-02.md)」に従ってください ([デバイスにアプリケーションをビルドする](mr-learning-base-02.md#building-your-application-to-your-hololens-2)手順は除きます)。これには、次の手順が含まれます。
 
-1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、" *MRTK チュートリアル* " などの適切な名前を付ける
+1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、"*MRTK チュートリアル*" などの適切な名前を付ける
 1. [ビルド プラットフォームを切り替える](mr-learning-base-02.md#configuring-the-unity-project)
 1. [TextMeshPro の重要なリソースをインポートする](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 1. [Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
@@ -47,14 +47,14 @@ ms.locfileid: "91700339"
 
 Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Package Manager]\(パッケージ マネージャー\)** の順に選択して、[Package Manager]\(パッケージ マネージャー\) ウィンドウを開きます。次に、 **[AR Foundation]** を選択し、 **[Install]\(インストール\)** ボタンをクリックしてパッケージをインストールします。
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section2-step1-1.png)
+![AR Foundation が選択されている [Package Manager]\(パッケージ マネージャー\) が表示された Unity](images/mr-learning-asa/asa-02-section2-step1-1.png)
 
 > [!NOTE]
 > Azure Spatial Anchors SDK で必要になるため、AR Foundation パッケージをインストールします。これは、次のセクションでインポートします。
 
 ## <a name="importing-the-tutorial-assets"></a>チュートリアルのアセットのインポート
 
-次の Unity カスタム パッケージを、 **記載されている順で** ダウンロードして **インポート** します。
+次の Unity カスタム パッケージを、**記載されている順で** ダウンロードして **インポート** します。
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage) (バージョン 2.2.1)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
@@ -62,7 +62,7 @@ Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Package Manager]
 
 チュートリアルのアセットをインポートすると、プロジェクト ウィンドウは次のようになります。
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section3-step1-1.png)
+![チュートリアルのアセットがインポートされた後の Unity の [Hierarchy]\(階層\)、[Scene]\(シーン\)、[Project]\(プロジェクト\) ウィンドウ](images/mr-learning-asa/asa-02-section3-step1-1.png)
 
 > [!NOTE]
 > "WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)" が廃止されていることに関する CS0618 警告が表示されても、無視してかまいません。
@@ -81,7 +81,7 @@ Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Package Manager]
 * **Instructions** プレハブ
 * **ParentAnchor** プレハブ
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section4-step1-1.png)
+![新しく追加されたプレハブが選択されている Unity](images/mr-learning-asa/asa-02-section4-step1-1.png)
 
 > [!TIP]
 > シーンに大きいアイコンが表示されている場合 (たとえば、大きいフレームの 'T' アイコンが邪魔になる場合など)、上の画像で示すように、<a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">ギズモをオフに切り替える</a>ことによってこれらを非表示にすることができます。
@@ -90,58 +90,58 @@ Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Package Manager]
 
 このセクションでは、スクリプトをシーンに追加して、アプリでのローカル アンカーと Azure Spatial Anchors の両方の基本的な動作を示す一連のボタン イベントを作成します。
 
-[Hierarchy]\(階層\) ウィンドウで、 **[ButtonParent]** オブジェクトを展開し、 **StartAzureSession** という名前の最初の子オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで、 **Button Config Helper (Script)** コンポーネントの **On Click ()** イベントを次のように構成します。
+[Hierarchy]\(階層\) ウィンドウで、 **[ButtonParent]** オブジェクトを展開し、**StartAzureSession** という名前の最初の子オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで、**Button Config Helper (Script)** コンポーネントの **On Click ()** イベントを次のように構成します。
 
 * **ParentAnchor** オブジェクトを **[None (Object)]\(なし (オブジェクト)\)** フィールドに割り当てます
 * **[No Function]\(関数なし\)** ドロップダウンから、 **[AnchorModuleScript]**  >  **[StartAzureSession ()]** の順に選択し、イベントがトリガーされたときに実行するアクションとして、この関数を設定します
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-1.png)
+![StartAzureSession ボタンの OnClick イベントが構成された Unity](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
-[Hierarchy]\(階層\) ウィンドウで、次の **StopAzureSession** という名前のボタンを選択し、[Inspector]\(インスペクター\) ウィンドウで、 **Button Config Helper (Script)** コンポーネントの **On Click ()** イベントを次のように構成します。
+[Hierarchy]\(階層\) ウィンドウで、次の **StopAzureSession** という名前のボタンを選択し、[Inspector]\(インスペクター\) ウィンドウで、**Button Config Helper (Script)** コンポーネントの **On Click ()** イベントを次のように構成します。
 
 * **ParentAnchor** オブジェクトを **[None (Object)]\(なし (オブジェクト)\)** フィールドに割り当てます
 * **[No Function]\(関数なし\)** ドロップダウンから、 **[AnchorModuleScript]**  >  **[StopAzureSession ()]** の順に選択し、イベントがトリガーされたときに実行するアクションとして、この関数を設定します
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-2.png)
+![StopAzureSession ボタンの OnClick イベントが構成された Unity](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
-[Hierarchy]\(階層\) ウィンドウで、次の **CreateAzureAnchor** という名前のボタンを選択し、[Inspector]\(インスペクター\) ウィンドウで、 **Button Config Helper (Script)** コンポーネントの **On Click ()** イベントを次のように構成します。
+[Hierarchy]\(階層\) ウィンドウで、次の **CreateAzureAnchor** という名前のボタンを選択し、[Inspector]\(インスペクター\) ウィンドウで、**Button Config Helper (Script)** コンポーネントの **On Click ()** イベントを次のように構成します。
 
 * **ParentAnchor** オブジェクトを **[None (Object)]\(なし (オブジェクト)\)** フィールドに割り当てます
 * **[No Function]\(関数なし\)** ドロップダウンから、 **[AnchorModuleScript]**  >  **[CreateAzureAnchor ()]** の順に選択し、イベントがトリガーされたときに実行するアクションとして、この関数を設定します
 * **[ParentAnchor]** オブジェクトを空の **[None (Game Object)]\(なし (ゲーム オブジェクト)\)** フィールドに割り当てて、CreateAzureAnchor () 関数の引数にします
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-3.png)
+![CreateAzureAnchor ボタンの OnClick イベントが構成された Unity](images/mr-learning-asa/asa-02-section5-step1-3.png)
 
-[Hierarchy]\(階層\) ウィンドウで、次の **RemoveLocalAnchor** という名前のボタンを選択し、[Inspector]\(インスペクター\) ウィンドウで、 **Button Config Helper (Script)** コンポーネントの **On Click ()** イベントを次のように構成します。
+[Hierarchy]\(階層\) ウィンドウで、次の **RemoveLocalAnchor** という名前のボタンを選択し、[Inspector]\(インスペクター\) ウィンドウで、**Button Config Helper (Script)** コンポーネントの **On Click ()** イベントを次のように構成します。
 
 * **ParentAnchor** オブジェクトを **[None (Object)]\(なし (オブジェクト)\)** フィールドに割り当てます
 * **[No Function]\(関数なし\)** ドロップダウンから、 **[AnchorModuleScript]**  >  **[RemoveLocalAnchor ()]** の順に選択し、イベントがトリガーされたときに実行するアクションとして、この関数を設定します
 * **[ParentAnchor]** オブジェクトを空の **[None (Game Object)]\(なし (ゲーム オブジェクト)\)** フィールドに割り当てて、RemoveLocalAnchor () 関数の引数にします
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-4.png)
+![RemoveLocalAnchor ボタンの OnClick イベントが構成された Unity](images/mr-learning-asa/asa-02-section5-step1-4.png)
 
-[Hierarchy]\(階層\) ウィンドウで、次の **FindAzureAnchor** という名前のボタンを選択し、[Inspector]\(インスペクター\) ウィンドウで、 **Button Config Helper (Script)** コンポーネントの **On Click ()** イベントを次のように構成します。
+[Hierarchy]\(階層\) ウィンドウで、次の **FindAzureAnchor** という名前のボタンを選択し、[Inspector]\(インスペクター\) ウィンドウで、**Button Config Helper (Script)** コンポーネントの **On Click ()** イベントを次のように構成します。
 
 * **ParentAnchor** オブジェクトを **[None (Object)]\(なし (オブジェクト)\)** フィールドに割り当てます
 * **[No Function]\(関数なし\)** ドロップダウンから、 **[AnchorModuleScript]**  >  **[FindAzureAnchor ()]** の順に選択し、イベントがトリガーされたときに実行するアクションとして、この関数を設定します
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-5.png)
+![FindAzureAnchor ボタンの OnClick イベントが構成された Unity](images/mr-learning-asa/asa-02-section5-step1-5.png)
 
-[Hierarchy]\(階層\) ウィンドウで、次の **DeleteAzureAnchor** という名前のボタンを選択し、[Inspector]\(インスペクター\) ウィンドウで、 **Button Config Helper (Script)** コンポーネントの **On Click ()** イベントを次のように構成します。
+[Hierarchy]\(階層\) ウィンドウで、次の **DeleteAzureAnchor** という名前のボタンを選択し、[Inspector]\(インスペクター\) ウィンドウで、**Button Config Helper (Script)** コンポーネントの **On Click ()** イベントを次のように構成します。
 
-* **ParentAnchor** オブジェクトを **[None (Object)]\(なし (オブジェクト)\)** フィールドに割り当てます
+* **DeleteAzureAnchor** オブジェクトを **[None (Object)]\(なし (オブジェクト)\)** フィールドに割り当てます
 * **[No Function]\(関数なし\)** ドロップダウンから、 **[AnchorModuleScript]**  >  **[DeleteAzureAnchor ()]** の順に選択し、イベントがトリガーされたときに実行するアクションとして、この関数を設定します
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-6.png)
+![DeleteAzureAnchor ボタンの OnClick イベントが構成された Unity](images/mr-learning-asa/asa-02-section5-step1-6.png)
 
 ## <a name="connecting-the-scene-to-the-azure-resource"></a>シーンを Azure リソースに接続する
 
-[Hierarchy]\(階層\) ウィンドウで **[ParentAnchor]** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで、 **Spatial Anchor Manager (Script)** コンポーネントを見つけます。 このチュートリアル シリーズの「 [前提条件](mr-learning-asa-01.md#prerequisites)」の一環として作成した Azure Spatial Anchors アカウントの資格情報を使用して、 **[Credentials]\(資格情報\)** セクションを構成します。
+[Hierarchy]\(階層\) ウィンドウで **[ParentAnchor]** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで、**Spatial Anchor Manager (Script)** コンポーネントを見つけます。 このチュートリアル シリーズの「[前提条件](mr-learning-asa-01.md#prerequisites)」の一環として作成した Azure Spatial Anchors アカウントの資格情報を使用して、 **[Credentials]\(資格情報\)** セクションを構成します。
 
 * **"Spatial Anchors Account ID"(Spatial Anchors アカウント ID)** フィールドに、Azure Spatial Anchors アカウントからの **アカウント ID** を貼り付ける
 * **"Spatial Anchors Account Key"(Spatial Anchors アカウント キー)** フィールドに、Azure Spatial Anchors アカウントからのプライマリまたはセカンダリ **アクセス キー** を貼り付ける
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section6-step1-1.png)
+![Spatial Anchor Manager が構成された Unity](images/mr-learning-asa/asa-02-section6-step1-1.png)
 
 ## <a name="trying-the-basic-behaviors-of-azure-spatial-anchors"></a>Azure Spatial Anchors の基本的な動作を試す
 
@@ -163,7 +163,7 @@ Azure Spatial Anchors は Unity では実行できないため、Azure Spatial A
 1. Azure Anchor を削除します
 1. Azure セッションを停止します
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step1-1.png)
+![Instructions オブジェクトが選択されている Unity](images/mr-learning-asa/asa-02-section7-step1-1.png)
 
 > [!CAUTION]
 > Azure Spatial Anchors では、インターネットを使用してアンカー データの保存と読み込みを行うため、ご利用のデバイスがインターネットに接続されていることを確認してください。
@@ -172,20 +172,20 @@ Azure Spatial Anchors は Unity では実行できないため、Azure Spatial A
 
 前のセクションでは、Azure Spatial Anchors の基礎について学習しました。 キューブを使用して、アンカーがアタッチされた親のゲーム オブジェクトを表現および視覚化しました。 このセクションでは、エクスペリエンス全体を、ParentAnchor オブジェクトの子として配置して固定する方法について説明します。
 
-[Hierarchy]\(階層\) ウィンドウで、 **ParentAnchor** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで、 **Transform** コンポーネントを次のように構成します。
+[Hierarchy]\(階層\) ウィンドウで、**ParentAnchor** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで、**Transform** コンポーネントを次のように構成します。
 
 * **[Scale X]\(X 拡大縮小\)** を 1.1 に変更します
 * **[Scale Z]\(Z 拡大縮小\)** を 1.1 に変更します
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-1.png)
+![ParentAnchor オブジェクトが選択され、配置され、スケーリングされている Unity](images/mr-learning-asa/asa-02-section8-step1-1.png)
 
-[Project]\(プロジェクト\) ウィンドウで、 **[Assets]\(アセット\)**  >  **[MRTK.Tutorials.GettingStarted]**  >  **[Prefabs]\(プレハブ\)**  >  **[Rover]** フォルダーの順に移動し、 **RoverExplorer_Complete** プレハブをクリックして [Hierarchy]\(階層\) ウィンドウにドラッグし、シーンに追加します。
+[Project]\(プロジェクト\) ウィンドウで、 **[Assets]\(アセット\)**  >  **[MRTK.Tutorials.GettingStarted]**  >  **[Prefabs]\(プレハブ\)**  >  **[Rover]** フォルダーの順に移動し、**RoverExplorer_Complete** プレハブをクリックして [Hierarchy]\(階層\) ウィンドウにドラッグし、シーンに追加します。
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-2.png)
+![新しく追加された RoverExplorer_Complete プレハブが選択されている Unity](images/mr-learning-asa/asa-02-section8-step1-2.png)
 
 新しく追加した RoverModule_Complete オブジェクトが [Hierarchy]\(階層\) ウィンドウで選択されたままの状態で、それを **ParentAnchor** オブジェクトにドラッグして、ParentAnchor オブジェクトの子にします。
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-3.png)
+![RoverExplorer_Complete オブジェクトが ParentAnchor の子として設定されている Unity](images/mr-learning-asa/asa-02-section8-step1-3.png)
 
 ここでプロジェクトを再ビルドして、アプリをご利用のデバイスにデプロイすると、サイズ変更したキューブを移動して、Rover エクスプローラー エクスペリエンス全体を再配置できます。
 

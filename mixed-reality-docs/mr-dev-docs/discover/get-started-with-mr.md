@@ -7,16 +7,22 @@ ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 検出, 配布, インデックス, ランディング ページ, 設計, 開発, チュートリアル, サンプル アプリ, 基本事項, ケース スタディ, リソース, HoloLens の使い方, オープン ソース プロジェクト
-ms.openlocfilehash: 4894383b5e4ae600555e5bd31ebc4c6f041445f3
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: 34c78c277e0b184c0421c2bdd56ef13411a5bf29
+ms.sourcegitcommit: bd359c269add7ac76f0c2c26ca7caedba14749b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915587"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94417837"
 ---
 # <a name="get-started-with-mixed-reality"></a>Mixed Reality の概要
 
+![仮想ハチドリと人の手](images/01_MixedReality.png)
+
+Mixed Reality エコシステムは、物理とデジタルの相互作用の新しい世界であり、人の想像力以外にそれを制限するものはありません。 経験豊富な開発者でも、新しく転向した場合でも、以下のリンクで示されているリソースで Mixed Reality の旅を始めることをお勧めします。 新しく知らなければならないことがたくさんあるので、さっそく始めましょう。 
+
 ## <a name="choose-your-track"></a>トラックを選択する
+
+Mixed Reality で調べたい分野が既にわかっている場合は、次のいずれかのトラックにすぐにジャンプできます。 ただし、後で基本概念のコンテンツを参照できるように、このページをブックマークに残しておいてください。
 
 :::row:::
     :::column:::
@@ -34,64 +40,33 @@ ms.locfileid: "92915587"
         **[開発者である](../develop/development.md)**<br>
         ツールとアーキテクチャについて学習する
     :::column-end:::
-    <!-- :::column:::
-       [![Jump in with Unity and MRTK](../images/Unity-tile.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)<br>
-        **[Jump in with Unity and MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)**<br>
-        Optimize Unity for MR development
-    :::column-end::: -->
 :::row-end:::
-
 
 <br>
 
 ---
-
-<br>
 
 ## <a name="understand-the-basics"></a>基本を理解する
 
-Mixed Reality を初めて使用する場合、その概要と機能を学習します。
-
-
-![仮想ハチドリと人の手](images/01_MixedReality.png)
+Mixed Reality を初めて使用する場合は、最下層から初めて、中核概念、エクスペリエンス、機能へと上に向かって理解していくことが重要です。 Mixed Reality で独自のアイデアを設計および開発するための確かな基盤を設けるのに役立つよう、一連の順序がある程度作成されています。
 
 ### <a name="what-is-mixed-reality"></a>Mixed Reality とは
 
+![Mixed Reality でできること](images/HLS19_remoteAssistHologram_001.jpg)
 
-#### <a name="mixed-reality-is-a-spectrum"></a>[さまざまな Mixed Reality がある](../discover/mixed-reality.md)
-Mixed Reality は現実世界とデジタル世界を組み合わせたものです。 これは、人間、コンピューター、環境の相互作用における次の進化であり、これまでは想像することしかできなかった可能性が引き出されます。
+アプリケーションの設計または開発を始める前に、Mixed Reality がどのような意味で使用されているのかを理解する必要があります。 このセクションは、環境入力の範囲、知覚上の変化、設計上の課題、付属するデバイスなど、Mixed Reality の範囲を理解できるように設計されています。 
+
+|  概念  |  結果  |
+| --- | --- |
+| [さまざまな Mixed Reality がある](../discover/mixed-reality.md) | Mixed Reality は物理とデジタルを融合するものであり、人間、コンピューター、環境の次世代の相互作用を実現します |
+| [ホログラムとは](../discover/hologram.md) | HoloLens を使用すると、ホログラムつまり自分の周囲に表示される光と音で構成されたオブジェクトを、実際のオブジェクトであるかのように作成できます。 ホログラムは、視線入力、ジェスチャ、音声コマンドに応答し、周囲の現実世界のサーフェスと対話できます |
+| [デザイン プロセスを展開する](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | イマーシブ エクスペリエンスを作成するときに空間的思考、ボディストーミング、行動により設計上の考え方を拡張します  |
 
 <br>
-
-
-#### <a name="what-is-a-hologram"></a>[ホログラムとは](../discover/hologram.md)
-HoloLens を使用すると、ホログラムつまり自分の周囲に表示される光と音で構成されたオブジェクトを、実際のオブジェクトであるかのように作成できます。 ホログラムは、視線入力、ジェスチャ、音声コマンドに応答し、周囲の現実世界のサーフェスと対話できます。 ホログラムを使用すると、世界の一部であるデジタル オブジェクトを作成できます。
-
-<br>
-
 
 ---
 
-<br>
-
-![Mixed Reality でできること](images/HLS19_remoteAssistHologram_001.jpg)
-
-### <a name="what-can-you-do-with-mixed-reality"></a>Mixed Reality でできること
-
-#### <a name="a-new-vision-for-work"></a>[仕事のための新しいビジョン](https://dynamics.microsoft.com//mixed-reality/overview/)
-Microsoft 社内では、従業員を支援し、操作を最適化するために、Mixed Reality アプリケーションを作成しています。 Dynamics 365 チームでは、[Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview)、[Layout](https://docs.microsoft.com/dynamics365/mixed-reality/layout/)、[Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/) など、さまざまな可能性を示す幅広いプロジェクトに取り組んできました。
-
-<br>
-
-#### <a name="the-pursuit-of-more-personal-computing"></a>[よりパーソナルなコンピューティングの追求](../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md)
-今日製品を構築することで、明日のチャンスが広がります。 これらの製品で提供されるソリューションにより、将来の向上のために必要なものが明らかになります。 Mixed Reality の場合は特にそうです。実際の仕事 (実際のデバイス、実際の顧客、実際の問題) の実体験から、実践的な洞察が得られます。
-
-
-<br>
-
-
 ## <a name="see-how-industry-partners-are-using-mixed-reality"></a>業界のパートナーが Mixed Reality をどのように使用しているかを確認する
-
 
 :::row:::
     :::column:::
@@ -129,76 +104,37 @@ Microsoft 社内では、従業員を支援し、操作を最適化するため�
 
 <br>
 
-<br>
-
 ---
 
-<br>
+### <a name="explore-hololens-and-mixed-reality-services"></a>HoloLens と Mixed Reality サービスを調べる
 
 ![HoloLens の分解図](images/HoloLens2_ExplodedView_8k.png)
 
-## <a name="what-are-the-capabilities-of-hololens"></a>HoloLens の機能は何か
+さまざまな Mixed Reality ハードウェアとサービスがどのように動作するかを知りたい場合は、以下のリンクを確認してください。 これらのリンクからは Microsoft のドキュメントのさまざまな部分に移動しますが、設計と開発の旅を続けられるよう、ここにブックマークを設定して戻ってくることをお勧めします。
 
-### <a name="immersive-ergonomic-instinctual-and-untethered"></a>[イマーシブ、人間工学的、直感的、接続不要](https://www.microsoft.com//hololens/hardware)
-
-HoloLens 2 は、数分で価値を提供できる業界最先端のソリューションにより、最も快適でイマーシブな複合現実エクスペリエンスを提供します。これらはすべて、Microsoft のクラウドおよび AI サービスの信頼性、セキュリティ、および拡張性によって強化されています。
-
-<br>
-
----
-
-<br>
-
-![コア エクスペリエンス](images/text_in_unity_viewingangle.jpg)
-
-## <a name="what-are-the-core-concepts-of-an-experience"></a>エクスペリエンスの主要な概念は何か
-
-### <a name="keep-the-user-comfortable---comfort"></a>[ユーザーの快適さを維持する (快適さ)](../design/comfort.md)
-ヘッド マウント ディスプレイを可能な限り快適なものにするため、デザイナーと開発者は、これらの手掛かりの自然界での動作方法と同じようにコンテンツを作成して提示することが重要です。
-
-<br>
-
-### <a name="how-the-user-sees-the-world---holographic-frame"></a>[ユーザーには世界がどのように見えるか - (ホログラフィック フレーム)](../design/holographic-frame.md)
-ユーザーは、ヘッドセットによって作成される四角形のビューポートを通して、Mixed Reality の世界を見ることになります。 HoloLens では、この四角形の領域はホログラフィック フレームと呼ばれ、ユーザーは自分の周囲の現実世界に重ねてデジタル コンテンツを見ることができます。
-
-<br>
-
-### <a name="making-holographic-objects-feel-real---spatial-mapping"></a>[ホログラフィック オブジェクトを現実的なものにする - (空間マッピング)](../design/spatial-mapping.md)
-空間マッピングにより、オブジェクトを実際のサーフェスの上に配置できるようになります。 これは、オブジェクトをユーザーの世界に固定し、現実世界の奥行きの手掛かりを利用するのに役立ちます。
-
-<br>
-
-### <a name="suggesting-the-scale-of-an-object---scale"></a>[オブジェクトのスケールを示す - (スケール)](../design/scale.md)
-ホログラフィック形式で現実的に見えるようにコンテンツを表示する鍵は、現実世界の視覚的な統計に可能な限り近付けることです。 これは、オブジェクトがどこにあるか、どのくらいの大きさか、何でできているのかを (現実世界で) 理解するのに役立つ視覚的な手掛かりを、できる限り多く組み込むことを意味します。
-
-
-<br>
-
----
+|  概念  |  結果  |
+| --- | --- |
+| [HoloLens ハードウェア](https://www.microsoft.com//hololens/hardware) | HoloLens 2 は、数分で価値を提供できる業界最先端のソリューションにより、最も快適でイマーシブな複合現実エクスペリエンスを提供します。これらはすべて、Microsoft のクラウドおよび AI サービスの信頼性、セキュリティ、および拡張性によって強化されています |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | [リモート アシスト](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview)、[レイアウト](https://docs.microsoft.com/dynamics365/mixed-reality/layout/)、[ガイド](https://docs.microsoft.com/dynamics365/mixed-reality/guides/)など、従業員を支援し、Dynamics 365 での操作を最適化できる、さまざまな製品を調べます。 実際の仕事、実際のデバイス、実際のユーザーの実体験から、実践的な分析情報が得られます |
+| [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | 空間認識、空間アンカー、複雑な 3D モデル レンダリングを追加することにより、さまざまなプラットフォームで魅力的なイマーシブ エクスペリエンスを構築します |
 
 ## <a name="what-would-you-like-to-do-next"></a>次に行うこと
 
-
 :::row:::
-    :::column:::
-       [![試す](images/icon-hololensuser.jpg)](https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)<br>
-        **[Mixed Reality を試す](https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
-        ローカルの Microsoft Store で、Mixed Reality と HoloLens のデモを入手してください。
-    :::column-end:::
     :::column:::
         [![作成者になる](images/icon-design.png)](../design/design.md)<br>
         **[作成者になる](../design/design.md)**<br>
         設計とプロトタイプ作成を開始するために必要な基本的な概念について説明します。
     :::column-end:::
+        :::column:::
+        [![開発を始める](images/icon-developer.png)](../develop/development.md)<br>
+        **[開発を始める](../develop/development.md)**<br>
+        スキル レベル、ワーク スタイル、プラットフォームへの関心に基づいて、開発パスを選択します。
+    :::column-end:::
     :::column:::
         [![イベントに参加する](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
         **[イベントに参加する](../whats-new/sf-academy-events.md)**<br>
         最初の HoloLens 2 アプリケーションを作成するには、ハードウェアを参照し、ハンズオン チュートリアルを入手してください。
-    :::column-end:::
-    :::column:::
-        [![開発を始める](images/icon-developer.png)](../develop/development.md)<br>
-        **[開発を始める](../develop/development.md)**<br>
-        スキル レベル、ワーク スタイル、プラットフォームへの関心に基づいて、開発パスを選択します。
     :::column-end:::
 :::row-end:::
 
@@ -208,6 +144,10 @@ HoloLens 2 は、数分で価値を提供できる業界最先端のソリュー
 <br>
 
 
-
 >[!IMPORTANT]
 >このサイトで提供されるすべての複合現実の開発に関する資料は参照のみを目的としています。 アプリケーションとその使用法およびエンド ユーザーに与える影響は、アプリケーション開発者としてお客様に責任があるものとし、これには、アプリがエンド ユーザーに対して不快感、傷害、またはその他の害をもたらしたりするものではないことや適切な警告文および免責文を含むことが含まれます。 お客様は、自分のアプリケーションが安全であり、「[Microsoft とのアプリ開発者契約](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement)」のすべての責務を満たしていることを保証するために、アプリケーションの開発と発行において常に適切な手順を踏む必要があります。
+
+## <a name="see-also"></a>関連項目
+* [イマーシブ ヘッドセット ハードウェアの詳細](immersive-headset-hardware-details.md)
+* [コミュニティ リソース](community.md)
+* [VR 技術者向けガイド](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/)

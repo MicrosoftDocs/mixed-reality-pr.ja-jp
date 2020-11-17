@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity、WinRT、windows mixed reality、API、チュートリアル
-ms.openlocfilehash: 80f950d7571a936e93eb08490ad83dbb34a50b3a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, WinRT, windows mixed reality, API, チュートリアル, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, Mixed Reality Api
+ms.openlocfilehash: fb8d63a44a05f639becd96fc9198c57dd10aaafd
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687255"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679681"
 ---
 # <a name="winrt-apis-with-unity-for-hololens"></a>HoloLens 用 Unity を使用した WinRT Api
 

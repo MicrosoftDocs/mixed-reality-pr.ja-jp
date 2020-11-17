@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
-keywords: Vuforia、マーカー、座標、参照のフレーム、追跡
-ms.openlocfilehash: 270588bb317b0c083500dfaaca80c075a35410b9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Vuforia、マーカー、座標、参照のフレーム、追跡、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、unity、HoloLens、デバイス追跡、パフォーマンスモード、Vuforia Developer Portal
+ms.openlocfilehash: 930f23d5bbc4115476c337dcb99f40096039d78f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686367"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679671"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>Unity での Vuforia Engine の使用
 
@@ -46,10 +46,10 @@ HoloLens 用の Vuforia Engine アプリの開発は、他のデバイス用の 
 1.  Unity 資産ストアから [HoloLens 用の Vuforia Engine サンプル](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) をダウンロードする
 2.  [Power and performance に推奨される Unity エンジンオプション](performance-recommendations-for-unity.md)を適用する
 3.  ビルドの **シーン** にサンプルシーンを追加 **します。**
-4.  [ **ビルド設定** ] で、[開いているシーンを **追加** ] ボタンをクリックして、ビルドプラットフォームを **UWP** に切り替えます。
+4.  [**ビルド設定**] で、[開いているシーンを **追加**] ボタンをクリックして、ビルドプラットフォームを **UWP** に切り替えます。
 ![image](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
 5.  [ **プレーヤーの設定** ] ボタンをクリックします。  
-   * **UWP** アイコンを選択し、[ **XR の設定** ] セクションを展開します。
+   * **UWP** アイコンを選択し、[ **XR の設定**] セクションを展開します。
    * サポートされている **仮想現実** が有効になっていることを確認します。    
    * **Virtual Reality sdk** で、次のことを確認します。
      * **ウィンドウの混合現実** が一覧に含まれており、 **深度バッファー** の共有が有効になっています。 

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、サンプルアプリ、コントロール
-ms.openlocfilehash: 82ffa19b27c1d2687b67df659cb3bb50544748fc
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality、設計、サンプルアプリ、コントロール、MRTK、Mixed Reality Toolkit、Unity、サンプルアプリ、アプリの例、オープンソース、Microsoft Store、HoloLens、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット
+ms.openlocfilehash: 4b85631fb044ee0b24c003f7808fd0455b87deec
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573266"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677681"
 ---
 # <a name="periodic-table-of-the-elements"></a>要素の定期的なテーブル
 
@@ -31,7 +31,7 @@ Mixed Reality キャプチャを使用して HoloLens 2 で記録
 
 要素の周期テーブルは、3D 空間の化学要素と各プロパティを視覚化します。 これには、宝石やエアタップなどの HoloLens の基本的なやり取りが組み込まれています。 ユーザーは、アニメーション化された3D モデルを使用して要素について学習できます。 要素の電子シェルとその中核を視覚的に理解できます。これは、protons と neutrons で構成されています。
 
-## <a name="background"></a>バックグラウンド
+## <a name="background"></a>背景
 
 初めて HoloLens を使用した後、定期的なテーブルアプリは、mixed reality で試してみたいと思っていました。 各要素には、テキストと共に表示されるデータポイントが多数あるため、3D 空間でのタイポグラフィの合成を調べるのには大きな問題があると考えました。 このプロジェクトでは、要素の電子モデルを視覚化できることがもう1つの興味深い部分でした。
 

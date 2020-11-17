@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: 混合現実、空間ロケーター、空間参照フレーム、空間座標系、空間ステージ、サンプルコード、イメージの安定化、空間アンカー、空間アンカーストア、追跡の損失、チュートリアル
-ms.openlocfilehash: 5ae60d5696d40a07ad350d0de097eb2f82f1dde1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合現実、空間ロケーター、空間参照フレーム、空間座標システム、空間ステージ、サンプルコード、イメージの安定化、空間アンカー、空間アンカーストア、追跡の損失、チュートリアル、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
+ms.openlocfilehash: 4ab97df0d0ce87f86b3b561edb544d503e479e96
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683919"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679661"
 ---
 # <a name="coordinate-systems-in-directx"></a>DirectX の座標系
 
@@ -629,7 +629,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 
 ユーザーの快適さを確保するために、線形補間 ("lerp") を使用して、一定期間内に発生するように変化を滑らかにします。 これは、ホログラムを見つめにロックするよりも、ユーザーにとってより使いやすくなります。 タグに沿ったホログラムの位置を Lerping することで、動きをダンパーすることで、ホログラムを安定化させることもできます。このダンパーを実行しなかった場合、ユーザーは通常、ユーザーの頭のなるべくな動きと見なされるため、ホログラムのジッターが表示されます。
 
-From **StationaryQuadRenderer::P ositionhologram** :
+From **StationaryQuadRenderer::P ositionhologram**:
 
 ```
    const float& dtime = static_cast<float>(timer.GetElapsedSeconds());
@@ -656,7 +656,7 @@ From **StationaryQuadRenderer::P ositionhologram** :
 >[!NOTE]
 >デバッグパネルの場合は、表示が妨げされないように、ホログラムを少し左に移動することを選択できます。 その方法の例を次に示します。
 
-StationaryQuadRenderer の場合 **::P ositionhologram** :
+StationaryQuadRenderer の場合 **::P ositionhologram**:
 
 ```
        // If you're making a debug view, you might not want the tag-along to be directly in the

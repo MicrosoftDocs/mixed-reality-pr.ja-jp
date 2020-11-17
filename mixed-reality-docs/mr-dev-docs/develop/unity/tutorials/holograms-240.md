@@ -5,18 +5,18 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、共有、ネットワーク、academy、チュートリアル
-ms.openlocfilehash: 886b8b3ef449dc2872358fffd67b6af4c661de0e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、共有、ネットワーク、academy、チュートリアル、HoloLens、Mixed Reality Academy、unity、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、Windows 10
+ms.openlocfilehash: f57629e37463c9a05219ebae92bff8870728d688
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690767"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678261"
 ---
 # <a name="mr-sharing-240-multiple-hololens-devices"></a>MR 共有 240:複数の HoloLens デバイス
 
 >[!NOTE]
->Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは " **_ありません_** "。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](../../../mr-learning-base-01.md)が投稿されています。
+>Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](../../../mr-learning-base-01.md)が投稿されています。
 
 ホログラムは、領域内での移動によって、世界中に残されています。 HoloLens は、さまざまな [座標](../../../design/coordinate-systems.md) 系を使用して、オブジェクトの位置と向きを追跡することで、ホログラムを保持します。 これらの座標系をデバイス間で共有すると、共有された holographic 世界に参加するための共有エクスペリエンスを作成できます。
 
@@ -39,7 +39,7 @@ ms.locfileid: "91690767"
 
 ## <a name="before-you-start"></a>開始する前に
 
-### <a name="prerequisites"></a>前提条件
+### <a name="prerequisites"></a>必須コンポーネント
 
 * インターネットアクセスを使用して適切な [ツールがインストール](../../../develop/install-the-tools.md) されている WINDOWS 10 PC。
 * [開発用に構成された](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)少なくとも2つの HoloLens デバイス。
@@ -66,36 +66,36 @@ ms.locfileid: "91690767"
 * Unity をセットアップして、holographic アプリを開発します。
 * ホログラムをご覧ください。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>手順
 
 * Unity を起動します。
 * **[Open (開く)]** を選択します。
 * 以前に unarchived した **Sharedholograms** フォルダーとして場所を入力します。
-* [ **プロジェクト名** ] を選択し、[ **フォルダーの選択** ] をクリックします。
-* **階層** で、 **メインカメラ** を右クリックし、[ **削除** ] を選択します。
-* **HoloToolkit-240/Prefabs/カメラ** フォルダーで、 **メインカメラ** の事前 fab を見つけます。
+* [ **プロジェクト名** ] を選択し、[ **フォルダーの選択**] をクリックします。
+* **階層** で、**メインカメラ** を右クリックし、[**削除**] を選択します。
+* **HoloToolkit-240/Prefabs/カメラ** フォルダーで、**メインカメラ** の事前 fab を見つけます。
 * **メインカメラ** を **階層** にドラッグアンドドロップします。
-* **階層** で、[ **作成** ] をクリックし、[ **空の作成** ] をクリックします。
-* 新しい [作成] **オブジェクト** を右クリックし、[ **名前の変更** ] を選択します。
+* **階層** で、[**作成**] をクリックし、[**空の作成**] をクリックします。
+* 新しい [作成] **オブジェクト** を右クリックし、[ **名前の変更**] を選択します。
 * **HologramCollection** オブジェクトの名前を「」に変更します。
 * **階層** 内の **HologramCollection** オブジェクトを選択します。
-* **インスペクター** で、 **変換位置** を **X: 0、Y:-0.25、Z: 2** のように設定します。
-* [ **プロジェクト] パネル** の [ **ホログラム** ] フォルダーで、 **EnergyHub** 資産を見つけます。
-* [ **プロジェクト] パネル** から、 **EnergyHub** オブジェクトを **HologramCollection の子** として **階層** にドラッグアンドドロップします。
+* **インスペクター** で、**変換位置** を **X: 0、Y:-0.25、Z: 2** のように設定します。
+* [**プロジェクト] パネル** の [**ホログラム**] フォルダーで、 **EnergyHub** 資産を見つけます。
+* [**プロジェクト] パネル** から、 **EnergyHub** オブジェクトを **HologramCollection の子** として **階層** にドラッグアンドドロップします。
 * [ **ファイル] > 選択してシーンを保存...**
-* シーンに **Sharedholograms** という名前を付け、[ **保存** ] をクリックします。
+* シーンに **Sharedholograms** という名前を付け、[ **保存**] をクリックします。
 * Unity の [ **再生** ] ボタンをクリックして、ホログラムをプレビューします。
 * プレビューモードを停止するには、もう一度 **Play** を押します。
 
 **Unity から Visual Studio にプロジェクトをエクスポートする**
 
-* Unity で、[ **ファイル > ビルド設定** ] を選択します。
+* Unity で、[ **ファイル > ビルド設定**] を選択します。
 * シーンを追加するには、[開いている **シーンの追加** ] をクリックします。
-* [ **プラットフォーム** ] ボックスの一覧の [ **ユニバーサル Windows プラットフォーム** ] を選択し、[ **プラットフォームの切り替え** ] をクリックします。
+* [**プラットフォーム**] ボックスの一覧の [**ユニバーサル Windows プラットフォーム**] を選択し、[**プラットフォームの切り替え**] をクリックします。
 * **SDK** を **Universal 10** に設定します。
 * **ターゲットデバイス** を **HoloLens** に設定し、 **UWP ビルドの種類** を **D3D** に設定します。
 * **Unity C# プロジェクト** を確認します。
-* [ **ビルド** ] をクリックします。
+* [**ビルド**] をクリックします。
 * 表示された [エクスプローラー] ウィンドウで、"App" という名前の **新しいフォルダー** を作成します。
 * **アプリ** フォルダーをシングルクリックします。
 * **[フォルダーの選択]** をクリックします。
@@ -103,10 +103,10 @@ ms.locfileid: "91690767"
 * **アプリ** フォルダーを開きます。
 * **Sharedholograms** を開いて、Visual Studio を起動します。
 * Visual Studio の上部のツールバーを使用して、ターゲットをデバッグから **リリース** に変更し、ARM から **X86** に変更します。
-* [ローカルコンピューター] の横にあるドロップダウン矢印をクリックし、[ **リモートデバイス** ] を選択します。
-    * **アドレス** を HoloLens の名前または IP アドレスに設定します。 デバイスの IP アドレスがわからない場合は、[設定] の [ **ネットワーク & Internet > 詳細オプション >** 確認するか、cortana **に "Cortana さん、どのような IP アドレスがあるか" を** 確認してください。
-    * [ **認証モード** ( **ユニバーサル** ) に設定したままにします。
-    * [ **選択] を** クリック
+* [ローカルコンピューター] の横にあるドロップダウン矢印をクリックし、[ **リモートデバイス**] を選択します。
+    * **アドレス** を HoloLens の名前または IP アドレスに設定します。 デバイスの IP アドレスがわからない場合は、[設定] の [**ネットワーク & Internet > 詳細オプション >** 確認するか、cortana **に "Cortana さん、どのような IP アドレスがあるか" を** 確認してください。
+    * [ **認証モード** ( **ユニバーサル**) に設定したままにします。
+    * [**選択] を** クリック
 * [デバッグ] をクリックして [ **デバッグなしで開始** ] を >、Ctrl キーを押し **ながら F5** キーを押します。 初めてデバイスをデプロイする場合は、 [Visual Studio とペアリング](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)する必要があります。
 * HoloLens に配置し、EnergyHub ホログラムを見つけます。
 
@@ -121,25 +121,25 @@ ms.locfileid: "91690767"
 * 行方向の入力を使用してカーソルを制御します。
 * ジェスチャ入力を使用して、ホログラムを操作します。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>手順
 
 **視線入力**
 
 * [ **階層] パネル** で、 **HologramCollection** オブジェクトを選択します。
 * [ **インスペクター] パネル** で、[ **コンポーネントの追加** ] ボタンをクリックします。
 * メニューの [検索] ボックスに「と **入力してください」** と入力します。 検索結果を選択します。
-* **HoloToolkit-Sharing-240\Prefabs\Input** フォルダーで、 **カーソル** アセットを見つけます。
+* **HoloToolkit-Sharing-240\Prefabs\Input** フォルダーで、**カーソル** アセットを見つけます。
 * **カーソル** アセットを **階層** にドラッグアンドドロップします。
 
 **ジェスチャ**
 
 * [ **階層] パネル** で、 **HologramCollection** オブジェクトを選択します。
 * [ **コンポーネントの追加** ] をクリックし、検索フィールドに「 **ジェスチャマネージャー** 」と入力します。 検索結果を選択します。
-* [ **階層] パネル** で、[ **HologramCollection** ] を展開します。
+* [ **階層] パネル** で、[ **HologramCollection**] を展開します。
 * 子 **EnergyHub** オブジェクトを選択します。
 * [ **インスペクター] パネル** で、[ **コンポーネントの追加** ] ボタンをクリックします。
 * メニューで、検索ボックスの **ホログラムの配置** を入力します。 検索結果を選択します。
-* [ **ファイル > [シーンの保存** ] を選択してシーンを保存します。
+* [ **ファイル > [シーンの保存**] を選択してシーンを保存します。
 
 **デプロイと活用**
 
@@ -168,10 +168,10 @@ ms.locfileid: "91690767"
 >2. [Windows ストア] タブをクリックします。
 >3. [発行の設定 > 機能] セクションで、 **Internetclientserver** の機能と **PrivateNetworkClientServer** 機能を確認します。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>手順
 
 * [ **プロジェクト] パネル** で、 **HoloToolkit-Sharing-240\Prefabs\Sharing** フォルダーに移動します。
-* **共有** prefab を [ **階層] パネル** にドラッグアンドドロップします。
+* **共有** prefab を [**階層] パネル** にドラッグアンドドロップします。
 
 次に、共有サービスを起動する必要があります。 この手順を実行する必要があるのは、共有エクスペリエンス内の **1 台の PC** だけです。
 
@@ -182,11 +182,11 @@ ms.locfileid: "91690767"
 
 共有エクスペリエンスに参加するすべての **pc** で、残りの手順に従います。
 
-* **階層** で、 **共有** オブジェクトを選択します。
-* **インスペクター** の [ **共有ステージ** ] コンポーネントで、 **サーバーアドレス** を ' localhost ' から SharingService.exe を実行しているコンピューターの IPv4 アドレスに変更します。
+* **階層** で、**共有** オブジェクトを選択します。
+* **インスペクター** の [**共有ステージ**] コンポーネントで、**サーバーアドレス** を ' localhost ' から SharingService.exe を実行しているコンピューターの IPv4 アドレスに変更します。
 * **階層** で、 **HologramCollection** オブジェクトを選択します。
-* **インスペクター** で [コンポーネントの **追加** ] ボタンをクリックします。
-* 検索ボックスに、「 **Import Export Anchor Manager** 」と入力します。 検索結果を選択します。
+* **インスペクター** で [コンポーネントの **追加**] ボタンをクリックします。
+* 検索ボックスに、「 **Import Export Anchor Manager**」と入力します。 検索結果を選択します。
 * [ **プロジェクト] パネル** で、 **Scripts** フォルダーに移動します。
 * **HologramPlacement** スクリプトをダブルクリックして、Visual Studio で開きます。
 * 内容を次のコードに置き換えます。
@@ -295,9 +295,9 @@ public class HologramPlacement : Singleton<HologramPlacement>
 }
 ```
 
-* Unity に戻り、[ **階層] パネル** で [ **HologramCollection** ] を選択します。
+* Unity に戻り、[**階層] パネル** で [ **HologramCollection** ] を選択します。
 * [ **インスペクター] パネル** で、[ **コンポーネントの追加** ] ボタンをクリックします。
-* メニューで、検索ボックスに「 **App State Manager** 」と入力します。 検索結果を選択します。
+* メニューで、検索ボックスに「 **App State Manager**」と入力します。 検索結果を選択します。
 
 **デプロイと活用**
 
@@ -319,7 +319,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 * プレーヤーアバターを選択して共有します。
 * すべてのユーザーのヘッドの横に、プレーヤーアバターを添付します。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>手順
 
 * [ **プロジェクト] パネル** で、[ **ホログラム** ] フォルダーに移動します。
 * **PlayerAvatarStore** を **階層** にドラッグアンドドロップします。
@@ -368,11 +368,11 @@ public class AvatarSelector : MonoBehaviour
 ```
 
 * **階層** で、 **HologramCollection** オブジェクトを選択します。
-* **インスペクター** で [ **コンポーネントの追加** ] をクリックします。
-* 検索ボックスに、「 **Local Player Manager** 」と入力します。 検索結果を選択します。
+* **インスペクター** で [**コンポーネントの追加**] をクリックします。
+* 検索ボックスに、「 **Local Player Manager**」と入力します。 検索結果を選択します。
 * **階層** で、 **HologramCollection** オブジェクトを選択します。
-* **インスペクター** で [ **コンポーネントの追加** ] をクリックします。
-* 検索ボックスに、「 **リモートプレーヤーマネージャー** 」と入力します。 検索結果を選択します。
+* **インスペクター** で [**コンポーネントの追加**] をクリックします。
+* 検索ボックスに、「 **リモートプレーヤーマネージャー**」と入力します。 検索結果を選択します。
 * Visual Studio で **HologramPlacement** スクリプトを開きます。
 * 内容を次のコードに置き換えます。
 
@@ -618,7 +618,7 @@ public class AppStateManager : Singleton<AppStateManager>
 
 * プレーヤーのヘッド位置に基づいて、空間マッピングメッシュにホログラムを配置します。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>手順
 
 * [ **プロジェクト] パネル** で、[ **ホログラム** ] フォルダーに移動します。
 * **CustomSpatialMapping** Prefab を **階層** にドラッグアンドドロップします。
@@ -986,7 +986,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 * タップして、EnergyHub を配置します。
 * 音声コマンド ' Reset Target ' を使用して EnergyHub バックアップを選択し、グループとして連携して、ホログラムを新しい場所に移動してみてください。
 
-## <a name="chapter-6---real-world-physics"></a>第6章-実際の物理
+## <a name="chapter-6---real-world-physics"></a>第6章-Real-World の物理
 
 >[!VIDEO https://www.youtube.com/embed/XNpQVSyXwMo]
 
@@ -997,11 +997,11 @@ public class HologramPlacement : Singleton<HologramPlacement>
 * 現実世界の表面にバウンドする projectiles を起動します。
 * 他のプレーヤーが見ることができるように、projectiles を共有します。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>手順
 
 * **階層** で、 **HologramCollection** オブジェクトを選択します。
-* **インスペクター** で [ **コンポーネントの追加** ] をクリックします。
-* [検索] ボックスに、「"" の種類の表示 **ツール** 」と入力します。 検索結果を選択します。
+* **インスペクター** で [**コンポーネントの追加**] をクリックします。
+* [検索] ボックスに、「"" の種類の表示 **ツール**」と入力します。 検索結果を選択します。
 
 **デプロイと活用**
 
@@ -1019,14 +1019,14 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 * 連携して、秘密ポータルを見つけるために十分な projectiles をアンカーで立ち上げましょう。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>手順
 
 * [ **プロジェクト] パネル** で、[ **ホログラム** ] フォルダーに移動します。
-* **HologramCollection の子** として、 **黄泉** の資産をドラッグアンドドロップします。
-* **HologramCollection** を選択した状態で、 **インスペクター** の [ **コンポーネントの追加** ] ボタンをクリックします。
-* メニューで、検索ボックスに「 **ExplodeTarget** 」と入力します。 検索結果を選択します。
-* **HologramCollection** を選択した状態で、 **階層** から、 **EnergyHub** オブジェクトを **インスペクター** の [ **ターゲット** ] フィールドにドラッグします。
-* **HologramCollection** を選択した状態で、 **階層** から、 **黄泉** のオブジェクトを **インスペクター** の [ **黄泉** ] フィールドにドラッグします。
+* **HologramCollection の子** として、**黄泉** の資産をドラッグアンドドロップします。
+* **HologramCollection** を選択した状態で、**インスペクター** の [**コンポーネントの追加**] ボタンをクリックします。
+* メニューで、検索ボックスに「 **ExplodeTarget**」と入力します。 検索結果を選択します。
+* **HologramCollection** を選択した状態で、**階層** から、 **EnergyHub** オブジェクトを **インスペクター** の [**ターゲット**] フィールドにドラッグします。
+* **HologramCollection** を選択した状態で、**階層** から、**黄泉** のオブジェクトを **インスペクター** の [**黄泉**] フィールドにドラッグします。
 
 **デプロイと活用**
 

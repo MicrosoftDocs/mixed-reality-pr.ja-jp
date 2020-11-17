@@ -1,18 +1,18 @@
 ---
 title: 入門チュートリアル - 8. 視線追跡の使用
-description: このコースでは、Mixed Reality Toolkit (MRTK) を使用して複合現実のアプリケーションを作成する方法について説明します。
+description: このコースでは、視線追跡を Mixed Reality Toolkit (MRTK) とともに使する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: a87b613ca47eb0ed6695a55c8e5afe0f24de5937
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 490a131bb196941d2ae581b97d88a104c0c212e2
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701002"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353500"
 ---
 # <a name="8-using-eye-tracking"></a>8.視線追跡の使用
 
@@ -32,7 +32,7 @@ ms.locfileid: "91701002"
 
 [Unity] メニューで、[Mixed Reality Toolkit] > [ユーティリティ] > **[Configure Unity Project]\(Unity プロジェクトの構成\)** の順に選択して **[MRTK Project Configurator]** ウィンドウを開き、 **[UWP Capabilities]\(UWP 機能\)** セクションで **[Enable Eye Gaze Input Capability]\(視線入力機能を有効にする\)** がグレーで表示されていることを確認します。
 
-![mr-learning-base](images/mr-learning-base/base-08-section1-step1-1.png)
+![[MRTK Project Configurator]\(MRTK プロジェクト コンフィギュレーター\) ウィンドウが表示された Unity](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
 > 視線入力機能は、このチュートリアル シリーズの冒頭で Unity プロジェクトを構成したときに、[MRTK Project Configurator 設定を適用する](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings)手順で有効にする必要がありました。 しかし、有効にしていない場合は、ここで必ず有効にしてください。
@@ -41,12 +41,12 @@ ms.locfileid: "91701002"
 
 [Hierarchy]\(階層\) ウィンドウで **[MixedRealityToolkit]** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで [MixedRealityToolkit] > **[入力]** タブの順に選択して、次の手順を実行します。
 
-* **DefaultHoloLens2InputSystemProfile** をクローンし、適切な名前 (たとえば、 _GettingStarted_HoloLens2InputSystemProfile_ ) を付けます
+* **DefaultHoloLens2InputSystemProfile** をクローンし、適切な名前 (たとえば、_GettingStarted_HoloLens2InputSystemProfile_) を付けます
 * **[ポインター]** セクションを展開します
-* **DefaultMixedRealityPointerProfile** をクローンし、適切な名前 (たとえば、 _GettingStarted_MixedRealityPointerProfile_ ) を付けます
+* **DefaultMixedRealityPointerProfile** をクローンし、適切な名前 (たとえば、_GettingStarted_MixedRealityPointerProfile_) を付けます
 * **[Gaze Settings]\(視線入力の設定\)** セクションを見つけて、 **[Is Eye Tracking Enabled]\(視線追跡を有効にする\)** チェックボックスをオンにします
 
-![mr-learning-base](images/mr-learning-base/base-08-section2-step1-1.png)
+![新しく作成されたプロファイルが適用され、視線追跡が有効にされた MixedRealityToolkit コンポーネントが表示された Unity](images/mr-learning-base/base-08-section2-step1-1.png)
 
 > [!TIP]
 > MRTK プロファイルをクローンする方法については、[MRTK プロファイルの構成](mr-learning-base-03.md)に関するページにある手順を参照してください。
@@ -56,25 +56,25 @@ ms.locfileid: "91701002"
 [Hierarchy]\(階層\) ウィンドウで **[MixedRealityToolkit]** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで **[入力]** タブの順に選択して、次の手順を実行します。
 
 * **[Input Data Providers]\(入力データ プロバイダー\)**  >  **[Input Simulation Service]\(入力シミュレーション サービス\)** セクションの順に展開します
-* **DefaultMixedRealityInputSimulationProfile** をクローンし、適切な名前 (たとえば、 _GettingStarted_MixedRealityInputSimulationProfile_ ) を付けます
+* **DefaultMixedRealityInputSimulationProfile** をクローンし、適切な名前 (たとえば、_GettingStarted_MixedRealityInputSimulationProfile_) を付けます
 * **[Eye Simulation]\(視線シミュレーション\)** セクションを見つけて、 **[Simulate Eye Position]\(目の位置のシミュレーション\)** チェックボックスをオンにします
 
-![mr-learning-base](images/mr-learning-base/base-08-section3-step1-1.png)
+![新しく作成されたプロファイルが適用され、視線シミュレーションが有効にされた MixedRealityToolkit コンポーネントが表示された Unity](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## <a name="adding-eye-tracking-to-objects"></a>視線追跡をオブジェクトに追加する
 
 [Hierarchy]\(階層\) ウィンドウで、[RoverExplorer] > **[ボタン]** オブジェクトの順に展開し、3 つの子ボタン オブジェクトのそれぞれについて、[SeeItSayItLabel] > **[TextMeshPro]** オブジェクトの順に選択します。
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-1.png)
+![TextMeshPro オブジェクトが選択されている Unity](images/mr-learning-base/base-08-section4-step1-1.png)
 
 [Inspector]\(インスペクター\) ウィンドウで 3 つの TextMeshPro オブジェクトが選択されたままの状態で、 **[Add Component]\(コンポーネントの追加\)** ボタンを使用して、選択されたすべてのオブジェクトに次のコンポーネントを追加します。
 
 * **Box Collider** コンポーネント
 * **EyeTrackingTarget** コンポーネント
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-2.png)
+![TextMeshPro オブジェクトが選択され、コンポーネントが追加されている Unity](images/mr-learning-base/base-08-section4-step1-2.png)
 
-[Hierarchy]\(階層\) ウィンドウで、 **[ヒント]** > [SeeItSayItLabel] > **TextMeshPro** オブジェクトの順に選択し、 **EyeTrackingTarget** コンポーネントを次のように構成します。
+[Hierarchy]\(階層\) ウィンドウで、 **[ヒント]** > [SeeItSayItLabel] > **TextMeshPro** オブジェクトの順に選択し、**EyeTrackingTarget** コンポーネントを次のように構成します。
 
 * **On Look At Start ()** イベント セクション内
   * 小さい **[+]** アイコンをクリックして、別のイベントを追加します
@@ -87,13 +87,13 @@ ms.locfileid: "91701002"
   * **[No Function]\(関数なし\)** ドロップダウンから、 **[TextMeshPro]**  >  **[float fontSize]** の順に選択し、イベントがトリガーされたときにこのプロパティ値を更新するようにします
   * 引数を **0.04** に設定し、フォント サイズを 0.04 に戻します
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-3.png)
+![Hints TextMeshPro オブジェクトが選択され、EyeTrackingTarget コンポーネントが構成された Unity](images/mr-learning-base/base-08-section4-step1-3.png)
 
 **[Explode]\(展開\)** > [SeeItSayItLabel] > **[TextMeshPro]** オブジェクトと **[リセット]** > [SeeItSayItLabel] > **[TextMeshPro]** オブジェクトに対して、この手順を **繰り返し** ます。
 
 ここで、ゲーム モードに入り、マウスの右ボタンを押したまま、視線がラベルの 1 つをヒットするまでマウスを移動すると、フォント サイズが 50% 増加され、視線が離れると元のサイズに戻ることを確認できます。
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-4.png)
+![視線ヒット視線追跡が [Explode]\(展開\) ボタン ラベルをターゲットにしている再生モードの分割ビューが表示された Unity](images/mr-learning-base/base-08-section4-step1-4.png)
 
 ## <a name="congratulations"></a>結論
 

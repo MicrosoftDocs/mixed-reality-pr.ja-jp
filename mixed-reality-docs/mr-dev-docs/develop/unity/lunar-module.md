@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, サンプルアプリ, 設計, HoloLens
-ms.openlocfilehash: d4014e1300b60d61dfba38ee5c5b0c8a530fbe08
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality, サンプルアプリ, 設計, MRTK, Mixed Reality ツールキット, Unity, サンプルアプリ, アプリの例, オープンソース, Microsoft Store, HoloLens, Mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実のヘッドセット
+ms.openlocfilehash: ad5c544b9c164ef0d85eb3217685d6f96bb86367
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573256"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677467"
 ---
 # <a name="lunar-module"></a>月着陸船
 
@@ -99,7 +99,7 @@ HoloLens の手のジェスチャには、細かい設定が可能なコント�
 
 旧暦 ( [Mixed Reality Design Labs) GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule)では、太陰暦モジュールサンプルアプリのスクリプトと prefabs を見つけることができます。
 
-## <a name="about-the-author"></a>著者について
+## <a name="about-the-author"></a>筆者について
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>

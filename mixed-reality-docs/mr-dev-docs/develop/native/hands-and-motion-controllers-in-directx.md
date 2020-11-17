@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: ハンド、モーションコントローラー、directx、入力、ホログラム
-ms.openlocfilehash: faa9abe224b554c45cf0175b62da40c297122ad1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: ハンド、モーションコントローラー、directx、入力、ホログラム、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
+ms.openlocfilehash: 3dcf3767a537ccc64cb06c6f44d765425a5578b9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685919"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678061"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>DirectX での手とモーション コントローラー
 
@@ -104,14 +104,14 @@ SpatialInteractionSource API では、さまざまな機能を備えたコント
 
 | プロパティ | 説明 | HoloLens (第1世代) ジェスチャ | モーションコントローラー | 手によるハンド|
 |--- |--- |--- |--- |--- |
-| [SpatialInteractionSource:: **きき**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | Right または left/controller。 | サポートされていません | サポートされています | サポートされています |
-| [SpatialInteractionSourceState:: **Isselectpressed** れました](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | プライマリボタンの現在の状態。 | エアタップ | トリガー | 緩やかに出た空気タップ (垂直ピンチ) |
-| [SpatialInteractionSourceState:: **IsGrasped**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | グラブボタンの現在の状態です。 | サポートされていません | グラブボタン | ピンチまたは閉じた手 |
-| [SpatialInteractionSourceState:: **IsMenuPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | メニューボタンの現在の状態。    | サポートされていません | メニューボタン | サポートされていません |
-| [SpatialInteractionSourceLocation:: **Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | コントローラー上の手またはグリップ位置の XYZ 位置。 | パームの場所 | グリップの発生位置 | パームの場所 |
-| [SpatialInteractionSourceLocation:: **Orientation**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | コントローラー上の手やグリップの向きを表す四元数。 | サポートされていません | グリップの向き | パームの向き |
-| [SpatialPointerInteractionSourcePose:: **Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | ポイントの原点。 | サポートされていません | サポートされています | サポートされています |
-| [SpatialPointerInteractionSourcePose:: **Forwarddirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | ポイントの方向。 | サポートされていません | サポートされています | サポートされています |
+| [SpatialInteractionSource::**きき**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | Right または left/controller。 | サポートされていません | サポートされています | サポート |
+| [SpatialInteractionSourceState::**Isselectpressed** れました](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | プライマリボタンの現在の状態。 | エアタップ | トリガー | 緩やかに出た空気タップ (垂直ピンチ) |
+| [SpatialInteractionSourceState::**IsGrasped**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | グラブボタンの現在の状態です。 | サポートしていません。 | グラブボタン | ピンチまたは閉じた手 |
+| [SpatialInteractionSourceState::**IsMenuPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | メニューボタンの現在の状態。    | サポートしていません。 | メニューボタン | サポートしていません。 |
+| [SpatialInteractionSourceLocation::**Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | コントローラー上の手またはグリップ位置の XYZ 位置。 | パームの場所 | グリップの発生位置 | パームの場所 |
+| [SpatialInteractionSourceLocation::**Orientation**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | コントローラー上の手やグリップの向きを表す四元数。 | サポートしていません。 | グリップの向き | パームの向き |
+| [SpatialPointerInteractionSourcePose::**Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | ポイントの原点。 | サポートされていません | サポートされています | サポート |
+| [SpatialPointerInteractionSourcePose::**Forwarddirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | ポイントの方向。 | サポートされていません | サポートされています | サポート |
 
 上記のプロパティの一部は、すべてのデバイスで使用できるわけではありません。 API には、このことをテストする手段が用意されています。 たとえば、 [SpatialInteractionSource:: IsGraspSupported](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.isgraspsupported) プロパティを調べて、ソースがつかみアクションを提供するかどうかを判断できます。
 
@@ -120,10 +120,10 @@ SpatialInteractionSource API では、さまざまな機能を備えたコント
 Windows Mixed Reality では、さまざまなフォームファクターでモーションコントローラーをサポートしています。  また、独自の追跡システムもサポートしています。  これらのシステムはすべて、ユーザーの手の中でオブジェクトをポイントまたは表示するためにアプリが使用する必要がある自然な位置と自然な "転送" 方向との間には異なる関係があります。  これらのすべてをサポートするために、ハンドトラッキングとモーションコントローラーの両方に3種類の3D が用意されています。  1つ目は、ユーザーの手の位置を表すグリップです。  2つ目の方法は、ユーザーの手またはコントローラーからのポイントを示すポイントを指します。 そのため、 **ユーザーの手** や、剣や銃などの **ユーザーの手に保持** されているオブジェクトをレンダリングする場合は、グリップを使用します。 ユーザーが **UI をポイント** しているときなど、コントローラーまたはハンドから raycast する場合は、ポイントアンドポーズを使用します。
 
 **グリップ** にアクセスするには、 [SpatialInteractionSourceState::P R.:: trygetlocation (...)](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourceproperties.trygetlocation#Windows_UI_Input_Spatial_SpatialInteractionSourceProperties_TryGetLocation_Windows_Perception_Spatial_SpatialCoordinateSystem_)を使用します。 次のように定義されています。
-* **グリップの位置** : コントローラーを自然に保持するときのパーム重心。グリップ内の位置を中央に配置するように左右に調整されます。
-* **グリップの向きの右軸** : 手を完全に開いて平らな5本の指を作成した場合 (左側のパームから前方、右側のパームから後方)、
-* **グリップの向きの前方軸** : ハンドを部分的に閉じた場合 (コントローラーを保持している場合と同様)、非表示の指で形成されたチューブを通過する光線。
-* **グリップの向きの上位軸** : 右および順方向の定義によって暗黙的に示される上位軸。
+* **グリップの位置**: コントローラーを自然に保持するときのパーム重心。グリップ内の位置を中央に配置するように左右に調整されます。
+* **グリップの向きの右軸**: 手を完全に開いて平らな5本の指を作成した場合 (左側のパームから前方、右側のパームから後方)、
+* **グリップの向きの前方軸**: ハンドを部分的に閉じた場合 (コントローラーを保持している場合と同様)、非表示の指で形成されたチューブを通過する光線。
+* **グリップの向きの上位軸**: 右および順方向の定義によって暗黙的に示される上位軸。
 
 **ポインター** の [SpatialInteractionSourceState::P R.:: trygetlocation (...):: sourcepointer ポーズ](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation#Windows_UI_Input_Spatial_SpatialInteractionSourceLocation_SourcePointerPose)または [SpatialInteractionSourceState:: trygetlocation ポーズ (...):: Trygetinteractionsourceポーズ](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose#Windows_UI_Input_Spatial_SpatialPointerPose_TryGetInteractionSourcePose_Windows_UI_Input_Spatial_SpatialInteractionSource_)にアクセスできます。
 
@@ -151,8 +151,8 @@ Windows Mixed Reality API は、HoloLens 2 でのように、独自の追跡を�
 
 | 名前 | 説明 |
 |--- |--- |
-|[位置] | 要求されたすべての座標系で使用可能な、ジョイントの3D 位置。 |
-|方向 | 要求されたすべての座標系で使用可能な、ボーンの3D の向き。 |
+|位置 | 要求されたすべての座標系で使用可能な、ジョイントの3D 位置。 |
+|Orientation | 要求されたすべての座標系で使用可能な、ボーンの3D の向き。 |
 |Radius | ジョイント位置のスキンの表面までの距離。 指の幅に依存する直接の対話や視覚エフェクトをチューニングする場合に便利です。 |
 |精度 | この共同の情報についてシステムがどの程度自信を持っているかについてのヒントを提供します。 |
 

@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: 視線、ヘッド見つめ、ヘッドトラッキング、視線追跡、directx、入力、ホログラム
-ms.openlocfilehash: 06f725f3560d2c05e15c2e1362e820262986a192
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 視線、ヘッド・見つめ、ヘッドトラッキング、視線追跡、directx、入力、ホログラム、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
+ms.openlocfilehash: 9ec54f5db33346c499582b54a0b3e36c129bf7ab
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683871"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678081"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>DirectX でのヘッドと視線の入力
 
@@ -47,7 +47,7 @@ Windows Mixed Reality では、ユーザーがどのようなことを確認し�
      <td>✔️</td>
 </tr>
 <tr>
-     <td>アイ視線入力</td>
+     <td>視線</td>
      <td>❌</td>
      <td>✔️</td>
      <td>❌</td>

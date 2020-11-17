@@ -1,18 +1,18 @@
 ---
 title: マルチユーザー機能のチュートリアル - 2. Photon Unity Networking の設定
-description: このコースでは、HoloLens 2 アプリケーション内でマルチユーザー共有エクスペリエンスを実装する方法について学習します。
+description: このコースを完了すると、HoloLens 2 アプリケーション内で Photon Unity Network を実装する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 23498938815bd5bb2e200639ae89c62699a01774
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: aeda463610f1fb1205eade556a2c2b9bc07a4fde
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702209"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353480"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2.Photon Unity Networking の設定
 
@@ -32,7 +32,7 @@ ms.locfileid: "91702209"
 
 このためには、まず「[プロジェクトの初期化と最初のアプリケーションの配置](mr-learning-base-02.md)」に従ってください ([デバイスにアプリケーションをビルドする](mr-learning-base-02.md#building-your-application-to-your-hololens-2)手順は除きます)。これには、次の手順が含まれます。
 
-1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、" *MRTK チュートリアル* " などの適切な名前を付ける
+1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、"*MRTK チュートリアル*" などの適切な名前を付ける
 1. [ビルド プラットフォームを切り替える](mr-learning-base-02.md#configuring-the-unity-project)
 1. [TextMeshPro の重要なリソースをインポートする](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 1. [Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
@@ -48,29 +48,29 @@ ms.locfileid: "91702209"
 
 Unity メニューで **[Edit]\(編集\)**  >  **[Project Settings]\(プロジェクトの設定\)** を選択して、[Player Settings]\(プレーヤーの設定\) ウィンドウを開きます。次に、 **[Player]\(プレーヤー\)**  >   **[Publishing Settings]\(発行の設定\)** セクションを見つけます。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
+![[Player]\(プレーヤー\) 設定が表示された Unity](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-**[Publishing Settings]\(公開の設定\)** で、 **[Capabilities]\(機能\)** セクションまで下にスクロールして、上の「 [Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)」手順で有効にした **InternetClient** 、 **Microphone** 、 **SpatialPerception** 、 **GazeInput** の機能が有効になっていることを再確認します。
+**[Publishing Settings]\(公開の設定\)** で、 **[Capabilities]\(機能\)** セクションまで下にスクロールして、上の「[Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)」手順で有効にした **InternetClient**、**Microphone**、**SpatialPerception**、**GazeInput** の機能が有効になっていることを再確認します。
 
 その後、次の追加機能を有効にします。
 
 * **InternetClientServer** 機能
 * **PrivateNetworkClientServer** 機能
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
+![[Capabilities]\(機能\) 設定が表示された Unity](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
 
 ## <a name="installing-inbuilt-unity-packages"></a>組み込みの Unity パッケージのインストール
 
 Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Package Manager]\(パッケージ マネージャー\)** の順に選択して、[Package Manager]\(パッケージ マネージャー\) ウィンドウを開きます。次に、 **[AR Foundation]** を選択し、 **[Install]\(インストール\)** ボタンをクリックしてパッケージをインストールします。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
+![AR Foundation が選択されている [Package Manager]\(パッケージ マネージャー\) が表示された Unity](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
 
 > [!NOTE]
 > 次のセクションでインポートする Azure Spatial Anchors SDK で必要になるため、AR Foundation パッケージをインストールします。
 
 ## <a name="importing-the-tutorial-assets"></a>チュートリアルのアセットのインポート
 
-次の Unity カスタム パッケージを、 **記載されている順で** ダウンロードして **インポート** します。
+次の Unity カスタム パッケージを、**記載されている順で** ダウンロードして **インポート** します。
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage) (バージョン 2.2.1)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
@@ -79,7 +79,7 @@ Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Package Manager]
 
 チュートリアルのアセットをインポートすると、プロジェクト ウィンドウは次のようになります。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
+![チュートリアルのアセットがインポートされた後の Unity の [Hierarchy]\(階層\)、[Scene]\(シーン\)、[Project]\(プロジェクト\) ウィンドウ](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
 > Unity カスタム パッケージをインポートする方法については、「[Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)」の手順を参照してください。
@@ -93,15 +93,15 @@ Unity メニューで、 **[Window]\(ウィンドウ\)** 、 **[Asset Store]\(�
 
 ダウンロードが完了したら、 **[Import]\(インポート\)** ボタンをクリックして [Import Unity Package]\(Unity パッケージのインポート\) ウィンドウを開きます。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-1.png)
+![[PUN 2 - Free] が表示された [Asset Store]\(アセット ストア\) が表示された Unity](images/mr-learning-sharing/sharing-02-section5-step1-1.png)
 
 [Import Unity Package]\(Unity パッケージのインポート\) ウィンドウで、 **[All]\(すべて\)** ボタンをクリックしてすべてのアセットが選択されていることを確認し、 **[Import]\(インポート\)** ボタンをクリックしてアセットをインポートします。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-2.png)
+![PUN 2 のインポート ウィンドウが表示された Unity](images/mr-learning-sharing/sharing-02-section5-step1-2.png)
 
 Unity でインポート プロセスが完了したら、[Pun Wizard]\(Pun ウィザード\) ウィンドウが表示されて [PUN Setup]\(PUN 設定\) メニューが読み込まれます。今はこのウィンドウを無視するか、閉じて構いません。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-3.png)
+![[PUN Setup]\(PUN 設定\) ウィンドウが表示された Unity](images/mr-learning-sharing/sharing-02-section5-step1-3.png)
 
 ## <a name="creating-the-pun-application"></a>PUN アプリケーションの作成
 
@@ -109,26 +109,26 @@ Unity でインポート プロセスが完了したら、[Pun Wizard]\(Pun ウ�
 
 使用したいアカウントが既にある場合は Photon <a href="https://dashboard.photonengine.com/account/signin" target="_blank">ダッシュボード</a> に移動してサインインします。なければ、 **[こちらから作成してください]** リンクをクリックして手順に従い、新しいアカウントを登録します。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-1.png)
+![Photon ログイン ページ](images/mr-learning-sharing/sharing-02-section6-step1-1.png)
 
 サインインしたら、 **[Create a New App]\(新しいアプリの作成\)** ボタンをクリックします。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-2.png)
+![Photon ダッシュボードの開始ページ](images/mr-learning-sharing/sharing-02-section6-step1-2.png)
 
 [Create a New Application]\(新しいアプリケーションの作成\) ページで、次の値を入力します。
 
 * [Photon Type]\(Photon の種別\) には、[PUN] を選択します
-* [Name]\(名前\) には、適切な名前 ( _MRTK チュートリアル_ など) を入力します
+* [Name]\(名前\) には、適切な名前 (_MRTK チュートリアル_ など) を入力します
 * [Description]\(説明\) には、必要に応じて適切な説明を入力します
 * "URL" フィールドは空のままにします
 
 **[Create]\(作成する\)** をクリックして新しいアプリを作成します。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-3.png)
+![Photon のアプリケーションの作成ページ](images/mr-learning-sharing/sharing-02-section6-step1-3.png)
 
 Photon で作成プロセスが完了すると、新しい PUN アプリがダッシュボードに表示されます。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-4.png)
+![Photon のアプリケーション ページ](images/mr-learning-sharing/sharing-02-section6-step1-4.png)
 
 ## <a name="connecting-the-unity-project-to-the-pun-application"></a>Unity プロジェクトを PUN アプリケーションに接続する
 
@@ -136,7 +136,7 @@ Photon で作成プロセスが完了すると、新しい PUN アプリがダ�
 
 Photon ダッシュボードで、 **"App ID"(アプリ ID)** フィールドをクリックしてアプリ ID を表示し、クリップボードにコピーします。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-1.png)
+![アプリ ID が選択されている Photon アプリケーション ページ](images/mr-learning-sharing/sharing-02-section7-step1-1.png)
 
 Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Photon Unity Networking]**  >  **[PUN Wizard]\(PUN ウィザード\)** を選択して [Pun Wizard]\(Pun ウィザード\) ウィンドウを開き、 **[Setup Project]\(プロジェクトの設定\)** ボタンをクリックして [PUN Setup]\(PUN 設定\) メニューを開いて次のように構成します。
 
@@ -144,11 +144,11 @@ Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Photon Unity Net
 
 **[Setup Project]\(プロジェクトの設定\)** ボタンをクリックしてアプリ ID を適用します。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-2.png)
+![アプリ ID が入力された [PUN Setup]\(PUN 設定\) が表示された Unity](images/mr-learning-sharing/sharing-02-section7-step1-2.png)
 
 Unity で PUN 設定プロセスが完了すると、[PUN Setup]\(PUN 設定\) メニューに **[Done!]\(完了\)** というメッセージが表示され、 [Project]\(プロジェクト\) ウィンドウで **PhotonServerSettings** アセットが自動的に選択され、そのプロパティが [Inspector]\(インスペクター\) ウィンドウに表示されます。
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-3.png)
+![[Setup Project]\(プロジェクトの設定\) が適用された [PUN Setup]\(PUN 設定\) が表示された Unity](images/mr-learning-sharing/sharing-02-section7-step1-3.png)
 
 ## <a name="congratulations"></a>結論
 

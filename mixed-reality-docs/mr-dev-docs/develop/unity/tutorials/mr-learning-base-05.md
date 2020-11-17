@@ -1,18 +1,18 @@
 ---
 title: 入門チュートリアル - 5. ソルバーを使用した動的なコンテンツの作成
-description: このコースでは、Mixed Reality Toolkit (MRTK) を使用して Mixed Reality アプリケーションを作成する方法について説明します。
+description: このコースでは、Mixed Reality Toolkit (MRTK) のソルバーを使用して動的コンテンツを作成する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: c6ddbbd8bb65aa93c80f1e4499e976c7c24af7ec
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 64b5c3c719ce72260a10226d22c178d4016e403b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293217"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353530"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.ソルバーを使用した動的なコンテンツの作成
 
@@ -30,7 +30,7 @@ ms.locfileid: "92293217"
 
  MRTK のソルバーは、MRTK SDK フォルダーにあります。 プロジェクトで使用可能なソルバーを表示するには、[プロジェクト] ウィンドウで、 **[アセット]**  >  **[MRTK]**  >  **[SDK]**  >  **[機能]**  >  **[ユーティリティ]**  >  **[ソルバー]** の順に移動します。
 
-![mr-learning-base](images/mr-learning-base/base-05-section1-step1-1.png)
+![Solvers フォルダーが選択されている Unity プロジェクト ウィンドウ](images/mr-learning-base/base-05-section1-step1-1.png)
 
 このチュートリアルでは、Directional Indicator Solver と Tap To Place Solver の実装方法について説明します。 MRTK で利用可能なすべてのソルバーの詳細については、[MRTK ドキュメント ポータル](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)の[ソルバー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)に関するガイドを参照してください。
 
@@ -41,14 +41,14 @@ ms.locfileid: "92293217"
 
 [プロジェクト] ウィンドウで、 **[アセット]**  >  **[MRTK.Tutorials.GettingStarted]**  >  **[Prefabs]\(プレハブ\)** フォルダーの順に移動し、 **[シェブロン]** プレハブをクリックして [階層] ウィンドウにドラッグします。次に、[変換] の **[位置]** を X = 0, Y = 0, Z = 2 に設定して、RoverExplorer オブジェクトの近くに配置します。
 
-![mr-learning-base](images/mr-learning-base/base-05-section2-step1-1.png)
+![新しく追加したシェブロン プレハブが選択されている Unity](images/mr-learning-base/base-05-section2-step1-1.png)
 
 > [!TIP]
 > シーンに含まれるカメラや他のアイコンがオブジェクトを見にくくしていたり操作の邪魔になったりしている場合は、上の図に示すように、<a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">ギズモをオフに切り替える</a>ことによってこれらを非表示にできます。 ギズモ メニューと、それを使用してシーン ビューを最適化する方法の詳細については、Unity の <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">ギズモ メニュー</a>に関するドキュメントを参照してください。
 
-新しく追加したシェブロン オブジェクトの名前を **Indicator** に変更し、[インスペクター] ウィンドウで **[コンポーネントの追加]** ボタンを使用して、 **DirectionalIndicator** を追加します。
+新しく追加したシェブロン オブジェクトの名前を **Indicator** に変更し、[インスペクター] ウィンドウで **[コンポーネントの追加]** ボタンを使用して、**DirectionalIndicator** を追加します。
 
-![mr-learning-base](images/mr-learning-base/base-05-section2-step1-2.png)
+![DirectionalIndicator ソルバー コンポーネントが追加された Unity](images/mr-learning-base/base-05-section2-step1-2.png)
 
 > [!NOTE]
 > ソルバーを追加する場合 (この例では DirectionalIndicator コンポーネント)、ソルバーで SolverHandler コンポーネントが必要になるため、それが自動的に追加されます。
@@ -59,16 +59,16 @@ ms.locfileid: "92293217"
 DirectionalIndicator および SolverHandler コンポーネントを次のように構成します。
 
 * **SolverHandler** コンポーネントの **[Tracked Target Type]\(追跡対象の種類\)** が **[ヘッド]** に設定されていることを確認します
-* **RoverExplorer** を、[階層] ウィンドウから **[None (Transform)]\(なし (変換)\)** フィールドにドラッグして、 **DirectionalIndicator** コンポーネントの **[Directional Target]\(方向のターゲット\)** に割り当てます
+* **RoverExplorer** を、[階層] ウィンドウから **[None (Transform)]\(なし (変換)\)** フィールドにドラッグして、**DirectionalIndicator** コンポーネントの **[Directional Target]\(方向のターゲット\)** に割り当てます
 * **[View Offset]\(表示オフセット\)** を 0.2 に変更します
 
-![mr-learning-base](images/mr-learning-base/base-05-section2-step1-3.png)
+![DirectionalIndicator ソルバー コンポーネントが構成されている Unity](images/mr-learning-base/base-05-section2-step1-3.png)
 
 [再生] ボタンを押してゲーム モードに入り、マウスの右ボタンを押したままにしてマウスを左右に動かし、視線入力の方向を回転させます。次の点に注意してください。
 
 * RoverExplorer オブジェクトから視線を外すと、Indicator オブジェクトが表示され、RoverExplorer オブジェクトを指します
 
-![mr-learning-base](images/mr-learning-base/base-05-section2-step1-4.png)
+![DirectionalIndicator ソルバーが使用されている Unity 再生モードの分割ビュー](images/mr-learning-base/base-05-section2-step1-4.png)
 
 > [!NOTE]
 > [シーン] ウィンドウにカメラの光線が表示されない場合は、上の図に示すように、ギズモ メニューが有効になっていることを確認してください。
@@ -81,13 +81,13 @@ DirectionalIndicator および SolverHandler コンポーネントを次のよ�
 
 ## <a name="using-the-tap-to-place-solver-to-reposition-objects"></a>Tap to Place Solver を使用してオブジェクトの位置を変更する
 
-[階層] ウィンドウで、RoverExplorer > **RoverAssembly** オブジェクトの順に選択します。次に、[インスペクター] ウィンドウで **[コンポーネントの追加]** ボタンを使用し、 **Tap To Place (Script)** コンポーネントを追加して、次のように構成します。
+[階層] ウィンドウで、RoverExplorer > **RoverAssembly** オブジェクトの順に選択します。次に、[インスペクター] ウィンドウで **[コンポーネントの追加]** ボタンを使用し、**Tap To Place (Script)** コンポーネントを追加して、次のように構成します。
 
 * **SolverHandler** コンポーネントの **[Tracked Target Type]\(追跡対象の種類\)** が **[ヘッド]** に設定されていることを確認します
 * **[Keep Orientation Vertical]\(向きを垂直に保つ\)** チェックボックスをオンにします
 * **[Magnetic Surfaces]\(磁気サーフェス\)**  >  **[Element 0]\(要素 0\)** ドロップダウンから、 **[Spatial Awareness]\(空間認識\)**  以外のすべてのオプションをオフにします
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-1.png)
+![TapToPlace ソルバー コンポーネントが追加されて構成されている Unity](images/mr-learning-base/base-05-section3-step1-1.png)
 
 > [!NOTE]
 > [Magnetic Surfaces]\(磁気サーフェス\) 設定により、オブジェクトを配置するときに Tap To Place (Script) コンポーネントで検出できるオブジェクトが決定します。 この設定を [Spatial Awareness]\(空間認識\) のみに変更することにより、Tap To Place (Script) コンポーネントは、[Spatial Awareness]\(空間認識\) という名前の Unity レイヤーのオブジェクトにのみ Rover を配置できるようになります。この Unity レイヤーは、既定で HoloLens によって生成される空間認識メッシュです。
@@ -99,43 +99,43 @@ DirectionalIndicator および SolverHandler コンポーネントを次のよ�
 
 [階層] ウィンドウで RoverAssembly オブジェクトを選択したまま、[インスペクター] ウィンドウで **On Placing Started ()** イベントを見つけて、 **+** アイコンをクリックし、新しいイベントを追加します。
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-2.png)
+![TapToPlace OnPlacingStarted イベントが追加された Unity](images/mr-learning-base/base-05-section3-step1-2.png)
 
 イベントを次のように構成します。
 
 * **RoverAssembly** オブジェクトを、[階層] ウィンドウから **[None (Object)]\(なし (オブジェクト)\)** フィールドにドラッグして、On Placing Started () イベントのリスナーとして割り当てます
-* **[関数なし]** ドロップダウンから、 **TapToPlace** > **float SurfaceNormalOffset** の順に選択し、イベントがトリガーされたときの SurfaceNormalOffset プロパティ値を更新します
+* **[関数なし]** ドロップダウンから、**TapToPlace** > **float SurfaceNormalOffset** の順に選択し、イベントがトリガーされたときの SurfaceNormalOffset プロパティ値を更新します
 * 引数が **0** に設定されていることを確認します
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-3.png)
+![TapToPlace OnPlacingStarted イベントが構成された Unity](images/mr-learning-base/base-05-section3-step1-3.png)
 
-[階層] ウィンドウの何もない場所を右クリックし、 **[3D オブジェクト]**  >  **[キューブ]** の順に選択して、地面を表す一時オブジェクトを作成し、 **Transform** コンポーネントを次のように構成します。
+[階層] ウィンドウの何もない場所を右クリックし、 **[3D オブジェクト]**  >  **[キューブ]** の順に選択して、地面を表す一時オブジェクトを作成し、**Transform** コンポーネントを次のように構成します。
 
-* **位置** :X = 0、Y = -1.65、Z = 6
-* **回転** :X = 0、Y = 0、Z = 0
-* **スケール** :X = 10、Y = 0.2、Z = 10
+* **位置**:X = 0、Y = -1.65、Z = 6
+* **回転**:X = 0、Y = 0、Z = 0
+* **スケール**:X = 10、Y = 0.2、Z = 10
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-4.png)
+![一時的な地面キューブ オブジェクトが追加されて配置された Unity](images/mr-learning-base/base-05-section3-step1-4.png)
 
 [階層] ウィンドウで一時的な [キューブ] を選択したまま、[インスペクター] ウィンドウの **[レイヤー]** ドロップダウンを使用して、 **[Spatial Awareness]\(空間認識\)** レイヤーのみが含まれるようにキューブのレイヤー設定を変更します。
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-5.png)
+![一時的な地面キューブ オブジェクト レイヤーが空間認識に設定された Unity](images/mr-learning-base/base-05-section3-step1-5.png)
 
 [再生] ボタンを押してゲーム モードに入り、マウスの右ボタンを押したまま、視線入力が RoverAssembly オブジェクトに当たるまでマウスを下方向に移動します。
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-6.png)
+![視線入力 RoverAssembly オブジェクトを含む Unity 再生モードの分割ビュー](images/mr-learning-base/base-05-section3-step1-6.png)
 
 マウスの左ボタンをクリックして、Tap To Place プロセスを開始します。
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-7.png)
+![TapToPlace の配置が開始された Unity 再生モードの分割ビュー](images/mr-learning-base/base-05-section3-step1-7.png)
 
 マウスの右ボタンを押したままにしてマウスを左右に動かし、視線入力の方向を回転させます。適切な位置に配置できたら、マウスの左ボタンをクリックします。
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-8.png)
+![TapToPlace の配置が終了した Unity 再生モードの分割ビュー](images/mr-learning-base/base-05-section3-step1-8.png)
 
 ゲーム モードでの機能のテストが完了したら、キューブ オブジェクトを右クリックし、 **[削除]** を選択して、オブジェクトをシーンから削除します。
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-9.png)
+![一時的な地面キューブが選択されている Unity と [削除] コンテキスト ポップアップ メニュー](images/mr-learning-base/base-05-section3-step1-9.png)
 
 ## <a name="congratulations"></a>結論
 

@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: デプロイ、unity、visual studio、HoloLens、HoloLens 2、イマーシブヘッドセット
-ms.openlocfilehash: 4d145568190ea43cf2ec43442a1c3d5ca4d92251
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: デプロイ、unity、visual studio、HoloLens、HoloLens 2、イマーシブヘッドセット、ベストプラクティス、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、UWP、Visual Studio Tools、Windows SDK
+ms.openlocfilehash: 5e00b24c7a36ae83a281800e2c7d8b2fc377f178
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683242"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678847"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Unity と Visual Studio を使用するためのベスト プラクティス
 
@@ -24,8 +24,8 @@ Unity での .NET スクリプティングバックエンドのサポートは�
 1) 毎回同じディレクトリにプロジェクトをビルドして、インクリメンタルビルドを活用し、ビルド済みのファイルを再利用します。
 2) プロジェクト & ビルドフォルダーに対するマルウェア対策ソフトウェアスキャンを無効にする
    - Windows 10 設定アプリで **ウイルス & 脅威保護** を開く
-   - [ **ウイルス & 脅威保護の設定** ] の下の [ **設定の管理** ] を選択します。
-   - [ **除外** ] セクションで [ **除外の追加または削除** ] を選択します。
+   - [**ウイルス & 脅威保護の設定**] の下の [**設定の管理**] を選択します。
+   - [**除外**] セクションで [**除外の追加または削除**] を選択します。
    - [ **除外の追加** ] をクリックし、Unity プロジェクトコードとビルド出力を含むフォルダーを選択します。
 3) SSD を使用してビルドする
 

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality、デザイン、コントロール、フォント、タイポグラフィ、ui、ux
-ms.openlocfilehash: 21409115ed1e9aa9103e1e77ea4aacc0881e1262
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、デザイン、コントロール、フォント、タイポグラフィ、ui、ux、Mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: 9778b1b11db7ac1c330b0ede4f6153deff45a95a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690031"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677361"
 ---
 # <a name="text-in-unity"></a>Unity のテキスト
 
@@ -98,19 +98,19 @@ Unity の既定のフォントマテリアルでは、オクルージョンは�
 ![オクルージョンサポート付きのシェーダー](images/hug-text-07-1000px.png)<br>
 *オクルージョンサポート付きのシェーダー*
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-これまでに説明した Unity 開発チェックポイントの旅に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。
+私たちが用意した Unity 開発チェックポイント体験に従っている場合、読者は MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素に進むことができます。
 
 > [!div class="nextstepaction"]
 > [音声入力](voice-input-in-unity.md)
 
-または、Mixed Reality プラットフォームの機能と Api に移動します。
+または、Mixed Reality プラットフォームの機能と API に移動します。
 
 > [!div class="nextstepaction"]
 > [共有エクスペリエンス](shared-experiences-in-unity.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks) に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks)に戻ることができます。
 
 
 ## <a name="see-also"></a>関連項目

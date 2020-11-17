@@ -1,24 +1,24 @@
 ---
 title: Holographic Remoting Player
-description: Holographic Remoting Player は、Holographic リモート処理をサポートする PC アプリやゲームに接続するコンパニオンアプリです。 Holographic リモート処理では、Wi-fi 接続を使用して、PC から Microsoft HoloLens にコンテンツを Holographic します。
+description: Holographic Remoting Player は、Holographic リモート処理をサポートする PC アプリやゲームに接続するコンパニオンアプリです。 Holographic リモート処理では、Wi-Fi 接続を使用して、PC から Microsoft HoloLens にコンテンツを Holographic します。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens、リモート処理、Holographic リモート処理
-ms.openlocfilehash: f678931098f6518885a83ea7c06d4e9a3074465c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、診断、パフォーマンス
+ms.openlocfilehash: c65b10079ffbc40602ebbd25b1e493c19b2a6078
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683658"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677931"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting Player
 
 >[!IMPORTANT]
 >HoloLens 2 の Holographic リモート処理は、メジャーバージョンの変更です。 [ **Hololens (第1世代)** のリモートアプリケーション](add-holographic-remoting.md)では、NuGet **パッケージバージョン 1.x** および [ **hololens 2** のリモートアプリケーション](holographic-remoting-create-host.md)を使用する必要が **あります2.x を使用する** 必要があります。 これは、HoloLens 2 用に作成されたリモートアプリケーションが HoloLens (第1世代) と互換性がないことを意味します。
 
-[Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40)は、Holographic リモート処理をサポートする PC アプリやゲームに接続するコンパニオンアプリです。 Holographic リモート処理では、Wi-fi 接続を使用して、PC から Microsoft HoloLens にコンテンツを Holographic します。
+[Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40)は、Holographic リモート処理をサポートする PC アプリやゲームに接続するコンパニオンアプリです。 Holographic リモート処理では、Wi-Fi 接続を使用して、PC から Microsoft HoloLens にコンテンツを Holographic します。
 
 Holographic リモート処理プレーヤーは、特に Holographic リモート処理をサポートするように設計された PC アプリでのみ使用できます。
 
@@ -35,21 +35,21 @@ Holographic リモート処理プレーヤーは、HoloLens (第1世代) と Hol
 
 メイン画面が表示されるたびに、アプリが接続されていないことがわかります。
 
-Holographic remoting 接続は暗号化されて **いない** ことに注意してください。 信頼できる Wi-fi 接続では、常に Holographic リモート処理を使用する必要があります。
+Holographic remoting 接続は暗号化されて **いない** ことに注意してください。 Holographic リモート処理は、信頼できるセキュリティで保護された Wi-Fi 接続で常に使用する必要があります。
 
 ## <a name="quality-and-performance"></a>品質とパフォーマンス
 
 エクスペリエンスの品質とパフォーマンスは、次の3つの要因によって異なります。
-* 実行している **holographic エクスペリエンス** -高解像度または高度なコンテンツをレンダリングするアプリでは、より高速な PC またはより高速なワイヤレス接続が必要になる場合があります。
+* 実行している **holographic エクスペリエンス**-高解像度または高度なコンテンツをレンダリングするアプリでは、より高速な PC またはより高速なワイヤレス接続が必要になる場合があります。
 * **Pc のハードウェア** -pc は、1秒あたり60のフレームで holographic エクスペリエンスを実行およびエンコードできる必要があります。 グラフィックスカードの場合は、一般に、GeForce GTX 970 または AMD Radeon R9 290 以上をお勧めします。 ここでも、特定のエクスペリエンスでは、より高いまたは低いカードが必要になる場合があります。
-* Wi-fi **接続** -holographic エクスペリエンスは wi-fi 経由でストリーミングされます。 低負荷の高速ネットワークを使用して、品質を最大化します。 Wi-fi ではなくイーサネットケーブルで接続されている PC を使用すると、品質が向上する場合もあります。
+* **Wi-Fi 接続** -holographic エクスペリエンスは wi-fi 経由でストリーミングされます。 低負荷の高速ネットワークを使用して、品質を最大化します。 Wi-fi ではなくイーサネットケーブルで接続されている PC を使用すると、品質が向上する場合もあります。
 
 ## <a name="diagnostics"></a>診断
 
 接続の品質を測定するには、Holographic リモート処理プレーヤーのメイン画面で [ **診断の有効化]** を言います。 診断が有効になっている場合、 **HoloLens (第1世代)** で、アプリには次の情報が表示されます。
 
 * **FPS** -リモートプレーヤーが受信して1秒間にレンダリングするレンダリングフレームの平均数。 最適なは 60 FPS です。
-* [ **待機時間** ]-フレームが PC から HoloLens に移動するまでにかかる平均時間。 精度が低下します。 これは、Wi-fi ネットワークに大きく依存します。
+* [**待機時間**]-フレームが PC から HoloLens に移動するまでにかかる平均時間。 精度が低下します。 これは、Wi-Fi ネットワークに大きく依存します。
 
 **HoloLens 2** では、アプリには次のように表示されます。
 
@@ -69,8 +69,6 @@ Holographic remoting 接続は暗号化されて **いない** ことに注意�
 * **Latency** -最後の1秒間の平均待機時間 (ミリ秒)。 このコンテキストでのターンアラウンドとは、hololens の待機/センサーデータを hololens からリモートまたはリモート側に送信してから、HoloLens ディスプレイにそのポーズ/テレメトリデータのビデオフレームを表示するまでの時間を意味します。
 * **破棄されるビデオフレーム** -最後の1秒間に破棄されたビデオフレームの数。接続が確立されたためです。 破棄されるビデオフレームの主な原因は、ビデオフレームが順番に到着せず、既に新しいものが存在するためにその理由を破棄する必要がある場合です。 これは破棄された *フレーム* に似ていますが、リモート処理スタックの下位のレベルにあります。 破棄されたビデオフレームは、ネットワークの状態が非常に悪い場合にのみ必要です。
 
-
-
 メイン画面では、 **[診断を無効** にする] を使用して診断を無効にすることができます。
 
 ## <a name="pc-system-requirements"></a>PC のシステム要件
@@ -78,7 +76,7 @@ Holographic remoting 接続は暗号化されて **いない** ことに注意�
 * GeForce GTX 970 または AMD Radeon R9 290 以上のグラフィックスカードをお勧めします。
 * ワイヤレスホップの数を減らすには、コンピューターをイーサネット経由でネットワークに接続することをお勧めします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 * [HoloLens (第1世代): Holographic リモート処理の追加](add-holographic-remoting.md)
 * [HoloLens 2: Holographic リモート処理リモートアプリの作成](holographic-remoting-create-host.md)
 * [Holographic Remoting ソフトウェア ライセンス条項](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: Windows Mixed Reality, ホログラム, holographic リモート処理, リモートレンダリング, ネットワークレンダリング, HoloLens, リモートホログラム, トラブルシューティング, ヘルプ
-ms.openlocfilehash: 593b242326b83d4596d22a7e1a39ef18c26bc67a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, ホログラム, holographic リモート処理, リモートレンダリング, ネットワークレンダリング, HoloLens, リモートホログラム, トラブルシューティング, ヘルプ, Mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
+ms.openlocfilehash: 9577f9f028987be71fdb9cd839f86980db350f02
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683650"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679581"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Holographic リモート処理のトラブルシューティング
 
@@ -103,7 +103,7 @@ Holographic Remoting を HoloLens 2 に使用する場合、次の Api は現在
 * [SpatialGraphInteropPreview.CreateLocatorForNode](https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createlocatorfornode)
 * [SpatialGraphInteropPreview.TryCreateFrameOfReference](https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.trycreateframeofreference)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 * [Holographic リモート処理のバージョン履歴](holographic-remoting-version-history.md)
 * [Holographic Remoting リモート アプリの作成](holographic-remoting-create-host.md)
 * [カスタム Holographic リモート処理プレーヤーアプリの作成](holographic-remoting-create-player.md)

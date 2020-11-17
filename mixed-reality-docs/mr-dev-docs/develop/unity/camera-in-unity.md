@@ -5,13 +5,13 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、holographic レンダリング、holographic、イマーシブ、フォーカスポイント、深度バッファー、方向専用、位置指定、不透明、透明、クリップ
-ms.openlocfilehash: 7e606232f626c64407ced75481deb3055326f760
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、holographic レンダリング、holographic、イマーシブ、フォーカスポイント、深度バッファー、方向専用、位置指定、不透明、透明、クリップ、混合 reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
+ms.openlocfilehash: c3c470634e2c5c9445ae8c0a29621971de22a92b
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683175"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677621"
 ---
 # <a name="camera-in-unity"></a>Unity のカメラ
 
@@ -67,7 +67,7 @@ HoloLens とイマーシブヘッドセットはどちらも、photons が出力
 
 既定では:
 
-* アプリが特定のフレームに対して深度バッファーを提供する場合、 **イマーシブヘッドセット** は位置の再プロジェクションを実行し、位置と向きの両方で misprediction のホログラムを調整します。  深度バッファーが指定されていない場合、システムは mispredictions の向きのみを修正します。
+* アプリが特定のフレームに対して深度バッファーを提供する場合、**イマーシブヘッドセット** は位置の再プロジェクションを実行し、位置と向きの両方で misprediction のホログラムを調整します。  深度バッファーが指定されていない場合、システムは mispredictions の向きのみを修正します。
 * HoloLens のような **Holographic ヘッドセット** は、アプリが深度バッファーを提供するかどうかに関係なく、位置指定再プロジェクションを実行します。  レンダリングは、実際には安定した背景でスパースになることが多いため、HoloLens で深度バッファーを使用せずに位置指定リポジトリを使用できます。
 
 固定本文でロックされたコンテンツ (360 度のビデオコンテンツなど) を使用して[向きのみのエクスペリエンス](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience)を構築していることがわかっている場合は、HolographicSettings を[HolographicReprojectionMode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html)に設定することによってのみ、Reprojection モードを[ReprojectionMode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html)に明示的に設定できます。
@@ -81,7 +81,7 @@ HoloLens とイマーシブヘッドセットはどちらも、photons が出力
 
 Unity アプリで Windows に深度バッファーを提供するかどうかを設定するには、次のようにします。
 
-1. [ **Edit**  >  **Project settings**  >  **Player**  >  **] ユニバーサル Windows プラットフォーム tab**  >  **XR settings** ] にアクセスします。
+1. [ **Edit**  >  **Project settings**  >  **Player**  >  **] ユニバーサル Windows プラットフォーム tab**  >  **XR settings**] にアクセスします。
 2. [ **Windows Mixed REALITY SDK** ] 項目を展開します。
 3. [ **深度バッファーの共有を有効にする** ] チェックボックスをオンまたはオフにします。  この機能は Unity に追加された後に作成された新しいプロジェクトでは既定でチェックされ、アップグレードされた以前のプロジェクトでは既定でオフになります。
 
@@ -91,19 +91,19 @@ Windows に深度バッファーを指定すると、Windows がメインカメ�
 
 ステップ [バイステップ](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) ガイドに従って Unity プロジェクトに Mixed Reality Toolkit v2 を追加すると、プロジェクトが自動的に構成されます。 また、次のセクションのガイドを使用して、MRTK なしでプロジェクトを手動で構成することもできます。
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-これまでに説明した Unity 開発チェックポイントの旅に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。
+私たちが用意した Unity 開発チェックポイント体験に従っている場合、読者は MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素に進むことができます。
 
 > [!div class="nextstepaction"]
 > [視線入力](gaze-in-unity.md)
 
-または、Mixed Reality プラットフォームの機能と Api に移動します。
+または、Mixed Reality プラットフォームの機能と API に移動します。
 
 > [!div class="nextstepaction"]
 > [共有エクスペリエンス](shared-experiences-in-unity.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks) に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks)に戻ることができます。
 
 ## <a name="see-also"></a>関連項目
 

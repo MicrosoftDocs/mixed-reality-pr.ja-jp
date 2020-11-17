@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 写真、ビデオ、hololens、カメラ、unity、お持ちの場合
-ms.openlocfilehash: dfbbcc21db1247a7250e5049bfd1c4f89976ac15
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+keywords: photo、video、hololens、カメラ、unity、入手、PVC、フォトビデオカメラ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、web カメラ、写真キャプチャ、ビデオキャプチャ
+ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957802"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678601"
 ---
 # <a name="locatable-camera-in-unity"></a>Unity での場所を特定できるカメラ
 

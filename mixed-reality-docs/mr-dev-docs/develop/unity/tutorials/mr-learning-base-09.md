@@ -1,18 +1,18 @@
 ---
 title: 入門チュートリアル - 9. 音声コマンドの使用
-description: Mixed Reality ツールキット (MRTK) を使用して Mixed Reality アプリケーションを作成する方法について学習します。
+description: このコースでは、音声コマンドを Mixed Reality Toolkit (MRTK) とともに使する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: d9ddf3d234b68dfe4ce3ab5c9272566479edd71d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c5d7297b8c8153270cd6ccf40eff64eab4afb49e
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700914"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353510"
 ---
 # <a name="9-using-speech-commands"></a>9.音声コマンドの使用
 
@@ -39,7 +39,7 @@ ms.locfileid: "91700914"
 [階層] ウィンドウで **[MixedRealityToolkit]** オブジェクトを選択し、[インスペクター] ウィンドウで [MixedRealityToolkit] > **[入力]** タブを選択して、次の手順に従います。
 
 * **[Speech]\(音声\)** セクションを展開します
-* **DefaultMixedRealitySpeechCommandsProfile** を複製し、適切な名前 (たとえば、 _GettingStarted_MixedRealitySpeechCommandsProfile_ ) を指定します
+* **DefaultMixedRealitySpeechCommandsProfile** を複製し、適切な名前 (たとえば、_GettingStarted_MixedRealitySpeechCommandsProfile_) を指定します
 * **[Start Behaviour]\(開始動作\)** が **[Auto Start]\(自動開始\)** に設定されていることを確認します
 
 ![音声コマンドを作成する](images/mr-learning-base/base-09-section2-step1-1.png)
@@ -80,7 +80,7 @@ SpeechInputHandler コンポーネントで、小さい **+** アイコンを 3 
 
 **[Element 0]\(要素 0\)** を展開し、次のように構成します。
 
-* **[Keyword]\(キーワード\)** フィールドに「 **Enable Indicator\(インジケーターの有効化\)** 」と入力して、前のセクションで作成した [Enable Indicator]\(インジケーターの有効化\) 音声コマンドを参照します
+* **[Keyword]\(キーワード\)** フィールドに「**Enable Indicator\(インジケーターの有効化\)** 」と入力して、前のセクションで作成した [Enable Indicator]\(インジケーターの有効化\) 音声コマンドを参照します
 * 小さい **+** アイコンをクリックして、イベントを追加します
 * [階層] ウィンドウで、 **[None (Object)]\(なし (オブジェクト)\)** フィールドに **Indicator** オブジェクトを割り当てます
 * **[No Function]\(関数なし\)** ドロップダウンから、 **[GameObject]**  >  **[SetActive (bool)]** の順に選択し、イベントがトリガーされたときに実行するアクションとして、この関数を設定します
@@ -90,7 +90,7 @@ SpeechInputHandler コンポーネントで、小さい **+** アイコンを 3 
 
 **[Element 1]\(要素 1\)** を展開し、次のように構成します。
 
-* **[Keyword]\(キーワード\)** フィールドに「 **Enable Bounding Box\(境界ボックスの有効化\)** 」と入力して、前のセクションで作成した [Enable Bounding Box]\(境界ボックスの有効化\) コマンドを参照します
+* **[Keyword]\(キーワード\)** フィールドに「**Enable Bounding Box\(境界ボックスの有効化\)** 」と入力して、前のセクションで作成した [Enable Bounding Box]\(境界ボックスの有効化\) コマンドを参照します
 * 小さい **+** アイコンをクリックして、イベントを追加します
 * [階層] ウィンドウで、 **[None (Object)]\(なし (オブジェクト)\)** フィールドに **RoverExplorer** オブジェクトを割り当てます
 * **[No Function]\(関数なし\)** ドロップダウンから、 **[BoundingBox]**  >  **[bool enabled]** の順に選択し、イベントがトリガーされたときにこのプロパティ値を更新するようにします
@@ -104,7 +104,7 @@ SpeechInputHandler コンポーネントで、小さい **+** アイコンを 3 
 
 **[Element 2]\(要素 2\)** を展開し、次のように構成します。
 
-* **[Keyword]\(キーワード\)** フィールドに「 **Disable Bounding Box\(境界ボックスの無効化\)** 」と入力して、前のセクションで作成した [Disable Bounding Box]\(境界ボックスの無効化\) コマンドを参照します
+* **[Keyword]\(キーワード\)** フィールドに「**Disable Bounding Box\(境界ボックスの無効化\)** 」と入力して、前のセクションで作成した [Disable Bounding Box]\(境界ボックスの無効化\) コマンドを参照します
 * 小さい **+** アイコンをクリックして、イベントを追加します
 * [階層] ウィンドウで、 **[None (Object)]\(なし (オブジェクト)\)** フィールドに **RoverExplorer** オブジェクトを割り当てます
 * **[No Function]\(関数なし\)** ドロップダウンから、 **[BoundingBox]**  >  **[bool enabled]** の順に選択し、イベントがトリガーされたときにこのプロパティ値を更新するようにします
@@ -125,10 +125,10 @@ SpeechInputHandler コンポーネントで、小さい **+** アイコンを 3 
 
 SpeechInputHandler コンポーネントで、小さい **+** アイコンをクリックしてキーワード要素を追加し、新しく作成された要素を展開して、次のように構成します。
 
-* **[Keyword]\(キーワード\)** フィールドに「 **Enable Tap to Place\(タップの有効化\)** 」と入力して、前のセクションで作成した [Enable Tap to Place]\(タップの有効化\) コマンドを参照します
+* **[Keyword]\(キーワード\)** フィールドに「**Enable Tap to Place\(タップの有効化\)** 」と入力して、前のセクションで作成した [Enable Tap to Place]\(タップの有効化\) コマンドを参照します
 * 小さい **+** アイコンをクリックして、イベントを追加します
 * [階層] ウィンドウで、 **[None (Object)]\(なし (オブジェクト)\)** フィールドにオブジェクト自体 (同じ **RoverAssembly** オブジェクト) を割り当てます
-* **[No Function]\(関数なし\)** ドロップダウンから、 **TapToPlace** >  **[bool enabled]** の順に選択し、イベントがトリガーされたときにこのプロパティ値を更新するようにします
+* **[No Function]\(関数なし\)** ドロップダウンから、**TapToPlace** >  **[bool enabled]** の順に選択し、イベントがトリガーされたときにこのプロパティ値を更新するようにします
 * 引数チェックボックスが **オン** になっていることを確認します
 
 ![探査車アセンブリで音声入力ハンドラーを構成する](images/mr-learning-base/base-09-section3-step1-8.png)

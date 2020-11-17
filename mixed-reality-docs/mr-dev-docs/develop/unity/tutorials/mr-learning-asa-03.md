@@ -1,18 +1,18 @@
 ---
 title: Azure Spatial Anchors チュートリアル - 3. Azure Spatial Anchors の保存、取得、および共有
-description: このコースを完了すると Mixed Reality アプリケーション内に Azure Spatial Anchors を実装する方法を学習できます。
+description: このコースを完了すると Mixed Reality アプリケーション内で Azure Spatial Anchors を保存、取得、共有する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: edbbfa6bb4027e6d0d0d37a46575eafdb1d6e631
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 2fbf9b849cec62c5281396fcb1e2f8e6e26b4621
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700330"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353300"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3.Azure Spatial Anchors の保存、取得、および共有
 
@@ -25,21 +25,21 @@ ms.locfileid: "91700330"
 
 ## <a name="preparing-the-scene"></a>シーンの準備
 
-[階層] ウィンドウで、 **[ButtonParent]** オブジェクトを展開します。 **最後の 4 つの子ボタン** のオブジェクトを選択します。 [インスペクター] ウィンドウで、名前フィールドの横にあるチェックボックスを **オンにして** 、すべてのオブジェクトをアクティブにします。
+[階層] ウィンドウで、 **[ButtonParent]** オブジェクトを展開します。 **最後の 4 つの子ボタン** のオブジェクトを選択します。 [インスペクター] ウィンドウで、名前フィールドの横にあるチェックボックスを **オンにして**、すべてのオブジェクトをアクティブにします。
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-1.png)
+![以前非アクティブだったボタン オブジェクトが選択され、アクティブになった Unity](images/mr-learning-asa/asa-03-section1-step1-1.png)
 
 [階層] ウィンドウで、 **[ButtonParent]** オブジェクトを選択します。 次に、[インスペクター] ウィンドウで **[GridObjectCollection]** コンポーネントを見つけ、 **[Update Collection]\(コレクションの更新\)** ボタンをクリックして、すべての **[ButtonParent]** オブジェクトの子オブジェクトの位置を更新します。
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-2.png)
+![GridObjectCollection コンポーネントが更新された Unity](images/mr-learning-asa/asa-03-section1-step1-2.png)
 
 ## <a name="persisting-azure-spatial-anchors-between-app-sessions"></a>アプリ セッション間での Azure Spatial Anchors の永続化
 
 このセクションでは、Azure Anchor ID を HoloLens のローカル ディスクに保存したり、そこから取得したりする方法について学習します。 これにより、異なるアプリ セッション間で同じアンカー ID の Azure に対してクエリを実行できます。 固定されたホログラムを前のアプリ セッションと同じ場所に配置できるようになります。
 
-[階層] ウィンドウで **[ButtonParent]** オブジェクトを展開し、 **SaveAzureAnchorIdToDisk** と **GetAzureAnchorIdFromDisk** という名前の 2 つのボタンを探します。
+[階層] ウィンドウで **[ButtonParent]** オブジェクトを展開し、**SaveAzureAnchorIdToDisk** と **GetAzureAnchorIdFromDisk** という名前の 2 つのボタンを探します。
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section2-step1-1.png)
+![SaveAzureAnchorIdToDisk と GetAzureAnchorIdFromDisk ボタン オブジェクトが選択されている Unity](images/mr-learning-asa/asa-03-section2-step1-1.png)
 
 前のチュートリアルの [シーンを操作するためのボタンの構成](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene)と同じ手順に従い、 **[Interactable (Script)]** コンポーネントを次の 2 つのボタンそれぞれに対して構成します。
 
@@ -66,9 +66,9 @@ ms.locfileid: "91700330"
 
 Azure Anchor ID をデバイス間で転送するには、[マルチユーザー機能のチュートリアル](mr-learning-sharing-02.md) シリーズで説明されている方法など、さまざまな方法があります。 この例では、デバイス間でアンカー ID をアップロードおよびダウンロードする単純な Web サービスを使用します。
 
-[階層] ウィンドウで、 **[ButtonParent]** オブジェクトを展開します。   **ShareAzureAnchorIdToNetwork** と、 **GetAzureAnchorIdFromNetwork** という名前の 2 つのボタンを見つけます。
+[階層] ウィンドウで、 **[ButtonParent]** オブジェクトを展開します。   **ShareAzureAnchorIdToNetwork** と、**GetAzureAnchorIdFromNetwork** という名前の 2 つのボタンを見つけます。
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section3-step1-1.png)
+![ShareAzureAnchorIdToNetwork と GetAzureAnchorIdFromNetwork ボタン オブジェクトが選択されている Unity](images/mr-learning-asa/asa-03-section3-step1-1.png)
 
 前のチュートリアルの [シーンを操作するためのボタンの構成](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene)と同じ手順に従い、 **[Interactable (Script)]** コンポーネントを次の 2 つのボタンそれぞれに対して構成します。
 

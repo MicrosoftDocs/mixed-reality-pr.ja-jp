@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, 空間入力, レンダリング, スワップチェーン, holographic フレーム, 更新ループ, ゲームループ, 参照のフレーム, locatability, サンプルコード, チュートリアル
-ms.openlocfilehash: d96362e7d5795449b608196e52bce55d0f16625b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、HolographicSpace、CoreWindow、空間入力、レンダリング、スワップチェーン、holographic frame、update loop、game loop、reference of reference、locatability、sample code、チュートリアル、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット
+ms.openlocfilehash: fa2c64901a7c4a09710a472509441d54a9e3a383
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685922"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679641"
 ---
 # <a name="getting-a-holographicspace"></a>HolographicSpace を入手する
 

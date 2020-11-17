@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens、リモート処理、Holographic リモート処理
-ms.openlocfilehash: 51e9125ab5baee63ca193c6a75701b6dda9a16cb
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: HoloLens、リモート処理、Holographic リモート処理、NuGet、アプリケーションマニフェスト、プレーヤーコンテキスト、リモートアプリ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
+ms.openlocfilehash: f55973e74abc60f62599375aebf278224865a5c1
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683198"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677921"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>カスタム Holographic リモート処理プレーヤーアプリの作成
 
@@ -22,7 +22,7 @@ ms.locfileid: "92683198"
 
 Holographic リモート処理プレーヤーを使用すると、アプリは、デスクトップ PC または、Xbox One などの UWP デバイスで [レンダリング](rendering.md) された Holographic コンテンツを表示して、より多くのシステムリソースにアクセスできるようになります。 Holographic Remoting player アプリは、入力データを Holographic リモート処理リモートアプリケーションにストリーミングし、ビデオとオーディオストリームとしてイマーシブビューを受信します。 接続は標準の Wi-fi を使用して行われます。 プレーヤーアプリを作成するには、NuGet パッケージを使用して Holographic Remoting を UWP アプリに追加し、接続を処理し、イマーシブビューを表示するコードを記述します。 
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 開始点としては、既に Windows Mixed Reality API を対象としている、動作する DirectX ベースの UWP アプリを使用することをお勧めします。 詳細については、「 [DirectX 開発の概要](../native/directx-development-overview.md)」を参照してください。 既存のアプリがなく、最初から開始する場合は、 [C++ holographic プロジェクトテンプレート](../native/creating-a-holographic-directx-project.md) を開始することをお勧めします。
 
@@ -35,8 +35,8 @@ Visual Studio で NuGet パッケージをプロジェクトに追加するに�
 1. Visual Studio でプロジェクトを開きます。
 2. プロジェクトノードを右クリックし、[ **NuGet パッケージの管理...** ] を選択します。
 3. 表示されるパネルで、[ **参照** ] をクリックし、"Holographic Remoting" を検索します。
-4. [ **Holographic** ] を選択し **、最新の** 2.x バージョンを選択して [ **インストール** ] をクリックします。
-5. [ **プレビュー** ] ダイアログが表示されたら、[ **OK** ] をクリックします。
+4. [ **Holographic**] を選択し **、最新の** 2.x バージョンを選択して [ **インストール**] をクリックします。
+5. [ **プレビュー** ] ダイアログが表示されたら、[ **OK**] をクリックします。
 6. 次に表示されるダイアログは、使用許諾契約書です。 [ **同意** する] をクリックして、使用許諾契約書に同意します。
 
 >[!IMPORTANT]
@@ -46,7 +46,7 @@ Visual Studio で NuGet パッケージをプロジェクトに追加するに�
 
 NuGet パッケージによって追加された Microsoft.Holographic.AppRemoting.dll をアプリケーションが認識できるようにするには、次の手順をプロジェクトで実行する必要があります。
 
-1. ソリューションエクスプローラーで **package.appxmanifest** ファイルを右クリックし、[ **プログラムから開く** ] を選択します。
+1. ソリューションエクスプローラーで **package.appxmanifest** ファイルを右クリックし、[**プログラムから開く**] を選択します。
 2. **XML (テキスト) エディター** を選択し、[OK] をクリックします。
 3. 次の行をファイルに追加して保存します。
 ```xml

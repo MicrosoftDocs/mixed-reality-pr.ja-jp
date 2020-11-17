@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: 共有、アンカー、WorldAnchor、MR 共有250、WorldAnchorTransferBatch、SpatialPerception、Azure、Azure 空間アンカー、ASA
-ms.openlocfilehash: 324aecdc89b4996625ce93514616c32d2d064ffa
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 共有、アンカー、WorldAnchor、MR 共有250、WorldAnchorTransferBatch、SpatialPerception、Azure、Azure 空間アンカー、ASA、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
+ms.openlocfilehash: c9f432a2ef26e28a2329f9fd191f680a4148ca7e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684807"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678461"
 ---
 # <a name="shared-experiences-in-unity"></a>Unity での共有エクスペリエンス
 
@@ -31,19 +31,19 @@ Azure 空間アンカーを使用して実行した後は、 <a href="https://do
 
 Azure 空間アンカーを使用できない場合、 [ローカルアンカー転送](../../out-of-scope/local-anchor-transfers-in-unity.md) では、1つの hololens デバイスが2つ目の hololens デバイスによってインポートされるアンカーをエクスポートできるようにします。  このアプローチでは、Azure 空間アンカーよりも堅牢なアンカーの再呼び出しが可能であり、iOS デバイスと Android デバイスはこの方法ではサポートされていないことに注意してください。
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
 ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality プラットフォームの機能と Api の調査が途中で終了しています。 ここから、次のトピックに進むことができます。
 
 > [!div class="nextstepaction"]
 > [場所を特定できるカメラ](locatable-camera-in-unity.md)
 
-または、デバイスまたはエミュレーターへのアプリのデプロイに直接移動します。
+または、デバイスまたはエミュレーターへのアプリの配置操作に直接移動します。
 
 > [!div class="nextstepaction"]
 > [HoloLens または Windows Mixed Reality イマーシブヘッドセットへのデプロイ](../platform-capabilities-and-apis/using-visual-studio.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-platform-capabilities-and-apis) に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-platform-capabilities-and-apis)に戻ることができます。
 
 ## <a name="see-also"></a>関連項目
 * [複合現実での共有エクスペリエンス](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)

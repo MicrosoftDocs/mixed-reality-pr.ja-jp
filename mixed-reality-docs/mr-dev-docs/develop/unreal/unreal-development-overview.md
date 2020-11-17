@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, ストリーミング, リモート処理, Mixed Reality, 開発, 入門, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 特徴, ホログラム, ゲームの開発
-ms.openlocfilehash: 25842fb8083b7757e73e7dbe7551b6bde9d8d95e
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: a8e345831167362745a45a8fa81ddae858083ca7
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638589"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340690"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開発の概要
 
@@ -45,7 +45,7 @@ Unreal 開発が初めての場合は、よくわからないまま開始しな�
 
 |  Checkpoint  |  結果  |
 | --- | --- |
-| [最新のツールをインストールする](../install-the-tools.md) | 最新の Unity パッケージをダウンロードしてインストールし、Mixed Reality 用のプロジェクトをセットアップできます |
+| [最新のツールをインストールする](../install-the-tools.md) | 最新のバージョンの Unreal Engine をダウンロードしてインストールし、Mixed Reality 用のプロジェクトをセットアップできます |
 | [HoloLens 2 チュートリアル シリーズ](tutorials/unreal-uxt-ch1.md) | HoloLens 2 ハードウェア向けの初級レベルの MRTK チュートリアルを確認できます |
 
 ### <a name="2-core-building-blocks"></a>2. コア構成要素

@@ -5,21 +5,21 @@ author: hamalawi
 ms.author: moelhama
 ms.date: 11/10/2020
 ms.topic: article
-keywords: HoloLens、エミュレーター、ビルド、バージョン
-ms.openlocfilehash: c80017fcad1d79080b0782cc6c580d788c229748
-ms.sourcegitcommit: c300518d76e5723a46729bc02d65bcb5293cf2b1
+keywords: HoloLens、エミュレーター、ビルド、バージョン、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット、アーカイブ
+ms.openlocfilehash: e6030328a85525851fa8f4f5129f4544a3136b68
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94447068"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679561"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 エミュレーターアーカイブ
 
 HoloLens Emulator (第1世代) と HoloLens 2 エミュレーターは、サイドバイサイドでのインストールを行います。 一般に、使用可能な最新のビルドを使用することをお勧めしますが、古いエミュレーターに対してアプリをテストする必要がある場合もあります。 このページには、リリースされたバージョンへのリンクが含まれています。
 
-|  ビルド |  リリース日 |  Notes |
+|  ビルド |  リリース日 |  メモ |
 |----------|----------|----------|
-|  [HoloLens 2 Emulator ビルド10.0.18362.1081](https://go.microsoft.com/fwlink/?linkid=2148612) | 2020年11月10日 | Windows Holographic、バージョン 1903 11 月2020更新プログラム。  HoloLens 2 の一般的なリリースノートについては、「」を参照してください。 https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator ビルド10.0.18362.1081](https://go.microsoft.com/fwlink/?linkid=2148612) | 2020 年 11 月 10 日 | Windows Holographic、バージョン 1903 11 月2020更新プログラム。  HoloLens 2 の一般的なリリースノートについては、「」を参照してください。 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator ビルド10.0.19041.1124](https://go.microsoft.com/fwlink/?linkid=2145829) | 2020 年 10 月 13 日 | Windows Holographic、バージョン 2004 10 月2020更新プログラム。  HoloLens 2 の一般的なリリースノートについては、「」を参照してください。 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator ビルド10.0.18362.1081](https://go.microsoft.com/fwlink/?linkid=2145828) | 2020 年 10 月 13 日 | Windows Holographic、バージョン 1903 10 月2020更新プログラム。  HoloLens 2 の一般的なリリースノートについては、「」を参照してください。 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator ビルド10.0.19041.1117](https://go.microsoft.com/fwlink/?linkid=2141987) | 2020年9月7日 | Windows Holographic、バージョン 2004 9 月2020更新プログラム。  HoloLens 2 の一般的なリリースノートについては、「」を参照してください。 https://docs.microsoft.com/hololens/hololens-release-notes |
@@ -46,7 +46,7 @@ HoloLens Emulator (第1世代) と HoloLens 2 エミュレーターは、サイ�
 
 ## <a name="hololens-emulator-1st-gen-archive"></a>HoloLens Emulator (第1世代) アーカイブ
 
-|  ビルド |  リリース日 |  Notes |
+|  ビルド |  リリース日 |  メモ |
 |----------|----------|----------|
 |  [HoloLens Emulator ビルド10.0.17763.134](https://go.microsoft.com/fwlink/?linkid=2065980) | 2018 年 11 月 19 日 | 最新の HoloLens (第1世代) ビルド。 Windows 10 10 月2018更新プログラム。 |
 |  [HoloLens Emulator ビルド10.0.17134.80](https://go.microsoft.com/fwlink/?linkid=874531) | 2018 年 5 月 21 日 |

@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 検出, 配布, インデックス, ランディング ページ, 設計, 開発, チュートリアル, サンプル アプリ, 基本事項, ケース スタディ, リソース, HoloLens の使い方, オープン ソース プロジェクト
-ms.openlocfilehash: 34c78c277e0b184c0421c2bdd56ef13411a5bf29
-ms.sourcegitcommit: bd359c269add7ac76f0c2c26ca7caedba14749b1
+ms.openlocfilehash: 7c8fc83fd2b5542909fd2ea6ab4dca288175c56c
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94417837"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631520"
 ---
 # <a name="get-started-with-mixed-reality"></a>Mixed Reality の概要
 
@@ -143,11 +143,6 @@ Mixed Reality を初めて使用する場合は、最下層から初めて、中
 
 <br>
 
-
 >[!IMPORTANT]
 >このサイトで提供されるすべての複合現実の開発に関する資料は参照のみを目的としています。 アプリケーションとその使用法およびエンド ユーザーに与える影響は、アプリケーション開発者としてお客様に責任があるものとし、これには、アプリがエンド ユーザーに対して不快感、傷害、またはその他の害をもたらしたりするものではないことや適切な警告文および免責文を含むことが含まれます。 お客様は、自分のアプリケーションが安全であり、「[Microsoft とのアプリ開発者契約](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement)」のすべての責務を満たしていることを保証するために、アプリケーションの開発と発行において常に適切な手順を踏む必要があります。
 
-## <a name="see-also"></a>関連項目
-* [イマーシブ ヘッドセット ハードウェアの詳細](immersive-headset-hardware-details.md)
-* [コミュニティ リソース](community.md)
-* [VR 技術者向けガイド](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/)

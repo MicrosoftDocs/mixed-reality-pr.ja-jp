@@ -6,6 +6,8 @@
   href: hologram.md
 - name: デザイン プロセスを展開する
   href: case-study-expanding-the-design-process-for-mixed-reality.md
+- name: 導入事例の概要
+  href: case-studies-overview.md
 - name: HoloLens ハードウェア
   items:
     - name: HoloLens 2 ハードウェアの詳細

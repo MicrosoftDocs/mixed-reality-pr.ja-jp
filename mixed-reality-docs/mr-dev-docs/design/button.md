@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Mixed Reality、コントロール、対話、ui、ux
-ms.openlocfilehash: 150edca67e0115ab6f06165974c00266155765c2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合現実、コントロール、相互作用、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、ボタン
+ms.openlocfilehash: c5e52bef8604ba4874b7f4b055107ec0db6b3683
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686207"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702858"
 ---
 # <a name="button"></a>Button
 

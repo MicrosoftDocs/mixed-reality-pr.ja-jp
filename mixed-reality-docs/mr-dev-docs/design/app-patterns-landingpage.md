@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
-keywords: UX デザイン, Mixed Reality UX, UX, アプリパターン, コントロール, スタイル, HoloLens, 相互作用, 空間対話, 空間 UI, UX 要素, 動作, 構成要素, タイポグラフィ, 色
-ms.openlocfilehash: c070d05f40cb3bf0376809fd684a05fd74f86fd5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: UX デザイン, Mixed Reality UX, UX, アプリパターン, コントロール, スタイル, HoloLens, 相互作用, 空間対話, 空間 UI, UX 要素, 動作, 構成要素, タイポグラフィ, 色, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想 reality ヘッドセット, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: c75856362f0e68eba2736105c028bff736c5932c
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685210"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703138"
 ---
 # <a name="ux-elements-overview"></a>UX 要素の概要
 ## <a name="foundational-elements"></a>基本要素

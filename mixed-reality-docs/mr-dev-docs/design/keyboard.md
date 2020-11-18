@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Mixed Reality、コントロール、対話、ui、ux
-ms.openlocfilehash: 9558cd607d7b696851660f495de7965348f571e1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合現実、コントロール、相互作用、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、キーボード、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: 52555dec04b42b7865e8d358d57cbc9112a7a326
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684154"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703148"
 ---
 # <a name="keyboard"></a>キーボード
 
@@ -32,7 +32,7 @@ Mixed reality アプリケーションは、いつでもシステムキーボー
 
 ---
 
-## <a name="next-development-checkpoint"></a>次回の開発チェックポイント
+## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
 これまでに説明した Unity 開発チェックポイントの旅に従っている場合、次のタスクは、アプリケーションをデバイスまたはエミュレーターにデプロイすることです。 
 

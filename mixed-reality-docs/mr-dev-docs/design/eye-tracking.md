@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: 視線追跡、mixed reality、インプット、視線、調整
-ms.openlocfilehash: 20e76188c6b64776d818f340f6aca0a725454dd8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 視線追跡、mixed reality、インプット、視線、調整、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、インテント、アクション
+ms.openlocfilehash: c6167fc48a98de8f400400475c2057a2b4773b29
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685087"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702588"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2 上の視線追跡
 
@@ -37,7 +37,7 @@ HoloLens 2 では、開発者がユーザーの注目に関する情報を使用
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
 </tr>
 <tr>
-     <td>アイ視線入力</td>
+     <td>視線</td>
      <td>❌</td>
      <td>✔️</td>
      <td>❌</td>

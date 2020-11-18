@@ -4,13 +4,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
-keywords: Mixed Reality、HoloLens、UI コントロール、相互作用、ui、ux、UX デザイン、空間 UI、空間相互作用、3D UI、3D UX
-ms.openlocfilehash: 2c811edc14fbcc7c917fe9fa724f1cab23179a96
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality、HoloLens、UI コントロール、相互作用、UI、ux、UX デザイン、空間 UI、空間相互作用、3D UI、3D UX、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: ec887f73b8561e0a91740d612227411683707364
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686090"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703298"
 ---
 # <a name="spatial-mesh"></a>空間メッシュ
 
@@ -26,11 +26,11 @@ ms.locfileid: "91686090"
 ## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 用の MRTK (Mixed Reality Toolkit) での空間メッシュの視覚化
 MRTK には、空間メッシュの視覚化に関するいくつかの素材が用意されています。
 
-- **MRTK_Wireframe、MRTK_Wireframe ます** 。既定の静的な空間メッシュマテリアルは、アニメーションを使用せずにメッシュのアウトラインを示します。 この資料は、空間メッシュジオメトリ全体を示すため、デバッグのために役立ちます。 ただし、運用環境では推奨されません。
+- **MRTK_Wireframe、MRTK_Wireframe ます**。既定の静的な空間メッシュマテリアルは、アニメーションを使用せずにメッシュのアウトラインを示します。 この資料は、空間メッシュジオメトリ全体を示すため、デバッグのために役立ちます。 ただし、運用環境では推奨されません。
 <br>
 <img src="images/SurfaceReconstruction.jpg" alt="Wireframe spatial mesh visualization" width="640px">
 
-- **MRTK_SurfaceReconstruction** : この資料では、空間メッシュにアニメーション化されたパルス効果を提供します。 このマテリアルを使用して、特定の時点で、またはユーザーのエアタップ入力で環境を視覚化できます。 例については、「 **PulseShaderExamples** シーン」を参照してください。
+- **MRTK_SurfaceReconstruction**: この資料では、空間メッシュにアニメーション化されたパルス効果を提供します。 このマテリアルを使用して、特定の時点で、またはユーザーのエアタップ入力で環境を視覚化できます。 例については、「 **PulseShaderExamples** シーン」を参照してください。
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
 * 詳細については、「 [Mrtk-空間認識](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) 」と「 [Mrtk-Pulse シェーダー](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html) 」を参照してください。

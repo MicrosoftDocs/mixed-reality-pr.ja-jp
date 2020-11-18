@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
-keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、Home、Custom Environment、地名、崖ハウス、skyloft、user、create
-ms.openlocfilehash: 69fac9fcc0b3d7f199f4277c5d1b5a0c7df5f8c2
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、Home、Custom Environment、地名、崖ハウス、skyloft、user、create、Mixed reality ヘッドセット、windows Mixed reality ヘッドセット、Virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: 3b5862c6ba4ec1a0549b751cf2982247b6501201
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781531"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703018"
 ---
 # <a name="design-your-own-immersive-environments"></a>独自のイマーシブ環境を設計する
 
@@ -96,7 +96,7 @@ Windows Mixed Reality では、環境の読み込み時間を大幅に短縮す�
 
 現在、コンバーターでは、最適化の正確な動作を調整するための多数のフラグがサポートされています。 最良の結果を得るには、次のフラグを使用してを実行することをお勧めします。
 
-フラグ|推奨値|説明
+フラグ|推奨値|[説明]
 ---|---|---
 -max-テクスチャ-サイズ|1024または2048| テクスチャの品質を向上させるためにこれを微調整します。既定値は512x512 です。 大きな値を指定すると、環境のファイルサイズに大きく影響するため、256 mb の制限を考慮してください。
 -最小バージョン|1803|カスタム環境は、windows >= 1803 のバージョンでのみサポートされています。 このフラグは、古いバージョンのテクスチャを削除し、最終的な資産のファイルサイズを縮小します

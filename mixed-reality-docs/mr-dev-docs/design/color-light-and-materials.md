@@ -5,15 +5,15 @@ author: mavitazk
 ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、デザイン、カラー、ライト、素材
-ms.openlocfilehash: 76237b1b08df98850a4989987ed608dae29b6b5c
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Windows Mixed Reality、デザイン、カラー、ライト、マテリアル、Mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: 9333be5316f5b3ba317aac3ef8591c0dd65370d4
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683218"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702788"
 ---
-# <a name="color-light-and-materials"></a>色、ライト、マテリアル
+# <a name="color-light-and-materials"></a>色、光、マテリアル
 ![色、ライト、マテリアル](images/RemoteRendering.jpg)
 
 Mixed Reality のコンテンツの設計では、エクスペリエンスで使用される各ビジュアル資産の色、ライト、マテリアルを慎重に検討する必要があります。 これらの決定は、明るい色や素材を使用したイマーシブ環境の雰囲気の設定、機能の目的 (たとえば、よりよくある行動をユーザーに警告するための照明色の使用など) の両方に適しています。 これらの各決定は、エクスペリエンスのターゲットデバイスの機会と制約に照らし合わせて検討する必要があります。
@@ -43,7 +43,7 @@ Holographic ヘッドセットで holographic エクスペリエンスをテス�
 
 * **色の統一性** -通常、ホログラムは、背景に関係なくカラーの統一性を維持するために十分な明るい色で表示されます。 大きな領域が blotchy になる可能性があります。 明るい、純色の大きな領域は避けてください。
 
-* 色 **域** -HoloLens は、概念的には Adobe RGB に似ています。 その結果、色によっては、デバイス内のさまざまな品質と表現が表示されることがあります。
+* 色 **域**-HoloLens は、概念的には Adobe RGB に似ています。 その結果、色によっては、デバイス内のさまざまな品質と表現が表示されることがあります。
 
 * **ガンマ** -レンダリングされるイメージの明るさとコントラストは、イマーシブデバイスと holographic デバイスで異なります。 多くの場合、これらのデバイスの違いは、色や影の暗い領域を作成したり、明るくしたりするように見えます。
 

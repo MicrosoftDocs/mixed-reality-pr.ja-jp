@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: hakons
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、HoloLens、RoboRaid、空間サウンド
-ms.openlocfilehash: 1482c914d261cae698a1460873b217b0683cd16b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、HoloLens、RoboRaid、空間サウンド、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、cpu
+ms.openlocfilehash: ceb914c613d1b9558336c3775aa0f90e9bcffa65
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685146"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702808"
 ---
 # <a name="case-study---using-spatial-sound-in-roboraid"></a>ケーススタディ-RoboRaid での空間サウンドの使用
 

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: 座標系、空間座標系、方向専用、取り付けられているスケール、継続スケール、ルームスケール、ワールドスケール、360度、取り付けられている、室内、部屋、世界、スケール、位置、向き、固定、接続済み、ステージ、アンカー、空間アンカー、ワールドロック、ワールドロック、ボディロック、ボディロック、境界、永続化、共有、追跡損失、クラウド空間アンカー
-ms.openlocfilehash: bf7641d13302620a32aac260332c3be694ea324b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 座標系、空間座標系、方向専用、取り付けられたスケール、拡大/縮小、ルームスケール、ワールドスケール、360度、取り付けられている、静止した部屋、ワールド、スケール、位置、向き、固定、接続、ステージ、アンカー、空間アンカー、ワールドロック、ワールドロック、本文ロック、ボディロック、境界、永続化、共有、紛失の追跡、クラウド空間アンカー、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のケースキット、HoloLens、MRTK
+ms.openlocfilehash: afffffae5d23309b2ab9124b9f74b7818fd4adf6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686162"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702538"
 ---
 # <a name="coordinate-systems"></a>座標系
 
@@ -139,7 +139,7 @@ Holographic [レンダリング](../develop/platform-capabilities-and-apis/rende
 
 イマーシブヘッドセットでの拡大/縮小を実現し、継続的な **スケールエクスペリエンス** を構築するには、 **参照のステージフレーム** を使用できます。
 
-**ルームスケールエクスペリエンス** を提供するために、事前に定義された5メートルの境界内にユーザーが移動できるようにするには、 **ステージの境界** も確認します。
+**ルームスケールエクスペリエンス** を提供するために、事前に定義された5メートルの境界内にユーザーが移動できるようにするには、**ステージの境界** も確認します。
 
 ### <a name="stage-frame-of-reference"></a>参照のステージフレーム
 

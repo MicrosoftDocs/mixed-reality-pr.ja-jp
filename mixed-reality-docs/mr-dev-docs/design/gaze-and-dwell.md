@@ -1,25 +1,25 @@
 ---
-title: 熟考
+title: 視線入力とドウェル
 description: (視線/ヘッド) の宝石と熟考入力モデルの一般的な概要
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: Mixed Reality、宝石、熟考、相互作用、設計、視線追跡、ヘッドトラッキング
-ms.openlocfilehash: ee8b6487079a071fe84606949314f2dd315df45f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality、宝石、熟考、相互作用、設計、視線追跡、ヘッド追跡、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: d47401b65f7d62e1fe59655c42efe72ac68acfc6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686978"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702198"
 ---
-# <a name="gaze-and-dwell"></a>熟考
+# <a name="gaze-and-dwell"></a>視線入力とドウェル
 
 工具や部品で手がふさがっていると、ジェスチャは面倒であったりできなかったりすることがあります。
 また、音声コマンドは特定のコンテキストでは信頼できない場合もあります。たとえば、非常に大きな条件が発生した場合などです。
 宝石と熟考は、HoloLens でのヘッドアップとハンズフリーの作業を行うための使い慣れた、簡単なマスタメカニズムを提供します。
 また、宝石と熟考は、運用環境でのノイズ干渉や無音の制約に依存しない優れたフォールバックです。
-_熟考_ と [熟考](gaze-and-dwell-head.md)の2つのバリエーションと、 [視線と熟考](gaze-and-dwell-eyes.md)を区別しています。
+_熟考_ と [熟考](gaze-and-dwell-head.md)の2つのバリエーションと、[視線と熟考](gaze-and-dwell-eyes.md)を区別しています。
 
 ## <a name="scenarios"></a>シナリオ
 

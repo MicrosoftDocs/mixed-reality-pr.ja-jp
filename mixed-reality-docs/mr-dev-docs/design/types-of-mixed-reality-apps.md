@@ -1,19 +1,19 @@
 ---
-title: 複合現実アプリの種類
+title: Mixed reality アプリの種類
 description: Windows Mixed Reality のアプリを開発する利点の1つは、完全なイマーシブ、仮想環境から、ユーザーの現在の環境を介して情報を重ねることができます。
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、アプリパターン
-ms.openlocfilehash: 5d2fa3a5d83f878009f4574c3468719c9af17014
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、設計、アプリパターン、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens
+ms.openlocfilehash: 17ae6b2ec8d9c67d2b6f0114535fc25c1cb487b2
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685994"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703218"
 ---
-# <a name="types-of-mixed-reality-apps"></a>複合現実アプリの種類
+# <a name="types-of-mixed-reality-apps"></a>Mixed reality アプリの種類
 
 Windows Mixed Reality 用アプリを開発する利点の 1 つは、プラットフォームでサポートできるエクスペリエンスの広さです。 完全にイマーシブな仮想環境から、ユーザーの現在の環境に重ねて表示されるちょっとした情報まで、Windows Mixed Reality では、エクスペリエンスを実現するための堅牢な一連のツールが提供されています。 アプリ作成者は、開発プロセスの早い段階で、経験がある場所について理解しておくことが重要です。 この決定は、最終的にアプリのデザインの構造と開発のための技術的なパスの両方に影響します。
 

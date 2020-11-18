@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/07/2019
 ms.topic: article
-keywords: 空間サウンド、サラウンドサウンド、3d オーディオ、3d サウンド、空間オーディオ
-ms.openlocfilehash: fb3517307dccd7e41c39c012c69f1e1d141fa218
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 空間サウンド, サラウンドサウンド, 3d オーディオ, 3d サウンド, 空間オーディオ, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, MRTK, Mixed Reality ツールキット, ケーススタディ, acoustics
+ms.openlocfilehash: 50a5b4a634eec5a326158975f70fa385ce7af6a8
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686055"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703258"
 ---
 # <a name="audio-in-mixed-reality"></a>混合現実のオーディオ
 オーディオは、混合現実の設計と生産性の重要な部分です。 サウンドは次のとおりです。
@@ -91,7 +91,7 @@ Windows の HRTFs のサポートは、次のサードパーティのオーデ�
 * [Unity オーディオエンジンプラグイン](../develop/unity/spatial-sound-in-unity.md)
 * [Wwise なオーディオエンジンプラグイン](https://www.audiokinetic.com/products/plug-ins/msspatial/)
 
-## <a name="acoustics"></a>Acoustics
+## <a name="acoustics"></a>音響
 空間オーディオは、方向よりも大きくなります。 その他のディメンションには、遮蔽、障害、リバーブ、portalling、ソースモデリングなどがあります。 これらのディメンションをまとめて、 *acoustics* と呼びます。 Acoustics を使用しない場合、spatialized は認識できない距離になります。
 
 Acoustics は単純なものから非常に複雑なものまでの範囲です。 任意のオーディオエンジンでサポートされている簡単なリバーブを使用して、spatialized サウンドをリスナーの環境にプッシュできます。 [Project Acoustics](https://aka.ms/acoustics)などの Acoustics システムでは、より豊富で説得力の高い Acoustics 処理が提供されています。 プロジェクト Acoustics は、壁、ドア、およびその他のシーンジオメトリの効果をサウンドでモデル化できます。 これは、開発時に関連するシーンジオメトリが既知の場合に有効なオプションです。

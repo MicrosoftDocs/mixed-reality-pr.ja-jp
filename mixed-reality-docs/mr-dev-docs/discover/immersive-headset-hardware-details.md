@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: vr、ハードウェア、仕様、仕様、技術、センサー、光学、ディスプレイ
-ms.openlocfilehash: 0e700ca95cb62b0909cf0ac434712b9690ec9571
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: vr, ハードウェア, 仕様, 仕様, 技術, センサー, 光学, ディスプレイ, mixed reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, イマーシブヘッドセット
+ms.openlocfilehash: 6f4be5954c8a8fe8ca0497d1a1c5d9ed09edb0c7
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631460"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703438"
 ---
 # <a name="immersive-headset-hardware-details"></a>イマーシブ ヘッドセット ハードウェアの詳細
 

@@ -5,13 +5,13 @@ author: mrwied
 ms.author: jonwie
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、概要、ガイダンス
-ms.openlocfilehash: 114a3808d57b2bd78044ce743d568bd5effe25bb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、設計、導入、ガイダンス、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、ux、リソース
+ms.openlocfilehash: 88e6b5866201a6ef116710b2b7b7c6af3a6ea5d3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685290"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703078"
 ---
 # <a name="about-this-design-guidance"></a>この設計ガイダンスについて
 
@@ -34,11 +34,11 @@ ms.locfileid: "91685290"
 * **[中核となる概念](core-concepts-landingpage.md)** -お使いの快適さ、holographic フレーム、空間マッピング、およびその他の重要な概念について説明します。
 * **[相互作用モデル](interaction-fundamentals.md)** -このガイダンスは、3つの主要な相互作用モデルを中心に構成されています。
 * **[UX 要素](app-patterns-landingpage.md)** -コントロールとビヘイビアーを構成要素として使用して、独自のアプリケーションエクスペリエンスを作成します。
-* [ **[リソース](design.md#choose-a-prototyping-option)** ]-デザインツールおよびプロトタイプ作成オプションを使用して、プロジェクトをすぐに開始します。
+* [**[リソース](design.md#choose-a-prototyping-option)**]-デザインツールおよびプロトタイプ作成オプションを使用して、プロジェクトをすぐに開始します。
 
 上記のすべてについて、テキスト、イラスト、図、およびビデオを適切に組み合わせることを目的としており、さまざまな形式と手法を試してみることができます。 ここでは、この分類を拡張して、より広範なデザイントピックを含めます。 可能な限り、今後の予定についてのヘッドアップを提供します。そのため、もう一度確認してください。
 
-## <a name="objectives"></a>目標
+## <a name="objectives"></a>目的
 
 ここでは、この作業について説明しているいくつかの高レベルの目標を簡単に見てみましょう。
 

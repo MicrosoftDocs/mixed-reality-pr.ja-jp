@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 空間マッピング、HoloLens、mixed reality、surface 再構築、メッシュ
-ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: 空間マッピング、HoloLens、mixed reality、surface 再構築、メッシュ、混合現実ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、シーンの理解、ワールドメッシュ、遮蔽、物理、ナビゲーション、画面オブザーバー、レンダリング、メッシュ処理
+ms.openlocfilehash: 448c64a6c19ee96d58be9a14f7ea4c34a755695e
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340670"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703318"
 ---
 # <a name="spatial-mapping"></a>空間マッピング
 
@@ -368,13 +368,6 @@ Surface オブザーバーによって提供される "変化したサーフェ�
 ## <a name="troubleshooting"></a>トラブルシューティング
 * サーフェスメッシュを適切に配置するためには、各 SurfaceObserver オブジェクトをアクティブにしてから、メッシュが構築されるようにする必要があります。 そうしないと、メッシュはスペースに表示されますが、回転角度は変わってきます。
 * SurfaceObserver と通信するスクリプトを実行するオブジェクトは、オリジンに設定する必要があります。 そうしないと、メッシュを構築するために作成して SurfaceObserver に送信するすべてのゲームオブジェクトが、親 Game オブジェクトのオフセットと同じオフセットを持つことになります。 これにより、メッシュがいくつかのメーターを表示して、何が起こっているかを簡単にデバッグできるようになります。
-
-## <a name="next-discovery-checkpoint"></a>次回の検出チェックポイント
-
-ここまでに説明した [探索](../discover/get-started-with-mr.md) の方法に従っている場合は、Mixed Reality の基本を確認しています。 ここから、次の基本トピックに進むことができます。 
-
-> [!div class="nextstepaction"]
-> [オブジェクトのスケールを示す - (スケール)](../design/scale.md)
 
 ## <a name="see-also"></a>関連項目
 * [座標系](coordinate-systems.md)

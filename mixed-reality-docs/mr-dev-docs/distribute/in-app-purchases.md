@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: アプリ内購入, hololens
-ms.openlocfilehash: 7174fe555322216b7e547055aaaf7879c01d8f23
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: アプリ内購入, hololens, XAML, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実のヘッドセット
+ms.openlocfilehash: 07601ab4961e14ff43dbc149f7d8cb5731d24013
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684847"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703178"
 ---
 # <a name="in-app-purchases"></a>アプリ内購入
 

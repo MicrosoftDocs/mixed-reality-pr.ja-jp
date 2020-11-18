@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: Mixed Reality、宝石、ビジョン化、相互作用、設計、視線追跡、ヘッドトラッキング
-ms.openlocfilehash: 887d1a30a974bdd643889959a1fee55e96d7b16a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality、宝石、ビジョン化、相互作用、設計、視線追跡、ヘッド追跡、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: a901e505d8e282e52078f5635627fbc2018a27b5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687039"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702408"
 ---
 # <a name="gaze-and-commit"></a>視線入力とコミット
 
@@ -133,7 +133,7 @@ Mixed reality ヘッドセットでは、ユーザーのヘッドの位置と向
 ---
 
 ## <a name="commit"></a>Commit
-ターゲットを _見つめ_ たさまざまな方法について説明した後、「 _宝石とコミットメント_ 」の _コミット_ 部分についてもう少し詳しく説明します。
+ターゲットを _見つめ_ たさまざまな方法について説明した後、「_宝石とコミットメント_」の _コミット_ 部分についてもう少し詳しく説明します。
 オブジェクトまたは UI 要素をターゲットにした後、ユーザーは2次入力を使用して操作またはクリックできます。 これは、入力モデルのコミット ステップと呼ばれます。 
 
 以下のコミット方法がサポートされています。

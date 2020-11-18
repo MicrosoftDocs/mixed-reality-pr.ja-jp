@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, 設計, 3D アプリランチャー, イマーシブヘッドセット, ライブキューブ
-ms.openlocfilehash: 884d05b8b8ef7e15f5c65a411cf500b0d4dc598c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, 設計, 3D アプリランチャー, イマーシブヘッドセット, ライブキューブ, Mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, UWP, Win32, 照明, 色
+ms.openlocfilehash: a501b4bdc86df17f6d005c2f7ccf4fe6a94a4b43
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686554"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703478"
 ---
 # <a name="3d-app-launcher-design-guidance"></a>3D アプリ起動ツールの設計ガイダンス
 
@@ -73,7 +73,7 @@ Windows Mixed Reality イマーシブ (VR) ヘッドセットを使用する場�
 
 :::row:::
     :::column:::
-        ![純粋なアプローチでは、驚くべきことではありませんがフラットなフラットな ](images/20171016-155101-mixedreality-640px.jpg) *アプローチです* 。
+        ![純粋なアプローチでは、驚くべきことではありませんがフラットなフラットな ](images/20171016-155101-mixedreality-640px.jpg) *アプローチです*。
     :::column-end:::
     :::column:::
         ![アプリ ](images/20171016-161407-mixedreality-640px.jpg) *の容量アプローチ* をより適切に紹介する容量アプローチ
@@ -124,7 +124,7 @@ Windows Mixed Reality イマーシブ (VR) ヘッドセットを使用する場�
 
 **機能する色を入力する**
 
-* 白
+* White
 * Black
 * 明るい半彩度の色
 

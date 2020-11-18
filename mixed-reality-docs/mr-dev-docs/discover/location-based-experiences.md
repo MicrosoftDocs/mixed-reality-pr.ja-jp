@@ -5,13 +5,13 @@ author: jessemcculloch
 ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
-keywords: mixed reality、vr、lbe、場所
-ms.openlocfilehash: 6ee013a576041a71d92307523dbfbaefa6c7d24a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: mixed reality、vr、lbe、場所、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、ハードウェア、HoloLens、マルチプレーヤー、クラウドサービス、azure
+ms.openlocfilehash: b082153d3d32b2ecee1eb4430cab008819d50ba3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690330"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702098"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Windows Mixed Reality を使用した場所ベースのエンターテインメント
 

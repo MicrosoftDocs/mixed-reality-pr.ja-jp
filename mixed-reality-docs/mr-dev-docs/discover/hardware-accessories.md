@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
-keywords: 操作方法、アクセサリ、bluetooth、bt、コントローラー、ゲームパッド、clicker、xbox
-ms.openlocfilehash: 7f51264a3914d028c9a027d70d5aa1999582110a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 操作方法、アクセサリ、bluetooth、bt、コントローラー、ゲームパッド、clicker、xbox、ハードウェア、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、モーションコントローラー
+ms.openlocfilehash: 3855d5337c4cad462b60ff8c73cec0b7b96c0ca1
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690338"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702008"
 ---
 # <a name="hardware-accessories"></a>ハードウェア アクセサリ
 
@@ -19,7 +19,7 @@ Windows Mixed Reality デバイスでは、アクセサリがサポートして�
 
 HoloLens での Bluetooth アクセサリの使用の詳細については、「 [bluetooth および USB C デバイスへの接続](https://docs.microsoft.com/hololens/hololens-connect-devices)」を参照してください。
 
-Windows Mixed Reality イマーシブヘッドセットには、 [宝石](../design/gaze-and-commit.md) と [声](../design/voice-input.md)を超えた入力のためのアクセサリが必要です。 サポートされているアクセサリには、 **キーボード、マウス** 、 **ゲームパッド** 、および **[モーションコントローラー](../design/motion-controllers.md)** があります。
+Windows Mixed Reality イマーシブヘッドセットには、 [宝石](../design/gaze-and-commit.md) と [声](../design/voice-input.md)を超えた入力のためのアクセサリが必要です。 サポートされているアクセサリには、 **キーボード、マウス**、 **ゲームパッド**、および **[モーションコントローラー](../design/motion-controllers.md)** があります。
 
 ## <a name="pairing-bluetooth-accessories"></a>Bluetooth アクセサリのペアリング
 

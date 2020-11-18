@@ -5,13 +5,13 @@ author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
-keywords: 混合現実、ジェスチャ、相互作用、設計
-ms.openlocfilehash: 909472abfec34f75a2f5fa810f87003978cc6a5e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed reality、ジェスチャ、相互作用、設計、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、ブルーム
+ms.openlocfilehash: 1994b38341dfdb2ef1cdb326cf7747c0af5f9c34
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686034"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703268"
 ---
 # <a name="start-gesture"></a>開始ジェスチャ
 
@@ -116,5 +116,5 @@ HoloLens 2 では、ブルームジェスチャを仮想手首ボタンに置き
 ## <a name="see-also"></a>関連項目
 
 * [本能的な操作](interaction-fundamentals.md)
-* [アイ視線入力](eye-tracking.md)
+* [視線](eye-tracking.md)
 * [音声入力](voice-input.md)

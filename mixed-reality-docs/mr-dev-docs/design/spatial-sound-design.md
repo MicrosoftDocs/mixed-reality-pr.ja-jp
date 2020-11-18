@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Windows Mixed Reality、空間サウンド、デザイン、スタイル
-ms.openlocfilehash: 8bb48aad2d4582696241bc5444beabc88ca5a7d9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、空間サウンド、設計、スタイル、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、ジェスチャ、相互作用、減衰
+ms.openlocfilehash: 503a59eb6a71aea0e1ec043ca6e3196f821f211a
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686087"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703285"
 ---
 # <a name="how-to-use-sound-in-mixed-reality-applications"></a>Mixed reality アプリケーションでサウンドを使用する方法
 
@@ -66,7 +66,7 @@ HoloLens 2 では、独自の追跡はユーザーインターフェイス要素
 ### <a name="voice-interactions"></a>音声操作
 音声のやり取りには、微妙な視覚要素があることがよくあります。 音を使用して、対話段階を補強します。 より多くの色調音を使用して、ジェスチャや直接操作サウンドと区別することができます。
 
-* 音声コマンドの確認には、正の音を *使用します* 。 増加している色調と主な音楽の間隔は効果的です。
+* 音声コマンドの確認には、正の音を *使用します*。 増加している色調と主な音楽の間隔は効果的です。
 * 音声コマンドの *エラー* には、より短い、正の音で聞こえない音を使用します。 負の音は避けてください。 代わりに、percussive のニュートラルサウンドを使用して、アプリケーションが相互作用から移動していることを通知します。
 * アプリケーションにウェイクワードが含まれている場合は、デバイスが *リッスンを開始* するときに、短時間で緩やかに使用します。 アプリケーション *が* リッスンしている間に、微妙なループサウンドを使用します。
 
@@ -99,7 +99,7 @@ Spatialization には、いくつかの CPU コストが伴います。 多く�
 ### <a name="when-and-how-to-apply-distance-based-attenuation"></a>距離ベースの減衰を適用するタイミングと方法
 物理的な世界では、遠く離れている音はより静かです。 オーディオエンジンは、ソースの距離に基づいてこの減衰をモデル化できます。 関連情報を通信するときは、距離ベースの減衰を使用します。
 
-*視覚的なインジケーター* 、アニメーション化された *ホログラム* 、およびその他の情報音への距離は、通常、ユーザーに関連します。 距離ベースの減衰を使用して、手掛かりを直感的に提供します。
+*視覚的なインジケーター*、アニメーション化された *ホログラム*、およびその他の情報音への距離は、通常、ユーザーに関連します。 距離ベースの減衰を使用して、手掛かりを直感的に提供します。
 
 各ソースの減衰曲線を、mixed reality ワールドの空間のサイズに合わせて調整します。 オーディオエンジンの既定の曲線は、多くの場合、非常に大きい (最大ハーフ kilometer) スペース用です。
 

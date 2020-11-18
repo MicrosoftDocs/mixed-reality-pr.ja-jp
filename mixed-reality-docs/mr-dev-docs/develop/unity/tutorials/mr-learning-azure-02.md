@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, HoloLens, HoloLens 2, Azure Storage
 ms.localizationpriority: high
-ms.openlocfilehash: e01796dd99982bb749d59108bcc972e5bc361770
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 64e4aaadf13c03272a4fc9c552a7e4b31e82fdbb
+ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353330"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94549105"
 ---
 # <a name="2-integrating-azure-storage"></a>2.Azure Storage の統合
 
@@ -57,7 +57,7 @@ Azure ストレージ サービスを利用するには、Azure ストレージ 
 
 > [!TIP]
 > Unity エディター内からテストする場合は、次のローカル エミュレーターを使用できます。
-> * Windows 10 では [Azure ストレージ エミュレーターを使用できます](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
+> * Windows 10 では、[Azure ストレージ エミュレーター](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)を使用できます。
 > * MacOS、Linux では、Docker 用の [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite) を使用できます。
 
 ## <a name="preparing-the-scene"></a>シーンの準備

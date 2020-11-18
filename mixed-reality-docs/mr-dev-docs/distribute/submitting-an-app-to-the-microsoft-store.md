@@ -5,13 +5,13 @@ author: hferrone
 ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
-keywords: Microsoft Store, HoloLens, イマーシブヘッドセット, アプリ, uwp, 送信, 送信, フィルター, メタデータ, システム要件, キーワード, wack, 認定, パッケージ, appx, 販売促進
-ms.openlocfilehash: f5dae379deee54056595c291363b5b1e3e83f25e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+keywords: Microsoft Store、HoloLens、イマーシブヘッドセット、アプリ、uwp、送信、送信、フィルター、メタデータ、システム要件、キーワード、wack、認定、パッケージ、appx、販売、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
+ms.openlocfilehash: b5d25817afeb2d8d970d329c802b7eaabcdf7f35
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678791"
+ms.locfileid: "94703118"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Microsoft Store へのアプリの送信
 
@@ -38,9 +38,9 @@ Appx ビルドツールでアプリケーションを appx パッケージに組
 
 | 必要な資産 | 推奨される小数点以下桁数 | イメージ形式 | 資産はどこに表示されますか。 | 
 |----------|----------|----------|------------------|
-| 71x71 正方形の正方形のロゴ | Any |  PNG | なし | 
+| 71x71 正方形の正方形のロゴ | Any |  PNG | 該当なし | 
 | 150x150 正方形の正方形のロゴ | 150x150 正方形 (100% scale) または 225x225 (150% scale) | PNG | 開始 pin とすべてのアプリ (310x310 のが提供されていない場合)、ストア検索候補、ストアリストページ、ストア参照、ストア検索 | 
-|  310x150 ワイドのワイドロゴ |  Any  |  PNG  |  なし | 
+|  310x150 ワイドのワイドロゴ |  Any  |  PNG  |  該当なし | 
 |  ストア ロゴ |  75 x 75 (150% スケール)  |  PNG  |  パートナーセンター, レポートアプリ, レビューの作成, マイライブラリ | 
 |  スプラッシュ スクリーン |  930x450 (150% scale)  |  PNG  |  2D アプリランチャー (スレート) | 
 
@@ -120,7 +120,7 @@ Windows Mixed Reality アプリケーション ( [HoloLens](../hololens-hardware
 * パッケージ名
 * パブリッシャー ID
 * 発行者表示名
-* Version
+* バージョン
 
 独自のカスタム .xml ファイルを使用して既定の package.appxmanifest ファイルをオーバーライドしている場合は、アプリを Microsoft Store に関連付けることはできません。 カスタムマニフェストファイルをストアに関連付けると、エラーメッセージが表示されます。
 

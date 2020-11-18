@@ -7,12 +7,12 @@ ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, パフォーマンス, 最適化, 設定, ドキュメント
-ms.openlocfilehash: 64c8cdf4900234a4486cf9b575671321a8430160
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 21bd3ee9fb7db23eab9365e41adfd0033aa0046e
+ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699290"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94549130"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Unreal のパフォーマンスに関する推奨事項
 
@@ -34,30 +34,34 @@ ms.locfileid: "91699290"
 
 ![前方レンダリング](images/unreal/performance-recommendations-img-04.png)
 
-3. 頂点フォグの無効化: 
+3. モバイル マルチビューの使用:
+    * **[エンジン]** セクションまでスクロールし、 **[レンダリング]** を選択し、 **[VR]** セクションを展開して、 **[インスタンス化ステレオ]** と **[モバイル マルチビュー]** の両方を有効にします。 モバイル HDR をオフにする必要があります。
+
+![VR レンダリング設定](images/unreal/performance-recommendations-img-03.png)
+
+4. OpenXR を使用する場合は、**既定** または **D3D12** が選択された **既定の RHI** であることを確認してください。
+    * **D3D11** を選択すると、プラットフォームで追加のレンダー パスが実行されるため、パフォーマンスが低下します。 **D3D12** では、追加のレンダー パスが回避され、レンダリング パフォーマンスが向上します。
+
+![既定の RHI](images/unreal/performance-recommendations-img-09.png)
+
+5. 頂点フォグの無効化: 
     * 頂点フォグでは、多角形の各頂点にフォグ計算を適用し、その結果を多角形の面全体で補間します。 ゲームでフォグを使用しない場合は、この設定を選択してフォグを無効にし、シェーディングのパフォーマンスを向上させる必要があります。
 
 ![頂点フォグのオプション](images/unreal/performance-recommendations-img-05.png)
 
-4. オクルージョン カリングの無効化:
+6. オクルージョン カリングの無効化:
     * **[エンジン]** セクションまでスクロールし、 **[レンダリング]** を選択し、 **[カリング]** セクションを展開して、 **[オクルージョン カリング]** をオフにします。
         + レンダリングされる詳細なシーンのオクルージョン カリングが必要な場合は、 **[エンジン] > [レンダリング]** で **[ソフトウェア オクルージョン カリングのサポート]** を有効にすることをお勧めします。 これにより、Unreal の作業は CPU 上で実行され、HoloLens 2 でのパフォーマンスが低い GPU オクルージョン クエリを回避できます。
     * モバイル デバイスの GPU でオクルージョン カリングを行うと処理速度が低下します。 一般に、GPU では主にレンダリングを行う必要があります。 オクルージョンによってパフォーマンスが向上すると思われる場合は、代わりにソフトウェア オクルージョンを有効にしてください。 多数の描画呼び出しによって既に CPU の負荷が大きくなっている場合、ソフトウェア オクルージョンを有効にするとパフォーマンスが低下する可能性があることに注意してください。
 
 ![オクルージョン カリングの無効化](images/unreal/performance-recommendations-img-02.png)
 
-    
-5. 深度ステンシルの無効化:
+7. カスタム深度ステンシル パスの無効化:
     * この機能には追加のパスが必要になるため、処理速度が低下します。 Unreal では、透明度を使用した場合も処理が遅くなります。 詳細については [Unreal のドキュメント](https://docs.unrealengine.com/Engine/Performance/Guidelines/index.html)を参照してください。
 
 ![深度ステンシル](images/unreal/performance-recommendations-img-06.png)
 
-6. モバイル マルチビューの使用:
-    * **[エンジン]** セクションまでスクロールし、 **[レンダリング]** を選択し、 **[VR]** セクションを展開して、 **[インスタンス化ステレオ]** と **[モバイル マルチビュー]** の両方を有効にします。 モバイル HDR をオフにする必要があります。
-
-![VR レンダリング設定](images/unreal/performance-recommendations-img-03.png)
-
-7. カスケードされたシャドウ マップの削減: 
+8. カスケードされたシャドウ マップの削減: 
     * シャドウ マップの数を減らすと、パフォーマンスが向上します。 明らかに品質が低下しない限り、一般にこれは 1 に設定する必要があります。 
 
 ![カスケードされたシャドウ マップ](images/unreal/performance-recommendations-img-07.png)

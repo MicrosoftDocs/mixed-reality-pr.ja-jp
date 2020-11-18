@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、アプリパターン、設計、HoloLens、ルームスキャン、空間マッピング、メッシュ
-ms.openlocfilehash: 25de181bbb2dedaba9e4917f51cc80bac77cc5f1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, アプリパターン, 設計, HoloLens, ルームスキャン, 空間マッピング, メッシュ, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, HoloLens
+ms.openlocfilehash: f912ddcff5ef1d14468cec1e63c8153ae6460476
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684031"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703358"
 ---
 # <a name="room-scan-visualization"></a>部屋のスキャンの可視化
 
@@ -66,7 +66,7 @@ ms.locfileid: "91684031"
 
 キャッシュされた空間マッピングの場合、アプリケーションは通常、空間マッピングデータのスナップショットを取得し、エクスペリエンスの間、このスナップショットを使用します。
 
-**メリット**
+**特典**
 * エクスペリエンスの実行中にシステムのオーバーヘッドを削減し、電力、温度、および cpu のパフォーマンスを大幅に向上させます。
 * 空間データ内の変更によって中断されないため、メインエクスペリエンスをより簡単に実装できます。
 * 物理、グラフィックス、およびその他の目的で空間データの後処理を行う1回限りのコスト。
@@ -81,7 +81,7 @@ ms.locfileid: "91684031"
 
 特定のアプリケーションは、スキャンを続行して空間マッピングデータを更新することがあります。
 
-**メリット**
+**特典**
 * アプリケーションでは、個別にスキャンや探索を行う必要はありません。
 * 実際のオブジェクトの動きはゲームによって反映されますが、少し時間がかかることがあります。
 

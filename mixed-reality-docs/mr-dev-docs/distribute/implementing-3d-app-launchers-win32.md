@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
-keywords: 3D、ロゴ、アイコン、モデリング、ランチャー、3D ランチャー、タイル、live cube、win32
-ms.openlocfilehash: 4b22c78e651687c293a1e47ff8e4e9106de631bf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 3D、ロゴ、アイコン、モデリング、ランチャー、3D ランチャー、タイル、live cube、win32、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、マニフェスト
+ms.openlocfilehash: 9a8680232bf1d8d333c26ca4e39075ee553782fb
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684490"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703428"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>3D アプリ起動ツールの実装 (Win32 アプリ)
 
@@ -35,7 +35,7 @@ ms.locfileid: "91684490"
 
 Win32 アプリケーションは、Windows Mixed Reality の [スタート] メニューの [すべてのアプリ] の一覧に表示されます (3D アプリランチャーを作成した場合)。 これを行うには、次の手順に従って、3D アプリランチャーを参照する [ビジュアル要素マニフェスト](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) XML ファイルを作成します。
 
-1. **3D アプリランチャー ASSET GLB ファイル** を作成します (「 [モデリングとエクスポート](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)」を参照してください)。
+1. **3D アプリランチャー ASSET GLB ファイル** を作成します (「[モデリングとエクスポート](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)」を参照してください)。
 2. アプリケーションの **[ビジュアル要素マニフェスト](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx)** を作成します。
     1. [次のサンプル](#sample-visual-elements-manifest)から始めることができます。  詳細については、 [ビジュアル要素](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) の完全なマニフェストに関するドキュメントを参照してください。
     2. アプリの PNG/JPG/GIF で **Square150x150Logo** と **Square70x70Logo** を更新します。

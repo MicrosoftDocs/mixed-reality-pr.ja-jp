@@ -5,13 +5,13 @@ author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
-keywords: シーンの理解、空間マッピング、Windows Mixed Reality、Unity
-ms.openlocfilehash: 6185d434b1687675f9ae46313277f61cf6d5e1f8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: シーンの理解、空間マッピング、Windows Mixed Reality、Unity、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens、遮蔽、SDK
+ms.openlocfilehash: 80fb01707d3265aa3dac23d75ea92034115d3c94
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683999"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703368"
 ---
 # <a name="scene-understanding"></a>シーンの理解
 
@@ -115,13 +115,13 @@ ms.locfileid: "91683999"
 
 現在でも正確なナビゲーションメッシュを生成するには後処理が必要です。つまり、アプリケーションでは、移動が乱雑またはテーブルを通過しないように、フロアに occluders を投影する必要があります。これを実現する最も正確な方法は、EnableWorldMesh フラグを使用してシーンが計算された場合に提供される世界のメッシュデータを射影することです。
 
-### <a name="visualization"></a>グラフ
+### <a name="visualization"></a>視覚化
 
 [空間マッピングの視覚化](spatial-mapping.md#visualization)を使用して、環境のリアルタイムのフィードバックを行うことができますが、平面オブジェクトと watertight オブジェクトの単純化によってパフォーマンスや視覚品質が向上する多くのシナリオがあります。 四角形または平面 watertight メッシュによって提供される平面サーフェスに射影した場合、空間マッピングを使用して記述されているシャドウプロジェクションとアース手法は、より見栄えが良い場合があります。 これは、シーンが推測されることが原因で完全な事前スキャンが最適ではない環境やシナリオでは特に当てはまり、完全な環境と平面の前提条件によって成果物が最小化されます。
 
 さらに、空間マッピングによって返されるサーフェスの合計数は、内部空間キャッシュによって制限されます。一方、シーン認識のバージョンの空間マッピングメッシュは、キャッシュされていない空間マッピングデータにアクセスできます。 このため、シーンを理解することは、視覚エフェクトやさらにメッシュ処理を行うために、より大きなスペース (たとえば、1つの部屋を超える) のメッシュ表現をキャプチャする場合に適しています。 EnableWorldMesh で返されるワールドメッシュの詳細レベルは、全体にわたって一貫しています。これにより、ワイヤーフレームとしてレンダリングした場合により良い視覚化が得られる可能性があります。
 
-### <a name="see-also"></a>関連項目
+### <a name="see-also"></a>参照
 
 * [シーンを理解する SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
 * [空間マッピング](spatial-mapping.md)

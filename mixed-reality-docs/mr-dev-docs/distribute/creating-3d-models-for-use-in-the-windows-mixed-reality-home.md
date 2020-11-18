@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 3D, モデリング, モデリングガイダンス, 資産要件, 作成ガイドライン, ランチャー, 3D ランチャー, テクスチャ, マテリアル, 複雑さ, 三角形, メッシュ, 多角形, polycount, 制限
-ms.openlocfilehash: 606726b9c205ccdf3eacafca96b2bd9ccae43e82
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: 3D, モデリング, モデリングガイダンス, 資産要件, 作成のガイドライン, ランチャー, 3D ランチャー, テクスチャ, マテリアル, 複雑さ, 三角形, メッシュ, 多角形, polycount, 制限, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
+ms.openlocfilehash: fb2f2718497781a2d38a0a061016e146ff077488
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781557"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703468"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>家で使用する 3D モデルの作成
 
@@ -268,7 +268,7 @@ Windows MR は、プリミティブモードの線とポイントをサポート
 
 1つの UV 頂点属性のみがサポートされています。
 
-## <a name="additional-resources"></a>その他の技術情報
+## <a name="additional-resources"></a>その他のリソース
 * [glTF エクスポーターおよびコンバーター](https://github.com/KhronosGroup/glTF#converters-and-exporters)
 * [glTF Toolkit](https://github.com/Microsoft/glTF-Toolkit)
 * [glTF 2.0 仕様](https://github.com/KhronosGroup/glTF/blob/master/README.md)

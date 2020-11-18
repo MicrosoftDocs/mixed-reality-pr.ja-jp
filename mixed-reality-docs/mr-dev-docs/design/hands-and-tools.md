@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 04/26/2019
 ms.topic: article
-keywords: 混合現実、ハンド、モーションコントローラー、相互作用、設計
-ms.openlocfilehash: 8b2ed6127708204d0c4a537c56b2225ff26e0d0f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合現実、ハンズオン、モーションコントローラー、相互作用、設計、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: e931e5ec11548d9aab0d1dd7f8921dbc7554abab
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686890"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702158"
 ---
 # <a name="hands-and-motion-controllers"></a>手とモーション コントローラー
 ## <a name="scenarios"></a>シナリオ
@@ -32,12 +32,12 @@ ms.locfileid: "91686890"
 
 :::row:::
     :::column:::
-       [![手による直接操作](images/hands-and-controllers-direct-manipulation.jpg)](direct-manipulation.md)<br>
+       [![手で直接操作](images/hands-and-controllers-direct-manipulation.jpg)](direct-manipulation.md)<br>
        ### <a name="direct-manipulation-with-handsbr"></a>[手で直接操作](direct-manipulation.md)<br>
        これは、ユーザーがホログラムを直接操作したり操作したりできるようにするための、手の力を活用したモダリティです。 日常的な経験を活用し、適切な視覚的 affordances を提供することにより、ユーザーは、実際のオブジェクトを操作するのと同じ方法を使用して仮想マシンとやり取りすることができます。
     :::column-end:::
     :::column:::
-       [![手によるポイントとコミット](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
+       [![手を使ったポイントとコミット](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
         ### <a name="point-and-commit-with-handsbr"></a>[手を使ったポイントとコミット](point-and-commit.md)<br>
         このモダリティによって、ユーザーは距離内でホログラムを操作できるようになります。 これにより、ユーザーは周囲を最大限に活用できるようになります。 ユーザーは、ホログラムを任意の場所に配置し、どこからでもアクセスすることができます。 2D および3D ホログラムの制御と操作を行うためのメンタルモデルとジェスチャは、直接操作のものと非常に同期されています。
     :::column-end:::

@@ -5,13 +5,13 @@ author: nbarragan23
 ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
-keywords: ハンド、メニュー、ボタン、クイックアクセス、レイアウト
-ms.openlocfilehash: f7bf8ab2fb54e6a939bd538a0a0ba756c5efb916
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: ハンド、メニュー、ボタン、クイックアクセス、レイアウト、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: 8f9adbdbebb826a79db037f48b233e3bc5e049de
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686927"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702298"
 ---
 # <a name="hand-menu"></a>ハンド メニュー
 
@@ -117,7 +117,7 @@ Arm を持ち上げて位置を維持すると、arm の疲労が簡単に生じ
 ---
 
 ## <a name="menu-positions-that-are-not-recommended"></a>推奨されないメニュー位置
-さまざまなメニューのレイアウトや場所を使用したユーザーの調査を行っていますが、次のメニューの場所は推奨されて **いません** 。以下の各研究の欠点を確認してください。
+さまざまなメニューのレイアウトや場所を使用したユーザーの調査を行っていますが、次のメニューの場所は推奨されて **いません**。以下の各研究の欠点を確認してください。
 
 
 :::row:::

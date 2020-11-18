@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 2d3a826ba3bf8fdf1299038a7964278f0d57dbb7
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: f4530cb6519434f8eb74e5335fecbe82ac2cd2c2
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353540"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631530"
 ---
 # <a name="6-creating-user-interfaces"></a>6.ユーザー インターフェイスの作成
 
@@ -68,7 +68,10 @@ ms.locfileid: "93353540"
 
 ![Hints ボタン オブジェクトの OnClick イベントが構成された Unity](images/mr-learning-base/base-06-section1-step1-5.png)
 
-[階層] ウィンドウで、**Explode** ボタン オブジェクトを選択します。次に、[インスペクター] ウィンドウで、次のように Interactable **OnClick ()** イベントを構成します。
+> [!TIP]
+> Interactable コンポーネントは、すべてのオブジェクトを入力に対して簡単にインタラクティブかつレスポンシブにすることのできるオールインワン コンテナーです。 Interactable は、タッチ、ハンド レイ、音声などを含むすべての種類の入力のキャッチオールとして機能し、これらの対話をイベントと視覚的テーマの応答にファネルします。 さまざまな入力の種類に合わせて構成し、その視覚的テーマをカスタマイズする方法については、[MRTK ドキュメント ポータル](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)の [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) ガイドを参照してください。
+
+[階層] ウィンドウで、**Explode** ボタン オブジェクトを選択します。次に、[インスペクター] ウィンドウで、次のように **Interactable.OnClick ()** イベントを構成します。
 
 * **RoverAssembly** オブジェクトを **[None (Object)]\(なし (オブジェクト)\)** フィールドに割り当てます
 * **[No Function]\(関数なし\)** ドロップダウンから、**ExplodedViewController** > **ToggleExplodedView ()** の順に選択し、イベントがトリガーされたときに実行するアクションとして、この関数を設定します

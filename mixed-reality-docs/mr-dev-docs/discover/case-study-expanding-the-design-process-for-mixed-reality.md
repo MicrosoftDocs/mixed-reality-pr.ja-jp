@@ -5,13 +5,13 @@ author: danielescudero
 ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、プロセス、ケーススタディ
-ms.openlocfilehash: 4cde36c8b5c3914c63e0c588e76dc4b782dcdcb9
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Windows Mixed Reality、設計、プロセス、ケーススタディ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、仮想現実とは何か、bodystorming、ストーリーボード、フィードバック
+ms.openlocfilehash: 5f1cc6efd7d1fa8dda043575562bfaf94ea812a9
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631510"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702208"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>Mixed Reality での考え方の違い
 Microsoft では、2016の開発者の方に HoloLens (第1世代) を設立したときに、デバイスの起動エクスペリエンスを構築するために、Microsoft の内部および外部のスタジオと提携しています。 これらのチームは、Mixed Reality の設計の新しいフィールドにおける機会と課題の両方を明らかにして学習しました。
@@ -128,7 +128,7 @@ HoloLens の初期の時代では、デバイスの初期のプロトタイプ�
 * 鉛筆
 * Sharpies
 
-## <a name="next-discovery-checkpoint"></a>次回の検出チェックポイント
+## <a name="next-discovery-checkpoint"></a>次の探索チェックポイント
 
 これで、Mixed Reality 検出体験の中核を完了できました。 メインの検出の取り組み [ページ](get-started-with-mr.md) に戻り、 [業界パートナーが混合現実をどのように使用](get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality) しているかを確認し、HoloLens を [調べ](get-started-with-mr.md#explore-hololens-and-mixed-reality-services)たり、設計または開発の体験を開始したりすることができます。
 

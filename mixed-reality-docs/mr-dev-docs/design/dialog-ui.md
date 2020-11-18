@@ -4,13 +4,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
-keywords: Mixed Reality、HoloLens、UI コントロール、相互作用、ui、ux、UX デザイン、空間 UI、空間相互作用、3D UI、3D UX
-ms.openlocfilehash: 94f6daa211eade4c5dfc0e4181782e56e253d4ee
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality、HoloLens、UI コントロール、相互作用、UI、ux、UX デザイン、空間 UI、空間相互作用、3D UI、3D UX、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: 354581b5f0c2b63e5fdb7077c0d8cdba4c96c3d3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685098"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702608"
 ---
 # <a name="dialog"></a>ダイアログ
 

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
-keywords: Mixed Reality、コントロール、対話、ui、ux
-ms.openlocfilehash: 6458f4b1c80c8606d07d610f509ed610a0ca4268
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合現実、コントロール、対話、キュー、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、audio
+ms.openlocfilehash: e298ce7fa46688a734c55a6674c03b89a4e7b5f3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684218"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703228"
 ---
 # <a name="interactable-object"></a>対話可能なオブジェクト
 
@@ -93,12 +93,12 @@ Holographic オブジェクトは、mixed reality の実際の環境とブレン
 HoloLens 2 では、オブジェクトを操作できるようにするための入力追跡入力がサポートされています。 Haptic のフィードバックや完全な深さの認識がなければ、オブジェクトから手の外に出てきたことや、それに触れているかどうかを判断するのは難しい場合があります。 オブジェクトの状態と、特にそのオブジェクトに対する実際の状態を伝えるのに十分な視覚的な手掛かりを提供することが重要です。
 
 視覚的フィードバックを使用して、次のことを伝えます。
-* **既定 (監視)** : オブジェクトの既定のアイドル状態。
-* **ホバー** : 手がホログラムの近くにある場合は、ビジュアルを変更して、その手がホログラムをターゲットとしていることを伝えます。 
-* **距離とポイントとの相互作用** : 手がホログラムに近づいたときに、投影された相互作用ポイントと、オブジェクトから指がどこまでの距離であるかを伝えるフィードバックをデザインします。
-* **連絡先の開始** : ビジュアル (明るい色) を変更して、タッチが発生したことを通知します
-* **Grasped** : オブジェクトが Grasped の場合にビジュアル (明るい、色) を変更します。
-* **連絡先の終了** : タッチが終了したときのビジュアル (明るい、色) を変更します
+* **既定 (監視)**: オブジェクトの既定のアイドル状態。
+* **ホバー**: 手がホログラムの近くにある場合は、ビジュアルを変更して、その手がホログラムをターゲットとしていることを伝えます。 
+* **距離とポイントとの相互作用**: 手がホログラムに近づいたときに、投影された相互作用ポイントと、オブジェクトから指がどこまでの距離であるかを伝えるフィードバックをデザインします。
+* **連絡先の開始**: ビジュアル (明るい色) を変更して、タッチが発生したことを通知します
+* **Grasped**: オブジェクトが Grasped の場合にビジュアル (明るい、色) を変更します。
+* **連絡先の終了**: タッチが終了したときのビジュアル (明るい、色) を変更します
 
 <br>
 
@@ -189,10 +189,10 @@ HoloLens 2 では、オブジェクトを操作できるようにするための
 ### <a name="audio-cues"></a>オーディオキュー
 
 直接の対話では、適切なオーディオフィードバックによってユーザーエクスペリエンスが大幅に向上します。 オーディオフィードバックを使用して、次のことを伝えます。
-* **連絡先の開始** : タッチの開始時にサウンドを再生する
-* **連絡先の終了** : タッチエンドでサウンドを再生する
-* **グラブの開始** : グラブの開始時にサウンドを再生する
-* **グラブ端** : グラブ終了時にサウンドを再生する
+* **連絡先の開始**: タッチの開始時にサウンドを再生する
+* **連絡先の終了**: タッチエンドでサウンドを再生する
+* **グラブの開始**: グラブの開始時にサウンドを再生する
+* **グラブ端**: グラブ終了時にサウンドを再生する
 
 <br>
 
@@ -225,7 +225,7 @@ HoloLens 2 では、オブジェクトを操作できるようにするための
 
 ### <a name="target-size-for-direct-hand-interaction"></a>ダイレクトハンド操作のターゲットサイズ
 
-| 距離 | 表示角度 | サイズ |
+| 距離 | 表示角度 | Size |
 |---------|---------|---------|
 | 45cm  | 2°未満 | 1.6 x 1.6 cm |
 
@@ -248,7 +248,7 @@ HoloLens 2 では、オブジェクトを操作できるようにするための
 <br>
 
 ### <a name="target-size-for-hand-ray-or-gaze-interaction"></a>ハンドレイまたは宝石の相互作用の目標サイズ
-| 距離 | 表示角度 | サイズ |
+| 距離 | 表示角度 | Size |
 |---------|---------|---------|
 | 2分  | 1°未満 | 3.5 x 3.5 cm |
 
@@ -266,7 +266,7 @@ HoloLens 2 では、オブジェクトを操作できるようにするための
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** では、スクリプト [**対話型**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts)を使用して、オブジェクトがさまざまな種類の入力相互作用状態に応答するようにすることができます。 さまざまな種類のテーマをサポートしており、色、サイズ、素材、シェーダーなどのオブジェクトプロパティを制御することにより、視覚的な状態を定義できます。
 
 * [対話型](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
-* [ボタン](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
 * [ハンド操作の例シーン](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit の標準シェーダーには、ビジュアルおよびオーディオキューを作成するのに役立つ **近接光** などのさまざまなオプションが用意されています。

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Mixed Reality、コントロール、対話、ui、ux
-ms.openlocfilehash: 86e56de93736c90f3b28467a0ecd6e18a1ba0146
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合現実、コントロール、相互作用、ui、ux、シェーダー、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、reality、MRTK、Mixed Reality Toolkit、視覚効果
+ms.openlocfilehash: ced2d62f9304a8e6238febb8c485449f2e10b135
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683986"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703348"
 ---
 # <a name="shader"></a>シェーダー
 

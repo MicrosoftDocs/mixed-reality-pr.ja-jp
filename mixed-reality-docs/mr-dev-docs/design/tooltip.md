@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Mixed Reality、コントロール、対話、ui、ux
-ms.openlocfilehash: d1539231e770ee7c90b7e703189d1850c046ceeb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合現実、コントロール、相互作用、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット、HoloLens、ツールヒント、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: a182b9100341709dfb78ab188cbff2bd7ed3512e
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686018"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703238"
 ---
 # <a name="tooltip"></a>ヒント
 

@@ -5,15 +5,15 @@ author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
-keywords: 3D、モデル、ホーム、場所、世界、モデリング、mixed reality ホーム、web、アプリ
-ms.openlocfilehash: 4ea720fd9fc404d4730733b6b65df13acdf1a51a
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: 3D、モデル、ホーム、場所、世界、モデリング、mixed reality ホーム、web、アプリ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
+ms.openlocfilehash: 192c403ce50c3a47fb19f644af78d1150bb9aa3f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781568"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703188"
 ---
-# <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>混合現実ホームで3D モデルの配置を有効にする
+# <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Mixed Reality ホームで 3D モデルの配置を有効にする
 
 > [!NOTE]
 > この機能は、 [Windows 10 April 2018 更新プログラム](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)の一部として追加されました。 以前のバージョンの Windows は、この機能と互換性がありません。

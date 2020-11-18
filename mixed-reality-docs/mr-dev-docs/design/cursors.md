@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens (第1世代)、HoloLens 2、Mixed Reality、カーソル、ターゲット設定、宝石、ジェスチャ
-ms.openlocfilehash: 6fb5f335e192ce7664eab0099dc5d6aa6ed2420d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens (第1世代)、HoloLens 2、Mixed Reality、カーソル、ターゲット設定、宝石、ジェスチャ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、光線、入力
+ms.openlocfilehash: db895c7aad177d7ddd2eb371392812b1d7e4d039
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686114"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702648"
 ---
 # <a name="cursors"></a>カーソル
 
@@ -21,7 +21,7 @@ ms.locfileid: "91686114"
 
 カーソルによって提供されるフィードバックは、システムがどのように応答するかを予測し、その信号をフィードバックとして使用して、デバイスとの通信を強化し、最終的には相互作用に関して自信を持っています。
 
-カーソルには、 **指、射線** 、および **頭を見つめ** た3種類があります。 これらのポイントカーソルは、HoloLens、HoloLens 2、およびイマーシブヘッドセットのさまざまな入力感覚様相で動作します。 次に、各種類のヘッドセットと相互作用モデルに使用するカーソルの種類に関するガイダンスを示します。 Mixed Reality Toolkit (MRTK) では、右のポイントエクスペリエンスを構築するのに役立つドラッグアンドドロップカーソルモジュールを作成しました。
+カーソルには、 **指、射線**、および **頭を見つめ** た3種類があります。 これらのポイントカーソルは、HoloLens、HoloLens 2、およびイマーシブヘッドセットのさまざまな入力感覚様相で動作します。 次に、各種類のヘッドセットと相互作用モデルに使用するカーソルの種類に関するガイダンスを示します。 Mixed Reality Toolkit (MRTK) では、右のポイントエクスペリエンスを構築するのに役立つドラッグアンドドロップカーソルモジュールを作成しました。
 
 
 ## <a name="device-support"></a>デバイス サポート
@@ -63,7 +63,7 @@ ms.locfileid: "91686114"
 この指カーソルは HoloLens 2 でのみ利用可能で、"[直接操作による操作](direct-manipulation.md)" 対話モードを強化します。 指がどこを指しているかをより深く理解するために、両方のインデックス指のヒントにリングを添付しました。 リングサイズは、UI 画面への指の近接部分 (指の近く、リングが小さくなります) に基づいており、指が UI に接続したときにドットの形に縮小されます。 <br>
 
 ![指カーソル](images/finger-cursor.png)<br>
-" **指カーソル 1" の視覚的なフィードバックの状態** : リングがドットに縮小されます。 2: リングは画面と一致します。 3: リングは、指ベクターに対して垂直になります。 4: リングがありません。
+"**指カーソル 1" の視覚的なフィードバックの状態**: リングがドットに縮小されます。 2: リングは画面と一致します。 3: リングは、指ベクターに対して垂直になります。 4: リングがありません。
 
 ## <a name="ray-cursor"></a>射線カーソル
 射線のカーソルは、遠くにある光線の端に接続して、手に届かないオブジェクトを操作できるようにします。 イマーシブヘッドセットでは、光線がモーションコントローラーから撮影され、ドットカーソルで終了します。 HoloLens 2 では、これらの運動コントローラー光線のメンタルモデルと、直接操作で使用される指カーソルと一貫性のあるリング型のカーソルでてのひらから端が出た、設計された手書き光線を活用します。 <br>

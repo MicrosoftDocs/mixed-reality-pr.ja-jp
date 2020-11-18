@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 30ef793511285fe2fe52810912f6c5c06c8550dc
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: ded881290de0167b7ffe26fc86b573d9b9ebb0b6
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353460"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631500"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2.Holographic Remoting PC アプリケーションの作成
 
@@ -39,6 +39,11 @@ ms.locfileid: "93353460"
 ### <a name="1-set-the-player-settings"></a>1.プレーヤー設定を設定する
 
 Unity メニューで、[編集] > [プロジェクトの設定] の順に選択して、[プレーヤーの設定] ウィンドウを開きます。
+
+[プロジェクトの設定] ウィンドウで、 **[Publishing Settings]\(発行の設定\)** を展開し、 **[機能]** セクションまで下にスクロールして、既存の機能に加えて以下の機能チェックボックスをオンにします。
+
+* インターネット クライアント サーバー
+* プライベート ネットワーク クライアント サーバー
 
 **[XR Settings]\(XR 設定\)** セクションで、 **[WSA Holographic Remoting Supported]\(WSA Holographic Remoting のサポート\)** チェックボックスをオンにして、Holographic Remoting を有効にします。
 

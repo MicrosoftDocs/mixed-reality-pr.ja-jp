@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 資産、作成、処理、予算、多角形、テクスチャ、シェーダー、パフォーマンス
-ms.openlocfilehash: 56be236086a6947549af6199dc3d01ba7c555375
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 資産、作成、プロセス、予算、多角形、テクスチャ、シェーダー、パフォーマンス、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、assets
+ms.openlocfilehash: 0c6f592dd813c06613801510ad8c8a936ad0de65
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685175"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702878"
 ---
 # <a name="asset-creation-process"></a>アセット作成プロセス
 
@@ -77,7 +77,7 @@ Windows Mixed Reality は、Microsoft が DirectX に加えた数十年の投資
 ### <a name="creating-assets"></a>アセットの作成
 
 **オーサリングツール**<br>
-まず、さまざまな方法で独自のアセットを作成できます。 3D アーティストは、 **メッシュ** 、 **テクスチャ** 、および **素材** で構成されるモデルを作成するために、さまざまなアプリケーションやツールを使用します。 これは、など、アプリで使用されるグラフィックスエンジンでインポートまたは使用できるファイル形式で保存され **ます。FBX** または **。OBJ** 。 選択したグラフィックスエンジンでサポートされているモデルを生成するツールは、 **HoloLens** で動作します。 3D アーティストの中では、多くの場合、 [Autodesk の Maya](https://www.youtube.com/watch?v=q0K3n0Gf8mA) を使用します。これは、HoloLens を使用して、資産の作成方法を変革できます。 簡単に処理できるようにするには、Windows に付属している [3D ビルダー](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) を使用してエクスポートすることもできます。アプリケーションで使用するための OBJ。
+まず、さまざまな方法で独自のアセットを作成できます。 3D アーティストは、 **メッシュ**、 **テクスチャ**、および **素材** で構成されるモデルを作成するために、さまざまなアプリケーションやツールを使用します。 これは、など、アプリで使用されるグラフィックスエンジンでインポートまたは使用できるファイル形式で保存され **ます。FBX** または **。OBJ**。 選択したグラフィックスエンジンでサポートされているモデルを生成するツールは、 **HoloLens** で動作します。 3D アーティストの中では、多くの場合、 [Autodesk の Maya](https://www.youtube.com/watch?v=q0K3n0Gf8mA) を使用します。これは、HoloLens を使用して、資産の作成方法を変革できます。 簡単に処理できるようにするには、Windows に付属している [3D ビルダー](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) を使用してエクスポートすることもできます。アプリケーションで使用するための OBJ。
 
 **オブジェクトのキャプチャ**<br>
 3D でオブジェクトをキャプチャするオプションもあります。 3d 印刷を利用することで、3D でのオブジェクトのキャプチャと、デジタルコンテンツ作成ソフトウェアを使用したオブジェクトの編集がますます広く普及しています。 **Kinect 2** センサーと [3d ビルダー](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources)を使用すると、キャプチャ機能を使用して、実際のオブジェクトから資産を作成できます。 これは、複数のイメージを処理し、メッシュとテクスチャを組み合わせることによって、 **photogrammetry** でも同じように実行するため [の一連のツール](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software)です。

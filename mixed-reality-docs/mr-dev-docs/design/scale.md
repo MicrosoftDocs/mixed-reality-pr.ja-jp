@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、Style、design
-ms.openlocfilehash: 7d35da2d86d8d3b7f444974d87e5aa10e58ed2c8
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Windows Mixed Reality、Style、design、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens、scale、ホログラム
+ms.openlocfilehash: e82211b0bee2214df7542d3129f95ea207f4b0e3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340660"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703378"
 ---
 # <a name="scale"></a>スケール
 
@@ -79,18 +79,6 @@ ms.locfileid: "94340660"
 <br>
 
 ---
-
-## <a name="next-discovery-checkpoint"></a>次回の検出チェックポイント
-
-ここまでに説明した [探索](../discover/get-started-with-mr.md) の取り組みに従っている場合は、最初の Foray が Mixed Reality の基礎になっています。 現実世界では、業界のパートナーが Mixed Reality で何を行っているのかを確認できます。 
-
-> [!div class="nextstepaction"]
-> [業界のパートナーが Mixed Reality をどのように使用しているかを確認する](../discover/get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality)
-
-または、設計の取り組みに進んでください。
-
-> [!div class="nextstepaction"]
-> [デザインの体験を始める](../design/design.md)
 
 ## <a name="see-also"></a>関連項目
 * [色、ライト、マテリアル](../color,-light-and-materials.md)

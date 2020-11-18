@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-keywords: Mixed Reality, 視線入力, 視線入力ターゲット設定, 対話, 設計
-ms.openlocfilehash: 76223dd375e76d943183bc745792e2cb9d3d0601
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality、宝石、宝石を絞ったターゲット、相互作用、設計、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、ターゲット、フォーカス、スムージング
+ms.openlocfilehash: d913ac81e20962d38178223a050fdccfb51d8632
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685074"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702388"
 ---
 # <a name="head-gaze-and-commit"></a>頭の視線入力とコミット
 _頭を見つめてコミット_ することは、 [宝石とコミット](gaze-and-commit.md) の入力モデルの特殊なケースです。頭の方向 (ヘッド方向) を使用してオブジェクトをターゲットにし、その後、エアタップや音声コマンドの "Select" など、2番目の入力で動作します。 

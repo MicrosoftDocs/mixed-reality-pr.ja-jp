@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: UWP、アプリモデル、ライフサイクル、中断、再開、タイル、ビュー、コントラクト
-ms.openlocfilehash: 67b883517ae17422bf7c27227c33882cf8a9f7ef
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: UWP、アプリモデル、ライフサイクル、中断、再開、タイル、ビュー、コントラクト、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
+ms.openlocfilehash: 332556a5118f0c69a83654d345119995e4262cb5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685242"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703108"
 ---
 # <a name="app-model"></a>アプリ モデル
 
@@ -184,26 +184,26 @@ HoloLens では、 [Fileopenpicker](https://docs.microsoft.com/uwp/api/Windows.S
 | [予定のプロバイダー](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#appointmnets_provider) | サポートされていない | 
 | [自動再生 (拡張機能)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#autoplay) | サポートされていない | 
 | [バックグラウンドタスク (拡張機能)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#background_tasts) | 部分的にサポートされている (すべてのトリガーが動作するわけではない) | 
-| [タスクの更新 (拡張機能)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#update_task) | サポートされています | 
-| [キャッシュされたファイルアップデーターコントラクト](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#cached_file_updater) | サポートされています | 
+| [タスクの更新 (拡張機能)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#update_task) | サポート | 
+| [キャッシュされたファイルアップデーターコントラクト](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#cached_file_updater) | サポート | 
 | [カメラの設定 (拡張機能)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#camera_settings) | サポートされていない | 
 | [ダイヤルプロトコル](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#dial_protocol) | サポートされていない | 
-| [ファイルのアクティブ化 (拡張機能)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#file_activation) | サポートされています | 
-| [ファイルオープンピッカーコントラクト](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#file_open_picker_contract) | サポートされています | 
-| [ファイル保存ピッカーコントラクト](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#file_save_picker_contract) | サポートされています | 
+| [ファイルのアクティブ化 (拡張機能)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#file_activation) | サポート | 
+| [ファイルオープンピッカーコントラクト](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#file_open_picker_contract) | サポート | 
+| [ファイル保存ピッカーコントラクト](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#file_save_picker_contract) | サポート | 
 | [ロック画面の呼び出し](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#lock_screen_call) | サポートされていない | 
 | [メディア再生](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#media_playback) | サポートされていない | 
 | [コントラクトに再生](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#playto_contract) | サポートされていない | 
 | [プレインストールした構成タスク](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#preinstalled_config_task) | サポートされていない | 
-| [印刷3D ワークフロー](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#print_3d_workflow) | サポートされています | 
+| [印刷3D ワークフロー](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#print_3d_workflow) | サポート | 
 | [印刷タスクの設定 (拡張機能)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#print_task_settings) | サポートされていない | 
-| [URI のアクティブ化 (拡張機能)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#protocol_activation) | サポートされています | 
+| [URI のアクティブ化 (拡張機能)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#protocol_activation) | サポート | 
 | [制限付き起動](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#restricted_launch) | サポートされていない | 
 | [検索コントラクト](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#search_contract) | サポートされていない | 
 | [設定のコントラクト](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#settings_contract) | サポートされていない | 
 | [共有コントラクト](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#share_contract) | サポートされていない | 
-| [SSL/証明書 (拡張機能)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#ssl_certificates) | サポートされています | 
-| [Web アカウントプロバイダー](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#web_account_provider) | サポートされています | 
+| [SSL/証明書 (拡張機能)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#ssl_certificates) | サポート | 
+| [Web アカウントプロバイダー](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#web_account_provider) | サポート | 
 
 ## <a name="app-file-storage"></a>アプリファイルストレージ
 
@@ -218,7 +218,7 @@ UWP アプリの詳細については、「 [Knownfolders](https://docs.microsof
 
 <table>
 <tr>
-<th> プロパティ</th><th> HoloLens でサポートされています</th><th> イマーシブヘッドセットでサポートされています</th><th> 説明</th>
+<th> プロパティ</th><th> HoloLens でサポートされています</th><th> イマーシブヘッドセットでサポートされています</th><th> [説明]</th>
 </tr><tr>
 <td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_AppCaptures">AppCaptures</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>アプリのキャプチャフォルダーを取得します。</td>
 </tr><tr>

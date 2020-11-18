@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: 視線追跡、Mixed Reality、インプット、視線
-ms.openlocfilehash: 57b90142fc47b72030f9b767370fd84a5c7d5b14
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 視線追跡、Mixed Reality、インプット、視線、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、設計、相互作用
+ms.openlocfilehash: 59dded6ca23b9adc075dc02d642ce7761f93bcfb
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685090"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702548"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens 2 での視線に基づく対話
 
@@ -40,7 +40,7 @@ HoloLens 2 のすばらしい新機能の1つは、視線追跡です。
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
 </tr>
 <tr>
-     <td>アイ視線入力</td>
+     <td>視線</td>
      <td>❌</td>
      <td>✔️</td>
      <td>❌</td>
@@ -70,7 +70,7 @@ HoloLens 2 のすばらしい新機能の1つは、視線追跡です。
 視線を使用して、スーパーヒーローのようなユーザーエクスペリエンスを実現することができますが、適切に対応できないことを把握しておくことも重要です。 ここでは、注意すべきいくつかの *課題* と、視線入力を操作するときの対処方法について説明します。 
 
 - **視線が "常時オン" になってい** ます。目の蓋を開くと、環境内での作業が開始されます。 作成したすべての外観に反応して、アクションを誤って発行しています。これは、時間がかかりすぎているために、満足できない結果になる可能性があるためです。
-そのため、ターゲットの選択をトリガーするために、 *音声コマンド* 、 *ハンドジェスチャ* 、 *ボタンクリック* 、または拡張熟考を使用して視線を組み合わせることをお勧めします (詳細については、「 [視線とコミット](gaze-and-commit-eyes.md)」を参照してください)。
+そのため、ターゲットの選択をトリガーするために、 *音声コマンド*、 *ハンドジェスチャ*、 *ボタンクリック* 、または拡張熟考を使用して視線を組み合わせることをお勧めします (詳細については、「 [視線とコミット](gaze-and-commit-eyes.md)」を参照してください)。
 また、このソリューションでは、involuntarily によって何かをトリガーすることなく、ユーザーが自由に検索できるモードを使用することもできます。 この問題は、ターゲットを見るときにビジュアルと聴覚のフィードバックをデザインするときにも考慮する必要があります。
 すぐにポップアウト効果やホバーサウンドを使用して、ユーザーの過負荷にならないようにしてください。 はらみはキーです。 ここでは、設計に関する [推奨事項](eye-gaze-interaction.md#design-recommendations)について説明する際に、以下のベストプラクティスについて説明します。
 

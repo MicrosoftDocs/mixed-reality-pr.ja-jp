@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、HoloLens、ホログラム、設計、相互作用
-ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Windows Mixed Reality、HoloLens、ホログラム、設計、対話、Mixed reality ヘッドセット、windows mixed reality ヘッドセット、強化された現実
+ms.openlocfilehash: 6407770a818bc294cf615201a837218173b963d0
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631470"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702248"
 ---
 # <a name="what-is-a-hologram"></a>ホログラムとは
 
@@ -126,9 +126,9 @@ HoloLens が [レンダリング](../develop/platform-capabilities-and-apis/rend
 
 ---
 
-## <a name="next-discovery-checkpoint"></a>次回の検出チェックポイント
+## <a name="next-discovery-checkpoint"></a>次の探索チェックポイント
 
-ここまでに説明した [探索](get-started-with-mr.md) の方法に従っている場合は、Mixed Reality の基本を確認しています。 ここから、次の基本トピックに進むことができます。 
+私たちが用意した[探索ツアー](get-started-with-mr.md)を進んでいる場合、あなたの現在地は Mixed Reality の基本の探索の中盤の段階です。 ここから、次の基本トピックに進むことができます。 
 
 > [!div class="nextstepaction"]
 > [デザイン プロセスを展開する](case-study-expanding-the-design-process-for-mixed-reality.md)

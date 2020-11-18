@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
-keywords: HoloLens、Windows Mixed Reality、holographic frame、ビューのフィールド
-ms.openlocfilehash: 649cacfaf40f226a84f1b9b928cb47e468f3f146
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: HoloLens、Windows Mixed Reality、holographic frame、ビューのフィールド、視界、Mixed reality ヘッドセット、Windows Mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、相互作用、ナビゲーション、メニュー
+ms.openlocfilehash: c1786af43bacc414b5ffcf6f59753d7f8fa92fef
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340640"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702218"
 ---
 # <a name="holographic-frame"></a>ホログラフィック フレーム
 
@@ -79,7 +79,7 @@ HoloLens の holographic フレーム内のデジタルコンテンツを [安�
 
 ---
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 
 ### <a name="volvo-cars"></a>Volvo 車
 
@@ -138,13 +138,6 @@ HoloLens ゲームのフラグメントでは、生きた部屋が仮想犯罪�
 *仮想 narrators は、ユーザーの動きに従って、エクスペリエンス全体を通じて強力な焦点を発揮します。*
 
 写実的な表現は、強力な焦点として提供されていました。微妙な手法を使用すると、ユーザーにとっては、話をしているように見えます。 ユーザーが経験を移動すると、ユーザーが周囲を超えて移動したときにニュートラル状態に戻る前に、話題がしきい値に移ります。 たとえば、シーン内の他の場所を見ているように、ユーザーが完全に話題に移動した後で、その後で、ユーザーに対してナレーターの方向が再びフォーカスされます。 このような手法は、immersion の強力な意味を持ち、holographic フレーム内に焦点を合わせています。これにより、過度のヘッド移動が減少し、 [ユーザーの快適](comfort.md)さが促進されます。
-
-## <a name="next-discovery-checkpoint"></a>次回の検出チェックポイント
-
-ここまでに説明した [探索](../discover/get-started-with-mr.md) の方法に従っている場合は、Mixed Reality の基本を確認しています。 ここから、次の基本トピックに進むことができます。 
-
-> [!div class="nextstepaction"]
-> [ホログラフィック オブジェクトを現実的なものにする - (空間マッピング)](../design/spatial-mapping.md)
 
 ## <a name="see-also"></a>関連項目
 * [本能的な操作](interaction-fundamentals.md)

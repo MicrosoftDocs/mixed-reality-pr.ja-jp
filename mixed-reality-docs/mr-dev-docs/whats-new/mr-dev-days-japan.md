@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality、カンファレンス、サミット、開発者、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 170c0ebfeee2b6305c5d52c8aba143badaffa5e2
-ms.sourcegitcommit: 53c6d27781ed12e2899c72087d317a62b2fad8cb
+ms.openlocfilehash: e120582e6184b9b105221aeddb5bcb42629ccb0c
+ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2020
-ms.locfileid: "94897357"
+ms.locfileid: "94933267"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days (日本)
 
@@ -55,10 +55,10 @@ Mixed Reality Dev Days への皆様のご参加をお待ちしています。 Mi
 |午後 2 時 - 午後 2 時 25 分|*セッション 5* HoloLens 2 と Unreal Engine の概要 (MRTK-Unreal)|Cameron Micka|JA|300|
 |午後 2 時 30 分 - 午後 2 時 55 分|*セッション 6* "デザインホログラム" アプリを作成する。 この新しい HoloLens 2 アプリの作成中に検出された機能、課題、およびその他の楽しい学習について説明します。|Daniel Escudero|JA|300|
 |午後 2 時 55 分 - 午後 3 時 10 分|**休憩**||||
-|午後 3 時 10 分 - 午後 3 時 35 分|*セッション 7* Azure Object Anchors|TBD|JA|300|
+|午後 3 時 10 分 - 午後 3 時 35 分|*セッション 7* Azure Object Anchors|Jesse McCulloch|JA|300|
 |午後 3 時 40 分 - 午後 4 時 05 分|*セッション 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
 |午後 4 時 10 分 - 午後 4 時 35 分|*セッション 9* Azure Spatial Anchors|TBD|JA|300|
-|午後 4 時 40 分 - 午後 5 時 05 分|*セッション 10* 未定|TBD|JA|200|
+|午後 4 時 40 分 - 午後 5 時 05 分|*セッション 10* Unity + PiXYZ|Shinobu Takahashi (Unity)|JA|200|
 |午後 5 時 10 分 - 午後 5 時 35 分|*セッション 11* Azure Kinect DK の詳細、ケース スタディ|Shinji Chiba|JA|400|
 |午後 5 時 35 分 - 午後 5 時 50 分|閉じる|千代田まどか|JA|N/A|
 

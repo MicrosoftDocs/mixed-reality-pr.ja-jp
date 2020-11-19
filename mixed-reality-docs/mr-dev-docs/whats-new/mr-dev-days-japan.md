@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality、カンファレンス、サミット、開発者、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 746b6257e6a3ab28424d7b74e43a1b6541d6fad0
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
-ms.translationtype: HT
+ms.openlocfilehash: 170c0ebfeee2b6305c5d52c8aba143badaffa5e2
+ms.sourcegitcommit: 53c6d27781ed12e2899c72087d317a62b2fad8cb
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573286"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94897357"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days (日本)
 
@@ -27,9 +27,13 @@ Mixed Reality Dev Days への皆様のご参加をお待ちしています。 Mi
 
 **登録 - 無料**
 
+**第一言語-日本語**
+
 ## <a name="registration"></a>登録
 
-近日中にご利用になれます
+[登録を開始しました](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+
+私たちは、Mixed Reality 開発日の登録を開始することが非常に興奮しています。  イベントは無料で、Microsoft Teams のライブイベントでオンラインに保持されています。  イベントが近いときに電子メールの更新を送信し、イベントの対話型要素に参加できるように、参加者を登録するように依頼します。
 
 ## <a name="schedule---subject-to-change"></a>スケジュール (変更される場合があります)
 
@@ -49,7 +53,7 @@ Mixed Reality Dev Days への皆様のご参加をお待ちしています。 Mi
 |午後 1 時 - 午後 1 時 25 分|*セッション 3* HoloLens 2 開発の概要|千代田まどか|JA|200|
 |午後 1 時 30 分 - 午後 1 時 55 分|*セッション 4* HoloLens 2 & MRTK v2.5 (MRTK-Unity)|Yoon Park|JA|300|
 |午後 2 時 - 午後 2 時 25 分|*セッション 5* HoloLens 2 と Unreal Engine の概要 (MRTK-Unreal)|Cameron Micka|JA|300|
-|午後 2 時 30 分 - 午後 2 時 55 分|*セッション 6* MR アプリの設計 (HL2 アプリ用の UI/UX を作成するためのベスト プラクティス)|Daniel Escudero|JA|300|
+|午後 2 時 30 分 - 午後 2 時 55 分|*セッション 6* "デザインホログラム" アプリを作成する。 この新しい HoloLens 2 アプリの作成中に検出された機能、課題、およびその他の楽しい学習について説明します。|Daniel Escudero|JA|300|
 |午後 2 時 55 分 - 午後 3 時 10 分|**休憩**||||
 |午後 3 時 10 分 - 午後 3 時 35 分|*セッション 7* Azure Object Anchors|TBD|JA|300|
 |午後 3 時 40 分 - 午後 4 時 05 分|*セッション 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|

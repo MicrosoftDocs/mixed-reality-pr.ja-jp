@@ -7,18 +7,21 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, カメラ, PV カメラ, MRC
-ms.openlocfilehash: e66583d46d64361621303e36a5fbcc209300f5d8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6302a64fcde2a16b6ae1cb570215629a3e6ea9e5
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699267"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573236"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Unreal での HoloLens 写真/ビデオ カメラ
 
 ## <a name="overview"></a>概要
 
-HoloLens には、Mixed Reality Capture (MRC) に使用される写真/ビデオ (PV) カメラがあり、アプリで実際のビジュアルにアクセスするために使用できます。
+HoloLens には、Mixed Reality Capture (MRC) に使用される写真/ビデオ (PV) カメラがあり、アプリで実際のビジュアルにアクセスするために使用できます。 
+
+> [!IMPORTANT]
+> Holographic Remoting では PV カメラはサポートされていませんが、お使いの PC に搭載のウェブ カメラを使用して、HoloLens PV カメラの機能をシミュレートできます。
 
 ## <a name="render-from-the-pv-camera-for-mrc"></a>MRC 用の PV カメラからのレンダリング
 
@@ -44,8 +47,8 @@ PV カメラからの表示をオプトインするには、次のようにし�
 ## <a name="using-the-pv-camera"></a>PV カメラの使用
 
 Web カメラ テクスチャは実行時にゲームで入手できますが、エディターの **[編集] > [プロジェクトの設定]** で有効にする必要があります。
-1. **[プラットフォーム] > [HoloLens] > [機能]** に移動し、 **Web カメラ** を確認します。
-    * 実行時に Web カメラを使用するには、 **StartCameraCapture** 関数を使用し、記録を停止するには、 **StopCameraCapture** 関数を使用します。
+1. **[プラットフォーム] > [HoloLens] > [機能]** に移動し、**Web カメラ** を確認します。
+    * 実行時に Web カメラを使用するには、**StartCameraCapture** 関数を使用し、記録を停止するには、**StopCameraCapture** 関数を使用します。
 
 ![カメラの開始と停止](images/unreal-camera-startstop.PNG)
 
@@ -58,7 +61,7 @@ Web カメラ テクスチャは実行時にゲームで入手できますが、
 
 ![カメラのレンダリング](images/unreal-camera-render.PNG)
 
-4. このタイマーに新しい関数 (この場合は **MaterialTimer** ) を作成し、 **GetARCameraImage** を呼び出して、Web カメラからテクスチャを取得します。  
+4. このタイマーに新しい関数 (この場合は **MaterialTimer**) を作成し、**GetARCameraImage** を呼び出して、Web カメラからテクスチャを取得します。  
 5. このテクスチャが有効な場合は、シェーダーのテクスチャ パラメーターをこのイメージに設定します。  そうでない場合は、もう一度素材のタイマーを開始します。
 
 ![Web カメラからのカメラ テクスチャ](images/unreal-camera-texture.PNG)

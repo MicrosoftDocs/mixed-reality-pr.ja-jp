@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 検出, 配布, インデックス, ランディング ページ, 設計, 開発, チュートリアル, サンプル アプリ, 基本事項, ケース スタディ, リソース, HoloLens の使い方, オープン ソース プロジェクト, 主要な概念, 操作
-ms.openlocfilehash: 2ee127b05a8ad88e49eda6d088f84e895aeaf511
-ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
+ms.openlocfilehash: 19a83a132cca08573f1066a2f7b87bd383ca79f4
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94361724"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573276"
 ---
 # <a name="start-designing-and-prototyping"></a>設計とプロトタイプ作成を始める
 
@@ -35,7 +35,7 @@ Mixed Reality アプリケーションはまったく新しいものであるた
 | [デザイン プロセスを展開する](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Microsoft 内外の設計者から収集された Mixed Reality のデザイン プロセスを直接確認する |
 | [Mixed Reality アプリの種類](types-of-mixed-reality-apps.md) | Mixed Reality の範囲のうち、どの領域のアプリ エクスペリエンスを実現するかを決定する |
 | [Designing Holograms アプリ](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Mixed Reality の動作、優れた HoloLens アプリ (Microsoft Store の HoloLens 2 からダウンロード可能) を作成するためのヒントや推奨事項について、Mixed Reality UX Design を実際に使用して、その基礎を理解する |
-
+| [MRTK Examples Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | 複合現実の一般的な空間操作と UX 構成要素を体験する (HoloLens 2 の Microsoft Store からダウンロード可能) |
 ### <a name="2-core-concepts"></a>2. 主要な概念
 
 開発対象が VR でも AR でも、柔軟なイマーシブ エクスペリエンスの設計には、いくつかの主要な概念が適用されます。 ユーザーの視点を理解し、オブジェクトを配置し、すべてのユーザーの快適性と安全性を確保することが、お客様の作業のこの段階における最優先事項です。 このセクションが完了する頃には、操作の設計まで全体を通して役に立つ強固な基盤が手に入ります。

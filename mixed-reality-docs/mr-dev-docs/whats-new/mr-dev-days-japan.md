@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality、カンファレンス、サミット、開発者、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: e120582e6184b9b105221aeddb5bcb42629ccb0c
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+ms.openlocfilehash: 6f673c78004f94692fcb09d304d6d40d2f97f1c3
+ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2020
-ms.locfileid: "94933267"
+ms.locfileid: "94941858"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days (日本)
 
@@ -51,7 +51,7 @@ Mixed Reality Dev Days への皆様のご参加をお待ちしています。 Mi
 |正午 - 午後 12 時 50 分|*ランチ セッション* パネル:対話型の無料ディスカッション、Q&A、MRTK + Oculus Quest 2|Madoka Chiyoda + Microsoft MVP|JA|200|
 |午後 12 時 50 分 - 午後 1 時|**休憩**||||
 |午後 1 時 - 午後 1 時 25 分|*セッション 3* HoloLens 2 開発の概要|千代田まどか|JA|200|
-|午後 1 時 30 分 - 午後 1 時 55 分|*セッション 4* HoloLens 2 & MRTK v2.5 (MRTK-Unity)|Yoon Park|JA|300|
+|午後 1 時 30 分 - 午後 1 時 55 分|*セッション 4* MRTK の UX 構成ブロック (v 2.5.0)|Yoon Park|JA|300|
 |午後 2 時 - 午後 2 時 25 分|*セッション 5* HoloLens 2 と Unreal Engine の概要 (MRTK-Unreal)|Cameron Micka|JA|300|
 |午後 2 時 30 分 - 午後 2 時 55 分|*セッション 6* "デザインホログラム" アプリを作成する。 この新しい HoloLens 2 アプリの作成中に検出された機能、課題、およびその他の楽しい学習について説明します。|Daniel Escudero|JA|300|
 |午後 2 時 55 分 - 午後 3 時 10 分|**休憩**||||

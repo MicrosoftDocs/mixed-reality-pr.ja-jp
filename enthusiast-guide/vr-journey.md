@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、
-ms.openlocfilehash: c2a00b88992fde3e599020d930ef950222e87099
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.openlocfilehash: 429a1130d628f54f12eb8ff6eed3f48d4712143a
+ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573216"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94941868"
 ---
 # <a name="start-your-vr-journey"></a>VR の体験を開始する
 
@@ -29,6 +29,7 @@ ms.locfileid: "94573216"
 
 |  Checkpoint  |  結果  |
 | --- | --- |
+| [開始する前に](before-you-start.md) |  |
 | [最小 PC ハードウェア ガイドライン](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Windows Mixed reality、Windows Mixed Reality Ultra、および Windows Mixed Reality ポータルアプリの実行について知る必要があるすべての情報 |
 | [PC の互換性に関するヘルプの表示](get-help-with-pc-compatibility.md) | Windows Mixed Reality PC から生成されたレポートについて確認する |
 | [購入に関する Faq](before-you-buy-faqs.md) | 技術仕様、デバイス、およびコントローラーに関する購入に関するすべての質問への回答を得る |
@@ -57,24 +58,27 @@ Windows Mixed Reality とイマーシブ VR ヘッドセットを通じて利用
 | [Windows Mixed Reality ホーム内を移動する](your-mixed-reality-home.md) | Windows Mixed Reality ホームの仮想環境を調べる  |
 | [コントローラーの使用](controllers-in-wmr.md) | モーションコントローラーのセットアップ、理解、および使用 |
 | [音声入力の使用](using-speech-in-wmr.md) | 3D オブジェクト、アプリバー、スタートメニュー、Cortana と対話できるさまざまな音声コマンドについて理解する |
-| [ゲーム、360ビデオ、アプリ](using-games-and-apps-in-windows-mixed-reality.md) | 初めてのイマーシブゲーム、2D ストアスレート、デスクトップアプリケーション、および WebVR エクスペリエンスを使ってみる |
-| [SteamVR の使用](using-steamvr-with-windows-mixed-reality.md) | デバイスを接続して SteamVR ゲームをプレイし、Windows Insider プログラムについて学習する |
-| [Microsoft Edge の使用](using-microsoft-edge.md) | 最新バージョンの Microsoft Edge をイマーシブデバイスにインストールする |
-| [WebVR の使用](webvr.md) | ブラウザー環境で VR を体験するためのセットアップを入手する |
 
 > [!NOTE]
 > 上記の機能のいずれかで問題が発生している場合は、 **[「Windows Mixed Reality の使用](using-wmr-faq.md)** に関する FAQ」をご覧ください。
 
-### <a name="4-troubleshooting-tips--resources"></a>4. トラブルシューティング、ヒント & リソース
+## <a name="4-discover-apps-and-content"></a>4. アプリとコンテンツを検出する
 
-イマーシブハードウェアに関連する問題が発生した場合は、 [よく寄せられる一般的な FAQ](troubleshooting-windows-mixed-reality.md) から始めます。 探しているものが見つからない場合は、「 **トラブルシューティング** に関する faq」セクションに記載されているトピック固有の faq ドキュメントの一覧を参照してください。このセクションでは、すべてのインストールとエラーコードを、パフォーマンスとヘッドセットの表示方法について説明します。
+イマーシブゲーム、デスクトップアプリケーション、および VR コンテンツを検索し、以下のリソースで Microsoft Edge ブラウザーを使用します。 
+
+<br>
+
+| [ゲーム、360ビデオ、アプリ](using-games-and-apps-in-windows-mixed-reality.md) |初めてのイマーシブゲーム、2D ストアスレート、デスクトップアプリケーション、および WebVR エクスペリエンスを使ってみる | | [SteamVR | を使用する](using-steamvr-with-windows-mixed-reality.md) デバイスを接続して SteamVR ゲームをプレイし、Windows Insider Program | | について学習します。 [Microsoft Edge | を使用する](using-microsoft-edge.md) イマーシブデバイスに最新バージョンの Microsoft Edge をインストールする | | [WebVR | を使用する](webvr.md) ブラウザー環境で VR を体験するためのセットアップを入手する |
+
+## <a name="troubleshooting-tips--resources"></a>トラブルシューティング、ヒント & リソース
+
+イマーシブハードウェアに関連する問題が発生した場合は、次の方法で開始します。
+ 
+* [一般的な FAQ](troubleshooting-windows-mixed-reality.md) 
+
+探しているものが見つからない場合は、「 **トラブルシューティング** に関する faq」セクションに記載されているトピック固有の faq ドキュメントの一覧を参照してください。このセクションでは、すべてのインストールとエラーコードを、パフォーマンスとヘッドセットの表示方法について説明します。 特定の機能が VR でどのように機能するかについて詳しくは、「 [モーションコントローラー](controllers-in-wmr.md) と [内部 out の追跡](tracking-system.md) のしくみ」を参照してください。
 
 新しい問題とバグについては常にお待ちしているので、ドキュメントに記載されていないものがある場合は、 [こちらからフィードバック](filing-feedback.md)をお送りください。
-
-VR で特定の機能がどのように機能するかについて詳しくは、以下の記事をご覧ください。
-
-* [モーションコントローラーの動作](controllers-in-wmr.md)
-* [インサイドアウト追跡のしくみ](tracking-system.md)
 
 > [!NOTE]
 > Windows Mixed Reality の完全なリリース履歴については、 [こちら](mixed-reality-software.md)を参照してください。

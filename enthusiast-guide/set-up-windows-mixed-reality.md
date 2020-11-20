@@ -3,12 +3,12 @@ title: Windows Mixed Reality を設定する
 description: Windows Mixed Reality のモーションコントローラー、音声、オーディオを設定し、安全な再生スペース用の部屋の境界を定義する方法。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、はじめに、セットアップ、モーションコントローラー、コントローラー、音声、オーディオ、取り付け済み、継続的、境界、グラフィックスドライバー、Microsoft Edge、chromium
-ms.openlocfilehash: 95ca5b8d86e26061e565a74efa36e49cc3d1b92b
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 16fa0fbf1574a61a5c7401de8a1e0431e183ec11
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132146"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002997"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Windows Mixed Reality を設定する
 
@@ -24,7 +24,11 @@ Windows Mixed Reality を実行するには、次のものが必要です。
 
 ## <a name="get-set"></a>セットの取得
 
-領域 (オーバーヘッド領域を含む) を準備します。 使用する領域に、障害、危険、または脆弱な項目がないことを確認します。 階段の上部、または低天井ファンの下には設定しないでください。 領域から breakables 変更可能な障害を除去し、ヘッドセットを使用するすべてのユーザーが [安全ガイドライン](https://support.microsoft.com/help/4039969)を読み、理解していることを確認します。
+領域 (オーバーヘッド領域を含む) を準備します。 使用する領域に、障害、危険、または脆弱な項目がないことを確認します。 階段の上部、または低天井ファンの下には設定しないでください。 領域から breakables 変更可能な障害を除去し、ヘッドセットを使用するすべてのユーザーが安全ガイドラインを読み、理解していることを確認します。
+
+スペースの準備ができたら、ヘッドセットにプラグインしますが、まだ配置しないでください。まず、PC でセットアップを実行する必要があります。 PC チェックを実行し、ソフトウェアをダウンロードし、コントローラーに接続して、障害を回避するための [境界](boundary-questions.md) を作成します。
+
+その後、お使いのヘッドセットに入って、混合世界に入ることができます。 Cortana は、ツアーの提供を待っています。 お楽しみください!
 
 ## <a name="go"></a>始めましょう。
 
@@ -40,7 +44,7 @@ Windows Mixed Reality を実行するには、次のものが必要です。
 
 Xbox ゲームパッド、キーボード、およびマウスを使用することのみを計画している場合は、コントローラーをペアリングする必要はありません。  コントローラーの使用を計画している場合は、それらをペアにすることをお勧めします。
 
-**注** : Windows Mixed Reality モーションコントローラーでは、Bluetooth 4.0 が必要です。 PC に Bluetooth が組み込まれていない場合は、Bluetooth 4.0 をサポートする USB Bluetooth アダプターを接続して、動きコントローラーを有効にする必要があります。 ヘッドセットで組み込みラジオを使用している場合は、Bluetooth アダプターは必要ありません。
+**注**: Windows Mixed Reality モーションコントローラーでは、Bluetooth 4.0 が必要です。 PC に Bluetooth が組み込まれていない場合は、Bluetooth 4.0 をサポートする USB Bluetooth アダプターを接続して、動きコントローラーを有効にする必要があります。 ヘッドセットで組み込みラジオを使用している場合は、Bluetooth アダプターは必要ありません。
 
 ![モーションコントローラーについて理解を深める](images/get_to_know_controllers.png)
 
@@ -106,7 +110,7 @@ Windows Mixed Reality では、PC のハードウェア構成に基づいて、�
 
 この設定は、Mixed reality ホームの視覚的な品質を制御します。 既定値は "Automatic" です。
 
-### <a name="resolution"></a>解像度
+### <a name="resolution"></a>解決策
 
 ヘッドセットのネイティブ解像度を次に示します。
 
@@ -126,7 +130,7 @@ Windows Mixed Reality では、PC のハードウェア構成に基づいて、�
 
 この詳細設定は、既定のヘッドセット表示のリフレッシュレートエクスペリエンスよりも優先されます。
 
-* **自動 (既定)** : PC のハードウェア構成に基づいて、60hz または90hz エクスペリエンスを自動的に選択します。
+* **自動 (既定)**: PC のハードウェア構成に基づいて、60hz または90hz エクスペリエンスを自動的に選択します。
 * **ヘルツ**
 * **90Hz**
 
@@ -138,7 +142,7 @@ Windows Mixed Reality では、PC のハードウェア構成に基づいて、�
 この設定は、ヘッドセットのプレゼンスセンサーに応じて、Windows Mixed Reality の動作を制御します。
 
 * **ヘッドセットプレゼンスセンサーを使用して自動的に切り替える** (既定): ヘッドセットを装着している場合は、windows によって自動的に入力 (キーボード、マウスなど) が Windows Mixed Reality に自動的に送信されます。 Win + Y を使用すると、いつでもオーバーライドできます。
-* **Windows ロゴキーを使用して手動で切り替える** : windows では、ヘッドセットの装着を検出するためにヘッドセットのプレゼンスセンサーを使用しません。 Win + Y を使用して、PC デスクトップと Windows Mixed Reality の間で入力を切り替える必要があります。
+* **Windows ロゴキーを使用して手動で切り替える**: windows では、ヘッドセットの装着を検出するためにヘッドセットのプレゼンスセンサーを使用しません。 Win + Y を使用して、PC デスクトップと Windows Mixed Reality の間で入力を切り替える必要があります。
 
 この設定は、Windows 10 バージョン1903以降で使用できます。
 
@@ -171,7 +175,7 @@ Windows Mixed Reality ホームで新しい Chromium ベースの Microsoft Edge
 
 2回目に mixed reality を入力すると、PC に接続している間にヘッドセットを戻すのと同じように簡単になります。 また、[スタート] メニューから開いて、Mixed Reality ポータルアプリケーションを手動で起動することもできます。 入力とオーディオは、オンヘッドヘッドに自動的にルーティングされます。または、キーボードの **Windows + Y** キーを押して手動でトリガーすることもできます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 * [コミュニティへの質問](https://answers.microsoft.com)
 * [サポートについては、お問い合わせください](https://support.microsoft.com/contactus/)

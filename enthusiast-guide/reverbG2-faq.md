@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、パフォーマンス
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.openlocfilehash: 241fb95d92c771af727cc50287e4d1b2526123a5
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573206"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002967"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP リバーブ G2 に関してよく寄せられる質問
 
@@ -43,7 +43,7 @@ HP は次のことを推奨します。
 - ヘッドセットと USB コントローラー用に最新のドライバーがインストールされていることを確認します。
 - Microsoft USB ドライバーを使用していることを確認してください。 "拡張可能なホストコントローラー" デバイスの名前に "Microsoft" が含まれている必要があります。
 - お使いのコンピューターの別の USB-3.0 ポートにケーブルを接続してみてください。 (USB タイプ-C とタイプ-A ポートを試す)
-- 含まれている USB C を使用して、別のポートを試すアダプターを使用します。
+- アダプターに含まれている USB C を使用して、別のポートを試します。
 - USB ハブを使用してコンピューターにヘッドセットを接続してみてください。
 
 > [!NOTE]

@@ -8,36 +8,36 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、前払い、研究、購入、購入前
 appliesto:
 - Windows 10
-ms.openlocfilehash: a38b6ed8625fbb419ad24f2e27acec881d7b85a7
-ms.sourcegitcommit: ea7d806c9aa88d1295493a25f47e58bb72a4000a
+ms.openlocfilehash: 20a585088c9bea9d01754f78e9934a4022c0e34c
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92907444"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002976"
 ---
-# <a name="frequently-asked-questions"></a>よく寄せられる質問
+# <a name="before-you-buy-frequently-asked-questions"></a>よく寄せられる質問を購入する前に
 
 ## <a name="general-questions"></a>一般的な質問
 
-### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Windows Mixed Reality の準備完了 PC またはヘッドセットはどこで購入できますか。
+### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Windows Mixed Reality の準備ができている PC またはヘッドセットを購入できる場所
 
 **クイック回答:** Windows Mixed Reality の準備ができた PC またはヘッドセットは、承認されたローカルの小売業者またはオンラインで、Microsoft Store を含むさまざまな小売業者から購入できます。 Windows Mixed Reality の準備ができている PC またはヘッドセットをオンラインで検索する: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
-### <a name="where-can-i-try-windows-mixed-reality"></a>Windows Mixed Reality はどこで試すことができますか。
+### <a name="where-can-i-try-windows-mixed-reality"></a>Windows Mixed Reality をどこで試すことができますか。
 
 **クイック回答:** Windows Mixed Reality は、お近くの [Microsoft リアクター](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) で試すことができます。
 
 * Meetup.com での Microsoft リアクターイベントの検索: <https://www.meetup.com/pro/microsoft-reactor>
 
-### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>どの製造元が Windows Mixed Reality デバイスを販売していますか。
+### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Windows Mixed Reality デバイスを販売している製造元
 
 **クイック回答:** ヘッドセットとモーションコントローラーは、現在、HP から入手できます。 「<https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>」を参照してください。
 
-### <a name="where-can-i-buy-standalone-motion-controllers"></a>スタンドアロンのモーションコントローラーはどこで購入できますか。
+### <a name="where-can-i-buy-standalone-motion-controllers"></a>スタンドアロンのモーションコントローラーを購入できる場所
 
 **クイック回答:** 残念ながら、現時点では、スタンドアロンの運動コントローラーを販売している小売業者は認識していません。
 
-### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Windows Mixed Reality PC と Windows Mixed Reality ウルトラ PC の違いは何ですか。
+### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Windows Mixed Reality PC と Windows Mixed Reality ウルトラ PC の違い
 
 **クイック回答:** Windows Mixed Reality Pc と Ultra Pc の詳細については、こちらを参照してください。 <https://aka.ms/mrcompat>
 
@@ -47,17 +47,17 @@ ms.locfileid: "92907444"
 
 Mixed Reality の詳細については、こちらを参照してください。 <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
 
-### <a name="what-is-the-difference-between-windows-mixed-reality-and-other-vr-headsets"></a>Windows Mixed Reality とその他の VR ヘッドセットの違いは何ですか。
+### <a name="what-is-the-difference-between-windows-mixed-reality-and-other-vr-headsets"></a>Windows Mixed Reality とその他の VR ヘッドセットの違い
 
 **クイック回答:** Windows Mixed Reality ヘッドセット機能の内部 out 追跡 (トラッキングカメラはヘッドセットにあります) とプラグアンドプレイセットアップを Windows 10 で実行します。
 
 **詳細: Windows** Mixed Reality では、簡単なセットアップ (外部センサーを使用してコントローラーを追跡する必要はありません)、お客様の快適さと価格を満たすヘッドセットの選択、競争力のある Microsoft Store 解像度のヘッドセットなど、さまざまな機能が提供されます
 
-### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>Mixed Reality は、内部のカメラがパススルーであることを意味しますか。 仮想現実に加えて、さらに現実を経験することはできますか。
+### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>Mixed Reality は、内部のカメラがパススルーであることを意味しますか。 仮想現実に加えて、拡張される現実を実現できます。
 
-**クイック回答:** いいえ。 Windows Mixed Reality ヘッドセットの内部 out カメラは、位置追跡のみに使用されます。 Windows Mixed Reality ヘッドセットは、仮想現実のものであり、現実の世界や拡張された現実のビューを提供しないことを意味する occluded です。 
+**クイック回答:** いいえ。 Windows Mixed Reality ヘッドセットの内部 out カメラは、位置追跡のみに使用されます。 Windows Mixed Reality ヘッドセットは、仮想現実のものであり、現実の世界や拡張された現実のビューを提供しないことを意味する occluded です。
 
-### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>内部の追跡とは 外部での追跡や lighthouse の追跡とはどのように違いますか。
+### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>内部の追跡とは 外部での追跡または lighthouse の追跡との違い
 
 * **内部 out 追跡** Windows Mixed Reality は、内部 out 追跡を使用します。 内部での追跡カメラはヘッドセットに組み込まれており、環境の変化を追跡して、環境に関連するヘッドセットの位置を特定します。
 
@@ -65,11 +65,11 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 内部の追跡の詳細については、次のページを参照してください。 <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system>
 
-### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>カメラの視界が原因でゲームのプレイに影響する、モーションコントローラーの内部での追跡は可能ですか。
+### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>カメラの視界によるゲームプレイに影響する、モーションコントローラーの内部での追跡が可能
 
  ヘッドセットと同様に、Windows Mixed Reality モーションコントローラーでは、外部の追跡センサーを設定する必要がありません。 代わりに、コントローラーはヘッドセット自体のセンサーによって追跡されます。 ユーザーがヘッドセットのビューのフィールドからコントローラーを移動した場合、ほとんどの場合、Windows はコントローラーの位置を推測してアプリに提供し続けます。 コントローラーのビジュアル追跡が十分に失われた場合、コントローラーの位置はおおよその精度の位置にドロップします。 この時点で、システムはコントローラーをユーザーにボディロックし、ユーザーが移動したときの位置を追跡しながら、内部方向センサーを使用してコントローラーの真向きを公開します。 UI 要素をポイントしてアクティブ化するためにコントローラーを使用する多くのアプリは、ユーザーが気付かなくても、おおよその精度で正常に動作できます。 これを実現する最善の方法は、自分で試してみることです。
 
-### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Windows Mixed Reality と Samsung 歯車 VR の違いはどのようなものですか。
+### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Windows Mixed Reality と Samsung 歯車 VR の違い
 
 **クイック回答:** Samsung 歯車 VR や Google Daydream を含むすべてのスマートフォンベースの VR 製品では、3度の自由度 (3DOF のヘッド位置追跡システムを使用します。 3D ベースのシステムでは、仮想環境内のネックから **のみ** ヘッドを移動できます。 一方、Windows MR は、6度の自由度 (6DOF) のヘッドとコントローラーの位置追跡システムを使用します。 6自由度ベースのシステムを使用すると、仮想環境で本文全体を移動できます。これにより、物理的な世界での場合と同様に、オブジェクトを前後に移動してさまざまな視点から見ることができます。 Rift と Naopak は、6DOF ベースのシステムでもあります。
 
@@ -81,8 +81,8 @@ Mixed Reality の詳細については、こちらを参照してください。
 <table>
 <tr>
 <th style="width:25%"> Headset </th>
-<th style="width:15%"> 解像度 </th>
-<th style="width:10%"> 表示 </th>
+<th style="width:15%"> 解決策 </th>
+<th style="width:10%"> ディスプレイ </th>
 <th style="width:10%"> 更新間隔 </th>
 <th style="width:10%"> 視界 </th>
 <th style="width:15%"> オーディオ </th>
@@ -368,7 +368,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 **クイック回答:** はい。 Windows Mixed Reality は、十分なスペースがない場合でも機能します。 この設定は、セットアップ中に "デスクスケール" エクスペリエンスを選択することによって行うことができます。
 
-## <a name="content"></a>コンテンツ
+## <a name="content"></a>Content
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Windows Mixed Reality ではどのようなゲームとアプリが実行されますか。
 

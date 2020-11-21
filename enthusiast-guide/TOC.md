@@ -1,15 +1,11 @@
 # [Windows Mixed Reality 技術者向けドキュメント](index.yml)
 ## [VR の体験を開始する](vr-journey.md)
 
-## 購入する前に
-<!-- ### [What is Windows Mixed Reality?](windows-mixed-reality.md) -->
+## 作業の開始
+### [開始する前に](before-you-start.md)
 ### [最小 PC ハードウェア ガイドライン](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
 ### [推奨されるアダプター](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 ### [PC の互換性に関するヘルプの表示](get-help-with-pc-compatibility.md)
-### [よく寄せられる質問](before-you-buy-faqs.md)
-
-## 作業の開始
-### [開始する前に](before-you-start.md)
 ### [ヘッドセットを接続する](plug-in-your-headset.md)
 ### [Windows Mixed Reality をインストールする](install-windows-mixed-reality.md)
 ### [Windows Mixed Reality を設定する](set-up-windows-mixed-reality.md)
@@ -31,6 +27,7 @@
 ### [バグとフィードバックを提出する](filing-feedback.md)
 ### [エラー コード](error-codes.md)
 ### [インストール エラー](installation_errors.md)
+### [購入する前に](before-you-buy-faqs.md)
 ### [境界](boundary-questions.md)
 ### [ヘッドセットの接続](headset-connectivity.md)
 ### [ヘッドセット ディスプレイ](headset-display.md)

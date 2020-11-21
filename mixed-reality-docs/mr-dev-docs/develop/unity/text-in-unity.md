@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality、デザイン、コントロール、フォント、タイポグラフィ、ui、ux、Mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 9778b1b11db7ac1c330b0ede4f6153deff45a95a
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 04b62cd0989042856dbd15d467d042f67df69931
+ms.sourcegitcommit: 5d6dbbb94e60cf10786d0fbbaf4239a1541e9e29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677361"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95008135"
 ---
 # <a name="text-in-unity"></a>Unity のテキスト
 
@@ -93,7 +93,7 @@ Segoe UI (Windows の既定のフォント) は、ほとんどの場合に適し
 
 ### <a name="shader-with-occlusion-support"></a>オクルージョンサポート付きのシェーダー
 
-Unity の既定のフォントマテリアルでは、オクルージョンはサポートされていません。 このため、既定ではオブジェクトの背後にテキストが表示されます。 [遮蔽をサポートする](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MRTK/Core/StandardAssets/Shaders/Text3DShader.shader)単純なシェーダーが含まれています。 次の画像は、既定のフォントマテリアル (左側) が付いたテキストと、適切な遮蔽 (right) のテキストを示しています。
+Unity の既定のフォントマテリアルでは、オクルージョンはサポートされていません。 このため、既定ではオブジェクトの背後にテキストが表示されます。 [遮蔽をサポートする](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader)単純なシェーダーが含まれています。 次の画像は、既定のフォントマテリアル (左側) が付いたテキストと、適切な遮蔽 (right) のテキストを示しています。
 
 ![オクルージョンサポート付きのシェーダー](images/hug-text-07-1000px.png)<br>
 *オクルージョンサポート付きのシェーダー*

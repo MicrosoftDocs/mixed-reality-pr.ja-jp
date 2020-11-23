@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、
-ms.openlocfilehash: 429a1130d628f54f12eb8ff6eed3f48d4712143a
-ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
+ms.openlocfilehash: 9426a85611cf53a349ca5bc8f3727ee8a784940e
+ms.sourcegitcommit: a129039d8ed228ed0305aa312006cadf403f0831
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94941868"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95417206"
 ---
 # <a name="start-your-vr-journey"></a>VR の体験を開始する
 
@@ -29,7 +29,7 @@ ms.locfileid: "94941868"
 
 |  Checkpoint  |  結果  |
 | --- | --- |
-| [開始する前に](before-you-start.md) |  |
+| [開始する前に](before-you-start.md) | VR の旅を開始するために必要なすべてのものがあることを確認します。 |
 | [最小 PC ハードウェア ガイドライン](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Windows Mixed reality、Windows Mixed Reality Ultra、および Windows Mixed Reality ポータルアプリの実行について知る必要があるすべての情報 |
 | [PC の互換性に関するヘルプの表示](get-help-with-pc-compatibility.md) | Windows Mixed Reality PC から生成されたレポートについて確認する |
 | [購入に関する Faq](before-you-buy-faqs.md) | 技術仕様、デバイス、およびコントローラーに関する購入に関するすべての質問への回答を得る |
@@ -64,11 +64,16 @@ Windows Mixed Reality とイマーシブ VR ヘッドセットを通じて利用
 
 ## <a name="4-discover-apps-and-content"></a>4. アプリとコンテンツを検出する
 
-イマーシブゲーム、デスクトップアプリケーション、および VR コンテンツを検索し、以下のリソースで Microsoft Edge ブラウザーを使用します。 
+以下のリソースで、イマーシブゲーム、デスクトップアプリケーション、および VR コンテンツを検索します。 
 
 <br>
 
-| [ゲーム、360ビデオ、アプリ](using-games-and-apps-in-windows-mixed-reality.md) |初めてのイマーシブゲーム、2D ストアスレート、デスクトップアプリケーション、および WebVR エクスペリエンスを使ってみる | | [SteamVR | を使用する](using-steamvr-with-windows-mixed-reality.md) デバイスを接続して SteamVR ゲームをプレイし、Windows Insider Program | | について学習します。 [Microsoft Edge | を使用する](using-microsoft-edge.md) イマーシブデバイスに最新バージョンの Microsoft Edge をインストールする | | [WebVR | を使用する](webvr.md) ブラウザー環境で VR を体験するためのセットアップを入手する |
+|  Checkpoint  |  機能  |
+| --- | --- |
+| [ゲーム、360ビデオ、アプリ](using-games-and-apps-in-windows-mixed-reality.md) | 初めてのイマーシブゲーム、2D ストアスレート、デスクトップアプリケーション、および WebVR エクスペリエンスを使ってみる |
+| [SteamVR の使用](using-steamvr-with-windows-mixed-reality.md) | デバイスを接続して SteamVR ゲームをプレイし、Windows Insider プログラムについて学習する |
+| [Microsoft Edge の使用](using-microsoft-edge.md) | 最新バージョンの Microsoft Edge をイマーシブデバイスにインストールする |
+| [WebVR の使用](webvr.md) | ブラウザー環境で VR を体験するためのセットアップを入手する |
 
 ## <a name="troubleshooting-tips--resources"></a>トラブルシューティング、ヒント & リソース
 

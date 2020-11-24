@@ -1,2 +1,10 @@
-- name: インデックス
-  href: index.md
+- name: Maquette へようこそ
+  href: index.yml
+- name: 概要
+  href: overview/toc.yml
+- name: クイックスタート
+  href: quickstarts/toc.yml
+- name: サンプル
+  href: samples/toc.yml
+- name: リソース
+  href: resources/toc.yml

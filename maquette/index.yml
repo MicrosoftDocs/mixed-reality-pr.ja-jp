@@ -1,0 +1,24 @@
+### YamlMime:Landing
+title: Maquette へようこそ
+summary: まとめ
+metadata:
+  title: Maquette へようこそ
+  description: description
+  ms.prod: mixed-reality
+  ms.topic: landing-page
+  author: hferrone
+  ms.author: v-hferrone
+  ms.date: 10/26/2020
+  ms.openlocfilehash: 8993c77e1fce0948f7dd5ea05085089851f0f6c6
+  ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/19/2020
+  ms.locfileid: "94935266"
+landingContent:
+- title: Maquette について
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Maquette とは
+      url: overview/about.md

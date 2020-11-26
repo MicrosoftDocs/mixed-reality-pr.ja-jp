@@ -7,13 +7,13 @@ ms.author: grbury
 ms.date: 07/31/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Mixed Reality, 開発する, 開発, HoloLens, Unity, Unreal, DirectX
-ms.openlocfilehash: 75916cbd7a59556f1cda2e7e94c3393c14938086
-ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
+keywords: Mixed Reality, 開発する, 開発, HoloLens, Unity, Unreal, DirectX, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, 拡張現実とは, 仮想現実の開発, 拡張現実の開発
+ms.openlocfilehash: e269523b7ddd369d65e9a33dbeb32b13a17428a4
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93036258"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677861"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Mixed Reality 開発の概要
 

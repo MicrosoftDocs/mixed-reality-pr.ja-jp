@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, ストリーミング, リモート処理, Mixed Reality, 開発, 入門, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 特徴, ホログラム, ゲームの開発
-ms.openlocfilehash: a8e345831167362745a45a8fa81ddae858083ca7
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, ストリーミング, リモート処理, Mixed Reality, 開発, 入門, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 特徴, ホログラム, ゲームの開発, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
+ms.openlocfilehash: b810ad7500f8bb2a70ef18ad29fb32df8801a2de
+ms.sourcegitcommit: 2759aba06e643d70004023b105ed26b33ce3dbfa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340690"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94810448"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開発の概要
 
@@ -29,7 +29,7 @@ ms.locfileid: "94340690"
 Unreal 開発が初めての場合は、よくわからないまま開始しないでください。 Unreal の<a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">チュートリアル シリーズ</a>を調べて、Unreal の<a href="https://www.unrealengine.com/marketplace/store" target="_blank">マーケットプレイス</a>と Mixed Reality <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">フォーラム</a>のアセットとサポートをすばやく理解してください。 これらのリソースは、今日の Mixed Reality 市場におけるビルダーや問題ソルバーのコミュニティへのリンクです。
 
 > [!IMPORTANT]
-> HoloLens 2 または Reverb G2 などのイマーシブ ヘッドセットに移植する必要がある既存の Unreal プロジェクトがある場合は、 **[移植ガイド](../porting-apps/porting-overview.md)** に関するページを参照してください。
+> Reverb G2 などのイマーシブ ヘッドセットに移植する必要がある既存の Unreal プロジェクトがある場合は、 **[移植に関するガイド](unreal-reverb-g2-controllers.md)** を参照してください。
 
 ## <a name="development-checkpoints"></a>開発チェックポイント
 

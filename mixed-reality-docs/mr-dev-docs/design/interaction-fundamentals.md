@@ -6,13 +6,13 @@ ms.author: shentan
 ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Mixed Reality, 視線入力, 視線入力ターゲット設定, 対話, 設計, HoloLens, MMR, マルチモーダル
-ms.openlocfilehash: 2f680a6682f848b6e6f12be599cc8a7fda35b1a6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality, 視線入力, 視線入力ターゲット設定, 対話, 設計, HoloLens, MMR, マルチモーダル, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, HoloLens
+ms.openlocfilehash: a4b4c8fed9bb74b12bfa4390e1675acab44b3eec
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699507"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703168"
 ---
 # <a name="introducing-instinctual-interactions"></a>本能的な操作の概要
 
@@ -159,7 +159,7 @@ A:すべての非追跡コントローラーには、頭の視線入力とコミ
 A:ユーザーが多くの UI を制御する必要がない場合は、頭の視線入力とコミットを使うと、ターゲットの指定について悩むことなく学習できるオプションを提供できます。 
  
 7.  Q:ユーザーは HoloLens (第 1 世代) と HoloLens 2/Windows Mixed Reality イマーシブ ヘッドセット (VR) の両方を使用しますか?<br><br>
-A:頭の視線入力とコミットは HoloLens (第 1 世代) の操作モデルであるため、HoloLens (第 1 世代) をサポートする作成者は、ユーザーが HoloLens (第 1 世代) ヘッドセットを使用する可能性があるすべての機能やモードで、頭の視線入力とコミットを使用することをお勧めします。 複数の世代の HoloLens で優れたエクスペリエンスを作成する詳しい方法については、 *操作モデルの遷移* について取り上げた次のセクションを参照してください。
+A:頭の視線入力とコミットは HoloLens (第 1 世代) の操作モデルであるため、HoloLens (第 1 世代) をサポートする作成者は、ユーザーが HoloLens (第 1 世代) ヘッドセットを使用する可能性があるすべての機能やモードで、頭の視線入力とコミットを使用することをお勧めします。 複数の世代の HoloLens で優れたエクスペリエンスを作成する詳しい方法については、*操作モデルの遷移* について取り上げた次のセクションを参照してください。
  
 8.  Q:通常は移動可能 (広い領域をカバーする、またはスペース間を移動する) なユーザーと、1 つのスペースで作業することが多いユーザーを比較するとどうなりますか?<br><br>
 A:どの操作モデルでも、これらのユーザーに対応できます。  

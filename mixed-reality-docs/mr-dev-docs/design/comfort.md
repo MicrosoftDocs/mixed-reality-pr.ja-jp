@@ -6,13 +6,13 @@ ms.author: erpau
 ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Mixed Reality, 設計, 快適性, HoloLens 2, HoloLens (第 1 世代)
-ms.openlocfilehash: f53c91b10f9dfc37678356c914e486f61eea6382
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Mixed Reality, 設計, 快適性, HoloLens 2, HoloLens (第 1 世代), Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, MRTK, Mixed Reality Toolkit, 移動
+ms.openlocfilehash: f4edc048086e933a451290a8ca9f19f588797963
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340650"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702658"
 ---
 # <a name="comfort"></a>快適性
 
@@ -162,13 +162,6 @@ Mixed Reality アプリがユニークなのは、ユーザーが世界を自由
 ## <a name="arm-positions"></a>腕の位置
 
 ユーザーがエクスペリエンス中にずっと手を上げ続けることが想定される場合、筋肉の疲労が蓄積する可能性があります。 また、長時間にわたってエア タップ ジェスチャを繰り返すように求められる場合も、疲れる可能性があります。 そのため、一定の繰り返しジェスチャ入力を求めるエクスペリエンスは避けることをお勧めします。 この目標を達成するには、短い休憩を組み込むか、ジェスチャと音声入力を組み合わせてアプリを操作するようにします。
-
-## <a name="next-discovery-checkpoint"></a>次の探索チェックポイント
-
-私たちが用意した[探索ツアー](../discover/get-started-with-mr.md)を進んでいる場合、あなたの現在地は Mixed Reality の基本の探索の中盤の段階です。 ここから、次の基本トピックに進むことができます。 
-
-> [!div class="nextstepaction"]
-> [ユーザーには世界がどのように見えるか - (ホログラフィック フレーム)](../design/holographic-frame.md)
 
 ## <a name="see-also"></a>関連項目
 * [視線入力](gaze-and-commit.md)

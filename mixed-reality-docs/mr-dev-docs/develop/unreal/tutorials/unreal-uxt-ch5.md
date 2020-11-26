@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/14/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, チュートリアル, 入門, mrtk, uxt, UX ツール, ドキュメント
-ms.openlocfilehash: f7b57cf8a023874aa14118ff5cd50076bbf344e0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, チュートリアル, はじめに, mrtk, uxt, UX ツール, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
+ms.openlocfilehash: f903848b8d5c9c1dccfc00cd7bd6d16d2e491a5e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702349"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679841"
 ---
 # <a name="5-adding-a-button--resetting-piece-locations"></a>5.ボタンの追加およびピースの位置のリセット
 
@@ -35,7 +35,7 @@ ms.locfileid: "91702349"
 2.  **SetActorRelativeTransform** ノードを作成するには、ブループリント グリッドの **Reset Location** から実行をドラッグしてリリースします。 
     * この関数では、アクターの親に対して相対的に変換 (位置、回転、スケール) を設定します。 この関数を使用すると、ボードが元の位置から移動した場合でもボード上のキングの位置がリセットされます。 
     
-3. イベント グラフ内で右クリックし、 **[変換の作成]** を選択し、 **[場所]** を **X =-26** 、 **Y = 4** 、 **Z = 0** に変更します。
+3. イベント グラフ内で右クリックし、 **[変換の作成]** を選択し、 **[場所]** を **X =-26**、**Y = 4**、**Z = 0** に変更します。
     * **SetActorRelativeTransform** の **[新しい相対変換]** ピンに **[戻り値]** を接続します。 
 
 ![Reset Location (位置のリセット) 関数](images/unreal-uxt/5-function.PNG)
@@ -47,7 +47,7 @@ ms.locfileid: "91702349"
 関数が正しくセットアップされたので、次のタスクでは、タッチしたときにオフにするボタンを作成します。 
 
 
-1.  **[新しく追加] > [ブループリント クラス]** をクリックし、 **[すべてのクラス]** セクションを展開して、「 **BP_ButtonHoloLens2** 」を検索します。 
+1.  **[新しく追加] > [ブループリント クラス]** をクリックし、 **[すべてのクラス]** セクションを展開して、「**BP_ButtonHoloLens2**」を検索します。 
     * これに **ResetButton** という名前を付け、ダブルクリックしてブループリントを開きます。
 
 > [!NOTE]
@@ -71,7 +71,7 @@ ms.locfileid: "91702349"
 ここから、レベルの **WhiteKing** アクターへの参照が必要な  **WhiteKing** の **Reset Location** 関数を呼び出す必要があります。 
 
 4.  **[My Blueprint]\(マイ ブループリント\)** パネルの **[変数]** セクションに移動し、 **[+]** ボタンをクリックして、変数に **WhiteKing** という名前を付けます。 
-    * **[Details]\(詳細\)** パネルで、 **[Variable Type]\(変数の種類\)** の横にあるドロップダウンを選択し、 **WhiteKing** を検索して、 **[Object Reference]\(オブジェクト参照\)** を選択します。 
+    * **[Details]\(詳細\)** パネルで、 **[Variable Type]\(変数の種類\)** の横にあるドロップダウンを選択し、**WhiteKing** を検索して、 **[Object Reference]\(オブジェクト参照\)** を選択します。 
     * **[Instance Editable]\(インスタンス編集可能\)** の横のボックスをオンにします。 これにより、変数をメイン レベルから設定できるようになります。 
 
 ![変数を作成する](images/unreal-uxt/5-var.PNG)
@@ -85,7 +85,7 @@ ms.locfileid: "91702349"
 
 ![On Button Pressed (ボタンが押されたとき) から Reset Location 関数を呼び出す](images/unreal-uxt/5-callresetloc.PNG)
 
-2.  **ResetButton** をビューポートにドラッグし、その位置を **X = 50** 、 **Y = -25** 、 **Z = 10** に設定します。 回転を **Z = 180** に設定します。 **[Default]\(既定\)** で、 **WhiteKing** 変数の値を **WhiteKing** に設定します。
+2.  **ResetButton** をビューポートにドラッグし、その位置を **X = 50**、 **Y = -25**、**Z = 10** に設定します。 回転を **Z = 180** に設定します。 **[Default]\(既定\)** で、**WhiteKing** 変数の値を **WhiteKing** に設定します。
 
 ![変数の値を設定する](images/unreal-uxt/5-buttonlevel.PNG)
 

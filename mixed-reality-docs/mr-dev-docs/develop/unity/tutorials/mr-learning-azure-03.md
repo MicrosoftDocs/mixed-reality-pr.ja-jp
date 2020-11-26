@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: mixed reality, unity, チュートリアル, hololens, hololens 2, azure custom vision, azure cognitive services
+keywords: Mixed Reality, Unity, チュートリアル, HoloLens, HoloLens 2, Azure Custom Vision, Azure Cognitive Services, Azure クラウド サービス, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 9a6cccf9c1a7d2547ed5ddacfc4841d2f4d1609b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: d30d409752c8b7f9728a4a6576829d175f91506d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353270"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679351"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3.Azure Custom Vision の統合
 

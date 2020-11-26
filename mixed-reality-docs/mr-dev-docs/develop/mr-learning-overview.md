@@ -5,14 +5,14 @@ author: hferrone
 ms.author: jemccull
 ms.date: 10/28/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, チュートリアル, Hololens, Learn
+keywords: Mixed Reality, Unity, チュートリアル, Hololens, 学習, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, 拡張現実とは, MRTK, Mixed Reality Toolkit, 言語翻訳, Azure, Azure Cognitive Services
 ms.localizationpriority: high
-ms.openlocfilehash: 531b1a6b28ba4da2b4c431288339b1f54bc1d44c
-ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
+ms.openlocfilehash: 70114e25003368263c6e2fecad5a4fe8e2f96de0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93036821"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678091"
 ---
 # <a name="mixed-reality-learning-overview"></a>Mixed Reality Learning の概要
 

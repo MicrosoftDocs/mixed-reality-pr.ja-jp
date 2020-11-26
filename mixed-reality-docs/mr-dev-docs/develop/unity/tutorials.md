@@ -7,13 +7,13 @@ ms.author: kurtie
 ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, アカデミー, チュートリアル
-ms.openlocfilehash: 35a9d28b588099e691341c3bb81d377671064e58
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: MixedRealityToolkit, MixedRealityToolkit-Unity, アカデミー, チュートリアル, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, Unity, Unreal, HoloLens, Azure Spatial Anchors, Azure Speech Services
+ms.openlocfilehash: 0e3b1749790e3c372570bdd1d8e68fe3fd593dd8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700906"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677281"
 ---
 # <a name="tutorials"></a>チュートリアル 
 
@@ -42,7 +42,7 @@ Mixed Reality Academy は、該当のプロジェクト ファイルを含むオ
 * Windows 10 PC に適切な[ツールがインストールされていること](../install-the-tools.md)は、各チュートリアルを完了するための共通の前提条件です。
 
 >[!NOTE]
->Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。 そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。 これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは " **_ありません_** "。 これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](tutorials/mr-learning-base-01.md)が投稿されています。
+>Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。 そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。 これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。 これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](tutorials/mr-learning-base-01.md)が投稿されています。
 
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">

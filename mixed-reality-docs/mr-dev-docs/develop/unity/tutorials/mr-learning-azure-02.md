@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, チュートリアル, HoloLens, HoloLens 2, Azure Storage
+keywords: Mixed Reality, Unity, チュートリアル, HoloLens, HoloLens 2, Azure Storage, Azure クラウド サービス, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 64e4aaadf13c03272a4fc9c552a7e4b31e82fdbb
-ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
+ms.openlocfilehash: f13014757c4a3d6f9a6f3ffd53ef6aaf19334e2f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94549105"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679371"
 ---
 # <a name="2-integrating-azure-storage"></a>2.Azure Storage の統合
 

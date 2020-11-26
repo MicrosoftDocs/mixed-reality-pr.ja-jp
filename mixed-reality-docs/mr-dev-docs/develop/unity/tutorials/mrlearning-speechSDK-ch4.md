@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-keywords: Mixed Reality、Unity、チュートリアル、Hololens
+keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, 音声認識, Windows 10, LUIS, LUIS ポータル, 意図, エンティティ, 発話, 自然言語の理解
 ms.localizationpriority: high
-ms.openlocfilehash: 8cebe1fb203aeed9a262a2e9f482993b4775e0a6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b21637fc0630b6cb024dcdbc0a1985979914d3a0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701306"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678511"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4.意図と自然言語の理解の設定
 
@@ -25,18 +25,18 @@ ms.locfileid: "91701306"
 
 ## <a name="preparing-the-scene"></a>シーンの準備
 
-[Hierarchy]\(階層\) ウィンドウで、 **Lunarcom** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで、 **[コンポーネントの追加]** ボタンを使用して、 **Lunarcom Intent Recognizer (Script)** コンポーネントを Lunarcom オブジェクトに追加します。
+[Hierarchy]\(階層\) ウィンドウで、**Lunarcom** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで、 **[コンポーネントの追加]** ボタンを使用して、**Lunarcom Intent Recognizer (Script)** コンポーネントを Lunarcom オブジェクトに追加します。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section1-step1-1.png)
 
-[プロジェクト] ウィンドウで、 **[資産]**  >  **[MRTK.Tutorials.GettingStarted]**  >  **[Prefabs]\(プレハブ\)**  >  **[RocketLauncher]** フォルダーで、 **RocketLauncher_Complete** プレハブを [Hierarchy]\(階層\) ウィンドウにドラッグし、カメラの前の適切な場所に配置します。次に例を示します。
+[プロジェクト] ウィンドウで、 **[資産]**  >  **[MRTK.Tutorials.GettingStarted]**  >  **[Prefabs]\(プレハブ\)**  >  **[RocketLauncher]** フォルダーで、**RocketLauncher_Complete** プレハブを [Hierarchy]\(階層\) ウィンドウにドラッグし、カメラの前の適切な場所に配置します。次に例を示します。
 
 * [変換] の **[位置]** X = 0、Y =-0.4、Z = 1
 * [変換] の **[回転]** X = 0、Y = 90、Z = 0
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section1-step1-2.png)
 
-[Hierarchy]\(階層\) ウィンドウで、 **Lunarcom** オブジェクトをもう一度選択し、 **[RocketLauncher_Complete]**  >  **[Button]\(ボタン\)** オブジェクトを展開し、 **[Buttons]\(ボタン\)** オブジェクトの子オブジェクトをそれぞれ対応する **[Lunar Launcher Buttons]\(月着陸船ランチャー ボタン\)** フィールドに割り当てます。
+[Hierarchy]\(階層\) ウィンドウで、**Lunarcom** オブジェクトをもう一度選択し、 **[RocketLauncher_Complete]**  >  **[Button]\(ボタン\)** オブジェクトを展開し、 **[Buttons]\(ボタン\)** オブジェクトの子オブジェクトをそれぞれ対応する **[Lunar Launcher Buttons]\(月着陸船ランチャー ボタン\)** フィールドに割り当てます。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section1-step1-3.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "91701306"
 [作成] ページで、 **[予測]** オプションをクリックし、次の値を入力します。
 
 * **[サブスクリプション]** では、試用版のサブスクリプションをお持ちの場合は **[Free Trail]\(無料試用版\)** を選択します。それ以外の場合は、他のいずれかのサブスクリプションを選択します
-* **[リソース グループ]** では、 **[新規作成]** リンクをクリックし、適切な名前 ( *MRKT-Tutorials* など) を入力して、 **[OK]** をクリックします
+* **[リソース グループ]** では、 **[新規作成]** リンクをクリックし、適切な名前 (*MRKT-Tutorials* など) を入力して、 **[OK]** をクリックします
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-3.png)
 
@@ -67,8 +67,8 @@ ms.locfileid: "91701306"
 
 引き続き [作成] ページで、次の値を入力します。
 
-* **[名前]** には、サービスの適切な名前 ( *MRTK-Tutorials-AzureSpeechServices* など) を入力します
-* **[Prediction location]\(予測の場所\)** では、アプリ ユーザーの物理的な場所に近い場所 ([ *(米国) 米国西部* ] など) を選択します
+* **[名前]** には、サービスの適切な名前 (*MRTK-Tutorials-AzureSpeechServices* など) を入力します
+* **[Prediction location]\(予測の場所\)** では、アプリ ユーザーの物理的な場所に近い場所 ([ *(米国) 米国西部*] など) を選択します
 * **[予測価格レベル]** では、このチュートリアルの場合は **[F0 (5 Calls per second, 10K Calls per month)]\(F0 (1 秒あたり 5 回の呼び出し、1 か月あたり 1 万回の呼び出し)\)** を選択します
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-4.png)
@@ -90,7 +90,7 @@ ms.locfileid: "91701306"
 
 具体的には、ユーザーがアクションを実行する必要があると言った場合に、ユーザーが参照しているボタンに応じて、シーン内の 3 つの赤いボタンのいずれかの Interactable.OnClick() イベントがアプリでトリガーされるという意図を作成します。
 
-たとえば、ユーザーが " **go ahead and launch the rocket** " (先へ進めて、ロケットを発射) と言った場合、アプリでは " **go ahead** " が何らかの **アクション** を実行する必要があることを意味することと、 **ターゲット** に対するInteractable.OnClick() イベントがその **発射** ボタンにあることが予測されます。
+たとえば、ユーザーが "**go ahead and launch the rocket**" (先へ進めて、ロケットを発射) と言った場合、アプリでは "**go ahead**" が何らかの **アクション** を実行する必要があることを意味することと、**ターゲット** に対するInteractable.OnClick() イベントがその **発射** ボタンにあることが予測されます。
 
 これを実現するには、主に次の手順を実行します。
 
@@ -104,14 +104,14 @@ ms.locfileid: "91701306"
 
 ### <a name="1-create-a-luis-app"></a>1.LUIS アプリの作成
 
-前のセクションで Azure リソースを作成するときに使用したものと同じユーザー アカウントを使用して、<a href="https://www.luis.ai" target="_blank">LUIS</a> にサインインし、国を選択して、使用条件に同意します。 次の手順では、 **Azure アカウントをリンクする** ように求められたら、代わりに Azure 作成リソースを使用するために、 **[Continue using your trial key]\(試用版キーを引き続き使用する\)** を選択します。
+前のセクションで Azure リソースを作成するときに使用したものと同じユーザー アカウントを使用して、<a href="https://www.luis.ai" target="_blank">LUIS</a> にサインインし、国を選択して、使用条件に同意します。 次の手順では、**Azure アカウントをリンクする** ように求められたら、代わりに Azure 作成リソースを使用するために、 **[Continue using your trial key]\(試用版キーを引き続き使用する\)** を選択します。
 
 > [!NOTE]
 > LUIS に既にサインアップしていて、作成試用版キーの有効期限が切れている場合は、ドキュメント「[Azure リソース作成キーに移行する](https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-authoring)」を参照して、LUIS 作成リソースを Azure に切り替えることができます。
 
 サインインしたら、 **[マイ アプリ]** ページに移動し、 **[新しいアプリの作成]** をクリックして、 **[新しいアプリの作成]** ポップアップ ウィンドウに次の値を入力します。
 
-* **[名前]** には、適切な名前 ( *MRTK Tutorials - AzureSpeechServices* など) を入力します
+* **[名前]** には、適切な名前 (*MRTK Tutorials - AzureSpeechServices* など) を入力します
 * **[カルチャ]** では、 **[英語]** を選択します
 * **[説明]** には、必要に応じて適切な説明を入力します
 
@@ -127,7 +127,7 @@ ms.locfileid: "91701306"
 
 [ダッシュボード] ページで、[ビルド] > [App Assets]\(アプリ資産\) > **[意図]** ページに移動し、 **[Create new intent]\(新しい意図の作成\)** をクリックして、 **[Create new intent]\(新しい意図の作成\)** ポップアップ ウィンドウに次の値を入力します。
 
-* **[Intent name]\(意図名\)** に「 **PressButton** 」と入力します
+* **[Intent name]\(意図名\)** に「**PressButton**」と入力します
 
 次に、 **[完了]** ボタンをクリックして、新しい意図を作成します。
 
@@ -166,14 +166,14 @@ ms.locfileid: "91701306"
 
 [PressButton] 意図ページで、[ビルド] > [App Assets]\(アプリ資産\) > **[エンティティ]** ページに移動し、 **[新しいエンティティを作成する]** をクリックして、 **[新しいエンティティを作成する]** ポップアップ ウィンドウに次の値を入力します。
 
-* **[エンティティ名]** には、「 **Action** 」と入力します
+* **[エンティティ名]** には、「**Action**」と入力します
 * **[エンティティ型]** では、 **[シンプル]** を選択します
 
 次に、 **[完了]** ボタンをクリックして、新しいエンティティを作成します。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-1.png)
 
-前の手順を **繰り返して** 、 **Target** という名前の別のエンティティを作成します。これで、Action と Target という名前の 2 つのエンティティが設定されます。
+前の手順を **繰り返して**、**Target** という名前の別のエンティティを作成します。これで、Action と Target という名前の 2 つのエンティティが設定されます。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-2.png)
 
@@ -184,22 +184,22 @@ ms.locfileid: "91701306"
 
 [エンティティ] ページから **[PressButton]** 意図ページに戻ります。
 
-[PressButton] 意図ページに戻ったら、単語 **go** をクリックしてから、単語 **ahead** をクリックします。次に、コンテキスト ポップアップ メニューから **[Action (Simple)]\(アクション (シンプル)\)** を選択して、 **go ahead** に **Action** エンティティ値としてラベルを付けます。
+[PressButton] 意図ページに戻ったら、単語 **go** をクリックしてから、単語 **ahead** をクリックします。次に、コンテキスト ポップアップ メニューから **[Action (Simple)]\(アクション (シンプル)\)** を選択して、**go ahead** に **Action** エンティティ値としてラベルを付けます。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
-これで、 **go ahead** という語句が **Action** エンティティ値として定義されました。 Action エンティティ名の上にマウス カーソルを置くと、関連付けられている Action エンティティ値を表示できます。
+これで、**go ahead** という語句が **Action** エンティティ値として定義されました。 Action エンティティ名の上にマウス カーソルを置くと、関連付けられている Action エンティティ値を表示できます。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-2.png)
 
 > [!NOTE]
 > 上の画像のラベルの下に表示される赤い線は、エンティティ値が予測されていないことを示しています。これは、次のセクションでモデルをトレーニングすると解決します。
 
-次に、単語 **launch** をクリックし、コンテキスト ポップアップ メニューから **[Target (Simple)]\(ターゲット (シンプル)\)** を選択して、 **launch** に **Target** エンティティ値としてラベルを付けます。
+次に、単語 **launch** をクリックし、コンテキスト ポップアップ メニューから **[Target (Simple)]\(ターゲット (シンプル)\)** を選択して、**launch** に **Target** エンティティ値としてラベルを付けます。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-3.png)
 
-これで、 **launch** という単語が **Target** エンティティ値として定義されました。 Target エンティティ名の上にマウス カーソルを置くと、関連付けられている Target エンティティ値を表示できます。
+これで、**launch** という単語が **Target** エンティティ値として定義されました。 Target エンティティ名の上にマウス カーソルを置くと、関連付けられている Target エンティティ値を表示できます。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-4.png)
 
@@ -209,7 +209,7 @@ PressButton 意図のサンプル発話の "go ahead and launch the rocket" は�
 * Action エンティティ: go ahead
 * Target エンティティ: launch
 
-前の 2 段階のプロセスを **繰り返して** 、Action および Target エンティティ ラベルを各サンプル発話に割り当てます。次の単語には **Target** エンティティというラベルを付ける必要があることに注意してください。
+前の 2 段階のプロセスを **繰り返して**、Action および Target エンティティ ラベルを各サンプル発話に割り当てます。次の単語には **Target** エンティティというラベルを付ける必要があることに注意してください。
 
 * **hint** (Unity プロジェクトの HintsButton をターゲットにします)
 * **hints** (Unity プロジェクトの HintsButton をターゲットにします)
@@ -237,7 +237,7 @@ PressButton 意図のサンプル発話の "go ahead and launch the rocket" は�
 > [!NOTE]
 > 上の画像に示されているように、すべてのラベルの下の赤い線が削除され、すべてのエンティティ値が予測されたことが示されています。 また、[トレーニング] ボタンの左側にある状態アイコンが赤から緑に変わっていることにも注目してください。
 
-トレーニングの処理が完了したら、 **[テスト]** ボタンをクリックし、「 **go ahead and launch the rocket** 」と入力して、Enter キーを押します。
+トレーニングの処理が完了したら、 **[テスト]** ボタンをクリックし、「**go ahead and launch the rocket**」と入力して、Enter キーを押します。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-2.png)
 
@@ -266,8 +266,8 @@ PressButton 意図のサンプル発話の "go ahead and launch the rocket" は�
 [Azure リソース] ページで、 **[Add prediction resource]\(予測リソースの追加\)** ボタンをクリックし、 **[Assign a resource to your app]\(リソースをアプリに割り当てる\)** ポップアップ ウィンドウで次の値を選択します。
 
 * **[テナント名]** では、テナント名を選択します
-* **[サブスクリプション名]** では、以前、 [Azure Language Understanding リソースの作成](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource)時に使用したものと同じサブスクリプションを選択します
-* **[LUIS resource name]\(LUIS リソース名\)** では、以前、 [Azure Language Understanding リソースの作成](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource)時に作成した予測リソースを選択します
+* **[サブスクリプション名]** では、以前、[Azure Language Understanding リソースの作成](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource)時に使用したものと同じサブスクリプションを選択します
+* **[LUIS resource name]\(LUIS リソース名\)** では、以前、[Azure Language Understanding リソースの作成](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource)時に作成した予測リソースを選択します
 
 次に、 **[リソースの割り当て]** ボタンをクリックして、アプリに Azure 予測リソースを割り当てます。
 
@@ -279,7 +279,7 @@ PressButton 意図のサンプル発話の "go ahead and launch the rocket" は�
 
 ## <a name="connecting-the-unity-project-to-the-luis-app"></a>Unity プロジェクトを LUIS アプリに接続する
 
-[管理] > [アプリケーションの設定] > **[Azure リソース]** ページで、 **コピー** アイコンをクリックして、 **サンプル クエリ** をコピーします。
+[管理] > [アプリケーションの設定] > **[Azure リソース]** ページで、**コピー** アイコンをクリックして、**サンプル クエリ** をコピーします。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section4-step1-1.png)
 
@@ -299,9 +299,9 @@ Unity エディターで意図認識を直接使用するには、開発用コ�
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section5-step1-2.png)
 
-**サンプル発話** をすべて試してから、 **サンプル発話のバリエーション** をいくつかと、 **ランダムな発話** をいくつか試してみてください。
+**サンプル発話** をすべて試してから、**サンプル発話のバリエーション** をいくつかと、**ランダムな発話** をいくつか試してみてください。
 
-次に、 <a href="https://www.luis.ai" target="_blank">LUIS</a> に戻り、[ビルド] > [Improve app performance]\(アプリのパフォーマンスの向上\) > **[Review endpoint utterances]\(エンドポイントの発話の確認\)** ページに移動し、 **トグル** ボタンを使用して既定のエンティティ ビューから **[Tokens View]\(トークン ビュー\)** に切り替え、発話を確認します。
+次に、<a href="https://www.luis.ai" target="_blank">LUIS</a> に戻り、[ビルド] > [Improve app performance]\(アプリのパフォーマンスの向上\) > **[Review endpoint utterances]\(エンドポイントの発話の確認\)** ページに移動し、**トグル** ボタンを使用して既定のエンティティ ビューから **[Tokens View]\(トークン ビュー\)** に切り替え、発話を確認します。
 
 * **[Utterance]\(発話\)** 列では、必要に応じて、意図に合うように割り当てられたラベルの変更や削除を行います
 * **[Aligned intent]\(連携している意図\)** 列では、意図が正しいことを確認します
@@ -314,7 +314,7 @@ Unity エディターで意図認識を直接使用するには、開発用コ�
 > [!NOTE]
 > エンドポイントの発話が PressButton 意図と連携していないが、その発話に意図がないことをモデルに認識させる必要がある場合は、[Aligned intent]\(連携している意図\) を [なし] に変更できます。
 
-このプロセスを何度でも **繰り返して** 、アプリ モデルを向上させます。
+このプロセスを何度でも **繰り返して**、アプリ モデルを向上させます。
 
 ## <a name="congratulations"></a>結論
 

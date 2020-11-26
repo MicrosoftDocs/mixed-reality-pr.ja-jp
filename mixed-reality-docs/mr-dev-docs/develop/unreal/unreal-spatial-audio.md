@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, ストリーミング, リモート処理, Mixed Reality, 開発, 入門, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 特徴, ホログラム, ゲームの開発
-ms.openlocfilehash: 9b953cd0ea9aab92b2306da63a948b470363d0e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, ストリーミング, リモート処理, Mixed Reality, 開発, 入門, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 特徴, ホログラム, ゲームの開発, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 空間オーディオ
+ms.openlocfilehash: 25fa60b4e55ec0f3bd0875ad88834981d198f7f5
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702116"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679801"
 ---
 # <a name="spatial-audio-in-unreal"></a>Unreal での空間オーディオ
 
@@ -26,12 +26,12 @@ ms.locfileid: "91702116"
 
 立体音響をプロジェクトに追加するには、最初に Microsoft 立体音響プラグインをインストールします。このプラグインは次の手順で見つけられます。
 
-1. **[編集] > [プラグイン]** の順にクリックし、検索ボックスで「 **MicrosoftSpatialSound** 」を検索します。
+1. **[編集] > [プラグイン]** の順にクリックし、検索ボックスで「**MicrosoftSpatialSound**」を検索します。
 2. **MicrosoftSpatialSound** プラグインの **[有効]** チェックボックスをオンにします。
 3. [プラグイン] ページの **[今すぐ再起動]** を選択して、Unreal エディターを再起動します。
 
 > [!NOTE]
-> まだインストールしていない場合は、 **Microsoft Windows Mixed Reality** プラグインと **HoloLens** プラグインをインストールする必要があります。インストールの手順については、Unreal チュートリアル シリーズの **[プロジェクトの初期化](tutorials/unreal-uxt-ch2.md)** に関するページを参照してください。
+> まだインストールしていない場合は、**Microsoft Windows Mixed Reality** プラグインと **HoloLens** プラグインをインストールする必要があります。インストールの手順については、Unreal チュートリアル シリーズの **[プロジェクトの初期化](tutorials/unreal-uxt-ch2.md)** に関するページを参照してください。
 
 ![Unreal の空間オーディオ プラグイン](images/unreal-spatial-audio-img-01.png)
 
@@ -45,7 +45,7 @@ ms.locfileid: "91702116"
 
 ![HoloLens プラットフォーム用の空間化プラグイン](images/unreal-spatial-audio-img-02.png)
 
-デスクトップ PC の Unreal エディターでアプリケーションをプレビューする場合は、 **Windows** プラットフォームに対して上記の手順を繰り返す必要があります。
+デスクトップ PC の Unreal エディターでアプリケーションをプレビューする場合は、**Windows** プラットフォームに対して上記の手順を繰り返す必要があります。
 
 ![Windows プラットフォーム用の空間プラグイン](images/unreal-spatial-audio-img-05.png)
 

@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, Azure, Azure 開発, Spatial Anchors, Mixed Reality, 開発, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, ホログラム, ゲーム開発
-ms.openlocfilehash: 5f1f7ef0cb55714ed87bbc3e827d77d3e2694084
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, Azure, Azure 開発, Spatial Anchors, Mixed Reality, 開発, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, ホログラム, ゲーム開発, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
+ms.openlocfilehash: 05a4b221961fa9b3a150eb8ef9f8bd2f77f5b955
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701229"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679871"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal での Azure Spatial Anchors
 
@@ -47,7 +47,7 @@ Azure Spatial Anchors は、現実世界のアンカー ポイントを拡張現
 ## <a name="adding-azure-spatial-anchors-plugins"></a>Azure Spatial Anchors プラグインを追加する
 
 Azure Spatial Anchors プラグインを、次のようにして、Unreal エディターで有効にします。
-1. **[編集] > [プラグイン]** の順にクリックし、 **AzureSpatialAnchors** と **AzureSpatialAnchorsForWMR** を検索します。
+1. **[編集] > [プラグイン]** の順にクリックし、**AzureSpatialAnchors** と **AzureSpatialAnchorsForWMR** を検索します。
 2. 両方のプラグインの **[有効]** チェックボックスをオンにして、アプリケーションの Azure Spatial Anchors ブループリント ライブラリへのアクセスを許可します。
 
 ![Spatial Anchors プラグイン](images/asa-unreal/unreal-spatial-anchors-img-01.png)
@@ -101,7 +101,7 @@ Azure 空間アンカーは、拡張現実アプリケーション空間にお�
 ![Spatial Anchors プラグイン](images/asa-unreal/unreal-spatial-anchors-img-09.png)
 
 2. Unreal **[Scene コンポーネント](https://docs.unrealengine.com/API/Runtime/Engine/Components/USceneComponent/index.html)** を作成または取得します。これは、場所が永続化されている必要があります。 
-    * 次の図では、 **Scene Component Needing Anchor** コンポーネントが変数として使用されています。 Unreal Scene コンポーネントは、[AR ピン](https://docs.unrealengine.com/BlueprintAPI/HoloLensAR/ARPin/index.html)と Azure 空間アンカーのためのアプリケーション ワールド変換を確立するために必要です。
+    * 次の図では、**Scene Component Needing Anchor** コンポーネントが変数として使用されています。 Unreal Scene コンポーネントは、[AR ピン](https://docs.unrealengine.com/BlueprintAPI/HoloLensAR/ARPin/index.html)と Azure 空間アンカーのためのアプリケーション ワールド変換を確立するために必要です。
 
 ![Spatial Anchors プラグイン](images/asa-unreal/unreal-spatial-anchors-img-10.png)
 
@@ -111,7 +111,7 @@ Unreal Scene コンポーネント用の Azure 空間アンカーを構築して
 
 ![Spatial Anchors プラグイン](images/asa-unreal/unreal-spatial-anchors-img-11.png)
 
-2. 新しく作成した AR ピンを使用して、 **Create Cloud Anchor** を呼び出します。
+2. 新しく作成した AR ピンを使用して、**Create Cloud Anchor** を呼び出します。
     * Create Cloud Anchor では、Azure Spatial Anchors サービス内ではなく、ローカルに Azure 空間アンカーが作成されます。 Azure 空間アンカーの有効期限などのパラメーターは、サービスを使用して Azure 空間アンカーを作成する前に設定できます。
 
 ![Spatial Anchors プラグイン](images/asa-unreal/unreal-spatial-anchors-img-12.png)
@@ -127,12 +127,12 @@ Unreal Scene コンポーネント用の Azure 空間アンカーを構築して
 
 ## <a name="saving-an-anchor"></a>アンカーを保存する
 
-パラメーターを指定して Azure 空間アンカーを構成したら、 **Save Cloud Anchor** を呼び出します。 Save Cloud Anchor では、Azure Spatial Anchors サービスにそのアンカーが宣言されます。 Save Cloud Anchor への呼び出しが成功すると、Azure 空間アンカーは、その Azure Spatial Anchors サービスの他のユーザーにも使用できるようになります。  
+パラメーターを指定して Azure 空間アンカーを構成したら、**Save Cloud Anchor** を呼び出します。 Save Cloud Anchor では、Azure Spatial Anchors サービスにそのアンカーが宣言されます。 Save Cloud Anchor への呼び出しが成功すると、Azure 空間アンカーは、その Azure Spatial Anchors サービスの他のユーザーにも使用できるようになります。  
 
 ![Spatial Anchors プラグイン](images/asa-unreal/unreal-spatial-anchors-img-15.png)
 
 > [!NOTE]
-> Save Cloud Anchor は非同期関数で、 **EventTick** などのゲーム スレッド イベントでのみ呼び出すことができます。 Save Cloud Anchor は、カスタムのブループリント関数では、使用可能なブループリント関数として表示されない場合があります。 ただし、ポーン イベント グラフ ブループリント エディターでは使用できます。
+> Save Cloud Anchor は非同期関数で、**EventTick** などのゲーム スレッド イベントでのみ呼び出すことができます。 Save Cloud Anchor は、カスタムのブループリント関数では、使用可能なブループリント関数として表示されない場合があります。 ただし、ポーン イベント グラフ ブループリント エディターでは使用できます。
 
 次の例では、Azure 空間アンカーは入力イベント コールバック中にセットに保存されます。 その後、アンカーは EventTick に保存されます。 Azure Spatial Anchors セッションで作成した空間データの量によっては、Azure 空間アンカーの保存を複数回試行することが必要になる場合があります。 そのため、保存の呼び出しが成功したかどうかを確認することをお勧めします。
 
@@ -189,7 +189,7 @@ Azure 空間アンカーを作成するだけでなく、仲間が Azure Spatial
 
 これで、アプリケーションで、Azure Spatial Anchors サービスに認識されている Azure 空間アンカーの検索が開始されます。この結果、ユーザーは仲間が作成した Azure 空間アンカーを見つけることができるようになります。
 
-Azure 空間アンカーを見つけたら、 **Stop Watcher** を呼び出して Azure Spatial Anchors Watcher を停止し、監視リソースをクリーンアップします。
+Azure 空間アンカーを見つけたら、**Stop Watcher** を呼び出して Azure Spatial Anchors Watcher を停止し、監視リソースをクリーンアップします。
 
 ![Spatial Anchors プラグイン](images/asa-unreal/unreal-spatial-anchors-img-22.png)
 

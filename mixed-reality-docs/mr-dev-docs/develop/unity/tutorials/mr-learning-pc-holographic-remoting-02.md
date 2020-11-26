@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality、Unity、チュートリアル、Hololens
+keywords: Mixed Reality, Unity, チュートリアル, Hololens, PC Holographic Remoting, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: ded881290de0167b7ffe26fc86b573d9b9ebb0b6
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+ms.openlocfilehash: 258fd80c812fca246190e98b3fa371b2f4c1b51f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631500"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679241"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2.Holographic Remoting PC アプリケーションの作成
 

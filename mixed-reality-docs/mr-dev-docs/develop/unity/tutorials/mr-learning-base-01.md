@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality、Unity、チュートリアル、Hololens
+keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, ソルバー, 視線追跡, 音声コマンド
 ms.localizationpriority: high
-ms.openlocfilehash: 992d864d7e016c3d0906366d10993ff0559afc06
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: 14feba57c7a8995648d108ffa5e4af95c4fa2827
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416900"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679331"
 ---
 # <a name="1-introduction-to-the-getting-started-tutorials"></a>1. 入門チュートリアルの概要
 

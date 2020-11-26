@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, チュートリアル, HoloLens, HoloLens 2, Azure Spatial Anchors
+keywords: Mixed Reality, Unity, チュートリアル, Hololens, Hololens 2, Azure Spatial Anchors, Azure クラウド サービス, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 5245f3522e7822c16ebc0d0113634f152f223086
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353250"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679341"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4.Azure Spatial Anchors の統合
 

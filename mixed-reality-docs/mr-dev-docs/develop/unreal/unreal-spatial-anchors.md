@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, 空間アンカー
-ms.openlocfilehash: d223c451cbbf0fb4e2cc1392394d2fe771ec8069
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, 空間アンカー, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
+ms.openlocfilehash: 3ce83160f745fc48f082776caa3cfa87d23a1844
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702179"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678831"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Unreal でのローカル空間アンカー
 
@@ -37,7 +37,7 @@ ms.locfileid: "91702179"
 
 次のように分類されます。
 1. 既知の場所でアクターを生成します。
-2. その場所とアクターのクラスに基づく名前を使用して、 **ARPin** を作成します。 
+2. その場所とアクターのクラスに基づく名前を使用して、**ARPin** を作成します。 
 3. アクターを **ARPin** に追加し、そのピンを HoloLens アンカー ストアに保存します。  
     * 選択するアンカー名は一意である必要があります。この例では現在のタイムスタンプを使用します。 
 
@@ -60,7 +60,7 @@ ms.locfileid: "91702179"
 
 ## <a name="removing-anchors"></a>アンカーの削除 
 
-アンカーが終了したら、 **Remove ARPin from WMRAnchor Store** および **Remove All ARPins from WMRAnchor Store** コンポーネントを使用して個々のアンカーまたはアンカー ストア全体を削除することができます。
+アンカーが終了したら、**Remove ARPin from WMRAnchor Store** および **Remove All ARPins from WMRAnchor Store** コンポーネントを使用して個々のアンカーまたはアンカー ストア全体を削除することができます。
 
 ![空間アンカーの削除](images/unreal-spatialanchors-remove.PNG)
 

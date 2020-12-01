@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, モデリング, モデリングガイダンス, 資産要件, 作成のガイドライン, ランチャー, 3D ランチャー, テクスチャ, マテリアル, 複雑さ, 三角形, メッシュ, 多角形, polycount, 制限, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: fb2f2718497781a2d38a0a061016e146ff077488
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 6baf8bd4faf6bb9994806e846602c91b83a1530b
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703468"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443658"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>家で使用する 3D モデルの作成
 
@@ -97,6 +97,9 @@ Windows Mixed Reality ホームは、64ノード以上のモデル、または L
 ## <a name="optimizations"></a>最適化
 
 Windows Mixed Reality ホームには、カスタム拡張機能を使用して定義された核となる glTF 仕様に加えて、一連の最適化が用意されています。 これらの最適化は、Windows バージョン <= 1709 であり、新しいバージョンの Windows で推奨されます。 GitHub で提供されている [Windows Mixed Reality アセットコンバーター](https://github.com/Microsoft/glTF-Toolkit/releases)を使用して、任意の gltf 2.0 モデルを簡単に最適化できます。 このツールでは、次に示すように、正しいテクスチャパッキングと最適化が実行されます。 一般的な使用方法として、WindowsMRAssetConverter を使用することをお勧めしますが、エクスペリエンスをより細かく制御する必要があり、独自の最適化パイプラインを作成する必要がある場合は、以下の詳細な仕様を参照できます。  
+
+> [!NOTE]
+> モデルの正確な制限の意味については、「 [3d モデルの最適化](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) 365」を参照してください。
 
 ### <a name="materials"></a>素材
 
@@ -235,7 +238,7 @@ GlTF モデルに変更を加えた後は、glTF として直接保存できま�
 ### <a name="restrictions"></a>制限
 アニメーションは20分より長くすることはできず、36000のキーフレーム (30 FPS で20分) を含めることはできません。 また、変形ターゲットベースのアニメーションを使用する場合は、8192の変形ターゲット頂点以下を超えることはありません。 これらの数を超えると、アニメーション化された資産が Windows Mixed Reality ホームでサポートされなくなります。 
 
-|機能|最大値|
+|特徴|最大値|
 |-----|-----|
 |Duration|20 分|
 |キーフレーム|36,000| 

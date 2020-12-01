@@ -1,17 +1,17 @@
 ---
 title: Holographic リモート処理の追加
 description: Holographic Remoting を使用してネットワーク経由で HoloLens にホログラムを表示する方法について説明します。
-author: mikeriches
-ms.author: mriches
-ms.date: 05/24/2019
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, ホログラム, holographic リモート処理, リモートレンダリング, ネットワークレンダリング, HoloLens, リモートホログラム, Mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: ec03a349959f9bde71a2c8a600d513fb21c533a8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7aafb7a764a062efcca2c5a3cd9f77d4395516a2
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679631"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443650"
 ---
 # <a name="add-holographic-remoting-hololens-1st-gen"></a>Holographic リモート処理 (HoloLens (第1世代)) の追加
 
@@ -23,7 +23,7 @@ ms.locfileid: "94679631"
 Holographic リモート処理を使用する HoloLens 開発者は、HoloLens 2 との互換性を確保するためにアプリを更新する必要があります。 これには、新しいバージョンの Holographic リモート処理 NuGet パッケージが必要です。 バージョン番号が2.0.0.0 より小さい Holographic リモート処理 NuGet パッケージを使用するアプリケーションが、HoloLens 2 の Holographic Remoting プレーヤーに接続しようとすると、接続は失敗します。
 
 >[!NOTE]
->HoloLens 2 に固有のガイダンスについては、 [こちら](holographic-remoting-create-host.md)を参照してください。
+>HoloLens 2 に固有のガイダンスについては、 [こちら](holographic-remoting-create-remote-wmr.md)を参照してください。
 
 
 ## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>Holographic remoting をデスクトップまたは UWP アプリに追加する

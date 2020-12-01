@@ -1,19 +1,19 @@
 ---
-title: 混合現実向けに 2D UWP アプリを更新する
+title: Windows Mixed Reality 向けの 2D UWP アプリの更新
 description: この記事では、既存の2D ユニバーサル Windows プラットフォームアプリを更新して、HoloLens および Windows Mixed Reality のイマーシブヘッドセットで実行する方法について説明します。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 2D アプリ、UWP、フラットアプリ、HoloLens、イマーシブヘッドセット、アプリモデル、戻るボタン、アプリバー、dpi、解像度、スケール、移植、HoloLens 1 世代、HoloLens 2、mixed reality ヘッドセット、windows mixed reality ヘッドセット、移行、Windows 10
-ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f4dcc022fced0b3e22eb42751dc596e1b334a01a
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677801"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443630"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>混合現実向けに 2D UWP アプリを更新する
+# <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Windows Mixed Reality 向けの 2D UWP アプリの更新
 
 Windows Mixed Reality を使用すると、ユーザーは、お客様の物理的またはデジタルの世界において、ホログラムを適切なものとして表示できます。 主に、HoloLens とデスクトップ Pc の両方を Windows 10 デバイスとして接続します。これは、ストア内のほぼすべてのユニバーサル Windows プラットフォーム (UWP) アプリを2D アプリとして実行できることを意味します。
 
@@ -51,7 +51,7 @@ Mixed reality ヘッドセット内の [スタート] メニューにアクセ�
 
 ## <a name="targeting-both-immersive-headsets-and-hololens"></a>イマーシブヘッドセットと HoloLens の両方を対象とする
 
-おめでとうございます。 これで、アプリは Windows 10 ユニバーサル Windows プラットフォーム (UWP) を使用しています。
+お疲れさまでした。 これで、アプリは Windows 10 ユニバーサル Windows プラットフォーム (UWP) を使用しています。
 
 これで、アプリは現在の windows デバイス (デスクトップ、モバイル、Xbox、Windows Mixed Reality イマーシブヘッドセット、HoloLens など) で実行できるようになり、今後の Windows デバイスでも実行できるようになりました。 ただし、これらのデバイスをすべてターゲットにするには、アプリが Windows のユニバーサルデバイスファミリを対象としていることを確認する必要があります。
 

@@ -1,17 +1,17 @@
 ---
 title: Holographic リモート処理の接続セキュリティを有効にする
 description: このページでは、プレーヤーとリモートアプリの間で暗号化および認証された接続を使用するように Holographic リモート処理を構成する方法について説明します。
-author: markkeinz
-ms.author: makei
-ms.date: 10/29/2020
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、セキュリティ、認証、サーバー対クライアント
-ms.openlocfilehash: 4004c7534092c73fe478130b9d957461bb34bcfa
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: b2c054d19044b89b487331806b8256de1379fd53
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679591"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443461"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Holographic リモート処理の接続セキュリティを有効にする
 
@@ -38,8 +38,11 @@ Holographic リモート処理のセキュリティは、ユースケースに�
 * **機密性:** サードパーティが、windows media player とリモートアプリの間で交換される情報を読み取ることはできません。
 * **整合性:** プレーヤーとリモートは、通信に対する転送中の変更を検出できます。
 
->[!TIP]
->セキュリティ機能を使用できるようにするには、 [カスタムプレーヤー](holographic-remoting-create-player.md) と [カスタムリモートアプリ](holographic-remoting-create-host.md)の両方を実装する必要があります。
+>[!IMPORTANT]
+>セキュリティ機能を使用できるようにするには、 [Windows Mixed Reality](holographic-remoting-create-remote-wmr.md) api または[OpenXR](holographic-remoting-create-remote-openxr.md) api を使用して、[カスタムプレーヤー](holographic-remoting-create-player.md)とカスタムリモートアプリの両方を実装する必要があります。
+
+>[!NOTE]
+> [2.4.0](holographic-remoting-version-history.md#v2.4.0)以降のバージョンでは、 [OpenXR API](../native/openxr.md)を使用したリモートアプリを作成できます。 OpenXR 環境でセキュリティで保護された接続を確立する方法の概要については、 [以下](#secure-connection-using-the-openxr-api)を参照してください。
 
 ## <a name="planning-the-security-implementation"></a>セキュリティ実装の計画
 
@@ -168,8 +171,26 @@ Windows では、システム検証によって次のことが確認されます
 >[!NOTE]
 >ユースケースで異なる形式の検証が必要な場合は (上記の証明書のユースケース #1 を参照)、システムの検証を完全にバイパスします。 代わりに、DER でエンコードされた x.509 証明書を処理できる任意の API またはライブラリを使用して、証明書チェーンをデコードし、ユースケースに必要なチェックを実行します。
 
+## <a name="secure-connection-using-the-openxr-api"></a>OpenXR API を使用して接続をセキュリティで保護する
+
+[OPENXR api](../native/openxr.md)を使用する場合、セキュリティで保護された接続に関連するすべての api は OpenXR 拡張機能の一部として利用でき `XR_MSFT_holographic_remoting` ます。
+
+>[!IMPORTANT]
+>Holographic Remoting OpenXR extension API の詳細については、 [Holographic リモート処理のサンプル github リポジトリ](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)に記載されている[仕様](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html)を確認してください。
+
+OpenXR 拡張機能を使用したセキュリティで保護された接続の主な要素 `XR_MSFT_holographic_remoting` は、次のコールバックです。
+- `xrRemotingRequestAuthenticationTokenCallbackMSFT`は、送信される認証トークンを生成または取得します。
+- `xrRemotingValidateServerCertificateCallbackMSFT`は、証明書チェーンを検証します。
+- `xrRemotingValidateAuthenticationTokenCallbackMSFT`は、クライアント認証トークンを検証します。
+- `xrRemotingRequestServerCertificateCallbackMSFT`では、使用する証明書をサーバーアプリケーションに提供します。
+
+これらのコールバックは、およびを使用してリモート処理 OpenXR ランタイムに提供でき `xrRemotingSetSecureConnectionClientCallbacksMSFT` `xrRemotingSetSecureConnectionServerCallbacksMSFT` ます。 `XrRemotingConnectInfoMSFT` `XrRemotingListenInfoMSFT` また、またはを使用しているかどうかに応じて、構造体または構造体の secureconnection パラメーターを使用してセキュリティで保護された接続を有効にする必要があり `xrRemotingConnectMSFT` `xrRemotingListenMSFT` ます。
+
+この API は、「 [holographic remoting security の実装](#implementing-holographic-remoting-security) 」で説明されている IDL ベースの api によく似ていますが、インターフェイスを実装するのではなく、コールバックの実装を提供します。 詳細な例については、OpenXR サンプルアプリの一部として、 [Holographic リモート処理サンプル github リポジトリ](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)を参照してください。
+
 ## <a name="see-also"></a>参照
-* [Holographic Remoting リモート アプリの作成](holographic-remoting-create-host.md)
+* [Windows Mixed Realiy Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
+* [OpenXR Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md)
 * [カスタム Holographic リモート処理プレーヤーアプリの作成](holographic-remoting-create-player.md)
 * [Holographic リモート処理のトラブルシューティングと制限事項](holographic-remoting-troubleshooting.md)
 * [Holographic Remoting ソフトウェア ライセンス条項](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

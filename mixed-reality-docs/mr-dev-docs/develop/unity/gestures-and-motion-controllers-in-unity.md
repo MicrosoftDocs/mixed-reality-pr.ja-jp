@@ -1,23 +1,29 @@
 ---
 title: Unity でのジェスチャとモーション コントローラー
 description: ハンドジェスチャとモーションコントローラーを使用して、Unity での操作を実行する方法について説明します。
-author: thetuvix
+author: hferrone
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/1/2020
 ms.topic: article
 keywords: ジェスチャ、モーションコントローラー、unity、宝石、入力、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: e1a2ae10638bb8dbd35eed7e9a0a1d2a05181f0c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 122642bb7fc561e505098bca00b8bf65bfd4552e
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678651"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443580"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Unity でのジェスチャとモーション コントローラー
 
 [Unity](gaze-in-unity.md)での操作を実行するには、2つの主要な方法があります。 HoloLens では[ハンドジェスチャ](../../design/gaze-and-commit.md#composite-gestures)と、HoloLens では[アニメーションコントローラー](../../design/motion-controllers.md)を使用します。 Unity の同じ Api を使用して、空間入力の両方のソースのデータにアクセスします。
 
 Unity には、Windows Mixed Reality の空間入力データにアクセスするための主な方法が2つあります。複数の Unity XR Sdk 間で動作する common *input. GetButton/GetAxis* api と、使用可能な空間入力データの完全なセットを公開する Windows mixed reality に固有の *Interactionmanager/GestureRecognizer* api です。
+
+## <a name="unity-xr-input-apis"></a>Unity XR 入力 Api
+
+新しいプロジェクトの場合は、最初から新しい XR 入力 Api を使用することをお勧めします。 
+
+[XR api](https://docs.unity3d.com/Manual/xr_input.html)の詳細については、こちらを参照してください。
 
 ## <a name="unity-buttonaxis-mapping-table"></a>Unity ボタン/軸マッピングテーブル
 
@@ -152,7 +158,7 @@ Windows Mixed Reality では、さまざまなフォームファクターでモ�
 </tr><tr>
 <td> <b>おおよその精度</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: orange"> Approximate </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>位置なし</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: orange"> Approximate </td><td style="background-color: orange"> false</td>
+<td> <b>位置なし</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: orange"> Approximate </td><td style="background-color: orange"> False</td>
 </tr>
 </table>
 
@@ -213,6 +219,9 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 このグリップとポインターの (コントローラーの先端が指している) 間のリレーションシップは、コントローラーによって異なる場合があることに注意してください。 現時点では、コントローラーのポインターにアクセスするには、次のセクションで説明する MR 固有の入力 API を使用するしかありません。
 
 ## <a name="windows-specific-apis-xrwsainput"></a>Windows 固有の Api (XR。付い.代入
+
+> [!CAUTION]
+> プロジェクトが XR のいずれかを使用している場合。WSA Api は、今後の Unity リリースで XR SDK を優先するように段階的に廃止されています。 新しいプロジェクトの場合は、最初から XR SDK を使用することをお勧めします。 [XR 入力システムと api](https://docs.unity3d.com/Manual/xr_input.html)の詳細については、こちらを参照してください。
 
 **名前空間:** *UNITYENGINE. XR*<br>
 **型**: *interactionmanager*、 *interactionsourcestate*、 *interactionmanager*、 *interactionsourceproperties*、 *interactionsourcekind*、 *interactionmanager*

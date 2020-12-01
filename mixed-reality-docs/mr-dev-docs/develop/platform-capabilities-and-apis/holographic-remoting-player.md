@@ -3,20 +3,20 @@ title: Holographic Remoting Player
 description: Holographic Remoting Player は、Holographic リモート処理をサポートする PC アプリやゲームに接続するコンパニオンアプリです。 Holographic リモート処理では、Wi-Fi 接続を使用して、PC から Microsoft HoloLens にコンテンツを Holographic します。
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、診断、パフォーマンス
-ms.openlocfilehash: c65b10079ffbc40602ebbd25b1e493c19b2a6078
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 990143a6d0c51f5f817ca0636573c3479a7e1682
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677931"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443620"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting Player
 
 >[!IMPORTANT]
->HoloLens 2 の Holographic リモート処理は、メジャーバージョンの変更です。 [ **Hololens (第1世代)** のリモートアプリケーション](add-holographic-remoting.md)では、NuGet **パッケージバージョン 1.x** および [ **hololens 2** のリモートアプリケーション](holographic-remoting-create-host.md)を使用する必要が **あります2.x を使用する** 必要があります。 これは、HoloLens 2 用に作成されたリモートアプリケーションが HoloLens (第1世代) と互換性がないことを意味します。
+>HoloLens 2 の Holographic リモート処理は、メジャーバージョンの変更です。 [ **Hololens (第1世代)** のリモートアプリケーション](add-holographic-remoting.md)では、NuGet **パッケージバージョン 1.x** および [ **hololens 2** のリモートアプリケーション](holographic-remoting-create-remote-wmr.md)を使用する必要が **あります2.x を使用する** 必要があります。 これは、HoloLens 2 用に作成されたリモートアプリケーションが HoloLens (第1世代) と互換性がないことを意味します。
 
 [Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40)は、Holographic リモート処理をサポートする PC アプリやゲームに接続するコンパニオンアプリです。 Holographic リモート処理では、Wi-Fi 接続を使用して、PC から Microsoft HoloLens にコンテンツを Holographic します。
 
@@ -26,6 +26,9 @@ Holographic リモート処理プレーヤーは、HoloLens (第1世代) と Hol
 
 >[!TIP]
 >バージョン [2.2.0](holographic-remoting-version-history.md#v2.2.0) 以降では、Holographic リモート処理プレーヤーは、 [windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)を実行する windows pc でも利用できます。
+
+>[!TIP]
+>[2.4.0](holographic-remoting-version-history.md#v2.4.0)以降のバージョンでは、 [OpenXR API](../native/openxr.md)を使用したリモートアプリを作成できます。 まず [、OpenXR api を使用して Holographic リモート処理リモートアプリを作成する方法](holographic-remoting-create-remote-openxr.md)を確認します。
 
 ## <a name="connecting-to-the-holographic-remoting-player"></a>Holographic リモート処理プレーヤーに接続する
 
@@ -78,6 +81,7 @@ Holographic remoting 接続は暗号化されて **いない** ことに注意�
 
 ## <a name="see-also"></a>参照
 * [HoloLens (第1世代): Holographic リモート処理の追加](add-holographic-remoting.md)
-* [HoloLens 2: Holographic リモート処理リモートアプリの作成](holographic-remoting-create-host.md)
+* [Windows Mixed Realiy Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
+* [OpenXR Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md)
 * [Holographic Remoting ソフトウェア ライセンス条項](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft プライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)

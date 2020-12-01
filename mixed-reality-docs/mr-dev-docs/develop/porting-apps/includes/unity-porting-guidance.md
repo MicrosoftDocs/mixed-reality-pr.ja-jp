@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bcc899a178917a8ef184b4c11bd724df71f7b5c0
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: bf6b98eca850d2b280e7a016799c4287955159a6
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638545"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443679"
 ---
 # <a name="project-settings"></a>[プロジェクト設定](#tab/project)
 
@@ -95,9 +95,6 @@ else
 
 既存の HMD を対象とする各ゲームまたはアプリケーションには、処理する入力のセット、エクスペリエンスに必要な入力の種類、およびそれらの入力を取得するために呼び出す特定の Api が含まれます。 Windows Mixed Reality で利用可能な入力を活用するために、可能な限りシンプルで単純なものにするために投資してきました。
 1. Windows Mixed Reality が入力を公開する方法と、それが現在のアプリケーションの動作にどのように対応しているかの詳細については、隣接するタブの **Unity の入力移植ガイド** を参照してください。
-2. Unity のクロス VR SDK 入力 API または MR 固有の入力 API を活用するかどうかを選択します。 [Oculus 入力](https://docs.unity3d.com/Manual/OculusControllers.html)と[openvr 入力](https://docs.unity3d.com/Manual/OpenVRControllers.html)については、現在 Unity VR apps で使用されているのは、GetAxis api です。 アプリが既にモーションコントローラー用のこれらの Api を使用している場合は、これが最も簡単なパスです。入力マネージャーでボタンと軸を再マップするだけで済みます。
-    * Unity のモーションコントローラーデータにアクセスするには、一般的な GetAxis Api または MR 固有の UnityEngine. XR Api を使用します (複数の場合があります)。 (以前は Unity 5.6 の UnityEngine. XR 名前空間にあります)
-    * ゲームパッドとモーションコントローラーを組み合わせた [ツールキットの例](https://github.com/Microsoft/HoloToolkit-Unity/pull/572) を参照してください。
 
 ### <a name="9-performance-testing-and-tuning"></a>9. パフォーマンステストとチューニング
 
@@ -112,13 +109,22 @@ Windows Mixed Reality は、ハイエンドゲーム Pc から広範な市場メ
 > [!IMPORTANT]
 > HP リバーブ G2 コントローラーを使用している場合は、追加の入力マッピング手順については、こちらの [記事](../../unity/unity-reverb-g2-controllers.md) を参照してください。
 
-## <a name="general-inputgetbuttongetaxis-apis"></a>一般的な入力。 GetButton/GetAxis Api
+## <a name="unity-xr-input-apis"></a>Unity XR 入力 Api
+
+新しいプロジェクトの場合は、最初から新しい XR 入力 Api を使用することをお勧めします。 
+
+[XR api](https://docs.unity3d.com/Manual/xr_input.html)の詳細については、こちらを参照してください。
+
+## <a name="inputgetbuttongetaxis-apis"></a>GetButton/GetAxis Api の入力
 
 Unity では、現在、一般的な入力である GetButton/GetAxis Api を使用して [、OCULUS sdk](https://docs.unity3d.com/Manual/OculusControllers.html) と [openvr sdk](https://docs.unity3d.com/Manual/OpenVRControllers.html)の入力を公開しています。 アプリが既にこれらの Api を入力に使用している場合は、これが Windows Mixed Reality でのモーションコントローラーをサポートするための最も簡単なパスです。入力マネージャーでボタンと軸を再マップするだけで済みます。
 
 詳細については、「 [unity のボタン/軸マッピングテーブル](../../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) 」と「 [共通 unity api の概要](../../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)」を参照してください。
 
 ## <a name="windows-specific-xrwsainput-apis"></a>Windows 固有の XR。付い.入力 Api
+
+> [!CAUTION]
+> プロジェクトが XR のいずれかを使用している場合。WSA Api は、今後の Unity リリースで XR SDK を優先するように段階的に廃止されています。 新しいプロジェクトの場合は、最初から XR SDK を使用することをお勧めします。 [XR 入力システムと api](https://docs.unity3d.com/Manual/xr_input.html)の詳細については、こちらを参照してください。
 
 アプリが各プラットフォームのカスタム入力ロジックを既に作成している場合は、 **XR** 名前空間の下で Windows 固有の空間入力 api を使用することを選択できます。 これにより、位置の精度やソースの種類などの追加情報にアクセスして、HoloLens で両手とコントローラーを区別できるようになります。
 
@@ -135,13 +141,13 @@ Windows Mixed Reality では、さまざまなフォームファクターでモ�
 
 * **グリップ** は、HoloLens によって検出されたハンドの位置を表します。または、運動コントローラーを持つパームです。
     * イマーシブヘッドセットでは、この方法を使用して、 **ユーザーの手** や、剣や銃などの **ユーザーの手に保持** されているオブジェクトをレンダリングすることをお勧めします。
-    * **グリップの位置** : コントローラーを自然に保持するときのパーム重心。グリップ内の位置を中央に配置するように左右に調整されます。
-    * **グリップの向きの右軸** : 手を完全に開いて平らな5本の指を作成した場合 (左側のパームから前方、右側のパームから後方)、
-    * **グリップの向きの前方軸** : ハンドを部分的に閉じた場合 (コントローラーを保持している場合と同様)、非表示の指で形成されたチューブを通過する光線。
-    * **グリップの向きの上位軸** : 右および順方向の定義によって暗黙的に示される上位軸。
-    * このグリップには、Unity のクロスベンダ入力 API (XR) を使用してアクセスでき **[ます。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/Rotation** ) または Windows 固有の API ( **TryGetPosition/rotation** ) を使用して、グリップを要求します。
+    * **グリップの位置**: コントローラーを自然に保持するときのパーム重心。グリップ内の位置を中央に配置するように左右に調整されます。
+    * **グリップの向きの右軸**: 手を完全に開いて平らな5本の指を作成した場合 (左側のパームから前方、右側のパームから後方)、
+    * **グリップの向きの前方軸**: ハンドを部分的に閉じた場合 (コントローラーを保持している場合と同様)、非表示の指で形成されたチューブを通過する光線。
+    * **グリップの向きの上位軸**: 右および順方向の定義によって暗黙的に示される上位軸。
+    * このグリップには、Unity のクロスベンダ入力 API (XR) を使用してアクセスでき **[ます。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/Rotation**) または Windows 固有の API (**TryGetPosition/rotation**) を使用して、グリップを要求します。
 * **ポインター** は、前方を指し示すコントローラーの先端を表します。
     * この方法は、コントローラーモデル自体をレンダリングするときに **UI をポイント** するときに raycast するために使用することをお勧めします。
-    * 現時点では、ポインターのポーズは、Windows 固有の API ( **Sourcestate/Rotation** ) を介してのみ使用でき、ポインターのポーズを要求します。
+    * 現時点では、ポインターのポーズは、Windows 固有の API (**Sourcestate/Rotation**) を介してのみ使用でき、ポインターのポーズを要求します。
 
 これらの発生座標はすべて Unity のワールド座標で表現されます。

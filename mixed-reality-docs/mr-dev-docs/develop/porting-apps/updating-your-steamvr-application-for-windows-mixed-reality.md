@@ -1,19 +1,19 @@
 ---
-title: SteamVR アプリケーションを更新しています
+title: Windows Mixed Reality の SteamVR アプリを更新しています
 description: Windows Mixed Reality ヘッドセットとの互換性を最大化するために SteamVR アプリケーションを更新するためのベストプラクティス。
 author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: SteamVR、互換性、移植、HoloLens ファースト世代、mixed reality ヘッドセット、windows mixed reality ヘッドセット、移行、Windows 10、蒸気、motion controller、haptics
-ms.openlocfilehash: be510203b928cc1871b505d184e1aba05ec99abc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4565f041db83574a51d9327d37780f5ef216dc9c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677661"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443440"
 ---
-# <a name="updating-your-steamvr-application"></a>SteamVR アプリケーションを更新しています
+# <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>Windows Mixed Reality の SteamVR アプリを更新しています
 Windows Mixed Reality ヘッドセットで実行するために、開発者は SteamVR エクスペリエンスをテストして最適化することをお勧めします。 このドキュメントでは、開発者が Windows Mixed Reality でエクスペリエンスを確実に実行できるようにするための一般的な機能強化について説明します。
 
 ## <a name="initial-setup-instructions"></a>初期セットアップの手順
@@ -52,7 +52,7 @@ Windows Mixed Reality モーションコントローラーは、他の SteamVR �
 
 ## <a name="launching-steamvr-apps-from-windows-mixed-reality-start-menu"></a>Windows Mixed Reality の [スタート] メニューから SteamVR アプリを起動する
 
-ストリームによって配布される VR エクスペリエンスについては、windows [Mixed reality For Steamvr Beta](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) と最新の [windows Insider](https://insider.windows.com) RS5 フライトを更新しました。これにより、Steamvr タイトルが [すべてのアプリ] リストの windows Mixed reality の [スタート] メニューに自動的に表示されるようになりました。 これらのソフトウェアバージョンがインストールされているので、お客様は、ヘッドセットを削除せずに、Windows Mixed Reality ホーム内から直接 SteamVR タイトルを起動できるようになりました。
+ストリームによって配布される VR エクスペリエンスについては、 [Windows Mixed reality For steamvr](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) と最新の [windows リリース](https://insider.windows.com) を更新しました。これにより、Steamvr タイトルが [すべてのアプリ] リストの windows Mixed reality の [スタート] メニューに自動的に表示されるようになりました。
 
 ## <a name="windows-mixed-reality-logo"></a>Windows Mixed Reality ロゴ
 

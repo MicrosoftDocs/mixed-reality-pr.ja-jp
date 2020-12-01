@@ -1,23 +1,23 @@
 ---
-title: 移植ガイド
+title: Windows Mixed Reality に VR アプリを移植する
 description: 既存のイマーシブアプリケーションを Windows Mixed Reality に移植する手順を説明したチュートリアルです。
 author: JBrentJ
 ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
 keywords: ポート、unity、unreal、ミドルウェア、エンジン、UWP、Win32、移植、HoloLens ファースト世代、mixed reality ヘッドセット、windows mixed reality ヘッドセット、移行、Windows 10、入力マッピング、
-ms.openlocfilehash: 18129151b1e3d11f9e9c7bb3c3420c23b5fd1dd0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: aa9d45a4413fd8e0f5c7eec61f830635c2db6f4b
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677731"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443678"
 ---
-# <a name="porting-guides"></a>移植ガイド
+# <a name="porting-vr-apps-to-windows-mixed-reality"></a>Windows Mixed Reality に VR アプリを移植する
 
 Windows 10 には、イマーシブおよび holographic ヘッドセットの直接サポートが含まれています。 Oculus Rift や HTC Naopak など、他のデバイス用にコンテンツを構築した場合は、オペレーティングシステムのプラットフォーム API の上に存在するライブラリに依存関係があります。 既存の Win32 Unity VR アプリを Windows Mixed Reality に導入するには、ベンダー固有の VR Sdk を Unity のクロスベンダ VR Api に再ターゲット使用する必要があります。
 
-## <a name="porting-overview"></a>移植の概要
+## <a name="porting-requirements"></a>移植の要件
 
 大まかに言えば、既存のコンテンツの移植には次の手順が関係します。
 1. **PC で Windows 10 の秋の作成者の更新プログラム (16299) が実行されていることを確認します。** 内部からのプレビュービルドを受信することはお勧めできなくなりました。これらのビルドは、mixed reality 開発では最も安定していないためです。

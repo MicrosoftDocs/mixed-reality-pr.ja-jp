@@ -3,20 +3,24 @@ title: Holographic リモート処理のバージョン履歴
 description: HoloLens 2 での Holographic リモート処理のバージョン履歴。
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、バージョン履歴、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5ac15c9af7f6cb2d0263b1ee20e0d2c490d353a0
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677851"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443471"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic リモート処理のバージョン履歴
 
 > [!IMPORTANT]
 > このガイダンスは、HoloLens 2 の Holographic リモート処理に固有のものです。
+
+## <a name="version-240-december-1-2020"></a>バージョン 2.4.0 (2020 年12月1日) <a name="v2.4.0"></a>
+* Holographic リモート処理で、 [OPENXR API](../native/openxr.md)を使用したリモートアプリの作成がサポートされるようになりました。 まず [、OpenXR api を使用して Holographic リモート処理リモートアプリを作成する方法](holographic-remoting-create-remote-openxr.md)を確認します。
+* バグの修正と安定性の向上。
 
 ## <a name="version-231-october-10-2020"></a>バージョン 2.3.1 (2020 年10月10日) <a name="v2.3.1"></a>
 * 視覚的なジッターの原因となったリモートの予測による回帰を修正しました。
@@ -102,8 +106,9 @@ ms.locfileid: "94677851"
 * HoloLens 2 の Holographic リモート処理の最初のパブリックリリース。
 
 ## <a name="see-also"></a>参照
+* [Windows Mixed Realiy Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
+* [OpenXR Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md)
 * [カスタム Holographic リモート処理プレーヤーアプリの作成](holographic-remoting-create-player.md)
-* [Holographic Remoting ホストアプリの作成](holographic-remoting-create-host.md)
 * [Holographic リモート処理のトラブルシューティングと制限事項](holographic-remoting-troubleshooting.md)
 * [Holographic Remoting ソフトウェア ライセンス条項](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft プライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)

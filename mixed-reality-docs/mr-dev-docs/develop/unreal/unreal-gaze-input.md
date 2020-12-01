@@ -6,43 +6,101 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality、ホログラム、HoloLens 2、視線追跡、宝石入力、ヘッドマウントディスプレイ、Unreal engine、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット
-ms.openlocfilehash: 2ea55e3c53275f6150ca7f2def10d71634119e2e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f89638cef6b90e004f097c701c3df13edaf74fac
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679051"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354340"
 ---
 # <a name="gaze-input"></a>見つめ入力
 
-## <a name="overview"></a>概要
-
-[Windows Mixed Reality プラグイン](https://docs.unrealengine.com/Platforms/VR/WMR/index.html)には、入力を見つめするための組み込み関数が用意されていませんが、HoloLens 2 では視線追跡がサポートされています。 実際の追跡機能は、Unreal のマウントされた **ディスプレイ** と **視点の追跡** api によって提供され、次のものが含まれます。
-
-- デバイス情報
-- センサーの追跡
-- 向きと位置
-- クリップペイン
-- データと追跡情報を見つめます
-
-機能の完全な一覧については、Unreal の「マウントされた [ディスプレイ](https://docs.unrealengine.com/BlueprintAPI/Input/HeadMountedDisplay/index.html) と [視点の追跡](https://docs.unrealengine.com/BlueprintAPI/EyeTracking/index.html) 」ドキュメントを参照してください。
-
-Unreal Api に加えて、HoloLens 2 の [視線に基づく相互作用](../../design/eye-gaze-interaction.md) に関するドキュメントを参照し、 [hololens 2 の視線追跡](https://docs.microsoft.com/windows/mixed-reality/eye-tracking) がどのように動作するかを確認してください。
-
-> [!IMPORTANT]
-> 視線追跡は、HoloLens 2 でのみサポートされています。
+ユーザーの注目を示すには、宝石を使用します。  これにより、デバイス上の視線追跡カメラを使用して、ユーザーが現在見ているものと一致する非 Real ワールド空間内の射線を見つけます。
 
 ## <a name="enabling-eye-tracking"></a>目の追跡を有効にする
-Unreal の Api を使用するには、HoloLens の入力を HoloLens プロジェクト設定で有効にする必要があります。 アプリケーションが起動すると、次のスクリーンショットに同意プロンプトが表示されます。
 
-- [ **はい** ] を選択してアクセス許可を設定し、宝石入力のアクセス権を取得します。 この設定をいつでも変更する必要がある場合は、 **設定** アプリで見つけることができます。
+- [ **プロジェクトの設定] > HoloLens** で、次のように **見つめ入力** 機能を有効にします。
 
-![アイ入力のアクセス許可](images/unreal/eye-input-permissions.png)
+![見つめ入力が強調表示されている HoloLens プロジェクト設定機能のスクリーンショット](images/unreal-gaze-img-01.png)
+
+- 新しいアクターを作成してシーンに追加する
 
 > [!NOTE] 
 > ステレオスコピックの追跡に必要な2つの光線はサポートされていないため、Unreal の HoloLens の追跡では、両方の目に1つの宝石があります。
 
-これで、HoloLens の入力を HoloLens 2 のアプリに Unreal に追加する必要があります。 より簡単な入力と、それが混合現実のユーザーに与える影響の詳細については、以下のリンクを参照してください。 対話型エクスペリエンスを構築するときは、これらのことを考慮してください。
+## <a name="using-eye-tracking"></a>視線追跡の使用
+
+まず、IsEyeTrackerConnected 関数を使用して、デバイスが視線追跡をサポートしていることを確認します。  これが true を返す場合は、GetGazeData を呼び出して、現在のフレームでユーザーの目が見ている場所を検索します。
+
+![接続された関数であることを確認するためのブループリント](images/unreal-gaze-img-02.png)
+
+> [!NOTE]
+> HoloLens では、固定ポイントと信頼の値は使用できません。
+
+ユーザーが見ている内容を検索するには、行トレースで、宝石と向きを使用します。  このベクトルの開始は、宝石の原点で、終点には目的の距離を乗算した値を掛けたものです。
+
+!["宝石データの取得" 機能のブループリント](images/unreal-gaze-img-03.png)
+
+## <a name="getting-head-orientation"></a>ヘッドの向きの取得
+
+または、HMD の回転を使用して、ユーザーの頭の方向を表すことができます。  これには、宝石入力機能は必要ありませんが、目の追跡情報は表示されません。  適切な出力データを取得するには、ブループリントへの参照をワールドコンテキストとして追加する必要があります。
+
+> [!NOTE]
+> HMD データの取得は、Unreal 4.26 以降でのみ使用できます。
+
+![Get HMDData 関数のブループリント](images/unreal-gaze-img-04.png)
+
+## <a name="using-c"></a>C++ の使用 
+
+- ゲームの build.cs ファイルで、PublicDependencyModuleNames の一覧に "EyeTracker" を追加します。
+
+```cpp
+PublicDependencyModuleNames.AddRange(
+    new string[] {
+        "Core",
+        "CoreUObject",
+        "Engine",
+        "InputCore",
+        "EyeTracker"
+});
+```
+
+- "ファイル/新しい C++ クラス" で、"EyeTracker" という名前の新しい C++ アクターを作成します。
+    - Visual Studio ソリューションが開き、新しい EyeTracker クラスが表示されます。 ビルドして実行し、新しい EyeTracker アクターで Unreal のゲームを開きます。  [アクターの配置] ウィンドウで "EyeTracker" を検索します。  このクラスをゲームウィンドウにドラッグアンドドロップして、プロジェクトに追加します。
+
+![プレースアクターウィンドウが開いているアクターのスクリーンショット](images/unreal-gaze-img-06.png)
+
+- EyeTracker で、add for EyeTrackerFunctionLibrary および DrawDebugHelpers を追加します。
+
+```cpp
+#include "EyeTrackerFunctionLibrary.h"
+#include "DrawDebugHelpers.h"
+```
+
+ティックで、デバイスが UEyeTrackerFunctionLibrary:: IsEyeTrackerConnected を使用した視線追跡をサポートしていることを確認します。  次に、UEyeTrackerFunctionLibrary:: GetGazeData から行トレースの射線の開始と終了を検索します。
+
+```cpp
+void AEyeTracker::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+
+    if(UEyeTrackerFunctionLibrary::IsEyeTrackerConnected())
+    {
+        FEyeTrackerGazeData GazeData;
+        if(UEyeTrackerFunctionLibrary::GetGazeData(GazeData))
+        {
+            FVector Start = GazeData.GazeOrigin;
+            FVector End = GazeData.GazeOrigin + GazeData.GazeDirection * 100;
+
+            FHitResult Hit Result;
+            if (GWorld->LineTraceSingleByChannel(HitResult, Start, End, ECollisionChannel::ECC_Visiblity))
+            {
+                DrawDebugCoordinateSystem(GWorld, HitResult.Location, FQuat::Identity.Rotator(), 10);
+            }
+        }
+    }
+}
+```
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 

@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、パフォーマンス
 appliesto:
 - Windows 10
-ms.openlocfilehash: 241fb95d92c771af727cc50287e4d1b2526123a5
-ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
+ms.openlocfilehash: 7712641bad36b8759b9237abf14593f8c121e81b
+ms.sourcegitcommit: 3eb4c1a79e9173a5c9b6d2284f34c0bceced402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "95002967"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96501710"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP リバーブ G2 に関してよく寄せられる質問
 
@@ -53,6 +53,10 @@ HP は次のことを推奨します。
 ## <a name="i-am-getting-a-13-14-something-went-wrong-error-when-my-pc-resumes-from-hibernate-s4"></a>PC が休止状態 (S4) から再開したときに、13-14 "問題が発生しました" というエラーが発生する
 
 再開プロセス中に、ビデオカードが接続を確立できないことがあります。そのため、PC から USB タイプ C を取り外してから再び接続すると、接続の確立に役立ちます。
+
+## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>HP Motion Controller ジョイスティックが1辺になることがある
+
+この問題は、ジョイスティックをクリックするまで完全に押し下げ、自由に移動することによって修正されます。
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>Mixed Reality ポータルでは、"このヘッドセットでは mixed reality を実行できません" と表示されますが、これは以前の WMR ヘッドセットで問題なく動作しています。
 

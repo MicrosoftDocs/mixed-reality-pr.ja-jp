@@ -290,6 +290,8 @@
           href: unreal/unreal-hololens-camera.md
         - name: Unreal での QR コード
           href: unreal/unreal-qr-codes.md
+        - name: Unreal での UMG とキーボード
+          href: unreal/unreal-umg-keyboard.md
         - name: Unreal での WinRT
           href: unreal/unreal-winrt.md
     - name: イマーシブ VR
@@ -306,6 +308,8 @@
       items:
         - name: Unreal でのデバイスへのデプロイ
           href: unreal/unreal-deploying.md
+        - name: Unreal でのプロジェクトのアップグレード
+          href: unreal/unreal-porting.md
         - name: Unreal のパフォーマンスに関する推奨事項
           href: unreal/performance-recommendations-for-unreal.md
         - name: Unreal の素材に関する推奨事項

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、デザイン、コントロール、ui、ux、進行状況インジケーター、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 93cdd7054c05af9f8621e091fa3d4b59d9e65ee3
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: aa74ae1bf9dae9831743aeaf6ce18df196784ded
+ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703388"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96470514"
 ---
 # <a name="progress-indicator"></a>進捗状況インジケーター
 
@@ -90,7 +90,7 @@ ms.locfileid: "94703388"
 
 ## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 用 MRTK (Mixed Reality Toolkit) の進行状況インジケーター
 
-* [MRTK-進行状況インジケーター prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/ProgressIndicators)
+* [MRTK-進行状況インジケーター prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
 * [MRTK-シーン移行サービス](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Extensions/SceneTransitionService/SceneTransitionServiceOverview.html)
 
 

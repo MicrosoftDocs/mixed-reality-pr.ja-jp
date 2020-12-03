@@ -7,16 +7,15 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, 空間マッピング, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: cd7e99230809c9d98f732e0dfa1f0b86d05c4365
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 878eae5f5fd0b7a1630511faa23c1477455ed988
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678811"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354382"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Unreal での空間マッピング
 
-## <a name="overview"></a>概要
 空間マッピングを使用すると、HoloLens の周囲の世界を見せることで、物理的な世界の表面にオブジェクトを配置できるようになります。これにより、ホログラムがユーザーにとってより現実的に見えるようになります。 また、空間マッピングでは、実際の奥行きの手掛かりを利用して、ユーザーの世界にオブジェクトを固定します。これにより、これらのホログラムが実際に空間に存在することをユーザーに納得させることができます。空間に浮かんでいるホログラムやユーザーと一緒に動くホログラムは、それほどリアルではありません。 できるだけ快適さを追求してアイテムを配置したいと考えています。
 
 空間マッピングの品質、配置、オクルージョン、レンダリングなどの詳細については、[空間マッピング](../../design/spatial-mapping.md) に関するドキュメントを参照してください。
@@ -26,6 +25,8 @@ ms.locfileid: "94678811"
 HoloLens で空間マッピングを有効にするには、次の手順を実行します。
 - **[編集] > [プロジェクトの設定]** を開いて、 **[プラットフォーム]** セクションまで下にスクロールします。    
     + **[HoloLens]** を選択し、 **[空間認知]** をオンにします。
+
+![空間認知が強調表示されている HoloLens プロジェクト設定機能のスクリーンショット](images/unreal-spatial-mapping-img-01.png)
 
 HoloLens ゲームで空間マッピングをオプトインし、 **[MRMesh]** をデバッグするには、次のようにします。
 1. **[ARSessionConfig]** を開き、 **[ARSettings] > [ワールド マッピング]** セクションを展開します。 
@@ -48,6 +49,13 @@ HoloLens ゲームで空間マッピングをオプトインし、 **[MRMesh]** 
     + 予想されるアプリケーションの実行時環境が大きくなると思われる場合は、この値を現実世界のスペースに合わせて大きくしなければならない場合があります。  一方、アプリケーションでユーザーの周囲の表面にホログラムを配置するだけであれば、このフィールドを小さくすることができます。 ユーザーが移動するにつれて、空間マッピングのボリュームも移動します。 
 
 ## <a name="working-with-mrmesh"></a>MRMesh の操作
+
+最初に、空間マッピングを開始する必要があります。
+
+![空間マッピング キャプチャの種類が強調表示されている ToggleARCapture 関数のブループリント](images/unreal-spatial-mapping-img-02.png)
+
+空間の空間マッピングのキャプチャが済んだら、空間マッピングをオフにすることをお勧めします。  空間マッピングは、一定の時間が経過した後、または各方向のレイキャストから MRMesh に対する衝突が返されるようになったら、完了できます。
+
 実行時に **MRMesh** にアクセスするには、次のようにします。
 1. ブループリント アクターに **ARTrackableNotify** コンポーネントを追加します。 
 
@@ -64,21 +72,53 @@ HoloLens ゲームで空間マッピングをオプトインし、 **[MRMesh]** 
 
 ![空間アンカーの例](images/unreal-spatialmapping-example.PNG)
 
-次のコードに示すように、C++ では、`OnTrackableAdded` デリゲートをサブスクライブして、使用可能になったらすぐに `ARTrackedGeometry` を取得することができます。 
+## <a name="spatial-mapping-in-c"></a>C++ での空間マッピング
 
-> [!IMPORTANT]
-> プロジェクトの build.cs ファイルでは、**PublicDependencyModuleNames** リストに **AugmentedReality** が含まれている **必要があります**。
-> - これには **ARBlueprintLibrary.h** と **MRMeshComponent.h** が含まれます。これにより、**UARTrackedGeometry** の **MRMesh** コンポーネントを調べることができます。 
+ゲームの build.cs ファイルで、**AugmentedReality** と **MRMesh** を PublicDependencyModuleNames リストに追加します。
 
-![空間アンカーの例の C++ コード](images/unreal-spatialmapping-examplecode.PNG)
+```cpp
+PublicDependencyModuleNames.AddRange(
+    new string[] {
+        "Core",
+        "CoreUObject",
+        "Engine",
+        "InputCore",    
+        "EyeTracker",
+        "AugmentedReality",
+        "MRMesh"
+});
+```
 
-空間マッピングは、**ARTrackedGeometries** によって表示される唯一のデータの種類ではありません。 `EARObjectClassification` が `World` であることを確認できます。これは、それが空間マッピング ジオメトリであることを意味します。 
+MRMesh にアクセスするには、**OnTrackableAdded** デリゲートをサブスクライブします。
 
-更新および削除されたイベントでも、類似のデリゲートがあります。 
-- `AddOnTrackableUpdatedDelegate_Handle` 
-- `AddOnTrackableRemovedDelegate_Handle` の順にクリックします。 
+```cpp
+#include "ARBlueprintLibrary.h"
+#include "MRMeshComponent.h"
 
-イベントの完全な一覧については、[UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html) API を参照してください。
+void AARTrackableMonitor::BeginPlay()
+{
+    Super::BeginPlay();
+
+    // Subscribe to Tracked Geometry delegates
+    UARBlueprintLibrary::AddOnTrackableAddedDelegate_Handle(
+        FOnTrackableAddedDelegate::CreateUObject(this, &AARTrackableMonitor::OnTrackableAdded)
+    );
+}
+
+void AARTrackableMonitor::OnTrackableAdded(UARTrackedGeometry* Added)
+{
+    // When tracked geometry is received, check that it's from spatial mapping
+    if(Added->GetObjectClassification() == EARObjectClassification::World)
+    {
+        UMRMeshComponent* MRMesh = Added->GetUnderlyingMesh();
+    }
+}
+```
+
+> [!NOTE]
+> 更新および削除イベントにも、それぞれ **AddOnTrackableUpdatedDelegate_Handle** および **AddOnTrackableRemovedDelegate_Handle** という同様のデリゲートがあります。
+>
+> イベントの完全な一覧については、[UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html) API を参照してください。
 
 ## <a name="see-also"></a>関連項目
 * [空間マッピング](../../design/spatial-mapping.md)

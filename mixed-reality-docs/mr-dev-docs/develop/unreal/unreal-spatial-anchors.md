@@ -7,18 +7,21 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, 空間アンカー, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 3ce83160f745fc48f082776caa3cfa87d23a1844
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678831"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354522"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Unreal でのローカル空間アンカー
 
 ## <a name="overview"></a>概要
 
 空間アンカーは、アプリケーション セッション間で現実世界の空間にホログラムを保存するために使用されます。 これらは、Unreal では **ARPin** として示され、今後のセッションで読み込まれるように HoloLens のアンカー ストアに保存されます。 ローカル アンカーは、インターネット接続がない場合のフォールバックとして理想的です。
+
+> [!NOTE]
+> UE 4.25 のアンカー関数は 4.26 では廃止されているので、新しいものに置き換える必要があります。 
 
 > [!IMPORTANT]
 > ローカル アンカーはデバイスに格納されますが、Azure 空間アンカーはクラウドに格納されます。 アンカーを格納するために Azure クラウド サービスを使用することをご検討の場合は、[Azure Spatial Anchors](unreal-azure-spatial-anchors.md) を統合する方法について説明したドキュメントを参照してください。 また、ローカル アンカーと Azure のアンカーは、競合することなく同じプロジェクトで使用できます。
@@ -27,13 +30,13 @@ ms.locfileid: "94678831"
 
 アンカーを保存または読み込む前に、アンカー ストアの準備ができているかどうか確認する必要があります。  アンカー ストアの準備が整う前に、いずれかの HoloLens アンカー関数を呼び出すと、失敗します。  
 
-![空間アンカー ストア準備完了](images/unreal-spatialanchors-store-ready.PNG)
+[!INCLUDE[](includes/tabs-sa-1.md)]
 
 ## <a name="saving-anchors"></a>アンカーの保存
 
 アプリケーションにコンポーネントがあり、それをワールドに固定する必要がある場合は、次のシーケンスを使用してアンカー ストアに保存できます。 
 
-![空間アンカーの保存](images/unreal-spatialanchors-save.PNG)
+[!INCLUDE[](includes/tabs-sa-2.md)]
 
 次のように分類されます。
 1. 既知の場所でアクターを生成します。
@@ -47,7 +50,7 @@ ms.locfileid: "94678831"
 
 アプリケーションが起動すると、次のブループリントを使用して、コンポーネントをアンカー位置に復元できます。
 
-![空間アンカーの読み込み](images/unreal-spatialanchors-load.PNG)
+[!INCLUDE[](includes/tabs-sa-3.md)]
 
 次のように分類されます。
 1. アンカー ストア内のすべてのアンカーを反復処理します。 
@@ -62,7 +65,7 @@ ms.locfileid: "94678831"
 
 アンカーが終了したら、**Remove ARPin from WMRAnchor Store** および **Remove All ARPins from WMRAnchor Store** コンポーネントを使用して個々のアンカーまたはアンカー ストア全体を削除することができます。
 
-![空間アンカーの削除](images/unreal-spatialanchors-remove.PNG)
+[!INCLUDE[](includes/tabs-sa-4.md)]
 
 > [!NOTE]
 > Spatial Anchors はまだベータ版であるため、最新の情報と機能を確認してください。

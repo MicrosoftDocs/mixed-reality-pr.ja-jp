@@ -7,18 +7,21 @@ ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, Azure, Azure 開発, Spatial Anchors, Mixed Reality, 開発, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, ホログラム, ゲーム開発, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 05a4b221961fa9b3a150eb8ef9f8bd2f77f5b955
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: b464292b606f6c375fe84a50867cac770cd8f001
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679871"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354550"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal での Azure Spatial Anchors
 
 ## <a name="overview"></a>概要
 
 Azure Spatial Anchors は、現実世界のアンカー ポイントを拡張現実デバイスを使って検出、共有、永続化できるようにする Microsoft Mixed Reality サービスです。 このドキュメントでは、Azure Spatial Anchors サービスを Unreal プロジェクトに統合する方法について説明します。 さらに情報が必要な場合は、[Azure Spatial Anchors サービス](https://azure.microsoft.com/services/spatial-anchors/)に関するページを参照してください。
+
+> [!NOTE]
+> Unreal Engine 4.26 には、iOS または Android を対象にする場合に ARKit と ARCore をサポートするためのプラグインが用意されています。
 
 > [!IMPORTANT]
 > ローカル アンカーはデバイスに格納されますが、Azure 空間アンカーはクラウドに格納されます。 アンカーをデバイスにローカルに格納することをご希望の場合は、[ローカル空間アンカー](unreal-spatial-anchors.md)のドキュメントにその手順が説明されています。 また、ローカル アンカーと Azure のアンカーは、競合することなく同じプロジェクトで使用できます。

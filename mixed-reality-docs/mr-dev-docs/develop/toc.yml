@@ -8,13 +8,15 @@
   href: install-the-tools.md
 - name: アプリの移植
   items:
-    - name: 既存のアプリを HoloLens 2 で利用できるようにする
-      href: unity/mrtk-porting-guide.md
-    - name: イマーシブ アプリの移植ガイド
+    - name: 移植の概要
+      href: porting-apps/porting-overview.md
+    - name: HoloLens (第 1 世代) アプリを HoloLens 2 に移植する
+      href: porting-apps/porting-hl1-hl2.md
+    - name: Windows Mixed Reality に VR アプリを移植する
       href: porting-apps/porting-guides.md
-    - name: SteamVR の更新
+    - name: Windows Mixed Reality 用に SteamVR アプリを更新する
       href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
-    - name: Mixed Reality の 2D UWP アプリを更新する
+    - name: Windows Mixed Reality 用に 2D UWP アプリを更新する
       href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
@@ -26,8 +28,6 @@
           href: unity/mrtk-getting-started.md
         - name: Windows Mixed Reality 用に Unity プロジェクトを構成する
           href: unity/configure-unity-project.md
-        - name: 既存のアプリを HoloLens 2 で利用できるようにする
-          href: unity/mrtk-porting-guide.md
     - name: チュートリアル
       items:
         - name: 概要
@@ -399,7 +399,11 @@
         - name: Holographic Remoting Player
           href: platform-capabilities-and-apis/holographic-remoting-player.md
         - name: Holographic Remoting リモート アプリの作成
-          href: platform-capabilities-and-apis/holographic-remoting-create-host.md
+          items:
+            - name: HolographicSpace API
+              href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
+            - name: OpenXR API
+              href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
         - name: カスタム Holographic リモート処理プレーヤーアプリの作成
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
         - name: カスタムの Holographic Remoting データ チャネル

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality、カンファレンス、サミット、開発者、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: c0111c03d2350627106a53af7c1e04d448a08fe6
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 01447b6122dae1c449e85b9bc7a9ad2cfc678f24
+ms.sourcegitcommit: 59c23d1ea5009e1929660a9a97c6131c353cd57e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443489"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538719"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days (日本)
 
@@ -57,7 +57,7 @@ Mixed Reality Dev Days への皆様のご参加をお待ちしています。 Mi
 |午後 2 時 55 分 - 午後 3 時 10 分|**休憩**||||
 |午後 3 時 10 分 - 午後 3 時 35 分|*セッション 7* Azure Object Anchors|Jesse McCulloch|JA|300|
 |午後 3 時 40 分 - 午後 4 時 05 分|*セッション 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
-|午後 4 時 10 分 - 午後 4 時 35 分|*セッション 9* Azure Spatial Anchors|TBD|JA|300|
+|午後 4 時 10 分 - 午後 4 時 35 分|*セッション 9* Azure 空間アンカーを使用したホログラムと実世界の整列|Yingguang Mei|JA|300|
 |午後 4 時 40 分 - 午後 5 時 05 分|*セッション 10* Unity + PiXYZ|Shinobu Takahashi (Unity)|JA|200|
 |午後 5 時 10 分 - 午後 5 時 35 分|*セッション 11* Azure Kinect DK の詳細、ケース スタディ|Shinji Chiba|JA|400|
 |午後 5 時 35 分 - 午後 5 時 50 分|閉じる|千代田まどか|JA|N/A|

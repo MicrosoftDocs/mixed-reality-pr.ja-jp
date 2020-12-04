@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 7d5ba4ded77079858ef36c62a4c90e2fdd5794f5
-  ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
+  ms.openlocfilehash: 6ea718c20d80078c95fc4151d2598f892519db3e
+  ms.sourcegitcommit: 2db930daba1ef4c444ab179d0061a5d84e2980c1
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/30/2020
-  ms.locfileid: "93036278"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "96513251"
 highlightedContent:
   items:
   - title: Mixed Reality とは
@@ -41,7 +41,7 @@ highlightedContent:
     url: https://docs.microsoft.com/hololens/hololens-requirements
   - title: VR 愛好者
     itemType: how-to-guide
-    url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
+    url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey
   - title: Mixed Reality の Learn モジュール
     itemType: learn
     url: develop/mr-learning-overview.md
@@ -75,9 +75,9 @@ productDirectory:
       text: Unity の概要
     - url: develop/unreal/unreal-development-overview.md
       text: Unreal の概要
-    - url: develop/native/directx-development-overview.md
-      text: Native の概要
-    - url: develop/unity/mrtk-porting-guide.md
+    - url: develop/porting-apps/porting-overview.md
+      text: 既存のアプリを移植する
+    - url: develop/porting-apps/porting-hl1-hl2.md
       text: アプリを HoloLens 2 で利用できるようにする
   - title: 配置
     imageSrc: images/icon-distribution.jpg
@@ -193,6 +193,8 @@ additionalContent:
     items:
     - title: 配布
       links:
+      - text: 配布の概要
+        url: distribute/distribute-overview.md
       - text: 3D アプリ起動ツールの設計
         url: distribute/3d-app-launcher-design-guidance.md
       - text: Mixed Reality ホームの 3D モデルの作成
@@ -233,3 +235,11 @@ additionalContent:
         url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
       - text: Galaxy Explorer 2.0
         url: develop/unity/galaxy-explorer-update.md
+    - title: 学習モジュール
+      links:
+      - text: 複合現実入門
+        url: https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/
+      - text: Mixed Reality ツールキットを使用して Unity で Mixed Reality プロジェクトを設定する
+        url: https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/
+      - text: Unity と Azure Cognitive Services を使用して言語翻訳アプリケーションを作成する
+        url: https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/

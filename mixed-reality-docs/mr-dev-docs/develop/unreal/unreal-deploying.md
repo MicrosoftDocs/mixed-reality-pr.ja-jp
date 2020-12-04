@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、デバイスへの展開、PC、ドキュメント、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9d32dff121899d40175af813fac4f7be1acc66c3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ef33e037d6ab6a69059c1452b71a428fe51836b9
+ms.sourcegitcommit: d56e7dd6c917ddc4ead0792ebff21891921174b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679121"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96564022"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Unreal でのデバイスへのデプロイ
 
@@ -59,4 +59,4 @@ HoloLens 2 に Unreal アプリケーションを展開するには、次の2つ
 > [!div class="nextstepaction"]
 > [高度なサービス](unreal-development-overview.md#5-adding-services)
 
-いつでも [Unreal 開発チェックポイント](unreal-development-overview.md#4-deploying-to-a-device)に戻ることができます。
+いつでも [Unreal 開発チェックポイント](unreal-development-overview.md#4-streaming-and-deploying-to-a-device)に戻ることができます。

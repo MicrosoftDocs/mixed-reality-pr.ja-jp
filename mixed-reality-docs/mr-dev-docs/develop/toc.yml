@@ -308,6 +308,8 @@
       items:
         - name: Unreal でのデバイスへのデプロイ
           href: unreal/unreal-deploying.md
+        - name: Microsoft Store への発行
+          href: unreal/unreal-publishing-to-store.md
         - name: Unreal でのプロジェクトのアップグレード
           href: unreal/unreal-porting.md
         - name: Unreal のパフォーマンスに関する推奨事項

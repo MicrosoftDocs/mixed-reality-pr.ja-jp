@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、パフォーマンス
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7712641bad36b8759b9237abf14593f8c121e81b
-ms.sourcegitcommit: 3eb4c1a79e9173a5c9b6d2284f34c0bceced402c
+ms.openlocfilehash: 0c0bc508772fe32af9edc21ca62ba5e46125fe88
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96501710"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578617"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP リバーブ G2 に関してよく寄せられる質問
 
@@ -57,6 +57,10 @@ HP は次のことを推奨します。
 ## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>HP Motion Controller ジョイスティックが1辺になることがある
 
 この問題は、ジョイスティックをクリックするまで完全に押し下げ、自由に移動することによって修正されます。
+
+## <a name="others-state-i-am-very-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>マイクを使用して一部のアプリケーションを使用しているときに、非常に大きい、またはオーディオがクリップされている
+
+HP リバーブ G2 マイクが Windows PC によって最初に認識されると、入力ボリュームレベルは自動的に100% に設定されます。 リバーブ G2's は高品質のマイクであるため、入力の感度は、Windows 10 の既定の設定よりもはるかに高くなります。 リバーブ G2 マイクの入力レベルを50% から設定し、そこからスケールアップすることをお勧めします。 最適な設定は、特に "自動ゲイン" マイクの設定がないアプリケーションを使用する場合に、ユーザーに固有です。 "自動利得" が適用されるアプリケーションの例としては、Skype、Zoom、Teams、Cisco WebEx などがありますが、すべての VR ソーシャルアプリケーションやブロードキャストアプリケーションがこの機能を備えているわけではありません。
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>Mixed Reality ポータルでは、"このヘッドセットでは mixed reality を実行できません" と表示されますが、これは以前の WMR ヘッドセットで問題なく動作しています。
 

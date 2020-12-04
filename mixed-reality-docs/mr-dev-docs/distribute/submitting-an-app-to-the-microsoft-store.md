@@ -6,14 +6,17 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store、HoloLens、イマーシブヘッドセット、アプリ、uwp、送信、送信、フィルター、メタデータ、システム要件、キーワード、wack、認定、パッケージ、appx、販売、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
-ms.openlocfilehash: b5d25817afeb2d8d970d329c802b7eaabcdf7f35
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 1d37337279e46e5f0f9d5cea82813af8de9d0f76
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703118"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578901"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Microsoft Store へのアプリの送信
+
+> [!IMPORTANT]
+> Unreal アプリケーションを送信する場合は、続行する前に、 **[こちらの発行手順](../develop/unreal/unreal-publishing-to-store.md)** に従ってください。
 
 [HoloLens](../hololens-hardware-details.md)と WINDOWS 10 PC の両方で、[イマーシブヘッドセット](../discover/immersive-headset-hardware-details.md)の電源を入れてユニバーサル Windows プラットフォームアプリを実行します。 HoloLens、PC、またはその両方をサポートするアプリを送信する場合でも、アプリの送信は [パートナーセンター](https://partner.microsoft.com/dashboard)を経由します。
 
@@ -38,9 +41,9 @@ Appx ビルドツールでアプリケーションを appx パッケージに組
 
 | 必要な資産 | 推奨される小数点以下桁数 | イメージ形式 | 資産はどこに表示されますか。 | 
 |----------|----------|----------|------------------|
-| 71x71 正方形の正方形のロゴ | Any |  PNG | 該当なし | 
+| 71x71 正方形の正方形のロゴ | 任意 |  PNG | N/A | 
 | 150x150 正方形の正方形のロゴ | 150x150 正方形 (100% scale) または 225x225 (150% scale) | PNG | 開始 pin とすべてのアプリ (310x310 のが提供されていない場合)、ストア検索候補、ストアリストページ、ストア参照、ストア検索 | 
-|  310x150 ワイドのワイドロゴ |  Any  |  PNG  |  該当なし | 
+|  310x150 ワイドのワイドロゴ |  任意  |  PNG  |  N/A | 
 |  ストア ロゴ |  75 x 75 (150% スケール)  |  PNG  |  パートナーセンター, レポートアプリ, レビューの作成, マイライブラリ | 
 |  スプラッシュ スクリーン |  930x450 (150% scale)  |  PNG  |  2D アプリランチャー (スレート) | 
 
@@ -264,7 +267,7 @@ Visual Studio でアプリを Microsoft Store に関連付ける
 多くの場合、コンシューマーは、Windows Mixed Reality のイマーシブヘッドセットを購入する前に、仮想現実の経験がないことに制限されています。 このようなユーザーは、大量のゲームで期待されることを認識していない場合や、イマーシブエクスペリエンスで独自の快適なしきい値を把握していない場合があります。 多くのお客様は、windows [Mixed Reality pc](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)としてバッジされていない pc で、Windows mixed reality イマーシブヘッドセットを試すこともできます。 これらの考慮事項により、有料の混合現実アプリまたはゲームの [無料試用版](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) の提供を検討することを強くお勧めします。
 
 ## <a name="see-also"></a>関連項目
-* [Mixed Reality とは](../discover/mixed-reality.md)
+* [複合現実とは](../discover/mixed-reality.md)
 * [開発の概要](../develop/development.md)
 * [アプリ ビュー](../design/app-views.md)
 * [Mixed Reality のパフォーマンスについて](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

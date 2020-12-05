@@ -6,22 +6,20 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality、手動追跡、Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、Mixed Reality、開発、機能、ドキュメント、ガイド、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 0a16a0291261277cb09e736e60b25f8ba71382e3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4c66e2353c1e881c05541fd0fe9eafa553ea5c23
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679211"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609713"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal での手の追跡
 
-## <a name="overview"></a>概要
-
-ハンドトラッキングシステムは、ユーザーのてのひらとフィンガーを入力として使用します。 コード内で使用するすべての指、パーム全体、およびハンドジェスチャの位置と回転を取得できます。 
+ハンドトラッキングシステムは、ユーザーのてのひらとフィンガーを入力として使用します。 各指の位置と回転に関するデータ、palm 全体、およびハンドジェスチャを使用できます。 
 
 ## <a name="hand-pose"></a>手の形
 
-手の形で、アクティブなユーザーの手と指を追跡し、それを入力として使用できます。これは、ブループリントと C++ を通じてアクセスできます。 詳細な技術情報については、Unreal の「 [Windows.](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) ..」 API を参照してください。 Unreal API は、Unreal エンジンとの間で同期されたティックを使用して、データを座標系として送信します。
+手では、ユーザーの手や指を入力として追跡し、使用することができます。 追跡データには、ブループリントと C++ の両方でアクセスできます。 詳細な技術情報については、Unreal の「 [Windows.](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) ..」 API を参照してください。 Unreal API は、Unreal エンジンとの間で同期されたティックを使用して、データを座標系として送信します。
 
 ### <a name="understanding-the-bone-hierarchy"></a>ボーン階層について
 
@@ -72,7 +70,7 @@ enum class EWMRHandKeypoint : uint8
 
 ![ハンドトラッキング BP](images/unreal/hand-tracking-bp.png)
 
-この関数は `true` 、デバイスでハンドトラッキングがサポートされている場合、および `false` ハンドトラッキングが使用できない場合にを返します。
+`true`デバイスでハンドトラッキングがサポートされている場合、およびハンドトラッキングが使用できない場合、この関数はを返し `false` ます。
 
 ![ハンドトラッキング BP のサポート](images/unreal/supports-hand-tracking-bp.png)
 
@@ -85,6 +83,7 @@ static bool UWindowsMixedRealityHandTrackingFunctionLibrary::SupportsHandTrackin
 ```
 
 ### <a name="getting-hand-tracking"></a>ハンドトラッキングの取得
+
 **GetHandJointTransform** を使用して、空間データを手動で返すことができます。 データはすべてのフレームを更新しますが、フレーム内にいる場合は、返された値がキャッシュされます。 パフォーマンス上の理由から、この関数では大きなロジックを使用しないことをお勧めします。 
 
 ![ハンドジョイント変換の取得](images/unreal/get-hand-joint-transform.png)
@@ -94,24 +93,25 @@ C++:
 static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransform(EControllerHand Hand, EWMRHandKeypoint Keypoint, FTransform& OutTransform, float& OutRadius)
 ```
 
-関数パラメーターの内訳:
+GetHandJointTransform の関数パラメーターの詳細を次に示します。
 
-* **手** : ユーザーの左側または右側
+* **手動** –ユーザーを左または右に配置できます。
 * **Keypoint** –ハンドのボーンです。 
 * **Transform** –ボーンの基本の座標と向きを調整します。 次のボーンのベースを要求して、ボーンの終点の変換データを取得できます。 特別なヒントのボーンは、distal の終わりを示します。 
 * **Radius** : ボーンのベースの半径。
 * **戻り値** -ボーンがこのフレームを追跡している場合は true、ボーンが追跡されていない場合は false。
 
 ## <a name="hand-live-link-animation"></a>ハンドライブリンクアニメーション
+
 [Live Link プラグイン](https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html)を使用して、手の形でアニメーションに公開されます。
 
 Windows Mixed Reality とライブリンクプラグインが有効になっている場合: 
 1. [ **ウィンドウ > ライブリンク** ] を選択して、ライブリンクエディターウィンドウを開きます。 
-2. [**ソース**] をクリックし、[ **Windows Mixed Reality ハンドトラッキングソース** を有効にする]
+2. **ソース** を選択し、 **Windows Mixed Reality の追跡ソース** を有効にする
 
 ![ライブリンクのソース](images/unreal/live-link-source.png)
  
-ソースを有効にし、アニメーションのアセットを開くと、[**プレビューシーン**] タブの [**アニメーション**] セクションが表示されなくなります (詳細については、「ライブリンクのドキュメント」を参照してください。プラグインがベータ版であるため、プロセスは後で変更される可能性があります)。
+ソースを有効にし、アニメーション資産を開いた後、[**プレビューシーン**] タブの [**アニメーション**] セクションを展開すると、追加のオプションが表示されません。
 
 ![ライブリンクアニメーション](images/unreal/live-link-animation.png)
  
@@ -194,7 +194,8 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 
 [SpatialPointerInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose) API を公開する C++ とブループリントの両方で、ポインティングデバイスとしてハンドレイを使用できます。
 
-すべての関数の結果がすべてのフレームに変更されるため、すべての関数が呼び出し可能になることに注意してください。 純粋関数と純粋でない関数、または呼び出し可能関数の詳細については、「[関数](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure)のブループリントユーザー guid」を参照してください。
+> [!IMPORTANT]
+> すべての関数の結果はすべてのフレームに変更されるため、すべてが呼び出し可能になります。 純粋関数と純粋でない関数、または呼び出し可能関数の詳細については、「 [関数](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure)のブループリントユーザー guid」を参照してください。
 
 ブループリントを使用するには、 **Windows Mixed Reality HMD** で任意のアクションを検索します。
 
@@ -203,6 +204,7 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 C++ でこれらのファイルにアクセスするには、 `WindowsMixedRealityFunctionLibrary.h` 呼び出し元のコードファイルの先頭にを含めます。
 
 ### <a name="enum"></a>列挙型
+
 また、[ **Ehmdinputコントローラー**] の下にある入力ケースにアクセスできます。このボタンは、ブループリントで使用できます。
 
 ![入力コントローラーボタン](images/unreal/input-controller-buttons.png)
@@ -218,10 +220,11 @@ enum class EHMDInputControllerButtons : uint8
 ```
 
 次に、該当する2つの列挙型ケースの内訳を示します。
+
 * **Select** -ユーザーがトリガーした選択イベント。 
-    * このイベントは、外気タップ、宝石、およびコミットによって HoloLens 2 でトリガーされます。または、 [音声入力](unreal-voice-input.md) を有効にした "選択" を言います。 
+    * HoloLens 2 で、エアタップ、宝石、およびコミットによってトリガーされます。または、 [音声入力](unreal-voice-input.md) を有効にした "選択" を言います。 
 * ユーザーによってトリガーされるイベントを **把握** します。 
-    * このイベントは、ホログラムでユーザーの指を閉じることで、HoloLens 2 でトリガーできます。 
+    * ホログラムでユーザーの指を閉じることによって、HoloLens 2 でトリガーされます。 
 
 次に示す列挙体を使用して、C++ でのハンドメッシュの追跡状態にアクセスでき `EHMDTrackingStatus` ます。
 
@@ -235,18 +238,21 @@ enum class EHMDTrackingStatus : uint8
 ```
 
 次に、該当する2つの列挙型ケースの内訳を示します。
+
 * **Nottracked** –-ハンドは表示されません
 * **追跡** –ハンドは完全に追跡されます。
 
 ### <a name="struct"></a>構造体
+
 PointerPoseInfo 構造体は、次のような手作業のデータに関する情報を提供します。
+
 * **Origin** –ハンドオリジン
 * **方向** –ハンドの方向
 * **アップ** (手動)
 * **方向** -方向の四元数 
 * **ステータスの追跡** -現在の追跡状態
 
-これには、次に示すように、ブループリントを使用してアクセスできます。
+次のように、ブループリントを使用して PointerPoseInfo 構造体にアクセスできます。
 
 ![ポインターのポーズ情報 BP](images/unreal/pointer-pose-info-bp.png)
 
@@ -263,7 +269,7 @@ struct FPointerPoseInfo
 };
 ```
 
-### <a name="functions"></a>機能
+### <a name="functions"></a>関数
 
 次に示すすべての関数は、継続的な監視を可能にするすべてのフレームに対して呼び出すことができます。 
 
@@ -324,7 +330,7 @@ static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrac
 
 ## <a name="gestures"></a>ジェスチャ
 
-Hololens 2 では、空間ジェスチャを追跡できます。これは、これらのジェスチャを入力としてキャプチャできることを意味します。 ジェスチャの詳細については、「 [HoloLens 2 の基本的な使用方法](https://docs.microsoft.com/hololens/hololens2-basic-usage) 」を参照してください。
+HoloLens 2 は、空間ジェスチャを追跡します。これは、これらのジェスチャを入力としてキャプチャできることを意味します。 ジェスチャの詳細については、「 [HoloLens 2 の基本的な使用方法](https://docs.microsoft.com/hololens/hololens2-basic-usage) 」を参照してください。
 
 のブループリント関数は、呼び出し元のコードファイルにを追加することで、 **Windows Mixed Reality 空間入力** と C++ 関数の下に `WindowsMixedRealitySpatialInputFunctionLibrary.h` あります。
 
@@ -407,7 +413,7 @@ const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureNam
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-私たちが用意した Unreal 開発チェックポイント体験に従っている場合、読者は MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素に進むことができます。 
+このガイドで説明されていない実際の開発については、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。 
 
 > [!div class="nextstepaction"]
 > [ローカル空間アンカー](unreal-spatial-anchors.md)

@@ -6,24 +6,24 @@ ms.author: v-hferrone
 ms.date: 09/18/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、開発、マテリアル、ドキュメント、ガイド、機能、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: d57689e9427ab5877e3afb49b0d19f35df6c47d2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 11c10577bd3946facb96fd77b09265ab5ca26f24
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678941"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609573"
 ---
 # <a name="material-recommendations-in-unreal"></a>Unreal の素材に関する推奨事項
 
-Unreal Engine では、マテリアルはパフォーマンスを向上させることができます。 このページは、最高のパフォーマンスを得るために使用する必要がある基本設定のクイックスタートとして機能します。
+使用する素材は、Unreal Engine でのプロジェクトの実行がどの程度適切であるかに直接影響します。 このページは、混合現実アプリケーションから最適なパフォーマンスを得るために使用する必要がある基本設定のクイックスタートとして機能します。
 
 ## <a name="using-customizeduvs"></a>CustomizedUVs の使用
 
-素材に UVs のタイルを提供する必要がある場合は、テクスチャノードの UV を直接変更するのではなく、CustomizedUVs を使用する必要があります。 CustomizedUVs は、ピクセルシェーダーではなく頂点シェーダーで UV 操作を実行できるようにします。 
+素材に UV タイルを提供する必要がある場合は、テクスチャノードの UV を直接変更するのではなく、CustomizedUVs を使用します。 CustomizedUVs を使用すると、ピクセルシェーダーではなく、頂点シェーダーで UVs を操作できます。
 
 ![Unreal のマテリアル設定](images/unreal-materials-img-01c.png)
 
-素材の詳細については、 [Unreal Engine のドキュメント](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) と、次のスクリーンショットのベストプラクティスの例を参照してください。
+素材の詳細については、次のスクリーンショットの [Unreal Engine のドキュメント](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) とベストプラクティスの例を参照してください。
 
 推奨される[ ![ 未 ](images/unreal-materials-img-01.png) 設定の資料での推奨資料の設定](images/unreal-materials-img-01.png#lightbox) 
  *Recommended material setup*
@@ -33,7 +33,7 @@ Unreal Engine では、マテリアルはパフォーマンスを向上させる
 
 ## <a name="changing-blend-mode"></a>Blend モードの変更
 
-特に複雑な理由がない限り、blend モードを不透明に設定する必要があります。 マスクされた半透明な素材は低速です。 素材の詳細については、 [Unreal Engine のドキュメント](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)を参照してください。
+特に複雑な理由がない限り、blend モードを不透明に設定することをお勧めします。 マスクされた半透明な素材は低速です。 素材の詳細については、 [Unreal Engine のドキュメント](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)を参照してください。
 
 ![Blend モードの変更](images/unreal-materials-img-02.jpg)
 
@@ -57,21 +57,21 @@ Unreal Engine では、マテリアルはパフォーマンスを向上させる
 
 ## <a name="optional-settings"></a>オプション設定
 
-次の設定では、パフォーマンスが向上する場合がありますが、特定の機能が無効になっていることに注意してください。 問題の機能を必要としない場合にのみ、これらの設定を使用してください。
+次の設定では、パフォーマンスが向上する場合がありますが、特定の機能が無効になっていることに注意してください。 該当する機能が不要な場合にのみ、これらの設定を使用してください。
 
 ![Unreal のオプションのマテリアル設定](images/unreal-materials-img-06.jpg)
 
-マテリアルに反射や光が不要な場合は、このオプションを設定するとパフォーマンスが大幅に向上する可能性があります。 内部テストでは、照明情報を提供すると同時に "unlit" の速度になります。
+マテリアルに反射や光が不要な場合は、このオプションを設定するとパフォーマンスが大幅に向上する可能性があります。 内部テストでは、照明情報を提供しながら、"unlit" のように高速です。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
 以下は、資料に関連するベストプラクティスであるため、"設定" ではありません。
 
-パラメーターを作成するときは、可能な限り "静的パラメーター" を使用することをお勧めします。 静的スイッチを使用すると、実行時のコストを発生させずに、素材の分岐全体を削除できます。 インスタンスは異なる値を持つことができるため、テンプレート化されたシェーダーを設定し、パフォーマンスを低下させることはできません。 ただし、これによって多くの順列が生成されるため、多くのシェーダーの再コンパイルが発生します。 マテリアル内の静的なパラメーターの数と、実際に使用される静的パラメーターの順列の数を最小限に抑えてください。 レンダリングマテリアルのパラメーターの詳細については、 [Unreal Engine のドキュメント](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter)を参照してください。
+パラメーターを作成するときは、可能な限り "静的パラメーター" を使用することをお勧めします。 静的スイッチを使用すると、実行時のコストを発生させずに、素材の分岐全体を削除できます。 インスタンスは異なる値を持つことができるため、パフォーマンスが失われることなく、テンプレート化されたシェーダーを設定できます。 欠点は、シェーダーの再コンパイルの原因となるいくつかの順列が作成されることです。 マテリアル内の静的なパラメーターの数と、使用される静的パラメーターの順列の数を最小限に抑えてください。 レンダリングマテリアルのパラメーターの詳細については、 [Unreal Engine のドキュメント](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter)を参照してください。
 
 ![マテリアル設定のベストプラクティス](images/unreal-materials-img-07.jpg)
 
-素材のインスタンスを作成するときは、マテリアルインスタンスの **定数** を動的に使用するように設定する必要があります。 **Material Instance Constant** は、ランタイムの前に1回だけ計算する、インスタンス化された素材です。
+素材のインスタンスを作成するときは、マテリアルインスタンスの **定数** を動的に使用するように設定する必要があります。 **Material Instance Constant** は、実行前に1回だけ計算する、インスタンス化された素材です。
 
 コンテンツブラウザーを使用して作成された素材インスタンス (**右クリック > Create Material instance**) は、素材インスタンス定数です。 マテリアルインスタンス動的は、コードを使用して作成されます。 マテリアルインスタンスの詳細については、 [Unreal Engine のドキュメント](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)を参照してください。
 

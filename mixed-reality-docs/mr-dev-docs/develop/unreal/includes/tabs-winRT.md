@@ -1,27 +1,30 @@
 ---
-ms.openlocfilehash: fd44d63ad502b6807c6aa18ce6fc63493fc254dc
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: be267da576e020e88f08d475395b144d42285383
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354446"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609409"
 ---
 # <a name="425"></a>[4.25](#tab/425)
 
-Unreal はバージョン4.25 で WinRT コードをネイティブにコンパイルしないため、個別のバイナリをビルドし、Unreal のビルドシステムで使用できるようにすることができます。 このチュートリアルでは、このようなシナリオについて説明します。
+Unreal はバージョン4.25 で WinRT コードをネイティブにコンパイルしないので、実際のビルドシステムが使用できない別のバイナリを構築するのは仕事です。 
 
 ## <a name="objectives"></a>目標
+
 - FileSaveDialogue を開くユニバーサル Windows DLL を作成する
 - その DLL を Unreal game プロジェクトにリンクする
 - 新しい DLL を使用して、不要なブループリントから HoloLens にファイルを保存する
 
 ## <a name="getting-started"></a>作業の開始
+
 1. すべての [必要なツール](../tutorials/unreal-uxt-ch1.md) がインストールされていることを確認する
 2. [新しい Unreal プロジェクトを作成](../tutorials/unreal-uxt-ch2.md#creating-a-new-unreal-project)し、 **Consumewinrt** という名前を指定します。
 3. HoloLens 開発に [必要なプラグイン](../tutorials/unreal-uxt-ch2.md#enabling-required-plugins) を有効にする
 4. デバイスまたはエミュレーターに[配置するためのセットアップ](../tutorials/unreal-uxt-ch6.md)
 
 ## <a name="creating-a-winrt-dll"></a>WinRT DLL の作成 
+
 1. 新しい Visual Studio プロジェクトを開き、Unreal game の **uproject** ファイルと同じディレクトリに **DLL (ユニバーサル Windows)** プロジェクトを作成します。 
 
 ![DLL の作成](../images/unreal-winrt-img-01.png)
@@ -32,7 +35,7 @@ Unreal はバージョン4.25 で WinRT コードをネイティブにコンパ�
 ![DLL の構成](../images/unreal-winrt-img-02.png)
 
 > [!IMPORTANT]
-> 新しいプロジェクトがコンパイルされた後、空白の cpp ファイルとヘッダーファイルに特に注意する必要があります。これには、それぞれ **HoloLensWinrtDLL** と **HoloLensWinrtDLL** という名前が付けられます。 ヘッダーは、Unreal の DLL を使用するインクルードファイルです。 cpp は、エクスポートした関数の本体を保持し、それ以外の場合はコンパイルできない WinRT コードを含みます。 
+> 新しいプロジェクトがコンパイルされた後、空白の cpp ファイルとヘッダーファイルに特に注意してください。それぞれ **HoloLensWinrtDLL** と **HoloLensWinrtDLL** という名前が付けられています。 ヘッダーは、Unreal の DLL を使用するインクルードファイルです。 cpp は、エクスポートした関数の本体を保持し、それ以外の場合はコンパイルできない WinRT コードを含みます。 
 
 3. コードを追加する前に、必要な WinRT コードをコンパイルできるように、プロジェクトのプロパティを更新する必要があります。 
     * HoloLensWinrtDLL プロジェクトを右クリックし、[**プロパティ**] を選択します。  
@@ -46,6 +49,7 @@ Unreal はバージョン4.25 で WinRT コードをネイティブにコンパ�
 プロジェクトは、ファイルダイアログを開き、ファイルを HoloLens ディスクに保存する WinRT コードを使用して、DLL のソースを更新する準備ができています。  
 
 ## <a name="adding-the-dll-code"></a>DLL コードの追加
+
 1. **HoloLensWinrtDLL** を開き、dll のエクスポート関数を追加して、unreal に使用します。 
 
 ```cpp
@@ -288,7 +292,7 @@ Unreal が OpenFileDialogue を呼び出すと、ファイルのダイアログ�
 
 ## <a name="summary"></a>まとめ 
 
-このチュートリアルのコードは、Unreal で WinRT コードを使用するための出発点として使用することをお勧めします。  Windows と同じファイルを使用して、ユーザーが HoloLens ディスクにファイルを保存できるようにします。  同じプロセスに従って、HoloLensWinrtDLL ヘッダーから他の関数をエクスポートし、Unreal で使用します。  バックグラウンド MTA スレッドで非同期 WinRT コードを待機する DLL コードに注意してください。これにより、Unreal game スレッドのデッドロックが回避されます。 
+このチュートリアルは、Windows と同じファイルダイアログを使用して HoloLens ディスクにファイルを保存する必要がある場合に、Unreal で WinRT コードを使用するための出発点として使用することをお勧めします。  このプロセスは、HoloLensWinrtDLL ヘッダーから追加の関数をエクスポートし、Unreal で使用する場合にも適用されます。  バックグラウンド MTA スレッドで非同期 WinRT コードを待機する DLL コードに特に注意してください。これによって、Unreal game スレッドのデッドロックが回避されます。 
 
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -340,9 +344,9 @@ WinRT コードは、Win64 および HoloLens プラットフォームでのみ�
 
 ## <a name="winrt-from-a-nuget-package"></a>NuGet パッケージからの WinRT
 
-WinRT サポートを含む nuget パッケージを追加する必要がある場合は、少し複雑になります。 この場合、Visual Studio は実質的にすべてのジョブを実行できますが、Unreal ビルドシステムでは実行できません。 さいわい、それほど難しくはありません。 MixedReality パッケージをダウンロードする方法の例を次に示します。 別のファイルに置き換えることができます。 winmd ファイルが失われないようにし、正しい dll をコピーしてください。 
+WinRT サポートを含む NuGet パッケージを追加する必要がある場合は、少し複雑になります。 この場合、Visual Studio は実質的にすべてのジョブを実行できますが、Unreal ビルドシステムでは実行できません。 さいわい、それほど難しくはありません。 MixedReality パッケージをダウンロードする方法の例を次に示します。 別のファイルに置き換えることができます。 winmd ファイルが失われていないことを確認し、正しい dll をコピーするだけです。 
 
-前のセクションの Windows SDK dll は、OS によって処理されます。 Nuget の dll は、モジュール内のコードによって管理されている必要があります。 ダウンロードするコードを追加し、バイナリフォルダーにコピーして、モジュールの起動時にプロセスメモリに読み込む必要があります。
+前のセクションの Windows SDK dll は、OS によって処理されます。 NuGet の dll は、モジュール内のコードによって管理されている必要があります。 モジュールをダウンロードし、バイナリフォルダーにコピーして、モジュールの起動時にプロセスメモリに読み込むコードを追加することをお勧めします。
 
 最初の手順では、 https://docs.microsoft.com/nuget/reference/packages-config) モジュールのルートフォルダーに packages.config を追加する必要があります。 ここでは、すべての依存関係を含め、ダウンロードするすべてのパッケージを追加する必要があります。 ここで、プライマリペイロードとして MixedReality を追加し、他の2つを依存関係として追加しました。 このファイルの形式は、Visual Studio の場合と同じです。
 
@@ -512,7 +516,7 @@ private void SafeCopy(string source, string destination)
 }
 ```
 
-Nuget Dll は、Win32 プロセスメモリに手動で読み込む必要があります。 モジュールの startup メソッドに手動読み込みを追加する必要があります。
+NuGet Dll は、Win32 プロセスメモリに手動で読み込む必要があります。モジュールの startup メソッドに手動読み込みを追加することをお勧めします。
 
 ```cpp
 void StartupModule() override

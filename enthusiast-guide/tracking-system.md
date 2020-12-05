@@ -3,20 +3,20 @@ title: インサイドアウト追跡のしくみ
 description: Windows Mixed Reality ヘッドセットで使用される、カメラベースの内部 out 追跡システムに関する情報。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、インサイド out、インサイド out、追跡、カメラ
-ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: e299415d8f5a727d8005a9cb3a65dd5da0d9bdf6
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434607"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609733"
 ---
-# <a name="inside-out-tracking"></a>内部 out 追跡
+# <a name="inside-out-tracking"></a>インサイドアウト追跡
 
 ## <a name="how-does-inside-out-tracking-work"></a>内部 out の追跡はどのように機能しますか。
 
 **クイック回答:** 追跡システムでは、2つの表示可能な低解像度のカメラを使用して環境内の機能を観察し、この情報を imu データと共に使用して、環境内のデバイスの正確な位置を決定します。
 
-詳細**情報:** 追跡システムでは、2つの低解像度の黒と白のカメラを使用して、環境内の特徴を表示ライトで識別します。 システムは、観察された機能に基づいて位置を三角形し、この情報を融合 high rate IMU データで補完して、環境内の HMD の継続的な見積もりを生成します。 2つのアプリケーションでは、このような情報を使用してシーンをレンダリングし、システムによってこのレンダリングを修正して、時間と位置の誤予測を行うことができます。 環境に関する情報は、追跡システムが部屋の境界の物理的な場所などの環境固有のデータを追跡できるように、PC に格納されます。 複数の部屋でデバイスを使用する場合は、各部屋でさまざまな境界を設定することができ、追跡システムは特定の部屋の特定の境界を確認することができます。
+詳細 **情報:** 追跡システムでは、2つの低解像度の黒と白のカメラを使用して、環境内の特徴を表示ライトで識別します。 システムは、観察された機能に基づいて位置を三角形し、この情報を融合 high rate IMU データで補完して、環境内の HMD の継続的な見積もりを生成します。 2つのアプリケーションでは、このような情報を使用してシーンをレンダリングし、システムによってこのレンダリングを修正して、時間と位置の誤予測を行うことができます。 環境に関する情報は、追跡システムが部屋の境界の物理的な場所などの環境固有のデータを追跡できるように、PC に格納されます。 複数の部屋でデバイスを使用する場合は、各部屋でさまざまな境界を設定することができ、追跡システムは特定の部屋の特定の境界を確認することができます。
 
 Windows Mixed Reality イマーシブヘッドセットは [Microsoft HoloLens](https://www.microsoft.com/en-us/hololens)での追跡と同様に機能するため、このビデオは役に立ちます。
 
@@ -30,7 +30,7 @@ Windows Mixed Reality イマーシブヘッドセットは [Microsoft HoloLens](
 
 ## <a name="how-much-light-is-enough-light"></a>ライトの大きさは十分ですか。
 
-経験則として、環境内を簡単に移動できることがわかりますが、それが暗すぎることを気にせずに、部屋から別の人の顔で機能を観察できる場合は、追跡システムに十分な光がある可能性があります。
+経験則として、環境内を簡単に移動できることがわかりますが、それが暗すぎることを気にせずに、部屋から別の人の顔で機能を観察できる場合は、追跡システムに十分な光がある可能性があります。 このような光はあまりにもないということに注意してください。太陽を見ている場合、カメラが飽和状態になり、確実に追跡できなくなる可能性があることに注意してください。 
 
 ## <a name="what-is-the-recommended-amount-of-environmental-features"></a>推奨される環境機能の量はどれくらいですか?
 
@@ -42,7 +42,7 @@ Windows Mixed Reality イマーシブヘッドセットは [Microsoft HoloLens](
 
 ## <a name="where-will-tracking-not-work"></a>追跡が機能しないのはどこですか?
 
-カメラが低光のために十分な機能を確認できないダークルームでは、追跡は機能しません。 一般に、航空機、バス、電車、自動車、エレベーターなどの車では、追跡は正常に実行されません (場合によっては動作しません)。
+カメラが低光のために十分な機能を確認できないダークルームでは、追跡は機能しません。 一般に、航空機、バス、電車、自動車、エレベーターなどの車では、追跡は正常に実行されません (場合によっては動作しません)。 また、ライトが非常に多い場合や、強い光の違いがある場合にも、追跡が失敗する可能性があります。 たとえば、部屋に太陽の直接のストリームがある場合、カメラは露出を減らして通常の自然機能を表示しないようにすることができます。 他にも、比較的照明を細めるておくことをお勧めします。そうでない場合は、追跡システムがうまく機能しない可能性があります。 
 
 ## <a name="what-is-the-difference-between-3dof-and-6dof"></a>3DOF 3dof 6DOF の違いは何ですか。
 
@@ -72,6 +72,6 @@ Windows Mixed Reality での追跡は簡単に使用できます。 インフラ
 
 ## <a name="see-also"></a>関連項目
 * [追跡システムのトラブルシューティング](tracking.md)
-* [モーション コントローラー](controller-in-wmr.md)
+* [モーション コントローラー](controllers-in-wmr.md)
 * [お使いの Windows Mixed Reality ホーム](your-mixed-reality-home.md)
 * [Windows Mixed Reality でのゲームとアプリの使用](using-games-and-apps-in-windows-mixed-reality.md)

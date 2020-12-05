@@ -1,21 +1,21 @@
 ---
-title: Unreal の UMG とキーボード
+title: Unreal での UMG とキーボード
 description: Unrealm Motion グラフィックスを使用して、ウィジェットから UI システムを作成する方法について説明します。
 author: hferrone
 ms.author: suwu
 ms.date: 11/25/2020
 ms.topic: article
 keywords: Windows Mixed Reality、ホログラム、HoloLens 2、視線追跡、宝石入力、ヘッドマウントディスプレイ、Unreal engine、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想リアリティヘッドセット、ウィジェット、UI、UMG、Unreal Motion Graphics、Unreal Engine、UE-V、UE4
-ms.openlocfilehash: 9f22a5f7a13732727b6b122d385aad7e708a1343
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 59ad108a0e27298256f4f0d1661381a4f1748777
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355408"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609763"
 ---
-# <a name="umg-and-keyboard-in-unreal"></a>Unreal の UMG とキーボード
+# <a name="umg-and-keyboard-in-unreal"></a>Unreal での UMG とキーボード
 
-Unreal Motion Graphics (UMG) は、メニューやテキストボックスなどのインターフェイスを作成するために使用される Unreal Engine の組み込み UI システムです。 UMG で作成されたユーザーインターフェイスは、ウィジェットで構成されます。 このガイドでは、システムキーボードを例として使用して、新しいウィジェットを作成し、ワールド空間に追加し、そのウィジェットとの対話を mixed reality で有効にする方法について説明します。 UMG の詳細については、公式の Unreal Engine の [ドキュメント](https://docs.unrealengine.com/en-US/Engine/UMG/index.html)を参照してください。 
+Unreal Motion Graphics (UMG) は、メニューやテキストボックスなどのインターフェイスを作成するために使用される Unreal Engine の組み込み UI システムです。 UMG で作成されたユーザーインターフェイスは、ウィジェットで構成されます。 新しいウィジェットを作成し、ワールド空間に追加して、システムキーボードを使用した対話を例として有効にする手順について説明します。 UMG の詳細については、公式の Unreal Engine の [ドキュメント](https://docs.unrealengine.com/en-US/Engine/UMG/index.html)を参照してください。 
 
 ## <a name="create-a-new-widget"></a>新しいウィジェットを作成する
 
@@ -27,7 +27,7 @@ Unreal Motion Graphics (UMG) は、メニューやテキストボックスなど
 
 ![テキストウィジェットコンポーネントが強調表示され、展開されている [階層] ウィンドウのスクリーンショット](images/unreal-umg-img-02.png)
 
-- 階層またはデザイナーウィンドウでウィジェットを選択し、[詳細] パネルでパラメーターを変更します。  この例では、テキストボックス上にカーソルを合わせると、既定の "ヒントテキスト" と濃淡の色が追加されています。これにより、ウィジェットとの対話が可能になります。  次のような操作を行うと、テキストボックスによって HoloLens の仮想キーボードがポップアップ表示されます。
+- 階層またはデザイナーウィンドウでウィジェットを選択し、[詳細] パネルでパラメーターを変更します。  この例では、既定の "ヒントテキスト" と、テキストボックスの上にマウスポインターを置いたときに表示される濃淡の色を追加しました。  テキストボックスは、次の操作を行うときに HoloLens で仮想キーボードをポップアップ表示します。
 
 ![[階層] ウィンドウで変更されたパラメーターのスクリーンショット](images/unreal-umg-img-03.png)
 
@@ -57,11 +57,14 @@ UMG ウィジェットは、通常、マウスから入力を受け取ります�
 
 ![ウィジェットの相互作用コンポーネントが強調表示されている新しいアクターのスクリーンショット](images/unreal-umg-img-08.png)
 
-- ウィジェット対話コンポーネントの [詳細] パネルで、[対話距離] を目的の距離に設定し、[ **相互作用ソース** ] を [ **カスタム**] に設定し、開発用に [ **デバッグの表示** ] を **true** に設定します。
+- ウィジェットの対話コンポーネントの詳細パネルで、次の操作を行います。
+    - 通信距離を希望の距離の値に設定します。
+    - **相互作用ソース** を **カスタム** に設定する
+    - 開発の場合は、[ **デバッグを表示]** を **true** に設定します。
 
 ![ウィジェットの相互作用とデバッグコンポーネントのプロパティのスクリーンショット](images/unreal-umg-img-09.png)
 
-相互作用ソースの既定値は "World" で、ウィジェット相互作用コンポーネントの世界の位置に基づいて raycasts を送信する必要がありますが、AR と VR ではこのような状況が発生しないように見えます。  [デバッグの表示] を有効にして、開発中のウィジェットに hover の濃淡を追加することは、ウィジェットの相互作用コンポーネントが期待どおりに実行していることを確認するために重要です。  この回避策は、カスタムソースを使用し、ハンドレイのイベントグラフで raycast を設定することです。  
+相互作用ソースの既定値は "World" で、ウィジェット相互作用コンポーネントの世界の位置に基づいて raycasts を送信する必要があります。 AR および VR では、そうではありません。  [デバッグの表示] を有効にし、ウィジェットにポイント濃淡を追加することは、ウィジェットの相互作用コンポーネントが期待どおりに実行していることを確認するために重要です。  この回避策は、カスタムソースを使用し、ハンドレイのイベントグラフで raycast を設定することです。  
 
 ここでは、イベントティックからこれを呼び出しています。
 

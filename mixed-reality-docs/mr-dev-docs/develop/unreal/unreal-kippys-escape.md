@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、デバイスへの展開、PC、ドキュメント、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f5abfca4d5f85fd65aee77857d94a989122df310
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: eaba6ea1ee77ffffb74008402eafd1f09fd822e5
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678951"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609683"
 ---
 # <a name="the-making-of-kippys-escape"></a>Kippy のエスケープの作成
 
@@ -24,7 +24,7 @@ Kippy ロボットが起動され、島上に残されていることがわか�
 
 ## <a name="overview"></a>概要
 
-Kippy のエスケープは、Unreal Engine 4 と[Mixed REALITY UX Tools For Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal)を使用して構築されたオープンソースの[HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)サンプルアプリです。 この記事では、最初の原則と視覚設計から、エクスペリエンスの実装と最適化まで、Kippy のエスケープを有効にするプロセスについて説明します。 MRTK UX ツールを使用した Mixed Reality アプリケーションの開発の詳細については、 [Unreal development の概要](unreal-development-overview.md)に関するトピックを参照してください。
+Kippy のエスケープは、Unreal Engine 4 と[Mixed REALITY UX Tools For Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal)を使用して構築されたオープンソースの[HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)サンプルアプリです。 この記事では、最初の原則とビジュアルデザインから、エクスペリエンスを実装して最適化するプロセスについて説明します。 MRTK UX ツールを使用した Mixed Reality アプリケーションの開発の詳細については、 [Unreal development の概要](unreal-development-overview.md)に関するトピックを参照してください。
 
 ## <a name="first-principles"></a>最初の原則 
 
@@ -36,7 +36,7 @@ Kippy のエスケープを作成するための設定では、 [Unreal Engine �
 
 HoloLens 2 は、今日のゲームでは、他の場所ではない設計機能にアクセスできます。 オブジェクトは、ハンドを使用して直接プッシュしたり操作したりすることができます。 これらの主な機能は、Kippy のエスケープで構築した楽しい瞬間の背後にあります。  
 
-ゲーム設計のガイダンスとして、独自の HoloLens 2 機能を使用して、いくつかの小規模な環境シナリオを対象にしています。 アイランドは、プレーヤーの高さが異なるために調整できるため、さまざまな意味を持っています。 そこから、太古の技術を満たしていますが、他のユーザーが各島によって提供される奇妙なエネルギーを利用していたということを考えています。 アイランドはそれぞれ独自のルックアンドフィールを与えられており、視覚効果の作成に役立つ情報を提供しています。 描画呼び出しのパフォーマンスを向上させるために、モデリングとテクスチャの間のバランスを適切に取ることが重要であるため、この点を念頭に置いて設計されています。 
+ゲーム設計のガイダンスとして、独自の HoloLens 2 機能を使用して、いくつかの小規模な環境シナリオを対象にしています。 アイランドは、プレーヤーの高さが異なるために調整でき、おもしろいブリッジのアイデアを提供できるため、意味がありました。 いにしえの文明のテーマには、sci テクノロジを満たしています。これは、他のユーザーが、各島によって提供される奇妙なエネルギーを利用して、廃墟による機械を構築したという考え方です。 アイランドはそれぞれ独自のルックアンドフィールを与えられており、視覚効果の作成に役立つ情報を提供しています。 モデリングとテクスチャの間で適切なバランスを取ると、描画呼び出しのパフォーマンスが低下します。そのため、この点を念頭に置いた外観が設計されています。 
 
 ![初期のゲーム設計 ](images/kippys-escape/kippys-escape-img-01.png)
  *では、エクスペリエンスがどのようなものになるかを事前に確認し* ています。
@@ -54,7 +54,7 @@ HoloLens 2 は、今日のゲームでは、他の場所ではない設計機能
 
 *ユーザーによるパズルの解決に時間がかかりすぎる場合、Kippy はユーザーにヒントを提供します。*
 
-文字と環境の設計以外にも、ゲームが楽しくなるように一丸努力をしました。 目の追跡では、ゲームの重要な部分を強調表示した素材とサウンドの属性をオフにすることができました。 空間オーディオを使用すると、プレーヤーの周囲のレベルを自宅で見ることができます。 オブジェクトをグラブしたり、ボタンを押したり、スライダーを操作したりすることで、革新的なプレーヤーのエンゲージメントを行うことができるため、これらの接続ポイントを自然に認識させることが重要でした。 
+文字と環境の設計以外にも、ゲームが楽しくなるように一丸努力をしました。 目の追跡では、ゲームの重要な部分を強調表示した素材とサウンドの属性をオフにすることができました。 空間オーディオを使用すると、プレーヤーの周囲のレベルを自宅で見ることができます。 オブジェクトの取得、ボタンのプッシュ、およびスライダーの操作を行うことで、革新的なプレーヤーのエンゲージメントを実現できます。 これらの接続ポイントが自然に認識されるようにすることが重要でした。 
 
 ![ブリッジケーブルの端は、ユーザーが自分の手に近づいたときにグローします。](images/kippys-escape/kippys-escape-img-05.gif)
 
@@ -117,4 +117,4 @@ HoloLens 2 を起動し、Microsoft Store からアプリを [ダウンロード
 </tr>
 </table>
 
-Kippy が次のレベルにエスケープされるのを支援するために、 [フレームストア](https://www.framestore.com/) の友人に感謝します。 キャラクターの開発、資産の設計、ゲームプログラミングから、このプロジェクトのコラボレーションは非常に重要でした。  
+Kippy の脱出を実現するために、 [フレームストア](https://www.framestore.com/) で友人に感謝しています。 キャラクターの開発、資産の設計、ゲームプログラミングから、このプロジェクトのコラボレーションは非常に重要でした。  

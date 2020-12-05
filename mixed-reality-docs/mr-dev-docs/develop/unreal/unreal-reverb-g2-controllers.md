@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、リバーブ、リバーブ G2、HP リバーブ G2、mixed reality、development、motion controller、ユーザー入力、機能、新しいプロジェクト、エミュレーター、ドキュメント、ガイド、機能、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 6a56b11e6738dd6359508d0cdfc1560bddfaff2e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 419f5b803a6abb2b19080807ef9f403b96758683
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678931"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609593"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Unreal の HP リバーブ G2 コントローラー 
 
@@ -38,7 +38,7 @@ HP Mixed Reality コントローラーのコントローラーバインドがゲ
 
 ![新しいアクションとマッピングの定義](images/reverb-g2-img-02.png)
 
-HP リバーブ G2 コントローラーには、"つかみ軸" バインドを持つ軸マッピングで使用できるアナロググリップもあります。  グリップボタンが完全に押されたときにアクションのマッピングに使用される、別のつかみバインドがあります。 
+HP リバーブ G2 コントローラーには、"つかみ軸" バインドを持つ軸マッピングで使用できるアナロググリップもあります。  グリップボタンが完全に押されたときにアクションのマッピングに使用される、別のつかみのバインドがあります。 
 
 ![つかみ軸のバインドの使用](images/reverb-g2-img-03.png)
 

@@ -6,16 +6,16 @@ ms.author: jacksonf
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality、ホログラム、HoloLens 2、視線追跡、宝石入力、ヘッドマウントディスプレイ、Unreal engine、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット
-ms.openlocfilehash: d0470c5abbefce797254aa9f2030519d3347aaab
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 0a011c3f5a7ad79e83e25c4c95c46d2a04ad555d
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578891"
+ms.locfileid: "96609503"
 ---
 # <a name="gaze-input"></a>見つめ入力
 
-ユーザーの注目を示すには、宝石を使用します。  これにより、デバイス上の視線追跡カメラを使用して、ユーザーが現在見ているものと一致する非 Real ワールド空間内の射線を見つけます。
+Mixed reality アプリでの入力を見つめているのは、ユーザーがどのようなものを探しているのかを知ることだけです。 デバイス上の視線追跡カメラが、Unreal のワールド空間にある光線と一致すると、ユーザーのデータの視野が使用できるようになります。 見つめは、ブループリントと C++ の両方で使用できます。また、オブジェクトの対話、方法の検索、カメラのコントロールなどの機構の中核となる機能です。
 
 ## <a name="enabling-eye-tracking"></a>目の追跡を有効にする
 
@@ -25,34 +25,34 @@ ms.locfileid: "96578891"
 
 - 新しいアクターを作成してシーンに追加する
 
-> [!NOTE] 
-> ステレオスコピックの追跡に必要な2つの光線はサポートされていないため、Unreal の HoloLens の追跡では、両方の目に1つの宝石があります。
+> [!NOTE]
+> 非 Real の HoloLens 視線の追跡には、両方の目に1つの宝石があります。 2つの光線を必要とするステレオスコピックの追跡はサポートされていません。
 
 ## <a name="using-eye-tracking"></a>視線追跡の使用
 
-まず、IsEyeTrackerConnected 関数を使用して、デバイスが視線追跡をサポートしていることを確認します。  これが true を返す場合は、GetGazeData を呼び出して、現在のフレームでユーザーの目が見ている場所を検索します。
+まず、デバイスで **IsEyeTrackerConnected** 関数を使用した視線追跡がサポートされていることを確認します。  関数が true を返す場合は、 **GetGazeData** を呼び出して、現在のフレームでユーザーの目が見ている場所を検索します。
 
 ![接続された関数であることを確認するためのブループリント](images/unreal-gaze-img-02.png)
 
 > [!NOTE]
 > HoloLens では、固定ポイントと信頼の値は使用できません。
 
-ユーザーが見ている内容を検索するには、行トレースで、宝石と向きを使用します。  このベクトルの開始は、宝石の原点で、終点には目的の距離を乗算した値を掛けたものです。
+行トレースで、宝石と向きを使用して、ユーザーが探している場所を正確に確認します。  宝石の値は、反時計回りに開始し、原点で終了し、次に、行トレース距離を乗算した、宝石の方向に向かうベクトルです。
 
 !["宝石データの取得" 機能のブループリント](images/unreal-gaze-img-03.png)
 
 ## <a name="getting-head-orientation"></a>ヘッドの向きの取得
 
-または、HMD の回転を使用して、ユーザーの頭の方向を表すことができます。  これには、宝石入力機能は必要ありませんが、目の追跡情報は表示されません。  適切な出力データを取得するには、ブループリントへの参照をワールドコンテキストとして追加する必要があります。
+また、ヘッドマウントされたディスプレイ (HMD) の回転を使用して、ユーザーの頭の方向を表すこともできます。 ユーザーは、宝石の入力機能を有効にしなくても、ユーザーの頭を手にすることができますが、目の追跡情報は表示されません。  正しい出力データを取得するために、ブループリントへの参照をワールドコンテキストとして追加します。
 
 > [!NOTE]
 > HMD データの取得は、Unreal 4.26 以降でのみ使用できます。
 
 ![Get HMDData 関数のブループリント](images/unreal-gaze-img-04.png)
 
-## <a name="using-c"></a>C++ の使用 
+## <a name="using-c"></a>C++ の使用
 
-- ゲームの build.cs ファイルで、PublicDependencyModuleNames の一覧に "EyeTracker" を追加します。
+- ゲームの **build.cs** ファイルで、 **EyeTracker** を **publicdependencymodulenames** 一覧に追加します。
 
 ```cpp
 PublicDependencyModuleNames.AddRange(
@@ -65,19 +65,19 @@ PublicDependencyModuleNames.AddRange(
 });
 ```
 
-- "ファイル/新しい C++ クラス" で、"EyeTracker" という名前の新しい C++ アクターを作成します。
-    - Visual Studio ソリューションが開き、新しい EyeTracker クラスが表示されます。 ビルドして実行し、新しい EyeTracker アクターで Unreal のゲームを開きます。  [アクターの配置] ウィンドウで "EyeTracker" を検索します。  このクラスをゲームウィンドウにドラッグアンドドロップして、プロジェクトに追加します。
+- [**ファイル/新しい C++ クラス**] で、 **EyeTracker** という名前の新しい c++ アクターを作成します。
+    - Visual Studio ソリューションによって、新しい EyeTracker クラスが開きます。 ビルドして実行し、新しい EyeTracker アクターで Unreal のゲームを開きます。  [ **アクターの配置** ] ウィンドウで "EyeTracker" を検索し、クラスをゲームウィンドウにドラッグアンドドロップして、プロジェクトに追加します。
 
 ![プレースアクターウィンドウが開いているアクターのスクリーンショット](images/unreal-gaze-img-06.png)
 
-- EyeTracker で、add for EyeTrackerFunctionLibrary および DrawDebugHelpers を追加します。
+- **EyeTracker** で、Add for **EyeTrackerFunctionLibrary** および **drawdebughelpers** を追加します。
 
 ```cpp
 #include "EyeTrackerFunctionLibrary.h"
 #include "DrawDebugHelpers.h"
 ```
 
-ティックで、デバイスが UEyeTrackerFunctionLibrary:: IsEyeTrackerConnected を使用した視線追跡をサポートしていることを確認します。  次に、UEyeTrackerFunctionLibrary:: GetGazeData から行トレースの射線の開始と終了を検索します。
+デバイスが、 **UEyeTrackerFunctionLibrary:: IsEyeTrackerConnected** での視線追跡をサポートしていることを確認してから、宝石データを取得します。  視線追跡がサポートされている場合は、 **UEyeTrackerFunctionLibrary:: GetGazeData** から行トレースの射線の始点と終点を探します。 そこから、宝石ベクトルを構築し、その内容を **LineTraceSingleByChannel** に渡して、光のヒット結果をデバッグできます。
 
 ```cpp
 void AEyeTracker::Tick(float DeltaTime)
@@ -104,7 +104,7 @@ void AEyeTracker::Tick(float DeltaTime)
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-私たちが用意した Unreal 開発チェックポイント体験に従っている場合、読者は MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素に進むことができます。 
+このガイドで説明されていない実際の開発については、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。
 
 > [!div class="nextstepaction"]
 > [ハンド トラッキング](unreal-hand-tracking.md)

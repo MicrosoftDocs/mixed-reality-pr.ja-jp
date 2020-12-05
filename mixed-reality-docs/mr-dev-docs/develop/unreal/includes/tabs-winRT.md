@@ -1,52 +1,56 @@
 ---
-ms.openlocfilehash: fd44d63ad502b6807c6aa18ce6fc63493fc254dc
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: be267da576e020e88f08d475395b144d42285383
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354446"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609409"
 ---
-# <a name="425"></a>[<span data-ttu-id="06efd-101">4.25</span><span class="sxs-lookup"><span data-stu-id="06efd-101">4.25</span></span>](#tab/425)
+# <a name="425"></a>[<span data-ttu-id="2580b-101">4.25</span><span class="sxs-lookup"><span data-stu-id="2580b-101">4.25</span></span>](#tab/425)
 
-<span data-ttu-id="06efd-102">Unreal はバージョン4.25 で WinRT コードをネイティブにコンパイルしないため、個別のバイナリをビルドし、Unreal のビルドシステムで使用できるようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="06efd-102">Unreal doesn't natively compile WinRT code in version 4.25, so it's your job to build a separate binary and that can be consumed by Unreal’s build system.</span></span> <span data-ttu-id="06efd-103">このチュートリアルでは、このようなシナリオについて説明します。</span><span class="sxs-lookup"><span data-stu-id="06efd-103">This tutorial will walk you through just such a scenario.</span></span>
+<span data-ttu-id="2580b-102">Unreal はバージョン4.25 で WinRT コードをネイティブにコンパイルしないので、実際のビルドシステムが使用できない別のバイナリを構築するのは仕事です。</span><span class="sxs-lookup"><span data-stu-id="2580b-102">Unreal doesn't natively compile WinRT code in version 4.25, so it's your job to build a separate binary that Unreal’s build system can consume.</span></span> 
 
-## <a name="objectives"></a><span data-ttu-id="06efd-104">目標</span><span class="sxs-lookup"><span data-stu-id="06efd-104">Objectives</span></span>
-- <span data-ttu-id="06efd-105">FileSaveDialogue を開くユニバーサル Windows DLL を作成する</span><span class="sxs-lookup"><span data-stu-id="06efd-105">Create a Universal Windows DLL that opens a FileSaveDialogue</span></span>
-- <span data-ttu-id="06efd-106">その DLL を Unreal game プロジェクトにリンクする</span><span class="sxs-lookup"><span data-stu-id="06efd-106">Link that DLL to an Unreal game project</span></span>
-- <span data-ttu-id="06efd-107">新しい DLL を使用して、不要なブループリントから HoloLens にファイルを保存する</span><span class="sxs-lookup"><span data-stu-id="06efd-107">Save a file on the HoloLens from an Unreal blueprint using the new DLL</span></span>
+## <a name="objectives"></a><span data-ttu-id="2580b-103">目標</span><span class="sxs-lookup"><span data-stu-id="2580b-103">Objectives</span></span>
 
-## <a name="getting-started"></a><span data-ttu-id="06efd-108">作業の開始</span><span class="sxs-lookup"><span data-stu-id="06efd-108">Getting started</span></span>
-1. <span data-ttu-id="06efd-109">すべての [必要なツール](../tutorials/unreal-uxt-ch1.md) がインストールされていることを確認する</span><span class="sxs-lookup"><span data-stu-id="06efd-109">Check that you have all [required tools](../tutorials/unreal-uxt-ch1.md) installed</span></span>
-2. <span data-ttu-id="06efd-110">[新しい Unreal プロジェクトを作成](../tutorials/unreal-uxt-ch2.md#creating-a-new-unreal-project)し、 **Consumewinrt** という名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="06efd-110">[Create a new Unreal project](../tutorials/unreal-uxt-ch2.md#creating-a-new-unreal-project) and name it **Consumewinrt**</span></span>
-3. <span data-ttu-id="06efd-111">HoloLens 開発に [必要なプラグイン](../tutorials/unreal-uxt-ch2.md#enabling-required-plugins) を有効にする</span><span class="sxs-lookup"><span data-stu-id="06efd-111">Enable the [required plugins](../tutorials/unreal-uxt-ch2.md#enabling-required-plugins) for HoloLens development</span></span>
-4. <span data-ttu-id="06efd-112">デバイスまたはエミュレーターに[配置するためのセットアップ](../tutorials/unreal-uxt-ch6.md)</span><span class="sxs-lookup"><span data-stu-id="06efd-112">[Setup for deployment](../tutorials/unreal-uxt-ch6.md) to a device or emulator</span></span>
+- <span data-ttu-id="2580b-104">FileSaveDialogue を開くユニバーサル Windows DLL を作成する</span><span class="sxs-lookup"><span data-stu-id="2580b-104">Create a Universal Windows DLL that opens a FileSaveDialogue</span></span>
+- <span data-ttu-id="2580b-105">その DLL を Unreal game プロジェクトにリンクする</span><span class="sxs-lookup"><span data-stu-id="2580b-105">Link that DLL to an Unreal game project</span></span>
+- <span data-ttu-id="2580b-106">新しい DLL を使用して、不要なブループリントから HoloLens にファイルを保存する</span><span class="sxs-lookup"><span data-stu-id="2580b-106">Save a file on the HoloLens from an Unreal blueprint using the new DLL</span></span>
 
-## <a name="creating-a-winrt-dll"></a><span data-ttu-id="06efd-113">WinRT DLL の作成</span><span class="sxs-lookup"><span data-stu-id="06efd-113">Creating a WinRT DLL</span></span> 
-1. <span data-ttu-id="06efd-114">新しい Visual Studio プロジェクトを開き、Unreal game の **uproject** ファイルと同じディレクトリに **DLL (ユニバーサル Windows)** プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="06efd-114">Open a new Visual Studio project and create a **DLL (Universal Windows)** project in the same directory to the Unreal game’s **uproject** file.</span></span> 
+## <a name="getting-started"></a><span data-ttu-id="2580b-107">作業の開始</span><span class="sxs-lookup"><span data-stu-id="2580b-107">Getting started</span></span>
+
+1. <span data-ttu-id="2580b-108">すべての [必要なツール](../tutorials/unreal-uxt-ch1.md) がインストールされていることを確認する</span><span class="sxs-lookup"><span data-stu-id="2580b-108">Check that you have all [required tools](../tutorials/unreal-uxt-ch1.md) installed</span></span>
+2. <span data-ttu-id="2580b-109">[新しい Unreal プロジェクトを作成](../tutorials/unreal-uxt-ch2.md#creating-a-new-unreal-project)し、 **Consumewinrt** という名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="2580b-109">[Create a new Unreal project](../tutorials/unreal-uxt-ch2.md#creating-a-new-unreal-project) and name it **Consumewinrt**</span></span>
+3. <span data-ttu-id="2580b-110">HoloLens 開発に [必要なプラグイン](../tutorials/unreal-uxt-ch2.md#enabling-required-plugins) を有効にする</span><span class="sxs-lookup"><span data-stu-id="2580b-110">Enable the [required plugins](../tutorials/unreal-uxt-ch2.md#enabling-required-plugins) for HoloLens development</span></span>
+4. <span data-ttu-id="2580b-111">デバイスまたはエミュレーターに[配置するためのセットアップ](../tutorials/unreal-uxt-ch6.md)</span><span class="sxs-lookup"><span data-stu-id="2580b-111">[Setup for deployment](../tutorials/unreal-uxt-ch6.md) to a device or emulator</span></span>
+
+## <a name="creating-a-winrt-dll"></a><span data-ttu-id="2580b-112">WinRT DLL の作成</span><span class="sxs-lookup"><span data-stu-id="2580b-112">Creating a WinRT DLL</span></span> 
+
+1. <span data-ttu-id="2580b-113">新しい Visual Studio プロジェクトを開き、Unreal game の **uproject** ファイルと同じディレクトリに **DLL (ユニバーサル Windows)** プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="2580b-113">Open a new Visual Studio project and create a **DLL (Universal Windows)** project in the same directory as the Unreal game’s **uproject** file.</span></span> 
 
 ![DLL の作成](../images/unreal-winrt-img-01.png)
 
-2. <span data-ttu-id="06efd-116">プロジェクトに **HoloLensWinrtDLL** という名前を付け、その場所を **ThirdParty** サブディレクトリとして、unreal game の uproject ファイルに設定します。</span><span class="sxs-lookup"><span data-stu-id="06efd-116">Name the project **HoloLensWinrtDLL** and set the location as a **ThirdParty** subdirectory to the Unreal game’s uproject file.</span></span> 
-    * <span data-ttu-id="06efd-117">後でパスを簡単に検索するには **、[ソリューションとプロジェクトを同じディレクトリに配置** する] を選択します。</span><span class="sxs-lookup"><span data-stu-id="06efd-117">Select **Place solution and project in the same directory** to simplify looking for paths later.</span></span> 
+2. <span data-ttu-id="2580b-115">プロジェクトに **HoloLensWinrtDLL** という名前を付け、その場所を **ThirdParty** サブディレクトリとして、unreal game の uproject ファイルに設定します。</span><span class="sxs-lookup"><span data-stu-id="2580b-115">Name the project **HoloLensWinrtDLL** and set the location as a **ThirdParty** subdirectory to the Unreal game’s uproject file.</span></span> 
+    * <span data-ttu-id="2580b-116">後でパスを簡単に検索するには **、[ソリューションとプロジェクトを同じディレクトリに配置** する] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2580b-116">Select **Place solution and project in the same directory** to simplify looking for paths later.</span></span> 
 
 ![DLL の構成](../images/unreal-winrt-img-02.png)
 
 > [!IMPORTANT]
-> <span data-ttu-id="06efd-119">新しいプロジェクトがコンパイルされた後、空白の cpp ファイルとヘッダーファイルに特に注意する必要があります。これには、それぞれ **HoloLensWinrtDLL** と **HoloLensWinrtDLL** という名前が付けられます。</span><span class="sxs-lookup"><span data-stu-id="06efd-119">After the new project compiles, you want to pay special attention to the blank cpp and header files, named **HoloLensWinrtDLL.cpp** and **HoloLensWinrtDLL.h** respectively.</span></span> <span data-ttu-id="06efd-120">ヘッダーは、Unreal の DLL を使用するインクルードファイルです。 cpp は、エクスポートした関数の本体を保持し、それ以外の場合はコンパイルできない WinRT コードを含みます。</span><span class="sxs-lookup"><span data-stu-id="06efd-120">The header is the include file that uses the DLL in Unreal, while the cpp holds the body of any functions you export and includes any WinRT code that Unreal wouldn't otherwise be able to compile.</span></span> 
+> <span data-ttu-id="2580b-118">新しいプロジェクトがコンパイルされた後、空白の cpp ファイルとヘッダーファイルに特に注意してください。それぞれ **HoloLensWinrtDLL** と **HoloLensWinrtDLL** という名前が付けられています。</span><span class="sxs-lookup"><span data-stu-id="2580b-118">After the new project compiles, pay special attention to the blank cpp and header files, named **HoloLensWinrtDLL.cpp** and **HoloLensWinrtDLL.h** respectively.</span></span> <span data-ttu-id="2580b-119">ヘッダーは、Unreal の DLL を使用するインクルードファイルです。 cpp は、エクスポートした関数の本体を保持し、それ以外の場合はコンパイルできない WinRT コードを含みます。</span><span class="sxs-lookup"><span data-stu-id="2580b-119">The header is the include file that uses the DLL in Unreal, while the cpp holds the body of any functions you export and includes any WinRT code that Unreal wouldn't otherwise be able to compile.</span></span> 
 
-3. <span data-ttu-id="06efd-121">コードを追加する前に、必要な WinRT コードをコンパイルできるように、プロジェクトのプロパティを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06efd-121">Before you add any code, you need to update the project properties to ensure the WinRT code you need can compile:</span></span> 
-    * <span data-ttu-id="06efd-122">HoloLensWinrtDLL プロジェクトを右クリックし、[**プロパティ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="06efd-122">Right click on the HoloLensWinrtDLL project and select **properties**</span></span>  
-    * <span data-ttu-id="06efd-123">**構成** ドロップダウンを [**すべての構成**] に変更し、[**プラットフォーム**] ドロップダウンを [**すべてのプラットフォーム**] に変更します。</span><span class="sxs-lookup"><span data-stu-id="06efd-123">Change the **Configuration** dropdown to **All Configurations** and the **Platform** dropdown to **All Platforms**</span></span>  
-    * <span data-ttu-id="06efd-124">[ **構成プロパティ] で> C/c + +> すべてのオプション**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="06efd-124">Under **Configuration Properties> C/C++> All Options**:</span></span>
-        * <span data-ttu-id="06efd-125">非同期タスクを待機できるように、 **await** を **追加のオプション** に追加します。</span><span class="sxs-lookup"><span data-stu-id="06efd-125">Add **await** to **Additional Options** to ensure we can wait on async tasks</span></span>  
-        * <span data-ttu-id="06efd-126">**C++ 言語標準** を **ISO c++ 17 標準 (/std: C++ 17)** に変更して WinRT コードを含める</span><span class="sxs-lookup"><span data-stu-id="06efd-126">Change **C++ Language Standard** to **ISO C++17 Standard (/std:c++17)** to include any WinRT code</span></span>
+3. <span data-ttu-id="2580b-120">コードを追加する前に、必要な WinRT コードをコンパイルできるように、プロジェクトのプロパティを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2580b-120">Before you add any code, you need to update the project properties to ensure the WinRT code you need can compile:</span></span> 
+    * <span data-ttu-id="2580b-121">HoloLensWinrtDLL プロジェクトを右クリックし、[**プロパティ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2580b-121">Right-click on the HoloLensWinrtDLL project and select **properties**</span></span>  
+    * <span data-ttu-id="2580b-122">**構成** ドロップダウンを [**すべての構成**] に変更し、[**プラットフォーム**] ドロップダウンを [**すべてのプラットフォーム**] に変更します。</span><span class="sxs-lookup"><span data-stu-id="2580b-122">Change the **Configuration** dropdown to **All Configurations** and the **Platform** dropdown to **All Platforms**</span></span>  
+    * <span data-ttu-id="2580b-123">[ **構成プロパティ] で> C/c + +> すべてのオプション**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2580b-123">Under **Configuration Properties> C/C++> All Options**:</span></span>
+        * <span data-ttu-id="2580b-124">非同期タスクを待機できるように、 **await** を **追加のオプション** に追加します。</span><span class="sxs-lookup"><span data-stu-id="2580b-124">Add **await** to **Additional Options** to ensure we can wait on async tasks</span></span>  
+        * <span data-ttu-id="2580b-125">**C++ 言語標準** を **ISO c++ 17 標準 (/std: C++ 17)** に変更して WinRT コードを含める</span><span class="sxs-lookup"><span data-stu-id="2580b-125">Change **C++ Language Standard** to **ISO C++17 Standard (/std:c++17)** to include any WinRT code</span></span>
 
 ![プロジェクトプロパティのアップグレード](../images/unreal-winrt-img-03.png)
 
-<span data-ttu-id="06efd-128">プロジェクトは、ファイルダイアログを開き、ファイルを HoloLens ディスクに保存する WinRT コードを使用して、DLL のソースを更新する準備ができています。</span><span class="sxs-lookup"><span data-stu-id="06efd-128">Your project is ready to update the DLL’s source with WinRT code that opens a file dialogue and saves a file to the HoloLens disk.</span></span>  
+<span data-ttu-id="2580b-127">プロジェクトは、ファイルダイアログを開き、ファイルを HoloLens ディスクに保存する WinRT コードを使用して、DLL のソースを更新する準備ができています。</span><span class="sxs-lookup"><span data-stu-id="2580b-127">Your project is ready to update the DLL’s source with WinRT code that opens a file dialogue and saves a file to the HoloLens disk.</span></span>  
 
-## <a name="adding-the-dll-code"></a><span data-ttu-id="06efd-129">DLL コードの追加</span><span class="sxs-lookup"><span data-stu-id="06efd-129">Adding the DLL code</span></span>
-1. <span data-ttu-id="06efd-130">**HoloLensWinrtDLL** を開き、dll のエクスポート関数を追加して、unreal に使用します。</span><span class="sxs-lookup"><span data-stu-id="06efd-130">Open **HoloLensWinrtDLL.h** and add a dll exported function for Unreal to consume:</span></span> 
+## <a name="adding-the-dll-code"></a><span data-ttu-id="2580b-128">DLL コードの追加</span><span class="sxs-lookup"><span data-stu-id="2580b-128">Adding the DLL code</span></span>
+
+1. <span data-ttu-id="2580b-129">**HoloLensWinrtDLL** を開き、dll のエクスポート関数を追加して、unreal に使用します。</span><span class="sxs-lookup"><span data-stu-id="2580b-129">Open **HoloLensWinrtDLL.h** and add a dll exported function for Unreal to consume:</span></span> 
 
 ```cpp
 #pragma once
@@ -58,7 +62,7 @@ public:
 };
 ```
 
-2. <span data-ttu-id="06efd-131">**HoloLensWinrtDLL** を開き、クラスで使用するすべてのヘッダーを追加します。</span><span class="sxs-lookup"><span data-stu-id="06efd-131">Open **HoloLensWinrtDLL.cpp** and add all headers the class will use:</span></span>  
+2. <span data-ttu-id="2580b-130">**HoloLensWinrtDLL** を開き、クラスで使用するすべてのヘッダーを追加します。</span><span class="sxs-lookup"><span data-stu-id="2580b-130">Open **HoloLensWinrtDLL.cpp** and add all headers the class will use:</span></span>  
 
 ```cpp
 #include "pch.h"
@@ -76,9 +80,9 @@ public:
 ```
 
 > [!NOTE]
-> <span data-ttu-id="06efd-132">すべての WinRT コードは **HoloLensWinrtDLL** に格納されているため、unreal はヘッダーを参照するときに winrt コードを含めようとしません。</span><span class="sxs-lookup"><span data-stu-id="06efd-132">All WinRT code is stored in **HoloLensWinrtDLL.cpp** so Unreal doesn't try to include any WinRT code when referencing the header.</span></span> 
+> <span data-ttu-id="2580b-131">すべての WinRT コードは **HoloLensWinrtDLL** に格納されているため、unreal はヘッダーを参照するときに winrt コードを含めようとしません。</span><span class="sxs-lookup"><span data-stu-id="2580b-131">All WinRT code is stored in **HoloLensWinrtDLL.cpp** so Unreal doesn't try to include any WinRT code when referencing the header.</span></span> 
 
-3. <span data-ttu-id="06efd-133">**HoloLensWinrtDLL** の中で、OpenFileDialogue () およびサポートされているすべてのコードの関数本体を追加します。</span><span class="sxs-lookup"><span data-stu-id="06efd-133">Still in **HoloLensWinrtDLL.cpp**, add a function body for OpenFileDialogue() and all supported code:</span></span> 
+3. <span data-ttu-id="2580b-132">**HoloLensWinrtDLL** の中で、OpenFileDialogue () およびサポートされているすべてのコードの関数本体を追加します。</span><span class="sxs-lookup"><span data-stu-id="2580b-132">Still in **HoloLensWinrtDLL.cpp**, add a function body for OpenFileDialogue() and all supported code:</span></span> 
 
 ```cpp
 // sgm is declared outside of OpenFileDialogue so it doesn't
@@ -91,7 +95,7 @@ void HoloLensWinrtDLL::OpenFileDialogue()
 }
 ```
 
-4. <span data-ttu-id="06efd-134">SaveGameManager クラスを **HoloLensWinrtDLL** に追加して、ファイルのダイアログを処理し、ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="06efd-134">Add a SaveGameManager class to **HoloLensWinrtDLL.cpp** to handle the file dialogue and saving the file:</span></span> 
+4. <span data-ttu-id="2580b-133">SaveGameManager クラスを **HoloLensWinrtDLL** に追加して、ファイルのダイアログを処理し、ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="2580b-133">Add a SaveGameManager class to **HoloLensWinrtDLL.cpp** to handle the file dialogue and saving the file:</span></span> 
 
 ```cpp
 class SaveGameManager
@@ -159,24 +163,24 @@ private:
 };
 ```
 
-5. <span data-ttu-id="06efd-135">**Release > ARM64** のソリューションをビルドして、dll ソリューションから ARM64/Release/HoloLensWinrtDLL 子ディレクトリに dll をビルドします。</span><span class="sxs-lookup"><span data-stu-id="06efd-135">Build the solution for **Release > ARM64** to build the DLL to the child directory ARM64/Release/HoloLensWinrtDLL from the DLL solution.</span></span> 
+5. <span data-ttu-id="2580b-134">**Release > ARM64** のソリューションをビルドして、dll ソリューションから ARM64/Release/HoloLensWinrtDLL 子ディレクトリに dll をビルドします。</span><span class="sxs-lookup"><span data-stu-id="2580b-134">Build the solution for **Release > ARM64** to build the DLL to the child directory ARM64/Release/HoloLensWinrtDLL from the DLL solution.</span></span> 
 
-## <a name="adding-the-winrt-binary-to-unreal"></a><span data-ttu-id="06efd-136">WinRT バイナリを Unreal に追加する</span><span class="sxs-lookup"><span data-stu-id="06efd-136">Adding the WinRT binary to Unreal</span></span> 
-<span data-ttu-id="06efd-137">アン Real で DLL をリンクして使用するには、C++ プロジェクトが必要です。</span><span class="sxs-lookup"><span data-stu-id="06efd-137">Linking and using a DLL in Unreal requires a C++ project.</span></span> <span data-ttu-id="06efd-138">ブループリントプロジェクトを使用している場合は、C++ クラスを追加することで、C++ プロジェクトに簡単に変換できます。</span><span class="sxs-lookup"><span data-stu-id="06efd-138">If you're using a Blueprint project, it can be easily converted to a C++ project by adding a C++ class:</span></span>  
+## <a name="adding-the-winrt-binary-to-unreal"></a><span data-ttu-id="2580b-135">WinRT バイナリを Unreal に追加する</span><span class="sxs-lookup"><span data-stu-id="2580b-135">Adding the WinRT binary to Unreal</span></span> 
+<span data-ttu-id="2580b-136">アン Real で DLL をリンクして使用するには、C++ プロジェクトが必要です。</span><span class="sxs-lookup"><span data-stu-id="2580b-136">Linking and using a DLL in Unreal requires a C++ project.</span></span> <span data-ttu-id="2580b-137">ブループリントプロジェクトを使用している場合は、C++ クラスを追加することで、C++ プロジェクトに簡単に変換できます。</span><span class="sxs-lookup"><span data-stu-id="2580b-137">If you're using a Blueprint project, it can be easily converted to a C++ project by adding a C++ class:</span></span>  
 
-1. <span data-ttu-id="06efd-139">Unreal エディターで、[**ファイル > 新しい C++ クラス...** ] を開きます。</span><span class="sxs-lookup"><span data-stu-id="06efd-139">In the Unreal editor, open **File > New C++ Class…**</span></span> <span data-ttu-id="06efd-140">次に、 **Winrtactor** という名前の新しい **アクター** を作成し、DLL 内のコードを実行します。</span><span class="sxs-lookup"><span data-stu-id="06efd-140">and create a new **Actor** named **WinrtActor** to run the code in the DLL:</span></span> 
+1. <span data-ttu-id="2580b-138">Unreal エディターで、[**ファイル > 新しい C++ クラス...** ] を開きます。</span><span class="sxs-lookup"><span data-stu-id="2580b-138">In the Unreal editor, open **File > New C++ Class…**</span></span> <span data-ttu-id="2580b-139">次に、 **Winrtactor** という名前の新しい **アクター** を作成し、DLL 内のコードを実行します。</span><span class="sxs-lookup"><span data-stu-id="2580b-139">and create a new **Actor** named **WinrtActor** to run the code in the DLL:</span></span> 
 
 ![新しいアクターの作成](../images/unreal-winrt-img-04.png)
 
 > [!NOTE]
-> <span data-ttu-id="06efd-142">Uproject ファイルと同じディレクトリに、Source/ConsumeWinRT/ConsumeWinRT という名前の新しいビルドスクリプトと共にソリューションが作成されました。</span><span class="sxs-lookup"><span data-stu-id="06efd-142">A solution has now been created in the same directory as the uproject file along with a new build script named Source/ConsumeWinRT/ConsumeWinRT.Build.cs.</span></span>
+> <span data-ttu-id="2580b-141">Uproject ファイルと同じディレクトリに、Source/ConsumeWinRT/ConsumeWinRT という名前の新しいビルドスクリプトと共にソリューションが作成されました。</span><span class="sxs-lookup"><span data-stu-id="2580b-141">A solution has now been created in the same directory as the uproject file along with a new build script named Source/ConsumeWinRT/ConsumeWinRT.Build.cs.</span></span>
 
-2. <span data-ttu-id="06efd-143">ソリューションを開き、 **game/ConsumeWinRT/Source/consumewinrt** フォルダーを参照し、 **ConsumeWinRT.build.cs** を開きます。</span><span class="sxs-lookup"><span data-stu-id="06efd-143">Open the solution, browse for the **Games/ConsumeWinRT/Source/ConsumeWinRT** folder, and open **ConsumeWinRT.build.cs**:</span></span>
+2. <span data-ttu-id="2580b-142">ソリューションを開き、 **game/ConsumeWinRT/Source/consumewinrt** フォルダーを参照し、 **ConsumeWinRT.build.cs** を開きます。</span><span class="sxs-lookup"><span data-stu-id="2580b-142">Open the solution, browse for the **Games/ConsumeWinRT/Source/ConsumeWinRT** folder, and open **ConsumeWinRT.build.cs**:</span></span>
 
 ![ConsumeWinRT.build.cs ファイルを開く](../images/unreal-winrt-img-05.png)
 
-### <a name="linking-the-dll"></a><span data-ttu-id="06efd-145">DLL のリンク</span><span class="sxs-lookup"><span data-stu-id="06efd-145">Linking the DLL</span></span>
-1. <span data-ttu-id="06efd-146">**ConsumeWinRT.build.cs** で、プロパティを追加して、DLL のインクルードパス (HoloLensWinrtDLL を含むディレクトリ) を検索します。</span><span class="sxs-lookup"><span data-stu-id="06efd-146">In **ConsumeWinRT.build.cs**, add a property to find the include path for the DLL (the directory containing HoloLensWinrtDLL.h).</span></span> <span data-ttu-id="06efd-147">DLL は、インクルードパスの子ディレクトリにあるため、このプロパティはバイナリルートディレクトリとして使用されます。</span><span class="sxs-lookup"><span data-stu-id="06efd-147">The DLL is in a child directory to the include path, so this property will be used as the binary root dir:</span></span>
+### <a name="linking-the-dll"></a><span data-ttu-id="2580b-144">DLL のリンク</span><span class="sxs-lookup"><span data-stu-id="2580b-144">Linking the DLL</span></span>
+1. <span data-ttu-id="2580b-145">**ConsumeWinRT.build.cs** で、プロパティを追加して、DLL のインクルードパス (HoloLensWinrtDLL を含むディレクトリ) を検索します。</span><span class="sxs-lookup"><span data-stu-id="2580b-145">In **ConsumeWinRT.build.cs**, add a property to find the include path for the DLL (the directory containing HoloLensWinrtDLL.h).</span></span> <span data-ttu-id="2580b-146">DLL は、インクルードパスの子ディレクトリにあるため、このプロパティはバイナリルートディレクトリとして使用されます。</span><span class="sxs-lookup"><span data-stu-id="2580b-146">The DLL is in a child directory to the include path, so this property will be used as the binary root dir:</span></span>
 
 ```cs
 using System.IO;
@@ -200,7 +204,7 @@ public class ConsumeWinRT : ModuleRules
 }
 ```
 
-2. <span data-ttu-id="06efd-148">クラスコンストラクターで、次のコードを追加してインクルードパスを更新し、新しい lib をリンクして、遅延読み込みを行い、DLL をパッケージ化された appx の場所にコピーします。</span><span class="sxs-lookup"><span data-stu-id="06efd-148">In the class constructor, add the following code to update the include path, link the new lib, and delay-load and copy the DLL to the packaged appx location:</span></span>
+2. <span data-ttu-id="2580b-147">クラスコンストラクターで、次のコードを追加してインクルードパスを更新し、新しい lib をリンクして、遅延読み込みを行い、DLL をパッケージ化された appx の場所にコピーします。</span><span class="sxs-lookup"><span data-stu-id="2580b-147">In the class constructor, add the following code to update the include path, link the new lib, and delay-load and copy the DLL to the packaged appx location:</span></span>
 
 ```cs
 public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
@@ -231,7 +235,7 @@ public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 }
 ```
 
-3. <span data-ttu-id="06efd-149">**Winrtactor** を開き、1つの関数定義を追加します。1つは、ブループリントによって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="06efd-149">Open **WinrtActor.h** and add one function definition, one that a blueprint will call:</span></span> 
+3. <span data-ttu-id="2580b-148">**Winrtactor** を開き、1つの関数定義を追加します。1つは、ブループリントによって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="2580b-148">Open **WinrtActor.h** and add one function definition, one that a blueprint will call:</span></span> 
 
 ```cpp
 public:
@@ -239,7 +243,7 @@ public:
     static void OpenFileDialogue();
 ```
 
-4. <span data-ttu-id="06efd-150">**Winrtactor** を開き、beginplay を更新して DLL を読み込みます。</span><span class="sxs-lookup"><span data-stu-id="06efd-150">Open **WinrtActor.cpp** and update BeginPlay to load the DLL:</span></span> 
+4. <span data-ttu-id="2580b-149">**Winrtactor** を開き、beginplay を更新して DLL を読み込みます。</span><span class="sxs-lookup"><span data-stu-id="2580b-149">Open **WinrtActor.cpp** and update BeginPlay to load the DLL:</span></span> 
 
 ```cpp
 void AWinrtActor::BeginPlay()
@@ -265,36 +269,36 @@ void AWinrtActor::OpenFileDialogue()
 ``` 
 
 >[!CAUTION]
-> <span data-ttu-id="06efd-151">DLL は、その関数のいずれかを呼び出す前に読み込む必要があります。</span><span class="sxs-lookup"><span data-stu-id="06efd-151">The DLL must be loaded before calling any of its functions.</span></span>
+> <span data-ttu-id="2580b-150">DLL は、その関数のいずれかを呼び出す前に読み込む必要があります。</span><span class="sxs-lookup"><span data-stu-id="2580b-150">The DLL must be loaded before calling any of its functions.</span></span>
 
-### <a name="building-the-game"></a><span data-ttu-id="06efd-152">ゲームを構築する</span><span class="sxs-lookup"><span data-stu-id="06efd-152">Building the game</span></span>
-1. <span data-ttu-id="06efd-153">ゲームソリューションをビルドして、game プロジェクトで開かれている Unreal エディターを起動します。</span><span class="sxs-lookup"><span data-stu-id="06efd-153">Build the game solution to launch the Unreal editor opened to the game project:</span></span> 
-    * <span data-ttu-id="06efd-154">[ **アクターの配置** ] タブで、新しい **winrtactor** を検索し、シーンにドラッグします。</span><span class="sxs-lookup"><span data-stu-id="06efd-154">In the **Place Actors** tab, search for the new **WinrtActor** and drag it into the scene</span></span> 
-    * <span data-ttu-id="06efd-155">レベルブループリントを開き、 **Winrtactor** でブループリント呼び出し可能関数を実行します。</span><span class="sxs-lookup"><span data-stu-id="06efd-155">Open the level blueprint to execute the blueprint callable function in the **WinrtActor**</span></span> 
+### <a name="building-the-game"></a><span data-ttu-id="2580b-151">ゲームを構築する</span><span class="sxs-lookup"><span data-stu-id="2580b-151">Building the game</span></span>
+1. <span data-ttu-id="2580b-152">ゲームソリューションをビルドして、game プロジェクトで開かれている Unreal エディターを起動します。</span><span class="sxs-lookup"><span data-stu-id="2580b-152">Build the game solution to launch the Unreal editor opened to the game project:</span></span> 
+    * <span data-ttu-id="2580b-153">[ **アクターの配置** ] タブで、新しい **winrtactor** を検索し、シーンにドラッグします。</span><span class="sxs-lookup"><span data-stu-id="2580b-153">In the **Place Actors** tab, search for the new **WinrtActor** and drag it into the scene</span></span> 
+    * <span data-ttu-id="2580b-154">レベルブループリントを開き、 **Winrtactor** でブループリント呼び出し可能関数を実行します。</span><span class="sxs-lookup"><span data-stu-id="2580b-154">Open the level blueprint to execute the blueprint callable function in the **WinrtActor**</span></span> 
 
 ![WinrtActor をシーンに配置する](../images/unreal-winrt-img-06.png)
 
-2. <span data-ttu-id="06efd-157">**世界** 中では、前にシーンにドロップした **Windrtactor** を見つけて、レベルのブループリントにドラッグします。</span><span class="sxs-lookup"><span data-stu-id="06efd-157">In the **World Outliner**, find the **WindrtActor** previously dropped into the scene and drag it into the level blueprint:</span></span> 
+2. <span data-ttu-id="2580b-156">**世界** 中では、前にシーンにドロップした **Windrtactor** を見つけて、レベルのブループリントにドラッグします。</span><span class="sxs-lookup"><span data-stu-id="2580b-156">In the **World Outliner**, find the **WindrtActor** previously dropped into the scene and drag it into the level blueprint:</span></span> 
 
 ![WinrtActor をレベルブループリントにドラッグする](../images/unreal-winrt-img-07.png)
 
-3. <span data-ttu-id="06efd-159">レベルブループリントで、[出力] ノードを WinrtActor からドラッグし、[ **ファイルを開く] ダイアログ** を検索して、任意のユーザー入力からノードをルーティングします。</span><span class="sxs-lookup"><span data-stu-id="06efd-159">In the level blueprint, drag the output node from WinrtActor, search for **Open File Dialogue**, then route the node from any user input.</span></span>  <span data-ttu-id="06efd-160">この場合、[ファイルを開く] ダイアログが音声イベントから呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="06efd-160">In this case, Open File Dialogue is being called from a speech event:</span></span> 
+3. <span data-ttu-id="2580b-158">レベルブループリントで、[出力] ノードを WinrtActor からドラッグし、[ **ファイルを開く] ダイアログ** を検索して、任意のユーザー入力からノードをルーティングします。</span><span class="sxs-lookup"><span data-stu-id="2580b-158">In the level blueprint, drag the output node from WinrtActor, search for **Open File Dialogue**, then route the node from any user input.</span></span>  <span data-ttu-id="2580b-159">この場合、[ファイルを開く] ダイアログが音声イベントから呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="2580b-159">In this case, Open File Dialogue is being called from a speech event:</span></span> 
 
 ![レベルブループリントでのノードの構成](../images/unreal-winrt-img-08.png)
 
-4. <span data-ttu-id="06efd-162">[このゲームを HoloLens 用にパッケージ化](../tutorials/unreal-uxt-ch6.md)し、展開して、を実行します。</span><span class="sxs-lookup"><span data-stu-id="06efd-162">[Package this game for HoloLens](../tutorials/unreal-uxt-ch6.md), deploy it, and run.</span></span>  
+4. <span data-ttu-id="2580b-161">[このゲームを HoloLens 用にパッケージ化](../tutorials/unreal-uxt-ch6.md)し、展開して、を実行します。</span><span class="sxs-lookup"><span data-stu-id="2580b-161">[Package this game for HoloLens](../tutorials/unreal-uxt-ch6.md), deploy it, and run.</span></span>  
 
-<span data-ttu-id="06efd-163">Unreal が OpenFileDialogue を呼び出すと、ファイルのダイアログが表示され、HoloLens のファイル名を要求するメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="06efd-163">When Unreal calls OpenFileDialogue, a File Dialogue opens on the HoloLens prompting for a .txt file name.</span></span>  <span data-ttu-id="06efd-164">ファイルが保存されたら、デバイスポータルの [ **ファイルエクスプローラー** ] タブにアクセスして、"Hello WinRT" という内容を表示します。</span><span class="sxs-lookup"><span data-stu-id="06efd-164">After the file is saved, go to the **File explorer** tab in the device portal to see the contents “Hello WinRT”.</span></span> 
+<span data-ttu-id="2580b-162">Unreal が OpenFileDialogue を呼び出すと、ファイルのダイアログが表示され、HoloLens のファイル名を要求するメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="2580b-162">When Unreal calls OpenFileDialogue, a File Dialogue opens on the HoloLens prompting for a .txt file name.</span></span>  <span data-ttu-id="2580b-163">ファイルが保存されたら、デバイスポータルの [ **ファイルエクスプローラー** ] タブにアクセスして、"Hello WinRT" という内容を表示します。</span><span class="sxs-lookup"><span data-stu-id="2580b-163">After the file is saved, go to the **File explorer** tab in the device portal to see the contents “Hello WinRT”.</span></span> 
 
-## <a name="summary"></a><span data-ttu-id="06efd-165">まとめ</span><span class="sxs-lookup"><span data-stu-id="06efd-165">Summary</span></span> 
+## <a name="summary"></a><span data-ttu-id="2580b-164">まとめ</span><span class="sxs-lookup"><span data-stu-id="2580b-164">Summary</span></span> 
 
-<span data-ttu-id="06efd-166">このチュートリアルのコードは、Unreal で WinRT コードを使用するための出発点として使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="06efd-166">We encourage you to use the code in this tutorial as a starting point for consuming WinRT code in Unreal.</span></span>  <span data-ttu-id="06efd-167">Windows と同じファイルを使用して、ユーザーが HoloLens ディスクにファイルを保存できるようにします。</span><span class="sxs-lookup"><span data-stu-id="06efd-167">It allows users to save files to the HoloLens disk using the same file dialogue as Windows.</span></span>  <span data-ttu-id="06efd-168">同じプロセスに従って、HoloLensWinrtDLL ヘッダーから他の関数をエクスポートし、Unreal で使用します。</span><span class="sxs-lookup"><span data-stu-id="06efd-168">Follow the same process to export any additional functions from the HoloLensWinrtDLL header and used in Unreal.</span></span>  <span data-ttu-id="06efd-169">バックグラウンド MTA スレッドで非同期 WinRT コードを待機する DLL コードに注意してください。これにより、Unreal game スレッドのデッドロックが回避されます。</span><span class="sxs-lookup"><span data-stu-id="06efd-169">Note the DLL code that waits on any async WinRT code in a background MTA thread, which avoids deadlocking the Unreal game thread.</span></span> 
+<span data-ttu-id="2580b-165">このチュートリアルは、Windows と同じファイルダイアログを使用して HoloLens ディスクにファイルを保存する必要がある場合に、Unreal で WinRT コードを使用するための出発点として使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="2580b-165">We encourage you to use this tutorial as a starting point for consuming WinRT code in Unreal when you need to save files to the HoloLens disk using the same file dialogue as Windows.</span></span>  <span data-ttu-id="2580b-166">このプロセスは、HoloLensWinrtDLL ヘッダーから追加の関数をエクスポートし、Unreal で使用する場合にも適用されます。</span><span class="sxs-lookup"><span data-stu-id="2580b-166">The same process applies to exporting additional functions from the HoloLensWinrtDLL header and used in Unreal.</span></span>  <span data-ttu-id="2580b-167">バックグラウンド MTA スレッドで非同期 WinRT コードを待機する DLL コードに特に注意してください。これによって、Unreal game スレッドのデッドロックが回避されます。</span><span class="sxs-lookup"><span data-stu-id="2580b-167">Pay special attention to the DLL code that waits on async WinRT code in a background MTA thread, which avoids deadlocking the Unreal game thread.</span></span> 
 
-# <a name="426"></a>[<span data-ttu-id="06efd-170">4.26</span><span class="sxs-lookup"><span data-stu-id="06efd-170">4.26</span></span>](#tab/426)
+# <a name="426"></a>[<span data-ttu-id="2580b-168">4.26</span><span class="sxs-lookup"><span data-stu-id="2580b-168">4.26</span></span>](#tab/426)
 
-## <a name="the-standard-winrt-apis"></a><span data-ttu-id="06efd-171">標準の WinRT Api</span><span class="sxs-lookup"><span data-stu-id="06efd-171">The standard WinRT APIs</span></span>
+## <a name="the-standard-winrt-apis"></a><span data-ttu-id="2580b-169">標準の WinRT Api</span><span class="sxs-lookup"><span data-stu-id="2580b-169">The standard WinRT APIs</span></span>
 
-<span data-ttu-id="06efd-172">WinRT を使用する最も一般的で簡単な方法は、WinSDK からメソッドを呼び出すことです。</span><span class="sxs-lookup"><span data-stu-id="06efd-172">The most common and easiest way to use WinRT is to call methods from WinSDK.</span></span> <span data-ttu-id="06efd-173">これを行うには、YourModule.Build.cs ファイルを開き、次の行を追加します。</span><span class="sxs-lookup"><span data-stu-id="06efd-173">To do so, open YourModule.Build.cs file and add the following lines:</span></span>
+<span data-ttu-id="2580b-170">WinRT を使用する最も一般的で簡単な方法は、WinSDK からメソッドを呼び出すことです。</span><span class="sxs-lookup"><span data-stu-id="2580b-170">The most common and easiest way to use WinRT is to call methods from WinSDK.</span></span> <span data-ttu-id="2580b-171">これを行うには、YourModule.Build.cs ファイルを開き、次の行を追加します。</span><span class="sxs-lookup"><span data-stu-id="2580b-171">To do so, open YourModule.Build.cs file and add the following lines:</span></span>
 
 ```cpp
 if (Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTargetPlatform.HoloLens)
@@ -311,7 +315,7 @@ if (Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTa
 }
 ```
 
-<span data-ttu-id="06efd-174">次に、次の WinRT ヘッダーを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06efd-174">Next, you need to add the following WinRT headers:</span></span> 
+<span data-ttu-id="2580b-172">次に、次の WinRT ヘッダーを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2580b-172">Next, you need to add the following WinRT headers:</span></span> 
 
 ```cpp
 #if (PLATFORM_WINDOWS || PLATFORM_HOLOLENS) 
@@ -330,21 +334,21 @@ if (Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTa
 #endif
 ```
 
-<span data-ttu-id="06efd-175">WinRT コードは、Win64 および HoloLens プラットフォームでのみコンパイルできるため、if ステートメントを使用すると、WinRT ライブラリが他のプラットフォームに含まれないようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="06efd-175">WinRT code can only be compiled in the Win64 and HoloLens platforms, so the if statement prevents WinRT libraries from being included on other platforms.</span></span> <span data-ttu-id="06efd-176">IUnknown インターフェイスを持つために unknwn が追加されました。</span><span class="sxs-lookup"><span data-stu-id="06efd-176">unknwn.h was added for having the IUnknown interface.</span></span> 
+<span data-ttu-id="2580b-173">WinRT コードは、Win64 および HoloLens プラットフォームでのみコンパイルできるため、if ステートメントを使用すると、WinRT ライブラリが他のプラットフォームに含まれないようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="2580b-173">WinRT code can only be compiled in the Win64 and HoloLens platforms, so the if statement prevents WinRT libraries from being included on other platforms.</span></span> <span data-ttu-id="2580b-174">IUnknown インターフェイスを持つために unknwn が追加されました。</span><span class="sxs-lookup"><span data-stu-id="2580b-174">unknwn.h was added for having the IUnknown interface.</span></span> 
 
-<span data-ttu-id="06efd-177">コードを記述する前に、次を使用して WinRT ヘッダーの一般的な警告を無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="06efd-177">Before writing any code, you need to disable common warnings in WinRT headers by using:</span></span>
+<span data-ttu-id="2580b-175">コードを記述する前に、次を使用して WinRT ヘッダーの一般的な警告を無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2580b-175">Before writing any code, you need to disable common warnings in WinRT headers by using:</span></span>
 
 ```cpp
 #pragma warning(disable : 5205 4265)
 ```
 
-## <a name="winrt-from-a-nuget-package"></a><span data-ttu-id="06efd-178">NuGet パッケージからの WinRT</span><span class="sxs-lookup"><span data-stu-id="06efd-178">WinRT from a NuGet package</span></span>
+## <a name="winrt-from-a-nuget-package"></a><span data-ttu-id="2580b-176">NuGet パッケージからの WinRT</span><span class="sxs-lookup"><span data-stu-id="2580b-176">WinRT from a NuGet package</span></span>
 
-<span data-ttu-id="06efd-179">WinRT サポートを含む nuget パッケージを追加する必要がある場合は、少し複雑になります。</span><span class="sxs-lookup"><span data-stu-id="06efd-179">It’s a little more complicated if you need to add a nuget package with WinRT support.</span></span> <span data-ttu-id="06efd-180">この場合、Visual Studio は実質的にすべてのジョブを実行できますが、Unreal ビルドシステムでは実行できません。</span><span class="sxs-lookup"><span data-stu-id="06efd-180">In this case, Visual Studio can do practically all job for you, but the Unreal build system can’t.</span></span> <span data-ttu-id="06efd-181">さいわい、それほど難しくはありません。</span><span class="sxs-lookup"><span data-stu-id="06efd-181">Luckily, it’s not too difficult.</span></span> <span data-ttu-id="06efd-182">MixedReality パッケージをダウンロードする方法の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="06efd-182">Below is an example of how you would go about downloading the Microsoft.MixedReality.QR package.</span></span> <span data-ttu-id="06efd-183">別のファイルに置き換えることができます。 winmd ファイルが失われないようにし、正しい dll をコピーしてください。</span><span class="sxs-lookup"><span data-stu-id="06efd-183">You can replace it with another, just make sure that you don’t lose the winmd file and copy the correct dll.</span></span> 
+<span data-ttu-id="2580b-177">WinRT サポートを含む NuGet パッケージを追加する必要がある場合は、少し複雑になります。</span><span class="sxs-lookup"><span data-stu-id="2580b-177">It’s a little more complicated if you need to add a NuGet package with WinRT support.</span></span> <span data-ttu-id="2580b-178">この場合、Visual Studio は実質的にすべてのジョブを実行できますが、Unreal ビルドシステムでは実行できません。</span><span class="sxs-lookup"><span data-stu-id="2580b-178">In this case, Visual Studio can do practically all job for you, but the Unreal build system can’t.</span></span> <span data-ttu-id="2580b-179">さいわい、それほど難しくはありません。</span><span class="sxs-lookup"><span data-stu-id="2580b-179">Luckily, it’s not too difficult.</span></span> <span data-ttu-id="2580b-180">MixedReality パッケージをダウンロードする方法の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2580b-180">Below is an example of how you would go about downloading the Microsoft.MixedReality.QR package.</span></span> <span data-ttu-id="2580b-181">別のファイルに置き換えることができます。 winmd ファイルが失われていないことを確認し、正しい dll をコピーするだけです。</span><span class="sxs-lookup"><span data-stu-id="2580b-181">You can replace it with another, just make sure you don’t lose the winmd file and copy the correct dll.</span></span> 
 
-<span data-ttu-id="06efd-184">前のセクションの Windows SDK dll は、OS によって処理されます。</span><span class="sxs-lookup"><span data-stu-id="06efd-184">Windows SDK dlls from the previous section are handled by the OS.</span></span> <span data-ttu-id="06efd-185">Nuget の dll は、モジュール内のコードによって管理されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="06efd-185">Nuget’s dlls must be managed by the code in your module.</span></span> <span data-ttu-id="06efd-186">ダウンロードするコードを追加し、バイナリフォルダーにコピーして、モジュールの起動時にプロセスメモリに読み込む必要があります。</span><span class="sxs-lookup"><span data-stu-id="06efd-186">You should add code to download them, copy into binaries folder and load into the process memory at the module startup.</span></span>
+<span data-ttu-id="2580b-182">前のセクションの Windows SDK dll は、OS によって処理されます。</span><span class="sxs-lookup"><span data-stu-id="2580b-182">Windows SDK dlls from the previous section are handled by the OS.</span></span> <span data-ttu-id="2580b-183">NuGet の dll は、モジュール内のコードによって管理されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="2580b-183">NuGet’s dlls must be managed by the code in your module.</span></span> <span data-ttu-id="2580b-184">モジュールをダウンロードし、バイナリフォルダーにコピーして、モジュールの起動時にプロセスメモリに読み込むコードを追加することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="2580b-184">We recommend adding code to download them, copying into binaries folder, and load into the process memory at the module startup.</span></span>
 
-<span data-ttu-id="06efd-187">最初の手順では、 https://docs.microsoft.com/nuget/reference/packages-config) モジュールのルートフォルダーに packages.config を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06efd-187">At the first step, you should add a packages.config (https://docs.microsoft.com/nuget/reference/packages-config) into the root folder of your module.</span></span> <span data-ttu-id="06efd-188">ここでは、すべての依存関係を含め、ダウンロードするすべてのパッケージを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06efd-188">There you should add all packages you want to download, including all their dependencies.</span></span> <span data-ttu-id="06efd-189">ここで、プライマリペイロードとして MixedReality を追加し、他の2つを依存関係として追加しました。</span><span class="sxs-lookup"><span data-stu-id="06efd-189">Here I added Microsoft.MixedReality.QR as a primary payload and two others as dependencies to it.</span></span> <span data-ttu-id="06efd-190">このファイルの形式は、Visual Studio の場合と同じです。</span><span class="sxs-lookup"><span data-stu-id="06efd-190">The format of that file is same as in Visual Studio:</span></span>
+<span data-ttu-id="2580b-185">最初の手順では、 https://docs.microsoft.com/nuget/reference/packages-config) モジュールのルートフォルダーに packages.config を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2580b-185">At the first step, you should add a packages.config (https://docs.microsoft.com/nuget/reference/packages-config) into the root folder of your module.</span></span> <span data-ttu-id="2580b-186">ここでは、すべての依存関係を含め、ダウンロードするすべてのパッケージを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2580b-186">There you should add all packages you want to download, including all their dependencies.</span></span> <span data-ttu-id="2580b-187">ここで、プライマリペイロードとして MixedReality を追加し、他の2つを依存関係として追加しました。</span><span class="sxs-lookup"><span data-stu-id="2580b-187">Here I added Microsoft.MixedReality.QR as a primary payload and two others as dependencies to it.</span></span> <span data-ttu-id="2580b-188">このファイルの形式は、Visual Studio の場合と同じです。</span><span class="sxs-lookup"><span data-stu-id="2580b-188">The format of that file is same as in Visual Studio:</span></span>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -355,9 +359,9 @@ if (Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTa
 </packages>
 ```
 
-<span data-ttu-id="06efd-191">これで、NuGet や必要なパッケージをダウンロードしたり、NuGet の [ドキュメント](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli)を参照したりできるようになりました。</span><span class="sxs-lookup"><span data-stu-id="06efd-191">Now you can download the NuGet, the required packages, or refer to the NuGet [documentation](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli).</span></span>
+<span data-ttu-id="2580b-189">これで、NuGet や必要なパッケージをダウンロードしたり、NuGet の [ドキュメント](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli)を参照したりできるようになりました。</span><span class="sxs-lookup"><span data-stu-id="2580b-189">Now you can download the NuGet, the required packages, or refer to the NuGet [documentation](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli).</span></span>
 
-<span data-ttu-id="06efd-192">YourModule.Build.cs を開き、次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="06efd-192">Open YourModule.Build.cs and add the following code:</span></span>
+<span data-ttu-id="2580b-190">YourModule.Build.cs を開き、次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="2580b-190">Open YourModule.Build.cs and add the following code:</span></span>
 
 ```cpp
 if(Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTargetPlatform.HoloLens)
@@ -483,7 +487,7 @@ if(Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTar
     }
 ```
 
-<span data-ttu-id="06efd-193">SafeCopy メソッドは次のように定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06efd-193">You'll need to define the SafeCopy method as follows:</span></span>
+<span data-ttu-id="2580b-191">SafeCopy メソッドは次のように定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2580b-191">You'll need to define the SafeCopy method as follows:</span></span>
 
 ```cpp
 private void SafeCopy(string source, string destination)
@@ -512,7 +516,7 @@ private void SafeCopy(string source, string destination)
 }
 ```
 
-<span data-ttu-id="06efd-194">Nuget Dll は、Win32 プロセスメモリに手動で読み込む必要があります。</span><span class="sxs-lookup"><span data-stu-id="06efd-194">Nuget DLLs needs to load into your Win32 process memory manually.</span></span> <span data-ttu-id="06efd-195">モジュールの startup メソッドに手動読み込みを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06efd-195">You should add manual loading into the startup method of your module:</span></span>
+<span data-ttu-id="2580b-192">NuGet Dll は、Win32 プロセスメモリに手動で読み込む必要があります。モジュールの startup メソッドに手動読み込みを追加することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="2580b-192">NuGet DLLs needs to load into your Win32 process memory manually; we recommend adding manual loading into the startup method of your module:</span></span>
 
 ```cpp
 void StartupModule() override
@@ -532,4 +536,4 @@ void StartupModule() override
 }
 ```
 
-<span data-ttu-id="06efd-196">最後に、前のセクションで説明したように、WinRT ヘッダーをコードに含めることができます。</span><span class="sxs-lookup"><span data-stu-id="06efd-196">Finally, you can include WinRT headers into your code as described in the previous section.</span></span>
+<span data-ttu-id="2580b-193">最後に、前のセクションで説明したように、WinRT ヘッダーをコードに含めることができます。</span><span class="sxs-lookup"><span data-stu-id="2580b-193">Finally, you can include WinRT headers into your code as described in the previous section.</span></span>

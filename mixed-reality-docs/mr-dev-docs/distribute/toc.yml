@@ -1,4 +1,4 @@
-- name: 概要
+- name: アプリの配布方法を選択する
   href: distribute-overview.md
 - name: 3D アプリ起動ツール
   items:

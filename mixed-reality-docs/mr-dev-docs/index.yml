@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 6ea718c20d80078c95fc4151d2598f892519db3e
-  ms.sourcegitcommit: 2db930daba1ef4c444ab179d0061a5d84e2980c1
+  ms.openlocfilehash: 158bb9d50e8d288cf4fc345b5f5e210f113146ae
+  ms.sourcegitcommit: 856a1a48f05dd84f884a6e64bef4003e3768e669
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "96513251"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "96604815"
 highlightedContent:
   items:
   - title: Mixed Reality とは
@@ -30,7 +30,7 @@ highlightedContent:
   - title: Dynamics 365 Mixed Reality アプリケーション
     itemType: reference
     url: https://docs.microsoft.com/dynamics365/mixed-reality/
-  - title: Azure クラウド サービス
+  - title: Azure 複合現実クラウド サービス
     itemType: whats-new
     url: develop/mixed-reality-cloud-services.md
   - title: 開発者向け

@@ -1,11 +1,15 @@
 - name: Mixed Reality 開発の概要
   href: development.md
-- name: Azure 複合現実クラウド サービスの概要
-  href: mixed-reality-cloud-services.md
-- name: Mixed Reality Learning の概要
-  href: mr-learning-overview.md
 - name: ツールのインストール
   href: install-the-tools.md
+- name: 作業の開始
+  items:
+    - name: Azure 複合現実クラウド サービスの概要
+      href: mixed-reality-cloud-services.md
+    - name: Mixed Reality Learning の概要
+      href: mr-learning-overview.md
+    - name: サンプルとおすすめアプリ
+      href: features-and-samples.md
 - name: アプリの移植
   items:
     - name: 移植の概要
@@ -216,8 +220,6 @@
           href: unity/unity-reverb-g2-controllers.md
     - name: サンプル アプリ
       items:
-        - name: 概要
-          href: unity/samples.md
         - name: HoloLens 2
           items:
             - name: Surfaces
@@ -300,8 +302,6 @@
           href: unreal/unreal-reverb-g2-controllers.md
     - name: サンプル アプリ
       items:
-        - name: 概要
-          href: unreal/unreal-samples.md
         - name: Kippy's Escape
           href: unreal/unreal-kippys-escape.md
     - name: デプロイとパフォーマンス
@@ -396,6 +396,8 @@
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
         - name: そのしくみ - 複合現実キャプチャ スタジオ
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
+        - name: HoloLens 2 用の PIX をインストールする
+          href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: ホログラフィック リモート
       items:
         - name: Holographic Remoting Player

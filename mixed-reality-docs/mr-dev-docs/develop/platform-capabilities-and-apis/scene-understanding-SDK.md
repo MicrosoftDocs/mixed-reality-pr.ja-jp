@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: シーンの理解、空間マッピング、Windows Mixed Reality、Unity
-ms.openlocfilehash: 7541ab38cd8c90e774614af5ea457e5636ee66fe
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 731a4dfd0b714f22f25c0818de82680d4c576a27
+ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684951"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761764"
 ---
 # <a name="scene-understanding-sdk-overview"></a>シーンについて SDK の概要
 
@@ -47,7 +47,7 @@ Unity プロジェクトで SDK を使用している場合は、 [unity 用の 
 
 各シーンでは、アプリケーションのメモリ領域にデータが格納されるため、シーンオブジェクトまたはその内部データのすべての関数がアプリケーションのプロセスで常に実行されると想定できます。
 
-### <a name="layout"></a>Layout
+### <a name="layout"></a>レイアウト
 
 シーンを理解するには、ランタイムが論理的および物理的にコンポーネントを表す方法を理解し、理解しておくことが重要な場合があります。 シーンは、主要な改訂を必要とせずに将来の要件を満たすように pliable された、基になる構造を維持しながら、単純なレイアウトを持つデータを表します。 このシーンでは、すべてのコンポーネント (すべてのシーンオブジェクトの構成要素) をフラットリストに格納し、特定のコンポーネントが他のコンポーネントを参照する参照を使用して階層とコンポジションを定義します。
 
@@ -120,12 +120,12 @@ SceneObjects は、次のいずれかを持つことができます。
 <th>SceneObjectKind</th> <th>説明</th>
 </tr>
 <tr><td>バックグラウンド</td><td>SceneObject は、他の認識された種類のシーンオブジェクトの1つでは <b>ない</b> ことがわかっています。 このクラスは不明と混同しないでください。背景が壁、床、天井などではないことがわかっています。不明なカテゴリはまだ分類されていません。</b></td></tr>
-<tr><td>電話</td><td>物理的な壁面。 壁面は、移動可能な環境構造であると見なされます。</td></tr>
+<tr><td>Wall</td><td>物理的な壁面。 壁面は、移動可能な環境構造であると見なされます。</td></tr>
 <tr><td>床</td><td>床は、どのような面でも使用できます。 注: 階段はフロアではありません。 また、このフロアは、明らかになる可能性があるため、1つの床面を明確に示すものではないことにも注意してください。 複数レベルの構造、傾斜などすべてが floor として分類される必要があります。</td></tr>
 <tr><td>Ceiling</td><td>部屋の上面。</td></tr>
 <tr><td>プラットフォーム</td><td>ホログラムを配置できる大きな平らなサーフェイス。 これらは、テーブル、countertops、およびその他の大きな水平サーフェスを表す傾向があります。</td></tr>
 <tr><td>World</td><td>ラベル付けに依存しないジオメトリックデータ用に予約されたラベル。 EnableWorldMesh update フラグを設定することによって生成されるメッシュは、"世界" として分類されます。</td></tr>
-<tr><td>Unknown</td><td>このシーンオブジェクトはまだ分類されていないため、種類が割り当てられています。 これは、背景と混同しないようにしてください。このオブジェクトは何でもかまいません。システムは、十分な量の十分な分類を持っているわけではありません。</td></tr>
+<tr><td>不明</td><td>このシーンオブジェクトはまだ分類されていないため、種類が割り当てられています。 これは、背景と混同しないようにしてください。このオブジェクトは何でもかまいません。システムは、十分な量の十分な分類を持っているわけではありません。</td></tr>
 </tr>
 </table>
 
@@ -135,9 +135,9 @@ SceneMesh は、トライアングルリストを使用して任意のジオメ�
 
 #### <a name="winding-order-and-coordinate-systems"></a>ワインディング順序と座標系
 
-シーンの理解によって生成されるすべてのメッシュは、時計回りのワインディング順序を使用して右手座標系でメッシュを返すことが想定されています。 
+シーンの理解によって生成されるすべてのメッシュは、時計回りのワインディング順序を使用して Right-Handed 座標系でメッシュを返すことが想定されています。 
 
-注: 191105 より前の OS ビルドでは既知のバグが発生する可能性があります。これは、"世界" メッシュが、後で修正された反時計回りのワインディング順序で返されています。
+注: 191105 より前の OS ビルドでは既知のバグが発生する可能性があります。これは、"ワールド" メッシュが Counter-Clockwise ワインディング順序で戻り、その後修正されています。
 
 ### <a name="scenequad"></a>SceneQuad
 
@@ -222,7 +222,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 
 ### <a name="component-update-and-re-finding-components"></a>コンポーネントの更新とコンポーネントの再検出
 
-***Findcomponent*** というシーン内のコンポーネントを取得する関数もあります。 この関数は、追跡オブジェクトを更新し、それを後続のシーンで検索する場合に便利です。 次のコードでは、前のシーンに対して相対的な新しいシーンを計算し、新しいシーンでフロアを検索します。
+シーン内のコンポーネントを取得する、**_Findcomponent_* _ という別の関数があります。 この関数は、追跡オブジェクトを更新し、それを後続のシーンで検索する場合に便利です。 次のコードでは、前のシーンに対して相対的な新しいシーンを計算し、新しいシーンでフロアを検索します。
 
 ```cs
 // Compute a new scene, and tell the system that we want to compute relative to the previous scene
@@ -239,7 +239,7 @@ if (firstFloor != null)
 
 ## <a name="accessing-meshes-and-quads-from-scene-objects"></a>シーンオブジェクトからのメッシュと四角形へのアクセス
 
-SceneObjects が見つかると、ほとんどの場合、アプリケーションは、構成されている四角形やメッシュに含まれるデータにアクセスします。 このデータには、[ ***四角形*** と ***メッシュ*** ] プロパティを使用してアクセスします。 次のコードは、floor オブジェクトのすべての四角形とメッシュを列挙します。
+SceneObjects が見つかると、ほとんどの場合、アプリケーションは、構成されている四角形やメッシュに含まれるデータにアクセスします。 このデータには、[ _*_四角形_*_ と _*_メッシュ_*_ ] プロパティを使用してアクセスします。 次のコードは、floor オブジェクトのすべての四角形とメッシュを列挙します。
 
 ```cs
 
@@ -263,53 +263,95 @@ foreach (var mesh in firstFloor.Meshes)
 
 ### <a name="dealing-with-transforms"></a>変換の処理
 
-シーンの理解により、変換を処理するときに、従来の3D シーン表現に合わせて意図的に配置しようとしました。 そのため、各シーンは、最も一般的な3D 環境表現と同じように、1つの座標系に限定されます。 SceneObjects は、その座標系内の位置と方向として場所を提供します。 アプリケーションが、1つのオリジンが提供する機能の制限を拡大するシーンを処理している場合は、SceneObjects を SpatialAnchors に固定するか、複数のシーンを生成して結合することができますが、わかりやすくするために、watertight のシーンが独自のオリジンに存在することを想定しています。
+シーンの理解により、変換を処理するときに、従来の3D シーン表現に合わせて意図的に配置しようとしました。 そのため、各シーンは、最も一般的な3D 環境表現と同じように、1つの座標系に限定されます。 SceneObjects は、その座標系を基準とした相対的な場所を提供します。 アプリケーションが、1つのオリジンが提供する機能の制限を拡大するシーンを処理している場合は、SceneObjects を SpatialAnchors に固定するか、複数のシーンを生成して結合することができますが、わかりやすくするために、watertight のシーンが独自のオリジンに存在することを想定しています。
 
-次の Unity コードは、Windows 認識と Unity Api を使用して、座標系をまとめて配置する方法を示しています。 Unity の世界の原点に対応する SpatialCoordinateSystem の取得の詳細[について](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced)は、「 [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) and [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) 」、および「」と「」と「」を参照してください `.ToUnity()` `System.Numerics.Matrix4x4` `UnityEngine.Matrix4x4` 。
+次の Unity コードは、Windows 認識と Unity Api を使用して、座標系をまとめて配置する方法を示しています。 Unity の世界の出発点に対応する SpatialCoordinateSystem を取得する[方法の詳細につい](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced)ては、「 [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) and [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) 」を参照してください。
 
 ```cs
-public class SceneRootComponent : MonoBehavior
+private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)
 {
-    public SpatialCoordinateSystem worldOrigin;
-    public Scene scene;
-    SpatialCoordinateSystem sceneOrigin;
-    
-    void Start()
-    {
-        // Initialize a SpatialCoordinateSystem for the scene's node in the system's Spatial Graph.
-        scene.origin = SpatialGraphInteropPreview.CreateCoordinateSystemForNode(scene.OriginSpatialGraphNodeId);
-    }
-    
-    void Update()
-    {
-        // Try to get the current transform of the scene's spatial graph node.
-        // This may not be available, e.g. when tracking has been lost.
-        var sceneToWorld = sceneOrigin.TryGetTransformTo(worldOrigin);
-        if (sceneToWorld.HasValue)
-        {
-            // Convert the transform to Unity numerics and update the game object.
-            var sceneToWorldUnity = sceneToWorld.Value.ToUnity();
-            this.gameObject.transform.SetPositionAndRotation(sceneToWorldUnity.GetColumn(3), sceneToWorldUnity.rotation);
-        }
-    }
+
+      System.Numerics.Matrix4x4? sceneToUnityTransform = System.Numerics.Matrix4x4.Identity;
+
+      Windows.Perception.Spatial.SpatialCoordinateSystem sceneCoordinateSystem = Microsoft.Windows.Perception.Spatial.Preview.SpatialGraphInteropPreview.CreateCoordinateSystemForNode(scene.OriginSpatialGraphNodeId);
+      HolograhicFrameData holoFrameData =  Marshal.PtrToStructure<HolograhicFrameData>(UnityEngine.XR.XRDevice.GetNativePtr());
+      Windows.Perception.Spatial.SpatialCoordinateSystem unityCoordinateSystem = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(holoFrameData.ISpatialCoordinateSystemPtr);
+
+      sceneToUnityTransform = sceneCoordinateSystem.TryGetTransformTo(unityCoordinateSystem);
+
+      if(sceneToUnityTransform != null)
+      {
+          sceneToUnityTransform = ConvertRightHandedMatrix4x4ToLeftHanded(sceneToUnityTransform.Value);
+      }
+      else
+      {
+          return null;
+      }
+
+    return sceneToUnityTransform;
 }
 ```
 
-各 `SceneObject` には、 `Position` プロパティとプロパティがあります。これを使用すると、を含むの原点を基準として、 `Orientation` 対応するコンテンツを配置でき `Scene` ます。 たとえば、次の例では、ゲームがシーンルートの子であることを前提として、そのローカル位置と回転を、指定されたに合わせて割り当て `SceneObject` ます。
+それぞれに `SceneObject` 変換があり、そのオブジェクトに適用されます。 Unity では、右きき座標に変換し、次のようにローカル変換を割り当てます。
 
 ```cs
-void SetLocalTransformFromSceneObject(GameObject gameObject, SceneObject sceneObject)
+private System.Numerics.Matrix4x4 ConvertRightHandedMatrix4x4ToLeftHanded(System.Numerics.Matrix4x4 matrix)
 {
-    gameObject.transform.localPosition = sceneObject.Position.ToUnity();
-    gameObject.transform.localRotation = sceneObject.Orientation.ToUnity());
+    matrix.M13 = -matrix.M13;
+    matrix.M23 = -matrix.M23;
+    matrix.M43 = -matrix.M43;
+
+    matrix.M31 = -matrix.M31;
+    matrix.M32 = -matrix.M32;
+    matrix.M34 = -matrix.M34;
+
+    return matrix;
 }
+
+ private void SetUnityTransformFromMatrix4x4(Transform targetTransform, System.Numerics.Matrix4x4 matrix, bool updateLocalTransformOnly = false)
+ {
+    if(targetTransform == null)
+    {
+        return;
+    }
+
+    Vector3 unityTranslation;
+    Quaternion unityQuat;
+    Vector3 unityScale;
+
+    System.Numerics.Vector3 vector3;
+    System.Numerics.Quaternion quaternion;
+    System.Numerics.Vector3 scale;
+
+    System.Numerics.Matrix4x4.Decompose(matrix, out scale, out quaternion, out vector3);
+
+    unityTranslation = new Vector3(vector3.X, vector3.Y, vector3.Z);
+    unityQuat        = new Quaternion(quaternion.X, quaternion.Y, quaternion.Z, quaternion.W);
+    unityScale       = new Vector3(scale.X, scale.Y, scale.Z);
+
+    if(updateLocalTransformOnly)
+    {
+        targetTransform.localPosition = unityTranslation;
+        targetTransform.localRotation = unityQuat;
+    }
+    else
+    {
+        targetTransform.SetPositionAndRotation(unityTranslation, unityQuat);
+    }
+}
+
+// Assume we have an SU object called suObject and a unity equivalent unityObject
+
+System.Numerics.Matrix4x4 converted4x4LocationMatrix = ConvertRightHandedMatrix4x4ToLeftHanded(suObject.GetLocationAsMatrix());
+SetUnityTransformFromMatrix4x4(unityObject.transform, converted4x4LocationMatrix, true);
+        
 ```
 
 ### <a name="quad"></a>Quad
 
 四角形は、2D の配置シナリオを容易にするように設計されており、2D キャンバス UX 要素の拡張機能と考える必要があります。 四角形は SceneObjects のコンポーネントであり、3D でレンダリングできますが、クワッド Api 自体は、四角形が2D 構造体であると想定しています。 エクステントや形などの情報を提供し、配置のための Api を提供します。
 
-四角形は四角形のエクステントを持ちますが、任意の形の2D サーフェイスを表します。 3D 環境の四角形を操作するこれらの2D サーフェイス上の配置を有効にするには、この相互作用を可能にするユーティリティを提供します。 現在、シーンの理解には、 **Findセンター** のほとんどの配置と **GetOcclusionMask** という2つの関数が用意されています。 Findセンターのほとんどの配置は、オブジェクトを配置できるクワッド上の位置を特定し、指定した境界ボックスが基になるサーフェイスに存在することを保証するオブジェクトの最適な位置を検索する、高レベルの API です。
+四角形は四角形のエクステントを持ちますが、任意の形の2D サーフェイスを表します。 3D 環境の四角形を操作するこれらの2D サーフェイス上の配置を有効にするには、この相互作用を可能にするユーティリティを提供します。 現在、シーンの理解には、_ *Findセンター* のほとんどの配置 * と **GetSurfaceMask** という2つの関数が用意されています。 Findセンターのほとんどの配置は、オブジェクトを配置できるクワッド上の位置を特定し、指定した境界ボックスが基になるサーフェイスに存在することを保証するオブジェクトの最適な位置を検索する、高レベルの API です。
 
 > [!NOTE]
 > 出力の座標は、他の windows の Rect 型と同じように、左上隅が (x = 0, y = 0) である "クワッド空間" のクワッドに対して相対的です。 独自のオブジェクトのオリジンを操作するときは、必ずこのことを考慮してください。 
@@ -372,7 +414,11 @@ mesh.GetVertexPositions(positions);
 
 インデックス/頂点バッファーは >= インデックスまたは頂点の数である必要がありますが、それ以外は任意にサイズを変更して、効率的なメモリの再利用を可能にすることができます。
 
-## <a name="developing-with-scene-understandings"></a>シーン異なればを使用した開発
+### <a name="collidermesh"></a>ColliderMesh
+
+シーンオブジェクトは、メッシュと ColliderMeshes プロパティを使用してメッシュと collider メッシュのデータへのアクセスを提供します。 これらのメッシュは常に一致します。つまり、メッシュプロパティの i'th インデックスは、ColliderMeshes プロパティの i'th インデックスと同じ geometryh を表します。 ランタイム/オブジェクトで collider メッシュがサポートされている場合は、最も低いポリゴンを guarateed、次数が最も高く、アプリケーションで colliders を使用する場合は ColliderMeshes を使用することをお勧めします。 システムで colliders がサポートされていない場合、ColliderMeshes で返されるメッシュオブジェクトは、メッシュがメモリの制約を減らすことと同じオブジェクトになります。
+
+## <a name="developing-with-scene-understanding"></a>シーンの理解による開発
 
 この時点で、ランタイムと SDK について理解しているシーンのコア構成要素について理解しておく必要があります。 電力と複雑さの大部分は、アクセスパターン、3D フレームワークとの対話、およびこれらの Api の上に記述できるツールによって、空間プランニング、ルーム分析、ナビゲーション、物理などのより高度なタスクを実行できます。これらをサンプルでキャプチャして、シナリオを適切な方向に導くことができるようにすることをお勧めします。 説明していないサンプルまたはシナリオがある場合は、お知らせください。必要なものをドキュメント化してプロトタイプを作成します。
 

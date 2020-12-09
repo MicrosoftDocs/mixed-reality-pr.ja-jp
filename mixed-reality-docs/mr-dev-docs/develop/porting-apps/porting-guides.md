@@ -3,15 +3,15 @@ title: Windows Mixed Reality に VR アプリを移植する
 description: 既存のイマーシブアプリケーションを Windows Mixed Reality に移植する手順を説明したチュートリアルです。
 author: JBrentJ
 ms.author: alexturn
-ms.date: 07/07/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: ポート、unity、unreal、ミドルウェア、エンジン、UWP、Win32、移植、HoloLens ファースト世代、mixed reality ヘッドセット、windows mixed reality ヘッドセット、移行、Windows 10、入力マッピング、
-ms.openlocfilehash: aa9d45a4413fd8e0f5c7eec61f830635c2db6f4b
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 9f3e064c4462fc3d12a23bd94885476bcd2f9466
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443678"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925945"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Windows Mixed Reality に VR アプリを移植する
 

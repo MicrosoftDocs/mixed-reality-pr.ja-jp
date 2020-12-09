@@ -3,15 +3,15 @@ title: Unity 用入力移植ガイド
 description: Unity で Windows Mixed Reality の入力を処理する方法について説明します。
 author: thetuvix
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/9/2020
 ms.topic: article
 keywords: 入力、unity、移植
-ms.openlocfilehash: 4ad4b66b8238b3d00142fd14161113c6b912641c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 053918ec62f83c74655b0d4bb09a2b45b62bfc53
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683287"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925877"
 ---
 # <a name="input-porting-guide-for-unity"></a>Unity 用入力移植ガイド
 
@@ -37,14 +37,14 @@ Windows Mixed Reality では、さまざまなフォームファクターでモ�
 
 * **グリップ** は、HoloLens によって検出されたハンドの位置を表します。または、運動コントローラーを持つパームです。
     * イマーシブヘッドセットでは、この方法を使用して、 **ユーザーの手** や、剣や銃などの **ユーザーの手に保持** されているオブジェクトをレンダリングすることをお勧めします。
-    * **グリップの位置** : コントローラーを自然に保持するときのパーム重心。グリップ内の位置を中央に配置するように左右に調整されます。
-    * **グリップの向きの右軸** : 手を完全に開いて平らな5本の指を作成した場合 (左側のパームから前方、右側のパームから後方)、
-    * **グリップの向きの前方軸** : ハンドを部分的に閉じた場合 (コントローラーを保持している場合と同様)、非表示の指で形成されたチューブを通過する光線。
-    * **グリップの向きの上位軸** : 右および順方向の定義によって暗黙的に示される上位軸。
-    * このグリップには、Unity のクロスベンダ入力 API (XR) を使用してアクセスでき **[ます。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/Rotation** ) または Windows 固有の API ( **TryGetPosition/rotation** ) を使用して、グリップを要求します。
+    * **グリップの位置**: コントローラーを自然に保持するときのパーム重心。グリップ内の位置を中央に配置するように左右に調整されます。
+    * **グリップの向きの右軸**: 手を完全に開いて平らな5本の指を作成した場合 (左側のパームから前方、右側のパームから後方)、
+    * **グリップの向きの前方軸**: ハンドを部分的に閉じた場合 (コントローラーを保持している場合と同様)、非表示の指で形成されたチューブを通過する光線。
+    * **グリップの向きの上位軸**: 右および順方向の定義によって暗黙的に示される上位軸。
+    * このグリップには、Unity のクロスベンダ入力 API (XR) を使用してアクセスでき **[ます。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/Rotation**) または Windows 固有の API (**TryGetPosition/rotation**) を使用して、グリップを要求します。
 * **ポインター** は、前方を指し示すコントローラーの先端を表します。
     * この方法は、コントローラーモデル自体をレンダリングするときに **UI をポイント** するときに raycast するために使用することをお勧めします。
-    * 現時点では、ポインターのポーズは、Windows 固有の API ( **Sourcestate/Rotation** ) を介してのみ使用でき、ポインターのポーズを要求します。
+    * 現時点では、ポインターのポーズは、Windows 固有の API (**Sourcestate/Rotation**) を介してのみ使用でき、ポインターのポーズを要求します。
 
 これらの発生座標はすべて Unity のワールド座標で表現されます。
 

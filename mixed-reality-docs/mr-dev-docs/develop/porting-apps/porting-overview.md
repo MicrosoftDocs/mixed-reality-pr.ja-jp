@@ -3,15 +3,15 @@ title: 移植の概要
 description: 既存のアプリケーションを混在させて使用するためのさまざまな移植オプションの概要について説明します。
 author: hferrone
 ms.author: v-hferrone
-ms.date: 10/02/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: 移植, unity, ミドルウェア, エンジン, UWP, Win32
-ms.openlocfilehash: 074e0792a5ed43bb56b8f337613234efbd166eb7
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 1ec03610dd26e9f75162795cbdded77a8e0189ce
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443544"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925830"
 ---
 # <a name="porting-overview"></a>移植の概要
 

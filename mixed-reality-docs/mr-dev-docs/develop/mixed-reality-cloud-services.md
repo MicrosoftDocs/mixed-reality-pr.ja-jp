@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: Azure クラウド サービス
+title: Azure 複合現実クラウド サービスの概要
 description: Mixed Reality クラウド サービスのリソース。
 author: hferrone
 ms.author: v-haferr
@@ -8,14 +8,14 @@ ms.date: 06/5/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 開発する, 開発, HoloLens, クラウド サービス, Azure, リモート レンダリング, 空間アンカー, Cognitive Services, 認知, Unity, 機械学習, 音声翻訳, コンピューター ビジョン, Microsoft Graph
-ms.openlocfilehash: 640e99637f9cfa1786e1e78ed5cec396748b2f47
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 338574ac5a06841a6a2a9920fc0dfbdfdbfd0bbf
+ms.sourcegitcommit: eba192e1cfaef35bc55161d4e9a0adea36ff1a18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679691"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96526059"
 ---
-# <a name="azure-cloud-services"></a>Azure クラウド サービス
+# <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 複合現実クラウド サービスの概要
 
 ![ Azure Spatial Anchors の画像](../design/images/AzureSpatialAnchors.jpg)
 

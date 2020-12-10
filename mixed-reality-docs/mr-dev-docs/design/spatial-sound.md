@@ -2,16 +2,16 @@
 title: 混合現実のオーディオ
 description: 混合現実のオーディオを使用すると、UI インタラクションのユーザーの信頼を高め、ユーザーのエクスペリエンスをこちらことができます。
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: 空間サウンド, サラウンドサウンド, 3d オーディオ, 3d サウンド, 空間オーディオ, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, MRTK, Mixed Reality ツールキット, ケーススタディ, acoustics
-ms.openlocfilehash: 50a5b4a634eec5a326158975f70fa385ce7af6a8
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 2fe40f1b271e7ae775c333951286e87c5196c20b
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703258"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002497"
 ---
 # <a name="audio-in-mixed-reality"></a>混合現実のオーディオ
 オーディオは、混合現実の設計と生産性の重要な部分です。 サウンドは次のとおりです。

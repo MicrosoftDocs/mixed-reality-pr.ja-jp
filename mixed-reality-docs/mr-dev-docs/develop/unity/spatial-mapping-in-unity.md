@@ -6,16 +6,16 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、空間マッピング、レンダラー、collider、メッシュ、スキャン、コンポーネント、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 60196a85689ce6c4c190acdfe305fc12982ace4c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 2e5518b1a54f967762143bb8602141b4199a2d54
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677401"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002517"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity の空間マッピング
 
-このトピックでは、Unity プロジェクトで [空間マッピング](../../design/spatial-mapping.md) を使用する方法について説明します。また、HoloLens デバイスを中心にしたワールドの表面を表す三角形のメッシュを取得して、配置、閉鎖、ルーム分析などを行う方法について説明します。
+[空間マッピング](../../design/spatial-mapping.md) を使用すると、HoloLens デバイスを中心に世界中のサーフェイスを表す三角形のメッシュを取得できます。 配置、遮蔽、およびルーム分析に surface データを使用して、Unity プロジェクトに immersion の線量を追加できます。
 
 Unity には、次の方法で開発者に公開される空間マッピングの完全なサポートが含まれています。
 1. MixedRealityToolkit で使用可能な空間マッピングコンポーネント。これは、空間マッピングを開始するための便利で迅速なパスを提供します。
@@ -34,7 +34,7 @@ Unity には、次の方法で開発者に公開される空間マッピング�
     </colgroup>
     <tr>
         <td><strong>機能</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (第 1 世代)</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (最初の世代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
@@ -52,19 +52,20 @@ Unity には、次の方法で開発者に公開される空間マッピング�
 
 SpatialPerception 機能を有効にする方法:
 1. Unity エディターで、 **[プレーヤーの設定** ] ウィンドウを開きます (> プロジェクトの設定を編集し > player)
-2. [ **Windows ストア** ] タブをクリックします。
+2. [ **Windows ストア** ] タブを選択します。
 3. [**発行の設定]** を展開し、 **[機能]** ボックスの一覧の **"SpatialPerception"** 機能を確認します。
 
-既に Unity プロジェクトを Visual Studio ソリューションにエクスポートしている場合は、新しいフォルダーにエクスポートするか、 [Visual studio の package.appxmanifest でこの機能](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)を手動で設定する必要があることに注意してください。
+> [!NOTE]
+> Unity プロジェクトを Visual Studio ソリューションに既にエクスポートしている場合は、新しいフォルダーにエクスポートするか、 [Visual studio の package.appxmanifest でこの機能](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)を手動で設定する必要があります。
 
 空間マッピングでは、少なくとも10.0.10586.0 の MaxVersionTested が必要です。
-1. Visual Studio でソリューションエクスプローラーで package.appxmanifest を右クリックし、[**コードの表示**] を選択し **ます。**
+1. Visual Studio のソリューションエクスプローラーで package.appxmanifest を右クリックし、[**コードの表示**] を選択し **ます。**
 2. **TargetDeviceFamily** を指定する行を探し、 **maxversiontested = ""** を **maxversiontested 済み = "10.0.10586.0"** に変更します。
 3. Package.appxmanifest を **保存** します。
 
 ## <a name="getting-started-with-unitys-built-in-spatial-mapping-components"></a>Unity の組み込みの空間マッピングコンポーネントの概要
 
-Unity には、アプリに空間マッピングを簡単に追加するためのコンポーネントが2つ用意されています。空間マッピングの **レンダラー** と **空間マッピングの Collider** です。
+Unity には、アプリに空間マッピングを簡単に追加するためのコンポーネントとして、 **空間マッピングレンダラー** と **空間マッピング Collider** の2つのコンポーネントが用意されています。
 
 ### <a name="spatial-mapping-renderer"></a>空間マッピングレンダラー
 
@@ -96,12 +97,12 @@ Unity アプリでこれらの2つのコンポーネントを使用するには�
 
 ## <a name="using-the-low-level-unity-spatial-mapping-api"></a>低レベルの Unity 空間マッピング API の使用
 
-空間マッピングレンダラーコンポーネントと空間マッピング Collider コンポーネントから取得するよりも制御が必要な場合は、低レベルの空間マッピングスクリプト Api を使用できます。
+空間マッピングレンダラーおよび空間マッピング Collider コンポーネントが提供するよりも制御が必要な場合は、低レベルの空間マッピング Api を使用します。
 
 **名前空間:** *UNITYENGINE. XR*<br>
 **型**: *SurfaceObserver*、 *SurfaceChange*、 *SurfaceData*、 *SurfaceId*
 
-空間マッピング Api を使用するアプリケーションで推奨されるフローの概要を次に示します。
+以下のセクションでは、空間マッピング Api を使用するアプリケーションの提案されたフローについて説明しました。
 
 ### <a name="set-up-the-surfaceobservers"></a>SurfaceObserver を設定する
 
@@ -135,8 +136,8 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 
 ### <a name="handling-surface-changes"></a>サーフェイスの変更の処理
 
-処理する主なケースがいくつかあります。 同じコードパスを使用して削除することができる更新 & が追加されました。
-* この例で追加された & 更新されたケースでは、このメッシュを表す SurfaceData オブジェクトをディクショナリから追加または取得し、必要なコンポーネントを含む構造体を作成してから、RequestMeshDataAsync を呼び出して、シーン内のメッシュデータと位置を設定します。
+処理される主なケースがいくつかあります。これは、同じコードパスを使用したり、削除したりすることができます。
+* 追加および更新されたケースでは、このメッシュを表す SurfaceData オブジェクトをディクショナリから追加または取得し、必要なコンポーネントを含む構造体を作成します。次に、RequestMeshDataAsync を呼び出して、シーン内のメッシュデータと位置を設定します。
 * 削除された場合は、このメッシュを表すオブジェクトをディクショナリから削除し、破棄します。
 
 ```cs
@@ -189,7 +190,7 @@ System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects 
 
 ### <a name="handling-data-ready"></a>データの準備完了
 
-OnDataReady ハンドラーは、SurfaceData オブジェクトを受け取ります。 WorldAnchor、MeshFilter、および (必要に応じて) MeshCollider オブジェクトには、関連付けられている空間サーフェスの最新の状態が反映されます。 必要に応じて、MeshFilter オブジェクトのメッシュメンバーにアクセスして、メッシュデータの分析や [処理](../../design/spatial-mapping.md#mesh-processing) を実行します。 最新のメッシュを使用して空間サーフェスをレンダリングし、必要に応じて物理衝突と raycasts に使用します。 SurfaceData の内容が null でないことを確認することが重要です。
+OnDataReady ハンドラーは、SurfaceData オブジェクトを受け取ります。 WorldAnchor、MeshFilter、および (必要に応じて) MeshCollider オブジェクトには、関連付けられている空間サーフェスの最新の状態が反映されます。 必要に応じて、MeshFilter オブジェクトのメッシュメンバーにアクセスして、メッシュデータを分析および [処理](../../design/spatial-mapping.md#mesh-processing) します。 最新のメッシュを使用して空間サーフェスをレンダリングし、必要に応じて物理衝突と raycasts に使用します。 SurfaceData の内容が null でないことを確認することが重要です。
 
 ### <a name="start-processing-on-updates"></a>更新の処理を開始します
 
@@ -214,23 +215,23 @@ void Start () {
 
 ## <a name="higher-level-mesh-analysis-spatialunderstanding"></a>高レベルのメッシュ分析: SpatialUnderstanding
 
-<a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>は、Holographic Unity api に基づいて構築された holographic 開発用の便利なユーティリティコードを集めたものです。
+<a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>は、Unity の holographic api 上に構築された holographic 開発用のユーティリティコードのコレクションです。
 
 ### <a name="spatial-understanding"></a>空間の理解
 
-物理的な世界にホログラムを配置するときは、多くの場合、空間マッピングのメッシュとサーフェス平面を超えることをお勧めします。 Procedurally の配置が完了したら、より高いレベルの環境を理解することをお勧めします。 これには通常、floor、天井、および壁面の決定を行う必要があります。 また、配置の制約のセットに対して最適化して、holographic オブジェクトにとって最も望ましい物理的な場所を決定することもできます。
+ホログラムを物理的な世界に配置する場合、多くの場合、空間マッピングのメッシュとサーフェス平面を超えることをお勧めします。 Procedurally の配置が完了したら、より高いレベルの環境を理解することをお勧めします。 これには通常、floor、天井、および壁面の決定を行う必要があります。 また、配置の制約のセットに対して最適化を行い、holographic オブジェクトに最適な物理的な場所を決定することもできます。
 
-若い Conker とフラグメントの開発中に、Asobo スタジオはこの問題に直面し、この目的のための部屋のソルバーを開発していました。 これらの各ゲームにはゲーム固有のニーズがありましたが、中心的な空間認識テクノロジを共有しています。 HoloToolkit ライブラリは、このテクノロジをカプセル化しています。これにより、壁上の空のスペースをすばやく検索したり、オブジェクトを天井に配置したり、文字の位置を識別したり、その他の多くの空間を理解したりすることができます。
+この問題は、若い Conker とフラグメントの開発中に、部屋のソルバーを開発することによって発生します。 これらの各ゲームにはゲーム固有のニーズがありましたが、中心的な空間認識テクノロジを共有しています。 HoloToolkit ライブラリは、このテクノロジをカプセル化しています。これにより、壁上の空のスペースをすばやく検索したり、オブジェクトを天井に配置したり、文字の位置を識別したり、その他の多くの空間を理解したりすることができます。
 
 すべてのソースコードが含まれているので、ニーズに合わせてカスタマイズし、その機能強化をコミュニティと共有することができます。 C++ ソルバーのコードは、UWP dll にラップされ、MixedRealityToolkit 内に含まれている drop in prefab を使用して Unity に公開されています。
 
 ### <a name="understanding-modules"></a>モジュールについて
 
-モジュールによって公開される3つの主要なインターフェイスは、単純な surface と空間クエリのトポロジ、オブジェクト検出のための図形、およびオブジェクトセットの配置に基づくオブジェクト配置ソルバーです。 以下で、これらのそれぞれについて説明します。 3つの主要なモジュールインターフェイスに加えて、射線のキャストインターフェイスを使用してタグ付きサーフェス型を取得し、カスタムの watertight playspace メッシュをコピーすることができます。
+モジュールによって公開される3つの主要なインターフェイスとして、単純な surface と空間クエリのトポロジ、オブジェクト検出のための構造、およびオブジェクトセットの制約ベースの配置に対するオブジェクト配置ソルバーがあります。 以下で、これらのそれぞれについて説明します。 3つの主要なモジュールインターフェイスに加えて、射線のキャストインターフェイスを使用してタグ付きサーフェス型を取得し、カスタムの watertight playspace メッシュをコピーすることができます。
 
 ### <a name="ray-casting"></a>射線のキャスト
 
-部屋がスキャンされ、完了すると、床、天井、壁などの表面にラベルが内部的に生成されます。 "PlayRaycastResult Eraycast" 関数は、射線を受け取り、光線が既知の表面と競合している場合は、その表面に関する情報を "" の形式で返します。
+部屋のスキャンが完了すると、床、天井、壁面などの表面にラベルが内部的に生成されます。 "PlayRaycastResult Eraycast" 関数は、射線を受け取り、光線が既知の表面と競合している場合は、その表面に関する情報を "" の形式で返します。
 
 ```cpp
 struct RaycastResult
@@ -258,7 +259,7 @@ struct RaycastResult
 };
 ```
 
-内部的には、raycast は、playspace の計算された8cm キューブ voxel 表現に対して計算されます。 各 voxel には、処理されたトポロジデータを含む surface 要素のセットが含まれています (「」)。 交差する voxel セルに含まれているが比較され、トポロジ情報の検索に使用される最適な一致が得られます。 このトポロジデータには、"SurfaceTypes" 列挙型の形式で返されるラベルと、交差するサーフェイスの表面領域が含まれます。
+内部的には、raycast は、playspace の計算済みの 8 cm キューブ voxel 表現に対して計算されます。 各 voxel には、処理されたトポロジデータを含む surface 要素のセットが含まれています (「」)。 交差する voxel セルに含まれているが比較され、トポロジ情報を検索するために使用される最適な一致が比較されます。 このトポロジデータには、"SurfaceTypes" 列挙型の形式で返されるラベルと、交差するサーフェイスの表面領域が含まれます。
 
 Unity のサンプルでは、カーソルは各フレームに射線をキャストします。 まず、Unity の colliders に対して行います。 2つ目は、モジュールのワールド表現を理解することです。 最後に、UI 要素を繰り返します。 このアプリケーションでは、UI の優先順位を取得し、結果を理解した後、Unity の colliders を取得します。 SurfaceType は、カーソルの横にテキストとして報告されます。
 
@@ -267,7 +268,10 @@ Unity のサンプルでは、カーソルは各フレームに射線をキャ�
 
 ### <a name="topology-queries"></a>トポロジクエリ
 
-DLL 内では、トポロジマネージャーは環境のラベル付けを処理します。 前述のように、データの大部分は、voxel ボリューム内に含まれる、1つのデータに格納されます。 さらに、"Playspace 情報" 構造体は、再生スペースに関する情報を格納するために使用されます。これには、ワールドアラインメント (下記の詳細情報)、floor、および天井高さが含まれます。 ヒューリスティックは、floor、シーリング、および壁面を決定するために使用されます。 たとえば、1 ~ 2 の範囲を超える水平方向サーフェイスは、床面と見なされます。 このプロセスでは、スキャン処理中のカメラパスも使用されることに注意してください。
+DLL 内では、トポロジマネージャーは環境のラベル付けを処理します。 前述のように、データの大部分は、voxel ボリューム内に含まれる、1つのデータに格納されます。 さらに、"Playspace 情報" 構造体は、再生スペースに関する情報を格納するために使用されます。これには、ワールドアラインメント (下記の詳細情報)、floor、および天井高さが含まれます。 ヒューリスティックは、floor、シーリング、および壁面を決定するために使用されます。 たとえば、1 ~ m2 の表面領域を持つ最大値と最小値の水平方向の表面は、床と見なされます。 
+
+> [!NOTE]
+> スキャン処理中のカメラパスは、このプロセスでも使用されます。
 
 トポロジマネージャーによって公開されるクエリのサブセットは、dll を通じて公開されます。 公開されているトポロジクエリは次のとおりです。
 
@@ -306,13 +310,14 @@ struct TopologyResult
 };
 ```
 
-Unity サンプルでは、これらの各クエリが仮想 UI パネルのボタンにリンクされていることに注意してください。 サンプルでは、これらの各クエリのパラメーターを妥当な値にハードコーディングしています。 その他の例については、サンプルコードの SpaceVisualizer.cs を参照してください。
+> [!NOTE]
+> Unity のサンプルでは、これらの各クエリは仮想 UI パネルのボタンにリンクされています。 サンプルでは、これらの各クエリのパラメーターを妥当な値にハードコーディングしています。 その他の例については、サンプルコードの SpaceVisualizer.cs を参照してください。
 
 ### <a name="shape-queries"></a>クエリのシェイプ
 
-Dll 内で、shape analyzer ("ShapeAnalyzer_W") は、トポロジアナライザーを使用して、ユーザーが定義したカスタム図形と照合します。 Unity のサンプルでは、図形のセットを定義し、[図形] タブ内の [アプリ内クエリ] メニューを使用して結果を表示します。その目的は、ユーザーが独自のオブジェクト図形のクエリを定義し、アプリケーションの必要に応じてそれらを利用できるようにすることです。
+Dll では、図形アナライザー ("ShapeAnalyzer_W") がトポロジアナライザーを使用して、ユーザーが定義したカスタム図形と照合します。 Unity のサンプルでは、図形のセットを定義し、[図形] タブ内の [アプリ内クエリ] メニューを使用して結果を表示します。その目的は、ユーザーが独自のオブジェクト図形のクエリを定義し、アプリケーションの必要に応じてそれらを利用できるようにすることです。
 
-図形の分析は、水平方向のサーフェイスでのみ動作することに注意してください。 たとえば、ソファは、平らな座席の表面とソファの上面によって定義されています。 Shape クエリでは、特定のサイズ、高さ、および縦横範囲の2つのサーフェスが検索され、2つのサーフェスがアラインされ、接続されています。 Api の用語を使用して、ソファ座席と背面は形状コンポーネントであり、アラインメント要件はシェイプコンポーネントの制約です。
+図形の分析は、水平方向のサーフェイスでのみ機能します。 たとえば、ソファは、平らな座席の表面とソファの上面によって定義されています。 Shape クエリでは、特定のサイズ、高さ、および縦横範囲の2つのサーフェスが検索され、2つのサーフェスがアラインされ、接続されています。 Api の用語を使用して、ソファ座席と背面は形状コンポーネントであり、アラインメント要件はシェイプコンポーネントの制約です。
 
 "Sittable" オブジェクトの Unity サンプル (ShapeDefinition.cs) で定義されているクエリの例を次に示します。
 
@@ -331,9 +336,9 @@ shapeComponents = new List<ShapeComponent>()
 AddShape("Sittable", shapeComponents);
 ```
 
-各図形クエリは、一連の図形コンポーネントによって定義されます。各図形コンポーネントには、一連のコンポーネント制約と、コンポーネント間の依存関係を示す一連の図形制約があります。 この例では、1つのコンポーネント定義に3つの制約が含まれており、コンポーネント間に図形の制約はありません (コンポーネントが1つだけであるため)。
+各図形クエリは、一連の図形コンポーネントによって定義されます。各図形コンポーネントには、一連のコンポーネント制約と、コンポーネント間の依存関係を示す一連の図形制約があります。 この例では、1つのコンポーネント定義に3つの制約が含まれており、コンポーネント間に図形の制約はありません (コンポーネントは1つだけです)。
 
-これに対し、ソファ図形には、2つの図形コンポーネントと4つのシェイプ制約があります。 コンポーネントは、ユーザーのコンポーネントリスト内のインデックスによって識別されることに注意してください (この例では0と 1)。
+これに対し、ソファ図形には、2つの図形コンポーネントと4つのシェイプ制約があります。 コンポーネントは、ユーザーのコンポーネントリスト内のインデックスによって識別されます (この例では0と 1)。
 
 ```cs
 shapeConstraints = new List<ShapeConstraint>()
@@ -416,7 +421,7 @@ Solver_PlaceObject(
     UnderstandingDLL.GetStaticObjectPlacementResultPtr());
 ```
 
-成功した場合、配置位置、次元、および向きを含む "Objectplacement Ementresult" 構造体が返されます。 また、配置は、配置されたオブジェクトの dll の内部リストに追加されます。 後続の配置クエリでは、このオブジェクトが考慮されます。 Unity サンプルの "LevelSolver.cs" ファイルには、クエリの例が多数含まれています。
+成功した場合は、配置位置、次元、および向きを含む "Objectplacement Ementresult" 構造体が返されます。 また、配置は、配置されたオブジェクトの dll の内部リストに追加されます。 後続の配置クエリでは、このオブジェクトが考慮されます。 Unity サンプルの "LevelSolver.cs" ファイルには、クエリの例が多数含まれています。
 
 ![オブジェクトの配置の結果](images/su-objectplacement-1000px.jpg)<br>
 *図 3: 青色のボックスを使用して、カメラの位置ルールから離れた場所にあるフロアクエリの結果を確認する*
@@ -436,7 +441,7 @@ One-time scan process –
     Query functions will not function until after the scan has been finalized.
 ```
 
-ユーザー駆動型の playspace "描画" –スキャンフェーズ中に、ユーザーは再生速度を移動して、必要な領域を効果的に描画します。 生成されたメッシュは、このフェーズでユーザーからのフィードバックを提供するために重要です。 屋内で home または office セットアップ–クエリ関数は、フラットなサーフェイスと壁面を中心に設計されています。 これは、ソフトな制限です。 ただし、スキャンフェーズでは、主要軸と補助軸に沿ってメッシュテセレーションを最適化するために、主軸分析が完了します。 含まれている SpatialUnderstanding.cs ファイルは、スキャンフェーズプロセスを管理します。 次の関数を呼び出します。
+ユーザー駆動型の playspace "描画" –スキャンフェーズ中に、ユーザーは再生速度を移動して見て、含まれる必要がある領域を効果的に描画します。 生成されたメッシュは、このフェーズでユーザーからのフィードバックを提供するために重要です。 屋内で home または office セットアップ–クエリ関数は、フラットなサーフェイスと壁面を中心に設計されています。 これは、ソフトな制限です。 ただし、スキャンフェーズでは、主要軸と補助軸に沿ってメッシュテセレーションを最適化するために、主軸分析が完了します。 含まれている SpatialUnderstanding.cs ファイルは、スキャンフェーズプロセスを管理します。 次の関数を呼び出します。
 
 ```
 SpatialUnderstanding_Init – Called once at the start.
@@ -465,7 +470,7 @@ Import_UnderstandingMesh –
 
 ### <a name="understanding-mesh"></a>メッシュについて
 
-Dll を理解すると、内部的に再生スペースが8cm サイズの voxel キューブのグリッドとして格納されます。 スキャンの初期部分では、主要なコンポーネント分析が完了して、部屋の軸が決定されます。 内部的には、これらの軸に合わせて voxel 領域を格納します。 メッシュは、voxel ボリュームから isosurface を抽出することによって、約1秒ごとに生成されます。 
+Dll を理解することで、内部的には、playspace を 8 cm サイズの voxel キューブのグリッドとして格納します。 スキャンの初期部分では、主要なコンポーネント分析が完了して、部屋の軸が決定されます。 内部的には、これらの軸に合わせて voxel 領域を格納します。 メッシュは、voxel ボリュームから isosurface を抽出することによって、約1秒ごとに生成されます。 
 
 ![Voxel ボリュームから生成されたメッシュを生成しました](images/su-custommesh.jpg)<br>
 *Voxel ボリュームから生成されたメッシュを生成しました*
@@ -479,10 +484,10 @@ Dll を理解すると、内部的に再生スペースが8cm サイズの voxel
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-私たちが用意した Unity 開発チェックポイント体験に従っている場合、読者は MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素に進むことができます。 
+Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。 
 
 > [!div class="nextstepaction"]
-> [[テキスト]](text-in-unity.md)
+> [Text](text-in-unity.md)
 
 または、Mixed Reality プラットフォームの機能と API に移動します。
 

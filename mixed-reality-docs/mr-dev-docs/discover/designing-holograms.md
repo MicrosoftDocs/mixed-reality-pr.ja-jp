@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
 keywords: MRTK, Mixed Reality Toolkit, ホログラム, ホログラムの設計, 学習, サンプルアプリ, mixed reality ヘッドセット, 仮想現実のヘッドセット, 仮想現実とは
-ms.openlocfilehash: 243b6f28da7b074b3ff6d48794d525ac08281fa7
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: bf904b319ed5b452f254b659315d9b531832a4d5
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355435"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002587"
 ---
 # <a name="the-making-of-designing-holograms"></a>ホログラムの設計
 
@@ -122,6 +122,32 @@ UI デザインの作成を開始したときに、情報の転送だけでな�
 明らかにアイコンは、単純なテキストよりもはるかに優れています。そのため、さらに強力なガイダンスを提供するために、一連のアニメーションオブジェクトとアバターの作成を開始し、それぞれのシナリオで何が行われているか、およびその使用方法についての小さなストーリーを示しています。
 
 ![対話型の holographic メニューシステムのアニメーション GIF](images/designing-holograms/creative-process.gif)
+
+## <a name="core-concepts"></a>主要な概念
+
+**ホログラフィック フレーム**
+
+![Holographic フレームが強調表示されている dollhouse を囲むユーザーのアニメーション GIF](images/designing-holograms/FOVandFOI.gif)
+
+**座標系**
+
+![座標系が強調表示されている dollhouse を囲むユーザーのアニメーション GIF](images/designing-holograms/CoordinateSystems.gif)
+
+**視線追跡**
+
+![外観が強調表示されている固定のホログラムを見ているユーザーのアニメーション GIF](images/designing-holograms/EyeTracking.gif)
+
+**ルームスキャンの視覚化と空間マッピング**
+
+![マップされている dollhouse 内のすべてのサーフェイスのアニメーション GIF](images/designing-holograms/SpatialMapping.gif)
+
+**シーンの理解**
+
+![認識されている dollhouse 内のオブジェクトのアニメーション GIF](images/designing-holograms/SceneUnderstanding.gif)
+
+**手書き線を使用したポイントアンドコミット**
+
+![ハンドレイが強調表示されているユーザーのアニメーション GIF](images/designing-holograms/HandRays.gif)
 
 ## <a name="try-it-out-moments"></a>"試してみる"
 

@@ -2,16 +2,16 @@
 title: 空間オーディオチュートリアル-2. ボタンの対話式操作サウンドの立体化
 description: ボタンをプロジェクトに追加し、ボタンの相互作用サウンドを spatialize します。
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、ヘッド関連の転送関数、リバーブ、Microsoft Spatializer、prefabs、volume curve
-ms.openlocfilehash: eb550c3127e13926d73428b337abfd7cf9872eb7
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 62825ed8922cd904212160748018446cbc76b839
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678191"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002597"
 ---
 # <a name="spatializing-button-interaction-sounds"></a>ボタンの対話式操作サウンドの立体化
 

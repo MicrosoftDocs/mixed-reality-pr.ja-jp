@@ -2,16 +2,16 @@
 title: 空間オーディオチュートリアル-5。 リバーブを使用して立体オーディオに距離を追加する
 description: リバーブ効果を追加して、空間オーディオに対する距離バリエーションの意味を高めます。
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、ヘッド関連の転送関数、リバーブ、Microsoft Spatializer、オーディオミキサー、SFX リバーブ
-ms.openlocfilehash: d688955910d667edbdb79e63dab16587e66064a4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: c63e5a239806c133e814eee8b44cbfb30f55aa5d
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679701"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002617"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>リバーブを使用して立体オーディオに距離を追加する
 

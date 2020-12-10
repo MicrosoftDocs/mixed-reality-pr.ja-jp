@@ -6,8 +6,6 @@
   items:
     - name: Azure 複合現実クラウド サービスの概要
       href: mixed-reality-cloud-services.md
-    - name: Mixed Reality Learning の概要
-      href: mr-learning-overview.md
     - name: サンプルとおすすめアプリ
       href: features-and-samples.md
 - name: アプリの移植
@@ -254,6 +252,8 @@
   items:
     - name: Unreal 開発の概要
       href: unreal/unreal-development-overview.md
+    - name: Unreal でのプロジェクトのアップグレード
+      href: unreal/unreal-porting.md
     - name: チュートリアル
       items:
         - name: MRTK UX ツールでチェス アプリを構築する
@@ -310,8 +310,6 @@
           href: unreal/unreal-deploying.md
         - name: Microsoft Store への発行
           href: unreal/unreal-publishing-to-store.md
-        - name: Unreal でのプロジェクトのアップグレード
-          href: unreal/unreal-porting.md
         - name: Unreal のパフォーマンスに関する推奨事項
           href: unreal/performance-recommendations-for-unreal.md
         - name: Unreal の素材に関する推奨事項

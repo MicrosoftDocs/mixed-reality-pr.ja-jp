@@ -6,21 +6,21 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, フォーカスポイント, フォーカスプレーン, 安定化平面, 安定化ポイント, reprojection, LSR, 深度バッファー, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 48c0d26e89124b9dbfc1d108354fb6e751e51783
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: d2708dcf39f1d2c67ab1abf69f8330f9dd536ab0
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678691"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010273"
 ---
 # <a name="focus-point-in-unity"></a>Unity でのフォーカス ポイント
 
 **名前空間:** *UNITYENGINE. XR*<br>
 **型**: *HolographicSettings*
 
-[フォーカスポイント](../platform-capabilities-and-apis/hologram-stability.md#reprojection)は、現在表示されているホログラムに対して安定化を最適に実行する方法について、HoloLens にヒントを提供するように設定できます。
+現在表示されているホログラムを最適に安定させる方法についてのヒントを HoloLens に提供するには、 [フォーカスポイント](../platform-capabilities-and-apis/hologram-stability.md#reprojection) を使用します。
 
-Unity でフォーカスポイントを設定する場合は、 *HolographicSettings. SetFocusPointForFrame ()* を使用してすべてのフレームを設定する必要があります。 フレームにフォーカスポイントが設定されていない場合は、既定の安定化平面が使用されます。
+Unity でフォーカスポイントを設定する場合は、 *HolographicSettings. SetFocusPointForFrame ()* を使用してすべてのフレームを設定する必要があります。 フレームにフォーカスポイントが設定されていない場合、既定の安定化平面が使用されます。
 
 > [!NOTE]
 > 既定では、新しい Unity プロジェクトの [深度バッファーの共有を有効にする] オプションが設定されています。  このオプションを使用すると、アプリでフォーカスポイントを指定しなくても、イマーシブデスクトップヘッドセットまたは Windows 10 April 2018 更新プログラム (RS4) 以降を実行する HoloLens で実行されている Unity アプリが Windows に深度バッファーを送信し、ホログラムの安定性を自動的に最適化します。
@@ -48,11 +48,12 @@ void Update()
 }
 ```
 
-上の単純なコードでは、フォーカスがあるオブジェクトがユーザーの背後にある場合に、ホログラムの安定性が低下する可能性があることに注意してください。  このため、通常は、フォーカスポイントを手動で指定するのではなく、"深度バッファーの共有を有効にする" を設定する必要があります。
+> [!NOTE]
+> 上の単純なコードでは、フォーカスのあるオブジェクトがユーザーの背後で終了した場合に、ホログラムの安定性が低下する可能性があります。 通常は、フォーカスポイントを手動で指定する代わりに、[ **[深度バッファーの共有を有効にする] を設定することを](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** お勧めします。
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality プラットフォームの機能と Api の調査が途中で終了しています。 ここから、次のトピックに進むことができます。
+これまでに説明した Unity 開発の取り組みに従っている場合は、Mixed Reality プラットフォームの機能と Api を試してみることになります。 ここからは、次のトピックに進むことができます。
 
 > [!div class="nextstepaction"]
 > [追跡の損失](tracking-loss-in-unity.md)

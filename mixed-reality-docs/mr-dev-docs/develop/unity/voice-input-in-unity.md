@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 音声入力、KeywordRecognizer、GrammarRecognizer、マイク、ディクテーション、音声、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、MRTK、Mixed Reality ツールキット
-ms.openlocfilehash: 20e2b8d4b8a18f38e72db7889a5d00cf15bfc0eb
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 66aba92c14eca4183739687934e12db289cd2302
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679891"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010573"
 ---
 # <a name="voice-input-in-unity"></a>Unity の音声入力
 
@@ -27,9 +27,9 @@ KeywordRecognizer (2 種類の PhraseRecognizers のいずれか) では、ア�
 
 ## <a name="enabling-the-capability-for-voice"></a>音声用の機能を有効にする
 
-音声入力を利用するには、 **マイク** の機能がアプリに対して宣言されている必要があります。
+音声入力を使用するアプリの **マイク** 機能を宣言する必要があります。
 1. Unity エディターで、[Edit > Project Settings > Player] の順に移動して、windows media player の設定に移動します。
-2. [Windows ストア] タブをクリックします。
+2. [Windows ストア] タブを選択します。
 3. [発行設定 > 機能] セクションで、 **マイク** の機能を確認します。
 
 ## <a name="phrase-recognition"></a>フレーズ認識
@@ -58,7 +58,7 @@ KeywordRecognizer keywordRecognizer;
 Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 ```
 
-次に、キーワードを辞書に追加します (Start () メソッドの内部など)。 この例では、"activate" キーワードを追加しています。
+次に、キーワードを辞書に追加します。たとえば、Start () メソッドのようにします。 この例では、"activate" キーワードを追加しています。
 
 ```
 //Create keywords for keyword recognizer
@@ -126,7 +126,7 @@ grammarRecognizer = new GrammarRecognizer(Application.streamingDataPath + "/SRGS
 grammarRecognizer.OnPhraseRecognized += grammarRecognizer_OnPhraseRecognized;
 ```
 
-必要に応じて処理できる、SRGS 文法に指定されている情報を含むコールバックが取得されます。 重要な情報の大部分は、semanticMeanings 配列に記載されています。
+SRGS 文法に指定されている情報を含むコールバックが取得されます。これは適切に処理できます。 重要な情報の大部分は、semanticMeanings 配列に記載されています。
 
 ```
 private void Grammar_OnPhraseRecognized(PhraseRecognizedEventArgs args)
@@ -147,7 +147,7 @@ grammarRecognizer.Start();
 **名前空間:** *Unityengine。 Windows. Speech*<br>
 **型**: *DictationRecognizer*、 *SpeechError*、 *SpeechSystemStatus*
 
-DictationRecognizer を使用して、ユーザーの音声をテキストに変換します。 DictationRecognizer は [ディクテーション](../../design/voice-input.md#dictation) 機能を公開しており、仮説と語句の完了イベントの登録とリッスンをサポートしているので、ユーザーが話すときと後の両方でユーザーにフィードバックを提供できます。 Start () メソッドと Stop () メソッドは、それぞれディクテーション認識を有効または無効にします。 レコグナイザーを使用したら、Dispose () メソッドを使用して破棄し、使用するリソースを解放する必要があります。 これらのリソースは、それより前にリリースされていない場合、追加のパフォーマンスコストで、ガベージコレクション中に自動的に解放されます。
+DictationRecognizer を使用して、ユーザーの音声をテキストに変換します。 DictationRecognizer は [ディクテーション](../../design/voice-input.md#dictation) 機能を公開しており、仮説と語句の完了イベントの登録とリッスンをサポートしているので、ユーザーが話すときと後の両方でユーザーにフィードバックを提供できます。 Start () メソッドと Stop () メソッドは、それぞれディクテーション認識を有効または無効にします。 レコグナイザーを使用したら、Dispose () メソッドを使用して破棄し、使用するリソースを解放する必要があります。 これらのリソースは、その前にリリースされていない場合は、追加のパフォーマンスコストで、ガベージコレクション中に自動的に解放されます。
 
 ディクテーションを開始するには、いくつかの手順を実行する必要があります。
 1. 新しい DictationRecognizer を作成する
@@ -156,9 +156,9 @@ DictationRecognizer を使用して、ユーザーの音声をテキストに変
 
 ### <a name="enabling-the-capability-for-dictation"></a>ディクテーション用の機能を有効にする
 
-"インターネットクライアント" 機能は、前述の "マイク" 機能に加えて、ディクテーションを利用するためにアプリに対して宣言されている必要があります。
+"インターネットクライアント" 機能は、前述の "マイク" 機能と共に、ディクテーションを利用するためにアプリに対して宣言されている必要があります。
 1. Unity エディターで、[Edit > Project Settings > Player] ページに移動して、windows media player の設定に移動します。
-2. [Windows ストア] タブをクリックします。
+2. [Windows ストア] タブを選択します。
 3. [発行の設定 > 機能] セクションで、 **Internetclient** の機能を確認します。
 
 ### <a name="dictationrecognizer"></a>DictationRecognizer
@@ -269,10 +269,10 @@ dictationRecognizer.Dispose();
 
 **ヒント**
 * Start () メソッドと Stop () メソッドは、それぞれディクテーション認識を有効または無効にします。
-* レコグナイザーを使用したら、Dispose () メソッドを使用して破棄し、使用するリソースを解放する必要があります。 これらのリソースは、それより前にリリースされていない場合、追加のパフォーマンスコストで、ガベージコレクション中に自動的に解放されます。
+* レコグナイザーを使用したら、Dispose () メソッドを使用して破棄し、使用するリソースを解放する必要があります。 これらのリソースは、その前にリリースされていない場合は、追加のパフォーマンスコストで、ガベージコレクション中に自動的に解放されます。
 * タイムアウトは、一定の時間が経過すると発生します。 これらのタイムアウトは、DictationComplete イベントで確認できます。 次の2つの点に注意する必要があります。
-   1. 認識エンジンが起動し、最初の5秒間オーディオが聞こえない場合は、タイムアウトします。
-   2. 認識エンジンが結果を指定した後、20秒間無音の状態になると、タイムアウトします。
+   1. 認識エンジンが起動し、最初の5秒間オーディオが聞こえない場合は、タイムアウトになります。
+   2. 認識エンジンから結果が得られたが、20秒間、無音が聞こえた場合、タイムアウトになります。
 
 ## <a name="using-both-phrase-recognition-and-dictation"></a>語句認識とディクテーションの両方を使用する
 
@@ -292,7 +292,7 @@ KeywordRecognizer を開始することもできます。これにより、Phras
 
 ## <a name="using-the-microphone-helper"></a>マイクヘルパーの使用
 
-GitHub の Mixed Reality Toolkit には、システムに使用可能なマイクがある場合に開発者にヒントを表示するマイクヘルパークラスが含まれています。 ここでの用途の1つは、システム上にマイクがあるかどうかを確認してから、アプリケーションで音声操作のヒントを表示することです。
+GitHub の Mixed Reality Toolkit には、システムに使用可能なマイクがある場合に開発者にヒントを表示するマイクヘルパークラスが含まれています。 アプリケーションで音声操作のヒントを表示する前に、システムにマイクがあるかどうかを確認する必要がある場合は、それを使用します。
 
 マイクヘルパースクリプトは、[ [入力/スクリプト/ユーティリティ] フォルダー](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs)にあります。 GitHub リポジトリには、ヘルパーの使用方法を示す [小さなサンプル](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) も含まれています。
 

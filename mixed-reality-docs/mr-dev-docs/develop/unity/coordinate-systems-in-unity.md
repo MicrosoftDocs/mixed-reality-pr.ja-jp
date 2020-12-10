@@ -1,17 +1,17 @@
 ---
 title: Unity の座標系
-description: Unity で、固定された、大規模で大規模な大規模な mixed reality エクスペリエンスを構築する方法について説明します。
+description: Unity で、固定された、継続的に拡大している大規模な環境で、世界規模で混在する現実のエクスペリエンスを構築する方法について説明します。
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 座標系、空間座標系、方向専用、固定スケール、継続スケール、部屋規模、ワールドスケール、360度、取り付けられている、継続的、部屋、ワールド、スケール、位置、向き、Unity、アンカー、空間アンカー、ワールドアンカー、ワールドロック、ワールドロック、ボディロック、ボディロック、追跡の損失、分離機能、境界、recenter、混合現実ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
-ms.openlocfilehash: 92b132bb75e88711fb4bf9fda3dee5b778a0be6e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 900c393bf9ab09f1ac49e3108488d081f8025c19
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678681"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010283"
 ---
 # <a name="coordinate-systems-in-unity"></a>Unity の座標系
 
@@ -24,7 +24,7 @@ Unity で mixed reality エクスペリエンスを構築するための最初�
 **名前空間:** *unityengine. XR*<br>
 **型:** *XRDevice*
 
-**向きのみ** または取り付けられた **スケールエクスペリエンス** を構築するには、Unity を固定の追跡領域の種類に設定する必要があります。 これにより、Unity のワールド座標系が、 [参照の静止フレーム](../../design/coordinate-systems.md#spatial-coordinate-systems)を追跡するように設定されます。 静止の追跡モードでは、アプリの起動時に、カメラの既定の場所 (前方が Z) の直前にあるエディターに配置されたコンテンツがユーザーの前に表示されます。
+**向きのみ** または取り付けられた **スケールエクスペリエンス** を構築するには、Unity を固定の追跡領域の種類に設定する必要があります。 静止した追跡領域は、Unity のワールド座標系を設定して、 [参照の静止フレーム](../../design/coordinate-systems.md#spatial-coordinate-systems)を追跡します。 静止の追跡モードでは、アプリの起動時に、カメラの既定の場所 (前方が Z) の直前にあるエディターに配置されたコンテンツがユーザーの前に表示されます。
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
@@ -52,7 +52,7 @@ InputTracking.Recenter();
 
 **大規模** または **部屋規模のエクスペリエンス** を実現するには、フロアを基準としたコンテンツを配置する必要があります。 ユーザーが定義したフロアレベルのオリジンとオプションの部屋の境界を表す **[空間ステージ](../../design/coordinate-systems.md#spatial-coordinate-systems)** を使用して、ユーザーのフロアについては、最初の実行時に設定します。
 
-Unity が世界の座標系をフロアレベルで運用していることを確認するには、Unity を RoomScale tracking space 型に設定し、セットが成功することを確認します。
+Unity が世界の座標系をフロアレベルで運用していることを確認するには、Unity が RoomScale の追跡領域の種類を使用していることを設定し、テストします。
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -65,16 +65,17 @@ else
 }
 ```
 * Settrackingspace 型によって true が返された場合、Unity は、そのワールド座標系を正常に切り替えて、 [参照のステージフレーム](../../design/coordinate-systems.md#spatial-coordinate-systems)を追跡します。
-* Settrackingspace 型から false が返された場合、Unity は参照のステージフレームに切り替えることができませんでした。ユーザーが環境にフロアを設定していない可能性があります。 これは一般的ではありませんが、別の部屋にステージが設定されていて、ユーザーが新しいステージを設定せずに現在の部屋にデバイスを移動した場合に発生する可能性があります。
+* Settrackingspace 型から false が返された場合、Unity は参照のステージフレームに切り替えることができませんでした。ユーザーが環境にフロアを設定していない可能性があります。 False の戻り値は一般的ではありませんが、ステージが別の部屋に設定されていて、ユーザーが新しいステージを設定せずに現在の部屋にデバイスを移動した場合に発生する可能性があります。
 
-アプリで RoomScale の追跡領域の種類が正常に設定されると、y = 0 平面に配置されたコンテンツがフロア上に表示されます。 (0, 0, 0) の原点は、部屋のセットアップ中にユーザーがそこしたフロア上の特定の場所になります。これは、セットアップ中に接続されていた前方方向を表す-Z です。
+アプリで RoomScale の追跡領域の種類が正常に設定されると、y = 0 平面に配置されたコンテンツがフロア上に表示されます。 0、0、0の原点は、部屋のセットアップ中にユーザーがそこしたフロア上の特定の場所になります。この位置は、セットアップ中に接続されていた前方方向を表します。
 
 **名前空間:** *UNITYENGINE XR*<br>
 **型:** *境界*
 
-スクリプトコードでは、TrackedArea の境界の種類を指定して、境界ポリゴンを取得するために、XR 型の TryGetGeometry メソッドを呼び出すことができます。 ユーザーが境界を定義している場合 (頂点の一覧を取得した場合)、ユーザーに **ルームスケールエクスペリエンス** を提供するのが安全であることがわかっています。ユーザーは、作成したシーンを周囲に移動できます。
+スクリプトコードでは、TrackedArea の境界の種類を指定して、UnityEngine 型の TryGetGeometry メソッドを呼び出し、境界ポリゴンを取得できます。 ユーザーが境界を定義している場合 (頂点の一覧を取得した場合)、ユーザーに **ルームスケールエクスペリエンス** を提供し、ユーザーが作成したシーンを周囲にたどることができます。
 
-ユーザーが境界を操作すると、境界が自動的に表示されることに注意してください。 アプリでは、境界自体をレンダリングするためにこの多角形を使用する必要はありません。 ただし、この境界多角形を使用してシーンオブジェクトをレイアウトすることで、ユーザーがテレを使用して物理的にオブジェクトに接続できるようにすることができます。
+> [!NOTE]
+> ユーザーがこの境界に近づいたときに、境界が自動的に表示されます。 アプリでは、境界自体をレンダリングするためにこの多角形を使用する必要はありません。 ただし、この境界多角形を使用してシーンオブジェクトをレイアウトすることで、ユーザーがテレを使用して物理的にオブジェクトに接続できるようにすることができます。
 
 ```cs
 var vertices = new List<Vector3>();
@@ -89,7 +90,7 @@ if (UnityEngine.Experimental.XR.Boundary.TryGetGeometry(vertices, Boundary.Type.
 **名前空間:** *UNITYENGINE. XR*<br>
 **型:** *WorldAnchor*
 
-ユーザーが 5 m を超えることができるようにする HoloLens の真の **ワールドスケールエクスペリエンス** では、ルームスケールエクスペリエンスに使用されるもの以外の新しい手法が必要になります。 使用する主な手法の1つとして、 [空間アンカー](../../design/coordinate-systems.md#spatial-anchors) を作成して、ユーザーがローミングした距離に関係なく、物理的な場所にあるホログラムのクラスターを正確にロックし、 [後のセッションで再びそれらのホログラムを見つける](../../design/coordinate-systems.md#spatial-anchor-persistence)ことができます。
+ユーザーが 5 m を超えることができるようにする HoloLens の真の **ワールドスケールエクスペリエンス** では、ルームスケールエクスペリエンスに使用されるもの以外の新しい手法が必要になります。 使用する主な手法の1つは、 [空間アンカー](../../design/coordinate-systems.md#spatial-anchors) を作成して、ユーザーがどの程度ローミングしたかに関係なく、物理的な場所にあるホログラムのクラスターを正確にロックし、 [後のセッションで再びそれらのホログラムを見つける](../../design/coordinate-systems.md#spatial-anchor-persistence)ことです。
 
 Unity では、 **WorldAnchor** Unity コンポーネントをユーザーオブジェクトに追加することによって、空間アンカーを作成します。
 
@@ -132,7 +133,7 @@ WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 
 ### <a name="handling-locatability-changes"></a>Locatability の変更の処理
 
-WorldAnchor は、ある時点で物理的な世界では特定できないことがあります。 このような場合、Unity は、固定されたオブジェクトの変換を更新しません。 これは、アプリの実行中にも変更される可能性があります。 Locatability の変更を処理できないと、オブジェクトが世界の正しい物理的な場所に表示されません。
+WorldAnchor は、ある時点で物理的な世界では特定できないことがあります。 このような場合は、Unity はアンカー付きオブジェクトの変換を更新しません。 これは、アプリの実行中にも変更される可能性があります。 Locatability の変更を処理できないと、オブジェクトが世界の正しい物理的な場所に表示されません。
 
 Locatability の変更について通知するには、次のようにします。
 1. OnTrackingChanged イベントのサブスクライブ
@@ -162,7 +163,7 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 
 ## <a name="sharing-anchors-across-devices"></a>デバイス間でのアンカーの共有
 
-<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間アンカー</a>を使用して、ローカル WorldAnchor から持続性のあるクラウドアンカーを作成できます。これにより、アプリは複数の HoloLens、IOS、Android デバイスで検索できます。  複数のデバイスで共通の空間アンカーを共有することにより、各ユーザーは、同じ物理的な場所でそのアンカーを基準としてレンダリングされたコンテンツを表示できます。  これにより、リアルタイム共有エクスペリエンスを実現できます。
+<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間アンカー</a>を使用して、ローカル WorldAnchor から持続性のあるクラウドアンカーを作成します。これにより、アプリは複数の HoloLens、IOS、Android デバイスで検索できます。  複数のデバイスで共通の空間アンカーを共有することにより、各ユーザーは、同じ物理的な場所でそのアンカーを基準としてレンダリングされたコンテンツを表示できます。  これにより、リアルタイム共有エクスペリエンスを実現できます。
 
 Unity で共有エクスペリエンスの構築を開始するには、5分間の <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Azure 空間アンカー unity クイックスタート</a>をお試しください。
 
@@ -170,7 +171,7 @@ Azure 空間アンカーを使用して実行した後は、 <a href="https://do
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality コアの構成要素を調査しています。 ここから、次の構成要素に進むことができます。
+ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality コアの構成要素を調査しています。 ここから、次のビルディングブロックに進むことができます。
 
 > [!div class="nextstepaction"]
 > [視線入力](gaze-in-unity.md)
@@ -182,7 +183,7 @@ Azure 空間アンカーを使用して実行した後は、 <a href="https://do
 
 いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks)に戻ることができます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 * [エクスペリエンススケール](../../design/coordinate-systems.md#mixed-reality-experience-scales)
 * [空間ステージ](../../design/coordinate-systems.md#stage-frame-of-reference)
 * [Unity での損失の追跡](tracking-loss-in-unity.md)

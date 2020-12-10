@@ -1,24 +1,24 @@
 ---
 title: Unity の永続化
-description: 永続化を使用すると、ユーザーは必要な場所に個々のホログラムやワークスペースをピン留めし、アプリの多くの使用を想定している場所で後から検索することができます。
+description: 永続化を使用すると、ユーザーが好きな場所に個々のホログラムをピン留めし、アプリの多くの用途で後から検索することができます。
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens、永続化、Unity、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
-ms.openlocfilehash: cff7f05a5a5695ae8e379ed681c3b7320622968c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: d74f9c0a118c1886037c564073742ebedc7d0146
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678531"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010443"
 ---
 # <a name="persistence-in-unity"></a>Unity の永続化
 
 **名前空間:** *UNITYENGINE. XR*<br>
 **クラス:** *WorldAnchorStore*
 
-WorldAnchorStore は、ホログラムがアプリケーションのインスタンス間で特定の実際の位置に置かれる holographic エクスペリエンスを作成するための鍵です。 これにより、ユーザーは必要に応じて個々のホログラムまたはワークスペースをピン留めし、アプリの多くの使用を想定している場所で後から検索することができます。
+WorldAnchorStore は、ホログラムがアプリケーションのインスタンス間で特定の実際の位置に置かれる holographic エクスペリエンスを作成するための鍵です。 ユーザーは、必要に応じて個々のホログラムをピン留めし、アプリの多くの用途において、後で同じ場所でそれらを見つけることができます。
 
 ## <a name="how-to-persist-holograms-across-sessions"></a>セッション間でホログラムを永続化する方法
 
@@ -26,17 +26,17 @@ WorldAnchorStore を使用すると、WorldAnchor の場所をセッション間
 
 以前のセッションからホログラムを読み込むには:
 1. WorldAnchorStore を取得する
-2. ワールドアンカーに関連するアプリデータを読み込んで、ワールドアンカーの id を提供します
-3. Id からワールドアンカーを読み込みます
+2. ワールドアンカーに関連するアプリデータを読み込みます。これにより、ワールドアンカーの ID が提供されます。
+3. ID からワールドアンカーを読み込みます
 
 将来のセッションのホログラムを保存するには:
 1. WorldAnchorStore を取得する
-2. Id を指定してワールドアンカーを保存する
-3. Id と共に世界のアンカーに関連するアプリデータを保存する
+2. ID を指定してワールドアンカーを保存する
+3. ID と共に世界のアンカーに関連するアプリデータを保存する
 
 ### <a name="getting-the-worldanchorstore"></a>WorldAnchorStore を取得する
 
-WorldAnchorStore への参照を保持して、操作を実行する準備ができていることを確認します。 これは非同期呼び出しであるため、起動直後にを呼び出す必要があります。
+操作を実行する準備ができたことを知らせるために、WorldAnchorStore への参照を保持する必要があります。 これは非同期呼び出しであるため、起動直後にを呼び出す必要があります。
 
 ```
 WorldAnchorStore.GetAsync(StoreLoaded);
@@ -55,7 +55,7 @@ private void StoreLoaded(WorldAnchorStore store)
 
 ### <a name="saving-a-worldanchor"></a>WorldAnchor の保存
 
-保存するには、保存する内容に名前を付け、保存する前に WorldAnchor に渡す必要があります。 注: 2 つのアンカーを同じ文字列に保存しようとすると失敗します (ストア。保存すると false が返されます)。 新しい保存を保存する前に、前の保存を削除する必要があります。
+保存するには、保存する内容に名前を付け、保存する前に WorldAnchor に渡す必要があります。 注: 2 つのアンカーを同じ文字列に保存しようとすると失敗します (ストア。保存すると false が返されます)。 前の保存を削除してから、新しい保存を保存します。
 
 ```
 private void SaveGame()
@@ -101,7 +101,7 @@ for (int index = 0; index < ids.Length; index++)
 
 ## <a name="persisting-holograms-for-multiple-devices"></a>複数のデバイスのホログラムの永続化
 
-<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間アンカー</a>を使用して、ローカル WorldAnchor から持続性のあるクラウドアンカーを作成できます。これにより、アプリは複数の HoloLens、iOS、および Android デバイスが同時に存在しない場合でも、そのデバイスを検索できます。  クラウドアンカーは永続的であるため、複数のデバイスが一定期間にわたって、同じ物理的な場所にあるそのアンカーを基準としてレンダリングされたコンテンツを表示できます。
+<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間アンカー</a>を使用して、ローカル WorldAnchor から持続性のあるクラウドアンカーを作成することができます。これにより、複数の HoloLens、iOS、および Android デバイスが同時に存在しない場合でも、アプリはそれらを検索できます。  クラウドアンカーは永続的であるため、複数のデバイスが一定期間にわたって、同じ物理的な場所にあるそのアンカーを基準としてレンダリングされたコンテンツを表示できます。
 
 Unity で共有エクスペリエンスの構築を開始するには、5分間の <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Azure 空間アンカー unity クイックスタート</a>をお試しください。
 
@@ -109,7 +109,7 @@ Azure 空間アンカーを使用して実行した後は、 <a href="https://do
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality コアの構成要素を調査しています。 ここから、次の構成要素に進むことができます。
+ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality コアの構成要素を調査しています。 ここから、次のビルディングブロックに進むことができます。
 
 > [!div class="nextstepaction"]
 > [空間マッピング](spatial-mapping-in-unity.md)
@@ -121,7 +121,7 @@ Azure 空間アンカーを使用して実行した後は、 <a href="https://do
 
 いつでも [Unity 開発チェックポイント](unity-development-overview.md#2-core-building-blocks)に戻ることができます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 * [空間アンカーの永続性](../../design/coordinate-systems.md#spatial-anchor-persistence)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure 空間アンカー SDK for Unity</a>

@@ -6,24 +6,22 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 視線、ヘッド・宝石、unity、ホログラム、mixed reality、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、unity、Mixed Reality ツールキット
-ms.openlocfilehash: 0c62de9cb1b7ea892831ea2cedbeb23be5ea7b37
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677511"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010363"
 ---
 # <a name="head-gaze-in-unity"></a>Unity でのヘッドを見つめます
 
-アプリが[混合現実](../../discover/mixed-reality.md)で作成する[ホログラム](../../discover/hologram.md)をユーザーが対象にする主な方法は、[宝石](../../design/gaze-and-commit.md)です。
-
+アプリが[混合現実](../../discover/mixed-reality.md)で作成する[ホログラム](../../discover/hologram.md)をユーザーが対象とする主な方法は、[宝石](../../design/gaze-and-commit.md)です。
 
 ## <a name="implementing-head-gaze"></a>ヘッド見つめを実装する
 
-概念的には、ヘッド・ [宝石](../../design/gaze-and-commit.md) は、ヘッドセットがあるユーザーのヘッドから、接続している前方方向に、射線がどのように衝突しているかを判断することによって実装されます。
-Unity では、ユーザーの head 位置と方向は、Unity のメイン [カメラ](camera-in-unity.md)(具体的には [unityengine](https://docs.unity3d.com/ScriptReference/Camera-main.html)) を介して公開されます。[transform](https://docs.unity3d.com/ScriptReference/Transform-forward.html) と [Unityengine. Camera. main](https://docs.unity3d.com/ScriptReference/Camera-main.html)を変換します。[transform. position](https://docs.unity3d.com/ScriptReference/Transform-position.html).
+概念的には、ユーザーのヘッドセットからの光を投射してヒットを確認することによって、 [頭を見つめ](../../design/gaze-and-commit.md) ます。 Unity では、ユーザーのヘッド位置と方向は、 [カメラ](camera-in-unity.md)を通じて公開されます (具体的には [unityengine](https://docs.unity3d.com/ScriptReference/Camera-main.html)。[transform](https://docs.unity3d.com/ScriptReference/Transform-forward.html) と [Unityengine. Camera. main](https://docs.unity3d.com/ScriptReference/Camera-main.html)を変換します。[transform. position](https://docs.unity3d.com/ScriptReference/Transform-position.html).
 
-[RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html)を呼び出すと、衝突が発生した3d ポイントや、その他の競合しがを使用している他のオブジェクトを含む、衝突に関する情報を含む[RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html)構造が生成されます。
+[RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html)を呼び出すと、 [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html)には、3d 衝突ポイントや、ヘッド宝石光がヒットした他のユーザーオブジェクトなど、衝突に関する情報が含まれます。
 
 ### <a name="example-implement-head-gaze"></a>例: ヘッドを見つめて実装する
 
@@ -47,18 +45,18 @@ void Update()
 
 ### <a name="best-practices"></a>ベスト プラクティス
 
-上記の例では、update ループで1つの raycast を実行してユーザーのヘッドポイントの対象を見つける方法を示していますが、この操作は、gazed されているオブジェクトに関係する可能性があるすべてのオブジェクトではなく、頭を見つめて管理する1つのオブジェクトで行うことをお勧めします。 これにより、各フレームに1つのヘッドを raycast するだけで、アプリの処理を保存できます。
+上記の例では、update ループから1つの raycast を使用して、ユーザーのヘッドポイントの対象を検索しますが、1つのオブジェクトを使用してすべてのヘッドを見つめたプロセスを管理することをお勧めします。 ヘッドを見つめたロジックを組み合わせると、アプリの貴重な処理能力が節約され、raycasting はフレームごとに1つに制限されます。
 
 ## <a name="visualizing-head-gaze"></a>ヘッドを視覚化する
 
-マウスポインターを使用してコンテンツをターゲットにして操作するデスクトップと同様に、ユーザーの顔を示す [カーソル](../../design/cursors.md) を実装する必要があります。 これにより、ユーザーが操作しようとしている内容に自信を持っています。
+コンピューター上のマウスポインターと同じように、ユーザーの顔を示す [カーソル](../../design/cursors.md) を実装する必要があります。 ユーザーが対象としているコンテンツを把握することで、ユーザーが操作しようとしている内容の信頼性が向上します。
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit-v2"></a>Mixed Reality Toolkit v2 でのヘッドを見つめます
-MRTK v2 の [入力マネージャー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) から、ヘッドを使用してアクセスできます。
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Mixed Reality ツールキットの頭を見つめます 
+MRTK の [入力マネージャー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) から、ヘッドを使用してアクセスできます。
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-私たちが用意した Unity 開発チェックポイント体験に従っている場合、読者は MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素に進むことができます。
+Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。
 
 > [!div class="nextstepaction"]
 > [ジェスチャとモーション コントローラー](gestures-and-motion-controllers-in-unity.md)

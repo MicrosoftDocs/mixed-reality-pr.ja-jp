@@ -1,23 +1,23 @@
 ---
 title: Vuforia と Unity の使用
-description: Unity で Vuforia を活用して、Windows Mixed Reality アプリケーションを構築します。
+description: Unity で Windows Mixed Reality アプリケーションを構築するには、Vuforia を使用します。
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
 keywords: Vuforia、マーカー、座標、参照のフレーム、追跡、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、unity、HoloLens、デバイス追跡、パフォーマンスモード、Vuforia Developer Portal
-ms.openlocfilehash: 930f23d5bbc4115476c337dcb99f40096039d78f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ecacf4036bfab38eb90782a194c445a83ca623ba
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679671"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010563"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>Unity での Vuforia Engine の使用
 
 Vuforia Engine は HoloLens に重要な機能を提供します。これは、環境内の特定のイメージとオブジェクトに AR エクスペリエンスを接続するための機能です。 この機能を使用して、工業企業向けの機械の上にガイド付きの手順を重ねたり、物理的な製品やゲームにデジタル機能やエクスペリエンスを追加したりすることができます。
 
-AR エクスペリエンスを開発する際の柔軟性を高めるために、Vuforia Engine は幅広い機能とターゲットを提供しています。 Vuforia モデルターゲットである最新の機能の1つは、商用と工業の両方の主要な機能です。 モデルターゲットを使用すると、アプリケーションはコンピューター、自動車、または toys などの物理オブジェクトを認識し、CAD モデルまたはデジタル3D モデルに基づいて追跡できます。 工業用途では、この機能を使用することにより、アセンブリワーカーやサービス技術者は、ファクトリまたは現場での作業手順や手順に関するガイダンスを提供することができます。
+Vuforia Engine は、AR 開発プロセスをより柔軟にするためのさまざまな機能とターゲットを提供します。 Vuforia モデルターゲットである最新の機能の1つは、商用と工業の両方の主要な機能です。 モデルターゲットを使用すると、アプリケーションはコンピューター、自動車、または toys などの物理オブジェクトを認識し、CAD モデルまたはデジタル3D モデルに基づいて追跡できます。 工業用途では、この機能を使用することにより、アセンブリワーカーやサービス技術者は、ファクトリまたは現場での作業手順や手順に関するガイダンスを提供することができます。
 
 携帯電話やタブレット用に構築された既存の Vuforia エンジンアプリは、HoloLens で動作するように Unity で簡単に構成できます。 Vuforia Engine を使用して、新しい HoloLens アプリを Windows 10 タブレット (Surface Pro や Surface ブックなど) に移動することもできます。
 
@@ -32,9 +32,9 @@ Unity をインストールする場合は、必ず "Windows Store IL2CPP Script
 
 ## <a name="getting-started-with-vuforia-engine"></a>Vuforia Engine の概要
 
-Vuforia Engine を HoloLens で使用する方法について学習するための最適な出発点は、 [Vuforia Engine HoloLens サンプル](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (Unity 資産ストアで入手可能) を使用することです。 このサンプルには、HoloLens にデプロイできる事前構成済みのシーンを含む完全な HoloLens プロジェクトが用意されています。
+Vuforia Engine と HoloLens について学習するための最適な開始点は、 [Vuforia Engine HoloLens サンプル](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (Unity 資産ストアで入手可能) です。 このサンプルには、HoloLens にデプロイできる事前構成済みのシーンを含む完全な HoloLens プロジェクトが用意されています。
 
-このシーンでは、Vuforia イメージターゲットを使用してイメージを認識し、HoloLens エクスペリエンスでデジタルコンテンツを使用してイメージを拡張する方法を示します。 Vuforia Engine Hololens サンプルには、モデルターゲットと HoloLens での VuMarks の使用状況を示すシーンも含まれています。 独自のコンテンツを使用して、Vuforia Engine を使用する HoloLens アプリの作成を試すことができます。
+このシーンでは、Vuforia イメージターゲットを使用してイメージを認識し、HoloLens エクスペリエンスでデジタルコンテンツを使用してイメージを拡張する方法を示します。 Vuforia Engine HoloLens サンプルには、モデルターゲットと HoloLens での VuMarks の使用状況を示すシーンも含まれています。 独自のコンテンツを使用して、Vuforia Engine を使用する HoloLens アプリの作成を試すことができます。
 
 
 
@@ -48,7 +48,7 @@ HoloLens 用の Vuforia Engine アプリの開発は、他のデバイス用の 
 3.  ビルドの **シーン** にサンプルシーンを追加 **します。**
 4.  [**ビルド設定**] で、[開いているシーンを **追加**] ボタンをクリックして、ビルドプラットフォームを **UWP** に切り替えます。
 ![image](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
-5.  [ **プレーヤーの設定** ] ボタンをクリックします。  
+5.  [ **プレーヤーの設定** ] ボタンを選択します。  
    * **UWP** アイコンを選択し、[ **XR の設定**] セクションを展開します。
    * サポートされている **仮想現実** が有効になっていることを確認します。    
    * **Virtual Reality sdk** で、次のことを確認します。
@@ -87,13 +87,12 @@ Vuforia Engine は、カメラの追跡と HoloLens の空間トラッキング�
 
 検出されたが、ビューに含まれなくなったターゲットは、EXTENDED_TRACKED として報告されます。 このような場合、すべてのターゲットで使用される DefaultTrackableEventHandler スクリプトでは、拡張コンテンツのレンダリングが引き続き行われます。 開発者は、カスタム追跡イベントハンドラースクリプトを実装することで、この動作を制御できます。
 
-
 ## <a name="performance-mode-with-vuforia-engine"></a>Vuforia Engine を使用したパフォーマンスモード 
 
-Vuforia エンジンを使用して、HoloLens からエクステントのエクスペリエンスのパフォーマンスを管理し、CPU の負荷を軽減することができます。 Vuforia エンジンには3つのモードが用意されています。既定では、速度を最適化し、品質を最適化するために使用します。 
+Vuforia エンジンを使用して、HoloLens のパフォーマンスを管理し、CPU の負荷を軽減することができます。 Vuforia エンジンには3つのモードが用意されています。既定では、速度を最適化し、品質を最適化するために使用します。 
 
-*   MODE_OPTIMIZE_SPEED を使用すると、HoloLens デバイスの負荷を最小限に抑えることができ、AR エクスペリエンスの拡張に最適です。 アプリケーションが静的なオブジェクト/ターゲットを追跡している状況では、この方法をお勧めします。
-*   MODE_DEFAULT は、ほとんどのシナリオで使用できる通常モードです。
+*   MODE_OPTIMIZE_SPEED を使用すると、HoloLens デバイスの負荷を最小限に抑えることができ、AR エクスペリエンスの拡張に最適です。 アプリが静的オブジェクト/ターゲットを追跡している場合に推奨されます。
+*   MODE_DEFAULT は通常モードであり、ほとんどのシナリオで使用できます。
 *   MODE_OPTIMIZE_QUALITY は、移動対象のターゲットまたは選択されるモデルターゲットを追跡する場合に適しています。
 
 **モードの設定**
@@ -112,4 +111,4 @@ Unity のパフォーマンスモードを変更するには、ARCamera の Vufo
 * [Vuforia のドキュメント: Vuforia Unity 拡張機能のインストール方法](https://library.vuforia.com/articles/Solution/Installing-the-Unity-Extension)
 * [Vuforia のドキュメント: Unity での HoloLens サンプルの使用](https://library.vuforia.com/articles/Solution/Working-with-the-HoloLens-sample-in-Unity)
 * [Vuforia のドキュメント: Vuforia でのデバイスの追跡](https://library.vuforia.com/features/environments/device-tracker-overview.html)
-* [Vuforia のドキュメント: フレームレートとパフォーマンス Optomization](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)
+* [Vuforia のドキュメント: フレームレートとパフォーマンスの最適化](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)

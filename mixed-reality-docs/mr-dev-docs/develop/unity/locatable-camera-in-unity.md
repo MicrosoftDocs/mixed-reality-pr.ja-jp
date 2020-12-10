@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: photo、video、hololens、カメラ、unity、入手、PVC、フォトビデオカメラ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、web カメラ、写真キャプチャ、ビデオキャプチャ
-ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 125521206421acbcc4c9ad6e5fb371314ddb48f2
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678601"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010103"
 ---
 # <a name="locatable-camera-in-unity"></a>Unity での場所を特定できるカメラ
 
@@ -19,10 +19,10 @@ ms.locfileid: "94678601"
 
 アプリで [カメラ](../platform-capabilities-and-apis/locatable-camera.md)を使用するには、"WebCam" 機能を宣言する必要があります。
 1. Unity エディターで、[> プロジェクト > 設定の編集] ページに移動して、プレーヤーの設定に移動します。
-2. [Windows ストア] タブをクリックします。
+2. [Windows ストア] タブを選択します。
 3. [発行設定 > 機能] セクションで、 **Web カメラ** と **マイク** の機能を確認します。
 
-カメラで一度に実行できる操作は1つだけです。 カメラを現在使用しているモード (写真、ビデオ、またはなし) を確認するには、UnityEngine. XR を確認します。
+カメラで一度に実行できる操作は1つだけです。 カメラの現在の状態を、UnityEngine. XR のモードで確認できます。 使用可能なモードは、photo、video、または none です。
 
 ## <a name="photo-capture"></a>写真のキャプチャ
 
@@ -33,7 +33,7 @@ ms.locfileid: "94678601"
 1. *Photocapture* オブジェクトを作成する
 2. 必要な設定を使用して *CameraParameters* オブジェクトを作成する
 3. *Startphotomodeasync* を使用して写真モードを開始する
-4. 目的の写真を撮影する
+4. 希望の写真を撮影する
     * optionalその画像と対話する
 5. フォトモードを停止してリソースをクリーンアップする
 
@@ -70,7 +70,7 @@ void OnPhotoCaptureCreated(PhotoCapture captureObject)
    }
 ```
 
-最後に、ここに示されているのと同じクリーンアップコードを使用します。
+最後に、ここに示されているのと同じクリーンアップコードも使用します。
 
 ```cs
 void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
@@ -124,7 +124,7 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
 
 ### <a name="capture-a-photo-to-a-texture2d"></a>写真を Texture2D に取り込む
 
-Texture2D にデータをキャプチャする場合、プロセスはディスクへのキャプチャと非常によく似ています。
+Texture2D にデータをキャプチャするときのプロセスは、ディスクへのキャプチャと似ています。
 
 上記のセットアッププロセスに従います。
 
@@ -165,9 +165,9 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a>写真をキャプチャし、生のバイトを操作する
 
-インメモリフレームの生バイトを操作するには、写真を Texture2D にキャプチャする場合と同じように、上記と *Onphotomodestarted 開始* したときと同じ設定に従います。 違いは、生のバイトを取得して操作できる *OnCapturedPhotoToMemory* です。
+インメモリフレームの生バイトを操作するには、上記と同じセットアップ手順に従い、Texture2D への写真のキャプチャと同様に *Onphotomodestarted 開始* します。 違いは、生のバイトを取得して操作できる *OnCapturedPhotoToMemory* です。
 
-この例では、 *Setpixels ()* を使用してさらに処理またはテクスチャに適用できる *リスト <Color>* を作成します。
+この例では、 *Setpixels ()* を使用してさらに処理またはテクスチャに適用する *リスト <Color>* を作成します。
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -205,7 +205,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 **名前空間:** *UNITYENGINE. XR*<br>
 **型:** *VideoCapture*
 
-*VideoCapture* は *photocapture* と非常に似ています。 2つの違いは、1秒あたりのフレーム数 (FPS) の値を指定する必要があり、mp4 ファイルとして直接ディスクに保存できることだけです。 *VideoCapture* を使用する手順は次のとおりです。
+*VideoCapture* は *photocapture* と同様に機能します。 2つの違いは、1秒あたりのフレーム数 (FPS) の値を指定する必要があり、mp4 ファイルとして直接ディスクに保存できることだけです。 *VideoCapture* を使用する手順は次のとおりです。
 1. *VideoCapture* オブジェクトを作成する
 2. 必要な設定を使用して *CameraParameters* オブジェクトを作成する
 3. *Startvideomodeasync* を使用してビデオモードを開始する
@@ -277,7 +277,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-後で、記録を停止する必要があります。 これは、たとえば、タイマーやユーザー入力によって発生する可能性があります。
+後で、タイマーまたはユーザー入力を使用して記録を停止します。たとえば、のようにします。
 
 ```cs
 // The user has indicated to stop recording
@@ -309,7 +309,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality プラットフォームの機能と Api の調査が途中で終了しています。 ここから、次のトピックに進むことができます。
+ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality プラットフォームの機能と Api の調査が途中で終了しています。 ここからは、次のトピックに進むことができます。
 
 > [!div class="nextstepaction"]
 > [フォーカス ポイント](focus-point-in-unity.md)
@@ -321,5 +321,5 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-platform-capabilities-and-apis)に戻ることができます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 * [場所を特定できるカメラ](../platform-capab ilities-and-apis/locatable-camera.md)

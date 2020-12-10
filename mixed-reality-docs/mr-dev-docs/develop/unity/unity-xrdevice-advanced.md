@@ -6,16 +6,16 @@ ms.author: vladkol
 ms.date: 05/20/2018
 ms.topic: article
 keywords: unity、mixed reality、native、xrdevice、spatialcoordinatesystem、holographicframe、holographiccamera、ispatialcoordinatesystem、iholographicframe、iholographiccamera、get ptr、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: a64deb46db82e6d0401a803e45dcbbd854476745
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8dda1152da9705147ca3a057faadb9edd8428df6
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679931"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010593"
 ---
 # <a name="mixed-reality-native-objects-in-unity"></a>Unity での Mixed Reality ネイティブ オブジェクト
 
-[HolographicSpace を取得](../native/getting-a-holographicspace.md) することは、カメラデータの受信とフレームのレンダリングを開始する前に、すべての Mixed Reality アプリで実行されます。 Unity では、エンジンはこれらの手順を自動的に処理し、レンダリングループの一部として Holographic オブジェクトと更新を内部的に処理します。
+各 Mixed Reality アプリは、カメラデータの受信とフレームのレンダリングを開始する前に [、HolographicSpace を取得し](../native/getting-a-holographicspace.md) ます。 Unity では、エンジンはこれらの手順を自動的に処理し、Holographic オブジェクトを処理し、レンダリングループの一部として内部的に更新します。
 
 ただし、高度なシナリオでは、 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> や現在の <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>など、基になるネイティブオブジェクトへのアクセスが必要になる場合があります。 <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">Unityengine. XR. XRDevice</a> は、これらのネイティブオブジェクトへのアクセスを提供します。
 
@@ -55,7 +55,7 @@ HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeDa
 var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(hfd.ISpatialCoordinateSystemPtr);
 ```
 
-それ以外の場合は、を使用 `Marshal.GetObjectForIUnknown()` し、目的の型にキャストします。
+それ以外の場合は、を使用 `Marshal.GetObjectForIUnknown()` して、目的の型にキャストします。
 
 ```cs
 #if ENABLE_WINMD_SUPPORT
@@ -96,9 +96,10 @@ namespace NumericsConversion
 > [!NOTE]
 > HolographicFrameNativeData を使用して受信したネイティブオブジェクトの状態を変更すると、予期しない動作やレンダリングアーティファクトが発生する可能性があります。また、Unity でも同じ状態が理由である場合は特にそうです  たとえば、HolographicFrame を呼び出さないでください。そうしないと、Unity がそのフレームでレンダリングする原因が、Windows が期待するようなものと同期しなくなります。これにより、 [ホログラムの安定性](../platform-capabilities-and-apis/hologram-stability.md)が低下します。
 
-ネイティブインターフェイスへのアクセスは、ネイティブプラグインまたは C# コードで、レンダリングやデバッグの目的で必要な場合に、HolographicFrameNativeData のデータを使用できます。 
+レンダリングまたはデバッグのためにネイティブインターフェイスにアクセスする必要がある場合は、ネイティブプラグインまたは C# コードで HolographicFrameNativeData からのデータを使用します。 
 
 HolographicFrameNativeData を使用して、photon 時間の現在のフレームの予測を取得する方法の例を次に示します。 
+
 ```cs
 using System;
 using System.Runtime.InteropServices;
@@ -128,7 +129,7 @@ public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 * [Windows 名前空間と HoloLens 用 Unity アプリの使用](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 * <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>

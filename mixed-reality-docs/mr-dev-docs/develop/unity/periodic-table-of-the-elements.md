@@ -1,24 +1,24 @@
 ---
 title: 要素の定期的なテーブル
-description: 要素の周期的な表は、Microsoft の混合現実設計ラボのオープンソースのサンプルアプリです。ここでは、オブジェクトコレクションを使用してさまざまな種類の3D 空間にオブジェクトの配列を配置する方法を学習できます。
+description: 要素の定期テーブルは、Microsoft の混合現実設計ラボのオープンソースのサンプルアプリです。 オブジェクト コレクションを使用して、さまざまな表面の種類を持つ 3D 空間内のオブジェクトの配列をレイアウトする方法を説明します。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、サンプルアプリ、コントロール、MRTK、Mixed Reality Toolkit、Unity、サンプルアプリ、アプリの例、オープンソース、Microsoft Store、HoloLens、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット
-ms.openlocfilehash: 4b85631fb044ee0b24c003f7808fd0455b87deec
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a4099c889fee886e63d3a8b773398a250621f26e
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677681"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010183"
 ---
 # <a name="periodic-table-of-the-elements"></a>要素の定期的なテーブル
 
 >[!NOTE]
 >この記事では、 [Mixed Reality 設計ラボ](https://github.com/Microsoft/MRDesignLabs_Unity)で作成した探索的サンプルについて説明します。これは、学習の概要と、mixed reality アプリの開発に関する提案を共有する場所です。 設計関連の記事とコードは、新しい検出を行うと進化します。
 
-[要素の定期テーブル](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) は、Microsoft の混合現実設計ラボのオープンソースのサンプルアプリです。 このプロジェクトでは、 **[オブジェクトコレクション](../../design/object-collection.md)** を使用して、さまざまな種類の種類の3d 空間にオブジェクトの配列をレイアウトする方法を学習できます。 また、HoloLens から標準入力に応答する対話型オブジェクトを作成する方法についても説明します。 このプロジェクトのコンポーネントを使用して、独自の mixed reality アプリエクスペリエンスを作成することができます。
+[要素の定期テーブル](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) は、Microsoft の混合現実設計ラボのオープンソースのサンプルアプリです。 **[オブジェクトコレクション](../../design/object-collection.md)** を使用して、さまざまな種類のサーフェスを含むオブジェクトの配列を3d 空間に配置する方法について説明します。 また、HoloLens から標準入力に応答する対話型オブジェクトを作成する方法についても説明します。 このプロジェクトのコンポーネントを使用して、独自の mixed reality アプリエクスペリエンスを作成することができます。
 
 ![Elements アプリの期間テーブル](images/640px-periodictable-hero.jpg)
 
@@ -31,9 +31,9 @@ Mixed Reality キャプチャを使用して HoloLens 2 で記録
 
 要素の周期テーブルは、3D 空間の化学要素と各プロパティを視覚化します。 これには、宝石やエアタップなどの HoloLens の基本的なやり取りが組み込まれています。 ユーザーは、アニメーション化された3D モデルを使用して要素について学習できます。 要素の電子シェルとその中核を視覚的に理解できます。これは、protons と neutrons で構成されています。
 
-## <a name="background"></a>背景
+## <a name="background"></a>バックグラウンド
 
-初めて HoloLens を使用した後、定期的なテーブルアプリは、mixed reality で試してみたいと思っていました。 各要素には、テキストと共に表示されるデータポイントが多数あるため、3D 空間でのタイポグラフィの合成を調べるのには大きな問題があると考えました。 このプロジェクトでは、要素の電子モデルを視覚化できることがもう1つの興味深い部分でした。
+初めて HoloLens を使用した経験があれば、mixed reality で定期的なテーブルアプリを試してみたいと思いました。 各要素には、テキストと共に表示されるデータポイントが多数あるため、3D 空間でのタイポグラフィの合成を調べるのには大きな問題があると考えました。 このプロジェクトの興味深い部分は、要素の電子的なモデルを視覚化する機会をユーザーに提供することです。
 
 ## <a name="design"></a>デザイン
 
@@ -49,19 +49,19 @@ Mixed Reality キャプチャを使用して HoloLens 2 で記録
 ![宣言](images/640px-periodictable-prototypes.jpg)<br>
 *相互作用プロトタイプ*
 
-ユーザーは、テーブルの下部にあるボタンをエアタップすることで、画面の種類を変更できます。平面、円柱、球体、および散布を切り替えることができます。
+ユーザーは、テーブルの下部にあるボタンをエアタップすることで、画面の種類を変更できます。平面、円柱、球、および散布を切り替えることができます。
 
 ## <a name="common-controls-and-patterns-used-in-this-app"></a>このアプリで使用される一般的なコントロールとパターン
 
 ### <a name="interactable-object-button"></a>対話型オブジェクト (ボタン)
 
-[対話型オブジェクト](../../design/interactable-object.md) は、基本的な HoloLens 入力に応答できるオブジェクトです。 これは、任意のオブジェクトに簡単に適用できる事前 fab/スクリプトとして提供されています。 たとえば、シーンの対話型にコーヒーカップを作成し、宝石、エアタップ、ナビゲーション、操作ジェスチャなどの入力に応答することができます。 [詳細情報](../../design/interactable-object.md)
+[対話型オブジェクト](../../design/interactable-object.md) は、基本的な HoloLens 入力に応答できるオブジェクトです。 これは、任意のオブジェクトに簡単に適用できる prefab/スクリプトとして提供されています。 たとえば、シーンの対話型にコーヒーカップを作成し、宝石、エアタップ、ナビゲーション、操作ジェスチャなどの入力に応答することができます。 [詳細情報](../../design/interactable-object.md)
 
 ![nteractable オブジェクト](images/640px-periodictable-interactableobject.jpg)
 
 ### <a name="object-collection"></a>オブジェクト コレクション
 
-[オブジェクトコレクション](../../design/object-collection.md) は、さまざまな図形で複数のオブジェクトをレイアウトするのに役立つオブジェクトです。 平面、円柱、球、および散布図がサポートされています。 Radius、行の数、間隔などの追加のプロパティを構成できます。 [詳細情報](../../design/object-collection.md)
+[オブジェクトコレクション](../../design/object-collection.md) はオブジェクトであり、さまざまな図形で複数のオブジェクトをレイアウトするのに役立ちます。 平面、円柱、球、散布図がサポートされています。 Radius、行の数、間隔などの追加のプロパティを構成できます。 [詳細情報](../../design/object-collection.md)
 
 ![オブジェクト コレクション](images/640px-periodictable-collections.jpg)
 

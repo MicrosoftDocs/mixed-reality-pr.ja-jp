@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality、カンファレンス、サミット、開発者、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: df7b6837653b309189e44d36853430b89b8b56a9
-ms.sourcegitcommit: 2eeee7bb1589148f5c9fe7f76ade58d3e08b5817
+ms.openlocfilehash: 94f38ff122826dfaea6282403c5958b127c81739
+ms.sourcegitcommit: ee87915132cf2874d4642ce2fe383f5eba6c49c2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/11/2020
-ms.locfileid: "97104206"
+ms.locfileid: "97111884"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days (日本)
 
@@ -44,7 +44,7 @@ Mixed Reality Dev Days への皆様のご参加をお待ちしています。 Mi
 ### <a name="december-16th"></a>12 月 16 日
 |**Time**|**セッションのタイトル**|**スピーカー**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
-|午前 10 時 - 午前 10 時 50 分|開会基調講演|Madoka Chiyoda、Alex Kipman、Jesse McCulloch、Kaoru Nakamura、Tetsu Muranaka|JA/EN|該当なし|
+|午前 10 時 - 午前 10 時 50 分|開会基調講演|Madoka Chiyoda、Jesse McCulloch、Kaoru Nakamura、Tetsu Muranaka|JA/EN|該当なし|
 |午前 10 時 50 分 - 午前 11 時|**中断 (10min)**||||
 |午前 11 時 - 午前 11 時 25 分|*セッション 1* Mixed Reality の概要|Atsushi Suzuki|JA|100|
 |午前 11 時 30 分 - 午前 11 時 55 分|*セッション 2* Mixed Reality ビジネス勢い|Tetsu Muranaka|JA|200|

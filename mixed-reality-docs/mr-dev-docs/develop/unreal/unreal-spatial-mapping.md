@@ -2,21 +2,21 @@
 title: Unreal での空間マッピング
 description: Unreal で空間マッピングを使用するためのガイド
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, 空間マッピング, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 878eae5f5fd0b7a1630511faa23c1477455ed988
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: bde5a1b53f6ad90bc84f54bd3e4f1237b78f2abe
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354382"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609423"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Unreal での空間マッピング
 
-空間マッピングを使用すると、HoloLens の周囲の世界を見せることで、物理的な世界の表面にオブジェクトを配置できるようになります。これにより、ホログラムがユーザーにとってより現実的に見えるようになります。 また、空間マッピングでは、実際の奥行きの手掛かりを利用して、ユーザーの世界にオブジェクトを固定します。これにより、これらのホログラムが実際に空間に存在することをユーザーに納得させることができます。空間に浮かんでいるホログラムやユーザーと一緒に動くホログラムは、それほどリアルではありません。 できるだけ快適さを追求してアイテムを配置したいと考えています。
+空間マッピングを使用すると、オブジェクトを実際の環境の物理サーフェスに配置できます。 HoloLens の周囲の世界がマップされている場合、ホログラムはユーザーにとっていっそう現実的なものに見えます。 また、空間マッピングにより、奥行きの手がかりを利用してユーザーの世界にオブジェクトが固定されるので、それらのホログラムが実際に自分の空間にあることを納得しやすくなります。 ホログラムが空間に浮かんでいたりユーザーと一緒に移動したりすることは現実的でないため、常にできる限り快適になるようにアイテムを配置する必要があります。
 
 空間マッピングの品質、配置、オクルージョン、レンダリングなどの詳細については、[空間マッピング](../../design/spatial-mapping.md) に関するドキュメントを参照してください。
 
@@ -40,13 +40,13 @@ HoloLens ゲームで空間マッピングをオプトインし、 **[MRMesh]** 
 ## <a name="spatial-mapping-at-runtime"></a>実行時の空間マッピング
 次のパラメーターを変更して、空間マッピングのランタイム動作を更新できます。
 
-- **[編集] > [プロジェクトの設定]** を開き、 **[プラットフォーム]** セクションまで下にスクロールして、 **[HoloLens] > [空間マッピング]** を選択します。 
+- **[Edit]\(編集\) > [Project Settings]\(プロジェクトの設定\)** を開き、 **[Platforms]\(プラットフォーム\)** セクションまで下にスクロールして、 **[HoloLens] > [Spatial Mapping]\(空間マッピング\)** を選択します。 
 
 ![空間アンカーのプロジェクト設定](images/unreal-spatialmapping-projectsettings.PNG)
 
 - **[Max Triangles Per Cubic Meter]\(立方メートルあたりの最大三角形数\)** で、空間マッピング メッシュの三角形の密度が更新されます。  
 - **[Spatial Meshing Volume Size]\(空間メッシュのボリューム サイズ\)** は、空間マッピング データをレンダリングおよび更新するための、プレーヤー周りのキューブのサイズを示します。  
-    + 予想されるアプリケーションの実行時環境が大きくなると思われる場合は、この値を現実世界のスペースに合わせて大きくしなければならない場合があります。  一方、アプリケーションでユーザーの周囲の表面にホログラムを配置するだけであれば、このフィールドを小さくすることができます。 ユーザーが移動するにつれて、空間マッピングのボリュームも移動します。 
+    + 予想されるアプリケーションの実行時環境が大きくなると思われる場合は、この値を現実世界のスペースに合わせて大きくしなければならない場合があります。 アプリケーションでユーザーの周囲の表面にホログラムを配置するだけであれば、値を小さくすることができます。 ユーザーが移動するにつれて、空間マッピングのボリュームも移動します。 
 
 ## <a name="working-with-mrmesh"></a>MRMesh の操作
 
@@ -62,7 +62,7 @@ HoloLens ゲームで空間マッピングをオプトインし、 **[MRMesh]** 
 ![空間アンカーの AR Trackable Notify](images/unreal-spatialmapping-artrackablenotify.PNG)
 
 2. **ARTrackableNotify** コンポーネントを選択し、 **[詳細]** パネルの **[イベント]** セクションを展開します。 
-    - 監視するイベントの [ **+** ] ボタンをクリックします。 
+    - 監視するイベントの [ **+** ] 選択をクリックします。 
 
 ![空間アンカーのイベント](images/unreal-spatialmapping-events.PNG)
 

@@ -7,16 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, QR コード, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: f2f06e9aa8d458d58dc8551ab6cd726622c30d4c
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 7e39e1d822f0aa623a83678beef24f2c98a18944
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354418"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609643"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal での QR コード
 
-HoloLens 2 では、Web カメラを使用してワールド空間の QR コードを表示できます。これにより、各コードの実際の位置の座標系を使用して、QR コードをホログラムとしてレンダリングします。  HoloLens 2 は、単一の QR コードに加えて、複数のデバイスの同じ場所にホログラムをレンダリングして、エクスペリエンスを共有することもできます。 アプリケーションに QR コードを追加するためのベスト プラクティスに従っていることを確認してください。
+HoloLens 2 を使用すると、Web カメラを使用してワールド空間の QR コードを表示できます。それらは、各コードの実際の位置にホログラムとしてレンダリングされます。 HoloLens 2 の場合、複数のデバイスの同じ場所にホログラムをレンダリングして、共有エクスペリエンスを作成することもできます。 アプリケーションに QR コードを追加するためのベスト プラクティスに従っていることを確認してください。
 
 - サイレント ゾーン
 - 照明と背景
@@ -29,11 +29,11 @@ QR コードがアプリに配置されている場合、[環境への配慮](..
 
 ## <a name="enabling-qr-detection"></a>QR 検出の有効化
 HoloLens 2 で QR コードを表示するには Web カメラを使用する必要があるため、プロジェクトの設定で有効にする必要があります。
-- **[編集] > [プロジェクトの設定]** を開いて、 **[プラットフォーム]** セクションまでスクロールし、 **[HoloLens]** をクリックします。
+- **[Edit]\(編集\) > [Project Settings]\(プロジェクトの設定\)** を開き、 **[Platforms]\(プラットフォーム\)** セクションまでスクロールして、 **[HoloLens]** を選択します。
     + **[機能]** セクションを展開し、 **[Web カメラ]** をオンにします。  
 - [ARSessionConfig アセットを追加する](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)ことによって、QR コードの追跡をオプトインする必要もあります。
 
-[!INCLUDE[](includes/tabs-qr-codes.md)]
+[!INCLUDE[](includes/tabs-qr-codes-1.md)]
 
 ## <a name="setting-up-a-tracked-qr-code"></a>追跡対象の QR コードの設定
 
@@ -54,7 +54,7 @@ QR コードは、追跡対象のイメージとして、Unreal の AR で追跡
 ## <a name="using-a-tracked-qr-code"></a>追跡対象の QR コードの使用
 次の画像のイベント グラフは、QR コードの中心にポイントをレンダリングし、そのデータを出力するために使用される **OnUpdateTrackedImage** イベントを示しています。
 
-![QR のレンダリングの例](images/unreal-qr-render.PNG)
+[!INCLUDE[](includes/tabs-qr-codes-2.md)]
 
 流れについて説明します。
 1. 最初に、追跡したイメージが **ARTrackedQRCode** にキャストされ、現在の更新されたイメージが QR コードであることを確認します。  

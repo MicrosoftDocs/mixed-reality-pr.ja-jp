@@ -7,18 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, 空間アンカー, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: b517b1d89ddf7a35864db45a17336f4493816526
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354522"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609633"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Unreal でのローカル空間アンカー
 
-## <a name="overview"></a>概要
-
-空間アンカーは、アプリケーション セッション間で現実世界の空間にホログラムを保存するために使用されます。 これらは、Unreal では **ARPin** として示され、今後のセッションで読み込まれるように HoloLens のアンカー ストアに保存されます。 ローカル アンカーは、インターネット接続がない場合のフォールバックとして理想的です。
+空間アンカーにより、アプリケーション セッション間で現実世界の空間のホログラムが **ARPin** として保存されます。 HoloLens のアンカー ストアに保存された ARPin は、後のセッションで読み込むことができ、インターネット接続がない場合の理想的なフォールバック オプションになります。
 
 > [!NOTE]
 > UE 4.25 のアンカー関数は 4.26 では廃止されているので、新しいものに置き換える必要があります。 
@@ -44,7 +42,7 @@ ms.locfileid: "96354522"
 3. アクターを **ARPin** に追加し、そのピンを HoloLens アンカー ストアに保存します。  
     * 選択するアンカー名は一意である必要があります。この例では現在のタイムスタンプを使用します。 
 
-4. アンカーがアンカー ストアに正常に保存された場合、HoloLens デバイス ポータルの **[システム] > [Map manager]\(マップ マネージャー\) > [Anchor Files Saved On Device]\(デバイスに保存されたアンカー ファイル\)** でそのアンカーを調べることができます。 
+4. アンカーがアンカー ストアに正常に保存された場合、HoloLens デバイス ポータルの **[System]\(システム\) > [Map manager]\(マップ マネージャー\) > [Anchor Files Saved On Device]\(デバイスに保存されたアンカー ファイル\)** でそのアンカーを見ることができます。 
 
 ## <a name="loading-anchors"></a>アンカーの読み込み
 
@@ -63,7 +61,7 @@ ms.locfileid: "96354522"
 
 ## <a name="removing-anchors"></a>アンカーの削除 
 
-アンカーが終了したら、**Remove ARPin from WMRAnchor Store** および **Remove All ARPins from WMRAnchor Store** コンポーネントを使用して個々のアンカーまたはアンカー ストア全体を削除することができます。
+アンカーの使用が終了したら、 **[Remove ARPin from WMRAnchor Store]\(WMRAnchor ストアから ARPin を削除する\)** および **[Remove All ARPins from WMRAnchor Store]\(WMRAnchor ストアからすべての ARPin を削除する\)** コンポーネントを使用して、個々のアンカーまたはアンカー ストア全体を削除することができます。
 
 [!INCLUDE[](includes/tabs-sa-4.md)]
 
@@ -72,7 +70,7 @@ ms.locfileid: "96354522"
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-私たちが用意した Unreal 開発チェックポイント体験に従っている場合、読者は MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素に進むことができます。 
+用意されている Unreal 開発体験に従っている場合、MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素を続けることができます。 
 
 > [!div class="nextstepaction"]
 > [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)

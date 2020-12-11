@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality、カンファレンス、サミット、開発者、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 01447b6122dae1c449e85b9bc7a9ad2cfc678f24
-ms.sourcegitcommit: 59c23d1ea5009e1929660a9a97c6131c353cd57e
+ms.openlocfilehash: df7b6837653b309189e44d36853430b89b8b56a9
+ms.sourcegitcommit: 2eeee7bb1589148f5c9fe7f76ade58d3e08b5817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538719"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97104206"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days (日本)
 
@@ -44,23 +44,23 @@ Mixed Reality Dev Days への皆様のご参加をお待ちしています。 Mi
 ### <a name="december-16th"></a>12 月 16 日
 |**Time**|**セッションのタイトル**|**スピーカー**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
-|午前 10 時 - 午前 10 時 50 分|開会基調講演|TBD|JA/EN|該当なし|
-|午前 10 時 50 分 - 午前 11 時|**休憩**||||
-|午前 11 時 - 午前 11 時 25 分|*セッション 1* Mixed Reality とは HL2 の用途  MR テック スタック|Atsushi Suzuki|JA|100|
-|午前 11 時 30 分 - 午前 11 時 55 分|*セッション 2* お客様とパートナー様のケース スタディによる日本商業市場の勢いの更新|Tetsu Muranaka|JA|200|
+|午前 10 時 - 午前 10 時 50 分|開会基調講演|Madoka Chiyoda、Alex Kipman、Jesse McCulloch、Kaoru Nakamura、Tetsu Muranaka|JA/EN|該当なし|
+|午前 10 時 50 分 - 午前 11 時|**中断 (10min)**||||
+|午前 11 時 - 午前 11 時 25 分|*セッション 1* Mixed Reality の概要|Atsushi Suzuki|JA|100|
+|午前 11 時 30 分 - 午前 11 時 55 分|*セッション 2* Mixed Reality ビジネス勢い|Tetsu Muranaka|JA|200|
 |正午 - 午後 12 時 50 分|*ランチ セッション* パネル:対話型の無料ディスカッション、Q&A、MRTK + Oculus Quest 2|Madoka Chiyoda + Microsoft MVP|JA|200|
-|午後 12 時 50 分 - 午後 1 時|**休憩**||||
+|午後 12 時 50 分 - 午後 1 時|**中断 (10min)**||||
 |午後 1 時 - 午後 1 時 25 分|*セッション 3* HoloLens 2 開発の概要|千代田まどか|JA|200|
-|午後 1 時 30 分 - 午後 1 時 55 分|*セッション 4* MRTK の UX 構成ブロック (v 2.5.0)|Yoon Park|JA|300|
+|午後 1 時 30 分 - 午後 1 時 55 分|*セッション 4* MRTK UX コンポーネント v 2.5.0|Yoon Park|JA|300|
 |午後 2 時 - 午後 2 時 25 分|*セッション 5* HoloLens 2 と Unreal Engine の概要 (MRTK-Unreal)|Cameron Micka|JA|300|
-|午後 2 時 30 分 - 午後 2 時 55 分|*セッション 6* "デザインホログラム" アプリを作成する。 この新しい HoloLens 2 アプリの作成中に検出された機能、課題、およびその他の楽しい学習について説明します。|Daniel Escudero|JA|300|
-|午後 2 時 55 分 - 午後 3 時 10 分|**休憩**||||
-|午後 3 時 10 分 - 午後 3 時 35 分|*セッション 7* Azure Object Anchors|Jesse McCulloch|JA|300|
-|午後 3 時 40 分 - 午後 4 時 05 分|*セッション 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
-|午後 4 時 10 分 - 午後 4 時 35 分|*セッション 9* Azure 空間アンカーを使用したホログラムと実世界の整列|Yingguang Mei|JA|300|
-|午後 4 時 40 分 - 午後 5 時 05 分|*セッション 10* Unity + PiXYZ|Shinobu Takahashi (Unity)|JA|200|
-|午後 5 時 10 分 - 午後 5 時 35 分|*セッション 11* Azure Kinect DK の詳細、ケース スタディ|Shinji Chiba|JA|400|
-|午後 5 時 35 分 - 午後 5 時 50 分|閉じる|千代田まどか|JA|N/A|
+|午後 2 時 30 分 - 午後 2 時 55 分|*セッション 6* ホログラムのデザイン|Daniel Escudero|JA|300|
+|2: 55pm-3: 15pm|**中断 (20min)**||||
+|3: 15pm-3: 40pm|*セッション 7* Azure Object Anchors|Jesse McCulloch|JA|300|
+|3: 45pm-4: 10pm|*セッション 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
+|4: 15pm-4: 40pm|*セッション 9* Azure 空間アンカーを使用したホログラムと実世界の整列|Yingguang Mei|JA|300|
+|4: 45pm-5: 10pm|*セッション 10* Unity + PiXYZ|Shinobu Takahashi (Unity テクノロジ日本)|JA|200|
+|5: 15pm-5: 40pm|*セッション 11* Azure Kinect DK の詳細 (ケーススタディ)|Shinji Chiba|JA|400|
+|5: 45pm-6:00 pm|閉じる|千代田まどか|JA|該当なし|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>共同作成者 (字幕の技術レビューアー)
 
@@ -69,15 +69,18 @@ Horio ([@Futo_Horio](https://twitter.com/Futo_Horio))、Takahiro Miyaura ([@taka
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 このセクションは、皆様から寄せられるご質問が増えるに応じて頻繁に更新されます。
 
-**Q** - どのような人が Mixed Reality Dev Days に参加するのですか? **A** - このイベントは、複合現実の領域で仕事をしたりプレイしたりするすべての人を対象としています。 ほとんどが開発者向けのコンテンツになりますが、開発者以外のさまざまな職務の人々にとって興味深いコンテンツも含まれています。 必ずスケジュールの最新情報をチェックして、提供予定のコンテンツの種類などをご確認ください。  
-  
-**Q** - Teams のライブ イベントでイベントが見つかりません  
+**Q** -Mixed Reality Dev Day に参加する必要があります
+
+**A** -このイベントは、現実の混合領域で動作または再生されるすべてのユーザーを含みます。 ほとんどが開発者向けのコンテンツになりますが、開発者以外のさまざまな職務の人々にとって興味深いコンテンツも含まれています。 必ずスケジュールの最新情報をチェックして、提供予定のコンテンツの種類などをご確認ください。  
+
+**Q** - Teams のライブ イベントでイベントが見つかりません
+
 **A** - 参加するには、イベントの登録後に届く電子メール内のリンクをクリックしてください。 Teams PC アプリで視聴することをお勧めします。また、Teams モバイル アプリまたはデスクトップ ブラウザーから参加することもできます。
 
 何らかの理由で Teams にログインできない場合は、イベントが同時にブロードキャストされる YouTube チャンネルをご確認ください。 ただし、スピーカーとの QA に参加することはできません。
 
-  
-**Q** - プレゼンテーション資料とセッションのビデオは、イベントの後に入手できますか。 
+**Q** - プレゼンテーション資料とセッションのビデオは、イベントの後に入手できますか。
+
 **A** - 各ビデオ セッションをリリースする予定ですが、時間を要するため、可能であればライブに参加することをご検討ください。
 
 <!--  
@@ -100,8 +103,3 @@ Microsoft の使命は、世界中のすべてのユーザーとすべての組�
 すべてのデジタルイベントの参加者は、主要なデジタルイベントとすべての関連アクティビティを対象とする、この倫理規定の原則を維持することを想定しています。 場所に関係なく、ビジネスアクティビティやソーシャルアクティビティを含むプログラムのあらゆる側面で、すべてのパーティの参加者 (任意の形式) で、破壊的または敬意の動作、メッセージ、画像、または相互作用を許容しません。 Microsoft は、年齢、先祖、色、性別 id または式、国内の発信元、物理的またはメンタル障碍、宗教、性的な向き、または適用される地域の法律、規制、ordinances によって保護されているその他の特性に基づいて、嫌がらせや差別を許容しません。  
 
 ソーシャルチャネルで共有されている形式での、セッションコンテンツやプレゼンテーションの写真、ビデオ、または記録は禁止されています。 すべてのユーザーに、歓迎で安全な環境の作成を支援することをお勧めします。 懸念、嫌がらせ行動、疑わしい、または破壊的な活動について、ビジネスの推進にご報告ください (1-877-320-MSFT or [buscond@microsoft.com](mailto:buscond@microsoft.com) )。 Microsoft は、任意のユーザーが任意の裁量でいつでも、すべての人を admittance に拒否する権利を留保します。 
-
-私たちは、すべてのユーザーに対して、すべてのユーザーに対して、どのような場合でも、すべてのユーザーに対して、Altwithin Evr のイマーシブ環境内で責任を持つこと 他のユーザー領域を尊重し、イベントに参加しているときに、他の出席者の表示をブロックしないようにしてください。  個人のイベントと同様に、イベントの他のユーザーによって通知される可能性があることに注意してください。プライベートメッセージ交換が必要な場合は、altspace evr ホームなどの他の領域に対してこれを行うことをお勧めします。
-
-
-

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5952cf94ba07a6d92903050a2a813cc911d4d70f
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: a8258f1ba99fdd1607014624c4ad4d6ec0a8e330
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354677"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609610"
 ---
 # <a name="425"></a>[4.25](#tab/425)
 
@@ -13,9 +13,9 @@ ms.locfileid: "96354677"
 > [!NOTE]
 > これには **Unreal Engine 4.25** 以降のバージョンが必要です。
 
-システムとカスタム MRC レコーダーは、PV カメラとイマーシブ アプリによってレンダリングされたホログラムを組み合わせることにより、Mixed Reality キャプチャを作成します。
+システムとカスタム MRC レコーダーにより、PV カメラをアプリによってレンダリングされたホログラムと組み合わせることにより、Mixed Reality キャプチャが作成されます。
 
-既定では、Mixed Reality キャプチャでは、右目のホログラフィック出力が使用されます。 イマーシブ アプリが [PV カメラ](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)からのレンダリングを選択した場合は、それが代わりに使用されます。 これにより、現実世界と MRC ビデオのホログラムとの間のマッピングが向上します。
+既定では、Mixed Reality キャプチャでは、右目のホログラフィック出力が使用されます。 イマーシブ アプリによって [PV カメラ](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)からのレンダリングが選択された場合は、それが代わりに使用されます。 PV カメラからレンダリングすることにより、現実世界と MRC ビデオのホログラムとの間のマッピングが向上します。
 
 PV カメラからの表示をオプトインするには、次のようにします。
 
@@ -51,7 +51,7 @@ Web カメラ テクスチャは実行時にゲームで入手できますが、
 
 ![Web カメラからのカメラ テクスチャ](../images/unreal-camera-texture.PNG)
 
-5. マテリアルに、カラー エントリにバインドされている **SetTextureParameterValue** の名前と一致するパラメータがあることを確認します。 これを行わないと、カメラ イメージを正しく表示できません。
+5. マテリアルに、カラー エントリにバインドされている **SetTextureParameterValue** の名前と一致するパラメーターがあることを確認します。 パラメーターがないと、カメラ イメージを正しく表示できません。
 
 ![カメラのテクスチャ](../images/unreal-camera-material.PNG)
 
@@ -91,13 +91,13 @@ Web カメラ テクスチャは実行時にゲームで入手できますが、
 
 ## <a name="find-camera-positions-in-world-space"></a>ワールド空間でカメラの位置を検索する
 
-HoloLens 2 のカメラは、デバイスの頭追跡から垂直方向にオフセットされます。  これを把握するため、ワールド空間内のカメラの位置を調べる関数がいくつかあります。
+HoloLens 2 のカメラは、デバイスの頭追跡から垂直方向にオフセットされます。  オフセットを考慮するために、ワールド空間内のカメラの位置を調べる関数がいくつかあります。
 
-GetPVCameraToWorldTransform を使用すると、PVCamera のワールド空間での変換が取得されます。  これはカメラのレンズ上に配置されます。
+GetPVCameraToWorldTransform を使用すると、PV カメラのワールド空間内の変換が取得されて、カメラのレンズに配置されます。
 
 ![PVCamera からワールド空間への変換の取得関数のブループリント](../images/unreal-pvc-img-08.png)
 
-GetWorldSpaceRayFromCameraPoint を使用すると、カメラ フレーム内の特定のピクセルにあるものを調べるため、カメラのレンズから Unreal ワールド空間内のシーンに光線がキャストされます。
+GetWorldSpaceRayFromCameraPoint を使用すると、カメラ フレーム内のピクセルの内容を調べるため、カメラのレンズから Unreal ワールド空間内のシーンに光線がキャストされます。
 
 ![カメラ ポイントからのワールド空間の光線の取得のブループリント](../images/unreal-pvc-img-09.png)
 
@@ -105,7 +105,7 @@ GetPVCameraIntrinsics を使用すると、カメラの組み込み値が返さ�
 
 ![PVCamera 組み込み関数取得のブループリント](../images/unreal-pvc-img-10.png)
 
-ワールド空間の特定のピクセル座標に存在するものを調べるには、ワールド空間光線でライン トレースを使用できます。
+ワールド空間の特定のピクセル座標に存在するものを調べるには、ワールド空間光線でライン トレースを使用します。
 
 ![ワールド空間の特定のピクセル座標に存在するものを調べるために使用されているワールド空間光線のブループリント](../images/unreal-pvc-img-11.png)
 

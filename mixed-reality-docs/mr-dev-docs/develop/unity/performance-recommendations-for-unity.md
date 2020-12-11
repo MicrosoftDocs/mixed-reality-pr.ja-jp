@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: グラフィックス, cpu, gpu, レンダリング, ガベージ コレクション, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 2c5a459f673889dd4c52043f9b9df6a3fe43a93a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6fd12bec31bb721def8801a8f2bacb8c3cb75745
+ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699762"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761774"
 ---
 # <a name="performance-recommendations-for-unity"></a>Unity のパフォーマンスに関する推奨事項
 
@@ -31,7 +31,7 @@ Unity では、次のことに関する優れたドキュメントが提供さ�
 2) [Unity プロファイラーでパフォーマンスの問題を効果的に診断する](https://unity3d.com/learn/tutorials/temas/performance-optimization/diagnosing-performance-problems-using-profiler-window)方法
 
 >[!NOTE]
-> Unity プロファイラーを接続し、GPU プロファイラーを追加した後 (右上隅の「 *プロファイラーの追加* 」を参照)、プロファイラーの中央で CPU と GPU それぞれで費やされている時間を確認できます。 これにより、開発者は簡単に、アプリケーションが CPU バウンドか GPU バウンドかをだいたい確認できます。
+> Unity プロファイラーを接続し、GPU プロファイラーを追加した後 (右上隅の「*プロファイラーの追加*」を参照)、プロファイラーの中央で CPU と GPU それぞれで費やされている時間を確認できます。 これにより、開発者は簡単に、アプリケーションが CPU バウンドか GPU バウンドかをだいたい確認できます。
 >
 > ![Unity の CPU と GPU](images/unity-profiler-cpu-gpu.png)
 
@@ -120,9 +120,9 @@ public class ExampleClass : MonoBehaviour
 
 3) **ボックス化に注意する**
 
-    [ボックス化](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)は、C# 言語とランタイムの中核となる概念です。 これは、char、int、bool などの値型変数を参照型変数の中にラップするプロセスです。 値型変数が "ボックス化" されると、マネージド ヒープに格納される System.Object の内部にラップされます。 したがって、メモリが割り当てられ、最終的に破棄されるときは、ガベージ コレクターによって処理される必要があります。 これらの割り当てと割り当て解除は、パフォーマンス コストの原因になり、多くのシナリオでは、不要であるか、低コストの代替手段で簡単に置き換えることができます。
+    [ボックス化](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)は、C# 言語とランタイムの中核となる概念です。 これは、`char`、`int`、`bool` などの値型変数を参照型変数の中にラップするプロセスです。 値型変数が "ボックス化" されると、マネージド ヒープに格納される `System.Object` の内部にラップされます。 したがって、メモリが割り当てられ、最終的に破棄されるときは、ガベージ コレクターによって処理される必要があります。 これらの割り当てと割り当て解除は、パフォーマンス コストの原因になり、多くのシナリオでは、不要であるか、低コストの代替手段で簡単に置き換えることができます。
 
-    開発でのボックス化の最も一般的な形式の 1 つは、[null 許容値型](https://docs.microsoft.com//dotnet/csharp/programming-guide/nullable-types/)の使用です。 関数で値型に対して null を返すことができるようにするのはよくあることであり、値を取得しようとして操作が失敗する可能性がある場合は特にそうです。 この方法で発生する可能性のある問題は、ヒープで割り当てを行ったため、後でガベージ コレクションが必要になることです。
+    ボックス化を回避するには、数値型と構造体 (`Nullable<T>` を含む) が格納される変数、フィールド、プロパティを、オブジェクトを使用するのではなく、`int`、`float?`、`MyStruct` などの特定の型として厳密に型指定します。  これらのオブジェクトをリストに配置する場合は、`List<object>` や `ArrayList` ではなく、`List<int>` などの厳密に型指定されたリストを使用します。
 
     **C# でのボックス化の例**
 
@@ -130,21 +130,6 @@ public class ExampleClass : MonoBehaviour
     // boolean value type is boxed into object boxedMyVar on the heap
     bool myVar = true;
     object boxedMyVar = myVar;
-    ```
-
-    **null 許容値型を使用したことで問題のあるボックス化の例**
-
-    このコードは、Unity プロジェクトで作成する可能性のあるダミー パーティクル クラスを示したものです。 `TryGetSpeed()` の呼び出しにより、後でガベージ コレクションが必要になるオブジェクトの割り当てがヒープで行われます。 この例の場合、1000 個またはそれよりずっと多くのパーティクルがシーン内にあり、それぞれに対して現在の速度が要求されるため、特に問題になります。 したがって、何千個ものオブジェクトが割り当てられ、結果としてすべてのフレームが割り当て解除されるため、パフォーマンスが大幅に低下します。 エラーが発生したことを示す -1 などの負の値を返すように関数を書き直すと、この問題は回避され、メモリがスタックに保持されます。
-
-    ```csharp
-        public class MyParticle
-        {
-            // Example of function returning nullable value type
-            public int? TryGetSpeed()
-            {
-                // Returns current speed int value or null if fails
-            }
-        }
     ```
 
 #### <a name="repeating-code-paths"></a>コード パスの繰り返し
@@ -243,15 +228,15 @@ Unity プロジェクトでこの機能を有効にするには
 
 #### <a name="static-batching"></a>静的バッチ処理
 
-Unity では、多くの静的オブジェクトをバッチ処理して、GPU への描画呼び出しを減らすことができます。 静的バッチ処理は、 **1) 同じ素材を共有し** 、 **2) *Static* とマークされている** 、Unity のほとんどの [Renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) オブジェクトで動作します (Unity でオブジェクトを選択し、インスペクターの右上にあるチェック ボックスをオンにします)。 *Static* とマークされている GameObject は、アプリケーションの実行時を通して移動できません。 そのため、事実上すべてのオブジェクトの配置、移動、スケーリングなどを行う必要がある HoloLens では、静的バッチ処理を利用することが困難な場合があります。イマーシブ ヘッドセットの場合、静的バッチ処理によって描画呼び出しが大幅に減少し、パフォーマンスが向上する可能性があります。
+Unity では、多くの静的オブジェクトをバッチ処理して、GPU への描画呼び出しを減らすことができます。 静的バッチ処理は、**1) 同じ素材を共有し**、**2) *Static* とマークされている**、Unity のほとんどの [Renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) オブジェクトで動作します (Unity でオブジェクトを選択し、インスペクターの右上にあるチェック ボックスをオンにします)。 *Static* とマークされている GameObject は、アプリケーションの実行時を通して移動できません。 そのため、事実上すべてのオブジェクトの配置、移動、スケーリングなどを行う必要がある HoloLens では、静的バッチ処理を利用することが困難な場合があります。イマーシブ ヘッドセットの場合、静的バッチ処理によって描画呼び出しが大幅に減少し、パフォーマンスが向上する可能性があります。
 
-詳細については、 [Unity の描画呼び出しのバッチ処理](https://docs.unity3d.com/Manual/DrawCallBatching.html)に関する記事の「 *静的バッチ処理* 」を参照してください。
+詳細については、[Unity の描画呼び出しのバッチ処理](https://docs.unity3d.com/Manual/DrawCallBatching.html)に関する記事の「*静的バッチ処理*」を参照してください。
 
 #### <a name="dynamic-batching"></a>動的バッチ処理
 
-HoloLens の開発では *Static* としてオブジェクトをマークすることには問題であるため、動的バッチ処理が、この機能がないことを補う優れたツールになる可能性があります。 もちろん、イマーシブ ヘッドセットにも役立つことがあります。 ただし、GameObject が **a) 同じ素材を共有し** 、 **b) それ以外の条件の長い一覧を満たす** 必要があるため、Unity で動的バッチ処理を有効にすることは難しい場合があります。
+HoloLens の開発では *Static* としてオブジェクトをマークすることには問題であるため、動的バッチ処理が、この機能がないことを補う優れたツールになる可能性があります。 もちろん、イマーシブ ヘッドセットにも役立つことがあります。 ただし、GameObject が **a) 同じ素材を共有し**、**b) それ以外の条件の長い一覧を満たす** 必要があるため、Unity で動的バッチ処理を有効にすることは難しい場合があります。
 
-詳細については、 [Unity の描画呼び出しのバッチ処理](https://docs.unity3d.com/Manual/DrawCallBatching.html)に関する記事の「 *動的バッチ処理* 」を参照してください。 ほとんどの場合、関連付けられたメッシュ データは 300 個より多くの頂点を持つことができないため、GameObject は動的バッチ処理が無効になります。
+詳細については、[Unity の描画呼び出しのバッチ処理](https://docs.unity3d.com/Manual/DrawCallBatching.html)に関する記事の「*動的バッチ処理*」を参照してください。 ほとんどの場合、関連付けられたメッシュ データは 300 個より多くの頂点を持つことができないため、GameObject は動的バッチ処理が無効になります。
 
 #### <a name="other-techniques"></a>その他の手法
 
@@ -268,7 +253,7 @@ HoloLens の開発では *Static* としてオブジェクトをマークする�
 
 ### <a name="optimize-depth-buffer-sharing"></a>深度バッファーの共有を最適化する
 
-一般に、 [ホログラム安定性](../platform-capabilities-and-apis/Hologram-stability.md)に対して最適化するには、 **[Player XR Settings]\(プレーヤー XR 設定\)** の **[Depth buffer sharing]\(深度バッファー共有\)** を有効にすることをお勧めします。 ただし、この設定を使用して深度ベースの遅延ステージ再投影を有効にする場合は、 **24 ビット深度形式** ではなく、 **16 ビット深度形式** を選択することをお勧めします。 16 ビット深度バッファーを使用すると、深度バッファー トラフィックに関連付けられた帯域幅 (したがって電力) が大幅に減少します。 これは、電力の削減とパフォーマンスの向上の両方に大きなメリットがあります。 ただし、" *16 ビット深度形式* " を使用すると、2 つの悪影響が発生する可能性があります。
+一般に、[ホログラム安定性](../platform-capabilities-and-apis/Hologram-stability.md)に対して最適化するには、 **[Player XR Settings]\(プレーヤー XR 設定\)** の **[Depth buffer sharing]\(深度バッファー共有\)** を有効にすることをお勧めします。 ただし、この設定を使用して深度ベースの遅延ステージ再投影を有効にする場合は、**24 ビット深度形式** ではなく、**16 ビット深度形式** を選択することをお勧めします。 16 ビット深度バッファーを使用すると、深度バッファー トラフィックに関連付けられた帯域幅 (したがって電力) が大幅に減少します。 これは、電力の削減とパフォーマンスの向上の両方に大きなメリットがあります。 ただし、"*16 ビット深度形式*" を使用すると、2 つの悪影響が発生する可能性があります。
 
 **Z ファイティング**
 
@@ -330,11 +315,11 @@ Unity では、unlit、vertex lit、および Unity 標準シェーダーより�
 
 #### <a name="shader-preloading"></a>シェーダーのプリロード
 
-[シェーダーの読み込み時間](https://docs.unity3d.com/Manual/OptimizingShaderLoadTime.html)を最適化するには、 *シェーダーのプリロード* や他のテクニックを使用します。 特に、シェーダーのプリロードは、シェーダーの実行時コンパイルによる遅延が発生しないことを意味します。
+[シェーダーの読み込み時間](https://docs.unity3d.com/Manual/OptimizingShaderLoadTime.html)を最適化するには、*シェーダーのプリロード* や他のテクニックを使用します。 特に、シェーダーのプリロードは、シェーダーの実行時コンパイルによる遅延が発生しないことを意味します。
 
 ### <a name="limit-overdraw"></a>オーバードローを制限する
 
-Unity では、 **シーン ビュー** の左上隅にある [**描画モード メニュー**](https://docs.unity3d.com/Manual/ViewModes.html)を切り替えて **[Overdraw]\(オーバードロー\)** を選択することにより、シーンのオーバードローを表示できます。
+Unity では、**シーン ビュー** の左上隅にある [**描画モード メニュー**](https://docs.unity3d.com/Manual/ViewModes.html)を切り替えて **[Overdraw]\(オーバードロー\)** を選択することにより、シーンのオーバードローを表示できます。
 
 一般に、GPU に送られる前にオブジェクトを事前にカリングすることで、オーバードローを軽減できます。 Unity では、エンジンに[オクルージョン カリング](https://docs.unity3d.com/Manual/OcclusionCulling.html)を実装する詳しい方法が提供されています。
 
@@ -354,7 +339,7 @@ Unity では、ガベージ コレクターの詳細なしくみと、メモリ�
 その他のクイックヒント:
 - C# の [StringBuilder](https://docs.microsoft.com/dotnet/api/system.text.stringbuilder) クラスを使用して、実行時に複雑な文字列を動的に構築します
 - アプリのすべてのビルド バージョンで実行されるため、Debug.Log() の呼び出しは不要になったら削除します
-- ホログラフィック アプリで一般に多くのメモリが必要な場合は、読み込み中や移行中の画面を表示するときなど、読み込みフェーズの間に、 [_**System.GC.Collect()**_](https://docs.microsoft.com/dotnet/api/system.gc.collect) を呼び出すことを検討します
+- ホログラフィック アプリで一般に多くのメモリが必要な場合は、読み込み中や移行中の画面を表示するときなど、読み込みフェーズの間に、[_**System.GC.Collect()**_](https://docs.microsoft.com/dotnet/api/system.gc.collect) を呼び出すことを検討します
 
 #### <a name="object-pooling"></a>オブジェクト プーリング
 

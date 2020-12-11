@@ -2,17 +2,17 @@
 title: Unreal でのプロジェクトのアップグレード
 description: Unreal プロジェクトでのバージョンのアップグレード手順と非推奨になった API の概要。
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, ドキュメント, ガイド, 機能, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 移植, アップグレード
-ms.openlocfilehash: efad783ee199ed42c7355917a180855b3ec4f11b
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 0ba10b8ee1067da4494f147d43f8834010e1250f
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355708"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609663"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Unreal でのプロジェクトのアップグレード
 
@@ -20,7 +20,7 @@ Unreal が新しいバージョンに更新されると、非推奨になった�
 
 ## <a name="426-upgrades"></a>4.26 のアップグレード
  
-4\.26 では、AR と VR のすべてのプラットフォームがリファクタリングされ、共通のインターフェイスが追加されて、アプリケーションのコードはプラットフォームに依存しなくなりました。  このリファクタリングのため、HoloLens プロジェクトを 4.26 に更新すると、通常より多くの警告が表示されることがあります。  プロジェクトを他のプラットフォームにいっそう簡単に移植できるよう、新しい API に更新することをお勧めします。
+4\.26 では、AR と VR のすべてのプラットフォームがリファクタリングされ、共通のインターフェイスが追加されて、アプリケーションのコードはプラットフォームに依存しなくなったため、通常より多くの警告が表示される可能性があります。  プロジェクトを他のプラットフォームにいっそう簡単に移植できるよう、新しい API に更新することをお勧めします。
 
 非推奨になった関数と、代わりに使用する関数が、警告メッセージで示されます。  非推奨のすべての関数は、このリリースでは引き続き動作しますが、今後のリリースでは動作しない可能性があります。  また、非推奨の関数は、ブループリントで関数を検索したときの一覧にも表示されなくなります。
 
@@ -49,4 +49,4 @@ Unreal が新しいバージョンに更新されると、非推奨になった�
 | GetVersionString | ![バージョン文字列を取得する関数のブループリント](images/unreal-porting-img-16.png) |
 | IsTrackingAvailable | ![IsTrackingAvailable プロパティのブループリント](images/unreal-porting-img-17.png) |
 | IsButtonClicked、IsButtonDown、IsGrasped、IsSelectPressed | Unreal の入力アクション システムを使用します。 |
-| SetFocusPointForFrame | 4\.26 では削除されました。  これは、以前はリモート処理のときの再投影に使用されていましたが、現在は深度の再投影をサポートしています。 |
+| SetFocusPointForFrame | 4\.26 では削除されました。  以前はリモート処理のときの再投影に使用されていましたが、現在は深度の再投影がサポートされています。 |

@@ -1,20 +1,20 @@
 ---
-ms.openlocfilehash: cdd2b613535080b371807020670a2785274c29f5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f4f9a04a2de5e2c10bc43770bb1bfe9d00f3a4b6
+ms.sourcegitcommit: d56e7dd6c917ddc4ead0792ebff21891921174b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699562"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96564075"
 ---
 # <a name="available-in-mrtk"></a>[MRTK で利用可能](#tab/mrtk)
 
 |  機能  |  機能  |
 | --- | --- |
-| [入力シミュレーション](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/InputSimulation.md) | エディターでマウスとキーボードの入力を使用して、ヘッドマウント ディスプレイ (HMD) およびハンド トラッキング機能をシミュレートします |
-| [ハンド インタラクション](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/HandInteraction.md) | 多関節ハンド入力を使用して UX コンポーネントと対話します |
-| [押しボタン コンポーネント](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/PressableButton.md) | 低レベルのコンポーネントを通じてボタンのブループリントの状態を移行します |
-| [マニピュレーター コンポーネント](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/Manipulator.md) | 片手または両手操作入力を使用してアクターを移動および回転します |
-| [動作追従コンポーネント](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/FollowComponent.md) | アクターまたはコンポーネントを別のコンポーネントの視野内に維持します |
+| [入力シミュレーション](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/InputSimulation.html) | エディターでマウスとキーボードの入力を使用して、ヘッドマウント ディスプレイ (HMD) およびハンド トラッキング機能をシミュレートします |
+| [ハンド インタラクション](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) | 多関節ハンド入力を使用して UX コンポーネントと対話します |
+| [押しボタン](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) | 低レベルのコンポーネントを通じてボタンのブループリントの状態を移行します |
+| [マニピュレーター](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) | 片手または両手操作入力を使用してアクターを移動および回転します |
+| [動作追従](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/FollowComponent.html) | アクターまたはコンポーネントを別のコンポーネントの視野内に維持します |
 
 # <a name="standalone-features"></a>[スタンドアロンの機能](#tab/standalone)
 

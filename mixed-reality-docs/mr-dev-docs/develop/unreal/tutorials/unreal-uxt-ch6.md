@@ -1,22 +1,20 @@
 ---
 title: 6. デバイスまたはエミュレーターへのパッケージ化とデプロイ
-description: Unreal Engine 4 と Mixed Reality ツールキット UX ツール プラグインを使用して簡単なチェス アプリを構築するためのチュートリアル シリーズのパート 6 の 6
+description: Unreal Engine 4 と Mixed Reality ツールキット UX ツール プラグインを使用してチェス アプリを構築するためのチュートリアル シリーズのパート 6 の 6
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, チュートリアル, 入門, mrtk, uxt, UX ツール, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: cbdbf87d75dcfc56c8eea52f7dff4a646f3b6a5d
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4319b1171090b8ca7a320e98867bfb3635bab005
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679821"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609493"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6.デバイスまたはエミュレーターへのパッケージ化とデプロイ
-
-## <a name="overview"></a>概要
 
 前のチュートリアルでは、チェスの駒を元の位置にリセットする簡単なボタンを追加しました。 この最後のセクションでは、アプリを HoloLens 2 またはエミュレーターで実行できるようにします。 HoloLens 2 をお持ちの場合は、コンピューターからストリーミングするか、アプリをパッケージ化してデバイス上で直接実行することができます。 デバイスがない場合は、エミュレーターで実行するアプリをパッケージ化します。 このセクションを完了するまでに、対話式操作と UI を備えた、再生可能な Mixed Reality アプリがデプロイされます。
 
@@ -26,7 +24,8 @@ ms.locfileid: "94679821"
 * アプリをパッケージ化して HoloLens 2 のデバイスまたはエミュレーターにデプロイする
 
 ## <a name="device-only-streaming"></a>[デバイスのみ] ストリーミング
-この場合、[Holographic Remoting](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting) は、チャネルを切り替えるのではなく、PC またはスタンドアロンの UWP デバイスから HoloLens 2 にデータをストリーミングすることを意味します。 これは、リモート処理ホスト アプリが HoloLens から入力データ ストリームを受け取り、仮想イマーシブ ビューでコンテンツをレンダリングし、Wi-Fi 経由でコンテンツ フレームを HoloLens にストリームするという仕組みになっています。 ストリーミングを使用すると、リモートのイマーシブ ビューを既存のデスクトップ PC ソフトウェアに追加し、より多くのシステム リソースにアクセスできます。
+
+[Holographic Remoting](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting) は、チャネルを切り替えるのではなく、PC またはスタンドアロンの UWP デバイスから HoloLens 2 にデータをストリーミングすることを意味します。 HoloLens から入力データ ストリームを受け取ったリモート処理ホスト アプリにより、仮想イマーシブ ビューでコンテンツがレンダリングされ、Wi-Fi 経由でコンテンツ フレームが HoloLens にストリーミングされます。 ストリーミングを使用すると、リモートのイマーシブ ビューを既存のデスクトップ PC ソフトウェアに追加し、より多くのシステム リソースにアクセスできます。
 
 チェス アプリでこのルートを使用する場合は、次のことを行う必要があります。
 
@@ -36,7 +35,7 @@ ms.locfileid: "94679821"
 
 3.  エディターを再起動し、デバイスの IP アドレス (Holographic Remoting Player アプリに表示されるもの) を入力し、 **[接続]** をクリックします。
 
-接続後、 **[Play]\(再生\)** ボタンの右側にあるドロップダウン矢印をクリックし、 **[VR Preview]\(VR プレビュー\)** を選択します。 これにより、VR プレビュー ウィンドウでアプリが実行され、HoloLens ヘッドセットにストリーミングされます。
+接続後、 **[Play]\(再生\)** ボタンの右側にあるドロップダウン矢印をクリックし、 **[VR Preview]\(VR プレビュー\)** を選択します。 VR プレビュー ウィンドウでアプリが実行され、HoloLens ヘッドセットにストリーミングされます。
 
 ## <a name="packaging-and-deploying-the-app-via-device-portal"></a>デバイス ポータル経由でのアプリのパッケージ化とデプロイ
 
@@ -80,16 +79,16 @@ ms.locfileid: "94679821"
 7.  **[参照...]** をクリックし、**ChessApp.appxbundle** ファイルに移動して **[開く]** をクリックします。
 
     * デバイスに初めてアプリをインストールする場合は、 **[Allow me to select framework packages]\(フレームワーク パッケージを選択できるようにする\)** の横のボックスをオンにします。
-    * 次のダイアログで、適切な **VCLibs** および **appx** ファイルを組み込みます (デバイスの場合は arm64、エミュレーターの場合は x64)。 これらのファイルは、パッケージを保存したフォルダー内の **HoloLens** にあります。
+    * 次のダイアログで、適切な **VCLibs** および **appx** ファイルを組み込みます (デバイスの場合は **arm64**、エミュレーターの場合は **x64**)。 ファイルは、パッケージを保存したフォルダー内の **HoloLens** にあります。
 
 8.  **[Install]** (インストール) をクリックします。
-    * これで、**すべてのアプリ** に移動して新しくインストールしたアプリをタップして実行するか、**Windows デバイス ポータル** から直接アプリを起動できます。 
+    * これで、 **[All Apps]\(すべてのアプリ\)** に移動して新しくインストールしたアプリをタップして実行するか、**Windows デバイス ポータル** から直接アプリを起動できます。 
 
-お疲れさまでした。 HoloLens Mixed Reality アプリケーションが完成し、準備が整いました。 ただし、これは目的地ではありません。 MRTK には、空間マッピング、視線入力および音声入力、さらには QR コードなど、プロジェクトに追加できるスタンドアロン機能が多数用意されています。 これらの機能の詳細については、[Unreal 開発の概要](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview)を参照してください。
+お疲れさまでした。 HoloLens Mixed Reality アプリケーションが完成し、準備が整いました。 ただし、これが終点ではありません。 MRTK には、空間マッピング、視線入力および音声入力、さらには QR コードなど、プロジェクトに追加できるスタンドアロン機能が多数用意されています。 これらの機能の詳細については、[Unreal 開発の概要](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview)を参照してください。
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-私たちが用意した Unreal 開発チェックポイント体験に従っている場合、読者は MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素に進むことができます。
+用意されている Unreal 開発体験に従っている場合、MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素を続けることができます。
 
 > [!div class="nextstepaction"]
 > [視線入力](../unreal-gaze-input.md)

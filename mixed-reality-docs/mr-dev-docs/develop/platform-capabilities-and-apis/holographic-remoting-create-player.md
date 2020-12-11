@@ -1,30 +1,30 @@
 ---
 title: Holographic Remoting プレーヤーの記述
-description: カスタム Holographic リモート処理プレーヤーアプリを作成することにより、リモートコンピューター上にレンダリングされたコンテンツを HoloLens 2 に表示できるカスタムアプリケーションを作成できます。 この記事では、これを実現する方法について説明します。
+description: カスタム Holographic リモート処理プレーヤーアプリを作成することにより、リモートコンピューターでレンダリングされたコンテンツを HoloLens 2 に表示できるカスタムアプリケーションを作成できます。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、NuGet、アプリケーションマニフェスト、プレーヤーコンテキスト、リモートアプリ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 69dc382873eb4fe0dc50f6f55e074c3491b02c02
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: ac3ee68cf3cff3e024ce40acceac61a2fe123399
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443641"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102897"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>カスタム Holographic リモート処理プレーヤーアプリの作成
 
 >[!IMPORTANT]
 >このドキュメントでは、HoloLens 2 用のカスタムプレーヤーアプリケーションの作成について説明します。 HoloLens 2 向けに作成されたカスタムプレーヤーは、HoloLens 1 用に作成されたリモートアプリケーションと互換性がありません。 これは、両方のアプリケーションが NuGet **パッケージバージョン 2.x** を使用する必要があることを意味します。
 
-カスタム Holographic リモート処理プレーヤーアプリを作成することにより、HoloLens 2 のリモートコンピューター上のから [イマーシブビュー](../../design/app-views.md) を表示できるカスタムアプリケーションを作成できます。 この記事では、これを実現する方法について説明します。 このページのすべてのコードと作業中のプロジェクトは、 [Holographic リモート処理のサンプル github リポジトリ](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)にあります。
+カスタム Holographic リモート処理プレーヤーアプリを作成することにより、HoloLens 2 のリモートコンピューター上のから [イマーシブビュー](../../design/app-views.md) を表示できるカスタムアプリケーションを作成できます。 このページのすべてのコードと作業中のプロジェクトは、 [Holographic リモート処理のサンプル github リポジトリ](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)にあります。
 
-Holographic リモート処理プレーヤーを使用すると、アプリは、デスクトップ PC または、Xbox One などの UWP デバイスで [レンダリング](rendering.md) された Holographic コンテンツを表示して、より多くのシステムリソースにアクセスできるようになります。 Holographic Remoting player アプリは、入力データを Holographic リモート処理リモートアプリケーションにストリーミングし、ビデオとオーディオストリームとしてイマーシブビューを受信します。 接続は標準の Wi-fi を使用して行われます。 プレーヤーアプリを作成するには、NuGet パッケージを使用して Holographic Remoting を UWP アプリに追加し、接続を処理し、イマーシブビューを表示するコードを記述します。 
+Holographic リモート処理プレーヤーを使用すると、アプリは、デスクトップ PC または UWP デバイスに [レンダリング](rendering.md) された Holographic コンテンツを、より多くのシステムリソースにアクセスできるようになります。 Holographic Remoting player アプリは、入力データを Holographic リモート処理リモートアプリケーションにストリーミングし、ビデオとオーディオストリームとしてイマーシブビューを受信します。 接続は標準の Wi-fi を使用して行われます。 プレーヤーアプリを作成するには、NuGet パッケージを使用して Holographic Remoting を UWP アプリに追加します。 次に、接続を処理し、イマーシブビューを表示するコードを記述します。 
 
 ## <a name="prerequisites"></a>前提条件
 
-開始点としては、既に Windows Mixed Reality API を対象としている、動作する DirectX ベースの UWP アプリを使用することをお勧めします。 詳細については、「 [DirectX 開発の概要](../native/directx-development-overview.md)」を参照してください。 既存のアプリがなく、最初から開始する場合は、 [C++ holographic プロジェクトテンプレート](../native/creating-a-holographic-directx-project.md) を開始することをお勧めします。
+開始点としては、既に Windows Mixed Reality API を対象としている、動作する DirectX ベースの UWP アプリを使用することをお勧めします。 詳細については、「 [DirectX 開発の概要](../native/directx-development-overview.md)」を参照してください。 既存のアプリがなく、最初から開始する場合は、 [C++ holographic プロジェクトテンプレート](../native/creating-a-holographic-directx-project.md) を使用することをお勧めします。
 
 >[!IMPORTANT]
 >Holographic リモート処理を使用するすべてのアプリは、 [マルチスレッドアパートメント](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments)を使用するように作成する必要があります。 [シングルスレッドアパートメント](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments)の使用はサポートされていますが、パフォーマンスが低下し、再生中に途切れが生じる可能性があります。 C++ を使用している場合、winrt [winrt:: init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) 、マルチスレッドアパートメントが既定値です。
@@ -34,10 +34,10 @@ Holographic リモート処理プレーヤーを使用すると、アプリは�
 Visual Studio で NuGet パッケージをプロジェクトに追加するには、次の手順を実行する必要があります。
 1. Visual Studio でプロジェクトを開きます。
 2. プロジェクトノードを右クリックし、[ **NuGet パッケージの管理...** ] を選択します。
-3. 表示されるパネルで、[ **参照** ] をクリックし、"Holographic Remoting" を検索します。
-4. [ **Holographic**] を選択し **、最新の** 2.x バージョンを選択して [ **インストール**] をクリックします。
-5. [ **プレビュー** ] ダイアログが表示されたら、[ **OK**] をクリックします。
-6. 次に表示されるダイアログは、使用許諾契約書です。 [ **同意** する] をクリックして、使用許諾契約書に同意します。
+3. 表示されるパネルで、[ **参照** ] を選択し、"Holographic Remoting" を検索します。
+4. [ **Holographic**] を選択し、最新の2.x バージョンを選択して [**インストール**] を選択 **します。**
+5. [ **プレビュー** ] ダイアログが表示されたら、[ **OK]** を選択します。
+6. [使用許諾契約書が表示されたら **同意** する] を選択します。
 
 >[!IMPORTANT]
 ><a name="idl"></a>```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl```NuGet パッケージ内には、Holographic Remoting によって公開される API に関する詳細なドキュメントが含まれています。
@@ -47,7 +47,7 @@ Visual Studio で NuGet パッケージをプロジェクトに追加するに�
 NuGet パッケージによって追加された Microsoft.Holographic.AppRemoting.dll をアプリケーションが認識できるようにするには、次の手順をプロジェクトで実行する必要があります。
 
 1. ソリューションエクスプローラーで **package.appxmanifest** ファイルを右クリックし、[**プログラムから開く**] を選択します。
-2. **XML (テキスト) エディター** を選択し、[OK] をクリックします。
+2. **XML (テキスト) エディター** を選択し、[ **OK]** を選択します。
 3. 次の行をファイルに追加して保存します。
 ```xml
   </Capabilities>
@@ -148,7 +148,7 @@ m_onConnectedEventToken = m_playerContext.OnConnected([]()
     // Handle connection successfully established
 });
 ```
-2) OnDisconnected: 確立された接続が終了した場合、または接続を確立できなかった場合にトリガーされます。
+2) OnDisconnected: 確立された接続が終了した場合、または接続が確立できなかった場合にトリガーされます。
 ```cpp
 m_onDisconnectedEventToken = m_playerContext.OnDisconnected([](ConnectionFailureReason failureReason)
 {
@@ -160,7 +160,7 @@ m_onDisconnectedEventToken = m_playerContext.OnDisconnected([](ConnectionFailure
 }
 ```
 >[!NOTE]
->指定できる ```ConnectionFailureReason``` 値は、ファイルに記載されてい ```Microsoft.Holographic.AppRemoting.idl``` [file](#idl)ます。
+>指定できる ```ConnectionFailureReason``` 値は、ファイルに記載されてい ```Microsoft.Holographic.AppRemoting.idl``` [](#idl)ます。
 
 3) OnListening: 受信接続のリッスンが開始されます。
 ```cpp
@@ -206,11 +206,11 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 - リモートアプリは、HolographicCameraRenderingParameters を使用して深度バッファーをコミットしました。 [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)。
 - カスタムプレーヤーアプリは、を呼び出す前に有効な深度バッファーをバインドしました ```BlitRemoteFrame``` 。
 
-これらの条件が満たされる ```BlitRemoteFrame``` と、リモートの深さが現在バインドされているローカルの深度バッファーに array.blit ます。 その後、リモートでレンダリングされるコンテンツとの深さが交差する追加のローカルコンテンツをレンダリングできます。 さらに、カスタムプレーヤーで [HolographicCameraRenderingParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) を使用してローカル深度バッファーをコミットし、リモートおよびローカルでレンダリングされるコンテンツの深さを再予測することもできます。 詳細については、「 [深度 Reprojection](hologram-stability.md#reprojection) 」を参照してください。
+これらの条件が満たされる ```BlitRemoteFrame``` と、リモートの深さが現在バインドされているローカルの深度バッファーに array.blit ます。 その後、追加のローカルコンテンツをレンダリングできます。これには、リモートでレンダリングされるコンテンツとの深さの積集合があります。 さらに、カスタムプレーヤーで [HolographicCameraRenderingParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) を使用してローカル深度バッファーをコミットし、リモートおよびローカルでレンダリングされるコンテンツの深さを再予測することもできます。 詳細については、「 [深度 Reprojection](hologram-stability.md#reprojection) 」を参照してください。
 
 ### <a name="projection-transform-mode"></a>プロジェクション変換モード
 
-Holographic リモート処理を介して深度再プロジェクションを使用しているときに表示される問題の1つは、カスタムプレーヤーアプリによって直接レンダリングされるローカルコンテンツとは別のプロジェクション変換を使用して、リモートコンテンツをレンダリングできることです。 一般的なユースケースでは、プレーヤー側とリモート側で ( [HolographicCamera:: SetNearPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setnearplanedistance) と [HolographicCamera:: SetFarPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setfarplanedistance)を使用して) 近距離および遠平面に対して異なる値を指定します。 この場合、プレーヤー側の射影変換に、リモートの近距離距離と遠距離の距離またはローカルの距離が反映されている必要があるかどうかは明確ではありません。
+問題の1つは、Holographic リモート処理を使用して深さの reprojection を使用しているときに、カスタムプレーヤーアプリによって直接レンダリングされるローカルコンテンツとは別のプロジェクション変換を使用してリモートコンテンツをレンダリングできることです。 一般的なユースケースでは、プレーヤー側とリモート側で ( [HolographicCamera:: SetNearPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setnearplanedistance) と [HolographicCamera:: SetFarPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setfarplanedistance)を使用して) 近距離および遠平面に対して異なる値を指定します。 この場合、プレーヤー側の射影変換にリモートの近距離/遠距離またはローカルの距離が反映されているかどうかは明確ではありません。
 
 バージョン [2.1.0](holographic-remoting-version-history.md#v2.1.0) 以降では、を使用して投影変換モードを制御でき ```PlayerContext::ProjectionTransformConfig``` ます。 サポートされる値は次のとおりです。
 
@@ -244,14 +244,14 @@ m_playerContext.BlitRemoteFrameTimeout(500ms);
 winrt::Microsoft::Holographic::AppRemoting::PlayerFrameStatistics statistics = m_playerContext.LastFrameStatistics();
 ```
 
-詳細については、ファイルのドキュメントを参照してください ```PlayerFrameStatistics``` ```Microsoft.Holographic.AppRemoting.idl``` [file](#idl)。
+詳細については、ファイルのドキュメントを参照してください ```PlayerFrameStatistics``` ```Microsoft.Holographic.AppRemoting.idl``` [](#idl)。
 
 ## <a name="optional-custom-data-channels"></a>省略可能: カスタムデータチャネル
 
 カスタムデータチャネルは、既に確立されているリモート処理接続を介してユーザーデータを送信するために使用できます。 詳細については、「 [カスタムデータチャネル](holographic-remoting-custom-data-channels.md) 」を参照してください。
 
-## <a name="see-also"></a>参照
-* [Windows Mixed Realiy Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
+## <a name="see-also"></a>関連項目
+* [Windows Mixed Reality Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
 * [OpenXR Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md)
 * [カスタムの Holographic Remoting データ チャネル](holographic-remoting-custom-data-channels.md)
 * [Holographic Remoting を使用したセキュリティで保護された接続の確立](holographic-remoting-secure-connection.md)

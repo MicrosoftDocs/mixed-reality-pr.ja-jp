@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット、データチャネル
-ms.openlocfilehash: 119a08a7f0e41aca694184879e33aaf54160220c
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 6fd2bbd8ce2dedc3b13674576a23a0484ebe1419
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443449"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102907"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>カスタムの Holographic Remoting データ チャネル
 
@@ -38,7 +38,7 @@ winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnDataReceived_revoker
 winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnClosed_revoker m_customChannelClosedEventRevoker;
 ```
 
-接続が正常に確立されると、新しいデータチャネルの作成は、リモート側とプレーヤー側のどちらからでも開始できます。 RemoteContext と PlayerContext はどちらも、 ```CreateDataChannel()``` これを行うための方法を提供します。 最初のパラメーターはチャネル ID で、後続の操作でデータチャネルを識別するために使用されます。 2番目のパラメーターは、このチャネルのデータを相手側に転送する優先度を指定する優先順位です。 チャネル Id の有効な範囲は、リモート64側の場合は63、プレーヤー側の場合は127を含む0になります。 有効な優先順位は ```Low``` 、、 ```Medium``` または ```High``` (両側) です。
+接続が正常に確立されると、リモート側、プレーヤー側、またはその両方から新しいデータチャネルを作成できます。 RemoteContext と PlayerContext はどちらも、 ```CreateDataChannel()``` データチャネルを作成するためのメソッドを提供します。 最初のパラメーターはチャネル ID で、後続の操作でデータチャネルを識別するために使用されます。 2番目のパラメーターは、このチャネルのデータを相手側に転送する優先度を指定する優先順位です。 リモート側で有効なチャネル Id は、0から63までの有効なチャネル Id と、プレーヤー側の127までの64を含みます。 有効な優先順位は ```Low``` 、、 ```Medium``` 、または ```High``` (両側) です。
 
 **リモート** 側でデータチャネルの作成を開始するには、次のようにします。
 ```cpp
@@ -113,8 +113,8 @@ m_customDataChannel.SendData(data, true);
 m_customDataChannel.Close();
 ```
 
-## <a name="see-also"></a>参照
-* [Windows Mixed Realiy Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
+## <a name="see-also"></a>関連項目
+* [Windows Mixed Reality Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
 * [OpenXR Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md)
 * [カスタム Holographic リモート処理プレーヤーアプリの作成](holographic-remoting-create-player.md)
 * [Holographic リモート処理のトラブルシューティングと制限事項](holographic-remoting-troubleshooting.md)

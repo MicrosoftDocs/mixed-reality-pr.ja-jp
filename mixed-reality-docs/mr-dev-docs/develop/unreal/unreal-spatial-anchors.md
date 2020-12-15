@@ -3,16 +3,16 @@ title: Unreal でのローカル空間アンカー
 description: Unreal で空間アンカーを使用するためのガイド
 author: hferrone
 ms.author: v-hferrone
-ms.date: 06/10/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, 空間アンカー, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: b517b1d89ddf7a35864db45a17336f4493816526
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 1c9d9fa119e57c57ab126fc26a26a35d75e07db7
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609633"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926086"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Unreal でのローカル空間アンカー
 

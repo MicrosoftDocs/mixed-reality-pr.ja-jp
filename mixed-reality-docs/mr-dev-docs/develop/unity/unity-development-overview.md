@@ -3,16 +3,16 @@ title: Unity 開発の概要
 description: Unity で Mixed Reality アプリのビルドを開始します。
 author: thetuvix
 ms.author: kurtie
-ms.date: 08/04/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, 開発, 作業の開始, 新しいプロジェクト, 移植, 機能, カメラ, シミュレーション, エミュレーション, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, 拡張現実とは, MRTK, Mixed Reality Toolkit, 空間マッピング, 音声入力, 場所を特定できるカメラ, エミュレーター, Azure, チュートリアル
-ms.openlocfilehash: 9a9a5bc47327b3bd23ac6212b8b9f12787b74e4c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4eeec1544315ff2b9a43fc725d5bbd83c8cea89f
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679901"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926034"
 ---
 # <a name="unity-development-overview"></a>Unity 開発の概要
 

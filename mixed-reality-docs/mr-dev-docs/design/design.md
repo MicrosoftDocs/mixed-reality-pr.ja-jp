@@ -3,16 +3,16 @@ title: 設計とプロトタイプ作成を始める
 description: 何かを作成する準備ができたら、設計とプロトタイプ作成を開始するために必要な基本的な概念について学習しましょう。
 author: grbury
 ms.author: grbury
-ms.date: 08/24/2019
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 検出, 配布, インデックス, ランディング ページ, 設計, 開発, チュートリアル, サンプル アプリ, 基本事項, ケース スタディ, リソース, HoloLens の使い方, オープン ソース プロジェクト, 主要な概念, 操作, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 3c28991fa35052a8b5cf5a071899ec14f2fec226
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: a11283ad4a7931c9e061cdbf25d4659fa4760822
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702718"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926006"
 ---
 # <a name="start-designing-and-prototyping"></a>設計とプロトタイプ作成を始める
 

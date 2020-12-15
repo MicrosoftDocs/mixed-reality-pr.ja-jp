@@ -3,16 +3,16 @@ title: Unreal 開発の概要
 description: Unreal Engine 4 を使用した Mixed Reality の開発の概要
 author: hferrone
 ms.author: v-hferrone
-ms.date: 12/7/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, ストリーミング, リモート処理, Mixed Reality, 開発, 入門, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 特徴, ホログラム, ゲームの開発, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, OpenXR
-ms.openlocfilehash: 1dcc5d6b00e1fdd51126e334cd28a10319b77af3
-ms.sourcegitcommit: f31f3a54c7c46e21884d62b4a696acf122a3c2b9
+ms.openlocfilehash: af5883ad71acf919133c330b1da8eb846d3a039f
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781969"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926016"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開発の概要
 

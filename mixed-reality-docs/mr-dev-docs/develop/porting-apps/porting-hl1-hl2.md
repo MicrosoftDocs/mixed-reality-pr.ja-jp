@@ -3,16 +3,16 @@ title: HoloLens (第 1 世代) アプリを HoloLens 2 に移植する
 description: HoloLens (第 1 世代) または前の MRTK の既存アプリがあり、MRTK バージョン 2 および HoloLens 2 への移植を考えている開発者が対象です。
 author: hferrone
 ms.author: grbury
-ms.date: 07/29/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, テスト, MRTK, MRTK バージョン 2, HoloLens 2, Unity, 移植, HoloLens 第 1 世代, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 移行, ベスト プラクティス, ARM
-ms.openlocfilehash: 9d76dcdb6fedb3297a781b9bf905b9d74521ad58
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 7a4c05ce4918ff3868265c40096bd37016d4546a
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96469725"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925955"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>HoloLens (第 1 世代) アプリを HoloLens 2 に移植する
 

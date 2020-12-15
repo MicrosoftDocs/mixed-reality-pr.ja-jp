@@ -1,28 +1,26 @@
 ---
 title: Holographic リモート処理リモートアプリの作成 (WMR)
-description: リモートコンピューター上にレンダリングされる Holographic リモート処理リモートアプリリモートコンテンツを HoloLens 2 にストリーミングできます。 この記事では、これを実現する方法について説明します。
+description: リモートコンピューター上にレンダリングされる Holographic リモート処理リモートアプリリモートコンテンツを HoloLens 2 にストリーミングできます。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、NuGet
-ms.openlocfilehash: 3bbb75d9f1b6db64326f5b429103828266650a52
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 5eddcc117008ebc54eac11965592099601880d3e
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96469513"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530213"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>HolographicSpace API を使用した Holographic リモート処理リモートアプリの作成
 
 >[!IMPORTANT]
 >このドキュメントでは、 [HOLOGRAPHICSPACE API](../native/getting-a-holographicspace.md)を使用して HoloLens 2 用のリモートアプリケーションを作成する方法について説明します。 HoloLens のリモートアプリケーション **(第1世代)** では、NuGet **パッケージバージョン 1.x** を使用する必要があります。 これは、HoloLens 2 用に作成されたリモートアプリケーションが HoloLens 1 と互換性がないことを意味します。 HoloLens 1 のドキュメントについては、 [こちら](add-holographic-remoting.md)を参照してください。
 
-Holographic リモート処理リモートアプリを作成することによって、リモートコンピューター上でレンダリングされるリモートコンテンツを HoloLens 2 にストリーミングし、Windows Mixed Reality ヘッドセットなどのイマーシブデバイスにストリーミングすることができます。 この記事では、これを実現する方法について説明します。 このページのすべてのコードと作業中のプロジェクトは、 [Holographic リモート処理のサンプル github リポジトリ](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)にあります。
+Holographic リモート処理アプリを使用すると、リモートでレンダリングされたコンテンツを HoloLens 2 および Windows Mixed Reality のイマーシブヘッドセットにストリーミングできます。 また、より多くのシステムリソースにアクセスしたり、既存のデスクトップ PC ソフトウェアにリモートの [イマーシブビュー](../../design/app-views.md) を統合したりすることもできます。 リモートアプリは HoloLens 2 から入力データストリームを受け取り、仮想イマーシブビューでコンテンツをレンダリングし、コンテンツフレームを HoloLens 2 にストリームバックします。 接続は標準の Wi-fi を使用して行われます。 Holographic リモート処理は、NuGet パケット経由でデスクトップまたは UWP アプリに追加されます。 接続を処理し、イマーシブビューでレンダリングする追加のコードが必要です。 一般的なリモート処理接続では、待機時間が50ミリ秒に抑えられます。 プレーヤーアプリは、リアルタイムで待機時間を報告できます。
 
-Holographic リモート処理を使用すると、アプリは、デスクトップ PC または、Xbox One などの UWP デバイスでレンダリングされた Holographic コンテンツを使用して、HoloLens 2 および Windows Mixed Reality ヘッドセットを対象にすることができます。これにより、より多くのシステムリソースにアクセスでき、リモートの [イマーシブビュー](../../design/app-views.md) を既存のデスクトップ PC ソフトウェアに統合できます。 リモートアプリは HoloLens 2 から入力データストリームを受け取り、仮想イマーシブビューでコンテンツをレンダリングし、コンテンツフレームを HoloLens 2 にストリームバックします。 接続は標準の Wi-fi を使用して行われます。 Holographic リモート処理は、NuGet パケット経由でデスクトップまたは UWP アプリに追加されます。 接続を処理し、イマーシブビューでレンダリングする追加のコードが必要です。
-
-一般的なリモート処理接続では、待機時間が50ミリ秒に抑えられます。 プレーヤーアプリは、リアルタイムで待機時間を報告できます。
+このページのすべてのコードと作業中のプロジェクトは、 [Holographic リモート処理のサンプル github リポジトリ](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)にあります。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -38,10 +36,10 @@ Holographic リモート処理を使用すると、アプリは、デスクト�
 Visual Studio で NuGet パッケージをプロジェクトに追加するには、次の手順を実行する必要があります。
 1. Visual Studio でプロジェクトを開きます。
 2. プロジェクトノードを右クリックし、[ **NuGet パッケージの管理...** ] を選択します。
-3. 表示されるパネルで、[ **参照** ] をクリックし、"Holographic Remoting" を検索します。
-4. [ **Holographic**] を選択し **、最新の** 2.x バージョンを選択して [ **インストール**] をクリックします。
-5. [ **プレビュー** ] ダイアログが表示されたら、[ **OK**] をクリックします。
-6. 次に表示されるダイアログは、使用許諾契約書です。 [ **同意** する] をクリックして、使用許諾契約書に同意します。
+3. 表示されるパネルで、[ **参照** ] を選択し、"Holographic Remoting" を検索します。
+4. [ **Holographic**] を選択し、最新の2.x バージョンを選択して [**インストール**] を選択 **します。**
+5. [ **プレビュー** ] ダイアログが表示されたら、[ **OK]** を選択します。
+6. [使用許諾契約書] ダイアログボックスが表示されたら、[ **同意** する] を選択します。
 
 >[!NOTE]
 >HoloLens 1 を対象とする開発者は、NuGet パッケージ **のバージョン 1.x** を引き続き利用できます。 詳細については、「 [Add Holographic Remoting (HoloLens (第1世代))](add-holographic-remoting.md)」を参照してください。
@@ -83,7 +81,7 @@ m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::Cr
 
 ## <a name="connect-to-the-device"></a>デバイスへの接続
 
-リモートアプリがコンテンツを表示できる状態になったら、プレーヤーデバイスへの接続を確立できます。
+リモートアプリがコンテンツを表示できる状態になったら、windows media player デバイスへの接続を確立できます。
 
 接続は、次の2つの方法のいずれかで実行できます。
 1) リモートアプリは、デバイスで実行されているプレーヤーに接続します。
@@ -138,7 +136,7 @@ m_onConnectedEventRevoker = m_remoteContext.OnConnected(winrt::auto_revoke, [thi
     }
 });
 ```
-2) OnDisconnected: 確立された接続が閉じられた場合、または接続を確立できなかった場合にトリガーされます。
+2) OnDisconnected: 確立された接続が閉じられたか、接続が確立できなかった場合にトリガーされます。
 ```cpp
 m_onDisconnectedEventRevoker =
     m_remoteContext.OnDisconnected(winrt::auto_revoke, [this, remoteContextWeakRef](ConnectionFailureReason failureReason) {
@@ -239,7 +237,7 @@ winrt::fire_and_forget InitializeSpeechAsync(
 1) 音声文法 xml ファイル内の仕様。 詳細について [は、「基本的な XML 文法を作成する方法](https://docs.microsoft.com//previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) 」を参照してください。
 2) を指定するには、をディクショナリベクター内に渡し ```ApplyParameters``` ます。
 
-On認識された音声コールバック内で、音声イベントを処理できます。
+次に、On認識された音声コールバック内で、speech イベントを処理できます。
 
 ```cpp
 void SampleRemoteMain::OnRecognizedSpeech(const winrt::hstring& recognizedText)
@@ -268,7 +266,7 @@ void SampleRemoteMain::OnRecognizedSpeech(const winrt::hstring& recognizedText)
 
 ## <a name="preview-streamed-content-locally"></a>ストリーミングされるコンテンツをローカルでプレビューする
 
-デバイスに送信されるリモートアプリで同じコンテンツを表示するには、 ```OnSendFrame``` リモートコンテキストのイベントを使用できます。 ```OnSendFrame```イベントは、Holographic リモート処理ライブラリが現在のフレームをリモートデバイスに送信するたびにトリガーされます。 これは、コンテンツを撮影し、デスクトップや UWP ウィンドウに array.blit するのに最適な時間です。
+デバイスに送信されるのと同じコンテンツをリモートアプリで表示するには、 ```OnSendFrame``` リモートコンテキストのイベントを使用できます。 ```OnSendFrame```イベントは、Holographic リモート処理ライブラリが現在のフレームをリモートデバイスに送信するたびにトリガーされます。 これは、コンテンツを撮影し、デスクトップや UWP ウィンドウに array.blit するのに最適な時間です。
 
 ```cpp
 #include <windows.graphics.directx.direct3d11.interop.h>
@@ -293,7 +291,7 @@ m_onSendFrameEventRevoker = m_remoteContext.OnSendFrame(
 
 ## <a name="depth-reprojection"></a>深さの再投影
 
-バージョン [2.1.0](holographic-remoting-version-history.md#v2.1.0)以降では、Holographic Remoting は [深さの reprojection](hologram-stability.md#reprojection)をサポートしています。 そのためには、カラーバッファーに加えて、リモートアプリケーションから HoloLens 2 に深度バッファーをストリーム転送する必要があります。 既定では、深度バッファーストリーミングが有効になり、カラーバッファーの半分の解像度を使用するように構成されます。 これは、次のように変更できます。
+バージョン [2.1.0](holographic-remoting-version-history.md#v2.1.0)以降では、Holographic Remoting は [深さの reprojection](hologram-stability.md#reprojection)をサポートしています。 これには、カラーバッファーと深度バッファーの両方をリモートアプリケーションから HoloLens 2 にストリーミングする必要があります。 既定では、深度バッファーストリーミングが有効になり、カラーバッファーの半分の解像度を使用するように構成されます。 これは、次のように変更できます。
 
 ```cpp
 // class implementation
@@ -317,7 +315,7 @@ m_remoteContext.ConfigureDepthVideoStream(DepthBufferStreamResolution::Half_Reso
 
 完全な解像度の深度バッファーを使用することは、帯域幅の要件にも影響し、指定した最大帯域幅の値について考慮する必要があることに注意してください ```CreateRemoteContext``` 。
 
-解決を構成すると、HolographicCameraRenderingParameters を使用して深度バッファーをコミットする必要もあります [。 CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)を使用します。
+解像度を構成した後、HolographicCameraRenderingParameters を使用して深度バッファーをコミットする必要もあります [。 CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)を使用します。
 
 ```cpp
 
@@ -353,7 +351,7 @@ void SampleRemoteMain::Render(HolographicFrame holographicFrame)
 
 ```
 
-HoloLens 2 で深度の再プロジェクションが正しく動作しているかどうかを確認するには、デバイスポータルを使用して深度ビジュアライザーを有効にします。 詳細については、「 [奥行が正しく設定されている](hologram-stability.md#verifying-depth-is-set-correctly) ことを確認しています
+高度な再プロジェクションが HoloLens 2 で正しく動作しているかどうかを確認するには、デバイスポータルを使用して深度ビジュアライザーを有効にします。 詳細については、「 [奥行が正しく設定されている](hologram-stability.md#verifying-depth-is-set-correctly) ことを確認しています
 
 ## <a name="optional-custom-data-channels"></a>省略可能: カスタムデータチャネル
 

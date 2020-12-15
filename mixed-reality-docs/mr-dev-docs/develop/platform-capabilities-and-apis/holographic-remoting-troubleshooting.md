@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, ホログラム, holographic リモート処理, リモートレンダリング, ネットワークレンダリング, HoloLens, リモートホログラム, トラブルシューティング, ヘルプ, Mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: ca0e4b3a43eae5be09f2c0bfbee9056cd847787c
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 9b900238abc79b0f2f93691d4b4a67cce67a201a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443602"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530188"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Holographic リモート処理のトラブルシューティング
 
@@ -22,15 +22,15 @@ ms.locfileid: "96443602"
 
 Holographic リモート処理サンプルアプリでは、リリース構成で Spectre 軽減策 (/Qspectre) が有効になっています。
 
-"Vccorlib .lib" を開くことができないという致命的なリンカーエラーが発生した場合は、Visual Studio ワークロードに Spectre 軽減可能なライブラリが含まれていることを確認してください。 詳細については、「 https://aka.ms/Ofhn4c 」を参照してください。
+*Vccorlib を開けない* 場合は、Visual Studio のワークロードに [Spectre 軽減](https://aka.ms/Ofhn4c)可能なライブラリが含まれていることを確認してください。
 
-## <a name="speech"></a>音声
+## <a name="speech"></a>Speech
 
-Holographic Remoting Player は診断オーバーレイをサポートしています。これは、「」と言って無効にすることで有効にすることができ ```Enable Diagnostics``` ```Disable Diagnostics``` ます。 これらの音声コマンドで問題が発生した場合は、URL としてを使用して web ブラウザーで Holographic リモート処理プレーヤーを起動することもできます ```ms-holographic-remoting:?stats``` 。
+Holographic リモート処理プレーヤーは診断オーバーレイをサポートしています。これは、「」と言って、無効にすることで有効にすることができ ```Enable Diagnostics``` ```Disable Diagnostics``` ます。 これらの音声コマンドで問題が発生した場合は、URL としてを使用して web ブラウザーで Holographic リモート処理プレーヤーを起動することもでき ```ms-holographic-remoting:?stats``` ます。
 
 ## <a name="h265-video-codec-not-available"></a>H265 video コーデックは使用できません
 
-リモートアプリで H265 video コーデックを使用する場合は、 [HEVC ビデオ拡張機能](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) をインストールする必要があります。 コーデックがインストールされていても使用できない問題が発生した場合は、「 [トラブルシューティング](https://docs.microsoft.com/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) ガイド」を参照してください。
+リモートアプリで H265 video コーデックを使用する場合は、 [HEVC ビデオ拡張機能](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) をインストールします。 コーデックがインストールされていても使用できない問題が発生した場合は、「 [トラブルシューティング](https://docs.microsoft.com/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) ガイド」を参照してください。
 
 ## <a name="limitations"></a>制限事項
 
@@ -44,13 +44,13 @@ Holographic Remoting を HoloLens 2 に使用する場合、次の Api は現在
 * [HolographicCamera.IsHardwareContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled#Windows_Graphics_Holographic_HolographicCamera_IsHardwareContentProtectionEnabled)
 * [HolographicViewConfiguration.RequestRenderTargetSize](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration.requestrendertargetsize#Windows_Graphics_Holographic_HolographicViewConfiguration_RequestRenderTargetSize_Windows_Foundation_Size_)
   - バージョン[2.2.0](holographic-remoting-version-history.md#v2.2.0)以降でサポートされます。
-  - 以前のバージョンでは、は失敗しませんが、レンダーターゲットのサイズは変更されません。
+  - 以前のバージョンでは失敗しませんが、レンダーターゲットのサイズは変更されません。
 * [HolographicCameraPose.OverrideProjectionTransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideprojectiontransform)
 * [HolographicCameraPose ビューポート](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewport)
 * [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewtransform)
   - バージョン[2.2.0](holographic-remoting-version-history.md#v2.2.0)以降でサポートされます。
 * [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)
-  - は失敗しませんが、深度バッファーはリモート処理されません。
+  - 姓.
   - サポートされているバージョン[2.1.0](holographic-remoting-version-history.md#v2.1.0)以降
 * [HolographicDisplay.TryGetViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.trygetviewconfiguration)
   - HolographicViewConfigurationKind にクエリを実行すると、常にが返されます ```nullptr``` 。
@@ -71,14 +71,14 @@ Holographic Remoting を HoloLens 2 に使用する場合、次の Api は現在
 * [SpatialLocation AbsoluteLinearVelocity](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absolutelinearvelocity)
 * [SpatialStageFrameOfReference](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)
   - バージョン[2.2.0](holographic-remoting-version-history.md#v2.2.0)以降でサポートされます。
-  - 以前のバージョンでは、は常にを返し ```nullptr``` ます。
+  - 以前のバージョンでは、常にを返し ```nullptr``` ます。
 * [SpatialStageFrameOfReference.RequestNewStageAsync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)
   - バージョン[2.2.0](holographic-remoting-version-history.md#v2.2.0)以降でサポートされます。
 * [SpatialAnchor. RemovedByUser](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor.removedbyuser)
 * [SpatialAnchorExporter.GetDefault](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.getdefault
 )
   - バージョン [2.0.9](holographic-remoting-version-history.md#v2.0.9)以降でサポートされています。 
-  - 以前のバージョンでは、は常にを返し ```nullptr``` ます。 
+  - 以前のバージョンでは、常にを返し ```nullptr``` ます。 
 * [SpatialAnchorExporter.RequestAccessAsync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.requestaccessasync
 )
   - バージョン [2.0.9](holographic-remoting-version-history.md#v2.0.9)以降でサポートされています。 
@@ -105,7 +105,7 @@ Holographic Remoting を HoloLens 2 に使用する場合、次の Api は現在
 
 ## <a name="see-also"></a>参照
 * [Holographic リモート処理のバージョン履歴](holographic-remoting-version-history.md)
-* [Windows Mixed Realiy Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
+* [Windows Mixed Reality Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
 * [OpenXR Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md)
 * [カスタム Holographic リモート処理プレーヤーアプリの作成](holographic-remoting-create-player.md)
 * [Holographic Remoting ソフトウェア ライセンス条項](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

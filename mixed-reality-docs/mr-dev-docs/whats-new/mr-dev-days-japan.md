@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality、カンファレンス、サミット、開発者、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 94f38ff122826dfaea6282403c5958b127c81739
-ms.sourcegitcommit: ee87915132cf2874d4642ce2fe383f5eba6c49c2
+ms.openlocfilehash: 7ca5357c9d7f3536fc165d0663813ae98f45004f
+ms.sourcegitcommit: 1b5a5ce89f2edc86985a73e4f3828bb761e7543a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97111884"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97564257"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days (日本)
 
@@ -31,9 +31,9 @@ Mixed Reality Dev Days への皆様のご参加をお待ちしています。 Mi
 
 ## <a name="registration"></a>登録
 
-[登録を開始しました](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+[今すぐ見る-Microsoft Teams のライブイベント](https://aka.ms/MRDDJPLive)
 
-私たちは、Mixed Reality 開発日の登録を開始することが非常に興奮しています。  イベントは無料で、Microsoft Teams のライブイベントでオンラインに保持されています。  イベントが近いときに電子メールの更新を送信し、イベントの対話型要素に参加できるように、参加者を登録するように依頼します。
+Teams PC アプリで視聴することをお勧めします。また、Teams モバイル アプリまたはデスクトップ ブラウザーから参加することもできます。 何らかの理由でチームにログインできない場合は、 [YouTube のライブ](https://youtu.be/zxZu1uHjyo4)を確認してください。 ただし、スピーカーとの QA に参加することはできません。
 
 ## <a name="schedule---subject-to-change"></a>スケジュール (変更される場合があります)
 

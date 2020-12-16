@@ -6,36 +6,36 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, ホログラム, holographic リモート処理, リモートレンダリング, ネットワークレンダリング, HoloLens, リモートホログラム, Mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 7aafb7a764a062efcca2c5a3cd9f77d4395516a2
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 809258d3387b5e45885c0eb207544c176f891a1d
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443650"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530309"
 ---
-# <a name="add-holographic-remoting-hololens-1st-gen"></a>Holographic リモート処理 (HoloLens (第1世代)) の追加
+# <a name="add-holographic-remoting-hololens-first-gen"></a>Holographic リモート処理 (HoloLens (first gen)) の追加
 
 >[!IMPORTANT]
->このドキュメントでは、HoloLens 1 用のホストアプリケーションの作成について説明します。 HoloLens のホストアプリケーション **(第1世代)** では、NuGet **パッケージバージョン 1.x** を使用する必要があります。 これは、HoloLens 1 用に作成されたホストアプリケーションが HoloLens 2 との互換性がないことを意味します。
+> このドキュメントでは、HoloLens 1 用のホストアプリケーションの作成について説明します。 HoloLens のホストアプリケーション **(第1世代)** では、NuGet **パッケージバージョン 1.x** を使用する必要があります。 これは、HoloLens 1 用に作成されたホストアプリケーションが HoloLens 2 との互換性がないことを意味します。
 
 ## <a name="hololens-2"></a>HoloLens 2
 
-Holographic リモート処理を使用する HoloLens 開発者は、HoloLens 2 との互換性を確保するためにアプリを更新する必要があります。 これには、新しいバージョンの Holographic リモート処理 NuGet パッケージが必要です。 バージョン番号が2.0.0.0 より小さい Holographic リモート処理 NuGet パッケージを使用するアプリケーションが、HoloLens 2 の Holographic Remoting プレーヤーに接続しようとすると、接続は失敗します。
+Holographic リモート処理を使用する HoloLens 開発者は、HoloLens 2 との互換性を確保するためにアプリを更新する必要があります。 これには、新しいバージョンの Holographic リモート処理 NuGet パッケージが必要です。 HoloLens 2 の Holographic Remoting Player に接続するときは、Holographic リモート処理 NuGet パッケージのバージョン2.0.0.0 以上を使用してください。接続が失敗します。
 
 >[!NOTE]
->HoloLens 2 に固有のガイダンスについては、 [こちら](holographic-remoting-create-remote-wmr.md)を参照してください。
+> HoloLens 2 に固有のガイダンスについては、 [こちら](holographic-remoting-create-remote-wmr.md)を参照してください。
 
 
 ## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>Holographic remoting をデスクトップまたは UWP アプリに追加する
 
 このページでは、Holographic リモート処理をデスクトップまたは UWP アプリに追加する方法について説明します。
 
-Holographic remoting を使用すると、アプリはデスクトップ PC または Xbox One などの UWP デバイスでホストされている Holographic コンテンツを使用して HoloLens をターゲットにすることができます。これにより、より多くのシステムリソースへのアクセスが可能になり、リモートの [イマーシブビュー](../../design/app-views.md) を既存のデスクトップ PC ソフトウェアに統合できるようになります。 リモート処理ホストアプリは、HoloLens から入力データストリームを受け取り、仮想イマーシブビューでコンテンツをレンダリングし、コンテンツフレームを HoloLens にストリームバックします。 接続は標準の Wi-fi を使用して行われます。 リモート処理を使用するには、NuGet パッケージを使用して、holographic リモート処理をデスクトップまたは UWP アプリに追加し、接続を処理し、イマーシブビューでレンダリングするコードを記述します。 ヘルパーライブラリは、デバイス接続を処理するタスクを簡略化するコードサンプルに含まれています。
+Holographic リモート処理を使用すると、アプリはデスクトップ PC または Xbox One などの UWP デバイスでホストされている Holographic コンテンツを使用して HoloLens をターゲットにすることができます。 また、より多くのシステムリソースにアクセスできるため、リモートの [イマーシブビュー](../../design/app-views.md) を既存のデスクトップ PC ソフトウェアに統合できます。 リモート処理ホストアプリは、HoloLens から入力データストリームを受け取り、仮想イマーシブビューでコンテンツをレンダリングし、コンテンツフレームを HoloLens にストリームバックします。 接続は標準の Wi-fi を使用して行われます。 リモート処理を使用するには、NuGet パッケージを使用して holographic remoting をデスクトップまたは UWP アプリに追加し、接続を処理してイマーシブビューをレンダリングするコードを記述します。 ヘルパーライブラリは、デバイス接続を処理するタスクを簡略化するコードサンプルに含まれています。
 
 一般的なリモート処理接続では、待機時間が50ミリ秒に抑えられます。 プレーヤーアプリは、リアルタイムで待機時間を報告できます。
 
 >[!NOTE]
->この記事のコードスニペットでは、 [C++ holographic プロジェクトテンプレート](../native/creating-a-holographic-directx-project.md)で使用される c + c++ 17 準拠の c++/WinRT ではなく、c++/cx の使用方法を現在説明しています。  概念は C++/WinRT プロジェクトに相当しますが、コードを変換する必要があります。
+>この記事のコードスニペットでは、 [C++ holographic プロジェクトテンプレート](../native/creating-a-holographic-directx-project.md)で使用される c + c++ 17 準拠の c++/WinRT ではなく、c++/cx の使用方法を現在説明しています。  概念は C++/WinRT プロジェクトに相当しますが、コードを翻訳する必要があります。
 
 ### <a name="get-the-remoting-nuget-packages"></a>リモート処理 NuGet パッケージを取得する
 
@@ -43,13 +43,13 @@ Holographic remoting を使用すると、アプリはデスクトップ PC ま�
 1. Visual Studio でプロジェクトにアクセスします。
 2. プロジェクトノードを右クリックし、[ **NuGet パッケージの管理...** ] を選択します。
 3. 表示されるパネルで、[ **参照** ] をクリックし、"Holographic Remoting" を検索します。
-4. **Holographic** を選択し、[**インストール**] をクリックします。
-5. [ **プレビュー** ] ダイアログが表示されたら、[ **OK**] をクリックします。
-6. 次に表示されるダイアログは、使用許諾契約書です。 [ **同意** する] をクリックして、使用許諾契約書に同意します。
+4. **Holographic** を選択し、Selecct **Install** を選択します。
+5. [ **プレビュー** ] ダイアログが表示されたら、[ **OK]** を選択します。
+6. [使用許諾契約書が表示されたら **同意** する] を選択します。
 
 ### <a name="create-the-holographicstreamerhelpers"></a>HolographicStreamerHelpers を作成する
 
-まず、HolographicStreamerHelpers のインスタンスが必要です。 これをリモート処理を処理するクラスに追加します。
+まず、リモート処理を処理するクラスに HolographicStreamerHelpers のインスタンスを追加する必要があります。
 
 ```cpp
 #include <HolographicStreamerHelpers.h>
@@ -110,7 +110,7 @@ m_streamerHelpers->OnConnected += ref new ConnectedEvent(
            });
 ```
 
-OnDisconnected イベントは、再接続や UI の更新などを処理できます。 この例では、一時的なエラーが発生した場合に再接続します。
+OnDisconnected イベントは、再接続や UI の更新などを処理できます。 この例では、一時的な障害が発生した場合に再接続します。
 
 ```cpp
 Platform::WeakReference streamerHelpersWeakRef = Platform::WeakReference(m_streamerHelpers);
@@ -180,7 +180,7 @@ m_streamerHelpers->OnSendFrame += ref new SendFrameEvent(
 
 ### <a name="render-holographic-content"></a>Holographic コンテンツのレンダリング
 
-リモート処理を使用してコンテンツをレンダリングするには、デスクトップまたは UWP アプリ内に仮想 IFrameworkView を設定し、リモート処理から holographic フレームを処理します。 このビューでは、すべての Windows Holographic Api が同じ方法で使用されますが、設定は少し異なります。
+リモート処理を使用してコンテンツをレンダリングするには、デスクトップまたは UWP アプリ内に仮想 IFrameworkView を設定し、リモート処理から holographic フレームを処理します。 このビューでは、すべての Windows Holographic Api が同じ方法で使用されますが、設定は若干異なります。
 
 自分で作成する代わりに、holographic space および speech コンポーネントは HolographicRemotingHelpers クラスから取得されます。
 
@@ -188,7 +188,7 @@ m_streamerHelpers->OnSendFrame += ref new SendFrameEvent(
 m_appView->Initialize(m_streamerHelpers->HolographicSpace, m_streamerHelpers->RemoteSpeech);
 ```
 
-Run メソッド内で更新ループを使用する代わりに、デスクトップまたは UWP アプリのメインループからティックの更新を提供します。 これにより、デスクトップや UWP アプリはメッセージ処理を制御できます。
+Run メソッドで update ループを使用する代わりに、デスクトップまたは UWP アプリのメインループからティックの更新を提供します。 これにより、デスクトップや UWP アプリはメッセージ処理を制御できます。
 
 ```cpp
 void DesktopWindow::Tick()
@@ -220,7 +220,7 @@ void AppView::Tick()
    }
 ```
 
-Holographic app view update、render、および present loop は、HoloLens で実行する場合とまったく同じです。ただし、デスクトップ PC 上のシステムリソースの量がはるかに多くなります。 多くの三角形をレンダリングしたり、描画パスを増やしたり、より多くの物理処理を行ったり、x64 プロセスを使用して 2 GB を超える RAM を必要とするコンテンツを読み込むことができます。
+Holographic app view update、render、および present ループは、HoloLens で実行する場合とまったく同じです。ただし、デスクトップ PC 上のシステムリソースの量がはるかに多くなります。 多くの三角形をレンダリングしたり、描画パスを増やしたり、より多くの物理処理を行ったり、x64 プロセスを使用して 2 GB を超える RAM を必要とするコンテンツを読み込むことができます。
 
 ### <a name="disconnect-and-end-the-remote-session"></a>リモートセッションを切断して終了する
 
@@ -258,7 +258,6 @@ internal:
        }
 ```
 
-**コードサンプル:** 完全な Holographic Remoting コードサンプルが用意されています。これには、デスクトップ Win32、UWP DirectX、および XAML を使用した UWP 用のリモート処理ホストプロジェクトと互換性のある Holographic アプリケーションビューが含まれています。 取得するには、こちらを参照してください。
-* [リモート処理のための Windows Holographic のコードサンプル](https://github.com/Microsoft/HoloLensCompanionKit/)
+**コードサンプル:** 完全な [Holographic Remoting コードサンプル](https://github.com/Microsoft/HoloLensCompanionKit) が用意されています。これには、デスクトップ WIN32、uwp DirectX、および XAML を使用した uwp 用のリモート処理ホストプロジェクトと互換性のある Holographic アプリケーションビューが含まれています。 
 
 **デバッグに関する注意:** Holographic リモート処理ライブラリは、初回例外をスローできます。 これらの例外は、その時点でアクティブになっている Visual Studio の例外設定によっては、デバッグセッションで表示される場合があります。 これらの例外は、Holographic リモート処理ライブラリによって内部的にキャッチされ、無視することができます。

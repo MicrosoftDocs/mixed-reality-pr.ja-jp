@@ -6,22 +6,22 @@ ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: vr, lbe, 位置情報ベースのエンターテインメント, vr アーケード, アーケード, イマーシブ, qr, qr コード, hololens2
-ms.openlocfilehash: e7b1f04b51cb1011cd0d66c27fe6a8bff3aafb79
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 023da7a98d1559d9dd0387a7efbaf26ad577df50
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684978"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530004"
 ---
 # <a name="qr-code-tracking"></a>QR コードの追跡
 
-HoloLens 2 では、ヘッドセット周辺の環境内の QR コードを検出し、各コードの実際の場所で座標系を確立します。
+HoloLens 2 を使用すると、ヘッドセット周辺の環境内の QR コードを検出し、各コードの実際の場所で座標系を確立することができます。
 
 ## <a name="device-support"></a>デバイス サポート
 
 <table>
 <tr>
-<th>機能</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (第 1 世代)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>機能</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (最初の世代)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td> QR コードの検出</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
@@ -31,11 +31,13 @@ HoloLens 2 では、ヘッドセット周辺の環境内の QR コードを検�
 >デスクトップ Pc でのイマーシブ Windows Mixed Reality ヘッドセットを使用した QR コードの追跡は、Windows 10 バージョン2004以降でサポートされています。 MixedReality () API を使用して、機能が現在のデバイスでサポートされているかどうかを判断します。
 
 ## <a name="getting-the-qr-package"></a>QR パッケージの取得
+
 QR コード検出用の NuGet パッケージは [こちら](https://nuget.org/Packages/Microsoft.MixedReality.QR)からダウンロードできます。
 
 ## <a name="detecting-qr-codes"></a>QR コードの検出
 
 ### <a name="adding-the-webcam-capability"></a>Web カメラ機能の追加
+
 QR コードを検出するには、マニフェストに機能を追加する必要があり `webcam` ます。 この機能は、ユーザーの環境で検出されたコード内のデータに機密情報が含まれている場合に必要です。
 
 アクセス許可を要求するには、次のように呼び出し `QRCodeWatcher.RequestAccessAsync()` ます。
@@ -56,9 +58,7 @@ QR コードの検出には機能が必要ですが、 `webcam` 検出はデバ�
 
 ### <a name="detecting-qr-codes-in-unity"></a>Unity での QR コードの検出
 
-Unity の QR コード検出 API は、MRTK に依存せずに使用できます。 これを行うには、nuget [For Unity](https://github.com/GlitchEnzo/NuGetForUnity)を使用して nuget パッケージをインストールする必要があります。
-
-サンプル Unity アプリには、QR コードに holographic 二乗と、関連するデータ (GUID、物理サイズ、タイムスタンプ、デコードされたデータなど) が表示されます。 このアプリは、にあり https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes ます。
+Unity の QR コード検出 API は、 [unity 用の nuget](https://github.com/GlitchEnzo/NuGetForUnity)を使用して nuget パッケージをインストールすることにより、MRTK をインポートせずに使用できます。 そのしくみを理解するには、 [Unity アプリのサンプル](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes)をダウンロードします。 サンプルアプリには、QR コードや、GUID、物理サイズ、タイムスタンプ、デコードされたデータなどの関連データに対して holographic 二乗を表示する例が含まれています。
 
 ### <a name="detecting-qr-codes-in-c"></a>C++ での QR コードの検出
 
@@ -122,13 +122,15 @@ private:
 
 ## <a name="getting-the-coordinate-system-for-a-qr-code"></a>QR コードの座標系を取得する
 
-検出された各 QR コードは、次に示すように、左上の高速検出四角形の左上隅にある QR コードに一致する [空間座標システム](../../design/coordinate-systems.md) を公開します。  QR SDK を直接使用している場合、Z 軸は用紙を指しています (図には示されていません)。 Unity 座標に変換されると、Z 軸は用紙から外れ、左手で示されます。
-
-QR コードの SpatialCoordinateSystem は、示されているように配置されます。 この座標系は、 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a> を呼び出し、コードの SpatialGraphNodeId を渡すことによって、プラットフォームから取得できます。
+検出された各 QR コードは、左上にある高速検出の四角形の左上隅にある QR コードに一致する [空間座標システム](../../design/coordinate-systems.md) を公開します。  
 
 ![QR コードの座標系](images/Qr-coordinatesystem.png) 
 
-QRCode オブジェクトの場合、次の C++ コードは、QR コードの座標系を使用して、四角形を作成して配置する方法を示しています。
+QR SDK を直接使用している場合、Z 軸は用紙を指しています (図には示されていません)。 Unity 座標に変換されると、Z 軸は用紙から外れ、左手で示されます。
+
+QR コードの SpatialCoordinateSystem は、示されているように配置されます。 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a>を呼び出し、コードの SpatialGraphNodeId を渡すことによって、プラットフォームから座標系を取得できます。
+
+次の C++ コードは、QR コードの座標系を使用して、四角形を作成して配置する方法を示しています。
 
 ```cpp
 // Creates a 2D rectangle in the x-y plane, with the specified properties.
@@ -193,31 +195,31 @@ QR コードを正しく読み取るには、コードのすべての辺の周�
 ### <a name="lighting-and-backdrop"></a>照明と背景
 QR コード検出の品質は、さまざまな照明と背景に影響します。 
 
-特に明るい照明を持つシーンでは、グレーの背景に黒のコードを印刷します。 それ以外の場合は、黒の QR コードを白い背景に印刷します。
+明るい照明を持つシーンでは、黒のコードをグレーの背景で印刷します。 それ以外の場合は、黒の QR コードを白い背景に印刷します。
 
-コードの背景が特に暗い場合は、検出率が低い場合はグレーのコードで黒を試してみてください。 背景が比較的薄い場合は、通常のコードが正常に動作します。
+コードの背景が濃い場合は、検出率が低い場合はグレーのコードで黒を試してみてください。 背景が比較的薄い場合は、通常のコードが正常に動作します。
 
 ### <a name="size-of-qr-codes"></a>QR コードのサイズ
-Windows Mixed Reality デバイスは、それぞれ 5 cm 未満の QR コードでは機能しません。
+Windows Mixed Reality デバイスは、それぞれ 5 cm 未満の QR コードでは動作しません。
 
-5から 10 cm の長さの辺までの QR コードの場合、コードを検出するには非常に近い必要があります。 また、このサイズでコードを検出するのにも時間がかかります。 
+5 cm と 10 cm の長さの間の QR コードの場合、コードを検出するために非常に近い必要があります。 また、このサイズでコードを検出するのにも時間がかかります。 
 
-コードを正確に検出するための正確な時間は、QR コードのサイズだけでなく、コードから離れた場所までの距離に依存します。 コードに近づけると、サイズの問題を相殺するのに役立ちます。
+コードを正確に検出するための正確な時間は、QR コードのサイズだけでなく、コードから離れている距離にも依存します。 コードに近づけると、サイズの問題を相殺するのに役立ちます。
 
 ### <a name="distance-and-angular-position-from-the-qr-code"></a>QR コードからの距離と角度の位置
-追跡カメラは、特定のレベルの詳細のみを検出できます。 実際に小さいコードの場合は、< 10cm を横に配置する必要があります。 バージョン1の QR コードが 10 ~ 25 cm 幅を超える場合、最小検出距離は0.15 メートルから0.5 メートルの範囲内です。 
+追跡カメラは、特定のレベルの詳細のみを検出できます。 小さいコードの場合は、両側に < 10 cm が必要です。非常に近いものにする必要があります。 10 cm から 25 cm までさまざまなバージョン1の QR コードの場合、最小検出距離は0.15 メートルから0.5 メートルの範囲内です。 
 
 サイズの検出距離は直線的に増加します。 
 
-QR 検出は、角度の範囲 (+ = 45deg) で動作します。 これは、コードを検出するための適切な解決策があることを確認するためのものです。
+QR 検出は、+ = 45 度の範囲で動作し、コードを検出するための適切な解決策があることを確認します。
 
 ### <a name="qr-codes-with-logos"></a>ロゴ付き QR コード
-ロゴ付きの QR コードはテストされていないため、現在サポートされていません。
+ロゴ付きの QR コードはまだテストされていないため、現在サポートされていません。
 
 ### <a name="managing-qr-code-data"></a>QR コードデータの管理
 Windows Mixed Reality デバイスは、ドライバーのシステムレベルで QR コードを検出します。 デバイスが再起動されると、検出された QR コードは失われ、次に新しいオブジェクトとして再検出されます。
 
-特定のタイムスタンプよりも古い QR コードを無視するようにアプリを構成することをお勧めします。 現時点では、API は QR コード履歴のクリアをサポートしていません。
+特定のタイムスタンプよりも古い QR コードを無視するようにアプリを構成することをお勧めします。 現在、API は QR コード履歴のクリアをサポートしていません。
 
 ### <a name="qr-code-placement-in-a-space"></a>スペースでの QR コードの配置
 QR コードを配置する場所と方法に関する推奨事項については、「 [HoloLens の環境に関する考慮事項](../../environment-considerations-for-hololens.md)」を参照してください。

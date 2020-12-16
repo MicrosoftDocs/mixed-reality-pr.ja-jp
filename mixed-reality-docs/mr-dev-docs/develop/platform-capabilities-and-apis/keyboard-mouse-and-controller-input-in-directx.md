@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, キーボード, マウス, ゲームコントローラー, xbox コントローラー, HoloLens, デスクトップ, チュートリアル, サンプルコード
-ms.openlocfilehash: 47d5ac7c7517d607d29d004497f62ac0755c3051
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b7984c86b952612af020e2bd91063e0a9b0d92f6
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685039"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530047"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>DirectX でのキーボード、マウス、およびコントローラー入力
 
@@ -51,7 +51,7 @@ AppView .cpp から:
 ```
 
 ### <a name="virtual-keyboard-input"></a>仮想キーボード入力
-イマーシブデスクトップヘッドセットの場合は、Windows によってレンダリングされた仮想キーボードをイマーシブビューでサポートすることもできます。 これをサポートするために、アプリは **CoreTextEditContext** を実装できます。 これにより、Windows はアプリでレンダリングされたテキストボックスの状態を把握できるようになり、仮想キーボードがそこにあるテキストに正しく参加できるようになります。
+イマーシブデスクトップヘッドセットの場合は、 **CoreTextEditContext** を実装することにより、イマーシブビューで Windows によってレンダリングされる仮想キーボードをサポートできます。 これにより、Windows はアプリでレンダリングされたテキストボックスの状態を把握できるようになり、仮想キーボードがそこにあるテキストに正しく参加できるようになります。
 
 CoreTextEditContext サポートの実装の詳細については、 [CoreTextEditContext サンプル](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomEditControl)を参照してください。
 
@@ -59,7 +59,8 @@ CoreTextEditContext サポートの実装の詳細については、 [CoreTextEd
 
 また、UWP CoreWindow 入力イベントハンドラーを使用して、マウス入力を再度使用することもできます。 ここでは、Windows Holographic アプリケーションテンプレートを変更して、マウスのクリック操作を、押したジェスチャと同じようにサポートする方法について説明します。 この変更を行った後、イマーシブヘッドセットデバイスの装着中にマウスをクリックすると、キューブが再配置されます。
 
-UWP アプリでは、 [Mousedevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) API を使用してマウスの生の XY データを取得することもできます。
+> [!NOTE]
+> UWP アプリでは、 [Mousedevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) API を使用して、マウスの生の XY データを取得することもできます。
 
 まず、AppView. h で新しい Onポインタ押されたハンドラーを宣言します。
 
@@ -128,13 +129,13 @@ SpatialInteractionSourceState^ pointerState = m_spatialInputHandler->CheckForInp
    m_pointerPressed = false;
 ```
 
-再コンパイルして再デプロイします。 マウスをクリックすると、bluetooth マウスが接続されているイマーシブヘッドセットまたは HoloLens のキューブが再配置されることがわかります。
+再コンパイルして再デプロイします。 マウスをクリックすると、bluetooth マウスが接続されているイマーシブヘッドセットまたは HoloLens のキューブが再配置されることに注意してください。
 
 ### <a name="game-controller-support"></a>ゲームコントローラーのサポート
 
 ゲームコントローラーは、ユーザーがイマーシブ Windows Mixed Reality エクスペリエンスを制御できる楽しい便利な方法です。
 
-Windows Holographic アプリテンプレートにゲームコントローラーのサポートを追加するには、まず、次のプライベートメンバー宣言をメインファイルの header クラスに追加します。
+ メインファイルの header クラスに次のプライベートメンバー宣言を追加します。
 
 ```
 // Recognize gamepads that are plugged in after the app starts.
@@ -265,7 +266,7 @@ Microsoft HoloLens でこのコードを使用する方法には、主な違い�
 * キーボードやマウスの入力に依存することはできません。 アプリのすべての機能は、宝石、ジェスチャ、音声入力で動作する必要があります。
 * Bluetooth キーボードが接続されている場合は、アプリが要求するテキストに対してキーボード入力を有効にすると便利です。 これは、たとえば、ディクテーションの優れた補完です。
 * アプリを設計する際には、ゲームのために (たとえば) WASD やマウスのコントロールを使用しないようにしてください。 HoloLens は、ユーザーが部屋を移動するように設計されています。 この場合、ユーザーはカメラを直接制御します。 移動/表示コントロールを使用して、部屋の周りにカメラを運転するためのインターフェイスは、同じエクスペリエンスを提供しません。
-* キーボード入力は、特にユーザーがキーボードを使用する必要がないため、アプリまたはゲームエンジンのデバッグ側面を制御するのに優れた方法です。 この配線は、CoreWindow イベント Api を使用した場合と同じです。 このシナリオでは、デバッグセッション中にキーボードイベントを "デバッグ入力のみ" モードにルーティングするようにアプリを構成する方法を実装することを選択できます。
+* キーボード入力は、特にユーザーがキーボードを使用する必要がないため、アプリまたはゲームエンジンのデバッグを制御する優れた方法です。 この配線は、CoreWindow イベント Api を使用した場合と同じです。 このシナリオでは、デバッグセッション中にキーボードイベントを "デバッグ入力のみ" モードにルーティングするようにアプリを構成する方法を実装することを選択できます。
 * Bluetooth コントローラーも同様に機能します。
 
 ## <a name="see-also"></a>関連項目

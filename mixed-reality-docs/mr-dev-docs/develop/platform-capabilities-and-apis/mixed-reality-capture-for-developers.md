@@ -6,19 +6,19 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc、写真、ビデオ、キャプチャ、カメラ
-ms.openlocfilehash: 6e42bd904b842bac160ece346d9b0df13cf3eaa3
-ms.sourcegitcommit: 53a00690f32a0a629ed23aefaae5a888f669dcb6
+ms.openlocfilehash: e9819995806784c512acee6ada10d0be56051fca
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92138027"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530126"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>開発者向け複合現実キャプチャ
 
 > [!NOTE]
 > HoloLens 2 の新しい MRC 機能に関するガイダンスについては、以下の [PV カメラのレンダー](#render-from-the-pv-camera-opt-in) に関する説明を参照してください。
 
-ユーザーは、常に [mixed reality キャプチャ](../../mixed-reality-capture.md) (MRC) の写真またはビデオを取得できるため、アプリケーションを開発する際には注意が必要な点がいくつかあります。 これには、MRC ビジュアル品質のベストプラクティスと、MRCs のキャプチャ中にシステムの変更に応答するためのベストプラクティスが含まれています。
+[Mixed reality キャプチャ](../../mixed-reality-capture.md)(MRC) の写真またはビデオをいつでも実行できますが、アプリケーションの開発時に注意すべき点はほとんどありません。 これには、MRC ビジュアル品質のベストプラクティスと、MRCs のキャプチャ中にシステムの変更に応答するためのベストプラクティスが含まれています。
 
 開発者は、混合現実のキャプチャと挿入をシームレスにアプリに統合することもできます。
 
@@ -26,7 +26,7 @@ HoloLens の MRC (最初世代) では、720p までのビデオと写真がサ�
 
 ## <a name="the-importance-of-quality-mrc"></a>品質の MRC の重要性
 
-多くの場合、ユーザーがアプリを使用するのは、大量の現実にキャプチャされた写真とビデオです。 Microsoft Store ページに mixed reality スクリーンショットとして使用するか、ソーシャルネットワーク上で MRCs を共有する他のユーザーからのものであるかを指定します。 MRC を使用して、アプリをデモし、ユーザーを教育し、世界中の対話を共有するようユーザーに促すことができます。また、ユーザーの調査や問題の解決にも対応できます。
+Microsoft Store のページ上に mixed reality スクリーンショットがあるか、またはソーシャルネットワークでキャプチャコンテンツを共有する他のユーザーであるかにかかわらず、Mixed Reality キャプチャメディアは多くの場合、ユーザーがアプリに最初にさらされます。 MRC を使用して、アプリをデモし、ユーザーを教育し、世界中の対話を共有するようユーザーに促すことができます。また、ユーザーの調査や問題の解決にも対応できます。
 
 ## <a name="how-mrc-impacts-your-app"></a>MRC がアプリに与える影響
 
@@ -38,20 +38,20 @@ HoloLens の MRC (最初世代) では、720p までのビデオと写真がサ�
 
 既定では、mixed reality キャプチャは、右目の holographic 出力と写真/ビデオ (PV) カメラを結合します。 この2つのソースは、現在実行中のイマーシブアプリによって設定されたフォーカスポイントを使用して結合されます。
 
-これは、フォーカス平面外のホログラムが、(PV カメラと右ディスプレイの間の物理的な距離によって) も整列しないことを意味します。
+これは、PV カメラと右ディスプレイの間に物理的な距離があるため、フォーカス平面外のホログラムが配置されないことを意味します。
 
 #### <a name="set-the-focus-point"></a>フォーカスポイントを設定する
 
 イマーシブアプリ (HoloLens) では、安定化平面を使用する場所の [フォーカスポイント](../unity/focus-point-in-unity.md) を設定する必要があります。 これにより、ヘッドセットと mixed reality キャプチャの両方で最適なアラインメントが実現されます。
 
-フォーカスポイントが設定されていない場合、安定化平面は既定で2メートルになります。
+フォーカスポイントが設定されていない場合、安定化平面の既定値は2メートルになります。
 
 #### <a name="render-from-the-pv-camera-opt-in"></a>PV カメラからのレンダリング (オプトイン)
 
-HoloLens 2 では、mixed reality キャプチャが実行されている間に、アプリが **PV カメラからレンダリング** する機能を追加します。 アプリで追加のレンダリングが正しくサポートされるようにするには、アプリでこの機能をオプトインする必要があります。
+HoloLens 2 では、mixed reality キャプチャが実行されている間に、アプリが **PV カメラからレンダリング** する機能を追加します。 アプリで追加のレンダリングが正しくサポートされるようにするには、アプリでこの機能を有効にする必要があります。
 
 PV カメラからのレンダリングでは、既定の MRC エクスペリエンスに対して次の点が改善されています。
-* 物理環境とハンズオン (ほぼ相互作用のため) の両方に対するホログラムのアラインメントは、既定の MRC で見られるように、フォーカスポイント以外の距離でオフセットを使用するのではなく、すべての距離で正確である必要があります。
+* 物理的な環境に対するホログラムのアラインメントとほぼ相互作用のための手は、すべての距離で正確である必要があります。 既定の MRC で見られるように、フォーカスポイント以外の距離にオフセットを設定しないようにします。
 * ヘッドセットの右目は、MRC 出力のホログラムをレンダリングするために使用されないため、侵害されることはありません。
 
 PV カメラからのレンダリングを有効にするには、次の3つの手順を実行します。
@@ -61,7 +61,7 @@ PV カメラからのレンダリングを有効にするには、次の3つの�
 
 ##### <a name="enable-the-photovideocamera-holographicviewconfiguration-in-directx"></a>DirectX で PhotoVideoCamera HolographicViewConfiguration を有効にする
 
-PV カメラからの表示をオプトインするには、アプリは単に PhotoVideoCamera の [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration)を有効にします。
+PV カメラからの表示をオプトインするには、アプリで PhotoVideoCamera の [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration)を有効にするだけです。
 ```csharp
 var display = Windows.Graphics.Holographic.HolographicDisplay.GetDefault();
 var view = display.TryGetViewConfiguration(Windows.Graphics.Holographic.HolographicViewConfigurationKind.PhotoVideoCamera);
@@ -75,7 +75,7 @@ if (view != null)
 
 アプリが PV カメラから表示するオプトインを持っていて、mixed reality キャプチャが開始される場合:
 1. HolographicSpace の CameraAdded イベントが発生します。 このイベントは、アプリがこの時点でカメラを処理できない場合に遅延する可能性があります。
-2. イベントが完了すると (未処理の遅延がない場合)、HolographicCamera は次の HolographicFrame の AddedCameras の一覧に表示されます。
+2. 未処理の遅延がない状態でイベントが完了すると、HolographicCamera は次の HolographicFrame の AddedCameras の一覧に表示されます。
 
 Mixed reality キャプチャが停止した場合 (または、mixed reality キャプチャが実行されているときにアプリがビューの構成を無効にした場合)、次の HolographicFrame の RemovedCameras の一覧に HolographicCamera が表示され、HolographicSpace の CameraRemoved イベントが発生します。
 
@@ -86,7 +86,7 @@ HolographicCamera に [viewconfiguration](https://docs.microsoft.com/uwp/api/win
 > [!NOTE]
 > これには、 **unity 2018.4.13 f1**、 **unity 2019.3.0 f1**、またはそれ以降が必要です。
 
-PV カメラからの表示をオプトインするには、 [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)を使用するときに、 [Windows Mixed Reality のカメラ設定](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) プロバイダーを有効にし、[ **PV カメラからのレンダリング** ] 設定をオンにします。
+[Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)を使用しているときに、pv カメラからの表示をオプトインするには、 [Windows Mixed reality カメラ設定](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html)プロバイダーを有効にし、 **pv カメラからのレンダー** をオンにします。
 
 Mixed Reality Toolkit を使用していない場合は、コンポーネントを使用して、DirectX 用に前述したように [手動でオプトイン](#enable-the-photovideocamera-holographicviewconfiguration-in-directx) できます。
 
@@ -102,7 +102,7 @@ Mixed Reality Toolkit を使用していない場合は、コンポーネント�
 PV カメラからの表示をオプトインするには、次のようにします。
 
 1. **SetEnabledMixedRealityCamera** および **ResizeMixedRealityCamera** の呼び出し
-    * **サイズ X** および**サイズ Y** の値を使用して、ビデオのディメンションを設定します。
+    * **サイズ X** および **サイズ Y** の値を使用して、ビデオのディメンションを設定します。
 
 ![第 3 のカメラ](images/unreal-camera-3rd.PNG)
 
@@ -114,7 +114,7 @@ PV カメラからの表示をオプトインするには、次のようにし�
 
 Mixed reality キャプチャを実行し、異常な配置、コンテンツ不足、またはパフォーマンスの問題がないか確認します。 必要に応じてシェーダーとコードを更新します。
 
-追加のカメラへのレンダリングをサポートできない特定のシーンがある場合は、その間に PhotoVideoCamera の HolographicViewConfiguration を無効にすることができます。
+追加のカメラへのレンダリングをサポートできない特定のシーンがある場合は、PhotoVideoCamera の HolographicViewConfiguration を無効にすることができます。
 
 ### <a name="disabling-mrc-in-your-app"></a>アプリでの MRC の無効化
 
@@ -144,11 +144,11 @@ Windows 10 5 月2019更新プログラムでは、パスワードまたは pin �
 
 ### <a name="best-practices-hololens-specific"></a>ベストプラクティス (HoloLens 固有)
 
-MRC は開発者による追加作業がなくても機能することが期待されていますが、アプリで最適な mixed reality キャプチャエクスペリエンスを提供するために注意すべき点がいくつかあります。
+MRC は開発作業を追加せずに動作することが期待されていますが、最適な mixed reality キャプチャエクスペリエンスを提供するには、いくつかの点に注意する必要があります。
 
 **MRC は、ホログラムのアルファチャネルを使用して、 [カメラ](locatable-camera.md) の画像とブレンドします。**
 
-最も重要な手順は、アプリが不透明な黒にクリアするのではなく、透明な黒にクリアされるようにすることです。 Unity では、これは既定で MixedRealityToolkit に対して行われますが、Unity 以外で開発している場合は、1行の変更が必要になることがあります。
+最も重要な手順は、アプリが不透明な黒にクリアするのではなく、透明な黒にクリアされるようにすることです。 Unity では、これは既定で MixedRealityToolkit を使用して実行されます。 Unity 以外で開発している場合は、1行の変更が必要になることがあります。
 
 以下は、アプリが透明な黒にクリアされていない場合に、MRC に表示される可能性のあるアイテムの一部です。
 
@@ -165,7 +165,7 @@ MRC は開発者による追加作業がなくても機能することが期待�
 </tr>
 </table>
 
-**失敗の例**: ホログラムの背景シーン全体が黒で表示されます。 背景のアルファ値1を設定すると、背景が黒になります。
+**失敗の例**: ホログラムの背景シーン全体が黒で表示されます。 背景のアルファ値を1つに設定すると、黒の背景になります
 
 ![背景のアルファ値1を設定すると、背景が黒になります。](images/clearopaqueblack-300px.png)
 
@@ -176,7 +176,7 @@ MRC は開発者による追加作業がなくても機能することが期待�
 **解決策**:
 * アルファ値を0にするために、不透明な黒で表示されているコンテンツを変更します。
 * アプリが透明な黒にクリアされていることを確認します。
-* Unity の既定値は、MixedRealityToolkit で自動的にクリアされるようにクリアされますが、Unity 以外のアプリの場合は、ID3D11DeiceContext:: ClearRenderTargetView () で使用される色を変更する必要があります。 不透明な黒 (0、0、0、1) ではなく、透明な黒 (0、0、0、0) であることを確認する必要があります。
+* Unity の既定値は MixedRealityToolkit で自動的にクリアされますが、Unity 以外のアプリの場合は、ID3D11DeiceContext:: ClearRenderTargetView () で使用される色を変更する必要があります。 不透明な黒 (0、0、0、1) ではなく、透明な黒 (0、0、0、0) であることを確認する必要があります。
 
 必要に応じてアセットのアルファ値を調整できるようになりましたが、通常は必要ありません。 ほとんどの場合、MRCs はすぐに使えるように見えます。 MRC は、前乗算したアルファを前提としています。 アルファ値は、MRC キャプチャにのみ影響します。
 
@@ -184,25 +184,25 @@ MRC は開発者による追加作業がなくても機能することが期待�
 
 以下は、特に明記されていない限り、HoloLens (第1世代) と HoloLens 2 の両方に適用されます。
 
-* システムによって、アプリケーションが 30 Hz レンダリングに調整されます。 これにより、MRC を実行するためのヘッドルームが作成されます。これにより、アプリは一定の予算予約を維持する必要がなく、30 fps の MRC ビデオレコードレートにも一致します。
-* デバイスの右上にあるホログラムコンテンツは、録画/ストリーミングの場合、"スパーク" と表示されることがあります。テキストが読みにくくなり、ホログラムの端がより jaggy に見える可能性があります ( **HoloLens 2** での3番目のカメラのレンダリングでは、この侵害を回避します)。
+* システムは、アプリケーションを 30 Hz でレンダリングするように調整します。 これにより、MRC を実行するためのヘッドルームが作成されるため、アプリは一定の予算予約を維持する必要がなく、30 fps の MRC ビデオレコードレートにも一致します。
+* デバイスの右上にあるホログラムコンテンツは、録画/ストリーミングの場合、"スパーク" と表示されることがあります。テキストが読みにくくなり、ホログラムの端がより jaggy に見える可能性があります ( **HoloLens 2** で3番目のカメラのレンダリングをオプトインすると、この侵害が回避されます)。
 * アプリケーションで有効になっている場合、MRC の写真やビデオによってアプリケーションの [フォーカスポイント](../unity/focus-point-in-unity.md) が尊重されます。これにより、ホログラムが正確に配置されます。 ビデオの場合、フォーカスポイントが滑らかになるため、フォーカスポイントの深さが大幅に変化した場合に、ホログラムが徐々にずれて表示されることがあります。 フォーカスポイントと異なる深さにあるホログラムは、実際の世界からのオフセットとして表示されることがあります (下の例を参照してください。フォーカスポイントが2メートルで設定されていますが、ホログラムは1メーターに配置されています)。
 
 ![2メートルのホログラムは、世界に完全に登録されます。 クローズまたは遠くの距離にあるホログラムは、若干オフセットする場合があります。](images/hologramaccuracydistancemrc-1000px.png)
 
 ## <a name="integrating-mrc-functionality-from-within-your-app"></a>アプリ内からの MRC 機能の統合
 
-Mixed reality アプリでは、アプリ内から MRC の写真またはビデオキャプチャを開始できます。キャプチャされたコンテンツは、デバイスの "カメラロール" に格納されていなくてもアプリで利用できます。 カスタムの MRC レコーダーを作成することも、組み込みのカメラキャプチャ UI を利用することもできます。 
+混合の現実アプリでは、アプリ内から MRC 写真またはビデオキャプチャを開始できます。キャプチャされたコンテンツは、デバイスの "カメラロール" に格納されていなくてもアプリで利用できます。 カスタムの MRC レコーダーを作成することも、組み込みのカメラキャプチャ UI を利用することもできます。 
 
 ### <a name="mrc-with-built-in-camera-ui"></a>組み込みのカメラ UI を使用した MRC
 
 開発者は、 *[カメラキャプチャ UI API](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui)* を使用して、わずか数行のコードでユーザーがキャプチャした mixed reality の写真またはビデオを取得できます。
 
-この API は組み込みの MRC カメラ UI を起動します。この UI では、ユーザーは写真やビデオを撮影し、結果として得られたキャプチャをアプリに返すことができます。  独自のカメラ UI を作成する場合、またはキャプチャストリームへの低いレベルのアクセスが必要な場合は、カスタムの Mixed Reality キャプチャレコーダーを作成できます。
+この API は組み込みの MRC カメラ UI を起動します。ユーザーは、写真やビデオを撮影し、結果として得られたキャプチャをアプリに返すことができます。 独自のカメラ UI または低レベルのアクセスをキャプチャストリームに追加する必要がある場合は、カスタム Mixed Reality キャプチャレコーダーを作成できます。
 
 ### <a name="creating-a-custom-mrc-recorder"></a>カスタム MRC レコーダーの作成
 
-ユーザーは、常にシステム MRC キャプチャサービスを使用して写真またはビデオをトリガーできますが、アプリケーションではカスタムカメラアプリを作成する必要がありますが、ホログラムは、MRC と同様にカメラストリームに含めることができます。 これにより、アプリケーションはユーザーの代わりにキャプチャを開始したり、カスタムの記録 UI を作成したり、MRC 設定をカスタマイズしていくつかの例に名前を設定したりできます。
+ユーザーは常にシステム MRC キャプチャサービスを使用して写真またはビデオをトリガーできますが、アプリケーションでは、MRC と同様にカメラストリームにホログラムを含むカスタムカメラアプリをビルドすることができます。 これにより、アプリケーションは、ユーザー入力からキャプチャを開始したり、カスタムの記録 UI を作成したり、MRC 設定をカスタマイズしていくつかの例に名前を設定したりできます。
 
 **HoloStudio は、MRC 効果を使用してカスタム MRC カメラを追加します**
 
@@ -214,7 +214,7 @@ Unity アプリケーションでは、プロパティの [Locatable_camera_in_U
 
 アプリケーションには、効果を追加するためのオプションが2つあります。
 * 以前の API: [MediaCapture. AddEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addeffectasync) 。
-* 新しい Microsoft 推奨 API (オブジェクトを返し、動的プロパティを操作できるようにします)。 MediaCapture [MediaCapture](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)() は、  /  [Windows.Media.Capture.MediaCapture.AddAudioEffectAsync()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync)アプリが[IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition)と[IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition)の独自の実装を作成する必要があることを必要としますが、これに該当します。 使用例については、MRC [効果のサンプル](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app) を参照してください。
+* 新しい Microsoft 推奨 API (オブジェクトを返し、動的プロパティを操作できるようにします)。 MediaCapture [MediaCapture](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)() は、  /  [](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync)アプリが[IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition)と[IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition)の独自の実装を作成する必要があることを必要としますが、これに該当します。 例については、「使用例」を参照してください。
 
 >[!NOTE]
 > MixedRealityCapture 名前空間は Visual Studio で認識されませんが、文字列はまだ有効です。
@@ -232,23 +232,23 @@ MRC ビデオ効果 (**MixedRealityCapture. MixedRealityCaptureVideoEffect**)
 |  BlankOnProtectedContent  |  boolean  |  FALSE  |  保護されたコンテンツを示す 2d UWP アプリがある場合に空のフレームを返すことを有効または無効にするフラグ。 このフラグが false で、2d UWP アプリで保護されたコンテンツが表示されている場合、2d UWP アプリはヘッドセットと mixed reality キャプチャの両方で保護されたコンテンツテクスチャに置き換えられます。 |
 |  ShowHiddenMesh  |  boolean  |  FALSE  |  Holographic カメラの非表示領域メッシュと隣接するコンテンツの表示を有効または無効にするフラグ。 |
 | OutputSize | サイズ | 0, 0 | ビデオの安定化のトリミング後に、目的の出力サイズを設定します。 0または無効な出力サイズが指定されている場合は、既定のトリミングサイズが選択されます。 |
-| PreferredHologramPerspective | UINT32 | Windows デバイスポータルでの**カメラ設定からのレンダリング** | キャプチャする holographic カメラビューの構成を示すために使用される列挙: 0 (ディスプレイ) は、アプリが写真/ビデオカメラからのレンダリングを要求されないことを意味します。 1 (PhotoVideoCamera) は、アプリが写真/ビデオカメラからレンダリングするように要求します (アプリがサポートしている場合)。 HoloLens 2 でのみサポートされます |
+| PreferredHologramPerspective | UINT32 | Windows デバイスポータルでの **カメラ設定からのレンダリング** | キャプチャする holographic カメラビューの構成を示すために使用される列挙: 0 (ディスプレイ) は、アプリが写真/ビデオカメラからのレンダリングを要求されないことを意味します。 1 (PhotoVideoCamera) は、アプリが写真/ビデオカメラからレンダリングするように要求します (アプリがサポートしている場合)。 HoloLens 2 でのみサポートされます |
 
 >[!NOTE]
 > Windows デバイスポータルで **PreferredHologramPerspective** の既定値を変更するには、[ [Mixed Reality Capture] ページ](using-the-windows-device-portal.md#mixed-reality-capture) に移動し、[ **カメラからのレンダリング**] をオフにします。 この設定は既定で **1 (PhotoVideoCamera)** に設定されていますが、 **0 (表示)** に設定することはできません。
 >
-> **PreferredHologramPerspective**の既定値は、2020年6月の更新プログラム (windows Holographic、バージョン2004ビルド19041.1106、windows Holographic、バージョン1903ビルド 18362.1064 **) より前**のバージョンです。
+> **PreferredHologramPerspective** の既定値は、2020年6月の更新プログラム (windows Holographic、バージョン2004ビルド19041.1106、windows Holographic、バージョン1903ビルド 18362.1064 **) より前** のバージョンです。
 
 MRC オーディオ効果 (**MixedRealityCapture. MixedRealityCaptureAudioEffect**)
 
 | プロパティ名 | Type | 既定値 | 説明 |
 |----------|----------|----------|----------|
 | MixerMode | UINT32 | 2 (Mic とシステムオーディオ) | 使用するオーディオソースを示すために使用する列挙: 0 (Mic オーディオのみ)、1 (システムオーディオのみ)、2 (Mic およびシステムオーディオ) |
-| LoopbackGain | float | Windows デバイスポータルでの**アプリオーディオゲイン**設定 | システムオーディオボリュームに適用します。 範囲は 0.0 ~ 5.0 です。 HoloLens 2 でのみサポートされます |
-| マイクロ電話の獲得 | float | Windows デバイスポータルでの**Mic オーディオゲイン**設定 | Mic ボリュームに適用します。 範囲は 0.0 ~ 5.0 です。 HoloLens 2 でのみサポートされます |
+| LoopbackGain | float | Windows デバイスポータルでの **アプリオーディオゲイン** 設定 | システムオーディオボリュームに適用します。 範囲は 0.0 ~ 5.0 です。 HoloLens 2 でのみサポートされます |
+| マイクロ電話の獲得 | float | Windows デバイスポータルでの **Mic オーディオゲイン** 設定 | Mic ボリュームに適用します。 範囲は 0.0 ~ 5.0 です。 HoloLens 2 でのみサポートされます |
 
 >[!NOTE]
-> Windows デバイスポータルでは、[ [Mixed Reality Capture] ページ](using-the-windows-device-portal.md#mixed-reality-capture)に移動し、それぞれの設定の横にあるスライダーを調整することにより、 **LoopbackGain**または**マイクロホップゲイン**の既定値を変更できます。 どちらの設定も既定で **1.0**に設定されていますが、 **0.0** から **5.0**までの任意の値に設定できます。
+> Windows デバイスポータルでは、[ [Mixed Reality Capture] ページ](using-the-windows-device-portal.md#mixed-reality-capture)に移動し、それぞれの設定の横にあるスライダーを調整することにより、 **LoopbackGain** または **マイクロホップゲイン** の既定値を変更できます。 どちらの設定も既定で **1.0** に設定されていますが、 **0.0** から **5.0** までの任意の値に設定できます。
 >
 > Windows デバイスポータルを使用して既定のゲイン値を構成するには、2020年6月の更新プログラム (Windows Holographic、バージョン2004ビルド19041.1106、Windows Holographic、バージョン1903ビルド 18362.1064) が追加されました。
 
@@ -260,7 +260,7 @@ MRC オーディオ効果 (**MixedRealityCapture. MixedRealityCaptureAudioEffect
 
 写真/ビデオカメラは、同時にアクセスできるプロセスの数に制限されています。 プロセスがビデオを記録したり、写真を撮影したりしている間、他のプロセスは写真/ビデオカメラの取得に失敗します。 (これは Mixed Reality キャプチャと標準の写真/ビデオキャプチャの両方に適用されます)
 
-HoloLens 2 では、アプリは MediaCaptureInitializationSettings ' [Sharingmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) プロパティを使用して、写真/ビデオカメラを排他的に制御する必要がない場合に sharedreadonly を実行することを示すことができます。 これにより、キャプチャの解像度とフレームレートは、他のアプリによって提供されるように構成されている他のアプリに制限されます。
+HoloLens 2 では、アプリは MediaCaptureInitializationSettings [Sharingmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) プロパティを使用して、写真/ビデオカメラを排他的に制御する必要がない場合に sharedreadonly を実行するように指定できます。 キャプチャの解像度とレートは、カメラによって提供されるように構成されている他のアプリに制限されます。
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>組み込みの MRC フォト/ビデオカメラアクセス
 
@@ -269,7 +269,7 @@ Windows 10 に組み込まれた MRC 機能 (Cortana、スタートメニュー�
 
 ただし、各サブシステムには、共有モードで動作するためのサポートが追加されています。
 * アプリが写真/ビデオカメラへの ExclusiveControl アクセスを要求した場合、組み込みの MRC は、アプリの要求が成功するように、写真/ビデオカメラの使用を自動的に停止します。
-* アプリの ExclusiveControl 中に組み込みの MRC が開始された場合、組み込みの MRC は SharedReadOnly モードで実行されます
+* アプリの ExclusiveControl 中に作成された MRC が開始された場合、組み込みの MRC は SharedReadOnly モードで実行されます
 
 この共有モード機能には、いくつかの制限があります。
 * Cortana、ハードウェアショートカット、または [スタート] メニューを使用した写真: Windows 10 April 2018 更新プログラム (またはそれ以降) が必要
@@ -282,7 +282,7 @@ Windows 10 に組み込まれた MRC 機能 (Cortana、スタートメニュー�
 
 #### <a name="mrc-access"></a>MRC アクセス
 
-Windows 10 April 2018 更新プログラムでは、MRC ストリームにアクセスする複数のアプリに関する制限はなくなりました (ただし、写真/ビデオカメラへのアクセスにはまだ制限があります)。
+Windows 10 April 2018 更新プログラムでは、MRC ストリームにアクセスする複数のアプリに関する制限がなくなりました (ただし、写真/ビデオカメラへのアクセスにはまだ制限があります)。
 
 Windows 10 April 2018 Update より前のバージョンでは、アプリのカスタム MRC レコーダーはシステム MRC と同時に使用できませんでした (写真をキャプチャする、ビデオをキャプチャする、または Windows デバイスポータルからストリーミングする)。
 

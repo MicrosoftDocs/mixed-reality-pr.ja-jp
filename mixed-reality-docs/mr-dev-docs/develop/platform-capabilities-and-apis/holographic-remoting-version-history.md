@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、バージョン履歴、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 5ac15c9af7f6cb2d0263b1ee20e0d2c490d353a0
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: bda4d4a304c6d13a55ad0433fcd248d8513fa6a0
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443471"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530392"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic リモート処理のバージョン履歴
 
@@ -19,12 +19,12 @@ ms.locfileid: "96443471"
 > このガイダンスは、HoloLens 2 の Holographic リモート処理に固有のものです。
 
 ## <a name="version-240-december-1-2020"></a>バージョン 2.4.0 (2020 年12月1日) <a name="v2.4.0"></a>
-* Holographic リモート処理で、 [OPENXR API](../native/openxr.md)を使用したリモートアプリの作成がサポートされるようになりました。 まず [、OpenXR api を使用して Holographic リモート処理リモートアプリを作成する方法](holographic-remoting-create-remote-openxr.md)を確認します。
+* Holographic リモート処理で、 [OPENXR API](../native/openxr.md)を使用したリモートアプリの作成がサポートされるようになりました。 開始するに [は、OpenXR api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md) に関するドキュメントをご覧ください。
 * バグの修正と安定性の向上。
 
 ## <a name="version-231-october-10-2020"></a>バージョン 2.3.1 (2020 年10月10日) <a name="v2.3.1"></a>
-* 視覚的なジッターの原因となったリモートの予測による回帰を修正しました。
-* PerceptionDeviceSetCreateFactoryOverride を実装して、Holographic リモート処理に付属する PerceptionDevice.dll が、Windows 10 に付属しているバージョンに干渉しないようにします。
+* リモートの予測による回帰を修正しました。これにより、視覚的なジッターが発生しました。
+* PerceptionDeviceSetCreateFactoryOverride を実装します。これにより、Holographic リモート処理によって出荷された PerceptionDevice.dll は、Windows 10 に付属しているバージョンに影響しません。
 
 ## <a name="version-230-october-2-2020"></a>バージョン 2.3.0 (2020 年10月2日) <a name="v2.3.0"></a>
 * Holographic リモート処理プレーヤーが中断されたときに発生する可能性があるクラッシュを修正しました。
@@ -44,13 +44,13 @@ ms.locfileid: "96443471"
 
 ## <a name="version-220-july-1-2020"></a>バージョン 2.2.0 (2020 年7月1日) <a name="v2.2.0"></a>
 * [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)を実行している Pc に Holographic リモート処理プレーヤーをインストールできるようになりました。これにより、イマーシブヘッドセットにストリーミングすることができます。
-* Holographic リモート処理では、[モーションコントローラー](../../design/motion-controllers.md)がサポートされるようになりました。コントローラー固有のデータは、 [SpatialInteractionSource](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller)を使用して取得できます。
+* Holographic リモート処理によって[モーションコントローラー](../../design/motion-controllers.md)がサポートされるようになり、コントローラー固有のデータを[SpatialInteractionSource](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller)経由で取得できるようになりました。
 * [SpatialStageFrameOfReference](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference) がサポートされるようになり、現在のステージを [SpatialStageFrameOfReference](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)経由で取得できるようになりました。 また、SpatialStageFrameOfReference を使用して新しいステージを要求することもできます [。 RequestNewStageAsync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)です。
-* 以前のバージョンでは、Holographic リモート処理プレーヤーによって、プレーヤー側で予測が完全に処理されました。 バージョン2.2.0 以降では、Holographic リモート処理に時間の同期があり、予測はリモートアプリケーションによって完全に実行されます。 また、複雑なネットワークの状況下では、ユーザーがホログラムの安定性を向上させる必要があります。
+* 以前のバージョンでは、Holographic リモート処理プレーヤーによって、プレーヤー側で予測が処理されました。 バージョン2.2.0 以降では、Holographic リモート処理に時間の同期があり、予測はリモートアプリケーションによって完全に実行されます。 また、複雑なネットワークの状況下では、ユーザーがホログラムの安定性を向上させる必要があります。
 
 ## <a name="version-213-may-25-2020"></a>バージョン 2.1.3 (2020 年5月 25) <a name="v2.1.3"></a>
-* [HolographicSpace CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded)イベントの動作が変更されました。 以前のバージョンでは、追加された [HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera)には、 [HolographicSpace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)を使用して次のフレームを作成するときに有効な [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose)があることは保証されて **いません** でした。 バージョン 2.1.3 HolographicSpace は、Holographic Remoting Player から来たポーズデータと同期されてい [ます。](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) また、カメラが追加されると、そのカメラでは次のフレームに有効な [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) も使用できます。
-* DepthBufferStreamResolution に **無効** にされました。これを使用して、RemoteContext.ConfigureDepthVideoStream を介した深度バッファーストリーミングを無効にすることができます。 HolographicCameraRenderingParameters を使用すると、 [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) は *E_ILLEGAL_METHOD_CALL* で失敗します。
+* [HolographicSpace CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded)イベントの動作が変更されました。 以前のバージョンでは、追加された [HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera)には、 [HolographicSpace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)を介して次のフレームを作成するときに有効な [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose)があることは保証されて **いません** でした。 バージョン2.1.3 以降では、 [HolographicSpace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) は Holographic Remoting Player からのポーズデータと同期されます。 カメラが追加されると、そのカメラで使用できる有効な [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) も次のフレームに表示されます。
+* DepthBufferStreamResolution に **無効** にしました。これを使用すると、RemoteContext.ConfigureDepthVideoStream を介した深度バッファーのストリーミングを無効にすることができます。 HolographicCameraRenderingParameters を使用すると、 [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) は *E_ILLEGAL_METHOD_CALL* で失敗します。
 * Holographic リモート処理プレーヤーのスタートアップ画面が再設計され、ユーザービューをブロックしないようになりました。
 * 安定性の向上とバグの修正。
 
@@ -76,18 +76,18 @@ ms.locfileid: "96443471"
 
 ## <a name="version-2016-november-11-2019"></a>バージョン 2.0.16 (2019 年11月11日) <a name="2.0.16"></a>
 * QR コードの追跡でデッドロックを修正します。
-* メインスレッドでの待機をブロックしているため、固定されていない例外を修正しています。
+* メインスレッドでのブロック待機が原因で、アンスレッド deled 例外を修正した。
 
 ## <a name="version-2014-october-26-2019"></a>バージョン 2.0.14 (2019 年10月26日) <a name="v2.0.14"></a>
 * New PerceptionDevice Api のサポート (Windows 10 11 月2019更新プログラム)。
-* SpatialGestureRecognizer によって保留中のジェスチャイベントがトリガーされない問題を修正しました。
+* SpatialGestureRecognizer によって保留中のジェスチャイベントが発生しないようにする問題を修正しました。
 * SpatialSurfaceObserver を使用する場合のスレッド処理の問題を修正します。 SetBoundingVolume。
 
 ## <a name="version-2012-october-18-2019"></a>バージョン 2.0.12 (2019 年10月18日) <a name="v2.0.12"></a>
 * NavigationRail (X/Y/Z) を使用するときの SpatialGestureRecognizer のクラッシュを修正します。
 
 ## <a name="version-2010-october-10-2019"></a>バージョン 2.0.10 (2019 年10月10日) <a name="v2.0.10"></a>
-* VR コントローラーの [トリガー] ボタンを使用するときのクラッシュを修正します。 Holographic リモート処理はコントローラーを完全にサポートしていません。 HoloLens 2 とペアになっている場合は、[トリガー] ボタンと [Windows] ボタンのみが動作します。
+* VR コントローラーの [トリガー] ボタンを使用するときのクラッシュを修正します。 Holographic リモート処理はコントローラーを完全にサポートしていません。 HoloLens 2 とペアリングされている場合、トリガーボタンと Windows ボタンだけが動作します。
 
 ## <a name="version-209-september-19-2019"></a>バージョン 2.0.9 (2019 年9月19日) <a name="v2.0.9"></a>
 * [SpatialAnchorExporter](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter)のサポートを追加しました
@@ -106,7 +106,7 @@ ms.locfileid: "96443471"
 * HoloLens 2 の Holographic リモート処理の最初のパブリックリリース。
 
 ## <a name="see-also"></a>参照
-* [Windows Mixed Realiy Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
+* [Windows Mixed Reality Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
 * [OpenXR Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md)
 * [カスタム Holographic リモート処理プレーヤーアプリの作成](holographic-remoting-create-player.md)
 * [Holographic リモート処理のトラブルシューティングと制限事項](holographic-remoting-troubleshooting.md)

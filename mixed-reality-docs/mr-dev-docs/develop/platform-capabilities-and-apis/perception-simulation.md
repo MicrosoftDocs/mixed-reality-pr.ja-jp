@@ -6,20 +6,20 @@ ms.author: pbarnett
 ms.date: 05/12/2020
 ms.topic: article
 keywords: HoloLens、シミュレーション、テスト
-ms.openlocfilehash: d4cd9497f9adcea03ece222f09124ce593ea73cf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 64028c3a1ad58cecfebc93aee325b73c3a6a649a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685015"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530402"
 ---
 # <a name="perception-simulation"></a>認識シミュレーション
 
-アプリの自動テストをビルドしますか? テストをコンポーネントレベルの単体テストよりも先に実行し、アプリをエンドツーエンドで実際に練習しますか。 認識シミュレーションは、探しているものです。 認識シミュレーションライブラリは、アプリに人間と世界の入力データを送信して、テストを自動化できるようにします。 たとえば、特定の反復可能な位置に対する人間の入力をシミュレートし、ジェスチャを実行したり、モーションコントローラーを使用したりすることができます。
+アプリの自動テストをビルドしますか? テストをコンポーネントレベルの単体テストよりも先に実行し、アプリをエンドツーエンドで実際に練習しますか。 認識シミュレーションは、探しているものです。 認識シミュレーションライブラリは、アプリに人間と世界の入力データを送信して、テストを自動化できるようにします。 たとえば、特定の反復可能な位置を調べる人間の入力をシミュレートし、ジェスチャやモーションコントローラーを使用することができます。
 
-認識シミュレーションでは、このようなシミュレートされた入力を物理 HoloLens、HoloLens エミュレーター (第1世代)、HoloLens 2 エミュレーター、または Mixed Reality ポータルがインストールされている PC に送信できます。 認識シミュレーションは、混合の現実のデバイスでライブセンサーをバイパスし、デバイスで実行されているアプリケーションにシミュレートされた入力を送信します。 アプリケーションでは、これらの入力イベントを、常に使用するものと同じ Api を使用して受信します。また、実際のセンサーでの実行と知覚シミュレーションでの実行の違いを示すことはできません。 認識シミュレーションは、シミュレートされた入力を HoloLens 仮想マシンに送信するために HoloLens エミュレーターで使用されるものと同じテクノロジです。
+認識シミュレーションでは、このようなシミュレートされた入力を物理 HoloLens、HoloLens エミュレーター (最初の gen)、HoloLens 2 エミュレーター、または Mixed Reality ポータルがインストールされている PC に送信できます。 認識シミュレーションは、混合の現実のデバイスでライブセンサーをバイパスし、デバイスで実行されているアプリケーションにシミュレートされた入力を送信します。 アプリケーションでは、これらの入力イベントを、常に使用するものと同じ Api を使用して受信します。実際のセンサーと認識シミュレーションのどちらで実行しても、違いを示すことはできません。 認識シミュレーションは、シミュレートされた入力を HoloLens 仮想マシンに送信するために HoloLens エミュレーターで使用されるものと同じテクノロジです。
 
-コードでのシミュレーションの使用を開始するには、まず IPerceptionSimulationManager オブジェクトを作成します。 そのオブジェクトから、コマンドを発行して、"人間" のようなシミュレートされた "ユーザー" のプロパティを制御することができます。これには、head 位置、針、ジェスチャなどがあります。また、モーションコントローラーを有効にしたり操作したりすることができます。
+コードでのシミュレーションの使用を開始するには、まず IPerceptionSimulationManager オブジェクトを作成します。 そのオブジェクトから、コマンドを発行して、"人間" のようなシミュレートされた "ユーザー" のプロパティを制御できます。これには、head 位置、針、ジェスチャなどがあります。 また、モーションコントローラーを有効にしたり操作したりすることもできます。
 
 ## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a>認識シミュレーションのための Visual Studio プロジェクトの設定
 1. 開発用 PC に[HoloLens エミュレーターをインストール](../install-the-tools.md)します。 エミュレーターには、認識シミュレーションに使用するライブラリが含まれています。
@@ -28,21 +28,21 @@ ms.locfileid: "91685015"
     b. PerceptionSimulationRest.dll-HoloLens またはエミュレーターに対する web ソケット通信チャネルを設定するためのライブラリです。
     c. シミュレーション用の SimulationStream.Interop.dll 共有型。
 4. 実装バイナリ PerceptionSimulationManager.dll をプロジェクト a に追加します。 まず、これをバイナリとしてプロジェクトに追加します (プロジェクト >追加 >既存の項目...)。プロジェクトソースフォルダーにコピーしないように、リンクとして保存します。 ![PerceptionSimulationManager.dll をリンク b としてプロジェクトに追加し ](images/saveaslink.png) ます。 次に、ビルド時に出力フォルダーにコピーされていることを確認します。 これは、バイナリのプロパティシートにあります。 ![出力ディレクトリにコピーする PerceptionSimulationManager.dll をマークします](images/copyalways.png)
-5. アクティブソリューションプラットフォームを x64 に設定します。  (Configuration Manager を使用して、x64 用のプラットフォームエントリがまだ存在しない場合は作成します)。
+5. アクティブソリューションプラットフォームを x64 に設定します。  (まだ存在していない場合は、Configuration Manager を使用して、x64 用のプラットフォームエントリを作成します)。
 
 ## <a name="creating-an-iperceptionsimulation-manager-object"></a>IPerceptionSimulation Manager オブジェクトの作成
 
 シミュレーションを制御するには、IPerceptionSimulationManager オブジェクトから取得したオブジェクトに更新を発行します。 最初の手順では、そのオブジェクトを取得し、ターゲットデバイスまたはエミュレーターに接続します。 エミュレーターの IP アドレスを取得するには、[ツールバー](using-the-hololens-emulator.md)の [デバイスポータル] ボタンをクリックします。
 
-![デバイスポータルを開くアイコン開いている ](images/emulator-deviceportal.png) **デバイスポータル** : エミュレーターで HoloLens OS の Windows デバイスポータルを開きます。  Windows Mixed Reality の場合、この設定は、[デバイスポータルを有効にする] の下にある [Connect & Security] (セキュリティの更新) の下にある [設定] アプリで取得できます。  IP アドレスとポートの両方に注意してください。
+![デバイスポータルを開くアイコン開いている ](images/emulator-deviceportal.png) **デバイスポータル**: エミュレーターで HoloLens OS の Windows デバイスポータルを開きます。  Windows Mixed Reality の場合、この設定は、[デバイスポータルを有効にする] の下にある [Connect & Security] (セキュリティの更新) の下にある [設定] アプリで取得できます。  IP アドレスとポートの両方に注意してください。
 
 まず、RestSimulationStreamSink を呼び出して、RestSimulationStreamSink オブジェクトを取得します。 これは、http 接続を介して制御するターゲットデバイスまたはエミュレーターです。 コマンドは、デバイスまたはエミュレーターで実行されている [Windows デバイスポータル](using-the-windows-device-portal.md) に渡され、処理されます。 オブジェクトを作成するには、次の4つのパラメーターが必要です。
 * Uri uri-ターゲットデバイスの IP アドレス (例: " https://123.123.123.123 " または " https://123.123.123.123:50080 ")
-* System .Net. NetworkCredential 資格情報-ターゲットデバイスまたはエミュレーターで [Windows デバイスポータル](using-the-windows-device-portal.md) に接続するためのユーザー名/パスワード。 ローカルアドレスを使用してエミュレーターに接続している場合 (例: 168 *...* *) 同じ PC で、すべての資格情報が受け入れられます。
-* bool normal-通常の優先度の場合は True、低優先度の場合は false。 テストシナリオでは、通常、これを *true* に設定して、テストで制御を行うことができます。  エミュレーターと Windows Mixed Reality のシミュレーションでは、優先度の低い接続を使用します。  テストで優先度の低い接続も使用している場合は、最後に確立された接続が制御されます。
+* System .Net. NetworkCredential 資格情報-ターゲットデバイスまたはエミュレーターで [Windows デバイスポータル](using-the-windows-device-portal.md) に接続するためのユーザー名/パスワード。 ローカルアドレスを使用してエミュレーターに接続している場合 (例: 168 *...**) 同じ PC で、すべての資格情報が受け入れられます。
+* bool normal-通常の優先度の場合は True、低優先度の場合は false。 テストシナリオでは、通常、これを *true* に設定して、テストで制御を行うことができます。  エミュレーターと Windows Mixed Reality のシミュレーションでは、優先順位の低い接続を使用します。  テストで優先度の低い接続も使用している場合は、最後に確立された接続が制御されます。
 * CancellationToken は、非同期操作を取り消すためのトークンです。
 
-次に、IPerceptionSimulationManager を作成します。 これは、シミュレーションの制御に使用するオブジェクトです。 これは、非同期メソッドでも実行する必要があることに注意してください。
+次に、IPerceptionSimulationManager を作成します。 これは、シミュレーションの制御に使用するオブジェクトです。 これは、非同期メソッドでも実行する必要があります。
 
 ## <a name="control-the-simulated-human"></a>シミュレートされた人間を制御する
 
@@ -241,11 +241,11 @@ Windows 10 10 月2018更新プログラムおよびそれ以前のバージョ�
 * 1 = 左6自由コントローラー
 * 2 = 右6自由コントローラー
 
-プロセスの終了コードは、成功 (ゼロの戻り値) または失敗 (0 以外の戻り値) を示します。  ' Q ' アクションを使用してコントローラーがインストールされているかどうかを照会する場合、コントローラーがまだインストールされていない場合は戻り値が0になり、コントローラーがインストールされている場合は1が返されます。
+プロセスの終了コードは、成功 (ゼロの戻り値) または失敗 (0 以外の戻り値) を示します。  ' Q ' アクションを使用してコントローラーがインストールされているかどうかを照会する場合、コントローラーがまだインストールされていない場合、またはコントローラーがインストールされている場合は (1)、戻り値はゼロ (0) になります。
 
 Windows 10 10 月2018更新プログラムまたはそれ以前のバージョンでコントローラーを削除する場合は、最初に API を使用して状態を Off に設定してから、PerceptionSimulationDevice ツールを呼び出します。
 
-このツールは管理者として実行する必要があることに注意してください。
+このツールは、管理者として実行する必要があります。
 
 
 
@@ -698,7 +698,7 @@ public struct SimulatedDisplayConfiguration
 
 **PerceptionSimulation. SimulatedDisplayConfiguration. ApplyIpd**
 
-Ipd に指定された値が有効であると見なされ、実行中のシステムに適用されるかどうか。
+Ipd に指定された値が有効と見なされ、実行中のシステムに適用されるかどうか。
 
 
 ### <a name="microsoftperceptionsimulationiperceptionsimulationmanager"></a>PerceptionSimulation. IPerceptionSimulationManager
@@ -728,7 +728,7 @@ public interface IPerceptionSimulationManager
 
 ### <a name="microsoftperceptionsimulationisimulateddevice"></a>PerceptionSimulation. ISimulatedDevice
 
-シミュレートされた世界とシミュレートされた人間を解釈するデバイスを記述するインターフェイス
+シミュレートされた世界とシミュレートされた人間を解釈する、デバイスを記述するインターフェイス
 
 ```
 public interface ISimulatedDevice
@@ -827,7 +827,7 @@ public interface ISimulatedHandTracker
 
 ### <a name="microsoftperceptionsimulationisimulatedhuman"></a>PerceptionSimulation. ISimulatedHuman
 
-シミュレートされた人間を制御する最上位のインターフェイス。
+シミュレートされた人間を制御するための最上位のインターフェイスです。
 
 ```
 public interface ISimulatedHuman 
@@ -837,7 +837,7 @@ public interface ISimulatedHuman
     float Height { get; set; }
     ISimulatedHand LeftHand { get; }
     ISimulatedHand RightHand { get; }
-    ISimulatedHead Head { get; }
+    ISimulatedHead Head { get; }s
     void Move(Vector3 translation);
     void Rotate(float radians);
 }
@@ -934,7 +934,7 @@ public interface ISimulatedHand
 
 **PerceptionSimulation. ISimulatedHand**
 
-SimulatedDevice に手が現在表示されているかどうかを取得します (この位置が、[ツール] で検出される位置にあるかどうか)。
+ハンドが現在 SimulatedDevice に表示されているかどうかを取得します (つまり、そのハンドが、トラッカーによって検出される位置にあるかどうか)。
 
 **PerceptionSimulation. ISimulatedHand. Ensurevisible\**
 
@@ -1069,7 +1069,7 @@ public interface ISimulatedSixDofController
 
 **PerceptionSimulation. ISimulatedSixDofController**
 
-コントローラーの現在の状態を取得または設定します。  移動、回転、または押すボタンの呼び出しが成功する前に、コントローラーの状態が Off 以外の値に設定されている必要があります。
+コントローラーの現在の状態を取得または設定します。  移動、回転、または押すボタンの呼び出しが成功する前に、コントローラーの状態を [オフ] 以外の値に設定する必要があります。
 
 **PerceptionSimulation. ISimulatedSixDofController**
 
@@ -1272,7 +1272,7 @@ public static class PerceptionSimulationManager
 
 **PerceptionSimulation. PerceptionSimulationManager. CreatePerceptionSimulationRecording (System.string)**
 
-指定されたパスのファイルに受信したすべてのパケットを格納するシンクを作成します。
+シンクを作成します。このシンクは、指定されたパスのファイルに受信したすべてのパケットを格納します。
 
 パラメーター
 * path-作成するファイルのパス。
@@ -1300,7 +1300,7 @@ public static class PerceptionSimulationManager
 パラメーター
 * path-読み込むファイルのパス。
 * factory-必要なときに ISimulationStreamSink を作成するために記録によって使用されるファクトリ。
-* callback-更新を受け取るコールバックで、記録の状態を再適用します。
+* callback-更新を受け取るコールバック。これにより、記録の状態が再適用されます。
 
 戻り値
 
@@ -1336,31 +1336,31 @@ public enum StreamDataTypes
 
 **PerceptionSimulation のデータ型**
 
-ハンドの位置とジェスチャに関するデータのストリーム。
+ハンドの位置とジェスチャのデータのストリーム。
 
 **PerceptionSimulation. SpatialMapping.**
 
-環境の空間マッピングに関するデータのストリーム。
+環境の空間マッピングのデータのストリーム。
 
 **PerceptionSimulation のデータ型**
 
-デバイスの調整に関するデータのストリーム。 調整パケットは、リモートモードのシステムでのみ受け入れられます。
+デバイスを調整するためのデータのストリーム。 調整パケットは、リモートモードのシステムでのみ受け入れられます。
 
 **PerceptionSimulation のデータ型**
 
-デバイスの環境に関するデータのストリーム。
+デバイスの環境のデータストリーム。
 
 **PerceptionSimulation. SixDofControllers.**
 
-モーションコントローラーに関するデータのストリーム。
+モーションコントローラーのデータストリーム。
 
 **PerceptionSimulation のデータ型**
 
-シミュレートされた人間の目に関するデータのストリーム。
+シミュレートされた人間の目を持つデータのストリーム。
 
 **PerceptionSimulation を構成します。**
 
-デバイスのディスプレイ構成に関するデータのストリーム。
+デバイスのディスプレイ構成を使用したデータのストリーム。
 
 **PerceptionSimulation のデータ型**
 

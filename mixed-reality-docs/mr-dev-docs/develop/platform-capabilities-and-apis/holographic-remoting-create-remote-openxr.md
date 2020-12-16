@@ -1,28 +1,26 @@
 ---
 title: Holographic リモート処理リモートアプリの記述 (OpenXR)
-description: Holographic リモート処理リモートアプリを作成することにより、リモートコンピューター上にレンダリングされるリモートコンテンツを HoloLens 2 にストリーミングできます。 この記事では、これを実現する方法について説明します。
+description: Holographic リモート処理リモートアプリを作成することにより、リモートコンピューター上にレンダリングされるリモートコンテンツを HoloLens 2 にストリーミングできます。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、NuGet
-ms.openlocfilehash: 7e46c67e7dac08759890fa66d540379991414aad
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 202f2108ade9998d25d87dee20d4bd456da0a118
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96469505"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530417"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>OpenXR API を使用した Holographic リモート処理リモートアプリの作成
 
 >[!IMPORTANT]
 >このドキュメントでは、 [OPENXR API](../native/openxr.md)を使用して HoloLens 2 および Windows Mixed Reality ヘッドセット用のリモートアプリケーションを作成する方法について説明します。 HoloLens のリモートアプリケーション **(第1世代)** では、NuGet **パッケージバージョン 1.x** を使用する必要があります。 これは、HoloLens 2 用に作成されたリモートアプリケーションが HoloLens 1 と互換性がないことを意味します。 HoloLens 1 のドキュメントについては、 [こちら](add-holographic-remoting.md)を参照してください。
 
-Holographic リモート処理リモートアプリを作成することによって、リモートコンピューター上でレンダリングされるリモートコンテンツを HoloLens 2 にストリーミングし、Windows Mixed Reality ヘッドセットなどのイマーシブデバイスにストリーミングすることができます。 この記事では、これを実現する方法について説明します。 このページのすべてのコードと作業中のプロジェクトは、 [Holographic リモート処理のサンプル github リポジトリ](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)にあります。
+Holographic リモート処理アプリを使用すると、リモートでレンダリングされたコンテンツを HoloLens 2 および Windows Mixed Reality のイマーシブヘッドセットにストリーミングできます。 また、より多くのシステムリソースにアクセスしたり、既存のデスクトップ PC ソフトウェアにリモートの [イマーシブビュー](../../design/app-views.md) を統合したりすることもできます。 リモートアプリは HoloLens 2 から入力データストリームを受け取り、仮想イマーシブビューでコンテンツをレンダリングし、コンテンツフレームを HoloLens 2 にストリームバックします。 接続は標準の Wi-fi を使用して行われます。 Holographic リモート処理は、NuGet パケット経由でデスクトップまたは UWP アプリに追加されます。 接続を処理し、イマーシブビューでレンダリングする追加のコードが必要です。 一般的なリモート処理接続では、待機時間が50ミリ秒に抑えられます。 プレーヤーアプリは、リアルタイムで待機時間を報告できます。
 
-Holographic リモート処理を使用すると、アプリは、デスクトップ PC または、Xbox One などの UWP デバイスでレンダリングされた Holographic コンテンツを使用して、HoloLens 2 および Windows Mixed Reality ヘッドセットを対象にすることができます。これにより、より多くのシステムリソースにアクセスでき、リモートの [イマーシブビュー](../../design/app-views.md) を既存のデスクトップ PC ソフトウェアに統合できます。 リモートアプリは HoloLens 2 から入力データストリームを受け取り、仮想イマーシブビューでコンテンツをレンダリングし、コンテンツフレームを HoloLens 2 にストリームバックします。 接続は標準の Wi-fi を使用して行われます。 Holographic リモート処理は、NuGet パケット経由でデスクトップまたは UWP アプリに追加されます。 接続を処理し、イマーシブビューでレンダリングする追加のコードが必要です。
-
-一般的なリモート処理接続では、待機時間が50ミリ秒に抑えられます。 プレーヤーアプリは、リアルタイムで待機時間を報告できます。
+このページのすべてのコードと作業中のプロジェクトは、 [Holographic リモート処理のサンプル github リポジトリ](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)にあります。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -36,10 +34,10 @@ Holographic リモート処理を使用すると、アプリは、デスクト�
 Visual Studio で NuGet パッケージをプロジェクトに追加するには、次の手順を実行する必要があります。
 1. Visual Studio でプロジェクトを開きます。
 2. プロジェクトノードを右クリックし、[ **NuGet パッケージの管理...** ] を選択します。
-3. 表示されるパネルで、[ **参照** ] をクリックし、"Holographic Remoting" を検索します。
-4. [ **Holographic**] を選択して **、最新の** 2.x バージョンを選択し、[ **インストール**] をクリックします。
-5. [ **プレビュー** ] ダイアログが表示されたら、[ **OK**] をクリックします。
-6. 次に表示されるダイアログは、使用許諾契約書です。 [ **同意** する] をクリックして、使用許諾契約書に同意します。
+3. 表示されるパネルで、[ **参照** ] を選択し、"Holographic Remoting" を検索します。
+4. [ **Holographic**] を選択して **、最新の** 2.x バージョンを選択し、[ **インストール**] を選択します。
+5. [ **プレビュー** ] ダイアログが表示されたら、[ **OK]** を選択します。
+6. [使用許諾契約書] ダイアログボックスが表示されたら、[ **同意** する] を選択します。
 7. 次の NuGet パッケージに対して手順 3. ~ 6. を繰り返します: OpenXR、OpenXR
 
 >[!NOTE]
@@ -47,7 +45,7 @@ Visual Studio で NuGet パッケージをプロジェクトに追加するに�
 
 ## <a name="select-the-holographic-remoting-openxr-runtime"></a>Holographic Remoting OpenXR ランタイムを選択します。
 
-リモートアプリで行う必要がある最初の手順は、OpenXr NuGet パッケージの一部である Holographic Remoting OpenXR runtime を選択することです。 これを行うには、 ```XR_RUNTIME_JSON``` 環境変数を、アプリ内のファイルの RemotingXR.jsのパスに設定します。 この環境変数は、システムの既定の OpenXR ランタイムを使用せずに、代わりに Holographic Remoting OpenXR runtime にリダイレクトするために OpenXR ローダーによって使用されます。 OpenXr NuGet パッケージを使用する場合、ファイルの RemotingXR.jsは、コンパイル時に出力フォルダーに自動的にコピーされるため、OpenXR ランタイムの選択は通常、次のようになります。
+リモートアプリで行う必要がある最初の手順は、Holographic NuGet パッケージの一部である Holographic Remoting OpenXR runtime を選択することです。 これを行うには、 ```XR_RUNTIME_JSON``` 環境変数を、アプリ内のファイルの RemotingXR.jsのパスに設定します。 この環境変数は、システムの既定の OpenXR ランタイムを使用せずに、代わりに Holographic Remoting OpenXR runtime にリダイレクトするために OpenXR ローダーによって使用されます。 OpenXr NuGet パッケージを使用する場合、ファイルの RemotingXR.jsは、コンパイル時に出力フォルダーに自動的にコピーされます。 OpenXR ランタイムの選択は、通常、次のようになります。
 
 ```cpp
 bool EnableRemotingXR() {
@@ -84,7 +82,7 @@ bool EnableRemotingXR() {
 
 >[!WARNING]
 > Holographic Remoting OpenXR ランタイムは、接続が確立された後に、ビュー構成や環境 blend モードなどのデバイス固有のデータのみを提供できます。 ```xrEnumerateViewConfigurations```、 ```xrEnumerateViewConfigurationViews``` 、 ```xrGetViewConfigurationProperties``` 、 ```xrEnumerateEnvironmentBlendModes``` 、およびで ```xrGetSystemProperties``` は、既定値が使用されます。これは通常、HoloLens 2 で実行されているプレーヤーに接続してから完全に接続する場合に使用するものと一致します。
-接続が確立される前に、これらのメソッドを呼び出さないことを強くお勧めします。 提案は、XrSession が正常に作成され、セッション状態が少なくとも XR_SESSION_STATE_READY になった後に、これらのメソッドを使用します。
+接続が確立される前に、これらのメソッドを呼び出さないことを強くお勧めします。 提案は、XrSession が正常に作成され、セッション状態が少なくとも XR_SESSION_STATE_READY になった後に、これらのメソッドで使用されます。
 
 最大ビットレート、オーディオ対応、ビデオコーデック、深度バッファーストリーム解像度などの一般的なプロパティは、次のようにを使用して構成でき ```xrRemotingSetContextPropertiesMSFT``` ます。
 
@@ -138,7 +136,7 @@ xrRemotingGetConnectionStateMSFT(m_instance.Get(), m_systemId, &connectionState,
 >[!IMPORTANT]
 > ```xrRemotingConnectMSFT``````xrRemotingListenMSFT```xrCreateSession を介して XrSession を作成する前に、またはを呼び出す必要があります。 接続状態がのときに XrSession を作成しようとすると、 ```XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT``` セッションの作成は成功しますが、セッションの状態は直ちに XR_SESSION_STATE_LOSS_PENDING に移行されます。
 
-Holographic リモート処理の実装では ```xrCreateSession``` 、接続が確立されるのを待機できます。 またはを呼び出すことができます。この呼び出しは、に ```xrRemotingConnectMSFT``` ```xrRemotingListenMSFT``` よって ```xrCreateSession``` ブロックされ、接続が確立されるのを待機します。 タイムアウトは10秒に固定されています。 この時間内に接続を確立できる場合、XrSession の作成は成功し、セッションの状態は XR_SESSION_STATE_READY に移行されます。 接続を確立できない場合は、セッションの作成も成功しますが、直ちに XR_SESSION_STATE_LOSS_PENDING に移行されます。
+Holographic リモート処理の実装では ```xrCreateSession``` 、接続が確立されるのを待機できます。 またはを呼び出して、を呼び出すことができ ```xrRemotingConnectMSFT``` ```xrRemotingListenMSFT``` ます。この呼び出しはブロックされ、接続が確立されるまで待機します。 タイムアウトは10秒に固定されています。 この時間内に接続を確立できる場合、XrSession の作成は成功し、セッションの状態は XR_SESSION_STATE_READY に移行されます。 接続を確立できない場合は、セッションの作成も成功しますが、直ちに XR_SESSION_STATE_LOSS_PENDING に移行されます。
 
 一般に、接続状態は XrSession 状態になります。 接続状態の変更は、セッションの状態にも影響します。 たとえば、接続状態をからに切り替えた場合、 `XR_REMOTING_CONNECTION_STATE_CONNECTED_MSFT` ```XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT``` セッション状態は XR_SESSION_STATE_LOSS_PENDING にも移行します。
 
@@ -183,7 +181,7 @@ while (pollEvent(eventData)) {
 
 ## <a name="preview-streamed-content-locally"></a>ストリーミングされるコンテンツをローカルでプレビューする
 
-デバイスに送信されるのと同じコンテンツをリモートアプリで表示するには、 ```XR_MSFT_holographic_remoting_frame_mirroring``` 拡張機能を使用できます。 この拡張機能を使用すると、テクスチャを xrEndFrame に送信できます。 これを行うには、 ```XrRemotingFrameMirrorImageInfoMSFT``` 次のように XrFrameEndInfo にチェーンされている構造体を使用します。
+デバイスに送信されたのと同じコンテンツをリモートアプリで表示するには、 ```XR_MSFT_holographic_remoting_frame_mirroring``` 拡張機能を使用できます。 この拡張機能では、次のように、XrFrameEndInfo にチェーンされていないを使用して、xrEndFrame にテクスチャを送信でき ```XrRemotingFrameMirrorImageInfoMSFT``` ます。
 
 ```cpp
 XrFrameEndInfo frameEndInfo{XR_TYPE_FRAME_END_INFO};
@@ -204,7 +202,7 @@ xrEndFrame(m_session.Get(), &frameEndInfo);
 m_window->PresentSwapchain();
 ```
 
-上の例では、DX11 のスワップチェーンテクスチャを使用して、xrEndFrame の呼び出しの直後にウィンドウを表示します。 使用量は、スワップチェーンテクスチャに限定されず、追加の GPU 同期は必要ありません。 使用法と制約の詳細については、 [拡張機能の仕様](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html#XR_MSFT_remoting_frame_mirroring)を確認してください。
+上の例では、DX11 のスワップチェーンテクスチャを使用して、xrEndFrame の呼び出しの直後にウィンドウを表示します。 使用量はスワップチェーンテクスチャに限定されておらず、追加の GPU 同期は必要ありません。 使用法と制約の詳細については、 [拡張機能の仕様](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html#XR_MSFT_remoting_frame_mirroring)を確認してください。
 リモートアプリで DX12 を使用している場合は、XrRemotingFrameMirrorImageD3D11MSFT ではなく XrRemotingFrameMirrorImageD3D12MSFT を使用します。
 
 ## <a name="see-also"></a>参照

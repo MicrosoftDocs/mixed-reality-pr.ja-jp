@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、セキュリティ、認証、サーバー対クライアント
-ms.openlocfilehash: b2c054d19044b89b487331806b8256de1379fd53
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 64eb54d9401f3fbc8b73ebb97b19de5a68cdc5c4
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443461"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530403"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Holographic リモート処理の接続セキュリティを有効にする
 
@@ -30,7 +30,7 @@ Holographic リモート処理では、ネットワーク経由で情報を交�
 
 Windows ストアのサンプルアプリと Holographic リモート処理プレーヤーには、セキュリティが無効になっています。 そうすることで、サンプルがわかりやすくなります。 また、開発をより迅速に開始するのにも役立ちます。
 
-ただし、フィールドテストまたは実稼働環境での使用については、Holographic リモート処理ソリューションでセキュリティを有効にすることを強くお勧めします。
+フィールドテストまたは運用環境では、Holographic リモート処理ソリューションでセキュリティを有効にすることを強くお勧めします。
 
 Holographic リモート処理のセキュリティは、ユースケースに対して正しく設定されると、次の保証を提供します。
 
@@ -66,7 +66,7 @@ Holographic リモート処理でセキュリティを有効にすると、ネ�
 
 **ユースケース 1:** サーバーのホスト名が固定されていないか、サーバーがホスト名でアドレス指定されていません。
 
-このユースケースでは、サーバーのホスト名に対して証明書を発行することは実用的ではありません (または可能です)。 ここでは、代わりに証明書の拇印を検証することをお勧めします。 人間の指紋と同様に、拇印は証明書を一意に識別します。
+このユースケースでは、サーバーのホスト名に対して証明書を発行することは実用的ではありません (または可能です)。 代わりに、証明書の拇印を検証することをお勧めします。 人間の指紋と同様に、拇印は証明書を一意に識別します。
 
 拇印は、帯域外でクライアントに対して通信することが重要です。 つまり、リモート処理に使用されているのと同じネットワーク接続を経由して送信することはできません。 代わりに、クライアントの構成に手動で入力することも、クライアントが QR コードをスキャンするようにすることもできます。
 
@@ -159,7 +159,7 @@ Id プロバイダーの1つの例として、 [Microsoft id プラットフォ�
 Windows では、システム検証によって次のことが確認されます。
 
 * 証明書チェーンの整合性: 証明書は、信頼されたルート証明書で終了する一貫性のあるチェーンを形成します。
-* 証明書の有効性: サーバーの証明書は有効期間内であり、サーバー認証の目的で発行されます。
+* 証明書の有効性: サーバーの証明書が有効期間内にあり、サーバー認証用に発行されている
 * 失効: 証明書が失効していません
 * 名前の一致: サーバーのホスト名が、証明書が発行されたホスト名のいずれかと一致します。
 
@@ -173,23 +173,23 @@ Windows では、システム検証によって次のことが確認されます
 
 ## <a name="secure-connection-using-the-openxr-api"></a>OpenXR API を使用して接続をセキュリティで保護する
 
-[OPENXR api](../native/openxr.md)を使用する場合、セキュリティで保護された接続に関連するすべての api は OpenXR 拡張機能の一部として利用でき `XR_MSFT_holographic_remoting` ます。
+[OPENXR api](../native/openxr.md)を使用する場合は、セキュリティで保護された接続関連の api すべてを OpenXR 拡張機能の一部として利用でき `XR_MSFT_holographic_remoting` ます。
 
 >[!IMPORTANT]
 >Holographic Remoting OpenXR extension API の詳細については、 [Holographic リモート処理のサンプル github リポジトリ](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)に記載されている[仕様](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html)を確認してください。
 
 OpenXR 拡張機能を使用したセキュリティで保護された接続の主な要素 `XR_MSFT_holographic_remoting` は、次のコールバックです。
-- `xrRemotingRequestAuthenticationTokenCallbackMSFT`は、送信される認証トークンを生成または取得します。
+- `xrRemotingRequestAuthenticationTokenCallbackMSFT`送信する認証トークンを生成または取得します。
 - `xrRemotingValidateServerCertificateCallbackMSFT`は、証明書チェーンを検証します。
 - `xrRemotingValidateAuthenticationTokenCallbackMSFT`は、クライアント認証トークンを検証します。
 - `xrRemotingRequestServerCertificateCallbackMSFT`では、使用する証明書をサーバーアプリケーションに提供します。
 
 これらのコールバックは、およびを使用してリモート処理 OpenXR ランタイムに提供でき `xrRemotingSetSecureConnectionClientCallbacksMSFT` `xrRemotingSetSecureConnectionServerCallbacksMSFT` ます。 `XrRemotingConnectInfoMSFT` `XrRemotingListenInfoMSFT` また、またはを使用しているかどうかに応じて、構造体または構造体の secureconnection パラメーターを使用してセキュリティで保護された接続を有効にする必要があり `xrRemotingConnectMSFT` `xrRemotingListenMSFT` ます。
 
-この API は、「 [holographic remoting security の実装](#implementing-holographic-remoting-security) 」で説明されている IDL ベースの api によく似ていますが、インターフェイスを実装するのではなく、コールバックの実装を提供します。 詳細な例については、OpenXR サンプルアプリの一部として、 [Holographic リモート処理サンプル github リポジトリ](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)を参照してください。
+この API は、「 [holographic remoting security の実装](#implementing-holographic-remoting-security)」で説明されている IDL ベースの api に似ています。 ただし、インターフェイスを実装する代わりに、コールバックの実装を提供する必要があります。 詳細な例については、 [OpenXR サンプルアプリ](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)を参照してください。
 
 ## <a name="see-also"></a>参照
-* [Windows Mixed Realiy Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
+* [Windows Mixed Reality Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
 * [OpenXR Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md)
 * [カスタム Holographic リモート処理プレーヤーアプリの作成](holographic-remoting-create-player.md)
 * [Holographic リモート処理のトラブルシューティングと制限事項](holographic-remoting-troubleshooting.md)

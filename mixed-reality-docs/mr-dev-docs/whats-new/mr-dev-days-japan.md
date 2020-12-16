@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality、カンファレンス、サミット、開発者、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 925e94931adab767fbca2544d781c9ba1c095216
-ms.sourcegitcommit: cecb76c6a9b4b2c4e9769a5829a7146c99086e85
+ms.openlocfilehash: bd51220e030af1e9c60a66eb43ea6985b95cd43f
+ms.sourcegitcommit: 16524778ece416e002f52c9ceae354e1122bcc74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "97580548"
+ms.locfileid: "97582416"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days (日本)
 
@@ -29,11 +29,11 @@ Mixed Reality Dev Days への皆様のご参加をお待ちしています。 Mi
 
 **第一言語-日本語**
 
-## <a name="registration"></a>登録
+## <a name="session-recordings"></a>セッションの記録
 
-[今すぐ見る-Microsoft Teams のライブイベント](https://aka.ms/MRDDJPLive)
+[すべてのビデオを見る-YouTube 再生リスト](https://www.youtube.com/playlist?list=PLQEKit6tfVVIZaQWKTuNMONjPiIKMuJRH)
 
-Teams PC アプリで視聴することをお勧めします。また、Teams モバイル アプリまたはデスクトップ ブラウザーから参加することもできます。 何らかの理由でチームにログインできない場合は、 [YouTube のライブ](https://youtu.be/zxZu1uHjyo4)を確認してください。 ただし、スピーカーとの QA に参加することはできません。
+Mixed Reality の開発日を日本にご参加いただき、ありがとうございます。 すべてのビデオは、YouTube チャンネルでアーカイブされています。 もう一度お見せしましょう。
 
 ## <a name="schedule---subject-to-change"></a>スケジュール (変更される場合があります)
 
@@ -45,22 +45,22 @@ Teams PC アプリで視聴することをお勧めします。また、Teams �
 
 |**Time**|**セッションのタイトル**|**スピーカー**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
-|11: 00am-11: 50am|開会基調講演|Madoka Chiyoda、Jesse McCulloch、Kaoru Nakamura、Tetsu Muranaka|JA/EN|該当なし|
+|11: 00am-11: 50am|[Alex Kipman からの特別な歓迎を始めとする基調講演](https://youtu.be/MamMO11TnzY)|Madoka Chiyoda、Jesse McCulloch、Kaoru Nakamura、Tetsu Muranaka|JA/EN|該当なし|
 |11: 50am-12:00 pm|**中断 (10min)**||||
-|12:00 pm-12: 25pm|*セッション 1* Mixed Reality の概要|Atsushi Suzuki|JA|100|
-|12: 5:30: 55pm|*セッション 2* Mixed Reality ビジネス勢い|Tetsu Muranaka|JA|200|
-|1:00 pm-1: 50pm|*ランチ セッション* パネル:対話型の無料ディスカッション、Q&A、MRTK + Oculus Quest 2|Madoka Chiyoda + Microsoft MVP|JA|200|
+|12:00 pm-12: 25pm|*セッション 1* [Mixed Reality の概要](https://youtu.be/HqJy91y8Of0)|Atsushi Suzuki|JA|100|
+|12: 5:30: 55pm|*セッション 2* [Mixed Reality ビジネス勢い](https://youtu.be/fJJ9I8UGbio)|Tetsu Muranaka|JA|200|
+|1:00 pm-1: 50pm|*ランチセッション* パネル: 対話型の無料ディスカッション、Q と A、MRTK + Oculus クエスト 2 * 更新後|Madoka Chiyoda + Microsoft MVP|JA|200|
 |1: 50pm-2:00 pm|**中断 (10min)**||||
-|午後 2 時 - 午後 2 時 25 分|*セッション 3* HoloLens 2 開発の概要|千代田まどか|JA|200|
-|午後 2 時 30 分 - 午後 2 時 55 分|*セッション 4* MRTK UX コンポーネント v 2.5.0|Yoon Park|JA|300|
-|3: 00pm-3: 25pm|*セッション 5* HoloLens 2 と Unreal Engine の概要 (MRTK-Unreal)|Cameron Micka|JA|300|
-|3: 5:30: 55pm|*セッション 6* ホログラムのデザイン|Daniel Escudero|JA|300|
+|午後 2 時 - 午後 2 時 25 分|*セッション 3* [HoloLens 2 開発の概要](https://youtu.be/_z0CwAVkbiQ)|千代田まどか|JA|200|
+|午後 2 時 30 分 - 午後 2 時 55 分|*セッション 4* [MRTK UX コンポーネント v 2.5.0](https://youtu.be/If5R9diyF50)|Yoon Park|JA|300|
+|3: 00pm-3: 25pm|*セッション 5* [HoloLens 2 と unreal Engine の概要 (mrtk-unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|JA|300|
+|3: 5:30: 55pm|*セッション 6* [デザインホログラムを作成](https://youtu.be/jHn9yydiRTw)する|Daniel Escudero|JA|300|
 |3: 55pm-4: 15pm|**中断 (20min)**||||
-|4: 15pm-4: 40pm|*セッション 7* Azure Object Anchors|Jesse McCulloch|JA|300|
-|4: 45pm-5: 10pm|*セッション 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
-|5: 15pm-5: 40pm|*セッション 9* Azure 空間アンカーを使用したホログラムと実世界の整列|Yingguang Mei|JA|300|
-|5: 45pm-6: 10pm|*セッション 10* Unity + PiXYZ|Shinobu Takahashi (Unity テクノロジ日本)|JA|200|
-|6: 15pm-6: 40pm|*セッション 11* Azure Kinect DK の詳細 (ケーススタディ)|Shinji Chiba|JA|400|
+|4: 15pm-4: 40pm|*セッション 7* [Azure オブジェクトアンカー](https://youtu.be/dZCb6VJlaaU)|Jesse McCulloch|JA|300|
+|4: 45pm-5: 10pm|*セッション 8* [Azure リモートレンダリング](https://youtu.be/MEhL12WGOW0)|Atsushi Suzuki|JA|300|
+|5: 15pm-5: 40pm|*セッション 9* [Azure 空間アンカーを使用したホログラムと実際の世界の配置](https://youtu.be/ApBd_jSHg9Q)|Yingguang Mei|JA|300|
+|5: 45pm-6: 10pm|*セッション 10* [Unity + PiXYZ](https://youtu.be/ggRZRRN36VI)|Shinobu Takahashi (Unity テクノロジ日本)|JA|200|
+|6: 15pm-6: 40pm|*セッション 11* [Azure Kinect DK の詳細、ケーススタディ](https://youtu.be/C6gg2jBL3Tw)|Shinji Chiba|JA|400|
 |6: 45pm-7:00 pm|閉じる|千代田まどか|JA|該当なし|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>共同作成者 (字幕の技術レビューアー)

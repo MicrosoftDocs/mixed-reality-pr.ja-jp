@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/15/2020
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 拡張現実, 仮想現実, mixed reality ヘッドセット, 学習, チュートリアル, 概要
-ms.openlocfilehash: dc908762d6e44e04f56b8ff82b90394106ca42e5
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5db08dee6b26de6fa3f44d92709e4903bb90a44c
+ms.sourcegitcommit: 7595db7438398b5c78cec41a6f8ab625711bf8ec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/17/2020
-ms.locfileid: "97622946"
+ms.locfileid: "97664420"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Unity でサポートされている Mixed Reality OpenXR の機能
 
@@ -25,12 +25,12 @@ ms.locfileid: "97622946"
 * HoloLens 2 アプリケーションの UWP パッケージと CoreWindow の相互作用を最適化します。
 * アンカーと無制限のスペースを使用したワールドスケールの追跡。
 * ストレージ API を固定して、HoloLens 2 ローカルストレージにアンカーを保持します。
-* 新しい HP リバーブ G2 コントローラーを含む、モーションコントローラーと手作業のやり取り。
+* 新しい HP リバーブ G2 コントローラーを含む、[モーションコントローラーと手作業のやり取り](#motion-controller-and-hand-interactions)。
 * 26個の関節と結合半径の入力を使用した、トレーラーを使用したハンドトラッキング。
 * HoloLens 2 での視線の相互作用。
 * HoloLens 2 で写真/ビデオ (PV) カメラを検索しています。
 * PV カメラを使用した第3目のレンダリングを使用した Mixed Reality キャプチャ。
-* Holographic リモート処理アプリを使用して HoloLens 2 への "Play" をサポートします。これにより、開発者は、デバイスにビルドしてデプロイすることなく、スクリプトをデバッグできます。
+* [Holographic リモート処理アプリでの HoloLens 2 への "Play" を](#holographic-remoting-in-unity-editor-play-mode)サポートします。これにより、開発者は、デバイスにビルドしてデプロイすることなく、スクリプトをデバッグできます。
 * Mrtk Unity 2.5.2 から MRTK OpenXR adapter パッケージに準拠しています。 <missing link>
 * Unity [Arfoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 以降との互換性
 

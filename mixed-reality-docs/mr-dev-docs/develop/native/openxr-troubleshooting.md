@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR、Khronos、BasicXRApp、DirectX、ネイティブ、ネイティブアプリ、カスタムエンジン、ミドルウェア、トラブルシューティング
-ms.openlocfilehash: 174c115b86e62d5c52051a7363a59e383e503a95
-ms.sourcegitcommit: c199872c11adae7de24929ed043ea90dea087b3e
+ms.openlocfilehash: ddfe548d689d84576ad0ac06bda46d7c2757859c
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903089"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612936"
 ---
 # <a name="openxr-troubleshooting"></a>OpenXR トラブルシューティング
 
@@ -22,6 +22,6 @@ Windows Mixed Reality OpenXR Runtime を使用して OpenXR アプリを開発�
 
 ### <a name="openxr-app-not-starting-windows-mixed-reality"></a>OpenXR app が Windows Mixed Reality を開始しない
 
-実行時に OpenXR アプリが Windows Mixed Reality を起動していない場合は、Windows Mixed Reality OpenXR ランタイムがアクティブなランタイムとして設定されていない可能性があります。  「 [OpenXR For Windows Mixed Reality ヘッドセットの](openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) 概要」の手順に従って、ランタイムをアクティブにしてください。
+実行時に OpenXR アプリが Windows Mixed Reality を起動していない場合は、Windows Mixed Reality OpenXR ランタイムがアクティブなランタイムとして設定されていない可能性があります。 この問題を解決するには、「 [OpenXR For Windows Mixed Reality ヘッドセットの](openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) 概要」の手順に従ってください。
 
-また、windows mixed reality [の OpenXR 開発者ツール](openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) を実行して、システム上の Windows Mixed Reality OpenXR ランタイムの状態に関する追加のトラブルシューティングを行うこともできます。
+また、Windows mixed reality [の OpenXR 開発者ツール](openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) を実行して、Windows Mixed Reality OpenXR Runtime のシステムの状態に関するトラブルシューティングのヘルプを取得することもできます。

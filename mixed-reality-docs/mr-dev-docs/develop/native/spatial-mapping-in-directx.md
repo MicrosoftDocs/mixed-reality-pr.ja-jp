@@ -1,24 +1,24 @@
 ---
 title: DirectX の空間マッピング
-description: DirectX アプリで空間マッピングを実装する方法について説明します。 これには、ユニバーサル Windows プラットフォーム SDK に含まれる空間マッピングサンプルアプリケーションの詳細な説明が含まれます。
+description: ユニバーサル Windows プラットフォーム SDK に付属する空間マッピングサンプルアプリケーションを含め、DirectX アプリで空間マッピングを実装する方法について説明します。
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows mixed reality, 空間マッピング, 環境, 相互作用, directx, winrt, api, サンプルコード, UWP, SDK, チュートリアル
-ms.openlocfilehash: 3e20f0b7a677ba522f8a1140284a2aa0e96eedcd
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: fa372473939222ef4be7ca36076a17241173c441
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685906"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612916"
 ---
 # <a name="spatial-mapping-in-directx"></a>DirectX の空間マッピング
 
 > [!NOTE]
 > この記事は、従来の WinRT ネイティブ Api に関連しています。  新しいネイティブアプリプロジェクトの場合は、 **[OPENXR API](openxr-getting-started.md)** を使用することをお勧めします。
 
-このトピックでは、DirectX アプリで [空間マッピング](../../design/spatial-mapping.md) を実装する方法について説明します。 これには、ユニバーサル Windows プラットフォーム SDK に含まれる空間マッピングサンプルアプリケーションの詳細な説明が含まれます。
+このトピックでは、DirectX アプリで [空間マッピング](../../design/spatial-mapping.md) を実装する方法について説明します。これには、ユニバーサル Windows プラットフォーム SDK でパッケージ化された空間マッピングサンプルアプリケーションの詳細な説明が含まれます。
 
 このトピックでは、 [HolographicSpatialMapping](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) UWP コードサンプルのコードを使用します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "91685906"
 
 ## <a name="directx-development-overview"></a>DirectX 開発の概要
 
-空間マッピングのネイティブアプリケーション開発では、 [Windows](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx) のような名前空間の api を使用します。 これらの Api は、 [Unity](../unity/spatial-mapping-in-unity.md)によって公開される空間マッピング api に直接似た方法で空間マッピング機能を完全に制御します。
+空間マッピングのネイティブアプリケーション開発では、 [Windows](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx) のような名前空間の api を使用します。 これらの Api を使用すると、空間マッピング Api が [Unity](../unity/spatial-mapping-in-unity.md)によって公開されるのと同じ方法で、空間マッピング機能を完全に制御できます。
 
 ### <a name="perception-apis"></a>認識 Api
 
@@ -65,16 +65,16 @@ ms.locfileid: "91685906"
 - **SpatialSurfaceObserver を設定する**
   - [Requestaccessasync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.requestaccessasync.aspx)を呼び出して、ユーザーがアプリケーションにデバイスの空間マッピング機能を使用するためのアクセス許可を与えられていることを確認します。
   - SpatialSurfaceObserver オブジェクトをインスタンス化します。
-  - 空間サーフェスに関する情報が必要な領域を指定するには、 [SetBoundingVolumes](https://msdn.microsoft.com/library/windows/apps/mt592747.aspx) を呼び出します。 後でこの関数を再度呼び出すだけで、これらのリージョンを変更することができます。 各リージョンは、 [SpatialBoundingVolume](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialboundingvolume.aspx)を使用して指定されます。
+  - 空間サーフェスに関する情報が必要な領域を指定するには、 [SetBoundingVolumes](https://msdn.microsoft.com/library/windows/apps/mt592747.aspx) を呼び出します。 今後、この関数を呼び出して、これらのリージョンを変更することができます。 各リージョンは、 [SpatialBoundingVolume](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialboundingvolume.aspx)を使用して指定されます。
   - [ObservedSurfacesChanged](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.observedsurfaceschanged.aspx)イベントに登録します。これは、指定した領域の空間サーフェスに関する新しい情報が利用可能になるたびに起動されます。
 - **ObservedSurfacesChanged イベントの処理**
   - イベントハンドラーで、 [GetObservedSurfaces](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.getobservedsurfaces.aspx) を呼び出して、SpatialSurfaceInfo オブジェクトのマップを受信します。 このマップを使用して、 [ユーザーの環境内に存在](../../design/spatial-mapping.md#mesh-caching)する空間サーフェスのレコードを更新できます。
   - 各 SpatialSurfaceInfo オブジェクトに対して、 [Trygetbounds](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.trygetbounds.aspx) に対してクエリを実行し、選択した [空間座標系](../../design/coordinate-systems.md) で表現されるサーフェスの空間範囲を決定することができます。
-  - 空間サーフェスにメッシュを要求する場合は、 [TryComputeLatestMeshAsync](https://msdn.microsoft.com/library/windows/apps/mt592715.aspx)を呼び出します。 三角形の目的の密度と、返されるメッシュデータの形式を指定するオプションを指定できます。
+  - 空間サーフェスのメッシュを要求する場合は、 [TryComputeLatestMeshAsync](https://msdn.microsoft.com/library/windows/apps/mt592715.aspx)を呼び出します。 三角形の密度、および返されるメッシュデータの形式を指定するオプションを指定できます。
 - **メッシュの受信と処理**
-  - TryComputeLatestMeshAsync を呼び出すたびに、1つの SpatialSurfaceMesh オブジェクトが aysnchronously 返されます。
-  - このオブジェクトから、含まれている SpatialSurfaceMeshBuffer オブジェクトにアクセスして、三角形のインデックス、頂点位置、および (要求された場合) メッシュの頂点法線にアクセスできます。 このデータは、メッシュのレンダリングに使用される [Direct3D 11 api](https://msdn.microsoft.com/library/windows/desktop/ff476501(v=vs.85).aspx) と直接互換性がある形式になります。
-  - ここから、アプリケーションでメッシュデータの分析または [処理](../../design/spatial-mapping.md#mesh-processing) を必要に応じて実行し、 [レンダリング](../../design/spatial-mapping.md#rendering) や物理的な [raycasting と競合](../../design/spatial-mapping.md#raycasting-and-collision)に使用することができます。
+  - TryComputeLatestMeshAsync を呼び出すたびに、1つの SpatialSurfaceMesh オブジェクトが非同期に返されます。
+  - このオブジェクトから、含まれている SpatialSurfaceMeshBuffer オブジェクトにアクセスできます。これにより、メッシュの三角形のインデックス、頂点位置、および頂点法線を要求した場合にアクセスできます。 このデータは、メッシュのレンダリングに使用される [Direct3D 11 api](https://msdn.microsoft.com/library/windows/desktop/ff476501(v=vs.85).aspx) と直接互換性がある形式になります。
+  - ここから、アプリケーションでメッシュデータを必要に応じて分析または [処理](../../design/spatial-mapping.md#mesh-processing) し、 [レンダリング](../../design/spatial-mapping.md#rendering) や物理的な [raycasting と競合](../../design/spatial-mapping.md#raycasting-and-collision)に使用することができます。
   - 注意すべき重要な点の1つは、メッシュの頂点位置 (メッシュのレンダリングに使用される頂点シェーダーなど) にスケールを適用して、バッファーに格納されている最適化された整数単位からメーターに変換する必要があることです。 このスケールを取得するには、 [Vertexpositionscale](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx)を呼び出します。
 
 ### <a name="troubleshooting"></a>トラブルシューティング
@@ -88,7 +88,7 @@ ms.locfileid: "91685906"
 
 ### <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>SpatialPerception 機能を使用するようにアプリを設定する
 
-アプリで空間マッピング機能を使用できる必要があります。 これが必要になるのは、空間メッシュがユーザーの環境を表しているためです。これは、プライベートデータと見なされる場合があります。 この機能をアプリの package.appxmanifest ファイルで宣言します。 次に例を示します。
+アプリで空間マッピング機能を使用できます。 これが必要になるのは、空間メッシュがユーザーの環境を表しているためです。これは、プライベートデータと見なされる場合があります。 この機能をアプリの package.appxmanifest ファイルで宣言します。 次に例を示します。
 
 ```xml
 <Capabilities>
@@ -110,7 +110,7 @@ ms.locfileid: "91685906"
 
 ### <a name="check-for-spatial-mapping-feature-support"></a>空間マッピング機能のサポートを確認する
 
-Windows Mixed Reality は、空間マッピングをサポートしていないデバイスを含む幅広いデバイスをサポートしています。 アプリで空間マッピングを使用できる場合、または空間マッピングを使用して機能を提供する場合は、使用する前に空間マッピングがサポートされていることを確認する必要があります。 たとえば、混合の現実のアプリで空間マッピングが必要な場合、ユーザーが空間マッピングを使用せずにデバイスで実行しようとすると、その効果に関するメッセージが表示されます。 または、アプリがユーザーの環境の代わりに独自の仮想環境をレンダリングできる可能性があります。これは、空間マッピングが使用可能であった場合に発生するようなエクスペリエンスを提供します。 どのような場合でも、この API によって、アプリは空間マッピングデータを取得せず、適切な方法で応答するタイミングを認識できます。
+Windows Mixed Reality は、空間マッピングをサポートしていないデバイスを含む幅広いデバイスをサポートしています。 アプリで空間マッピングを使用できる場合、または空間マッピングを使用して機能を提供する場合は、使用する前に空間マッピングがサポートされていることを確認する必要があります。 たとえば、混合の現実のアプリで空間マッピングが必要な場合、ユーザーが空間マッピングを使用せずにデバイスで実行しようとすると、その効果に関するメッセージが表示されます。 または、アプリでユーザーの環境の代わりに独自の仮想環境をレンダリングすることができます。これは、空間マッピングが使用可能であった場合に発生するようなエクスペリエンスを提供します。 どのような場合でも、この API によって、アプリは空間マッピングデータを取得せず、適切な方法で応答するタイミングを認識できます。
 
 現在のデバイスでの空間マッピングのサポートを確認するには、最初に UWP コントラクトがレベル4以上であることを確認してから、SpatialSurfaceObserver:: IsSupported () を呼び出します。 [Holographic 空間マッピング](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping)コードサンプルのコンテキストでこれを行う方法を次に示します。 アクセスを要求する直前にサポートが確認されます。
 
@@ -136,7 +136,7 @@ if (m_surfaceObserver == nullptr)
            /// etc ...
 ```
 
-UWP コントラクトがレベル4より小さい場合は、デバイスが空間マッピングを実行できるかのようにアプリを続行する必要があることに注意してください。
+UWP コントラクトがレベル4より小さい場合は、デバイスが空間マッピングを実行できるかのようにアプリを続行する必要があります。
 
 ### <a name="request-access-to-spatial-mapping-data"></a>空間マッピングデータへのアクセスを要求する
 
@@ -201,7 +201,7 @@ initSurfaceObserverTask.then([this, coordinateSystem](Windows::Perception::Spati
         m_surfaceObserver->SetBoundingVolume(bounds);
 ```
 
-複数の境界ボリュームを設定できることに注意してください。
+代わりに、複数の境界ボリュームを設定できます。
 
 *これは擬似コードです。*
 
@@ -219,11 +219,11 @@ m_surfaceObserver->SetBoundingVolume(
             );
 ```
 
-Surface マッピングのデータを使用できない場合にアプリの動作を変える必要がある場合は、 [SpatialPerceptionAccessStatus](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialperceptionaccessstatus.aspx) が **許可** されていない場合に応答するコードを記述できます。たとえば、デバイスにデバイスを接続している pc では、空間マッピングのハードウェアが搭載されていないため、このコードを使用することはできません。 これらのデバイスでは、代わりに、ユーザーの環境とデバイスの構成に関する情報を空間ステージに依存させる必要があります。
+Surface マッピングデータを使用できない場合にアプリの動作を変える必要がある場合は、 [SpatialPerceptionAccessStatus](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialperceptionaccessstatus.aspx) が **許可** されていない場合に応答するコードを記述できます。たとえば、デバイスにデバイスが搭載されていても、空間マッピング用のハードウェアがないため、このようなデバイスは許可されません。 これらのデバイスでは、代わりに、ユーザーの環境とデバイスの構成に関する情報を空間ステージに依存させる必要があります。
 
 ### <a name="initialize-and-update-the-surface-mesh-collection"></a>Surface メッシュコレクションの初期化と更新
 
-Surface オブザーバーが正常に作成された場合、surface メッシュコレクションの初期化に進むことができます。 ここでは、プルモデル API を使用して、現在観察されているサーフェスのセットをすぐに取得します。
+Surface オブザーバーが正常に作成された場合、surface メッシュコレクションの初期化を続行できます。 ここでは、プルモデル API を使用して、現在観察されているサーフェスのセットをすぐに取得します。
 
 ```cpp
 auto mapContainingSurfaceCollection = m_surfaceObserver->GetObservedSurfaces();
@@ -236,7 +236,7 @@ auto mapContainingSurfaceCollection = m_surfaceObserver->GetObservedSurfaces();
         }
 ```
 
-Surface メッシュデータを取得するために使用できるプッシュモデルもあります。 プルモデルのみを使用するようにアプリを設計することもできます。選択した場合は、(たとえば、フレームごとに1回、またはゲームのセットアップ中など、特定の期間に) データをポーリングします。 その場合は、上記のコードが必要です。
+Surface メッシュデータを取得するために使用できるプッシュモデルもあります。 プルモデルのみを使用するようにアプリをデザインすることもできます。選択した場合は、(たとえば、フレームごとに1回、またはゲームのセットアップ中など、特定の期間に) データをポーリングします。 その場合は、上記のコードが必要です。
 
 このコードサンプルでは、教育目的目的で両方のモデルを使用する方法を説明しました。 ここでは、システムが変更を認識するたびに、最新の表面メッシュデータを受け取るイベントをサブスクライブします。
 
@@ -339,7 +339,7 @@ void RealtimeSurfaceMeshRenderer::AddOrUpdateSurface(Guid id, SpatialSurfaceInfo
 }
 ```
 
-このサンプルコードは、データクラス **SurfaceMesh** がメッシュデータの処理とレンダリングを処理するように設計されています。 これらのメッシュは、 **RealtimeSurfaceMeshRenderer** が実際にマップを保持しているものです。 各ファイルには、SpatialSurfaceMesh の元のものへの参照があり、メッシュの頂点またはインデックスバッファーにアクセスしたり、メッシュの変換を取得したりする必要があるときはいつでも使用します。 ここでは、更新が必要であるとしてメッシュにフラグを付けます。
+このサンプルコードは、データクラス **SurfaceMesh** がメッシュデータの処理とレンダリングを処理するように設計されています。 これらのメッシュは、 **RealtimeSurfaceMeshRenderer** が実際にマップを保持しているものです。 各ファイルには、SpatialSurfaceMesh が送信元のものへの参照があるため、メッシュの頂点またはインデックスバッファーにアクセスしたり、メッシュの変換を取得したりする必要があるときに、いつでも使用できます。 ここでは、更新が必要であるとしてメッシュにフラグを付けます。
 
 SurfaceMesh から:
 
@@ -454,7 +454,7 @@ void SurfaceMesh::UpdateTransform(
 }
 ```
 
-サーフェイスメッシュをレンダリングする時間があれば、コレクションをレンダリングする前にいくつかの準備作業を行います。 現在の表示構成にシェーダーパイプラインを設定し、入力アセンブラーステージを設定します。 Holographic カメラヘルパークラス **CameraResources** は、既にビュー/プロジェクション定数バッファーを設定していることに注意してください。
+サーフェイスメッシュをレンダリングする時間があれば、コレクションをレンダリングする前にいくつかの準備作業を行います。 現在の表示構成にシェーダーパイプラインを設定し、入力アセンブラーステージを設定します。 Holographic カメラヘルパークラス **CameraResources** は、既にビュー/プロジェクション定数バッファーを設定しています。
 
 **RealtimeSurfaceMeshRenderer:: Render** から:
 
@@ -519,7 +519,7 @@ for (auto& pair : m_meshCollection)
 
 個々のメッシュは、頂点とインデックスバッファー、ストライド、およびモデル変換の定数バッファーを設定します。 Windows Holographic アプリテンプレートの回転するキューブと同様に、インスタンス化を使用してステレオスコピックバッファーにレンダリングします。
 
-From **SurfaceMesh::D raw** :
+From **SurfaceMesh::D raw**:
 
 ```cpp
 // The vertices are provided in {vertex, normal} format
@@ -661,7 +661,7 @@ else
 
 また、表面メッシュをステレオディスプレイバッファーに描画するだけでもかまいません。 全面を照明付きで描画することを選択しましたが、ワイヤーフレームの描画、レンダリング前のメッシュの処理、テクスチャマップの適用などを自由に行うことができます。
 
-ここでは、このコードサンプルでは、コレクションを描画するようにメッシュレンダラーに指示しています。 今回は、深度のみのパスを指定していないので、ピクセルシェーダーをアタッチし、現在の仮想カメラに指定したターゲットを使用してレンダリングパイプラインを完成させます。
+ここでは、このコードサンプルでは、コレクションを描画するようにメッシュレンダラーに指示しています。 ここでは、深度のみのパスを指定していません。ピクセルシェーダーをアタッチし、現在の仮想カメラに指定したターゲットを使用してレンダリングパイプラインを完成させます。
 
 ```cpp
 // Spatial Mapping mesh rendering pass: Draw Spatial Mapping mesh over the world.

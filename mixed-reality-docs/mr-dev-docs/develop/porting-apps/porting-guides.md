@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: ポート、unity、unreal、ミドルウェア、エンジン、UWP、Win32、移植、HoloLens ファースト世代、mixed reality ヘッドセット、windows mixed reality ヘッドセット、移行、Windows 10、入力マッピング、
-ms.openlocfilehash: 9f3e064c4462fc3d12a23bd94885476bcd2f9466
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 4137ff4dcc9f72dd66b9078b0d86c2d06f01f2bc
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925945"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613226"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Windows Mixed Reality に VR アプリを移植する
 
-Windows 10 には、イマーシブおよび holographic ヘッドセットの直接サポートが含まれています。 Oculus Rift や HTC Naopak など、他のデバイス用にコンテンツを構築した場合は、オペレーティングシステムのプラットフォーム API の上に存在するライブラリに依存関係があります。 既存の Win32 Unity VR アプリを Windows Mixed Reality に導入するには、ベンダー固有の VR Sdk を Unity のクロスベンダ VR Api に再ターゲット使用する必要があります。
+Windows 10 には、イマーシブおよび holographic ヘッドセットのサポートが含まれています。 Oculus Rift や HTC Naopak のような他のデバイス用にコンテンツを構築した場合は、オペレーティングシステムのプラットフォーム API の上に存在するライブラリに対する依存関係があります。 既存の Win32 Unity VR アプリを Windows Mixed Reality に導入するには、ベンダー固有の VR Sdk を Unity のクロスベンダ VR Api に再ターゲット使用する必要があります。
 
 ## <a name="porting-requirements"></a>移植の要件
 
@@ -23,7 +23,7 @@ Windows 10 には、イマーシブおよび holographic ヘッドセットの�
 1. **PC で Windows 10 の秋の作成者の更新プログラム (16299) が実行されていることを確認します。** 内部からのプレビュービルドを受信することはお勧めできなくなりました。これらのビルドは、mixed reality 開発では最も安定していないためです。
 2. **グラフィックスまたはゲームエンジンの最新バージョンにアップグレードします。** ゲームエンジンは、Windows 10 SDK バージョン 10.0.15063.0 (2017 年4月にリリース) 以降をサポートする必要があります。
 3. **任意のミドルウェア、プラグイン、またはコンポーネントをアップグレードします。** アプリにコンポーネントが含まれている場合は、最新バージョンにアップグレードすることをお勧めします。
-4. **重複する sdk の依存関係を削除** します。 コンテンツがターゲットとしているデバイスによっては、その SDK を削除するか条件付きでコンパイルする必要があります (たとえば、SteamVR)。そのため、代わりに Windows Api を対象にすることができます。
+4. **重複する sdk の依存関係を削除** します。 コンテンツがターゲットとしているデバイスに応じて、その SDK を削除するか条件付きでコンパイルして、代わりに Windows Api を対象にする必要があります。 このシナリオの例として、SteamVR が挙げられます。
 5. **ビルドの問題を解決します。** この時点で、移植の演習は、アプリ、エンジン、およびコンポーネントの依存関係に固有です。
 
 ## <a name="common-porting-steps"></a>一般的な移植手順

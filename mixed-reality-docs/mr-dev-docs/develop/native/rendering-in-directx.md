@@ -6,19 +6,19 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, ホログラム, レンダリング, 3D グラフィックス, HolographicFrame, レンダリングループ, 更新ループ, チュートリアル, サンプルコード, Direct3D
-ms.openlocfilehash: 4c1e6207dd7e858a323ea5234f2849e6a3bdfab3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 90d665e8054a185969a95e6ff6415979e728e9ab
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683818"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613186"
 ---
 # <a name="rendering-in-directx"></a>DirectX でのレンダリング
 
 > [!NOTE]
 > この記事は、従来の WinRT ネイティブ Api に関連しています。  新しいネイティブアプリプロジェクトの場合は、 **[OPENXR API](openxr-getting-started.md)** を使用することをお勧めします。
 
-Windows Mixed Reality は DirectX 上に構築されており、ユーザーに対して豊富な3D グラフィカルエクスペリエンスを生み出します。 レンダリングの抽象化は DirectX のすぐ上にあり、システムによって予測される holographic シーンの1つ以上のオブザーバーの位置と向きに関するアプリの理由を示します。 開発者は、各カメラを基準としてそのホログラムを見つけることができます。これにより、アプリは、ユーザーが移動するときに、さまざまな空間座標系でこれらのホログラムをレンダリングします。
+Windows Mixed Reality は DirectX 上に構築されており、ユーザーに対して豊富な3D グラフィカルエクスペリエンスを生み出します。 レンダリングの抽象化は DirectX のすぐ上にあり、システムによって予測された holographic シーンオブザーバーの位置と向きに関するアプリの理由を示します。 開発者は、各カメラに基づいてホログラムを見つけることができます。これにより、アプリは、ユーザーが移動するときに、さまざまな空間座標系でこれらのホログラムをレンダリングします。
 
 メモ: このチュートリアルでは、Direct3D 11 での holographic レンダリングについて説明します。 Direct3D 12 Windows Mixed Reality アプリテンプレートには、Mixed Reality アプリテンプレート拡張機能も用意されています。
 
@@ -33,7 +33,7 @@ Holographic カメラビューにレンダリングするには、アプリが�
 
 ### <a name="create-a-new-holographic-frame-and-get-its-prediction"></a>新しい holographic フレームを作成し、予測を取得する
 
-<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>には、現在のフレームを更新して表示するためにアプリが必要とする情報が含まれています。 アプリは、 **Createnextframe** メソッドを呼び出すことによって、各新しいフレームを開始します。 このメソッドが呼び出されると、予測は、使用可能な最新のセンサーデータを使用して作成され、 **currentprediction** オブジェクトにカプセル化されます。
+<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>には、アプリが現在のフレームを更新して表示するために必要な情報が含まれています。 アプリは、 **Createnextframe** メソッドを呼び出すことによって、各新しいフレームを開始します。 このメソッドが呼び出されると、予測は、使用可能な最新のセンサーデータを使用して作成され、 **currentprediction** オブジェクトにカプセル化されます。
 
 レンダリングされた各フレームは、瞬時に有効であるため、新しいフレームオブジェクトを使用する必要があります。 **Currentprediction** プロパティには、カメラの位置などの情報が含まれています。 この情報は、フレームがユーザーに表示されることが予想される正確な時点に対して推定されます。
 
@@ -73,7 +73,7 @@ for (HolographicCameraPose const& cameraPose : prediction.CameraPoses())
 
 ### <a name="get-the-coordinate-system-to-use-as-a-basis-for-rendering"></a>描画の基準として使用する座標系を取得します。
 
-Windows Mixed Reality を使用すると、アプリは、物理的な世界での場所を追跡する、アタッチされた参照フレームや静止参照フレームなど、必要に応じてさまざまな [座標系](coordinate-systems-in-directx.md) を作成できます。 これにより、アプリはこれらの座標系を使用して、各フレームのホログラムのレンダリングを行うことができます。 API から座標を要求するときは、その座標を表現する <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a> を常に渡す必要があります。
+Windows Mixed Reality を使用すると、アプリは、物理的な世界での場所を追跡するために、接続された、静止した参照フレームなどのさまざまな [座標系](coordinate-systems-in-directx.md)を作成できます。 これにより、アプリはこれらの座標系を使用して、各フレームのホログラムのレンダリングを行うことができます。 API から座標を要求するときは、その座標を表現する <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a> を常に渡す必要があります。
 
 **Appmain:: Update** から:
 
@@ -94,13 +94,13 @@ auto viewTransformContainer = cameraPose.TryGetViewTransform(coordinateSystem);
 
 ### <a name="process-gaze-and-gesture-input"></a>プロセスの宝石とジェスチャの入力
 
-手書き入力と [ハンド](hands-and-motion-controllers-in-directx.md)入力は時間ベースではない [ため、](gaze-in-directx.md) **steptimer** 関数で更新する必要はありません。 ただし、この入力は、アプリが各フレームを確認する必要があります。
+手書き入力と [手動](hands-and-motion-controllers-in-directx.md)入力は時間ベースでは [なく、](gaze-in-directx.md) **steptimer** 関数で更新する必要はありません。 ただし、この入力は、アプリが各フレームを確認する必要があります。
 
 ### <a name="process-time-based-updates"></a>プロセス時間ベースの更新
 
-リアルタイムレンダリングアプリでは、時間ベースの更新を処理するために何らかの方法が必要になります。これを Windows Holographic アプリテンプレートで実行する方法は、 **Steptimer** 実装を通じて提供されます。 これは、DirectX 11 UWP アプリケーションテンプレートに用意されている StepTimer に似ています。そのため、既にそのテンプレートを見ている場合は、慣れ親しんでいる必要があります。 このサンプルヘルパークラスは、一定の時間ステップの更新と、変動する時間ステップの更新を提供でき、既定のモードは変動する時間のステップです。
+リアルタイムレンダリングアプリでは、時間ベースの更新を処理するために何らかの方法が必要です。 Windows Holographic アプリケーションテンプレートでは、DirectX 11 UWP アプリケーションテンプレートに用意されている StepTimer と同様に、 **steptimer** 実装が使用されます。 このサンプルヘルパークラスは、固定された時間ステップの更新、時間の経過に伴う時間の更新、既定のモードは変動する時間のステップを提供します。
 
-Holographic のレンダリングの場合、タイマー関数にあまり多くを設定しないことを選択しました。 これは、固定された時間のステップとして構成できるためです。この場合、フレームごとに複数回呼び出される場合もあれば、フレームごとに1つの holographic データ更新が発生する場合もあります。
+Holographic のレンダリングでは、タイマー関数を固定の時間ステップとして構成できるので、タイマー関数にあまり多くを入れないことを選択しました。 フレームごとに複数回呼び出される場合があります。また、フレームによっては、holographic データの更新がフレームごとに1回行われる必要があります。
 
 
 **Appmain:: Update** から:
@@ -114,7 +114,7 @@ m_timer.Tick([this]()
 
 ### <a name="position-and-rotate-holograms-in-your-coordinate-system"></a>座標系でのホログラムの位置と回転
 
-1つの座標系で動作している場合、テンプレートは **SpatialStationaryReferenceFrame** を使用しているため、このプロセスは3d グラフィックスで使用しているものとは異なります。 ここでは、キューブを回転させ、固定座標系の位置を基準としてモデルマトリックスを設定します。
+1つの座標系で運用している場合は、テンプレートが **SpatialStationaryReferenceFrame** を使用しているため、このプロセスは3d グラフィックスで使用していたものとは異なります。 ここでは、立方体を回転させ、固定の座標系の位置に基づいてモデルマトリックスを設定します。
 
 **SpinningCubeRenderer:: Update** から:
 
@@ -141,7 +141,7 @@ const XMMATRIX modelTransform = XMMatrixMultiply(modelRotation, modelTranslation
 XMStoreFloat4x4(&m_modelConstantBufferData.model, XMMatrixTranspose(modelTransform));
 ```
 
-**高度なシナリオに関する注意:** 回転するキューブは、1つの参照フレーム内にホログラムを配置するための非常に単純な例です。 同時に、レンダリングされた同じフレームで [複数の SpatialCoordinateSystems を使用](coordinate-systems-in-directx.md) することもできます。
+**高度なシナリオに関する注意:** 回転するキューブは、1つの参照フレーム内にホログラムを配置する方法の簡単な例です。 同時に、レンダリングされた同じフレームで [複数の SpatialCoordinateSystems を使用](coordinate-systems-in-directx.md) することもできます。
 
 ### <a name="update-constant-buffer-data"></a>定数バッファーデータの更新
 
@@ -165,15 +165,15 @@ context->UpdateSubresource(
 
 ## <a name="render-the-current-frame"></a>現在のフレームをレンダリングします
 
-Windows Mixed Reality でのレンダリングは、2D mono ディスプレイでのレンダリングとは大きく異なりますが、注意する必要があるいくつかの違いがあります。
+Windows Mixed Reality でのレンダリングは、2D mono ディスプレイでのレンダリングとは大きく異なりますが、いくつか違いがあります。
 * Holographic フレーム予測は重要です。 予測に近いほど、フレームが表示されるときに、ホログラムが見やすくなります。
-* Windows Mixed Reality は、カメラビューを制御します。 Holographic フレームによって後で表示されるため、それぞれにレンダリングする必要があります。
-* レンダーターゲット配列に描画するインスタンスを使用して、ステレオレンダリングを実行することをお勧めします。 Holographic アプリテンプレートでは、レンダーターゲット配列に描画するための推奨される方法を使用しています。レンダーターゲット配列は、レンダーターゲットビューを **Texture2DArray** に使用します。
-* ステレオのインスタンス化を使用せずにレンダリングする場合は、システムからアプリに提供される **Texture2DArray** 内の2つのスライスのいずれか1つを参照する2つの非配列 RenderTargetViews を作成する必要があります。 これは、通常、インスタンス化を使用するよりも大幅に低速であるため、推奨されません。
+* Windows Mixed Reality は、カメラビューを制御します。 Holographic フレームによって後で表示されるため、それぞれにレンダリングします。
+* レンダーターゲット配列に描画するインスタンスを使用して、ステレオレンダリングを行うことをお勧めします。 Holographic アプリテンプレートでは、レンダーターゲット配列に描画するための推奨される方法を使用しています。レンダーターゲット配列は、レンダーターゲットビューを **Texture2DArray** に使用します。
+* ステレオのインスタンス化を使用せずにレンダリングする場合は、2つの非配列 RenderTargetViews を作成する必要があります。 各 RenderTargetViews は、システムからアプリに提供される **Texture2DArray** 内の2つのスライスのうちの1つを参照します。 これは、通常、インスタンス化を使用するよりも低速であるため、推奨されません。
 
 ### <a name="get-an-updated-holographicframe-prediction"></a>更新された HolographicFrame 予測を取得する
 
-フレーム予測を更新すると、イメージの安定化の効果が向上し、予測とフレームがユーザーに表示されるまでの時間が短いため、ホログラムをより正確に配置できるようになります。 レンダリングの直前にフレーム予測を更新するのが理想的です。
+フレーム予測を更新すると、イメージの安定化の効果が向上します。 ホログラムがより正確に配置されるのは、予測とフレームがユーザーに表示される時間が短くなるためです。 レンダリングの直前にフレーム予測を更新するのが理想的です。
 
 ```cpp
 holographicFrame.UpdateCurrentPrediction();
@@ -309,9 +309,9 @@ context->VSSetConstantBuffers(
 
 **カメラのバックバッファーにレンダリングし、深度バッファーをコミットし** ます。
 
-ビュー/プロジェクションデータを使用する前に **Trygetviewtransform** が成功したことを確認することをお勧めします。これは、座標系が見つからない場合 (追跡が中断された場合など)、そのフレームに対してアプリをレンダリングできないためです。 **CameraResources** クラスが正常に更新されたことを示している場合、このテンプレートは回転しているキューブに対してのみ **Render** を呼び出します。
+ビュー/プロジェクションデータを使用する前に **Trygetviewtransform** が成功したことを確認することをお勧めします。これは、座標系の位置が正しくない (たとえば、追跡が中断された) 場合、アプリはそのフレームではレンダリングできないためです。 **CameraResources** クラスが正常に更新されたことを示している場合、このテンプレートは回転しているキューブに対してのみ **Render** を呼び出します。
 
-開発者やユーザーがこのような場所に配置したホログラムを維持するために、Windows Mixed Reality には [イメージを安定化](../platform-capabilities-and-apis/hologram-stability.md)する機能が含まれています。 イメージの安定化は、ユーザーに最適な holographic エクスペリエンスを確保するために、レンダリングパイプラインに固有の待機時間を非表示にするのに役立ちます。さらに、イメージの安定化をさらに強化するためにフォーカスポイントを指定することも、最適化されたイメージ安定化をリアルタイムで計算するために深度バッファーを指定することもできます。
+Windows Mixed Reality には、開発者やユーザーが配置したホログラムをどこに配置しても、 [イメージを安定化](../platform-capabilities-and-apis/hologram-stability.md) させておくための機能が含まれています。 イメージの安定化は、ユーザーに最適な holographic エクスペリエンスを確保するために、レンダリングパイプラインに固有の待機時間を非表示にするのに役立ちます。 さらに、イメージの安定化をさらに強化するためにフォーカスポイントを指定することも、最適化されたイメージ安定化をリアルタイムで計算するために深度バッファーを指定することもできます。
 
 最良の結果を得るために、アプリは <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> API を使用して深度バッファーを提供する必要があります。 Windows Mixed Reality は、深度バッファーからのジオメトリ情報を使用して、イメージの安定化をリアルタイムで最適化できます。 Windows Holographic アプリテンプレートでは、アプリの深度バッファーが既定でコミットされるため、ホログラムの安定性が最適化されます。
 
@@ -406,7 +406,7 @@ cbuffer ViewProjectionConstantBuffer : register(b1)
 };
 ```
 
-レンダーターゲットの配列インデックスは、ピクセルごとに設定する必要があります。 次のスニペットでは、viewId が **SV_RenderTargetArrayIndex** セマンティックにマップされています。 これには、オプションの Direct3D 11.3 機能のサポートが必要であることに注意してください。これにより、任意のシェーダーステージからレンダーターゲットの配列インデックスセマンティックを設定できます。
+レンダーターゲットの配列インデックスは、ピクセルごとに設定する必要があります。 次のスニペットでは、viewId が **SV_RenderTargetArrayIndex** セマンティックにマップされています。 これには、オプションの Direct3D 11.3 機能がサポートされている必要があります。これにより、任意のシェーダーステージからレンダーターゲットの配列インデックスセマンティックを設定できます。
 
 **VPRTVertexShader** から:
 
@@ -462,11 +462,11 @@ VertexShaderOutput main(VertexShaderInput input)
 }
 ```
 
-既にインスタンス化された描画手法をステレオレンダーターゲット配列に描画する方法を使用する場合は、通常持っているインスタンスの数を2倍にするだけで済みます。 シェーダーでは、 **入力した instId** を2で除算して元のインスタンス ID を取得します。これは、オブジェクトごとのデータのバッファーにインデックスを付けることができます。 `int actualIdx = input.instId / 2;`
+この描画方法を使用して、既にインスタンス化されている描画手法をステレオレンダーターゲット配列に使用する場合は、通常持っているインスタンスの数を2倍にします。 シェーダーでは、 **入力した instId** を2で除算して元のインスタンス ID を取得します。これは、オブジェクトごとのデータのバッファーにインデックスを付けることができます。 `int actualIdx = input.instId / 2;`
 
 ### <a name="important-note-about-rendering-stereo-content-on-hololens"></a>HoloLens でのステレオコンテンツのレンダリングに関する重要な注意事項
 
-Windows Mixed Reality では、任意のシェーダーステージからレンダーターゲット配列インデックスを設定する機能がサポートされています。通常、これは、Direct3D 11 のセマンティックが定義されているため、ジオメトリシェーダーステージでのみ実行できるタスクです。 ここでは、頂点とピクセルシェーダーの両方のステージを設定してレンダリングパイプラインを設定する方法の完全な例を示します。 シェーダーコードは前述のとおりです。
+Windows Mixed Reality では、任意のシェーダーステージからレンダーターゲットの配列インデックスを設定する機能がサポートされています。 通常、これは、Direct3D 11 に対してセマンティックが定義されているため、ジオメトリシェーダーステージでのみ実行できるタスクです。 ここでは、頂点とピクセルシェーダーの両方のステージを設定してレンダリングパイプラインを設定する方法の完全な例を示します。 シェーダーコードは前述のとおりです。
 
 **SpinningCubeRenderer:: Render** から:
 
@@ -523,9 +523,9 @@ context->DrawIndexedInstanced(
 
 ### <a name="important-note-about-rendering-on-non-hololens-devices"></a>非 HoloLens デバイスでのレンダリングに関する重要な注意事項
 
-頂点シェーダーにレンダーターゲット配列インデックスを設定するには、グラフィックスドライバーがオプションの Direct3D 11.3 機能 (HoloLens がサポート) をサポートしている必要があります。 アプリでは、レンダリングのためにその手法だけを安全に実装でき、すべての要件が Microsoft HoloLens で実行されるようになります。
+頂点シェーダーにレンダーターゲット配列インデックスを設定するには、グラフィックスドライバーがオプションの Direct3D 11.3 機能 (HoloLens がサポート) をサポートしている必要があります。 アプリがレンダリング用のその手法だけを安全に実装でき、すべての要件が Microsoft HoloLens で実行されるようになります。
 
-HoloLens エミュレーターも使用する場合があります。これは、holographic アプリ用の強力な開発ツールであり、windows 10 Pc に接続されている Windows Mixed Reality イマーシブヘッドセットデバイスをサポートします。 非 HoloLens レンダリングパスのサポート。したがって、すべての Windows Mixed Reality で、Windows Holographic アプリケーションテンプレートにも組み込まれています。 テンプレートコードには、開発用 PC の GPU で holographic アプリを実行できるようにするコードがあります。 **DeviceResources** クラスで、このオプションの機能のサポートを確認する方法を次に示します。
+HoloLens エミュレーターも使用する場合があります。これは、holographic アプリ用の強力な開発ツールであり、windows 10 Pc に接続されている Windows Mixed Reality イマーシブヘッドセットデバイスをサポートします。 非 HoloLens レンダリングパスのサポート-すべての Windows Mixed Reality で、Windows Holographic アプリケーションテンプレートにも組み込まれています。 テンプレートコードには、開発用 PC の GPU で holographic アプリを実行できるようにするコードがあります。 **DeviceResources** クラスで、このオプションの機能のサポートを確認する方法を次に示します。
 
 **DeviceResources:: CreateDeviceResources** から:
 
@@ -539,7 +539,7 @@ if (options.VPAndRTArrayIndexFromAnyShaderFeedingRasterizer)
 }
 ```
 
-このオプションの機能を使用せずにレンダリングをサポートするには、アプリで geometry シェーダーを使用してレンダーターゲットの配列インデックスを設定する必要があります。 このスニペットは、 **VSSetConstantBuffers** の *後* 、前のセクションで説明したコード例の **pssetshader** の *前* に追加されます。これは、HoloLens でのステレオのレンダリング方法を説明するものです。
+このオプションの機能を使用せずにレンダリングをサポートするには、アプリで geometry シェーダーを使用してレンダーターゲットの配列インデックスを設定する必要があります。 このスニペットは、 **VSSetConstantBuffers** の *後*、前のセクションで説明したコード例の **pssetshader** の *前* に追加されます。これは、HoloLens でのステレオのレンダリング方法を説明するものです。
 
 **SpinningCubeRenderer:: Render** から:
 
@@ -558,7 +558,7 @@ if (!m_usingVprtShaders)
 }
 ```
 
-**HLSL メモ** : この例では、TEXCOORD0 など、常に許可されているシェーダーセマンティクスを使用して、レンダーターゲットの配列インデックスを geometry シェーダーに渡す若干変更された頂点シェーダーも読み込む必要があります。 ジオメトリシェーダーは、作業を行う必要はありません。テンプレートジオメトリシェーダーは、すべてのデータを処理します。ただし、render ターゲットの配列インデックスは除き、SV_RenderTargetArrayIndex セマンティックを設定するために使用されます。
+**HLSL メモ**: この例では、TEXCOORD0 など、常に許可されているシェーダーセマンティクスを使用して、レンダーターゲットの配列インデックスを geometry シェーダーに渡す若干変更された頂点シェーダーも読み込む必要があります。 ジオメトリシェーダーは、作業を行う必要はありません。テンプレートジオメトリシェーダーは、すべてのデータを処理します。ただし、render ターゲットの配列インデックスは除き、SV_RenderTargetArrayIndex セマンティックを設定するために使用されます。
 
 **GeometryShader** のアプリテンプレートコード:
 
@@ -568,7 +568,7 @@ struct GeometryShaderInput
 {
     min16float4 pos     : SV_POSITION;
     min16float3 color   : COLOR0;
-    uint        instId  : TEXCOORD0;
+    uint instId         : TEXCOORD0;
 };
 
 // Per-vertex data passed to the rasterizer.
@@ -576,7 +576,7 @@ struct GeometryShaderOutput
 {
     min16float4 pos     : SV_POSITION;
     min16float3 color   : COLOR0;
-    uint        rtvId   : SV_RenderTargetArrayIndex;
+    uint rtvId          : SV_RenderTargetArrayIndex;
 };
 
 // This geometry shader is a pass-through that leaves the geometry unmodified 
@@ -608,11 +608,11 @@ From **DeviceResources::P** 再送信します。
 HolographicFramePresentResult presentResult = frame.PresentUsingCurrentPrediction();
 ```
 
-既定では、この API はフレームが終了するまで待機してから制御を戻します。 Holographic アプリは、新しいフレームで作業を開始する前に、前のフレームが終了するまで待機する必要があります。これにより、待機時間が短縮され、Holographic フレーム予測の結果が向上します。 これは難しいルールではなく、1つの画面の更新をレンダリングするのに時間がかかるフレームがある場合は、HolographicFramePresentWaitBehavior パラメーターを使用して <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">Current予測</a>を実行することで、この待機を無効にすることができます。 この場合、GPU に継続的な負荷を維持するために、非同期レンダリングスレッドを使用する可能性があります。 HoloLens デバイスのリフレッシュレートは60hz であることに注意してください。1つのフレームの期間は約16ミリ秒です。 イマーシブヘッドセットデバイスは 60hz ~ 90hz の範囲で指定できます。ディスプレイを 90 hz で更新すると、各フレームの期間は約11ミリ秒になります。
+既定では、この API はフレームが終了するまで待機してから制御を戻します。 Holographic アプリは、新しいフレームで作業を開始する前に、前のフレームが終了するまで待機する必要があります。これにより、待機時間が短縮され、Holographic フレーム予測の結果が向上します。 これは難しいルールではなく、1つの画面の更新をレンダリングするのに時間がかかるフレームがある場合は、HolographicFramePresentWaitBehavior パラメーターを使用して <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">Current予測</a>を実行することで、この待機を無効にすることができます。 この場合、GPU に継続的な負荷を維持するために、非同期レンダリングスレッドを使用する可能性があります。 HoloLens デバイスのリフレッシュレートは 60 hz で、1つのフレームの期間は約16ミリ秒です。 イマーシブヘッドセットデバイスは、60 hz から 90 hz までの範囲で指定できます。ディスプレイを 90 hz で更新すると、各フレームの期間は約11ミリ秒になります。
 
 ### <a name="handle-devicelost-scenarios-in-cooperation-with-the-holographicframe"></a>HolographicFrame と連携して、Devicのシナリオを処理します
 
-DirectX 11 アプリは通常、DXGI スワップチェーンの **present** 関数によって返された HRESULT を確認して、 **devicループ** エラーが発生したかどうかを調べます。 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>クラスはこれを処理します。 Direct3D デバイスとデバイスベースのリソースを解放して再作成する必要があるかどうかを確認するために、返された <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframepresentresult" target="_blank">HolographicFramePresentResult</a> を調べます。
+DirectX 11 アプリは通常、DXGI スワップチェーンの **present** 関数によって返された HRESULT を確認して、 **devicループ** エラーが発生したかどうかを調べます。 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>クラスはこれを処理します。 返された <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframepresentresult" target="_blank">HolographicFramePresentResult</a> を調べて、Direct3D デバイスとデバイスベースのリソースを解放して再作成する必要があるかどうかを確認します。
 
 ```cpp
 // The PresentUsingCurrentPrediction API will detect when the graphics device
@@ -625,7 +625,7 @@ if (presentResult == HolographicFramePresentResult::DeviceRemoved)
 }
 ```
 
-Direct3D デバイスが失われ、再作成した場合は、新しいデバイスの使用を開始するように <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> に指示する必要があることに注意してください。 スワップチェーンは、このデバイスに対して再作成されます。
+Direct3D デバイスが失われ、再作成した場合は、新しいデバイスの使用を開始するように <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> に指示する必要があります。 スワップチェーンは、このデバイスに対して再作成されます。
 
 **DeviceResources:: InitializeUsingHolographicSpace** から:
 
@@ -641,7 +641,7 @@ Windows 10 の作成者更新 Pc は、離散 Gpu と統合 Gpu の **両方** �
 
 一般的な Direct3D サンプルコードでは、既定のハードウェアアダプターを使用して DirectX デバイスを作成する方法を示しています。このハードウェアアダプターは、ヘッドホンで使用されているものと同じではない場合があります。
 
-この問題を回避するには、いずれかの<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>の<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicadapterid" target="_blank">HolographicAdapterId</a>を使用します。PrimaryAdapterId () または<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay" target="_blank">HolographicDisplay</a>。AdapterId ()。 この adapterId を使用すると、IDXGIFactory4 を使用して適切に DXGIAdapter を選択できます。
+問題を回避するには、いずれかの<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>の<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicadapterid" target="_blank">HolographicAdapterID</a>を使用します。PrimaryAdapterId () または<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay" target="_blank">HolographicDisplay</a>。AdapterId ()。 この adapterId を使用すると、IDXGIFactory4 を使用して適切に DXGIAdapter を選択できます。
 
 **DeviceResources:: InitializeUsingHolographicSpace** から:
 
@@ -709,7 +709,7 @@ const HRESULT hr = D3D11CreateDevice(
 
 **ハイブリッドグラフィックスとメディアファンデーション**
 
-ハイブリッドシステムでメディアファンデーションを使用すると、ビデオがレンダリングされない、またはビデオテクスチャが破損する問題が発生する可能性があります。 これは、前述のようにメディアファンデーションがシステムの動作を既定とするために発生する可能性があります。 場合によっては、マルチスレッドをサポートするために個別の ID3D11Device を作成する必要があり、適切な作成フラグが設定されます。
+ハイブリッドシステムでメディアファンデーションを使用すると、メディアファンデーションがシステムの動作を既定にするため、ビデオがレンダリングされない、またはビデオテクスチャが破損する問題が発生する可能性があります。 場合によっては、マルチスレッドをサポートするために個別の ID3D11Device を作成する必要があり、適切な作成フラグが設定されます。
 
 ID3D11Device を初期化するときは、D3D11_CREATE_DEVICE_VIDEO_SUPPORT フラグを D3D11_CREATE_DEVICE_FLAG の一部として定義する必要があります。 デバイスとコンテキストが作成されたら、 <a href="https://docs.microsoft.com/windows/desktop/api/d3d10/nf-d3d10-id3d10multithread-setmultithreadprotected" target="_blank">Setmultithreadprotected</a> を呼び出してマルチスレッドを有効にします。 デバイスを <a href="https://docs.microsoft.com/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager" target="_blank">Imfdxgidevicemanager</a>に関連付けるには、 <a href="https://docs.microsoft.com/windows/desktop/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-resetdevice" target="_blank">Imfdxgidevicemanager:: resetdevice</a> 関数を使用します。
 
@@ -720,16 +720,16 @@ ID3D11Device を初期化するときは、D3D11_CREATE_DEVICE_VIDEO_SUPPORT フ
 winrt::com_ptr<ID3D11Device> spMediaDevice;
 
 // See above. Also make sure to enable the following flags on the D3D11 device:
-//   * D3D11_CREATE_DEVICE_VIDEO_SUPPORT
-//   * D3D11_CREATE_DEVICE_BGRA_SUPPORT
+//   * D3D11_CREATE_DEVICE_VIDEO_SUPPORT
+//   * D3D11_CREATE_DEVICE_BGRA_SUPPORT
 if (FAILED(CreateMediaDevice(spAdapter.get(), &spMediaDevice)))
-    return;                                                     
+    return;                                                     
 
-// Turn multithreading on 
+// Turn multithreading on 
 winrt::com_ptr<ID3D10Multithread> spMultithread;
 if (spContext.try_as(spMultithread))
 {
-    spMultithread->SetMultithreadProtected(TRUE);
+    spMultithread->SetMultithreadProtected(TRUE);
 }
 
 // lock the shared dxgi device manager
@@ -738,12 +738,12 @@ UINT uiResetToken;
 winrt::com_ptr<IMFDXGIDeviceManager> spDeviceManager;
 hr = MFLockDXGIDeviceManager(&uiResetToken, spDeviceManager.put());
 if (FAILED(hr))
-    return hr;
-    
+    return hr;
+    
 // associate the device with the manager
 hr = spDeviceManager->ResetDevice(spMediaDevice.get(), uiResetToken);
 if (FAILED(hr))
-    return hr;
+    return hr;
 ```
 
 ## <a name="see-also"></a>関連項目

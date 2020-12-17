@@ -312,6 +312,8 @@
           href: unreal/unreal-publishing-to-store.md
         - name: Unreal のパフォーマンスに関する推奨事項
           href: unreal/performance-recommendations-for-unreal.md
+        - name: Unreal Insights を使用したプロファイリング
+          href: unreal/unreal-insights.md
         - name: Unreal の素材に関する推奨事項
           href: unreal/unreal-materials.md
         - name: Unreal でのストリーミング

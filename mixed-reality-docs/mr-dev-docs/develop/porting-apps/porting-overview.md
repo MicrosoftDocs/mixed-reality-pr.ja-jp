@@ -6,18 +6,18 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 移植, unity, ミドルウェア, エンジン, UWP, Win32
-ms.openlocfilehash: 1ec03610dd26e9f75162795cbdded77a8e0189ce
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: d8cbb62500a81a29a00f4d32eaed0c2df3f5149d
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925830"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612836"
 ---
 # <a name="porting-overview"></a>移植の概要
 
-既存のプロジェクトを混在環境に移植またはアップグレードする場合は、アプリが Unity、Unreal Engine、HoloLens (第1世代)、HoloLens 2、または SteamVR のどちらでビルドされたかによって、いくつかのシナリオが適用されることがあります。 この概要ページには、各プラットフォームとデバイスの現在の推奨事項が含まれています。これらのプロセスが常に変化しているため、必ず確認してください。
+既存のプロジェクトを混在させて移植またはアップグレードする場合は、アプリが Unity または Unreal のエンジンでビルドされているかどうか、および HoloLens (第1世代) と HoloLens 2、または SteamVR のどちらを対象とするかによって、移植の方法が異なります。 この概要ページには、各プラットフォームとデバイスの現在の推奨事項が含まれています。これらのプロセスが常に変化しているため、必ず確認してください。
 
-まず、 [Unity](#unity) と [unreal](#unreal) の推奨事項のいずれかに基づいてプロジェクトターゲットをセットアップし、次に、1つ以上の移植シナリオに従います。
+まず、 [Unity](#unity) と [unreal](#unreal) の推奨事項のいずれかに基づいてプロジェクトターゲットを設定し、次に1つ以上の移植シナリオに従います。
 
 - [HoloLens (第1世代) から HoloLens 2](#hololens-1st-gen-unity-apps-to-hololens-2)
 - [Windows Mixed Reality ヘッドセット](#windows-mixed-reality-headsets)
@@ -60,5 +60,5 @@ Windows Mixed Reality ヘッドセット用に更新する SteamVR エクスペ�
 
 ### <a name="2d-universal-windows-applications"></a>2D ユニバーサル Windows アプリケーション
 
-Windows Mixed Reality のイマーシブヘッドセットまたは HoloLens に移植する既存の 2D UWP アプリがある場合は、「 [Windows Mixed reality 用の 2D uwp アプリの移植](building-2d-apps.md) 」に記載されている手順に従ってください。
+Windows Mixed Reality のイマーシブヘッドセットまたは HoloLens に移植する既存の 2D UWP アプリがある場合は、「 [Windows Mixed reality 向けの 2D uwp アプリの移植」の](building-2d-apps.md) 手順に従ってください。
 

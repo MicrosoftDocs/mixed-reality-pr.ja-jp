@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 視線追跡、mixed reality、インプット、視線、調整、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、インテント、アクション
-ms.openlocfilehash: c6167fc48a98de8f400400475c2057a2b4773b29
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 53a44fab72d3a15df3cf5929c6ddda4fec06af71
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702588"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612866"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2 上の視線追跡
 
@@ -81,7 +81,7 @@ HoloLens 2 では、開発者がユーザーの注目に関する情報を使用
 ### <a name="user-intent"></a>ユーザーの目的    
 ユーザーがどこで見ているかについての情報は、音声、ハンド、コントローラーなど **の他の入力に対し** て強力なコンテキストを提供します。
 これは、さまざまなタスクに利用できます。
-たとえば、ホログラムを見て *「選択」* ( **targeting** 「"選択"」を参照して [ください) また](gaze-and-commit.md)は *「この* ようにしてください」と言うと、ユーザーがホログラムを配置しようとしている場所に移動して、" *..."* この例は、「[Mixed Reality Toolkit - Eye-supported Target Selection (Mixed Reality Toolkit - 目で支援するターゲット選択)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html)」と「[Mixed Reality Toolkit - Eye-supported Target Positioning (Mixed Reality Toolkit - 目で支援するターゲット配置)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html)」に記載されています。
+たとえば、ホログラムを見て *「選択」* (  「"選択"」を参照して [ください) また](gaze-and-commit.md)は *「この* ようにしてください」と言うと、ユーザーがホログラムを配置しようとしている場所に移動して、" *..."* この例は、「[Mixed Reality Toolkit - Eye-supported Target Selection (Mixed Reality Toolkit - 目で支援するターゲット選択)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html)」と「[Mixed Reality Toolkit - Eye-supported Target Positioning (Mixed Reality Toolkit - 目で支援するターゲット配置)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html)」に記載されています。
 
 さらに、ユーザーの目的の例として、ユーザーが参照する情報を使用して、埋め込み仮想エージェントや対話型ホログラムによるエンゲージメントを強化することができます。 たとえば、仮想エージェントは、現在表示されているコンテンツに基づいて、使用可能なオプションとその動作を適合させる場合があります。 
 
@@ -133,7 +133,7 @@ Microsoft は、イノベーションを促進することを専門としてい�
 * このユーザーには、システムがまだサポートしていない、固有の眼鏡またはいくつかの目の状態があります。    
 * 外部要因は、損なわれるの前に髪があることから、HoloLens バイザーや眼鏡での汚れや occlusions の強い日光となど、信頼性の高い視線を追跡します。   
 
-そのため、開発者は、これらのユーザーに適切なフォールバックサポートがあることを確認する必要があります。 「 [DirectX の目の追跡」](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-is-not-available) ページでは、視線追跡データが使用可能かどうかを検出するために必要な api について説明します。 
+そのため、開発者は、これらのユーザーに適切なフォールバックサポートがあることを確認する必要があります。 「 [DirectX の目の追跡」](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) ページでは、視線追跡データが使用可能かどうかを検出するために必要な api について説明します。 
 
 一部のユーザーは、目の追跡データへのアクセスを取り消すことを決定した場合がありますが、ユーザーエクスペリエンスの低下によって、視線追跡データへのアクセスを提供しないというプライバシーに対しては、これが意図していない場合があります。  
 そのため、アプリが目の追跡を使用していて、これがエクスペリエンスの重要な部分である場合は、これをユーザーに明確に伝えることをお勧めします。     

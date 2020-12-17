@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: チュートリアル、音声コマンド、語句、認識、音声、directx、プラットフォーム、cortana、windows mixed reality
-ms.openlocfilehash: bdd92f79b3dd9677ac5c2c64e532978477ac5bca
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683810"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613106"
 ---
 # <a name="voice-input-in-directx"></a>DirectX の音声入力
 
@@ -95,7 +95,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-*Onresultgenerated* イベントハンドラーは、 [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx)インスタンス内のイベントデータを受信します。 確信度が定義したしきい値を超える場合、アプリはイベントが発生したことを確認する必要があります。 後続の更新ループで使用できるように、イベントデータを保存します。
+*Onresultgenerated* イベントハンドラーは、 [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx)インスタンス内のイベントデータを受信します。 確信度が定義したしきい値を超える場合、アプリはイベントが発生したことを確認する必要があります。 後の更新ループで使用できるように、イベントデータを保存します。
 
 *HolographicVoiceInputSampleMain* から:
 
@@ -367,7 +367,7 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
 
 Holographic speech のサンプルでは、音声合成を使用してユーザーに可聴命令を提供します。 このセクションでは、合成された音声サンプルを作成し、HRTF audio Api を使用して再生する方法について説明します。
 
-語句入力を要求するときは、独自の音声入力プロンプトを指定する必要があります。 また、プロンプトを使用して、連続認識シナリオで音声コマンドを読み上げるタイミングを示すこともできます。 次の例は、音声シンセサイザーを使用してこれを行う方法を示しています。 事前に記録された音声クリップやビジュアル UI を使用することもできます。また、プロンプトが動的でないシナリオでは、その他の意見を示すこともできます。
+語句入力を要求するときに、独自の音声ガイダンスを提供することをお勧めします。 また、プロンプトを使用して、連続認識シナリオで音声コマンドを読み上げるタイミングを示すこともできます。 次の例は、音声シンセサイザーを使用してこれを行う方法を示しています。 事前に記録された音声クリップやビジュアル UI を使用することもできます。たとえば、プロンプトが動的でないシナリオでは、その他の説明を示すこともできます。
 
 まず、SpeechSynthesizer オブジェクトを作成します。
 

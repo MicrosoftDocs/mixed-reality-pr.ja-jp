@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: なし
-ms.openlocfilehash: 748685f89e44221ff50b90b57d871867b83f581c
-ms.sourcegitcommit: d4b96e5b51b64ff618dbf667e8b8eb069e1a2fe2
+ms.openlocfilehash: 1fc560d170c4e17f4d70b7068474a1aabda472a2
+ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91717435"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97676135"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>タイトル (可能な限り指定する場合は、人間の言葉を使用します) 
 
@@ -52,7 +52,7 @@ ms.locfileid: "91717435"
 
 セクションには、次のいずれかまたはすべてを含めることができます。  
 
-*   コメント
+*   説明
 *   考慮事項
 *   Thumb の規則 
 *   使用方法 
@@ -65,7 +65,7 @@ ms.locfileid: "91717435"
 *   おもしろいものにしないでください。
 *   En-us (米国 English) のスペルと規約を使用して記述します。
 *   **タイトル、セクション見出し、および...そうですね。** 文の中で、大文字にする必要がある単語は、(「文法」で学習したのと同じように) 適切な名詞だけです。 ブランド名 (例: Microsoft HoloLens) は、適切な名詞です。 機能名 (例: 空間マッピング) は、商標がない限り、適切な名詞ではありません。
-*   フォームのリンクを作成しないでください。詳細について [は、こちら](../whats-new/contributing.md)を参照してください。 代わりに、他の場所に移動するようにリーダーに指示せずに、リンクを [コンテキスト](../whats-new/contributing.md) に配置します。
+*   フォームのリンクを作成しないでください。詳細について [は、こちら](../contributing.md)を参照してください。 代わりに、他の場所に移動するようにリーダーに指示せずに、リンクを [コンテキスト](../contributing.md) に配置します。
 *   このドキュメントは、真実の源です。 情報は正確であり、最新である必要があります。
 
 <br>

@@ -17,7 +17,5 @@
   href: release-notes-may-2020.md
 - name: コミュニティのリソース
   href: ../discover/community.md
-- name: このドキュメントに寄稿する
-  href: contributing.md
 - name: 大規模な HoloLens のデプロイ
   href: 'https://docs.microsoft.com/hololens/'

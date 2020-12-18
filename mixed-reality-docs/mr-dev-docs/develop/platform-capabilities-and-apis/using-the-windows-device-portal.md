@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows デバイス ポータル, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 98030e55736d423d1fb84d2b965f6ed40246d8f4
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+ms.openlocfilehash: 4d945a6fbc61e56707d1e36e110a1108283b5add
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011479"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102946"
 ---
 # <a name="using-the-windows-device-portal"></a>Windows デバイス ポータルを使用する
 
@@ -32,7 +32,7 @@ HoloLens 用の Windows デバイス ポータルでは、Wi-Fi または USB �
 
 1. HoloLens の電源を入れ、デバイスを装着します。
 2. HoloLens 2 の[スタート ジェスチャ](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) または HoloLens (第 1 世代) の[ブルーム](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom)を実行して、メイン メニューを起動します。 
-3. HoloLens (第 1 世代) では **[設定]** タイルを見つめて[エアタップ](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) ジェスチャを実行し、HoloLens 2 では[タッチするかハンド レイを使用](https://docs.microsoft.com/hololens/hololens2-basic-usage)してそれを選択します。 
+3. HoloLens (第 1 世代) では **[設定]** タイルを見つめて [エアタップ](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) ジェスチャを実行し、HoloLens 2 では [タッチするかハンド レイを使用](https://docs.microsoft.com/hololens/hololens2-basic-usage)してそれを選択します。 
 4. **[Update]** (更新) メニュー項目を選択します。
 5. **[For developers]** (開発者向け) メニュー項目を選択します。
 6. **[Developer Mode]** (開発者モード) を有効にします。
@@ -40,7 +40,7 @@ HoloLens 用の Windows デバイス ポータルでは、Wi-Fi または USB �
 > [!IMPORTANT]
 > 管理者ではなく、マルチユーザーである場合は、開発者モードに入る機能が淡色表示されることがあります。自分が **[デバイスの管理者](https://docs.microsoft.com/hololens/security-adminless-os)** であることを確認してください。
 
-7. [下へスクロール](../../design/gaze-and-commit.md#composite-gestures)し、**デバイス ポータル**を有効にします。
+7. [下へスクロール](../../design/gaze-and-commit.md#composite-gestures)し、**デバイス ポータル** を有効にします。
 8. USB または Wi-Fi 経由でこの HoloLens にアプリを展開できるように Windows デバイス ポータルを設定している場合は、 **[ペアリング]** をクリックして、[ペアリング PIN を生成](using-visual-studio.md)します。 最初のデプロイ中に Visual Studio に PIN を入力するまで、設定アプリは PIN ポップアップのままにしておきます。
 
 ![Windows Holographic の設定アプリで開発者モードを有効にする](images/using-windows-portal-img-01.jpg)
@@ -117,6 +117,38 @@ HoloLens で初めて Device Portal に接続するときは、ユーザー名�
 >[!NOTE]
 > この証明書はデバイスに対してのみ信頼されるため、デバイスがフラッシュされた場合、ユーザーはプロセスを再度実行する必要があります。
 
+## <a name="sideloading-applications"></a>アプリケーションのサイドローディング
+
+### <a name="installing-a-certificate"></a>証明書のインストール
+
+1. Windows デバイス ポータルで、**アプリ** マネージャー ページに移動します。
+2. [Deploy apps]\(アプリのデプロイ\) セクションで、 **[証明書のインストール]** を選択します。
+3. [Select certificate file (.cer) used to sign app package]\(アプリ パッケージに署名するために使用する証明書ファイル (.cer) の選択\) で、[ファイルの選択] を選択し、サイドロードするアプリ パッケージに関連付けられている証明書を参照します。
+4. **[インストール]** を選択すると、インストールが開始されます。
+
+![Windows デバイス ポータルで開いているアプリ マネージャー ページのスクリーンショット](images/sideloading-1.png)
+
+### <a name="installing-an-app"></a>アプリのインストール
+
+> [!NOTE]
+> デバイス ポータルを使用してアプリを正常にインストールするには、証明書によって署名されている必要があります。アプリをインストールする前に、この証明書をデバイスにインストールする必要があります。 手順については、[前のセクション](#installing-a-certificate)を参照してください。
+
+1. [Visual Studio からアプリ パッケージを作成](using-visual-studio.md)したら、生成されたファイルからデバイスにリモートでインストールできます。
+
+![アプリ パッケージ ファイルの内容のスクリーンショット](images/sideloading-2.png)
+
+2. Windows デバイス ポータルで、**アプリ** マネージャー ページに移動します。
+3. アプリの **[デプロイ]** セクションで、 **[ローカル ストレージ]** を選択します
+4. [Select the application package]\(アプリケーション パッケージの選択\) で、[ファイルの選択] を選択し、サイドロードするアプリ パッケージを参照します
+5. アプリのインストールと共にオプションまたはフレームワークのパッケージをインストールする場合は、それぞれのボックスをオンにし、 **[次へ]** を選択します。
+
+![Windows デバイス ポータルのアプリ マネージャー ページが開かれ、[ローカル ストレージ] タブが強調表示されているスクリーンショット](images/sideloading-3.png)
+
+6. **[インストール]** を選択すると、インストールが開始されます
+ 
+![Windows デバイス ポータルのアプリ マネージャー ページが開かれ、インストールが正常に完了しているスクリーンショット](images/sideloading-4.png) 
+
+インストールが完了したら、HoloLens の **[All apps]\(すべてのアプリ\)** ページに戻り、新しくインストールしたアプリケーションを起動します。
 
 ## <a name="device-portal-pages"></a>Device Portal のページ
 

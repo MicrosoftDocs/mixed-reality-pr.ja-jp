@@ -8,14 +8,14 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: MixedRealityToolkit, MixedRealityToolkit-Unity, アカデミー, チュートリアル, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, Unity, Unreal, HoloLens, Azure Spatial Anchors, Azure Speech Services
-ms.openlocfilehash: 0e3b1749790e3c372570bdd1d8e68fe3fd593dd8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a85792ba082450fb01f3c6f7bb008d3c7b17560b
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677281"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010463"
 ---
-# <a name="tutorials"></a>チュートリアル 
+# <a name="tutorials"></a>チュートリアル
 
 ![HoloLens 2 ユーザー](images/08_Tutorials.png)
 
@@ -23,7 +23,7 @@ ms.locfileid: "94677281"
 
 ## <a name="hololens-2"></a>HoloLens 2 
 
-HoloLens 2 のチュートリアルは、開発者が Mixed Reality アプリケーションの開発に関する手法とベスト プラクティスの両方を学習できるように設計されています。 Unity チュートリアルは [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity) に基づいており、Unreal のチュートリアルは [Unreal Engine 0.8 向けの UX ツール](https://github.com/microsoft/MixedReality-UXTools-Unreal)に基づいています。
+HoloLens 2 のチュートリアルは、Mixed Reality アプリケーションの開発に関する手法とベスト プラクティスを説明するように設計されています。 Unity チュートリアルは [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity) に基づいており、Unreal のチュートリアルは [Unreal Engine 0.8 向けの UX ツール](https://github.com/microsoft/MixedReality-UXTools-Unreal)に基づいています。
 
 * 入門チュートリアル
     * Unity - [紹介 (1/9 章)](tutorials/mr-learning-base-01.md)
@@ -107,7 +107,7 @@ Mixed Reality Academy は、該当のプロジェクト ファイルを含むオ
 
 ## <a name="mixed-reality-and-azure-services-tutorials"></a>Mixed Reality および Azure サービスのチュートリアル
 
-これらのスタンドアロン チュートリアルは、さまざまな Azure サービスを Unity プロジェクトに実装する方法を学習するのに最適です。 これらのチュートリアルはすべて、HoloLens (第1世代) またはイマーシブ ヘッドセットに基づいていますが、サービスの使用に関するレッスンは、ほぼどのデバイスにも応用できます。
+これらのスタンドアロン チュートリアルは、さまざまな Azure サービスを Unity プロジェクトに実装する方法を学習するのに最適です。 これらのチュートリアルはすべて、HoloLens (第 1 世代) またはイマーシブ ヘッドセットに基づいていますが、サービスの使用に関するレッスンは、ほぼどのデバイスにも応用できます。
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
     <li>

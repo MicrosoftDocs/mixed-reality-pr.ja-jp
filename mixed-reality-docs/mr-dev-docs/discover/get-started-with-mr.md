@@ -3,16 +3,16 @@ title: Mixed Reality の概要
 description: Mixed Reality を初めて使用するユーザーにその概要と機能について説明します。
 author: grbury
 ms.author: grbury
-ms.date: 07/29/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 検出, 配布, インデックス, ランディング ページ, 設計, 開発, チュートリアル, サンプル アプリ, 基本事項, ケース スタディ, リソース, HoloLens の使い方, オープン ソース プロジェクト, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: c085a60f78ef68e2139b8cc3dd2fdae24bce2a52
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ef39848fea512df9fa61ca4d538354e11fb8e042
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702270"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926058"
 ---
 # <a name="get-started-with-mixed-reality"></a>Mixed Reality の概要
 
@@ -60,6 +60,7 @@ Mixed Reality を初めて使用する場合は、最下層から初めて、中
 | --- | --- |
 | [さまざまな Mixed Reality がある](../discover/mixed-reality.md) | Mixed Reality は物理とデジタルを融合するものであり、人間、コンピューター、環境の次世代の相互作用を実現します |
 | [ホログラムとは](../discover/hologram.md) | HoloLens を使用すると、ホログラムつまり自分の周囲に表示される光と音で構成されたオブジェクトを、実際のオブジェクトであるかのように作成できます。 ホログラムは、視線入力、ジェスチャ、音声コマンドに応答し、周囲の現実世界のサーフェスと対話できます |
+| [Mixed Reality の学習の概要](mr-learning-overview.md#general-modules) | Microsoft Learn を使用して厳選された Mixed Reality モジュールを試す |
 | [デザイン プロセスを展開する](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | イマーシブ エクスペリエンスを作成するときに空間的思考、ボディストーミング、行動により設計上の考え方を拡張します  |
 
 <br>

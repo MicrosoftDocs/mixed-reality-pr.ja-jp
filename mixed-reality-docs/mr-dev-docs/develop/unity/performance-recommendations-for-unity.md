@@ -7,16 +7,16 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: グラフィックス, cpu, gpu, レンダリング, ガベージ コレクション, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 6fd12bec31bb721def8801a8f2bacb8c3cb75745
-ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
+ms.openlocfilehash: 1a0509e656b7a6bf0d8d1f0b5d381b2fbdb39c2d
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761774"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010483"
 ---
 # <a name="performance-recommendations-for-unity"></a>Unity のパフォーマンスに関する推奨事項
 
-この記事は、[Mixed Reality のパフォーマンスに関する推奨事項](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)についての記事の内容が基になっていますが、Unity エンジン環境に固有の学習に焦点を当てています。
+この記事は、[Mixed Reality のパフォーマンスに関する推奨事項](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)の内容が基になっていますが、Unity 固有の改善に焦点を当てています。
 
 ## <a name="use-recommended-unity-project-settings"></a>推奨される Unity プロジェクト設定を使用する
 
@@ -24,7 +24,7 @@ Unity で Mixed Reality アプリのパフォーマンスを最適化する際�
 
 ## <a name="how-to-profile-with-unity"></a>Unity でプロファイルする方法
 
-Unity に組み込まれている **[Unity プロファイラー](https://docs.unity3d.com/Manual/Profiler.html)** は、特定のアプリに関する貴重なパフォーマンスの分析情報を収集するための優れたリソースです。 エディターでプロファイラーを実行できますが、これらのメトリックは実際のランタイム環境を表していないため、その結果は慎重に使用する必要があります。 最も正確で実用的な分析情報を得るには、デバイスでアプリケーションを実行しながらリモートでプロファイルすることをお勧めします。 さらに、Unity の [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) も、利用すると非常に強力な分析情報ツールです。
+Unity に組み込まれている **[Unity プロファイラー](https://docs.unity3d.com/Manual/Profiler.html)** は、特定のアプリに関する貴重なパフォーマンスの分析情報を収集するための優れたリソースです。 エディターでプロファイラーを実行できますが、これらのメトリックは実際のランタイム環境を表していないため、結果は慎重に使用する必要があります。 最も正確で実用的な分析情報を得るには、デバイスでアプリケーションを実行しながらリモートでプロファイルすることをお勧めします。 さらに、Unity の [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) も、利用すると強力な分析情報ツールです。
 
 Unity では、次のことに関する優れたドキュメントが提供されています。
 1) [Unity プロファイラーを UWP アプリケーションにリモート](https://docs.unity3d.com/Manual/windowsstore-profiler.html)で接続する方法
@@ -41,7 +41,7 @@ Unity では、次のことに関する優れたドキュメントが提供さ�
 
 #### <a name="cache-references"></a>参照をキャッシュする
 
-初期化時に、関連するすべてのコンポーネントと GameObject への参照をキャッシュするのがベスト プラクティスです。 これは、 *[GetComponent\<T>()](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)* のような関数呼び出しを繰り返すと、ポインターを格納するためのコストの方がメモリ コストよりかなり大きくなるためです。 これはまた、非常によく使用される [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html) にも当てはまります。 *Camera.main* では実際には基になっている *[FindGameObjectsWithTag()](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)* が使用されるだけであり、そこで行われるシーン グラフでの *"MainCamera"* タグの付いたカメラ オブジェクトの検索にはコストがかかります。
+初期化時に、関連するすべてのコンポーネントと GameObject への参照をキャッシュすることをお勧めします。これは、 *[GetComponent\<T>()](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)* や [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html) などの関数呼び出しを繰り返すことは、ポインターを格納するためのメモリ コストと比べてコストが高くなるためです。 . *Camera.main* では基になっている *[FindGameObjectsWithTag()](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)* が使用されるだけであり、そこで行われるシーン グラフでの *"MainCamera"* タグの付いたカメラ オブジェクトの検索にはコストがかかります。
 
 ```CS
 using UnityEngine;
@@ -86,7 +86,7 @@ public class ExampleClass : MonoBehaviour
 
 1) **[LINQ](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq) を使わないようにする**
 
-    LINQ は非常にすっきりしていて、読みことも書くことも簡単な場合がありますが、一般に、アルゴリズムを手作業で記述するより、計算と、特にメモリの割り当てが、はるかに多く必要になります。
+    LINQ はクリーンで、読み取りと書き込みが簡単である可能性はありますが、一般的にアルゴリズムを手動で記述した場合よりも多くの計算とメモリが必要になります。
 
     ```CS
     // Example Code
@@ -102,7 +102,7 @@ public class ExampleClass : MonoBehaviour
 
 2) **一般的な Unity API**
 
-    特定の Unity API は便利ですが、実行コストが非常に大きくなることがあります。 それらの多くには、シーン グラフ全体での、一致する GameObject のリストの検索が含まれます。 これらの操作は、一般に、参照をキャッシュするか、問題のある GameObject に対するマネージャー コンポーネントを実装して実行時に参照を追跡することで回避できます。
+    特定の Unity API は便利ですが、実行にかかるコストが高くなることがあります。 それらの多くには、シーン グラフ全体での、一致する GameObject のリストの検索が含まれます。 これらの操作は、一般に、参照をキャッシュするか、その GameObject に対するマネージャー コンポーネントを実装して実行時に参照を追跡することで回避できます。
 
     ```csharp
         GameObject.SendMessage()
@@ -120,7 +120,7 @@ public class ExampleClass : MonoBehaviour
 
 3) **ボックス化に注意する**
 
-    [ボックス化](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)は、C# 言語とランタイムの中核となる概念です。 これは、`char`、`int`、`bool` などの値型変数を参照型変数の中にラップするプロセスです。 値型変数が "ボックス化" されると、マネージド ヒープに格納される `System.Object` の内部にラップされます。 したがって、メモリが割り当てられ、最終的に破棄されるときは、ガベージ コレクターによって処理される必要があります。 これらの割り当てと割り当て解除は、パフォーマンス コストの原因になり、多くのシナリオでは、不要であるか、低コストの代替手段で簡単に置き換えることができます。
+    [ボックス化](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)は、C# 言語とランタイムの中核となる概念です。 これは、`char`、`int`、`bool` などの値型変数を参照型変数の中にラップするプロセスです。 値型変数が "ボックス化" されると、マネージド ヒープに格納される `System.Object` の内部にラップされます。 メモリが割り当てられ、最終的に破棄されるときは、ガベージ コレクターによって処理される必要があります。 これらの割り当てと割り当て解除は、パフォーマンス コストの原因になり、多くのシナリオでは、不要であるか、低コストの代替手段で簡単に置き換えることができます。
 
     ボックス化を回避するには、数値型と構造体 (`Nullable<T>` を含む) が格納される変数、フィールド、プロパティを、オブジェクトを使用するのではなく、`int`、`float?`、`MyStruct` などの特定の型として厳密に型指定します。  これらのオブジェクトをリストに配置する場合は、`List<object>` や `ArrayList` ではなく、`List<int>` などの厳密に型指定されたリストを使用します。
 
@@ -134,11 +134,11 @@ public class ExampleClass : MonoBehaviour
 
 #### <a name="repeating-code-paths"></a>コード パスの繰り返し
 
-繰り返し実行される Unity コールバック関数 ( Update など) で、1 秒間またはフレームごとの実行回数多いものは、非常に慎重に記述する必要があります。 ここでコストのかかる操作を行うと、パフォーマンスが常に大きな影響を受けるようになります。
+繰り返し実行される Unity コールバック関数 ( Update など) で、1 秒間またはフレームごとの実行回数が多いものは、慎重に記述する必要があります。 ここでコストのかかる操作を行うと、パフォーマンスが常に大きな影響を受けるようになります。
 
 1) **空のコールバック関数**
 
-    次のようなコードはアプリケーション内に残しても害がないように見えますが、特にすべての Unity スクリプトがこのコード ブロックで自動的に初期化するため、これらの空のコールバックは実際には非常に高コストになる可能性があります。 Unity では、UnityEngine コードとアプリケーション コードの間で、アンマネージド コードとマネージド コードの境界を越えて行き来する動作が発生します。 実行するものがない場合であっても、このブリッジを越えるコンテキストの切り替えには大きなコストがかかります。 繰り返し呼び出される空の Unity コールバックを持つコンポーネントが含まれる GameObject がアプリに何百個もある場合、これは特に問題になります。
+    以下のコードはアプリケーション内に残しても害がないように見えますが、特にすべての Unity スクリプトが Update メソッドで自動的に初期化されるため、これらの空のコールバックは高コストになる可能性があります。 Unity では、UnityEngine コードとアプリケーション コードの間で、アンマネージド コードとマネージド コードの間を行き来する動作が発生します。 実行するものがない場合であっても、このブリッジを越えるコンテキストの切り替えには大きなコストがかかります。 繰り返し呼び出される空の Unity コールバックを持つコンポーネントが含まれる GameObject がアプリに何百個もある場合、これは特に問題になります。
 
     ```CS
     void Update()
@@ -151,9 +151,9 @@ public class ExampleClass : MonoBehaviour
 
 2) **フレームごとに 1 回実行したくなる操作**
 
-    次の Unity API は、多くのホログラフィック アプリで一般的な操作です。 常に可能であるとは限りませんが、これらの関数の結果は、1 回計算すれば、アプリケーション全体で特定のフレームに対して再利用できることが非常によくあります。
+    次の Unity API は、多くのホログラフィック アプリで一般的な操作です。 常に可能であるとは限りませんが、これらの関数の結果は、1 回計算すれば、アプリケーション全体で特定のフレームに対して再利用できることがよくあります。
 
-    a) 一般に、基本的に同じ Raycast 操作をコンポーネントごとに繰り返し行うのではなく、シーンに対する視線 Raycast を処理する専用のシングルトン クラスまたはサービスを用意し、他のすべてのシーン コンポーネントではこの結果を再利用することがよい方法です。 もちろん、アプリケーションによっては、異なるオリジンからの Raycast、または異なる [LayerMask](https://docs.unity3d.com/ScriptReference/LayerMask.html) に対する Raycast が必要になる場合があります。
+    a) 同じ Raycast 操作をコンポーネントごとに繰り返し行うのではなく、シーンに対する視線 Raycast を処理する専用のシングルトン クラスまたはサービスを用意し、他のすべてのシーン コンポーネントではこの結果を再利用することがよい方法です。 アプリケーションによっては、異なるオリジンからの Raycast、または異なる [LayerMask](https://docs.unity3d.com/ScriptReference/LayerMask.html) に対する Raycast が必要になる場合があります。
     
     ```csharp
         UnityEngine.Physics.Raycast()
@@ -174,21 +174,21 @@ public class ExampleClass : MonoBehaviour
 
 3) **インターフェイスと仮想コンストラクトを避ける**
 
-    直接オブジェクトではなくインターフェイスを介した関数の呼び出し、または仮想関数の呼び出しは、直接コンストラクトまたは直接関数呼び出しを利用するより、はるかにコストがかかることがよくあります。 仮想関数またはインターフェイスが不要な場合は、削除する必要があります。 ただし、開発の共同作業、コードの読みやすさ、コードの保守性を容易にするためにこれらの方法を利用する場合は、一般に、これらの方法によるパフォーマンスへの影響とトレードオフする価値があります。
+    直接オブジェクトではなくインターフェイスを介した関数の呼び出し、または仮想関数の呼び出しは、直接コンストラクトまたは直接関数呼び出しを使用するより、はるかにコストがかかることがよくあります。 仮想関数またはインターフェイスが不要な場合は、削除する必要があります。 ただし、開発の共同作業、コードの読みやすさ、コードの保守性を容易にするためにこれらの方法を使用する場合は、これらの方法によるパフォーマンスへの影響とトレードオフする価値があります。
 
     一般に、このメンバーを上書きする必要があると明確に予想される場合を除き、フィールドや関数を仮想としてマークしないことをお勧めします。 `UpdateUI()` メソッドなど、フレームごとに何回も呼び出される高頻度のコード パスは (フレームごとに 1 回であっても)、特に注意して使用する必要があります。
 
 4) **構造体を値で渡さないようにする**
 
-    クラスとは異なり、構造体は値型であり、関数に直接渡すと、その内容が新しく作成されるインスタンスにコピーされます。 このコピーにより、CPU コストが発生し、スタックにメモリが追加されます。 小さい構造体であれば、通常、影響は最小限であるため、許容されます。 しかし、すべてのフレームで繰り返し呼び出される関数や、大きな構造体を受け取る関数の場合は、可能であれば、関数定義を変更して参照渡しにします。 [詳細については、こちらを参照してください](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
+    クラスとは異なり、構造体は値型であり、関数に直接渡すと、その内容が新しく作成されるインスタンスにコピーされます。 このコピーにより、CPU コストが発生し、スタックにメモリが追加されます。 小さい構造体であれば、影響は最小限であるため、許容されます。 しかし、すべてのフレームで繰り返し呼び出される関数や、大きな構造体を受け取る関数の場合は、可能であれば、関数定義を変更して参照渡しにします。 [詳細については、こちらを参照してください](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
 
 #### <a name="miscellaneous"></a>その他
 
 1) **物理計算**
 
-    a) 一般に、物理計算を改善する最も簡単な方法は、物理計算にかける時間または 1 秒あたりの反復回数を制限することです。 もちろん、これによりシミュレーションの精度は低下します。 Unity の [TimeManager](https://docs.unity3d.com/Manual/class-TimeManager.html) を参照してください
+    a) 一般に、物理計算を改善する最も簡単な方法は、物理計算にかける時間または 1 秒あたりの反復回数を制限することです。 これにより、シミュレーションの精度は低下します。 Unity の [TimeManager](https://docs.unity3d.com/Manual/class-TimeManager.html) を参照してください
 
-    b) Unity でのコライダーの種類には、さまざまなパフォーマンス特性があります。 次に示すのは、コライダーをパフォーマンスが最もよいもの (左端) から最も悪いもの (右端) まで順に並べたものです。 メッシュ コライダーを避けることが最も重要です。メッシュ コライダーは、プリミティブ コライダーよりはるかにコストが高くなります。
+    b) Unity でのコライダーの種類には、さまざまなパフォーマンス特性があります。 次に示すのは、コライダーをパフォーマンスが最もよいもの (左端) から最も悪いもの (右端) まで順に並べたものです。 メッシュ コライダーは、プリミティブ コライダーよりはるかにコストが高くなるため、避けることが重要です。
 
     スフィア < カプセル < ボックス <<< メッシュ (凸) < メッシュ (凸なし)
 
@@ -234,7 +234,7 @@ Unity では、多くの静的オブジェクトをバッチ処理して、GPU �
 
 #### <a name="dynamic-batching"></a>動的バッチ処理
 
-HoloLens の開発では *Static* としてオブジェクトをマークすることには問題であるため、動的バッチ処理が、この機能がないことを補う優れたツールになる可能性があります。 もちろん、イマーシブ ヘッドセットにも役立つことがあります。 ただし、GameObject が **a) 同じ素材を共有し**、**b) それ以外の条件の長い一覧を満たす** 必要があるため、Unity で動的バッチ処理を有効にすることは難しい場合があります。
+HoloLens の開発では *Static* としてオブジェクトをマークすることには問題であるため、動的バッチ処理が、この機能がないことを補う優れたツールになる可能性があります。 イマーシブ ヘッドセットでも同様に役立つことがあります。 ただし、GameObject が **a) 同じ素材を共有し**、**b) それ以外の条件の長い一覧を満たす** 必要があるため、Unity で動的バッチ処理を有効にすることは難しい場合があります。
 
 詳細については、[Unity の描画呼び出しのバッチ処理](https://docs.unity3d.com/Manual/DrawCallBatching.html)に関する記事の「*動的バッチ処理*」を参照してください。 ほとんどの場合、関連付けられたメッシュ データは 300 個より多くの頂点を持つことができないため、GameObject は動的バッチ処理が無効になります。
 
@@ -242,7 +242,7 @@ HoloLens の開発では *Static* としてオブジェクトをマークする�
 
 バッチ処理は、複数の GameObject が同じ素材を共有できる場合にのみ使用できます。 通常、これは、GameObject ではそれぞれの素材に対して固有のテクスチャを持つ必要があるため妨げられます。 複数のテクスチャを 1 つの大きなテクスチャに結合するのが一般的であり、これは[テクスチャ アトラシング](https://en.wikipedia.org/wiki/Texture_atlas)と呼ばれる手法です。
 
-さらに、一般に、可能かつ妥当であれば、複数のメッシュを 1 つの GameObject に結合することをお勧めします。 Unity では、各レンダラーには関連する描画呼び出しがあり、結合されたメッシュは 1 つのレンダラーで送信されます。
+さらに、可能かつ妥当であれば、複数のメッシュを 1 つの GameObject に結合することをお勧めします。 Unity では、各レンダラーには関連する描画呼び出しがあり、結合されたメッシュは 1 つのレンダラーで送信されます。
 
 >[!NOTE]
 > 実行時に Renderer.material のプロパティを変更すると、素材のコピーが作成されるため、バッチ処理が損なわれる可能性があります。 GameObject 間で共有される素材のプロパティを変更するには、Renderer.sharedMaterial を使用します。
@@ -253,11 +253,11 @@ HoloLens の開発では *Static* としてオブジェクトをマークする�
 
 ### <a name="optimize-depth-buffer-sharing"></a>深度バッファーの共有を最適化する
 
-一般に、[ホログラム安定性](../platform-capabilities-and-apis/Hologram-stability.md)に対して最適化するには、 **[Player XR Settings]\(プレーヤー XR 設定\)** の **[Depth buffer sharing]\(深度バッファー共有\)** を有効にすることをお勧めします。 ただし、この設定を使用して深度ベースの遅延ステージ再投影を有効にする場合は、**24 ビット深度形式** ではなく、**16 ビット深度形式** を選択することをお勧めします。 16 ビット深度バッファーを使用すると、深度バッファー トラフィックに関連付けられた帯域幅 (したがって電力) が大幅に減少します。 これは、電力の削減とパフォーマンスの向上の両方に大きなメリットがあります。 ただし、"*16 ビット深度形式*" を使用すると、2 つの悪影響が発生する可能性があります。
+[ホログラム安定性](../platform-capabilities-and-apis/Hologram-stability.md)に対して最適化するには、 **[Player XR Settings]\(プレーヤー XR 設定\)** の **[Depth buffer sharing]\(深度バッファー共有\)** を有効にすることをお勧めします。 ただし、この設定を使用して深度ベースの遅延ステージ再投影を有効にする場合は、**24 ビット深度形式** ではなく、**16 ビット深度形式** を選択することをお勧めします。 16 ビット深度バッファーを使用すると、深度バッファー トラフィックに関連付けられた帯域幅 (したがって電力) が大幅に減少します。 これは、電力の削減とパフォーマンスの向上の両方に大きなメリットがあります。 ただし、"*16 ビット深度形式*" を使用すると、2 つの悪影響が発生する可能性があります。
 
 **Z ファイティング**
 
-深度範囲の忠実性を低くすると、24 ビットより 16 ビットの方が [Z ファイティング](https://en.wikipedia.org/wiki/Z-fighting)が発生しやすくなります。 これらのアーティファクトを回避するには、[Unity カメラ](https://docs.unity3d.com/Manual/class-Camera.html)のニア/ファー クリップ プレーンを変更して、低い精度に対応します。 HoloLens ベースのアプリケーションでは、Unity の既定の1000 m ではなく、50 m のファー クリップ プレーンにすることで、一般に Z ファイティングを除去できます。
+深度範囲の忠実性を低くすると、24 ビットより 16 ビットの方が [Z ファイティング](https://en.wikipedia.org/wiki/Z-fighting)が発生しやすくなります。 これらのアーティファクトを回避するには、[Unity カメラ](https://docs.unity3d.com/Manual/class-Camera.html)のニア/ファー クリップ プレーンを変更して、低い精度に対応します。 HoloLens ベースのアプリケーションでは、Unity の既定の 1000 m ではなく、50 m のファー クリップ プレーンにすることで、一般に Z ファイティングを除去できます。
 
 **ステンシル バッファーの無効化**
 
@@ -265,13 +265,13 @@ Unity で [16 ビット深度のレンダリング テクスチャ](https://docs
 
 ### <a name="avoid-full-screen-effects"></a>全画面効果を避ける
 
-全画面に対して動作する手法は、すべてのフレームで数百万の操作が行われるため、非常にコストが高くなる可能性があります。 したがって、アンチエイリアシングやブルームなどの[後処理効果](https://docs.unity3d.com/Manual/PostProcessingOverview.html)を回避することをお勧めします。
+全画面に対して動作する手法は、すべてのフレームで数百万の操作が行われるため、コストが高くなる可能性があります。 アンチエイリアシングやブルームなどの[ポストプロセッシング エフェクト](https://docs.unity3d.com/Manual/PostProcessingOverview.html)を回避することをお勧めします。
 
 ### <a name="optimal-lighting-settings"></a>最適な照明設定
 
-Unity で[リアルタイム全体照明](https://docs.unity3d.com/Manual/GIIntro.html)を使用すると、極めて優れたビジュアル結果を得ることができますが、非常に高コストの照明計算が含まれます。 **[Window]\(ウィンドウ\)**  >  **[Rendering]\(レンダリング\)**  >  **[Lighting Settings]\(証明設定\)** で **[Real-time Global Illumination]\(リアルタイム全体照明\)** をオフにすることで、すべての Unity シーン ファイルでリアルタイム全体照明を無効にすることをお勧めします。
+Unity で[リアルタイム グローバル イルミネーション](https://docs.unity3d.com/Manual/GIIntro.html)を使用すると、極めて優れたビジュアル結果を得ることができますが、高コストのライティングの計算が含まれます。 **[Window]\(ウィンドウ\)**  >  **[Rendering]\(レンダリング\)**  >  **[Lighting Settings]\(ライティング設定\)** で **[Real-time Global Illumination]\(リアルタイム グローバル イルミネーション\)** をオフにすることで、Unity のすべてのシーン ファイルでリアルタイム グローバル イルミネーションを無効にすることをお勧めします。
 
-また、シャドウ キャストも、Unity シーンに高コストの GPU パスが追加されるため、すべて無効にすることをお勧めします。 シャドウはライトごとに無効にできますが、品質設定を使用することでまとめて制御することもできます。
+また、シャドウ キャストも、Unity のシーンに高コストの GPU パスが追加されるため、すべて無効にすることをお勧めします。 シャドウはライトごとに無効にできますが、品質設定を使用することでまとめて制御することもできます。
 
 **[Edit]\(編集\)**  >  **[Project Settings]\(プロジェクト設定\)** で **[Quality]\(品質\)** カテゴリを選択し、UWP プラットフォームに対して **[Low Quality]\(低品質\)** を選択します。 また、 **[Shadows]\(シャドウ\)** プロパティを **[Disable Shadows]\(シャドウを無効にする\)** に設定するだけでもかまいません。
 
@@ -279,19 +279,19 @@ Unity のモデルでは、ベイク済みライティングを使用するこ�
 
 ### <a name="reduce-poly-count"></a>多角形の数を減らす
 
-通常、多角形の数は次のようにすると減ります
+ポリゴン数は次のようにすると減ります
 1) シーンからのオブジェクトの削除
-2) 特定のメッシュに対する多角形の数が減る資産の間引き
-3) 遠く離れたオブジェクトが同じジオメトリのローポリ バージョンでレンダリングされる[詳細度 (LOD) システム](https://docs.unity3d.com/Manual/LevelOfDetail.html)のアプリケーションへの実装
+2) アセットを間引く (特定のメッシュのポリゴン数が減ります)
+3) [詳細レベル (LOD) システム](https://docs.unity3d.com/Manual/LevelOfDetail.html)をアプリケーションに実装する (遠く離れたオブジェクトが同じジオメトリのローポリ バージョンでレンダリングされます)
 
 ### <a name="understanding-shaders-in-unity"></a>Unity でのシェーダーについて
 
 パフォーマンスでのシェーダーの比較を近似する簡単な方法は、実行時に各操作が実行される平均操作数を特定することです。 Unity ではこれを簡単に行うことができます。
 
-1) シェーダー資産をまたは素材を選択した後、インスペクター ウィンドウの右上隅にある歯車アイコンを選択して、 **[Select Shader]\(シェーダーの選択\)** を選択します
+1) シェーダー アセットをまたはマテリアルを選択した後、インスペクター ウィンドウの右上隅にある歯車アイコンを選択して、 **[Select Shader]\(シェーダーの選択\)** を選択します
 
     ![Unity でシェーダーを選択する](images/Select-shader-unity.png)
-2) シェーダー資産を選択した状態で、インスペクター ウィンドウの下の **[Compile and show code]\(コードのコンパイルと表示\)** ボタンをクリックします
+2) シェーダー アセットを選択した状態で、インスペクター ウィンドウの下の **[Compile and show code]\(コードのコンパイルと表示\)** ボタンをクリックします
 
     ![Unity でシェーダー コードをコンパイルする](images/compile-shader-code-unity.PNG)
 
@@ -311,7 +311,7 @@ Unity のモデルでは、ベイク済みライティングを使用するこ�
 
 物理ベースのレンダリング (PBR) や他の高品質シェーダーを使用する代わりに、より高パフォーマンスで低コストのシェーダーを利用することを検討します。 [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) では、複合現実プロジェクト用に最適化された [MRTK 標準シェーダー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)が提供されています。
 
-Unity では、unlit、vertex lit、および Unity 標準シェーダーより大幅に高速の他の単純化されたシェーダー オプションも提供されています。 詳細については、「[組み込みシェーダーの使用とパフォーマンス](https://docs.unity3d.com/Manual/shader-Performance.html)」を参照してください。
+Unity には、Unity 標準シェーダーより高速な、unlit、vertex lit、diffuse、およびその他単純化されたシェーダー オプションも用意されています。 詳細については、「[組み込みシェーダーの使用とパフォーマンス](https://docs.unity3d.com/Manual/shader-Performance.html)」を参照してください。
 
 #### <a name="shader-preloading"></a>シェーダーのプリロード
 
@@ -343,13 +343,13 @@ Unity では、ガベージ コレクターの詳細なしくみと、メモリ�
 
 #### <a name="object-pooling"></a>オブジェクト プーリング
 
-オブジェクト プーリングは、オブジェクトの継続的な割り当てと割り当て解除のコストを削減するための一般的な手法です。 これを行うには、同一のオブジェクトの大規模なプールを割り当て、時間の経過と共にオブジェクトを絶えず生成して破棄するのではなく、このプールの非アクティブで使用可能なインスタンスを再利用します。 オブジェクト プールは、アプリの間の有効期間が一定ではない再使用可能なコンポーネントに最適です。
+オブジェクト プーリングは、継続的なオブジェクトの割り当てと割り当て解除のコストを削減するためによく使用される手法です。 これを行うには、同一のオブジェクトの大規模なプールを割り当て、時間の経過と共にオブジェクトを絶えず生成して破棄するのではなく、このプールの非アクティブで使用可能なインスタンスを再利用します。 オブジェクト プールは、アプリの間の有効期間が一定ではない再使用可能なコンポーネントに最適です。
 
 - [Unity でのオブジェクト プーリングのチュートリアル](https://unity3d.com/learn/tutorials/topics/scripting/object-pooling) 
 
 ## <a name="startup-performance"></a>開始時のパフォーマンス
 
-比較的小さなシーンでアプリを開始してから、 *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* を使用して残りのシーンを読み込むことを検討する必要があります。 これにより、可能な限り速くアプリを対話状態にすることができます。 新しいシーンをアクティブ化するときは大きな CPU スパイクが発生する可能性があること、およびレンダリングされるコンテンツが途切れたり停止したりする場合があることに注意してください。 これを回避する方法の 1 つは、読み込まれるシーンで AsyncOperation.allowSceneActivation プロパティを "false" に設定し、シーンが読み込まれるまで待った後、画面を黒にクリアしてから、"true" に戻してシーンのアクティブ化を完了することです。
+比較的小さなシーンでアプリを開始してから、 *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* を使用して残りのシーンを読み込むことを検討してください。 これにより、可能な限り速くアプリを対話状態にすることができます。 新しいシーンをアクティブ化するときは大きな CPU スパイクが発生する可能性があること、およびレンダリングされるコンテンツが途切れたり停止したりする場合があります。 これを回避する方法の 1 つは、読み込まれるシーンで AsyncOperation.allowSceneActivation プロパティを "false" に設定し、シーンが読み込まれるまで待った後、黒くなりすぎている画面をクリアしてから、"true" に戻してシーンのアクティブ化を完了することです。
 
 開始シーンが読み込まれている間、ユーザーにはホログラフィック スプラッシュ画面が表示されることに注意してください。
 

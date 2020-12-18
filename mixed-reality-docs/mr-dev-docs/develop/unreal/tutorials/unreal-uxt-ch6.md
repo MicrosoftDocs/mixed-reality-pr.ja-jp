@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, チュートリアル, 入門, mrtk, uxt, UX ツール, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 4319b1171090b8ca7a320e98867bfb3635bab005
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609493"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010549"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6.デバイスまたはエミュレーターへのパッケージ化とデプロイ
 
@@ -49,6 +49,7 @@ ms.locfileid: "96609493"
 1.  **[Edit]\(編集\) > [Project Settings]\(プロジェクト設定\)** に移動します。
     * **[Project]\(プロジェクト\) > [Description]\(説明\) > [About]\(情報\) > [Project Name]\(プロジェクト名\)** で、プロジェクト名を追加します。
     * **[Project]\(プロジェクト\) > [Description]\(説明\) > [Publisher]\(発行元\) > [Company Distinguished Name]\(企業識別名\)** で、「**CN=YourCompanyName**」を追加します。
+    * **[Project]\(プロジェクト\) > [Description]\(説明\) > [Settings]\(設定\)** の **[Start in VR]\(VR で開始\)** を選択します。
 
 > [!IMPORTANT]
 > これらのフィールドのどちらかを空白のままにすると、手順 3 で新しい証明書を作成するときにエラーが発生します。
@@ -56,7 +57,10 @@ ms.locfileid: "96609493"
 > [!IMPORTANT]
 > 発行元の名前は、[LADPv3 識別名形式](https://www.ietf.org/rfc/rfc2253.txt)である必要があります。 発行元の名前の形式が正しくないと、"署名キーが見つかりません。 アプリをデジタル署名できませんでした。" エラーがパッケージ化するときに発生します。
 
-![プロジェクト設定 - 説明](images/unreal-uxt/6-cn.PNG)
+> [!IMPORTANT]
+> [Start in VR]\(VR で開始\) を選択しないと、スレート内でアプリケーションの起動が試行されます。
+
+![プロジェクト設定 - 説明](images/unreal-uxt/6-cn-new.PNG)
 
 2.  **[プラットフォーム] > [HoloLens]** で **[HoloLens Emulation 用にビルド]** または **[HoloLens Device 用にビルド]** を有効にします。
 

@@ -3,19 +3,19 @@ title: Unreal でのストリーミング
 description: Unreal での HoloLens 2 へのストリーミングに関するガイド
 author: sw5813
 ms.author: suwu
-ms.date: 7/10/2020
+ms.date: 12/7/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, ストリーミング, PC, ホログラフィック アプリのリモート処理, Holographic Remoting Player, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 9cbde33ce7238d704d4b24b4afbed9d8306d4e4d
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 3638f07753355061f251bb2d6fa47233872d5b90
+ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609333"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96855886"
 ---
 # <a name="streaming-in-unreal"></a>Unreal でのストリーミング
 
@@ -33,6 +33,14 @@ PC から HoloLens にストリーミングを行うことには、次の 2 つ�
 > [!NOTE]
 > * ストリーミング品質は、ユーザーの Wi-Fi ネットワークの強度に大きく依存します。
 > * Holographic Remoting Player では、すべての機能が自動的に有効になります。 ユーザーのアクセス許可が必要な機能 (例: 視線追跡) がストリーミングでは機能しているものの、デバイスでの実行では機能していない場合、プロジェクト設定で適切な機能を有効にしていることをご確認ください。
+
+### <a name="streaming-limitations"></a>ストリーミングの制限事項
+
+ストリーミングには、ハンド メッシュ、HoloLens カメラ、およびシステム キーボードを使用できません。 ストリーミングされたアプリの音声入力は、ストリーミング元の PC のマイクを介して取得できることに注意してください。
+
+#### <a name="openxr"></a>OpenXR
+
+OpenXR で実行されている Unreal 4.26 では、Holographic Remoting Player のバージョン 2.4.0 以降へのストリーミングがサポートされています。 2\.4.0 の OpenXR ストリーミングの場合、空間マッピングと空間アンカーがサポートされていません。 
 
 ## <a name="device-support"></a>デバイス サポート
 
@@ -79,12 +87,18 @@ Unreal 4.25.1 以降では、パッケージ化された Windows 実行可能フ
 2. パッケージのビルドが完了したら、HoloLens 2 で **Holographic Remoting Player** を開き、IP アドレスをメモします。 
 3. **Holographic Remoting Player** を開いたままにして、コマンド ライン プロンプトで次を実行します。 
     * cd を実行し、パッケージを保存したローカル ディレクトリに移動します。
-    * 次のコマンドを入力します。```<App Name>.exe -vr -HoloLensRemoting=<IP Address>```
+    * 次のコマンドを入力します。`<App Name>.exe -vr -HoloLensRemoting=<IP Address>`
 
 > [!NOTE]
 > プロジェクト設定に含まれるアプリケーション名が、Windows パッケージを作成するために自動的に使用されます。 何らかの理由でこれらが異なる場合は、コマンド プロンプトで Windows 実行可能ファイル名を使用します。
 
 Enter キーを押すと、アプリケーションのストリーミングが開始します。
+
+### <a name="command-line-options"></a>コマンド ライン オプション
+
+Unreal Engine 4.26 以降の各プラットフォームからストリーミングする場合のその他のコマンド ライン オプションを次の表に示します。 
+
+[!INCLUDE[](includes/tabs-streaming-args.md)]
 
 ## <a name="see-also"></a>関連項目
 

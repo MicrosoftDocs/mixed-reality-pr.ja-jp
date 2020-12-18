@@ -1,20 +1,22 @@
 ---
-ms.openlocfilehash: be2bbcc7e20a005ecb91228cdfa36b20f56acb33
-ms.sourcegitcommit: f31f3a54c7c46e21884d62b4a696acf122a3c2b9
+ms.openlocfilehash: 31f11712c2f1cbe7e6726ecf5a83ccd31a2e616e
+ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781970"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96912176"
 ---
 # <a name="426"></a>[4.26](#tab/ue426)
 
 最新の Unreal Engine 4.26 リリースには次のものが含まれます。
-* OpenXR のサポート
-* Microsoft ベンダー固有の OpenXR 拡張機能を備えた [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) プラグインのサポート
+* 新しい[クロスデバイス XR API](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-porting) のサポート
+* OpenXR のサポート + [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) プラグイン 
 * 高パフォーマンスのビデオ再生用の HoloLens Media Player プラグイン
 * iOS および Android 用の Azure Spatial Anchors (ベータ)
-* Azure から HoloLens 2 へのストリーミング
+* Azure から HoloLens 2 へのストリーミングを可能にする、リモート処理時のリバース接続のサポート
+* HoloLens 2 システム キーボード アクセス
 * パッケージ アプリの Windows アプリ認定キット コンプライアンス
+* HoloLens 2 の Unreal Insights のサポート
 * HP Reverb G2 コントローラーのサポート
 
 詳細については、Unreal Engine 4.26 の<a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_26/index.html" target="_blank" title="Unreal Engine 4.26 リリースノート">リリースノート</a>を参照してください。 

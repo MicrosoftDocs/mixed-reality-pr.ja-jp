@@ -7,12 +7,12 @@ ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, ドキュメント, ガイド, 機能, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 移植, アップグレード
-ms.openlocfilehash: 0ba10b8ee1067da4494f147d43f8834010e1250f
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 5460ab55c887c44029e956545cf6a549f55716f7
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609663"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010623"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Unreal でのプロジェクトのアップグレード
 
@@ -50,3 +50,7 @@ Unreal が新しいバージョンに更新されると、非推奨になった�
 | IsTrackingAvailable | ![IsTrackingAvailable プロパティのブループリント](images/unreal-porting-img-17.png) |
 | IsButtonClicked、IsButtonDown、IsGrasped、IsSelectPressed | Unreal の入力アクション システムを使用します。 |
 | SetFocusPointForFrame | 4\.26 では削除されました。  以前はリモート処理のときの再投影に使用されていましたが、現在は深度の再投影がサポートされています。 |
+
+## <a name="426-changes"></a>4.26 の変更点
+
+重要な変更点は、Windows Mixed Reality プラグインを起動する場合に、 **[Edit]\(編集\) > [Project Settings]\(プロジェクトの設定\) > [Project]\(プロジェクト\) > [Description]\(説明\) > [Settings]\(設定\)** の **[Start in VR]\(VR で開始\)** が必須であることです。 このパラメーターを指定しない場合、デバイスにホログラムは表示されません。

@@ -1,18 +1,18 @@
 ---
 title: HoloLens エミュレーターを使用する
 description: HoloLens エミュレーターを使用して、物理的な HoloLens を使用せずに、PC 上で Mixed Reality アプリをテストします。
-author: pbarnettms
-ms.author: pbarnett
+author: hamalawi
+ms.author: moelhama
 ms.date: 10/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, エミュレーター
-ms.openlocfilehash: 702fb18d22808cb23fa5b31ac19b50645f86efe6
-ms.sourcegitcommit: 5bf2121490b7b76135f52d41216330023745f54c
+ms.openlocfilehash: e6dc8a7d38d5c7c9575723446350ee087a69dc18
+ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92001474"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96855909"
 ---
 # <a name="using-the-hololens-emulator"></a>HoloLens エミュレーターを使用する
 
@@ -28,7 +28,7 @@ HoloLens のエミュレーターを使用すると、物理的な HoloLens を�
 HoloLens のエミュレーターをダウンロードします。
 
 バージョン:
-* [HoloLens 2 エミュレーター (Windows Holographic バージョン 2004、2020 年 10 月の更新プログラム)](https://go.microsoft.com/fwlink/?linkid=2145829)。
+* [HoloLens 2 エミュレーター (Windows Holographic バージョン 20H2、2020 年 12 月の更新プログラム)](https://go.microsoft.com/fwlink/?linkid=2151523)。
 * [HoloLens エミュレーター (第 1 世代) およびホログラフィック プロジェクト テンプレート](https://go.microsoft.com/fwlink/?linkid=2065980)。
 
 HoloLens エミュレーターのリリース ノートと以前のビルドは、「[HoloLens エミュレーターのアーカイブ](hololens-emulator-archive.md)」ページにあります。
@@ -61,7 +61,7 @@ HoloLens エミュレーターでは、ハードウェア アクセラレータ�
     >[!NOTE]
     >Unity を使用する場合は、Unity からプロジェクトをビルドし、ビルドされたソリューションを通常どおりに Visual Studio に読み込みます。
 2. HoloLens エミュレーター (第 1 世代) では、プラットフォームが **x86** に設定されていることを確認します。 HoloLens 2 エミュレーターでは、プラットフォームが **x86** または **x64** に設定されていることを確認します。
-3. デバッグのターゲット デバイスとして、目的の **HoloLens エミュレーター**のバージョンを選択します。
+3. デバッグのターゲット デバイスとして、目的の **HoloLens エミュレーター** のバージョンを選択します。
 4. **[デバッグ] > [デバッグの開始]** に移動するか **F5** キーを押してエミュレーターを起動し、アプリケーションをデバッグ用にデプロイします。
 
 最初にエミュレーターを起動する場合は、1 分以上かかる場合があります。 エミュレーターにすばやくアプリケーションをデプロイできるように、デバッグ セッションの間はエミュレーターを開いたままにしておくことをお勧めします。
@@ -92,7 +92,7 @@ Windows Mixed Reality イマーシブ ヘッドセットをお持ちですか?  
 メイン ウィンドウの右側には、エミュレーター ツールバーが表示されます。 ツールバーには、次のボタンが含まれています。
 * ![閉じるアイコン](images/emulator-close.png) **閉じる**:エミュレーターを閉じます。
 * ![最小化アイコン](images/emulator-minimize.png) **最小化**:エミュレーターのウィンドウを最小化します。
-* ![シミュレーション アイコン](images/emulator-simulation-panel.png) **シミュレーション コントロール パネル**:[エミュレーターへの入力](#basic-emulator-input)の構成と制御を行う[シミュレーション コントロール パネル](#simulation-control-panel)を表示または非表示にします。
+* ![シミュレーション アイコン](images/emulator-simulation-panel.png) **シミュレーション コントロール パネル**:[エミュレーターへの入力](#basic-emulator-input)の構成と制御を行う [シミュレーション コントロール パネル](#simulation-control-panel)を表示または非表示にします。
 * ![画面のサイズに合わせるアイコン](images/emulator-fit.png) **画面のサイズに合わせる**:エミュレーターが画面に収まるようにします。
 * ![ズーム アイコン](images/emulator-zoom.png) **ズーム**:エミュレーターを大きくしたり小さくしたりします。
 * ![ヘルプ アイコン](images/emulator-help.png) **ヘルプ**:エミュレーターのヘルプを開きます。
@@ -208,7 +208,7 @@ HoloLens 2 エミュレーター (Windows Holographic、バージョン 2004) �
 メイン ウィンドウの右側には、エミュレーター ツールバーが表示されます。 ツールバーには、次のボタンが含まれています。
 * ![閉じるアイコン](images/emulator-close.png) **閉じる**:エミュレーターを閉じます。
 * ![最小化アイコン](images/emulator-minimize.png) **最小化**:エミュレーターのウィンドウを最小化します。
-* ![ヒューマン入力アイコン](images/emulator-control.png) **ヒューマン入力**:マウスとキーボードを使用して人間に関する[エミュレーター入力](#basic-emulator-input)をシミュレートします。
+* ![ヒューマン入力アイコン](images/emulator-control.png) **ヒューマン入力**:マウスとキーボードを使用して人間に関する [エミュレーター入力](#basic-emulator-input)をシミュレートします。
 * ![キーボードとマウス入力アイコン](images/emulator-input.png) **キーボードとマウス入力**:キーボードとマウスの入力は、Bluetooth でキーボードやマウスを接続する場合と同じように、キーボードおよびマウス イベントとして直接 HoloLens OS に渡されます。
 * ![画面のサイズに合わせるアイコン](images/emulator-fit.png) **画面のサイズに合わせる**:エミュレーターが画面に収まるようにします。
 * ![ズーム アイコン](images/emulator-zoom.png) **ズーム**:エミュレーターを大きくしたり小さくしたりします。

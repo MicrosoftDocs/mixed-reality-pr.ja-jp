@@ -1,13 +1,11 @@
 - name: Mixed Reality 開発の概要
   href: development.md
+- name: Azure 複合現実クラウド サービスの概要
+  href: mixed-reality-cloud-services.md
+- name: サンプルとおすすめアプリ
+  href: features-and-samples.md
 - name: ツールのインストール
   href: install-the-tools.md
-- name: 作業の開始
-  items:
-    - name: Azure 複合現実クラウド サービスの概要
-      href: mixed-reality-cloud-services.md
-    - name: サンプルとおすすめアプリ
-      href: features-and-samples.md
 - name: アプリの移植
   items:
     - name: 移植の概要
@@ -24,19 +22,23 @@
   items:
     - name: Unity 開発の概要
       href: unity/unity-development-overview.md
-    - name: 作業の開始
+    - name: プロジェクトの構成
       items:
         - name: MRTK の概要
           href: unity/mrtk-getting-started.md
-        - name: Windows Mixed Reality 用に Unity プロジェクトを構成する
+        - name: MRTK を使用しないプロジェクトを構成する
           href: unity/configure-unity-project.md
+        - name: Mixed Reality OpenXR プラグインを使用する
+          href: unity/openxr-getting-started.md
+        - name: OpenXR プラグインでサポートされる機能
+          href: unity/openxr-supported-features.md
     - name: チュートリアル
       items:
         - name: 概要
           href: unity/tutorials.md
         - name: HoloLens 2 のチュートリアル
           items:
-            - name: 入門チュートリアル
+            - name: MRTK のチュートリアル
               items:
                 - name: 1. はじめに
                   href: unity/tutorials/mr-learning-base-01.md
@@ -312,6 +314,8 @@
           href: unreal/unreal-publishing-to-store.md
         - name: Unreal のパフォーマンスに関する推奨事項
           href: unreal/performance-recommendations-for-unreal.md
+        - name: Unreal の素材に関する推奨事項
+          href: unreal/unreal-materials.md
         - name: Unreal Insights を使用したプロファイリング
           href: unreal/unreal-insights.md
         - name: Unreal の素材に関する推奨事項

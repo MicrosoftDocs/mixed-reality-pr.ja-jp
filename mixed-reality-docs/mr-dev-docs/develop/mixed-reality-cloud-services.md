@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 開発する, 開発, HoloLens, クラウド サービス, Azure, リモート レンダリング, 空間アンカー, Cognitive Services, 認知, Unity, 機械学習, 音声翻訳, コンピューター ビジョン, Microsoft Graph
-ms.openlocfilehash: f69ec9672898caf01092d805e5c83df48a14a65e
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: e660556810cdea86321b7826217268e6c8d0850a
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925928"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865407"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 複合現実クラウド サービスの概要
 
@@ -28,7 +28,7 @@ Azure の複合現実サービスを利用して、あらゆる人間が慣れ�
 ### <a name="azure-remote-rendering"></a>Azure Remote Rendering
 Azure Remote Rendering (ARR) は、非常に複雑な 3D モデルをリアル タイムでレンダリングし、デバイスにストリーム配信するためのサービスです。 ARR は現在パブリック プレビューの段階であり、HoloLens 2 または Windows デスクトップ PC を対象とした Unity またはネイティブ C++ のプロジェクトに追加できます。
 
-![ リモート レンダリングの画像](../design/images/RemoteRendering.jpg)
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-Azure-Mixed-Reality-Services-Azure-Remote-Rendering/player]
 
 ARR は、レンダリング計算能力が低い非接続式デバイスで実行されるあらゆる Mixed Reality アプリケーションに不可欠なコンポーネントです。 次のエンジンのモデルを比較対照の例として取り上げます。忠実度の高い左側のモデルには 1,800 万を超える三角形がありますが、忠実度の低い右側のモデルには約 20 万しかありません。 トラックのエンジンなどの資産の設計レビューや工業プラント管理、術前の手術計画など、あらゆる細部にこだわらなければならないシナリオでは、3D 視覚化によって、その細部を忠実に再現できます。 これは、デザイナー、エンジニア、医師、学生が複雑な情報をより深く理解し、適切な判断を行うために役立ちます。 しかし、このような簡略化を行うと、ビジネス上および設計上の主要な決定に必要とされる、重要な詳細情報が失われる可能性があります。
 

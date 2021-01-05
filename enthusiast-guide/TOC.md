@@ -46,3 +46,5 @@
 ### [インサイドアウト追跡のしくみ](tracking-system.md)
 ### [Unity の HP Reverb G2 コントローラー](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 ### [Unreal の HP Reverb G2 コントローラー](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+
+## [共同作成に関するガイド](contributing.md)

@@ -5,22 +5,30 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 03/21/2018
 ms.topic: article
-ms.openlocfilehash: 0a71072a27befc4295b82e1235cbc75655743056
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: 47689a53557e6ce9b97d0e9d834a70fb0a7786d0
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691320"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865417"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Mixed Reality 開発者向けドキュメントへの貢献
 
 [Mixed Reality 開発者向けドキュメントのパブリックリポジトリ](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)へようこそ。 このリポジトリで作成または編集した記事 **は、パブリックに表示されます。** 
 
-Mixed Reality ドキュメントは現在、docs.microsoft.com プラットフォームにあります。これは、flavored Markdown を Markdig 特徴と共に使用します。 このリポジトリで編集するコンテンツは、に表示される定型ページに書式設定され https://docs.microsoft.com/windows/mixed-reality ます。 HoloLens または VR のドキュメントに投稿する場合は、それぞれの [hololens](https://github.com/MicrosoftDocs/Hololens) および [vr](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) リポジトリを参照してください。
+Mixed Reality ドキュメントは現在、docs.microsoft.com プラットフォームにあります。これは、flavored Markdown を Markdig 特徴と共に使用します。 このリポジトリで編集するコンテンツは、に表示される定型ページに書式設定され https://docs.microsoft.com/windows/mixed-reality ます。 
 
 このページでは、Markdown の基本に寄与するための基本的な手順とガイドラインについて説明します。 投稿いただき、ありがとうございます。
 
-## <a name="before-you-start"></a>開始する前に
+## <a name="available-repos"></a>利用可能なリポジトリ
+
+| リポジトリ名です | URL |
+| --- | --- |
+| Mixed Reality | [Microsoft Docs/mixed-現実](https://docs.microsoft.com/windows/mixed-reality) |
+| VR 愛好家ガイド | [Microsoft Docs/mixed-現実ガイド](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| HoloLens | [Microsoft Docs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
+
+## <a name="before-you-start"></a>アップグレードを開始する前に
 
 まだお持ちでない場合は、 [GitHub アカウントを作成](https://github.com/join)する必要があります。
 

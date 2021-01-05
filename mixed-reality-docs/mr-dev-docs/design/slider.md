@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合現実、コントロール、相互作用、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens、スライダー、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 72433b3f3e2a755c66189e5628993aeaa33c3e89
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b2f338dd25bbcc50a68a3c5e9b8d980d15827755
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703335"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848227"
 ---
 # <a name="slider"></a>Slider
 
 ![Slider](images/UX_Hero_Slider.jpg)
 
-スライダーは、値を設定するために使用される UI コンポーネントです。 これにより、コンテンツの範囲全体の現在の設定だけでなく、調整可能なコンテンツが視覚的に示されます。 どちらの側にもオプションを含むトラックとして表示されます。 ノブまたはレバーをドラッグして選択し、現在の値を示します。 ピンチスライダーを移動するには、直接または距離でスライダーを直接取得します。 スライダーは、宝石やエアタップなどのさまざまな入力の種類と、モーションコントローラーを操作します。
+スライダーは、値を設定するために使用される UI コンポーネントです。 これにより、調整可能なコンテンツと、コンテンツの範囲全体の現在の設定が視覚的に示されます。 どちらの側にもオプションを含むトラックとして表示されます。 ノブまたはレバーをドラッグして選択し、現在の値を示します。 ピンチスライダーを移動するには、直接または距離でスライダーを直接取得します。 スライダーは、宝石やエアタップ、モーションコントローラーなど、さまざまな入力を処理します。
 
 <br>
 

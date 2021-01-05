@@ -3,12 +3,12 @@ title: Windows Mixed Reality のトラブルシューティング
 description: Windows Mixed Reality のトラブルシューティングは、標準のコンシューマーサポートドキュメントを超えています。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート
-ms.openlocfilehash: bc320787e243e92aafb5c942da8ca4d76737ec46
-ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
+ms.openlocfilehash: f98bc55062f2e159e6ac6fca5514cee899f50bc5
+ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94361653"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97859491"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Windows Mixed Reality のトラブルシューティング (Faq)
 
@@ -16,22 +16,22 @@ ms.locfileid: "94361653"
 
 ## <a name="whats-new"></a>新機能
 
-HP リバーブ G2 ヘッドセットとコントローラーの新しいリリースでは、G2 ハードウェア関連のすべてのものについて、 [専用の FAQ ページ](reverbG2-faq.md) をコンパイルしました。 この記事では、接続の問題やイメージのわかりやすさから、モーションコントローラーの問題や Mixed Reality の実行まで、すべてについて説明します。
+新たにリリースされた HP リバーブ G2 ヘッドセットとコントローラーを利用して、すべての G2 に対して [専用の FAQ ページ](reverbG2-faq.md) をコンパイルしました。 この記事では、接続の問題やイメージのわかりやすさから、モーションコントローラーの問題や Mixed Reality の実行まで、すべてについて説明します。
 
 ## <a name="troubleshooting-topics"></a>トラブルシューティングに関するトピック
 
-イマーシブハードウェアに関連する問題が発生した場合は、一般的な問題領域を診断することが重要です。詳細なヘルプについては、次の記事を参照してください。 
+イマーシブハードウェアで問題が発生した場合は、一般的な問題領域を診断することが重要です。詳細なヘルプについては、次の記事を参照してください。 
 
 ### <a name="installation-and-setup-issues"></a>インストールとセットアップに関する問題
 
-PC が Windows Mixed Reality、セットアップエラー、最小 PC 要件、または管理者のアクセス許可を実行できないなど、インストールに関する問題については、次の2つの Faq を確認してください。
+インストールの問題、Windows Mixed Reality の実行、セットアップエラー、PC の最小要件、または管理者のアクセス許可に関する問題については、次の2つの Faq を確認してください。
 
 - [インストール エラー](installation_errors.md)
 - [セットアップ](wmr-setup-faq.md)
 
 ### <a name="hardware-issues"></a>ハードウェアの問題
 
-ケーブル接続、接続エラー、混合 Reality ポータルの起動、または黒と空白のヘッドセットの表示など、物理ヘッドセットデバイスの問題については、次の記事をご覧ください。
+物理ヘッドセットデバイスの問題、ケーブル接続、接続エラー、Mixed Reality ポータルの起動、黒または空白のヘッドセットの表示に関する問題については、次の記事をご覧ください。
 
 - [ヘッドセットの接続](headset-connectivity.md)
 - [ヘッドセット ディスプレイ](headset-display.md)
@@ -39,7 +39,7 @@ PC が Windows Mixed Reality、セットアップエラー、最小 PC 要件、
 
 ### <a name="core-experience-issues"></a>コアエクスペリエンスの問題
 
-境界の作成で問題が発生している場合 (Windows Mixed Reality ヘッドセットを装着するときに使用できる移動可能な領域)、サウンド、Bluetooth オーディオ、またはヘッドセットの追跡を確認するには、次の Faq を確認してください。
+境界の作成で問題が発生している場合、サウンド、Bluetooth オーディオ、またはヘッドセットの追跡を聞いているかどうかを確認するには、次の Faq を確認してください。
 
 - [境界](boundary-questions.md)
 - [音声とオーディオ](speech-and-audio.md)
@@ -47,7 +47,7 @@ PC が Windows Mixed Reality、セットアップエラー、最小 PC 要件、
 
 ### <a name="vr-experience-issues"></a>VR エクスペリエンスに関する問題
 
-SteamVR でのゲームのプレイ、Windows 開発者モードのインストール、またはブラウザーでの WebVR コンテンツの表示に関する問題が発生した場合は、次の記事を参照してください。
+SteamVR ゲームで問題が発生した場合、Windows 開発者モードをインストールした場合、または web ブラウザーで WebVR コンテンツを表示している場合は、次の記事を参照してください。
 
 - [SteamVR](steamvr-questions.md)
 - [WebVR](webvr-questions.md)

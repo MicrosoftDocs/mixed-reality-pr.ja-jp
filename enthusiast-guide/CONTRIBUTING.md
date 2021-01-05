@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: d8b4e23603a09d39fef076b600364a55410d12c3
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691397"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865437"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>Mixed Reality 愛好ガイドへの貢献
 
@@ -24,7 +24,7 @@ ms.locfileid: "97691397"
 >
 > パブリック リポジトリにあるドキュメントおよびコード例に対する軽微な修正や明確化は、「[docs.microsoft.com - 使用条件](https://docs.microsoft.com/legal/termsofuse)」の対象になります。 Microsoft の従業員ではない共同作成者が新規または大幅な変更を行うと、オンライン貢献者使用許諾契約書 (CLA) の提出をお願いするコメントが pull request 内に生成されます。 pull request が正しく受理されるように、オンライン フォームへのご記入をお願いいたします。
 
-## <a name="before-you-start"></a>開始する前に
+## <a name="before-you-start"></a>アップグレードを開始する前に
 
 まだお持ちでない場合は、 [GitHub アカウントを作成](https://github.com/join)する必要があります。
 
@@ -167,7 +167,7 @@ Web ブラウザーを使用して GitHub で編集しているときに、ペ�
 >[!NOTE]
 >review.docs.microsoft.com での変更のプレビューは、Microsoft の従業員のみが利用できます。
 
-Microsoft の従業員: 投稿物が ' master ' ブランチにマージされたら、コンテンツをで公開する前にレビューすることができ https://review.docs.microsoft.com/windows/mixed-reality?branch=master ます。 左側の列の目次を使用して、記事を探します。
+Microsoft の従業員: 投稿物が ' master ' ブランチにマージされたら、コンテンツをで公開する前にレビューすることができ https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=master ます。 左側の列の目次を使用して、記事を探します。
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>ブラウザーでの編集とデスクトップクライアントを使用した編集
 

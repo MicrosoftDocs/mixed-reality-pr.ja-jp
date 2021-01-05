@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、デザイン、コントロール、ui、ux、進行状況インジケーター、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: aa74ae1bf9dae9831743aeaf6ce18df196784ded
-ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
+ms.openlocfilehash: 3f24f7095147a0d220df8adc42b67a1b8e4053c9
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96470514"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848280"
 ---
 # <a name="progress-indicator"></a>進捗状況インジケーター
 
@@ -19,7 +19,7 @@ ms.locfileid: "96470514"
 
 <img src="images/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
-プログレス コントロールは、時間のかかる操作が進行中であることを示すフィードバックをユーザーに返します。 使用されているインジケーターに応じて、進行状況インジケーターが表示されているときはユーザーはアプリを操作できないことを知らせたり、待ち時間の長さを示したりできます。
+プログレスコントロールは、実行時間の長い操作が進行中であるというフィードバックを提供します。 進行状況インジケーターが表示されると、ユーザーは待機時間を確認でき、アプリと対話できなくなります。
 
 <br>
 
@@ -27,12 +27,12 @@ ms.locfileid: "96470514"
 
 ## <a name="types-of-progress"></a>プログレス コントロールの種類
 
-何が起こっているかについてユーザー情報を提供することが重要です。 混合環境では、アプリから視覚的なフィードバックが得られない場合、ユーザーは物理環境またはオブジェクトによって簡単に気にすることができます。 データが読み込まれたりシーンが更新されたりするなど、数秒かかる状況では、視覚的なインジケーターを表示することをお勧めします。 操作が進行しているユーザーを表示するには、 **進行状況バー** または **進行状況のリング** の2つのオプションがあります。
+何が起こっているかについてユーザー情報を提供することが重要です。 混合環境では、ユーザーは、アプリに視覚的なフィードバックがない場合に、物理的な環境やオブジェクトによって簡単に気を付けることができます。 データの読み込み中やシーンの更新など、数秒かかる状況では、視覚的なインジケーターを表示することをお勧めします。 操作が進行しているユーザーを表示するには、 **進行状況バー** または **進行状況のリング** の2つのオプションがあります。
 
 :::row:::
     :::column:::
         ### <a name="progress-barbr"></a>進行状況バー<br>
-        進行状況バーには、タスクの完了率が表示されます。 このメソッドは、期間が既知 (有限) の操作中に使用する必要がありますが、進行中のユーザーとアプリとの対話をブロックすることはできません。<br>
+        進行状況バーには、タスクの完了率が表示されます。 このメソッドは、期間が既知 (有限) の操作中に使用する必要がありますが、その進行状況では、ユーザーとアプリとの対話をブロックすることはできません。<br>
         <br>
         *イメージ: HoloLens での進行状況バーの例*
     :::column-end:::
@@ -49,13 +49,13 @@ ms.locfileid: "96470514"
 :::row:::
     :::column:::
         ### <a name="progress-ringbr"></a>進行状況リング<br>
-        進行状況のリングは不確定な状態であるため、操作が完了するまで他のユーザー操作がブロックされたときに使用する必要があります。<br>
+        進行状況のリングは不確定状態であるため、操作が完了するまでユーザーの操作がブロックされるときに使用する必要があります。<br>
         <br>
         *イメージ: HoloLens での進行状況リングの例*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![HoloLens での進行状況リングの例](images/640px-progressring.jpg)<br>
+       ![HoloLens デバイスでの進行状況リングの例](images/640px-progressring.jpg)<br>
     :::column-end:::
 :::row-end:::
 

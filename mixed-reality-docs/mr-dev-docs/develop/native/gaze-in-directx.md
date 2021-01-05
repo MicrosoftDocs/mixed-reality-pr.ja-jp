@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 視線、ヘッド・見つめ、ヘッドトラッキング、視線追跡、directx、入力、ホログラム、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
-ms.openlocfilehash: 4e8c638d91125a30cb4121b09a699f9ff6db5892
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 4d7ed9b735b5f3cd7029e42ccc75bc539e3c4f4b
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613046"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848088"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>DirectX でのヘッドと視線の入力
 
@@ -84,6 +84,7 @@ if (pointerPose)
 2. パッケージマニフェストで "宝石入力" 機能を有効にします。
 
 ### <a name="requesting-access-to-eye-gaze-input"></a>視線入力へのアクセスを要求しています
+
 アプリが起動したら、 [EyesPose:: RequestAccessAsync](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) を呼び出して、視線追跡へのアクセスを要求します。 必要に応じてユーザーにプロンプトが表示され、アクセス権が付与されると [GazeInputAccessStatus:: Allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) が返されます。 これは非同期呼び出しであるため、追加の管理が必要になります。 次の例では、デタッチされた std:: thread をスピンアップして、結果を待機します。これは、 *m_isEyeTrackingEnabled* という名前のメンバー変数に格納されます。
 
 ```cpp
@@ -146,6 +147,7 @@ if (Windows::Perception::People::EyesPose::IsSupported() &&
 ```
 
 ### <a name="getting-the-eye-gaze-ray"></a>視線を見つめます
+
 にアクセスした後は、すべてのフレームに対して視線を自由に取得できます。
 ヘッドを見つめた場合と同様に、目的のタイムスタンプと座標系を使用して[SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp)を呼び出すことによって、 [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose)を取得します。 SpatialPointerPose には、[視線](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes)プロパティを通じて[EyesPose](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose)オブジェクトが含まれています。 この値は、視線追跡が有効になっている場合にのみ null です。 そこから、 [EyesPose:: IsCalibrationValid](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)を呼び出すことによって、デバイスのユーザーが監視の調整を行っているかどうかを確認できます。  次に、[ [宝石](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) ] プロパティを使用して、視線位置と方向を含む [SpatialRay](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialray) を取得します。 "宝石" プロパティは null になることがあるため、必ず確認してください。 これは、調整されたユーザーが一時的にその目を閉じる場合に発生する可能性があります。
 
@@ -174,7 +176,8 @@ if (pointerPose)
 ```
 
 ## <a name="fallback-when-eye-tracking-isnt-available"></a>視線追跡が使用できない場合のフォールバック
-この記事で説明したように、デザイナーと開発者はどちらも、目の追跡データが使用できない可能性のある [インスタンスを認識](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available)している必要があります。
+
+この記事で説明したように、デザイナーと開発者はどちらも、目の追跡データが使用できない可能性のある [インスタンスを認識](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available)している必要があります。
 
 データを使用できない理由はさまざまです。
 * ユーザーが調整されていません
@@ -190,11 +193,12 @@ if (pointerPose)
 * ユーザーが、視線追跡データを使用するためのアプリのアクセス許可を与えられていることを確認します。現在の _' GazeInputAccessStatus '_ を取得します。 これを行う方法の例については、「 [宝石入力へのアクセスの要求](https://docs.microsoft.com/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input)」をご覧ください。   
 
 また、次に説明するように、受信した視線追跡データの更新の間にタイムアウトを追加して、またはそれ以外の方法でパススルーにフォールバックすることで、目の追跡データが古くなっていないかどうかを確認することもできます。   
-詳細については、 [フォールバック設計の考慮事項](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available) に関するページを参照してください。
+詳細については、 [フォールバック設計の考慮事項](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available) に関するページを参照してください。
 
 <br>
 
 ## <a name="correlating-gaze-with-other-inputs"></a>と他の入力との相関関係
+
 場合によっては、過去のイベントに対応する [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) が必要になることがあります。 たとえば、ユーザーがエアタップを行う場合は、アプリが見ている内容を知る必要があります。 このため、 [SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) を予測されたフレーム時間と共に使用することは、システムの入力処理と表示時間の間の待機時間が原因で不正確になることがあります。 また、ターゲットのために視線を使用している場合は、コミットアクションを終了する前でも、目は移動する傾向があります。 これは、単純なエアタップの場合の問題にはなりませんが、長い音声コマンドと高速な動きを組み合わせると、より重要になります。 このシナリオを処理する方法の1つとして、入力イベントに対応する履歴タイムスタンプを使用して、  [SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp)を追加で呼び出すことができます。  
 
 ただし、SpatialInteractionManager を経由した入力については、簡単な方法があります。 [SpatialInteractionSourceState](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)には、独自の[Trygetattimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose)関数があります。 を呼び出すと、完全に相関した [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) が推測されずに提供されます。 SpatialInteractionSourceStates の使用方法の詳細については、DirectX のドキュメント [のハンズオンコントローラーとモーションコントローラー](hands-and-motion-controllers-in-directx.md) を参照してください。
@@ -202,6 +206,7 @@ if (pointerPose)
 <br>
 
 ## <a name="calibration"></a>調整
+
 視線追跡を正確に機能させるには、各ユーザーが [視点を追跡](../../calibration.md)する必要があります。 これにより、デバイスはシステムを調整して、より快適で品質の高い閲覧エクスペリエンスをユーザーに提供し、同時に正確な視点を追跡することができます。 開発者は、ユーザーの調整を管理するために、エンドユーザーの作業を行う必要はありません。 システムによって、次のような状況で、デバイスを調整するように求めるメッセージがユーザーに表示されます。
 * ユーザーが初めてデバイスを使用している
 * ユーザーが以前に調整プロセスをオプトアウトした
@@ -212,6 +217,7 @@ if (pointerPose)
 <br>
 
 ## <a name="see-also"></a>関連項目
+
 * [調整](../../calibration.md)
 * [DirectX の座標系](coordinate-systems-in-directx.md)
 * [HoloLens 2 での視線](../../design/eye-tracking.md)

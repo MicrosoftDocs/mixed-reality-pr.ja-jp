@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/15/2020
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 拡張現実, 仮想現実, mixed reality ヘッドセット, 学習, チュートリアル, 概要
-ms.openlocfilehash: 1cbe9dd1ffb493bcc9da76e70dec9720f2d10340
-ms.sourcegitcommit: 4bbf2f802117a9a3788b2b0e3b0a2f58e187f6ea
+ms.openlocfilehash: 94ec7ae6c89dea8f953fea6f4c794ca51e044d87
+ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97665364"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97880586"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Unity でサポートされている Mixed Reality OpenXR の機能
 
@@ -31,32 +31,32 @@ ms.locfileid: "97665364"
 * HoloLens 2 で写真/ビデオ (PV) カメラを検索しています。
 * PV カメラを使用した第3目のレンダリングを使用した Mixed Reality キャプチャ。
 * [Holographic リモート処理アプリでの HoloLens 2 への "Play" を](#holographic-remoting-in-unity-editor-play-mode)サポートします。これにより、開発者は、デバイスにビルドしてデプロイすることなく、スクリプトをデバッグできます。
-* Mrtk Unity 2.5.2 から MRTK OpenXR adapter パッケージに準拠しています。 <missing link>
+* MRTK Unity 2.5.2 以降の MRTK OpenXR プロバイダーのサポートと互換性があります。 作業を開始するに[は、MRTK のドキュメントを参照して](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html)ください。
 * Unity [Arfoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 以降との互換性
 
 ## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Unity エディター再生モードでの Holographic リモート処理
 
 Visual Studio プロジェクトで UWP Unity プロジェクトをビルドしてから、パッケージ化して HoloLens 2 デバイスに配置すると、時間がかかることがあります。 1つの解決策は、Holographic エディターのリモート処理を有効にすることです。これにより、ネットワーク上の HoloLens 2 デバイスに対して "Play" モードで直接 C# スクリプトをデバッグできます。 このシナリオでは、UWP パッケージをビルドしてリモートデバイスに配置するオーバーヘッドを回避します。
 
-1. まず、HoloLens 2 のストアから [Holographic Remoting Player アプリをインストール](https://www.microsoft.com/store/productId/9NBLGGH4SV40) する必要があります。  
+1. まず、HoloLens 2 のストアから [Holographic Remoting Player アプリをインストール](https://www.microsoft.com/store/productId/9NBLGGH4SV40) する必要があります。
 2. HoloLens 2 で Holographic リモート処理プレーヤーアプリを実行すると、接続先のバージョン番号と IP アドレスが表示されます。
     * OpenXR プラグインを使用するには、v2.0 以降が必要です。
 
-![HoloLens で実行されている Holographic リモート処理プレーヤーのスクリーンショット](images/openxr-features-img-01.png)
+    ![HoloLens で実行されている Holographic リモート処理プレーヤーのスクリーンショット](images/openxr-features-img-01.png)
 
 3. [ **編集-> プロジェクトの設定**] を開き、 **XR プラグイン管理** に移動して、[ **Windows Mixed Reality] 機能セット** ボックスをオンにします。
 
-![XR プラグイン管理が強調表示されている Unity エディターで開いているプロジェクト設定パネルのスクリーンショット](images/openxr-features-img-02.png)
+    ![XR プラグイン管理が強調表示されている Unity エディターで開いているプロジェクト設定パネルのスクリーンショット](images/openxr-features-img-02.png)
 
 4. **OpenXR** の [**機能**] セクションを展開し、[**すべて表示**] を選択します。
 5. [ **Holographic エディターリモート処理** ] チェックボックスをオンにして、Holographic リモート処理アプリから取得した IP アドレスを入力します。
 
-![機能が強調表示されている Unity エディターでプロジェクト設定パネルが開いているスクリーンショット](images/openxr-features-img-03.png)
+    ![機能が強調表示されている Unity エディターでプロジェクト設定パネルが開いているスクリーンショット](images/openxr-features-img-03.png)
 
 これで、[Play] \ (再生 \) ボタンをクリックして、HoloLens の Holographic リモート処理アプリで Unity アプリを再生できるようになりました。 また、 [Visual Studio を Unity にアタッチ](https://docs.microsoft.com/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows) して、C# スクリプトを再生モードでデバッグすることもできます。
 
 > [!NOTE]
-> 0.1.0 のバージョンでは、Holographic リモート処理ではアンカー機能がサポートされておらず、ARAnchorManager 機能はリモート処理では機能しません。  この機能は今後のリリースで予定されています。
+> バージョン0.1.0 の場合、Holographic リモート処理ランタイムはアンカーをサポートしておらず、ARAnchorManager 機能はリモート処理では機能しません。  この機能は今後のリリースで予定されています。
 
 ## <a name="anchors-and-anchor-persistence"></a>アンカーとアンカーの永続化
 
@@ -79,11 +79,11 @@ public class Microsoft.MixedReality.ARSubsystems.XRAnchorStore
     public void Clear();
 
     // Load a single persisted anchor by name. The ARAnchorManager will create this new anchor and report it in
-    // the ARAnchorManager.anchorsChanged event. The TrackableId returned here is the same TrackableId the 
+    // the ARAnchorManager.anchorsChanged event. The TrackableId returned here is the same TrackableId the
     // ARAnchor will have when it is instantiated.
     public TrackableId LoadAnchor(string name);
 
-    // Attempts to persist an existing ARAnchor with the given TrackableId to the local store. Returns true if 
+    // Attempts to persist an existing ARAnchor with the given TrackableId to the local store. Returns true if
     // the storage is successful, false otherwise.
     public bool TryPersistAnchor(string name, TrackableId trackableId);
 
@@ -100,10 +100,10 @@ public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem an
 ```
 
 この拡張メソッドを使用するには、次のように ARAnchorManager のサブシステムからアクセスします。
- 
+
 ``` cs
-ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>(); 
-XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync(); 
+ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
+XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync();
 ```
 
 アンカー > を永続化または非永続化する完全な例については、「 [Mixed Reality OpenXR Plugin Sample Scene](openxr-getting-started.md#hololens-2-samples)」の「AnchorsSample.cs script and script」 (アンカーとアンカーの例) をご覧ください。
@@ -114,10 +114,10 @@ XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync
 
 ## <a name="motion-controller-and-hand-interactions"></a>モーションコントローラーとハンド作用
 
-Unity での mixed reality の相互作用の基本については、unity の unity の [XR 入力](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html)に関するページを参照してください。 この Unity ドキュメントでは、コントローラー固有の入力から、より汎化された **Inputfeatureusage** へのマッピング、使用可能な XR 入力を識別および分類する方法、これらの入力からデータを読み取る方法などについて説明します。 
- 
-Mixed Reality OpenXR プラグインは、次に示すように、標準 **Inputfeatureusage** にマップされた追加の入力相互作用プロファイルを提供します。 
- 
+Unity での mixed reality の相互作用の基本については、unity の unity の [XR 入力](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html)に関するページを参照してください。 この Unity ドキュメントでは、コントローラー固有の入力から、より汎化された **Inputfeatureusage** へのマッピング、使用可能な XR 入力を識別および分類する方法、これらの入力からデータを読み取る方法などについて説明します。
+
+Mixed Reality OpenXR プラグインは、次に示すように、標準 **Inputfeatureusage** にマップされた追加の入力相互作用プロファイルを提供します。
+
 | InputFeatureUsage | HP リバーブ G2 コントローラー (OpenXR) | HoloLens (OpenXR) |
 | ---- | ---- | ---- |
 | primary2DAxis | ジョイ | |
@@ -132,9 +132,10 @@ Mixed Reality OpenXR プラグインは、次に示すように、標準 **Input
 
 ### <a name="aim-and-grip-poses"></a>目標とグリップ
 
-OpenXR の入力相互作用を通じて、2組のポーズにアクセスできます。 
+OpenXR の入力相互作用を通じて、2組のポーズにアクセスできます。
+
 * 手の形でオブジェクトをレンダリングするためのグリップ
-* 目標は、世界を指します。 
+* 目標は、世界を指します。
 
 この設計の詳細と、2つの方法の違いについては、「 [OpenXR Specification-Input サブパス](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-input)」を参照してください。
 
@@ -148,7 +149,7 @@ public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFea
 
 ### <a name="haptics"></a>Haptics
 
-Unity の XR 入力システムで haptics を使用する方法の詳細については、unity の unity [マニュアルの「UNITY XR](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics)」を参照してください。 
+Unity の XR 入力システムで haptics を使用する方法の詳細については、unity の unity [マニュアルの「UNITY XR](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics)」を参照してください。
 
 ## <a name="whats-coming-soon"></a>近日公開予定
 
@@ -160,7 +161,7 @@ Unity の XR 入力システムで haptics を使用する方法の詳細につ�
 * **Azure 空間アンカー** のサポートは、今後のリリースで予定されています。
 * **ARM64** は、HoloLens 2 アプリで唯一サポートされているプラットフォームです。 **ARM** プラットフォームは今後のリリースで予定されています。
 
-## <a name="troubleshooting"></a>トラブルシューティング 
+## <a name="troubleshooting"></a>トラブルシューティング
 
-HoloLens 2 で Unity アプリを中断および再開すると、アプリは正しく再開できなくなります。これにより、HoloLens ビューでは、4つのスピン点が表示されます。 
+HoloLens 2 で Unity アプリを中断および再開すると、アプリは正しく再開できなくなります。これにより、HoloLens ビューでは、4つのスピン点が表示されます。
 * 回避策として、OpenXR プロジェクト設定で [ **深さの送信モード** ] を **[なし** ] に設定します。

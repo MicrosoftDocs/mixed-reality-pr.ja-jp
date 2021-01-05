@@ -1,26 +1,26 @@
 ---
 title: シェーダー
-description: MRTK 標準シェーダーには、ホログラムで使用できるさまざまな種類の視覚効果が用意されています。
+description: Mixed Reality Toolkit の標準シェーダーは、ホログラムで使用できるさまざまな種類の視覚効果を提供します。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合現実、コントロール、相互作用、ui、ux、シェーダー、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、reality、MRTK、Mixed Reality Toolkit、視覚効果
-ms.openlocfilehash: ced2d62f9304a8e6238febb8c485449f2e10b135
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 08701fb48d633f7de75b74b5e44655c3a01fade8
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703348"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848246"
 ---
 # <a name="shader"></a>シェーダー
 
 ![シェーダー](images/UX_Hero_StandardShader.jpg)
 
-Holographic オブジェクトは実際の環境の物理的なオブジェクトと混在するため、ユーザーに視覚的な手掛かりを与えることが重要です。 MRTK 標準シェーダーには、ホログラムで使用できるさまざまな種類の視覚効果が用意されています。 MRTK 標準シェーディングシステムでは、Unity の標準シェーダーに似た視覚エフェクトを実現し、 [Fluent 設計システムの原則](https://www.microsoft.com/design/fluent/#/)を実装し、mixed reality デバイスでパフォーマンスを維持できる、単一の柔軟なシェーダーを利用しています。
+Holographic オブジェクトは実際の環境の物理的なオブジェクトと混在するため、ユーザーに視覚的な手掛かりを与えることが重要です。 Mixed Reality Toolkit Standard shader は、ホログラムで使用するさまざまな種類の視覚効果を提供します。 シェーディングシステムは、単一の柔軟なシェーダーを使用して、Unity の標準シェーダーに似た視覚エフェクトを実現します。 シェーダーは、 [Fluent デザインシステムの原則](https://www.microsoft.com/design/fluent/#/) を実装し、混合の現実のデバイスでもパフォーマンスを維持します。
 <br>
 
-## <a name="examples-of-visual-effects-using-mrtk-standard-shader"></a>MRTK Standard shader を使用した視覚効果の例 
+## <a name="examples-of-visual-effects-using-mrtk-mixed-reality-toolkit-standard-shader"></a>MRTK (Mixed Reality Toolkit) 標準シェーダーを使用した視覚効果の例 
 :::row:::
     :::column:::
        ![移動](images/UX_Button_Affordance_ProximityLight.jpg)<br>
@@ -36,10 +36,9 @@ Holographic オブジェクトは実際の環境の物理的なオブジェク�
 
 ---
 
-## <a name="mrtk-standard-shader-in-mrtk-mixed-reality-toolkit-for-unity"></a>MRTK の MRTK Standard shader (Mixed Reality Toolkit) (Unity 用)
+## <a name="standard-shader-in-mrtk-for-unity"></a>Unity の MRTK の標準シェーダー
 
 * [MRTK-標準シェーダー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
-
 
 <br>
 

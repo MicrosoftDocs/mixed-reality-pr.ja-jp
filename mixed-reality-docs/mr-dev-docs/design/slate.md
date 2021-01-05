@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Mixed Reality、コントロール、対話、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens、スレート、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 85aa91793da9022080c95775bbfd1e4775ea05d8
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 53bcc9d8ac3b222e9b5a3dfcf47b327c212552d2
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703334"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848226"
 ---
 # <a name="slate"></a>スレート
 
 ![スレート](images/UX_Hero_Slate.jpg)
 
-スレートは、2D コンテンツを表示するための薄いウィンドウスタイルのコントロールです。 たとえば、プレーンテキスト、画像、またはドキュメントを表示するために使用できます。 これには、"フォローしているもの (タグに沿って)" のボタンと grabbable のないタイトルバーが用意されています。 スレート内のコンテンツは、物理的なタッチ画面と同様に [直接操作](direct-manipulation.md#2d-slate-interaction) を使用してスクロールできます。 宝石、エアタップ、ドラッグジェスチャ、またはモーションコントローラーのポインターを使用することもできます。
+スレートは、プレーンテキスト、画像、ドキュメントなどの2D コンテンツを表示するためのシンウィンドウスタイルコントロールです。 スレートには、"フォローしているもの (タグに沿って)" およびクローズ機能のボタンを含む grabbable タイトルバーが用意されています。 スレート内のコンテンツは、物理的なタッチ画面と同様に [直接操作](direct-manipulation.md#2d-slate-interaction) を使用してスクロールできます。 見つめ、エアタップ、ドラッグジェスチャや、モーションコントローラーのポインターを使用することもできます。
 
 <br>
 

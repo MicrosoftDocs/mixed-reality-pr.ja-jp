@@ -6,14 +6,15 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
 keywords: UX デザイン, Mixed Reality UX, UX, アプリパターン, コントロール, スタイル, HoloLens, 相互作用, 空間対話, 空間 UI, UX 要素, 動作, 構成要素, タイポグラフィ, 色, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想 reality ヘッドセット, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: c75856362f0e68eba2736105c028bff736c5932c
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 47f7877e9a5f8a71bcae9a16011210d9fc897040
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703138"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847782"
 ---
 # <a name="ux-elements-overview"></a>UX 要素の概要
+
 ## <a name="foundational-elements"></a>基本要素
 優れた mixed reality エクスペリエンスを設計するために必要な基本要素について説明します。
 
@@ -69,7 +70,7 @@ Mixed Reality のエクスペリエンスで、頻繁に使用される一般的
        [ ![ ハンドメニュー](images/UX_Hero_HandMenu.jpg)](hand-menu.md)の **[メニュー](hand-menu.md)**
     :::column-end:::
     :::column:::
-       メニュー付近の [ ![ 近くのメニュー](images/UX_Hero_NearMenu.jpg)](near-menu.md) **[Near menu](near-menu.md)**
+       メニュー付近の [ ![ 近くのメニュー](images/UX_Hero_NearMenu.jpg)](near-menu.md) **[](near-menu.md)**
     :::column-end:::
     :::column:::
        [ ![ オブジェクトコレクション](images/UX_Hero_ObjectCollection.jpg)](object-collection.md) **[オブジェクトコレクション](object-collection.md)**
@@ -105,7 +106,7 @@ Mixed Reality のエクスペリエンスで、頻繁に使用される一般的
        [ ![ ダイアログ](images/MRTK_UX_Dialog.jpg)](dialog-ui.md) **[ダイアログ](dialog-ui.md)**
     :::column-end:::
     :::column:::
-       [ ![ ハンド](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md) **[Hand coach](hand-coach.md)コーチ**
+       [ ![ ハンド](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md) **[](hand-coach.md)コーチ**
     :::column-end:::
     :::column:::
        [ ![ 空間メッシュ](images/MRTK_PulseShader_SpatialMesh.gif)](spatial-mesh-ux.md) **[空間メッシュ](spatial-mesh-ux.md)**

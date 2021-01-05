@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、Ultra、互換性、互換性、システム要件、PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: e21d2d18edbf2c94d156f14fa8c2598822a8bc7a
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: bd287e2089056be56330c2c2e8e9af2c079009ac
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174364"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725663"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality の PC ハードウェアの最小互換性ガイドライン
 
@@ -21,18 +21,18 @@ ms.locfileid: "92174364"
 
 Windows 10 は、Windows Mixed Reality と Windows Mixed Reality の両方を支えています。 使用するバージョンは、PC ハードウェアによって異なります。
 
-Windows Mixed Reality は、次のような追加の機能を備えています。
+Windows Mixed Reality は、次のような追加機能を備えています。
 
 * 視覚エフェクトが鮮明になり、更新率が高くなります (1 秒あたり90フレーム)。
 * 多くのグラフィックス処理を要するゲームを含む、より多くのアプリとエクスペリエンス。
 * デスクトップ上の ' ' ミラー ' ' ウィンドウ。 mixed reality に表示される内容が表示されます。
-* Mixed reality エクスペリエンスのビデオ (および写真) を記録し、共有します。
+* Mixed reality エクスペリエンスのビデオや写真を記録して共有します。
 
 ## <a name="minimum-pc-hardware-guidelines"></a>最小 PC ハードウェア ガイドライン
 
-Windows Mixed Reality を最大限に活用するには、 [windows mixed reality 対応 pc または](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) windows mixed REALITY 互換 pc を使用します。 windows mixed reality のエクスペリエンスを提供できます。 Windows Mixed Reality Ultra は、より高いリフレッシュレートでビジュアル化されたビジュアルを提供します。最も多くのグラフィックスを消費するゲームを含むアプリとエクスペリエンスが増え、デスクトップ上で Windows Mixed Reality エクスペリエンスをミラーリングしたり、他のユーザーとのエクスペリエンスを記録および共有したりすることができます。 
+Windows Mixed Reality を最大限に活用するには、 [windows mixed reality 対応 pc または](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) windows mixed REALITY 互換 pc を使用します。 windows mixed reality のエクスペリエンスを提供できます。 Windows Mixed Reality Ultra は、高いリフレッシュレートでより鮮明な視覚エフェクトを提供し、最も多くのグラフィックスを消費するゲームを含むアプリエクスペリエンスを向上させると共に、デスクトップ上での Windows Mixed Reality エクスペリエンスのミラーリングと、他のユーザーとのエクスペリエンスの記録と共有 (写真とビデオ) を行うことができます。 
 
-PC が Windows Mixed Reality を実行できるかどうかを確認するには、以下のハードウェアガイドラインを確認し、 [Mixed Reality ポータルアプリ](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M)を実行します。
+以下のハードウェアガイドラインを確認し、 [Mixed Reality ポータルアプリ](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M)を実行して、PC が Windows Mixed reality を実行できるかどうかを確認します。
 
 実際の設定によってパフォーマンスが異なることに注意してください。 また、使用している Windows Mixed Reality イマーシブヘッドセット用の [適切なポート](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) が PC にあることを確認する必要もあります。
 
@@ -73,7 +73,7 @@ PC が Windows Mixed Reality を実行できるかどうかを確認するには
 > Microsoft では、これらの Windows Mixed Reality PC 互換性ガイドラインを更新するために、を追加しています。 最新のガイドラインと要件については、定期的に確認してください。
 
 **HP リバーブと互換性のある仕様**<br>
-解像度が高いため、次の要件が HP リバーブの G1 & G2 製品ラインに適用され、最適な90Hz、完全な解決エクスペリエンスが実現されます。 
+解像度が高いため、次の要件が HP リバーブの G1 & G2 製品ラインに適用され、最適な 90 Hz の完全な解決エクスペリエンスを実現します。 
 
 <ul>
 <li> Intel Core i5、i7、Intel Xenon E3-1240 v5、同等またはそれ以上。 AMD Ryzen 5 と同等またはそれ以上。 </li>
@@ -85,7 +85,7 @@ PC が Windows Mixed Reality を実行できるかどうかを確認するには
 </ul>
 
 **その他のすべての WMR 互換ヘッドセット** <br>
-他のすべての HMD のについては、次の要件を参照してください。 
+その他のすべての HMDs については、次の要件を参照してください。 
 
 <table>
 <tr>
@@ -152,8 +152,8 @@ PC が Windows Mixed Reality を実行できるかどうかを確認するには
 
 
 
-**追加情報: **
-* 大規模なラップトップ (画面が15以上の場合) が最適です。
+**追加情報:**
+* 画面が少なくとも15の画面を備えた大規模なラップトップの場合は最適です。
 * 最適なエクスペリエンスを実現するために、Intel® Core™または7世代の Intel® Core™ i5 プロセッサを第8世代にすることをお勧めします。
 * ハイブリッドグラフィックス構成は、Windows Mixed Reality Ultra とのみ互換性があります。 ハイブリッド構成の個別のグラフィックスアダプターは、「個別のグラフィックスアダプターの Windows Mixed Reality ガイドライン」に記載されているすべての要件を満たしている必要があります。
 * Windows Mixed Reality を実行する必要がある独立したグラフィックスカードがあるが、既定では 60 Hz (60 フレーム/秒) のリフレッシュレートを使用している場合は、フルサイズの 2.0 DisplayPort を使用してヘッドセットに接続し、90 Hz のリフレッシュレートを有効にします。
@@ -164,11 +164,11 @@ PC が Windows Mixed Reality を実行できるかどうかを確認するには
 
 ## <a name="windows-mixed-reality-and-surface"></a>Windows Mixed Reality と Surface
 
-Surface デバイスで最適な Windows Mixed Reality エクスペリエンスを実現するために、NVIDIA GeForce GTX 1060 および 16 GB の RAM で構成された、"" という2つのドライブを使用することをお勧めします。  この構成では、すべての Windows Mixed Reality 機能 @ 90Hz がサポートされています。また、Windows Mixed Reality バッジのテストが完了しています。  Surface Book 2 (13)、Surface Studio、Surface ノート Pc、Surface Pro (2017) では、Intel Core i5 CPU (またはそれ以上) と 8 GB 以上の RAM を使用して構成した場合に、一部の Windows Mixed Reality 機能がサポートされます。
+Surface デバイスで最適な Windows Mixed Reality エクスペリエンスを実現するために、NVIDIA GeForce GTX 1060 GB および 16 GB の RAM で構成された、"16Facebook 2" (15 ") を使用することをお勧めします。  この構成では、すべての Windows Mixed Reality 機能 @ 90 Hz がサポートされており、Windows Mixed Reality バッジのテストが完了しています。  Surface Book 2 (13)、Surface Studio、surface Pc、surface Pro (2017) では、Intel Core i5 CPU (またはそれ以上) と 8 GB 以上の RAM を使用して構成した場合に、一部の Windows Mixed Reality 機能がサポートされます。
 
 **要件:**
-* Surface 製品では、Windows Mixed Reality と互換性のあるドライバーの更新が必要です。 これらのドライバーは、[ **> 設定] [更新とセキュリティ > の更新プログラムの確認] の**順に移動して、画面にインストールできます。
-* Surface 製品では、Windows Mixed Reality ヘッドセットの場合、ビデオポート (Surface PC によってはミニ DisplayPort または USB-C 2.0) からの [アダプター](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) が必要です。 HDMI AV アダプターに Mini-DisplayPort 表面の最新バージョンは、HDMI 2.0 と互換性があります (古いバージョンは)。 同様に、 <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">SURFACE USB-C から Hdmi アダプター</a> も hdmi 2.0 と互換性があります。
+* Surface 製品では、Windows Mixed Reality と互換性のあるドライバーの更新が必要です。 これらのドライバーは、[ **> 設定] [更新とセキュリティ > の更新プログラムの確認] の** 順に移動して、画面にインストールできます。
+* Surface 製品では、Windows Mixed Reality ヘッドセットの場合、ビデオポート (Surface PC によってはミニ DisplayPort または USB-C 2.0) からの [アダプター](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) が必要です。 HDMI AV アダプターに Mini-DisplayPort 表面の最新バージョンは、HDMI 2.0 (古いバージョンではありません) と互換性があります。 同様に、 <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">SURFACE USB-C から Hdmi アダプター</a> も hdmi 2.0 と互換性があります。
 
 >[!WARNING]
 >すべてのミニ DisplayPort アダプターまたは USB-C から HDMI アダプターが HDMI 2.0 に対応しているわけではありません。 すべてのアダプターで、明示的な "HDMI 2.0" 互換性または "4K" 互換性があるかどうかを確認することを検討してください。
@@ -201,59 +201,59 @@ Windows Mixed Reality とのサーフェイスの互換性の詳細について�
         <td style="vertical-align: middle"> Surface Go </td><td style="vertical-align: middle"> なし </td><td> </td><td></td>
     </tr>
 <tr>
-        <td style="vertical-align: middle"> Surface Book 2 (15 &quot; ) </td><td style="vertical-align: middle"> 完全 </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1060/16 GB RAM </td>
+        <td style="vertical-align: middle"> Surface Book 2 (15 &quot; ) </td><td style="vertical-align: middle"> [完全] </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1060/16 GB RAM </td>
         <td>
             <ul>
-                <li><b>推奨</b>: Surface デバイスで最適な Windows Mixed Reality エクスペリエンスを実現するために、NVIDIA GeForce GTX 1060 と 16 GB の RAM で構成された 2 15、"" を使用することをお勧めします。  この構成は、Windows Mixed Reality のバッジとしてテストされています。そのため、すべての Windows Mixed Reality 機能がサポートされ、互換性のあるさまざまなアプリやゲームを活用できます。</li>
-                <li>NVIDIA GeForce GTX 1060 の離散 GPU では、Windows Mixed Reality の超 @ 90Hz エクスペリエンスが提供されます。</li><br/>                <li>最適なパフォーマンスを得るには、Surface Book 2 で特別にリリースされた Nvidia グラフィックスドライバーを使用してください。 新しいドライバーは Nvidia&#39;s web サイトで入手できますが、テストされていません。</li><br/>                <li><a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">SURFACE USB-C から HDMI アダプター</a>が必要です (他のアダプターは動作しますが、テストされていません)</li>
-                <li><b>Surface dock での注意</b>: surface Book 2 での surface dock の使用は、Windows Mixed Reality では公式にサポートされていません。これは、surface dock の電源の制限によるものです。</li><br/>                <li><b>Windows 10 バージョン1803で</b>は、Windows 10 バージョン1803を&#39;再実行する場合は、最新のパフォーマンス修正プログラムがインストールされていることを確認するために、OS ビルド17134.137 以降 (KB4284848 によってインストールされます) に再&#39;する必要があります。 詳細については、 <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>のリリースノートを参照してください。</li>
+                <li><b>推奨</b>: Surface デバイスで最適な Windows Mixed Reality エクスペリエンスを実現するために、NVIDIA GeForce GTX 1060 GB および 16 GB の RAM で構成された、"16facebook 2 15" を使用することをお勧めします。  この構成は、Windows Mixed Reality のバッジとしてテストされています。そのため、すべての Windows Mixed Reality 機能がサポートされ、互換性のあるさまざまなアプリやゲームを活用できます。</li>
+                <li>NVIDIA GeForce GTX 1060 の離散 GPU は、Windows Mixed Reality Ultra @ 90-Hz エクスペリエンスを提供します。</li><br/>                <li>最適なパフォーマンスを得るには、Surface Book 2 でリリースされた Nvidia グラフィックスドライバーを使用します。 新しいドライバーは Nvidia&#39;s web サイトで入手できますが、テストされていません。</li><br/>                <li><a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">SURFACE USB-C から HDMI アダプター</a>が必要です (他のアダプターは動作しますが、テストされていません)</li>
+                <li><b>Surface dock での注意</b>: surface Book 2 での surface dock の使用は、Windows Mixed Reality で公式にサポートされていません。これは、surface dock の電源制限があるためです。</li><br/>                <li><b>Windows 10 バージョン1803で</b>は、Windows 10 バージョン1803を&#39;再実行する場合は、最新のパフォーマンス修正プログラムがインストールされていることを確認するために、OS ビルド17134.137 以降 (KB4284848 によってインストールされる) に再&#39;する必要があります。 詳細については、 <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>のリリースノートを参照してください。</li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Book 2 (13.5 &quot; ) </td><td style="vertical-align: middle"> 一部サポート </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1050/16 GB RAM </td>
+        <td style="vertical-align: middle"> Surface Book 2 (13.5 &quot; ) </td><td style="vertical-align: middle"> 部分的 </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1050/16 GB RAM </td>
         <td>
             <ul>
-                <li><b>注</b>: Surface Book 2 (13) は、Windows mixed reality ではバッジませんが、一部の Windows Mixed reality 機能をサポートするため、互換性のあるアプリとゲームの数に制限があります。  パフォーマンスは構成によって異なります。</li>
-                <li>Intel Core i5/intel HD Graphics 620 統合 GPU を使用した構成では、Windows Mixed Reality @ 60Hz エクスペリエンスが提供されます。</li>
-                <li>Intel Core i7/NVIDIA GeForce GTX 1050 の離散 GPU を使用した構成では、Windows Mixed Reality が使用されます。</li>                       <li>最適なパフォーマンスを得るには、Surface Book 2 で特別にリリースされた Nvidia グラフィックスドライバーを使用してください。 新しいドライバーは Nvidia&#39;s web サイトで入手できますが、テストされていません。</li>
+                <li><b>注</b>: Surface Book 2 (13) は、Windows mixed reality ではバッジではありませんが、一部の Windows Mixed reality 機能をサポートするため、互換性のあるアプリとゲームの数に制限があります。  パフォーマンスは構成によって異なります。</li>
+                <li>Intel Core i5/intel HD Graphics 620 統合 GPU を使用した構成では、Windows Mixed Reality @ 60-Hz エクスペリエンスが提供されます。</li>
+                <li>Intel Core i7/NVIDIA GeForce GTX 1050 の離散 GPU を使用した構成では、Windows Mixed Reality @ 90-Hz エクスペリエンスが提供されます。</li>                       <li>最適なパフォーマンスを得るには、Surface Book 2 でリリースされた Nvidia グラフィックスドライバーを使用します。 新しいドライバーは Nvidia&#39;s web サイトで入手できますが、テストされていません。</li>
                 <li><a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">SURFACE USB-C から HDMI アダプター</a>が必要です (他のアダプターは動作しますが、テストされていません)</li>
-                <li><b>Surface dock での注意</b>: surface Book 2 での surface dock の使用は、Windows Mixed Reality では公式にサポートされていません。これは、surface dock の電源の制限によるものです。</li>
-                <li><b>Windows 10 バージョン1803で</b>は、Windows 10 バージョン1803を&#39;再実行する場合は、最新のパフォーマンス修正プログラムがインストールされていることを確認するために、OS ビルド17134.137 以降 (KB4284848 によってインストールされます) に再&#39;する必要があります。 詳細については、 <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>のリリースノートを参照してください。</li>
+                <li><b>Surface dock での注意</b>: surface Book 2 での surface dock の使用は、Windows Mixed Reality で公式にサポートされていません。これは、surface dock の電源制限があるためです。</li>
+                <li><b>Windows 10 バージョン1803で</b>は、Windows 10 バージョン1803を&#39;再実行する場合は、最新のパフォーマンス修正プログラムがインストールされていることを確認するために、OS ビルド17134.137 以降 (KB4284848 によってインストールされる) に再&#39;する必要があります。 詳細については、 <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>のリリースノートを参照してください。</li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Studio </td><td style="vertical-align: middle"> 一部サポート </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GeForce GTX 980m/16 GB の RAM </td>
+        <td style="vertical-align: middle"> Surface Studio </td><td style="vertical-align: middle"> 部分的 </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GeForce GTX 980m/16 GB の RAM </td>
         <td>
             <ul>
-                <li><b>注</b>: Surface Studio は Windows mixed reality ではバッジませんが、一部の Windows Mixed reality 機能をサポートするため、互換性のあるアプリとゲームの数に制限があります。  パフォーマンスは構成によって異なります。</li>
-                <li>NVIDIA GeForce GTX 965m を使用した構成では、Windows Mixed Reality @ 60Hz エクスペリエンスが提供されます。</li>
-                <li>NVIDIA GeForce GTX 980m の構成では、Windows Mixed Reality @ 90Hz エクスペリエンスが提供されます。</li>
+                <li><b>注</b>: Surface Studio は Windows mixed reality ではバッジではありませんが、一部の Windows Mixed reality 機能をサポートするため、互換性のあるアプリとゲームの数に制限があります。  パフォーマンスは構成によって異なります。</li>
+                <li>NVIDIA GeForce GTX 965 m を使用した構成では、Windows Mixed Reality @ 60-Hz エクスペリエンスが提供されます。</li>
+                <li>NVIDIA GeForce GTX 980 m を使用した構成では、Windows Mixed Reality @ 90-Hz エクスペリエンスが提供されます。</li>
                 <li>Surface ミニ DisplayPort から HDMI 2.0 アダプター (他のアダプターは動作しますが、テストされていない場合があります)</li>
                 <li>Windows Mixed Reality ヘッドセットは、"+" 記号を使用して USB ポートに接続する必要があります</li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Pro (2017) </td><td style="vertical-align: middle"> 一部サポート </td><td style="vertical-align: middle"> Intel Core i7/Intel®虹彩™プラスグラフィックス 640/16 GB の RAM </td>
+        <td style="vertical-align: middle"> Surface Pro (2017) </td><td style="vertical-align: middle"> 部分的 </td><td style="vertical-align: middle"> Intel Core i7/Intel®虹彩™プラスグラフィックス 640/16 GB の RAM </td>
         <td>
             <ul>
-                <li><b>注</b>: Surface Pro (2017) は、Windows mixed reality のバッジではありませんが、一部の Windows Mixed reality 機能をサポートするため、互換性のあるアプリとゲームの数に制限があります。  パフォーマンスは構成によって異なります。</li>
+                <li><b>注</b>: Surface Pro (2017) は、Windows mixed reality ではバッジではありませんが、一部の Windows Mixed reality 機能をサポートするため、互換性のあるアプリとゲームの数に制限があります。  パフォーマンスは構成によって異なります。</li>
                 <li>Intel Core M3/Intel HD Graphics 615 統合 GPU を使用した構成はサポートされ<b>ていません</b>。</li>
-                <li>Intel Core i5/intel HD Graphics 620 統合 GPU を使用した構成では、Windows Mixed Reality @ 60Hz エクスペリエンスが提供されます。</li>
-                <li>Intel Core i7/Intel®虹彩™とグラフィックス640統合 GPU を使用した構成では、Windows Mixed Reality @ 60Hz エクスペリエンスが提供されます。</li><br/><li>2.0 アダプターの Surface ミニ DisplayPort が必要です (他のアダプターは動作しますが、テストされていません)</li>
+                <li>Intel Core i5/intel HD Graphics 620 統合 GPU を使用した構成では、Windows Mixed Reality @ 60-Hz エクスペリエンスが提供されます。</li>
+                <li>Intel Core i7/Intel®虹彩™とグラフィックス640統合 GPU を使用した構成では、Windows Mixed Reality @ 60-Hz エクスペリエンスが提供されます。</li><br/><li>2.0 アダプターの Surface ミニ DisplayPort が必要です (他のアダプターは動作しますが、テストされていません)</li>
                 <li>使用中に <a href="https://support.microsoft.com/en-us/help/4023450/surface-surface-battery-and-power">パフォーマンススライダー</a> が "最適なパフォーマンス" に設定される必要があります。</li>
             </ul>
         </td>
     </tr><br/>    <tr>
-        <td style="vertical-align: middle"> Surface Laptop </td><td style="vertical-align: middle"> 一部サポート </td><td style="vertical-align: middle"> Intel Core i7/Intel®虹彩™プラスグラフィックス 640/16 GB の RAM </td>
+        <td style="vertical-align: middle"> Surface Laptop </td><td style="vertical-align: middle"> 部分的 </td><td style="vertical-align: middle"> Intel Core i7/Intel®虹彩™プラスグラフィックス 640/16 GB の RAM </td>
         <td>
             <ul>
                 <li><b>注</b>: Surface ノート pc は、Windows mixed reality のバッジではありませんが、一部の Windows Mixed reality 機能をサポートするため、互換性のあるアプリとゲームの数に制限があります。  パフォーマンスは構成によって異なります。</li>
                 <li>Intel Core M3/Intel HD Graphics 615 統合 GPU を使用した構成はサポートされ<b>ていません</b>。</li>
-                <li>Intel Core i5/intel HD Graphics 620 統合 GPU を使用した構成では、Windows Mixed Reality @ 60Hz エクスペリエンスが提供されます。</li>
-                <li>Intel Core i7/Intel®虹彩™とグラフィックス640統合 GPU を使用した構成では、Windows Mixed Reality @ 60Hz エクスペリエンスが提供されます。</li><br/><li>2.0 アダプターの Surface ミニ DisplayPort が必要です (他のアダプターは動作しますが、テストされていません)</li>
+                <li>Intel Core i5/intel HD Graphics 620 統合 GPU を使用した構成では、Windows Mixed Reality @ 60-Hz エクスペリエンスが提供されます。</li>
+                <li>Intel Core i7/Intel®虹彩™とグラフィックス640統合 GPU を使用した構成では、Windows Mixed Reality @ 60-Hz エクスペリエンスが提供されます。</li><br/><li>2.0 アダプターの Surface ミニ DisplayPort が必要です (他のアダプターは動作しますが、テストされていません)</li>
                 <li>使用中に <a href="https://support.microsoft.com/en-us/help/4023450/surface-surface-battery-and-power">パフォーマンススライダー</a> が "最適なパフォーマンス" に設定される必要があります。</li>
             </ul>
         </td>

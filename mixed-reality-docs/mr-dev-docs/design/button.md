@@ -1,63 +1,62 @@
 ---
 title: Button
-description: ボタンは、特定の操作を直ちに実行する手段をユーザーに提供します。 これは、mixed reality の最も基本的なコンポーネントの1つです。
+description: ボタンを使用して即時アクションをトリガーする方法について説明します。ボタンは、mixed reality の基本コンポーネントの1つです。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合現実、コントロール、相互作用、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、ボタン
-ms.openlocfilehash: c5e52bef8604ba4874b7f4b055107ec0db6b3683
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b4e8388c4e3ea855c191cbdfc06621018274ff86
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702858"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847596"
 ---
 # <a name="button"></a>Button
 
 ![Button](images/UX_Hero_Button.jpg)
 
-ボタンは、特定の操作を直ちに実行する手段をユーザーに提供します。 これは、mixed reality の最も基本的なコンポーネントの1つです。 HoloLens 2 では、ボタンには多くの視覚的な手掛かりと affordances があり、ユーザーの対話操作の信頼性が向上します。 
-
+ボタンを使用すると、ユーザーは、mixed reality エクスペリエンスで即時アクションをトリガーできます。 HoloLens 2 では、ボタンに視覚的な手掛かりと affordances があり、ユーザーとの相互作用の信頼を高めることができます。 
 
 :::row:::
     :::column:::
-       ![移動](images/UX_Button_Affordance_ProximityLight.jpg)<br>
+       ![近接光効果が表示されているボタン](images/UX_Button_Affordance_ProximityLight.jpg)<br>
        **近接光**<br>
     :::column-end:::
     :::column:::
-       ![回転](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
+       ![フォーカスハイライト効果が表示された状態で選択されたボタン](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
         **フォーカスの強調表示**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       ![移動](images/UX_Button_Affordance_Compression.jpg)<br>
+       ![圧縮ケージ効果が表示された状態で押されたボタン](images/UX_Button_Affordance_Compression.jpg)<br>
        **ケージの圧縮**<br>
     :::column-end:::
     :::column:::
-       ![回転](images/UX_Button_Affordance_Pulse.jpg)<br>
+       ![トリガーのパルス効果が表示された状態で押されたボタン](images/UX_Button_Affordance_Pulse.jpg)<br>
         **トリガーのパルス**<br>
     :::column-end:::
 :::row-end:::
 
 <br>
 
-
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Unity の MRTK (Mixed Reality Toolkit) のボタン
-**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** には、さまざまな種類のボタン prefabs が用意されています。 HoloLens 2 と HoloLens (第1世代) のシェルスタイルのボタンと、カスタマイズされた例を見つけることができます。 HoloLens 2 ボタン prefab には、ユーザーの信頼を向上させるための詳細な affordances が多数含まれています。 これには、近接度ベースの強調表示、フロントケージの圧縮、トリガーのパルス効果が含まれます。
+**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** には、hololens 2 および hololens (第1世代) のシェルスタイルのボタンなど、さまざまな種類のボタン prefabs が用意されています。 HoloLens 2 ボタンの prefab には、ユーザーの信頼度の向上に役立ついくつかの詳細な affordances が含まれています。
 
-* [MRTK-ボタン](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* 近接度に基づく強調表示
+* フロントケージの圧縮
+* トリガーに対するパルス効果。
 
-
+* 詳細な手順とカスタマイズされた例については、 [Mrtk のボタン](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) をご覧ください。
 
 <br>
 
 ---
-
 
 ## <a name="see-also"></a>関連項目
 

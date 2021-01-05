@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、
-ms.openlocfilehash: 9426a85611cf53a349ca5bc8f3727ee8a784940e
-ms.sourcegitcommit: a129039d8ed228ed0305aa312006cadf403f0831
+ms.openlocfilehash: 9a82ab12b9cf91bd1fefcf84a2f6b4e62c8df24a
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95417206"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725709"
 ---
 # <a name="start-your-vr-journey"></a>VR の体験を開始する
 
@@ -19,11 +19,15 @@ ms.locfileid: "95417206"
 
 ## <a name="setup--usability-checkpoints"></a>ユーザビリティチェックポイント & セットアップ
 
-次のチェックポイントを使用して、イマーシブ VR デバイスをセットアップ、構成、および使用して、アプリケーションやゲームを実現します。
+次のチェックポイントを使用して、イマーシブ VR デバイスを設定、構成、および使用して、アプリケーションやゲームを実現します。
 
 ### <a name="1-before-you-buy"></a>1. 購入する前に
 
-最適なセットアップと使用エクスペリエンスを実現するために、お使いの PC で購入している VR ハードウェアを処理できることが重要です。 場合によっては、追加の [アダプターまたはハードウェア](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)の注文が必要になることがあります。このセクションでは、virtual reality ハードウェアに関連する PC の最小要件、互換性チェック、およびよく寄せられる質問について説明します。
+お使いの PC では、最適なセットアップと使用エクスペリエンスを実現するために、購入している VR ハードウェアを処理する必要があります。 場合によっては、追加の [アダプターまたはハードウェア](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)の注文が必要になることがあります。 このセクションでは、次の手順について説明します。
+
+* PC の最小要件
+* 互換性チェック
+* Virtual reality ハードウェアに関してよく寄せられる質問
 
 <br>
 
@@ -48,7 +52,11 @@ ms.locfileid: "95417206"
 
 ### <a name="3-using-windows-mixed-reality"></a>3. Windows Mixed Reality を使用する
 
-Windows Mixed Reality とイマーシブ VR ヘッドセットを通じて利用できるさまざまな機能やサービスがあります。 このセクションを終了すると、入力としてのコントローラーと音声を使用して、仮想ホーム環境に移動したり、SteamVR や WebVR などのサービスとアプリケーションを統合したりすることができます。
+Windows Mixed Reality とイマーシブ VR ヘッドセットを通じて利用できるさまざまな機能やサービスがあります。 このセクションを終了すると、次のことを行うことができます。
+
+* 仮想ホーム環境内を移動する
+* 入力としてのコントローラーと音声の使用
+* SteamVR や WebVR などのサービスとアプリケーションの統合。
 
 <br>
 
@@ -81,9 +89,9 @@ Windows Mixed Reality とイマーシブ VR ヘッドセットを通じて利用
  
 * [一般的な FAQ](troubleshooting-windows-mixed-reality.md) 
 
-探しているものが見つからない場合は、「 **トラブルシューティング** に関する faq」セクションに記載されているトピック固有の faq ドキュメントの一覧を参照してください。このセクションでは、すべてのインストールとエラーコードを、パフォーマンスとヘッドセットの表示方法について説明します。 特定の機能が VR でどのように機能するかについて詳しくは、「 [モーションコントローラー](controllers-in-wmr.md) と [内部 out の追跡](tracking-system.md) のしくみ」を参照してください。
+探しているものが見つからない場合は、「 **トラブルシューティングの faq** 」セクションに記載されているトピック固有の faq ドキュメントの一覧を参照してください。これは、すべてのインストールおよびエラーコードが、パフォーマンスとヘッドセットの表示方法に関するものです。 特定の機能がどのように動作するかについては、「 [モーションコントローラー](controllers-in-wmr.md) と [内部 out の追跡](tracking-system.md) のしくみ」を参照してください。
 
-新しい問題とバグについては常にお待ちしているので、ドキュメントに記載されていないものがある場合は、 [こちらからフィードバック](filing-feedback.md)をお送りください。
+新しい問題とバグには常に注意を向けています。そのため、ドキュメントに記載されているものがある場合は、 [フィードバック](filing-feedback.md)を送信してください。
 
 > [!NOTE]
 > Windows Mixed Reality の完全なリリース履歴については、 [こちら](mixed-reality-software.md)を参照してください。

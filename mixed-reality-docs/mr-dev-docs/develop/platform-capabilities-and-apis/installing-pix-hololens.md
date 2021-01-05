@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens、HoloLens 2、PIX、capture、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 5dfc16f97790b47af3c24ca44c060a9a2495a320
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
+ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530449"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97822928"
 ---
 # <a name="installing-pix-for-hololens-2"></a>HoloLens 2 用の PIX をインストールする
 
@@ -25,7 +25,7 @@ ms.locfileid: "97530449"
 
 3. **開発者モード** と **デバイスポータル** を有効にする:
 
-* シェルから **設定** を開く:
+* Mixed Reality ホームから **設定** を開く:
 
 ![[設定] ボタンが強調表示されている HoloLens メニューのスクリーンショット](images/pix-img-01.jpg)
 

@@ -1,6 +1,6 @@
 ---
 title: Mixed Reality について学習する
-description: Windows Mixed reality を使用および移動する方法について説明する「Mixed Reality アプリの学習」を実行する方法について説明します。
+description: '[Mixed Reality アプリの学習] を実行する方法と、Windows Mixed Reality を操作する方法について説明します。'
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,24 +8,24 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、チュートリアル、はじめに
 appliesto:
 - Windows 10
-ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 2cbfb171065b0f2cf616348194b286e37159d425
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132066"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726053"
 ---
 # <a name="learn-mixed-reality"></a>Mixed Reality について学習する
 
 ## <a name="running-the-learning-experience-for-the-first-time"></a>初めて学習エクスペリエンスを実行する
 
-セットアップの完了後、Mixed Reality ポータルアプリは、Windows Mixed Reality の使用方法を説明する「 **Mixed reality** 」と呼ばれる、hmd のイマーシブエクスペリエンスを起動する必要があります。 読み始めるには、読み込み画面で gem を見つめます。 ヘッドホンで Cortana の声を聞き、次に行う操作について説明します。
+セットアップの完了後、Mixed Reality ポータルアプリは、「 **Mixed reality の詳細**」という名前の hmd でイマーシブエクスペリエンスを起動する必要があります。 このイマーシブエクスペリエンスでは、Windows Mixed Reality の使用方法について説明します。 読み始めるには、読み込み画面で gem を見つめます。 ヘッドホンで Cortana の声を聞き、次に行う操作について説明します。
 
 ![Mixed Reality について学習する](images/file-learnmixedrealitystart.png)
 
-## <a name="re-run-the-learning-experience"></a>学習エクスペリエンスを再実行する
+## <a name="rerun-the-learning-experience"></a>学習エクスペリエンスを再実行する
 
-Mixed Reality はアプリです。 アプリは、いつでも [mixed reality ホーム](your-mixed-reality-home.md) 内の [スタート] メニューから起動できます。 モーションコントローラーまたはキーボードを使用する:
+Mixed Reality はアプリです。 アプリは、いつでも [mixed reality ホーム](your-mixed-reality-home.md) の [スタート] メニューから起動できます。 モーションコントローラーまたはキーボードを使用する:
 
 ### <a name="use-your-motion-controllers"></a>モーションコントローラーを使用する
 

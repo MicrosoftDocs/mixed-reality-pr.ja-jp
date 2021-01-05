@@ -1,11 +1,23 @@
 ---
-ms.openlocfilehash: 9fdcbdfe115fa859081c28b768f9c213ac241d13
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: c5a13798ca6a73f1a6410abe310c2166b67f4626
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002726"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717423"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+階層は列挙型によって記述され `EHandKeypoint` ます。
+
+![手の keypoint bluprint オプションの画像](../images/hand-keypoint-bp.png)
+
+**Get Motion Controller データ** 関数を使用して、ユーザーの手からすべてのデータを取得できます。 この関数は、 **XRMotionControllerData** 構造体を返します。 次に示すのは、XRMotionControllerData 構造体を解析してコロケーションの場所を取得し、各ジョイントの位置にデバッグ座標系を描画するサンプルブループリントスクリプトです。
+
+![チャネル関数による行トレースに接続された、"データの取得" 関数のブループリント](../images/unreal-hand-tracking-img-03.png)
+
+構造が有効であり、それが手であるかどうかを確認することが重要です。 そうしないと、位置、回転、および半径配列へのアクセスに未定義の動作が発生する可能性があります。
+
 # <a name="425"></a>[4.25](#tab/425)
 
 この `EWMRHandKeypoint` 列挙型は、手のボーン階層を記述します。 ブループリントに記載されている各ハンドキーポイントを見つけることができます。
@@ -84,15 +96,3 @@ GetHandJointTransform の関数パラメーターの詳細を次に示します�
 * * * 半径: ボーンのベースの半径。
 * * * 戻り値—ボーンがこのフレームを追跡している場合は true、ボーンが追跡されていない場合は false。
 
-
-# <a name="426"></a>[4.26](#tab/426)
-
-階層は列挙型によって記述され `EHandKeypoint` ます。
-
-![手の keypoint bluprint オプションの画像](../images/hand-keypoint-bp.png)
-
-**Get Motion Controller データ** 関数を使用して、ユーザーの手からすべてのデータを取得できます。 この関数は、 **XRMotionControllerData** 構造体を返します。 次に示すのは、XRMotionControllerData 構造体を解析してコロケーションの場所を取得し、各ジョイントの位置にデバッグ座標系を描画するサンプルブループリントスクリプトです。
-
-![チャネル関数による行トレースに接続された、"データの取得" 関数のブループリント](../images/unreal-hand-tracking-img-03.png)
-
-構造が有効であり、それが手であるかどうかを確認することが重要です。 そうしないと、位置、回転、および半径配列へのアクセスに未定義の動作が発生する可能性があります。

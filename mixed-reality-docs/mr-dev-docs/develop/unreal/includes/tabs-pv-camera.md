@@ -1,60 +1,11 @@
 ---
-ms.openlocfilehash: a8258f1ba99fdd1607014624c4ad4d6ec0a8e330
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: eb51caa4caf0d425b5e49c3abca2a523b08fc312
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609610"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97718117"
 ---
-# <a name="425"></a>[4.25](#tab/425)
-
-## <a name="render-from-the-pv-camera-for-mrc"></a>MRC 用の PV カメラからのレンダリング
-
-> [!NOTE]
-> これには **Unreal Engine 4.25** 以降のバージョンが必要です。
-
-システムとカスタム MRC レコーダーにより、PV カメラをアプリによってレンダリングされたホログラムと組み合わせることにより、Mixed Reality キャプチャが作成されます。
-
-既定では、Mixed Reality キャプチャでは、右目のホログラフィック出力が使用されます。 イマーシブ アプリによって [PV カメラ](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)からのレンダリングが選択された場合は、それが代わりに使用されます。 PV カメラからレンダリングすることにより、現実世界と MRC ビデオのホログラムとの間のマッピングが向上します。
-
-PV カメラからの表示をオプトインするには、次のようにします。
-
-1. **SetEnabledMixedRealityCamera** および **ResizeMixedRealityCamera** の呼び出し
-    * **サイズ X** および **サイズ Y** の値を使用して、ビデオのディメンションを設定します。
-
-![第 3 のカメラ](../../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
-
-その後、Unreal は MRC からのリクエストを処理して、PV カメラの視点からレンダリングします。
-
-> [!NOTE]
-> [Mixed Reality キャプチャ](../../../mixed-reality-capture.md)がトリガーされた場合にのみ、アプリは写真/ビデオ カメラの視点からレンダリングするよう求められます。
-
-## <a name="using-the-pv-camera"></a>PV カメラの使用
-
-Web カメラ テクスチャは実行時にゲームで入手できますが、エディターの **[編集] > [プロジェクトの設定]** で有効にする必要があります。
-1. **[プラットフォーム] > [HoloLens] > [機能]** に移動し、**Web カメラ** を確認します。
-    * 実行時に Web カメラを使用するには、**StartCameraCapture** 関数を使用し、記録を停止するには、**StopCameraCapture** 関数を使用します。
-
-![カメラの開始と停止](../images/unreal-camera-startstop.PNG)
-
-## <a name="rendering-an-image"></a>イメージのレンダリング
-カメラ イメージをレンダリングするには次のようにします。
-1. 以下のスクリーンショットでは **PVCamMat** という名前のプロジェクトのマテリアルに基づいて、ダイナミック マテリアル インスタンスを作成します。  
-2. ダイナミック マテリアル インスタンスを **Material Instance Dynamic Object Reference** 変数に設定します。  
-3. カメラ フィードをレンダリングするシーン内のオブジェクトのマテリアルを、この新しいダイナミック マテリアル インスタンスに設定します。
-    * カメラ イメージをマテリアルにバインドするために使用されるタイマーを開始します。
-
-![カメラのレンダリング](../images/unreal-camera-render.PNG)
-
-4. このタイマーに新しい関数 (この場合は **MaterialTimer**) を作成し、**GetARCameraImage** を呼び出して、Web カメラからテクスチャを取得します。  
-5. このテクスチャが有効な場合は、シェーダーのテクスチャ パラメーターをこのイメージに設定します。  そうでない場合は、もう一度素材のタイマーを開始します。
-
-![Web カメラからのカメラ テクスチャ](../images/unreal-camera-texture.PNG)
-
-5. マテリアルに、カラー エントリにバインドされている **SetTextureParameterValue** の名前と一致するパラメーターがあることを確認します。 パラメーターがないと、カメラ イメージを正しく表示できません。
-
-![カメラのテクスチャ](../images/unreal-camera-material.PNG)
-
 # <a name="426"></a>[4.26](#tab/426) 
 
 ## <a name="pv-camera-feed-setup"></a>PV カメラのフィードの設定
@@ -221,4 +172,53 @@ void ACamCapture::Tick(float DeltaTime)
     }
 }
 ```
+
+# <a name="425"></a>[4.25](#tab/425)
+
+## <a name="render-from-the-pv-camera-for-mrc"></a>MRC 用の PV カメラからのレンダリング
+
+> [!NOTE]
+> これには **Unreal Engine 4.25** 以降のバージョンが必要です。
+
+システムとカスタム MRC レコーダーにより、PV カメラをアプリによってレンダリングされたホログラムと組み合わせることにより、Mixed Reality キャプチャが作成されます。
+
+既定では、Mixed Reality キャプチャでは、右目のホログラフィック出力が使用されます。 イマーシブ アプリによって [PV カメラ](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)からのレンダリングが選択された場合は、それが代わりに使用されます。 PV カメラからレンダリングすることにより、現実世界と MRC ビデオのホログラムとの間のマッピングが向上します。
+
+PV カメラからの表示をオプトインするには、次のようにします。
+
+1. **SetEnabledMixedRealityCamera** および **ResizeMixedRealityCamera** の呼び出し
+    * **サイズ X** および **サイズ Y** の値を使用して、ビデオのディメンションを設定します。
+
+![第 3 のカメラ](../../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
+
+その後、Unreal は MRC からのリクエストを処理して、PV カメラの視点からレンダリングします。
+
+> [!NOTE]
+> [Mixed Reality キャプチャ](../../../mixed-reality-capture.md)がトリガーされた場合にのみ、アプリは写真/ビデオ カメラの視点からレンダリングするよう求められます。
+
+## <a name="using-the-pv-camera"></a>PV カメラの使用
+
+Web カメラ テクスチャは実行時にゲームで入手できますが、エディターの **[編集] > [プロジェクトの設定]** で有効にする必要があります。
+1. **[プラットフォーム] > [HoloLens] > [機能]** に移動し、**Web カメラ** を確認します。
+    * 実行時に Web カメラを使用するには、**StartCameraCapture** 関数を使用し、記録を停止するには、**StopCameraCapture** 関数を使用します。
+
+![カメラの開始と停止](../images/unreal-camera-startstop.PNG)
+
+## <a name="rendering-an-image"></a>イメージのレンダリング
+カメラ イメージをレンダリングするには次のようにします。
+1. 以下のスクリーンショットでは **PVCamMat** という名前のプロジェクトのマテリアルに基づいて、ダイナミック マテリアル インスタンスを作成します。  
+2. ダイナミック マテリアル インスタンスを **Material Instance Dynamic Object Reference** 変数に設定します。  
+3. カメラ フィードをレンダリングするシーン内のオブジェクトのマテリアルを、この新しいダイナミック マテリアル インスタンスに設定します。
+    * カメラ イメージをマテリアルにバインドするために使用されるタイマーを開始します。
+
+![カメラのレンダリング](../images/unreal-camera-render.PNG)
+
+4. このタイマーに新しい関数 (この場合は **MaterialTimer**) を作成し、**GetARCameraImage** を呼び出して、Web カメラからテクスチャを取得します。  
+5. このテクスチャが有効な場合は、シェーダーのテクスチャ パラメーターをこのイメージに設定します。  そうでない場合は、もう一度素材のタイマーを開始します。
+
+![Web カメラからのカメラ テクスチャ](../images/unreal-camera-texture.PNG)
+
+5. マテリアルに、カラー エントリにバインドされている **SetTextureParameterValue** の名前と一致するパラメーターがあることを確認します。 パラメーターがないと、カメラ イメージを正しく表示できません。
+
+![カメラのテクスチャ](../images/unreal-camera-material.PNG)
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cd6541dd651573f31ddc2e2a388be53394059c5f
-ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
+ms.openlocfilehash: 283bfffb2d59d92712e86e12c05be8974f04fae6
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482422"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717945"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -81,8 +81,6 @@ USB 経由で直接アプリケーションを展開できない場合は、上�
 
 >[!WARNING]
 >この仕様を、[PC ハードウェア互換性最小ガイドライン](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)と間違えないようにしてください。このガイドラインは、イマーシブ (VR) ヘッドセットのアプリまたはゲームの対象となる *コンシューマー PC の仕様* について説明するものです。
-
-**Reverb G2** ヘッドセットを使用している場合は、**Microsoft-Valve OpenXR** プラグインをダウンロードします (TODO://必要なリンク)。
 
 イマーシブ ヘッドセット開発用 PC にフルサイズの HDMI および/または USB 3.0 ポートがない場合、ヘッドセットを接続するための[アダプター](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs)が必要になります。
 
@@ -196,8 +194,6 @@ USB 経由で直接アプリケーションを展開できない場合は、上�
 
 >[!WARNING]
 >この仕様を、[PC ハードウェア互換性最小ガイドライン](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)と間違えないようにしてください。このガイドラインは、イマーシブ (VR) ヘッドセットのアプリまたはゲームの対象となる *コンシューマー PC の仕様* について説明するものです。
-
-**Reverb G2** ヘッドセットを使用している場合は、**Microsoft-Valve OpenXR** プラグインをダウンロードします (TODO://必要なリンク)。
 
 イマーシブ ヘッドセット開発用 PC にフルサイズの HDMI および/または USB 3.0 ポートがない場合、ヘッドセットを接続するための[アダプター](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs)が必要になります。
 

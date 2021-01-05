@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、前払い、研究、購入、購入前
 appliesto:
 - Windows 10
-ms.openlocfilehash: 20a585088c9bea9d01754f78e9934a4022c0e34c
-ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
+ms.openlocfilehash: e9b9254166b3ac4c188531d3651407ecfd853460
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "95002976"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725513"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>よく寄せられる質問を購入する前に
 
@@ -21,7 +21,7 @@ ms.locfileid: "95002976"
 
 ### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Windows Mixed Reality の準備ができている PC またはヘッドセットを購入できる場所
 
-**クイック回答:** Windows Mixed Reality の準備ができた PC またはヘッドセットは、承認されたローカルの小売業者またはオンラインで、Microsoft Store を含むさまざまな小売業者から購入できます。 Windows Mixed Reality の準備ができている PC またはヘッドセットをオンラインで検索する: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
+**クイック回答:** Windows Mixed Reality の準備ができている PC またはヘッドセットを、承認されたローカルの小売業者またはオンラインで、Microsoft Store を含むさまざまな小売店から購入することができます。 Windows Mixed Reality の準備ができている PC またはヘッドセットをオンラインで検索する: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-try-windows-mixed-reality"></a>Windows Mixed Reality をどこで試すことができますか。
 
@@ -51,7 +51,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 **クイック回答:** Windows Mixed Reality ヘッドセット機能の内部 out 追跡 (トラッキングカメラはヘッドセットにあります) とプラグアンドプレイセットアップを Windows 10 で実行します。
 
-**詳細: Windows** Mixed Reality では、簡単なセットアップ (外部センサーを使用してコントローラーを追跡する必要はありません)、お客様の快適さと価格を満たすヘッドセットの選択、競争力のある Microsoft Store 解像度のヘッドセットなど、さまざまな機能が提供されます
+**詳細情報**: Windows Mixed Reality では、簡単なセットアップ (外部センサーを使用してコントローラーを追跡する必要はありません)、快適なヘッドセットと価格ポイント、競争力のある解像度を備えたヘッドセット、そして最終的には、Microsoft Store から数千のアプリを使用できるようにする空間インターフェイスを備えた独自のユーザーエクスペリエンスを含む、
 
 ### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>Mixed Reality は、内部のカメラがパススルーであることを意味しますか。 仮想現実に加えて、拡張される現実を実現できます。
 
@@ -59,11 +59,11 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 ### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>内部の追跡とは 外部での追跡または lighthouse の追跡との違い
 
-* **内部 out 追跡** Windows Mixed Reality は、内部 out 追跡を使用します。 内部での追跡カメラはヘッドセットに組み込まれており、環境の変化を追跡して、環境に関連するヘッドセットの位置を特定します。
+* **内部 out 追跡** Windows Mixed Reality は、内部 out 追跡を使用します。 内部の追跡カメラはヘッドセットに組み込まれ、環境の変化を追跡して、環境に応じたヘッドセットの位置を特定します。
 
-* **外部での追跡** Oculus、Naopak、その他は、外部での追跡を使用します。  外部では、ヘッドセットが1つ以上の外部デバイスによって追跡されます。 カメラは、環境に合わせてこれらの外部デバイスに組み込まれており、環境に対するヘッドセットの位置を決定するために使用されます。
+* **外部での追跡** Oculus、Naopak、その他は、外部での追跡を使用します。  外部の追跡では、ヘッドセットが1つ以上の外部デバイスによって追跡されます。 カメラは、環境に合わせてこれらの外部デバイスに組み込まれており、環境に基づいてヘッドセットの位置を決定するために使用されます。
 
-内部の追跡の詳細については、次のページを参照してください。 <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system>
+詳細については [、](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)「」を参照してください。
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>カメラの視界によるゲームプレイに影響する、モーションコントローラーの内部での追跡が可能
 
@@ -71,7 +71,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 ### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Windows Mixed Reality と Samsung 歯車 VR の違い
 
-**クイック回答:** Samsung 歯車 VR や Google Daydream を含むすべてのスマートフォンベースの VR 製品では、3度の自由度 (3DOF のヘッド位置追跡システムを使用します。 3D ベースのシステムでは、仮想環境内のネックから **のみ** ヘッドを移動できます。 一方、Windows MR は、6度の自由度 (6DOF) のヘッドとコントローラーの位置追跡システムを使用します。 6自由度ベースのシステムを使用すると、仮想環境で本文全体を移動できます。これにより、物理的な世界での場合と同様に、オブジェクトを前後に移動してさまざまな視点から見ることができます。 Rift と Naopak は、6DOF ベースのシステムでもあります。
+**クイック回答:** Samsung 歯車 VR や Google Daydream を含むすべてのスマートフォンベースの VR 製品では、3つの自由度 (3DOF のヘッド位置追跡システムが使用されます。 3D ベースのシステムでは、仮想環境内のネックから **のみ** ヘッドを移動できます。 一方、Windows MR は、6度の自由度 (6DOF) のヘッドとコントローラーの位置追跡システムを使用します。 6自由度ベースのシステムを使用すると、仮想環境で本文全体を移動できます。これにより、物理的な世界での場合と同様に、オブジェクトを前後に移動してさまざまな視点から見ることができます。 Rift と Naopak は、6DOF ベースのシステムでもあります。
 
 * 3DOF 3dof 6DOF 度の詳細については、こちらをご覧ください。 <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system#what-is-the-difference-between-3dof-and-6dof> 
 * 位置追跡と自由度の詳細については、こちらを参照してください。 <https://www.roadtovr.com/introduction-positional-tracking-degrees-freedom-dof/>
@@ -81,7 +81,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <table>
 <tr>
 <th style="width:25%"> Headset </th>
-<th style="width:15%"> 解決策 </th>
+<th style="width:15%"> 解決方法 </th>
 <th style="width:10%"> ディスプレイ </th>
 <th style="width:10%"> 更新間隔 </th>
 <th style="width:10%"> 視界 </th>
@@ -96,9 +96,9 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> Acer AH101 </td>
 <td> 288 0x1440 </td>
 <td> LCD </td>
-<td> 最大90Hz </td>
+<td> 最大 90 Hz </td>
 <td> 100° </td>
-<td> 3.5 mm ジャック </td>
+<td> 3.5-mm ジャック </td>
 <td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
@@ -109,9 +109,9 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> Acer OJO 500 </td>
 <td> 288 0x1440 </td>
 <td> LCD </td>
-<td> 最大90Hz </td>
+<td> 最大 90 Hz </td>
 <td> 100° </td>
-<td> 統合 + 3.5 mm ジャック </td>
+<td> Integrated + 3.5-mm ジャック </td>
 <td> 組み込み </td>
 <td style="text-align: center;">機械的</td>
 <td> 2018をフォールする </td>
@@ -122,9 +122,9 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> ASUS HC102 </td>
 <td> 288 0x1440 </td>
 <td> LCD </td>
-<td> 最大90Hz </td>
+<td> 最大 90 Hz </td>
 <td> 95° </td>
-<td> 3.5 mm ジャック </td>
+<td> 3.5-mm ジャック </td>
 <td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
@@ -135,9 +135,9 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> Dell Visor </td>
 <td> 288 0x1440 </td>
 <td> LCD </td>
-<td> 最大90Hz </td>
+<td> 最大 90 Hz </td>
 <td> 105° </td>
-<td> 3.5 mm ジャック </td>
+<td> 3.5-mm ジャック </td>
 <td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
@@ -148,9 +148,9 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 富士通 FMV ヘッドセット </td>
 <td> 288 0x1440 </td>
 <td> LCD </td>
-<td> 最大90Hz </td>
+<td> 最大 90 Hz </td>
 <td> 105° </td>
-<td> 3.5 mm ジャック </td>
+<td> 3.5-mm ジャック </td>
 <td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
@@ -161,9 +161,9 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> HP リバーブ </td>
 <td> 4320x2160 </td>
 <td> LCD </td>
-<td> 最大90Hz </td>
+<td> 最大 90 Hz </td>
 <td> 114° </td>
-<td> 統合 + 3.5 mm ジャック </td>
+<td> Integrated + 3.5-mm ジャック </td>
 <td> 組み込み </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> Spring 2019 </td>
@@ -174,9 +174,9 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> HP VR1000 </td>
 <td> 288 0x1440 </td>
 <td> LCD </td>
-<td> 最大90Hz </td>
+<td> 最大 90 Hz </td>
 <td> 105° </td>
-<td> 3.5 mm ジャック </td>
+<td> 3.5-mm ジャック </td>
 <td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
@@ -187,9 +187,9 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> Lenovo Explorer </td>
 <td> 288 0x1440 </td>
 <td> LCD </td>
-<td> 最大90Hz </td>
+<td> 最大 90 Hz </td>
 <td> 105° </td>
-<td> 3.5 mm ジャック </td>
+<td> 3.5-mm ジャック </td>
 <td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
@@ -200,9 +200,9 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> Medion ERAZER MR X1000 </td>
 <td> 288 0x1440 </td>
 <td> LCD </td>
-<td> 最大90Hz </td>
+<td> 最大 90 Hz </td>
 <td> 105° </td>
-<td> 3.5 mm ジャック </td>
+<td> 3.5-mm ジャック </td>
 <td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
@@ -213,7 +213,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> Samsung HMD Odyssey</td>
 <td> 288 0x1600 </td>
 <td> AMOLED </td>
-<td> 最大90Hz </td>
+<td> 最大 90 Hz </td>
 <td> 110° </td>
 <td> 統合 </td>
 <td> なし </td>
@@ -226,7 +226,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> Samsung HMD Odyssey+</td>
 <td> 288 0x1600 </td>
 <td> AMOLED </td>
-<td> 最大90Hz </td>
+<td> 最大 90 Hz </td>
 <td> 110° </td>
 <td> 統合 </td>
 <td> 組み込み </td>
@@ -239,9 +239,9 @@ Mixed Reality の詳細については、こちらを参照してください。
 <td> 3Glasses Blubur S2</td>
 <td> 288 0x1440 </td>
 <td> LCD </td>
-<td> 最大90Hz </td>
+<td> 最大 90 Hz </td>
 <td> 105° </td>
-<td> 3.5 mm ジャック </td>
+<td> 3.5-mm ジャック </td>
 <td> なし </td>
 <td style="text-align: center;">ソフトウェア</td>
 <td> 2017をフォールする </td>
@@ -265,7 +265,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 ### <a name="will-there-be-issues-with-motion-controller-tracking-if-multiple-windows-mixed-reality-headsets-are-in-close-proximity"></a>複数の Windows Mixed Reality ヘッドセットが近接している場合、モーションコントローラー追跡に問題が発生しますか。
 
-**クイック回答:** モーションコントローラーに干渉することはありませんが、混合現実に最適なエクスペリエンスを実現するための十分なスペースをユーザーに提供する必要があります。つまり、10フィート x 10 フィートです。
+**クイック回答:** モーションコントローラーに干渉することはありませんが、混合現実に最適なエクスペリエンスを実現するための十分なスペースをユーザーに提供する必要があります (たとえば、10フィート x 10 フィート)。
 
 ### <a name="is-there-boundary-chaperone-or-guardian-system-in-windows-mixed-reality"></a>Windows Mixed Reality に境界、chaperone、またはガーディアンシステムはありますか。
 
@@ -279,7 +279,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 **クイック回答:** 通常、Windows Mixed Reality ヘッドセットのケーブル長は4メートルですが、ヘッドセットによって異なります。 詳細については、次を参照してください。 <https://www.microsoft.com/en-us/store/collections/vrandmixedrealityheadsets>
 
-### <a name="can-i-use-an-usb--hdmi-extension-cables-with-windows-mixed-reality-headsets"></a>Windows Mixed Reality ヘッドセットで USB/HDMI 拡張ケーブルを使用できますか。
+### <a name="can-i-use-a-usb--hdmi-extension-cable-with-windows-mixed-reality-headsets"></a>Windows Mixed Reality ヘッドセットで USB/HDMI 拡張ケーブルを使用できますか。
 
 **クイック回答:** Windows Mixed Reality が拡張コードなしで動作するように設計されています。 Mixed reality ヘッドセットでの拡張コードの使用はサポートされていないため、使用状況に影響を与える可能性があります。
 
@@ -322,7 +322,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 **クイック回答:** PC に Bluetooth サポートが組み込まれていない場合は、Bluetooth 4.0 をサポートする USB Bluetooth アダプターをプラグインして、動きコントローラーを有効にする必要があります。
 
-### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>コントローラーは Bluetooth 3.1 で動作しますか。または、Bluetooth 4.0 が必要ですか。
+### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>このコントローラーは Bluetooth 3.1 で動作しますか、それとも Bluetooth 4.0 が必要ですか。
 
 **クイック回答:** Windows Mixed Reality でサポートされる最小仕様は、Bluetooth 4.0 です。 PC に Bluetooth 3.1 が搭載されている場合、コントローラーの使用はブロックされませんが、最良のエクスペリエンスは BT 4.0 です。 [混合の Reality ポータル](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)をダウンロードして実行し、PC が r の準備完了であるかどうかを確認します。
 
@@ -354,11 +354,11 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 ### <a name="can-i-see-my-keyboard-from-inside-a-windows-mixed-reality-headset"></a>Windows Mixed Reality ヘッドセット内からキーボードを見ることはできますか。
 
-**クイック回答:** ヘッドセットの内部からは物理キーボードを見ることはできませんが、ソフトウェアキーボードを使用することはできます。 また、多くの Windows Mixed Reality ヘッドセットには front hinged が表示されているので、動作中にヘッドセットを裏返します。 詳細情報: <https://www.microsoft.com/en-us/windows/windows-mixed-reality#specs>
+**クイック回答:** ヘッドセットから物理キーボードを見ることはできませんが、ソフトウェアキーボードを使用することはできます。 また、多くの Windows Mixed Reality ヘッドセットには front hinged が表示されているので、動作中にヘッドセットを裏返します。 詳細情報: <https://www.microsoft.com/en-us/windows/windows-mixed-reality#specs>
 
 ### <a name="what-games-require-a-gamepad-as-opposed-to-motion-controllers"></a>モーションコントローラーではなくゲームパッドが必要なゲームは何ですか。
 
-**クイック回答:** Windows Mixed Reality アプリケーションでは、ほとんどの場合、モーションコントローラーのサポートが選択されることが予想されますが、これは必須ではありません。 モーションコントローラーのサポートは、経験のある開発者によってサポートされます。 開発者は、ゲームでサポートする入力のモードを決定する必要があります。 ストア内の特定のゲームまたはアプリの製品詳細ページでサポートされているコントローラーの種類を確認できます。
+**クイック回答:** Windows Mixed Reality アプリケーションでは、ほとんどの場合、モーションコントローラーのサポートが選択されますが、これは要件ではありません。 モーションコントローラーのサポートは、経験のある開発者によってサポートされます。 開発者は、ゲームでサポートする入力のモードを決定する必要があります。 ストア内の特定のゲームまたはアプリの製品詳細ページでサポートされているコントローラーの種類を確認できます。
 
 ### <a name="if-i-am-using-xbox-game-streaming-can-i-use-my-xbox-controller"></a>Xbox ゲームストリーミングを使用している場合、Xbox コントローラーを使用できますか。
 
@@ -368,7 +368,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 **クイック回答:** はい。 Windows Mixed Reality は、十分なスペースがない場合でも機能します。 この設定は、セットアップ中に "デスクスケール" エクスペリエンスを選択することによって行うことができます。
 
-## <a name="content"></a>Content
+## <a name="content"></a>コンテンツ
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Windows Mixed Reality ではどのようなゲームとアプリが実行されますか。
 
@@ -386,7 +386,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 ### <a name="are-the-minimum-specs-for-steamvr-higher-than-a-windows-mixed-reality-ultra-pc"></a>Windows Mixed Reality ウルトラ PC よりも、SteamVR の最小の仕様は、
 
-**クイック回答:** Windows Mixed Reality のウルトラ PC 要件で SteamVR を実行できます。 ただし、GTX 1070 ビデオカード (またはそれ以上) と Intel Core i7 プロセッサを搭載した PC で SteamVR Preview を実行することをお勧めします。 今後の更新プログラムにおける追加のシステム構成をサポートするために、フィードバックを確認し、パフォーマンスを最適化しています。 このような高い仕様を満たしていない場合、PC は Windows Mixed Reality SteamVR の実行をブロックされませんが、全体的なエクスペリエンスのパフォーマンスと品質に影響します。
+**クイック回答:** Windows Mixed Reality のウルトラ PC 要件で SteamVR を実行できます。 ただし、GTX 1070 ビデオカード (またはそれ以上) と Intel Core i7 プロセッサを搭載した PC で SteamVR Preview を実行することをお勧めします。 今後の更新プログラムでの追加システム構成をサポートするために、フィードバックの確認とパフォーマンスの最適化を続けています。 PC が Windows Mixed Reality SteamVR の実行をブロックされることはありませんが、これらの高い仕様を満たしていなければ、全体的なエクスペリエンスのパフォーマンスと品質に影響します。
 
 ### <a name="are-all-steam-vr-games-be-supported"></a>すべてのストリーム VR ゲームはサポートされていますか?
 

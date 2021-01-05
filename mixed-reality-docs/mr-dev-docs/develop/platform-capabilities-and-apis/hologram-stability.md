@@ -8,12 +8,12 @@ ms.topic: article
 keywords: ホログラム、安定性、hololens、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想リアリティヘッドセット、フレームレート、レンダリング、再プロジェクション、色の分離
 appliesto:
 - HoloLens
-ms.openlocfilehash: 345ba3608b77ed4d7b493985903295f5ee3f4863
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
+ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530427"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808833"
 ---
 # <a name="hologram-stability"></a>ホログラムの安定性
 
@@ -91,14 +91,14 @@ HoloLens には、reprojection と呼ばれる高度なハードウェア支援�
 アプリケーションは、さまざまな種類の再プロジェクションを可能にするために、特定のアクションを実行する必要があります。
 * **深さの再投影:** アプリケーションは、描画されたすべてのフレームの深度バッファーをシステムに送信します。  Unity では、[ **XR Plugin Management**] の下にある [ **Windows Mixed Reality の設定**] ウィンドウにある [**共有深度バッファー** ] オプションを使用して深さの再投影が行われます。  DirectX アプリは CommitDirect3D11DepthBuffer を呼び出します。  アプリケーションで SetFocusPoint を呼び出すことはできません。
 * **平面の再プロジェクション:** すべてのフレームで、アプリケーションは、安定する平面の場所をシステムに伝えます。  Unity アプリケーションは SetFocusPointForFrame を呼び出し、 **共有深度バッファー** を無効にする必要があります。  DirectX アプリは SetFocusPoint を呼び出しますが、CommitDirect3D11DepthBuffer を呼び出すことはできません。
-* **自動平面再プロジェクション:** を有効にするには、アプリケーションが深さの再投影の場合と同じように、システムに深度バッファーを送信する必要があります。  HoloLens 2 では、アプリケーションは、すべてのフレームに対して0のポイント (0) を SetFocusPoint する必要があります。  HoloLens のジェネレーション1の場合、アプリケーションは SetFocusPoint を呼び出すことはできません。
+* **自動平面再プロジェクション:** を有効にするには、アプリケーションが深さの再投影の場合と同じように、システムに深度バッファーを送信する必要があります。 Mixed Reality Toolkit (MRTK) を使用するアプリでは、自動平面再プロジェクションを使用するように [カメラ設定プロバイダー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) を構成できます。 ネイティブアプリでは、HolographicCameraRenderingParameters のを各フレームに設定する必要があり `DepthReprojectionMode` [](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) `AutoPlanar` ます。 HoloLens のジェネレーション1の場合、アプリケーションは SetFocusPoint を呼び出すことはできません。
 
 ### <a name="choosing-reprojection-technique"></a>再プロジェクション技法の選択
 
 安定化の種類 |    イマーシブ ヘッドセット |    HoloLens の生成1 | HoloLens 2
 --- | --- | --- | ---
-深さの再投影 |    推奨 |   該当なし |   推奨<br/><br/>Unity アプリケーションでは、Unity 2018.4.12 以降または Unity 2019.3 以降を使用する必要があります。 それ以外の場合は、自動平面 Reprojection を使用します。
-自動平面再プロジェクション | 該当なし |   推奨される既定値 |   深さの再プロジェクションで最適な結果が得られない場合に推奨<br/><br/>Unity アプリケーションは、Unity 2018.4.12 以降または Unity 2019.3 以降を使用することをお勧めします。  以前のバージョンの Unity は、わずかに低下した再プロジェクション結果で動作します。
+深さの再投影 |    推奨 |   N/A |   推奨<br/><br/>Unity アプリケーションでは、Unity 2018.4.12 以降または Unity 2019.3 以降を使用する必要があります。 それ以外の場合は、自動平面 Reprojection を使用します。
+自動平面再プロジェクション | N/A |   推奨される既定値 |   深さの再プロジェクションで最適な結果が得られない場合に推奨<br/><br/>Unity アプリケーションは、Unity 2018.4.12 以降または Unity 2019.3 以降を使用することをお勧めします。  以前のバージョンの Unity は、わずかに低下した再プロジェクション結果で動作します。
 平面の再プロジェクション |   推奨されません |   自動平面が最適な結果を得られない場合に推奨 | いずれの深さのオプションでも目的の結果が得られない場合は、を使用します。    
 
 ### <a name="verifying-depth-is-set-correctly"></a>深さが正しく設定されていることを確認しています
@@ -144,7 +144,7 @@ renderingParameters.SetFocusPoint(
 
 **ベストプラクティス** 安定化平面を設定するための汎用的な方法はなく、アプリに固有のものです。 主に、お客様のシナリオに最も適していることを試してみることをお勧めします。 ただし、この平面上のすべてのコンテンツが完全に安定しているため、できるだけ多くのコンテンツを安定化平面に揃えるようにしてください。
 
-次に例を示します。
+例:
 * 平面コンテンツ (アプリの読み取り、ビデオ再生アプリ) のみがある場合は、安定化平面をコンテンツを持つ平面に揃えます。
 * 世界中にロックされている小さな球体が3つある場合は、ユーザーのビューに現在存在するすべての球体の中心を "切り取り" にします。
 * シーンの深さが大きく異なる場合は、さらにオブジェクトを優先します。

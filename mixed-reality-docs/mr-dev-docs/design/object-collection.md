@@ -1,25 +1,23 @@
 ---
 title: オブジェクト コレクション
-description: オブジェクトコレクションは、定義済みの3次元図形内のオブジェクトの配列をレイアウトするのに役立つレイアウトコントロールです。
+description: オブジェクトコレクションはレイアウトコントロールであり、定義済みの3次元図形内のオブジェクトの配列をレイアウトするのに役立ちます。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、コントロール、デザイン、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens、オブジェクトコレクション、2D、3D、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 41087c4a09e72b199c1ab03f504343bf7d6b1ba8
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: a459d03246b8df4c17d523f57ece54997849c209
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703408"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847216"
 ---
 # <a name="object-collection"></a>オブジェクト コレクション
 
 ![Elements アプリの定期テーブルで使用されるオブジェクトコレクション](images/UX_Hero_ObjectCollection.jpg)<br>
 
-
-オブジェクトコレクションは、定義済みの3次元図形内のオブジェクトの配列をレイアウトするのに役立つレイアウトコントロールです。 さまざまな表面スタイル ( **平面、円柱、球** 、 **放射状**) をサポートしています。 オブジェクトの半径とサイズ、およびそれらの間の間隔を調整できます。 オブジェクトコレクションでは、Unity からのすべてのオブジェクト (2D と3D の両方) がサポートされています。 **[Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** では、オブジェクトコレクションの作成に役立つ Unity スクリプトと例を作成しました。
-
+オブジェクトコレクションはレイアウトコントロールであり、定義済みの3次元図形内のオブジェクトの配列をレイアウトするのに役立ちます。 さまざまな表面スタイル (* * 平面、円柱、球、 **放射状**) がサポートされています。 オブジェクトの半径とサイズ、およびそれらの間の間隔を調整できます。 オブジェクトコレクションでは、Unity からのすべてのオブジェクト (2D と3D の両方) がサポートされています。 **[Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** では、オブジェクトコレクションの作成に役立つ Unity スクリプトと例を作成しました。
 
 ## <a name="object-collection-examples"></a>オブジェクトコレクションの例
 
@@ -41,7 +39,7 @@ ms.locfileid: "94703408"
 
 ![オブジェクトコレクションを含む2D イメージの例](images/940px-layout-3dobjects-3.jpg)
 
-![オブジェクトコレクションを含む2D イメージの例](images/940px-layout-2dimages.jpg)<br>
+![2D イメージでオブジェクトコレクションを使用する例](images/940px-layout-2dimages.jpg)<br>
 *2D イメージでオブジェクトコレクションを使用する例*
 
 <br>
@@ -52,11 +50,9 @@ ms.locfileid: "94703408"
 
 * [MRTK-オブジェクトコレクション](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)
 
-
 <br>
 
 ---
-
 
 ## <a name="see-also"></a>関連項目
 

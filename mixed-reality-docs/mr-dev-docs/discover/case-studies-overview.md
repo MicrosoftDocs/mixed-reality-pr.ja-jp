@@ -1,30 +1,30 @@
 ---
 title: ケーススタディの概要
-description: ストーリー、学習、および経験によって、Mixed Reality チームが遭遇し、jotted に沿っています。
+description: ストーリー、学習、経験によって、Mixed Reality チームが発見され、jotted に沿っています。
 author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
 keywords: Windows Mixed Reality, HoloLens, ケーススタディ, ビジョン, シナリオ, ケーススタディ, Mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実のヘッドセット
-ms.openlocfilehash: b30cc49759867b4f11f3f88195c8d9bec87ba297
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 7d3e2f3bbbc6a89bf4f136e2657f8a9abe7b9560
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703488"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757650"
 ---
 # <a name="case-study-gallery"></a>ケース スタディ ギャラリー
 
-ストーリー、学習、および経験によって、Mixed Reality チームが遭遇し、jotted に沿っています。
+ストーリー、学習、経験によって、Mixed Reality チームが発見され、jotted に沿っています。
 
 :::row:::
     :::column:::
        [ ![ 3 HoloStudio ui and 学習](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio ui and インタラクション design 学習](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio は、HoloLens 用の最初のアプリの1つでした。 このため、3D UI と対話デザインのための新しいベストプラクティスを作成する必要がありました。 これは、多数のユーザーテスト、プロトタイプ、および試用とエラーによって行われました。<br>
+        HoloStudio は、HoloLens 用の最初のアプリの1つでした。 このため、3D UI と対話デザインのための新しいベストプラクティスを作成する必要がありました。 これは、ユーザーのテスト、プロトタイプ、および試用とエラーによって行われました。<br>
         *2016 年 7 月*
     :::column-end:::
     :::column:::
-       Hololens 用の空間レイアウト [ ![ と ux スケッチアプリである HoloSketch のビルド](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[HoloSketch、空間レイアウト、および hololens 用の ux スケッチアプリ](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
+       Hololens 用の [ ![ 空間レイアウトと ux スケッチアプリである HoloSketch の構築](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[HoloSketch、空間レイアウト、および hololens 用 ux スケッチアプリ](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
         HoloSketch は、holographic エクスペリエンスの構築に役立つ HoloLens 用のデバイス上の空間レイアウトおよび UX スケッチツールです。<br>
          *2017 年 7 月*
     :::column-end:::
@@ -47,7 +47,7 @@ ms.locfileid: "94703488"
         *2016 年 9 月*
     :::column-end:::
     :::column:::
-       安定化平面を使用して、holographic 乱気流を軽減する [ ![ holographic 乱気流を削減する](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) **[Using the stabilization plane to reduce holographic turbulence](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
+       安定化平面を使用して、holographic 乱気流を軽減する [ ![ holographic 乱気流を削減する](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) **[](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
         ホログラムを使用することは、難しい場合があります。 空間内を移動して、さまざまな角度からホログラムを表示できるという事実は、通常のコンピューター画面では得られない程度の immersion を提供します。<br>
         *2017 年 4 月*
     :::column-end:::
@@ -79,7 +79,7 @@ Microsoft HoloLens を出荷する前に、開発者コミュニティに、新�
     :::column-end:::
     :::column:::
        [ ![ Hololens 2](../develop/unity/images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md)の galaxy エクスプローラーの作成 (hololens 2 **[用 galaxy エクスプローラー](../develop/unity/galaxy-explorer-update.md)の作成) 2**<br>
-        HoloLens 2 の Galaxy エクスプローラーの更新方法について説明します。 Galaxy エクスプローラーは、当初、アイデアプログラムを共有することによって HoloLens 用のオープンソースアプリケーションとして開発されており、多くの人が経験した最初の mixed reality の1つです。 次に、HoloLens 2 の新機能用に更新します。<br>
+        HoloLens 2 用に Galaxy エクスプローラーを更新する方法について説明します。 Galaxy エクスプローラーは、当初、アイデアプログラムの共有によって HoloLens (1 世代) 用のオープンソースアプリケーションとして開発されており、多くの人が経験している最初の mixed reality の1つです。 次に、HoloLens 2 の新機能用に更新しています。<br>
         *2019 年 6 月*
     :::column-end:::
     :::column:::
@@ -94,7 +94,7 @@ Microsoft HoloLens の HoloTour は、世界中のアイコンの位置をイマ
 
 :::row:::
     :::column:::
-       HoloTour の HoloTour 空間サウンド設計 [ ![ のための空間サウンド設計](../out-of-scope/images/recreated-colosseum-holotour-500px.png)](../design/case-study-spatial-sound-design-for-holotour.md) **[Spatial sound design for HoloTour](../design/case-study-spatial-sound-design-for-holotour.md)**<br>
+       HoloTour の HoloTour 空間サウンド設計 [ ![ のための空間サウンド設計](../out-of-scope/images/recreated-colosseum-holotour-500px.png)](../design/case-study-spatial-sound-design-for-holotour.md) **[](../design/case-study-spatial-sound-design-for-holotour.md)**<br>
         Microsoft HoloLens 向けの真のイマーシブ3D 仮想ツアーを作成するために、パノラマビデオと holographic シーナリーは式の一部にすぎません。<br>
          *2016 年 8 月*
     :::column-end:::
@@ -104,7 +104,7 @@ Microsoft HoloLens の HoloTour は、世界中のアイコンの位置をイマ
         *2016 年 8 月*
     :::column-end:::
     :::column:::
-       [ ![ HoloTour のコンテンツのキャプチャと作成](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) **[HoloTour のコンテンツのキャプチャと作成](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)**<br>
+       [ ![ Machu pichu HoloTour のコンテンツのキャプチャと作成](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) **[HoloTour のコンテンツのキャプチャと作成](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)**<br>
         HoloTour は、世界中のアイコンの位置を、イマーシブ3D の個人的ツアーを提供します。 ご覧のように、よく知られている場所の convincingly リアル3D レンダリングを作成するには、クリエイティブで技術的な wizardry を組み合わせます。<br>
         *2016 年 8 月*
     :::column-end:::
@@ -118,12 +118,12 @@ Microsoft HoloLens の HoloTour は、世界中のアイコンの位置をイマ
 
 :::row:::
     :::column:::
-       RoboRaid の空間サウンドを使用した [ ![ RoboRaid での空間サウンドの使用](../design/images/successful-dodge-roboraid-500px.jpg)](../design/case-study-using-spatial-sound-in-roboraid.md) **[Using spatial sound in RoboRaid](../design/case-study-using-spatial-sound-in-roboraid.md)**<br>
+       RoboRaid の空間サウンドを使用した [ ![ RoboRaid での空間サウンドの使用](../design/images/successful-dodge-roboraid-500px.jpg)](../design/case-study-using-spatial-sound-in-roboraid.md) **[](../design/case-study-using-spatial-sound-in-roboraid.md)**<br>
         空間サウンドは、Microsoft HoloLens の最も魅力的な機能の1つであり、オブジェクトが見えなくなったときに、ユーザーが何をしているのかを認識する手段を提供します。<br>
          *2016 年 2 月*
     :::column-end:::
     :::column:::
-       現実のホールを見 [ ![ ながら](../develop/unity/images/roboraid-640px.png)](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)、現実の穴を探す **[Looking through holes in your reality](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)**<br>
+       現実のホールを見 [ ![ ながら](../develop/unity/images/roboraid-640px.png)](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)、現実の穴を探す **[](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)**<br>
         このケーススタディでは、HoloLens に "マジックウィンドウ" 効果を実装する方法について説明します。これにより、ユーザーは、壁の背後、床の下、および実際の環境内の仮想化について確認できます。<br>
         *2016 年 2 月*
     :::column-end:::
@@ -139,8 +139,8 @@ Microsoft HoloLens の HoloTour は、世界中のアイコンの位置をイマ
 
 :::row:::
     :::column:::
-       混合現実で人間を表す [ ![ 混合現実の人間を表す](../develop/unity/images/bang-ai-weiwie.jpg)](../out-of-scope/case-study-representing-humans-in-mixed-reality.md) **[Representing humans in mixed reality](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)**<br>
-        すばらしい要素を作成できるだけでなく、混合現実の環境、オブジェクト、および人間の最も現実的なキャプチャを利用する場合、どのような種類の営業案件が浮上しますか。<br>
+       混合現実で人間を表す [ ![ 混合現実の人間を表す](../develop/unity/images/bang-ai-weiwie.jpg)](../out-of-scope/case-study-representing-humans-in-mixed-reality.md) **[](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)**<br>
+        すばらしい要素を作成できるだけでなく、混合現実の環境、オブジェクト、および人間の最も現実的なキャプチャを使用する場合、どのような種類の営業案件が浮上しますか。<br>
          *2017 年 11 月*
     :::column-end:::
     :::column:::
@@ -158,7 +158,7 @@ Microsoft HoloLens の HoloTour は、世界中のアイコンの位置をイマ
 :::row:::
     :::column:::
        [ ![ Afternow のプロセス構想、プロトタイプ作成、](../out-of-scope/images/whatisenvisioning-640px.png)](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md) **[プロセス構想、プロトタイプ](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)作成、ビルド**<br>
-        ここでは、お客様と協力して、お客様のアイデアと aspirations を、市場に向けた完全に運用可能な具体的な製品とエクスペリエンスに変えることができます。 しかし、1行のコードを記述する前に、構想と呼ばれるプロセスを使用してブループリントを作成します。<br>
+        ここでは、お客様と協力して、お客様のアイデアと aspirations を、完全に運用可能な具象製品や、市場に対応したエクスペリエンスに変えることができます。 しかし、1行のコードを記述する前に、構想と呼ばれるプロセスを使用してブループリントを作成します。<br>
         *2017 年 4 月*
     :::column-end:::
     :::column:::

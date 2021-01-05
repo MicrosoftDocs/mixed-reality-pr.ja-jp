@@ -1,11 +1,19 @@
 ---
-ms.openlocfilehash: 23bba22801f61f6b4814991c8b3bde68d2c5f6b7
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 18ccbf3e28eaa2f61157bd9585d633c987e9af48
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002743"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717484"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+手の形のデータを取得するには、前のセクションの「Get Motion Controller Data 関数」を使用する必要があります。 返される構造体には、ハンドレイを作成するために使用できる2つのパラメーター ( **目標位置** と **目標の回転**) が含まれています。 これらのパラメーターは、エルボウによって送られる射線を形成します。 これらを取得して、指されているホログラムを見つける必要があります。
+
+次に示すのは、ハンドレイがウィジェットをヒットし、カスタムヒット結果を設定するかどうかを判断する例です。
+
+![Get motion controller データ関数のブループリント](../images/unreal-hand-tracking-img-04.png) 
+
 # <a name="425"></a>[4.25](#tab/425)
 
 ブループリントを使用するには、 **Windows Mixed Reality HMD** で任意のアクションを検索します。
@@ -80,7 +88,7 @@ struct FPointerPoseInfo
 };
 ```
 
-### <a name="functions"></a>機能
+### <a name="functions"></a>関数
 
 次に示すすべての関数は、継続的な監視を可能にするすべてのフレームに対して呼び出すことができます。
 
@@ -138,10 +146,3 @@ C++:
 ```cpp
 static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrackingStatus(EControllerHand hand);
 ```
-# <a name="426"></a>[4.26](#tab/426)
-
-手の形のデータを取得するには、前のセクションの「Get Motion Controller Data 関数」を使用する必要があります。 返される構造体には、ハンドレイを作成するために使用できる2つのパラメーター ( **目標位置** と **目標の回転**) が含まれています。 これらのパラメーターは、エルボウによって送られる射線を形成します。 これらを取得して、指されているホログラムを見つける必要があります。
-
-次に示すのは、ハンドレイがウィジェットをヒットし、カスタムヒット結果を設定するかどうかを判断する例です。
-
-![Get motion controller データ関数のブループリント](../images/unreal-hand-tracking-img-04.png) 

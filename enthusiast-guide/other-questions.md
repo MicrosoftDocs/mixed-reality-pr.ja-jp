@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、Windows Mixed Reality のアンインストール、サポートされる言語
 appliesto:
 - Windows 10
-ms.openlocfilehash: a49008cb7d6a51385cb0d4ece7dfae3018aefe88
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: cf23d52fc72fa3b499b32d3770151306111afaa4
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131866"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726013"
 ---
 # <a name="other-questions"></a>その他の質問
 
@@ -40,8 +40,8 @@ Samsung は、"Samsung HMD Odyssey セットアップ" と "Samsung HMD Odyssey 
 
 * 他のすべての USB デバイスを一時的に取り外し、ファームウェアの更新を再試行してください。
 * Samsung ヘッドセットを PC の別の USB 3.0 ポートに接続します。
-* ギガバイトの AORUS App Center など、ファームウェアの更新を妨げる可能性のあるソフトウェアがインストールされている場合は、無効にするか、アンインストールします。
-* 別の PC を使用して Samsung ヘッドセットファームウェアの更新を実行します。
+* ギガバイトの AORUS App Center など、ファームウェアの更新に干渉する可能性のあるソフトウェアがインストールされている場合は、無効にするか、アンインストールします。
+* 別の PC を使用して Samsung ヘッドセットファームウェアを更新します。
 
 ## <a name="how-do-i-access-my-pc-desktop-in-mixed-reality"></a>Mixed reality で PC デスクトップにアクセス操作方法には、
 Windows のヘッドセットでデスクトップアプリを起動し、[ **すべてのアプリ] > [デスクトップ] >** て、mixed REALITY で PC デスクトップにアクセスします。
@@ -50,23 +50,23 @@ Windows のヘッドセットでデスクトップアプリを起動し、[ **�
 
 既定では、デスクトップアプリが自動的に切り替えられ、フォーカスがあるモニターが表示されます。 すべてのモニターを mixed reality で表示するには、次のようにします。
 
-* アプリの左上隅にある [モニター] アイコンをクリックします。
+* アプリの左上隅にある [モニター] アイコンを選択します。
 * [モニターを自動的に切り替える] を無効にします。
 * 表示するモニターを選択します。
 * デスクトップアプリの別のインスタンスを起動します。
 * そのインスタンスに表示するモニターを選択します。
 * すべての物理モニターについて、この手順を繰り返します。
-混合現実を再起動するたびに、各デスクトップアプリに表示するモニターを再選択する必要があることに注意してください。
+混合現実を再起動するたびに、各デスクトップアプリに表示するモニターを再選択する必要があります。
 
 ## <a name="my-desktop-app-only-shows-a-black-screen"></a>デスクトップアプリが黒い画面のみを表示する
 
-PC に Nvidia ハイブリッド GPU が搭載されている場合、この問題は、Nvidia デバイスが、統合された GPU ではなく、個別の GPU で runtimebroker.exe を実行していることが原因である可能性があります。 この問題を解決するには、「[新しいプログラムに対して最適な設定を作成操作方法](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)には」の手順に従います。 C:\windows\system32\runtimebroker.exe を追加し、それを "統合グラフィックス" プロセッサ上で強制的に実行します。 
+PC に Nvidia ハイブリッド GPU が搭載されている場合、統合された GPU ではなく、個別の GPU で runtimebroker.exe を実行する Nvidia デバイスが原因である可能性があります。 この問題を解決するには、「[新しいプログラムに対して最適な設定を作成操作方法](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)には」の手順に従います。 C:\windows\system32\runtimebroker.exe を追加し、それを "統合グラフィックス" プロセッサ上で強制的に実行します。 
 
 ## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Windows Mixed Reality を使用すると Wi-Fi 速度が低下します。
 
-2.4 GHz の Wi-Fi 接続を使用している場合は、動作コントローラーによって Wi-fi の速度が低下する可能性があります。 次のいずれかの操作を試してください。
+2.4 GHz の Wi-Fi 接続を使用している場合、動作コントローラーは Wi-fi を遅くする可能性があります。
 
-* 5GHz Wi-Fi 接続を使用できる場合は、その接続に切り替えます。 [詳細については、こちらを参照してください](https://support.microsoft.com/help/4000461)。
+* 5 GHz の Wi-Fi 接続 (使用可能な場合) に切り替えます。 [詳細については、こちらを参照してください](https://support.microsoft.com/help/4000461)。
 * 別の Bluetooth アダプターを使用して、動きコントローラーを PC に接続します。 [推奨されるアダプター](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)を参照してください。
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>「PC に接続して充電する」というメッセージが表示されていました。 なぜでしょうか。
@@ -75,10 +75,10 @@ PC に Nvidia ハイブリッド GPU が搭載されている場合、この問�
 
 ## <a name="what-is-the-experience-options-setting"></a>エクスペリエンスオプションの設定は何ですか?
 
-この設定 ( **mixed reality > ヘッドセット > 表示 > エクスペリエンスオプション** ) を使用すると、Windows Mixed reality パフォーマンス設定を変更できます。 これにより、さまざまなコンテンツにわたるハードウェア構成に最適なエクスペリエンスを選択できます。 次のオプションがあります。
+**設定 > mixed reality > ヘッドセットの表示 > エクスペリエンスのオプション** では、Windows Mixed reality のパフォーマンス設定を変更できます。 これにより、さまざまなコンテンツにわたるハードウェア構成に最適なエクスペリエンスを選択できます。 次の3つのエクスペリエンスオプションから選択できます。
 * 自動: Windows Mixed Reality は、ハードウェア構成に最適なエクスペリエンスを決定します。 ほとんどの場合、この方法を使用することをお勧めします。
-* 60Hz: [リフレッシュレート] を60Hz に設定し、Mixed Reality ポータルでのビデオキャプチャやプレビューなどの特定の機能をオフにします。
-* 90Hz: リフレッシュレートを90Hz に設定します。
+* 60 Hz: 更新間隔を 60 Hz に設定し、Mixed Reality ポータルでのビデオキャプチャやプレビューなどの特定の機能をオフにします。
+* 90 hz: リフレッシュレートを 90 Hz に設定します。
 
 ## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Windows Mixed Reality でサポートされる言語
 
@@ -97,7 +97,7 @@ Windows Mixed Reality は、次の言語で使用できます。
 * スペイン語 (メキシコ)
 * スペイン語 (スペイン)
 
-PC が別の言語に設定されている場合は、Windows Mixed Reality を使用できます。ただし、インターフェイスは英語 (米国) で表示され、音声コマンドやディクテーションは使用できません。 Windows Mixed Reality のスクリーンキーボードは英語 (米国) のみです。 別の言語でテキストを入力するには、PC に接続されている物理キーボードを使用します。 また、上記のサポートされている Windows Mixed Reality 言語のいずれかでディクテーションを使用することもできます。スクリーンキーボードで [マイク] を選択するだけです。
+PC が別の言語に設定されている場合は、Windows Mixed Reality を使用できます。 ただし、インターフェイスは英語 (米国) で表示され、音声コマンドやディクテーションは使用できません。 Windows Mixed Reality のスクリーンキーボードは英語 (米国) のみです。 別の言語でテキストを入力するには、PC に接続されている物理キーボードを使用します。 また、上記のサポートされている Windows Mixed Reality 言語のいずれかでディクテーションを使用することもできます。スクリーンキーボードで [マイク] を選択するだけです。
 
 Windows Mixed Reality は、次の言語でも使用できます。音声コマンドやディクテーション機能は必要ありません。
 * 繁体字中国語 (台湾および香港)
@@ -119,7 +119,7 @@ Windows Mixed Reality は、次の言語でも使用できます。音声コマ�
 
 ## <a name="i-got-a-we-couldnt-finish-uninstalling-windows-mixed-reality-message"></a>「Windows Mixed Reality のアンインストールを完了できませんでした」というメッセージが表示できました。
 
-お使いの環境に関する情報など、一部のファイルは依然としてコンピューターに存在している可能性があります。 Windows Mixed Reality を後で再インストールする場合は、問題が発生する可能性があります。 レジストリを変更し、Windows PowerShell を使用してコマンドを実行することで、残りの Windows Mixed Reality 情報を PC から手動で削除できます。 _レジストリを正しく変更しないと、重大な問題が発生する可能性があります。必ずこれらの手順に従ってください。保護を強化するために、レジストリを変更する前にバックアップし、問題が使うした場合に復元できるようにします。_ 詳細については、「 [Windows でレジストリをバックアップして再構築する方法](https://support.microsoft.com/en-us/help/322756/how-to-back-up-and-restore-the-registry-in-windows)」を参照してください。 
+お使いの環境に関する情報など、一部のファイルは依然としてコンピューターに存在している可能性があります。 Windows Mixed Reality を後で再インストールする場合は、問題が発生する可能性があります。 レジストリを変更し、Windows PowerShell を使用してコマンドを実行することで、残りの Windows Mixed Reality 情報を PC から手動で削除できます。 _レジストリを正しく変更しないと、重大な問題が発生する可能性があります。必ずこれらの手順に従ってください。保護を強化するために、レジストリを変更する前にバックアップし、問題が発生した場合に復元できるようにします。_ 詳細については、「 [Windows でレジストリをバックアップして再構築する方法](https://support.microsoft.com/en-us/help/322756/how-to-back-up-and-restore-the-registry-in-windows)」を参照してください。 
 
 Windows mixed reality をアンインストールするには、次のコマンドを使用します。
 1. PC を再起動します。
@@ -142,7 +142,7 @@ Windows mixed reality をアンインストールするには、次のコマン�
 8. [検索] ボックスに「powershell」と入力し、[Windows PowerShell] を右クリックして、[管理者として実行] を選択します。
 9. Windows PowerShell の場合: <ul>
    <li>コマンドプロンプトで、 <b>Dism/Online/Get-Capabilities</b>をコピーして貼り付け、enter キーを押します。</b></li> 
-   <li>Holographic で始まる機能 Id をコピーします (存在しない場合は、この項目がインストールされていないことを意味します)。 その場合は、手順10に進みます)。</li> 
+   <li>Holographic で始まる機能 Id をコピーします。 存在しない場合は、項目がインストールされていないので、手順10に進みます。</li> 
    <li>次のコマンドプロンプトをコピーして貼り付け、enter キーを押します。 <b>Dism/Online/Remove-Capability/CapabilityName: 最後の手順でコピーされた機能 id</b></li>
    </ul>
 10. PC を再起動します。

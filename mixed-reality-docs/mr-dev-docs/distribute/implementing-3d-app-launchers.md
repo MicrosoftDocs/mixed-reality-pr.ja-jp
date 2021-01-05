@@ -6,19 +6,19 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D、ロゴ、アイコン、モデリング、ランチャー、3D ランチャー、タイル、live cube、ディープリンク、secondarytile、セカンダリタイル、UWP、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、XML、境界ボックス、unity
-ms.openlocfilehash: 926d0b3bb337517b65986f85f6977b3dd1975735
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 38f0932f20e3660c91b87de7bcb9d66799d9a51a
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703198"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757499"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>3D アプリ起動ツールの実装 (UWP アプリ)
 
 > [!NOTE]
 > この機能は、イマーシブヘッドセット用の2017フォール作成者更新プログラム (RS3) の一部として追加されました。 HoloLens では、Windows 10 April 2018 更新プログラムがサポートされています。 アプリケーションが10.0.16299 のバージョンをターゲットにしていることを確認してください。これは Windows SDK、HoloLens でのイマーシブヘッドセットと10.0.17125 の以上である必要があります。 最新の Windows SDK については、 [こちら](https://developer.microsoft.com/windows/downloads/windows-10-sdk)を参照してください。
 
-[Windows Mixed Reality ホーム](../discover/navigating-the-windows-mixed-reality-home.md)は、アプリケーションを起動する前にユーザーが移動する開始点です。 Windows Mixed Reality の UWP アプリケーションを作成する場合、既定では、アプリはアプリのロゴを使用して2D スレートとして起動されます。 Windows Mixed Reality のエクスペリエンスを開発するときに、必要に応じて3D ランチャーを定義して、アプリケーションの既定の2D ランチャーをオーバーライドできます。 一般に、Windows Mixed Reality ホームからユーザーを取得するイマーシブアプリケーションを起動するには、3D ランチャーを使用することをお勧めします。一方、アプリが適切にアクティブ化されている場合は、既定の2D ランチャーが優先されます。 [3d ディープリンク (secondaryTile)](#3d-deep-links-secondarytiles)は、2d UWP アプリ内のコンテンツへの3d ランチャーとして作成することもできます。
+[Windows Mixed Reality ホーム](../discover/navigating-the-windows-mixed-reality-home.md)は、アプリケーションを起動する前にユーザーが移動する開始点です。 Windows Mixed Reality の UWP アプリケーションを作成する場合、既定では、アプリはアプリのロゴを使用して2D スレートとして起動されます。 Windows Mixed Reality のエクスペリエンスを開発するときに、必要に応じて3D ランチャーを定義して、アプリケーションの既定の2D ランチャーをオーバーライドできます。 一般に、Windows Mixed Reality ホームからユーザーを取得するイマーシブアプリケーションを起動するには、3D ランチャーを使用することをお勧めします。 アプリが適切にアクティブ化されている場合は、既定の2D ランチャーが優先されます。 [3d ディープリンク (secondaryTile)](#3d-deep-links-secondarytiles)は、2d UWP アプリ内のコンテンツへの3d ランチャーとして作成することもできます。
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
@@ -80,9 +80,9 @@ MixedRealityModel 要素は、アプリケーションパッケージに格納�
 
 ### <a name="bounding-box"></a>境界ボックス
 
-境界ボックスを使用すると、必要に応じて、オブジェクトの周囲に追加のバッファー領域を追加できます。 境界ボックスは、中心点と範囲を使用して指定します。これは、境界ボックスの中心から各軸に沿った端までの距離を示します。 境界ボックスの単位は、1ユニット = 1 メーターにマップできます。 境界ボックスが指定されていない場合は、オブジェクトのメッシュに自動的に収まるようになります。 指定された境界ボックスがモデルより小さい場合、メッシュに合わせてサイズが変更されます。
+境界ボックスを使用すると、必要に応じて、オブジェクトの周囲に余分なバッファー領域を追加できます。 境界ボックスは、中心点とエクステントを使用して指定されます。これは、境界ボックスの中心から各軸に沿った端までの距離を示します。 境界ボックスの単位は、1ユニット = 1 メーターにマップできます。 境界ボックスが指定されていない場合は、オブジェクトのメッシュに自動的に収まるようになります。 指定された境界ボックスがモデルより小さい場合は、メッシュに合わせてサイズが変更されます。
 
-境界ボックス属性のサポートには、MixedRealityModel 要素のプロパティとして Windows RS4 update が使用されます。 最初にアプリケーションマニフェストの最上部にある境界ボックスを定義するには、uap6 スキーマを追加し、それを無視できる名前空間として含めます。
+境界ボックス属性のサポートには、MixedRealityModel 要素のプロパティとして Windows RS4 update が使用されます。 最初にアプリケーションマニフェストの最上部にある境界ボックスを定義するには、uap6 スキーマを追加し、それを無視する名前空間として含めます。
 
 ```xml
 <Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
@@ -157,7 +157,7 @@ await tile.RequestCreateAsync();
 
 ### <a name="bounding-box"></a>境界ボックス
 
-境界ボックスを使用すると、オブジェクトの周囲に追加のバッファー領域を追加できます。 境界ボックスは、中心点と範囲を使用して指定します。これは、境界ボックスの中心から各軸に沿った端までの距離を示します。 境界ボックスの単位は、1ユニット = 1 メーターにマップできます。 境界ボックスが指定されていない場合は、オブジェクトのメッシュに自動的に収まるようになります。 指定された境界ボックスがモデルより小さい場合、メッシュに合わせてサイズが変更されます。
+境界ボックスを使用すると、オブジェクトの周囲に追加のバッファー領域を追加できます。 境界ボックスは、中心点とエクステントを使用して指定されます。これは、境界ボックスの中心から各軸に沿った端までの距離を示します。 境界ボックスの単位は、1ユニット = 1 メーターにマップできます。 境界ボックスが指定されていない場合は、オブジェクトのメッシュに自動的に収まるようになります。 指定された境界ボックスがモデルより小さい場合は、メッシュに合わせてサイズが変更されます。
 
 ### <a name="activation-behavior"></a>アクティベーションの動作
 
@@ -191,16 +191,17 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 ### <a name="checking-that-the-user-is-in-windows-mixed-reality"></a>ユーザーが Windows Mixed Reality であることを確認しています
 
-3D ディープリンク (secondaryTiles) は、ビューが Windows Mixed Reality ヘッドセットに表示されている場合にのみ作成できます。 Windows Mixed Reality ヘッドセットにビューが表示されない場合は、エントリポイントを非表示にするか、エラーメッセージを表示することで、これを適切に処理することをお勧めします。 これを確認するには、 [IsCurrentViewPresentedOnHolographic ()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)に対してクエリを実行します。
+3D ディープリンク (secondaryTiles) は、ビューが Windows Mixed Reality ヘッドセットに表示されている場合にのみ作成できます。 Windows Mixed Reality ヘッドセットにビューが表示されていない場合は、エントリポイントを非表示にするか、エラーメッセージを表示することで、これを適切に処理することをお勧めします。 これを確認するには、 [IsCurrentViewPresentedOnHolographic ()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)に対してクエリを実行します。
 
 ## <a name="tile-notifications"></a>タイル通知
 
-タイルの通知では、3D アセットを使用した更新の送信は現在サポートされていません。 これは、開発者が次のことを行うことができないことを意味します。
+タイルの通知は、現在、3D アセットを使用した更新プログラムの送信をサポートしていません。 これは、開発者が次のことを行うことができないことを意味します。
+
 * プッシュ通知
 * 定期的なポーリング
 * スケジュールされた通知
 
-その他のタイルの特徴と属性、およびそれらを2D タイルに使用する方法の詳細については、 [UWP アプリのドキュメントのタイル](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles)を参照してください。
+その他のタイルの特徴と属性、およびそれらが2D タイルでどのように使用されるかの詳細については、 [UWP アプリのドキュメントのタイル](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

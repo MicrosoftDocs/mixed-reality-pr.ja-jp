@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens、Windows デバイスポータル、API、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
-ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: c705ce65971042ab41befed9c6813dc797b61fc0
+ms.sourcegitcommit: 084b1da9d7b435394b38d6152a2f9aee7a74aa2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677971"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97804433"
 ---
 # <a name="device-portal-api-reference"></a>Device Portal API リファレンス
 
@@ -388,6 +388,9 @@ Mixed reality の記録を開始します
 現在の mixed reality 記録を停止します
 
 ## <a name="mixed-reality-streaming"></a>Mixed Reality ストリーミング
+
+> [!CAUTION]
+> ループバックが分離されているため、デバイス上のアプリ内から Mixed Reality ストリーミングに接続することはできません。
 
 HoloLens は、フラグメント化された mp4 のチャンクダウンロードを使用して、混合現実のライブプレビューをサポートします。
 

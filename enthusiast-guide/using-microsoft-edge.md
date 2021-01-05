@@ -6,27 +6,27 @@ ms.author: mazeller
 ms.date: 11/11/2020
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、Home、Navigate、Get、アプリ、ゲーム、Microsoft Edge、chromium、Edge、360、360 video、360ビューアー
-ms.openlocfilehash: 0498a48136718c19848fa79638ea771051345528
-ms.sourcegitcommit: 434ed0621af05307bb67b15cabf164561ec96ead
+ms.openlocfilehash: d3ed8f95285eefacf43177915d512bfb41730243
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94520769"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725783"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality と新しい Microsoft Edge
 
 [新しい Microsoft Edge](https://www.microsoft.com/edge)はダウンロードできるようになり、Windows Update によって顧客に自動的にロールアウトされました。 
 
-新しい Microsoft Edge は、 [Chromium のオープンソースプロジェクト](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) をデスクトップ上に採用しているため、より優れた web 互換性をユーザーに提供し、すべての web 開発者が web の断片化を減らすことができます。 また、WebVR の代わりに、VR ヘッドセット用のイマーシブ web エクスペリエンスを作成するための新しい標準である WebXR at launch もサポートします。
+新しい Microsoft Edge は、デスクトップ上で [Chromium オープンソースプロジェクトを採用](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) しています。 これにより、ユーザーの互換性が向上し、web 開発者の断片化が減少します。 また、起動時の WebXR もサポートします。これは、Webhook ヘッドセット用のイマーシブ web エクスペリエンスを作成するための新しい標準であり、WebVR の代わりに使用されます。
 
 >[!IMPORTANT]
 >Microsoft Edge を最新の Windows 10 デバイスにインストールすると、PC 上の以前の (レガシ) バージョンが置き換えられます。
 
 ## <a name="installing-the-new-microsoft-edge"></a>新しい Microsoft Edge のインストール 
 
-新しい Microsoft Edge をインストールする前に、windows Mixed Reality の **Win32 アプリケーション (新しい Microsoft edge など) のネイティブサポートについては、windows 10 バージョン1903以降にアップグレード** してください。 Windows Update を確認 [するか、Windows 10 の最新バージョンを手動でインストールして](https://www.microsoft.com/software-download/windows10)ください。
+新しい Microsoft Edge をインストールする前に、windows Mixed Reality の **新しい Microsoft edge のようなネイティブの Win32 アプリケーションサポートのために、windows 10 バージョン1903以降にアップグレードして** ください。 Windows Update を確認 [するか、Windows 10 の最新バージョンを手動でインストールして](https://www.microsoft.com/software-download/windows10)ください。
 
-Windows 10 バージョン1903以降がインストールされたら、新しい Microsoft Edge の準備ができました。 新しい Microsoft Edge は Windows Update 経由でロールアウトされますが、必要に応じて [microsoft edge web サイト](https://www.microsoft.com/edge) から新しい microsoft edge を手動でインストールすることもできます。
+Windows 10 バージョン1903以降を使用すると、新しい Microsoft Edge を準備できます。 新しい Microsoft Edge は Windows Update 経由でロールアウトされますが、必要に応じて [microsoft edge web サイト](https://www.microsoft.com/edge) から新しい microsoft edge を手動でインストールすることもできます。
 
 >[!IMPORTANT]
 >新しい Microsoft Edge は、VR ヘッドセット用のイマーシブ web エクスペリエンスを作成するための新しい標準である WebXR のサポートで起動します。 新しい Microsoft Edge をインストールすると、Microsoft Edge で WebVR エクスペリエンスを再生できなくなります。 
@@ -37,22 +37,23 @@ Windows 10 バージョン1903以降がインストールされたら、新し�
 
 - 新しい Microsoft Edge を含む任意の Win32 アプリを起動すると、ヘッドセットの表示が短時間フリーズします。
 - Microsoft Edge タイルは、Windows Mixed Reality の [スタート] メニューから消えます ("クラシックアプリ" フォルダーで見つけることができます)。
-- 以前の Microsoft Edge からの Windows は、mixed reality ホームの周囲に配置されていますが、使用することはできません。 これらのウィンドウをアクティブ化しようとすると、デスクトップアプリ内で Edge が起動します。
+- 以前の Microsoft Edge からの Windows は、mixed reality ホームの周囲に配置されていますが、使用することはできません。 これらのウィンドウをアクティブ化しようとすると、デスクトップアプリで Edge が起動します。
 - Mixed reality ホームでハイパーリンクを選択すると、mixed reality ホームではなく、デスクトップで web ブラウザーが起動します。
 - Webvr ショーケースアプリは、WebVR がサポートされなくなっても、mixed reality ホームに存在します。
 - キーボード起動とビジュアルの全般的な機能強化。
 
 ### <a name="monitor-and-input-handling-issues"></a>モニターと入力処理の問題
 
-Windows 10 バージョン 1903 (またはそれ以降) の2020-01 の累積的な更新プログラムを実行した後、仮想モニターは、Windows Mixed Reality セッション中に **表示 > システム >** の [設定] に、汎用的な物理モニターとして表示されます。 一部のお客様 (特に複数の物理モニタを持つもの) は、デスクトップレイアウトと入力処理に関する問題を結果として通知することがあります。
+Windows 10 バージョン1903以降で2020-01 の累積的な更新プログラムを実行すると、Windows Mixed Reality セッション中に [ **設定 > システム > 表示** ] の [全般] 物理モニターとして仮想モニターが表示されます。 一部のお客様 (特に複数の物理モニタを持つもの) は、デスクトップレイアウトと入力処理に関する問題を結果として通知することがあります。
 
 **理由**
 
-Windows [10 月2019更新プログラム](https://docs.microsoft.com/windows/mixed-reality/release-notes-may-2019)では、Windows Mixed Reality の従来の Win32 アプリケーションのサポートが導入されました。 このサポートを有効にするには、Win32 アプリケーションをホストするために仮想モニターを作成する必要があります。 新しい Win32 アプリケーションを起動するたびに、別の仮想モニターを作成する必要があります。 残念ながら、仮想モニターの作成は集中的なタスクであり、ヘッドセットの表示が短時間フリーズすることがあります。 お客様は、これが不快で破壊的なエクスペリエンスであるというフィードバックを提供しました。 このフィードバックにより、Win32 アプリケーションの使用量が増えると同時に、Windows Mixed Reality の起動時に3つの仮想モニターを事前に割り当てて、この中断を防止し、ユーザーがヘッドセットの表示を停止せずに最大で3つの Win32 アプリケーションを起動できるようにしました。
+Windows [10 月2019更新プログラム](https://docs.microsoft.com/windows/mixed-reality/release-notes-may-2019)では、Windows Mixed Reality の従来の Win32 アプリケーションのサポートが導入されました。 このサポートを有効にするには、Win32 アプリケーションをホストするために仮想モニターを作成する必要があります。 新しい Win32 アプリケーションを起動するたびに、別の仮想モニターを作成する必要があります。 残念ながら、仮想モニターの作成は集中的なタスクであり、ヘッドセットの表示が短時間フリーズすることがあります。 お客様は、エクスペリエンスが不快で破壊的であるというフィードバックを提供しました。 このフィードバックにより、Win32 アプリケーションの使用率が高くなると同時に、Windows Mixed Reality の起動時に3つの仮想モニターを事前に割り当てて、この中断を回避し、ヘッドセットの表示がフリーズしなくても最大で3つの同時 Win32 アプリケーションを起動できるようにしました。
 
 **回避策**
 
-私たちは、一部のお客様 (特に複数の物理モニタを持つもの) がこの仮想モニタの事前割り当てを無効にするというフィードバックを受け取りました。 お客様に制御と選択肢を提供するために、次の Windows 更新プログラムで使用できるレジストリキー値の変更を伴う回避策を有効にしました。
+私たちは、一部のお客様 (特に複数の物理モニタを持つもの) がこの仮想モニタの事前割り当てを無効にするというフィードバックを受け取りました。 より詳細な制御を提供するために、次の Windows 更新プログラムで使用できるレジストリキー値の変更を伴う回避策を有効にしました。
+
 - 2020-07 Windows 10 バージョン2004の累積的な更新プログラムのプレビュー (KB4568831)
 - 2020-10 Windows 10 バージョン1909の累積的な更新プログラムのプレビュー (KB4580386)
 - 2020-10 Windows 10 バージョン1903の累積的な更新プログラムのプレビュー (KB4580386)
@@ -64,19 +65,19 @@ Windows [10 月2019更新プログラム](https://docs.microsoft.com/windows/mix
 >仮想モニタの事前割り当てを無効にすると、Windows Mixed Reality で Win32 アプリケーション (ストリーム、新しい Microsoft Edge、または Google Chrome など) を起動したときにヘッドセットが短時間で表示されることがあります。
 
 仮想モニタの事前割り当てを無効にするには:
-1. 上記の Windows 10 の累積的な更新プログラムのプレビューバージョンのいずれかを **Windows Update** 確認し、使用可能な場合は更新プログラムをインストールします ([Windows Update の設定] ページの [ **オプションの更新プログラム** または **詳細オプション** ] に更新プログラムが表示される場合があります)。
+1. 上記のいずれかの Windows 10 累積的な更新プログラムのプレビューバージョンの **Windows Update** を確認し、利用可能な場合は更新プログラムをインストールします。 更新プログラムは、[Windows Update の設定] ページの [ **オプションの更新プログラム** ] または [ **詳細** 設定] で確認できます。
 2. **レジストリエディター** の起動
 3. [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic] に移動します。 \"
-4. "PreallocateVirtualMonitors" REG_DWORD が存在しない場合は、[ **Edit > New > DWORD (32 ビット) 値** ] を選択し、名前として preallocatevirtualmonitors を入力して作成します。
+4. "PreallocateVirtualMonitors" REG_DWORD が存在しない場合は、[ **Edit > New > DWORD (32 ビット)] 値** を選択し、名前として preallocatevirtualmonitors を入力して作成します。
 5. "PreallocateVirtualMonitors" REG_DWORD が存在する (または作成した) 場合は、エントリをダブルクリックし、[値のデータ] を 1 (既定値) から 0 (ゼロ) に変更します。
     * TRUE-1
     * FALSE-0
 
 事前割り当てではなく、Windows Mixed Reality で Win32 アプリケーションを起動しようとすると、仮想モニターが割り当てられるようになりました。 これをリセットし、仮想モニタの事前割り当てを再び有効にするには、DWORD の "値のデータ" を1に戻します。
 
-### <a name="additional-known-issues"></a>その他の既知の問題
+### <a name="other-known-issues"></a>その他の既知の問題
 
 -   Windows Mixed reality で開かれている web サイトは、Mixed reality ポータルが閉じたときに失われます。ただし、Microsoft Edge ウィンドウは、mixed reality ホームに配置された場所に残ります。
-- 360 Viewer 拡張機能などの WebXR エクスペリエンスは、ハイブリッド GPU セットアップを使用している Pc では正常に起動しない可能性があります。 新しい Microsoft Edge でプレビュー機能を有効にすることで、この問題を回避できる場合があります。 に移動し `edge://flags` 、"マルチ gpu" を検索して、 **WEBXR マルチ gpu サポート** と呼ばれるフラグを有効にします。
+- 360 Viewer 拡張機能などの WebXR エクスペリエンスは、ハイブリッド GPU セットアップを使用している Pc では正常に起動しない可能性があります。 この問題を回避するには、新しい Microsoft Edge でプレビュー機能を有効にします。 に移動し `edge://flags` 、"マルチ gpu" を検索して、 **WEBXR マルチ gpu サポート** と呼ばれるフラグを有効にします。
 -   Microsoft Edge ウィンドウからのオーディオは spatialized ません。
--   **360 Viewer 拡張機能のバージョン 2.3.8** : Windows Mixed Reality で YouTube から360ビデオを開くと、ヘッドセットでビデオがゆがんでしまう可能性があります。 Edge を再起動して、この問題を解決するには、360 Viewer 拡張機能を非表示にする必要があります。 `edge://system/`アドレスバーに「」と入力し、[拡張機能] の横にある **展開** ボタンを選択すると、拡張機能のバージョンを確認できます。
+-   **360 Viewer 拡張機能のバージョン 2.3.8**: Windows Mixed Reality で YouTube から360ビデオを開くと、ヘッドセットでビデオがゆがんでしまう可能性があります。 Edge を再起動して、この問題を解決するには、360 Viewer 拡張機能を非表示にする必要があります。 `edge://system/`アドレスバーに「」と入力し、[拡張機能] の横にある **展開** ボタンを選択すると、拡張機能のバージョンを確認できます。

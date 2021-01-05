@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D、モデル、ホーム、場所、世界、モデリング、mixed reality ホーム、web、アプリ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
-ms.openlocfilehash: 192c403ce50c3a47fb19f644af78d1150bb9aa3f
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ad35e1d010e32c4729b0d0dd58943dabdee86e09
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703188"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757810"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Mixed Reality ホームで 3D モデルの配置を有効にする
 
@@ -20,7 +20,7 @@ ms.locfileid: "94703188"
 
 [Windows Mixed Reality ホーム](../discover/navigating-the-windows-mixed-reality-home.md)は、アプリケーションを起動する前にユーザーが移動する開始点です。 シナリオによっては、(ホログラムアプリのような) 2D アプリでは、3D モデルを直接混合現実ホームに装飾として配置したり、フル3D でさらに検査したりすることができます。 [ *モデルの追加] プロトコル* を使用すると、web サイトまたはアプリケーションから Windows Mixed Reality ホームに3d モデルを直接送信できます。この場合、 [3d アプリランチャー](3d-app-launcher-design-guidance.md)、2d アプリ、ホログラムのように永続化されます。 
 
-たとえば、スペースを設計するための3D 家具のカタログを表示するアプリケーションを開発している場合は、[ *モデルの追加] プロトコル* を使用して、ユーザーがこれらの3d 家具モデルをカタログから配置できるようにすることができます。 ユーザーは、世界中に、自宅の他のホログラムと同じように、これらの3D モデルの移動、サイズ変更、および削除を行うことができます。 この記事では、ユーザーがアプリまたは web から3D オブジェクトを使用して自分の世界を装飾できるようにするために、 *add model プロトコル* の実装の概要を説明します。
+たとえば、スペースを設計するための3D 家具のカタログを表示するアプリケーションを開発している場合は、[ *モデルの追加] プロトコル* を使用して、ユーザーがこれらの3d 家具モデルをカタログから配置できるようにします。 ユーザーは、世界中に、自宅の他のホログラムと同じように、これらの3D モデルの移動、サイズ変更、および削除を行うことができます。 この記事では、ユーザーがアプリまたは web から3D オブジェクトを使用して自分の世界を装飾できるようにするための、 *add model プロトコル* の実装の概要について説明します。
 
 ## <a name="device-support"></a>デバイス サポート
 
@@ -89,7 +89,7 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 ## <a name="considerations-for-immersive-vr-headsets"></a>イマーシブ (VR) ヘッドセットに関する考慮事項
 
 * イマーシブ (VR) ヘッドセットの場合、[ *モデルの追加] プロトコル* を呼び出す前に Mixed Reality ポータルが実行されている必要はありません。 この場合は、[ *モデルの追加] プロトコル* によって Mixed reality ポータルが起動され、このオブジェクトが、混合現実のホームに到着すると、ヘッドセットが見ている場所に直接配置されます。 
-* Mixed Reality ポータルが既に実行されているデスクトップから [ *モデルの追加] プロトコル* を呼び出すときに、ヘッドセットが "起動済み" になっていることを確認します。 それ以外の場合、配置は成功しません。 
+* Mixed Reality ポータルが既に実行されているデスクトップから [ *モデルの追加] プロトコル* を呼び出すときに、ヘッドセットが "起動済み" になっていることを確認します。 そうでない場合、配置は成功しません。 
 
 ## <a name="see-also"></a>関連項目
 

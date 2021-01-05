@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: c789fbb19f406c6dc355e326f2f12a5d64030e32
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: bde88890f596e19dd9b5f9e87ceabbf91039af67
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131816"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725443"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Windows Mixed Reality の設定に関する FAQ
 
@@ -21,7 +21,7 @@ Windows Mixed Reality のイマーシブヘッドセットを設定するとき�
 
 ## <a name="i-get-a-message-that-says-we-couldnt-download-the-window-mixed-reality-software-or-setup-is-stuck-on-the-hang-tight-while-we-do-some-downloading-page"></a>「Windows Mixed Reality ソフトウェアをダウンロードできませんでした」というメッセージが表示されるか、またはセットアップが [ダウンロード中にハングしています] ページで停止します。
 
-以下を試してみてください。
+次の手順を試してみてください。
 
 * [設定] にアクセスして **& セキュリティ > Windows Update を更新 >** 、Windows Update が有効になっていることを確認します。 次に、インストールを待機している更新プログラムをダウンロードしてインストールします。
 * PC がインターネットに接続されており、少なくとも 2 GB の空き記憶領域があることを確認します。
@@ -33,22 +33,22 @@ Windows Mixed Reality のイマーシブヘッドセットを設定するとき�
 
 ## <a name="i-get-a-message-that-says-something-went-wrong-and-we-couldnt-start-windows-mixed-reality"></a>"問題が発生しました。 Windows Mixed Reality を開始できませんでした" というメッセージが表示されます。
 
-以下を試してみてください。
+次の手順を試してみてください。
 
 1. コンピューターからヘッドセットを取り外します (両方のケーブル)。
 2. コンピューターを再起動する
 3. [ **設定] を > & セキュリティ Windows Update > を更新** し、Windows Update が有効になっていることを確認します。 次に、インストールを待機している更新プログラムをダウンロードしてインストールします。
 4. ヘッドセットをコンピューターに再接続してから、セットアップを再試行してください。
 
-上記の手順が機能しない場合は、Windows Mixed Reality をアンインストールしてから再インストールしてみてください。 [設定] [ **Mixed reality > アンインストール] >** クリックして、[ **アンインストール** ] を選択します。 次に、コンピューターを再起動します。 もう一度セットアッププロセスを開始するには、ヘッドセットを PC に接続するだけです。
+上記の手順が機能しない場合は、Windows Mixed Reality をアンインストールしてから再インストールしてみてください。 [設定] [ **Mixed reality > アンインストール] >** クリックして、[ **アンインストール**] を選択します。 次に、コンピューターを再起動します。 もう一度セットアッププロセスを開始するには、ヘッドセットを PC に接続するだけです。
 
 ## <a name="the-mixed-reality-portal-doesnt-open-when-i-plug-in-my-headset"></a>ヘッドセットを接続したときに Mixed Reality ポータルが開かない
 
-Windows Mixed Reality のセットアップを実行するアプリである mixed Reality ポータルは、互換性のあるヘッドセットを接続するときに自動的に開くように設計されています。 開いていない場合は、[スタート] にアクセスし、検索ボックスに「Mixed Reality ポータル」と入力して、アプリを開きます。 Mixed Reality ポータルが見つからない場合は、 [最新バージョンの Windows に更新](https://support.microsoft.com/en-us/help/12373/windows-update-faq)する必要があることを意味します。
+Windows Mixed Reality のセットアップを実行するアプリである mixed Reality ポータルは、互換性のあるヘッドセットを接続するときに自動的に開くように設計されています。 開いていない場合は、[スタート] にアクセスし、検索ボックスに「Mixed Reality ポータル」と入力して、アプリを開きます。 Mixed Reality ポータルが見つからない場合は [、最新バージョンの Windows に更新](https://support.microsoft.com/en-us/help/12373/windows-update-faq) することが必要になる場合があります。
 
 ## <a name="i-get-a-message-that-says-my-pc-cant-run-windows-mixed-reality"></a>"PC で Windows Mixed Reality を実行できません" というメッセージが表示されます。
 
-このメッセージが表示された場合は、Windows Mixed Reality を実行するために必要な [最小要件](https://support.microsoft.com/help/4039260) を PC が満たしていません。 これは、コンピューターのハードウェアセットアップが Windows Mixed Reality と互換性がないか、 [最新バージョンの windows に更新](https://support.microsoft.com/help/12373)する必要があることが原因である可能性があります。
+このメッセージが表示された場合は、Windows Mixed Reality を実行するために必要な [最小要件](https://support.microsoft.com/help/4039260) を PC が満たしていません。 コンピューターのハードウェアのセットアップが Windows Mixed Reality と互換性がない可能性があります。または、 [最新バージョンの windows に更新](https://support.microsoft.com/help/12373)する必要がある場合があります。
 
 グラフィックスカードに関する注意事項:
 
@@ -57,11 +57,11 @@ Windows Mixed Reality のセットアップを実行するアプリである mix
 
 ## <a name="i-get-a-message-that-says-youre-nearly-therethis-pc-doesnt-meet-the-minimum-requirements-needed-to-run-windows-mixed-reality"></a>「今のところ、この PC は Windows Mixed Reality を実行するために必要な最小要件を満たしていません」というメッセージが表示されます。
 
-このメッセージが表示された場合、Windows Mixed Reality の最良のエクスペリエンスを実現するために必要な最小要件を PC が満たしていません。 お使いの PC では、イマーシブヘッドセットを実行できますが、特定のアプリを実行できないか、またはパフォーマンスに問題がある可能性があります。
+このメッセージが表示された場合、Windows Mixed Reality の最良のエクスペリエンスを実現するために必要な最小要件を PC が満たしていません。 お使いの PC では、イマーシブヘッドセットを実行できますが、特定のアプリを実行できない場合や、パフォーマンスに問題がある場合があります。
 
 ## <a name="my-xbox-controller-isnt-working"></a>Xbox コントローラーが動作していない
 
-以下を試してみてください。
+次の手順を試してみてください。
 
 * コントローラーの電源が入っていること、完全に充電されていること、および PC に接続されていることを確認します。
 * コントローラーのバッテリを交換します。
@@ -71,7 +71,7 @@ Windows Mixed Reality のセットアップを実行するアプリである mix
 
 ## <a name="my-motion-controllers-arent-working"></a>モーションコントローラーが動作していません
 
-以下を試してみてください。
+次の手順を試してみてください。
 
 * コントローラーの電源が入っていて、完全に充電されていることを確認します。
 * コントローラーのバッテリを交換します。
@@ -82,10 +82,10 @@ Windows Mixed Reality のセットアップを実行するアプリである mix
 
 ## <a name="i-get-a-message-that-says-connect-your-headset-even-though-ive-plugged-in-my-headset"></a>ヘッドセットに接続しているにもかかわらず、「ヘッドセットを接続する」というメッセージが表示されます。
 
-以下を試してみてください。
+次の手順を試してみてください。
 
 - ヘッドセットがコンピューターの正しいポートに接続されていることを確認します。 PC の独立したグラフィックスカードと USB 3.0 ポートに接続されている必要があります。 正しいポートを特定するには、次の手順を実行します。
-    - USB 3.0 ポートには、"SuperSpeed" というマークの付いた特別なロゴが付いています。 ポートの内部部分は通常は青色で、古い USB 2.0 ポートは、内部では通常は黒または白です。
+    - USB 3.0 ポートには、"SuperSpeed" というマークの付いた特別なロゴが付いています。 ポートの内部部分は通常は青色ですが、古い USB 2.0 ポートは、内部では通常黒色または白です。
     - コンピューターに2つの HDMI ポートがある場合は、コンピューターのマザーボードではなく、グラフィックスカードに接続しているものを使用します。 これは必ずしも明らかであるとは限りませんが、個別のポートは多くの場合、コンピューターの拡張スロットに配置されます。 1つのポートを試しても機能しない場合は、もう一方を試してみてください。
 - ヘッドセットの製造元の web サイトにアクセスし、ヘッドセットのドライバーとファームウェアを更新します。
 
@@ -100,11 +100,11 @@ Windows Mixed Reality のセットアップを実行するアプリである mix
 
 ## <a name="the-floor-of-my-windows-mixed-reality-home-doesnt-appear-to-be-at-the-correct-height"></a>Windows Mixed Reality ホームのフロアが正しい高さになっていないように見える
 
-[ **開始 > フロア調整** ] を選択します。これは、世界中にアプリを配置した後に起動し、ヘッドセットの装着中に変更を行います。 このアプリでは、タッチパッド (モーションコントローラー) または方向パッド (ゲームパッド) を使用して、床の高さを調整するように指示されます。 フロアが正しい場合は、[Windows] ボタンを使用してホームに戻ります。
+[ **開始 > フロア調整**] を選択します。これは、世界中にアプリを配置した後に起動し、ヘッドセットの装着中に変更を行います。 このアプリでは、タッチパッド (モーションコントローラー) または方向パッド (ゲームパッド) を使用して、床の高さを調整するように指示されます。 フロアが正しい場合は、[Windows] ボタンを使用してホームに戻ります。
 
 ## <a name="i-cant-show-a-preview-of-what-im-seeing-in-my-headset-on-my-desktop"></a>自分のデスクトップのヘッドセットに表示される内容のプレビューを表示できません
 
-Windows Mixed Reality ポータルには、画面下部に [ **再生** ] ボタンがあります。このボタンを使用すると、画面のヘッドセットに表示されていることをデスクトップ画面にプレビューできます。 パフォーマンス上の理由から、この機能は Windows Mixed Reality Ultra (90Hz) で実行されている Pc でのみ使用できます。
+Windows Mixed Reality ポータルには、画面下部に [ **再生** ] ボタンがあります。このボタンを使用すると、画面のヘッドセットに表示されていることをデスクトップ画面にプレビューできます。 パフォーマンス上の理由から、この機能は Windows Mixed Reality (90 Hz) で実行されている Pc でのみ使用できます。
 
 ## <a name="how-can-i-get-a-clearer-view-in-my-headset"></a>ヘッドセットでより明確なビューを取得する方法はありますか
 
@@ -114,7 +114,7 @@ Windows Mixed Reality ポータルには、画面下部に [ **再生** ] ボタ
 
 ## <a name="when-i-plug-in-my-headset-nothing-happensmixed-reality-portal-doesnt-open"></a>ヘッドセットを接続しても何も起こりません。 Mixed Reality ポータルが開いていません。
 
-Windows Mixed Reality のセットアップを実行するアプリである mixed Reality ポータルは、互換性のあるヘッドセットを接続するときに自動的に開くように設計されています。 開いていない場合は、[ **スタート** ] にアクセスし、 **検索** ボックスに「 **Mixed Reality Portal** 」と入力して、そこからアプリを開きます。 Mixed Reality ポータルが見つからない場合は、 [最新バージョンの Windows に更新](https://support.microsoft.com/help/12373) する必要があるか、ヘッドセットが PC に正しく接続されていないことを意味します。
+Windows Mixed Reality のセットアップを実行するアプリである mixed Reality ポータルは、互換性のあるヘッドセットを接続するときに自動的に開くように設計されています。 開いていない場合は、[**スタート**] にアクセスし、**検索** ボックスに「 **Mixed Reality Portal** 」と入力して、そこからアプリを開きます。 Mixed Reality ポータルが見つからない場合は、 [最新バージョンの Windows に更新](https://support.microsoft.com/help/12373) する必要があるか、ヘッドセットが PC に正しく接続されていないことを意味します。
 
 ## <a name="my-head-mount-display-doesnt-work-after-i-shut-down-and-do-a-fast-startup"></a>シャットダウンして高速スタートアップを実行すると、ヘッドマウントの表示が機能しない
 
@@ -124,7 +124,7 @@ Windows Mixed Reality のセットアップを実行するアプリである mix
 
 ## <a name="my-wi-fi-slows-down-when-i-use-windows-mixed-reality"></a>Windows Mixed Reality を使用すると Wi-Fi 速度が低下する
 
-2.4 GHz の Wi-Fi 接続を使用している場合は、動作コントローラーによって Wi-fi の速度が低下する可能性があります。 次のいずれかの操作を試してください。
+2.4 GHz の Wi-Fi 接続を使用している場合、動作コントローラーは Wi-fi の速度を低下する可能性があります。 次のいずれかの手順を実行します。
 
 * 5 GHz の Wi-Fi 接続 (使用可能な場合) に切り替えます。 詳細情報
 * 別の Bluetooth アダプターを使用して、動きコントローラーを PC に接続します。 [推奨されるアダプターの表示](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
@@ -154,7 +154,7 @@ PC でヘッドセットが認識されていることを確認します。
 2. Windows Update から、最新のソフトウェア更新プログラムを確認します。
 3. Windows Mixed Reality をアンインストールして再インストールします。
     1. PC からヘッドセットケーブルの両方を切断します。
-    2. [設定] を選択して **> Mixed reality > アンインストール** ] を選択します。
+    2. [設定] を選択して **> Mixed reality > アンインストール**] を選択します。
     3. モーションコントローラーが PC とペアリングされている場合は、[ **設定] > [Bluetooth & 他のデバイス >** デバイス] を選択してペアリングします。 各コントローラーを選択し、[デバイスの削除] をクリックします。 コントローラーがヘッドセットとペアリングされている場合は、この手順を省略できます。
     4. ヘッドセットを PC に接続し直して、Windows Mixed Reality を再インストールします。
 

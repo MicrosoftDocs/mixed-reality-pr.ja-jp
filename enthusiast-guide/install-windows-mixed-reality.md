@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、はじめに、セットアップ、Mixed Reality ポータル
 appliesto:
 - Windows 10
-ms.openlocfilehash: a9333e9f4d80ea73724e2530f2e94c3d0e32d0d4
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 72782d14218e0a95b5a88297310f791c977fe094
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132106"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726073"
 ---
 # <a name="install-windows-mixed-reality-software"></a>Windows Mixed Reality ソフトウェアをインストールする
 
@@ -22,23 +22,23 @@ ms.locfileid: "93132106"
 
 ## <a name="launch-mixed-reality-portal"></a>Mixed Reality ポータルを起動する
 
-Windows Mixed Reality ヘッドセットをプラグインし、ドライバーが正常にインストールされると、混合 Reality ポータル (MRP) がデスクトップで自動的に起動します。 これが自動的に行われない場合は、いつでも [スタート] メニュー ([ **> Mixed Reality ポータルの開始** ]) から mixed reality ポータルを起動することができます。 ポータルが起動したら、[ **開始** ] をクリックします。
+Windows Mixed Reality ヘッドセットをプラグインし、ドライバーが正常にインストールされると、混合 Reality ポータル (MRP) がデスクトップで自動的に起動します。 ポータルが起動しない場合は、[> の混在] [ **Mixed reality** ポータル] から、いつでも mixed reality ポータルを開くことができます。 ポータルが起動したら、[**開始**] を選択します。
 
 ![Mixed Reality へようこそ](images/1050px-mixedrealityportal.png)
 
 Mixed Reality ポータルでは、次のことができます。
 
-* ヘッドセットにビューのライブストリームを表示します (Windows Mixed Reality ウルトラのみ)。 これをオンまたはオフにするには、[プレビューの停止] または [プレビューの開始] を選択します。 (Mixed reality の [スタート] メニューからプレビューをオンまたはオフにすることもできます)。
+* [プレビューの停止] または [プレビューの開始] を選択して、ヘッドセットにビューのライブストリーム (Windows Mixed Reality Ultra only) を表示します。 Mixed reality の [スタート] メニューからプレビューをオンまたはオフにすることもできます。
 * ヘッドセットとコントローラーの状態を確認します。 すべての情報を表示するには、[メニュー] を選択します。
 * 新しいコントローラーを設定します。 [メニュー] を選択し **> コントローラーを設定** します。
 * 境界をオンまたはオフにします。 [ **メニュー > 境界のオン/オフ]** を選択します。 (オフにすると、安全性を確保するために1つの場所に置く必要があります)。
 * 新しい境界を作成します。 [メニュー] を選択し **> セットアップを実行** します。
-* Mixed reality の写真にアクセスします。 **メニュー > [mixed reality の写真** ] を選択します。
+* Mixed reality の写真にアクセスします。 **メニュー > [mixed reality の写真**] を選択します。
 * Mixed reality アプリとゲームを取得します。 [メニュー] を選択し、 **mixed reality アプリ > 取得** します。
 
 ## <a name="download-windows-mixed-reality"></a>Windows Mixed Reality のダウンロード
 
-Windows Mixed Reality のサイズは約 1 GB です。ダウンロードにかかる時間は、インターネット接続によって異なります。 "Mixed Reality ソフトウェアをダウンロードできませんでした" というメッセージが表示された場合は、 [トラブルシューティングの手順](installation_errors.md#we-couldnt-download-the-mixed-reality-software-or-hang-tight-while-we-do-some-downloading)を確認してください。
+Windows Mixed Reality のサイズは 1 GB です。ダウンロードにかかる時間は、インターネット接続によって異なります。 "Mixed Reality ソフトウェアをダウンロードできませんでした" というメッセージが表示された場合は、次の [トラブルシューティング手順](installation_errors.md#we-couldnt-download-the-mixed-reality-software-or-hang-tight-while-we-do-some-downloading)を参照してください。
 
 ## <a name="general-troubleshooting"></a>一般的なトラブルシューティング
 
@@ -59,18 +59,18 @@ Windows Mixed Reality のサイズは約 1 GB です。ダウンロードにか�
 * [Windows Update](https://support.microsoft.com/help/12373)から、最新のソフトウェア更新プログラムを確認します。
 * Windows Mixed Reality をアンインストールして再インストールします。
     1. ヘッドセットを PC から切断します (両方のケーブル)。
-    2. [設定] を選択して **> Mixed reality > アンインストール** ] を選択します。
-    3. モーションコントローラーをペアリングする: [ **設定] > [Bluetooth & 他のデバイス > デバイス** ] を選択します。 各コントローラーを選択し、[ **デバイスの削除** ] を選択します。
+    2. [設定] を選択して **> Mixed reality > アンインストール**] を選択します。
+    3. モーションコントローラーをペアリングする: [ **設定] > [Bluetooth & 他のデバイス > デバイス**] を選択します。 各コントローラーを選択し、[ **デバイスの削除**] を選択します。
     4. Windows Mixed Reality を再インストールするには、ヘッドセットを PC に接続し直します。
 
 ## <a name="common-error-messages"></a>一般的なエラー メッセージ
 
 ここでは、表示される可能性のある [エラーメッセージ](error-codes.md) について説明します。
 
-| このメッセージが表示する場合 | 次の操作を試してみてください |
+| このメッセージが表示する場合 | これを試します |
 | --- | --- |
 | USB ケーブルを確認する | ヘッドセットを別の USB ポートに接続します (SuperSpeed USB 3.0 であることを確認してください)。 また、ヘッドセットとコンピューターの間で extender またはハブを削除してみてください。 |
-| ディスプレイケーブルを確認する | 以下を試してみてください。 <ul><li>ヘッドセットを DisplayPort 1.2 以降、または HDMI 1.4 以降に接続します。 ポートが PC の高度なグラフィックスカードと対応していることを確認します。</li><li>アダプターを使用している場合は、4K 対応であることを確認します。</li><li>別の HDMI ポートを使用してみてください</li><li>HDMI ポートに外付けモニターが接続されている場合は、代わりに DisplayPort に接続してみてください。ヘッドセットには HDMI ポートを使用してください。</li></ul> |
+| ディスプレイケーブルを確認する | 次の手順を試してみてください。 <ul><li>ヘッドセットを DisplayPort 1.2 以降、または HDMI 1.4 以降に接続します。 ポートが PC の高度なグラフィックスカードと対応していることを確認します。</li><li>アダプターを使用している場合は、4K 対応であることを確認します。</li><li>別の HDMI ポートを使用してみてください</li><li>HDMI ポートに外付けモニターが接続されている場合は、代わりに DisplayPort に接続してみてください。ヘッドセットには HDMI ポートを使用してください。</li></ul> |
 | 問題が発生した場合 | 上記の一般的なトラブルシューティング手順に従います。 |
 
 ## <a name="review-and-accept-terms-and-conditions"></a>使用条件を確認して同意する
@@ -81,13 +81,13 @@ Windows Mixed Reality のサイズは約 1 GB です。ダウンロードにか�
 
 ## <a name="compatibility-check"></a>互換性チェック
 
-次は、互換性のあるチェックです。 Mixed Reality ポータルでは、お使いの PC が mixed reality と互換性があることを確認します。 **緑色** のチェックは、必要な項目が PC から渡されたことを意味します。 **オレンジ色** の三角形は、特定の要件に対して PC に問題がある可能性があることを意味します。 問題が発生した場合は、トラブルシューティングまたは PC のアップグレードが必要になることがあります。 **赤** X は、指定された項目の要件を PC が満たしていないことを意味します。
+次は、互換性のあるチェックです。 Mixed Reality ポータルでは、お使いの PC が mixed reality と互換性があることを確認します。 **緑色** のチェックは、必要な項目が PC から渡されたことを意味します。 **オレンジ色** の三角形は、特定の要件に対して PC に問題がある可能性があることを意味します。 問題が見つかった場合は、トラブルシューティングまたは PC のアップグレードが必要になることがあります。 **赤** コンピューターが指定された項目の要件を満たしていないことを意味します。
 
 ![互換性チェック](images/1050px-compatcheck.png)
 
 ## <a name="getting-ready"></a>開発の準備
 
-スピンアイコンを使用して、画面に "セットアップの準備ができました" というメッセージが表示されます。 これには少し時間がかかります。
+スピンアイコンを使用して画面に "設定する準備ができました" というメッセージが表示されます。これには少し時間がかかります。
 
 ![セットアップの準備をしています](images/1050px-gettingsetup.png)
 

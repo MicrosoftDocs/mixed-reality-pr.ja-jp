@@ -1,22 +1,23 @@
 ---
 title: ダイアログ
+description: ダイアログのオーバーレイと、混合現実のアプリケーションでの使用方法について説明します。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Mixed Reality、HoloLens、UI コントロール、相互作用、UI、ux、UX デザイン、空間 UI、空間相互作用、3D UI、3D UX、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 354581b5f0c2b63e5fdb7077c0d8cdba4c96c3d3
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 752c4cc03c90e498664c61fa3c53b303a2a83a2f
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702608"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847455"
 ---
 # <a name="dialog"></a>ダイアログ
 
-![ダイアログ](images/MRTK_UX_Dialog.jpg)
+![[はい] ボタンと [いいえ] ボタンが表示されたダイアログオーバーレイ (HoloLens) のスクリーンショット](images/MRTK_UX_Dialog.jpg)
 
-ダイアログコントロールは、コンテキストアプリの情報を提供する UI オーバーレイです。 多くの場合、ユーザーに何らかの操作を要求します。 重要な情報をユーザーに通知したり、アクションが完了する前に確認や追加情報を要求したりするには、ダイアログを使用します。
+ダイアログコントロールは、コンテキストアプリの情報を提供する UI オーバーレイです。多くの場合、ユーザーの操作を要求します。 ダイアログを使用して、ユーザーに重要な情報を提供したり、アクションを完了する前に確認や追加情報を要求したりします。
 
 <br>
 
@@ -29,10 +30,10 @@ MRTK は、1つまたは2つのボタンオプションを持つ3つのサイズ
 - DialogMedium_192x128。 prefab: 192x128mm
 - DialogLarge_192x192。 prefab: 192x192mm
 
-![ダイアログ](images/MRTK_UX_Dialog_Types.jpg)
+![HoloLens で実行されているさまざまなサイズのダイアログのオーバーレイのスクリーンショット](images/MRTK_UX_Dialog_Types.jpg)
 
 
-* 詳細については [、「Mrtk-Dialog](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html) 」を参照してください。
+* 詳細については、「 [Mrtk-Dialog](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html)」を参照してください。
 
 <br>
 

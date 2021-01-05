@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
 keywords: 操作方法、アクセサリ、bluetooth、bt、コントローラー、ゲームパッド、clicker、xbox、ハードウェア、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、モーションコントローラー
-ms.openlocfilehash: 3855d5337c4cad462b60ff8c73cec0b7b96c0ca1
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: aaed865f3fd2f722ce287bd2362299f785af05dc
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702008"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757720"
 ---
 # <a name="hardware-accessories"></a>ハードウェア アクセサリ
 
-Windows Mixed Reality デバイスでは、アクセサリがサポートしています。 Bluetooth または USB を使用して、サポートされているアクセサリを、接続されている PC を使用して、イマーシブヘッドセットにペアリングすることができます。
+Windows Mixed Reality デバイスでは、アクセサリがサポートしています。 Bluetooth または USB ポートを使用して、サポートされているアクセサリと PC からのイマーシブヘッドセットを組み合わせることができます。
 
 HoloLens での Bluetooth アクセサリの使用の詳細については、「 [bluetooth および USB C デバイスへの接続](https://docs.microsoft.com/hololens/hololens-connect-devices)」を参照してください。
 
@@ -28,13 +28,13 @@ Bluetooth 周辺機器とイマーシブヘッドセットのペアリングは�
 1. [スタート] メニューから、[ **設定** ] アプリを開きます。
 2. **デバイス** にアクセス
 3. Bluetooth ラジオがスライダースイッチを使用してオフになっている場合はオンにする
-4. Bluetooth デバイスをペアリングモードにします。 これは、デバイスによって異なります。 ほとんどの Bluetooth デバイスでは、1つまたは複数のボタンを押したままにします。
-5. デバイスの名前が Bluetooth デバイスの一覧に表示されるまで待ちます。 その場合は、デバイスを選択し、[ **ペアリング** ] ボタンを選択します。 近くの Bluetooth デバイスが多数ある場合は、[Bluetooth デバイス] 一覧の一番下までスクロールして、ペアリングしようとしているデバイスを確認する必要があります。
+4. Bluetooth デバイスをペアリングモードにします。 このプロセスはデバイスによって異なりますが、ほとんどの Bluetooth デバイスでは、1つまたは複数のボタンを押したままにします。
+5. デバイスの名前が Bluetooth デバイスの一覧に表示されるまで待ちます。 その場合は、デバイスを選択し、[ **ペアリング** ] ボタンを選択します。 近くに多数の Bluetooth デバイスがある場合は、[Bluetooth デバイス] 一覧の一番下までスクロールして、ペアリングしようとしているデバイスを確認する必要があります。
 6. Bluetooth 周辺機器と入力機能 (Bluetooth キーボードなど) をペアリングすると、6桁または8桁の pin が表示される場合があります。 必ず周辺機器に pin を入力し、enter キーを押してヘッドセットのペアリングを完了してください。
 
 ## <a name="motion-controllers"></a>モーション コントローラー
 
-Windows Mixed Reality [モーションコントローラー](../design/motion-controllers.md) は、HoloLens ではなく、イマーシブヘッドセットでサポートされています。 これらのコントローラーは、イマーシブヘッドセットのセンサーを使用して、ビューのフィールドの移動を正確かつ迅速に追跡できます。つまり、領域内の壁にハードウェアを取り付ける必要はありません。 各コントローラーは、いくつかの入力方法を特徴としています。
+Windows Mixed Reality [モーションコントローラー](../design/motion-controllers.md) は、HoloLens ではなく、イマーシブヘッドセットでサポートされています。 これらのコントローラーは、ビューのフィールドで、正確で応答性の高い移動追跡を提供します。 イマーシブヘッドセットのセンサーは追跡を行います。つまり、領域内の壁にハードウェアを取り付ける必要はありません。 各コントローラーは、いくつかの入力方法を特徴としています。
 
 ![Windows Mixed Reality モーションコントローラー](../design/images/winmr-ck-1080x1080-350px.jpg)
 
@@ -46,19 +46,19 @@ English 言語 Qwerty Bluetooth キーボードは、holographic キーボード
 
 ゲームパッドサポートを特に有効にしたアプリやゲームでコントローラーを使用できます。 ゲームパッドは、HoloLens ユーザーインターフェイスを制御するためには使用できません。
 
-Xbox が搭載されている xbox ワイヤレスコントローラー、または xbox One のアクセサリとして販売されている xbox ワイヤレスコントローラーは、HoloLens とイマーシブヘッドセットで使用できるようにする Bluetooth 接続機能を備えています。 Xbox ワイヤレスコントローラーを HoloLens で使用するには、その前に [更新する必要があり](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) ます。
+Xbox が搭載されているか、xbox One のアクセサリとして販売されている xbox ワイヤレスコントローラーは、Bluetooth 接続を使用して、HoloLens とイマーシブヘッドセットで使用できます。 Xbox ワイヤレスコントローラーを HoloLens で使用するには、その前に [更新する必要があり](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) ます。
 
 Bluetooth ゲームパッドの他のブランドは、Windows Mixed Reality デバイスで動作することがありますが、サポートはアプリケーションによって異なります。
 
 ## <a name="other-bluetooth-accessories"></a>その他の Bluetooth アクセサリ
 
-周辺機器が Bluetooth HID または GATT のいずれかのプロファイルをサポートしている限り、HoloLens とペアリングできます。 キーボード、マウス、および HoloLens Clicker 以外の他の Bluetooth HID および GATT デバイスでは、完全に機能するためには、Microsoft HoloLens のコンパニオンアプリケーションが必要になる場合があります。
+周辺機器が Bluetooth HID プロファイルと GATT プロファイルのどちらかをサポートしている限り、HoloLens とペアリングできます。 キーボード、マウス、および HoloLens Clicker 以外の他の Bluetooth HID および GATT デバイスでは、完全に機能するためには、Microsoft HoloLens のコンパニオンアプリケーションが必要になる場合があります。
 
 サポートされない周辺機器は次のとおりです。
 
 * Bluetooth オーディオプロファイルの周辺機器はサポートされていません。
-* Bluetooth オーディオデバイス (スピーカーやヘッドセットなど) は、設定アプリで使用できるように見える場合がありますが、オーディオエンドポイントとして Microsoft HoloLens で使用することはサポートされていません。
-* Bluetooth 対応の携帯電話および Pc は、ファイル転送にペアリングして使用することはできません。
+* Bluetooth オーディオデバイス (スピーカーやヘッドセットなど) は、設定アプリで利用できますが、オーディオエンドポイントとして Microsoft HoloLens ではサポートされていません。
+* Bluetooth 対応の携帯電話および Pc は、ペアリングとファイル転送ではサポートされていません。
 
 ## <a name="unpairing-a-bluetooth-peripheral"></a>Bluetooth 周辺機器のペアリングを解除する
 

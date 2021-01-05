@@ -3,42 +3,42 @@ title: Faq の追跡
 description: Windows Mixed Reality のトラブルシューティングを追跡します。これは、標準のコンシューマーサポートドキュメントを超えています。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、追跡
-ms.openlocfilehash: 7a7e6add79af5917749ba241347d6cf719f6ed90
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 2634b95cf876a5b540710f80d3dd7f9d48b3bad9
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132096"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725833"
 ---
 # <a name="tracking-faqs"></a>Faq の追跡
 
 ## <a name="my-headset-has-stopped-tracking"></a>ヘッドセットの追跡が停止しました
 
-ライトが点灯していること、およびヘッドセットの前面に obstructing 追跡カメラが何もないことを確認します。 追跡が失われた場合、再開に数秒かかることがあります。 再開されない場合は、Windows Mixed Reality ポータルを再起動します。
+ライトが点灯していること、およびヘッドセットの前面に obstructing 追跡カメラが何もないことを確認します。 追跡が失われた場合、再開に数秒かかることがあります。 Windows Mixed Reality ポータルを再起動すると、追跡が再開されません。
 
 ## <a name="i-can-look-around-but-i-cant-translate-im-stuck-in-3dof"></a>見てもできますが、翻訳できません (3D で行き詰まっています)。
 
-これは、追跡システムがポーズを生成できないか、またはアプリケーションが新しいポーズデータを使用してレンダリングを停止したことを意味します。 次の点を確認します。
+これは、追跡システムがポーズを生成できないか、またはアプリケーションが新しいポーズデータを使用してレンダリングを停止したことを意味します。 問題を修正するには:
 
 * 部屋に十分な光があることを確認します。
 * トラックするのに十分な情報がルームにあることを確認します。
 * デバイスを取り外し、Windows Mixed Reality を閉じて、デバイスにもう一度接続します。
 * メッセージが引き続き表示される場合は、[カスタマーサポート](https://support.microsoft.com/)にお問い合わせください
 
-## <a name="the-view-in-the-hmd-is-completely-frozen"></a>HMD のビューは完全に固定されています
+## <a name="the-view-in-the-hmd-is-frozen"></a>HMD のビューが固定されています
 
 これは通常、アプリケーションまたはシステムレベルのコンポーネントで障害が発生したことを意味します。 試行する操作:
 
 1. アプリケーションを終了するには、[ホーム] ボタンを押します。
-2. デバイスを取り外し、MRP を閉じて、デバイスを再び接続します。
+2. デバイスを取り外して、MRP を閉じ、デバイスをに接続し直します。
 3. PC を再起動します。
 
-## <a name="the-world-briefly-froze-and-perhaps-tilted-or-flipped-upside-down-before-returning-to-normal"></a>通常に戻る前に、世界の froze が少し傾いたり反転したりしています。
+## <a name="the-world-briefly-froze-and-tilted-or-flipped-upside-down-before-returning-to-normal"></a>標準に戻る前に、世界の froze と傾いたり反転したりしています。
 
-これは、アプリケーションまたはシステムレベルのコンポーネントによって致命的なエラーが発生したか、一時的にメモリまたは CPU リソースが不足していることが原因である可能性があります。 確認するには:
+これは、アプリケーションまたはシステムレベルのコンポーネントによって致命的なエラーが発生したか、メモリまたは CPU リソースが一時的に不足していることが原因である可能性があります。 確認するには:
 
-1. タスクマネージャーを開き、少なくとも20% の CPU が空いていることを確認し、400 MB のメモリが使用可能であり、ディスク IO が80% 未満になっていることを確認します。
-2. **イベントビューアー > Windows ログ > アプリケーション** ] に移動して、凍結の時間の前後のエラーを探します。 HoloLens センサー、Mixed Reality、またはその時間内に実行されていたアプリケーションを指しているものを探します。 これらのログは、エラーの原因を説明する場合があります。
+1. タスクマネージャーを開き、少なくとも20% の CPU が空いていること、400 MB のメモリが使用可能であること、およびディスク IO が80% 未満になっていることを確認します。
+2. **イベントビューアー > Windows ログ > アプリケーション**] に移動して、凍結の時間の前後のエラーを探します。 HoloLens センサー、Mixed Reality、またはその時間内に実行されていたアプリケーションを指しているものを探します。 これらのログは、エラーの原因を説明する場合があります。
 3. 問題が解決しない場合は、PC を再起動します。
 
 ## <a name="the-world-flipped-upside-down-momentarily-and-returned-to-normal"></a>反対方向に反転し、法線に戻ります。

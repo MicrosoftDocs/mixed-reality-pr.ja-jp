@@ -6,18 +6,18 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens、Mixed Reality、イマーシブヘッドセット、アプリ、uwp、送信、送信、フィルター、メタデータ、システム要件、キーワード、wack、認定、パッケージ、appx、販売促進
-ms.openlocfilehash: b4b82557ba274852ebb3f97058017fa2e5db1c02
-ms.sourcegitcommit: 9e9d58de4513655c7daa71ff4b5b2c2b115ab959
+ms.openlocfilehash: 632bb9c0c5bdb93041f71a4382802b02f6817f0e
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97034583"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757630"
 ---
 # <a name="distributing-your-apps"></a>アプリの配布
 
 ![WMR ホームの Floaty 鳥3D アプリ lancher](images/distribute-hero-image.png)
 
-アプリをユーザーの手に入れたり、世界に painstaking たりすることは、開発作業の中で最も重要で、場合によっては、その一部となることがあります。 以下に示す一連のリソースにプロセスを簡略化しました。これらはすべて、お客様またはチームに最適な配布とデプロイのシナリオによって異なります。
+アプリをユーザーの手に入れたり、世界に painstaking たりすることは、開発作業の中で最も重要で、場合によっては、その一部となることがあります。 このプロセスは、お客様またはお客様のチームに最適なディストリビューションおよびデプロイシナリオに応じて、一連のリソースに簡略化されています。
 
 [!INCLUDE[](includes/before-submission.md)]
 
@@ -81,7 +81,7 @@ ms.locfileid: "97034583"
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>カスタム Win32 展開</strong></a> (HoloLens デバイスでは使用できません。下記を参照)</td>
+    <td><a href="#other-scenarios"><strong>カスタム Win32 展開</strong></a> (HoloLens デバイスでは使用できません。下記を参照)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
@@ -91,9 +91,9 @@ ms.locfileid: "97034583"
 > [!IMPORTANT]
 > アプリインストーラーは、現在、管理対象デバイスまたは HoloLens (第1世代) デバイスでは使用できません。
 
-## <a name="additional-scenarios"></a>その他のシナリオ
+## <a name="other-scenarios"></a>その他のシナリオ
 
-* ストリームとゲームパスを含む Win32 アプリケーションのデプロイでは、Win32 を作成できます。Unity から PC スタンドアロンビルドターゲットを使用し、選択したプラットフォームに通常どおりにアプリを送信する EXE ファイル。 
+* Win32 を作成できます。ストリームとゲームパスを含む、Win32 アプリケーションのデプロイのために Unity からの PC スタンドアロンビルドターゲットを使用する EXE ファイル。 を作成したら、EXE を使用して、選択したプラットフォームに通常どおりにアプリを送信できます。 
 
 * オフライン中に HoloLens 2 アプリケーションをインストールする必要がある場合は、オフラインの [Secure HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) の手順を参照するか、開発者モードを有効にせずにプロビジョニングパッケージを使用してアプリをインストールしてください。
 

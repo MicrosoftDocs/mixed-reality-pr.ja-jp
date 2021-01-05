@@ -6,22 +6,22 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens、リリースノート、os、プラットフォーム、機能、商用スイート
-ms.openlocfilehash: 8df7f745e20d350d06945d2c1a9ead3564558439
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: 870da1075dd1fa1a83926a89bad753233927abda
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91784054"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725963"
 ---
 # <a name="release-notes---august-2016"></a>リリース ノート - 2016 年 8 月
 
-HoloLens チームは、作業の優先順位を決定するために、Windows Insider プログラムの開発者からのフィードバックをリッスンしています。 フィードバックハブ、[開発者フォーラム](https://forums.hololens.com)、 [ @HoloLens および Twitter](https://twitter.com/hololens)を通じて[フィードバック](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)を引き続きお寄せください。 Windows 10 が記念日の更新を採用しているため、HoloLens チームは holographic エクスペリエンスにさらなる改善を提供しています。 この更新プログラムでは、Microsoft HoloLens 商用 Suite で利用できる、ビジネスによって要求された機能の主な修正、改善、導入に焦点を絞っています。
+HoloLens チームは、作業の優先順位を決定するために、Windows Insider プログラムの開発者からのフィードバックをリッスンしています。 フィードバックハブ、[開発者フォーラム](https://forums.hololens.com)、 [ @HoloLens および Twitter](https://twitter.com/hololens)を通じてフィードバックを引き続き[お](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)寄せください。 Windows 10 が記念日の更新を採用しているため、HoloLens チームは holographic エクスペリエンスにさらなる改善を提供しています。 この更新プログラムでは、Microsoft HoloLens 商用 Suite で利用できる、ビジネスによって要求された機能の主な修正、改善、導入に焦点を絞っています。
 
-**最新リリース:** Windows Holographic 8 月2016更新プログラム ( **10.0.14393.0** 、Windows 10 記念日リリース)
+**最新リリース:** Windows Holographic 8 月2016更新プログラム (**10.0.14393.0**、Windows 10 記念日リリース)
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
-[現在のリリースに更新](https://docs.microsoft.com/windows/mixed-reality/updating-hololens)するには、 *設定* アプリを開き、[ *update & Security* ] にアクセスして、[ *更新プログラムの確認* ] ボタンを選択します。
+[現在のリリースに更新](https://docs.microsoft.com/windows/mixed-reality/updating-hololens)するには、*設定* アプリを開き、[ *update & Security*] にアクセスして、[*更新プログラムの確認*] ボタンを選択します。
 
 ## <a name="new-features"></a>新機能
 
@@ -29,15 +29,15 @@ HoloLens チームは、作業の優先順位を決定するために、Windows 
 
 **HoloLens エミュレーターを更新しました** また、更新されたバージョンの HoloLens エミュレーターもリリースしました。
 
-**ゲームパッドのサポート** HoloLens で Bluetooth ゲームパッドを使用できるようになりました。 新しくリリースされた Xbox ワイヤレスコントローラーは、Bluetooth 機能を搭載しており、お気に入りのゲーム用ゲームやアプリの再生に使用できます。 Xbox ワイヤレスコントローラーを HoloLens に接続する前に、 [コントローラーの更新プログラム](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) を適用する必要があります。 Xbox ワイヤレスコントローラーは、XInput api と[XInput](https://msdn.microsoft.com/library/windows/desktop/hh405053(v=vs.85).aspx) api によってサポートされてい[ます。](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) Bluetooth コントローラーの追加モデルには、Windows の [ゲーム入力](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) API を使用してアクセスできます。
+**ゲームパッドのサポート** HoloLens で Bluetooth ゲームパッドを使用できるようになりました。 新しくリリースされた Xbox ワイヤレスコントローラーは、Bluetooth 機能を搭載しており、お気に入りのゲーム用ゲームやアプリの再生に使用できます。 Xbox ワイヤレスコントローラーを HoloLens に接続する前に、 [コントローラーの更新プログラム](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) を適用する必要があります。 Xbox ワイヤレスコントローラーは、XInput api と[](https://msdn.microsoft.com/library/windows/desktop/hh405053(v=vs.85).aspx) api によってサポートされてい[ます。](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) その他の Bluetooth コントローラーモデルには、 [Windows のゲーム](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) API を介してアクセスできます。
 
 ## <a name="improvements-and-fixes"></a>機能強化と修正
 
-Microsoft は、Windows 10 の記念日更新プログラムとの同期を行っています。そのため、HoloLens 固有の修正プログラムに加えて、プラットフォームの信頼性とパフォーマンスを向上させるために、Windows update のすべての利点も受けています。 フィードバックは非常に重要であり、リリースの修正のために優先順位が付けられています。
+Microsoft では、Windows 10 の記念日更新プログラムと同期しています。そのため、HoloLens 固有の修正プログラムに加えて、プラットフォームの信頼性とパフォーマンスを向上させるために、Windows update のすべての利点も受けています。 フィードバックは非常に重要であり、リリースの修正のために優先順位が付けられています。
 
 次のエクスペリエンスが改善されました。
 * ログインエクスペリエンス。
-* workplace join。
+* 職場への参加。
 * デバイスの電源状態遷移の電力効率。
 * Mixed Reality キャプチャによる安定性。
 * Bluetooth 接続の信頼性
@@ -45,7 +45,7 @@ Microsoft は、Windows 10 の記念日更新プログラムとの同期を行�
 
 次の問題が修正されました。
 * Visual Studio プロファイラーとグラフィックスデバッガーは接続に失敗します。
-* 写真 & ドキュメントは、デバイスポータルのエクスプローラーに表示されません。
+* デバイスポータルのファイルエクスプローラーには、写真 & ドキュメントが表示されません。
 * アプリバーは、調整モードでカーソルが上に置かれたときにフラッシュできます。
 * 調整モードでは、視線が上向きのドットカーソルが4方向のカーソルに変わります。
 * "Cortana play music" さんは Groove を起動しません。
@@ -55,7 +55,7 @@ Microsoft は、Windows 10 の記念日更新プログラムとの同期を行�
 
 Microsoft HoloLens 商用 Suite は、エンタープライズ展開の準備ができています。 初期のビジネスパートナーから、高度に要求された [商用機能](https://docs.microsoft.com/windows/mixed-reality/commercial-features) がいくつか追加されました。
 
-Microsoft HoloLens 商用スイートを購入するには、ローカル Microsoft アカウントマネージャーにお問い合わせください。
+Microsoft HoloLens 商用スイートを購入するには、ローカルの Microsoft アカウントマネージャーに問い合わせてください。
 
 ### <a name="key-commercial-features"></a>主要商用機能 
 
@@ -63,16 +63,16 @@ Microsoft HoloLens 商用スイートを購入するには、ローカル Micros
   ![キオスクモードでは、HoloLens は選択したアプリに直接起動します。](images/201608-kioskmode-400px.png)
 * **HoloLens 用のモバイルデバイス管理 (MDM)。** IT 部門は、Microsoft Intune などのソリューションを使用して、複数の HoloLens デバイスを同時に管理できます。 設定の管理、インストールするアプリの選択、組織のニーズに合わせたセキュリティ構成の設定を行うことができます。<br>
   ![HoloLens のモバイルデバイス管理は、複数のデバイスにわたるエンタープライズレベルのデバイス管理を提供します。](images/201608-enterprisemanagement-400px.png)
-* **ビジネス向け Windows Update。** デバイスに対するオペレーティングシステムの更新と、長期的なサービスブランチのサポートを制御します。
+* **ビジネス向け Windows Update。** デバイスのオペレーティングシステムの更新と、長期的なサービスブランチのサポートを制御します。
 * **データのセキュリティ。** HoloLens で BitLocker データ暗号化が有効になっているため、他の Windows デバイスと同じレベルのセキュリティ保護が提供されます。
-* **職場へのアクセス。** 組織内のすべてのユーザーが、HoloLens の仮想プライベートネットワークを介して企業ネットワークにリモート接続できます。 HoloLens は、資格情報を必要とする Wi-fi ネットワークにアクセスすることもできます。
+* **職場へのアクセス。** 組織内のすべてのユーザーが、HoloLens の仮想プライベートネットワークを介して企業ネットワークにリモート接続できます。 HoloLens は、資格情報を必要とする Wi-Fi ネットワークにアクセスすることもできます。
 * **ビジネス向け Microsoft Store。** また、IT 部門は、特定の HoloLens 使用量について会社のアプリのみを含むエンタープライズプライベートストアをセットアップすることもできます。 エンタープライズユーザーの選択したグループにエンタープライズソフトウェアを安全に配布します。
 
 ### <a name="development-edition-vs-commercial-suite"></a>開発エディションと商用スイート
 
 <table>
 <tr>
-<th>特徴</th><th>Development Edition</th><th>商用スイート</th>
+<th>機能</th><th>Development Edition</th><th>商用スイート</th>
 </tr><tr>
 <td>デバイスの暗号化 (Bitlocker)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -86,7 +86,7 @@ Microsoft HoloLens 商用スイートを購入するには、ローカル Micros
 </tr><tr>
 <td>登録解除をブロックする機能</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>証明書ベースの会社の Wi-fi アクセス</td><td></td><td style="text-align: center;">✔️</td>
+<td>証明書ベースの企業 Wi-Fi アクセス</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>Microsoft Store (コンシューマー)</td><td style="text-align: center;">コンシューマー</td><td style="text-align: center;">MDM を使用したフィルター処理</td>
 </tr><tr>
@@ -94,7 +94,7 @@ Microsoft HoloLens 商用スイートを購入するには、ローカル Micros
 </tr><tr>
 <th colspan="3" style="text-align: left;"> セキュリティと ID</th>
 </tr><tr>
-<td>Azure Active Directory を使用したログイン (AAD)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Azure Active Directory (AAD) でのログイン</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>Microsoft アカウント (MSA) を使用してログインする</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -108,7 +108,7 @@ Microsoft HoloLens 商用スイートを購入するには、ローカル Micros
 </tr><tr>
 <td><a href="https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>長期的なサービスブランチ</td><td></td><td style="text-align: center;">✔️</td>
+<td>Long Term Servicing Branch</td><td></td><td style="text-align: center;">✔️</td>
 </tr>
 </table>
 

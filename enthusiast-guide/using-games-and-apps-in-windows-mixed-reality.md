@@ -3,50 +3,54 @@ title: Windows Mixed Reality でのゲームとアプリの使用
 description: イマーシブおよび2D のアプリとゲームを起動し、デスクトップを表示し、WebVR と SteamVR のコンテンツを体験する方法。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、アプリ、ゲーム、デスクトップ、SteamVR、WebVR、蒸気
-ms.openlocfilehash: 0374b36af6d0007a020546678168440698146920
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 24d8e0fcf93b40e21484c9b1dddd1adaaf75fb00
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174351"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725853"
 ---
 # <a name="using-games-and-apps-in-windows-mixed-reality"></a>Windows Mixed Reality でのゲームとアプリの使用
 
-Windows Mixed Reality は Windows のみです。 つまり、mixed reality 向けに設計されたイマーシブゲームを実行できます。また、デスクトップでよく知られている (キャンディーノルマ、Photoshop/AutoCAD などの) すべての標準2D アプリを実行できます。
+Windows Mixed Reality は Windows のみです。つまり、mixed reality 向けに設計されたイマーシブゲームを実行できます。 デスクトップでよく知られている標準の2D アプリ (キャンディーノルマ、Photoshop/AutoCAD など) をすべて実行することもできます。
 
 ## <a name="how-to-get-into-your-first-immersive-game"></a>初めてのイマーシブゲームに入る方法
+
 1. Windows Mixed Reality ホームに配置されているストアスレートに移動します。
 2. HoloTour を検索します。
 3. ダウンロードしてインストールします。
 4. コントローラー (またはキーボードの Windows キー) の Windows ボタンを押して、Mixed Reality の [スタート] メニューを開きます。 HoloTour を検索します。 場合によっては、すべてのアプリを選択する必要があります。
-5. [スタート] で [HoloTour] をクリックし、スレートを配置します。
+5. [スタート] で [HoloTour] を選択し、スレートを配置します。
 6. HoloTour は、ヘッドセットのエクスペリエンスを起動します。
 
 ## <a name="how-to-place-your-first-2d-app-slate"></a>最初の2D アプリスレートを配置する方法
+
 1. Windows Mixed Reality ホームに配置されているストアスレートに移動します。
-2. お気に入りの2D アプリ (例: キャンディーノルマ) を検索します。
+2. お気に入りの2D アプリ (たとえば、キャンディノルマ) を検索します。
 3. ダウンロードしてインストールします。
 4. コントローラー (またはキーボードの Windows キー) で [スタート] ボタンを押して、Mixed Reality の [スタート] メニューを開きます。 キャンディーノルマを検索します。 場合によっては、すべてのアプリを選択する必要があります。
-5. [スタート] で [キャンディーノルマ] をクリックし、スレートを配置します。
+5. [スタート] で [キャンディーノルマ] を選択し、スレートを配置します。
 6. これで、コントローラー/マウス & キーボード/ゲームパッドを使用して、2D スレートと対話できるようになりました。
 
 ## <a name="how-to-use-a-full-desktop-application"></a>完全なデスクトップアプリケーションを使用する方法
+
 1. コントローラー (またはキーボードの Windows キー) で [スタート] ボタンを押して、Mixed Reality の [スタート] メニューを開きます。 Desktop Preview を検索します。 場合によっては、すべてのアプリを押す必要があります。
-2. [スタート] で [デスクトッププレビュー] をクリックし、スレートを配置します。
+2. [スタート] で [デスクトッププレビュー] を選択し、スレートを配置します。
 3. これで、デスクトップが表示されるようになりました。
-4. スレートをクリックし、マウスとキーボードを使用して、必要なすべてのデスクトップアプリケーション (Photoshop、AutoCAD など) を起動します。
+4. スレートを選択し、マウスとキーボードを使用して、必要な完全なデスクトップアプリケーション (Photoshop、AutoCAD など) を起動します。
 
 ## <a name="how-to-get-into-your-first-webvr-experience"></a>初めての WebVR エクスペリエンスを利用する方法
-1. ヘッドセットが接続されていて、コントローラーの電源が入っていて、接続されていることを確認します (ある場合)。
+
+1. ヘッドセットが接続されていて、コントローラーの電源が入っていて、接続されていることを確認します。
 2. Windows デスクトップで、Mixed Reality または Microsoft Edge アプリケーションに配置されている Microsoft Edge スレートに移動します。
 3. WebVR をサポートする web サイトに移動します。 いくつかの例を次に示します。
    * [A-塗装](https://aframe.io/a-painter/)
    * [A-ブラスト](https://aframe.io/a-blast/)
    * [Sketchfab](https://sketchfab.com/)
    * [CNN/VR](https://cnn.com/vr)
-4. Web ページの [Enter VR] ボタンをクリックします。 次のようになります。 \
+4. Web ページの [Enter VR] ボタンを選択します。 次のようになります。 \
    ![VR メガネイメージ](images/75px-enter-vr.png)
-5. 特定のドメインに対して最初に VR を実行しようとすると、ブラウザーはイマーシブビューの使用に同意するように要求します。 [はい] をクリックします。 ![特定のドメインに対して最初に VR を入力しようとしたときに表示される同意 UI](images/1053px-Webvr-consent-ui.png)
+5. 特定のドメインに対して最初に VR を実行しようとすると、ブラウザーはイマーシブビューの使用に同意するように要求します。 [はい] を選択します。 ![特定のドメインに対して最初に VR を入力しようとしたときに表示される同意 UI](images/1053px-Webvr-consent-ui.png)
 6. ヘッドセットで WebVR コンテンツが起動します。
 
 **注:** Microsoft Edge から WebVR エクスペリエンスを起動するには、Windows Mixed Reality 内または Windows デスクトップを使用します。
@@ -69,7 +73,7 @@ Windows Mixed Reality は Windows のみです。 つまり、mixed reality 向�
 
 ## <a name="how-to-get-into-your-first-steamvr-experience"></a>最初の SteamVR エクスペリエンスを活用する方法
 
-Windows mixed Reality for SteamVR では、ユーザーは Windows Mixed Reality のイマーシブヘッドセットで SteamVR エクスペリエンスを実行できます。 Windows Mixed Reality for SteamVR をインストールした後、ユーザーは自分のデスクトップまたは蒸気 library からお気に入りの SteamVR アプリケーションを起動し、Windows ヘッドセットで直接再生できます。
+Windows mixed Reality for SteamVR では、ユーザーは Windows Mixed Reality のイマーシブヘッドセットで SteamVR エクスペリエンスを実行できます。 SteamVR 用の Windows Mixed Reality をインストールした後、お気に入りの SteamVR アプリケーションをデスクトップまたは蒸気 library から起動し、Windows ヘッドセットで直接再生できます。
 
 作業を開始するには、 [Windows Mixed Reality 用の Steamvr セットアップ手順](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)に従います。
 

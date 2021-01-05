@@ -6,27 +6,29 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: vr, ハードウェア, 仕様, 仕様, 技術, センサー, 光学, ディスプレイ, mixed reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, イマーシブヘッドセット
-ms.openlocfilehash: 6f4be5954c8a8fe8ca0497d1a1c5d9ed09edb0c7
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: c4c6457f3a32994dc242f603c48fe90eb8194ed0
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703438"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757710"
 ---
 # <a name="immersive-headset-hardware-details"></a>イマーシブ ヘッドセット ハードウェアの詳細
 
 ![さまざまな Windows Mixed Reality ヘッドセット](images/MR-headsets.png)
 
-開発者は、世界中の多数の小売店で一般公開されている Windows 混在環境のイマーシブヘッドセットを購入できます。また、 [オンライン Microsoft Store](https://www.microsoft.com/store/collections/VRandMixedrealityheadsets)を利用し、mixed reality 開発に使用することもできます。 これらのイマーシブヘッドセットは、組み込みの内部 out 追跡を提供します。つまり、外部のトラッカーを購入またはインストールしたり、センサーを壁に配置したりする必要はありません。 複雑な設定はありません。プラグアンドプレイだけです。
+さまざまなグローバル小売業者から、一般公開されているすべての Windows Mixed Reality イマーシブヘッドセットを購入することができます。 また、 [オンライン Microsoft Store](https://www.microsoft.com/store/collections/VRandMixedrealityheadsets)でヘッドセットを見つけることもできます。これらはすべて、mixed reality 開発に使用できます。 これらのイマーシブヘッドセットは、組み込みの内部 out 追跡を提供します。つまり、外部のトラッカーを購入またはインストールしたり、センサーを壁に配置したりする必要はありません。 複雑な設定はありません。プラグアンドプレイだけです。
 
 ## <a name="device-specifications"></a>デバイスの仕様
+
 * 2つの高解像度液体 crystal が 1440 x 1440 に表示されます (Samsung HMD Odyssey の機能は、1440 x 1600 解像度で AMOLED に表示されます)
 * 最大 90 Hz (ネイティブ) のリフレッシュレートを表示する
-* 3.5 mm ジャックを介した組み込みのオーディオ出力とマイクサポート (Samsung HMD Odyssey には組み込みのヘッドホンとマイクが含まれています)
+* 3.5-mm ジャックを使用したビルトインオーディオとマイクのサポート (Samsung HMD Odyssey には組み込みのヘッドホンとマイクが含まれています)
 * HDMI 2.0 (ディスプレイ) と USB 3.0 (データ) を備えたシングルケーブル (接続用)
 * インサイドアウト追跡
 
 ## <a name="input-support"></a>入力サポート
+
 * [モーション コントローラー](../design/motion-controllers.md)
 * [UWP でサポートされているゲームパッド](hardware-accessories.md)
 * [マウスとキーボード](hardware-accessories.md)

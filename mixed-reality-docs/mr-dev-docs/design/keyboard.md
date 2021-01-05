@@ -6,19 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合現実、コントロール、相互作用、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、キーボード、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 52555dec04b42b7865e8d358d57cbc9112a7a326
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b258ad7934cae76c581723d681cce32c68458b72
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703148"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847278"
 ---
 # <a name="keyboard"></a>キーボード
 
 ![キーボード](images/UX_Hero_Keyboard.jpg)
 
-Mixed reality アプリケーションは、いつでもシステムキーボードを呼び出すことができます。 システムキーボードはターゲットプラットフォームの機能に従って動作することに注意してください。たとえば、HoloLens 2 のキーボードが直接の対話をサポートしているのに対し、HoloLens のキーボード (第1世代) では、宝石とエアタップのジェスチャ入力がサポートされています。
-
+混合 reality アプリケーションは、システムキーボードをいつでも呼び出すことができます。これは、ターゲットプラットフォームの機能に従って動作します。 たとえば、HoloLens 2 のキーボードは、直接の対話をサポートしています。 HoloLens (第1世代) のキーボードでは、宝石とエアタップがサポートされています。
 
 <br>
 
@@ -34,7 +33,7 @@ Mixed reality アプリケーションは、いつでもシステムキーボー
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-これまでに説明した Unity 開発チェックポイントの旅に従っている場合、次のタスクは、アプリケーションをデバイスまたはエミュレーターにデプロイすることです。 
+これまでに説明した Unity 開発の取り組みに従っている場合、次のタスクは、アプリケーションをデバイスまたはエミュレーターにデプロイすることです。 
 
 > [!div class="nextstepaction"]
 > [HoloLens または Windows Mixed Reality イマーシブヘッドセットへのデプロイ](../develop/platform-capabilities-and-apis/using-visual-studio.md)

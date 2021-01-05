@@ -1,17 +1,17 @@
 ---
 title: 視線入力とドウェル
-description: (視線/ヘッド) の宝石と熟考入力モデルの一般的な概要
+description: (視線とヘッド) の熟考入力モデルの一般的な概要。
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Mixed Reality、宝石、熟考、相互作用、設計、視線追跡、ヘッド追跡、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: d47401b65f7d62e1fe59655c42efe72ac68acfc6
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: e8005551e08248a73098bd0f9c198b0919e2471a
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702198"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847340"
 ---
 # <a name="gaze-and-dwell"></a>視線入力とドウェル
 
@@ -23,7 +23,7 @@ _熟考_ と [熟考](gaze-and-dwell-head.md)の2つのバリエーションと�
 
 ## <a name="scenarios"></a>シナリオ
 
-熟考は、人間の手が他のタスクと共に忙しい場合や、環境や社会的な制約のためにボイスが 100% reliable or available ではない場合に威力を持っています。
+熟考は、人間の手が他のタスクと共に忙しい場合や、環境やソーシャルの制約のために音声が 100% reliable or available ではない場合に威力を持っています。
 良い例は、車のエンジンの修理中に参考情報をオーバーレイするために HoloLens を付けている人です。
 その人がエンジンルームに身を乗り出すとき、その手は工具でふさがっているか体を支えています。
 ガレージのスペースは絶えず工具を打ちつける音やブーンという音がして騒々しいため、音声コマンドを使うのは困難です。
@@ -64,6 +64,7 @@ _熟考_ と [熟考](gaze-and-dwell-head.md)の2つのバリエーションと�
 ---
 
  ## <a name="see-also"></a>関連項目
+
 * [視線ベースの操作](eye-gaze-interaction.md)
 * [HoloLens 2 上の視線追跡](eye-tracking.md)
 * [視線入力とコミット](gaze-and-commit.md)

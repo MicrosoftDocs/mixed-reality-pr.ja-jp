@@ -8,16 +8,16 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: b65be6082967b49ee9d3c8b97cb0a18f9149a3ca
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 6a32b96fd932e3b7d47e29749fb47c70b64e32c3
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131956"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725773"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Windows Mixed Reality での音声の使用
 
-音声を使用して、Windows Mixed Reality をすばやく確認できます。簡単な写真を撮影したり、アプリを開いたり、コントローラーなしでテレポートしたりすることもできます。 簡単に入力できるように、mixed reality キーボードでディクテーションモードを試してみてください。 
+音声を使用して、Windows Mixed Reality をより迅速に利用できます。 すばやく写真を撮影したり、アプリを開いたり、コントローラーを使用せずに、電話による移植を行ったりすることができます。 簡単に入力できるようにするには、mixed reality キーボードでディクテーションモードを試してみてください。 
 
 音声に問題がありますか。 [ヘルプの表示](using-wmr-faq.md#speech-commands-arent-working)
 
@@ -30,11 +30,11 @@ ms.locfileid: "93131956"
 
 ## <a name="see-it-say-it"></a>見て発音する
 
-Windows Mixed Reality ホームでは、単語が表示される場合は、多くの場合、音声コマンドとして使用できます。 たとえば、ボタンの名前を指定するだけで、それを選択できます。 名前が表示されない場合は、ボタンでモーションコントローラーをポイントします (または、Xbox ゲームパッドを使用している場合は、宝石を見つめてください)。 
+Windows Mixed Reality ホームでは、単語が表示される場合は、多くの場合、音声コマンドとして使用できます。 たとえば、ボタンの名前を指定するだけで、それを選択できます。 名前が表示されない場合は、ボタンでモーションコントローラーをポイントして、何を言うかを確認します。 Xbox ゲームパッドの場合は、ボタンをクリックしてください。
 
 ## <a name="general-speech-commands"></a>一般的な音声コマンド
 
-Windows Mixed Reality 全体を通じて、より迅速に使用できます。 一部のコマンドでは、"select" という指示によって表示される、宝石のカーソルが使用されます。
+Windows Mixed Reality 全体で次の音声コマンドを使用すると、より迅速に作業を始めることができます。 一部のコマンドでは、"select" という指示によって表示される、宝石のカーソルが使用されます。
 
 | 目的 | 言う言葉 |
 | --- | --- |
@@ -120,7 +120,7 @@ Windows Mixed Reality 全体を通じて、より迅速に使用できます。 
 
 ## <a name="keyboard-dictation"></a>キーボードディクテーション
 
-キーボードがアクティブになっているときはいつでもディクテーションモードに切り替えて、簡単に入力できるようにします。 キーボードの [マイク] を選択するか、[開始] をクリックして開始します。
+キーボードを使用して簡単に入力できるようにするには、いつでもディクテーションモードに切り替えます。 キーボードの [マイク] を選択するか、[開始] をクリックして開始します。
 
 > [!NOTE]
 > Mixed reality キーボードは英語でのみ使用できますが、サポートされているすべての [Windows Mixed reality 言語](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)でディクテーションを使用できます。
@@ -132,12 +132,12 @@ Windows Mixed Reality 全体を通じて、より迅速に使用できます。 
 | キーボードを閉じる | 閉じる |
 | ディクテーションを開始する | 音声の開始 |
 | ディクテーションの停止 | 音声を止める |
-| 先ほどディクテーションした内容を削除する | それを削除 |
+| 確認した内容を削除する | それを削除 |
 | [ディクテーション] ボックス内のすべてを選択します。 | すべて選択する |
 
 ### <a name="punctuation"></a>句読点
 
-使用する句読点の名前を言う必要があります。 たとえば、" **質問マーク** について **コンマ** を入力してください" と表示される場合があります。
+使用する句読点の名前を言う必要があります。 たとえば、"**質問マーク** について **コンマ** を入力してください" と表示される場合があります。
 
 使用できる句読点のキーワードを次に示します。
 
@@ -148,9 +148,9 @@ Windows Mixed Reality 全体を通じて、より迅速に使用できます。 
 * ハッシュタグ、スマイル、スマイル、しかめっ、ウィンク
 * ドル、パーセント
 
-場合によっては、電子メールアドレスなどをスペルチェックすると便利です。 たとえば、 example@outlook.com "E X A M P L E at outlook dot com" と言います。
+場合によっては、電子メールアドレスなどをスペルチェックすると便利です。 たとえば、 example@outlook.com "e X A M P L E at outlook dot-com" と言います。
 
-ディクテーションを停止するには、[ **完了** ] を選択します。
+ディクテーションを停止するには、[ **完了**] を選択します。
 
 ## <a name="see-also"></a>関連項目
 

@@ -6,18 +6,18 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: リリースノート, HoloLens, os, プラットフォーム, 機能, ビルド, 起動
-ms.openlocfilehash: 49cdc51ab2da90e6483e3a06fe6b193ee9bbfc49
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: 9129bb220d2a580235494a94ecbd3227e7d4c7c7
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91784020"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725933"
 ---
 # <a name="release-notes---march-2016"></a>リリース ノート - 2016 年 3 月
 
 Windows Holographic へようこそ。 Microsoft HoloLens で初めてご利用いただけます。 ご意見をお [聞か](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)せください。 フィードバックハブ、[開発者フォーラム](https://forums.hololens.com)、および[ @HoloLens Twitter](https://twitter.com/hololens)を使用します。
 
-**リリースバージョン:** Windows Holographic 2016 年3月リリース ( **10.0.11082.1033** )
+**リリースバージョン:** Windows Holographic 2016 年3月リリース (**10.0.11082.1033**)
 
 >[!VIDEO https://www.youtube.com/embed/C98qaPAMVQU]
 
@@ -27,11 +27,11 @@ Windows Holographic へようこそ。 Microsoft HoloLens で初めてご利用�
 * **Microsoft Edge。** Windows 10 用の最新の web ブラウザー。
 * **設定。** システム情報を確認し、 [wi-fi に接続](https://docs.microsoft.com/windows/mixed-reality/connecting-to-wi-fi-on-hololens)して、 [Bluetooth デバイスに接続](https://docs.microsoft.com/windows/mixed-reality/discover/hardware-accessories)します。
 * **ホログラム.** ホログラムを世界中に配置し、それらを周囲に見て、どのような角度からでも表示して聞くことができます。
-* **目盛り.** すぐに使えるように [調整](https://docs.microsoft.com/windows/mixed-reality/calibration) を繰り返します。 この操作は、ユーザーを切り替えるたびに行います。
+* **目盛り.** ユーザーを切り替えるたびに、すぐに使えるように [調整](https://docs.microsoft.com/windows/mixed-reality/calibration) を繰り返します。
 * **ジェスチャについて説明します。** すぐに使えるように、ジェスチャのチュートリアルを繰り返します。
 * **グラフィック.** 「Mixed reality」を参照して、デバイスで撮影した写真とビデオをキャプチャし、それらをホログラムと共に世界中に配置します。
 
-開発用にデバイスのロックを解除するには、 *設定* アプリを開き、[ *Update & Security* ] に移動し、[ *開発者向け* ] ページに切り替えて、[開発者モード] を [オン] に設定します。 これは、 [デバイスポータル](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)を有効にできる場所と同じ場所です。
+開発用にデバイスのロックを解除するには、 *設定* アプリを開き、[ *Update & Security*] に移動し、[ *開発者向け* ] ページに切り替えて、[開発者モード] を [オン] に設定します。 ここから [デバイスポータル](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal) を有効にすることもできます。
 
 ## <a name="see-also"></a>関連項目
 * [HoloLens の既知の問題](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)

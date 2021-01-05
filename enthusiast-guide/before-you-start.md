@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、互換性、互換性、はじめに、セットアップ、PC、システム要件
 appliesto:
 - Windows 10
-ms.openlocfilehash: 84001a46826ada06e315f1707ee9516c3da063bd
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: f4743b6548def227675944fcd742b1596963cb3c
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434576"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725493"
 ---
-# <a name="before-you-start"></a>開始する前に
+# <a name="before-you-start"></a>アップグレードを開始する前に
 
 ## <a name="what-youll-need-to-run-windows-mixed-reality"></a>Windows Mixed Reality を実行するために必要なもの
 
@@ -29,9 +29,9 @@ ms.locfileid: "92434576"
 
 ## <a name="make-sure-your-pc-is-compatible-with-windows-mixed-reality"></a>PC が Windows Mixed Reality と互換性があることを確認する
 
-PC が Windows Mixed Reality と互換性があるかどうかを確認するには、 [Windows Mixed reality の最小 pc ハードウェア要件](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) を確認するか、Pc で [Windows mixed reality ポータル](install-windows-mixed-reality.md#launch-mixed-reality-portal) を実行します。
+Windows Mixed reality の [最小 pc ハードウェア要件](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) を確認するか、Pc で [Windows mixed reality ポータル](install-windows-mixed-reality.md#launch-mixed-reality-portal) を実行して、windows mixed reality の互換性を確認します。
 
-PC の互換性の問題の詳細については、 [こちら](https://support.microsoft.com/en-us/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality)を参照してください。
+詳細については、「 [PC の互換性に関する問題](https://support.microsoft.com/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality) 」を参照してください。
 
 ## <a name="make-sure-you-have-the-windows-10-version-1709-or-newer-installed"></a>Windows 10 バージョン1709以降がインストールされていることを確認します。
 
@@ -44,21 +44,21 @@ Windows Mixed Reality を使用するには、Windows 10 バージョン1903以�
 
 現在デバイスが実行されている Windows 10 のバージョンを確認するには、[ **スタート** ] ボタンを選択し、[ **設定] > [システム > について**] の順に選択します。
 
-PC で Windows 10 が最新の状態になっていることを確認するには、[ **スタート** ] ボタンを選択し、[設定] を選択して **& セキュリティ > Windows Update > 更新**します。  **[更新プログラムの確認]** をクリックします。 更新プログラムが利用可能な場合は、インストールします。
+PC で Windows 10 が最新の状態になっていることを確認するには、[ **スタート** ] ボタンを選択し、[設定] を選択して **& セキュリティ > Windows Update > 更新** します。  **[更新プログラムの確認]** をクリックします。 更新プログラムが利用可能な場合は、インストールします。
 
-PC を最新の状態に保つ方法の詳細について[は、こちら](https://support.microsoft.com/en-us/help/12373/windows-update-faq)を参照してください。
+詳細については、「PC を最新の状態 [に保つ](https://support.microsoft.com/help/12373/windows-update-faq) 」を参照してください。
 
 ## <a name="make-sure-your-pc-is-connected-to-the-internet"></a>PC がインターネットに接続されていることを確認する
 
-PC がインターネットに接続されていることを確認します。 Windows Mixed Reality を稼働させるには、ドライバーといくつかの追加のソフトウェアをダウンロードする必要があります。
+PC がインターネットに接続されていることを確認し、ドライバーやその他のソフトウェアをダウンロードして、Windows Mixed Reality を起動して実行します。
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>互換性のあるグラフィックスドライバーがあることを確認します。
 
 Windows Mixed Reality セットアップを完了するには、PC に WDDM 2.2 以降のグラフィックスドライバーが必要です。 互換性のあるグラフィックスドライバーがまだない場合は、次のソースを試してください。
 
-* Windows Update を使用して、最新の重要なドライバーの更新プログラムを確認します (**> Windows 設定 > 更新プログラムとセキュリティ > 更新プログラムを確認**します)。
+* Windows Update を使用して、最新の重要なドライバーの更新プログラムを確認します (**> Windows 設定 > 更新プログラムとセキュリティ > 更新プログラムを確認** します)。
 * オプションのドライバーの最新の更新プログラムを確認します。
-    1. [ **スタート > デバイスマネージャー**を右クリックします。
+    1. [ **スタート > デバイスマネージャー** を右クリックします。
     2. [ **ディスプレイアダプター**] を展開します。
     3. グラフィックスカードを右クリックし、[ドライバーの更新] を選択して、 **更新されたドライバーソフトウェアを自動的に検索 >** ます。
 * PC の製造元 (OEM) の web サイトを確認します。
@@ -66,7 +66,7 @@ Windows Mixed Reality セットアップを完了するには、PC に WDDM 2.2 
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>必要なアダプターがあることを確認する
 
-Windows Mixed Reality 互換 PC には、イマーシブヘッドセットの接続に必要な完全な HDMI および USB 3.0 ポートが搭載されていない可能性があります。 または、Windows Mixed Reality ポータルの要件を満たすために Bluetooth アダプターが必要になる場合があります。  その場合は、ヘッドセットとモーションコントローラーを接続するアダプターが必要になります。 [必要になる可能性があるアダプターの種類の一覧と、特定のアダプターモデルに関する推奨事項](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)を確認してください。
+Windows Mixed Reality 互換 PC には、イマーシブヘッドセットの接続に必要な完全な HDMI および USB 3.0 ポートが搭載されていない可能性があります。 Windows Mixed Reality ポータルの要件を満たすには、Bluetooth アダプターが必要な場合もあります。  その場合は、ヘッドセットとモーションコントローラーを接続するアダプターが必要になります。 アダプターの [種類と、特定のアダプターモデルの推奨事項](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)の一覧を必ず確認してください。
 
 ## <a name="make-sure-that-you-have-input-devices"></a>入力デバイスがあることを確認する
 
@@ -78,11 +78,11 @@ Windows Mixed Reality を使用しながら移動する場合は、大きな空�
 
 ### <a name="seated-and-standing-no-boundary"></a>固定された状態 (境界なし)
 
-[固定された状態] を選択した場合は、境界のないヘッドセットを使用します。 これは、ヘッドセットを使用するときに1つの場所を離れておく必要があることを意味します。これにより、物理的な障害を回避し、危険を防ぐことができます。 停止するか、または立ち上げてもかまいませんが、移動することはできません。 一部のアプリは、境界を使用して動作するように設計されている場合があります。境界を使用せずに使用した場合、それらを使用できなくなったり、同じエクスペリエンスを持たないことがあります。
+[固定された状態] を選択した場合は、境界のないヘッドセットを使用します。 このため、ヘッドセットを使用する場合は、物理的な障害を回避し、危険を回避するために、1つの場所に置く必要があります。 停止するか、または立ち上げてもかまいませんが、移動することはできません。 一部のアプリは、境界を使用するように設計されている場合があります。そうでない場合は、動作しない可能性があります。
 
 ### <a name="all-experiences-boundary"></a>すべてのエクスペリエンス (境界)
 
-"すべてのエクスペリエンス" を選択した場合は、境界を設定します。境界を使用しているアプリやエクスペリエンスだけでなく、必要のないアプリケーションやエクスペリエンスを使用することもできます。 使用する領域 (ヘッドを含む) に障害、障害、または脆弱な項目がないことを確認するために、スペースを準備する必要があります。 階段の上部、または低天井ファンの下には設定しないでください。 領域から breakables 変更可能な障害を除去し、ヘッドセットを使用するすべてのユーザーが [安全ガイドライン](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort)を読み、理解していることを確認します。
+"すべてのエクスペリエンス" を選択した場合は、境界を設定し、境界を使用して動作するアプリのエクスペリエンスと、それを必要としないアプリケーションの間を移動できるようにします。 ヘッドの上など、使用する領域に障害、障害、または脆弱な項目がないことを確認して、スペースを準備します。 階段の上部、または低天井ファンの下には設定しないでください。 領域から breakables 変更可能な障害を除去し、ヘッドセットを使用するすべてのユーザーが [安全性のガイドライン](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort)を読み、理解していることを確認します。
 
 ## <a name="see-also"></a>関連項目
 

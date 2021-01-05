@@ -6,26 +6,27 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, モデリング, モデリングガイダンス, 資産要件, 作成のガイドライン, ランチャー, 3D ランチャー, テクスチャ, マテリアル, 複雑さ, 三角形, メッシュ, 多角形, polycount, 制限, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 6baf8bd4faf6bb9994806e846602c91b83a1530b
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 17014e3deaaa161dd7949a55679b916e872ad5a7
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443658"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757789"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>家で使用する 3D モデルの作成
 
-[Windows Mixed Reality ホーム](../discover/navigating-the-windows-mixed-reality-home.md)は、アプリケーションを起動する前にユーザーが移動する開始点です。 Windows Mixed Reality ヘッドセット用のアプリケーションを設計して、 [アプリランチャーとして3d モデル](implementing-3d-app-launchers.md) を活用し、アプリ内から [3d ディープリンクを windows mixed reality ホームに配置](implementing-3d-app-launchers.md#3d-deep-links-secondarytiles) できるようにすることができます。 この記事では、Windows Mixed Reality ホームと互換性のある3D モデルを作成するためのガイドラインの概要を示します。
+[Windows Mixed Reality ホーム](../discover/navigating-the-windows-mixed-reality-home.md)は、アプリケーションを起動する前にユーザーが移動する開始点です。 Windows Mixed Reality ヘッドセット用のアプリケーションを設計するときは、 [アプリランチャーとして3d モデル](implementing-3d-app-launchers.md) を使用し、 [windows mixed Reality ホームに3d ディープリンク](implementing-3d-app-launchers.md#3d-deep-links-secondarytiles)を配置します。 この記事では、Windows Mixed Reality ホームと互換性のある3D モデルを作成するためのガイドラインの概要を示します。
 
 ## <a name="asset-requirements-overview"></a>資産要件の概要
+
 Windows Mixed Reality の3D モデルを作成する場合、すべての資産が満たす必要がある要件がいくつかあります。 
 1. [エクスポート](#exporting-models) -アセットは、glb ファイル形式で配信する必要があります (バイナリ gltf)
 2. [モデリング](#modeling-guidelines) -資産は10,000 三角形未満、64ノード以下、LOD あたり 32 submeshes が必要です。
 3. [素材](#material-guidelines) -テクスチャを 4096 x 4096 より大きくすることはできません。また、どちらの次元でも最小の mip マップを4より大きくすることはできません
 4. [アニメーション](#animation-guidelines) -アニメーションは 30 FPS (36000 キーフレーム) で20分より長くすることはできず、<= 8192 の変形ターゲット頂点を含める必要があります
-5. [最適化](#optimizations) -アセットは [Windowsmrassetconverter](https://github.com/Microsoft/glTF-Toolkit/releases)を使用して最適化する必要があります。 これは、 **WINDOWS Os バージョン <= 1709** であり、windows os バージョン >= 1803 で推奨されています。
+5. [最適化](#optimizations) -アセットは [Windowsmrassetconverter](https://github.com/Microsoft/glTF-Toolkit/releases)を使用して最適化する必要があります。 *WINDOWS Os バージョンでは必須 <= 1709**、windows os バージョンでは >= 1803
 
-この記事の残りの部分では、これらの要件の詳細な概要と、モデルが Windows Mixed Reality ホームと適切に連携するようにするための追加のガイドラインを示します。 
+この記事の残りの部分では、これらの要件の詳細な概要と、モデルが Windows Mixed Reality ホームとうまく連携するようにするための追加のガイドラインを示します。 
 
 ## <a name="detailed-guidance"></a>詳細なガイダンス
 
@@ -40,11 +41,11 @@ Windows では、Mixed Reality ホームエクスペリエンスとの互換性�
 2. 資産は正の Z 軸に "進む" ようになります。
 3. すべての資産は、シーンの原点 (0, 0, 0) にある地上平面上に構築する必要があります。
 4. 資産を世界規模で作成できるように、作業単位を [メーターと資産] に設定する必要があります。
-5. すべてのメッシュを結合する必要はありませんが、リソースの制限付きデバイスを対象とする場合に推奨されます。
+5. すべてのメッシュを組み合わせる必要はありませんが、リソースの制限付きデバイスを対象としている場合は推奨されます。
 6. すべてのメッシュは1つの素材を共有する必要があり、1つのテクスチャセットのみが資産全体に使用されます。
 7. UVs は、0-1 のスペースでの正方形の配置でレイアウトする必要があります。 テクスチャは許可されていますが、タイルのタイルは避けてください。
 8. マルチ UVs はサポートされていません
-9. 両面の素材はサポートされていません
+9. 両面のマテリアルはサポートされていません
 
 ### <a name="triangle-counts-and-levels-of-detail-lods"></a>三角形の数と詳細レベル (LODs)
 
@@ -58,6 +59,7 @@ Windows Mixed Reality ホームでは、1万を超える三角形のモデルは
 |  LOD 2 |  2,500  |  10,000 | 
 
 ### <a name="node-counts-and-submesh-limits"></a>ノード数と submesh の制限
+
 Windows Mixed Reality ホームは、64ノード以上のモデル、または LOD あたり 32 submeshes をサポートしていません。 ノードは、シーン内のオブジェクトを定義する [Gltf 仕様](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) の概念です。 Submeshes は、オブジェクトのメッシュ上の [プリミティブ](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) の配列で定義されます。 
 
 |  機能 |  説明  |  サポートされる最大数 | ドキュメント |
@@ -67,7 +69,7 @@ Windows Mixed Reality ホームは、64ノード以上のモデル、または L
 
 ## <a name="material-guidelines"></a>マテリアルのガイドライン
 
-テクスチャは、.PBR 金属の粗さワークフローを使用して準備する必要があります。 まず、Albedo、Normal、遮蔽、メタリック、粗さを含むテクスチャの完全なセットを作成します。 Windows Mixed Reality では、4096x4096 までの解像度のテクスチャがサポートされますが、512 x 512 で作成することをお勧めします。 さらに、テクスチャは4の倍数の解像度で作成する必要があります。これは、以下で説明するエクスポート手順のテクスチャに適用される圧縮形式の要件です。 最後に、mip マップまたはテクスチャを生成する場合、最も低い mipmap は最大4×4にする必要があります。
+テクスチャは、.PBR 金属の粗さワークフローを使用して準備する必要があります。 まず、Albedo、Normal、遮蔽、メタリック、粗さを含むテクスチャの完全なセットを作成します。 Windows Mixed Reality では、最大4096x4096 の解像度のテクスチャがサポートされていますが、512x512 で作成することをお勧めします。 テクスチャは、4の倍数の解像度で作成する必要があります。 これは、以下で説明するエクスポート手順のテクスチャに適用される圧縮形式の要件です。 Mip マップまたはテクスチャを生成する場合、最も低い mipmap は最大4×4にする必要があります。
 <br>
 
 |  推奨されるテクスチャサイズ  |  テクスチャの最大サイズ | 最小 Mip
@@ -84,7 +86,7 @@ Windows Mixed Reality ホームは、64ノード以上のモデル、または L
 
 ### <a name="roughness-map"></a>粗さマップ
 
-オブジェクトのマイクロサーフェイスについて説明します。 ホワイト1.0 は、黒色の0.0 はスムーズです。 このマップは、傷、指紋、汚れ、汚れなどの表面に実際に説明されているように、資産に最も多くの文字を与えます。
+オブジェクトのマイクロサーフェイスについて説明します。 ホワイト1.0 は、黒色の0.0 はスムーズです。 このマップは、サーフェイスに実際に記述されているように、資産に最も多くの文字を提供します。 たとえば、傷、指紋、汚れ、汚れなどです。
 
 ### <a name="ambient-occlusion-map"></a>アンビエントオクルージョンマップ
 
@@ -164,7 +166,7 @@ DDS テクスチャを圧縮する場合、各マップで次の圧縮が想定�
 
 ### <a name="adding-mesh-lods"></a>メッシュ LODs の追加
 
-Windows MR では、ジオメトリノード LODs を使用して、画面の範囲に応じてさまざまな詳細レベルで3D モデルを表示します。 この機能は技術的に必須ではありませんが、すべての資産には強くお勧めします。 現在、Windows では3つの詳細レベルがサポートされています。 既定の LOD は0で、これは最高の品質を表します。 その他の LODs には、1、2のように順番に番号が付けられ、品質が徐々に低下しています。 [Windows Mixed Reality 資産コンバーター](https://github.com/Microsoft/glTF-Toolkit/releases)は、複数の gltf モデルを受け入れ、それを有効な LOD レベルで1つの資産にマージすることによって、この LOD 仕様を満たす資産の生成をサポートします。 次の表は、想定される LOD 順序とトライアングルターゲットの概要を示しています。
+Windows MR では、画面上のカバレッジに応じて、ジオメトリノード LODs を使用して、さまざまな詳細レベルで3D モデルを表示します。 この機能は技術的に必須ではありませんが、すべての資産にお勧めします。 現在、Windows では3つの詳細レベルがサポートされています。 既定の LOD は0で、これは最高の品質を表します。 その他の LODs には、1, 2 のように順番に番号が付けられ、品質が徐々に低下します。 [Windows Mixed Reality 資産コンバーター](https://github.com/Microsoft/glTF-Toolkit/releases)は、複数の gltf モデルを受け入れ、それを有効な LOD レベルで1つの資産にマージすることによって、この LOD 仕様を満たす資産の生成をサポートします。 次の表は、想定される LOD 順序とトライアングルターゲットの概要を示しています。
 <br>
 
 |  LOD レベル  |  推奨される三角形数  |  三角形の最大数 | 
@@ -173,7 +175,7 @@ Windows MR では、ジオメトリノード LODs を使用して、画面の範
 |  LOD 1 |  5,000  |  10,000 | 
 |  LOD 2 |  2,500  |  10,000 | 
 
-LODs を使用する場合は、常に3つの LOD レベルを指定します。 LODs が見つからないと、LOD システムが不足している LOD レベルに切り替えられるため、モデルが予期せず表示されなくなります。 glTF 2.0 では、現在、コア仕様の一部として LODs をサポートしていません。したがって、この場合は、 [MSFT_LOD 拡張機能](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod)を使用して LODs を定義する必要があります。
+LODs を使用する場合は、常に3つの LOD レベルを指定します。 LODs が見つからないと、LOD システムが不足している LOD レベルに切り替えられるため、モデルが予期せず表示されなくなります。 glTF 2.0 は、現在コア仕様の一部として LODs をサポートしていません。 LODs は [MSFT_LOD 拡張機能](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod)を使用して定義する必要があります。
 
 ### <a name="screen-coverage"></a>画面カバレッジ
 
@@ -182,7 +184,7 @@ LODs は、各 LOD に設定された画面カバレッジ値によって制御�
 
 |  LOD レベル  |  推奨される範囲  |  既定の範囲 | 
 |-------|-------|-------|
-|  LOD 0  |  100%-50% |  .5 | 
+|  LOD 0  |  100%-50% |  0.5 | 
 |  LOD 1 |  50%-20% 未満  |  0.2 | 
 |  LOD 2 |  20%-1% 未満  |  0.01 | 
 |  LOD 4  |  1% 未満  |  - | 
@@ -192,20 +194,23 @@ LODs は、各 LOD に設定された画面カバレッジ値によって制御�
 > [!NOTE]
 > この機能は、 [Windows 10 April 2018 更新プログラム](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)の一部として追加されました。 以前のバージョンの Windows では、これらのアニメーションは再生されませんが、この記事のガイダンスに従って作成された場合でも読み込まれます。  
 
-Mixed reality ホームでは、HoloLens およびイマーシブ (VR) ヘッドセットでのアニメーション化された glTF オブジェクトがサポートされています。 モデルでアニメーションをトリガーする場合は、glTF 形式でアニメーションマップ拡張機能を使用する必要があります。 この拡張機能を使用すると、世界中のユーザーに基づいて glTF モデルのアニメーションをトリガーできます。たとえば、ユーザーがオブジェクトに近づいたときや、アニメーションを見ているときにアニメーションをトリガーするなどです。 実際に Tf オブジェクトにアニメーションがあり、トリガーが定義されていない場合、アニメーションは再生されません。 以下のセクションでは、これらのトリガーをアニメーション化された glTF オブジェクトに追加するためのワークフローについて説明します。
+Mixed reality ホームでは、HoloLens およびイマーシブ (VR) ヘッドセットでのアニメーション化された glTF オブジェクトがサポートされています。 モデルでアニメーションをトリガーする場合は、glTF 形式でアニメーションマップ拡張機能を使用する必要があります。 この拡張機能を使用すると、ユーザーが世界中に存在することに基づいて glTF モデルのアニメーションをトリガーできます。たとえば、ユーザーがオブジェクトに近づいたとき、またはそのオブジェクトを見ているときにアニメーションをトリガーすることができます。 実際に Tf オブジェクトにアニメーションがあり、トリガーが定義されていない場合は、アニメーションは再生されません。 以下のセクションでは、これらのトリガーをアニメーション化された glTF オブジェクトに追加するためのワークフローについて説明します。
 
 ### <a name="tools"></a>ツール
+
 まず、次のツールをダウンロードします (まだインストールしていない場合)。 これらのツールを使用すると、glTF モデルを開いてプレビューし、変更を加えて、glTF または glb として保存することが簡単になります。
 1. [Visual Studio Code](https://code.visualstudio.com/)
 2. [Visual Studio Code 用の glTF ツール](https://marketplace.visualstudio.com/items?itemName=cesium.gltf-vscode)
 
 
 ### <a name="opening-and-previewing-the-model"></a>モデルを開いてプレビューする
-まず、VSCode で gltf モデルを開いて、その glTF ファイルをエディターウィンドウにドラッグします。 GlTF ファイルではなく. glb を使用している場合は、ダウンロードした glTF Tools アドオンを使用して VSCode にインポートできます。 [ビュー-> コマンドパレット] にアクセスして、コマンドパレットで「glTF」と入力し、「glTF: Import from glb (glTF: Import from glb)」を選択します。これにより、を使用してをインポートするためのファイルピッカーがポップアップ表示されます。 
+
+まず、VSCode で gltf モデルを開いて、その glTF ファイルをエディターウィンドウにドラッグします。 GlTF ファイルではなく. glb がある場合は、ダウンロードした glTF Tools アドオンを使用して VSCode にインポートできます。 [> 表示] メニューの [コマンドパレット] にアクセスし、コマンドパレットで「glTF」と入力し、"glTF: Import from glb" を選択します。これにより、glb をインポートするためのファイルピッカーがポップアップ表示されます。 
 
 GlTF モデルを開いたら、エディターウィンドウに JSON が表示されます。 また、を使用してライブ3D ビューアーでモデルをプレビューすることもできます。そのためには、ファイル名を右クリックし、右クリックメニューから [glTF: Preview 3D Model] コマンドショートカットを選択します。 
 
 ### <a name="adding-the-triggers"></a>トリガーの追加
+
 アニメーショントリガーは、アニメーションマップ拡張機能を使用して glTF model JSON に追加されます。 ここでは、アニメーションマップ拡張機能を [GitHub で](https://github.com/msfeldstein/glTF/blob/04f7005206257cf97b215df5e3f469d7838c1fee/extensions/Vendor/FB_animation_map/README.md) 公開しています (注: これはドラフト拡張機能です)。 モデルに拡張機能を追加するには、エディターで glTF ファイルの末尾までスクロールし、ファイルがまだ存在しない場合は "extensionsUsed" および "extensions" ブロックを追加します。 "ExtensionsUsed" セクションで、"extensions" ブロックに "EXT_animation_map" 拡張機能への参照を追加し、モデルのアニメーションにマッピングを追加します。
 
 [仕様に](https://github.com/msfeldstein/glTF/blob/04f7005206257cf97b215df5e3f469d7838c1fee/extensions/Vendor/FB_animation_map/README.md)示されているように、アニメーションでは、アニメーションのインデックスの配列である "アニメーション" のリストに "セマンティック" 文字列を使用して、何をトリガーするかを定義します。 次の例では、ユーザーがオブジェクトを使用しているときに再生するアニメーションを指定しています。
@@ -233,21 +238,24 @@ Windows Mixed Reality ホームでは、次のアニメーショントリガー�
 * "ポインティング": ユーザーがオブジェクトをポイントしているときのループ
 
 ### <a name="saving-and-exporting"></a>保存とエクスポート
-GlTF モデルに変更を加えた後は、glTF として直接保存できます。または、エディターでファイル名を右クリックして [glTF: Export to GLB (バイナリファイル)] を選択し、代わりに GLB をエクスポートすることもできます。 
+
+GlTF モデルに変更を加えた後は、glTF として直接保存できます。 また、エディターでファイルの名前を右クリックし、"glTF: Export to GLB (バイナリファイル)" を選択して GLB をエクスポートすることもできます。 
 
 ### <a name="restrictions"></a>制限
-アニメーションは20分より長くすることはできず、36000のキーフレーム (30 FPS で20分) を含めることはできません。 また、変形ターゲットベースのアニメーションを使用する場合は、8192の変形ターゲット頂点以下を超えることはありません。 これらの数を超えると、アニメーション化された資産が Windows Mixed Reality ホームでサポートされなくなります。 
 
-|特徴|最大値|
+アニメーションは20分より長くすることはできません。また、36000のキーフレーム (30 FPS で20分) を超えることはできません。 また、変形ターゲットベースのアニメーションを使用する場合、8192の変形ターゲット頂点以下を超えることはありません。 これらのカウントを超えると、アニメーション化された資産が Windows Mixed Reality ホームでサポートされなくなります。 
+
+|機能|最大値|
 |-----|-----|
 |Duration|20 分|
 |キーフレーム|36,000| 
 |変形ターゲット頂点|8192|
 
 ## <a name="gltf-implementation-notes"></a>glTF 実装に関する注意事項
-Windows MR では、負のスケールを使用した geometry の反転はサポートされていません。 負の目盛りを持つジオメトリでは、ビジュアル成果物が生成される可能性があります。
 
-GlTF 資産は、Windows MR によって表示されるシーン属性を使用して、既定のシーンをポイントする必要があります。 さらに、 [windows 10 の2018年4月の更新](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)より前の windows MR では、アクセサー **が必要です** 。
+Windows MR では、負のスケールを使用した geometry の反転はサポートしていません。 負の目盛りを持つジオメトリでは、ビジュアル成果物が生成される可能性があります。
+
+GlTF 資産は、Windows MR によって表示されるシーン属性を使用して、既定のシーンをポイントする必要があります。 さらに、windows [10 の2018年4月の更新](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)の前に、WINDOWS の MR gltf ローダーでは、アクセサー **が必要** です。
 * 最小値と最大値が必要です。
 * 型スカラーは、componentType UNSIGNED_SHORT (5123) または UNSIGNED_INT (5125) である必要があります。
 * 型 VEC2 と VEC3 は、componentType FLOAT (5126) である必要があります。
@@ -271,7 +279,8 @@ Windows MR は、プリミティブモードの線とポイントをサポート
 
 1つの UV 頂点属性のみがサポートされています。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="more-resources"></a>その他のリソース
+
 * [glTF エクスポーターおよびコンバーター](https://github.com/KhronosGroup/glTF#converters-and-exporters)
 * [glTF Toolkit](https://github.com/Microsoft/glTF-Toolkit)
 * [glTF 2.0 仕様](https://github.com/KhronosGroup/glTF/blob/master/README.md)

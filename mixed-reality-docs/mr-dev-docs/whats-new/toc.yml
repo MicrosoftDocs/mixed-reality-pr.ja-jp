@@ -1,4 +1,19 @@
-# - name: Learn about Azure Services 
+- name: Designing Holograms アプリを調べる
+  href: ../discover/designing-holograms.md
+- name: 新しい Mixed Reality Learn のモジュール
+  href: ../discover/mr-learning-overview.md
+- name: Azure 複合現実クラウド サービスについて
+  href: ../develop/mixed-reality-cloud-services.md
+- name: Unity で OpenXR を使ってみる
+  href: ../develop/unity/openxr-getting-started.md
+- name: 新しい HP Reverb G2 コントローラーの使用
+  items:
+    - name: Unity
+      href: ../develop/unity/unity-reverb-g2-controllers.md
+    - name: Unreal
+      href: ../develop/unreal/unreal-reverb-g2-controllers.md
+- name: アプリを世界中に配布する
+  href: ../distribute/distribute-overview.md
 - name: 新しい Microsoft Edge の準備
   href: new-microsoft-edge.md
 - name: プログラムとイベント

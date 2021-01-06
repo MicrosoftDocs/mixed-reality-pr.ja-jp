@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 158bb9d50e8d288cf4fc345b5f5e210f113146ae
-  ms.sourcegitcommit: 856a1a48f05dd84f884a6e64bef4003e3768e669
+  ms.openlocfilehash: 0ddea2f7271e00cc4f845b6bfd6c53c919846632
+  ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/04/2020
-  ms.locfileid: "96604815"
+  ms.lasthandoff: 01/06/2021
+  ms.locfileid: "97905284"
 highlightedContent:
   items:
   - title: Mixed Reality とは
@@ -69,16 +69,16 @@ productDirectory:
     links:
     - url: develop/development.md
       text: テクノロジ パスの選択
-    - url: develop/install-the-tools.md
-      text: ツールのインストール
+    - url: develop/features-and-samples.md
+      text: サンプルとおすすめアプリの検索
     - url: develop/unity/unity-development-overview.md
       text: Unity の概要
     - url: develop/unreal/unreal-development-overview.md
       text: Unreal の概要
     - url: develop/porting-apps/porting-overview.md
       text: 既存のアプリを移植する
-    - url: develop/porting-apps/porting-hl1-hl2.md
-      text: アプリを HoloLens 2 で利用できるようにする
+    - url: distribute/distribute-overview.md
+      text: アプリを公開する
   - title: 配置
     imageSrc: images/icon-distribution.jpg
     links:
@@ -90,8 +90,8 @@ productDirectory:
       text: デバイスの登録
     - url: https://docs.microsoft.com/hololens/hololens-updates
       text: HoloLens 更新プログラムの管理
-    - url: https://docs.microsoft.com/hololens/hololens-release-notes
-      text: リリース ノート
+    - url: https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview
+      text: Remote Assist を使用したクラウド接続デプロイ
     - url: https://docs.microsoft.com/hololens/hololens-troubleshooting
       text: トラブルシューティングとサポート
 conceptualContent:
@@ -186,60 +186,3 @@ tools:
   - title: OpenXR API
     imageSrc: images/Final_mrdl_logo.png
     url: https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html
-additionalContent:
-  sections:
-  - title: その他の資料
-    summary: 商用環境での展開、Azure Cloud Services の統合、サンプル アプリケーションのテストのためにアプリケーションを準備します。
-    items:
-    - title: 配布
-      links:
-      - text: 配布の概要
-        url: distribute/distribute-overview.md
-      - text: 3D アプリ起動ツールの設計
-        url: distribute/3d-app-launcher-design-guidance.md
-      - text: Mixed Reality ホームの 3D モデルの作成
-        url: distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md
-      - text: UWP アプリでの 3D アプリ起動ツールの実装
-        url: distribute/implementing-3d-app-launchers.md
-      - text: アプリ内購入の追加
-        url: distribute/in-app-purchases.md
-      - text: Microsoft Store への提出
-        url: distribute/submitting-an-app-to-the-microsoft-store.md
-    - title: Dynamics 365 Mixed Reality
-      links:
-      - text: Dynamics 365 のドキュメント
-        url: https://docs.microsoft.com/dynamics365/mixed-reality/
-      - text: リモート アシストの使用
-        url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens
-      - text: ユーザー ガイド
-        url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
-      - text: リモート アシスト学習モジュール
-        url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
-    - title: Azure Cloud Services
-      links:
-      - text: Cloud Services の概要
-        url: develop/mixed-reality-cloud-services.md
-      - text: Azure Spatial Anchors の開始
-        url: https://docs.microsoft.com/azure/spatial-anchors/
-      - text: Azure Spatial Anchors チュートリアル
-        url: develop/unity/tutorials/mr-learning-asa-01.md
-      - text: Azure Remote Rendering を使った開発
-        url: https://docs.microsoft.com/azure/remote-rendering/
-      - text: Azure Remote Rendering チュートリアル
-        url: https://docs.microsoft.com/en-us/azure/remote-rendering/tutorials/unity/tutorial-landing
-    - title: HoloLens 2 のサンプル アプリ
-      links:
-      - text: Surfaces
-        url: develop/unity/sampleapp-surfaces.md
-      - text: 元素周期表 2.0
-        url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
-      - text: Galaxy Explorer 2.0
-        url: develop/unity/galaxy-explorer-update.md
-    - title: 学習モジュール
-      links:
-      - text: 複合現実入門
-        url: https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/
-      - text: Mixed Reality ツールキットを使用して Unity で Mixed Reality プロジェクトを設定する
-        url: https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/
-      - text: Unity と Azure Cognitive Services を使用して言語翻訳アプリケーションを作成する
-        url: https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/

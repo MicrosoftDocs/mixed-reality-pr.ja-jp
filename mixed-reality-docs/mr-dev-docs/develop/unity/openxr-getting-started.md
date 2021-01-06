@@ -6,59 +6,59 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 拡張現実, 仮想現実, mixed reality ヘッドセット, 学習, チュートリアル, 概要
-ms.openlocfilehash: 9e7f59c57d409d61df73e6d07659bf6c7242202c
-ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
+ms.openlocfilehash: 7d28dd50e111da4b010bcae699b7451d967e8f35
+ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97880603"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97905294"
 ---
-# <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a><span data-ttu-id="a1b32-104">Unity に Mixed Reality OpenXR プラグインを使用する</span><span class="sxs-lookup"><span data-stu-id="a1b32-104">Using the Mixed Reality OpenXR Plugin for Unity</span></span>
+# <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a><span data-ttu-id="5fa5c-104">Unity に Mixed Reality OpenXR プラグインを使用する</span><span class="sxs-lookup"><span data-stu-id="5fa5c-104">Using the Mixed Reality OpenXR Plugin for Unity</span></span>
 
-<span data-ttu-id="a1b32-105">Unity バージョン2020.2 以降、Microsoft の Mixed Reality OpenXR プラグインパッケージは、Unity パッケージマネージャー (UPM) を使用して利用できます。</span><span class="sxs-lookup"><span data-stu-id="a1b32-105">Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin package is available using the Unity Package Manager (UPM).</span></span>
+<span data-ttu-id="5fa5c-105">Unity バージョン2020.2 以降、Microsoft の Mixed Reality OpenXR プラグインパッケージは、Unity パッケージマネージャー (UPM) を使用して利用できます。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-105">Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin package is available using the Unity Package Manager (UPM).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a1b32-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="a1b32-106">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5fa5c-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="5fa5c-106">Prerequisites</span></span>
 
-* <span data-ttu-id="a1b32-107">Unity 2020.2 以降</span><span class="sxs-lookup"><span data-stu-id="a1b32-107">Unity 2020.2 or later</span></span>
-* <span data-ttu-id="a1b32-108">Unity OpenXR plugin 0.1.1 以降</span><span class="sxs-lookup"><span data-stu-id="a1b32-108">Unity OpenXR plugin 0.1.1 or later</span></span>
-* <span data-ttu-id="a1b32-109">Visual Studio 2019 以降</span><span class="sxs-lookup"><span data-stu-id="a1b32-109">Visual Studio 2019 or later</span></span>
-* <span data-ttu-id="a1b32-110">HoloLens 2 アプリの **UWP** プラットフォームサポートを Unity でインストールする</span><span class="sxs-lookup"><span data-stu-id="a1b32-110">Install **UWP** platform support in Unity for HoloLens 2 apps</span></span>
+* <span data-ttu-id="5fa5c-107">Unity 2020.2 以降</span><span class="sxs-lookup"><span data-stu-id="5fa5c-107">Unity 2020.2 or later</span></span>
+* <span data-ttu-id="5fa5c-108">Unity OpenXR plugin 0.1.1 以降</span><span class="sxs-lookup"><span data-stu-id="5fa5c-108">Unity OpenXR plugin 0.1.1 or later</span></span>
+* <span data-ttu-id="5fa5c-109">Visual Studio 2019 以降</span><span class="sxs-lookup"><span data-stu-id="5fa5c-109">Visual Studio 2019 or later</span></span>
+* <span data-ttu-id="5fa5c-110">HoloLens 2 アプリの **UWP** プラットフォームサポートを Unity でインストールする</span><span class="sxs-lookup"><span data-stu-id="5fa5c-110">Install **UWP** platform support in Unity for HoloLens 2 apps</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a1b32-111">Windows PC で VR アプリケーションを構築している場合、Mixed Reality OpenXR プラグインは必ずしも必要ではありません。</span><span class="sxs-lookup"><span data-stu-id="a1b32-111">If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not necessarily required.</span></span> <span data-ttu-id="a1b32-112">ただし、HP リバーブ G2 コントローラーのコントローラーマッピングをカスタマイズしている場合、または HoloLens 2 と VR ヘッドセットの両方で動作するアプリを作成する場合は、プラグインをインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a1b32-112">However, you'll want to install the plugin if you're customizing controller mapping for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.</span></span>
+> <span data-ttu-id="5fa5c-111">Windows PC で VR アプリケーションを構築している場合、Mixed Reality OpenXR プラグインは必ずしも必要ではありません。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-111">If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not necessarily required.</span></span> <span data-ttu-id="5fa5c-112">ただし、HP リバーブ G2 コントローラーのコントローラーマッピングをカスタマイズしている場合、または HoloLens 2 と VR ヘッドセットの両方で動作するアプリを作成する場合は、プラグインをインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-112">However, you'll want to install the plugin if you're customizing controller mapping for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.</span></span>
 
-## <a name="installing-the-mixed-reality-openxr-plugin"></a><span data-ttu-id="a1b32-113">Mixed Reality OpenXR プラグインのインストール</span><span class="sxs-lookup"><span data-stu-id="a1b32-113">Installing the Mixed Reality OpenXR plugin</span></span>
+## <a name="installing-the-mixed-reality-openxr-plugin"></a><span data-ttu-id="5fa5c-113">Mixed Reality OpenXR プラグインのインストール</span><span class="sxs-lookup"><span data-stu-id="5fa5c-113">Installing the Mixed Reality OpenXR plugin</span></span>
 
-<span data-ttu-id="a1b32-114">混合 Reality OpenXR プラグインを使用する前に、プロジェクトで **OpenXR plugin** と **XR plugin 管理** パッケージをインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a1b32-114">Your project needs to install the **OpenXR Plugin** and **XR Plugin Management** packages before using the Mixed Reality OpenXR Plugin.</span></span> <span data-ttu-id="a1b32-115">既にインストールされている場合は、</span><span class="sxs-lookup"><span data-stu-id="a1b32-115">If you've already installed them, great!</span></span> <span data-ttu-id="a1b32-116">それ以外の場合、Mixed Reality OpenXR プラグインをインストールすると、依存関係として自動的にインストールされます。</span><span class="sxs-lookup"><span data-stu-id="a1b32-116">If not, installing the Mixed Reality OpenXR plugin will automatically install them as dependencies:</span></span>
+<span data-ttu-id="5fa5c-114">混合 Reality OpenXR プラグインを使用する前に、プロジェクトで **OpenXR plugin** と **XR plugin 管理** パッケージをインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-114">Your project needs to install the **OpenXR Plugin** and **XR Plugin Management** packages before using the Mixed Reality OpenXR Plugin.</span></span> <span data-ttu-id="5fa5c-115">既にインストールされている場合は、</span><span class="sxs-lookup"><span data-stu-id="5fa5c-115">If you've already installed them, great!</span></span> <span data-ttu-id="5fa5c-116">それ以外の場合、Mixed Reality OpenXR プラグインをインストールすると、依存関係として自動的にインストールされます。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-116">If not, installing the Mixed Reality OpenXR plugin will automatically install them as dependencies:</span></span>
 
-1. <span data-ttu-id="a1b32-117">Unity エディターで、[ **> プロジェクトの設定の編集] > [パッケージマネージャー** ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-117">In the Unity Editor, navigate to **Edit > Project Settings > Package Manager**</span></span>
-2. <span data-ttu-id="a1b32-118">[スコープされた **レジストリ** ] セクションを展開し、次の情報を入力して、[ **保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-118">Expand the **Scoped Registries** section, enter the following information, and select **Save**:</span></span>
-    * <span data-ttu-id="a1b32-119">**名前** を **Microsoft Mixed Reality** に設定する</span><span class="sxs-lookup"><span data-stu-id="a1b32-119">Set **Name** to **Microsoft Mixed Reality**</span></span>
-    * <span data-ttu-id="a1b32-120">**URL** をに設定 **https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/**</span><span class="sxs-lookup"><span data-stu-id="a1b32-120">Set **URL** to **https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/**</span></span>
-    * <span data-ttu-id="a1b32-121">**スコープ** を mixedreality に設定し **ます。**</span><span class="sxs-lookup"><span data-stu-id="a1b32-121">Set **Scope(s)** to **com.microsoft.mixedreality**</span></span>
+1. <span data-ttu-id="5fa5c-117">Unity エディターで、[ **> プロジェクトの設定の編集] > [パッケージマネージャー** ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-117">In the Unity Editor, navigate to **Edit > Project Settings > Package Manager**</span></span>
+2. <span data-ttu-id="5fa5c-118">[スコープされた **レジストリ** ] セクションを展開し、次の情報を入力して、[ **保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-118">Expand the **Scoped Registries** section, enter the following information, and select **Save**:</span></span>
+    * <span data-ttu-id="5fa5c-119">**名前** を **Microsoft Mixed Reality** に設定する</span><span class="sxs-lookup"><span data-stu-id="5fa5c-119">Set **Name** to **Microsoft Mixed Reality**</span></span>
+    * <span data-ttu-id="5fa5c-120">**URL** をに設定 **https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/**</span><span class="sxs-lookup"><span data-stu-id="5fa5c-120">Set **URL** to **https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/**</span></span>
+    * <span data-ttu-id="5fa5c-121">**スコープ** を mixedreality に設定し **ます。**</span><span class="sxs-lookup"><span data-stu-id="5fa5c-121">Set **Scope(s)** to **com.microsoft.mixedreality**</span></span>
 
-3. <span data-ttu-id="a1b32-122">[**詳細設定**] で、[**プレビューパッケージを有効にする**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-122">Under **Advanced Settings**, select **Enable Preview Packages**</span></span>
+3. <span data-ttu-id="5fa5c-122">[**詳細設定**] で、[**プレビューパッケージを有効にする**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-122">Under **Advanced Settings**, select **Enable Preview Packages**</span></span>
 
 ![[プロジェクトの設定] で開いている Unity パッケージマネージャーウィンドウのスクリーンショット](images/openxr-img-01.png)
 
-<span data-ttu-id="a1b32-124">Unity パッケージマネージャーでは、 *manifest.js* という名前のマニフェストファイルを使用して、インストールするパッケージとインストール可能なレジストリを決定します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-124">The Unity Package Manager uses a manifest file named *manifest.json* to determine which packages to install and the registries they can be installed from.</span></span>
+<span data-ttu-id="5fa5c-124">Unity パッケージマネージャーでは、 *manifest.js* という名前のマニフェストファイルを使用して、インストールするパッケージとインストール可能なレジストリを決定します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-124">The Unity Package Manager uses a manifest file named *manifest.json* to determine which packages to install and the registries they can be installed from.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="a1b32-125">OpenXR は引き続き Unity で試験段階であり、開発者エクスペリエンスを最適化するために作業するため、このプロセスは時間の経過と共に変わる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="a1b32-125">OpenXR is still experimental in Unity and this process may change over time as we work to optimize the developer experience.</span></span>
+> <span data-ttu-id="5fa5c-125">OpenXR は引き続き Unity で試験段階であり、開発者エクスペリエンスを最適化するために作業するため、このプロセスは時間の経過と共に変わる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-125">OpenXR is still experimental in Unity and this process may change over time as we work to optimize the developer experience.</span></span>
 
-### <a name="registering-the-mixed-reality-dependency"></a><span data-ttu-id="a1b32-126">Mixed Reality 依存関係を登録しています</span><span class="sxs-lookup"><span data-stu-id="a1b32-126">Registering the Mixed Reality dependency</span></span>
+### <a name="registering-the-mixed-reality-dependency"></a><span data-ttu-id="5fa5c-126">Mixed Reality 依存関係を登録しています</span><span class="sxs-lookup"><span data-stu-id="5fa5c-126">Registering the Mixed Reality dependency</span></span>
 
-<span data-ttu-id="a1b32-127">Microsoft Mixed Reality スコープのレジストリがマニフェストに追加されたら、OpenXR パッケージを指定できます。</span><span class="sxs-lookup"><span data-stu-id="a1b32-127">Once the Microsoft Mixed Reality scoped registry has been added to the manifest, the OpenXR package can be specified.</span></span>
+<span data-ttu-id="5fa5c-127">Microsoft Mixed Reality スコープのレジストリがマニフェストに追加されたら、OpenXR パッケージを指定できます。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-127">Once the Microsoft Mixed Reality scoped registry has been added to the manifest, the OpenXR package can be specified.</span></span>
 
-<span data-ttu-id="a1b32-128">OpenXR パッケージを追加するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="a1b32-128">To add the OpenXR package:</span></span>
+<span data-ttu-id="5fa5c-128">OpenXR パッケージを追加するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-128">To add the OpenXR package:</span></span>
 
-1. <span data-ttu-id="a1b32-129">次のようなテキストエディターで **[Projectroot]/パッケージ/manifest.jsを** 開き Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="a1b32-129">Open **[projectRoot]/Packages/manifest.json** in a text editor like Visual Studio Code</span></span>
-    1. <span data-ttu-id="a1b32-130">このページを表示するには、プロジェクトウィンドウの左側のパネルにある [ **パッケージ** ] を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="a1b32-130">To get here, right click on **Packages** in the left panel of the Project window.</span></span> <span data-ttu-id="a1b32-131">次に、[ **エクスプローラーで表示**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a1b32-131">Then, click **Show in Explorer**.</span></span>
-    <span data-ttu-id="a1b32-132">![[プロジェクト] ウィンドウのパッケージ一覧のスクリーンショット](images/packages.png)</span><span class="sxs-lookup"><span data-stu-id="a1b32-132">![Screenshot of the packages listing in the Project window](images/packages.png)</span></span>
-1. <span data-ttu-id="a1b32-133">次のように、ファイルの *Packages/manifest.js* の dependencies セクションを変更します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-133">Modify the dependencies section of the *Packages/manifest.json* file as follows:</span></span>
+1. <span data-ttu-id="5fa5c-129">次のようなテキストエディターで **[Projectroot]/パッケージ/manifest.jsを** 開き Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="5fa5c-129">Open **[projectRoot]/Packages/manifest.json** in a text editor like Visual Studio Code</span></span>
+    1. <span data-ttu-id="5fa5c-130">このページを表示するには、プロジェクトウィンドウの左側のパネルにある [ **パッケージ** ] を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-130">To get here, right click on **Packages** in the left panel of the Project window.</span></span> <span data-ttu-id="5fa5c-131">次に、[ **エクスプローラーで表示**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-131">Then, click **Show in Explorer**.</span></span>
+    <span data-ttu-id="5fa5c-132">![[プロジェクト] ウィンドウのパッケージ一覧のスクリーンショット](images/packages.png)</span><span class="sxs-lookup"><span data-stu-id="5fa5c-132">![Screenshot of the packages listing in the Project window](images/packages.png)</span></span>
+1. <span data-ttu-id="5fa5c-133">次のように、ファイルの *Packages/manifest.js* の dependencies セクションを変更します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-133">Modify the dependencies section of the *Packages/manifest.json* file as follows:</span></span>
 
     > [!IMPORTANT]
-    > <span data-ttu-id="a1b32-134">マニフェストファイルには、ここに示されている以上の依存関係がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="a1b32-134">There may be more dependencies in your manifest file than shown here.</span></span> <span data-ttu-id="a1b32-135">これらのいずれも削除しないでください。リストに OpenXR 依存関係を追加するだけです。</span><span class="sxs-lookup"><span data-stu-id="a1b32-135">Don't delete any of them, just add the OpenXR dependency to the list.</span></span>
+    > <span data-ttu-id="5fa5c-134">マニフェストファイルには、ここに示されている以上の依存関係がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-134">There may be more dependencies in your manifest file than shown here.</span></span> <span data-ttu-id="5fa5c-135">これらのいずれも削除しないでください。リストに OpenXR 依存関係を追加するだけです。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-135">Don't delete any of them, just add the OpenXR dependency to the list.</span></span>
 
     ``` json
       "dependencies": {
@@ -66,48 +66,48 @@ ms.locfileid: "97880603"
       }
     ```
 
-1. <span data-ttu-id="a1b32-136">ファイルを保存し、Unity エディターに戻り、 **パッケージマネージャー** を開いて、プラグインがインストールされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-136">Save the file, switch back to the Unity Editor, and open the **Package Manager** to confirm the plugin is installed:</span></span>
+1. <span data-ttu-id="5fa5c-136">ファイルを保存し、Unity エディターに戻り、 **パッケージマネージャー** を開いて、プラグインがインストールされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-136">Save the file, switch back to the Unity Editor, and open the **Package Manager** to confirm the plugin is installed:</span></span>
 
     ![Mixed Reality OpenXR プラグインが強調表示されている unity エディターで開く Unity パッケージマネージャーのスクリーンショット](images/openxr-img-03.png)
 
     > [!Note]
-    > <span data-ttu-id="a1b32-138">Unity パッケージマネージャーを使用して OpenXR パッケージを削除した場合は、前に説明した手順を使用して、パッケージを再度追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a1b32-138">If the OpenXR package is removed using the Unity Package Manager, you'll have to re-add it using the previously described steps.</span></span>
+    > <span data-ttu-id="5fa5c-138">Unity パッケージマネージャーを使用して OpenXR パッケージを削除した場合は、前に説明した手順を使用して、パッケージを再度追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-138">If the OpenXR package is removed using the Unity Package Manager, you'll have to re-add it using the previously described steps.</span></span>
 
-## <a name="configuring-xr-plugin-management-for-openxr"></a><span data-ttu-id="a1b32-139">OpenXR の XR Plugin Management の構成</span><span class="sxs-lookup"><span data-stu-id="a1b32-139">Configuring XR Plugin Management for OpenXR</span></span>
+## <a name="configuring-xr-plugin-management-for-openxr"></a><span data-ttu-id="5fa5c-139">OpenXR の XR Plugin Management の構成</span><span class="sxs-lookup"><span data-stu-id="5fa5c-139">Configuring XR Plugin Management for OpenXR</span></span>
 
-<span data-ttu-id="a1b32-140">Unity のランタイムとして OpenXR を設定するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="a1b32-140">To set OpenXR as the the runtime in Unity:</span></span>
+<span data-ttu-id="5fa5c-140">Unity のランタイムとして OpenXR を設定するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-140">To set OpenXR as the the runtime in Unity:</span></span>
 
-1. <span data-ttu-id="a1b32-141">Unity エディターで、[ **Edit > プロジェクトの設定**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-141">In the Unity Editor, navigate to **Edit > Project Settings**</span></span>
-2. <span data-ttu-id="a1b32-142">設定の一覧で、[ **XR Plugin Management** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-142">In the list of Settings, select **XR Plugin Management**</span></span>
-3. <span data-ttu-id="a1b32-143">**[XR On Startup** and **OpenXR (プレビュー)** ] ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="a1b32-143">Check the **Initialize XR on Startup** and **OpenXR (Preview)** boxes</span></span>
-4. <span data-ttu-id="a1b32-144">HoloLens 2 を対象とする場合は、UWP プラットフォームを使用していることを確認し、[ **Microsoft HoloLens] 機能セット** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-144">If targeting HoloLens 2, make sure you're on the UWP platform and select **Microsoft HoloLens Feature Set**</span></span>
+1. <span data-ttu-id="5fa5c-141">Unity エディターで、[ **Edit > プロジェクトの設定**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-141">In the Unity Editor, navigate to **Edit > Project Settings**</span></span>
+2. <span data-ttu-id="5fa5c-142">設定の一覧で、[ **XR Plugin Management** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-142">In the list of Settings, select **XR Plugin Management**</span></span>
+3. <span data-ttu-id="5fa5c-143">**[XR On Startup** and **OpenXR (プレビュー)** ] ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-143">Check the **Initialize XR on Startup** and **OpenXR (Preview)** boxes</span></span>
+4. <span data-ttu-id="5fa5c-144">HoloLens 2 を対象とする場合は、UWP プラットフォームを使用していることを確認し、[ **Microsoft HoloLens] 機能セット** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-144">If targeting HoloLens 2, make sure you're on the UWP platform and select **Microsoft HoloLens Feature Set**</span></span>
 
 ![XR プラグイン管理が強調表示されている Unity エディターで開いているプロジェクト設定パネルのスクリーンショット](images/openxr-img-05.png)
 
 > [!IMPORTANT]
-> <span data-ttu-id="a1b32-146">**OpenXR Plugin (Preview)** の横に赤い警告アイコンが表示された場合は、アイコンをクリックし、[**すべて修正**] を選択してから続行します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-146">If you see a red warning icon next to **OpenXR Plugin (Preview)**, click the icon and select **Fix all** before continuing.</span></span> <span data-ttu-id="a1b32-147">変更を有効にするには、Unity エディター自体を再起動することが必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="a1b32-147">The Unity Editor may need to restart itself for the changes to take effect.</span></span>
+> <span data-ttu-id="5fa5c-146">**OpenXR Plugin (Preview)** の横に赤い警告アイコンが表示された場合は、アイコンをクリックし、[**すべて修正**] を選択してから続行します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-146">If you see a red warning icon next to **OpenXR Plugin (Preview)**, click the icon and select **Fix all** before continuing.</span></span> <span data-ttu-id="5fa5c-147">変更を有効にするには、Unity エディター自体を再起動することが必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-147">The Unity Editor may need to restart itself for the changes to take effect.</span></span>
 
 ![OpenXR プロジェクト検証ウィンドウのスクリーンショット](images/openxr-img-06.png)
 
-<span data-ttu-id="a1b32-149">Unity で OpenXR を使用して開発を始める準備ができました。</span><span class="sxs-lookup"><span data-stu-id="a1b32-149">You're now ready to begin developing with OpenXR in Unity!</span></span>  <span data-ttu-id="a1b32-150">OpenXR サンプルの使用方法については、次のセクションに進んでください。</span><span class="sxs-lookup"><span data-stu-id="a1b32-150">Continue on to the next section to learn how to use the OpenXR samples.</span></span>
+<span data-ttu-id="5fa5c-149">Unity で OpenXR を使用して開発を始める準備ができました。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-149">You're now ready to begin developing with OpenXR in Unity!</span></span>  <span data-ttu-id="5fa5c-150">OpenXR サンプルの使用方法については、次のセクションに進んでください。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-150">Continue on to the next section to learn how to use the OpenXR samples.</span></span>
 
-## <a name="optimization"></a><span data-ttu-id="a1b32-151">Optimization</span><span class="sxs-lookup"><span data-stu-id="a1b32-151">Optimization</span></span>
+## <a name="optimization"></a><span data-ttu-id="5fa5c-151">Optimization</span><span class="sxs-lookup"><span data-stu-id="5fa5c-151">Optimization</span></span>
 
-<span data-ttu-id="a1b32-152">HoloLens 2 用に開発している場合は、 **Mixed Reality> > OpenXR に移動し、hololens 2 に推奨されるプロジェクト設定を適用して** 、アプリのパフォーマンスを向上させます。</span><span class="sxs-lookup"><span data-stu-id="a1b32-152">If you're developing for HoloLens 2, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.</span></span>
+<span data-ttu-id="5fa5c-152">HoloLens 2 用に開発している場合は、 **Mixed Reality> > OpenXR に移動し、hololens 2 に推奨されるプロジェクト設定を適用して** 、アプリのパフォーマンスを向上させます。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-152">If you're developing for HoloLens 2, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.</span></span>
 
 ![OpenXR が選択された状態で開いている mixed reality メニュー項目のスクリーンショット](images/openxr-img-08.png)
 
-## <a name="try-out-the-unity-sample-scenes"></a><span data-ttu-id="a1b32-154">Unity のサンプルシーンを試す</span><span class="sxs-lookup"><span data-stu-id="a1b32-154">Try out the Unity sample scenes</span></span>
+## <a name="try-out-the-unity-sample-scenes"></a><span data-ttu-id="5fa5c-154">Unity のサンプルシーンを試す</span><span class="sxs-lookup"><span data-stu-id="5fa5c-154">Try out the Unity sample scenes</span></span>
 
-<span data-ttu-id="a1b32-155">1つ以上の例を使用するには、**パッケージマネージャー** から [arfoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation)をインストールします。</span><span class="sxs-lookup"><span data-stu-id="a1b32-155">To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) from the **Package Manager**:</span></span>
+<span data-ttu-id="5fa5c-155">1つ以上の例を使用するには、**パッケージマネージャー** から [arfoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation)をインストールします。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-155">To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) from the **Package Manager**:</span></span>
 
 ![Unity エディターで、AR Foundation が強調表示されている Unity パッケージマネージャーを開くスクリーンショット](images/openxr-img-09.png)
 
-### <a name="hololens-2-samples"></a><span data-ttu-id="a1b32-157">HoloLens 2 のサンプル</span><span class="sxs-lookup"><span data-stu-id="a1b32-157">HoloLens 2 samples</span></span>
+### <a name="hololens-2-samples"></a><span data-ttu-id="5fa5c-157">HoloLens 2 のサンプル</span><span class="sxs-lookup"><span data-stu-id="5fa5c-157">HoloLens 2 samples</span></span>
 
-1. <span data-ttu-id="a1b32-158">Unity エディターで、[ **] ウィンドウ > [パッケージマネージャー]** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-158">In the Unity Editor, navigate to **Window > Package Manager**</span></span>
-2. <span data-ttu-id="a1b32-159">パッケージの一覧で [ **Mixed Reality OpenXR Plugin** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-159">In the list of packages, select **Mixed Reality OpenXR Plugin**</span></span>
-3. <span data-ttu-id="a1b32-160">**サンプル一覧で** サンプルを探し、[**インポート**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a1b32-160">Locate the sample in the **Samples** list and select **Import**</span></span>
+1. <span data-ttu-id="5fa5c-158">Unity エディターで、[ **] ウィンドウ > [パッケージマネージャー]** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-158">In the Unity Editor, navigate to **Window > Package Manager**</span></span>
+2. <span data-ttu-id="5fa5c-159">パッケージの一覧で [ **Mixed Reality OpenXR Plugin** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-159">In the list of packages, select **Mixed Reality OpenXR Plugin**</span></span>
+3. <span data-ttu-id="5fa5c-160">**サンプル一覧で** サンプルを探し、[**インポート**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-160">Locate the sample in the **Samples** list and select **Import**</span></span>
 
 ![Unity エディターで開く Unity パッケージマネージャーのスクリーンショット Mixed Reality OpenXR プラグインが選択され、サンプルのインポートボタンが強調表示されている](images/openxr-img-10.png)
 
@@ -120,14 +120,18 @@ ms.locfileid: "97880603"
 ![Screenshot of Unity Package Manager open in Unity editor with OpenXR Plugin selected and samples import button highlighted](images/openxr-img-10.png) -->
 
 > [!NOTE]
-> <span data-ttu-id="a1b32-162">パッケージが更新されると、Unity にはインポートされたサンプルを更新するオプションが用意されています。</span><span class="sxs-lookup"><span data-stu-id="a1b32-162">When a package is updated, Unity provides the option to update imported samples.</span></span>  <span data-ttu-id="a1b32-163">インポートしたサンプルを更新すると、サンプルおよび関連付けられている資産に加えられた変更が上書きされます。</span><span class="sxs-lookup"><span data-stu-id="a1b32-163">Updating an imported sample will overwrite any changes that have been made to the sample and associated assets.</span></span>
+> <span data-ttu-id="5fa5c-162">パッケージが更新されると、Unity にはインポートされたサンプルを更新するオプションが用意されています。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-162">When a package is updated, Unity provides the option to update imported samples.</span></span>  <span data-ttu-id="5fa5c-163">インポートしたサンプルを更新すると、サンプルおよび関連付けられている資産に加えられた変更が上書きされます。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-163">Updating an imported sample will overwrite any changes that have been made to the sample and associated assets.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="a1b32-164">次のステップ</span><span class="sxs-lookup"><span data-stu-id="a1b32-164">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="5fa5c-164">次のステップ</span><span class="sxs-lookup"><span data-stu-id="5fa5c-164">Next steps</span></span>
 
-<span data-ttu-id="a1b32-165">プロジェクトが OpenXR 用に構成され、サンプルにアクセスできるようになったので、OpenXR プラグインで現在サポートされている [機能](openxr-supported-features.md) を確認してください。</span><span class="sxs-lookup"><span data-stu-id="a1b32-165">Now that you have your project configured for OpenXR and have access to samples, check out what [features](openxr-supported-features.md) are currently supported in our OpenXR plugin.</span></span>
+<span data-ttu-id="5fa5c-165">プロジェクトが OpenXR 用に構成され、サンプルにアクセスできるようになったので、OpenXR プラグインで現在サポートされている [機能](openxr-supported-features.md) を確認してください。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-165">Now that you have your project configured for OpenXR and have access to samples, check out what [features](openxr-supported-features.md) are currently supported in our OpenXR plugin.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a1b32-166">関連項目</span><span class="sxs-lookup"><span data-stu-id="a1b32-166">See also</span></span>
+## <a name="have-feedback"></a><span data-ttu-id="5fa5c-166">フィードバックがありますか?</span><span class="sxs-lookup"><span data-stu-id="5fa5c-166">Have Feedback?</span></span>
 
-* [<span data-ttu-id="a1b32-167">MRTK を使用しないプロジェクトを構成する</span><span class="sxs-lookup"><span data-stu-id="a1b32-167">Configuring your project without MRTK</span></span>](configure-unity-project.md)
-* [<span data-ttu-id="a1b32-168">Unity で推奨される設定</span><span class="sxs-lookup"><span data-stu-id="a1b32-168">Recommended settings for Unity</span></span>](recommended-settings-for-unity.md)
-* [<span data-ttu-id="a1b32-169">Unity のパフォーマンスに関する推奨事項</span><span class="sxs-lookup"><span data-stu-id="a1b32-169">Performance recommendations for Unity</span></span>](performance-recommendations-for-unity.md#how-to-profile-with-unity)
+<span data-ttu-id="5fa5c-167">OpenXR は依然として試験的であるため、お客様からのフィードバックをお寄せください。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-167">OpenXR is still experimental, so we’d appreciate any feedback you can give us to help make it better.</span></span> <span data-ttu-id="5fa5c-168">[](https://aka.ms/unityforums) **Microsoft**  +  **OpenXR** と **HoloLens 2** または **Windows Mixed Reality** でフォーラム投稿にタグを付けて、Unity フォーラムをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="5fa5c-168">You'll find us on the [Unity Forums](https://aka.ms/unityforums) by tagging your forum post with **Microsoft** + **OpenXR** and either **HoloLens 2** or **Windows Mixed Reality**.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="5fa5c-169">関連項目</span><span class="sxs-lookup"><span data-stu-id="5fa5c-169">See also</span></span>
+
+* [<span data-ttu-id="5fa5c-170">MRTK を使用しないプロジェクトを構成する</span><span class="sxs-lookup"><span data-stu-id="5fa5c-170">Configuring your project without MRTK</span></span>](configure-unity-project.md)
+* [<span data-ttu-id="5fa5c-171">Unity で推奨される設定</span><span class="sxs-lookup"><span data-stu-id="5fa5c-171">Recommended settings for Unity</span></span>](recommended-settings-for-unity.md)
+* [<span data-ttu-id="5fa5c-172">Unity のパフォーマンスに関する推奨事項</span><span class="sxs-lookup"><span data-stu-id="5fa5c-172">Performance recommendations for Unity</span></span>](performance-recommendations-for-unity.md#how-to-profile-with-unity)

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: e55c66599e47abff35b872a494a6afbb48774171
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 8f6ba747c2f336194cb30241dce18bc1138143f2
+ms.sourcegitcommit: b331ec40b1e8869e6a6e7b2e32a03ff68e04b956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859521"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97956065"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Windows Mixed Reality における PC の互換性に関するヘルプを表示する
 
@@ -27,13 +27,32 @@ Windows Mixed Reality を設定している場合、または [Mixed Reality ポ
 > * 推奨される [アダプター](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) の一覧を確認する
 > * [> の設定の開始] を選択してグラフィックドライバーを更新し、 **& セキュリティ > 更新プログラムを確認 >** 更新します。 
 
+連絡先にアクセスする場合は、 [コミュニティ](https://answers.microsoft.com)に問い合わせるか、サポートに [問い合わせる](https://support.microsoft.com/contactus/)か、 [トラブルシューティング](troubleshooting-windows-mixed-reality.md) 情報を参照してください。
+
 ## <a name="youre-good-to-go"></a>お待ちください
 
 良いニュースが表示 **された** 場合は、PC で Windows Mixed Reality を実行できます。 コンピューターのハードウェアと構成の間には変化があるため、すべての PC で Mixed Reality エクスペリエンスが同じであるとは限りません。
 
 ## <a name="supports-some-features"></a>一部の機能をサポート
 
-"機能の一部を **サポート** " というメッセージが表示されている場合は、一部の Windows Mixed Reality エクスペリエンスを PC で実行できますが、最適なエクスペリエンスが得られない可能性があります。 欠点としては、遅れているグラフィックス、パフォーマンスヒット、および実行できないアプリケーションやゲームがあります。 表示される可能性のあるメッセージと、その対処方法を以下に示します。
+"機能の一部を **サポート** " というメッセージが表示されている場合は、一部の Windows Mixed Reality エクスペリエンスを PC で実行できますが、最適なエクスペリエンスが得られない可能性があります。 欠点としては、遅れているグラフィックス、パフォーマンスヒット、および実行できないアプリケーションやゲームがあります。 次のようなメッセージが表示されます。
+
+* [この PC には、シングルチャネル RAM を備えた統合グラフィックスカードが搭載されています。](#this-pc-has-an-integrated-graphics-card-with-single-channel-ram)
+* [この PC には、互換性のない PCIe リンクを備えたハイブリッドグラフィックス構成があります](#this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link)
+* [この PC のグラフィックドライバーは、Windows Mixed Reality では正しく機能しない可能性があります](#this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality)
+* [この PC のプロセッサは、Windows Mixed Reality では正しく機能しない可能性があります](#this-pcs-processor-might-not-work-well-with-windows-mixed-reality)
+* [この PC は、互換性のある USB 構成を持っていない可能性があります](#this-pc-might-not-have-a-compatible-usb-configuration)
+* [この PC には、コントローラー用の Bluetooth 4.0 がありません](#this-pc-doesnt-have-bluetooth-40-for-controllers)
+* [ヘッドセットによっては、モーションコントローラーを使用するために Bluetooth アダプターが必要になる場合があります。](#depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers)
+* [この PC には、自己供給型の USB ポートがありません](#this-pc-doesnt-have-a-self-powered-usb-port)
+* [この PC のグラフィックスカードは Windows Mixed Reality では動作しません](#this-pcs-graphics-card-wont-work-with-windows-mixed-reality)
+* [この PC のグラフィックドライバーは、Windows Mixed Reality では動作しません。](#this-pcs-graphics-driver-wont-work-with-windows-mixed-reality)
+* [この PC のプロセッサは、Windows Mixed Reality では動作しません。](#this-pcs-processor-wont-work-with-windows-mixed-reality)
+* [この PC には、Windows Mixed Reality を実行するのに十分な空きディスク領域がありません](#this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality)
+* [この PC は、Windows Mixed Reality をサポートしていない Windows のエディションを実行しています](#this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality)
+* [この PC では最新バージョンの Windows 10 が実行されていません](#this-pc-isnt-running-the-latest-version-of-windows-10)
+* [この PC には USB 3.0 ポートがありません](#this-pc-has-no-usb-30-port)
+* [リモートデスクトップでこのアプリを実行することはできません](#you-cant-run-this-app-via-remote-desktop)
 
 ### <a name="this-pc-has-an-integrated-graphics-card-with-single-channel-ram"></a>この PC には、シングルチャネル RAM を備えた統合グラフィックスカードが搭載されています。
 
@@ -161,10 +180,11 @@ Windows Mixed Reality を使用するには、モニターが接続されてい�
 
 一部のハードウェア構成では、Windows Mixed Reality でパフォーマンスの問題が発生する可能性があります。 読み込み速度の低下、ビジュアルの途切れ、または画質の低下などの問題については、次の一般的な修正を試してください。
 
-* PC デスクトップで実行されている開いているアプリを終了します。
+* PC デスクトップで実行されている開いているアプリを終了します
 * USB-C または DisplayPort を HDMI アダプターとして使用している場合は、別のアダプターを試してみてください。 推奨されるアダプターの表示
 * PC のグラフィックスカードに追加のモニターが接続されている場合は、切断します。
-* Windows ストアからいくつかの異なる mixed reality アプリをダウンロードしてみてください。コンピューターのセットアップでは、いくつかの機能が強化される可能性があります。
+* いくつかの異なる mixed reality アプリを Windows ストアからダウンロードしてみてください。コンピューターのセットアップによって、機能が向上する場合があります。
+* [パフォーマンスに関する質問のドキュメント](performance-questions.md)を確認する
 
 パフォーマンスの問題が解決しない場合は、次の [Windows Mixed Reality](set-up-windows-mixed-reality.md) 設定を更新して、最適なユーザーエクスペリエンスを実現します。
 
@@ -178,7 +198,7 @@ Windows Mixed Reality を使用するには、モニターが接続されてい�
 
 ## <a name="working-with-steamvr"></a>SteamVR の使用
 
-SteamVR からゲームを楽しむことは、すべての VR が提供するすべての機能を体験するための優れた方法です。 ただし、イマーシブデバイスから最適なパフォーマンスを得られるようにする必要があります。 [ストリーム](https://store.steampowered.com/about)をインストールした後:
+SteamVR からゲームを楽しむことは、すべての VR が提供するすべての機能を体験するための優れた方法です。 ただし、イマーシブデバイスから [最適なパフォーマンスを得](performance-questions.md) られるようにする必要があります。 [ストリーム](https://store.steampowered.com/about)をインストールした後:
 
 * [Windows Mixed Reality で SteamVR を使用する](using-steamvr-with-windows-mixed-reality.md)手順に従います。
 * [Steamvr パフォーマンステスト](https://store.steampowered.com/app/323910/SteamVR_Performance_Test)アプリをインストールする
@@ -196,9 +216,3 @@ SteamVR からゲームを楽しむことは、すべての VR が提供する�
 > [Windows Mixed Reality のセットアップ](set-up-windows-mixed-reality.md)
 
 いつでも、いつでも [VR](vr-journey.md) に戻ることができます。
-
-## <a name="see-also"></a>関連項目
-
-* [コミュニティへの質問](https://answers.microsoft.com)
-* [サポートについては、お問い合わせください](https://support.microsoft.com/contactus/)
-* [トラブルシューティング](troubleshooting-windows-mixed-reality.md)

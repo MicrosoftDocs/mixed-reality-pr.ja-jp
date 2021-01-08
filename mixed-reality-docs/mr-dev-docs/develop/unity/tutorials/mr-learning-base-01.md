@@ -1,5 +1,5 @@
 ---
-title: 入門チュートリアル - 1. 入門チュートリアルの概要
+title: MRTK のチュートリアル - 1. MRTK チュートリアルの概要
 description: このコースでは、Mixed Reality ツールキット (MRTK) を使用して Mixed Reality アプリケーションを最初から作成する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,51 +7,51 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, ソルバー, 視線追跡, 音声コマンド
 ms.localizationpriority: high
-ms.openlocfilehash: 14feba57c7a8995648d108ffa5e4af95c4fa2827
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 25a19d24a027000c78d6bffe2c74eb9f9d91370c
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679331"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613206"
 ---
-# <a name="1-introduction-to-the-getting-started-tutorials"></a><span data-ttu-id="65190-105">1. 入門チュートリアルの概要</span><span class="sxs-lookup"><span data-stu-id="65190-105">1. Introduction to the Getting started tutorials</span></span>
+# <a name="1-introduction-to-the-mrtk-tutorials"></a><span data-ttu-id="3b3b4-105">1.MRTK チュートリアルの概要</span><span class="sxs-lookup"><span data-stu-id="3b3b4-105">1. Introduction to the MRTK tutorials</span></span>
 
-## <a name="overview"></a><span data-ttu-id="65190-106">概要</span><span class="sxs-lookup"><span data-stu-id="65190-106">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="3b3b4-106">概要</span><span class="sxs-lookup"><span data-stu-id="3b3b4-106">Overview</span></span>
 
-<span data-ttu-id="65190-107">入門チュートリアル シリーズへようこそ。</span><span class="sxs-lookup"><span data-stu-id="65190-107">Welcome to the Getting Started tutorial series!</span></span> <span data-ttu-id="65190-108">これらのチュートリアルでは、Mixed Reality Toolkit (MRTK) と、それらの一部の機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="65190-108">Over the course of these tutorials, you'll learn about the Mixed Reality Toolkit (MRTK) and some of the features it has to offer.</span></span> <span data-ttu-id="65190-109">NASA の火星探査ローバーをモデルとするホログラムをユーザーが探ることができる、複合現実のエクスペリエンスも構築します。</span><span class="sxs-lookup"><span data-stu-id="65190-109">You'll also build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover.</span></span> <span data-ttu-id="65190-110">このシリーズの終わりには、MRTK について、およびこれでどのようにご自分の開発プロセスをスピード化できるかについて深く理解できるようになります。</span><span class="sxs-lookup"><span data-stu-id="65190-110">By the end of this series, you'll have a firm grasp of MRTK and how it can speed up your development process.</span></span>
+<span data-ttu-id="3b3b4-107">入門チュートリアル シリーズへようこそ。</span><span class="sxs-lookup"><span data-stu-id="3b3b4-107">Welcome to the Getting Started tutorial series!</span></span> <span data-ttu-id="3b3b4-108">これらのチュートリアルでは、Mixed Reality Toolkit (MRTK) と、それらの一部の機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="3b3b4-108">Over the course of these tutorials, you'll learn about the Mixed Reality Toolkit (MRTK) and some of the features it has to offer.</span></span> <span data-ttu-id="3b3b4-109">NASA の火星探査ローバーをモデルとするホログラムをユーザーが探ることができる、複合現実のエクスペリエンスも構築します。</span><span class="sxs-lookup"><span data-stu-id="3b3b4-109">You'll also build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover.</span></span> <span data-ttu-id="3b3b4-110">このシリーズの終わりには、MRTK について、およびこれでどのようにご自分の開発プロセスをスピード化できるかについて深く理解できるようになります。</span><span class="sxs-lookup"><span data-stu-id="3b3b4-110">By the end of this series, you'll have a firm grasp of MRTK and how it can speed up your development process.</span></span>
 
-<span data-ttu-id="65190-111">このシリーズのチュートリアルは連続してものであるため、正しい順序で進めてください。</span><span class="sxs-lookup"><span data-stu-id="65190-111">Tutorials in this series are meant to be sequential, so please go through them in the correct order:</span></span>
+<span data-ttu-id="3b3b4-111">このシリーズのチュートリアルは連続してものであるため、正しい順序で進めてください。</span><span class="sxs-lookup"><span data-stu-id="3b3b4-111">Tutorials in this series are meant to be sequential, so please go through them in the correct order:</span></span>
 
-1. <span data-ttu-id="65190-112">[はじめに](mr-learning-base-01.md) (このページです)</span><span class="sxs-lookup"><span data-stu-id="65190-112">[Introduction](mr-learning-base-01.md) (You're already here)</span></span>
-2. [<span data-ttu-id="65190-113">プロジェクトの初期化と最初のアプリケーションの配置</span><span class="sxs-lookup"><span data-stu-id="65190-113">Initializing your project and deploying your first application</span></span>](mr-learning-base-02.md)
-3. [<span data-ttu-id="65190-114">MRTK プロファイルの構成</span><span class="sxs-lookup"><span data-stu-id="65190-114">Configuring the MRTK profiles</span></span>](mr-learning-base-03.md)
-4. [<span data-ttu-id="65190-115">シーンへのオブジェクトの配置</span><span class="sxs-lookup"><span data-stu-id="65190-115">Positioning objects in the scene</span></span>](mr-learning-base-04.md)
-5. [<span data-ttu-id="65190-116">ソルバーを使用した動的なコンテンツの作成</span><span class="sxs-lookup"><span data-stu-id="65190-116">Creating dynamic content using Solvers</span></span>](mr-learning-base-05.md)
-6. [<span data-ttu-id="65190-117">ユーザー インターフェイスの作成</span><span class="sxs-lookup"><span data-stu-id="65190-117">Creating user interfaces</span></span>](mr-learning-base-06.md)
-7. [<span data-ttu-id="65190-118">3D オブジェクトの操作</span><span class="sxs-lookup"><span data-stu-id="65190-118">Interacting with 3D objects</span></span>](mr-learning-base-07.md)
-8. [<span data-ttu-id="65190-119">視線追跡の使用</span><span class="sxs-lookup"><span data-stu-id="65190-119">Using eye-tracking</span></span>](mr-learning-base-08.md)
-9. [<span data-ttu-id="65190-120">音声コマンドの使用</span><span class="sxs-lookup"><span data-stu-id="65190-120">Using voice commands</span></span>](mr-learning-base-09.md)
+1. <span data-ttu-id="3b3b4-112">[はじめに](mr-learning-base-01.md) (このページです)</span><span class="sxs-lookup"><span data-stu-id="3b3b4-112">[Introduction](mr-learning-base-01.md) (You're already here)</span></span>
+2. [<span data-ttu-id="3b3b4-113">プロジェクトの初期化と最初のアプリケーションの配置</span><span class="sxs-lookup"><span data-stu-id="3b3b4-113">Initializing your project and deploying your first application</span></span>](mr-learning-base-02.md)
+3. [<span data-ttu-id="3b3b4-114">MRTK プロファイルの構成</span><span class="sxs-lookup"><span data-stu-id="3b3b4-114">Configuring the MRTK profiles</span></span>](mr-learning-base-03.md)
+4. [<span data-ttu-id="3b3b4-115">シーンへのオブジェクトの配置</span><span class="sxs-lookup"><span data-stu-id="3b3b4-115">Positioning objects in the scene</span></span>](mr-learning-base-04.md)
+5. [<span data-ttu-id="3b3b4-116">ソルバーを使用した動的なコンテンツの作成</span><span class="sxs-lookup"><span data-stu-id="3b3b4-116">Creating dynamic content using Solvers</span></span>](mr-learning-base-05.md)
+6. [<span data-ttu-id="3b3b4-117">ユーザー インターフェイスの作成</span><span class="sxs-lookup"><span data-stu-id="3b3b4-117">Creating user interfaces</span></span>](mr-learning-base-06.md)
+7. [<span data-ttu-id="3b3b4-118">3D オブジェクトの操作</span><span class="sxs-lookup"><span data-stu-id="3b3b4-118">Interacting with 3D objects</span></span>](mr-learning-base-07.md)
+8. [<span data-ttu-id="3b3b4-119">視線追跡の使用</span><span class="sxs-lookup"><span data-stu-id="3b3b4-119">Using eye-tracking</span></span>](mr-learning-base-08.md)
+9. [<span data-ttu-id="3b3b4-120">音声コマンドの使用</span><span class="sxs-lookup"><span data-stu-id="3b3b4-120">Using voice commands</span></span>](mr-learning-base-09.md)
 
-## <a name="objectives"></a><span data-ttu-id="65190-121">目標</span><span class="sxs-lookup"><span data-stu-id="65190-121">Objectives</span></span>
+## <a name="objectives"></a><span data-ttu-id="3b3b4-121">目標</span><span class="sxs-lookup"><span data-stu-id="3b3b4-121">Objectives</span></span>
 
-* <span data-ttu-id="65190-122">MRTK 用に Unity を構成する方法について学ぶ</span><span class="sxs-lookup"><span data-stu-id="65190-122">Learn how to configure Unity for MRTK</span></span>
-* <span data-ttu-id="65190-123">ご自分のデバイスの構築および展開方法について学習する</span><span class="sxs-lookup"><span data-stu-id="65190-123">Learn how to build and deploy to your device</span></span>
-* <span data-ttu-id="65190-124">MRTK の一部の主要機能の使用方法について学習する</span><span class="sxs-lookup"><span data-stu-id="65190-124">Learn how to use some of MRTK's key features</span></span>
-* <span data-ttu-id="65190-125">完全な複合現実エクスペリエンスを構築する</span><span class="sxs-lookup"><span data-stu-id="65190-125">Create a complete mixed reality experience</span></span>
+* <span data-ttu-id="3b3b4-122">MRTK 用に Unity を構成する方法について学ぶ</span><span class="sxs-lookup"><span data-stu-id="3b3b4-122">Learn how to configure Unity for MRTK</span></span>
+* <span data-ttu-id="3b3b4-123">ご自分のデバイスの構築および展開方法について学習する</span><span class="sxs-lookup"><span data-stu-id="3b3b4-123">Learn how to build and deploy to your device</span></span>
+* <span data-ttu-id="3b3b4-124">MRTK の一部の主要機能の使用方法について学習する</span><span class="sxs-lookup"><span data-stu-id="3b3b4-124">Learn how to use some of MRTK's key features</span></span>
+* <span data-ttu-id="3b3b4-125">完全な複合現実エクスペリエンスを構築する</span><span class="sxs-lookup"><span data-stu-id="3b3b4-125">Create a complete mixed reality experience</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="65190-126">前提条件</span><span class="sxs-lookup"><span data-stu-id="65190-126">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="3b3b4-126">前提条件</span><span class="sxs-lookup"><span data-stu-id="3b3b4-126">Prerequisites</span></span>
 
-* <span data-ttu-id="65190-127">正しい[ツールがインストールされている](../../install-the-tools.md)構成済みの Windows 10 PC</span><span class="sxs-lookup"><span data-stu-id="65190-127">A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)</span></span>
-* <span data-ttu-id="65190-128">[Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 以降</span><span class="sxs-lookup"><span data-stu-id="65190-128">[Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 or later</span></span>
-* <span data-ttu-id="65190-129">[開発用に構成された](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) HoloLens 2 デバイス</span><span class="sxs-lookup"><span data-stu-id="65190-129">A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)</span></span>
-* <span data-ttu-id="65190-130">Unity 2019 LTS がインストールされ、ユニバーサル Windows プラットフォーム ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a></span><span class="sxs-lookup"><span data-stu-id="65190-130"><a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS installed and the Universal Windows Platform Build Support module added</span></span>
-
-> [!CAUTION]
-> <span data-ttu-id="65190-131">このチュートリアル シリーズで推奨される MRTK のバージョンは MRTK 2.4.0 です。</span><span class="sxs-lookup"><span data-stu-id="65190-131">The recommended MRTK version for this tutorial series is MRTK 2.4.0.</span></span>
+* <span data-ttu-id="3b3b4-127">正しい[ツールがインストールされている](../../install-the-tools.md)構成済みの Windows 10 PC</span><span class="sxs-lookup"><span data-stu-id="3b3b4-127">A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)</span></span>
+* <span data-ttu-id="3b3b4-128">[Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 以降</span><span class="sxs-lookup"><span data-stu-id="3b3b4-128">[Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 or later</span></span>
+* <span data-ttu-id="3b3b4-129">[開発用に構成された](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) HoloLens 2 デバイス</span><span class="sxs-lookup"><span data-stu-id="3b3b4-129">A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)</span></span>
+* <span data-ttu-id="3b3b4-130">Unity 2019 LTS がインストールされ、ユニバーサル Windows プラットフォーム ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a></span><span class="sxs-lookup"><span data-stu-id="3b3b4-130"><a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS installed and the Universal Windows Platform Build Support module added</span></span>
 
 > [!CAUTION]
-> <span data-ttu-id="65190-132">このチュートリアル シリーズで推奨されている Unity バージョンは、Unity 2019 LTS です。</span><span class="sxs-lookup"><span data-stu-id="65190-132">The recommended Unity version for this tutorial series is Unity 2019 LTS.</span></span> <span data-ttu-id="65190-133">これは、上の前提条件のリンクに記載されているすべての Unity のバージョンに優先されます。</span><span class="sxs-lookup"><span data-stu-id="65190-133">This supersedes any Unity version requirements stated in the prerequisites linked above.</span></span>
+> <span data-ttu-id="3b3b4-131">このチュートリアル シリーズで推奨される MRTK のバージョンは MRTK 2.4.0 です。</span><span class="sxs-lookup"><span data-stu-id="3b3b4-131">The recommended MRTK version for this tutorial series is MRTK 2.4.0.</span></span>
+
+> [!CAUTION]
+> <span data-ttu-id="3b3b4-132">このチュートリアル シリーズで推奨されている Unity バージョンは、Unity 2019 LTS です。</span><span class="sxs-lookup"><span data-stu-id="3b3b4-132">The recommended Unity version for this tutorial series is Unity 2019 LTS.</span></span> <span data-ttu-id="3b3b4-133">これは、上の前提条件のリンクに記載されているすべての Unity のバージョンに優先されます。</span><span class="sxs-lookup"><span data-stu-id="3b3b4-133">This supersedes any Unity version requirements stated in the prerequisites linked above.</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="65190-134">次のチュートリアル:2.プロジェクトの初期化と最初のアプリケーションの配置</span><span class="sxs-lookup"><span data-stu-id="65190-134">Next Tutorial: 2. Initializing your project and deploying your first application</span></span>](mr-learning-base-02.md)
+> [<span data-ttu-id="3b3b4-134">次のチュートリアル:2.プロジェクトの初期化と最初のアプリケーションの配置</span><span class="sxs-lookup"><span data-stu-id="3b3b4-134">Next Tutorial: 2. Initializing your project and deploying your first application</span></span>](mr-learning-base-02.md)
 

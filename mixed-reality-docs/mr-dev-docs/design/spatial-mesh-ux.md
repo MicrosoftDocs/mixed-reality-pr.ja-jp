@@ -1,17 +1,17 @@
 ---
 title: 空間メッシュの視覚化
-description: デバイスが空間メッシュを使用して物理的な環境を理解する方法について説明します。
+description: MRTK での空間メッシュの視覚化を使用した設計ガイドラインと物理的な環境の理解について説明します。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Mixed Reality、HoloLens、UI コントロール、相互作用、UI、ux、UX デザイン、空間 UI、空間相互作用、3D UI、3D UX、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: ffa13da6762b803ba2a3f370308ac2af65164ecf
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 0f9cdc218c6fe54b8892c39a6a76f023e203d334
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848191"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009922"
 ---
 # <a name="spatial-mesh"></a>空間メッシュ
 

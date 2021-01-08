@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: レンダリング、ホログラム
-ms.openlocfilehash: 7dcdc8ef3002f631652f1b21d332e7b322c17240
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 1f8f9954aee988fa092e25910c5d6d575341b7f2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530356"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009392"
 ---
 # <a name="rendering"></a>表示
 

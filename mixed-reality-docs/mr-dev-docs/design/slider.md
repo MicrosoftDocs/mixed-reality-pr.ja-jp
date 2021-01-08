@@ -1,17 +1,17 @@
 ---
 title: Slider
-description: スライダーは、トラックのノブまたはレバーを動かすことによって値を設定できる UI コンポーネントです。
+description: スライダー UI コンポーネントを使用して、混合 Reality ツールキットを使用してトラックのノブまたはレバーを移動することによって値を設定する方法について説明します。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合現実、コントロール、相互作用、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens、スライダー、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: b2f338dd25bbcc50a68a3c5e9b8d980d15827755
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 15a536074f8f873456482a55c1c9dbe418602bb1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848227"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009562"
 ---
 # <a name="slider"></a>Slider
 

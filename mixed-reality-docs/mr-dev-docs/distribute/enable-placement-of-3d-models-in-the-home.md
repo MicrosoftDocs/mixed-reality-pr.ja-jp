@@ -1,17 +1,17 @@
 ---
 title: 家で 3D モデルの配置を有効にする
-description: Windows Mixed Reality ホームに web サイトまたはアプリケーションの3D モデルを配置する方法
+description: Windows Mixed Reality ホームで、web サイトまたはアプリケーションの3D モデルを配置する方法について説明します。
 author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D、モデル、ホーム、場所、世界、モデリング、mixed reality ホーム、web、アプリ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
-ms.openlocfilehash: ad35e1d010e32c4729b0d0dd58943dabdee86e09
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c92ba7a3242b618b9ef9cef01ae400cf4dbf36b2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757810"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010102"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Mixed Reality ホームで 3D モデルの配置を有効にする
 
@@ -42,7 +42,7 @@ ms.locfileid: "97757810"
     </tr>
 </table>
 
-## <a name="overview"></a>概要
+## <a name="the-basics"></a>基本
 
 Windows Mixed Reality ホームで3D モデルの配置を有効にするには、次の2つの手順を実行します。
 1. [3d モデルが Windows Mixed Reality ホームと互換性があることを確認](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)します。

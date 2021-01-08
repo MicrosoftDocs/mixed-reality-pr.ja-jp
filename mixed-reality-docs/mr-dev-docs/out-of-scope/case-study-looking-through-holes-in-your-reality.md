@@ -1,17 +1,17 @@
 ---
 title: ケース スタディ - Mixed Reality で穴から覗く
-description: このケーススタディでは、HoloLens に "マジックウィンドウ" 効果を実装する方法について説明します。これにより、ユーザーは、壁の背後、床の下、および実際の環境内の仮想化について確認できます。
+description: このケーススタディでは、HoloLens での "マジックウィンドウ" 効果の実装について説明します。これにより、ユーザーは、壁の背後、床の下、および仮想の開口部を見ることができます。
 author: ericrehmeyer
 ms.author: bestruku
 ms.date: 10/18/2019
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、マジックウィンドウ、視差
-ms.openlocfilehash: 84af124cc69e03b3502cee55c694b11ff5c9433b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 018e45a79d88cbc8e28204f023106fbe5dae39bc
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687426"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010112"
 ---
 # <a name="case-study---looking-through-holes-in-your-reality"></a>ケース スタディ - Mixed Reality で穴から覗く
 
@@ -99,7 +99,7 @@ Unity エディターでこのモデルを表示すると、flowerpot の周り�
 * 仮想ホール内のコンテンツを対話形式で作成する方法について考えてみましょう。 ユーザーが壁を越える影響を与えることで、このトリックによって得られる不思議な意義を高めることができます。
 * オブジェクトを使用して既知の領域に戻る方法を考えてみましょう。 たとえば、holographic 穴をコーヒーテーブルに配置し、その下にフロアを表示するにはどうすればよいでしょうか。
 
-## <a name="about-the-author"></a>著者について
+## <a name="about-the-author"></a>筆者について
 
 <table style="border-collapse:collapse">
 <tr>

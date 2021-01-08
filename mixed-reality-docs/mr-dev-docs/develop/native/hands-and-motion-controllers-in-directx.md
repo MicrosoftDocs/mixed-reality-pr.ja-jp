@@ -1,17 +1,17 @@
 ---
 title: DirectX での手とモーション コントローラー
-description: ネイティブ DirectX アプリでハンドトラッキングとモーションコントローラーを使用するための開発者ガイド。
+description: ネイティブ DirectX アプリでハンドトラッキングとモーションコントローラーを使用するための開発者ガイドを使ってみる。
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: ハンド、モーションコントローラー、directx、入力、ホログラム、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 52fc8f054ee4a4a57374c90fc31703b749d498de
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 43673602b01a1937953d16fcca9b4c4f4d3fd33a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613056"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009542"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>DirectX での手とモーション コントローラー
 
@@ -149,7 +149,7 @@ Windows Mixed Reality API は、HoloLens 2 でのように、独自の追跡を�
 
 各結合について、次の情報が提供されています。
 
-| 名前 | 説明 |
+| Name | 説明 |
 |--- |--- |
 |[位置] | 要求されたすべての座標系で使用可能な、ジョイントの3D 位置。 |
 |Orientation | 要求されたすべての座標系で使用可能な、ボーンの3D の向き。 |

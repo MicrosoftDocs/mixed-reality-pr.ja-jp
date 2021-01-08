@@ -1,17 +1,17 @@
 ---
 title: HolographicSpace を入手する
-description: HolographicSpace API について説明します。これは、holographic レンダリングと空間入力の中核となる概念です。
+description: 混合 reality アプリで holographic レンダリングと空間入力に HolographicSpace API を使用する方法について説明します。
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality、HolographicSpace、CoreWindow、空間入力、レンダリング、スワップチェーン、holographic frame、update loop、game loop、reference of reference、locatability、sample code、チュートリアル、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット
-ms.openlocfilehash: 3b0e31b8d3bf0d7741e7976edd2069db68ea5121
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c630905b4f7f3bf03d575201feb944c3b8f62f32
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613016"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009532"
 ---
 # <a name="getting-a-holographicspace"></a>HolographicSpace を入手する
 

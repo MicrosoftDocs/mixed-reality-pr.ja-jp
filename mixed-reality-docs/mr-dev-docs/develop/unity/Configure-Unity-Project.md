@@ -1,19 +1,19 @@
 ---
 title: MRTK を使用せずにプロジェクトを構成する
-description: Windows Mixed Reality の Unity プロジェクトを構成する手順
+description: Mixed Reality Toolkit を使用せずに、Windows Mixed Reality 用の新しい Unity プロジェクトを構成する方法について説明します。
 author: hferrone
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity、mixed reality、開発、作業の開始、新しいプロジェクト、Windows Mixed Reality、UWP、XR、パフォーマンス
-ms.openlocfilehash: 1337001e8cc5c280c5789acbc8f10f40bca9b763
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 1d4acb80a7ad0c5143a4408829759aab0a2c012b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613391"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009902"
 ---
-# <a name="configuring-your-project-without-mrtk"></a>MRTK を使用しないプロジェクトの構成
+# <a name="configuring-your-project-without-mrtk"></a>MRTK を使用しないプロジェクトを構成する
 
 Windows Mixed Reality (WMR) は、Windows 10 オペレーティングシステムの一部として導入された Microsoft プラットフォームです。 WMR プラットフォームを使用すると、holographic および VR 表示デバイスでデジタルコンテンツをレンダリングするアプリケーションを作成できます。
 

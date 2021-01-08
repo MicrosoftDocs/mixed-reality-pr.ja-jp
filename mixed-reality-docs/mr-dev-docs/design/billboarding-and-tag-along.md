@@ -1,17 +1,17 @@
 ---
 title: Billboard と Tag-along
-description: Billboarding を使用するオブジェクトは、常にユーザーに顔を合わせて向きます。
+description: Billboarding でオブジェクトを使用する方法について説明します。これらのオブジェクトは常に、混合現実アプリケーションでユーザーを顔にするために使用されます。
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、billboarding、タグ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 44f2678fe2f8e4be071086f46037749d1df61ae4
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 92caa1bcd325cefecc6d3820b819cecfce6fc09c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848032"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009614"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboard と Tag-along
 

@@ -1,17 +1,17 @@
 ---
 title: MR と Azure 304 - 顔認識
-description: このコースでは、mixed reality アプリケーション内で Azure 顔認識を実装する方法について学習します。
+description: このコースを完了すると、Mixed Reality アプリケーション内で Azure 顔認識を実装する方法を学習することができます。
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, unity, チュートリアル, api, 顔認識, hololens, イマーシブ, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 8e1420e5764e7330026731ffb4f0c180604c2789
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a6578950039a0a9267b7191f5b96775dca366c01
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679831"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010152"
 ---
 # <a name="mr-and-azure-304-face-recognition"></a>MR と Azure 304:顔認識
 
@@ -52,7 +52,7 @@ ms.locfileid: "94679831"
 > [!NOTE]
 > このコースでは主に HoloLens に焦点を当てていますが、このコースで学習する内容を Windows Mixed Reality イマーシブ (VR) ヘッドセットにも適用できます。 イマーシブ (VR) ヘッドセットにはアクセス可能なカメラがないため、外部カメラが PC に接続されている必要があります。 コースを進めると、イマーシブ (VR) ヘッドセットをサポートするために必要な変更についての注意事項が表示されます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 > [!NOTE]
 > このチュートリアルは、Unity と C# の基本的な経験がある開発者向けに設計されています。 また、このドキュメントに記載されている前提条件と記述に記載されている手順は、作成時にテストおよび検証されたものを表します (2018 年5月)。 「 [ツールのインストール](../../install-the-tools.md) 」の記事に記載されているように、最新のソフトウェアを自由に使用できます。ただし、このコースの情報は、以下に記載されているものよりも新しいソフトウェアで見つかったものと完全に一致するとは限りません。
@@ -68,7 +68,7 @@ ms.locfileid: "94679831"
 - PC に接続されているカメラ (イマーシブヘッドセット開発用)
 - Azure のセットアップと Face API の取得のためのインターネットアクセス
 
-## <a name="before-you-start"></a>開始する前に
+## <a name="before-you-start"></a>アップグレードを開始する前に
 
 1.  このプロジェクトのビルドで問題が発生しないように、このチュートリアルで説明されているプロジェクトをルートまたはほぼルートフォルダーに作成することを強くお勧めします (長いフォルダーパスはビルド時に問題を引き起こす可能性があります)。
 2.  HoloLens をセットアップしてテストします。 HoloLens のセットアップをサポートする必要がある場合は、 [hololens セットアップに関する記事にアクセスして](https://docs.microsoft.com/hololens/hololens-setup)ください。 
@@ -341,12 +341,12 @@ FaceAnalysis クラスの目的は、Azure Face 認識サービスとの通信�
 
 *FaceAnalysis* クラスを作成するには、次のようにします。
 
- 1. [プロジェクト] パネルにある [*アセット] フォルダー* を右クリックし、[フォルダーの **作成**] をクリックし  >  **Folder** ます。 フォルダー **スクリプト** を呼び出します。 
+ 1. [プロジェクト] パネルにある [*アセット] フォルダー* を右クリックし、[フォルダーの **作成**] をクリックし  >  ます。 フォルダー **スクリプト** を呼び出します。 
 
     ![FaceAnalysis クラスを作成します。](images/AzureLabs-Lab4-22.png)
 
 2.  先ほど作成したフォルダーをダブルクリックして開きます。 
-3.  フォルダー内を右クリックし、[ **Create**  >  **C# スクリプト** の作成] をクリックします。 スクリプト *FaceAnalysis* を呼び出します。 
+3.  フォルダー内を右クリックし、[   >  **C# スクリプト** の作成] をクリックします。 スクリプト *FaceAnalysis* を呼び出します。 
 4.  新しい *FaceAnalysis* スクリプトをダブルクリックして、Visual Studio 2017 で開きます。
 5.  *FaceAnalysis* クラスの上に次の名前空間を入力します。
 
@@ -818,7 +818,7 @@ FaceAnalysis クラスの目的は、Azure Face 認識サービスとの通信�
 
 HoloLens に展開するには:
 
-1.  Hololens が **開発者モード** になっていることを確認するには、HOLOLENS の IP アドレス (リモートデプロイ用) が必要です。 この操作を行うには、次の手順を実行します。
+1.  Hololens が **開発者モード** になっていることを確認するには、HOLOLENS の IP アドレス (リモートデプロイ用) が必要です。 これを行うには、次の手順を実行します。
 
     1. HoloLens を装着した後、 **設定** を開きます。
     2. **[Network & Internet > Wi-Fi > 詳細オプション]** にアクセスします。

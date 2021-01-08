@@ -1,17 +1,17 @@
 ---
 title: 進行状況を表示する
-description: プログレス コントロールは、時間のかかる操作が進行中であることを示すフィードバックをユーザーに返します。
+description: 実行時間の長い操作が混合の現実のアプリで実行されていることをユーザーにフィードバックするために、進行状況の制御がどのように役立つかについて説明します。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、デザイン、コントロール、ui、ux、進行状況インジケーター、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 3f24f7095147a0d220df8adc42b67a1b8e4053c9
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 489f4bd9fea31126f936673db7acafeab27d9cd9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848280"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009462"
 ---
 # <a name="progress-indicator"></a>進捗状況インジケーター
 

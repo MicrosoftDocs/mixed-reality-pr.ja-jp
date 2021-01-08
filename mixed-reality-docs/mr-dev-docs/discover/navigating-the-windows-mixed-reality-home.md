@@ -1,17 +1,17 @@
 ---
 title: Windows Mixed Reality ホームのナビゲーション
-description: HoloLens と Windows Mixed Reality ヘッドセットは、環境内でアプリと3D モデルを起動、配置、操作するパラダイムを共有しています (物理的またはデジタルのどちらの場合でも)。 両方の種類のデバイスで Windows Mixed Reality ホームを移動する方法について説明します。
+description: HoloLens および Windows Mixed Reality ヘッドセットの Windows Mixed Reality ホームに移動する方法について説明します。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: シェル, os, プラットフォーム, 崖家, 家, ホーム, 環境, スタート, スタートメニュー, ホームメニュー, pin, アプリ, 起動アプリ, 配置アプリ, テレポート, 移動, 移動, mixed reality ヘッドセット, 仮想現実のヘッドセット, 仮想現実とは
-ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757690"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009692"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Windows Mixed Reality ホームのナビゲーション
 

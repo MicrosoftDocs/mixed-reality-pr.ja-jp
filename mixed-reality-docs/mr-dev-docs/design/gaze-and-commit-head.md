@@ -1,17 +1,17 @@
 ---
 title: 頭の視線入力とコミット
-description: ヘッドとコミットの入力モデルの概要。
+description: ターゲットのサイズ設定、配置、安定化など、ヘッドとコミットの入力モデルの使用を開始します。
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: Mixed Reality、宝石、宝石を絞ったターゲット、相互作用、設計、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、ターゲット、フォーカス、スムージング
-ms.openlocfilehash: cc12c349704a63c5b95c9eede91d0486f56787a2
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 13a040a8309d084fcfdbfa91cbd9d63b595b004a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847884"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009452"
 ---
 # <a name="head-gaze-and-commit"></a>頭の視線入力とコミット
 

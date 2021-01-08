@@ -1,19 +1,19 @@
 ---
-title: 開発者向け複合現実キャプチャ
-description: 開発者向けの mixed reality キャプチャのベストプラクティス。
+title: 開発者向けの Mixed reality キャプチャ
+description: 開発者向けの mixed reality キャプチャを有効化、使用、および表示するためのベストプラクティスについて説明します。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc、写真、ビデオ、キャプチャ、カメラ
-ms.openlocfilehash: 13765686c3e86822efff17b25995a6eaa4008e6c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: e55100003859e3581bdd7f6e1da312e1fdd8cf57
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613346"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009942"
 ---
-# <a name="mixed-reality-capture-for-developers"></a>開発者向け複合現実キャプチャ
+# <a name="mixed-reality-capture-for-developers"></a>開発者向けの Mixed reality キャプチャ
 
 > [!NOTE]
 > HoloLens 2 の新しい MRC 機能に関するガイダンスについては、以下の [PV カメラのレンダー](#render-from-the-pv-camera-opt-in) に関する説明を参照してください。

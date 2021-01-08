@@ -1,17 +1,17 @@
 ---
 title: リリース ノート - 2016 年 5 月
-description: Windows Holographic 5 月2016更新プログラムの HoloLens リリースノート。
+description: Windows Holographic 2016 の更新プログラムについては、HoloLens のリリースノートを最新の状態にしてください。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, リリースノート, os, 機能, ビルド, プラットフォーム
-ms.openlocfilehash: a1e5ab1ead2816baf2f03c1037299090e1246f17
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: db5e3b87eaf619a0f25e07d0698499a89a1b4b12
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725953"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009502"
 ---
 # <a name="release-notes---may-2016"></a>リリース ノート - 2016 年 5 月
 

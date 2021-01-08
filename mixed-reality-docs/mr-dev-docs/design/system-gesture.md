@@ -1,17 +1,17 @@
 ---
 title: 開始ジェスチャ
-description: スタートメニューを呼び出す開始ジェスチャ。
+description: 開始ジェスチャを使用して、HoloLens および Windows Mixed Reality のイマーシブヘッドセットの [スタート] メニューを呼び出す方法について説明します。
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Mixed reality、ジェスチャ、相互作用、設計、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、ブルーム
-ms.openlocfilehash: 9df8d54dcf63c13dedabdbf55300b3516a2c9bf1
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e29d483375db103cebc30be9117e40899a9f81f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848161"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009432"
 ---
 # <a name="start-gesture"></a>開始ジェスチャ
 

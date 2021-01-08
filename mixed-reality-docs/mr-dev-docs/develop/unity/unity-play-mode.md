@@ -1,17 +1,17 @@
 ---
 title: Unity の再生モード
-description: Unity エディターの再生モードを使用して、アプリをデプロイせずにデバイスでの変更をプレビューします。
+description: Unity エディターで Play モードを使用して、アプリをデプロイせずにデバイスでのアプリケーションの変更をプレビューする方法について説明します。
 author: jonmlyons
 ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, リモート処理, holographic リモート処理, holographic リモート処理プレーヤー, HoloLens, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, unity 再生モード
-ms.openlocfilehash: 396e441903fe7b567c6329ca4d207ce893a07825
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 9f6c2cafd08fca8a5d60f3fcf5832ee74762e173
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010613"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009842"
 ---
 # <a name="unity-play-mode"></a>Unity の再生モード
 
@@ -32,5 +32,5 @@ Holographic リモート処理には、高速 PC と Wi-Fi 接続が必要です
 
 最適な結果を得るには、アプリが [フォーカスポイント](focus-point-in-unity.md)を正しく設定していることを確認します。 これにより、Holographic リモート処理によって、ワイヤレス接続の待機時間にシーンを最適に適応させることができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 * [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md)

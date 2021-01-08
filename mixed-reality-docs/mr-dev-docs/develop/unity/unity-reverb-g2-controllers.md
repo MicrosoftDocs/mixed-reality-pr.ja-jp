@@ -1,17 +1,17 @@
 ---
 title: Unity の HP リバーブ G2 コントローラー
-description: SteamVR および Windows Mixed Reality で HP リバーブ G2 コントローラーを使用する方法について説明します。
+description: SteamVR および Windows Mixed Reality Unity アプリケーションで、新しい HP リバーブ G2 コントローラーをセットアップして使用する方法について説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity, リバーブ, リバーブ G2, HP リバーブ G2, mixed reality, 開発, モーションコントローラー, ユーザー入力, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 機能, ホログラム, ゲーム開発
-ms.openlocfilehash: 17f373a3d94740bf103821b85ee5d6fe4dbaa11f
-ms.sourcegitcommit: 8b16945d6a551f174a65fa3980ba392682ca45d4
+ms.openlocfilehash: 1c9d8f1279f81ea1d8020e2a3c689dae86496221
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886255"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009832"
 ---
 # <a name="hp-reverb-g2-controllers-in-unity"></a>Unity の HP リバーブ G2 コントローラー
 

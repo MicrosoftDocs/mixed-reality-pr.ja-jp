@@ -1,6 +1,6 @@
 ---
 title: Kippy のエスケープの作成
-description: Unreal Engine での HoloLens 2 の Kippy のエスケープの作成については、こちらを参照してください。
+description: Unreal Engine での HoloLens 2 用の Kippy の Escape mixed reality アプリケーションの作成については、こちらを参照してください。
 author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、デバイスへの展開、PC、ドキュメント、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eaba6ea1ee77ffffb74008402eafd1f09fd822e5
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: df199b6a3215158e15fb1252dd75c58aea5bc2ab
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609683"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010042"
 ---
 # <a name="the-making-of-kippys-escape"></a>Kippy のエスケープの作成
 
@@ -21,8 +21,6 @@ Kippy ロボットが起動され、島上に残されていることがわか�
 
 > [!IMPORTANT]
 > GitHub リポジトリから Kippy のエスケープを構築している場合は、 **Unreal Engine 4.25** 以降を使用していることを確認します。
-
-## <a name="overview"></a>概要
 
 Kippy のエスケープは、Unreal Engine 4 と[Mixed REALITY UX Tools For Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal)を使用して構築されたオープンソースの[HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)サンプルアプリです。 この記事では、最初の原則とビジュアルデザインから、エクスペリエンスを実装して最適化するプロセスについて説明します。 MRTK UX ツールを使用した Mixed Reality アプリケーションの開発の詳細については、 [Unreal development の概要](unreal-development-overview.md)に関するトピックを参照してください。
 

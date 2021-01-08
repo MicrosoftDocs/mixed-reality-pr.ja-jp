@@ -1,17 +1,17 @@
 ---
 title: Mixed Reality Speaker シリーズ
-description: サンフランシスコのリアクターにある mixed reality 開発者イベントのカレンダー。
+description: サンフランシスコのリアクターで、mixed reality developer イベントのカレンダーを使用して最新の状態に保ちます。
 author: danielescudero
 ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: event、calendar、academy、schedule、sf、サンフランシスコ、リアクター
-ms.openlocfilehash: 169af00c61d1eeb5af6b0ea1249f5f4c3083a9f3
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757430"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010002"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Microsoft Mixed Reality イベント
 
@@ -19,7 +19,7 @@ ms.locfileid: "97757430"
 
 <br>
 
-|Event|Date|テーマ|
+|Event|Date|切り替え|
 |-------------|-------------|-----|
 | Mixed Reality Speaker シリーズ|2020 年 4 月 23 日|[Web を補強する](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Augmenting-WebXR-Standards)|
 | Mixed Reality Speaker シリーズ|2020年6月22日|[MR を使用した教育エクスペリエンスの作成](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Educational-Experiences-in-MR)|
@@ -32,5 +32,3 @@ ms.locfileid: "97757430"
 | Mixed Reality Speaker シリーズ|2020年10月22日|[BabylonJS を使用した WebXR の概要](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | Mixed Reality Speaker シリーズ|2020 年 11 月 17 日|[将来の構築: MRTK の新要素](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | Mixed Reality Speaker シリーズ|2020 年 12 月 1 日|[ホログラムのデザイン]()|
-
-

@@ -1,17 +1,17 @@
 ---
 title: Unity の視線入力
-description: アプリが混合現実で作成するホログラムをユーザーが対象にする主な方法は、宝石です。
+description: アプリが混合現実で作成するホログラムをユーザーがターゲットにする主な方法として、宝石入力を使用する方法について説明します。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 視線、ヘッド・宝石、unity、ホログラム、mixed reality、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、unity、Mixed Reality ツールキット
-ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010363"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009892"
 ---
 # <a name="head-gaze-in-unity"></a>Unity でのヘッドを見つめます
 
@@ -56,7 +56,7 @@ MRTK の [入力マネージャー](https://microsoft.github.io/MixedRealityTool
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。
+Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次の構成要素を続けることができます。
 
 > [!div class="nextstepaction"]
 > [ジェスチャとモーション コントローラー](gestures-and-motion-controllers-in-unity.md)

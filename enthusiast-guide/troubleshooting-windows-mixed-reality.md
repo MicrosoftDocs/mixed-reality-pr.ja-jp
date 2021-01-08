@@ -1,14 +1,14 @@
 ---
 title: Windows Mixed Reality のトラブルシューティング
-description: Windows Mixed Reality のトラブルシューティングは、標準のコンシューマーサポートドキュメントを超えています。
+description: Windows Mixed Reality のトラブルシューティングについては、標準のコンシューマーサポートドキュメントをご覧ください。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート
-ms.openlocfilehash: f98bc55062f2e159e6ac6fca5514cee899f50bc5
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 6e685aac0919d920f47c2bd8954706da79dbc8c4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859491"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009482"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Windows Mixed Reality のトラブルシューティング (Faq)
 

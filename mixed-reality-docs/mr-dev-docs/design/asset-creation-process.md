@@ -1,17 +1,17 @@
 ---
 title: アセット作成プロセス
-description: Mixed reality エクスペリエンスのアセットを作成するためのガイダンスです。
+description: Mixed reality エクスペリエンスの資産を作成、購入、および移植する方法について説明します。
 author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 資産、作成、プロセス、予算、多角形、テクスチャ、シェーダー、パフォーマンス、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、assets
-ms.openlocfilehash: 2089ac7a870d9b4b13d314774d6d6124b78bb15c
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a5f4271de522111b0ef994869b9ecf4910582562
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847548"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009621"
 ---
 # <a name="asset-creation-process"></a>アセット作成プロセス
 

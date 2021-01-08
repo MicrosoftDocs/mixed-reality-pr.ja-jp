@@ -1,19 +1,19 @@
 ---
 title: Windows Mixed Reality と新しい Microsoft Edge
-description: Windows Mixed Reality の新しい Microsoft Edge の準備をします。 予想される変更、検索対象の更新、および既知の問題が含まれます。
+description: 新しい Microsoft Edge for Mixed Reality について説明します。これには、予想されること、検索する更新プログラム、既知の問題などが含まれます。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 08/04/2020
 ms.topic: article
 keywords: edge、new、イマーシブ web、microsoft edge、browser、vr、360、360 video、360 viewer、webxr、webvr
-ms.openlocfilehash: 341c7e3d53bd7fb0c569a8acffcf56662c8d2c32
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: ef55ee564e0a7ea11aaaad62ebf259459454ab72
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757440"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010032"
 ---
-# <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality と新しい Microsoft Edge
+# <a name="the-new-microsoft-edge-for-windows-mixed-reality"></a>新しい Microsoft Edge for Windows Mixed Reality
 
 [新しい Microsoft Edge をダウンロードできるようになりました](https://blogs.windows.com/windowsexperience/?p=173496)が、今後数か月にわたって測定されたロールアウトアプローチに従っ[て、将来の更新によって Windows 10 でインストールされるまで待つ](https://blogs.windows.com/msedgedev/2020/01/15/upgrading-new-microsoft-edge-79-chromium/)こともできます。 
 

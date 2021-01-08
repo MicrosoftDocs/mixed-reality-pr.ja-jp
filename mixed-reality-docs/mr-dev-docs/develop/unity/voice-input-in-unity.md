@@ -1,17 +1,17 @@
 ---
 title: Unity の音声入力
-description: Unity では、Windows Mixed Reality アプリケーションに音声入力を追加する3つの方法が公開されています。
+description: Unity が Windows Mixed Reality アプリケーションに音声入力、音声認識、およびディクテーションを追加するための3つの方法について説明します。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 音声入力、KeywordRecognizer、GrammarRecognizer、マイク、ディクテーション、音声、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、MRTK、Mixed Reality ツールキット
-ms.openlocfilehash: 66aba92c14eca4183739687934e12db289cd2302
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: d07909bbf05ff882eb0a4b6123c39eae9280e3e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010573"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009802"
 ---
 # <a name="voice-input-in-unity"></a>Unity の音声入力
 

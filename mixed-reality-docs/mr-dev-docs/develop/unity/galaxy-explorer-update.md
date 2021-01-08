@@ -1,17 +1,17 @@
 ---
 title: HoloLens 2 用 Galaxy エクスプローラーの作成
-description: HoloLens 2 用に Galaxy エクスプローラーを更新する方法について説明します。 元の Galaxy エクスプローラーと同じように、microsoft のチームはプロジェクトを GitHub でオープンソースにして、コミュニティがフルアクセスを確実に持つようにします。
+description: GitHub の HoloLens 2 用の Galaxy エクスプローラーオープンソースプロジェクトをチームが更新する方法について説明します。
 author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: galaxy エクスプローラー, ケーススタディ, プロジェクト, サンプル, MRTK, Mixed Reality Toolkit, Unity, サンプルアプリ, サンプルアプリ, オープンソース, Microsoft Store, HoloLens, mixed reality ヘッドセット, windows Mixed reality ヘッドセット, 仮想現実のヘッドセット
-ms.openlocfilehash: 00bf589d738cf74cbfdb489bc43aadf931dda285
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: d3a31204275b2d2a9f1f1ea1c283993d2e0285ed
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010473"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009582"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>HoloLens 2 用 Galaxy エクスプローラーの作成
 

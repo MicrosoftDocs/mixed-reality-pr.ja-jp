@@ -1,17 +1,17 @@
 ---
 title: Unreal での手の追跡
-description: Unreal でハンドトラッキングを使用する方法について説明します。
+description: Unreal mixed reality アプリで、入力、ポーズ、ハンドメッシュ、ライブリンクアニメーションをハンドトラッキングする方法について説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality、手動追跡、Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、Mixed Reality、開発、機能、ドキュメント、ガイド、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 66ae1994f2bbee3ba4786a7c4eeebfe1cd57ca37
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002710"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010162"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal での手の追跡
 
@@ -162,7 +162,7 @@ HoloLens 2 は、空間ジェスチャを追跡します。これは、これら
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-このガイドで説明されていない実際の開発については、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。
+用意されている Unreal 開発体験に従っている場合、MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素を続けることができます。
 
 > [!div class="nextstepaction"]
 > [ローカル空間アンカー](unreal-spatial-anchors.md)

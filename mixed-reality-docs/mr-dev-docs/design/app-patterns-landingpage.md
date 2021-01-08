@@ -1,21 +1,22 @@
 ---
 title: Mixed reality UX 要素
-description: このドキュメントには、mixed reality デバイスの設計方法を説明する一連のトピックが含まれています。
+description: 基本要素、一般的なコントロール、および動作を使用して、混合 reality デバイス用のアプリを設計する方法について説明します。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
 keywords: UX デザイン, Mixed Reality UX, UX, アプリパターン, コントロール, スタイル, HoloLens, 相互作用, 空間対話, 空間 UI, UX 要素, 動作, 構成要素, タイポグラフィ, 色, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想 reality ヘッドセット, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 47f7877e9a5f8a71bcae9a16011210d9fc897040
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a1b087230b5a744cb6194c5cb791e4085aa791c6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847782"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009702"
 ---
 # <a name="ux-elements-overview"></a>UX 要素の概要
 
 ## <a name="foundational-elements"></a>基本要素
+
 優れた mixed reality エクスペリエンスを設計するために必要な基本要素について説明します。
 
 :::row:::
@@ -39,6 +40,7 @@ ms.locfileid: "97847782"
 <br>
 
 ## <a name="common-controls-and-behaviors"></a>一般的なコントロールと動作
+
 Mixed Reality のエクスペリエンスで、頻繁に使用される一般的な空間操作と UI 構成ブロックについて学習します。
 
 :::row:::

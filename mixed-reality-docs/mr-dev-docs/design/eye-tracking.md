@@ -1,17 +1,17 @@
 ---
 title: 視線追跡
-description: HoloLens 2 では、開発者がユーザーの注目に関する情報を使用できるようにすることで、holographic experience 内で新しいレベルのコンテキストと人間の理解を実現できます。
+description: HoloLens 2 の目の追跡と、holographic エクスペリエンスで得た場合の人間による理解の新しいレベルについて説明します。
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 視線追跡、mixed reality、インプット、視線、調整、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、インテント、アクション
-ms.openlocfilehash: 5ee957db85c2eefc32b7bfd716268262b347867b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847942"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009602"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2 上の視線追跡
 
@@ -19,7 +19,7 @@ ms.locfileid: "97847942"
 
 HoloLens 2 では、開発者がユーザーの注目に関する情報を使用できるようにすることで、holographic experience 内で新しいレベルのコンテキストと人間の理解を実現できます。 このページでは、開発者がさまざまなユースケースについて目の追跡を活用する方法と、視線を使用したユーザーとの対話を設計する際の注意点について説明します。 
 
-アイ tracking API は、ユーザーのプライバシーを考慮して設計されており、特定可能な情報 (特に生体認証) を通過することを回避しています。 視線を追跡できるアプリケーションの場合、ユーザーは、視線追跡情報を使用するためのアクセス許可をアプリに付与する必要があります。 
+アイ tracking API は、ユーザーのプライバシーを考慮して設計されており、特定可能な情報 (特に生体認証) を通過することを回避しています。 視線を追跡できるアプリケーションの場合、ユーザーは、視線追跡情報を使用するためのアクセス許可をアプリに付与する必要があります。
 
 ### <a name="device-support"></a>デバイス サポート
 

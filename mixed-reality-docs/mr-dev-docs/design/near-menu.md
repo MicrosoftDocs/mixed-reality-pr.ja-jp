@@ -1,17 +1,17 @@
 ---
 title: メニューの近く
-description: 近くのメニューは、タグに沿った動作を実行するパネル上のボタンのコレクションです。
+description: Near メニューを使用する方法について説明します。これは、混合現実環境でタグに沿った動作を行うパネル上のボタンのコレクションです。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合現実、コントロール、対話、ui、ux、メニュー、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: fb64ecf4a0bc2d7a495e87d127b39aded1212a6f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 3cba4452861f05a1ce921c1f18f6636661ee34b0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847263"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009932"
 ---
 # <a name="near-menu"></a>メニューの近く
 

@@ -1,17 +1,17 @@
 ---
 title: Unreal の入力を見つめます
-description: HoloLens および Unreal Engine 用の宝石入力の設定に関するチュートリアル
+description: アプリの監視機能とヘッドの向きを使用して、非 Real の HoloLens アプリを設定して使用する方法について説明します。
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Windows Mixed Reality、ホログラム、HoloLens 2、視線追跡、宝石入力、ヘッドマウントディスプレイ、Unreal engine、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット
-ms.openlocfilehash: a11573d732e739068dca8c42dd8688c0705fc5bb
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: e546867fe02acd5e72ee76b4108a369ec25fd32f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925987"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010142"
 ---
 # <a name="gaze-input"></a>見つめ入力
 
@@ -104,7 +104,7 @@ void AEyeTracker::Tick(float DeltaTime)
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-このガイドで説明されていない実際の開発については、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。
+用意されている Unreal 開発体験に従っている場合、MRTK コア構成要素を探索している段階にいます。 ここから、次の構成要素を続けることができます。
 
 > [!div class="nextstepaction"]
 > [ハンド トラッキング](unreal-hand-tracking.md)

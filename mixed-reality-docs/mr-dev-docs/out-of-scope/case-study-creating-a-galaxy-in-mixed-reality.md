@@ -1,17 +1,17 @@
 ---
 title: ケーススタディ-mixed reality での galaxy の作成
-description: Microsoft HoloLens を出荷する前に、開発者コミュニティに、新しいデバイスに対して経験豊富な内部チームビルドを表示するアプリの種類を尋ねました。 5000を超えるアイデアが共有されており、24時間の Twitter の投票の後、優勝者は "Galaxy エクスプローラ" という考え方でした。
+description: 「Galaxy エクスプローラ」アプリケーションと、それが Microsft HoloLens 向けに構築された方法と、コミュニティ開発者による24時間の Twitter ポーリングの後について説明します。
 author: karimluccin
 ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy エクスプローラー、HoloLens、Windows Mixed Reality、アイデアの共有、ケーススタディ
-ms.openlocfilehash: 91e1c356d69d2b58795a0a0003dd5ffaf0ef1bdc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687522"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009782"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>ケーススタディ-mixed reality での galaxy の作成
 
@@ -41,7 +41,7 @@ HoloLens の能力を最大限に活用して、お客様の生きた空間で3D
 
 ### <a name="creating-the-position-of-the-stars"></a>星の位置の作成
 
-チームメンバーの1人が、最初の位置に星を生成する C# コードを既に作成しています。 星は楕円上にあり、その位置は ( **curveoffset** , **ellipseSize** , **標高** ) によって記述できます。 **curveoffset** は楕円に沿った星の角度、 **ellipseSize** は X と Z に沿った楕円の次元で、galaxy 内では星の適切な標高を昇格します。 このため、各スター属性で初期化されるバッファー ([Unity の ComputeBuffer](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)) を作成し、それを GPU に送信して、残りのエクスペリエンスに使用することができます。 このバッファーを描画するには、 [Unity の DrawProcedural](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) を使用します。これにより、galaxy を表す実際のメッシュがなくても、任意のポイントのセットに対してシェーダー (GPU 上のコード) を実行できます。
+チームメンバーの1人が、最初の位置に星を生成する C# コードを既に作成しています。 星は楕円上にあり、その位置は (**curveoffset**, **ellipseSize**, **標高**) によって記述できます。 **curveoffset** は楕円に沿った星の角度、 **ellipseSize** は X と Z に沿った楕円の次元で、galaxy 内では星の適切な標高を昇格します。 このため、各スター属性で初期化されるバッファー ([Unity の ComputeBuffer](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)) を作成し、それを GPU に送信して、残りのエクスペリエンスに使用することができます。 このバッファーを描画するには、 [Unity の DrawProcedural](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) を使用します。これにより、galaxy を表す実際のメッシュがなくても、任意のポイントのセットに対してシェーダー (GPU 上のコード) を実行できます。
 
 **CPU**
 
@@ -92,7 +92,7 @@ GPU レンダリングを使用したパーティクルシステムの進行状�
 星が長すぎるほど、エッジで速度が遅くなります。
 
 
-これにより、各星は ( **Curveoffset** 、 **ellipseSize** 、 **標高** 、 **age** ) によって完全に記述されます。 **age** は、シーンが読み込まれてから経過した合計時間を累積したものです。
+これにより、各星は (**Curveoffset**、 **ellipseSize**、 **標高**、 **age**) によって完全に記述されます。 **age** は、シーンが読み込まれてから経過した合計時間を累積したものです。
 
 
 

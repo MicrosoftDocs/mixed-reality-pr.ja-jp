@@ -1,17 +1,17 @@
 ---
 title: DirectX でのローカルアンカー転送
-description: 空間アンカーを転送して2つの HoloLens デバイスを同期する方法について説明します。
+description: 空間アンカーを転送、エクスポート、およびシリアル化することで、2つの HoloLens デバイスを同期する方法について説明します。
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, 同期, 空間アンカー, 転送, マルチプレイヤー, ビュー, シナリオ, チュートリアル, サンプルコード, 転送, ローカルアンカー転送, アンカーエクスポート, アンカーインポート
-ms.openlocfilehash: 6d54b29a01617f9d78b7fdfec0ebc04a3cd48002
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5007220f480a3093864502e624737e9707bd3952
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684474"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009652"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>DirectX でのローカルアンカー転送
 
@@ -31,7 +31,7 @@ ms.locfileid: "91684474"
 
 ## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>SpatialPerception 機能を使用するようにアプリを設定する
 
-[SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx)を使用するには、アプリに spatialPerception 機能を使用するためのアクセス許可が付与されている必要があります。 これは、空間アンカーを転送する場合に必要です。これは、そのアンカーの近くで、時間の経過と共に収集されるセンサーイメージを共有することです。
+[SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx)を使用するには、アプリに SpatialPerception 機能を使用するためのアクセス許可が付与されている必要があります。 これは、空間アンカーを転送する場合に必要です。これは、そのアンカーの近くで、時間の経過と共に収集されるセンサーイメージを共有することです。
 
 この機能をアプリの package.appxmanifest ファイルで宣言します。 次に例を示します。
 
@@ -672,7 +672,7 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 }
 ```
 
-これで完了です。 これで、ネットワーク経由で受信したアンカーを特定するための十分な情報が得られます。 ここでも、クライアントがアンカーを正常に見つけるために十分な数のビジュアル追跡データが必要であることに注意してください。すぐに機能しない場合は、しばらく試してみてください。 それでもうまくいかない場合は、サーバーがより多くのアンカーを送信するようにし、ネットワーク通信を使用してクライアントに対して機能するものに同意してください。 これを試すには、HolographicSpatialAnchorTransferSample をダウンロードし、クライアントとサーバーの Ip アドレスを構成して、クライアントとサーバーの HoloLens デバイスに展開します。
+以上で作業は終了です。 これで、ネットワーク経由で受信したアンカーを特定するための十分な情報が得られます。 ここでも、クライアントがアンカーを正常に見つけるために十分な数のビジュアル追跡データが必要であることに注意してください。すぐに機能しない場合は、しばらく試してみてください。 それでもうまくいかない場合は、サーバーがより多くのアンカーを送信するようにし、ネットワーク通信を使用してクライアントに対して機能するものに同意してください。 これを試すには、HolographicSpatialAnchorTransferSample をダウンロードし、クライアントとサーバーの Ip アドレスを構成して、クライアントとサーバーの HoloLens デバイスに展開します。
 
 ## <a name="see-also"></a>関連項目
 * [並列パターン ライブラリ (PPL)](https://msdn.microsoft.com/library/dd492418.aspx)

@@ -1,17 +1,17 @@
 ---
 title: 3D アプリ起動ツールの実装 (Win32 アプリ)
-description: Windows Mixed Reality の [スタート] メニューと [ホーム] 環境用に、Win32 VR アプリとゲーム用の3D アプリランチャーおよびロゴを作成する方法について説明します。
+description: '[スタート] メニューと [ホーム] 環境用に、Win32 VR アプリとゲーム用の3D アプリランチャーおよびロゴを作成する方法について説明します。'
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D、ロゴ、アイコン、モデリング、ランチャー、3D ランチャー、タイル、live cube、win32、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、マニフェスト
-ms.openlocfilehash: 5a3e38de54aad1fceb4804003043c87dddab61c4
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 63b07664cb09f51e6d0588fdc50d141ad8985093
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757820"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009671"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>3D アプリ起動ツールの実装 (Win32 アプリ)
 

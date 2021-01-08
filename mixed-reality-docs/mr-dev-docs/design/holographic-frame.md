@@ -1,17 +1,17 @@
 ---
 title: ホログラフィック フレーム
-description: ユーザーは、holographic フレームを通じて混合現実の世界を見ることができます。
+description: ユーザーが holographic フレームを通じて混合現実の世界をどのように表示するか、およびエクスペリエンスを最適に設計する方法について説明します。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens、Windows Mixed Reality、holographic frame、ビューのフィールド、視界、Mixed reality ヘッドセット、Windows Mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、相互作用、ナビゲーション、メニュー
-ms.openlocfilehash: 679f629d5190ad6e3df2d92d2adfcce998f7dea5
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 5898f98054afadb58fb059ff54be23f015232d55
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847382"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009592"
 ---
 # <a name="holographic-frame"></a>ホログラフィック フレーム
 

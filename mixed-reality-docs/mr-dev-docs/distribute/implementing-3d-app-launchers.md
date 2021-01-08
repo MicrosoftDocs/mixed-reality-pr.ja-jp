@@ -1,17 +1,17 @@
 ---
 title: 3D アプリ起動ツールの実装 (UWP アプリ)
-description: HoloLens とイマーシブ (VR) ヘッドセットの両方で、Windows Mixed Reality UWP アプリとゲーム (Microsoft Store を通じて配布される) の3D アプリランチャーとロゴを作成する方法について説明します。
+description: HoloLens と VR ヘッドセットで、Windows Mixed Reality UWP アプリとゲーム用の3D アプリランチャーとロゴを作成する方法について説明します。
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D、ロゴ、アイコン、モデリング、ランチャー、3D ランチャー、タイル、live cube、ディープリンク、secondarytile、セカンダリタイル、UWP、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、XML、境界ボックス、unity
-ms.openlocfilehash: 38f0932f20e3660c91b87de7bcb9d66799d9a51a
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 40a68d0835ec8fb92d6417650700f41e8a31aab6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757499"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009682"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>3D アプリ起動ツールの実装 (UWP アプリ)
 

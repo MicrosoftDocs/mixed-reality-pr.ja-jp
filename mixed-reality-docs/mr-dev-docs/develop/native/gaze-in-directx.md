@@ -1,17 +1,17 @@
 ---
 title: DirectX でのヘッド視線入力とアイ視線入力
-description: ネイティブ DirectX アプリでのヘッドと視点の追跡の使用方法について説明します。
+description: ネイティブ DirectX アプリで、raycasting のデータを要求し、使用し、ヘッドの追跡からデータを開梱する方法について説明します。
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 視線、ヘッド・見つめ、ヘッドトラッキング、視線追跡、directx、入力、ホログラム、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
-ms.openlocfilehash: 4d7ed9b735b5f3cd7029e42ccc75bc539e3c4f4b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a518e5e4153da9c58295abb257a8ed2d69145211
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848088"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009552"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>DirectX でのヘッドと視線の入力
 
@@ -27,6 +27,7 @@ Windows Mixed Reality では、ユーザーがどのようなことを確認し�
 ヘッドと視線の両方には、  [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API を使用してアクセスできます。 [SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp)を呼び出して、指定したタイムスタンプと[座標系](coordinate-systems-in-directx.md)で新しい SpatialPointerPose オブジェクトを受け取ります。 この SpatialPointerPose には、中心と方向があります。 また、視線追跡が利用可能な場合は、視線の原点と方向も含まれています。
 
 ### <a name="device-support"></a>デバイス サポート
+
 <table>
 <colgroup>
     <col width="25%" />

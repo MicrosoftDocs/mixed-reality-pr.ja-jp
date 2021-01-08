@@ -1,17 +1,17 @@
 ---
 title: QR コードの追跡
-description: HoloLens 2 で QR コードを検出する方法について説明します。
+description: HoloLens 2 で、mixed reality アプリで QR コードを検出し、web カメラ機能を追加し、座標系を管理する方法について説明します。
 author: dorreneb
 ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: vr, lbe, 位置情報ベースのエンターテインメント, vr アーケード, アーケード, イマーシブ, qr, qr コード, hololens2
-ms.openlocfilehash: 023da7a98d1559d9dd0387a7efbaf26ad577df50
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 7e5931e0d23ef6c905b8ec54d08e572a89e747e0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530004"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009402"
 ---
 # <a name="qr-code-tracking"></a>QR コードの追跡
 
@@ -21,7 +21,7 @@ HoloLens 2 を使用すると、ヘッドセット周辺の環境内の QR コ�
 
 <table>
 <tr>
-<th>機能</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (最初の世代)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>特徴</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (最初の世代)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td> QR コードの検出</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>

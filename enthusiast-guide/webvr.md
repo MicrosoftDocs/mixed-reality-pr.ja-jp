@@ -1,14 +1,14 @@
 ---
 title: Windows Mixed Reality での WebVR の使用
-description: WebVR について説明します。また、Windows Mixed Reality ヘッドセットで Microsoft Edge と共に使用する方法についても説明します。
+description: WebVR の基本、Windows Mixed Reality ヘッドセットで Microsoft Edge と共に使用する方法、および一般的なトラブルシューティングの問題について説明します。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、WebVR、Edge、Microsoft Edge、web 閲覧
-ms.openlocfilehash: 92f1d00c7f635c88a727732fb743996a654ba775
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 0b0d07383b43feaa11fb9bfac2b071d8d4d80b19
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725603"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009442"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>Windows Mixed Reality での WebVR の使用
 

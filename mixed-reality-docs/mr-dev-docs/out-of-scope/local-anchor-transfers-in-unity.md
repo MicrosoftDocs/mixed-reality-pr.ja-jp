@@ -1,17 +1,17 @@
 ---
 title: Unity でのローカルアンカー転送
-description: Unity アプリケーション内の複数の HoloLens デバイス間でアンカーを転送します。
+description: Unity mixed reality アプリケーションで複数の HoloLens デバイス間でアンカーを転送する方法について説明します。
 author: fieldsjacksong
 ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 共有、アンカー、WorldAnchor、MR 共有250、WorldAnchorTransferBatch、SpatialPerception、転送、ローカルアンカー転送、アンカーエクスポート、アンカーインポート
-ms.openlocfilehash: d6aebfb89d05926b1f773dea58ee65fead57988e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1048e6a3cfc41a04cd49e201e5d1841e805a4193
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690762"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009642"
 ---
 # <a name="local-anchor-transfers-in-unity"></a>Unity でのローカルアンカー転送
 
@@ -27,7 +27,7 @@ ms.locfileid: "91690762"
 *SpatialPerception* 機能を有効にする方法:
 1. Unity エディターで、 **[プレーヤーの設定** ] ウィンドウを開きます (> プロジェクトの設定を編集し > player)
 2. [ **Windows ストア** ] タブをクリックします。
-3. [ **発行の設定]** を展開し、 **[機能]** ボックスの一覧の **"SpatialPerception"** 機能を確認します。
+3. [**発行の設定]** を展開し、 **[機能]** ボックスの一覧の **"SpatialPerception"** 機能を確認します。
 
 >[!NOTE]
 >Unity プロジェクトを Visual Studio ソリューションに既にエクスポートしている場合は、新しいフォルダーにエクスポートするか、 [Visual studio の package.appxmanifest でこの機能](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)を手動で設定する必要があります。
@@ -35,7 +35,7 @@ ms.locfileid: "91690762"
 ### <a name="anchor-transfer"></a>アンカー転送
 
 **名前空間:** *UNITYENGINE. XR*<br>
-**型** : *WorldAnchorTransferBatch*
+**型**: *WorldAnchorTransferBatch*
 
 [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md)を転送するには、転送するアンカーを設定する必要があります。 1つの HoloLens のユーザーが自分の環境をスキャンし、共有エクスペリエンスのアンカーとなるポイントを手動またはプログラムによって選択します。 その後、このポイントを表すデータをシリアル化し、エクスペリエンスで共有している他のデバイスに転送できます。 各デバイスは、アンカーデータを逆シリアル化し、そのポイントの位置を特定しようとします。 アンカー転送を機能させるには、各デバイスが、アンカーで表されるポイントを識別できるように、十分な環境でスキャンする必要があります。
 

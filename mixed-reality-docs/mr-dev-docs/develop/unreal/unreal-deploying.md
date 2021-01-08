@@ -1,6 +1,6 @@
 ---
 title: Unreal でのデバイスへのデプロイ
-description: 非 Real から HoloLens 2 にデバイスを展開するためのガイド
+description: エディターまたはデバイスポータルを使用して、mixed reality のアプリを HoloLens 2 にデプロイするために必要なすべての事項について説明します。
 author: sw5813
 ms.author: suwu
 ms.date: 12/9/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、デバイスへの展開、PC、ドキュメント、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 390bd1a9f1bc643efb1a342421e8c96574e74334
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 24b2c013e1c9f25f54be9a6fefec8a86846c1746
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925910"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009752"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Unreal でのデバイスへのデプロイ
 

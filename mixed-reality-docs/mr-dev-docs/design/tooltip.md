@@ -1,17 +1,17 @@
 ---
 title: ヒント
-description: ヒントは、他のコントロールまたはオブジェクトにリンクされた短い説明です。
+description: 複合現実アプリケーションでツールヒントを使用する方法について説明します。これは、別のコントロールまたはオブジェクトにリンクされている短い説明です。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合現実、コントロール、相互作用、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット、HoloLens、ツールヒント、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: ceb88fd89ec9d7bde50e23f2ae3ac158a301eb02
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bed9e83cac381fceddbf94cd4048d36427a27874
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848118"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009412"
 ---
 # <a name="tooltip"></a>ヒント
 

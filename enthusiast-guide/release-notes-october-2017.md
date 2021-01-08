@@ -1,17 +1,17 @@
 ---
 title: リリース ノート - 2017 年 10 月
-description: Windows 10 秋の作成者の更新プログラム (2017 年10月) の windows Mixed Reality リリースノート。
+description: Windows 10 秋の作成者の更新プログラム (2017 年10月) については、Windows Mixed Reality のリリースノートを最新の状態にしてください。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: リリースノート、バージョン、windows 10、ビルド、rs3、os
-ms.openlocfilehash: 7c5af3b8ead4aa4bee9e342e9c41b696a30e5e2c
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 83c16a40388960547cfcf7444e1ae630c2f5b7f2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725913"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009492"
 ---
 # <a name="release-notes---october-2017"></a>リリース ノート - 2017 年 10 月
 

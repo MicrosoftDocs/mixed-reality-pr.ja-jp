@@ -3,12 +3,12 @@ title: Windows Mixed Reality で SteamVR を使用する
 description: Windows Mixed Reality ヘッドセットと互換性のある Pc を使用するコントローラーで、SteamVR ゲームを設定して再生する方法について説明します。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、ゲーム、SteamVR、蒸気、システム要件
-ms.openlocfilehash: 9330d6026b74494c851aea6b4664c1ede787c1c5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 01fac0f6ce88e473da8a8d9300a4169b37b74078
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006902"
+ms.locfileid: "98031968"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Windows Mixed Reality で SteamVR を使用する
 
@@ -18,14 +18,18 @@ Windows mixed Reality for SteamVR では、ユーザーは Windows Mixed Reality
 
 * 保留中の更新プログラムがないことを確認する: [開始 > 設定] を選択し、 **& セキュリティ > Windows Update を更新 >** ます。 更新プログラムが利用可能な場合は、[ **今すぐインストール**] を選択します。 利用可能な更新プログラムがない場合は、[ **更新プログラムの確認**] を選択して、新しいものをインストールします。
 * PC の要件は、ストリームのアプリとコンテンツによって異なります。 タイトルごとの最小要件を参照してください。 GTX 1070 グラフィックスカード (またはそれと同等) と Intel® Core™ i7 プロセッサを搭載した PC では、さまざまなタイトルの優れたエクスペリエンスが提供されます。
+* [Windows Mixed Reality](set-up-windows-mixed-reality.md)をまだセットアップしていない場合は設定します。 
 
 ## <a name="set-up-windows-mixed-reality-for-steamvr"></a>SteamVR 用に Windows Mixed Reality を設定する
 
-1. [Windows Mixed Reality](set-up-windows-mixed-reality.md)をまだセットアップしていない場合は、セットアップします。
-2. [ストリーム](http://store.steampowered.com/about/)と **ログイン** をインストールするか **、新しいアカウントを作成します。**
-3. [Steamvr](https://store.steampowered.com/app/250820/SteamVR/)をインストールします。 ヘッドセットを接続した状態で、ストリームを起動します。 SteamVR をインストールするように求めるダイアログが表示されます。 ダイアログの指示に従ってインストールします。
+1. [SteamVR をダウンロードしてインストールします。](https://steamcdn-a.akamaihd.net/client/installer/SteamWindowsMRInstaller.exe)
+2. 準備ができたら、SteamVR を開始します。 SteamVR チュートリアルは、自動的に開始されます。
+
+> **注:** SteamVR セットアップの高度なトラブルシューティングを行うには、次のソフトウェアコンポーネントがインストールされていることを確認します。
+> 1. [ストリーム](http://store.steampowered.com/about/)と **ログイン** をインストールするか **、新しいアカウントを作成します。**
+> 2. [Steamvr](https://store.steampowered.com/app/250820/SteamVR/)をインストールします。 ヘッドセットを接続した状態で、ストリームを起動します。 SteamVR をインストールするように求めるダイアログが表示されます。 ダイアログの指示に従ってインストールします。
     * ポップアップが表示されない場合は、*ライブラリ* の [*ツール*] セクションに移動して、steamvr をインストールします。 リストで SteamVR を見つけて右クリックし、[ *Install Game*] \ (ゲームのインストール \) を選択します。
-4. [SteamVR 用の Windows Mixed Reality を](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)インストールします。
+> 3. [SteamVR 用の Windows Mixed Reality を](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)インストールします。
 
 ## <a name="play-steamvr-games"></a>SteamVR ゲームをプレイする
 

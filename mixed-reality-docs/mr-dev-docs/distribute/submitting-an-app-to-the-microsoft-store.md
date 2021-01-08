@@ -6,21 +6,26 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store、HoloLens、イマーシブヘッドセット、アプリ、uwp、送信、送信、フィルター、メタデータ、システム要件、キーワード、wack、認定、パッケージ、appx、販売、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
-ms.openlocfilehash: 92de6072300ed94873cc68dfa78531da4685d274
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 7b1953fe0244b06f019f0e28432b7f9be9c21081
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757840"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031978"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Microsoft Store へのアプリの送信
 
 > [!IMPORTANT]
-> Unreal アプリケーションを送信する場合は、続行する前に、 **[こちらの発行手順](../develop/unreal/unreal-publishing-to-store.md)** に従ってください。
+> Unreal アプリケーションを送信する場合は、先に進む前に、 **[発行の手順](../develop/unreal/unreal-publishing-to-store.md)** に従っていることを確認してください。
+
+## <a name="prerequisites"></a>前提条件
 
 [HoloLens](../hololens-hardware-details.md)と WINDOWS 10 PC の両方で、[イマーシブヘッドセット](../discover/immersive-headset-hardware-details.md)の電源を入れてユニバーサル Windows プラットフォームアプリを実行します。 HoloLens、PC、またはその両方をサポートするアプリを送信する場合でも、アプリの送信は [パートナーセンター](https://partner.microsoft.com/dashboard)を経由します。
 
-パートナーセンターの開発者アカウントをまだお持ちでない場合は、先に進む前に [サインアップ](https://developer.microsoft.com/store/register) してください。
+パートナーセンターの開発者アカウントをまだお持ちでない場合は、先に進む前に [サインアップ](https://developer.microsoft.com/store/register) してください。 送信のガイドラインとチェックリストの詳細については、この [アプリの送信](https://docs.microsoft.com/windows/uwp/publish/app-submissions)に関する記事を参照してください。
+
+> [!IMPORTANT]
+> パートナーセンターの開発者アカウントが雇用確認チェックに失敗した場合、Microsoft Store にアプリケーションを送信することはできません。 詳細については、パートナーセンター [サポートチーム](https://developer.microsoft.com/windows/support) にお問い合わせください。
 
 ## <a name="packaging-a-mixed-reality-app"></a>Mixed Reality アプリのパッケージ化
 

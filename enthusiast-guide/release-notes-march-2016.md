@@ -1,17 +1,17 @@
 ---
 title: リリース ノート - 2016 年 3 月
-description: Hololens と Windows Holographic の発表に関する HoloLens のリリースノート。
+description: Hololens と Windows Holographic の発表については、HoloLens のリリースノートを最新の状態に維持してください。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: リリースノート, HoloLens, os, プラットフォーム, 機能, ビルド, 起動
-ms.openlocfilehash: 9129bb220d2a580235494a94ecbd3227e7d4c7c7
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: a7797483b5ba60203f0f0b3c2c4ce79b924d81dc
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725933"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009202"
 ---
 # <a name="release-notes---march-2016"></a>リリース ノート - 2016 年 3 月
 

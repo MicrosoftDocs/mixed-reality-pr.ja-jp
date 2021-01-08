@@ -1,17 +1,17 @@
 ---
 title: ボリューム レンダリング
-description: 容量イメージには、表面として簡単に表すことができない不透明度と色の豊富な情報が含まれています。 Windows Mixed Reality 内で容量イメージを効率的にレンダリングする方法について説明します。
+description: Windows Mixed Reality の不透明度と色を使用して、リッチ容量イメージを効率的にレンダリングする方法について説明します。
 author: kevinkennedy
 ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 容量イメージ, ボリュームレンダリング, パフォーマンス, mixed reality
-ms.openlocfilehash: c0b68a2368823e5699e24d66bfafe1e4e05bdce8
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 2a76be80d786aea0c8bc1bd364155fa37d37e151
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612946"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008782"
 ---
 # <a name="volume-rendering"></a>ボリューム レンダリング
 

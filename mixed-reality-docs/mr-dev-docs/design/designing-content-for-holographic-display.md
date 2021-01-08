@@ -1,17 +1,17 @@
 ---
 title: ホログラフィック ディスプレイのコンテンツを設計する
-description: Holographic 表示の設計ガイドラインとベストプラクティスについて説明します。
+description: HoloLens デバイスでの holographic 表示の設計ガイドラインとベストプラクティスについて説明します。
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: UI デザイン, holographic 表示, コンテンツデザイン, ダークテーマ, ライトテーマ, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, MRTK, Mixed Reality Toolkit, 設計, ピクセル
-ms.openlocfilehash: 4a95f5df50a600035d9127c73f86a5d8be5e7131
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 371d9aac610a765e7ecc6dd1f17401e5d7855672
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847994"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009092"
 ---
 # <a name="designing-content-for-holographic-display"></a>ホログラフィック ディスプレイのコンテンツを設計する
 
@@ -22,6 +22,7 @@ Holographic が表示されるようにコンテンツを設計する際には�
 <br>
 
 ## <a name="challenges-with-bright-color-on-a-large-surface"></a>大きな表面で明るい色の課題 
+
 HoloLens エクスペリエンスの研究とテストに基づいて、ディスプレイの大きな領域で明るい色を使用すると、いくつかの問題が発生する可能性があることがわかりました。 
 
 **目の疲労** 

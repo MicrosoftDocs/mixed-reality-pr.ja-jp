@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、セキュリティ、認証、サーバー対クライアント
-ms.openlocfilehash: 64eb54d9401f3fbc8b73ebb97b19de5a68cdc5c4
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 0881238bfca199958802598a3e1829a9de0d8e5b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530403"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006482"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Holographic リモート処理の接続セキュリティを有効にする
 
@@ -24,7 +24,7 @@ ms.locfileid: "97530403"
 * さまざまなユースケースに基づく推奨メジャー
 * Holographic リモート処理ソリューションへのセキュリティの実装
 
-## <a name="overview"></a>概要
+## <a name="holographic-remoting-security"></a>Holographic リモート処理のセキュリティ
 
 Holographic リモート処理では、ネットワーク経由で情報を交換します。 セキュリティ対策が実施されていない場合、同じネットワーク上の敵対者は、通信またはアクセスの機密情報の整合性を損なう可能性があります。
 

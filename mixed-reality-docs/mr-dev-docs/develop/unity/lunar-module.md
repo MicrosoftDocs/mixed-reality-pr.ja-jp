@@ -1,17 +1,17 @@
 ---
 title: 月着陸船
-description: 2ききの追跡と Xbox コントローラー入力を使用して HoloLens の基本ジェスチャを拡張する方法、surface のマッピングとプレーン検索に対応するオブジェクトを作成する方法、および単純なメニューシステムを実装する方法について説明します。
+description: 2つのきき追跡と Xbox コントローラー入力を使用して HoloLens の基本ジェスチャを拡張する方法と、リアクティブなオブジェクトを作成する方法、およびメニューシステムを実装する方法について説明します。
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, サンプルアプリ, 設計, MRTK, Mixed Reality ツールキット, Unity, サンプルアプリ, アプリの例, オープンソース, Microsoft Store, HoloLens, Mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実のヘッドセット
-ms.openlocfilehash: 2861cb85ac2f4a51a80e586b2be42ddb1d395e8a
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: b0630df49fd8ad154017000893a08560793fb39e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010503"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008822"
 ---
 # <a name="lunar-module"></a>月着陸船
 

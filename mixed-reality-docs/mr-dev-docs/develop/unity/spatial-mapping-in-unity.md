@@ -1,17 +1,17 @@
 ---
 title: Unity の空間マッピング
-description: Unity で実際のジオメトリをレンダリングし、衝突します。
+description: Unity mixed reality アプリで、実際のジオメトリを使用してレンダリングや衝突を管理する方法について説明します。
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、空間マッピング、レンダラー、collider、メッシュ、スキャン、コンポーネント、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 2e5518b1a54f967762143bb8602141b4199a2d54
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: b4c45ba91a3e864c8cd29f3ebc3396d0250948f4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002517"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009292"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity の空間マッピング
 
@@ -484,10 +484,10 @@ Dll を理解することで、内部的には、playspace を 8 cm サイズの
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。 
+Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次の構成要素を続けることができます。 
 
 > [!div class="nextstepaction"]
-> [Text](text-in-unity.md)
+> [テキスト](text-in-unity.md)
 
 または、Mixed Reality プラットフォームの機能と API に移動します。
 

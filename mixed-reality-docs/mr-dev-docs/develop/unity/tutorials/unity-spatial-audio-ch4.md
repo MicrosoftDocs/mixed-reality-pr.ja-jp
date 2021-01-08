@@ -1,26 +1,28 @@
 ---
-title: 空間オーディオチュートリアル-4. 実行時の立体オーディオの有効化と無効化
-description: ボタンを使用して、実行時に spatialization のオーディオを有効または無効にします。
+title: 実行時の立体オーディオの有効化と無効化
+description: ボタンを使用して実行時にオーディオ spatialization を有効または無効にする C# スクリプトを記述する方法について説明します。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、head 関連の転送機能、リバーブ、Microsoft Spatializer
-ms.openlocfilehash: c9e510e544962c5d1a4c462d20dafa222c6a5289
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: eaaf8a05088b5bab674ca11b15b0c63383faa479
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002607"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007342"
 ---
 # <a name="enabling-and-disabling-spatialization-at-run-time"></a>実行時の spatialization の有効化と無効化
 
 ## <a name="objectives"></a>目標
+
 この4番目の章では、次のことについて説明します。
 * Game オブジェクトの spatialization を制御する新しいスクリプトを追加します
 * ボタンの操作から spatialization コントロールスクリプトを駆動する
 
 ## <a name="add-spatialization-control-script"></a>Spatialization コントロールスクリプトの追加
+
 **プロジェクト** ペイン内を右クリックし、[ **Create-> c# スクリプト**] を選択して新しい c# スクリプトを作成します。 スクリプトに "SpatializeOnOff" という名前を指定します。
 
 ![スクリプトの作成](images/spatial-audio/create-script.png)
@@ -90,6 +92,7 @@ public class SpatializeOnOff : MonoBehaviour
 > Spatialization を完全に無効にする場合は、 **SourceObject** 変数の **spatialization** boolean プロパティも調整するようにスクリプトを変更します。
 
 ## <a name="attach-your-script-and-drive-it-from-the-button"></a>スクリプトをアタッチして、ボタンからドライブを作成します
+
 **クワッド** の [**インスペクター** ] ウィンドウで、[**コンポーネントの追加**] をクリックし、 **Spatialize On Off** スクリプトを追加します。
 
 ![スクリプトをクワッドに追加する](images/spatial-audio/add-script-to-quad.png)
@@ -115,6 +118,7 @@ public class SpatializeOnOff : MonoBehaviour
 ![ボタンの操作の設定](images/spatial-audio/button-action-settings.png)
 
 ## <a name="next-steps"></a>次のステップ
+
 HoloLens 2 または Unity エディターでアプリを試してみてください。 アプリで、ボタンをタッチして、ビデオの spatialization をアクティブ化および非アクティブ化できるようになりました。 Unity エディターでテストする場合は、スペースバーを押し、スクロールホイールを使用してスクロールし、ハンドシミュレーションをアクティブにします。 
 
 > [!div class="nextstepaction"]

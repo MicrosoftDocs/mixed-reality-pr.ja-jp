@@ -1,17 +1,17 @@
 ---
 title: タイポグラフィ
-description: テキストは、アプリのエクスペリエンスに情報を提供するための重要な要素です。
+description: 混合環境でのアプリのエクスペリエンスに関する情報を提供するための重要な要素としてテキストを設計および実装する方法について説明します。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality、デザイン、スタイル、フォント、タイポグラフィ、ui、ux、テキスト、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens
-ms.openlocfilehash: 09e0e6029011fdd7fda793f6b6645cb3744baa3b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 38acc8c0d2c7dbd7bcb192f82bb1bb52838323ac
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848140"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007652"
 ---
 # <a name="typography"></a>文字体裁
 

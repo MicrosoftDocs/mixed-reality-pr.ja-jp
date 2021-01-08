@@ -1,17 +1,17 @@
 ---
 title: 空間アンカー
-description: 安定したホログラムをレンダリングするために空間アンカーを使用するためのベスト プラクティス。
+description: 空間アンカーを使用して、mixed reality アプリケーションで安定したホログラムをレンダリングするためのベストプラクティスについて説明します。
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 座標系、空間座標システム、ワールドスケール、ワールド、スケール、位置、向き、アンカー、空間アンカー、ワールドロック、ワールドロック、永続化、共有、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想リアリティヘッドセット、HoloLens
-ms.openlocfilehash: 7f6997e491f76e66845b88ea0897dbb037495ba6
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848209"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009112"
 ---
 # <a name="spatial-anchors"></a>空間アンカー
 

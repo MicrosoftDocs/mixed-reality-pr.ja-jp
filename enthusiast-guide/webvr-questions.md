@@ -1,14 +1,14 @@
 ---
 title: WebVR に関する Faq
-description: Web Mixed Reality のトラブルシューティングは、標準のコンシューマーサポートドキュメントを超えています。
+description: 標準的なコンシューマーサポートドキュメントを超えている web アプリケーションについては、Mixed Reality のトラブルシューティングを使用して最新情報を入手してください。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、WebVR
-ms.openlocfilehash: fd9906ca36c71b1bf959466d90c57e07be0eca5e
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: dc7a0b28e19f4f1fc029489aae2ea375e43b8d3b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725633"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008662"
 ---
 # <a name="webvr-faqs"></a>WebVR に関する Faq
 

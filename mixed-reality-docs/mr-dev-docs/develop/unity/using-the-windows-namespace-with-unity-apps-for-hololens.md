@@ -1,17 +1,17 @@
 ---
 title: HoloLens 用 Unity を使用した WinRT Api
-description: HoloLens の Unity プロジェクトで WinRT Api (Windows 名前空間) を使用する方法について説明します。
+description: Leanr の Unity 混合現実プロジェクトで WinRT Api と Windows 名前空間を使用する方法について説明します。
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, WinRT, windows mixed reality, API, チュートリアル, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, Mixed Reality Api
-ms.openlocfilehash: ff12df7eb41350fe1f842b3450f3532e4ab8ffa1
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 2c57af72a10867b5ef4fc87ff96679e576d203f4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010583"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007322"
 ---
 # <a name="winrt-apis-with-unity-for-hololens"></a>HoloLens 用 Unity を使用した WinRT Api
 

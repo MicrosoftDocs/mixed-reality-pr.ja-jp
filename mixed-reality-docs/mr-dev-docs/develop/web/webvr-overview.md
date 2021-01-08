@@ -1,17 +1,17 @@
 ---
 title: WebVR の概要
-description: Windows Mixed Reality での WebVR の使用と開発の概要
+description: Windows Mixed Reality イマーシブヘッドセットで実行される WebVR アプリケーションの使用と開発の基本について説明します。
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebVR, WebXR, WinMR, WebAR, web vr, web xr, web mr, web ar, 360, 360 ビデオ, 360 ビデオ, 360 写真, 360 写真, 360 コンテンツ, イマーシブ web, immersiveweb, IW
-ms.openlocfilehash: fdff2acf7816f36129d867650b16d9760a92e375
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: bf0335c0fa7fd42f60a20690d22b2ef9a4f6859a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91691194"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006962"
 ---
 # <a name="webvr-overview"></a>WebVR の概要
 
@@ -22,9 +22,9 @@ WebVR 1.1 Api は非推奨とされ、Chrome と新しい Microsoft Edge から�
 
 ## <a name="viewing-webvr-content-in-windows-mixed-reality-immersive-headsets"></a>Windows Mixed Reality イマーシブヘッドセットの WebVR コンテンツの表示
 
-**以前のバージョンの Microsoft Edge (15-18)** でイマーシブヘッドセットの webvr コンテンツにアクセスする手順については、「 [ユーザーズガイド](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/webvr)」を参照してください。 Edge ブラウザーの検索バーに「edge://version/」と入力すると、エッジバージョンを確認できます。
+**以前のバージョンの Microsoft Edge (15-18)** でイマーシブヘッドセットの webvr コンテンツにアクセスする手順については、「[ユーザーズガイド](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/webvr)」を参照してください。 Edge ブラウザーの検索バーに「edge://version/」と入力すると、エッジバージョンを確認できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [WebXR の概要](webxr-overview.md)
 * [WebXR Device API 仕様](https://immersive-web.github.io/webxr/)

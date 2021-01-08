@@ -1,19 +1,20 @@
 ---
-title: 空間オーディオチュートリアル-3. ビデオからオーディオの立体化
-description: ビデオ資産を Unity プロジェクトにインポートし、ビデオからオーディオを spatialize します。
+title: ビデオからオーディオの立体化
+description: ビデオ資産を Unity mixed reality プロジェクトにインポートし、ビデオからオーディオを spatialize する方法について説明します。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、ヘッド関連の転送機能、リバーブ、Microsoft Spatializer、ビデオのインポート、ビデオプレーヤー
-ms.openlocfilehash: 46f2f88be6613096a835f04e826b776c32c1b8c2
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 211d1e32a8137444d0f33d442a60067dcd77ca36
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002627"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007413"
 ---
 # <a name="spatializing-audio-from-a-video"></a>ビデオからオーディオの立体化
+
 HoloLens 2 Unity チュートリアルの空間オーディオモジュールの第3章では、次のことを行います。
 * ビデオをインポートしてビデオプレーヤーを追加する
 * ビデオを quadrangle に再生する
@@ -40,6 +41,7 @@ Unity プロジェクトの **プロジェクト** ウィンドウにビデオ�
 ![階層内のビデオプレーヤー](images/spatial-audio/video-player-in-hierarchy.png)
 
 ## <a name="play-video-onto-a-quadrangle"></a>ビデオを quadrangle に再生する
+
 **Video Player** オブジェクトには、ビデオをレンダリングするためのテクスチャを使用するゲームオブジェクトが必要です。 まず、[**階層**] ペインを右クリックし、[ **3d オブジェクト-> クワッド**] を選択して、**階層** に **クワッド** を追加します。
 
 ![クワッドを階層に追加](images/spatial-audio/add-quad-to-hierarchy.png)
@@ -74,6 +76,7 @@ Unity プロジェクトの **プロジェクト** ウィンドウにビデオ�
 ![ビデオプレーヤーのプロパティ](images/spatial-audio/video-player-properties.png)
 
 ## <a name="spatialize-the-audio-from-the-video"></a>ビデオからオーディオを Spatialize
+
 **クワッド** の [**インスペクター** ] ウィンドウで、ビデオからオーディオをルーティングする **オーディオソース** を作成します。
 * ペインの下部にある [ **コンポーネントの追加** ] をクリックします。
 * **オーディオソース** を追加する
@@ -96,6 +99,7 @@ Unity プロジェクトの **プロジェクト** ウィンドウにビデオ�
 ![ビデオプレーヤー設定オーディオソース](images/spatial-audio/video-player-set-audio-source.png)
 
 ## <a name="next-steps"></a>次のステップ
+
 HoloLens 2 または Unity エディターでアプリを試してみてください。 ビデオが表示され、再生されます。ビデオのオーディオは spatialized になります。
 
 > [!div class="nextstepaction"]

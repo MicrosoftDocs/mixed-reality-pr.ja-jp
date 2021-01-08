@@ -1,17 +1,17 @@
 ---
 title: ホログラフィック DirectX プロジェクトを作成する
-description: Windows Mixed Reality アプリテンプレートに基づいて新しい holographic アプリを作成する方法について説明します。
+description: Windows Mixed Reality アプリテンプレートに基づいて新しい holographic DirectX アプリを作成する方法について説明します。
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holographic アプリ, 新しいアプリ, UWP アプリ, テンプレートアプリ, ホログラム, 新しいプロジェクト, チュートリアル, ダウンロード, サンプルコード, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: f377ca5b8af08beb53c878e1ebf665b8074853f6
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 9259a85512555342877de0a5a8bae697fdd03b8d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613086"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006872"
 ---
 # <a name="creating-a-holographic-directx-project"></a>ホログラフィック DirectX プロジェクトを作成する
 
@@ -145,7 +145,7 @@ int APIENTRY wWinMain(
 
 プロジェクトの **コンテンツ** フォルダーには、 [holographic 空間](getting-a-holographicspace.md)にホログラムをレンダリングするためのクラスが含まれています。 テンプレートの既定のホログラムは、ユーザーから2メートル離れた位置にある回転する立方体です。 このキューブの描画は、次の主要なメソッドを含む SpinningCubeRenderer に実装されてい **ます**。
 
-|  Method  |  説明 | 
+|  メソッド  |  説明 | 
 |----------|----------|
 |  `CreateDeviceDependentResources` |  シェーダーを読み込み、キューブメッシュを作成します。 | 
 |  `PositionHologram` |  指定した <a href="https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose" target="_blank">SpatialPointerPose</a>によって指定された場所にホログラムを配置します。 | 

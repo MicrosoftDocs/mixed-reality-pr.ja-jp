@@ -1,17 +1,17 @@
 ---
 title: Holographic Remoting Player
-description: Holographic Remoting Player は、Holographic Remoting をサポートする PC アプリやゲームに接続するコンパニオン アプリです。 Holographic リモート処理では、Wi-Fi 接続を使用して、PC から Microsoft HoloLens にコンテンツを Holographic します。
+description: Holographic リモート処理プレーヤーと、PC から HoloLens へのストリーミング Holographic コンテンツについて、Wi-fi 経由でリアルタイムで説明します。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、診断、パフォーマンス
-ms.openlocfilehash: 07848f20fb23c15688dcb7cbc668b8011e34736b
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: c016221746efb34dd83ceb42a4a2cde156dde4c8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530229"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006532"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting Player
 

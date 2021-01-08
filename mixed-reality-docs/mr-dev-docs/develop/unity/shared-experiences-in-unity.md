@@ -1,17 +1,17 @@
 ---
 title: Unity での共有エクスペリエンス
-description: Unity アプリケーションの複数のユーザー間で同じホログラムを共有します。
+description: Azure 空間アンカーを使用して Unity アプリケーション内の複数のユーザー間で同じホログラムを共有する方法について説明します。
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 共有、アンカー、WorldAnchor、MR 共有250、WorldAnchorTransferBatch、SpatialPerception、Azure、Azure 空間アンカー、ASA、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
-ms.openlocfilehash: 46588f84c39a48e22147d0fc246ceb8d5ee7c47d
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 26ff56c2f9d3feff33bcb7eb103b41a8dfcba971
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010092"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009282"
 ---
 # <a name="shared-experiences-in-unity"></a>Unity での共有エクスペリエンス
 

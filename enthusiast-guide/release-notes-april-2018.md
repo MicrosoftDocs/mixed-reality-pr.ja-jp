@@ -1,17 +1,17 @@
 ---
 title: リリースノート-2018 年4月
-description: Windows 10 April 2018 更新プログラム (RS4 とも呼ばれます) の HoloLens および Windows Mixed Reality リリースノート。
+description: Windows 10 April 2018/RS4 Update については、HoloLens と Windows Mixed Reality のリリースノートを最新の状態に維持してください。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 05/21/2018
 ms.topic: article
 keywords: リリースノート、バージョン、windows 10、ビルド、rs4、os
-ms.openlocfilehash: 42d22feb582716be5ab0bd24ade4a8566dddb5cf
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 8590cf8f813f22fb4f91fef0862b1e2e4ad43b1a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725973"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009242"
 ---
 # <a name="release-notes---april-2018"></a>リリースノート-2018 年4月
 

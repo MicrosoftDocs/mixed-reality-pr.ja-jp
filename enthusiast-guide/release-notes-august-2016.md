@@ -1,17 +1,17 @@
 ---
 title: リリース ノート - 2016 年 8 月
-description: Windows 10 記念日リリースの HoloLens リリースノート (秋 2016)
+description: Windows 10 記念日リリースでは、2016の秋について、HoloLens のリリースノートを最新の状態に維持します。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens、リリースノート、os、プラットフォーム、機能、商用スイート
-ms.openlocfilehash: 870da1075dd1fa1a83926a89bad753233927abda
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9d65d0a2454b5eb076e7c350a6d26e11660af9a5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725963"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009262"
 ---
 # <a name="release-notes---august-2016"></a>リリース ノート - 2016 年 8 月
 

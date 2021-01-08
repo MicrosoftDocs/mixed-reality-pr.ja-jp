@@ -1,6 +1,6 @@
 ---
 title: Windows Mixed Reality のコントローラー
-description: Windows Mixed Reality でコントローラーをセットアップして使用する方法について説明します。
+description: Windows Mixed Reality のコントローラーに関する一般的な問題を設定、ペア、使用、およびトラブルシューティングする方法について説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: f349f4bbc2cadd511515783504562052f1d58ed3
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 5f2e02c85b443497f539d1bfcbf165214e3ac3c1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725393"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007802"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality のモーション コントローラー
 
@@ -94,7 +94,7 @@ Led が点灯するまで、2秒間、Windows ボタンを押してコントロ�
 |  目的  |  モーション コントローラー  | ゲームパッド | マウス + キーボード |
 | --- | --- | --- | --- |
 | 遠距離 | サムスティックを前方に押し、移動先のコントローラーをポイントします。 サムスティックを離します。 | 左スティックを順方向に押し、移動先を確認します。 サムスティックを離します。 | 右側のボタンを選択して保持し、マウスをポイントします。 ボタンを離します。 |
-| Select | コントローラーをポイントし、トリガーをプルするか、タッチパッドを使用します。 | ターゲットを見つめ、を押します。 | マウスをポイントし、左クリックします。 |
+| 選択 | コントローラーをポイントし、トリガーをプルするか、タッチパッドを使用します。 | ターゲットを見つめ、を押します。 | マウスをポイントし、左クリックします。 |
 | [スタート] メニューを開く | **Windows** ボタンを押します。 | **Xbox** ボタンを押します。 | **Windows ロゴキー** を押します。 |
 | イマーシブアプリを終了する | **Windows** ボタンを押します。 次に、[クイックアクション] メニューの [ **Mixed reality ホーム** ] を選択します。 | **Xbox** ボタンを押します。 次に、[クイックアクション] メニューの [ **Mixed reality ホーム** ] ボタンを選択します。 | * * Windows ロゴキーを押します。 次に、表示される [クイックアクション] メニューの [ **Mixed reality ホーム** ] ボタンを選択します。 |
 | Rotate | サムスティックを左または右に移動します。 | 右スティックを左または右に移動します。 | 使用できません。 |

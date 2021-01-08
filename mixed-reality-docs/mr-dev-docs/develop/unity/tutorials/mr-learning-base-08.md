@@ -1,5 +1,5 @@
 ---
-title: 入門チュートリアル - 8. 視線追跡の使用
+title: MRTK のチュートリアル - 8. 視線追跡の使用
 description: このコースでは、視線追跡を Mixed Reality Toolkit (MRTK) とともに使する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, 視線追跡
 ms.localizationpriority: high
-ms.openlocfilehash: 2b572a106cba904231ed124260cd879cd3a9a944
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 538204513589b96bedb8b20c46eee5735b764a4c
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679751"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613486"
 ---
 # <a name="8-using-eye-tracking"></a>8.視線追跡の使用
 

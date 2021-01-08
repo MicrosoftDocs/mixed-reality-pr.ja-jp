@@ -1,17 +1,17 @@
 ---
 title: Unity のカメラ
-description: Windows Mixed Reality 開発に Unity のメインカメラを使用して holographic のレンダリングを実行する方法について説明します。
+description: Windows Mixed Reality 開発に Unity のメインカメラを設定して使用し、holographic のレンダリングを実行する方法について説明します。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、holographic レンダリング、holographic、イマーシブ、フォーカスポイント、深度バッファー、方向専用、位置指定、不透明、透明、クリップ、混合 reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
-ms.openlocfilehash: 26eb8966004c958c6063d09de891ef835d973a82
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: cd5284a8fdef7254b7d0375b57877d30f5d0d708
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010433"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006392"
 ---
 # <a name="camera-in-unity"></a>Unity のカメラ
 
@@ -97,7 +97,7 @@ Unity アプリで Windows に深度バッファーを提供するかどうか�
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。
+Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次の構成要素を続けることができます。
 
 > [!div class="nextstepaction"]
 > [視線入力](gaze-in-unity.md)

@@ -1,17 +1,17 @@
 ---
 title: Device Portal API リファレンス
-description: HoloLens の Windows デバイスポータルの API リファレンス
+description: HoloLens 開発用の Windows Device Portal API の最新情報を入手できます。
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens、Windows デバイスポータル、API、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
-ms.openlocfilehash: c705ce65971042ab41befed9c6813dc797b61fc0
-ms.sourcegitcommit: 084b1da9d7b435394b38d6152a2f9aee7a74aa2a
+ms.openlocfilehash: 13845a5a5668ee8c86178196326425f46be9b321
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97804433"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006652"
 ---
 # <a name="device-portal-api-reference"></a>Device Portal API リファレンス
 

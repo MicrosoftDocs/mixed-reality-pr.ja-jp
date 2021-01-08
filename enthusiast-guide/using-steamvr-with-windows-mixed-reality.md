@@ -1,14 +1,14 @@
 ---
 title: Windows Mixed Reality で SteamVR を使用する
-description: 互換性のある Pc を使用して、Windows Mixed Reality ヘッドセットで SteamVR ゲームを再生する方法について説明します。
+description: Windows Mixed Reality ヘッドセットと互換性のある Pc を使用するコントローラーで、SteamVR ゲームを設定して再生する方法について説明します。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、ゲーム、SteamVR、蒸気、システム要件
-ms.openlocfilehash: e91c5b7fcaed2f048e79843c47ae613761a5d3ad
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9330d6026b74494c851aea6b4664c1ede787c1c5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725743"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006902"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Windows Mixed Reality で SteamVR を使用する
 

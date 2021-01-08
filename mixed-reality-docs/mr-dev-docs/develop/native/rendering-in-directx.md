@@ -1,17 +1,17 @@
 ---
 title: DirectX でのレンダリング
-description: Windows Mixed Reality の holographic レンダリングについて説明します。
+description: Windows Mixed Reality の DirectX アプリケーションでコンテンツを更新して表示する方法について説明します。
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, ホログラム, レンダリング, 3D グラフィックス, HolographicFrame, レンダリングループ, 更新ループ, チュートリアル, サンプルコード, Direct3D
-ms.openlocfilehash: 90d665e8054a185969a95e6ff6415979e728e9ab
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: aafead61b45550f499405ae63bda7d7f8e79d224
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613186"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006722"
 ---
 # <a name="rendering-in-directx"></a>DirectX でのレンダリング
 

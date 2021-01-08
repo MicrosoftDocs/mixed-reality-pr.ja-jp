@@ -1,17 +1,17 @@
 ---
-title: Unity と Visual Studio を使用するためのベスト プラクティス
+title: Unity と Visual Studio のベストプラクティス
 description: Unity と Visual Studio を使用した mixed reality アプリケーションの作成のワークフローを効率化するためのヒントとテクニックです。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: デプロイ、unity、visual studio、HoloLens、HoloLens 2、イマーシブヘッドセット、ベストプラクティス、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、UWP、Visual Studio Tools、Windows SDK
-ms.openlocfilehash: 9e80cad3e7154ae5548514297343db8efcdcb49e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 9464c86826b9a8ea2c64384dfa699fc6d98743dd
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010263"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009372"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Unity と Visual Studio を使用するためのベスト プラクティス
 

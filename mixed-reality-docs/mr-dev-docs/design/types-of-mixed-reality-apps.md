@@ -1,17 +1,17 @@
 ---
 title: Mixed reality アプリの種類
-description: 完全なイマーシブ環境から、ユーザーの現在の環境を対象としたライト情報のレイヤーまで、Mixed Reality プラットフォームがサポートできるエクスペリエンスの詳細について説明します。
+description: イマーシブ環境からユーザーの環境での明るい情報のレイヤーまで、Mixed Reality プラットフォームでサポートされているエクスペリエンスについて説明します。
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、アプリパターン、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens
-ms.openlocfilehash: 8c9a051ff0b80461fe590efa37593bddb01c0e63
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 795d8733b9f509a79d9429f75dff2f88a2a63c93
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848102"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007622"
 ---
 # <a name="types-of-mixed-reality-apps"></a>Mixed reality アプリの種類
 

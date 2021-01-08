@@ -1,17 +1,17 @@
 ---
-title: 高度な HoloLens エミュレーターと Mixed Reality Simulator の入力
+title: Advanced HoloLens Emulator と Mixed Reality シミュレーター
 description: キーボード、マウス、および Xbox コントローラーを使用して、HoloLens エミュレーターと Windows Mixed Reality シミュレーターの入力をシミュレートする方法について詳しく説明します。
 author: pbarnettms
 ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
 keywords: HoloLens、エミュレーター、シミュレーション、Windows Mixed Reality、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット
-ms.openlocfilehash: f5076e65ba1c5d95c1bb106d2d3181665177b43a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff8a2830630b73266fe7348eee5459bcad98e2e0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530462"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006682"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>高度な HoloLens エミュレーターと Mixed Reality Simulator の入力
 
@@ -71,7 +71,7 @@ HoloLens 2 では豊富な表現を手にしています。  追跡と追跡は�
 |  手の ' オープン ' のポーズ (既定) | 8 |  |  |
 |  ハンド ' Point ' の場合 | 9 |  |  |
 |  ' ピンチ ' が手になります | 0 |  |  |
-|  リモート アクセスの |  エスケープキー |  |  スタート ボタン | 
+|  Reset |  エスケープキー |  |  スタート ボタン | 
 |  追跡 |  T または F3 |  |  X ボタン | 
 
 
@@ -124,7 +124,7 @@ HoloLens 2 では豊富な表現を手にしています。  追跡と追跡は�
 |  ハンド/コントローラーロール |  Alt + Q/E |  ショルダー + DPad 左/右 | 
 |  アクション |  マウスの右ボタン |  トリガー | 
 |  ブルーム/System/Home |  F2 または Windows キー |  B ボタン | 
-|  リモート アクセスの |  エスケープ |  スタート ボタン | 
+|  Reset |  エスケープ |  スタート ボタン | 
 |  追跡 |  T |  X ボタン | 
 |  スクロール |  Alt + マウスの右ボタンを押しながらマウスを上下にドラッグ |  ショルダー + トリガー + 右サムスティックアップ/ダウン | 
 |  移動/回転の高速化 | 左または右の Shift キー | 右スティックを押したままにします。 |

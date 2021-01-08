@@ -1,17 +1,17 @@
 ---
 title: DirectX の空間マッピング
-description: ユニバーサル Windows プラットフォーム SDK に付属する空間マッピングサンプルアプリケーションを含め、DirectX アプリで空間マッピングを実装する方法について説明します。
+description: DirectX アプリで空間マッピングを実装する方法と、ユニバーサル Windows プラットフォーム SDK で空間マッピングサンプルアプリケーションを使用する方法について説明します。
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows mixed reality, 空間マッピング, 環境, 相互作用, directx, winrt, api, サンプルコード, UWP, SDK, チュートリアル
-ms.openlocfilehash: fa372473939222ef4be7ca36076a17241173c441
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: bcd78487e96aaf09707aa4bf58917223cc2e8583
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612916"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006712"
 ---
 # <a name="spatial-mapping-in-directx"></a>DirectX の空間マッピング
 

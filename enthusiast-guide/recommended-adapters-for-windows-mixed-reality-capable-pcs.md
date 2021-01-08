@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality 対応 Pc の推奨アダプター
+title: Windows Mixed Reality Pc 用の推奨アダプター
 description: PC にフルサイズの USB および HDMI ポートが搭載されていない場合に、Windows Mixed Reality ヘッドセットで使用するために推奨されるアダプターの一覧。
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、アダプタ、ドングル、HDMI、USB、DisplayPort
 appliesto:
 - Windows 10
-ms.openlocfilehash: 248a202ce57c0b6872ddefc9ec9c2f89e2aa87a4
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 86eaa8d462d97a740f15859d2ab631aafb8dd68e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725983"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009102"
 ---
 # <a name="recommended-adapters"></a>推奨されるアダプター
 > [!NOTE]

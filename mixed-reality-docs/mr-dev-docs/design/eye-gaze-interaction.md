@@ -1,17 +1,17 @@
 ---
 title: 目の視線入力ベースの操作
-description: HoloLens 2 を使用すると、開発者はユーザーが見ているものについての情報を使用できるので、ホログラフィック エクスペリエンスにおけるコンテキストと人間の理解が大きく進みます。 このページでは、入力として視線を使用する開発者向けの設計に関する推奨事項について説明します。
+description: HoloLens 2 での視線に基づく対話と、新しいレベルのコンテキストと、holographic エクスペリエンスで得た場合の人間による理解について説明します。
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 視線追跡、Mixed Reality、インプット、視線、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、設計、相互作用
-ms.openlocfilehash: e21d591d2843f67f3a0b0eed42a27c74942e8999
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: b5091b92fd048f72184212401d54ad0b7353875c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847332"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008582"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens 2 での視線に基づく対話
 

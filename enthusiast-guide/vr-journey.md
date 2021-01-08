@@ -1,17 +1,17 @@
 ---
 title: VR の体験を開始する
-description: イマーシブ VR デバイスをセットアップして使用することで、新しい VR デバイスユーザーをガイドするチェックポイント。
+description: イマーシブ VR デバイスを設定して使用することで、新しいデバイスユーザーをガイドするための curated チェックポイントについて説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、
-ms.openlocfilehash: 9a82ab12b9cf91bd1fefcf84a2f6b4e62c8df24a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 711c1b74b79ba510d29c17de0ec21270946ceb61
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725709"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007062"
 ---
 # <a name="start-your-vr-journey"></a>VR の体験を開始する
 
@@ -60,7 +60,7 @@ Windows Mixed Reality とイマーシブ VR ヘッドセットを通じて利用
 
 <br>
 
-|  Checkpoint  |  機能  |
+|  Checkpoint  |  特徴  |
 | --- | --- |
 | [Mixed Reality について学習する](learn-mixed-reality.md) | 見つめ、音声、コントローラー、およびキーボードとマウスの入力を使用する方法について説明します。 |
 | [Windows Mixed Reality ホーム内を移動する](your-mixed-reality-home.md) | Windows Mixed Reality ホームの仮想環境を調べる  |
@@ -76,7 +76,7 @@ Windows Mixed Reality とイマーシブ VR ヘッドセットを通じて利用
 
 <br>
 
-|  Checkpoint  |  機能  |
+|  Checkpoint  |  特徴  |
 | --- | --- |
 | [ゲーム、360ビデオ、アプリ](using-games-and-apps-in-windows-mixed-reality.md) | 初めてのイマーシブゲーム、2D ストアスレート、デスクトップアプリケーション、および WebVR エクスペリエンスを使ってみる |
 | [SteamVR の使用](using-steamvr-with-windows-mixed-reality.md) | デバイスを接続して SteamVR ゲームをプレイし、Windows Insider プログラムについて学習する |

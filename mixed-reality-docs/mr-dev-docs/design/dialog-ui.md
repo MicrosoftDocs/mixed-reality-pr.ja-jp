@@ -1,17 +1,17 @@
 ---
 title: ダイアログ
-description: ダイアログのオーバーレイと、混合現実のアプリケーションでの使用方法について説明します。
+description: MRTK のダイアログオーバーレイと、混合現実アプリケーションでのダイアログの使用方法について説明します。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Mixed Reality、HoloLens、UI コントロール、相互作用、UI、ux、UX デザイン、空間 UI、空間相互作用、3D UI、3D UX、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 752c4cc03c90e498664c61fa3c53b303a2a83a2f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9ef4fc5e4d781d235996a645e8d1bb81e040a64c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847455"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009052"
 ---
 # <a name="dialog"></a>ダイアログ
 

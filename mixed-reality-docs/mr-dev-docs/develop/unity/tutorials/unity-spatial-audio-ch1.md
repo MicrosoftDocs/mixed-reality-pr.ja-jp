@@ -1,17 +1,17 @@
 ---
-title: 空間オーディオのチュートリアル-1. プロジェクトへの空間オーディオの追加
+title: プロジェクトへの空間オーディオの追加
 description: Microsoft Spatializer プラグインを Unity プロジェクトに追加して、HoloLens 2 HRTF ハードウェアオフロードにアクセスします。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、head 関連の転送機能、リバーブ、Microsoft Spatializer
-ms.openlocfilehash: 8790c4c62ab4c1b2b9e9f9c5c6fe0583b9e36545
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 80bf19e8a091bd241e28afff0a42c13ca72e1d45
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002507"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007472"
 ---
 # <a name="adding-spatial-audio-to-your-unity-project"></a>Unity プロジェクトへの空間オーディオの追加
 
@@ -24,9 +24,11 @@ HoloLens2 上の Unity の空間オーディオチュートリアルへようこ
 HRTF ベースの spatialization テクノロジを使用してサウンドを spatialize することの意味と、役に立つ場合の推奨事項については、「 [空間サウンドの設計](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design)」を参照してください。
 
 ## <a name="what-is-hrtf-offload"></a>HRTF offload とは
+
 HRTF ベースのアルゴリズムを使用してオーディオを処理するには、大量の特殊な計算が必要です。 HoloLens 2 には、アプリケーションプロセッサに負荷がかからないようにするために使用できる専用のハードウェアが含まれているため、HRTF ベースのアルゴリズムの処理を "オフロード" します。  Microsoft spatializer プラグインを使用すると、アプリケーションで専用の HRTF ハードウェアを利用して、空間オーディオ以外の操作でアプリケーションプロセッサをより多く使用できるようにすることができます。
 
 ## <a name="objectives"></a>目標
+
 この最初の章では、次のことについて説明します。
 * Unity プロジェクトを作成して MRTK をインポートする
 * Microsoft spatializer プラグインをインポートする
@@ -34,6 +36,7 @@ HRTF ベースのアルゴリズムを使用してオーディオを処理する
 * 開発者ワークステーションで空間オーディオを有効にする
 
 ## <a name="create-a-project-and-add-nuget-for-unity"></a>プロジェクトを作成し、Unity の NuGet を追加する
+
 空の Unity プロジェクトから開始し、Unity 用に NuGet を追加して構成します。
 1. 最新の NuGetForUnity をダウンロードし [ます。 unitypackage](https://github.com/GlitchEnzo/NuGetForUnity/releases/latest)
 2. Unity のメニューバーで、[ **資産-> インポートパッケージ-> カスタムパッケージ** ] をクリックし、NuGetForUnity パッケージをインストールします。
@@ -41,6 +44,7 @@ HRTF ベースのアルゴリズムを使用してオーディオを処理する
 ![カスタムパッケージのインポート](images/spatial-audio/import-custom-package.png)
 
 ## <a name="add-the-windows-mixed-reality-package"></a>Windows Mixed Reality パッケージを追加する
+
 Unity 2019 以降での Windows Mixed Reality のサポートは、オプションのパッケージに含まれています。 プロジェクトに追加するには、Unity のメニューバーから [ **Window-> Package Manager]** を開きます。
 
 ![パッケージマネージャーメニュー](images/spatial-audio/package-manager-menu.png)
@@ -50,6 +54,7 @@ Unity 2019 以降での Windows Mixed Reality のサポートは、オプショ�
 ![パッケージマネージャーウィンドウ](images/spatial-audio/package-manager-window.png)
 
 ## <a name="install-mrtk-and-microsoft-spatializer"></a>MRTK と Microsoft Spatializer をインストールする
+
 Unity 用の NuGet を使用して、MRTK と Microsoft Spatializer プラグインをインストールします。
 1. Unity のメニューバーで、[ **nuget->] [Nuget パッケージの管理**] の順にクリックします。
 
@@ -81,11 +86,13 @@ Unity 用の NuGet を使用して、MRTK と Microsoft Spatializer プラグイ
 アプリをビルドして HoloLens 2 にデプロイする方法など、その他のガイダンスについては、 [MR ラーニングベースモジュールの第1章](../../../mrlearning-base-ch1.md)を参照してください。
 
 ## <a name="enable-the-microsoft-spatializer-plugin"></a>Microsoft Spatializer プラグインを有効にする
+
 **Microsoft Spatializer** プラグインを有効にします。 [ **編集-> プロジェクトの設定-> オーディオ**] を開き、 **Spatializer プラグイン** を "Microsoft Spatializer" に変更します。 **プロジェクト設定** の **Audio** セクションは次のようになります。
 
 ![Spatializer プラグインを表示するプロジェクト設定](images/spatial-audio/project-settings.png)
 
 ## <a name="enable-spatial-audio-on-your-workstation"></a>ワークステーションで空間オーディオを有効にする
+
 Windows のデスクトップバージョンでは、空間オーディオは既定で無効になっています。 これを有効にするには、タスクバーのボリュームアイコンを右クリックします。 HoloLens 2 で耳になる内容を最大限に活用するには、[ **空間サウンド > Windows Sonic For ヘッドホン**] を選択します。
 
 ![デスクトップ空間オーディオの設定](images/spatial-audio/desktop-audio-settings.png)

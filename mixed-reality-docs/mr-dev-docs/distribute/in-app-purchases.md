@@ -1,17 +1,17 @@
 ---
 title: アプリ内購入
-description: アプリ内購入は mixed reality アプリでサポートされていますが、設定作業がいくつかあります。
+description: 混合 reality アプリで、2D XAML ビューと stock Windows OS ポップアップを使用してアプリ内購入を使用する方法について説明します。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: アプリ内購入, hololens, XAML, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実のヘッドセット
-ms.openlocfilehash: 905c1be72bf2a3d6fa167cab68a4cb71e6538acc
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: a87cc68f67def1d46a3a6ba352e723d356f51fa2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757783"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008672"
 ---
 # <a name="in-app-purchases"></a>アプリ内購入
 

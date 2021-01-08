@@ -1,26 +1,28 @@
 ---
-title: 空間オーディオチュートリアル-5。 リバーブを使用して立体オーディオに距離を追加する
-description: リバーブ効果を追加して、空間オーディオに対する距離バリエーションの意味を高めます。
+title: リバーブを使用して立体オーディオに距離を追加する
+description: リバーブ効果を追加して、混合現実アプリケーションでの空間オーディオに対する距離バリエーションの意味を向上させる方法について説明します。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、ヘッド関連の転送関数、リバーブ、Microsoft Spatializer、オーディオミキサー、SFX リバーブ
-ms.openlocfilehash: c63e5a239806c133e814eee8b44cbfb30f55aa5d
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 6c04ac1e4b52c7eb6104d54c184c789bec413852
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002617"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006362"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>リバーブを使用して立体オーディオに距離を追加する
 
 ## <a name="objectives"></a>目標
+
 前の章では、spatialization をサウンドに追加して、方向を理解できるようにしました。 この5番目の章では、リバーブ効果を追加して、距離を示す音を出します。 目標は次のとおりです。
 * リバーブを追加することで、サウンドソースの知覚距離を向上させる
 * リスナーとホログラムの距離を使用して、サウンドの知覚距離を制御します。
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>ミキサーグループとリバーブ効果を追加する
+
 [第2章](unity-spatial-audio-ch2.md)では、ミキサーを追加しました。 ミキサーには、既定で **マスター** と呼ばれる **グループ** が1つ含まれています。 一部のサウンドにはリバーブ効果を適用するだけなので、これらのサウンドに対して2番目の **グループ** を追加してみましょう。 **グループ** を追加するには、**オーディオミキサー** で **マスター** グループを右クリックし、[**子グループの追加**] を選択します。
 
 ![子グループの追加](images/spatial-audio/add-child-group.png)
@@ -44,6 +46,7 @@ ms.locfileid: "97002617"
 その他の設定は、シミュレートされたルームの感覚を制御します。 特に、 **減衰時間** は、認識される部屋のサイズに関連しています。 
 
 ## <a name="enable-reverb-on-the-video-playback"></a>ビデオ再生でリバーブを有効にする
+
 オーディオソースでリバーブを有効にするには、次の2つの手順を実行します。
 * **オーディオソース** を適切な **グループ** にルーティングする
 * 処理のためにオーディオを **グループ** に渡すように **Microsoft Spatializer** プラグインを設定します
@@ -129,6 +132,6 @@ public class SpatializeOnOff : MonoBehaviour
 
 HoloLens 2 または Unity エディターでアプリを試してみてください。 これで、アプリのボタンにタッチして spatialization をアクティブにすると、スクリプトはビデオのオーディオを部屋の効果グループにルーティングして、リバーブを追加します。 ステレオに切り替えると、オーディオがマスターグループにルーティングされ、リバーブの追加を回避できます。
 
-Unity 用の HoloLens 2 空間オーディオチュートリアルが完了しました。 おめでとうございます。
+Unity 用の HoloLens 2 空間オーディオチュートリアルが完了しました。 お疲れさまでした。
 
 

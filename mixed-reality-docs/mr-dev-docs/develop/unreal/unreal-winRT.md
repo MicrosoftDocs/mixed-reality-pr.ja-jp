@@ -1,17 +1,17 @@
 ---
 title: Unreal での WinRT
-description: Unreal Engine 用の空間オーディオ プラグインの概要。
+description: HoloLens デバイス向けの Unreal mixed reality アプリでカスタム WinRT 機能を作成および管理する方法について説明します。
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、streaming、リモート処理、mixed reality、開発、作業の開始、機能、新しいプロジェクト、エミュレーター、ドキュメント、ガイド、機能、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、WinRT、DLL
-ms.openlocfilehash: f86939ee53b51fad1e31d18f810d92c3d20611f8
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: ac28ce08443de40d9f7eb32eb1b2e8e071a618b3
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926070"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007032"
 ---
 # <a name="winrt-in-unreal"></a>Unreal での WinRT
 
@@ -21,12 +21,13 @@ HoloLens 開発の過程で、WinRT を使用して機能を作成すること�
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-実際の開発に取り組んでいない場合は、Mixed Reality プラットフォームの機能と Api を調査しています。 ここからは、任意の [トピック](unreal-development-overview.md#3-platform-capabilities-and-apis) に進み、デバイスまたはエミュレーターへのアプリのデプロイに直接ジャンプできます。
+用意されている Unreal 開発体験に従っている場合、Mixed Reality プラットフォームの機能と API を探索している段階にいます。 ここからは、任意の [トピック](unreal-development-overview.md#3-platform-capabilities-and-apis) に進み、デバイスまたはエミュレーターへのアプリのデプロイに直接ジャンプできます。
 
 > [!div class="nextstepaction"]
 > [デバイスへの配置](unreal-deploying.md)
 
 ## <a name="see-also"></a>関連項目
+
 * [C++/WinRT Api](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
 * [FileSavePicker クラス](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
 * [Unreal サードパーティ製ライブラリ](https://docs.unrealengine.com/Programming/BuildTools/UnrealBuildTool/ThirdPartyLibraries/index.html) 

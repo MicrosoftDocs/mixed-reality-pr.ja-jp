@@ -1,6 +1,6 @@
 ---
-title: Windows Mixed Reality における PC の互換性に関するヘルプを表示する
-description: Windows Mixed Reality を使用する場合の PC 互換性の問題に関するヘルプリソース。
+title: PC の互換性に関するヘルプの表示
+description: Windows Mixed Reality アプリケーションとデバイスを操作するときに、PC の互換性の問題を解決するためのリソースを常に最新の状態に保ちます。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 01/07/2021
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: a3d8c21a6f9f94cbecca81915145603588e468ff
-ms.sourcegitcommit: e944f24d2deb4433865cc8f6fd9305d6d9676f48
+ms.openlocfilehash: e3d150544c3bce99d1aa808229d282b3d2fe1dd0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97971901"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007482"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Windows Mixed Reality における PC の互換性に関するヘルプを表示する
 

@@ -1,17 +1,17 @@
 ---
 title: DirectX での共有された空間アンカー
-description: 空間アンカーを共有することで、2つの HoloLens デバイスを同期する方法について説明します。
+description: DirectX アプリケーションでローカル空間アンカーと Azure 空間アンカーを共有することで、2つの HoloLens デバイスを同期する方法について説明します。
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: HoloLens, 同期, 空間アンカー, 転送, マルチプレイヤー, ビュー, シナリオ, チュートリアル, サンプルコード, Azure, Azure 空間アンカー, ASA
-ms.openlocfilehash: 4e41975a18c28cb2228b20ebb5d3a445774cca44
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 46fe6be5d81a8fc68502500e318eb8e63d223089
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530325"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008532"
 ---
 # <a name="shared-experiences-in-directx"></a>DirectX での共有エクスペリエンス
 
@@ -35,6 +35,7 @@ Azure 空間アンカーを使用して実行すると、 <a href="https://docs.
 Azure 空間アンカーを使用できない場合、 [ローカルアンカー転送](../../out-of-scope/local-anchor-transfers-in-directx.md) を使用すると、1つの hololens デバイスで2つ目の hololens デバイスによってインポートされるアンカーをエクスポートできます。  このアプローチでは、Azure 空間アンカーよりも堅牢なアンカーの再呼び出しが可能であり、iOS デバイスと Android デバイスはこの方法ではサポートされていません。
 
 ## <a name="see-also"></a>関連項目
+
 * [複合現実での共有エクスペリエンス](shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="https://docs.microsoft.com/cpp/api/spatial-anchors/winrt/" target="_blank">HoloLens 用 Azure 空間アンカー SDK</a>

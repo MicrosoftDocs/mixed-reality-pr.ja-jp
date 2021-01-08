@@ -1,17 +1,17 @@
 ---
 title: ハンド コーチ
-description: 3D ハンドは、システムがユーザーの手を検出して支援することができない場合にトリガーされます。
+description: システムがユーザーの手を認識して支援することがない場合に、3D ハンドを使用してどのようにトリガーされるかについて説明します。
 author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality、設計、手作業、イマーシブヘッドセット、MRTK、ハンズオン、ハンズオン、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: e46704a1cd2e93fc1764528c408c01d117444c34
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847960"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009162"
 ---
 # <a name="hand-coach"></a>ハンド コーチ
 

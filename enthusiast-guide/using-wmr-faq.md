@@ -1,6 +1,6 @@
 ---
 title: Windows Mixed Reality の使用に関する FAQ
-description: Windows Mixed Reality を使用する際によく寄せられる質問への回答を得ます。
+description: Windows Mixed Reality アプリケーションとハードウェアを使用する際によく寄せられる質問へのリソースを紹介します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: 75ed2699cc34af5f526e0799b762d45ef36e99b9
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 31a27afa9c96ee8beb8b38f74534fc6f58c01f1d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725673"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007052"
 ---
 # <a name="using-windows-mixed-reality-faq"></a>Windows Mixed Reality の使用に関する FAQ
 
@@ -24,7 +24,6 @@ Windows Mixed Reality イマーシブヘッドセットの使用に関するヘ�
 ## <a name="i-see-a-message-that-says-lost-tracking-or-we-dont-have-a-boundary-for-this-space"></a>"追跡が失われました" または "このスペースの境界がありません" というメッセージが表示されます。
 
 デスクトップで [ **> の混合 Reality ポータルを起動** する] を選択します。 [ **メニュー**] を選択し、[ **セットアップの実行** ] を選択して新しい境界を作成します。 Windows Mixed Reality は複数の場所をサポートしており、部屋が変更されていない限り、スタートアップ時の領域を識別します。  
-
 
 ## <a name="i-cant-hear-any-sound-or-the-sound-is-coming-from-my-computer-instead-of-my-headset"></a>サウンドが聞こえません。または、音声は、ヘッドセットではなくコンピューターから送信されています。
 
@@ -93,7 +92,7 @@ Mixed reality ビジュアルが最適ではない場合は、次のようにな
 
 フロアがオフになっている場合 (たとえば、浮動小数点表示のような場合) は、ヘッドセットを装着して変更を行うときに、[ **> の部屋の調整を開始** する] を選択します。
 
-## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>「PC に接続して充電する」というメッセージが表示されていました。 なぜでしょうか。
+## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>「PC に接続して充電する」というメッセージが表示されていました。 なぜですか?
 
 ラップトップを使用している場合、Windows Mixed Reality は、PC が完全に充電され、電源が接続されている場合に最適に動作します。
 
@@ -133,5 +132,6 @@ Mixed reality ビジュアルが最適ではない場合は、次のようにな
 サポートが必要な場合は、 高度なトラブルシューティングについては、 [この記事](troubleshooting-windows-mixed-reality.md)をご覧ください。
 
 ## <a name="see-also"></a>関連項目
+
 * [コミュニティへの質問](https://answers.microsoft.com)
 * [サポートについては、お問い合わせください](https://support.microsoft.com/contactus/)

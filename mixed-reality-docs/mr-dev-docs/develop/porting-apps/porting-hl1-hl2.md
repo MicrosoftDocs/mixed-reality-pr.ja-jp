@@ -1,22 +1,20 @@
 ---
 title: HoloLens (第 1 世代) アプリを HoloLens 2 に移植する
-description: HoloLens (第 1 世代) または前の MRTK の既存アプリがあり、MRTK バージョン 2 および HoloLens 2 への移植を考えている開発者が対象です。
+description: HoloLens (第 1 世代) や前の MRTK バージョンの既存アプリがあり、MRTK バージョン 2 および HoloLens 2 への移植を考えている開発者が対象です。
 author: hferrone
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, テスト, MRTK, MRTK バージョン 2, HoloLens 2, Unity, 移植, HoloLens 第 1 世代, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 移行, ベスト プラクティス, ARM
-ms.openlocfilehash: 7a4c05ce4918ff3868265c40096bd37016d4546a
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: ddff4ddff70211a5af38e367e863f81fd5f0c82d
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925955"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612886"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>HoloLens (第 1 世代) アプリを HoloLens 2 に移植する
-
-## <a name="overview"></a>概要
 
 このガイドは、HoloLens (第 1 世代) 用の既存の Unity アプリケーションを持つ開発者が、アプリケーションを HoloLens 2 デバイス用に移植する場合に役立ちます。 HoloLens (第 1 世代) の Unity アプリケーションを HoloLens 2 に移植する主な手順は 4 つあります。 
 
@@ -27,7 +25,7 @@ ms.locfileid: "96925955"
 | ![Visual Studio のロゴ](../images/visualstudio_logo.png) | ![Unity のロゴ](../../design/images/logo-unity.png)| ![Unity のアイコン](../unity/images/hololens2_icon.jpg) | ![MRTK のロゴ](../../design/images/74-12.png) |
 | 最新のツールのダウンロード | Unity プロジェクトの更新 | ARM 用にコンパイル | MRTK v2 に移行
 
-前提条件:
+## <a name="prerequisites"></a>前提条件
 
 移植プロセスを開始する前に、ソース管理を使用してアプリケーションの元の状態のスナップショットを保存しておくことを **強くお勧めします**。 さらに、プロセス中のさまざまな時点でチェックポイントの状態を *保存* することをお勧めします。 また、元のアプリケーションの別の Unity インスタンスがあると、移植プロセス中に並べて比較できて便利です。 
 
@@ -38,7 +36,7 @@ ms.locfileid: "96925955"
 
 ## <a name="migrate-project-to-the-latest-version-of-unity"></a>プロジェクトを最新バージョンの Unity に移行する
 
-[MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) を使用している場合、Unity または MRTK で破壊的変更が発生しない最適な長期サポート パスは [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) になります。 現在プロジェクトに存在するすべての[プラグインの依存関係](https://docs.unity3d.com/Manual/Plugins.html)を評価し、これらの DLL が ARM64 でビルドできるかどうかを判断する必要があります。 ARM64 向けにハードの依存関係プラグインをビルドできない場合、引き続き ARM 用のアプリをビルドする必要がある可能性があります。
+[MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) を使用している場合、Unity または MRTK で破壊的変更が発生しない最適な長期サポート パスは [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) になります。 現在プロジェクトに存在するすべての[プラグインの依存関係](https://docs.unity3d.com/Manual/Plugins.html)を評価し、これらの DLL を ARM64 用にビルドできるかどうかを判断します。 ハード ARM64 に依存するプラグインがあるプロジェクトでは、ARM 用のアプリのビルドを続ける必要がある場合があります。
 
 <!-- MRTK v2 always guarantees support for Unity 2018 LTS, but does not necessarily guarantee support for every iteration of Unity 2019.x.
 
@@ -57,28 +55,28 @@ To help clarify additional differences between [Unity 2018 LTS](https://unity3d.
 
 デバイスで最適な結果を得るために、[Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) に更新した後、Unity の特定の設定を更新することをお勧めします。 これらの設定の詳細については、「[Unity で推奨される設定](../unity/Recommended-settings-for-Unity.md)」を参照してください。
 
-もう一度お伝えしますが、[.NET スクリプト バックエンド](https://docs.unity3d.com/Manual/windowsstore-dotnet.html)は、Unity 2018 で非推奨となり、Unity 2019 で *削除* されます。 開発者の皆様には、プロジェクトの [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html) への切り替えを検討することを強くお勧めします。
+繰り返しますが、[.NET スクリプト バックエンド](https://docs.unity3d.com/Manual/windowsstore-dotnet.html)は、Unity 2018 で非推奨となり、Unity 2019 で **削除** されます。 開発者の皆様には、プロジェクトの [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html) への切り替えを検討することを強くお勧めします。
 
 > [!NOTE]
 > IL2CPP スクリプト バックエンドを使用すると、Unity から Visual Studio へのビルド時間が長くなる場合があります。そのため、開発者は、[IL2CPP ビルド時間の最適化](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)のために開発者のコンピューターをセットアップする必要があります。
 > また、大きなアセット (スクリプト ファイルを除く) がある場合や、常にシーンやアセットを変更する Unity プロジェクトの場合は、[キャッシュ サーバー](https://docs.unity3d.com/Manual/CacheServer.html)をセットアップするとよいでしょう。 プロジェクトを開く際に、Unity は条件を満たすアセットを内部キャッシュ フォーマットで開発者のコンピューターに格納します。 項目を変更した場合は、再インポートして再処理されるようにする必要があります。 このプロセスが 1 回実行されると、キャッシュ サーバーに保存され、すべての開発者と共有されます。すべての開発者がローカルで新しい変更の再インポート処理を行う必要がなくなるので、時間を節約できます。
 
-開発者は、更新された Unity バージョンへの移行によって生じた破壊的変更に対処した後で、HoloLens (第 1 世代) で現在のアプリケーションをビルドしてテストする必要があります。 この時点でソース管理にコミットを作成し、保存しておくとよいでしょう。
+開発者は、更新された Unity バージョンへの移行によって生じた破壊的変更に対処した後、HoloLens (第 1 世代) 上で現在のアプリケーションをビルドしてテストします。 この時点でソース管理にコミットを作成し、保存しておくとよいでしょう。
 
 ## <a name="compile-dependenciesplugins-for-arm-processor"></a>ARM プロセッサ用の依存関係およびプラグインのコンパイル
 
-HoloLens (第 1 世代) は、x86 プロセッサ上でアプリケーションを実行するのに対して、HoloLens 2 は ARM プロセッサを使用します。 したがって、既存の HoloLens アプリケーションは、ARM をサポートするように移植する必要があります。 前述のように、Unity 2018 LTS は ARM32 アプリのコンパイルをサポートしますが、Unity 2019.x は ARM32 アプリと ARM64 アプリのコンパイルをサポートします。 パフォーマンスに重要な相違があるため、ARM64 アプリケーション向けの開発をお勧めします。 ただし、そのためには、すべての[プラグインの依存関係](https://docs.unity3d.com/Manual/Plugins.html)も ARM64 でビルドする必要があります。
+HoloLens (第 1 世代) は、x86 プロセッサ上でアプリケーションを実行するのに対して、HoloLens 2 は ARM プロセッサを使用します。 既存の HoloLens アプリケーションは、ARM をサポートするように移植する必要があります。 前述のように、Unity 2018 LTS は ARM32 アプリのコンパイルをサポートしますが、Unity 2019.x は ARM32 アプリと ARM64 アプリのコンパイルをサポートします。 パフォーマンスに重要な相違があるため、ARM64 アプリケーション向けの開発をお勧めします。 ただし、そのためには、すべての[プラグインの依存関係](https://docs.unity3d.com/Manual/Plugins.html)も ARM64 でビルドする必要があります。
 
-アプリケーション内のすべての DLL 依存関係を確認してください。 不要になった依存関係は、プロジェクトから削除することをお勧めします。 必要な残りのプラグインについて、Unity プロジェクトにそれぞれ ARM32 または ARM64 バイナリを取り込みます。
+アプリケーション内のすべての DLL 依存関係を確認してください。 プロジェクトで不要になった依存関係は削除することをお勧めします。 必要な残りのプラグインについて、Unity プロジェクトにそれぞれ ARM32 または ARM64 バイナリを取り込みます。
 
-関連する DLL を取り込んだ後、Unity から Visual Studio ソリューションをビルドし、アプリケーションが ARM プロセッサでビルドできるかどうかを試すために、Visual Studio で AppX を ARM 向けにコンパイルします。 ソース管理ソリューションでコミットとしてアプリケーションを保存することをお勧めします。
+関連する DLL を取り込んだ後、Unity から Visual Studio ソリューションをビルドし、アプリケーションが ARM プロセッサでビルドできるかどうかを試すために、Visual Studio で AppX を ARM 向けにコンパイルします。 ソース管理ソリューションでアプリケーションをコミットとして保存することをお勧めします。
 
 > [!IMPORTANT]
 > MRTK v1 を使用するアプリケーションは、ビルド ターゲットを ARM に変更すると、HoloLens 2 で実行できるようになります。ただし、他のすべての要件が満たされていることが必要です。 これには、すべてのプラグインの ARM バージョンがあることを確認することが含まれます。 ただし、アプリは、多関節ハンドや視線追跡などの HoloLens 2 固有の機能にはアクセスできません。 MRTK v1 と MRTK v2 とでは名前空間が異なるため、両方のバージョンを同一のプロジェクトに含めることができます。これは、一方からもう一方に移行するのに役立ちます。
 
 ## <a name="update-to-mrtk-version-2"></a>MRTK バージョン 2 に更新する
 
-[MRTK バージョン 2](https://github.com/microsoft/MixedRealityToolkit-Unity) は、Unity をベースにした新しいツールキットで、HoloLens (第 1 世代) と HoloLens 2 の両方をサポートします。 また、手による操作や視線追跡など、HoloLens 2 のすべての新機能が追加されています。
+[MRTK バージョン 2](https://github.com/microsoft/MixedRealityToolkit-Unity) は、Unity をベースにした新しいツールキットで、HoloLens (第 1 世代) と HoloLens 2 の両方をサポートします。 ここには、手による操作や視線追跡など、HoloLens 2 のすべての新機能も追加されています。
 
 MRTK バージョン 2 の使用方法の詳細については、以下のリソースを参照してください。
 
@@ -89,13 +87,13 @@ MRTK バージョン 2 の使用方法の詳細については、以下のリソ
 
 ### <a name="prepare-for-the-migration"></a>移行を準備する
 
-新しい [MRTK v2 用の *.unitypackage ファイル](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)を取り込む前に、**1) MRTK v1 を組み込んだ任意のカスタム ビルド コード** と、**2) 入力操作や UX コンポーネントのカスタム ビルド コード** のインベントリを取得することを推奨します。 Mixed Reality 開発者が MRTK v2 を取り込む際に最も競合が起きやすいのは、入力と操作に関係する部分です。 [MRTK v2 入力モデル](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)を読んで理解しておくことをお勧めします。
+新しい [MRTK v2 用の *.unitypackage ファイル](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)を取り込む前に、**1) MRTK v1 を組み込んだ任意のカスタム ビルド コード** と、**2) 入力操作や UX コンポーネント用のカスタム ビルド コード** のインベントリを取得することをお勧めします。 Mixed Reality 開発者が MRTK v2 を取り込む際に最も競合が起きやすいのは、入力と操作に関係する部分です。 [MRTK v2 入力モデル](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)を読んで理解しておくことをお勧めします。
 
-最後に、新しい [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) は、スクリプトのモデルおよびシーン内マネージャー オブジェクトから、構成およびサービス プロバイダー アーキテクチャに移行されています。 これにより、シーンの階層とアーキテクチャのモデルがクリーンになりますが、新しい構成プロファイルを習得する必要があります。 したがって、重要な設定やプロファイルについて理解し、アプリケーションのニーズに合わせて調整することができるように、[Mixed Reality ツールキット構成ガイド](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html)を参照してください。
+最後に、新しい [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) は、スクリプトのモデルおよびシーン内マネージャー オブジェクトから、構成およびサービス プロバイダー アーキテクチャに移行されています。 これにより、シーンの階層とアーキテクチャのモデルがクリーンになりますが、新しい構成プロファイルを習得する必要があります。 重要な設定やプロファイルについて理解し、アプリケーションのニーズに合わせて調整することができるように、[Mixed Reality ツールキット構成ガイド](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html)を参照してください。
 
-### <a name="perform-the-migration"></a>移行する
+### <a name="migrating-the-project"></a>プロジェクトの移行
 
-[MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) をインポートすると、高い確率で、Unity プロジェクトでたくさんのコンパイラ関連エラーが発生します。 一般的に、これらの原因は新しい名前空間の構造と新しいコンポーネント名です。 スクリプトの名前空間とコンポーネントを新しいものに変更し、これらのエラーを解決します。
+[MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) をインポートすると、高い確率で、Unity プロジェクトでたくさんのコンパイラ関連エラーが発生します。 一般的に、これらの原因は新しい名前空間の構造と新しいコンポーネント名です。 スクリプトの名前空間とコンポーネントを新しいものに変更して、これらのエラーの解決を続けます。
 
 HTK/MRTK と MRTK v2 の具体的な API の相違点については、[MRTK バージョン 2 wiki](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html) の移植ガイドをご覧ください。
 
@@ -109,9 +107,9 @@ HTK/MRTK と MRTK v2 の具体的な API の相違点については、[MRTK バ
     - この操作をすると、将来の MRTK インジェストや更新が容易になります。
 - MRTK で提供されているサンプルのシーンを確認する (特に *HandInteractionExamples.scene*)。
 - キャンバス ベースの UI を四角形、コライダー、TextMeshPro テキストで再構築する。
-- [深度バッファーの共有](../unity/camera-in-unity.md#sharing-your-depth-buffers-with-windows)、または[フォーカス ポイントの設定](../unity/focus-point-in-unity.md)を有効にする。パフォーマンスを向上させたい場合は、16 ビットの深度バッファーを使用します。 色をレンダリングするとき、深度もレンダリングするようにする。 Unity では、一般的に、透明なゲームオブジェクトとテキスト ゲームオブジェクトの深度は書き込まれません。 
+- [深度バッファーの共有](../unity/camera-in-unity.md#sharing-your-depth-buffers-with-windows)、または[フォーカス ポイントの設定](../unity/focus-point-in-unity.md)を有効にする。パフォーマンスを向上させたい場合は、16 ビットの深度バッファーを使用します。 色をレンダリングするとき、深度もレンダリングするようにする。 Unity では、一般的に、透明およびテキストのゲームオブジェクトの深度は書き込まれません。 
 - 単一パスのインスタンス化レンダリング パスを設定する。
-- [MRTK 用の HoloLens 2 構成プロファイル](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html#hololens-2-profile)を利用する
+- [MRTK 用の HoloLens 2 構成プロファイル](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html#hololens-2-profile)を使用する
 
 ### <a name="testing-your-application"></a>アプリケーションのテスト
 
@@ -139,17 +137,17 @@ HoloLens (第 1 世代) では、アプリケーションで視線入力とコ�
 
 - 単純な Unity アプリケーションは、ARM アプリケーション バンドルを構築できるため、またはバンドルを実行するためにデバイスに直接デプロイできるため、シンプルです。 一部の Unity ネイティブ プラグインでは、特定の開発上の課題が発生する可能性があります。 このため、すべての Unity ネイティブ プラグインを Visual Studio 2019 にアップグレードし、その後、ARM 用に再構築する必要があります。
 
-- 1 つのアプリケーションで Unity AudioKinetic Wwise プラグインが使用されており、そのバージョンの Unity には UWP ARM プラグインがなかったため、ARM で実行するその問題のアプリケーションにサウンド機能を再構成するためにかなりの労力が必要でした。 開発プランに必要なすべてのプラグインがインストールされていて、Unity で利用できることを確認してください。
+- 1 つのアプリケーションで Unity AudioKinetic Wwise プラグインが使用されており、そのバージョンの Unity には UWP ARM プラグインがなかったため、ARM 上で実行するその問題のアプリケーションにサウンド機能を再構成するためにかなりの労力が必要でした。 開発プランに必要なすべてのプラグインがインストールされていて、Unity で利用できることを確認してください。
 
 - 場合によっては、アプリケーションが必要とするプラグインに UWP/ARM プラグインが存在しない場合があります。これにより、アプリケーションを移植して HoloLens 2 で実行する機能がブロックされます。 問題を解決して ARM のサポートを提供するには、プラグインのプロバイダーにお問い合わせください。
 
-- シェーダーの minfloat (および min16float、minint などのバリアント) の動作は、HoloLens 2 と HoloLens (第 1 世代) で異なる場合があります。 具体的には、「少なくとも指定された数のビットが使われる」ことが保証されます。 ほとんどの Intel または NVIDIA の GPU では、32 ビットとして扱われます。 ARM では、指定されたビット数が実際に使用されます。 つまり、実際には、HoloLens 2 でのこれらの数値の精度や範囲は、HoloLens (第 1 世代) よりも小さくなります。
+- シェーダーの minfloat (および min16float、minint などのバリアント) の動作は、HoloLens 2 と HoloLens (第 1 世代) で異なる場合があります。 具体的には、「少なくとも指定された数のビットが使われる」ことが保証されます。 Intel または NVIDIA の GPU では、minfloat は主に 32 ビットとして扱われます。 ARM では、指定されたビット数が実際に使用されます。 つまり、実際には、HoloLens 2 でのこれらの数値の精度や範囲は、HoloLens (第 1 世代) よりも小さくなります。
 
 - ARM では _asm 命令は動作しないと見られるので、_asm 命令を使用しているコードはすべて書き直す必要があります。
 
-- ARM では xmmintrin.h、emmintrin.h、tmmintrin.h、immintrin.h などの各種ヘッダーは使用できないため、ARM では SIMD 命令セットはサポートされません。
+- ARM では xmmintrin.h、emmintrin.h、tmmintrin.h、immintrin.h などの各種ヘッダーを使用できないため、ARM では SIMD 命令セットはサポートされません。
 
-- ARM のシェーダー コンパイラは、シェーダーの読み込み時ではなく、シェーダーが読み込まれた後またはシェーダーが依存するものが変更された後の最初の描画呼び出しの中で実行されます。 コンパイルする必要があるシェーダーの数によっては、フレーム レートへの影響が顕著になる場合があります。 これは、HoloLens 2 と HoloLens (第 1 世代) でのシェーダーの処理、パッケージ化、更新の方法の違いに対してさまざまな影響を与えます。
+- ARM のシェーダー コンパイラは、シェーダーの読み込み時ではなく、シェーダーが読み込まれた後またはシェーダーが依存するものが変更された後の最初の描画呼び出しの中で実行されます。 コンパイルする必要があるシェーダーの数によっては、フレームレートへの影響が顕著になる場合があります。これは、HoloLens 2 と HoloLens (第 1 世代) でシェーダーの処理、パッケージ化、更新の方法をどのように変えるべきかについて、さまざまな影響を与えます。
 
 ## <a name="see-also"></a>関連項目
 * [ツールのインストール](../install-the-tools.md)

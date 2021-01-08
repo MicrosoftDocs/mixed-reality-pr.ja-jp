@@ -1,17 +1,17 @@
 ---
 title: Mixed Reality のパフォーマンスについて
-description: Windows Mixed Reality アプリのパフォーマンスを最適化するための高度な情報と詳細について説明します。
+description: Windows Mixed Reality アプリのパフォーマンスの分析と最適化に関する詳細情報と詳細について説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、パフォーマンス、最適化、CPU、GPU
-ms.openlocfilehash: fc7b6385acda9079a649131b9e6eccf5ac067819
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff3db5d49ddab13a20c4c32de8e5640fff4f0d81
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530072"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008472"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Mixed reality のパフォーマンスについて
 
@@ -134,7 +134,7 @@ Occluding オブジェクトによって非表示になっているため、複�
 
 #### <a name="object-pooling"></a>オブジェクト プーリング
 
-オブジェクトプールは、オブジェクトの継続的な割り当てと割り当て解除のコストを削減するための一般的な手法です。 これを行うには、一定期間にわたってオブジェクトを継続的に生成して破棄するのではなく、同一のオブジェクトの大規模なプールを割り当て、非アクティブで使用可能なインスタンスをこのプールから再利用します。 オブジェクトプールは、アプリの有効期間が可変の再使用可能なコンポーネントに最適です。
+オブジェクトプールは、オブジェクトの継続的な割り当てと割り当て解除のコストを削減するための一般的な手法です。 これを行うには、同一のオブジェクトの大規模なプールを割り当て、時間の経過と共にオブジェクトを絶えず生成して破棄するのではなく、このプールの非アクティブで使用可能なインスタンスを再利用します。 オブジェクト プールは、アプリの間の有効期間が一定ではない再使用可能なコンポーネントに最適です。
 
 ## <a name="see-also"></a>関連項目
 - [Unity のパフォーマンスに関する推奨事項](../unity/performance-recommendations-for-unity.md)

@@ -1,17 +1,17 @@
 ---
 title: Unity でのフォーカス ポイント
-description: フォーカスポイントを設定して Unity のホログラムの安定性を手動で調整する
+description: HoloLens および Windows Mixed Reality イマーシブヘッドセットのフォーカスポイントを設定して、Unity でのホログラムの安定性を手動で調整する方法について説明します。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, フォーカスポイント, フォーカスプレーン, 安定化平面, 安定化ポイント, reprojection, LSR, 深度バッファー, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: d2708dcf39f1d2c67ab1abf69f8330f9dd536ab0
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: bd662a079f23ed590708d961e924859675a44917
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010273"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009342"
 ---
 # <a name="focus-point-in-unity"></a>Unity でのフォーカス ポイント
 
@@ -53,7 +53,7 @@ void Update()
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-これまでに説明した Unity 開発の取り組みに従っている場合は、Mixed Reality プラットフォームの機能と Api を試してみることになります。 ここからは、次のトピックに進むことができます。
+これまでに説明した Unity 開発の取り組みに従っている場合は、Mixed Reality プラットフォームの機能と Api を試してみることになります。 ここから、次のトピックを続けることができます。
 
 > [!div class="nextstepaction"]
 > [追跡の損失](tracking-loss-in-unity.md)
@@ -66,4 +66,5 @@ void Update()
 いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-platform-capabilities-and-apis)に戻ることができます。
 
 ### <a name="see-also"></a>関連項目
+
 * [安定化平面](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

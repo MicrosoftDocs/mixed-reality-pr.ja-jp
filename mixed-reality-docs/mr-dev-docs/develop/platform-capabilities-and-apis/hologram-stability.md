@@ -8,12 +8,12 @@ ms.topic: article
 keywords: ホログラム、安定性、hololens、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想リアリティヘッドセット、フレームレート、レンダリング、再プロジェクション、色の分離
 appliesto:
 - HoloLens
-ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
-ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
+ms.openlocfilehash: 36abf928d8f665717bacaf8da372d299b41fabd6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808833"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006642"
 ---
 # <a name="hologram-stability"></a>ホログラムの安定性
 
@@ -95,10 +95,10 @@ HoloLens には、reprojection と呼ばれる高度なハードウェア支援�
 
 ### <a name="choosing-reprojection-technique"></a>再プロジェクション技法の選択
 
-安定化の種類 |    イマーシブ ヘッドセット |    HoloLens の生成1 | HoloLens 2
+安定化の種類 |    イマーシブヘッドセット |    HoloLens の生成1 | HoloLens 2
 --- | --- | --- | ---
-深さの再投影 |    推奨 |   N/A |   推奨<br/><br/>Unity アプリケーションでは、Unity 2018.4.12 以降または Unity 2019.3 以降を使用する必要があります。 それ以外の場合は、自動平面 Reprojection を使用します。
-自動平面再プロジェクション | N/A |   推奨される既定値 |   深さの再プロジェクションで最適な結果が得られない場合に推奨<br/><br/>Unity アプリケーションは、Unity 2018.4.12 以降または Unity 2019.3 以降を使用することをお勧めします。  以前のバージョンの Unity は、わずかに低下した再プロジェクション結果で動作します。
+深さの再投影 |    推奨 |   該当なし |   推奨<br/><br/>Unity アプリケーションでは、Unity 2018.4.12 以降または Unity 2019.3 以降を使用する必要があります。 それ以外の場合は、自動平面 Reprojection を使用します。
+自動平面再プロジェクション | 該当なし |   推奨される既定値 |   深さの再プロジェクションで最適な結果が得られない場合に推奨<br/><br/>Unity アプリケーションは、Unity 2018.4.12 以降または Unity 2019.3 以降を使用することをお勧めします。  以前のバージョンの Unity は、わずかに低下した再プロジェクション結果で動作します。
 平面の再プロジェクション |   推奨されません |   自動平面が最適な結果を得られない場合に推奨 | いずれの深さのオプションでも目的の結果が得られない場合は、を使用します。    
 
 ### <a name="verifying-depth-is-set-correctly"></a>深さが正しく設定されていることを確認しています
@@ -144,7 +144,7 @@ renderingParameters.SetFocusPoint(
 
 **ベストプラクティス** 安定化平面を設定するための汎用的な方法はなく、アプリに固有のものです。 主に、お客様のシナリオに最も適していることを試してみることをお勧めします。 ただし、この平面上のすべてのコンテンツが完全に安定しているため、できるだけ多くのコンテンツを安定化平面に揃えるようにしてください。
 
-例:
+次に例を示します。
 * 平面コンテンツ (アプリの読み取り、ビデオ再生アプリ) のみがある場合は、安定化平面をコンテンツを持つ平面に揃えます。
 * 世界中にロックされている小さな球体が3つある場合は、ユーザーのビューに現在存在するすべての球体の中心を "切り取り" にします。
 * シーンの深さが大きく異なる場合は、さらにオブジェクトを優先します。

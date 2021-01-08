@@ -1,17 +1,17 @@
 ---
 title: ケーススタディ-HoloTour
-description: Microsoft HoloLens の HoloTour は、世界中のアイコンの位置をイマーシブ3D で表示します。 このケーススタディでは、HoloTour に使用するコンテンツをキャプチャして作成するプロセスについて説明します。
+description: HoloTour アプリケーションのケーススタディを調べ、そのコンテンツをキャプチャして作成するプロセスについて説明します。
 author: dannyaskew
 ms.author: daaske
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloTour、HoloLens、Windows Mixed Reality
-ms.openlocfilehash: 9908327a1b8e70eef73d3f98adb7c75615e8e098
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 3e285988b6027b8c043dea7a4594c21d0bf3370d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684754"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009322"
 ---
 # <a name="case-study---holotour"></a>ケーススタディ-HoloTour
 

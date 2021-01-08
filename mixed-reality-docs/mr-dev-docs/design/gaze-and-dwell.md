@@ -1,17 +1,17 @@
 ---
 title: 視線入力とドウェル
-description: (視線とヘッド) の熟考入力モデルの一般的な概要。
+description: Mixed reality アプリケーションの視線および熟考入力モデルの一般的な概要を説明します。
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Mixed Reality、宝石、熟考、相互作用、設計、視線追跡、ヘッド追跡、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: e8005551e08248a73098bd0f9c198b0919e2471a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2daeea996251b1220ee4753567b42117fbb2126c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847340"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007642"
 ---
 # <a name="gaze-and-dwell"></a>視線入力とドウェル
 

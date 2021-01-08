@@ -1,17 +1,17 @@
 ---
 title: Unity で推奨される設定
-description: Unity には、プロジェクトの設定によって切り替えることができる mixed reality に固有のいくつかの動作が用意されています。
+description: プロジェクト設定によって切り替えることができる mixed reality アプリに固有の Unity のパフォーマンスと発行の動作について説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: unity, 設定, mixed reality, HoloLens, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, パフォーマンス, 品質設定, 照明設定, 深度バッファー, xr, 追跡損失
-ms.openlocfilehash: d32dd19e535d2681654014cc92f319dc564e059e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: be85b592a6857c9dd40e2b3bb3f09dec0a6273be
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010113"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009332"
 ---
 # <a name="recommended-settings-for-unity"></a>Unity で推奨される設定
 
@@ -115,9 +115,9 @@ Holographic スプラッシュスクリーンを切り替えるには、次の�
 |  Unity スプラッシュスクリーンを表示する  |  Holographic スプラッシュイメージ  |  動作 |
 |----------|----------|----------|
 |  オン  |  なし  |  既定の Unity スプラッシュスクリーンを5秒間、またはアプリが読み込まれるまでのいずれか長い方に表示します。 |
-|  オン  |  カスタム  |  5秒間、またはアプリが読み込まれるまでのいずれか長い方のカスタムスプラッシュスクリーンを表示します。 |
+|  オン  |  Custom  |  5秒間、またはアプリが読み込まれるまでのいずれか長い方のカスタムスプラッシュスクリーンを表示します。 |
 |  オフ  |  なし  |  アプリが読み込まれるまで、透明な黒 (何も表示されません) を表示します。 |
-|  オフ  |  カスタム  |  5秒間、またはアプリが読み込まれるまでのいずれか長い方のカスタムスプラッシュスクリーンを表示します。 |
+|  オフ  |  Custom  |  5秒間、またはアプリが読み込まれるまでのいずれか長い方のカスタムスプラッシュスクリーンを表示します。 |
 
 詳細については、 [Unity のスプラッシュスクリーンのドキュメント](https://docs.unity3d.com/Manual/class-PlayerSettingsSplashScreen.html) を参照してください。
 
@@ -164,7 +164,7 @@ Holographic アプリで一般的に使用される Api を有効にするため
 |  SpatialPerception  |  SurfaceObserver |
 |  WebCam  |  PhotoCapture と VideoCapture |
 |  PicturesLibrary / VideosLibrary  |  PhotoCapture または VideoCapture (キャプチャされたコンテンツを格納する場合) |
-|  Microphone  |  VideoCapture (オーディオをキャプチャする場合)、DictationRecognizer、GrammarRecognizer、および KeywordRecognizer |
+|  マイク  |  VideoCapture (オーディオをキャプチャする場合)、DictationRecognizer、GrammarRecognizer、および KeywordRecognizer |
 |  InternetClient  |  DictationRecognizer (および Unity Profiler の使用) |
 
 ## <a name="see-also"></a>関連項目

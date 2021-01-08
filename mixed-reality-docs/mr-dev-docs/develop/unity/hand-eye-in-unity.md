@@ -1,17 +1,17 @@
 ---
 title: Unity での手と視点の追跡
-description: Unity、ハンドジェスチャ、およびモーションコントローラーでのアクションを実行するには、2つの主要な方法があります。
+description: Unity、ハンドジェスチャ、およびモーションコントローラーの2つの操作方法について説明します。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: ジェスチャ、モーションコントローラー、unity、宝石、入力、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: de8ea7968c36722f3690c5515e4f69e576898524
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 4c704677a78fee02b9da9d0db9bc2966ab6b3724
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97011555"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008956"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Unity での手と視点の追跡
 
@@ -48,7 +48,7 @@ MRTK v2 には、開発を高速化するために役立つ一連の UI コン�
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。
+Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次の構成要素を続けることができます。
 
 > [!div class="nextstepaction"]
 > [空間マッピング](spatial-mapping-in-unity.md)

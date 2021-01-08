@@ -1,17 +1,17 @@
 ---
 title: Holographic リモート処理のトラブルシューティングと制限事項
-description: HoloLens 2 での Holographic Remoting のトラブルシューティングの手順
+description: HoloLens 2 デバイスでの Holographic リモート処理機能に関するトラブルシューティングリソースと手順を紹介します。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, ホログラム, holographic リモート処理, リモートレンダリング, ネットワークレンダリング, HoloLens, リモートホログラム, トラブルシューティング, ヘルプ, Mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 9b900238abc79b0f2f93691d4b4a67cce67a201a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ee1dce72af02374e930de4a1bdff94285c7a84ae
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530188"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006452"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Holographic リモート処理のトラブルシューティング
 
@@ -24,7 +24,7 @@ Holographic リモート処理サンプルアプリでは、リリース構成�
 
 *Vccorlib を開けない* 場合は、Visual Studio のワークロードに [Spectre 軽減](https://aka.ms/Ofhn4c)可能なライブラリが含まれていることを確認してください。
 
-## <a name="speech"></a>Speech
+## <a name="speech"></a>音声
 
 Holographic リモート処理プレーヤーは診断オーバーレイをサポートしています。これは、「」と言って、無効にすることで有効にすることができ ```Enable Diagnostics``` ```Disable Diagnostics``` ます。 これらの音声コマンドで問題が発生した場合は、URL としてを使用して web ブラウザーで Holographic リモート処理プレーヤーを起動することもでき ```ms-holographic-remoting:?stats``` ます。
 

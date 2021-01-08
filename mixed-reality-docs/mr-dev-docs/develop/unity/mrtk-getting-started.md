@@ -1,5 +1,5 @@
 ---
-title: MRTK バージョン 2 の概要
+title: Unity 用の MRTK の概要
 description: MRTK を使用することに関心がある開発初心者向け
 author: cre8ivepark
 ms.author: dongpark
@@ -7,14 +7,15 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, テスト, Mixed Reality Toolkit, MRTK バージョン 2, MRTK, ツール, SDK, HoloLens, HoloLens 2, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, クロスプラットフォーム
-ms.openlocfilehash: a8e85e27617d5c7d616d6db75941c5cf5808f3ce
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 6887d79d4a0737f3ed0f63af5686699fc7a1a2b6
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010123"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613446"
 ---
-# <a name="getting-started-with-mrtk-for-unity"></a>Unity 用の MRTK の概要
+# <a name="introducing-mrtk-for-unity"></a>Unity 用の MRTK の概要
+
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
 
 ## <a name="what-is-mixed-reality-toolkit-mrtk"></a>Mixed Reality Toolkit (MRTK) とは

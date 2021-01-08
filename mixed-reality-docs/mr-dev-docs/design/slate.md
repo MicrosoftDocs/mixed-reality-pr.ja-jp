@@ -1,17 +1,17 @@
 ---
 title: スレート
-description: スレートは、2D コンテンツを表示するための薄いウィンドウスタイルのコントロールです。
+description: 混合 Reality ツールキットを使用して2D コンテンツを表示するためのシンウィンドウスタイルコントロールであるスレートについて説明します。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Mixed Reality、コントロール、対話、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens、スレート、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 53bcc9d8ac3b222e9b5a3dfcf47b327c212552d2
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: cbb4a741f4f78dcad603670bc282a25bc0e70fd2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848226"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008812"
 ---
 # <a name="slate"></a>スレート
 

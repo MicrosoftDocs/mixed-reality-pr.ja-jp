@@ -1,17 +1,17 @@
 ---
 title: Holographic リモート処理の追加
-description: Holographic Remoting を使用してネットワーク経由で HoloLens にホログラムを表示する方法について説明します。
+description: Holographic Remoting をインストール、構成、および使用して、ネットワーク経由で HoloLens デバイスにホログラムをレンダリングする方法について説明します。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, ホログラム, holographic リモート処理, リモートレンダリング, ネットワークレンダリング, HoloLens, リモートホログラム, Mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 809258d3387b5e45885c0eb207544c176f891a1d
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 68c1dd43dac4830da061d4900ce768692057e781
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530309"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006672"
 ---
 # <a name="add-holographic-remoting-hololens-first-gen"></a>Holographic リモート処理 (HoloLens (first gen)) の追加
 

@@ -1,17 +1,17 @@
 ---
 title: DirectX の座標系
-description: DirectX の座標系と、空間ロケーター、参照フレーム、空間アンカーを使用した Mixed Reality について説明します。 SpatialStage を使用して、アンカーの損失の追跡、アンカーの保存と読み込み、およびイメージの安定化を行います。
+description: DirectX の座標系と、空間ロケーター、参照フレーム、空間アンカーを使用した Mixed Reality について説明します。
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 混合現実、空間ロケーター、空間参照フレーム、空間座標システム、空間ステージ、サンプルコード、イメージの安定化、空間アンカー、空間アンカーストア、追跡の損失、チュートリアル、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
-ms.openlocfilehash: 7bf2309f3fb6264d6b1a5232f7ead78b771c1649
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 055eff0bb04228cb0a19b9ea208bfc9c00ce2dbe
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613116"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006862"
 ---
 # <a name="coordinate-systems-in-directx"></a>DirectX の座標系
 

@@ -1,18 +1,18 @@
 ---
 title: Spectator View
-description: 複合現実エクスペリエンスを外部ディスプレイでデモンストレーションしたり録画したりする手段として、外部デバイスからのホログラムを視覚化します。
+description: 外付けデバイスからホログラムを視覚化して、外付けディスプレイで Mixed Reality エクスペリエンスを表示または記録します。
 author: chrisfromwork
 ms.author: chriba
 ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, カメラ, ARKit, HoloLens, 複合現実, MixedRealityToolkit, デモ, 記録
-ms.openlocfilehash: 7b48315753ada0ae7a94abca5377a083ac659a34
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c344edea9b499bdff15d1d93e400b8be626a63b6
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700539"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530104"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>HoloLens および HoloLens 2 向けの Spectator View
 
@@ -20,8 +20,7 @@ ms.locfileid: "91700539"
 
 ## <a name="overview"></a>概要
 
-HoloLens を装着していると、自分が体験している素晴らしい世界を、HoloLens を装着していない人は見ることができないことをしばしば忘れてしまいます。 Spectator View を使用すれば、HoloLens ユーザーが見ている世界を他のユーザーが 2D 画面で見ることができます。
-Spectator View は、モバイル デバイスを使用して HD でホログラムを記録するための高速で手頃な方法を提供します。 さらに、ビデオ カメラを使用したホログラムのプロ品質の録画も提供します。
+HoloLens を装着していると、自分が見ている素晴らしい世界を、装着していない人は体験できないことを忘れがちです。 Spectator View を使用すれば、HoloLens ユーザーが見ているものを他のユーザーが 2D 画面で見ることができます。 これは、モバイル デバイスを使用してホログラムを HD に記録し、ビデオ カメラを使用してホログラムの高品質な記録を取得するための高速で手頃な方法でもあります。
 
 ## <a name="key-resources"></a>重要なリソース
 
@@ -30,7 +29,8 @@ Spectator View は、モバイル デバイスを使用して HD でホログラ
 * [**Spectator View のサンプル**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
 
 ## <a name="use-cases"></a>使用事例
-* iPhone または Android デバイスを使用して、複合現実エクスペリエンスを記録できます。 フル HD で記録し、ホログラムだけでなく、影にもアンチエイリアシングを適用します。 それは、ホログラムの動画をキャプチャするための費用対効果が高く、簡単に実行できる方法です。
+
+* iPhone または Android デバイスを使用して、複合現実エクスペリエンスを記録できます。 フル HD で記録し、ホログラムと影にアンチエイリアシングを適用して、コスト効率に優れた方法でホログラムの動画を迅速にキャプチャできます。
 * 複合現実エクスペリエンスを、iPhone または iPad から直接 Apple TV にライブ ストリーミングします。遅延は発生しません。
 * ゲストとエクスペリエンスを共有します。非 HoloLens ユーザーが各自の電話やタブレットから直接ホログラムを体験できるようにします。
 

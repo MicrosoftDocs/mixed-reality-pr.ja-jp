@@ -1,17 +1,17 @@
 ---
 title: シーンの理解
-description: HoloLens のシーンと機能の概要
+description: SDK、機能、一般的な使用シナリオなど、HoloLens のシーンを理解して開発する方法について説明します。
 author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: シーンの理解、空間マッピング、Windows Mixed Reality、Unity、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens、遮蔽、SDK
-ms.openlocfilehash: f46245c668e7cc58258fa4e28c4af5aa7812ef5f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: c4485c5501300d6ca629f4e587fde1f88eea7ea5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848258"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008872"
 ---
 # <a name="scene-understanding"></a>シーンの理解
 
@@ -111,13 +111,13 @@ ms.locfileid: "97848258"
 
 シーンの理解によって、空間がセマンティクスで分解される watertight メッシュが生成されます。特に、空間マッピングのメッシュによって適用される物理的な多くの制限に対処します。 Watertight 構造体は、物理的な光のキャストを常にヒットさせると共に、セマンティック分解によって、室内ナビゲーションのナビゲーションメッシュをより簡単に生成できます。 [オクルージョン](#occlusion)のセクションで説明したように、EnableSceneObjectMeshes と EnableWorldMesh を使用してシーンを作成すると、最も物理的に完全なメッシュが可能になります。 環境メッシュの watertight プロパティによって、ヒットテストがサーフェイスのヒットに失敗するのを防ぐことができます。 メッシュデータを使用すると、物理的なものは、部屋構造だけでなく、シーン内のすべてのオブジェクトと対話します。
 
-### <a name="navigation"></a>［ナビゲーション］
+### <a name="navigation"></a>ナビゲーション
 
 セマンティッククラスによって分解された平面メッシュは、ナビゲーションとパスの計画に最適な構成要素であり、「 [空間マッピングのナビゲーション](spatial-mapping.md#navigation) の概要」で説明されている多くの問題を緩和します。 シーンで計算された SceneMesh オブジェクトは、表面の種類によって構成解除されます。これにより、ナビゲーションメッシュの生成が、ウォーク可能なサーフェイスに限定されます。 フロア構造の単純さにより、Unity などの3d エンジンでの動的なナビゲーションメッシュの生成は、リアルタイムの要件に応じて達成できます。
 
 現在のところ、正確な nav メッシュを生成するには後処理が必要です。つまり、アプリケーションでは、occluders をフロアに射影して、移動が乱雑な/テーブルを通過しないようにする必要があります。 これを実現する最も正確な方法は、ワールドメッシュデータを投影することです。これは、EnableWorldMesh フラグを使用してシーンが計算された場合に提供されます。
 
-### <a name="visualization"></a>グラフ
+### <a name="visualization"></a>視覚化
 
 [空間マッピングの視覚化](spatial-mapping.md#visualization)を使用して、環境のリアルタイムのフィードバックを行うことができますが、平面オブジェクトと watertight オブジェクトの単純化によってパフォーマンスや視覚品質が向上する多くのシナリオがあります。 四角形または平面 watertight メッシュによって提供される平面サーフェスに射影した場合、空間マッピングを使用して記述されているシャドウプロジェクションとアース手法は、より見栄えが良い場合があります。 これは、シーンが推測されるため、完全な事前スキャンが最適ではない環境やシナリオでは特に当てはまり、完全な環境と平面の前提条件によって成果物が最小化されます。
 

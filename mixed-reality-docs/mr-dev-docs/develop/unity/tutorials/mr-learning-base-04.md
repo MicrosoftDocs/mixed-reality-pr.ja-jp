@@ -1,5 +1,5 @@
 ---
-title: 入門チュートリアル - 4. シーンへのオブジェクトの配置
+title: MRTK のチュートリアル - 4. シーンへのオブジェクトの配置
 description: このコースでは、シーンにオブジェクトを配置する方法と、Mixed Reality Toolkit (MRTK) を使用してグリッド内のオブジェクトを整理する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, ソルバー, Grid Object Collection
 ms.localizationpriority: high
-ms.openlocfilehash: b49d1b93b98a68e253239647262edc737fdbeb58
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e09047e4f75697722f76301630c275f126b3cbda
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679311"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613256"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4.シーンへのオブジェクトの配置
 

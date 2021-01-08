@@ -1,17 +1,17 @@
 ---
 title: リリースノート-2019 年5月
-description: Windows 10 5 月2019更新プログラム (19H1 とも呼ばれます) の windows Mixed Reality リリースノート。
+description: Windows 10 5 月 2019/19H1 更新プログラムについては、Windows Mixed Reality リリースノートを最新の状態に維持してください。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: リリースノート、バージョン、windows 10、ビルド、19h1、os、2019年5月
-ms.openlocfilehash: 19444732884a87de3f28e90d656deef6e51eb191
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725923"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007122"
 ---
 # <a name="release-notes---may-2019"></a>リリースノート-2019 年5月
 

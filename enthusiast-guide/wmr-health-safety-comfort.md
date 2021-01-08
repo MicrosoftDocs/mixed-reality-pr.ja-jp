@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality イマーシブヘッドセットの正常性、安全性、快適さ
+title: Windows Mixed Reality ヘッドセットの正常性と安全性
 description: Windows Mixed Reality アプリを使用するときに、ユーザーとユーザーの安全を維持し、使いやすくする方法について説明します。
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: a8b78cd637b3f3b68ef793aa76031e3151f1f0fe
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 32b29d11585bae4e803e516ae3733e1165f45587
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725573"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009002"
 ---
 # <a name="windows-mixed-reality-immersive-headset-health-safety-and-comfort"></a>Windows Mixed Reality イマーシブヘッドセットの正常性、安全性、快適さ
 
@@ -41,7 +41,7 @@ Windows Mixed Reality ヘッドセットと motion controller 製造元 (各 **�
 
 嘔吐、motion sickness、頭痛、disorientation、不快感など、Windows Mixed Reality を使用する場合、特に使用するように調整されているときに、経験を持つ **ユーザー** もいます。 モーション sickness とそれに関連する症状は、表示内容と本体の内容が一致しない場合に発生する可能性があります。 モーション sickness が発生しやすく、migraine に悩まされている場合、内部の ear 誤順序がある場合、またはその他の正常性状態がある場合は、不快感のリスクが高くなる可能性があります。
 
-**状況によっては、不快感のリスクが大きくなることがあります。** 例:
+**状況によっては、不快感のリスクが大きくなることがあります。** 次に例を示します。
 
 * 新しいユーザーの症状は、Windows Mixed Reality に慣れるにつれて低下する傾向があります。
 * Interpupillary distance (IPD) が特定の範囲内にあるユーザーには、デバイスが最適に動作することがあります。 IPD は、2つの目の pupils の中心との距離です。 デバイスの最適な範囲外の IPD を持つユーザーは、不快感が発生する可能性があります。

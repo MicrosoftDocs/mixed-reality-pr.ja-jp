@@ -1,26 +1,28 @@
 ---
-title: 空間オーディオチュートリアル-2. ボタンの対話式操作サウンドの立体化
-description: ボタンをプロジェクトに追加し、ボタンの相互作用サウンドを spatialize します。
+title: ボタンの対話式操作サウンドの立体化
+description: ボタンを追加し、混合現実アプリケーションでボタンの相互作用音を spatialize する方法について説明します。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、ヘッド関連の転送関数、リバーブ、Microsoft Spatializer、prefabs、volume curve
-ms.openlocfilehash: 62825ed8922cd904212160748018446cbc76b839
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 1f54ba8cab55ba375a6b1499796761ae02b03a02
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002597"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007362"
 ---
 # <a name="spatializing-button-interaction-sounds"></a>ボタンの対話式操作サウンドの立体化
 
 ## <a name="objectives"></a>目標
+
 HoloLens 2 チュートリアルの空間オーディオモジュールの2番目の章では、次のことを行います。
 * ボタンを追加する
 * ボタンのクリック音を Spatialize
 
 ## <a name="add-a-button"></a>ボタンを追加する
+
 [ **プロジェクト** ] ウィンドウで、[ **資産** ] を選択し、検索バーに「PressableButtonHoloLens2」と入力します。
 
 ![アセット内のボタンの事前 fab](images/spatial-audio/button-prefab-in-assets.png)
@@ -30,6 +32,7 @@ HoloLens 2 チュートリアルの空間オーディオモジュールの2番�
 ![ボタンの変換](images/spatial-audio/button-transform.png)
 
 ## <a name="spatialize-button-feedback"></a>Spatialize button のフィードバック
+
 この手順では、ボタンの音声フィードバックを spatialize します。 関連する設計の提案については、「 [空間サウンドの設計](../../../design/spatial-sound-design.md)」を参照してください。 
 
 オーディオ **ミキサー** ウィンドウでは、**オーディオソース** コンポーネントからのオーディオ再生用に **ミキサーグループ** と呼ばれる宛先を定義します。 
@@ -60,6 +63,7 @@ HoloLens 2 チュートリアルの空間オーディオモジュールの2番�
 > **Spatialize** チェックボックスをオフにして **空間ブレンド** を 1 (3d) に移動すると、Unity では、 **Microsoft spatializer** と hrtfs ではなく、そのパン spatializer が使用されます。
 
 ## <a name="adjust-the-volume-curve"></a>ボリューム曲線を調整する
+
 既定では、Unity はリスナーから遠く離れた spatialized サウンドを減衰します。 この減衰が相互作用フィードバックのサウンドに適用されると、インターフェイスの使用が困難になる可能性があります。
 
 この減衰を無効にするには、 **ボリューム** 曲線を調整します。 **PressableButtonHoloLens2** の [**インスペクター** ] ウィンドウの [**オーディオソース**] コンポーネントには、[ **3d サウンド設定**] というセクションがあります。 そのセクション内:

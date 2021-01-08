@@ -1,17 +1,17 @@
 ---
-title: ケーススタディ-安定化平面を使用して holographic 乱気流を減らす
-description: 手ブレ補正平面を使用してホログラフィックの乱れを削減する
+title: ケーススタディ-安定化平面の使用
+description: 開発チームが安定化面を使用して、混合現実アプリケーションで holographic 乱気流を削減する方法について説明します。
 author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、ホログラム、安定化、ケーススタディ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット
-ms.openlocfilehash: e0eba3df5457ea06ee80682d99c82a5a23c1635d
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 85caee589a5f031f605417639eab2e980cb613c5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530438"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006702"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>ケーススタディ-安定化平面を使用して holographic 乱気流を減らす
 

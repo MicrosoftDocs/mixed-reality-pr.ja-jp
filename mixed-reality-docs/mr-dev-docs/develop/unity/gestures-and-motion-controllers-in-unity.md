@@ -1,17 +1,17 @@
 ---
 title: Unity でのジェスチャとモーション コントローラー
-description: ハンドジェスチャとモーションコントローラーを使用して、Unity での操作を実行する方法について説明します。
+description: XR および共通のボタン/軸 Api を使用して、Unity で、ハンドジェスチャとモーションコントローラーを使って、お客様のコンピューターを見つめながら操作する方法について説明します。
 author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: ジェスチャ、モーションコントローラー、unity、宝石、入力、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 8941fa05af21a7b2c7302f4a76f27cf38e1d5a65
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 3ef3e3d5a1d9171ff6cc04e19fa97bb73768370e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010323"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008792"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Unity でのジェスチャとモーション コントローラー
 
@@ -565,7 +565,7 @@ void OnDestroy()
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次のビルディングブロックに進むことができます。
+Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次の構成要素を続けることができます。
 
 > [!div class="nextstepaction"]
 > [手と視線の追跡](hand-eye-in-unit.md)

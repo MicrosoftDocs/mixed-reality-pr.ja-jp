@@ -1,6 +1,6 @@
 ---
-title: Windows Mixed Reality の PC ハードウェアの最小互換性ガイドライン
-description: Windows Mixed Reality との互換性に関する PC システムの最小要件を概説したグラフ。
+title: Windows Mixed Reality PC の互換性ガイドライン
+description: Windows Mixed Reality との互換性に関する最小 PC システム要件を概説する概要グラフ。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、Ultra、互換性、互換性、システム要件、PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: bd287e2089056be56330c2c2e8e9af2c079009ac
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: ed53c388797cb57a7f2a53ed40b18923a23c8b74
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725663"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009122"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality の PC ハードウェアの最小互換性ガイドライン
 
@@ -69,6 +69,7 @@ Windows Mixed Reality を最大限に活用するには、 [windows mixed realit
  [Mixed Reality ポータルの結果に関するヘルプを表示する](https://support.microsoft.com/en-us/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality)
 
 ## <a name="compatibility-guidelines"></a>互換性のガイドライン
+
 > [!IMPORTANT]
 > Microsoft では、これらの Windows Mixed Reality PC 互換性ガイドラインを更新するために、を追加しています。 最新のガイドラインと要件については、定期的に確認してください。
 
@@ -261,6 +262,7 @@ Windows Mixed Reality とのサーフェイスの互換性の詳細について�
 </table>
 
 ## <a name="see-also"></a>関連項目
+
 * [コミュニティへの質問](https://answers.microsoft.com)
 * [サポートについては、お問い合わせください](https://support.microsoft.com/contactus/)
 * [Windows Mixed Reality 対応 Pc の推奨アダプター](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)

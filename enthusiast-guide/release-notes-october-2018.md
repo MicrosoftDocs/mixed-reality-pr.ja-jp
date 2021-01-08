@@ -1,26 +1,26 @@
 ---
 title: リリース ノート - 2018 年 10 月
-description: Windows 10 10 月2018更新プログラム (RS5 とも呼ばれます) の HoloLens および Windows Mixed Reality リリースノート。
+description: Windows 10 10 月の 2018/RS5 Update については、HoloLens と Windows Mixed Reality のリリースノートを最新の状態に維持してください。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 10/02/2018
 ms.topic: article
 keywords: リリースノート、バージョン、windows 10、ビルド、rs5、os
-ms.openlocfilehash: 88d7393fdcf499b1fabd36668364ffb31b0e793d
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: f7d95481d166f2c8795701c516946346101a21d0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91784028"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007112"
 ---
 # <a name="release-notes---october-2018"></a>リリース ノート - 2018 年 10 月
 
-**[Windows 10 10 月2018更新プログラム](https://blogs.windows.com/windowsexperience/2018/10/02/find-out-whats-new-in-windows-and-office-in-october/)** (RS5 とも呼ばれます) には、pc に接続された HoloLens および Windows Mixed Reality イマーシブヘッドセットの新機能が含まれています。 
+**[Windows 10 10 月2018更新プログラム](https://blogs.windows.com/windowsexperience/2018/10/02/find-out-whats-new-in-windows-and-office-in-october/)**(RS5 とも呼ばれます) には、pc に接続された HoloLens および Windows Mixed Reality イマーシブヘッドセットの新機能が含まれています。 
 
-HoloLens または PC (Windows Mixed Reality イマーシブ (VR) ヘッドセット) の最新リリースに更新するには、 **設定** アプリを開き、[ **update & Security** ] にアクセスして、[ **更新プログラムの確認** ] ボタンを選択します。 Windows 10 PC では、windows [media 作成ツール](https://www.microsoft.com/software-download/windows10)を使用して、Windows 10 10 月2018更新プログラムを手動でインストールすることもできます。
+HoloLens または PC (Windows Mixed Reality イマーシブ (VR) ヘッドセット) の最新リリースに更新するには、 **設定** アプリを開き、[ **update & Security**] にアクセスして、[ **更新プログラムの確認** ] ボタンを選択します。 Windows 10 PC では、windows [media 作成ツール](https://www.microsoft.com/software-download/windows10)を使用して、Windows 10 10 月2018更新プログラムを手動でインストールすることもできます。
 
-**デスクトップの最新リリース:** Windows 10 10 月2018更新プログラム ( **10.0.17763.107** )<br>
-**HoloLens の最新リリース:** Windows 10 10 月2018更新プログラム ( **10.0.17763.134** )<br>
+**デスクトップの最新リリース:** Windows 10 10 月2018更新プログラム (**10.0.17763.107**)<br>
+**HoloLens の最新リリース:** Windows 10 10 月2018更新プログラム (**10.0.17763.134**)<br>
 
 ## <a name="new-features-for-windows-mixed-reality-immersive-headsets"></a>Windows Mixed Reality イマーシブヘッドセットの新機能
 
@@ -41,7 +41,7 @@ Windows 10 10 月2018更新プログラムには、デスクトップ PC で Win
     * Curated の WebVR エクスペリエンスを定期的に検出するための新しい *Webvr ショーケース* アプリ。
     * Windows Mixed Reality を初めて使用する場合、お客様は崖ハウスに入っており、Microsoft Store の使い慣れたイマーシブアプリとゲームのいくつかについて、3D アプリランチャーが事前に設定されています。
     * Microsoft Edge ウィンドウに [ *共有* ] ボタンが追加されました。
-* **クイックアクションメニュー** -イマーシブ mixed reality アプリ内から、[Windows] ボタンをクリックして新しい [クイックアクション] メニューにアクセスし、 *steamvr メニュー* 、 *写真/ビデオキャプチャ* 、 *懐中電灯* 、および *ホーム* に簡単にアクセスできます。
+* **クイックアクションメニュー** -イマーシブ mixed reality アプリ内から、[Windows] ボタンをクリックして新しい [クイックアクション] メニューにアクセスし、 *steamvr メニュー*、 *写真/ビデオキャプチャ*、 *懐中電灯*、および *ホーム* に簡単にアクセスできます。
 * **Backpack pc のサポート** -Windows Mixed Reality イマーシブ (VR) ヘッドセットは、セットアップの完了後にディスプレイエミュレーターを必要とせずに、backpack pc で実行されます。
 * **新しいオーディオ機能** -Windows Mixed Reality エクスペリエンスのオーディオを、ヘッドセットのオーディオジャック (またはヘッドホン) *と* 、PC に接続されているオーディオデバイス (外部スピーカーなど) の両方にミラー化できるようになりました。 また、ヘッドセットのディスプレイにボリュームレベルの視覚的インジケーターも追加しました。
 * **その他の機能強化**
@@ -60,9 +60,9 @@ Windows 10 10 月2018更新プログラムは、すべての HoloLens のお客�
 
 ### <a name="for-everyone"></a>すべてのユーザー向け
 
-* **クイックアクションメニュー** -イマーシブ mixed reality アプリ内では、[Windows] ボタンをクリックして新しい [クイックアクション] メニューにアクセスできます。簡単にアクセスして、 *ビデオの録音* 、 *画像の撮影* 、現実の *ホーム* 、 *変更音量* 、および *接続* を簡単に行うことができます。
+* **クイックアクションメニュー** -イマーシブ mixed reality アプリ内では、[Windows] ボタンをクリックして新しい [クイックアクション] メニューにアクセスできます。簡単にアクセスして、 *ビデオの録音*、 *画像の撮影*、現実の *ホーム*、 *変更音量*、および *接続* を簡単に行うことができます。
 * **[開始] または [クイックアクション] メニューからビデオキャプチャを開始** または停止する-[スタート] メニューまたは [クイックアクション] メニューからビデオキャプチャを開始すると、同じ場所から録画を停止できるようになります。 (忘れずに、音声コマンドでこれを行うことができます)。
-* [ **プロジェクトから miracast 対応デバイスへ** ]-miracast が有効になっているディスプレイまたはアダプターを使用している場合は、近隣の Surface デバイスまたはテレビ/モニターに HoloLens コンテンツを投影します。
+* [**プロジェクトから miracast 対応デバイスへ**]-miracast が有効になっているディスプレイまたはアダプターを使用している場合は、近隣の Surface デバイスまたはテレビ/モニターに HoloLens コンテンツを投影します。
 * **新しい通知** -PC の場合と同じように、HoloLens で通知を表示し、対応します。  
 * **イマーシブ mixed reality アプリの便利なオーバーレイ** -イマーシブ mixed reality アプリを使用するときに、キーボード、ダイアログ、ファイルピッカーなどのオーバーレイが表示されるようになりました。
 * **ボリュームの変更の視覚的なインジケーター** -HoloLens で [音量のアップ] ボタンまたは [下へ] ボタンを使用すると、ヘッドセットのボリュームレベルを視覚的に示すインジケーターが表示されます。

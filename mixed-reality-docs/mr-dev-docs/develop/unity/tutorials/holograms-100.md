@@ -1,17 +1,17 @@
 ---
 title: MR の基本 100 - Unity の概要
-description: 最初の基本的な mixed reality "hello world" アプリケーションを作成する方法について説明します。
+description: HoloLens および Windows Mixed Reality デバイス向けに、初めての基本的な mixed reality "hello world" アプリケーションを作成する方法について説明します。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality、Windows Mixed Reality、HoloLens、イマーシブ、vr、mr、はじめに、ホログラム、academy、チュートリアル、Mixed Reality Academy、unity、mixed reality ヘッドセット、Windows Mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 83ca133e341688f42fa2d53b4d50f1aefa9bb39b
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7b316314d7aa693e8be9006b2c5578c1bae7e3ff
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678411"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006512"
 ---
 # <a name="mr-basics-100-getting-started-with-unity"></a>MR の基本 100:Unity の概要
 
@@ -30,7 +30,7 @@ ms.locfileid: "94678411"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 * 適切な [ツールがインストール](../../install-the-tools.md)された WINDOWS 10 PC。
 
@@ -43,7 +43,7 @@ Unity を使用してアプリをビルドするには、最初にプロジェ�
 UWP アプリをビルドして展開するために、Unity はプロジェクトを Visual Studio ソリューションとしてエクスポートできます。このソリューションには、必要なすべての資産とコードファイルが含まれます。
 
 1. Unity を開始する
-2. **新規** の選択
+2. **[新規]** を選択します。
 3. プロジェクト名を入力してください (例: "MixedRealityIntroduction")
 4. プロジェクトを保存する場所を入力してください
 5. **3d** の切り替えが選択されていることを確認する

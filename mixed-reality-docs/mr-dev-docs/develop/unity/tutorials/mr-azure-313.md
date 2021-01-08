@@ -1,17 +1,17 @@
 ---
 title: MR と Azure 313 - IoT Hub サービス
-description: このコースでは、Ubuntu 16.4 を実行している仮想マシンに Azure IoT Hub サービスを実装し、Microsoft HoloLens またはイマーシブ (VR) ヘッドセットを使用してメッセージデータを視覚化する方法について説明します。
+description: Ubuntu 16.4 を実行している仮想マシンに Azure IoT Hub サービスを実装し、Microsoft HoloLens または VR ヘッドセットを使用してメッセージデータを視覚化する方法について説明します。
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, エッジ, iot edge, チュートリアル, api, 通知, 関数, テーブル, hololens, イマーシブ, vr, iot, 仮想マシン, ubuntu, python, Windows 10, Visual Studio
-ms.openlocfilehash: 2a642bad363d86e37ca2d6c00ebf1ebb73908dec
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3c01c7351ee284b72a15fd7d5bdd3205fec91e49
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679511"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009302"
 ---
 # <a name="mr-and-azure-313-iot-hub-service"></a>MR と Azure 313:IoT Hub サービス
 
@@ -55,7 +55,7 @@ ms.locfileid: "94679511"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 Microsoft HoloLens など、mixed reality を使用した開発に関する最新の前提条件については、 [ツールのインストール](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) に関する記事をご覧ください。
 
@@ -79,7 +79,7 @@ Microsoft HoloLens など、mixed reality を使用した開発に関する最�
 
 
 
-### <a name="before-you-start"></a>開始する前に
+### <a name="before-you-start"></a>アップグレードを開始する前に
 
 1. HoloLens をセットアップしてテストします。 HoloLens のセットアップをサポートする必要がある場合は、 [hololens セットアップに関する記事にアクセスして](https://docs.microsoft.com/hololens/hololens-setup)ください。
 2. 新しい HoloLens アプリの開発を開始するときは、 **調整** と **センサーのチューニング** を実行することをお勧めします (ユーザーごとにこれらのタスクを実行するのに役立つ場合があります)。
@@ -370,7 +370,7 @@ Microsoft HoloLens など、mixed reality を使用した開発に関する最�
 
 4. 拡張機能がインストールされたら、VS Code を閉じてから開き直します。
 
-5. さらに VS Code 開いて、[ **View**  >  **統合ターミナル** の表示] に移動します。
+5. さらに VS Code 開いて、[   >  **統合ターミナル** の表示] に移動します。
 
 6. 次に、 **Cookiecutter** をインストールします。 ターミナルで、次の bash コマンドを実行します。
 
@@ -390,7 +390,7 @@ Microsoft HoloLens など、mixed reality を使用した開発に関する最�
 
 この時点で、モジュールを使用してコンテナーを作成し、 *Container Registry* にプッシュする必要があります。 コンテナーをプッシュしたら、 *IoT Hub Edge* サービスを使用して、 *IoT Edge ランタイム* を実行しているデバイスにデプロイします。
 
-1. VS Code で、[ **View**  >  **コマンドパレット** の表示] をクリックします。
+1. VS Code で、[   >  **コマンドパレット** の表示] をクリックします。
 
 2. パレットで、[ **Azure IoT Edge の新しい IoT Edge ソリューション**] を検索して実行します。
 
@@ -744,7 +744,7 @@ Microsoft HoloLens など、mixed reality を使用した開発に関する最�
 
 ## <a name="chapter-9---package-the-solution-as-a-container"></a>第9章-ソリューションをコンテナーとしてパッケージ化する
 
-1.  これで、ファイルをコンテナーとして "パッケージ化" し、 **Azure Container Registry** にプッシュできるようになりました。 VS Code で、*統合ターミナル*(**View**  >  **統合** ターミナルまたは **Ctrl** を表示) を開き、次の行を使用して + **\`** **Docker** にログインします (コマンドの値は、 **Azure Container Registry (ACR)** の資格情報に置き換えてください)。
+1.  これで、ファイルをコンテナーとして "パッケージ化" し、 **Azure Container Registry** にプッシュできるようになりました。 VS Code で、*統合ターミナル*(  >  **統合** ターミナルまたは **Ctrl** を表示) を開き、次の行を使用して + **\`** **Docker** にログインします (コマンドの値は、 **Azure Container Registry (ACR)** の資格情報に置き換えてください)。
 
     ```bash
         docker login -u <ACR username> -p <ACR password> <ACR login server>
@@ -916,7 +916,7 @@ Azure Portal に戻ります。ここでは、ストレージリソースを作�
 
 1. (Visual Studio Code で **はなく**) **Visual Studio** を開きます。
 
-2. メニューの [Cloud Explorer の **表示**] をクリックし  >  **Cloud Explorer** ます。
+2. メニューの [Cloud Explorer の **表示**] をクリックし  >  ます。
 
     ![cloud explorer を開く](images/AzureLabs-Lab313-45.png)
 
@@ -1039,7 +1039,7 @@ Azure Portal に戻ります。ここでは、ストレージリソースを作�
 
     ![リソースにアクセス](images/AzureLabs-Lab313-57.png)
 
-11. 新しいパネルの左側で、[関数] の横にある **+** (プラス記号) *Functions* アイコンをクリックして、新しい関数を作成します。
+11. 新しいパネルの左側で、[関数] の横にある **+** (プラス記号) アイコンをクリックして、新しい関数を作成します。
 
     ![新しい関数の追加](images/AzureLabs-Lab313-58.png)
 

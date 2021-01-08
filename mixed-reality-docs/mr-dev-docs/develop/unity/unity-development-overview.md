@@ -1,24 +1,24 @@
 ---
-title: Unity 開発の概要
-description: Unity で Mixed Reality アプリのビルドを開始します。
-author: thetuvix
+title: HoloLens 向けの Unity の開発
+description: Unity と HoloLens で Mixed Reality アプリのビルドを開始します。
+author: hferrone
 ms.author: kurtie
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, 開発, 作業の開始, 新しいプロジェクト, 移植, 機能, カメラ, シミュレーション, エミュレーション, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, 拡張現実とは, MRTK, Mixed Reality Toolkit, 空間マッピング, 音声入力, 場所を特定できるカメラ, エミュレーター, Azure, チュートリアル
-ms.openlocfilehash: 4eeec1544315ff2b9a43fc725d5bbd83c8cea89f
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 150d86d1522f3fa71dd9d9a1fe154baef89496e0
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926034"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613476"
 ---
-# <a name="unity-development-overview"></a>Unity 開発の概要
+# <a name="unity-development-for-hololens"></a>HoloLens 向けの Unity の開発 
 
 ![Unity のバナー ロゴ](../images/unity_logo_banner.png)
 
-[Unity](https://unity.com) で [Mixed Reality アプリ](../../design/app-views.md)を最速で構築するには、Mixed Reality Toolkit を使用します。 Unity を初めて使用する場合は、続行する前に、Unity Learn プラットフォームで初級レベルの[チュートリアル](https://unity3d.com/learn/tutorials)を確認することをお勧めします。 また、包括的な[資産ストア](https://www.assetstore.unity3d.com/)のほか、Mixed Reality アプリを構築しているオンライン コミュニティとやり取りできる [Unity Mixed Reality フォーラム](https://forum.unity3d.com/forums/hololens.102/)にアクセスすることもお勧めします。 想像を超えたすばらしい資産やソリューションを見つけることができます。 MRTK の使用を開始する準備ができたら、次の開発チェックポイントに進んでください。
+[Unity](https://unity.com) で HoloLens [Mixed Reality アプリ](../../design/app-views.md)を最速で構築するには、Mixed Reality Toolkit を使用します。 Unity を初めて使用する場合は、続行する前に、Unity Learn プラットフォームで初級レベルの[チュートリアル](https://unity3d.com/learn/tutorials)を確認することをお勧めします。 また、包括的な[資産ストア](https://www.assetstore.unity3d.com/)のほか、Mixed Reality アプリを構築しているオンライン コミュニティとやり取りできる [Unity Mixed Reality フォーラム](https://forum.unity3d.com/forums/hololens.102/)にアクセスすることもお勧めします。 想像を超えたすばらしい資産やソリューションを見つけることができます。 MRTK の使用を開始する準備ができたら、次の開発チェックポイントに進んでください。
 
 > [!IMPORTANT]
 > HoloLens 2 に移植する必要がある既存の Unity プロジェクトがある場合は、Microsoft の **[移植ガイド](../porting-apps/porting-overview.md)** を参照してください。 HTK、MRTK v1、SteamVR を使用するプロジェクト向けのガイドや、Reverb G2、Oculus Rift、HTC Vive などのイマーシブ ヘッドセット用に開発されたプロジェクト向けのガイドが用意されています。

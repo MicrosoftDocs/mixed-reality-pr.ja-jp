@@ -1,6 +1,6 @@
 ---
 title: Windows Mixed Reality の設定に関する FAQ
-description: Windows Mixed Reality を使用するときの一般的なセットアップの質問に対する回答を得ます。
+description: Windows Mixed Reality アプリケーションとデバイスを操作するときの一般的なセットアップに関する質問への回答を得ます。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: bde88890f596e19dd9b5f9e87ceabbf91039af67
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725443"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008632"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Windows Mixed Reality の設定に関する FAQ
 

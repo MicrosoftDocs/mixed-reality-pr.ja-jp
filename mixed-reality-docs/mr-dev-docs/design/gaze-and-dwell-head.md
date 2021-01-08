@@ -1,17 +1,17 @@
 ---
 title: 頭の視線入力とドウェル
-description: 頭の視線入力とドウェル入力モデルの概要
+description: 一般的なシナリオや設計の原則など、熟考入力モデルの概要について説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: Mixed Reality、宝石、熟考、対話、設計、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、ux、ガイドライン、リストビュー
-ms.openlocfilehash: 060d78ec629905ac9f2134851998ec131d85f0cd
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2bfd984a466c1ccd3913e889ca57663800f46380
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847370"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007082"
 ---
 # <a name="head-gaze-and-dwell"></a>頭の視線入力とドウェル
 

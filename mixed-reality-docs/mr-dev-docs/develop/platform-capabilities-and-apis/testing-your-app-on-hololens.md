@@ -1,17 +1,17 @@
 ---
 title: HoloLens でアプリをテストする
-description: HoloLens アプリのテストに関するガイダンスと提案
+description: HoloLens mixed reality アプリケーションのテストとパフォーマンスの最適化に関する一般的なガイダンスと推奨事項について説明します。
 author: jonmlyons
 ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, テスト
-ms.openlocfilehash: e1a5a62cf52a3144f02b8acaa96b3c653246fd9c
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: d26a3717da2ee9943e92e3602b6029435815262b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530338"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008542"
 ---
 # <a name="testing-your-app-on-hololens"></a>HoloLens でアプリをテストする
 
@@ -22,6 +22,7 @@ HoloLens アプリケーションのテストは、Windows アプリケーショ
 Holographic アプリは、さまざまな環境のセットでスムーズに実行する必要があります。 また、パフォーマンスとユーザーの快適さを常に維持する必要もあります。 Holographic アプリのユーザーエクスペリエンスにとってパフォーマンスが非常に重要です。これには、トピック全体が含まれています。 [Mixed Reality のパフォーマンスを理解](understanding-performance-for-mixed-reality.md)し、それに従っていることを確認してください。
 
 ## <a name="testing-3d-in-3d"></a>3D でのテスト
+
 1. **できるだけ多くの異なるスペースでアプリをテストします。** 大規模な部屋、小さな部屋、bathrooms、kitchens、ベッドルーム、オフィスなどで試してみてください。 また、垂直方向以外の壁面、曲線の壁面、水平でない雲など、非標準機能を備えたルームも考慮してください。 部屋、フロア、廊下または階段間を移行するときにうまく機能しますか。
 2. **さまざまな照明条件でアプリをテストします。** これは、照明、黒い表面、透明または反射の面などのさまざまな環境条件に対して適切に応答します。
 3. **さまざまな動作条件でアプリをテストします。** デバイスに配置して、さまざまな動作の状態でシナリオを試すことができます。 異なる移動や安定した状態に対応していますか。
@@ -37,11 +38,11 @@ Holographic アプリは、さまざまな環境のセットでスムーズに�
 ![HoloLens アプリ開発のための環境テストマトリックス](images/environment-matrix-600px.png)
 
 ## <a name="comfort"></a>快適性
+
 1. **クリッププレーン。** [ホログラムがレンダリング](hologram-stability.md#hologram-render-distances)される場所に attentive してください。
 2. **仮想移動は、実際のヘッド移動と矛盾しないようにしてください。** ユーザーの実際の動きを代表していない形でカメラを移動しないようにします。 アプリでシーンを通じてユーザーを移動する必要がある場合は、動きを予測可能にし、加速を最小化して、ユーザーが移動を制御できるようにします。
 3. **ホログラムの品質ガイドラインに従います。** [ホログラム品質ガイダンス](hologram-stability.md)を実装する高性能アプリでは、ユーザー不快感が発生する可能性が低くなります。
 4. **ホログラムを垂直方向ではなく水平方向に分散します。** ユーザーが長時間にわたって長い期間を使用するように強制すると、ネックの疲労につながる可能性があります。
-
 
 ## <a name="input"></a>入力
 
@@ -113,4 +114,5 @@ Holographic アプリは、さまざまな環境のセットでスムーズに�
 アプリを [Windows ストアで公開](../../distribute/submitting-an-app-to-the-microsoft-store.md)する機会を与えるには、証明書を送信する前に、ローカルで検証してテストします。 アプリが Holographic デバイスファミリを対象としている場合、 [Windows アプリ認定キット](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) では、ローカルの静的分析テストのみが PC 上で実行されます。 HoloLens ではテストは実行されません。
 
 ## <a name="see-also"></a>関連項目
+
 * [Windows ストアへのアプリの送信](../../distribute/submitting-an-app-to-the-microsoft-store.md)

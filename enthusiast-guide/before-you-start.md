@@ -1,6 +1,6 @@
 ---
 title: 開始する前に
-description: PC が Windows Mixed Reality と互換性があり、準備ができていることを確認する方法。
+description: さまざまな Windows Mixed Reality アプリケーションエクスペリエンスのために、PC に互換性があり、準備ができていることを確認する方法について説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、互換性、互換性、はじめに、セットアップ、PC、システム要件
 appliesto:
 - Windows 10
-ms.openlocfilehash: f4743b6548def227675944fcd742b1596963cb3c
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b7e90477ed16170a5661f34798a5af822ad8e945
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725493"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006882"
 ---
 # <a name="before-you-start"></a>アップグレードを開始する前に
 

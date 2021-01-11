@@ -4,7 +4,7 @@ summary: HoloLens と Windows イマーシブ ヘッドセットに対応した�
 brand: windows
 metadata:
   title: Mixed Reality に関するドキュメント
-  description: HoloLens と Windows イマーシブ ヘッドセットに対応した、Windows Mixed Reality、Mixed Reality Toolkit (MRTK)、Unity、Unreal などを使用する Mixed Reality アプリケーションの拡大を続ける世界をご紹介します。
+  description: HoloLens と Windows イマーシブ ヘッドセットに対応した Mixed Reality アプリケーションの拡大を続ける世界をご紹介します。
   services: service
   ms.service: service
   ms.subservice: subservice
@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 0ddea2f7271e00cc4f845b6bfd6c53c919846632
-  ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
+  ms.openlocfilehash: 0ef4c230bb58d9be3c0d61822754c313ab8dab16
+  ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/06/2021
-  ms.locfileid: "97905284"
+  ms.lasthandoff: 01/08/2021
+  ms.locfileid: "98007558"
 highlightedContent:
   items:
   - title: Mixed Reality とは

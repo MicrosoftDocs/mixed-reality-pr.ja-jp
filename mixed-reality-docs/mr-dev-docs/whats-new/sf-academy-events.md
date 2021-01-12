@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: event、calendar、academy、schedule、sf、サンフランシスコ、リアクター
-ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a7d592243f758415c0ca757f35567d80fbfc1f2f
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010002"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110440"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Microsoft Mixed Reality イベント
 
@@ -19,7 +19,7 @@ ms.locfileid: "98010002"
 
 <br>
 
-|Event|Date|切り替え|
+|Event|Date|テーマ|
 |-------------|-------------|-----|
 | Mixed Reality Speaker シリーズ|2020 年 4 月 23 日|[Web を補強する](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Augmenting-WebXR-Standards)|
 | Mixed Reality Speaker シリーズ|2020年6月22日|[MR を使用した教育エクスペリエンスの作成](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Educational-Experiences-in-MR)|
@@ -31,4 +31,4 @@ ms.locfileid: "98010002"
 | Mixed Reality Speaker シリーズ|2020 年 9 月 22 日|[Kippy のエスケープ: HoloLens 2 の & MRTK の概要]()|
 | Mixed Reality Speaker シリーズ|2020年10月22日|[BabylonJS を使用した WebXR の概要](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | Mixed Reality Speaker シリーズ|2020 年 11 月 17 日|[将来の構築: MRTK の新要素](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
-| Mixed Reality Speaker シリーズ|2020 年 12 月 1 日|[ホログラムのデザイン]()|
+| Mixed Reality Speaker シリーズ|2020 年 12 月 1 日|[ホログラムのデザイン](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|

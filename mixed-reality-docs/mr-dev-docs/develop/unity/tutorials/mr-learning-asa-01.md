@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors チュートリアル - 1. Azure Spatial Anchors チュートリアルの概要
+title: Azure Spatial Anchors チュートリアルの概要
 description: このコースを完了すると、Mixed Reality アプリケーション内に Azure Spatial Anchors を実装する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, iOS, Android, Windows 10, ARCore, macOS, Android ビルド サポート, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 005bbf3f9ecb7ed7f15f78d4042b4090f00edca7
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6ac412913f8d475d213a26cb4f9f82e12d129b82
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679401"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008402"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1. Azure Spatial Anchors チュートリアルの概要
-
-## <a name="overview"></a>概要
 
 Azure Spatial Anchors チュートリアルにようこそ。 このチュートリアル シリーズをとおして、<a href="https://azure.microsoft.com/services/spatial-anchors" target="_blank">Azure Spatial Anchors</a> (ASA) の基礎と完全な複合現実体験を現実の世界で実現する方法について説明します。 プロジェクトを Android と iOS にデプロイする方法についても説明します。
 

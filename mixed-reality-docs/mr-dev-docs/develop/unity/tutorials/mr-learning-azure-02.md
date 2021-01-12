@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud チュートリアル - 2. Azure Storage の統合
+title: Azure Storage の統合
 description: このコースを完了すると、Azure Table Storage と Azure Blob Storage を HoloLens 2 アプリケーション内に実装する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, HoloLens, HoloLens 2, Azure Storage, Azure クラウド サービス, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f13014757c4a3d6f9a6f3ffd53ef6aaf19334e2f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a948e035a467588091a2b5e16a3e2632ab3049d3
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679371"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008202"
 ---
 # <a name="2-integrating-azure-storage"></a>2.Azure Storage の統合
 

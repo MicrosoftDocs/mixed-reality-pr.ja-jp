@@ -1,5 +1,5 @@
 ---
-title: PC Holographic Remoting のチュートリアル - 2. Holographic Remoting PC アプリケーションを作成する
+title: Holographic Remoting PC アプリケーションを作成する
 description: このコースを完了すると、PC アプリケーションを作成して Mixed Reality エクスペリエンスを PC から HoloLens 2 にリモート処理する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, PC Holographic Remoting, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: 258fd80c812fca246190e98b3fa371b2f4c1b51f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: fd357b0b487b948afb6ae15c9e84362e2bc1ef90
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679241"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007332"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2.Holographic Remoting PC アプリケーションの作成
 

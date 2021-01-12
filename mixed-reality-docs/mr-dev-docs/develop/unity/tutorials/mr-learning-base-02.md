@@ -1,5 +1,5 @@
 ---
-title: MRTK のチュートリアル - 2. プロジェクトの初期化と最初のアプリケーションの配置
+title: プロジェクトの初期化と最初のアプリケーションの配置
 description: このコースでは、Mixed Reality Toolkit (MRTK) 用に Unity プロジェクトを構成する方法と、それを HoloLens 2 に配置する方法について説明します。
 author: jessemcculloch
 ms.author: v-vtieto
@@ -7,16 +7,14 @@ ms.date: 12/30/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: ebf81b9b1ae1abb5001b88e0f2b2929c45c22d7f
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 2ce119e1dd18eacf02088d00e99fb70d06bf956e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859531"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008222"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. プロジェクトの初期化と最初のアプリケーションの配置
-
-## <a name="overview"></a>概要
 
 このチュートリアルでは、新しい Unity プロジェクトを作成し、それを <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality ツールキット (MRTK)</a> 開発用に構成し、MRTK をインポートする方法について学習します。 また、Visual Studio で基本的な Unity シーンを構成およびビルドし、HoloLens 2 に配置する方法についても説明します。 HoloLens 2 に配置すると、HoloLens によって認識されたサーフェスに対応する空間マッピングのメッシュが表示されるはずです。 さらに、手の追跡用の手と指のインジケーターと、アプリのパフォーマンスを監視するためのフレームレート カウンターも表示されるはずです。
 

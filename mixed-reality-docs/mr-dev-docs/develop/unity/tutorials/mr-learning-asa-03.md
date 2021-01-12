@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors チュートリアル - 3. Azure Spatial Anchors の保存、取得、および共有
+title: Azure Spatial Anchors の保存、取得、および共有
 description: このコースを完了すると Mixed Reality アプリケーション内で Azure Spatial Anchors を保存、取得、共有する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, アプリ セッション
 ms.localizationpriority: high
-ms.openlocfilehash: c085aecef1ce32565d2f3bbbf1d5fdb2da91c217
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: abe0c8bc70469826e25f7016a3cc1ba971c1fcc1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679411"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008362"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3.Azure Spatial Anchors の保存、取得、および共有
 

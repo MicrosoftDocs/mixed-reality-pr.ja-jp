@@ -7,18 +7,16 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, カメラ, ARKit, HoloLens, 複合現実, MixedRealityToolkit, デモ, 記録
-ms.openlocfilehash: c344edea9b499bdff15d1d93e400b8be626a63b6
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 1f61d2094ec2762ab22576d2eac85ed6bf81d5c7
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530104"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008612"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>HoloLens および HoloLens 2 向けの Spectator View
 
 ![Marker](images/SpecViewPhoneHero.jpg)
-
-## <a name="overview"></a>概要
 
 HoloLens を装着していると、自分が見ている素晴らしい世界を、装着していない人は体験できないことを忘れがちです。 Spectator View を使用すれば、HoloLens ユーザーが見ているものを他のユーザーが 2D 画面で見ることができます。 これは、モバイル デバイスを使用してホログラムを HD に記録し、ビデオ カメラを使用してホログラムの高品質な記録を取得するための高速で手頃な方法でもあります。
 

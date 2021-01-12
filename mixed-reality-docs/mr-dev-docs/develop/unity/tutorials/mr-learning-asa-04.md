@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors チュートリアル - 4. Azure Spatial Anchors フィードバックの表示
+title: Azure Spatial Anchors フィードバックの表示
 description: このコースを完了すると、Mixed Reality アプリケーション内で Azure Spatial Anchors からのフィードバックを表示する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, セッション, フィードバック要素
 ms.localizationpriority: high
-ms.openlocfilehash: fe87e539060b57f505838b43e897e8b6d8336aaf
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 05e418b84f3370274433c4cc21f0122f3475301c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679391"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008332"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4.Azure Spatial Anchors からのフィードバックを表示する
 

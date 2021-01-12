@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors チュートリアル - 5. Android と iOS 用の Azure Spatial Anchors
+title: Android と iOS 用の Azure Spatial Anchors
 description: このコースを完了すると、Mixed Reality Toolkit (MRTK) と Azure Spatial Anchors を使用して Android および iOS に Unity プロジェクトをデプロイする方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, Android, iOS, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: bee84db206dbb4e95272799c16d6dbd4e394e807
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 545373ed169a77614b0a00264f5ba1bf1f3deb8e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679431"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008392"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5.Android と iOS 用の Azure Spatial Anchors
 

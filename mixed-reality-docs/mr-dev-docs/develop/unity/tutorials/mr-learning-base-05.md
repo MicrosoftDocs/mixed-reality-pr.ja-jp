@@ -1,5 +1,5 @@
 ---
-title: MRTK のチュートリアル - 5. ソルバーを使用した動的なコンテンツの作成
+title: ソルバーを使用した動的なコンテンツの作成
 description: このコースでは、Mixed Reality Toolkit (MRTK) のソルバーを使用して動的コンテンツを作成する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, ソルバー
 ms.localizationpriority: high
-ms.openlocfilehash: 533aa1c9f2b0b7620e23d611714552fb19a5357b
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 959ed164e566f5bee3db203437145fa08ce168d8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613506"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008022"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.ソルバーを使用した動的なコンテンツの作成
-
-## <a name="overview"></a>概要
 
 このチュートリアルでは、複雑な空間配置シナリオを解決するために、MRTK で使用できる "ソルバー" という配置ツールを使用して、ホログラムを動的に配置する方法について学習します。 MRTK では、ソルバーとは、シーン内に存在する自分、ユーザー、他のゲーム オブジェクトをオブジェクトが追跡できるようにするために使用される、スクリプトと動作のシステムです。 これらは、特定の場所にスナップして、アプリをさらに直感的にするために使用することもできます。
 

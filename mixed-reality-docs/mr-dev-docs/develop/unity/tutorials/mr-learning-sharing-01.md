@@ -1,5 +1,5 @@
 ---
-title: マルチユーザー機能のチュートリアル - 1。 マルチユーザー機能のチュートリアルの概要
+title: マルチユーザー機能のチュートリアルの概要
 description: このコースを完了すると、HoloLens 2 アプリケーション内で共有マルチユーザー エクスペリエンスを実装する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, マルチユーザー機能, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー
 ms.localizationpriority: high
-ms.openlocfilehash: 9bcaed777b8b98d95065324fc1fb5b33a1923e63
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 1000b4d2637e3a0f3bbc79df9866577427674767
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679741"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007222"
 ---
 # <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. マルチユーザー機能のチュートリアルの概要
-
-## <a name="overview"></a>概要
 
 マルチユーザー機能のチュートリアルへようこそ。 このチュートリアル シリーズでは、<a href="https://www.photonengine.com/PUN" target="_blank">Photon Unity Networking</a> (PUN) を使用したマルチユーザー エクスペリエンスの構築方法の基礎について学習します。 PUN は、Mixed Reality の開発者が共有エクスペリエンスを作成するために使用できるいくつかのネットワーク オプションの 1 つです。
 
@@ -49,7 +47,7 @@ ms.locfileid: "94679741"
 * HoloLens に加えて iOS にもデプロイする場合
   * <a href="https://geo.itunes.apple.com/us/app/xcode/id497799835?mt=12" target="_blank">Xcode</a> および <a href="https://cocoapods.org" target="_blank">CocoaPods</a> の最新バージョンがインストールされた macOS コンピューター
   * macOS コンピューターに USB 接続された、<a href="https://developer.apple.com/documentation/arkit/verifying_device_support_and_user_permission" target="_blank">ARKit 互換</a> iOS デバイス
-  * Unity 2019.3.15 がインストールされ、iOS ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
+  * 2019.3.15 がインストールされ、iOS ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 
 > [!CAUTION]
 > このチュートリアル シリーズで推奨されている Mixed Reality Toolkit のバージョンは MRTK 2.4.0 です。

@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud チュートリアル - 5. Azure Bot Service と LUIS との統合
+title: Azure Bot Service と LUIS との統合
 description: このコースを完了すると、HoloLens 2 アプリケーション内に Azure Bot Service と自然言語の理解を実装する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, Hololens 2, Azure Bot Service, LUIS, 自然言語, 会話ボット, Azure クラウド サービス, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: d9884fc135a38e610df9faceb8cf4b24c21f7982
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 70d136467bc677c028614429e6e197ce25b30327
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679361"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008252"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5.Azure Bot Service の統合
 

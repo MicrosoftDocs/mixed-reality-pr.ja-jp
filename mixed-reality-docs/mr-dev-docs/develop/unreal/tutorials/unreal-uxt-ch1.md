@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, チュートリアル, はじめに, mrtk, uxt, UX ツール, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 71a3edbc00c315ca68ac56985c54faee2492d74d
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 762247f550a3471bbbb6d1004283c6f901346503
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010530"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009792"
 ---
 # <a name="1-getting-started"></a>1.はじめに
 

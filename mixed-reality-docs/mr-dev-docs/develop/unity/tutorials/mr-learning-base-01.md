@@ -1,5 +1,5 @@
 ---
-title: MRTK のチュートリアル - 1. MRTK チュートリアルの概要
+title: MRTK チュートリアルの概要
 description: このコースでは、Mixed Reality ツールキット (MRTK) を使用して Mixed Reality アプリケーションを最初から作成する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, ソルバー, 視線追跡, 音声コマンド
 ms.localizationpriority: high
-ms.openlocfilehash: 25a19d24a027000c78d6bffe2c74eb9f9d91370c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 27a5f2cae4f08fbc142c8b872c22d23ab41cdc62
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613206"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008082"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1.MRTK チュートリアルの概要
-
-## <a name="overview"></a>概要
 
 入門チュートリアル シリーズへようこそ。 これらのチュートリアルでは、Mixed Reality Toolkit (MRTK) と、それらの一部の機能について説明します。 NASA の火星探査ローバーをモデルとするホログラムをユーザーが探ることができる、複合現実のエクスペリエンスも構築します。 このシリーズの終わりには、MRTK について、およびこれでどのようにご自分の開発プロセスをスピード化できるかについて深く理解できるようになります。
 

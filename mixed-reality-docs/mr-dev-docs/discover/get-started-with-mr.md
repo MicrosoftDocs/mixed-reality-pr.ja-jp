@@ -1,24 +1,24 @@
 ---
 title: Mixed Reality の概要
-description: Mixed Reality を初めて使用するユーザーにその概要と機能について説明します。
+description: Mixed Reality の理論、開発、一般的なユース ケースの基本について説明します。
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 検出, 配布, インデックス, ランディング ページ, 設計, 開発, チュートリアル, サンプル アプリ, 基本事項, ケース スタディ, リソース, HoloLens の使い方, オープン ソース プロジェクト, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: ef39848fea512df9fa61ca4d538354e11fb8e042
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: f50457fedb0223317e522c4d86bd56cc02657c77
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926058"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757670"
 ---
 # <a name="get-started-with-mixed-reality"></a>Mixed Reality の概要
 
 ![仮想ハチドリと人の手](images/01_MixedReality.png)
 
-Mixed Reality エコシステムは、物理とデジタルの相互作用の新しい世界であり、人の想像力以外にそれを制限するものはありません。 経験豊富な開発者でも、新しく転向した場合でも、以下のリンクで示されているリソースで Mixed Reality の旅を始めることをお勧めします。 新しく知らなければならないことがたくさんあるので、さっそく始めましょう。 
+Mixed Reality エコシステムは、物理とデジタルの相互作用の新しい世界であり、人の想像力以外にそれを制限するものはありません。 経験豊富な開発者でも、新しく転向した場合でも、以下に詳述するリソースで Mixed Reality の体験を始めることをお勧めします。 新しく知らなければならないことがたくさんあるので、さっそく始めましょう。 
 
 ## <a name="choose-your-track"></a>トラックを選択する
 
@@ -48,18 +48,18 @@ Mixed Reality で調べたい分野が既にわかっている場合は、次の
 
 ## <a name="understand-the-basics"></a>基本を理解する
 
-Mixed Reality を初めて使用する場合は、最下層から初めて、中核概念、エクスペリエンス、機能へと上に向かって理解していくことが重要です。 Mixed Reality で独自のアイデアを設計および開発するための確かな基盤を設けるのに役立つよう、一連の順序がある程度作成されています。
+Mixed Reality を初めて使用する場合は、その基本を理解することから始めて、中核概念、エクスペリエンス、機能の理解と積み重ねていくことが重要です。 Mixed Reality で独自のアイデアを設計および開発するための確かな基盤を設けるのに役立つよう、一連の順序がある程度作成されています。
 
 ### <a name="what-is-mixed-reality"></a>Mixed Reality とは
 
 ![Mixed Reality でできること](images/HLS19_remoteAssistHologram_001.jpg)
 
-アプリケーションの設計または開発を始める前に、Mixed Reality がどのような意味で使用されているのかを理解する必要があります。 このセクションは、環境入力の範囲、知覚上の変化、設計上の課題、付属するデバイスなど、Mixed Reality の範囲を理解できるように設計されています。 
+アプリケーションの設計または開発を始める前に、Mixed Reality がどのような意味で使用されているのかを理解する必要があります。 このセクションは、環境入力、知覚上の変化、設計上の課題、デバイスなど、Mixed Reality の範囲を理解できるように設計されています。 
 
 |  概念  |  結果  |
 | --- | --- |
 | [さまざまな Mixed Reality がある](../discover/mixed-reality.md) | Mixed Reality は物理とデジタルを融合するものであり、人間、コンピューター、環境の次世代の相互作用を実現します |
-| [ホログラムとは](../discover/hologram.md) | HoloLens を使用すると、ホログラムつまり自分の周囲に表示される光と音で構成されたオブジェクトを、実際のオブジェクトであるかのように作成できます。 ホログラムは、視線入力、ジェスチャ、音声コマンドに応答し、周囲の現実世界のサーフェスと対話できます |
+| [ホログラムとは](../discover/hologram.md) | HoloLens を使用すると、ホログラムを作成できます。ホログラムは、光と音で構成されたオブジェクトで、ユーザーの周囲に実際のオブジェクトのように表示されます。 ホログラムは、視線入力、ジェスチャ、音声コマンドに応答し、周囲の現実世界のサーフェスと対話できます |
 | [Mixed Reality の学習の概要](mr-learning-overview.md#general-modules) | Microsoft Learn を使用して厳選された Mixed Reality モジュールを試す |
 | [デザイン プロセスを展開する](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | イマーシブ エクスペリエンスを作成するときに空間的思考、ボディストーミング、行動により設計上の考え方を拡張します  |
 
@@ -68,6 +68,42 @@ Mixed Reality を初めて使用する場合は、最下層から初めて、中
 ---
 
 ## <a name="see-how-industry-partners-are-using-mixed-reality"></a>業界のパートナーが Mixed Reality をどのように使用しているかを確認する
+
+:::row:::
+    :::column:::
+       [![Mercedes 自動車会社での HoloLens](images/mercedes.png)](https://customers.microsoft.com/story/839709-mercedes-benz-automotive-holoLens-en-usa)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="mercedes-benz-is-transforming-the-service-workforce-with-hololens-2-and-dynamics-365-remote-assist"></a>[Mercedes-Benz 社で進む、HoloLens 2 および Dynamics 365 Remote Assist を使用したサービス従業員の変革](https://customers.microsoft.com/story/839709-mercedes-benz-automotive-holoLens-en-usa)
+        Mercedes-Benz USA 社は、HoloLens 2 と Dynamics 365 Remote Assist を使用して、サービス技術者の効率向上、問題解決の時間短縮、サービス関連の移動に要するコストと環境への影響の削減を実現しています。
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+       [![BHP エネルギー会社での Dynamics 365 HoloLens](images/bhp.png)](https://customers.microsoft.com/story/850776-bhp-energy-dynamics-365-hololens)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="bhp-increases-the-pace-of-innovation-despite-lockdown-with-mixed-reality-and-iot"></a>[BHP 社は、Mixed Reality と IoT により、ロックダウン中でもイノベーションのペースを向上](https://customers.microsoft.com/story/850776-bhp-energy-dynamics-365-hololens)
+        BHP 社は、COVID-19 による影響や数々の制限にもかかわらず、HoloLens 2 と Dynamics 365 Remote Assist を使用することにより、数千マイル離れた現場の従業員にサポートとトレーニングを提供しています。
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+       [![MediView 社での HoloLens ストーリー](images/mediview.jpeg)](https://customers.microsoft.com/story/848966-mediview-mcs-story)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="healthcare-startup-cuts-time-to-market-by-up-to-70-despite-pandemic"></a>[医療分野のスタートアップ企業が、パンデミックにもかかわらず市場投入までの時間を最大 70% 削減](https://customers.microsoft.com/story/848966-mediview-mcs-story)
+        医療分野のスタートアップ企業である MediView 社は、3D ホログラムを使用した優れた製品を開発しました。この製品は、3D ホログラムが患者の解剖画像上に直接投影するか、その上にホバリング表示して、外科医が患者の体内の解剖画像を確認できるようにするとともに、手術中の外科医へのガイドも提供します。
+    :::column-end:::
+:::row-end:::
+
+---
 
 :::row:::
     :::column:::
@@ -98,8 +134,8 @@ Mixed Reality を初めて使用する場合は、最下層から初めて、中
        [![Philips-Azurion](images/Philips-Azurion1.jpg)](https://binged.it/31B1RiR)
     :::column-end:::
     :::column span="2":::
-        ### <a name="philips-is-piloting-hololens-in-the-domain-of-image-guided-minimally-invasive-procedures"></a>[Philips は画像誘導低侵襲的処置の分野で HoloLens をいち早く導入しています](https://binged.it/31B1RiR)
-        Philips は画像誘導低侵襲的処置の分野で HoloLens をいち早く導入しています。医師はライブ X 線、超音波、その他の情報源を利用して、患者の体内を "見る" ことにより、処置に役立てています。
+        ### <a name="philips-is-piloting-hololens-in-the-domain-of-image-guided-invasive-procedures"></a>[Philips 社は、画像誘導型の侵襲的処置の分野で HoloLens をいち早く導入](https://binged.it/31B1RiR)
+        Philips は画像誘導型の侵襲的処置の分野で HoloLens をいち早く導入しています。医師はライブ X 線、超音波、その他の情報源を利用して、患者の体内を "見る" ことにより、処置に役立てています。
     :::column-end:::
 :::row-end:::
 
@@ -111,13 +147,13 @@ Mixed Reality を初めて使用する場合は、最下層から初めて、中
 
 ![HoloLens の分解図](images/HoloLens2_ExplodedView_8k.png)
 
-さまざまな Mixed Reality ハードウェアとサービスがどのように動作するかを知りたい場合は、以下のリンクを確認してください。 これらのリンクからは Microsoft のドキュメントのさまざまな部分に移動しますが、設計と開発の旅を続けられるよう、ここにブックマークを設定して戻ってくることをお勧めします。
+さまざまな Mixed Reality ハードウェアとサービスがどのように動作するかを知りたい場合は、以下のリンクを確認してください。 これらのリンクをクリックすると、Microsoft ドキュメントのさまざまな部分に移動します。 設計と開発の体験を続けるために、このページをブックマークして、このページに戻ることをお勧めします。
 
 |  概念  |  結果  |
 | --- | --- |
 | [HoloLens ハードウェア](https://www.microsoft.com//hololens/hardware) | HoloLens 2 は、数分で価値を提供できる業界最先端のソリューションにより、最も快適でイマーシブな複合現実エクスペリエンスを提供します。これらはすべて、Microsoft のクラウドおよび AI サービスの信頼性、セキュリティ、および拡張性によって強化されています |
-| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | [リモート アシスト](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview)、[レイアウト](https://docs.microsoft.com/dynamics365/mixed-reality/layout/)、[ガイド](https://docs.microsoft.com/dynamics365/mixed-reality/guides/)など、従業員を支援し、Dynamics 365 での操作を最適化できる、さまざまな製品を調べます。 実際の仕事、実際のデバイス、実際のユーザーの実体験から、実践的な分析情報が得られます |
-| [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | 空間認識、空間アンカー、複雑な 3D モデル レンダリングを追加することにより、さまざまなプラットフォームで魅力的なイマーシブ エクスペリエンスを構築します |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview)、Layout、[Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/) など、従業員を支援し、Dynamics 365 での操作を最適化できる、さまざまな製品を紹介します 実際の仕事、実際のデバイス、実際のユーザーの実体験から、実践的な分析情報が得られます |
+| [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | 空間認識、空間アンカー、複雑な 3D モデル レンダリングを使用して、異なるプラットフォームで魅力的なイマーシブ エクスペリエンスを構築します |
 
 ## <a name="what-would-you-like-to-do-next"></a>次に行うこと
 

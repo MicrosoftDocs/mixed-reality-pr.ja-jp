@@ -3,26 +3,26 @@ title: Unity でサポートされている OpenXR プラグインの機能
 description: Unity での mixed reality 開発に OpenXR がサポートする機能について説明します。
 author: hferrone
 ms.author: alexturn
-ms.date: 12/15/2020
+ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 拡張現実, 仮想現実, mixed reality ヘッドセット, 学習, チュートリアル, 概要
-ms.openlocfilehash: 94ec7ae6c89dea8f953fea6f4c794ca51e044d87
-ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
+ms.openlocfilehash: d65bab65bcb06f7ccba522461e04062458e7400c
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97880586"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108845"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Unity でサポートされている Mixed Reality OpenXR の機能
 
-**Mixed Reality OpenXR プラグイン** パッケージは Unity の **OpenXR プラグイン** の拡張機能であり、HoloLens 2 および Windows Mixed Reality ヘッドセットの一連の機能をサポートしています。 続行する前に、 **unity 2020.2** 以降、 **OpenXR プラグインバージョン 0.1.1** 以降がインストールされていること、および unity プロジェクトが [OpenXR 用に構成](openxr-getting-started.md)されていることを確認してください。
+**Mixed Reality OpenXR プラグイン** パッケージは Unity の **OpenXR プラグイン** の拡張機能であり、HoloLens 2 および Windows Mixed Reality ヘッドセットの一連の機能をサポートしています。 続行する前に、 **unity 2020.2** 以降、 **OpenXR プラグインバージョン 0.1.2** 以降がインストールされていること、および unity プロジェクトが [OpenXR 用に構成](openxr-getting-started.md)されていることを確認してください。
 
 ## <a name="whats-supported"></a>サポートされる操作
 
 現在、次の機能がサポートされています。
 
-* Windows Mixed Reality ヘッドセット用の HoloLens 2 および Win32 VR アプリケーションの両方の UWP アプリケーションをサポートします。
-* HoloLens 2 アプリケーションの UWP パッケージと CoreWindow の相互作用を最適化します。
+* HoloLens 2 の UWP アプリケーションと HoloLens 2 アプリケーションモデルの最適化をサポートしています。
+* は、最新のコントローラープロファイルと holographic app remoting を使用した Windows Mixed Reality ヘッドセット用の Win32 VR アプリケーションをサポートしています。
 * アンカーと無制限のスペースを使用したワールドスケールの追跡。
 * [ストレージ API を固定](#anchors-and-anchor-persistence) して、HoloLens 2 ローカルストレージにアンカーを保持します。
 * 新しい HP リバーブ G2 コントローラーを含む、[モーションコントローラーと手作業のやり取り](#motion-controller-and-hand-interactions)。
@@ -31,7 +31,7 @@ ms.locfileid: "97880586"
 * HoloLens 2 で写真/ビデオ (PV) カメラを検索しています。
 * PV カメラを使用した第3目のレンダリングを使用した Mixed Reality キャプチャ。
 * [Holographic リモート処理アプリでの HoloLens 2 への "Play" を](#holographic-remoting-in-unity-editor-play-mode)サポートします。これにより、開発者は、デバイスにビルドしてデプロイすることなく、スクリプトをデバッグできます。
-* MRTK Unity 2.5.2 以降の MRTK OpenXR プロバイダーのサポートと互換性があります。 作業を開始するに[は、MRTK のドキュメントを参照して](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html)ください。
+* MRTK Unity 2.5.3 以降の [Mrtk OpenXR プロバイダーのサポート](openxr-getting-started.md#using-mrtk-with-openxr-support)と互換性があります。
 * Unity [Arfoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 以降との互換性
 
 ## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Unity エディター再生モードでの Holographic リモート処理

@@ -7,12 +7,12 @@ ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, パフォーマンス, 最適化, 設定, ドキュメント
-ms.openlocfilehash: 295f5c3653d02e9ab7ab4cd51dba57cafb5b291f
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: a369a68f8ebf9b7084c22f0efa3bbf0bf5ecbebf
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609623"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865427"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Unreal のパフォーマンスに関する推奨事項
 
@@ -37,7 +37,7 @@ Unreal Engine が備える、アプリのパフォーマンス向上につなが
 
 ![VR レンダリング設定](images/unreal/performance-recommendations-img-03.png)
 
-4. OpenXR を使用する場合は、**既定** または **D3D12** が選択された **既定の RHI** であることを確認してください。
+4. **[OpenXR only]\(OpenXR のみ\)** **[Default RHI]\(既定の RHI\)** で **[Default]\(既定\)** または **[D3D12]** が選択されていることを確認してください。
     * **D3D11** を選択すると、プラットフォームで追加のレンダー パスが実行されるため、パフォーマンスが低下します。 **D3D12** では、追加のレンダー パスが回避され、レンダリング パフォーマンスが向上します。
 
 ![既定の RHI](images/unreal/performance-recommendations-img-09.png)

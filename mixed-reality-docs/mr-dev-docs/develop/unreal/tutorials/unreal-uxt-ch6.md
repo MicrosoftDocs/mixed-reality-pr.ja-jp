@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, チュートリアル, 入門, mrtk, uxt, UX ツール, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 83d8068ca8ce73f23edb85cf9044db5409105380
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010549"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865397"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6.デバイスまたはエミュレーターへのパッケージ化とデプロイ
 
@@ -30,6 +30,9 @@ ms.locfileid: "97010549"
 チェス アプリでこのルートを使用する場合は、次のことを行う必要があります。
 
 1.  Microsoft Store から **Holographic Remoting Player** を HoloLens 2 にインストールし、アプリを実行します。 アプリに表示される IP アドレスをメモします。
+    * **[Edit]\(編集\) > [Project Settings]\(プロジェクトの設定\)** の順に移動し、Windows の **[Default RHI]\(既定の RHI\)** が **[Default]\(既定\)** または **[D3D11]** に設定されていることを確認します。
+
+![既定の RHI](../images/unreal/performance-recommendations-img-09.png)
 
 2.  Unreal エディターに戻り、 **[編集]、[プロジェクトの設定]** の順に移動し、 **[Holographic Remoting]** セクションで **[リモート処理を有効にする]** をオンにします。
 

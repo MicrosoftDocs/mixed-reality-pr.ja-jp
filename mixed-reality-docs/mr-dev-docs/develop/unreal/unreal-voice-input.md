@@ -6,18 +6,20 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality、Unreal、Unreal Engine 4、UE4、HoloLens 2、音声、音声入力、音声認識、mixed reality、開発、機能、ドキュメント、ガイド、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed Reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: c7ac523258dc44aa261470aea8cdf21f32c915b2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 466b41c522e95f9fe3d618ad221dde8ccd925634
+ms.sourcegitcommit: a688bf0f1b796e4860f8252e852be79053937088
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010072"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205837"
 ---
 # <a name="voice-input-in-unreal"></a>Unreal での音声入力
 
 Unreal の音声入力を使用すると、ハンドジェスチャを使用しなくても、または HoloLens 2 のみがサポートされるようになります。 HoloLens 2 での音声入力は、他のすべてのユニバーサル Windows アプリで音声をサポートするのと同じエンジンによって機能しますが、より限定的なエンジンを使用して音声入力を処理します。 これにより、次のセクションで説明するように、Unreal の音声入力機能が定義済みの音声マッピングに限定されます。 
 
 ## <a name="enabling-speech-recognition"></a>音声認識を有効にする
+
+Windows Mixed Reality プラグインを使用する場合、音声入力では、特別な Windows Mixed Reality Api は必要ありません。これは、既存の Unreal Engine 4 [入力](https://docs.unrealengine.com/Gameplay/Input/index.html) マッピング API を基に構築されています。 OpenXR を使用する場合は、 [Microsoft OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal)を追加でインストールする必要があります。 
 
 HoloLens で音声認識を有効にするには:
 1. [プロジェクトの設定] を選択して **> プラットフォーム > HoloLens > 機能** を選択し、 **マイク** を有効にします。 
@@ -29,8 +31,6 @@ HoloLens で音声認識を有効にするには:
 ![Windows 音声認識の設定](images/unreal/speech-recognition-settings.png)
 
 3. アプリケーションが最初にマイクを有効にするかどうかを確認すると、ダイアログが表示されます。 **[はい]** を選択すると、アプリで音声入力が開始されます。
-
-音声入力には、特別な Windows Mixed Reality Api は必要ありません。これは、既存の Unreal Engine 4 [入力](https://docs.unrealengine.com/Gameplay/Input/index.html) マッピング API を基に構築されています。 
 
 ## <a name="adding-speech-mappings"></a>音声マッピングの追加
 

@@ -1,19 +1,19 @@
 ---
 layout: LandingPage
 title: チュートリアル
-description: Mixed Reality 開発に関するチュートリアルを提供します。
+description: HoloLens と Azure サービスに関して提供されている Mixed Realit 開発チュートリアルの最新情報について説明します。
 author: keveleigh
 ms.author: kurtie
 ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: MixedRealityToolkit, MixedRealityToolkit-Unity, アカデミー, チュートリアル, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, Unity, Unreal, HoloLens, Azure Spatial Anchors, Azure Speech Services
-ms.openlocfilehash: a85792ba082450fb01f3c6f7bb008d3c7b17560b
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 76c8cdcddd9617df8e823b4967593c37fa1e6bb9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010463"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006522"
 ---
 # <a name="tutorials"></a>チュートリアル
 

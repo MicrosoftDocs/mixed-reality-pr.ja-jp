@@ -1,18 +1,18 @@
 ---
 title: Windows デバイス ポータルを使用する
-description: HoloLens 用の Windows デバイス ポータルでは、Wi-Fi または USB 経由でリモートからデバイスを構成および管理できます。 デバイス ポータルは、お使いの PC に Web ブラウザーから接続することができる HoloLens 上の Web サーバーです。 デバイス ポータルには、HoloLens を管理し、アプリをデバッグおよび最適化するのに役立つ多くのツールが用意されています。
+description: Windows デバイス ポータルを使用して Wi-Fi または USB 経由でデバイスをリモート環境から構成および管理する方法について説明します。
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows デバイス ポータル, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 168d4175a7e55d5116f19c51a802c9a8abdc1e19
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 75eda2775486b1ace82b574816db34a2f895c80b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530317"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007792"
 ---
 # <a name="using-the-windows-device-portal"></a>Windows デバイス ポータルを使用する
 
@@ -32,7 +32,7 @@ HoloLens 用の Windows デバイス ポータルでは、Wi-Fi または USB �
 
 1. HoloLens の電源を入れ、デバイスを装着します。
 2. HoloLens 2 の[スタート ジェスチャ](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture)または HoloLens (第 1 世代) の[ブルーム](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom)を使用して、メイン メニューを起動します。 
-3. HoloLens (第 1 世代) 上では、 **[Settings]\(設定\)** タイルを見つめて[エアタップ](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) ジェスチャを実行します。 HoloLens 2 上では、[タッチするかハンド レイを使用](https://docs.microsoft.com/hololens/hololens2-basic-usage)してそれを選択することもできます。 
+3. HoloLens (第 1 世代) 上では、 **[Settings]\(設定\)** タイルを見つめて [エアタップ](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) ジェスチャを実行します。 HoloLens 2 上では、[タッチするかハンド レイを使用](https://docs.microsoft.com/hololens/hololens2-basic-usage)してそれを選択することもできます。 
 4. **[Update]** (更新) メニュー項目を選択します。
 5. **[For developers]** (開発者向け) メニュー項目を選択します。
 6. **[Developer Mode]** (開発者モード) を有効にします。

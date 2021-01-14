@@ -1,22 +1,20 @@
 ---
-title: MRTK のチュートリアル - 8. 視線追跡の使用
-description: このコースでは、視線追跡を Mixed Reality Toolkit (MRTK) とともに使する方法について説明します。
+title: 視線追跡の使用
+description: このコースでは、Mixed Reality Toolkit (MRTK) を使用して Mixed Reality アプリで視線追跡を使用する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, 視線追跡
 ms.localizationpriority: high
-ms.openlocfilehash: 538204513589b96bedb8b20c46eee5735b764a4c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: f464ba4e08f1446f1d50eda577aedf9d070630ee
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613486"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007892"
 ---
 # <a name="8-using-eye-tracking"></a>8.視線追跡の使用
-
-## <a name="overview"></a>概要
 
 このチュートリアルでは、HoloLens 2 の視線追跡を有効にし、視線追跡をオブジェクトに追加して、ユーザーがオブジェクトを見たときにアクションをトリガーする方法について説明します。
 
@@ -35,7 +33,7 @@ ms.locfileid: "97613486"
 ![[MRTK Project Configurator]\(MRTK プロジェクト コンフィギュレーター\) ウィンドウが表示された Unity](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> 視線入力機能は、このチュートリアル シリーズの冒頭で Unity プロジェクトを構成したときに、[MRTK Project Configurator 設定を適用する](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings)手順で有効にする必要がありました。 しかし、有効にしていない場合は、ここで必ず有効にしてください。
+> 視線入力機能は、このチュートリアル シリーズの冒頭で Unity プロジェクトを構成したときに、[MRTK Project Configurator 設定を適用する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)手順で有効にする必要がありました。 しかし、有効にしていない場合は、ここで必ず有効にしてください。
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Gaze Provider で目の動きに基づく視線入力を有効にする
 

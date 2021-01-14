@@ -1,18 +1,18 @@
 ---
 title: 目の視線入力とドウェル
-description: 目の視線入力とドウェル入力モデルの概要
+description: 操作モデル、設計ガイドライン、固有の課題など、目の視線入力とドウェル入力モデルの概要について説明します。
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 視線追跡, Mixed Reality, 入力, 目の視線入力, 目のターゲット設定, HoloLens 2, 視線に基づく選択, ドウェル, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, MRTK, Mixed Reality Toolkit, 設計
-ms.openlocfilehash: bf9ad97790093a08156660bfd6e33d16c06e6387
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 78f8dcec3c8368128ec5904df36ce1391aa8b879
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847809"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007712"
 ---
 # <a name="eye-gaze-and-dwell"></a>目の視線入力とドウェル
 
@@ -43,6 +43,7 @@ _"目の視線入力とドウェル"_ 操作モデルは、[目の視線入力�
 ![ドウェルの状態](images/eyes_dwellstate_recommendation.png)<br>
 
 ## <a name="see-also"></a>関連項目
+
 * [視線追跡](eye-tracking.md)
 * [目の視線入力とコミット](gaze-and-commit-eyes.md)
 * [視線入力とコミット](gaze-and-commit.md)

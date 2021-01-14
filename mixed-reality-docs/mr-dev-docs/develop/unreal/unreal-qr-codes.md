@@ -1,18 +1,18 @@
 ---
 title: Unreal での QR コード
-description: Unreal で QR コードを使用するためのガイド
+description: Unreal Mixed Reality アプリケーションで QR コードを設定、使用、追跡する方法について説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, QR コード, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 72f08c22b8dcab5e13de2baae817b3496ada1a60
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 1daa368ee9f98accec58c6621073bd7caefdfdcb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926078"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010012"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal での QR コード
 
@@ -28,6 +28,7 @@ QR コードがアプリに配置されている場合、[環境への配慮](..
 > QR コードは、HoloLens で何も設定せずに追跡できる唯一の画像の種類です。Unreal の **UARTrackedImage** モジュールは、HoloLens ではサポートされていません。 カスタム画像を追跡する必要がある場合は、デバイスの [Web カメラ](unreal-hololens-camera.md)にアクセスし、サードパーティ製の画像認識ライブラリを使用して画像を処理することができます。 
 
 ## <a name="enabling-qr-detection"></a>QR 検出の有効化
+
 HoloLens 2 で QR コードを表示するには Web カメラを使用する必要があるため、プロジェクトの設定で有効にする必要があります。
 - **[Edit]\(編集\) > [Project Settings]\(プロジェクトの設定\)** を開き、 **[Platforms]\(プラットフォーム\)** セクションまでスクロールして、 **[HoloLens]** を選択します。
     + **[機能]** セクションを展開し、 **[Web カメラ]** をオンにします。  
@@ -52,6 +53,7 @@ QR コードは、追跡対象のイメージとして、Unreal の AR で追跡
 ![[On Add Tracked Geometry] にノードを追加する](images/unreal-qr-codes-tracked-geometry.png)
 
 ## <a name="using-a-tracked-qr-code"></a>追跡対象の QR コードの使用
+
 次の画像のイベント グラフは、QR コードの中心にポイントをレンダリングし、そのデータを出力するために使用される **OnUpdateTrackedImage** イベントを示しています。
 
 [!INCLUDE[](includes/tabs-qr-codes-2.md)]
@@ -63,6 +65,7 @@ QR コードは、追跡対象のイメージとして、Unreal の AR で追跡
 また、コードで [QR コードの座標系を取得する](https://docs.microsoft.com/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code)こともできます。
 
 ## <a name="finding-the-unique-id"></a>一意の ID の検索
+
 すべての QR コードには、一意の GUID ID があります。これは、次の方法で見つけることができます。
 - **As ARTracked QRCode** ピンをドラッグ アンド ドロップして、**Get Unique ID** を検索します。
 

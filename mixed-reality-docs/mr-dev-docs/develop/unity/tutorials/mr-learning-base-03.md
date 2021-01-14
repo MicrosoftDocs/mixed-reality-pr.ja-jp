@@ -1,22 +1,20 @@
 ---
-title: MRTK のチュートリアル - 3. MRTK プロファイルの構成
-description: このコースでは、Mixed Reality Toolkit (MRTK) プロファイルを構成する方法について説明します。
+title: MRTK プロファイルの構成
+description: このコースでは、Mixed Reality アプリ用に Mixed Reality Toolkit (MRTK) プロファイルを構成する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, 空間認識
 ms.localizationpriority: high
-ms.openlocfilehash: 48bb6aa8705c9d874e6af8867d1edbe2385cb853
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 58f9c5f756a12e99fd10b136b2a450c6227b2dad
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613246"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008012"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3.MRTK プロファイルの構成
-
-## <a name="overview"></a>概要
 
 このチュートリアルでは、MRTK プロファイルをカスタマイズして構成する方法について学習します。
 

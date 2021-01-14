@@ -1,24 +1,24 @@
 ---
 title: 手を使ったポイントとコミット
-description: ポイントとコミットの入力モデルの概要
+description: Mixed Reality アプリケーションでジェスチャをサポートするためのポイントとコミット入力モデルの基本について説明します。
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 対話, 設計, HoloLens, 手, 遠隔, ポイントとコミット, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, 手の光線, オブジェクト操作, MRTK, Mixed Reality Toolkit, DoF
-ms.openlocfilehash: 13b692dada134f856ac6eed446cca45702030f67
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 4ee1fabac763a22006b956e46a908ff4d11e395f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848294"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009742"
 ---
 # <a name="point-and-commit-with-hands"></a>手を使ったポイントとコミット
 
 ![カーソル](images/UX_Hero_HandRay.jpg)
 
-手を使ったポイントとコミットは、ユーザーが手の届かない所にある 2D や 3D のコンテンツをターゲットに設定したり、選択したり、操作したりできる入力モデルです。 この "遠隔" 対話技術は、人間が現実の世界と自然に対話するものではないため、Mixed Reality に固有です。 たとえば、スーパー ヒーロー映画 *X-Men* のキャラクター [Magneto ](https://en.wikipedia.org/wiki/Magneto_(comics)) は、遠くにある物体を自分の手で操作することができます。 こうしたことは現実世界では行えません。 HoloLens (AR) と Mixed Reality (MR) の両方で、この魔法の力をユーザーに付与して現実世界の物理的制約を打ち破ります。 ホログラフィック エクスペリエンスを楽しむだけでなく、ユーザーの対話をより効果的かつ効率的にします。
+手を使ったポイントとコミットは、ユーザーが手の届かない所にある 2D や 3D のコンテンツをターゲットに設定したり、選択したり、操作したりできる入力モデルです。 この "遠隔" 対話技術は、人間が現実の世界と自然に対話するものではないため、Mixed Reality に固有です。 たとえば、スーパー ヒーロー映画 *X-Men* のキャラクター [Magneto](https://en.wikipedia.org/wiki/Magneto_(comics)) は、遠くにある物体を自分の手で操作することができます。 こうしたことは現実世界では行えません。 HoloLens (AR) と Mixed Reality (MR) の両方で、この魔法の力をユーザーに付与して現実世界の物理的制約を打ち破ります。 ホログラフィック エクスペリエンスを楽しむだけでなく、ユーザーの対話をより効果的かつ効率的にします。
 
 ## <a name="device-support"></a>デバイス サポート
 

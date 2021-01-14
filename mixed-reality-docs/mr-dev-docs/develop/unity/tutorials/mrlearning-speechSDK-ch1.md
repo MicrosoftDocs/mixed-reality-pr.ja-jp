@@ -1,23 +1,20 @@
 ---
-title: Azure Speech Services のチュートリアル - 1. 音声認識と文字起こしの統合と使用
-description: このコースを完了すると、Mixed Reality アプリケーション内で Azure Speech SDK を実装する方法を学習できます。
+title: 音声認識と文字起こしの統合と使用
+description: このコースを完了すると、Mixed Reality アプリケーションで Azure の音声認識と文字起こしを追加して使用する方法がわかります。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, 音声認識, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: ec158de1aa8b8e6401802b68098eb7acd883d7e6
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f0c26c861cb3400c552d17d45f77cfe3a5cc284c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679281"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010122"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1.音声認識と文字起こしの統合と使用
-
-## <a name="overview"></a>概要
-
 
 このチュートリアル シリーズでは、HoloLens 2 での Azure Speech Services の使用を探索する Mixed Reality アプリケーションを作成します。 このチュートリアル シリーズを完了すると、デバイスのマイクを使用して、リアルタイムで音声を文字に起こしたり、音声を他の言語に翻訳したり、意図認識機能を利用して、人工知能を使って音声コマンドを理解したりできるようになります。
 
@@ -42,15 +39,15 @@ ms.locfileid: "94679281"
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Unity プロジェクトの作成と準備
 
-このセクションでは、新しい Unity プロジェクトを作成し、MRTK 開発用に準備をします。
+このセクションでは、新しい Unity プロジェクトを作成し、MRTK 開発用に準備します。
 
-このためには、まず「[プロジェクトと最初のアプリケーションの初期化](mr-learning-base-02.md)」に従ってください (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-your-application-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
+このためには、まず「[プロジェクトと最初のアプリケーションの初期化](mr-learning-base-02.md)」に従ってください (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
 
 1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、"*MRTK チュートリアル*" などの適切な名前を付ける
-2. [ビルド プラットフォームを切り替える](mr-learning-base-02.md#configuring-the-unity-project)
+2. [ビルド プラットフォームを切り替える](mr-learning-base-02.md#switching-the-build-platform)
 3. [TextMeshPro の重要なリソースをインポートする](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)
+5. [Unity プロジェクトを構成する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
 6. [シーンを作成して構成](mr-learning-base-02.md#creating-and-configuring-the-scene)し、シーンに *AzureSpeechServices* などの適切な名前を付ける
 
 その後、「[空間認識表示オプションの変更](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)」の手順に従って、シーンの MRTK 構成プロファイルを **[DefaultHoloLens2ConfigurationProfile]** に変更し、空間認識メッシュの表示オプションを **[Occlusion]\(オクルージョン\)** に変更します。

@@ -1,14 +1,17 @@
 ---
-ms.openlocfilehash: eb51caa4caf0d425b5e49c3abca2a523b08fc312
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: ad7d530de61864528ae80e4d0086687d282e6b18
+ms.sourcegitcommit: 8f9f98342aaf66645fd74dac3fad499f9d799ce7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97718117"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98109263"
 ---
 # <a name="426"></a>[4.26](#tab/426) 
 
 ## <a name="pv-camera-feed-setup"></a>PV カメラのフィードの設定
+
+> [!IMPORTANT]
+> PV カメラは、Windows Mixed Reality と OpenXR 両方のプラグインに実装されています。 ただし、OpenXR を使用するには [Microsoft OpenXR プラグイン](https://github.com/microsoft/Microsoft-OpenXR-Unreal)をインストールする必要があります。 また、現在 OpenXR には制限があり、カメラは DirectX11 RHI で動作できます。 この制限は、Unreal の将来のバージョンで修正される予定です。 
 
 - **[プロジェクト設定] > [HoloLens]** で、 **[Web カメラ]** 機能を有効にします。
 

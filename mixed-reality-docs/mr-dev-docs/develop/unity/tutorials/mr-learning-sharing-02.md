@@ -1,22 +1,20 @@
 ---
-title: マルチユーザー機能のチュートリアル - 2. Photon Unity Networking の設定
-description: このコースを完了すると、HoloLens 2 アプリケーション内で Photon Unity Network を実装する方法を学習できます。
+title: Photon Unity Networking の設定
+description: このコースを完了すると、HoloLens 2 Mixed Reality アプリケーションで Photon Unity Network を実装する方法がわかります。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, マルチユーザー機能, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 062c39ab6973c7c71e305cfc7a695fb250c76596
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8bf8d440cb47d817514e34c98ac45f34f495c2bb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679261"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007302"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2.Photon Unity Networking の設定
-
-## <a name="overview"></a>概要
 
 このチュートリアルでは、Photon Unity Networking (PUN) を使用して共有エクスペリエンスの作成準備をします。 PUN アプリの作成方法、PUN アセットを Unity プロジェクトにインポートする方法、Unity プロジェクトを PUN アプリに接続する方法について説明します。
 
@@ -30,14 +28,14 @@ ms.locfileid: "94679261"
 
 このセクションでは、新しい Unity プロジェクトを作成し、MRTK 開発用に準備します。
 
-このためには、まず「[プロジェクトの初期化と最初のアプリケーションの配置](mr-learning-base-02.md)」に従ってください ([デバイスにアプリケーションをビルドする](mr-learning-base-02.md#building-your-application-to-your-hololens-2)手順は除きます)。これには、次の手順が含まれます。
+最初に、「[プロジェクトの初期化と最初のアプリケーションの配置](mr-learning-base-02.md)」に従います (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
 
 1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、"*MRTK チュートリアル*" などの適切な名前を付ける
-1. [ビルド プラットフォームを切り替える](mr-learning-base-02.md#configuring-the-unity-project)
-1. [TextMeshPro の重要なリソースをインポートする](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-1. [Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-1. [Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)
-1. [シーンを作成して構成](mr-learning-base-02.md#creating-and-configuring-the-scene)し、シーンに *MultiUserCapabilities* などの適切な名前を付ける
+2. [ビルド プラットフォームを切り替える](mr-learning-base-02.md#switching-the-build-platform)
+3. [TextMeshPro の重要なリソースをインポートする](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+4. [Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+5. [Unity プロジェクトを構成する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+6. [シーンを作成して構成](mr-learning-base-02.md#creating-and-configuring-the-scene)し、シーンに *MultiUserCapabilities* などの適切な名前を付ける
 
 次に、「[空間認識表示オプションの変更](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)」の指示に従い、次の作業を行います。
 
@@ -50,7 +48,7 @@ Unity メニューで **[Edit]\(編集\)**  >  **[Project Settings]\(プロジ�
 
 ![[Player]\(プレーヤー\) 設定が表示された Unity](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-**[Publishing Settings]\(公開の設定\)** で、 **[Capabilities]\(機能\)** セクションまで下にスクロールして、上の「[Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)」手順で有効にした **InternetClient**、**Microphone**、**SpatialPerception**、**GazeInput** の機能が有効になっていることを再確認します。
+**[Publishing Settings]\(公開の設定\)** で、 **[Capabilities]\(機能\)** セクションまで下にスクロールして、上の「[Unity プロジェクトを構成する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)」手順で有効にした **InternetClient**、**Microphone**、**SpatialPerception**、**GazeInput** の機能が有効になっていることを再確認します。
 
 その後、次の追加機能を有効にします。
 

@@ -1,18 +1,18 @@
 ---
 title: Microsoft Store への発行
-description: ''
+description: Unreal Mixed Reality アプリケーションをパッケージ化して認定し、Microsoft Store に公開する方法について説明します。
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/3/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, ドキュメント, ガイド, 機能, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 発行, 配布, Microsoft Store
-ms.openlocfilehash: 37a17ba4a691ca8db6ce447abd485293454b8ae3
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 41f081f11cdb9ac2fdf96a81bb761a1321d1776f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96583949"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010022"
 ---
 # <a name="publishing-to-the-microsoft-store"></a>Microsoft Store への発行
 
@@ -108,6 +108,7 @@ if(Target.Platform == UnrealTargetPlatform.Win64)
 4. Unreal を閉じ、プロジェクトを再び開いて、HoloLens を再度パッケージ化します。  WACK を再実行すると、エラーが発生しなくなります。 
 
 ## <a name="see-also"></a>関連項目
+
 * [Microsoft Store へのアプリの送信](../../distribute/submitting-an-app-to-the-microsoft-store.md)
 * [Windows アプリ認定キット](https://developer.microsoft.com/windows/downloads/app-certification-kit)
 * [アプリ インストーラー ファイルの手動作成](https://docs.microsoft.com/windows/msix/app-installer/how-to-create-appinstaller-file)

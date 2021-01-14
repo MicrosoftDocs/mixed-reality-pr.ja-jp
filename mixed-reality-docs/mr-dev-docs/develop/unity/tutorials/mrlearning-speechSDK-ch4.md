@@ -1,18 +1,18 @@
 ---
-title: Azure 音声認識サービス チュートリアル - 4. 意図と自然言語の理解の設定
-description: このコースを完了すると、Mixed Reality アプリケーション内で Azure Speech SDK を実装する方法を学習することができます。
+title: インテントの設定と自然言語の理解
+description: このコースを完了すると、Mixed Reality アプリケーションで意図と自然言語の理解を設定する方法がわかります。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, 音声認識, Windows 10, LUIS, LUIS ポータル, 意図, エンティティ, 発話, 自然言語の理解
 ms.localizationpriority: high
-ms.openlocfilehash: b21637fc0630b6cb024dcdbc0a1985979914d3a0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 07044d3dc38be12d5d601d34a23a241a71c5b06d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678511"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007772"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4.意図と自然言語の理解の設定
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 283bfffb2d59d92712e86e12c05be8974f04fae6
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: 4b9a1c20a8d885ea796c296f6a542d41e3ab58ef
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717945"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98052749"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -21,7 +21,7 @@ ms.locfileid: "97717945"
 
 [Mixed Reality Toolkit](../unity/mrtk-getting-started.md) (MRTK) は、Mixed Reality アプリケーション向けのオープンソースのクロスプラットフォーム開発キットです。 MRTK には、空間でのインタラクションのための、クロスプラットフォームの入力システム、基本コンポーネント、共通の構成要素が備わっています。 このツールキットは、Microsoft HoloLens、Windows Mixed Reality イマーシブ (VR) ヘッドセット、OpenVR プラットフォームをターゲットとしたアプリケーションの開発を加速することを目的としています。
 
-インストールについては、整理された [Unity 開発体験](../unity/unity-development-overview.md)の[「はじめに」セクション](../unity/unity-development-overview.md#1-getting-started)を完了することをお勧めします。 既に Unity 開発体験に従っている読者は、以下にリストされている残りの設定手順を完了し、[HoloLens 2 入門チュートリアル](../unity/tutorials/mr-learning-base-01.md)に進んでください。
+インストールについては、整理された [HoloLens](../unity/unity-development-overview.md#1-getting-started) または [VR](../unity/unity-development-wmr-overview.md#1-getting-started) の開発体験の概要セクションを完了することをお勧めします。 既に HoloLens 用 Unity 開発体験に従っている場合は、以下の一覧で示されている残りの設定手順を完了し、[HoloLens 2 入門チュートリアル](../unity/tutorials/mr-learning-base-01.md)に進んでください。
 
 > [!IMPORTANT]
 > インストール手順では MRTK と Unity リリースの最新の安定した組み合わせである **MRTK 2.4.0** と **Unity 2019.3.15** を対象としていることに注意してください。
@@ -72,7 +72,7 @@ HoloLens と Windows Mixed Reality イマーシブ (VR) ヘッドセットの両
 
 ##### <a name="i-cant-deploy-over-usb"></a>USB 経由で展開できない
 
-USB 経由で直接アプリケーションを展開できない場合は、上記のすべてのインストール要件を満たしていることを確認し、[ステップバイステップ チュートリアル](../unity/tutorials/mr-learning-base-02.md#building-your-application-to-your-hololens-2)に従ってください。
+USB 経由で直接アプリケーションを展開できない場合は、上記のすべてのインストール要件を満たしていることを確認し、[ステップバイステップ チュートリアル](../unity/tutorials/mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)に従ってください。
 
 #### <a name="immersive-vr-headset-requirements"></a>イマーシブ (VR) ヘッドセットの要件
 
@@ -115,16 +115,24 @@ USB 経由で直接アプリケーションを展開できない場合は、上�
 Unity を使用した MRTK 開発を初めて行う場合は、整理された Unity 開発体験に従うことをお勧めします。
 
 > [!div class="nextstepaction"]
-> [Unity の体験を開始する](../unity/unity-development-overview.md)
+> [HoloLens 向け Unity の体験を始める](../unity/unity-development-overview.md)
+
+> [!div class="nextstepaction"]
+> [VR 向け Unity の体験を始める](../unity/unity-development-wmr-overview.md)
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-私たちが用意した Unity 開発チェックポイント体験に従っている場合、次のタスクは HoloLens 2 チュートリアル シリーズを実行することです。
+用意されている HoloLens 向け Unity 開発チェックポイント体験に従っている場合、次のタスクは HoloLens 2 チュートリアル シリーズに従って作業することです。
 
 > [!div class="nextstepaction"]
 > [HoloLens 2 チュートリアル シリーズ](../unity/tutorials/mr-learning-base-01.md)
 
-いつでも [Unity 開発チェックポイント](../unity/unity-development-overview.md#1-getting-started)に戻ることができます。
+VR 向け Unity の体験に従っている場合は、次のタスクはプロジェクトの設定です。
+
+> [!div class="nextstepaction"]
+> [WMR 用のプロジェクトの構成](../unity/configure-unity-project.md)
+
+いつでも [HoloLens](../unity/unity-development-overview.md#1-getting-started) および [VR](../unity/unity-development-wmr-overview.md#1-getting-started) の Unity 開発チェックポイントに戻ることができます。
 
 # <a name="unreal"></a>[Unreal](#tab/unreal)
 

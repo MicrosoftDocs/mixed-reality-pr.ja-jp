@@ -7,18 +7,22 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 検出, 配布, インデックス, ランディング ページ, 設計, 開発, チュートリアル, サンプル アプリ, 基本事項, ケース スタディ, リソース, HoloLens の使い方, オープン ソース プロジェクト, 主要な概念, 操作, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 5c0eefe6f4811feba6d1d52164652acbc44945c3
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847606"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110450"
 ---
 # <a name="start-designing-and-prototyping"></a>設計とプロトタイプ作成を始める
 
 ![Mixed Reality の設計の概要](images/design-hero-image.png)
 
-Mixed Reality アプリケーションはまったく新しいものであるため、その設計は困難な作業です。 作成する現実および仮想世界の新たな組み合わせについてだけでなく、それによって提供される新しいユーザー エクスペリエンスについても考慮する必要があります。 Mixed Reality の領域は広いため、設計範囲に沿って選択した重要なポイントを一連のチェックポイントとして次に示すことにしました。 これらは順番に取り組むことを想定していますが、既に十分な知識がある場合は、ご自由に後続の好きなセクションにスキップしてかまいません。
+Mixed Reality アプリケーションはまったく新しいものであるため、その設計は困難な作業です。 作成する現実および仮想世界の新たな組み合わせについてだけでなく、それによって提供される新しいユーザー エクスペリエンスについても考慮する必要があります。 Mixed Reality の領域は広いため、設計範囲に沿って選択した重要なポイントを一連のチェックポイントとして次に示すことにしました。 これらは順番に取り組むことを想定していますが、既に十分な知識がある場合は、ご自由に後続の好きなセクションにスキップしてかまいません。 
+
+初めに、設計の概要に関するビデオをご覧ください。
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LhlW]
 
 ## <a name="design-checkpoints"></a>設計のチェックポイント
 

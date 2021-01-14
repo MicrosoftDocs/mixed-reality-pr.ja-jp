@@ -1,18 +1,18 @@
 ---
 title: Unreal でのプロジェクトのアップグレード
-description: Unreal プロジェクトでのバージョンのアップグレード手順と非推奨になった API の概要。
+description: Unreal プロジェクトのためのバージョン アップグレード手順、API の変更、廃止で最新の状態に保ちます。
 author: hferrone
 ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, ドキュメント, ガイド, 機能, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 移植, アップグレード
-ms.openlocfilehash: 5460ab55c887c44029e956545cf6a549f55716f7
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 27fb726bc0ca9c51b4e7b68ad28b76f89312262e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010623"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010052"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Unreal でのプロジェクトのアップグレード
 

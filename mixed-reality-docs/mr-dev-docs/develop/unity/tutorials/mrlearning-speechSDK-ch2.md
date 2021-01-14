@@ -1,20 +1,20 @@
 ---
-title: Azure Speech Services のチュートリアル - 2. ローカル音声テキスト変換用のオフライン モードの追加
-description: このコースでは、Mixed Reality アプリケーション内で Azure Speech SDK を実装する方法を学習します。
+title: ローカル音声テキスト変換用のオフライン モードの追加
+description: このコースを完了すると、Mixed Reality アプリケーションでローカル音声テキスト変換用のオフライン モードを追加する方法がわかります。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, 音声認識, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: d5b0e5140c698996c051eab10064d99280482886
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: db495d6cdfa99721e68b4004535a5411bde9b17d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679731"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010082"
 ---
-# <a name="2-using-speech-recognition-to-execute-commands"></a>2.音声認識を使用したコマンドの実行
+# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2.ローカル音声からテキストへの変換用のオフライン モードの追加
 
 このチュートリアルでは、Azure 音声認識を使用してコマンドを実行する機能を追加します。これを使用すると、定義した単語やフレーズに基づいて何かを実行させることができます。
 
@@ -29,18 +29,18 @@ ms.locfileid: "94679731"
 * **[Wake Word]\(ウェイク ワード\)** フィールドに、適切なフレーズ (たとえば、「_Activate terminal_」など) を入力します。
 * **[Dismiss Word]\(終了ワード\)** フィールドに、適切なフレーズ (たとえば、「_Dismiss terminal_」など) を入力します。
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-1.png)
+![Lunarcom Wake Word Recognizer スクリプト コンポーネントが強調表示されている Unity エディター](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 
 > [!NOTE]
 > Lunarcom Wake Word Recognizer (Script) コンポーネントは MRTK の一部ではありません。 このチュートリアルのアセットと共に提供されました。
 
 前のチュートリアルと同様に、ゲーム モードに入ると、既定で [Terminal]\(ターミナル\) パネルが有効になりますが、今回は、終了ワードである **Dismiss terminal** と発話することにより無効にできるようになりました。
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-2.png)
+![音声認識エンジン機能が使用されているプレイ モードの Unity エディター](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
 そして、ウェイク ワードである **Activate terminal** と発話することにより、再び有効にできます。
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-3.png)
+![アクティブなターミナルがあるプレイ モードの Unity エディター](images/mrlearning-speech/tutorial2-section1-step1-3.png)
 
 > [!CAUTION]
 > アプリケーションは Azure に接続する必要があるため、お使いのコンピューター/デバイスがインターネットに接続されていることを確認してください。

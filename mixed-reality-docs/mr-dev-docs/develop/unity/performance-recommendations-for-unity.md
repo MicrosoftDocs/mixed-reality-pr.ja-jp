@@ -1,18 +1,18 @@
 ---
 title: Unity のパフォーマンスに関する推奨事項
-description: Mixed Reality アプリのパフォーマンスを向上させるための Unity 固有のヒント。
+description: Mixed Reality アプリでプロジェクト設定、プロファイル、メモリ管理を使用してパフォーマンスを向上させるための Unity 固有のヒントについて説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 03/26/2019
 ms.topic: article
 keywords: グラフィックス, cpu, gpu, レンダリング, ガベージ コレクション, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 1a0509e656b7a6bf0d8d1f0b5d381b2fbdb39c2d
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 3508edae9fa0e60e9d9b60000186dfd3e49ff134
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010483"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009352"
 ---
 # <a name="performance-recommendations-for-unity"></a>Unity のパフォーマンスに関する推奨事項
 

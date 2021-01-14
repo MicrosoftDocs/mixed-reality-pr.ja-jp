@@ -1,18 +1,18 @@
 ---
-title: 入門チュートリアル - 1.  概要と目標
-description: このコースでは、Mixed Reality アプリケーション内で Azure 顔認識を実装する方法について説明します。
+title: チュートリアルの概要と目的
+description: このコースを完了すると、Mixed Reality アプリケーション内で Azure 顔認識を実装する方法を学習することができます。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: Mixed Reality、Unity、チュートリアル、Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 777203d0051c22b0f249db7d377ab08f92c089b7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d767cca4fbb88d0cfdd7c2fdea1a0621523ad236
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701589"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010092"
 ---
 # <a name="1-overview-and-objectives"></a>1.概要と目標
 
@@ -52,4 +52,4 @@ ms.locfileid: "91701589"
 > [!IMPORTANT]
 > このチュートリアル シリーズで推奨されている Unity バージョンは Unity 2019.2.X です。 これは、上のリンクされた前提条件に記載されている Unity のバージョン要件または推奨事項に代わるものです。
 
-[次のレッスン: 2.プロジェクトと最初のアプリケーションの初期化](../../../mrlearning-base-ch1.md)
+[次のレッスン: 2. プロジェクトと最初のアプリケーションの初期化](../../../mrlearning-base-ch1.md)

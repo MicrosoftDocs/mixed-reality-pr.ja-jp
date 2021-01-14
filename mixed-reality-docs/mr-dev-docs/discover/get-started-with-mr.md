@@ -1,18 +1,18 @@
 ---
 title: Mixed Reality の概要
-description: Mixed Reality の理論、開発、一般的なユース ケースの基本について説明します。
+description: 開発トラックを選択し、Mixed Reality の理論、開発、一般的なユース ケースの基本について学習します。
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 検出, 配布, インデックス, ランディング ページ, 設計, 開発, チュートリアル, サンプル アプリ, 基本事項, ケース スタディ, リソース, HoloLens の使い方, オープン ソース プロジェクト, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: f50457fedb0223317e522c4d86bd56cc02657c77
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 03db5f79a531d77bfd1cd6513c5bed9ad1202189
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757670"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009722"
 ---
 # <a name="get-started-with-mixed-reality"></a>Mixed Reality の概要
 

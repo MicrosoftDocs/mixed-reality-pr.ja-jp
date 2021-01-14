@@ -1,18 +1,18 @@
 ---
 title: Unreal でのローカル空間アンカー
-description: Unreal で空間アンカーを使用するためのガイド
+description: Unreal Mixed Reality アプリケーションで空間アンカーを使用、保存、管理する方法について説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, 空間アンカー, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 1c9d9fa119e57c57ab126fc26a26a35d75e07db7
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: d44610ea0632dbc93941096007e60e4ae7be53e1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926086"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009982"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Unreal でのローカル空間アンカー
 
@@ -83,6 +83,7 @@ ms.locfileid: "96926086"
 いつでも [Unreal 開発チェックポイント](unreal-development-overview.md#2-core-building-blocks)に戻ることができます。
 
 ## <a name="see-also"></a>関連項目
+
 * [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)
 * [空間アンカー](../../design/spatial-anchors.md)
 * [座標系](../../design/coordinate-systems.md)

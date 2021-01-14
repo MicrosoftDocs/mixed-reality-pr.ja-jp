@@ -1,19 +1,19 @@
 ---
 layout: LandingPage
 title: Azure 複合現実クラウド サービスの概要
-description: Mixed Reality クラウド サービスのリソース。
+description: Unity または Unreal のアプリケーションに統合できるすべての Azure Mixed Reality クラウド サービスについて説明します。
 author: hferrone
 ms.author: v-haferr
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 開発する, 開発, HoloLens, クラウド サービス, Azure, リモート レンダリング, 空間アンカー, Cognitive Services, 認知, Unity, 機械学習, 音声翻訳, コンピューター ビジョン, Microsoft Graph
-ms.openlocfilehash: e660556810cdea86321b7826217268e6c8d0850a
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 251fd68d2a3fea79c1db160b6aaf64aad05c686f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865407"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009572"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 複合現実クラウド サービスの概要
 

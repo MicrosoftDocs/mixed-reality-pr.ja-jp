@@ -1,18 +1,18 @@
 ---
 title: Unreal での空間オーディオ
-description: Unreal エンジン用の空間オーディオ プラグインの詳細について学習します。
+description: HoloLens デバイス向け Unreal Mixed Reality アプリケーション用の空間オーディオ プラグインの概要について説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, ストリーミング, リモート処理, Mixed Reality, 開発, 入門, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 特徴, ホログラム, ゲームの開発, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 空間オーディオ
-ms.openlocfilehash: fa87862f6a6af456ea344b67e22f1640c9cfafb4
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 98c10e370cd4ca5e437a4677be6fce3d3aee53a9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609543"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009972"
 ---
 # <a name="spatial-audio-in-unreal"></a>Unreal での空間オーディオ
 
@@ -34,7 +34,6 @@ ms.locfileid: "96609543"
 ![Unreal の空間オーディオ プラグイン](images/unreal-spatial-audio-img-01.png)
 
 エディターが再起動すると、プロジェクトの設定はすべて完了です。
-
 
 ## <a name="setting-the-spatialization-plugin-for-hololens-2-platform"></a>HoloLens 2 プラットフォーム用の空間化プラグインの設定
 

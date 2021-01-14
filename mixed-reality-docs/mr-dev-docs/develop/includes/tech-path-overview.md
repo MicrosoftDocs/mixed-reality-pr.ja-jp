@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 11533175057217bddcc7e121a524da1f26d2764e
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: c74a6c0c22439376a84ecb8254b945295c8988a2
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915548"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98052781"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -38,13 +38,13 @@ Unity を使用して Mixed Reality アプリを構築する場合、ハード�
 
 ## <a name="cloud-services"></a>クラウド サービス
 
-Unity に組み込まれている Mixed Reality プロジェクトに統合できるクラウド サービスがいくつかあります。具体的には、 **Azure Remote Rendering** と **Azure Spatial Anchors** です。 これらのサービスは、アプリケーションに共有ホログラフィック コンテンツとリアルタイム 3D レンダリングを追加することで、アプリケションをユーザーにとってより魅力的でイマーシブにすることができます。
+Unity に組み込まれている Mixed Reality プロジェクトに統合できるクラウド サービスがいくつかあります。具体的には、**Azure Remote Rendering** と **Azure Spatial Anchors** です。 これらのサービスは、アプリケーションに共有ホログラフィック コンテンツとリアルタイム 3D レンダリングを追加することで、アプリケションをユーザーにとってより魅力的でイマーシブにすることができます。
 
-これらのすべてのサービスは、 [Unity 開発体験](../unity/unity-development-overview.md)のコースで説明されています。 **Unity を使用する Mixed Reality についての学習パスとして、このコースを強く推奨します** 。 既にこのパスに入っているので、このまま読み続け、記事の下部にある大きな青いボタンで先に進んでください。 ただし、より高度な開発段階にある方で、すぐに作業を始めたい場合は、[クラウド サービスの概要](../mixed-reality-cloud-services.md)を確認するか、[サービス リソース](../unity/unity-development-overview.md#5-adding-services)に直接移動してください。
+これらのすべてのサービスは、[HoloLens 向け Unity 開発体験](../unity/unity-development-overview.md)のコースで説明されています。**Unity を使用する Mixed Reality についての学習パスとして、このコースを強くお勧めします**。 既にこのパスに入っているので、このまま読み続け、記事の下部にある大きな青いボタンで先に進んでください。 ただし、より高度な開発段階にある方で、すぐに作業を始めたい場合は、[クラウド サービスの概要](../mixed-reality-cloud-services.md)を確認するか、[サービス リソース](../unity/unity-development-overview.md#5-adding-services)に直接移動してください。
 
 ## <a name="dynamics-365-guides"></a>Dynamics 365 Guides
 
-**Microsoft Dynamics 365 Guides** を使用すると、アプリの仮想環境にホログラフィックな指示をビジュアルにテザリングし、必要なときに必要な場所で重要な情報をユーザーに提供できます。 この機能については Unity 開発体験でも説明されていますが、先に進みたい場合は、 [こちら](../unity/unity-development-overview.md#5-adding-services)で **[Dynamics 365]** タブを選択して、何が提供されているかを確認できます。
+**Microsoft Dynamics 365 Guides** を使用すると、アプリの仮想環境にホログラフィックな指示をビジュアルにテザリングし、必要なときに必要な場所で重要な情報をユーザーに提供できます。 この機能については HoloLens 向け Unity 開発体験でも説明されていますが、先に進みたい場合は、[こちら](../unity/unity-development-overview.md#5-adding-services)で **[Dynamics 365]** タブを選択して、何が提供されているかを確認できます。
 
 ## <a name="examples"></a>例
 
@@ -88,13 +88,13 @@ Unreal Engine を使用して Mixed Reality アプリを構築する場合、ハ
 
 ## <a name="cloud-services"></a>クラウド サービス
 
-Unreal で Mixed Reality アプリを構築する場合は、 **Azure Spatial Anchors** と呼ばれる強力なクラウド サービスにアクセスできます。これを使用すると、さまざまなデバイス間でホログラフィック コンテンツを追加、永続化、および共有できます。 
+Unreal で Mixed Reality アプリを構築する場合は、**Azure Spatial Anchors** と呼ばれる強力なクラウド サービスにアクセスできます。これを使用すると、さまざまなデバイス間でホログラフィック コンテンツを追加、永続化、および共有できます。 
 
-Azure Spatial Anchors は、 [Unreal 開発体験](../unreal/unreal-development-overview.md)のコースで説明されています。 **Unreal を使用する Mixed Reality についての学習パスとして、このコースを強く推奨します** 。 既にこのパスに入っているので、このまま読み続け、記事の下部にある大きな青いボタンで先に進んでください。 ただし、より高度な開発段階にある方で、すぐに作業を始めたい場合は、[クラウド サービスの概要](../mixed-reality-cloud-services.md)を確認するか、[サービス リソース](../unreal/unreal-development-overview.md#5-adding-services)に直接移動してください。
+Azure Spatial Anchors は、[Unreal 開発体験](../unreal/unreal-development-overview.md)のコースで説明されています。**Unreal を使用する Mixed Reality についての学習パスとして、このコースを強く推奨します**。 既にこのパスに入っているので、このまま読み続け、記事の下部にある大きな青いボタンで先に進んでください。 ただし、より高度な開発段階にある方で、すぐに作業を始めたい場合は、[クラウド サービスの概要](../mixed-reality-cloud-services.md)を確認するか、[サービス リソース](../unreal/unreal-development-overview.md#5-adding-services)に直接移動してください。
 
 ## <a name="dynamics-365-guides"></a>Dynamics 365 Guides
 
-**Microsoft Dynamics 365 Guides** を使用すると、アプリの仮想環境にホログラフィックな指示をビジュアルにテザリングし、必要なときに必要な場所で重要な情報をユーザーに提供できます。 この機能については Unreal 開発体験でも説明されていますが、先に進みたい場合は、 [こちら](../unreal/unreal-development-overview.md#5-adding-services)で **[Dynamics 365]** タブを選択して、何が提供されているかを確認できます。
+**Microsoft Dynamics 365 Guides** を使用すると、アプリの仮想環境にホログラフィックな指示をビジュアルにテザリングし、必要なときに必要な場所で重要な情報をユーザーに提供できます。 この機能については Unreal 開発体験でも説明されていますが、先に進みたい場合は、[こちら](../unreal/unreal-development-overview.md#5-adding-services)で **[Dynamics 365]** タブを選択して、何が提供されているかを確認できます。
 
 ## <a name="examples"></a>例
 

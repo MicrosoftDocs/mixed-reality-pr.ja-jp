@@ -1,22 +1,20 @@
 ---
-title: MRTK のチュートリアル - 9. 音声コマンドの使用
-description: このコースでは、音声コマンドを Mixed Reality Toolkit (MRTK) とともに使する方法について説明します。
+title: 音声コマンドの使用
+description: このコースでは、Mixed Reality Toolkit (MRTK) を使用して Mixed Reality アプリで音声コマンドを設定、作成、使用する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, 音声コマンド, 音声入力
 ms.localizationpriority: high
-ms.openlocfilehash: 6e008f3e46bc4a22499691e284020321d29a2f23
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 8aea8ead6416787f2979e0deff46ee5d6d45eb19
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613466"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007912"
 ---
 # <a name="9-using-speech-commands"></a>9.音声コマンドの使用
-
-## <a name="overview"></a>概要
 
 このチュートリアルでは、音声コマンドを作成する方法と、それらをグローバルに制御する方法について説明します。 また、音声コマンドを制御するオブジェクトをユーザーが確認する必要があるローカルの音声コマンドを制御する方法についても説明します。
 
@@ -32,7 +30,7 @@ ms.locfileid: "97613466"
 ![マイク機能を有効にする](images/mr-learning-base/base-09-section1-step1-1.png)
 
 > [!NOTE]
-> このチュートリアル シリーズの冒頭で Unity プロジェクトを構成したときに、[MRTK Project Configurator 設定を適用する](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings)手順中にマイク機能を有効にしておく必要がありました。 しかし、有効にしていない場合は、ここで有効にしてください。
+> このチュートリアル シリーズの冒頭で Unity プロジェクトを構成したときに、[MRTK Project Configurator 設定を適用する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)手順中にマイク機能を有効にしておく必要がありました。 しかし、有効にしていない場合は、ここで有効にしてください。
 
 ## <a name="creating-speech-commands"></a>音声コマンドを作成する
 

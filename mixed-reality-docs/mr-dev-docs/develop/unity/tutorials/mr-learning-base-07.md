@@ -1,18 +1,18 @@
 ---
-title: MRTK のチュートリアル - 7. 3D オブジェクトの操作
-description: このコースでは、Mixed Reality ツールキット (MRTK) を使用して 3D オブジェクトを操作する方法について説明します。
+title: 3D オブジェクトの操作
+description: このコースでは、Mixed Reality ツールキット (MRTK) を使用して、Mixed Reality アプリで 3D オブジェクトと対話して操作する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, オブジェクトの相互作用, 境界ボックス
 ms.localizationpriority: high
-ms.openlocfilehash: a457c850cdc5db7b9613ae20caab23d69b342997
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c9acb72b2ad961737f5ce3f21c048fc80024b49d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613496"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007932"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7.3D オブジェクトの操作
 

@@ -1,22 +1,20 @@
 ---
-title: MRTK のチュートリアル - 6. ユーザー インターフェイスの作成
-description: このコースでは、Mixed Reality Toolkit (MRTK) を使用してユーザー インターフェイスを作成する方法について説明します。
+title: ユーザー インターフェイスの作成
+description: このコースでは、Mixed Reality Toolkit (MRTK) を使用して静的および動的なユーザー インターフェイスを作成する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, プレハブ, ホログラム, ヒント
 ms.localizationpriority: high
-ms.openlocfilehash: 90b794dc6e88b724d16c339e428c4d2ed9cdac07
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 989de4871332608448619e75ffd760c616332533
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613516"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008062"
 ---
 # <a name="6-creating-user-interfaces"></a>6.ユーザー インターフェイスの作成
-
-## <a name="overview"></a>概要
 
 このチュートリアルでは、MRTK のボタンとメニュー プレハブを Unity の TextMeshPro コンポーネントと共に使用して、シンプルなユーザー インターフェイスを作成する方法について学習します。 また、ボタンでイベントがトリガーされるように構成する方法と、ユーザーに追加情報を提供する動的なヒント UI 要素を追加する方法についても学習します。
 

@@ -1,24 +1,25 @@
 ---
 title: Unreal のパフォーマンスに関する推奨事項
-description: Unreal の Mixed Reality アプリで最適なパフォーマンスを得るための推奨事項
+description: 推奨される Unreal プロジェクトの設定を使用して、Mixed Reality アプリから最高のパフォーマンスを引き出す方法について説明します。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, パフォーマンス, 最適化, 設定, ドキュメント
-ms.openlocfilehash: a369a68f8ebf9b7084c22f0efa3bbf0bf5ecbebf
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: a1a8dacd0206882c7ebd67b2658fa2e6300aa66a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865427"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009822"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Unreal のパフォーマンスに関する推奨事項
 
 Unreal Engine が備える、アプリのパフォーマンス向上につながるいくつかの機能はすべて、[Mixed Reality のパフォーマンスに関する推奨事項](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)に関するページで概要が示されている検討内容に基づいています。 続行する前に、アプリケーションのボトルネック、Mixed Reality アプリの分析とプロファイリング、および一般的なパフォーマンスの修正について確認することをお勧めします。
 
 ## <a name="recommended-unreal-project-settings"></a>推奨される Unreal プロジェクト設定を使用する
+
 以下の各設定は、 **[編集] > [プロジェクトの設定]** にあります。
 
 1. Mobile VR レンダラーの使用:
@@ -78,4 +79,5 @@ Unreal Engine が備える、アプリのパフォーマンス向上につなが
 ![モバイル シェーダーの順列の削減](images/unreal/performance-recommendations-img-08.png)
 
 ## <a name="see-also"></a>関連項目
+
 * [Unreal Engine モバイルのパフォーマンス ガイドライン]( https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html)

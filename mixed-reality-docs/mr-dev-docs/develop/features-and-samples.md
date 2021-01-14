@@ -1,18 +1,18 @@
 ---
 title: サンプルとおすすめアプリ
-description: HoloLens で使用可能な機能のサンプルを参照してください。
+description: HoloLens 向けに利用可能なすべての Microsoft サンプルと Mixed Reality 機能アプリについての最新情報を説明します。
 author: hferrone
 ms.author: jemccull
 ms.date: 12/3/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, 学習, サンプル, MRTK, Research モード, HoloLens 2, QR コード, WebRTC, Mixed Reality キャプチャ, Holographic Remoting, UX Tools
 ms.localizationpriority: high
-ms.openlocfilehash: 2624949dd21b4c8e14ed45f152d41900b5f91faf
-ms.sourcegitcommit: 924f8c1ceb93c378f800cf88d82944cf80f092bc
+ms.openlocfilehash: 3aa0e51a92b909689ff97a07b45900ab65579c59
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96615553"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007612"
 ---
 # <a name="samples-and-feature-apps"></a>サンプルとおすすめアプリ
 

@@ -1,18 +1,18 @@
 ---
 title: Mixed Reality Learn モジュールの概要
-description: 利用できる Mixed Reality Learn モジュールについて説明します。
+description: Microsoft Learn プラットフォームでホストされているすべての使用可能な Mixed Reality モジュールの最新情報について説明します。
 author: hferrone
 ms.author: jemccull
 ms.date: 11/30/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, 学習, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, 拡張現実とは, MRTK, Mixed Reality Toolkit, 言語翻訳, Azure, Azure Cognitive Services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 5d59f09b98b4228b52a87a7c91e64129060f754c
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 211d8e61a45a59df725f4c6c7d11c93f129d63b5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757800"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006912"
 ---
 # <a name="mixed-reality-learn-overview"></a>Mixed Reality Learn の概要
 

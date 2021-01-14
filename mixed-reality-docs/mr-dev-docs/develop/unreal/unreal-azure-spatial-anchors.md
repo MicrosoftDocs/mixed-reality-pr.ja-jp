@@ -1,18 +1,18 @@
 ---
 title: Unreal での Azure Spatial Anchors
-description: Unreal エンジンでの Azure 空間アンカーの作成に関する概要です。
+description: Unreal Mixed Reality アプリケーションで既存の Azure Spatial Anchors を作成、管理、配置する方法について説明します。
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, Azure, Azure 開発, Spatial Anchors, Mixed Reality, 開発, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, ホログラム, ゲーム開発, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 18ec9db03341ad4fc6a5c10ea6f8fdd38c61c537
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 95e8ad708dd44a05fb306b2ea49f167fd400c5d8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926026"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009772"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal での Azure Spatial Anchors
 

@@ -1,18 +1,18 @@
 ---
 title: ツールのインストール
-description: ここでは Mixed Reality の開発の準備を開始します。 この記事では、HoloLens および Windows Mixed Reality のイマーシブ ヘッドセット開発に推奨される Unity、Visual Studio、その他のツールの最新バージョンが常に反映されています。
+description: ここでは、最新バージョンの Unity、Visual Studio、および HoloLens と VR の開発に推奨されるツールの使用を始めます。
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新, ツール, はじめに, 基本, Unity, Visual Studio, ツールキット, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, インストール, Windows, HoloLens, エミュレーター, Unreal, OpenXR
-ms.openlocfilehash: addbab6a7bedc7c8065e7b68923bf1956a522a02
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 447f0713ef26757bd6fcf89684a7f5d59a052dcb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925993"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009422"
 ---
 # <a name="install-the-tools"></a>ツールのインストール
 

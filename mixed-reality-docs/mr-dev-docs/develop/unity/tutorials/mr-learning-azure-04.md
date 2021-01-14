@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud のチュートリアル - 4. Azure Spatial Anchors の統合
+title: Azure Spatial Anchors の統合
 description: このコースでは、HoloLens 2 アプリケーション内で Azure Spatial Anchors を実装する方法を学習します。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, Hololens 2, Azure Spatial Anchors, Azure クラウド サービス, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 5245f3522e7822c16ebc0d0113634f152f223086
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 50e5bccf09e03ebda8057dbb3ca9d83fc01694bd
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679341"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008172"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4.Azure Spatial Anchors の統合
 
@@ -60,7 +60,7 @@ ms.locfileid: "94679341"
 Azure Spatial Anchors は Unity では実行できないため、Azure Spatial Anchors の機能をテストするには、プロジェクトをお使いのデバイスにデプロイする必要があります。
 
 > [!TIP]
-> HoloLens 2 に Unity プロジェクトをビルドしてデプロイする方法については、[HoloLens 2 にアプリをビルドする](mr-learning-base-02.md#building-your-application-to-your-hololens-2)手順に関するページを参照してください。
+> HoloLens 2 に Unity プロジェクトをビルドしてデプロイする方法については、[HoloLens 2 用のアプリケーションの構築](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)の手順に関するページを参照してください。
 
 ## <a name="run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a>HoloLens 2 でアプリを実行し、アプリ内の指示に従う
 

@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors チュートリアル - 2. Azure Spatial Anchors をお使いになる前に
+title: Azure Spatial Anchors をお使いになる前に
 description: このコースを完了すると、Azure Spatial Anchors を使用して Mixed Reality アプリケーション内でオブジェクトを固定する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー
 ms.localizationpriority: high
-ms.openlocfilehash: ae2726be302bf8ebf342ebd95233b28d7e534423
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a31d398621c581460e49ed81d23c446e60bc530f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679941"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008512"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2.Azure Spatial Anchors をお使いになる前に
-
-## <a name="overview"></a>概要
 
 このチュートリアルでは、Azure Spatial Anchors セッションの開始と停止、および単一のデバイス上での Azure Spatial Anchors の作成、アップロード、ダウンロードに必要なさまざまな手順を学習します。
 
@@ -29,14 +27,14 @@ ms.locfileid: "94679941"
 
 このセクションでは、新しい Unity プロジェクトを作成し、MRTK 開発用に準備します。
 
-このためには、まず「[プロジェクトの初期化と最初のアプリケーションの配置](mr-learning-base-02.md)」に従ってください ([デバイスにアプリケーションをビルドする](mr-learning-base-02.md#building-your-application-to-your-hololens-2)手順は除きます)。これには、次の手順が含まれます。
+最初に、「[プロジェクトの初期化と最初のアプリケーションの配置](mr-learning-base-02.md)」に従います (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
 
 1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、"*MRTK チュートリアル*" などの適切な名前を付ける
-1. [ビルド プラットフォームを切り替える](mr-learning-base-02.md#configuring-the-unity-project)
-1. [TextMeshPro の重要なリソースをインポートする](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-1. [Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-1. [Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)
-1. [シーンを作成して構成](mr-learning-base-02.md#creating-and-configuring-the-scene)し、シーンに *AzureSpatialAnchors* などの適切な名前を付ける
+2. [ビルド プラットフォームを切り替える](mr-learning-base-02.md#switching-the-build-platform)
+3. [TextMeshPro の重要なリソースをインポートする](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+4. [Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+5. [Unity プロジェクトを構成する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+6. [シーンを作成して構成](mr-learning-base-02.md#creating-and-configuring-the-scene)し、シーンに *AzureSpatialAnchors* などの適切な名前を付ける
 
 次に、「[空間認識表示オプションの変更](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)」の指示に従い、次の作業を行います。
 
@@ -148,7 +146,7 @@ Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Package Manager]
 Azure Spatial Anchors は Unity では実行できないため、Azure Spatial Anchors の機能をテストするには、ご利用のデバイスにプロジェクトをビルドし、アプリをデプロイする必要があります。
 
 > [!TIP]
-> HoloLens 2 に Unity プロジェクトをビルドしてデプロイする方法については、[HoloLens 2 にアプリをビルドする](mr-learning-base-02.md#building-your-application-to-your-hololens-2)手順に関するページを参照してください。
+> HoloLens 2 に Unity プロジェクトをビルドしてデプロイする方法については、[HoloLens 2 用のアプリケーションの構築](mr-learning-base-02.md#building-your-application-to-your-hololens-2)の手順に関するページを参照してください。
 
 ご利用のデバイスでアプリケーションが実行されているときに、Azure Spatial Anchor チュートリアルの手順パネルに表示される画面の指示に従います。
 

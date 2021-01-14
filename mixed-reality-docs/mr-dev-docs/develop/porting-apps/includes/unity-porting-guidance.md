@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 487118403c2a8af1a6b54bc9aa9245fbe9d0568a
-ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
+ms.openlocfilehash: 0ef22142ac2efc3ef47ece2619d31dbeddcff8fe
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96477199"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192666"
 ---
 # <a name="project-settings"></a>[プロジェクト設定](#tab/project)
 
@@ -120,7 +120,7 @@ Windows Mixed Reality は、ハイエンドゲーム Pc から広範な市場メ
 
 Unity では、現在、一般的な入力である GetButton/GetAxis Api を使用して [、OCULUS sdk](https://docs.unity3d.com/Manual/OculusControllers.html) と [openvr sdk](https://docs.unity3d.com/Manual/OpenVRControllers.html)の入力を公開しています。 アプリが既にこれらの Api を入力に使用している場合は、これが Windows Mixed Reality でのモーションコントローラーをサポートするための最も簡単なパスです。入力マネージャーでボタンと軸を再マップするだけで済みます。
 
-詳細については、「 [unity のボタン/軸マッピングテーブル](../../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) 」と「 [共通 unity api の概要](../../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)」を参照してください。
+詳細については、「 [unity のボタン/軸マッピングテーブル](../../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) 」と「 [共通 unity api の概要](../../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)」を参照してください。
 
 ## <a name="windows-specific-xrwsainput-apis"></a>Windows 固有の XR。付い.入力 Api
 
@@ -132,7 +132,7 @@ Unity では、現在、一般的な入力である GetButton/GetAxis Api を使
 > [!NOTE]
 > HP リバーブ G2 コントローラーを使用している場合、すべての入力 Api は、 **supportsTouchpad** を除くすべての入力 api を引き続き動作します。これは、タッチパッドデータなしで false を返します。
 
-詳細については、「 [UnityEngine. XR api の概要](../../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput)」を参照してください。
+詳細については、「 [UnityEngine. XR api の概要](../../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput)」を参照してください。
 
 ## <a name="grip-pose-vs-pointing-pose"></a>グリップポーズとポインティングポーズ
 

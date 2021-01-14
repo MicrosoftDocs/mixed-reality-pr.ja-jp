@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: ポート、unity、unreal、ミドルウェア、エンジン、UWP、Win32、移植、HoloLens ファースト世代、mixed reality ヘッドセット、windows mixed reality ヘッドセット、移行、Windows 10、入力マッピング、
-ms.openlocfilehash: f1cb7cd96ee1d6e32c9ef1f8d3e0e1b2654e0a79
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b43b42567183ef77ef76b301212233eeeb7c04ca
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009872"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192667"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Windows Mixed Reality に VR アプリを移植する
 
@@ -56,12 +56,12 @@ Windows Mixed Reality プラットフォームは、まだアクティブな開�
 > [!IMPORTANT]
 > HP リバーブ G2 コントローラーを使用している場合は、追加の入力マッピング手順については、こちらの [記事](../unreal/unreal-reverb-g2-controllers.md) を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 * [Windows Mixed Reality の PC ハードウェアの最小互換性ガイドライン](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Mixed Reality のパフォーマンスについて](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Unity のパフォーマンスに関する推奨事項](../unity/performance-recommendations-for-unity.md)
 * [モーション コントローラー](../../design/motion-controllers.md)
-* [Unity でのジェスチャとモーション コントローラー](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Unity のモーションコントローラー](../unity/motion-controllers-in-unity.md)
 * [UnityEngine. XR](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine. XR 追跡](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [移植ガイド](porting-guides.md)

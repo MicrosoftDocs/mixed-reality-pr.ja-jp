@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 入力、unity、移植
-ms.openlocfilehash: 97280ff260729bfc2042f7760fa3950e949e27a4
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: d6bef0f10cf1fc20d5067ac77a126bb793385f59
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613266"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192650"
 ---
 # <a name="input-porting-guide-for-unity"></a>Unity 用入力移植ガイド
 
@@ -21,13 +21,13 @@ ms.locfileid: "97613266"
 
 Unity では、現在、一般的な入力である GetButton/GetAxis Api を使用して [、OCULUS sdk](https://docs.unity3d.com/Manual/OculusControllers.html) と [openvr sdk](https://docs.unity3d.com/Manual/OpenVRControllers.html)の入力を公開しています。 アプリが既にこれらの Api を入力に使用している場合は、Windows Mixed Reality でのモーションコントローラーをサポートするための最も簡単なパスは、GetButton/GetAxis Api です。 入力マネージャーでは、ボタンと軸の再マップのみが必要になります。
 
-詳細については、「 [unity のボタン/軸マッピングテーブル](../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) 」と「 [共通 unity api の概要](../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)」を参照してください。
+詳細については、「 [unity のボタン/軸マッピングテーブル](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) 」と「 [共通 unity api の概要](../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)」を参照してください。
 
 ## <a name="windows-specific-xrwsainput-apis"></a>Windows 固有の XR。付い.入力 Api
 
 アプリが各プラットフォームのカスタム入力ロジックを既に作成している場合は、 **Unityengine. XR** 名前空間の Windows 固有の空間入力 api を使用できます。 ここから、位置の精度やソースの種類などの追加情報にアクセスして、HoloLens で両手とコントローラーを区別できるようにします。
 
-詳細については、「 [UnityEngine. XR api の概要](../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput)」を参照してください。
+詳細については、「 [UnityEngine. XR api の概要](../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput)」を参照してください。
 
 ## <a name="grip-pose-vs-pointing-pose"></a>グリップポーズとポインティングポーズ
 
@@ -48,9 +48,9 @@ Windows Mixed Reality では、さまざまなフォームファクターのモ�
 
 これらの発生座標はすべて Unity のワールド座標で表現されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 * [モーションコントローラー]()../../design/motion-controllers.md)
-* [Unity でのジェスチャとモーション コントローラー](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Unity のモーションコントローラー](../unity/motion-controllers-in-unity.md)
 * [UnityEngine. XR](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine. XR 追跡](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [移植ガイド](porting-guides.md)

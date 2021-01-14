@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: アプリ品質基準、mixed reality、mixed reality アプリ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 788a2e8ac1a364f8c33e3895992fd99fa220a26a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 8037b573f50ef1f1137a6c50913990fadf40e92e
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530289"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192680"
 ---
 # <a name="app-quality-criteria"></a>アプリの品質基準
 
@@ -176,7 +176,7 @@ ms.locfileid: "97530289"
 
 |  最高  |  あっ |  失敗 |
 --- | --- | ---
-| ホログラムは、通常、センチメートル ~ インチの範囲内のサーフェイスに配置されます。 より正確な精度が必要な場合は、アプリの仕様内でコラボレーションのための効率的な手段を提供する必要があります。 | N/A | サーフェイスを分割するか、表面から離れた場所に表示することによって、ホログラムが物理的なターゲットオブジェクトと共に配置されていないことを認識します。 精度が必要な場合は、ホログラムがシナリオの近接仕様を満たしている必要があります。 | 
+| ホログラムは、通常、センチメートル ~ インチの範囲内のサーフェイスに配置されます。 より正確な精度が必要な場合は、アプリの仕様内でコラボレーションのための効率的な手段を提供する必要があります。 | NA | サーフェイスを分割するか、表面から離れた場所に表示することによって、ホログラムが物理的なターゲットオブジェクトと共に配置されていないことを認識します。 精度が必要な場合は、ホログラムがシナリオの近接仕様を満たしている必要があります。 | 
 
 ### <a name="how-to-measure"></a>測定する方法
 
@@ -520,7 +520,7 @@ Windows Mixed Reality では、音声エンジンは、方向、距離、およ�
 * アプリにカスタム入力がある場合は、次の方法で明確に伝達されます。
 * 最初の実行エクスペリエンス
 * 入門画面
-* ヒント
+* ツールヒント
 * ハンド コーチ
 * ヘルプセクション
 * ボイス オーバー
@@ -545,7 +545,8 @@ Windows Mixed Reality では、音声エンジンは、方向、距離、およ�
 * [Unity 用入力移植ガイド](../porting-apps/input-porting-guide-for-unity.md)
 * [Unity でのキーボード入力](../unity/keyboard-input-in-unity.md)
 * [Unity の視線入力](../unity/gaze-in-unity.md)
-* [Unity でのジェスチャとモーション コントローラー](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Unity のモーションコントローラー](../unity/motion-controllers-in-unity.md)
+* [Unity でのジェスチャ](../unity/gestures-in-unity.md)
 * [Unity の音声入力](../unity/voice-input-in-unity.md)
 * [DirectX でのキーボード、マウス、およびコントローラー入力](../../keyboard,-mouse,-and-controller-input-in-directx.md)
 * [DirectX でのヘッド視線入力とアイ視線入力](../native/gaze-in-directx.md)

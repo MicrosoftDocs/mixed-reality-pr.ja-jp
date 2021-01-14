@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: SteamVR、互換性、移植、HoloLens ファースト世代、mixed reality ヘッドセット、windows mixed reality ヘッドセット、移行、Windows 10、蒸気、motion controller、haptics
-ms.openlocfilehash: 94b6aad63156d752858c6566174ff01e6127d75d
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c67eed489f626c804583592e496fcfaff5d8c291
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612906"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192630"
 ---
 # <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>Windows Mixed Reality 用に SteamVR アプリを更新する
 
@@ -26,7 +26,7 @@ Windows Mixed Reality でゲームやアプリのテストを開始するには�
 1. アプリがコントローラーモデルをレンダリングする場合:
     * [Windows Mixed Reality モーションコントローラーモデル](../../design/motion-controllers.md#rendering-the-motion-controller-model)を使用する
     * IVRRenderModel:: GetComponentState を使用して、コンポーネントパーツへのローカル変換を取得します (ポインターの例など)。
-2. ききの概念を持つエクスペリエンスでは、コントローラーを区別するために入力 Api からヒントを取得する必要があります [(Unity の例)。](../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table)
+2. ききの概念を持つエクスペリエンスでは、コントローラーを区別するために入力 Api からヒントを取得する必要があります [(Unity の例)。](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table)
 
 ## <a name="controls"></a>コントロール
 

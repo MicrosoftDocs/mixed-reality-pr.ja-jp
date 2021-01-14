@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 視線、ヘッド・宝石、unity、ホログラム、mixed reality、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、unity、Mixed Reality ツールキット
-ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7efc77eff90a164fdc0476a90912a0f52c9bb33d
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009892"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192640"
 ---
 # <a name="head-gaze-in-unity"></a>Unity でのヘッドを見つめます
 
@@ -59,7 +59,7 @@ MRTK の [入力マネージャー](https://microsoft.github.io/MixedRealityTool
 Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次の構成要素を続けることができます。
 
 > [!div class="nextstepaction"]
-> [ジェスチャとモーション コントローラー](gestures-and-motion-controllers-in-unity.md)
+> [モーション コントローラー](motion-controllers-in-unity.md)
 
 または、Mixed Reality プラットフォームの機能と API に移動します。
 

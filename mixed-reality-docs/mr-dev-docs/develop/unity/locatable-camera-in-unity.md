@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: photo、video、hololens、カメラ、unity、入手、PVC、フォトビデオカメラ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、web カメラ、写真キャプチャ、ビデオキャプチャ
-ms.openlocfilehash: 125521206421acbcc4c9ad6e5fb371314ddb48f2
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 8916b332774185e4453b514ca7b6916947bdcd81
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010103"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226421"
 ---
 # <a name="locatable-camera-in-unity"></a>Unity での場所を特定できるカメラ
 
@@ -309,7 +309,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality プラットフォームの機能と Api の調査が途中で終了しています。 ここからは、次のトピックに進むことができます。
+ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality プラットフォームの機能と Api の調査が途中で終了しています。 ここから、次のトピックを続けることができます。
 
 > [!div class="nextstepaction"]
 > [フォーカス ポイント](focus-point-in-unity.md)
@@ -319,7 +319,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 > [!div class="nextstepaction"]
 > [HoloLens または Windows Mixed Reality イマーシブヘッドセットへのデプロイ](../platform-capabilities-and-apis/using-visual-studio.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-platform-capabilities-and-apis)に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-advanced-features)に戻ることができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 * [場所を特定できるカメラ](../platform-capab ilities-and-apis/locatable-camera.md)

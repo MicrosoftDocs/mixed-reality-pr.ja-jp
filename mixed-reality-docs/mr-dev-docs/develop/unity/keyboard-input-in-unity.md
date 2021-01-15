@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: キーボード、入力、unity、touchscreenkeyboard、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
-ms.openlocfilehash: 613c9327b517205c340555b6423a3809906f9b9f
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 90416f91a7de369ff97a2254fed4b3773724408b
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010513"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226411"
 ---
 # <a name="keyboard-input-in-unity"></a>Unity でのキーボード入力
 
@@ -118,7 +118,7 @@ Unity を通じてシステムキーボードを利用するための現在の�
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 
-これまでに説明した Unity 開発の取り組みに従っている場合は、Mixed Reality プラットフォームの機能と Api を試してみることになります。 ここからは、任意の [トピック](unity-development-overview.md#3-platform-capabilities-and-apis) に進み、デバイスまたはエミュレーターへのアプリのデプロイに直接ジャンプできます。
+これまでに説明した Unity 開発の取り組みに従っている場合は、Mixed Reality プラットフォームの機能と Api を試してみることになります。 ここからは、任意の [トピック](unity-development-overview.md#3-advanced-features) に進み、デバイスまたはエミュレーターへのアプリのデプロイに直接ジャンプできます。
 
 > [!div class="nextstepaction"]
 > [HoloLens または Windows Mixed Reality イマーシブヘッドセットへのデプロイ](../platform-capabilities-and-apis/using-visual-studio.md)

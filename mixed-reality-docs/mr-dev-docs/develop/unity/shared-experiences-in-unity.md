@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 共有、アンカー、WorldAnchor、MR 共有250、WorldAnchorTransferBatch、SpatialPerception、Azure、Azure 空間アンカー、ASA、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
-ms.openlocfilehash: a82439d5676bf4bcb7898a33aafc29b43e91a49f
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: 4d24f3690f4d4b1fc206dbd2b5e0aa5afad6c34c
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031958"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226341"
 ---
 # <a name="shared-experiences-in-unity"></a>Unity での共有エクスペリエンス
 
@@ -43,7 +43,7 @@ Azure 空間アンカーを使用できない場合、 [ローカルアンカー
 > [!div class="nextstepaction"]
 > [HoloLens または Windows Mixed Reality イマーシブヘッドセットへのデプロイ](../platform-capabilities-and-apis/using-visual-studio.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-platform-capabilities-and-apis)に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-advanced-features)に戻ることができます。
 
 ## <a name="see-also"></a>関連項目
 * [複合現実での共有エクスペリエンス](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)

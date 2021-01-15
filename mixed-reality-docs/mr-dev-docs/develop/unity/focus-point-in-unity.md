@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, フォーカスポイント, フォーカスプレーン, 安定化平面, 安定化ポイント, reprojection, LSR, 深度バッファー, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: bd662a079f23ed590708d961e924859675a44917
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 2ceb5f2b58cbd1571b2d9f4de79acfe45779bfea
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009342"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226401"
 ---
 # <a name="focus-point-in-unity"></a>Unity でのフォーカス ポイント
 
@@ -63,7 +63,7 @@ void Update()
 > [!div class="nextstepaction"]
 > [HoloLens または Windows Mixed Reality イマーシブヘッドセットへのデプロイ](../platform-capabilities-and-apis/using-visual-studio.md)
 
-いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-platform-capabilities-and-apis)に戻ることができます。
+いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-advanced-features)に戻ることができます。
 
 ### <a name="see-also"></a>関連項目
 

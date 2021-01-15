@@ -6,42 +6,42 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: photo、video、hololens、カメラ、unity、入手、PVC、フォトビデオカメラ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、web カメラ、写真キャプチャ、ビデオキャプチャ
-ms.openlocfilehash: 125521206421acbcc4c9ad6e5fb371314ddb48f2
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 8916b332774185e4453b514ca7b6916947bdcd81
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010103"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226421"
 ---
-# <a name="locatable-camera-in-unity"></a><span data-ttu-id="232fc-104">Unity での場所を特定できるカメラ</span><span class="sxs-lookup"><span data-stu-id="232fc-104">Locatable camera in Unity</span></span>
+# <a name="locatable-camera-in-unity"></a><span data-ttu-id="ac95e-104">Unity での場所を特定できるカメラ</span><span class="sxs-lookup"><span data-stu-id="ac95e-104">Locatable camera in Unity</span></span>
 
-## <a name="enabling-the-capability-for-photo-video-camera"></a><span data-ttu-id="232fc-105">フォトビデオカメラの機能を有効にする</span><span class="sxs-lookup"><span data-stu-id="232fc-105">Enabling the capability for Photo Video Camera</span></span>
+## <a name="enabling-the-capability-for-photo-video-camera"></a><span data-ttu-id="ac95e-105">フォトビデオカメラの機能を有効にする</span><span class="sxs-lookup"><span data-stu-id="ac95e-105">Enabling the capability for Photo Video Camera</span></span>
 
-<span data-ttu-id="232fc-106">アプリで [カメラ](../platform-capabilities-and-apis/locatable-camera.md)を使用するには、"WebCam" 機能を宣言する必要があります。</span><span class="sxs-lookup"><span data-stu-id="232fc-106">The "WebCam" capability must be declared for an app to use the [camera](../platform-capabilities-and-apis/locatable-camera.md).</span></span>
-1. <span data-ttu-id="232fc-107">Unity エディターで、[> プロジェクト > 設定の編集] ページに移動して、プレーヤーの設定に移動します。</span><span class="sxs-lookup"><span data-stu-id="232fc-107">In the Unity Editor, go to the player settings by navigating to the "Edit > Project Settings > Player" page</span></span>
-2. <span data-ttu-id="232fc-108">[Windows ストア] タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="232fc-108">Select the "Windows Store" tab</span></span>
-3. <span data-ttu-id="232fc-109">[発行設定 > 機能] セクションで、 **Web カメラ** と **マイク** の機能を確認します。</span><span class="sxs-lookup"><span data-stu-id="232fc-109">In the "Publishing Settings > Capabilities" section, check the **WebCam** and **Microphone** capabilities</span></span>
+<span data-ttu-id="ac95e-106">アプリで [カメラ](../platform-capabilities-and-apis/locatable-camera.md)を使用するには、"WebCam" 機能を宣言する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ac95e-106">The "WebCam" capability must be declared for an app to use the [camera](../platform-capabilities-and-apis/locatable-camera.md).</span></span>
+1. <span data-ttu-id="ac95e-107">Unity エディターで、[> プロジェクト > 設定の編集] ページに移動して、プレーヤーの設定に移動します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-107">In the Unity Editor, go to the player settings by navigating to the "Edit > Project Settings > Player" page</span></span>
+2. <span data-ttu-id="ac95e-108">[Windows ストア] タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-108">Select the "Windows Store" tab</span></span>
+3. <span data-ttu-id="ac95e-109">[発行設定 > 機能] セクションで、 **Web カメラ** と **マイク** の機能を確認します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-109">In the "Publishing Settings > Capabilities" section, check the **WebCam** and **Microphone** capabilities</span></span>
 
-<span data-ttu-id="232fc-110">カメラで一度に実行できる操作は1つだけです。</span><span class="sxs-lookup"><span data-stu-id="232fc-110">Only a single operation can occur with the camera at a time.</span></span> <span data-ttu-id="232fc-111">カメラの現在の状態を、UnityEngine. XR のモードで確認できます。</span><span class="sxs-lookup"><span data-stu-id="232fc-111">You can check with mode the camera is currently in with UnityEngine.XR.WSA.WebCam.Mode.</span></span> <span data-ttu-id="232fc-112">使用可能なモードは、photo、video、または none です。</span><span class="sxs-lookup"><span data-stu-id="232fc-112">Available modes are photo, video, or none.</span></span>
+<span data-ttu-id="ac95e-110">カメラで一度に実行できる操作は1つだけです。</span><span class="sxs-lookup"><span data-stu-id="ac95e-110">Only a single operation can occur with the camera at a time.</span></span> <span data-ttu-id="ac95e-111">カメラの現在の状態を、UnityEngine. XR のモードで確認できます。</span><span class="sxs-lookup"><span data-stu-id="ac95e-111">You can check with mode the camera is currently in with UnityEngine.XR.WSA.WebCam.Mode.</span></span> <span data-ttu-id="ac95e-112">使用可能なモードは、photo、video、または none です。</span><span class="sxs-lookup"><span data-stu-id="ac95e-112">Available modes are photo, video, or none.</span></span>
 
-## <a name="photo-capture"></a><span data-ttu-id="232fc-113">写真のキャプチャ</span><span class="sxs-lookup"><span data-stu-id="232fc-113">Photo Capture</span></span>
+## <a name="photo-capture"></a><span data-ttu-id="ac95e-113">写真のキャプチャ</span><span class="sxs-lookup"><span data-stu-id="ac95e-113">Photo Capture</span></span>
 
-<span data-ttu-id="232fc-114">**名前空間:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="232fc-114">**Namespace:** *UnityEngine.XR.WSA.WebCam*</span></span><br>
-<span data-ttu-id="232fc-115">**種類:** *photocapture*</span><span class="sxs-lookup"><span data-stu-id="232fc-115">**Type:** *PhotoCapture*</span></span>
+<span data-ttu-id="ac95e-114">**名前空間:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="ac95e-114">**Namespace:** *UnityEngine.XR.WSA.WebCam*</span></span><br>
+<span data-ttu-id="ac95e-115">**種類:** *photocapture*</span><span class="sxs-lookup"><span data-stu-id="ac95e-115">**Type:** *PhotoCapture*</span></span>
 
-<span data-ttu-id="232fc-116">*Photocapture* の種類を使用すると、写真ビデオカメラで引き続き写真を撮ることができます。</span><span class="sxs-lookup"><span data-stu-id="232fc-116">The *PhotoCapture* type allows you to take still photographs with the Photo Video Camera.</span></span> <span data-ttu-id="232fc-117">*Photocapture* を使用して写真を撮影する一般的なパターンを次に示します。</span><span class="sxs-lookup"><span data-stu-id="232fc-117">The general pattern for using *PhotoCapture* to take a photo is as follows:</span></span>
-1. <span data-ttu-id="232fc-118">*Photocapture* オブジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="232fc-118">Create a *PhotoCapture* object</span></span>
-2. <span data-ttu-id="232fc-119">必要な設定を使用して *CameraParameters* オブジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="232fc-119">Create a *CameraParameters* object with the settings you want</span></span>
-3. <span data-ttu-id="232fc-120">*Startphotomodeasync* を使用して写真モードを開始する</span><span class="sxs-lookup"><span data-stu-id="232fc-120">Start Photo Mode via *StartPhotoModeAsync*</span></span>
-4. <span data-ttu-id="232fc-121">希望の写真を撮影する</span><span class="sxs-lookup"><span data-stu-id="232fc-121">Take the photo you want</span></span>
-    * <span data-ttu-id="232fc-122">optionalその画像と対話する</span><span class="sxs-lookup"><span data-stu-id="232fc-122">(optional) Interact with that picture</span></span>
-5. <span data-ttu-id="232fc-123">フォトモードを停止してリソースをクリーンアップする</span><span class="sxs-lookup"><span data-stu-id="232fc-123">Stop Photo Mode and clean up resources</span></span>
+<span data-ttu-id="ac95e-116">*Photocapture* の種類を使用すると、写真ビデオカメラで引き続き写真を撮ることができます。</span><span class="sxs-lookup"><span data-stu-id="ac95e-116">The *PhotoCapture* type allows you to take still photographs with the Photo Video Camera.</span></span> <span data-ttu-id="ac95e-117">*Photocapture* を使用して写真を撮影する一般的なパターンを次に示します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-117">The general pattern for using *PhotoCapture* to take a photo is as follows:</span></span>
+1. <span data-ttu-id="ac95e-118">*Photocapture* オブジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="ac95e-118">Create a *PhotoCapture* object</span></span>
+2. <span data-ttu-id="ac95e-119">必要な設定を使用して *CameraParameters* オブジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="ac95e-119">Create a *CameraParameters* object with the settings you want</span></span>
+3. <span data-ttu-id="ac95e-120">*Startphotomodeasync* を使用して写真モードを開始する</span><span class="sxs-lookup"><span data-stu-id="ac95e-120">Start Photo Mode via *StartPhotoModeAsync*</span></span>
+4. <span data-ttu-id="ac95e-121">希望の写真を撮影する</span><span class="sxs-lookup"><span data-stu-id="ac95e-121">Take the photo you want</span></span>
+    * <span data-ttu-id="ac95e-122">optionalその画像と対話する</span><span class="sxs-lookup"><span data-stu-id="ac95e-122">(optional) Interact with that picture</span></span>
+5. <span data-ttu-id="ac95e-123">フォトモードを停止してリソースをクリーンアップする</span><span class="sxs-lookup"><span data-stu-id="ac95e-123">Stop Photo Mode and clean up resources</span></span>
 
-### <a name="common-set-up-for-photocapture"></a><span data-ttu-id="232fc-124">PhotoCapture 用の一般的な設定</span><span class="sxs-lookup"><span data-stu-id="232fc-124">Common Set Up for PhotoCapture</span></span>
+### <a name="common-set-up-for-photocapture"></a><span data-ttu-id="ac95e-124">PhotoCapture 用の一般的な設定</span><span class="sxs-lookup"><span data-stu-id="ac95e-124">Common Set Up for PhotoCapture</span></span>
 
-<span data-ttu-id="232fc-125">3つのすべての使用について、上記の最初の3つの手順から開始します。</span><span class="sxs-lookup"><span data-stu-id="232fc-125">For all three uses, start with the same first three steps above</span></span>
+<span data-ttu-id="ac95e-125">3つのすべての使用について、上記の最初の3つの手順から開始します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-125">For all three uses, start with the same first three steps above</span></span>
 
-<span data-ttu-id="232fc-126">*Photocapture* オブジェクトの作成から開始する</span><span class="sxs-lookup"><span data-stu-id="232fc-126">Start by creating a *PhotoCapture* object</span></span>
+<span data-ttu-id="ac95e-126">*Photocapture* オブジェクトの作成から開始する</span><span class="sxs-lookup"><span data-stu-id="ac95e-126">Start by creating a *PhotoCapture* object</span></span>
 
 ```cs
 PhotoCapture photoCaptureObject = null;
@@ -51,7 +51,7 @@ PhotoCapture photoCaptureObject = null;
    }
 ```
 
-<span data-ttu-id="232fc-127">次に、オブジェクトを格納し、パラメーターを設定して、写真モードを開始します。</span><span class="sxs-lookup"><span data-stu-id="232fc-127">Next, store your object, set your parameters, and start Photo Mode</span></span>
+<span data-ttu-id="ac95e-127">次に、オブジェクトを格納し、パラメーターを設定して、写真モードを開始します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-127">Next, store your object, set your parameters, and start Photo Mode</span></span>
 
 ```cs
 void OnPhotoCaptureCreated(PhotoCapture captureObject)
@@ -70,7 +70,7 @@ void OnPhotoCaptureCreated(PhotoCapture captureObject)
    }
 ```
 
-<span data-ttu-id="232fc-128">最後に、ここに示されているのと同じクリーンアップコードも使用します。</span><span class="sxs-lookup"><span data-stu-id="232fc-128">In the end, you'll also use the same clean-up code presented here</span></span>
+<span data-ttu-id="ac95e-128">最後に、ここに示されているのと同じクリーンアップコードも使用します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-128">In the end, you'll also use the same clean-up code presented here</span></span>
 
 ```cs
 void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
@@ -80,13 +80,13 @@ void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="232fc-129">これらの手順の後に、キャプチャする写真の種類を選択できます。</span><span class="sxs-lookup"><span data-stu-id="232fc-129">After these steps, you can choose which type of photo to capture.</span></span>
+<span data-ttu-id="ac95e-129">これらの手順の後に、キャプチャする写真の種類を選択できます。</span><span class="sxs-lookup"><span data-stu-id="ac95e-129">After these steps, you can choose which type of photo to capture.</span></span>
 
-### <a name="capture-a-photo-to-a-file"></a><span data-ttu-id="232fc-130">写真をファイルにキャプチャする</span><span class="sxs-lookup"><span data-stu-id="232fc-130">Capture a Photo to a File</span></span>
+### <a name="capture-a-photo-to-a-file"></a><span data-ttu-id="ac95e-130">写真をファイルにキャプチャする</span><span class="sxs-lookup"><span data-stu-id="ac95e-130">Capture a Photo to a File</span></span>
 
-<span data-ttu-id="232fc-131">最も簡単な操作は、写真を直接ファイルにキャプチャすることです。</span><span class="sxs-lookup"><span data-stu-id="232fc-131">The simplest operation is to capture a photo directly to a file.</span></span> <span data-ttu-id="232fc-132">写真は、JPG または PNG として保存できます。</span><span class="sxs-lookup"><span data-stu-id="232fc-132">The photo can be saved as a JPG or a PNG.</span></span>
+<span data-ttu-id="ac95e-131">最も簡単な操作は、写真を直接ファイルにキャプチャすることです。</span><span class="sxs-lookup"><span data-stu-id="ac95e-131">The simplest operation is to capture a photo directly to a file.</span></span> <span data-ttu-id="ac95e-132">写真は、JPG または PNG として保存できます。</span><span class="sxs-lookup"><span data-stu-id="ac95e-132">The photo can be saved as a JPG or a PNG.</span></span>
 
-<span data-ttu-id="232fc-133">写真モードを正常に開始した場合は、写真を撮影してディスクに保存します。</span><span class="sxs-lookup"><span data-stu-id="232fc-133">If you successfully started photo mode, take a photo and store it on disk</span></span>
+<span data-ttu-id="ac95e-133">写真モードを正常に開始した場合は、写真を撮影してディスクに保存します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-133">If you successfully started photo mode, take a photo and store it on disk</span></span>
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -105,7 +105,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="232fc-134">写真をディスクにキャプチャしたら、フォトモードを終了し、オブジェクトをクリーンアップします。</span><span class="sxs-lookup"><span data-stu-id="232fc-134">After capturing the photo to disk, exit photo mode and then clean up your objects</span></span>
+<span data-ttu-id="ac95e-134">写真をディスクにキャプチャしたら、フォトモードを終了し、オブジェクトをクリーンアップします。</span><span class="sxs-lookup"><span data-stu-id="ac95e-134">After capturing the photo to disk, exit photo mode and then clean up your objects</span></span>
 
 ```cs
 void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
@@ -122,13 +122,13 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-### <a name="capture-a-photo-to-a-texture2d"></a><span data-ttu-id="232fc-135">写真を Texture2D に取り込む</span><span class="sxs-lookup"><span data-stu-id="232fc-135">Capture a Photo to a Texture2D</span></span>
+### <a name="capture-a-photo-to-a-texture2d"></a><span data-ttu-id="ac95e-135">写真を Texture2D に取り込む</span><span class="sxs-lookup"><span data-stu-id="ac95e-135">Capture a Photo to a Texture2D</span></span>
 
-<span data-ttu-id="232fc-136">Texture2D にデータをキャプチャするときのプロセスは、ディスクへのキャプチャと似ています。</span><span class="sxs-lookup"><span data-stu-id="232fc-136">When capturing data to a Texture2D, the process is similar to capturing to disk.</span></span>
+<span data-ttu-id="ac95e-136">Texture2D にデータをキャプチャするときのプロセスは、ディスクへのキャプチャと似ています。</span><span class="sxs-lookup"><span data-stu-id="ac95e-136">When capturing data to a Texture2D, the process is similar to capturing to disk.</span></span>
 
-<span data-ttu-id="232fc-137">上記のセットアッププロセスに従います。</span><span class="sxs-lookup"><span data-stu-id="232fc-137">Follow the setup process above.</span></span>
+<span data-ttu-id="ac95e-137">上記のセットアッププロセスに従います。</span><span class="sxs-lookup"><span data-stu-id="ac95e-137">Follow the setup process above.</span></span>
 
-<span data-ttu-id="232fc-138">*Onphotomodestarted 開始* し、フレームをメモリにキャプチャします。</span><span class="sxs-lookup"><span data-stu-id="232fc-138">In *OnPhotoModeStarted*, capture a frame to memory.</span></span>
+<span data-ttu-id="ac95e-138">*Onphotomodestarted 開始* し、フレームをメモリにキャプチャします。</span><span class="sxs-lookup"><span data-stu-id="ac95e-138">In *OnPhotoModeStarted*, capture a frame to memory.</span></span>
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -144,7 +144,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="232fc-139">次に、結果をテクスチャに適用し、上記の一般的なクリーンアップコードを使用します。</span><span class="sxs-lookup"><span data-stu-id="232fc-139">You'll then apply your result to a texture and use the common clean-up code above.</span></span>
+<span data-ttu-id="ac95e-139">次に、結果をテクスチャに適用し、上記の一般的なクリーンアップコードを使用します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-139">You'll then apply your result to a texture and use the common clean-up code above.</span></span>
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -163,11 +163,11 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
    }
 ```
 
-### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a><span data-ttu-id="232fc-140">写真をキャプチャし、生のバイトを操作する</span><span class="sxs-lookup"><span data-stu-id="232fc-140">Capture a Photo and Interact with the Raw bytes</span></span>
+### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a><span data-ttu-id="ac95e-140">写真をキャプチャし、生のバイトを操作する</span><span class="sxs-lookup"><span data-stu-id="ac95e-140">Capture a Photo and Interact with the Raw bytes</span></span>
 
-<span data-ttu-id="232fc-141">インメモリフレームの生バイトを操作するには、上記と同じセットアップ手順に従い、Texture2D への写真のキャプチャと同様に *Onphotomodestarted 開始* します。</span><span class="sxs-lookup"><span data-stu-id="232fc-141">To interact with the raw bytes of an in memory frame, follow the same setup steps as above and *OnPhotoModeStarted* as in capturing a photo to a Texture2D.</span></span> <span data-ttu-id="232fc-142">違いは、生のバイトを取得して操作できる *OnCapturedPhotoToMemory* です。</span><span class="sxs-lookup"><span data-stu-id="232fc-142">The difference is in *OnCapturedPhotoToMemory* where you can get the raw bytes and interact with them.</span></span>
+<span data-ttu-id="ac95e-141">インメモリフレームの生バイトを操作するには、上記と同じセットアップ手順に従い、Texture2D への写真のキャプチャと同様に *Onphotomodestarted 開始* します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-141">To interact with the raw bytes of an in memory frame, follow the same setup steps as above and *OnPhotoModeStarted* as in capturing a photo to a Texture2D.</span></span> <span data-ttu-id="ac95e-142">違いは、生のバイトを取得して操作できる *OnCapturedPhotoToMemory* です。</span><span class="sxs-lookup"><span data-stu-id="ac95e-142">The difference is in *OnCapturedPhotoToMemory* where you can get the raw bytes and interact with them.</span></span>
 
-<span data-ttu-id="232fc-143">この例では、 *Setpixels ()* を使用してさらに処理またはテクスチャに適用する *リスト <Color>* を作成します。</span><span class="sxs-lookup"><span data-stu-id="232fc-143">In this example, you'll create a *List<Color>* to be further processed or applied to a texture via *SetPixels()*</span></span>
+<span data-ttu-id="ac95e-143">この例では、 *Setpixels ()* を使用してさらに処理またはテクスチャに適用する *リスト <Color>* を作成します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-143">In this example, you'll create a *List<Color>* to be further processed or applied to a texture via *SetPixels()*</span></span>
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -200,20 +200,20 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
    }
 ```
 
-## <a name="video-capture"></a><span data-ttu-id="232fc-144">ビデオキャプチャ</span><span class="sxs-lookup"><span data-stu-id="232fc-144">Video Capture</span></span>
+## <a name="video-capture"></a><span data-ttu-id="ac95e-144">ビデオキャプチャ</span><span class="sxs-lookup"><span data-stu-id="ac95e-144">Video Capture</span></span>
 
-<span data-ttu-id="232fc-145">**名前空間:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="232fc-145">**Namespace:** *UnityEngine.XR.WSA.WebCam*</span></span><br>
-<span data-ttu-id="232fc-146">**型:** *VideoCapture*</span><span class="sxs-lookup"><span data-stu-id="232fc-146">**Type:** *VideoCapture*</span></span>
+<span data-ttu-id="ac95e-145">**名前空間:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="ac95e-145">**Namespace:** *UnityEngine.XR.WSA.WebCam*</span></span><br>
+<span data-ttu-id="ac95e-146">**型:** *VideoCapture*</span><span class="sxs-lookup"><span data-stu-id="ac95e-146">**Type:** *VideoCapture*</span></span>
 
-<span data-ttu-id="232fc-147">*VideoCapture* は *photocapture* と同様に機能します。</span><span class="sxs-lookup"><span data-stu-id="232fc-147">*VideoCapture* functions similarly to *PhotoCapture*.</span></span> <span data-ttu-id="232fc-148">2つの違いは、1秒あたりのフレーム数 (FPS) の値を指定する必要があり、mp4 ファイルとして直接ディスクに保存できることだけです。</span><span class="sxs-lookup"><span data-stu-id="232fc-148">The only two differences are that you must specify a Frames Per Second (FPS) value and you can only save directly to disk as a .mp4 file.</span></span> <span data-ttu-id="232fc-149">*VideoCapture* を使用する手順は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="232fc-149">The steps to use *VideoCapture* are as follows:</span></span>
-1. <span data-ttu-id="232fc-150">*VideoCapture* オブジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="232fc-150">Create a *VideoCapture* object</span></span>
-2. <span data-ttu-id="232fc-151">必要な設定を使用して *CameraParameters* オブジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="232fc-151">Create a *CameraParameters* object with the settings you want</span></span>
-3. <span data-ttu-id="232fc-152">*Startvideomodeasync* を使用してビデオモードを開始する</span><span class="sxs-lookup"><span data-stu-id="232fc-152">Start Video Mode via *StartVideoModeAsync*</span></span>
-4. <span data-ttu-id="232fc-153">ビデオの録画を開始する</span><span class="sxs-lookup"><span data-stu-id="232fc-153">Start recording video</span></span>
-5. <span data-ttu-id="232fc-154">ビデオ記録の停止</span><span class="sxs-lookup"><span data-stu-id="232fc-154">Stop recording video</span></span>
-6. <span data-ttu-id="232fc-155">ビデオモードを停止してリソースをクリーンアップする</span><span class="sxs-lookup"><span data-stu-id="232fc-155">Stop Video Mode and clean up resources</span></span>
+<span data-ttu-id="ac95e-147">*VideoCapture* は *photocapture* と同様に機能します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-147">*VideoCapture* functions similarly to *PhotoCapture*.</span></span> <span data-ttu-id="ac95e-148">2つの違いは、1秒あたりのフレーム数 (FPS) の値を指定する必要があり、mp4 ファイルとして直接ディスクに保存できることだけです。</span><span class="sxs-lookup"><span data-stu-id="ac95e-148">The only two differences are that you must specify a Frames Per Second (FPS) value and you can only save directly to disk as a .mp4 file.</span></span> <span data-ttu-id="ac95e-149">*VideoCapture* を使用する手順は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="ac95e-149">The steps to use *VideoCapture* are as follows:</span></span>
+1. <span data-ttu-id="ac95e-150">*VideoCapture* オブジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="ac95e-150">Create a *VideoCapture* object</span></span>
+2. <span data-ttu-id="ac95e-151">必要な設定を使用して *CameraParameters* オブジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="ac95e-151">Create a *CameraParameters* object with the settings you want</span></span>
+3. <span data-ttu-id="ac95e-152">*Startvideomodeasync* を使用してビデオモードを開始する</span><span class="sxs-lookup"><span data-stu-id="ac95e-152">Start Video Mode via *StartVideoModeAsync*</span></span>
+4. <span data-ttu-id="ac95e-153">ビデオの録画を開始する</span><span class="sxs-lookup"><span data-stu-id="ac95e-153">Start recording video</span></span>
+5. <span data-ttu-id="ac95e-154">ビデオ記録の停止</span><span class="sxs-lookup"><span data-stu-id="ac95e-154">Stop recording video</span></span>
+6. <span data-ttu-id="ac95e-155">ビデオモードを停止してリソースをクリーンアップする</span><span class="sxs-lookup"><span data-stu-id="ac95e-155">Stop Video Mode and clean up resources</span></span>
 
-<span data-ttu-id="232fc-156">まず、 *VideoCapture* オブジェクト VideoCapture m_VideoCapture を作成し *ます。*</span><span class="sxs-lookup"><span data-stu-id="232fc-156">Start by creating our *VideoCapture* object *VideoCapture m_VideoCapture = null;*</span></span>
+<span data-ttu-id="ac95e-156">まず、 *VideoCapture* オブジェクト VideoCapture m_VideoCapture を作成し *ます。*</span><span class="sxs-lookup"><span data-stu-id="ac95e-156">Start by creating our *VideoCapture* object *VideoCapture m_VideoCapture = null;*</span></span>
 
 ```cs
 void Start ()
@@ -222,7 +222,7 @@ void Start ()
    }
 ```
 
-<span data-ttu-id="232fc-157">次に、記録に使用するパラメーターを設定し、を開始します。</span><span class="sxs-lookup"><span data-stu-id="232fc-157">Next, set up the parameters you'll want for the recording and start.</span></span>
+<span data-ttu-id="ac95e-157">次に、記録に使用するパラメーターを設定し、を開始します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-157">Next, set up the parameters you'll want for the recording and start.</span></span>
 
 ```cs
 void OnVideoCaptureCreated (VideoCapture videoCapture)
@@ -252,7 +252,7 @@ void OnVideoCaptureCreated (VideoCapture videoCapture)
    }
 ```
 
-<span data-ttu-id="232fc-158">開始したら、記録を開始します。</span><span class="sxs-lookup"><span data-stu-id="232fc-158">Once started, begin the recording</span></span>
+<span data-ttu-id="ac95e-158">開始したら、記録を開始します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-158">Once started, begin the recording</span></span>
 
 ```cs
 void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
@@ -267,7 +267,7 @@ void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="232fc-159">記録が開始されたら、UI または動作を更新して停止を有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="232fc-159">After recording has started, you could update your UI or behaviors to enable stopping.</span></span> <span data-ttu-id="232fc-160">ここでは、ログを記録するだけです。</span><span class="sxs-lookup"><span data-stu-id="232fc-160">Here you just log.</span></span>
+<span data-ttu-id="ac95e-159">記録が開始されたら、UI または動作を更新して停止を有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="ac95e-159">After recording has started, you could update your UI or behaviors to enable stopping.</span></span> <span data-ttu-id="ac95e-160">ここでは、ログを記録するだけです。</span><span class="sxs-lookup"><span data-stu-id="ac95e-160">Here you just log.</span></span>
 
 ```cs
 void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -277,7 +277,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="232fc-161">後で、タイマーまたはユーザー入力を使用して記録を停止します。たとえば、のようにします。</span><span class="sxs-lookup"><span data-stu-id="232fc-161">At a later point, you'll want to stop the recording using a timer or user input, for instance.</span></span>
+<span data-ttu-id="ac95e-161">後で、タイマーまたはユーザー入力を使用して記録を停止します。たとえば、のようにします。</span><span class="sxs-lookup"><span data-stu-id="ac95e-161">At a later point, you'll want to stop the recording using a timer or user input, for instance.</span></span>
 
 ```cs
 // The user has indicated to stop recording
@@ -287,7 +287,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="232fc-162">記録が停止したら、ビデオモードを停止し、リソースをクリーンアップします。</span><span class="sxs-lookup"><span data-stu-id="232fc-162">Once the recording has stopped, stop video mode and clean up your resources.</span></span>
+<span data-ttu-id="ac95e-162">記録が停止したら、ビデオモードを停止し、リソースをクリーンアップします。</span><span class="sxs-lookup"><span data-stu-id="ac95e-162">Once the recording has stopped, stop video mode and clean up your resources.</span></span>
 
 ```cs
 void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -303,23 +303,23 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-## <a name="troubleshooting"></a><span data-ttu-id="232fc-163">トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="232fc-163">Troubleshooting</span></span>
-* <span data-ttu-id="232fc-164">解決策はありません</span><span class="sxs-lookup"><span data-stu-id="232fc-164">No resolutions are available</span></span>
-    * <span data-ttu-id="232fc-165">**Web カメラ** 機能がプロジェクトで指定されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="232fc-165">Ensure the **WebCam** capability is specified in your project.</span></span>
+## <a name="troubleshooting"></a><span data-ttu-id="ac95e-163">トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="ac95e-163">Troubleshooting</span></span>
+* <span data-ttu-id="ac95e-164">解決策はありません</span><span class="sxs-lookup"><span data-stu-id="ac95e-164">No resolutions are available</span></span>
+    * <span data-ttu-id="ac95e-165">**Web カメラ** 機能がプロジェクトで指定されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-165">Ensure the **WebCam** capability is specified in your project.</span></span>
 
-## <a name="next-development-checkpoint"></a><span data-ttu-id="232fc-166">次の開発チェックポイント</span><span class="sxs-lookup"><span data-stu-id="232fc-166">Next Development Checkpoint</span></span>
+## <a name="next-development-checkpoint"></a><span data-ttu-id="ac95e-166">次の開発チェックポイント</span><span class="sxs-lookup"><span data-stu-id="ac95e-166">Next Development Checkpoint</span></span>
 
-<span data-ttu-id="232fc-167">ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality プラットフォームの機能と Api の調査が途中で終了しています。</span><span class="sxs-lookup"><span data-stu-id="232fc-167">If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs.</span></span> <span data-ttu-id="232fc-168">ここからは、次のトピックに進むことができます。</span><span class="sxs-lookup"><span data-stu-id="232fc-168">From here, you can continue to the next topic:</span></span>
-
-> [!div class="nextstepaction"]
-> [<span data-ttu-id="232fc-169">フォーカス ポイント</span><span class="sxs-lookup"><span data-stu-id="232fc-169">Focus point</span></span>](focus-point-in-unity.md)
-
-<span data-ttu-id="232fc-170">または、デバイスまたはエミュレーターへのアプリの配置操作に直接移動します。</span><span class="sxs-lookup"><span data-stu-id="232fc-170">Or jump directly to deploying your app on a device or emulator:</span></span>
+<span data-ttu-id="ac95e-167">ここまでに説明した Unity 開発チェックポイントの旅に従っている場合は、Mixed Reality プラットフォームの機能と Api の調査が途中で終了しています。</span><span class="sxs-lookup"><span data-stu-id="ac95e-167">If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs.</span></span> <span data-ttu-id="ac95e-168">ここから、次のトピックを続けることができます。</span><span class="sxs-lookup"><span data-stu-id="ac95e-168">From here, you can continue to the next topic:</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="232fc-171">HoloLens または Windows Mixed Reality イマーシブヘッドセットへのデプロイ</span><span class="sxs-lookup"><span data-stu-id="232fc-171">Deploy to HoloLens or Windows Mixed Reality immersive headsets</span></span>](../platform-capabilities-and-apis/using-visual-studio.md)
+> [<span data-ttu-id="ac95e-169">フォーカス ポイント</span><span class="sxs-lookup"><span data-stu-id="ac95e-169">Focus point</span></span>](focus-point-in-unity.md)
 
-<span data-ttu-id="232fc-172">いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-platform-capabilities-and-apis)に戻ることができます。</span><span class="sxs-lookup"><span data-stu-id="232fc-172">You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.</span></span>
+<span data-ttu-id="ac95e-170">または、デバイスまたはエミュレーターへのアプリの配置操作に直接移動します。</span><span class="sxs-lookup"><span data-stu-id="ac95e-170">Or jump directly to deploying your app on a device or emulator:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="232fc-173">関連項目</span><span class="sxs-lookup"><span data-stu-id="232fc-173">See Also</span></span>
-* [<span data-ttu-id="232fc-174">場所を特定できるカメラ</span><span class="sxs-lookup"><span data-stu-id="232fc-174">Locatable camera</span></span>](../platform-capab ilities-and-apis/locatable-camera.md)
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="ac95e-171">HoloLens または Windows Mixed Reality イマーシブヘッドセットへのデプロイ</span><span class="sxs-lookup"><span data-stu-id="ac95e-171">Deploy to HoloLens or Windows Mixed Reality immersive headsets</span></span>](../platform-capabilities-and-apis/using-visual-studio.md)
+
+<span data-ttu-id="ac95e-172">いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-advanced-features)に戻ることができます。</span><span class="sxs-lookup"><span data-stu-id="ac95e-172">You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-advanced-features) at any time.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="ac95e-173">参照</span><span class="sxs-lookup"><span data-stu-id="ac95e-173">See Also</span></span>
+* [<span data-ttu-id="ac95e-174">場所を特定できるカメラ</span><span class="sxs-lookup"><span data-stu-id="ac95e-174">Locatable camera</span></span>](../platform-capab ilities-and-apis/locatable-camera.md)

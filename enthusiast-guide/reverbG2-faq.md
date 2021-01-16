@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、パフォーマンス
 appliesto:
 - Windows 10
-ms.openlocfilehash: 00338e1354dc04acc76fa2525c721a5e2bd4afe2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
+ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009472"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242539"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP リバーブ G2 に関してよく寄せられる質問
 
@@ -92,3 +92,13 @@ HP リバーブ G2 マイクが Windows PC によって最初に認識される�
 
 ここでは、アクティブコントローラーのバインドを "Custom" に変更することができます。これにより、コミュニティ共有ゲームバインドを試すオプションが開きます。
 このゲームでカスタムゲームのバインドがまだ共有されていない場合 (または、試してみたものが完全に満たされていない場合) は、独自のカスタムゲームバインドを作成して、少数のゲームセッション後に共有することで、コミュニティの他の部分にも役立ちます。
+
+## <a name="i-have-all-cables-connected-to-the-headset-and-pc-but-it-wont-turn-on"></a>すべてのケーブルがヘッドセットと PC に接続されていますが、電源がオンになっていません。
+
+ヘッドセットに接続されているケーブルが完全に取り付けられていることを確認します。 ケーブルの上部には、ヘッドセットが完全に挿入されたときにヘッドラインの上端の横にある小さなドットが表示されます。
+
+![ケーブルの上部の小さなドット](images/small-dot.jpg)
+
+## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>PC を引き続き使用しているときにヘッドセットの電源を切る方法
+
+ヘッドセットケーブルのリンクボックスから AC 接続アダプターを取り外して、ヘッドセットの電源を取り外します。

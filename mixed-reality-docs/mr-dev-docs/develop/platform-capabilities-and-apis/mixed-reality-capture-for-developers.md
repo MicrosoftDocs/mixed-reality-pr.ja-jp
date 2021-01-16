@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc、写真、ビデオ、キャプチャ、カメラ
-ms.openlocfilehash: 40d621133d8aa4c7a58488b80a04ca3b4b46638d
-ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
+ms.openlocfilehash: 88b31d139f01c6cbe0567203e39f7640270f7716
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108865"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247725"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>開発者向け複合現実キャプチャ
 
@@ -214,7 +214,7 @@ Unity アプリケーションでは、プロパティの [Locatable_camera_in_U
 
 アプリケーションには、効果を追加するためのオプションが2つあります。
 * 以前の API: [MediaCapture. AddEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addeffectasync) 。
-* 新しい Microsoft 推奨 API (オブジェクトを返し、動的プロパティを操作できるようにします)。 MediaCapture [MediaCapture](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)() は、  /  [](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync)アプリが[IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition)と[IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition)の独自の実装を作成する必要があることを必要としますが、これに該当します。 例については、「使用例」を参照してください。
+* 新しい Microsoft 推奨 API (オブジェクトを返し、動的プロパティを操作できるようにします)。 MediaCapture [MediaCapture](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)() は、  /  [](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync)アプリが[IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition)と[IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition)の独自の実装を作成する必要があることを必要としますが、これに該当します。 例については、 [MRC サンプルアプリ](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) を参照してください。
 
 >[!NOTE]
 > MixedRealityCapture 名前空間は Visual Studio で認識されませんが、文字列はまだ有効です。

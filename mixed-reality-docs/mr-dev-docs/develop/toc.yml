@@ -20,25 +20,17 @@
       href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
-    - name: Unity 開発の概要
+    - name: HoloLens 向けの Unity の開発
       href: unity/unity-development-overview.md
-    - name: プロジェクトの構成
-      items:
-        - name: MRTK の概要
-          href: unity/mrtk-getting-started.md
-        - name: MRTK を使用しないプロジェクトを構成する
-          href: unity/configure-unity-project.md
-        - name: Mixed Reality OpenXR プラグインを使用する
-          href: unity/openxr-getting-started.md
-        - name: OpenXR プラグインでサポートされる機能
-          href: unity/openxr-supported-features.md
+    - name: VR 向けの Unity の開発
+      href: unity/unity-development-wmr-overview.md
     - name: チュートリアル
       items:
         - name: 概要
           href: unity/tutorials.md
         - name: HoloLens 2 のチュートリアル
           items:
-            - name: MRTK のチュートリアル
+            - name: 初級レベルの MRTK チュートリアル
               items:
                 - name: 1. はじめに
                   href: unity/tutorials/mr-learning-base-01.md
@@ -172,51 +164,63 @@
               href: unity/tutorials/mr-azure-312.md
             - name: MR と Azure 313 - IoT Hub サービス
               href: unity/tutorials/mr-azure-301.md
-    - name: コア構成要素
+    - name: プロジェクトの設定
+      items:
+        - name: MRTK の概要
+          href: unity/mrtk-getting-started.md
+        - name: MRTK を使用しないプロジェクトを構成する
+          href: unity/configure-unity-project.md
+        - name: Mixed Reality OpenXR プラグインを使用する
+          href: unity/openxr-getting-started.md
+        - name: OpenXR プラグインでサポートされる機能
+          href: unity/openxr-supported-features.md
+    - name: 基本的な構成要素
       items:
         - name: MRTK 101 - Mixed Reality Toolkit Unity を使用したコアの対話式操作のビルド
           href: unity/mrtk-101.md
-        - name: Unity のカメラ
+        - name: カメラ
           href: unity/camera-in-unity.md
-        - name: Unity の座標系
+        - name: 座標系
           href: unity/coordinate-systems-in-unity.md
-        - name: Unity の永続化
+        - name: 永続化
           href: unity/persistence-in-unity.md
-        - name: Unity の視線入力
+        - name: 頭の視線入力
           href: unity/gaze-in-unity.md
-        - name: Unity のテキスト
+        - name: Text
           href: unity/text-in-unity.md
-        - name: Unity でのジェスチャとモーション コントローラー
-          href: unity/gestures-and-motion-controllers-in-unity.md
-        - name: Unity での手と視点の追跡
+        - name: モーション コントローラー
+          href: unity/motion-controllers-in-unity.md
+        - name: ジェスチャ
+          href: unity/gestures-in-unity.md
+        - name: 手と視線の追跡
           href: unity/hand-eye-in-unit.md
-        - name: Unity の音声入力
+        - name: 音声入力
           href: unity/voice-input-in-unity.md
-        - name: Unity の空間マッピング
+        - name: 空間マッピング
           href: unity/spatial-mapping-in-unity.md
-        - name: Unity の立体音響
+        - name: 立体音響
           href: unity/spatial-sound-in-unity.md
-    - name: プラットフォームの機能と API
+    - name: 高度な機能
       items:
-        - name: Unity での共有エクスペリエンス
+        - name: 共有エクスペリエンス
           href: unity/shared-experiences-in-unity.md
-        - name: Unity での場所を特定できるカメラ
+        - name: 場所を特定できるカメラ
           href: unity/locatable-camera-in-unity.md
-        - name: Unity でのフォーカス ポイント
+        - name: フォーカス ポイント
           href: unity/focus-point-in-unity.md
-        - name: Unity での損失の追跡
+        - name: 追跡の損失
           href: unity/tracking-loss-in-unity.md
-        - name: Unity でのキーボード入力
+        - name: キーボード入力
           href: unity/keyboard-input-in-unity.md
         - name: Windows 名前空間と HoloLens 用 Unity アプリの使用
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
-        - name: Unity での Mixed Reality ネイティブ オブジェクト
+        - name: Mixed Reality ネイティブ オブジェクト
           href: unity/unity-xrdevice-advanced.md
-        - name: Vuforia と Unity の使用
+        - name: Vuforia の使用
           href: unity/vuforia-development-overview.md
     - name: イマーシブ VR
       items:
-        - name: Unity の HP Reverb G2 コントローラー
+        - name: HP Reverb G2 コントローラー
           href: unity/unity-reverb-g2-controllers.md
     - name: サンプル アプリ
       items:
@@ -236,7 +240,7 @@
               href: unity/galaxy-explorer.md
             - name: 月着陸船
               href: unity/lunar-module.md
-    - name: 設定とデバッグ
+    - name: デバッグとパフォーマンス
       items:
         - name: Unity IL2CPP を使用したマネージド デバッグ
           href: unity/managed-debugging-with-unity-il2cpp.md
@@ -272,35 +276,35 @@
               href: unreal/tutorials/unreal-uxt-ch5.md
             - name: パッケージ化とデプロイ
               href: unreal/tutorials/unreal-uxt-ch6.md
-    - name: コア構成要素
+    - name: 基本的な構成要素
       items:
-        - name: Unreal での視線入力
+        - name: 視線入力
           href: unreal/unreal-gaze-input.md
-        - name: Unreal での手の追跡
+        - name: ハンド トラッキング
           href: unreal/unreal-hand-tracking.md
-        - name: Unreal での空間マッピング
+        - name: 空間マッピング
           href: unreal/unreal-spatial-mapping.md
-        - name: Unreal での空間オーディオ
+        - name: 空間オーディオ
           href: unreal/unreal-spatial-audio.md
-        - name: Unreal でのローカル空間アンカー
+        - name: ローカル空間アンカー
           href: unreal/unreal-spatial-anchors.md
-        - name: Unreal での Azure Spatial Anchors
+        - name: Azure 空間アンカー
           href: unreal/unreal-azure-spatial-anchors.md
-        - name: Unreal での音声入力
+        - name: 音声入力
           href: unreal/unreal-voice-input.md
-    - name: プラットフォームの機能と API
+    - name: 高度な機能
       items:
-        - name: Unreal での HoloLens 写真/ビデオ カメラ
+        - name: HoloLens 写真/ビデオ カメラ
           href: unreal/unreal-hololens-camera.md
-        - name: Unreal での QR コード
+        - name: QR コード
           href: unreal/unreal-qr-codes.md
-        - name: Unreal での UMG とキーボード
+        - name: UMG とキーボード
           href: unreal/unreal-umg-keyboard.md
-        - name: Unreal での WinRT
+        - name: WinRT
           href: unreal/unreal-winrt.md
     - name: イマーシブ VR
       items:
-        - name: Unreal の HP Reverb G2 コントローラー
+        - name: HP Reverb G2 コントローラー
           href: unreal/unreal-reverb-g2-controllers.md
     - name: サンプル アプリ
       items:
@@ -308,17 +312,17 @@
           href: unreal/unreal-kippys-escape.md
     - name: デプロイとパフォーマンス
       items:
-        - name: Unreal でのデバイスへのデプロイ
+        - name: デバイスへのデプロイ
           href: unreal/unreal-deploying.md
         - name: Microsoft Store への発行
           href: unreal/unreal-publishing-to-store.md
-        - name: Unreal のパフォーマンスに関する推奨事項
+        - name: パフォーマンスの推奨事項
           href: unreal/performance-recommendations-for-unreal.md
-        - name: Unreal の素材に関する推奨事項
+        - name: 素材に関する推奨事項
           href: unreal/unreal-materials.md
         - name: Unreal Insights を使用したプロファイリング
           href: unreal/unreal-insights.md
-        - name: Unreal でのストリーミング
+        - name: ストリーミング
           href: unreal/unreal-streaming.md
 - name: Web
   items:

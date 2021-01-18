@@ -176,8 +176,6 @@
           href: unity/openxr-supported-features.md
     - name: 基本的な構成要素
       items:
-        - name: MRTK 101 - Mixed Reality Toolkit Unity を使用したコアの対話式操作のビルド
-          href: unity/mrtk-101.md
         - name: カメラ
           href: unity/camera-in-unity.md
         - name: 座標系

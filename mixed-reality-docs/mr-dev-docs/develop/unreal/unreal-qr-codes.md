@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, QR コード, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 1daa368ee9f98accec58c6621073bd7caefdfdcb
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d896af683a86a1b27e5d100df744222085574a93
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010012"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247745"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal での QR コード
 
@@ -85,7 +85,7 @@ QR コードを使用してバックグラウンドで多くの処理が行わ�
 > [!div class="nextstepaction"]
 > [デバイスへの配置](unreal-deploying.md)
 
-いつでも [Unreal 開発チェックポイント](unreal-development-overview.md#3-platform-capabilities-and-apis)に戻ることができます。
+いつでも [Unreal 開発チェックポイント](unreal-development-overview.md#3-advanced-features)に戻ることができます。
 
 ## <a name="see-also"></a>関連項目
 * [空間マッピング](../../design/spatial-mapping.md)

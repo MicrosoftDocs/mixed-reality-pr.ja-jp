@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ad7d530de61864528ae80e4d0086687d282e6b18
-ms.sourcegitcommit: 8f9f98342aaf66645fd74dac3fad499f9d799ce7
+ms.openlocfilehash: 53d22260603c4e52096eccf1d7af6a3b0732124e
+ms.sourcegitcommit: 672a7a145cfc656273af4ea34f99583eb9fa849c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98109263"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98225384"
 ---
 # <a name="426"></a>[4.26](#tab/426) 
 
@@ -133,7 +133,7 @@ void ACamCapture::BeginPlay()
     // Create a dynamic material instance from the game's camera material.
     // Right-click on a material in the project and select "Copy Reference" to get this string.
     FString CameraMatPath("Material'/Game/Materials/CamTextureMaterial.CamTextureMaterial'");
-    UMaterial* BaseMateriall = (UMaterial*)StaticLoadObject(UMaterial::StaticClass(), nullptr, *CameraMatPath, nullptr, LOAD_None, nullptr);
+    UMaterial* BaseMaterial = (UMaterial*)StaticLoadObject(UMaterial::StaticClass(), nullptr, *CameraMatPath, nullptr, LOAD_None, nullptr);
     DynamicMaterial = UMaterialInstanceDynamic::Create(BaseMaterial, this);
 
     // Use the dynamic material instance when rendering the camera mesh.

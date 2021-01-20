@@ -44,7 +44,7 @@
 ### [イマーシブ ヘッドセットの正常性、安全性、快適さ](wmr-health-safety-comfort.md)
 ### [Mixed Reality ソフトウェアの概要とリリース履歴](mixed-reality-software.md)
 ### [インサイドアウト追跡のしくみ](tracking-system.md)
-### [Unity の HP Reverb G2 コントローラー](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-### [Unreal の HP Reverb G2 コントローラー](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+### [Unity の HP Reverb G2 コントローラー](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+### [Unreal の HP Reverb G2 コントローラー](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 
 ## [共同作成に関するガイド](contributing.md)

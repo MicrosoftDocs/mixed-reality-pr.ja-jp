@@ -12,12 +12,12 @@ metadata:
   ms.technology: enthusiast-guide
   author: mattwojo
   ms.author: mattwoj
-  ms.openlocfilehash: 3c485d7214da9109d8f1120e88cb02449b386cff
-  ms.sourcegitcommit: 1aae69e26ae872b724be1bd1ae0b3158c49dc7e2
+  ms.openlocfilehash: b8ff9f6abbd27d3f73548e19e13888dcd7321181
+  ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/24/2020
-  ms.locfileid: "92499577"
+  ms.lasthandoff: 01/20/2021
+  ms.locfileid: "98581683"
 highlightedContent:
   items:
   - title: Windows Mixed Reality VR について
@@ -97,5 +97,5 @@ additionalContent:
       url: mixed-reality-software.md
     - title: Windows Mixed Reality での開発
       summary: 開発と設計に関するドキュメント
-      url: https://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity
+      url: /windows/mixed-reality/develop/development?tabs=unity
   footer: サイトで問題が見つかりましたか。 [ぜひご意見をお寄せください。](https://forums.hololens.com/categories/using-windows-mixed-reality)

@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 0ef4c230bb58d9be3c0d61822754c313ab8dab16
-  ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+  ms.openlocfilehash: a4a869ca70c630956427130b01928c3154164f46
+  ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/08/2021
-  ms.locfileid: "98007558"
+  ms.lasthandoff: 01/20/2021
+  ms.locfileid: "98582864"
 highlightedContent:
   items:
   - title: Mixed Reality とは
@@ -26,10 +26,10 @@ highlightedContent:
     url: discover/mixed-reality.md
   - title: HoloLens 2 の概要
     itemType: overview
-    url: https://docs.microsoft.com/hololens/hololens2-hardware
+    url: /hololens/hololens2-hardware
   - title: Dynamics 365 Mixed Reality アプリケーション
     itemType: reference
-    url: https://docs.microsoft.com/dynamics365/mixed-reality/
+    url: /dynamics365/mixed-reality/
   - title: Azure 複合現実クラウド サービス
     itemType: whats-new
     url: develop/mixed-reality-cloud-services.md
@@ -38,13 +38,13 @@ highlightedContent:
     url: develop/development.md
   - title: IT 管理者
     itemType: quickstart
-    url: https://docs.microsoft.com/hololens/hololens-requirements
+    url: /hololens/hololens-requirements
   - title: VR 愛好者
     itemType: how-to-guide
-    url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey
+    url: /windows/mixed-reality/enthusiast-guide/vr-journey
   - title: Mixed Reality の Learn モジュール
     itemType: learn
-    url: develop/mr-learning-overview.md
+    url: ./discover/mr-learning-overview.md
 productDirectory:
   title: Mixed Reality を使ってみる
   summary: デザイナー、開発者、IT 専門家それぞれが使用を開始するためのパスが用意されています。
@@ -82,17 +82,17 @@ productDirectory:
   - title: 配置
     imageSrc: images/icon-distribution.jpg
     links:
-    - url: https://docs.microsoft.com/hololens/hololens-requirements
+    - url: /hololens/hololens-requirements
       text: 商用環境でのデプロイの準備
-    - url: https://docs.microsoft.com/hololens/hololens-identity
+    - url: /hololens/hololens-identity
       text: ユーザー ID とサインインの管理
-    - url: https://docs.microsoft.com/hololens/hololens-enroll-mdm
+    - url: /hololens/hololens-enroll-mdm
       text: デバイスの登録
-    - url: https://docs.microsoft.com/hololens/hololens-updates
+    - url: /hololens/hololens-updates
       text: HoloLens 更新プログラムの管理
-    - url: https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview
+    - url: /hololens/hololens2-cloud-connected-overview
       text: Remote Assist を使用したクラウド接続デプロイ
-    - url: https://docs.microsoft.com/hololens/hololens-troubleshooting
+    - url: /hololens/hololens-troubleshooting
       text: トラブルシューティングとサポート
 conceptualContent:
   title: フレームワーク

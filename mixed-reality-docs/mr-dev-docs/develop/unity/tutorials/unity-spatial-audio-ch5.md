@@ -1,70 +1,72 @@
 ---
-title: リバーブを使用して立体オーディオに距離を追加する
-description: リバーブ効果を追加して、混合現実アプリケーションでの空間オーディオに対する距離バリエーションの意味を向上させる方法について説明します。
+title: 空間オーディオチュートリアル-5。 リバーブを使用して立体オーディオに距離を追加する
+description: リバーブ効果を追加して、空間オーディオに対する距離バリエーションの意味を高めます。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、ヘッド関連の転送関数、リバーブ、Microsoft Spatializer、オーディオミキサー、SFX リバーブ
-ms.openlocfilehash: 6c04ac1e4b52c7eb6104d54c184c789bec413852
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 3d19bb0b22c507eb692a752aa318ecb82a1cf2f7
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006362"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578383"
 ---
-# <a name="using-reverb-to-add-distance-to-spatial-audio"></a>リバーブを使用して立体オーディオに距離を追加する
+# <a name="5-using-reverb-to-add-distance-to-spatial-audio"></a>5.リバーブを使用して立体オーディオに距離を追加する
+
+## <a name="overview"></a>概要
+
+前のチュートリアルでは、サウンドに対して spatialization を追加して、このチュートリアルの方向を理解できるようにしました。このチュートリアルでは、音声を表示するためのリバーブ効果を追加します。
 
 ## <a name="objectives"></a>目標
 
-前の章では、spatialization をサウンドに追加して、方向を理解できるようにしました。 この5番目の章では、リバーブ効果を追加して、距離を示す音を出します。 目標は次のとおりです。
-* リバーブを追加することで、サウンドソースの知覚距離を向上させる
+* リバーブを追加することで、サウンドソースの知覚距離を改善します。
 * リスナーとホログラムの距離を使用して、サウンドの知覚距離を制御します。
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>ミキサーグループとリバーブ効果を追加する
 
-[第2章](unity-spatial-audio-ch2.md)では、ミキサーを追加しました。 ミキサーには、既定で **マスター** と呼ばれる **グループ** が1つ含まれています。 一部のサウンドにはリバーブ効果を適用するだけなので、これらのサウンドに対して2番目の **グループ** を追加してみましょう。 **グループ** を追加するには、**オーディオミキサー** で **マスター** グループを右クリックし、[**子グループの追加**] を選択します。
+[Spatializing button 対話サウンドチュートリアル](unity-spatial-audio-ch2.md)では、ミキサーを追加しました。 ミキサーには、既定で **マスター** と呼ばれる **グループ** が1つ含まれています。 一部のサウンドにはリバーブ効果を適用するだけなので、これらのサウンドに対して2番目のグループを追加してみましょう。 グループを追加するには、 **オーディオミキサー** でマスターグループを右クリックし、[ **子グループの追加** ] を選択し、適切な名前を指定します。たとえば、「 _部屋の効果_:
 
-![子グループの追加](images/spatial-audio/add-child-group.png)
-
-この例では、新しいグループに "Room Effect" という名前を付けています。
+![子グループの追加](images/spatial-audio/spatial-audio-05-section1-step1-1.png)
 
 各 **グループ** には、独自の効果セットがあります。 新しいグループに [ **追加...** ] をクリックし、[ **SFX リバーブ**] を選択して、新しいグループにリバーブ効果を追加します。
 
-![SFX リバーブを追加する](images/spatial-audio/add-sfx-reverb.png)
+![SFX リバーブを追加する](images/spatial-audio/spatial-audio-05-section1-step1-2.png)
 
 オーディオの用語では、元の unreverberated オーディオは _ドライパス_ と呼ばれ、リバーブフィルターを使用したフィルター処理後のオーディオは _ウェットパス_ と呼ばれます。 どちらのパスもオーディオ出力に送信され、この混合におけるそれらの相対的な長所は _ウェット/ドライミックス_ と呼ばれます。 ウェットミックスとドライミックスは、距離の意味に強く影響します。
 
-**SFX リバーブ** には、エフェクト内のウェットミックスとドライミックスを調整するためのコントロールが含まれています。 **Microsoft Spatializer** プラグインはドライパスを処理するため、 **SFX リバーブ** はウェットパスに対してのみ使用します。 **SFX リバーブ** の [**インスペクター** ] ウィンドウで、次のようにします。
-* [ドライレベル] プロパティを最も低い設定 (-1万 mB) に設定します。
-* Room プロパティを最高の設定 (0 mB) に設定します。
+**SFX リバーブ** には、エフェクト内のウェットミックスとドライミックスを調整するためのコントロールが含まれています。 **Microsoft Spatializer** プラグインはドライパスを処理するため、 **SFX リバーブ** はウェットパスに対してのみ使用します。 **SFX リバーブ** の [インスペクター] ウィンドウで、次のようにします。
 
-これらの変更が完了すると、 **SFX リバーブ** の [**インスペクター** ] ウィンドウは次のようになります。
+* [ **ドライレベル** ] プロパティを最も低い設定 (-1万 mB) に設定します。
+* **Room プロパティ** を最高の設定 (0 mB) に設定します。
 
-![SFX リバーブのプロパティ](images/spatial-audio/sfx-reverb-properties.png)
+![SFX リバーブのプロパティ](images/spatial-audio/spatial-audio-05-section1-step1-3.png)
 
-その他の設定は、シミュレートされたルームの感覚を制御します。 特に、 **減衰時間** は、認識される部屋のサイズに関連しています。 
+その他の設定は、シミュレートされたルームの感覚を制御します。 特に、 **減衰時間** は、認識される部屋のサイズに関連しています。
 
 ## <a name="enable-reverb-on-the-video-playback"></a>ビデオ再生でリバーブを有効にする
 
 オーディオソースでリバーブを有効にするには、次の2つの手順を実行します。
+
 * **オーディオソース** を適切な **グループ** にルーティングする
 * 処理のためにオーディオを **グループ** に渡すように **Microsoft Spatializer** プラグインを設定します
 
 次の手順では、オーディオルーティングを制御するようにスクリプトを調整し、 **Microsoft Spatializer** プラグインに用意されているコントロールスクリプトを添付して、リバーブにデータをフィードします。
 
-**クワッド** の [**インスペクター** ] ウィンドウで、[**コンポーネントの追加**] をクリックし、**ルーム効果の送信レベル** のスクリプトを追加します。
+階層で **クワッド** を選択した状態で、[インスペクター] ウィンドウの [ **コンポーネントの追加** ] をクリックし、 **ルーム効果の送信レベル (スクリプト)** を追加します。
 
-![送信レベルスクリプトの追加](images/spatial-audio/add-send-level-script.png)
+![送信レベルスクリプトの追加](images/spatial-audio/spatial-audio-05-section2-step1-1.png)
 
 > [!NOTE]
 > **Microsoft Spatializer** プラグインの **ルーム効果の送信レベル** 機能を有効にしない限り、結果の処理のためにオーディオが Unity オーディオエンジンに送信されることはありません。
 
-**Room 効果の送信レベル** コンポーネントには、リバーブ処理のために Unity オーディオエンジンに送信されるオーディオのレベルを設定するグラフコントロールが含まれています。 曲線を下にドラッグして、レベルを約-30dB に設定します。
+**Room 効果の送信レベル** コンポーネントには、リバーブ処理のために Unity オーディオエンジンに送信されるオーディオのレベルを設定するグラフコントロールが含まれています。 グラフコントロールを開くには、 **ルーム効果の送信レベル** をクリックします。  緑の曲線を下にドラッグして、レベルを約-30 Db に設定します。
 
-![リバーブ曲線の調整](images/spatial-audio/adjust-reverb-curve.png)
+![リバーブ曲線の調整](images/spatial-audio/spatial-audio-05-section2-step1-2.png)
 
 次に、 **SpatializeOnOff** スクリプトの4つのコメント行のコメントを解除します。 スクリプトは次のようになります。
+
 ```c#
 using System.Collections;
 using System.Collections.Generic;
@@ -120,18 +122,18 @@ public class SpatializeOnOff : MonoBehaviour
 }
 ```
 
-コメント解除これらの行では、スクリプトの [ **インスペクター** ] ペインに2つのプロパティが追加されます。 これらを設定するには、 **Quad** の **Spatialize on Off** コンポーネントの [**インスペクター** ] ウィンドウで次の手順を実行します。
+これらの行をコメント解除すると、 **SpatializeOnOff スクリプト** のインスペクターに2つのプロパティが追加されます。 これらは、**クワッド** の **SpatializeOnOff** コンポーネントのインスペクターウィンドウで割り当てます。
+
+階層で Quad オブジェクトを選択した状態で、[インスペクター] ウィンドウで **SpatializeOnOff スクリプト** コンポーネントを見つけます。
+
 * [ **ルーム効果グループ]** プロパティを新しい部屋効果ミキサーグループに設定します。
 * マスター **グループ** プロパティをマスターミキサーグループに設定します
 
-これらの変更が完了すると、 **Spatialize On Off** プロパティは次のようになります。
+![Spatialize On Off Extended](images/spatial-audio/spatial-audio-05-section2-step1-3.png)
 
-![Spatialize On Off Extended](images/spatial-audio/spatialize-on-off-extended.png)
+## <a name="congratulations"></a>結論
 
-## <a name="next-steps"></a>次のステップ
+Unity 用の HoloLens 2 空間オーディオチュートリアルが完了しました。 HoloLens 2 または Unity でアプリを試してみてください。 アプリのボタンをクリックして spatialization をアクティブ化すると、スクリプトはビデオのオーディオを部屋の効果グループにルーティングして、リバーブを追加します。 ステレオに切り替えると、オーディオがマスターグループにルーティングされ、リバーブの追加を回避できます。
 
-HoloLens 2 または Unity エディターでアプリを試してみてください。 これで、アプリのボタンにタッチして spatialization をアクティブにすると、スクリプトはビデオのオーディオを部屋の効果グループにルーティングして、リバーブを追加します。 ステレオに切り替えると、オーディオがマスターグループにルーティングされ、リバーブの追加を回避できます。
-
-Unity 用の HoloLens 2 空間オーディオチュートリアルが完了しました。 お疲れさまでした。
-
-
+> [!TIP]
+> HoloLens 2 に Unity プロジェクトをビルドして配置する方法を再確認するには、[HoloLens 2 にアプリをビルドする](mr-learning-base-02.md#building-your-application-to-your-hololens-2)手順に関する記事を参照してください。

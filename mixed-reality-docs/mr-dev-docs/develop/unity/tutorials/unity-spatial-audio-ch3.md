@@ -1,107 +1,118 @@
 ---
-title: ビデオからオーディオの立体化
-description: ビデオ資産を Unity mixed reality プロジェクトにインポートし、ビデオからオーディオを spatialize する方法について説明します。
+title: 空間オーディオチュートリアル-3. ビデオからオーディオの立体化
+description: ビデオ資産を Unity プロジェクトにインポートし、ビデオからオーディオを spatialize します。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、ヘッド関連の転送機能、リバーブ、Microsoft Spatializer、ビデオのインポート、ビデオプレーヤー
-ms.openlocfilehash: 211d1e32a8137444d0f33d442a60067dcd77ca36
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6474da522e650d23349a21c3deeac00222b8ce93
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007413"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578574"
 ---
-# <a name="spatializing-audio-from-a-video"></a>ビデオからオーディオの立体化
+# <a name="3-spatializing-audio-from-a-video"></a>3.ビデオからオーディオの立体化
 
-HoloLens 2 Unity チュートリアルの空間オーディオモジュールの第3章では、次のことを行います。
+## <a name="overview"></a>概要
+
+このチュートリアルでは、ビデオソースからオーディオを spatialize し、unity エディターと HoloLens 2 でこれをテストする方法について説明します。
+
+## <a name="objectives"></a>目標
+
 * ビデオをインポートしてビデオプレーヤーを追加する
 * ビデオを quadrangle に再生する
 * オーディオをビデオから quadrangle にルーティングし、オーディオを spatialize する
 
-## <a name="import-a-video-and-add-a-video-player"></a>ビデオをインポートしてビデオプレーヤーを追加する
+## <a name="import-a-video-and-add-a-video-player-to-the-scene"></a>ビデオをインポートし、ビデオプレーヤーをシーンに追加する
 
-Unity プロジェクトの **プロジェクト** ウィンドウにビデオファイルをドラッグします。 [このビデオ](https://github.com/microsoft/spatialaudio-unity/blob/develop/Samples/MicrosoftSpatializerSample/Assets/Microsoft%20HoloLens%20-%20Spatial%20Sound-PTPvx7mDon4.mp4?raw=true)は、空間オーディオサンプルプロジェクトから使用できます。
+このチュートリアルでは、空間オーディオサンプルプロジェクトの [このビデオ](https://github.com/microsoft/spatialaudio-unity/blob/develop/Samples/MicrosoftSpatializerSample/Assets/Microsoft%20HoloLens%20-%20Spatial%20Sound-PTPvx7mDon4.mp4?raw=true) を使用します。
 
-![ビデオを含む Assets フォルダー](images/spatial-audio/assets-folder-with-video.png)
+Unity プロジェクトにビデオをインポートします。 Unity メニューで、[**資産**] [  >  **新しい資産のインポート**] [ 
+ ![ 資産のインポート] を選択します。](images/spatial-audio/spatial-audio-03-section1-step1-1.png)
 
-ビデオクリップの品質設定を調整すると、HoloLens 2 でスムーズに再生されるようになります。 **プロジェクト** ウィンドウでビデオファイルをクリックします。 次に、ビデオファイルの [ **インスペクター** ] ウィンドウで、Windows ストアアプリの設定を上書きし、次のようにします。
+[ **新しい資産のインポート** ] ウィンドウで、ダウンロードした **Microsoft HoloLens の PTPvx7mDon4** ファイルを選択し、[ **開く** ] ボタンをクリックして、プロジェクトにアセットをインポートします。
+
+![資産の選択](images/spatial-audio/spatial-audio-03-section1-step1-2.png)
+
+ビデオクリップの品質設定を調整すると、HoloLens 2 でスムーズに再生されるようになります。 [**プロジェクト**] ウィンドウでビデオファイルを選択し、ビデオファイルの [インスペクター] ウィンドウで、 **Windows ストアアプリ** の設定を **上書き** して、次のようにします。
+
 * **トランスコード** を有効にする
 * **コーデック** を H264 に設定する
 * **ビットレートモード** を低に設定
 * **空間品質** を中程度に設定する
 
-これらの調整が完了すると、ビデオファイルの [ **インスペクター** ] ウィンドウは次のようになります。
+これらの調整が完了したら、[適用] をクリックして、ビデオクリップの品質設定を変更します。
 
-![ビデオのプロパティウィンドウ](images/spatial-audio/video-property-pane.png)
+![ビデオのプロパティの変更](images/spatial-audio/spatial-audio-03-section1-step1-3.png)
 
-次に、[**階層**] ウィンドウを右クリックし、[**ビデオ > ビデオプレーヤー**] を選択して、**階層** に **video player** オブジェクトを追加します。
+階層を右クリックし、[ビデオビデオプレーヤー]**を選択し** て、  >  ビデオプレーヤーコンポーネントを追加します。
 
-![階層内のビデオプレーヤー](images/spatial-audio/video-player-in-hierarchy.png)
+![ビデオプレーヤーの追加](images/spatial-audio/spatial-audio-03-section1-step1-4.png)
 
 ## <a name="play-video-onto-a-quadrangle"></a>ビデオを quadrangle に再生する
 
-**Video Player** オブジェクトには、ビデオをレンダリングするためのテクスチャを使用するゲームオブジェクトが必要です。 まず、[**階層**] ペインを右クリックし、[ **3d オブジェクト-> クワッド**] を選択して、**階層** に **クワッド** を追加します。
+ビデオをレンダリングするには、 **ビデオプレーヤー** オブジェクトにテクスチャを表示するゲームオブジェクトが必要です。
 
-![クワッドを階層に追加](images/spatial-audio/add-quad-to-hierarchy.png)
+階層を右クリックし、[ **3d オブジェクト** quad] を選択し  >  て quad を作成し、**変換** コンポーネントを次のように構成します。
 
-アプリケーションの起動時にユーザーの前に **quad** が表示されるようにするには、 **quad** の **Position** プロパティを (0, 0, 2) に設定し、 **Scale** プロパティを (1.28, 0.72, 1) に設定します。 これらの変更が完了すると、 **4** つ目の **インスペクター** ウィンドウの [**変換**] コンポーネントは次のようになります。
+* **位置**: X = 0、Y = 0、Z = 2
+* **回転**:X = 0、Y = 0、Z = 0
+* **小数点以下桁数**: X = 1.28、Y = 0.72、Z = 1
 
-![クワッド変換](images/spatial-audio/quad-transform.png)
+![クワッドを追加する](images/spatial-audio/spatial-audio-03-section2-step1-1.png)
 
-ビデオで **Quad** のテクスチャを作成するには、新しい **レンダリングテクスチャ** を作成します。 [ **プロジェクト** ] ウィンドウで、右クリックし、[ **作成-> レンダリングテクスチャ**] を選択します。
+ここで、ビデオを使用して **クワッド** のテクスチャを **作成** し、[**プロジェクト**] ウィンドウで右クリックして [レンダリングテクスチャの作成] を選択し、レンダリングテクスチャコンポーネントを  >  作成します。次に、レンダリングテクスチャに適切な名前を入力します。たとえば、「_空間オーディオテクスチャ_:
 
-![描画テクスチャを作成する](images/spatial-audio/create-render-texture.png)
+![描画テクスチャを作成する](images/spatial-audio/spatial-audio-03-section2-step1-2.png)
 
-**レンダリングテクスチャ** の [**インスペクター** ] ウィンドウで、ビデオのネイティブ解像度である 1280 0x720 と一致するように **Size** プロパティを設定します。 次に、HoloLens 2 で適切なレンダリングパフォーマンスを確保するために、[ **深度バッファー** ] プロパティを **16 ビット以上の深さ** に設定します。 これらの設定の後、**レンダリングテクスチャ** の [**インスペクター** ] ウィンドウは次のようになります。
+**レンダリングテクスチャ** を選択し、[インスペクター] ウィンドウで、ビデオのネイティブ解像度である 1280 0x720 と一致するように **Size** プロパティを設定します。 次に、HoloLens 2 で適切なレンダリングパフォーマンスを確保するために、[ **深度バッファー** ] プロパティを **16 ビット以上の深さ** に設定します。
 
-![テクスチャのプロパティを表示する](images/spatial-audio/render-texture-properties.png)
+![テクスチャのプロパティを表示する](images/spatial-audio/spatial-audio-03-section2-step1-3.png)
 
-次に、新しい **レンダリングテクスチャ** を **4** 番目のテクスチャとして使用します。
-1. [**プロジェクト**] ウィンドウから、**階層** 内の **クワッド** に **レンダリングテクスチャ** をドラッグします。
-2. HoloLens 2 で良好なパフォーマンスを得るには、**クワッド** の [**インスペクター** ] ウィンドウで、 **Mixed Reality Toolkit Standard Shader** を選択します。
+次に、作成したレンダーテクスチャ **空間オーディオテクスチャ** を **Quad** のテクスチャとして使用します。
 
-これらの設定を使用すると、**クワッド** の [**インスペクター** ] ウィンドウの **テクスチャ** コンポーネントは次のようになります。
+1. **空間オーディオテクスチャ** を [**プロジェクト**] ウィンドウから階層内の **クワッド** にドラッグして、レンダーテクスチャをクワッドに追加します。
+2. HoloLens 2 でパフォーマンスを向上させるには、階層で [クワッド] を選択し、[シェーダー] の [インスペクター] ウィンドウで **Mixed Reality Toolkit**  >  **Standard** shader を選択します。
 
-![クワッドテクスチャのプロパティ](images/spatial-audio/quad-texture-properties.png)
+![クワッドテクスチャのプロパティ](images/spatial-audio/spatial-audio-03-section2-step1-4.png)
 
-新しい **ビデオプレーヤー** を設定し、ビデオクリップを再生するために **テクスチャをレンダリング** するには、**ビデオプレーヤー** の [**インスペクター** ] ウィンドウを開き、次のようにします。
-* ビデオ **クリップ** のプロパティをビデオファイルに設定します。
+ビデオ **プレーヤー** を設定し、ビデオ **クリップを再生するに** は、**階層** 内で **ビデオプレーヤー** を選択し、[**インスペクター** ] ウィンドウで
+
+* **ビデオクリップ** のプロパティを、ダウンロードしたビデオファイル ' Microsoft HoloLens-PTPvx7mDon4 ' に設定します
 * **ループ** チェックボックスをオンにする
-* **ターゲットテクスチャ** を新しいレンダリングテクスチャに設定する
+* **ターゲットテクスチャ** を新しいレンダリングテクスチャ **空間オーディオテクスチャ** に設定します
 
-**ビデオプレーヤー** の [**インスペクター** ] ウィンドウは次のようになります。
-
-![ビデオプレーヤーのプロパティ](images/spatial-audio/video-player-properties.png)
+![ビデオプレーヤーのプロパティ](images/spatial-audio/spatial-audio-03-section2-step1-5.png)
 
 ## <a name="spatialize-the-audio-from-the-video"></a>ビデオからオーディオを Spatialize
 
-**クワッド** の [**インスペクター** ] ウィンドウで、ビデオからオーディオをルーティングする **オーディオソース** を作成します。
-* ペインの下部にある [ **コンポーネントの追加** ] をクリックします。
-* **オーディオソース** を追加する
+[階層] ウィンドウで [ **Quad** オブジェクト] を選択し、[インスペクター] ウィンドウで [ **コンポーネントの追加** ] ボタンを使用して、ビデオからオーディオをルーティングする **オーディオソース** を追加します。
 
-次に、 **オーディオソース** で次のようにします。
-* ミキサーに **出力** を設定する
+**オーディオソース**:
+
+* **空間オーディオミキサー** に **出力** を設定する
 * [ **Spatialize** ] チェックボックスをオンにします。
 * [ **空間ブレンド** ] スライダーを 1 (3d) に移動します。
 
-これらの変更が完了すると、 **diag** ペインの [**インスペクター** ] ウィンドウの [**オーディオソース**] コンポーネントは次のようになります。
+![クワッドオーディオソースインスペクター](images/spatial-audio/spatial-audio-03-section3-step1-1.png)
 
-![クワッドオーディオソースインスペクター](images/spatial-audio/quad-audio-source-inspector.png)
+オーディオを **オーディオソース** にルーティングするようにビデオプレーヤーを設定するには、[階層] ウィンドウで **ビデオプレーヤー** を選択し、インスペクターのビデオプレーヤーオブジェクトで次の変更を行います。
 
-**ビデオプレーヤー** が、そのオーディオを **クワッド** の **オーディオソース** にルーティングするように設定するには、**ビデオプレーヤー** の [**インスペクター** ] ウィンドウを開き、次のようにします。
-* **オーディオ出力モード** を ' audio Source ' に設定します
-* [ **オーディオソース** のプロパティを Quad に設定する
+* オーディオ **出力モード** を **オーディオソース** に設定する
+* **Audio Source** プロパティを **クワッド** に設定します。
 
-これらの変更が完了すると、**ビデオプレーヤー** の [**インスペクター** ] ウィンドウは次のようになります。
+![ビデオプレーヤー設定オーディオソース](images/spatial-audio/spatial-audio-03-section3-step1-2.png)
 
-![ビデオプレーヤー設定オーディオソース](images/spatial-audio/video-player-set-audio-source.png)
+> [!TIP]
+> HoloLens 2 に Unity プロジェクトをビルドして配置する方法を再確認するには、[HoloLens 2 にアプリをビルドする](mr-learning-base-02.md#building-your-application-to-your-hololens-2)手順に関する記事を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="congratulations"></a>結論
 
-HoloLens 2 または Unity エディターでアプリを試してみてください。 ビデオが表示され、再生されます。ビデオのオーディオは spatialized になります。
+このチュートリアルでは、ビデオソースからオーディオを spatialize して、HoloLens 2 または Unity エディターでアプリを試してみる方法について学習しました。 ビデオが表示されます。ビデオのオーディオは spatialized です。
+
+次のチュートリアルでは、実行時に spatialization を有効または無効にする方法について学習します。
 
 > [!div class="nextstepaction"]
-> [章4](unity-spatial-audio-ch4.md) 
-
+> [次のチュートリアル: 4. 実行時に spatialization を有効または無効にする](unity-spatial-audio-ch4.md)

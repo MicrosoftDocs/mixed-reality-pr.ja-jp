@@ -1,95 +1,101 @@
 ---
-title: ボタンの対話式操作サウンドの立体化
-description: ボタンを追加し、混合現実アプリケーションでボタンの相互作用音を spatialize する方法について説明します。
+title: 空間オーディオチュートリアル-2. ボタンの対話式操作サウンドの立体化
+description: ボタンをプロジェクトに追加し、ボタンの相互作用サウンドを spatialize します。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、ヘッド関連の転送関数、リバーブ、Microsoft Spatializer、prefabs、volume curve
-ms.openlocfilehash: 1f54ba8cab55ba375a6b1499796761ae02b03a02
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e4b2ed99f56fea82b1c72e4fce5205c14e1d3533
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007362"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578493"
 ---
-# <a name="spatializing-button-interaction-sounds"></a><span data-ttu-id="8dc21-104">ボタンの対話式操作サウンドの立体化</span><span class="sxs-lookup"><span data-stu-id="8dc21-104">Spatializing button interaction sounds</span></span>
+# <a name="2-spatializing-button-interaction-sounds"></a><span data-ttu-id="f18fc-105">2.ボタンの対話式操作サウンドの立体化</span><span class="sxs-lookup"><span data-stu-id="f18fc-105">2. Spatializing button interaction sounds</span></span>
 
-## <a name="objectives"></a><span data-ttu-id="8dc21-105">目標</span><span class="sxs-lookup"><span data-stu-id="8dc21-105">Objectives</span></span>
+## <a name="overview"></a><span data-ttu-id="f18fc-106">概要</span><span class="sxs-lookup"><span data-stu-id="f18fc-106">Overview</span></span>
 
-<span data-ttu-id="8dc21-106">HoloLens 2 チュートリアルの空間オーディオモジュールの2番目の章では、次のことを行います。</span><span class="sxs-lookup"><span data-stu-id="8dc21-106">In this second chapter of the spatial audio module of the HoloLens 2 tutorials, you'll:</span></span>
-* <span data-ttu-id="8dc21-107">ボタンを追加する</span><span class="sxs-lookup"><span data-stu-id="8dc21-107">Add a button</span></span>
-* <span data-ttu-id="8dc21-108">ボタンのクリック音を Spatialize</span><span class="sxs-lookup"><span data-stu-id="8dc21-108">Spatialize the button click sounds</span></span>
+<span data-ttu-id="f18fc-107">このチュートリアルでは、ボタンの相互作用音を spatialize する方法と、オーディオクリップを使用して spatialized ボタンの対話をテストする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-107">In this tutorial, you will learn how to spatialize the button interaction sounds and also learn how to use an audio clip to test spatialized button interaction.</span></span>  
 
-## <a name="add-a-button"></a><span data-ttu-id="8dc21-109">ボタンを追加する</span><span class="sxs-lookup"><span data-stu-id="8dc21-109">Add a button</span></span>
+## <a name="objectives"></a><span data-ttu-id="f18fc-108">目標</span><span class="sxs-lookup"><span data-stu-id="f18fc-108">Objectives</span></span>
 
-<span data-ttu-id="8dc21-110">[ **プロジェクト** ] ウィンドウで、[ **資産** ] を選択し、検索バーに「PressableButtonHoloLens2」と入力します。</span><span class="sxs-lookup"><span data-stu-id="8dc21-110">In the **Project** pane, select **Assets** and type "PressableButtonHoloLens2" in the search bar:</span></span>
+* <span data-ttu-id="f18fc-109">ボタンのクリック音を追加して Spatialize</span><span class="sxs-lookup"><span data-stu-id="f18fc-109">Add and Spatialize the button click sounds</span></span>
 
-![アセット内のボタンの事前 fab](images/spatial-audio/button-prefab-in-assets.png)
+## <a name="add-a-button"></a><span data-ttu-id="f18fc-110">ボタンを追加する</span><span class="sxs-lookup"><span data-stu-id="f18fc-110">Add a button</span></span>
 
-<span data-ttu-id="8dc21-112">ボタン prefab は、白いアイコンではなく、青いアイコンで表されるエントリです。</span><span class="sxs-lookup"><span data-stu-id="8dc21-112">The button prefab is the entry represented by a blue icon, rather than a white icon.</span></span> <span data-ttu-id="8dc21-113">**PressableButtonHoloLens2** という名前の prefab を [**階層**] ペインにドラッグします。</span><span class="sxs-lookup"><span data-stu-id="8dc21-113">Drag the prefab named **PressableButtonHoloLens2** into the **Hierarchy** pane.</span></span> <span data-ttu-id="8dc21-114">新しいボタンの [ **インスペクター** ] ウィンドウで、[ **Position** ] プロパティを (0,-0.4, 2) に設定して、アプリケーションの起動時にユーザーの前に表示されるようにします。</span><span class="sxs-lookup"><span data-stu-id="8dc21-114">In the **Inspector** pane for your new button, set the **Position** property to (0, -0.4, 2) so that it will appear in front of the user when the application starts.</span></span> <span data-ttu-id="8dc21-115">ボタンの **変換** コンポーネントは次のようになります。</span><span class="sxs-lookup"><span data-stu-id="8dc21-115">The **Transform** component of the button will look like this:</span></span>
+<span data-ttu-id="f18fc-111">Prefab ボタンを追加するには、[ **プロジェクト** ] ウィンドウで [ **資産** ] を選択し、検索バーに「PressableButtonHoloLens2」と入力します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-111">To add the Button prefab, in the **Project** window, select **Assets** and type "PressableButtonHoloLens2" in the search bar.</span></span>
 
-![ボタンの変換](images/spatial-audio/button-transform.png)
+![アセット内のボタンの事前 fab](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
 
-## <a name="spatialize-button-feedback"></a><span data-ttu-id="8dc21-117">Spatialize button のフィードバック</span><span class="sxs-lookup"><span data-stu-id="8dc21-117">Spatialize button feedback</span></span>
+<span data-ttu-id="f18fc-113">ボタン prefab は、青いアイコンで表されるエントリです。</span><span class="sxs-lookup"><span data-stu-id="f18fc-113">The button prefab is the entry represented by a blue icon.</span></span> <span data-ttu-id="f18fc-114">**PressableButtonHoloLens2** prefab をクリックして階層にドラッグします。</span><span class="sxs-lookup"><span data-stu-id="f18fc-114">Click and drag the **PressableButtonHoloLens2** prefab into the Hierarchy.</span></span> <span data-ttu-id="f18fc-115">**PressableButtonHoloLens2** オブジェクトを選択した状態で、[インスペクター] ウィンドウで、**変換** コンポーネントを次のように構成します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-115">With the **PressableButtonHoloLens2** object still selected, in the Inspector window, configure the **Transform** component as follows:</span></span>
 
-<span data-ttu-id="8dc21-118">この手順では、ボタンの音声フィードバックを spatialize します。</span><span class="sxs-lookup"><span data-stu-id="8dc21-118">In this step, you'll spatialize the audio feedback for the button.</span></span> <span data-ttu-id="8dc21-119">関連する設計の提案については、「 [空間サウンドの設計](../../../design/spatial-sound-design.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8dc21-119">For related design suggestions, see [spatial sound design](../../../design/spatial-sound-design.md).</span></span> 
+* <span data-ttu-id="f18fc-116">**位置**: X = 0、Y =-0.4、Z = 2</span><span class="sxs-lookup"><span data-stu-id="f18fc-116">**Position**: X = 0, Y = -0.4, Z = 2</span></span>
+* <span data-ttu-id="f18fc-117">**回転**:X = 0、Y = 0、Z = 0</span><span class="sxs-lookup"><span data-stu-id="f18fc-117">**Rotation**: X = 0, Y = 0, Z = 0</span></span>
+* <span data-ttu-id="f18fc-118">**スケール**:X = 1、Y = 1、Z = 1</span><span class="sxs-lookup"><span data-stu-id="f18fc-118">**Scale**: X = 1, Y = 1, Z = 1</span></span>
 
-<span data-ttu-id="8dc21-120">オーディオ **ミキサー** ウィンドウでは、**オーディオソース** コンポーネントからのオーディオ再生用に **ミキサーグループ** と呼ばれる宛先を定義します。</span><span class="sxs-lookup"><span data-stu-id="8dc21-120">The **Audio Mixer** pane is where you'll define destinations, called **Mixer Groups**, for audio playback from **Audio Source** components.</span></span> 
-* <span data-ttu-id="8dc21-121">メニューバーの [audio **> Audio ミキサー] >** を使用して、[**オーディオミキサー** ] ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="8dc21-121">Open the **Audio Mixer** pane from the menu bar using **Window -> Audio -> Audio Mixer**</span></span>
-* <span data-ttu-id="8dc21-122">**ミキサー** の横にある [+] をクリックして、ミキサーを作成 **します。**</span><span class="sxs-lookup"><span data-stu-id="8dc21-122">Create a **Mixer** by clicking the '+' next to **Mixers**.</span></span> <span data-ttu-id="8dc21-123">新しいミキサーには、 **Master** という名前の既定の **グループ** が含まれます。</span><span class="sxs-lookup"><span data-stu-id="8dc21-123">The new mixer will include a default **Group** called **Master**.</span></span>
+![ボタンの変換](images/spatial-audio/spatial-audio-02-section1-step1-2.png)
 
-<span data-ttu-id="8dc21-124">**ミキサー** ウィンドウは次のようになります。</span><span class="sxs-lookup"><span data-stu-id="8dc21-124">Your **Mixer** pane will now look like this:</span></span>
+<span data-ttu-id="f18fc-120">シーン内のオブジェクトに焦点を当てるには、 **PressableButtonHoloLens2** オブジェクトをダブルクリックして、もう一度少しズームします。</span><span class="sxs-lookup"><span data-stu-id="f18fc-120">To focus in on the objects in the scene, you can double-click on the **PressableButtonHoloLens2** object, and then zoom slightly in again:</span></span>
 
-![最初のミキサーがあるミキサーパネル](images/spatial-audio/mixer-panel-with-first-mixer.png)
+## <a name="spatialize-button-feedback"></a><span data-ttu-id="f18fc-121">Spatialize button のフィードバック</span><span class="sxs-lookup"><span data-stu-id="f18fc-121">Spatialize button feedback</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="8dc21-126">[5 章](unity-spatial-audio-ch5.md)のリバーブが有効になるまで、ミキサーのボリュームメーターには、Microsoft Spatializer で再生されるサウンドのアクティビティが表示されません。</span><span class="sxs-lookup"><span data-stu-id="8dc21-126">Until reverb is enabled in [Chapter 5](unity-spatial-audio-ch5.md), the mixer's volume meter doesn't show activity for sounds played through the Microsoft Spatializer</span></span>
+<span data-ttu-id="f18fc-122">この手順では、ボタンの音声フィードバックを spatialize します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-122">In this step, you'll spatialize the audio feedback for the button.</span></span> <span data-ttu-id="f18fc-123">関連する設計の提案については、「 [空間サウンドの設計](../../../design/spatial-sound-design.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f18fc-123">For related design suggestions, see [spatial sound design](../../../design/spatial-sound-design.md).</span></span>
 
-<span data-ttu-id="8dc21-127">[**階層**] ペインで **PressableButtonHoloLens2** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8dc21-127">Click the **PressableButtonHoloLens2** in the **Hierarchy** pane.</span></span> <span data-ttu-id="8dc21-128">[ **インスペクター** ] ウィンドウで次のようにします。</span><span class="sxs-lookup"><span data-stu-id="8dc21-128">In the **Inspector** pane:</span></span>
-1. <span data-ttu-id="8dc21-129">**オーディオソース** コンポーネントを検索する</span><span class="sxs-lookup"><span data-stu-id="8dc21-129">Find the **Audio Source** component</span></span>
-2. <span data-ttu-id="8dc21-130">[ **出力** ] プロパティで、セレクターをクリックし、ミキサーを選択します。</span><span class="sxs-lookup"><span data-stu-id="8dc21-130">For the **Output** property, click the selector and choose your mixer</span></span>
-3. <span data-ttu-id="8dc21-131">**Spatialize** チェックボックスをオンにする</span><span class="sxs-lookup"><span data-stu-id="8dc21-131">Check the **Spatialize** checkbox</span></span>
-4. <span data-ttu-id="8dc21-132">[ **空間 Blend** ] スライダーを 3d (1) に移動します。</span><span class="sxs-lookup"><span data-stu-id="8dc21-132">Move the **Spatial Blend** slider to 3D (1).</span></span>
+<span data-ttu-id="f18fc-124">オーディオ **ミキサー** ウィンドウでは、**オーディオソース** コンポーネントからのオーディオ再生用に、**ミキサーグループ** と呼ばれる宛先を定義します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-124">In the **Audio Mixer** window you will define destinations called **Mixer Groups**, for audio playback from **Audio Source** components.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="8dc21-133">2019より前のバージョンの Unity では、[Spatialize] チェックボックスは、**オーディオソース** の [**インスペクター** ] ウィンドウの下部にあります。</span><span class="sxs-lookup"><span data-stu-id="8dc21-133">In versions of Unity prior to 2019, the 'Spatialize' checkbox is at the bottom of the **Inspector** pane for the **Audio Source**.</span></span>
+<span data-ttu-id="f18fc-125">[**オーディオミキサー** ] ウィンドウを開くには、Unity メニューで [ **window**  >  **audio**  >  **audio mixer**: ![ open audio ミキサ window] を選択します。](images/spatial-audio/spatial-audio-02-section2-step1-1.png)</span><span class="sxs-lookup"><span data-stu-id="f18fc-125">To open the **Audio Mixer** window, In the Unity menu, select **Window** > **Audio** > **Audio Mixer**: ![Open Audio Mixer Window](images/spatial-audio/spatial-audio-02-section2-step1-1.png)</span></span>
 
-<span data-ttu-id="8dc21-134">これらの変更が完了すると、 **PressableButtonHoloLens2** の **オーディオソース** コンポーネントは次のようになります。</span><span class="sxs-lookup"><span data-stu-id="8dc21-134">After these changes, the **Audio Source** component of your **PressableButtonHoloLens2** will look like this:</span></span>
+ <span data-ttu-id="f18fc-126">ミキサーの **横にある**[+] をクリックし、[_空間オーディオミキサー_] などの適切な名前をミキサーに入力して、**ミキサー** を作成します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-126">Create a **Mixer** by clicking the '+' next to **Mixers** and enter a suitable name to the Mixer for example, _Spatial Audio Mixer_.</span></span> <span data-ttu-id="f18fc-127">新しいミキサーには、 **Master** という名前の既定の **グループ** が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f18fc-127">The new mixer will include a default **Group** called **Master**.</span></span>
 
-![ボタンオーディオソース](images/spatial-audio/button-audio-source.png)
+![最初のミキサーがあるミキサーパネル](images/spatial-audio/spatial-audio-02-section2-step1-2.png)
 
 > [!NOTE]
-> <span data-ttu-id="8dc21-136">**Spatialize** チェックボックスをオフにして **空間ブレンド** を 1 (3d) に移動すると、Unity では、 **Microsoft spatializer** と hrtfs ではなく、そのパン spatializer が使用されます。</span><span class="sxs-lookup"><span data-stu-id="8dc21-136">If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its panning spatializer, instead of the **Microsoft Spatializer** with HRTFs.</span></span>
+> <span data-ttu-id="f18fc-129">5番目の章でリバーブが有効になるまで [: リバーブを使用して空間オーディオに距離を追加する](unity-spatial-audio-ch5.md)まで、ミキサーのボリュームメーターには、Microsoft Spatializer で再生されるサウンドのアクティビティが表示されません。</span><span class="sxs-lookup"><span data-stu-id="f18fc-129">Until reverb is enabled in [5th Chapter: Using reverb to add distance to spatial audio](unity-spatial-audio-ch5.md), the mixer's volume meter doesn't show activity for sounds played through the Microsoft Spatializer</span></span>
 
-## <a name="adjust-the-volume-curve"></a><span data-ttu-id="8dc21-137">ボリューム曲線を調整する</span><span class="sxs-lookup"><span data-stu-id="8dc21-137">Adjust the Volume curve</span></span>
+<span data-ttu-id="f18fc-130">[階層] ウィンドウで **PressableButtonHoloLens2** を選択し、[インスペクター] ウィンドウで **オーディオソース** コンポーネントを見つけて、次のようにオーディオソースコンポーネントを構成します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-130">In the Hierarchy window, select the **PressableButtonHoloLens2** then in the Inspector window find the **Audio Source** component and Configure the Audio Source component as follows:</span></span>
 
-<span data-ttu-id="8dc21-138">既定では、Unity はリスナーから遠く離れた spatialized サウンドを減衰します。</span><span class="sxs-lookup"><span data-stu-id="8dc21-138">By default, Unity will attenuate spatialized sounds as they get farther from the listener.</span></span> <span data-ttu-id="8dc21-139">この減衰が相互作用フィードバックのサウンドに適用されると、インターフェイスの使用が困難になる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="8dc21-139">When this attenuation is applied to interaction feedback sounds, the interface can become more difficult to use.</span></span>
+1. <span data-ttu-id="f18fc-131">[ **出力** ] プロパティで、セレクターをクリックし、作成した **ミキサー** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-131">For the **Output** property, click the selector and choose the **Mixer** that you created.</span></span>
+2. <span data-ttu-id="f18fc-132">**Spatialize** チェックボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="f18fc-132">Check the **Spatialize** checkbox.</span></span>
+3. <span data-ttu-id="f18fc-133">[ **空間 Blend** ] スライダーを 3d (1) に移動します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-133">Move the **Spatial Blend** slider to 3D (1).</span></span>
 
-<span data-ttu-id="8dc21-140">この減衰を無効にするには、 **ボリューム** 曲線を調整します。</span><span class="sxs-lookup"><span data-stu-id="8dc21-140">To disable this attenuation, adjust the **Volume** curve.</span></span> <span data-ttu-id="8dc21-141">**PressableButtonHoloLens2** の [**インスペクター** ] ウィンドウの [**オーディオソース**] コンポーネントには、[ **3d サウンド設定**] というセクションがあります。</span><span class="sxs-lookup"><span data-stu-id="8dc21-141">In the **Audio Source** component of the **Inspector** pane for the **PressableButtonHoloLens2**, there is a section called **3D Sound Settings**.</span></span> <span data-ttu-id="8dc21-142">そのセクション内:</span><span class="sxs-lookup"><span data-stu-id="8dc21-142">In that section:</span></span>
-1. <span data-ttu-id="8dc21-143">ボリュームの **ロールロール** のプロパティを線形に設定する</span><span class="sxs-lookup"><span data-stu-id="8dc21-143">Set the **Volume Rolloff** property to Linear</span></span>
-2. <span data-ttu-id="8dc21-144">Y 軸の "0" から "1" までの **ボリューム** 曲線 (赤の曲線) のエンドポイントをドラッグします。</span><span class="sxs-lookup"><span data-stu-id="8dc21-144">Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'</span></span>
-3. <span data-ttu-id="8dc21-145">**ボリューム** 曲線の形状をフラットに調整するには、[白い曲線図形] コントロールを [X 軸] に平行にドラッグします。</span><span class="sxs-lookup"><span data-stu-id="8dc21-145">To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis</span></span>
+![ボタンオーディオソース](images/spatial-audio/spatial-audio-02-section2-step1-3.png)
 
-<span data-ttu-id="8dc21-146">これらの変更が完了すると、 **PressableButtonHoloLens2** の **オーディオソース** プロパティの **3d サウンド設定** セクションは次のようになります。</span><span class="sxs-lookup"><span data-stu-id="8dc21-146">After these changes, the **3D Sound Settings** section of the **Audio Source** properties of the **PressableButtonHoloLens2** will look like this:</span></span>
+> [!NOTE]
+> <span data-ttu-id="f18fc-135">**Spatialize** チェックボックスをオフにして **空間ブレンド** を 1 (3d) に移動すると、Unity では、 **Microsoft spatializer** と hrtfs ではなく、そのパン spatializer が使用されます。</span><span class="sxs-lookup"><span data-stu-id="f18fc-135">If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its panning spatializer, instead of the **Microsoft Spatializer** with HRTFs.</span></span>
 
-![Button 3D サウンド設定](images/spatial-audio/button-3d-sound-settings.png)
+## <a name="adjust-the-volume-curve"></a><span data-ttu-id="f18fc-136">ボリューム曲線を調整する</span><span class="sxs-lookup"><span data-stu-id="f18fc-136">Adjust the Volume curve</span></span>
 
-## <a name="testing-the-spatialize-audio"></a><span data-ttu-id="8dc21-148">Spatialize オーディオのテスト</span><span class="sxs-lookup"><span data-stu-id="8dc21-148">Testing the spatialize audio</span></span>
+<span data-ttu-id="f18fc-137">既定では、Unity はリスナーから遠く離れた spatialized サウンドを減衰します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-137">By default, Unity will attenuate spatialized sounds as they get farther from the listener.</span></span> <span data-ttu-id="f18fc-138">この減衰が相互作用フィードバックのサウンドに適用されると、インターフェイスの使用が困難になる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="f18fc-138">When this attenuation is applied to interaction feedback sounds, the interface can become more difficult to use.</span></span>
 
-<span data-ttu-id="8dc21-149">新しい spatialized ボタンの相互作用音を自由に試してください。</span><span class="sxs-lookup"><span data-stu-id="8dc21-149">Feel free to test out the new spatialized button interaction sounds:</span></span>
+<span data-ttu-id="f18fc-139">この減衰を無効にするには、**オーディオソース** コンポーネントの **ボリューム** 曲線を調整する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f18fc-139">To disable this attenuation, you need to adjust the **Volume** curve In the **Audio Source** component.</span></span>
 
-* <span data-ttu-id="8dc21-150">Unity エディターでゲームモードに入る (理想的にはシーンのループオーディオサンプルを使用する)</span><span class="sxs-lookup"><span data-stu-id="8dc21-150">Enter game mode in the Unity editor, ideally with a looped audio sample in the scene</span></span>
-* <span data-ttu-id="8dc21-151">オーディオソースを持つオブジェクトを左から右へ移動し、空間オーディオを有効にした場合と比較した場合の比較を行います。</span><span class="sxs-lookup"><span data-stu-id="8dc21-151">Move the object with the audio source from left to right and compare with and without spatial audio enabled.</span></span> <span data-ttu-id="8dc21-152">テストのオーディオソース設定を変更するには、次の方法があります。</span><span class="sxs-lookup"><span data-stu-id="8dc21-152">You can change the Audio Source settings for testing by:</span></span>
-    * <span data-ttu-id="8dc21-153">0-1 (2D spatialized と 3D spatialized sound) 間の空間ブレンドプロパティの移動</span><span class="sxs-lookup"><span data-stu-id="8dc21-153">Moving the Spatial Blend property between 0 - 1 (2D non-spatialized and 3D spatialized sound)</span></span>
-    * <span data-ttu-id="8dc21-154">Spatialize プロパティをチェックしてオフにする</span><span class="sxs-lookup"><span data-stu-id="8dc21-154">Checking and unchecking the Spatialize property</span></span>
+<span data-ttu-id="f18fc-140">[階層] ウィンドウで **PressableButtonHoloLens2** を選択し、[インスペクター] ウィンドウで [**オーディオソース** 3d のサウンド設定] に移動して、次のように  >  構成します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-140">In the Hierarchy window, select the **PressableButtonHoloLens2** then in the Inspector window navigate to  **Audio Source** > **3D Sound Settings** and Configure as follows:</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="8dc21-155">次のステップ</span><span class="sxs-lookup"><span data-stu-id="8dc21-155">Next steps</span></span>
+1. <span data-ttu-id="f18fc-141">ボリュームの **ロール** アウトプロパティを線形ロールオフに設定します</span><span class="sxs-lookup"><span data-stu-id="f18fc-141">Set the **Volume Rolloff** property to Linear Rolloff</span></span>
+2. <span data-ttu-id="f18fc-142">Y 軸の "0" から "1" までの **ボリューム** 曲線 (赤の曲線) のエンドポイントをドラッグします。</span><span class="sxs-lookup"><span data-stu-id="f18fc-142">Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'</span></span>
+3. <span data-ttu-id="f18fc-143">**ボリューム** 曲線の形状をフラットに調整するには、[白い曲線図形] コントロールを [X 軸] に平行にドラッグします。</span><span class="sxs-lookup"><span data-stu-id="f18fc-143">To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis</span></span>
 
-<span data-ttu-id="8dc21-156">HoloLens 2 または Unity エディターでアプリを試してみてください。</span><span class="sxs-lookup"><span data-stu-id="8dc21-156">Try out your app on a HoloLens 2, or in the Unity editor.</span></span> <span data-ttu-id="8dc21-157">アプリでは、ボタンをタッチして、spatialized ボタンの相互作用音を聞くことができます。</span><span class="sxs-lookup"><span data-stu-id="8dc21-157">In the app, you can touch the button and hear the spatialized button interaction sounds.</span></span>
+![Button 3D サウンド設定](images/spatial-audio/spatial-audio-02-section3-step1-1.png)
 
-<span data-ttu-id="8dc21-158">Unity エディターでテストする場合は、スペースバーを押し、スクロールホイールを使用してスクロールし、ハンドシミュレーションをアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="8dc21-158">When testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation.</span></span> <span data-ttu-id="8dc21-159">詳細については、 [Mrtk のドキュメント](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8dc21-159">For more info, see the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene).</span></span>
+## <a name="testing-the-spatialize-audio"></a><span data-ttu-id="f18fc-145">Spatialize オーディオのテスト</span><span class="sxs-lookup"><span data-stu-id="f18fc-145">Testing the spatialize audio</span></span>
+
+<span data-ttu-id="f18fc-146">Unity エディターで spatialize オーディオをテストするには、 **PressableButtonHoloLens2** オブジェクトで [**ループ**] オプションがオンになっているオーディオ **ソース** コンポーネントにオーディオクリップを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f18fc-146">To test the spatialize audio in the unity editor you have to add an audio clip in the **Audio Source** component with **Loop** option checked in on **PressableButtonHoloLens2** object.</span></span>
+
+<span data-ttu-id="f18fc-147">Play モードでは、 **PressableButtonHoloLens2** オブジェクトを左から右に移動し、ワークステーションで空間オーディオが有効になっているか、使用されていない状態で比較します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-147">In the play mode move the **PressableButtonHoloLens2** object from left to right and compare with and without spatial audio enabled on your workstation.</span></span> <span data-ttu-id="f18fc-148">次の方法で、テスト用のオーディオソース設定を変更することもできます。</span><span class="sxs-lookup"><span data-stu-id="f18fc-148">You can also change the Audio Source settings for testing by:</span></span>
+
+* <span data-ttu-id="f18fc-149">0-1 (2D spatialized と 3D spatialized sound) 間の **空間ブレンド** プロパティの移動</span><span class="sxs-lookup"><span data-stu-id="f18fc-149">Moving the **Spatial Blend** property between 0 - 1 (2D non-spatialized and 3D spatialized sound)</span></span>
+* <span data-ttu-id="f18fc-150">**Spatialize** プロパティをチェックしてオフにする</span><span class="sxs-lookup"><span data-stu-id="f18fc-150">Checking and unchecking the **Spatialize** property</span></span>
+
+<span data-ttu-id="f18fc-151">HoloLens 2 でアプリを試してみてください。</span><span class="sxs-lookup"><span data-stu-id="f18fc-151">Try out the app on HoloLens 2.</span></span> <span data-ttu-id="f18fc-152">アプリでは、ボタンをクリックすると、spatialized ボタンの相互作用音が聞こえます。</span><span class="sxs-lookup"><span data-stu-id="f18fc-152">In the app, you can click the button and hear the spatialized button interaction sounds.</span></span>
+
+> [!TIP]
+> <span data-ttu-id="f18fc-153">HoloLens 2 に Unity プロジェクトをビルドして配置する方法を再確認するには、[HoloLens 2 にアプリをビルドする](mr-learning-base-02.md#building-your-application-to-your-hololens-2)手順に関する記事を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f18fc-153">For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your app to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.</span></span>
+
+## <a name="congratulations"></a><span data-ttu-id="f18fc-154">結論</span><span class="sxs-lookup"><span data-stu-id="f18fc-154">Congratulations</span></span>
+
+<span data-ttu-id="f18fc-155">このチュートリアルでは、ボタンの相互作用音を spatialize、オーディオクリップを使用して spatialized ボタンの対話をテストする方法について学びました。</span><span class="sxs-lookup"><span data-stu-id="f18fc-155">In this tutorial you have learnt to spatialize the button interaction sounds and to use an audio clip to test spatialized button interaction.</span></span> <span data-ttu-id="f18fc-156">次のチュートリアルでは、ビデオソースからオーディオを spatialize する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f18fc-156">In the next tutorial you will learn how to spatialize audio from an video source.</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="8dc21-160">章3</span><span class="sxs-lookup"><span data-stu-id="8dc21-160">Chapter 3</span></span>](unity-spatial-audio-ch3.md)
-
+> [<span data-ttu-id="f18fc-157">次のチュートリアル: ビデオからの Spatializing オーディオ</span><span class="sxs-lookup"><span data-stu-id="f18fc-157">Next Tutorial: 3. Spatializing audio from a video</span></span>](unity-spatial-audio-ch3.md)

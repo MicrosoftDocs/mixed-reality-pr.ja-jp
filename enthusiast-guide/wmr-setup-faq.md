@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 87eb22e600ca2426bdd3fec1fd428c11d9c45313
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008632"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581810"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Windows Mixed Reality の設定に関する FAQ
 
@@ -28,7 +28,7 @@ Windows Mixed Reality のイマーシブヘッドセットを設定するとき�
 * PC を再起動して、もう一度やり直してください。 場合によっては、複数回繰り返すか、Windows Update のトラブルシューティングツールを実行して保留中の更新プログラムを消去する必要があります。
 
 > [!NOTE]
-> * エンタープライズ管理ネットワークを使用している場合は、管理者に確認してください。 Windows Mixed Reality を有効にすることが必要になる場合があります。 IT プロフェッショナル向けの手順をお探しですか? **[この記事](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)** をご覧ください。
+> * エンタープライズ管理ネットワークを使用している場合は、管理者に確認してください。 Windows Mixed Reality を有効にすることが必要になる場合があります。 IT プロフェッショナル向けの手順をお探しですか? **[この記事](/windows/application-management/manage-windows-mixed-reality)** をご覧ください。
 > * Wi-Fi ネットワーク接続が従量制課金に設定されている場合は、従量制課金に変更します。 **[詳細情報](https://support.microsoft.com/help/4028458)**
 
 ## <a name="i-get-a-message-that-says-something-went-wrong-and-we-couldnt-start-windows-mixed-reality"></a>"問題が発生しました。 Windows Mixed Reality を開始できませんでした" というメッセージが表示されます。

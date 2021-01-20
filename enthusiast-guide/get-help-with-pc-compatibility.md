@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: e3d150544c3bce99d1aa808229d282b3d2fe1dd0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 28b377108fdb51d7f922710e579d62e7103ef765
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007482"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580532"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Windows Mixed Reality における PC の互換性に関するヘルプを表示する
 
@@ -116,7 +116,7 @@ Windows Mixed Reality の実行に関する問題:
 
 ### <a name="this-pc-doesnt-have-bluetooth-40-for-controllers"></a>この PC には、コントローラー用の Bluetooth 4.0 がありません
 
-2018およびそれ以降の Windows Mixed Reality ヘッドセットには既に Bluetooth が組み込まれていますが、古いヘッドセットを使用している場合は、Mixed reality モーションコントローラーに bluetooth 4.0 が必要です。 [Windows Mixed Reality を Xbox コントローラー](motion-controller-problems.md#can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset)、[マウス、キーボード](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home#keyboard-and-mouse)、または[USB Bluetooth アダプター](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology)と共に使用して、モーションコントローラーを PC に接続することもできます。 [推奨されるアダプターの表示](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+2018およびそれ以降の Windows Mixed Reality ヘッドセットには既に Bluetooth が組み込まれていますが、古いヘッドセットを使用している場合は、Mixed reality モーションコントローラーに bluetooth 4.0 が必要です。 [Windows Mixed Reality を Xbox コントローラー](motion-controller-problems.md#can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset)、[マウス、キーボード](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home#keyboard-and-mouse)、または[USB Bluetooth アダプター](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology)と共に使用して、モーションコントローラーを PC に接続することもできます。 [推奨されるアダプターの表示](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ### <a name="depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers"></a>ヘッドセットによっては、モーションコントローラーを使用するために Bluetooth アダプターが必要になる場合があります。
 

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, unity, チュートリアル, api, 通知, 関数, テーブル, 通知ハブ, hololens, イマーシブ, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 4b71968eb546cc5d7a5cd767f2ecafae102c763c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5bf6720fe7be178bf4fb15ae2b87f4ff502afe9b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679541"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581269"
 ---
 # <a name="mr-and-azure-308-cross-device-notifications"></a>MR と Azure 308:クロスデバイス通知
 
@@ -26,11 +26,11 @@ ms.locfileid: "94679541"
 
 このコースでは、Azure Notification Hubs、Azure テーブル、および Azure Functions を使用して、Notification Hubs 機能を mixed reality アプリケーションに追加する方法について説明します。
 
-**Azure Notification Hubs** は Microsoft のサービスであり、開発者は、クラウド内のすべてのプラットフォームにおいて、対象となるパーソナライズされたプッシュ通知を任意のプラットフォームに送信できます。 これにより、開発者はシナリオに応じて、エンドユーザーと通信したり、さまざまなアプリケーション間で通信したりできるようになります。 詳細については、 **Azure Notification Hubs** の [ページ](https://docs.microsoft.com/azure/notification-hubs/notification-hubs-push-notification-overview)を参照してください。
+**Azure Notification Hubs** は Microsoft のサービスであり、開発者は、クラウド内のすべてのプラットフォームにおいて、対象となるパーソナライズされたプッシュ通知を任意のプラットフォームに送信できます。 これにより、開発者はシナリオに応じて、エンドユーザーと通信したり、さまざまなアプリケーション間で通信したりできるようになります。 詳細については、 **Azure Notification Hubs** の [ページ](/azure/notification-hubs/notification-hubs-push-notification-overview)を参照してください。
 
-**Azure Functions** は Microsoft のサービスであり、開発者は Azure で小さなコードである "Functions" を実行できます。 これにより、ローカルアプリケーションではなく、クラウドに作業を委任することができます。これには多くのメリットがあります。 **Azure Functions** は、C \# 、F \# 、Node.js、Java、PHP など、いくつかの開発言語をサポートしています。 詳細については、 **Azure Functions** の [ページ](https://docs.microsoft.com/azure/azure-functions/functions-overview)を参照してください。
+**Azure Functions** は Microsoft のサービスであり、開発者は Azure で小さなコードである "Functions" を実行できます。 これにより、ローカルアプリケーションではなく、クラウドに作業を委任することができます。これには多くのメリットがあります。 **Azure Functions** は、C \# 、F \# 、Node.js、Java、PHP など、いくつかの開発言語をサポートしています。 詳細については、 **Azure Functions** の [ページ](/azure/azure-functions/functions-overview)を参照してください。
 
-**Azure テーブル** は Microsoft のクラウドサービスであり、開発者は構造化されていない SQL データをクラウドに保存できるため、どこからでも簡単にアクセスできます。 このサービスでは、必要に応じてテーブルを進化させることができるため、スキーマなしの設計が非常に優れているため、非常に柔軟性があります。 詳細については、 **Azure のテーブル** に関する [ページ](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)を参照してください。
+**Azure テーブル** は Microsoft のクラウドサービスであり、開発者は構造化されていない SQL データをクラウドに保存できるため、どこからでも簡単にアクセスできます。 このサービスでは、必要に応じてテーブルを進化させることができるため、スキーマなしの設計が非常に優れているため、非常に柔軟性があります。 詳細については、 **Azure のテーブル** に関する [ページ](/azure/cosmos-db/table-storage-overview)を参照してください。
 
 このコースを完了すると、現実のイマーシブヘッドセットアプリケーションと、次のようなデスクトップ PC アプリケーションを使用できるようになります。
 
@@ -48,7 +48,7 @@ ms.locfileid: "94679541"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td> MR と Azure 308:クロスデバイス通知</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -57,7 +57,7 @@ ms.locfileid: "94679541"
 > [!NOTE]
 > このコースでは主に Windows Mixed Reality イマーシブ (VR) ヘッドセットに焦点を当てていますが、このコースで学習した内容を Microsoft HoloLens に適用することもできます。 このコースに従うと、HoloLens をサポートするために必要となる可能性のある変更に関する注意事項が表示されます。 HoloLens を使用する場合、音声キャプチャ中にエコーが発生することがあります。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 > [!NOTE]
 > このチュートリアルは、Unity と C# の基本的な経験がある開発者向けに設計されています。 また、このドキュメントに記載されている前提条件と記述に記載されている手順は、作成時にテストおよび検証されたものを表します (2018 年5月)。 「 [ツールのインストール](../../install-the-tools.md) 」の記事に記載されているように、最新のソフトウェアを自由に使用できます。ただし、このコースの情報は、以下に記載されているものよりも新しいソフトウェアで見つかったものと完全に一致するとは限りません。
@@ -69,7 +69,7 @@ ms.locfileid: "94679541"
 - [最新の Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](../../../hololens-hardware-details.md)
+- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](/hololens/hololens1-hardware)
 - Azure セットアップのインターネットアクセスと Notification Hubs へのアクセス
 
 ## <a name="before-you-start"></a>開始する前に
@@ -145,13 +145,13 @@ ms.locfileid: "94679541"
 
     4.  リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのラボなど) を共通のリソースグループに保持することをお勧めします。
 
-        > Azure リソースグループの詳細については、 [リソースグループの管理方法に関するリンク](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)を参照してください。 
+        > Azure リソースグループの詳細については、 [リソースグループの管理方法に関するリンク](/azure/azure-resource-manager/resource-group-portal)を参照してください。 
 
     5.  適切な **サブスクリプション** を選択します。
 
     6.  また、このサービスに適用されている使用条件を理解していることを確認する必要があります。
 
-    7. **[作成]** を選択します。
+    7. **［作成］** を選択します
 
         ![サービスの詳細を入力](images/AzureLabs-Lab8-08.png)
 
@@ -182,7 +182,7 @@ Notification Hubs サービスインスタンスを作成したら、Azure Porta
 2.  ログインしたら、左上隅にある [ **新規** ] をクリックし、[ **ストレージアカウント**] を検索して、 **Enter キー** を押します。
 
     > [!NOTE] 
-    > 新しいポータルでは、New _ という語が **_New_ _ リソースの作成に *置き換えられている可能性があり*** ます。
+    > 新しいポータルでは、New _ という語が **_ リソースの作成に *置き換えられている可能性があり*** ます。
 
 3.  一覧から [ **ストレージアカウント-blob、file、table、queue** ] を選択します。
 
@@ -212,11 +212,11 @@ Notification Hubs サービスインスタンスを作成したら、Azure Porta
 
     9.  リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのラボなど) を共通のリソースグループに保持することをお勧めします。
 
-        > Azure リソースグループの詳細については、 [リソースグループの管理方法に関するリンク](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)を参照してください。
+        > Azure リソースグループの詳細については、 [リソースグループの管理方法に関するリンク](/azure/azure-resource-manager/resource-group-portal)を参照してください。
 
     10. このオプションが選択されている場合は、[ **仮想ネットワーク** ] を [無効] のまま **に** します。
 
-    11. **[作成]** をクリックします。
+    11. **Create** をクリックしてください。
 
         ![ストレージの詳細の入力](images/AzureLabs-Lab8-15.png)
 
@@ -253,7 +253,7 @@ Notification Hubs サービスインスタンスを作成したら、Azure Porta
 
 1.  **Visual Studio** を開きます。
 
-2.  メニューの [Cloud Explorer の **表示**] をクリックし  >  **Cloud Explorer** ます。
+2.  メニューの [Cloud Explorer の **表示**] をクリックし  >  ます。
 
     ![cloud explorer を開く](images/AzureLabs-Lab8-22.png)
 
@@ -362,7 +362,7 @@ Azure Function App を作成します。これは、デスクトップアプリ�
 
     4. リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのラボなど) を共通のリソースグループに保持することをお勧めします。
 
-        > Azure リソースグループの詳細については、 [リソースグループの管理方法に関するリンク](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)を参照してください。
+        > Azure リソースグループの詳細については、 [リソースグループの管理方法に関するリンク](/azure/azure-resource-manager/resource-group-portal)を参照してください。
 
     5. **OS** の場合は、[Windows] をクリックします。これは目的のプラットフォームです。
 
@@ -374,7 +374,7 @@ Azure Function App を作成します。これは、デスクトップアプリ�
 
     9. このアプリで *Application Insights* は必要ありませ **ん。そのままにして** おいてもかまいません。
 
-    10. **[作成]** をクリックします。
+    10. **Create** をクリックしてください。
 
         ![新しいインスタンスの作成](images/AzureLabs-Lab8-34.png)
 
@@ -601,7 +601,7 @@ Azure Function App を作成します。これは、デスクトップアプリ�
 
 ![出力の完了](images/AzureLabs-Lab8-50.png)
 
-32. この時点で、関数が動作していることを確認するために、関数をテストする必要があります。 この操作を行うには、次の手順を実行します。 
+32. この時点で、関数が動作していることを確認するために、関数をテストする必要があります。 これを行うには、次の手順を実行します。 
 
     1. 関数のページにもう一度移動します。
 
@@ -653,11 +653,11 @@ Mixed reality のイマーシブヘッドセットをセットアップしてテ
 
     ![プロジェクトの作成](images/AzureLabs-Lab8-53.png)
 
-3.  Unity を開いている場合は、[既定の **スクリプトエディター** ] が **Visual Studio** に設定されていることを確認する必要があります。 [設定の **編集**] に移動し、  >  **Preferences** 新しいウィンドウで [**外部ツール**] に移動します。 **外部スクリプトエディター** を **Visual Studio 2017** に変更します。 [ **基本設定** ] ウィンドウを閉じます。
+3.  Unity を開いている場合は、[既定の **スクリプトエディター** ] が **Visual Studio** に設定されていることを確認する必要があります。 [設定の **編集**] に移動し、  >  新しいウィンドウで [**外部ツール**] に移動します。 **外部スクリプトエディター** を **Visual Studio 2017** に変更します。 [ **基本設定** ] ウィンドウを閉じます。
 
     ![外部 VS ツールの設定](images/AzureLabs-Lab8-54.png)
 
-4.  次に、[**ファイル**] [ビルドの設定] に移動して [ユニバーサル Windows プラットフォーム] を選択し、[  >  **Build Settings** **プラットフォームの切り替え**] ボタンをクリックして選択内容を適用します。 **Universal Windows Platform**
+4.  次に、[**ファイル**] [ビルドの設定] に移動して [ユニバーサル Windows プラットフォーム] を選択し、[  >   **プラットフォームの切り替え**] ボタンをクリックして選択内容を適用します。 
 
     ![プラットフォームの切り替え](images/AzureLabs-Lab8-55.png)
 
@@ -722,7 +722,7 @@ Mixed reality のイマーシブヘッドセットをセットアップしてテ
 
 ## <a name="chapter-8---importing-the-dlls-in-unity"></a>章 8-Unity での Dll のインポート
 
-Azure Storage for Unity を使用します (これ自体が .Net SDK for Azure を利用します)。 詳細については [、Unity の Azure Storage に関する](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity)次のリンク先を参照してください。
+Azure Storage for Unity を使用します (これ自体が .Net SDK for Azure を利用します)。 詳細については [、Unity の Azure Storage に関する](/sandbox/gamedev/unity/azure-storage-unity)次のリンク先を参照してください。
 
 現在、Unity には、インポート後にプラグインを再構成する必要がある既知の問題があります。 バグが解決された後、これらの手順 (このセクションでは 4-7) は不要になりました。
 
@@ -782,7 +782,7 @@ SDK を独自のプロジェクトにインポートするには、GitHub から
 
 このクラスを作成するには:
 
-1.  [プロジェクト] パネルにある [**アセット**] フォルダーを右クリックし、[フォルダーの **作成**] をクリックし  >  **Folder** ます。 フォルダーに **スクリプト** の名前を指定します。
+1.  [プロジェクト] パネルにある [**アセット**] フォルダーを右クリックし、[フォルダーの **作成**] をクリックし  >  ます。 フォルダーに **スクリプト** の名前を指定します。
 
     ![スクリプトフォルダーの作成](images/AzureLabs-Lab8-66.png)
 
@@ -790,7 +790,7 @@ SDK を独自のプロジェクトにインポートするには、GitHub から
 
 2.  先ほど作成したフォルダーをダブルクリックして開きます。
 
-3.  **Scripts** フォルダー内を右クリックし、[ **Create**  >  **C# スクリプト** の作成] をクリックします。 スクリプト **Tabletoscene** という名前を指定します。
+3.  **Scripts** フォルダー内を右クリックし、[   >  **C# スクリプト** の作成] をクリックします。 スクリプト **Tabletoscene** という名前を指定します。
 
     ![新しい c# スクリプト ](images/AzureLabs-Lab8-68.png)
      ![ tabletoscene の名前変更](images/AzureLabs-Lab8-69.png)
@@ -1169,7 +1169,7 @@ SDK を独自のプロジェクトにインポートするには、GitHub から
 
     ![名前 UnityMRNotifHub](images/AzureLabs-Lab8-80.png)
 
-3.  Unity を開いている場合は、[既定の **スクリプトエディター** ] が **Visual Studio** に設定されていることを確認する必要があります。 [設定の **編集**] に移動し、  >  **Preferences** 新しいウィンドウで [**外部ツール**] に移動します。 **外部スクリプトエディター** を **Visual Studio 2017** に変更します。 [ **基本設定** ] ウィンドウを閉じます。
+3.  Unity を開いている場合は、[既定の **スクリプトエディター** ] が **Visual Studio** に設定されていることを確認する必要があります。 [設定の **編集**] に移動し、  >  新しいウィンドウで [**外部ツール**] に移動します。 **外部スクリプトエディター** を **Visual Studio 2017** に変更します。 [ **基本設定** ] ウィンドウを閉じます。
 
     ![外部エディターを VS に設定する](images/AzureLabs-Lab8-81.png)
 
@@ -1242,14 +1242,14 @@ SDK を独自のプロジェクトにインポートするには、GitHub から
 
 ### <a name="chapter-13---importing-the-dlls-in-the-mixed-reality-unity-project"></a>第13章: Mixed Reality Unity プロジェクトでの Dll のインポート
 
-Azure Storage for Unity library (.Net SDK for Azure を使用) が使用されます。 [Unity で Azure Storage を使用する方法については、こちらのリンクを](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity)参照してください。
+Azure Storage for Unity library (.Net SDK for Azure を使用) が使用されます。 [Unity で Azure Storage を使用する方法については、こちらのリンクを](/sandbox/gamedev/unity/azure-storage-unity)参照してください。
 現在、Unity には、インポート後にプラグインを再構成する必要がある既知の問題があります。 バグが解決された後、これらの手順 (このセクションでは 4-7) は不要になりました。
 
 SDK を独自のプロジェクトにインポートするには、 [unitypackage](https://aka.ms/azstorage-unitysdk)がダウンロードされていることを確認してください。 次に、以下を実行します。
 
 1.  [**アセット**  >  **インポートパッケージ**  >  **カスタムパッケージ**] メニューオプションを使用して、上記からダウンロードした unitypackage を Unity に追加します。
 
-2.  ポップアップ表示される [ **Unity パッケージのインポート**] ボックスで、[**プラグイン** ストレージ] の下のすべてを選択でき  >  **Storage** ます。
+2.  ポップアップ表示される [ **Unity パッケージのインポート**] ボックスで、[**プラグイン** ストレージ] の下のすべてを選択でき  >  ます。
 
     ![パッケージのインポート](images/AzureLabs-Lab8-90.png)
 
@@ -1479,7 +1479,7 @@ SDK を独自のプロジェクトにインポートするには、 [unitypackag
     > [!NOTE]
     > Microsoft HoloLens 用にこれを開発している場合は、次のように、 **メインカメラ** の *カメラ* コンポーネントを更新する必要があります。
     > - クリアフラグ: 純色
-    > - 背景: 黒
+    > - 背景:Black
 
 ## <a name="chapter-16---build-the-mixed-reality-project-to-uwp"></a>Chapter 16-UWP に対する Mixed Reality プロジェクトの構築
 

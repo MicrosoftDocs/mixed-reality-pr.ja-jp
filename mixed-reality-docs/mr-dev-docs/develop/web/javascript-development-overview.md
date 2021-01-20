@@ -6,12 +6,12 @@ ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: JavaScript、WebXR、WinMR、WebAR、WebVR、WindowsMixedReality、HoloLens、windows mixed reality、web vr、web xr、web mr、web ar、360、360 video、360ビデオ、360 photo、360 photos、360コンテンツ、イマーシブ web、イマーシブ-web、IW、immersiveweb
-ms.openlocfilehash: 26d1edf536eb23673393caaee0a833e036adc194
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+ms.openlocfilehash: 573db6f739292b7e67148d260a5ba1880d24fb20
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957782"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580323"
 ---
 # <a name="javascript-development-overview"></a>JavaScript 開発の概要
 
@@ -63,8 +63,8 @@ JavaScript ライブラリが少ないので、mixed reality エクスペリエ�
 * [Immersiveweb](https://immersiveweb.dev/)
 * [WebXR のサンプル](https://immersive-web.github.io/webxr-samples/)
 * [Babylon.js を使用した WebXR エクスペリエンスの作成](https://doc.babylonjs.com/how_to/introduction_to_webxr)
-* [Windows Mixed Reality と新しい Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
+* [Windows Mixed Reality と新しい Microsoft Edge](/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
 * [イマーシブ Web W3C Github](https://github.com/immersive-web)
-* [WebGL API](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)
+* [WebGL API](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))
 * [ゲームパッド API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) と [ゲームパッド拡張機能](https://w3c.github.io/gamepad/extensions.html)
 * [WebVR の概要](webvr-overview.md)

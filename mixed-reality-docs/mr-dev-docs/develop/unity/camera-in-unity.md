@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、holographic レンダリング、holographic、イマーシブ、フォーカスポイント、深度バッファー、方向専用、位置指定、不透明、透明、クリップ、混合 reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
-ms.openlocfilehash: cd5284a8fdef7254b7d0375b57877d30f5d0d708
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006392"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581119"
 ---
 # <a name="camera-in-unity"></a>Unity のカメラ
 
@@ -33,7 +33,7 @@ Mixed reality ヘッドセットを使用すると、holographic 世界の中心
 Unity カメラコンポーネントの既定の設定は、従来の3D アプリケーション用です。実際の環境がないため、スカイボックスのような背景が必要です。
 
 * **[イマーシブヘッドセット](../../discover/immersive-headset-hardware-details.md)** で実行すると、ユーザーに表示されるすべてのものが表示されるため、スカイボックスを保持することをお勧めします。
-* ただし、 [HoloLens](../../hololens-hardware-details.md)などの **holographic ヘッドセット** で実行する場合、カメラがレンダリングするすべての要素の背後に実際の世界が表示されます。 スカイボックステクスチャの代わりに、カメラの背景を透明に設定します (HoloLens では、黒は透明としてレンダリングされます)。
+* ただし、 [HoloLens](/hololens/hololens1-hardware)などの **holographic ヘッドセット** で実行する場合、カメラがレンダリングするすべての要素の背後に実際の世界が表示されます。 スカイボックステクスチャの代わりに、カメラの背景を透明に設定します (HoloLens では、黒は透明としてレンダリングされます)。
     1. [階層] パネルでメインカメラを選択します。
     2. [インスペクター] パネルでカメラコンポーネントを見つけて、[クリアフラグ] ドロップダウンを [スカイボックス] から [純色] に変更します。
     3. 背景色ピッカーを選択し、RGBA 値を (0, 0, 0, 0) に変更します。
@@ -81,7 +81,7 @@ HoloLens とイマーシブヘッドセットはどちらも、photons が出力
 アプリの深度バッファーを Windows に共有すると、アプリは、レンダリングするヘッドセットの種類に基づいて、ホログラムの安定性の2つのブーストのうちの1つを提供します。
 
 * **イマーシブヘッドセット** は、深度バッファーが提供されたときに位置指定再投影を処理し、位置と向きの両方で misprediction のホログラムを調整します。
-* **Holographic ヘッドセット** には、いくつかの異なる方法があります。 HoloLens 1 は、深度バッファーが指定されると自動的に [フォーカスポイント](focus-point-in-unity.md) を選択し、ほとんどのコンテンツと交差する平面に沿ったホログラムの安定性を最適化します。 HoloLens 2 は、Depth LSR を使用してコンテンツを安定化します [(「解説」を参照してください)](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)。
+* **Holographic ヘッドセット** には、いくつかの異なる方法があります。 HoloLens 1 は、深度バッファーが指定されると自動的に [フォーカスポイント](focus-point-in-unity.md) を選択し、ほとんどのコンテンツと交差する平面に沿ったホログラムの安定性を最適化します。 HoloLens 2 は、Depth LSR を使用してコンテンツを安定化します [(「解説」を参照してください)](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)。
 
 Unity アプリで Windows に深度バッファーを提供するかどうかを設定するには、次のようにします。
 

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: ポート、unity、unreal、ミドルウェア、エンジン、UWP、Win32、移植、HoloLens ファースト世代、mixed reality ヘッドセット、windows mixed reality ヘッドセット、移行、Windows 10、入力マッピング、
-ms.openlocfilehash: b43b42567183ef77ef76b301212233eeeb7c04ca
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: dd09c6479bfcf3659b3e9355be898d77bccc6dc6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192667"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580581"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Windows Mixed Reality に VR アプリを移植する
 
@@ -37,8 +37,8 @@ Windows 10 には、イマーシブおよび holographic ヘッドセットの�
 Windows Mixed Reality プラットフォームは、まだアクティブな開発中です。 "Windows Insider Fast" のフライトにアクセスするには [、Windows Insider program に参加](https://insider.windows.com/) することをお勧めします。
 1. Windows 10 の作成者の[更新プログラム](https://www.microsoft.com/software-download/windows10)をインストールする
 2. Windows Insider プログラムに[参加](https://insider.windows.com/)します。
-3. [開発者モード](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)を有効にする
-4. [**設定 > 更新 & セキュリティ] セクション** で、 [Windows Insider Fast のフライト](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview)に切り替えます。
+3. [開発者モード](/windows/uwp/get-started/enable-your-device-for-development)を有効にする
+4. [**設定 > 更新 & セキュリティ] セクション** で、 [Windows Insider Fast のフライト](/archive/blogs/uktechnet/joining-insider-preview)に切り替えます。
 
 ### <a name="3-upgrade-to-the-most-recent-build-of-visual-studio"></a>3. Visual Studio の最新のビルドにアップグレードする
 * Visual Studio を使用している場合は、最新のビルドにアップグレードします。
@@ -56,8 +56,8 @@ Windows Mixed Reality プラットフォームは、まだアクティブな開�
 > [!IMPORTANT]
 > HP リバーブ G2 コントローラーを使用している場合は、追加の入力マッピング手順については、こちらの [記事](../unreal/unreal-reverb-g2-controllers.md) を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
-* [Windows Mixed Reality の PC ハードウェアの最小互換性ガイドライン](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+## <a name="see-also"></a>関連項目
+* [Windows Mixed Reality の PC ハードウェアの最小互換性ガイドライン](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Mixed Reality のパフォーマンスについて](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Unity のパフォーマンスに関する推奨事項](../unity/performance-recommendations-for-unity.md)
 * [モーション コントローラー](../../design/motion-controllers.md)

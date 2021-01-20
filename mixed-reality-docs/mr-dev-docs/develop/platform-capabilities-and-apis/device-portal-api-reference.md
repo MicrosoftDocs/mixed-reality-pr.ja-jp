@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens、Windows デバイスポータル、API、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット
-ms.openlocfilehash: 13845a5a5668ee8c86178196326425f46be9b321
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: cdbe9635fc51a0d19c978b72fdc8d5db6b8e8e01
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006652"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581251"
 ---
 # <a name="device-portal-api-reference"></a>Device Portal API リファレンス
 
@@ -698,4 +698,4 @@ WPR (パフォーマンス) トレースセッションを開始します
 
 ## <a name="see-also"></a>関連項目
 * [Windows Device Portal を使用する](using-the-windows-device-portal.md)
-* [デバイスポータルコア API リファレンス (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)
+* [デバイスポータルコア API リファレンス (UWP)](/windows/uwp/debug-test-perf/device-portal-api-core)

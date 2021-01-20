@@ -3,12 +3,12 @@ title: 音声とオーディオに関する Faq
 description: 音声とオーディオの Windows Mixed Reality のトラブルシューティングは、標準のコンシューマーサポートドキュメントを超えています。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、オーディオの問題、音声の問題
-ms.openlocfilehash: d685190248dd17792f941cf53e3a57499cd3e662
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fff5d661dbe61d4c9364c83e3bd0c6ddb8ab5cc6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725893"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581415"
 ---
 # <a name="speech-and-audio-faqs"></a>音声とオーディオに関する Faq
 
@@ -35,7 +35,7 @@ ms.locfileid: "97725893"
 
 * SteamVR を通じて起動されたアプリなど、一部のアプリは、混合 Reality ポータルを開始または停止したときにオーディオデバイスが変更されたときにオーディオを紛失したり、ハングしたりする可能性があります。 これを修正するには、Mixed Reality ポータルを再度開き、アプリを再起動します。
 * 別のマルチメディア USB デバイス (web cam など) が Windows Mixed Reality ヘッドセットと同じ内部または外部の USB ハブを共有している場合、ヘッドセットオーディオジャックまたはヘッドホンが、音が聞こえない場合や音声がまったくない場合があります。 別のハブを使用している USB ポートにヘッドセットを接続するか、他の USB マルチメディアデバイスを切断/無効にします。
-* 接続されているヘッドホンから音が大きく聞こえる場合は、PC の USB ハブが Windows Mixed Reality ヘッドセットに十分な電力を供給できない可能性があります。 この問題が発生した場合は、 [フィードバックハブ](https://docs.microsoft.com/hololens/hololens-feedback) のバグをファイルに登録して、次を試してください。
+* 接続されているヘッドホンから音が大きく聞こえる場合は、PC の USB ハブが Windows Mixed Reality ヘッドセットに十分な電力を供給できない可能性があります。 この問題が発生した場合は、 [フィードバックハブ](/hololens/hololens-feedback) のバグをファイルに登録して、次を試してください。
     * 拡張ケーブルの削除
     * 専用の外付け USB 3.0 ハブを使用する
     * PC の別の USB ポート

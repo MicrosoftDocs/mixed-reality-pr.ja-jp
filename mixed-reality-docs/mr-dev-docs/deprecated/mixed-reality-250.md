@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、イマーシブ、motion controller、共有、xbox コントローラー、ネットワーク、クロスデバイス
-ms.openlocfilehash: a980441ee73cd8f45afff446d9315eaf08549575
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 8b6711ab3ee833306742fe938dfa501dc5b4ed0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685330"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580128"
 ---
 # <a name="mr-sharing-250-hololens-and-immersive-headsets"></a>MR 共有 250:HoloLens とイマーシブ ヘッドセット
 
 >[!NOTE]
->Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは " **_ありません_** "。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](../mr-learning-base-01.md)が投稿されています。
+>Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](../develop/unity/tutorials/mr-learning-base-01.md)が投稿されています。
 
 ユニバーサル Windows プラットフォーム (UWP) の柔軟性により、複数のデバイスにまたがるアプリケーションを簡単に作成できます。 この柔軟性により、各デバイスの強みを活用するエクスペリエンスを作成できます。 このチュートリアルでは、HoloLens と Windows Mixed Reality の両方のイマーシブヘッドセットで実行される基本的な共有エクスペリエンスについて説明します。 このコンテンツはもともと、ワシントン州シアトルの Microsoft Build 2017 カンファレンスで配信されました。
 
@@ -31,7 +31,7 @@ ms.locfileid: "91685330"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td>MR 共有 250:HoloLens とイマーシブ ヘッドセット</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -41,7 +41,7 @@ ms.locfileid: "91685330"
 
 ### <a name="prerequisites"></a>前提条件
 
-* Windows 10 PC。 [必要な開発ツール](../develop/install-the-tools.md) があり、 [windows Mixed Reality のイマーシブヘッドセットをサポートするように構成され](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)ています。
+* Windows 10 PC。 [必要な開発ツール](../develop/install-the-tools.md) があり、 [windows Mixed Reality のイマーシブヘッドセットをサポートするように構成され](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)ています。
 * PC で動作する Xbox コントローラー。
 * 少なくとも1つの HoloLens デバイスと1つのイマーシブヘッドセット。
 * 検出のために UDP ブロードキャストを許可するネットワーク。
@@ -69,32 +69,32 @@ HoloLens または Windows Mixed Reality イマーシブヘッドセットのホ
 ### <a name="steps"></a>手順
 
 * Unity を開きます。
-    * **[Open (開く)]** を選択します。
+    * **[Open]** を選択します。
     * プロジェクトファイルを抽出した場所に移動します。
     * **[フォルダーの選択]** をクリックします。
     * *Unity が初めてプロジェクトを処理するのに少し時間がかかります。*
 * Unity で Mixed Reality が有効になっていることを確認します。
-    * [ビルドの設定] ダイアログを開きます (ctrl **+ Shift + B** または **ファイル > ビルド設定...** )。
-    * [ **ユニバーサル Windows プラットフォーム** ] を選択し、[ **プラットフォームの切り替え** ] をクリックします。
-    * [ **>プレーヤー設定の編集** ] を選択します。
-    * 右側の [ **インスペクター** ] パネルで、[ **XR Settings** ] を展開します。
+    * [ビルドの設定] ダイアログを開きます (ctrl **+ Shift + B** または **ファイル > ビルド設定...**)。
+    * [ **ユニバーサル Windows プラットフォーム** ] を選択し、[ **プラットフォームの切り替え**] をクリックします。
+    * [ **>プレーヤー設定の編集**] を選択します。
+    * 右側の [ **インスペクター** ] パネルで、[ **XR Settings**] を展開します。
     * [ **サポートされている仮想現実** ] ボックスをオンにします。
     * *Windows Mixed Reality は、Virtual Reality SDK である必要があります。*
 * シーンを作成します。
-    * **階層** で、[ **メインカメラ** ] を右クリックし、[ **削除** ] を選択します。
+    * **階層** で、[**メインカメラ**] を右クリックし、[**削除**] を選択します。
     * **HoloToolkit > 入力 >** から、 **MixedRealityCameraParent** を **階層** にドラッグします。
 * ホログラムをシーンに追加する
-    * **AppPrefabs** から [ **スカイ** ボックス] を [ **シーン] ビュー** にドラッグします。
-    * **AppPrefabs** をドラッグして、 **階層** に **移動します** 。
+    * **AppPrefabs** から [**スカイ** ボックス] を [**シーン] ビュー** にドラッグします。
+    * **AppPrefabs** をドラッグして、**階層** に **移動します**。
     * **AppPrefabs** を **階層構造****にドラッグし** ます。
 * 保存とビルド
-    * 保存 ( **コントロール + S** または **ファイル > シーンの保存** )
+    * 保存 ( **コントロール + S** または **ファイル > シーンの保存**)
     * これは新しいシーンであるため、名前を指定する必要があります。 名前は関係ありませんが、SharedMixedReality を使用します。
 * Visual Studio へのエクスポート
-    * [ビルド] メニューを開く (ctrl **+ Shift + B** または **ファイル > ビルド設定** )
+    * [ビルド] メニューを開く (ctrl **+ Shift + B** または **ファイル > ビルド設定**)
     * [ **開いているシーンの追加] をクリックします。**
     * **Unity C# プロジェクト** を確認する
-    * [ **ビルド** ] をクリックします。
+    * [**ビルド**] をクリックします。
     * 表示された [エクスプローラー] ウィンドウで、 **App** という名前の新しいフォルダーを作成します。
     * **アプリ** フォルダーをシングルクリックします。
     * **[フォルダーの選択] をクリックします。**
@@ -134,23 +134,23 @@ Windows Mixed Reality アプリケーションの入力を処理する方法に�
 ### <a name="steps"></a>手順
 
 * 入力マネージャーの追加
-    * [ **HoloToolkit > 入力 >** から、[ **管理者** の子として **inputmanager** を **階層** にドラッグします。
-    * **HoloToolkit > 入力 > Prefabs > カーソル** を **階層****にドラッグします** 。
+    * [ **HoloToolkit > 入力 >** から、[**管理者** の子として **inputmanager** を **階層** にドラッグします。
+    * **HoloToolkit > 入力 > Prefabs > カーソル** を **階層****にドラッグします**。
 * 空間マッピングの追加
     * **HoloToolkit > SpatialMapping から >** に **SpatialMapping** を **ドラッグし** ます。
 * 仮想再生空間の追加
     * **階層** 内で **MixedRealityCameraParent** を **展開** します。
-    * [ **インスペクター** ] パネルで、[ **境界** を有効にする] チェックボックスをオンにします。
+    * [**インスペクター** ] パネルで、[**境界** を有効にする] チェックボックスをオンにします。
     * **AppPrefabs** から、 **Vrroom** を **階層** にドラッグします。
 * WorldAnchorManager の追加
-    * [ **階層** ] で、[ **マネージャー** ] を選択します。
-    * [ **インスペクター** ] で、[ **コンポーネントの追加** ] をクリックします。
-    * 「 **ワールドアンカーマネージャー** 」と入力します。
+    * [ **階層**] で、[ **マネージャー**] を選択します。
+    * [ **インスペクター**] で、[ **コンポーネントの追加**] をクリックします。
+    * 「 **ワールドアンカーマネージャー**」と入力します。
     * [ **World Anchor Manager** ] を選択して追加します。
 * TapToPlace を島に追加する
-    * [ **階層** ] で [ **アイランド** ] を展開します。
-    * [ **MixedRealityLand** ] を選択します。
-    * [ **インスペクター** ] で、[ **コンポーネントの追加** ] をクリックします。
+    * [ **階層**] で [ **アイランド**] を展開します。
+    * [ **MixedRealityLand**] を選択します。
+    * [ **インスペクター**] で、[ **コンポーネントの追加**] をクリックします。
     * 「 **Tap** 」と入力して選択します。
     * **タップ時に親を** 確認します。
     * **配置オフセット** を **(0, 0.1, 0)** に設定します。
@@ -160,7 +160,7 @@ Windows Mixed Reality アプリケーションの入力を処理する方法に�
 
 **スクリプト 1-GamepadInput.cs**
 
-[プロジェクト] パネルで **Assets\HoloToolkit\Input\Scripts\InputSources** に移動し、[ **GamepadInput.cs** ] をダブルクリックして開きます。 [プロジェクト] パネルの同じパスで、[ **InteractionSourceInputSource.cs** ] をダブルクリックします。
+[プロジェクト] パネルで **Assets\HoloToolkit\Input\Scripts\InputSources** に移動し、[ **GamepadInput.cs** ] をダブルクリックして開きます。 [プロジェクト] パネルの同じパスで、[ **InteractionSourceInputSource.cs**] をダブルクリックします。
 
 両方のスクリプトに共通の基本クラス BaseInputSource があることに注意してください。
 
@@ -195,10 +195,10 @@ Holographic アプリケーションを作成するときに、多くの開発�
 ### <a name="steps"></a>手順
 
 * 島と VRRoom の削除
-    * **階層** 内で **島** を右クリックし、[ **削除** ] を選択します。
-    * **階層** で、[ **vrroom** ] を右クリックし、[ **削除** ] を選択します。
+    * **階層** 内で **島** を右クリックし、[**削除**] を選択します。
+    * **階層** で、[ **vrroom** ] を右クリックし、[**削除**] を選択します。
 * Usland の追加
-    * **AppPrefabs** から、 **階層** に **usland** をドラッグします。
+    * **AppPrefabs** から、**階層** に **usland** をドラッグします。
 * **AppPrefabs** から、次の各を **階層** にドラッグします。
     * **UNETSharingStage**
     * **UNetAnchorRoot**
@@ -258,10 +258,10 @@ HoloLens がセッションに参加する場合は、アンカーをインポ�
 ### <a name="steps"></a>手順
 
 * MixedRealityTeleport を MixedRealityCameraParent に追加する
-    * [ **階層** ] で [ **usland** ] を選択します。
-    * **インスペクター** で、 **レベルの制御** を有効にします。
-    * [ **階層** ] で [ **MixedRealityCameraParent** ] を選択します。
-    * [ **インスペクター** ] で、[ **コンポーネントの追加** ] をクリックします。
+    * [ **階層**] で [ **usland**] を選択します。
+    * **インスペクター** で、**レベルの制御** を有効にします。
+    * [ **階層**] で [ **MixedRealityCameraParent**] を選択します。
+    * [ **インスペクター**] で、[ **コンポーネントの追加**] をクリックします。
     * 「 **Mixed Reality テレポート** 」と入力して選択します。
 
 ### <a name="digging-into-the-code"></a>コードの調査
@@ -311,8 +311,8 @@ MixedRealityTeleport の2番目のジョブは、 **dolly** の移動を処理�
 
 ### <a name="steps"></a>手順
 
-* [ **階層** ] で [ **usland** ] を選択します。
-* **インスペクター** の **レベルコントロール** で、[ **コラボレーションを有効にする** ] チェックボックスをオンにします。
+* [ **階層**] で [ **usland**] を選択します。
+* **インスペクター** の **レベルコントロール** で、[**コラボレーションを有効にする**] チェックボックスをオンにします。
 
 ### <a name="digging-into-the-code"></a>コードの調査
 

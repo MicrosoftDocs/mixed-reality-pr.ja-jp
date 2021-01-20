@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、streaming、リモート処理、mixed reality、開発、作業の開始、機能、新しいプロジェクト、エミュレーター、ドキュメント、ガイド、機能、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、WinRT、DLL
-ms.openlocfilehash: 0d181d1eff644de0512c40a140474612a1540b40
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: f32b5b3ddbee2e24e61d08b0a1b887b7b06e6da4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247755"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580403"
 ---
 # <a name="winrt-in-unreal"></a>Unreal での WinRT
 
@@ -26,8 +26,8 @@ HoloLens 開発の過程で、WinRT を使用して機能を作成すること�
 > [!div class="nextstepaction"]
 > [デバイスへの配置](unreal-deploying.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
-* [C++/WinRT Api](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
-* [FileSavePicker クラス](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
-* [Unreal サードパーティ製ライブラリ](https://docs.unrealengine.com/Programming/BuildTools/UnrealBuildTool/ThirdPartyLibraries/index.html) 
+* [C++/WinRT Api](/windows/uwp/cpp-and-winrt-apis/)
+* [FileSavePicker クラス](/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
+* [Unreal サードパーティ製ライブラリ](https://docs.unrealengine.com/Programming/BuildTools/UnrealBuildTool/ThirdPartyLibraries/index.html)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6bed33ee9b41a4ee66ce4c1c579d398f0958143d
-ms.sourcegitcommit: db01faaf76bccd4f0432cf6b383fefa04ab7a085
+ms.openlocfilehash: 7d530b66596bb79a082b98e5417bd125a7c5687d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745730"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580408"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -69,7 +69,7 @@ WinRT サポートを含む NuGet パッケージを追加する必要がある�
 </packages>
 ```
 
-これで、NuGet や必要なパッケージをダウンロードしたり、NuGet の [ドキュメント](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli)を参照したりできるようになりました。
+これで、NuGet や必要なパッケージをダウンロードしたり、NuGet の [ドキュメント](/nuget/consume-packages/install-use-packages-nuget-cli)を参照したりできるようになりました。
 
 YourModule.Build.cs を開き、次のコードを追加します。
 
@@ -533,5 +533,4 @@ Unreal が OpenFileDialogue を呼び出すと、ファイルのダイアログ�
 
 ## <a name="summary"></a>まとめ 
 
-このチュートリアルは、Windows と同じファイルダイアログを使用して HoloLens ディスクにファイルを保存する必要がある場合に、Unreal で WinRT コードを使用するための出発点として使用することをお勧めします。  このプロセスは、HoloLensWinrtDLL ヘッダーから追加の関数をエクスポートし、Unreal で使用する場合にも適用されます。  バックグラウンド MTA スレッドで非同期 WinRT コードを待機する DLL コードに特に注意してください。これによって、Unreal game スレッドのデッドロックが回避されます。 
-
+このチュートリアルは、Windows と同じファイルダイアログを使用して HoloLens ディスクにファイルを保存する必要がある場合に、Unreal で WinRT コードを使用するための出発点として使用することをお勧めします。  このプロセスは、HoloLensWinrtDLL ヘッダーから追加の関数をエクスポートし、Unreal で使用する場合にも適用されます。  バックグラウンド MTA スレッドで非同期 WinRT コードを待機する DLL コードに特に注意してください。これによって、Unreal game スレッドのデッドロックが回避されます。

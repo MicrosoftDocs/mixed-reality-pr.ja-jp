@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, 開発, 作業の開始, 新しいプロジェクト, 移植, 機能, カメラ, シミュレーション, エミュレーション, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, 拡張現実とは, MRTK, Mixed Reality Toolkit, 空間マッピング, 音声入力, 場所を特定できるカメラ, エミュレーター, Azure, チュートリアル
-ms.openlocfilehash: 28ddaeed4218dc3433e13122806a2032e335dd56
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: c5b7683574378565c71e95bc6205be3dbf92fcaf
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031988"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226441"
 ---
 # <a name="unity-development-for-hololens"></a>HoloLens 向けの Unity の開発
 
@@ -49,7 +49,7 @@ Mixed Reality アプリケーションのコアな構成要素はすべて、他
 
 [!INCLUDE[](../includes/unity-building-blocks.md)]
 
-### <a name="3-platform-capabilities-and-apis"></a>3.プラットフォームの機能と API
+### <a name="3-advanced-features"></a>3.高度な機能
 
 Mixed Reality アプリケーションで何らかの役割を果たすその他の主要な機能は、Unity API を通じて利用できます。追加のパッケージやセットアップは不要です。 これらの機能は、MRTK がインストールされているかいないかに関係なく、Unity プロジェクトに追加できます。 Unity によって提供される高度な機能について確認したら、より高度で複雑な Mixed Reality アプリを構築することができるようになります。
 

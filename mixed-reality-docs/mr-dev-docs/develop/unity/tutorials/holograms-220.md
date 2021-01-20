@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、academy、チュートリアル、空間サウンド、HoloLens、Mixed Reality Academy、unity、mixed reality ヘッドセット、windows Mixed reality ヘッドセット、virtual Reality ヘッドセット、Windows 10
-ms.openlocfilehash: 043443c0c197e3b606c4845966e0cf60102d0b85
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: da130a5a93ec261d2e767874faa31dbc50d51b12
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678371"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582763"
 ---
 # <a name="mr-spatial-220-spatial-sound"></a>MR 空間 220:立体音響
 
 >[!NOTE]
->Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](../../../mr-learning-base-01.md)が投稿されています。
+>Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](./mr-learning-base-01.md)が投稿されています。
 
 [空間サウンド](../../../design/spatial-sound.md) はホログラムに breathes し、世界中に存在します。 ホログラムは、ライトとサウンドの両方で構成されています。ホログラムが見えなくなった場合は、空間サウンドを使用して見つけることができます。 空間サウンドは、無線で聞くことができる一般的なサウンドとは異なり、3D 空間に配置されています。 空間サウンドを使用すると、ユーザーの背後、または自分の頭にいるかのように、ホログラムを鳴らすことができます。 このコースでは、次のことを行います。
 
@@ -30,7 +30,7 @@ ms.locfileid: "94678371"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td>MR 空間 220:立体音響</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -38,7 +38,7 @@ ms.locfileid: "94678371"
 
 ## <a name="before-you-start"></a>開始する前に
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>前提条件
 
 * 適切な [ツールがインストール](../../../develop/install-the-tools.md)された WINDOWS 10 PC。
 * 基本的な C# プログラミング機能。
@@ -67,10 +67,10 @@ ms.locfileid: "94678371"
 * Microsoft の空間サウンドを使用するように Unity のサウンド構成を変更します。
 * Unity のオブジェクトに3D サウンドを追加します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * Unity を起動します。
-* **[Open (開く)]** を選択します。
+* **[Open]** を選択します。
 * デスクトップに移動し、以前にアーカイブしていないフォルダーを見つけます。
 * **Starting\Decibel** フォルダーをクリックし、[フォルダーの **選択**] ボタンを押します。
 * Unity にプロジェクトが読み込まれるのを待ちます。
@@ -134,7 +134,7 @@ HoloLens に展開する場合:
 
 サウンドの適切な場所は、ホログラムに依存します。 たとえば、ホログラムが人間の場合、サウンドソースは、脚ではなく口の近くに配置する必要があります。
 
-#### <a name="instructions"></a>手順
+#### <a name="instructions"></a>Instructions
 
 次の手順では、spatialized サウンドをホログラムにアタッチします。
 
@@ -159,7 +159,7 @@ HoloLens に展開する場合:
 
 1つの例として、鳥は一般に人間の頭を超えています。 ユーザーが鳥のサウンドを聞くと、最初の反応が検索されます。 ユーザーの下に鳥を配置すると、それらのユーザーが正しい方向のサウンドを使用することになりますが、検索が必要になると予想されるホログラムを見つけることができません。
 
-#### <a name="instructions"></a>手順
+#### <a name="instructions"></a>Instructions
 
 次の手順を実行すると、P0LY を使用して、ホログラムを見つけることができるようになります。
 
@@ -178,7 +178,7 @@ HoloLens に展開する場合:
 * ユーザーに大きな音がかからないようにしてください。
 * 微妙なサウンドが最適であり、エクスペリエンスを過度に影にしない
 
-#### <a name="instructions"></a>手順
+#### <a name="instructions"></a>Instructions
 
 * [ **階層** ] パネルで、[ **HologramCollection**] を展開します。
 * [ **EnergyHub** ] を展開し、[ **Base**] を選択します。
@@ -228,7 +228,7 @@ HoloLens に展開する場合:
 
 たとえば、テーブルのカップを設定すると、金属の一部で boulder を落とした場合よりも静かに聞こえます。
 
-#### <a name="instructions"></a>手順
+#### <a name="instructions"></a>Instructions
 
 * [ **階層** ] パネルで、[ **HologramCollection**] を展開します。
 * [ **EnergyHub**] を展開し、[ **Base**] を選択します。
@@ -251,7 +251,7 @@ HoloLens に展開する場合:
 
 従来の例としては、コンサートホールがあります。 リスナーがホールの外部にあり、ドアが閉じている場合、音楽サウンドは muffled ます。 また、通常はボリュームが減少しています。 ドアを開くと、実際のボリュームでサウンドの全範囲が聞こえます。 高頻度のサウンドは、一般に低周波数よりも多く吸収されます。
 
-#### <a name="instructions"></a>手順
+#### <a name="instructions"></a>Instructions
 
 * [ **階層** ] パネルで、[ **HologramCollection** ] を展開し、[ **P0LY**] を選択します。
 * [ **インスペクター** ] パネルで、[ **コンポーネントの追加** ] をクリックし、 **オーディオエミッタ** を追加します。
@@ -281,7 +281,7 @@ AudioEmitter は、フレームごとではなく、人間の時間単位で更�
 
 Audio Occluder は、次のように IAudioInfluencer 有力企業を実装します。
 
-* Audiosource に接続されている **Audiolowpass filter** を使用し **AudioSource** て、遮蔽効果を適用します。このフィルターは、 **AudioEmitter** を購入します。
+* Audiosource に接続されている **Audiolowpass filter** を使用して、遮蔽効果を適用します。このフィルターは、 **AudioEmitter** を購入します。
 * オーディオソースにボリュームの減衰を適用します。
 * ニュートラルカットオフ周波数を設定し、フィルターを無効にすることで、効果を無効にします。
 
@@ -435,7 +435,7 @@ Unity では、ファイルのインポート設定でストリーミング用�
 * 非表示の世界にビューを作成することは、視覚的に説得力のあるものです。
 * ホログラムやユーザーが非表示の世界に近づいたときにオーディオ効果を追加して、リアリティを高めます。
 
-#### <a name="instructions"></a>手順
+#### <a name="instructions"></a>Instructions
 
 * [ **階層** ] パネルで、[ **HologramCollection** ] を展開し、[ **黄泉**] を選択します。
 * [ **黄泉** ] を展開し、[ **VoiceSource**] を選択します。
@@ -512,6 +512,6 @@ Unity では、ファイルのインポート設定でストリーミング用�
 
 ## <a name="the-end"></a>最後です
 
-おめでとうございます。 これで **MR 空間 220: 空間サウンド** が完成しました。
+お疲れさまでした。 これで **MR 空間 220: 空間サウンド** が完成しました。
 
 世界を聞いて、ご意見をお待ちしております。

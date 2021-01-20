@@ -6,18 +6,18 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 視線追跡、Mixed Reality、インプット、視線、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、設計、相互作用
-ms.openlocfilehash: b5091b92fd048f72184212401d54ad0b7353875c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: db3cb774d72de13c2f1e51d446969ee7a4cdf2b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008582"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582387"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens 2 での視線に基づく対話
 
 ![MRTK の視線追跡デモ](images/mrtk_et_scenemenu.jpg)
 
-HoloLens 2 のすばらしい新機能の1つは、視線追跡です。 [HoloLens 2 ページの目の追跡](eye-tracking.md)では、各ユーザーが[調整](https://docs.microsoft.com/hololens/hololens-calibration)を行う必要があることを説明しました。開発者向けガイダンスを提供し、注目の追跡のために強調表示されたユースケースを紹介しました。 目を見つめた入力は、新しい種類のユーザー入力であり、学ぶことはたくさんあります。 
+HoloLens 2 のすばらしい新機能の1つは、視線追跡です。 [HoloLens 2 ページの目の追跡](eye-tracking.md)では、各ユーザーが[調整](/hololens/hololens-calibration)を行う必要があることを説明しました。開発者向けガイダンスを提供し、注目の追跡のために強調表示されたユースケースを紹介しました。 目を見つめた入力は、新しい種類のユーザー入力であり、学ぶことはたくさんあります。 
 
 視線入力は、Holographic シェルエクスペリエンス (HoloLens 2 を開始したときに表示されるユーザーインターフェイス) では微妙にのみ使用されますが、 ["Hololens プレイグラウンド"](https://www.microsoft.com/p/mr-playground/9nb31lh723s2)などの複数のアプリでは、視線入力が Holographic experience のマジックにどのように追加されるかについての優れた例を紹介しています。
 このページでは、視線入力を統合して holographic アプリケーションと対話するための設計上の考慮事項について説明します。
@@ -35,7 +35,7 @@ HoloLens 2 のすばらしい新機能の1つは、視線追跡です。 [HoloLe
 </colgroup>
 <tr>
      <td><strong>機能</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 世代)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 世代)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
 </tr>

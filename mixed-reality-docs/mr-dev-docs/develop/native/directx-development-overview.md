@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, holographic レンダリング, ネイティブ, ネイティブアプリ, WinRT, WinRT アプリ, プラットフォーム Api, カスタムエンジン, ミドルウェア, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 764cbe0a37501cc176e9bb05a9a7771b03666f0c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b137fad12740542deb4995485201a9bd0d1d7662
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006852"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581040"
 ---
 # <a name="native-development-overview"></a>ネイティブ開発の概要
 
@@ -32,7 +32,7 @@ Windows Mixed Reality は [、次の2種類のアプリを](../../design/app-vie
 * [HOLOGRAPHICSPACE api](getting-a-holographicspace.md)または [OpenXR api](openxr.md)を使用して、ヘッドセットの表示を埋める [イマーシブビュー](../../design/app-views.md)をレンダリングする UWP または Win32 **Mixed Reality アプリケーション**
 * DirectX、XAML、または別のフレームワークを使用して、Windows Mixed Reality ホームのスレートに [2d ビュー](../../design/app-views.md#2d-views)をレンダリングする **2d アプリ**(UWP)
 
-[2d ビューとイマーシブビュー](../../design/app-views.md)の DirectX 開発の違いは、主に holographic のレンダリングと空間入力に関係しています。 UWP アプリケーションの [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) または Win32 アプリケーションの HWND が必要であり、ほぼ同じです。 アプリで使用できる WinRT Api にも同じことが当てはまります。 ただし、holographic 機能を利用するには、これらの Api の異なるサブセットを使用する必要があります。 たとえば、holographic アプリケーションのシステムでは、発生しているスワップチェーンとフレームを管理して、予測可能なフレームループを有効にします。
+[2d ビューとイマーシブビュー](../../design/app-views.md)の DirectX 開発の違いは、主に holographic のレンダリングと空間入力に関係しています。 UWP アプリケーションの [IFrameworkView](/uwp/api/Windows.ApplicationModel.Core.IFrameworkView) または Win32 アプリケーションの HWND が必要であり、ほぼ同じです。 アプリで使用できる WinRT Api にも同じことが当てはまります。 ただし、holographic 機能を利用するには、これらの Api の異なるサブセットを使用する必要があります。 たとえば、holographic アプリケーションのシステムでは、発生しているスワップチェーンとフレームを管理して、予測可能なフレームループを有効にします。
 
 [!INCLUDE[](../includes/native-getting-started.md)]
 

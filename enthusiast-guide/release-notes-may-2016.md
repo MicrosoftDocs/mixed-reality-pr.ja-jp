@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, リリースノート, os, 機能, ビルド, プラットフォーム
-ms.openlocfilehash: db5e3b87eaf619a0f25e07d0698499a89a1b4b12
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 290369f94797a790ec0a2bb4227d84902d31eb43
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009502"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581520"
 ---
 # <a name="release-notes---may-2016"></a>リリース ノート - 2016 年 5 月
 
-HoloLens チームは、Windows Insider Program を通じて最新の機能更新プログラムとメジャー修正プログラムを提供することを約束しています。 ご意見をお寄せいただき、ありがとうございます。 フィードバックハブ、[開発者フォーラム](https://forums.hololens.com)、 [ @HoloLens および Twitter](https://twitter.com/hololens)を通じてフィードバックを引き続き[お](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)寄せください。
+HoloLens チームは、Windows Insider Program を通じて最新の機能更新プログラムとメジャー修正プログラムを提供することを約束しています。 ご意見をお寄せいただき、ありがとうございます。 フィードバックハブ、[開発者フォーラム](https://forums.hololens.com)、 [ @HoloLens および Twitter](https://twitter.com/hololens)を通じてフィードバックを引き続き[お](/windows/mixed-reality/give-us-feedback)寄せください。
 
 **リリースバージョン:** Windows Holographic 5 月2016更新プログラム (**10.0.14342.1016**)
 
@@ -34,7 +34,7 @@ HoloLens チームは、Windows Insider Program を通じて最新の機能更�
    * ホログラムを見て、"顔にする" という指示によって回転してみてください
    * "大きい" または "より小さい" を言い、サイズを変更します。
    * 「Cortana、 *アプリ名* をここに移動する」と言って、アプリを移動します。
-* **HoloLens での開発が容易に** なりました。 [Windows デバイスポータル](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)を使用して、ファイルを参照、アップロード、およびダウンロードできるようになりました。 ドキュメントフォルダー、ピクチャフォルダー、および Visual Studio を使用してサイドロードまたは配置したすべてのアプリのローカルストレージにアクセスできます。
+* **HoloLens での開発が容易に** なりました。 [Windows デバイスポータル](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)を使用して、ファイルを参照、アップロード、およびダウンロードできるようになりました。 ドキュメントフォルダー、ピクチャフォルダー、および Visual Studio を使用してサイドロードまたは配置したすべてのアプリのローカルストレージにアクセスできます。
 * エミュレーターでは、実際の HoloLens の場合と同じように、 **Microsoft アカウントでのログインがサポート** されるようになりました。これは、追加の [ツール] メニューから有効にすることができます。 ">>" です。
 * **2D アプリはビデオの全画面を見ているときにアプリバーとカーソルを非表示にして、** 邪魔にならないようになりました。 HoloLens でビデオを視聴するエクスペリエンスがさらに楽しいものになります。
 * また、世界中の **アプリバーなしで写真をピン留め** することもできます。
@@ -59,7 +59,7 @@ HoloLens チームは、Windows Insider Program を通じて最新の機能更�
 * 迅速な **アプリの登録** と、OOBE 中 **のタイムゾーンの自動検出** により、最初の最高のユーザーエクスペリエンスが提供されます。
 * **ストレージの意味** では、設定アプリのシステムとアプリによって残りのディスク領域と使用されているディスク領域を表示できます。
 * フィードバックアプリとハブの両方を1つのアプリ **フィードバックハブ** に集約しました。これは、気に入った機能に関する **フィードバックを提供** するための移行ツールであり、改善が必要な機能と、不要な機能を提供します。 Insider プログラムに参加すると、 **最新の insider news の入手**、評価の **ビルド** 、フィードバックハブからの **フィードバックのクエスト** に進むことができます。
-* また [、更新された HoloLens エミュレーター](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools) ビルドも公開しました。
+* また [、更新された HoloLens エミュレーター](/windows/mixed-reality/develop/install-the-tools) ビルドも公開しました。
 * ビデオの自動 **安定化** によって、mixed reality ビデオがより良くなりました。
 
 ## <a name="major-fixes"></a>主な修正
@@ -113,12 +113,12 @@ Visual Studio での問題を修正しています。
 * [リリース ノート - 2016 年 3 月](release-notes-march-2016.md)
 
 ## <a name="see-also"></a>関連項目
-* [HoloLens の既知の問題](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [ツールのインストール](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [Shell](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)
-* [複合現実の 2D UWP アプリを更新する](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/building-2d-apps)
-* [ハードウェア アクセサリ](https://docs.microsoft.com/windows/mixed-reality/discover/hardware-accessories)
-* [複合現実キャプチャ](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture)
-* [音声入力](https://docs.microsoft.com/windows/mixed-reality/design/voice-input)
-* [Windows ストアへのアプリの送信](https://docs.microsoft.com/windows/mixed-reality/distribute/submitting-an-app-to-the-microsoft-store)
-* [HoloLens エミュレーターを使用する](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)
+* [HoloLens の既知の問題](/windows/mixed-reality/hololens-known-issues)
+* [ツールのインストール](/windows/mixed-reality/develop/install-the-tools)
+* [Shell](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)
+* [複合現実の 2D UWP アプリを更新する](/windows/mixed-reality/develop/porting-apps/building-2d-apps)
+* [ハードウェア アクセサリ](/windows/mixed-reality/discover/hardware-accessories)
+* [複合現実キャプチャ](/windows/mixed-reality/mixed-reality-capture)
+* [音声入力](/windows/mixed-reality/design/voice-input)
+* [Windows ストアへのアプリの送信](/windows/mixed-reality/distribute/submitting-an-app-to-the-microsoft-store)
+* [HoloLens エミュレーターを使用する](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)

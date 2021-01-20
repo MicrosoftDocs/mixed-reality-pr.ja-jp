@@ -2,16 +2,16 @@
 title: Unreal の素材に関する推奨事項
 description: Unreal engine のマテリアルの概要。
 author: hferrone
-ms.author: v-hferrone
+ms.author: safarooq
 ms.date: 09/18/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、開発、マテリアル、ドキュメント、ガイド、機能、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 11c10577bd3946facb96fd77b09265ab5ca26f24
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: bfe70e730c5fbd6e5d103737b03e76bfd0ab65f6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609573"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580798"
 ---
 # <a name="material-recommendations-in-unreal"></a>Unreal の素材に関する推奨事項
 
@@ -26,10 +26,10 @@ ms.locfileid: "96609573"
 素材の詳細については、次のスクリーンショットの [Unreal Engine のドキュメント](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) とベストプラクティスの例を参照してください。
 
 推奨される[ ![ 未 ](images/unreal-materials-img-01.png) 設定の資料での推奨資料の設定](images/unreal-materials-img-01.png#lightbox) 
- *Recommended material setup*
+ 
 
 推奨される[ ![ unreal ](images/unreal-materials-img-01b.png) 以外のマテリアルのセットアップでの推奨されるマテリアル以外の設定](images/unreal-materials-img-01b.png#lightbox) 
- *Non-recommended material setup*
+ 
 
 ## <a name="changing-blend-mode"></a>Blend モードの変更
 

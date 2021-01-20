@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0ef22142ac2efc3ef47ece2619d31dbeddcff8fe
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 6c33618e6d09da156bc4a4480fbecf3c0da94378
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192666"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580584"
 ---
 # <a name="project-settings"></a>[プロジェクト設定](#tab/project)
 
@@ -39,7 +39,7 @@ Unity アプリケーション内から:
 > アプリケーションがデバイス固有のサービスに依存している場合 (ストリームからの照合など)、この手順で無効にする必要があります。 後で Windows が提供する同等のサービスにフックできます。
 
 ### <a name="5-setup-your-windows-mixed-reality-hardware"></a>5. Windows Mixed Reality ハードウェアをセットアップする
-1. [イマーシブヘッドセットのセットアップ](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start
+1. [イマーシブヘッドセットのセットアップ](/windows/mixed-reality/enthusiast-guide/before-you-start
 )の手順を確認する
 2. [Windows Mixed reality シミュレーターを使用する](../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)方法と[windows mixed Reality ホームを移動](../../../discover/navigating-the-windows-mixed-reality-home.md)する方法について説明します。
 
@@ -95,13 +95,13 @@ else
 
 既存の HMD を対象とする各ゲームまたはアプリケーションには、処理する入力のセット、エクスペリエンスに必要な入力の種類、およびそれらの入力を取得するために呼び出す特定の Api が含まれます。 Windows Mixed Reality で利用可能な入力を活用するために、可能な限りシンプルで単純なものにするために投資してきました。
 
-Windows Mixed Reality が入力を公開する方法と、それが現在のアプリケーションの動作にどのように対応しているかの詳細については、隣接するタブの [Unity の入力移植ガイド](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=input) を参照してください。
+Windows Mixed Reality が入力を公開する方法と、それが現在のアプリケーションの動作にどのように対応しているかの詳細については、隣接するタブの [Unity の入力移植ガイド](../porting-guides.md?tabs=input) を参照してください。
 
 ### <a name="9-performance-testing-and-tuning"></a>9. パフォーマンステストとチューニング
 
-Windows Mixed Reality は、ハイエンドゲーム Pc から広範な市場メインストリーム Pc まで、さまざまな種類のデバイスで利用できます。 対象となる市場によっては、アプリケーションに対して使用可能なコンピューティングとグラフィックの予算に大きな違いがあります。 この移植の演習では、premium PC を利用している可能性があります。また、アプリで使用できるコンピューティングとグラフィックの大きな予算があります。 アプリをより広範囲のユーザーが使用できるようにする場合は、 [対象とする代表的なハードウェア](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)でアプリをテストしてプロファイリングする必要があります。
+Windows Mixed Reality は、ハイエンドゲーム Pc から広範な市場メインストリーム Pc まで、さまざまな種類のデバイスで利用できます。 対象となる市場によっては、アプリケーションに対して使用可能なコンピューティングとグラフィックの予算に大きな違いがあります。 この移植の演習では、premium PC を利用している可能性があります。また、アプリで使用できるコンピューティングとグラフィックの大きな予算があります。 アプリをより広範囲のユーザーが使用できるようにする場合は、 [対象とする代表的なハードウェア](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)でアプリをテストしてプロファイリングする必要があります。
 
-[Unity](https://docs.unity3d.com/Manual/Profiler.html)と[Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index)のどちらにも、パフォーマンスプロファイラーと、パフォーマンスプロファイルと最適化に関する[Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)と[Intel](https://software.intel.com/articles/vr-content-developer-guide)の両方の発行ガイドラインが含まれています。 [混合現実のパフォーマンスを理解](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)することで、パフォーマンスに関する広範な説明があります。 さらに、unity の [パフォーマンスに関する推奨事項](../../unity/performance-recommendations-for-unity.md)には、unity に関する具体的な詳細があります。
+[Unity](https://docs.unity3d.com/Manual/Profiler.html)と[Visual Studio](/visualstudio/profiling/index)のどちらにも、パフォーマンスプロファイラーと、パフォーマンスプロファイルと最適化に関する[Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)と[Intel](https://software.intel.com/articles/vr-content-developer-guide)の両方の発行ガイドラインが含まれています。 [混合現実のパフォーマンスを理解](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)することで、パフォーマンスに関する広範な説明があります。 さらに、unity の [パフォーマンスに関する推奨事項](../../unity/performance-recommendations-for-unity.md)には、unity に関する具体的な詳細があります。
 
 # <a name="input-mapping"></a>[入力マッピング](#tab/input)
 

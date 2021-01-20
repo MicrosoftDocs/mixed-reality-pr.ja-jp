@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 08/04/2020
 ms.topic: article
 keywords: edge、new、イマーシブ web、microsoft edge、browser、vr、360、360 video、360 viewer、webxr、webvr
-ms.openlocfilehash: ef55ee564e0a7ea11aaaad62ebf259459454ab72
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 041c374e1e2120c3aac35bd09889b8594825a186
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010032"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582505"
 ---
 # <a name="the-new-microsoft-edge-for-windows-mixed-reality"></a>新しい Microsoft Edge for Windows Mixed Reality
 
@@ -52,7 +52,7 @@ Windows 10 バージョン 1903 (またはそれ以降) の2020-01 の累積的�
 
 **理由**
 
-Windows [10 月2019更新プログラム](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-may-2019)では、Windows Mixed Reality の従来の Win32 アプリケーションのサポートが導入されました。 このサポートを有効にするには、Win32 アプリケーションをホストするために仮想モニターを作成する必要があります。 新しい Win32 アプリケーションを起動するたびに、別の仮想モニターを作成する必要があります。 残念ながら、仮想モニターの作成は集中的なタスクであり、ヘッドセットの表示が短時間フリーズすることがあります。 お客様は、これが不快で破壊的なエクスペリエンスであるというフィードバックを提供しました。 フィードバックや Win32 アプリケーションの使用量の増加により、Windows Mixed Reality の起動時に3つの仮想モニターを事前に割り当てることを決定しました。 これにより、中断を防ぐことができます。また、ヘッドセットの表示がフリーズしていなくても、最大3つの同時 Win32 アプリケーションを起動できます。
+Windows [10 月2019更新プログラム](/windows/mixed-reality/enthusiast-guide/release-notes-may-2019)では、Windows Mixed Reality の従来の Win32 アプリケーションのサポートが導入されました。 このサポートを有効にするには、Win32 アプリケーションをホストするために仮想モニターを作成する必要があります。 新しい Win32 アプリケーションを起動するたびに、別の仮想モニターを作成する必要があります。 残念ながら、仮想モニターの作成は集中的なタスクであり、ヘッドセットの表示が短時間フリーズすることがあります。 お客様は、これが不快で破壊的なエクスペリエンスであるというフィードバックを提供しました。 フィードバックや Win32 アプリケーションの使用量の増加により、Windows Mixed Reality の起動時に3つの仮想モニターを事前に割り当てることを決定しました。 これにより、中断を防ぐことができます。また、ヘッドセットの表示がフリーズしていなくても、最大3つの同時 Win32 アプリケーションを起動できます。
 
 **回避策**
 

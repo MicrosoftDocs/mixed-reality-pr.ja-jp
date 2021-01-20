@@ -6,18 +6,18 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: リリースノート、バージョン、windows 10、ビルド、rs3、os
-ms.openlocfilehash: 83c16a40388960547cfcf7444e1ae630c2f5b7f2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e3be8edab2aedd18013622c671283b71f95f98d8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009492"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581439"
 ---
 # <a name="release-notes---october-2017"></a>リリース ノート - 2017 年 10 月
 
-Windows Mixed Reality をご利用いただき、ありがとうございます。 **[Windows 10 秋](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** の作成者の更新プログラムのリリースでは、新しい [windows Mixed Reality イマーシブヘッドセット](https://docs.microsoft.com/windows/mixed-reality/discover/immersive-headset-hardware-details)と [モーションコントローラー](https://docs.microsoft.com/windows/mixed-reality/design/motion-controllers)のサポートが導入されています。 [Windows Mixed Reality 対応 PC](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)に接続しているときに、新しい世界を探索し、VR ゲームをプレイし、イマーシブエンターテインメントを体験できるようになりました。
+Windows Mixed Reality をご利用いただき、ありがとうございます。 **[Windows 10 秋](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** の作成者の更新プログラムのリリースでは、新しい [windows Mixed Reality イマーシブヘッドセット](/windows/mixed-reality/discover/immersive-headset-hardware-details)と [モーションコントローラー](/windows/mixed-reality/design/motion-controllers)のサポートが導入されています。 [Windows Mixed Reality 対応 PC](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)に接続しているときに、新しい世界を探索し、VR ゲームをプレイし、イマーシブエンターテインメントを体験できるようになりました。
 
-Windows Mixed Reality ヘッドセットと motion controller のリリースは、大規模なチーム工数の概念であり、 [Microsoft HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-hardware-details)を含む[windows mixed Reality プラットフォーム](https://docs.microsoft.com/windows/mixed-reality/discover/mixed-reality)の主要な手順です。 HoloLens は、Windows 10 の秋の更新プログラムを使用して更新プログラムを受信していませんが、HoloLens での作業は停止していません。 Windows Mixed Reality 全体にわたって最近の作業から適用できる学習と洞察が多数用意されています。 実際、Windows Mixed Reality のイマーシブヘッドセットとモーションコントローラーは、同じ Api、ツール、および概念が両方に適用されるため、HoloLens の開発にも優れたエントリポイントとなります。
+Windows Mixed Reality ヘッドセットと motion controller のリリースは、大規模なチーム工数の概念であり、 [Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details)を含む[windows mixed Reality プラットフォーム](/windows/mixed-reality/discover/mixed-reality)の主要な手順です。 HoloLens は、Windows 10 の秋の更新プログラムを使用して更新プログラムを受信していませんが、HoloLens での作業は停止していません。 Windows Mixed Reality 全体にわたって最近の作業から適用できる学習と洞察が多数用意されています。 実際、Windows Mixed Reality のイマーシブヘッドセットとモーションコントローラーは、同じ Api、ツール、および概念が両方に適用されるため、HoloLens の開発にも優れたエントリポイントとなります。
 
 各デバイスの最新リリースに更新するには、 **設定** アプリを開き、[ **update & Security**] にアクセスして、[ **更新プログラムの確認** ] ボタンを選択します。 Windows 10 PC では、windows [media 作成ツール](https://www.microsoft.com/software-download/windows10)を使用して、windows 10 の秋の作成者の更新プログラムを手動でインストールすることもできます。
 
@@ -30,16 +30,16 @@ Windows Mixed Reality ヘッドセットと motion controller のリリースは
 
 Windows 10 の作成者の更新プログラムでは、windows Mixed Reality ヘッドセットとモーションコントローラーのサポートが正式に導入され、Windows 10 が世界初の空間オペレーティングシステムになりました。 主な特徴を次に示します。
 * **[さまざまなヘッドセット](https://blogs.windows.com/windowsexperience/2017/10/03/how-to-pre-order-your-windows-mixed-reality-headset/)** -Windows Mixed Reality では、パートナーがさまざまなヘッドセットを提供できるようになります。これは、$399 米ドルのモーションコントローラーにバンドルされています。
-* **[モーションコントローラー](https://docs.microsoft.com/windows/mixed-reality/design/motion-controllers)** -Windows Mixed Reality モーションコントローラーは、Bluetooth を使用して PC とワイヤレスでペアリングされます。また、6度の自由度の追跡、豊富な入力方法、および imus 機能を利用できます。
-* **[簡単なセットアップと移植性](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs)** -10 分以内にセットアップして開始します。 イマーシブヘッドセットは、自由を使用して、移動とモーションコントローラーを追跡します。 外部カメラまたは lighthouse マーカーは不要です。
-* より **[広範な pc のサポート](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)**-Windows Mixed Reality を使用すると、より多くの人が以前よりも多くの人にデスクトップ VR を提供できるようになり、$499 米ドルからの統合グラフィックスカードと pc の選択がサポートされるようになります。
-* **[Windows Mixed Reality ホーム](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)** -世界初の空間オペレーティングシステムは、2d アプリを使用したマルチタスク、VR ゲームとアプリの起動、および装飾型のホログラムの配置を行うための使い慣れたホーム環境を提供します。
+* **[モーションコントローラー](/windows/mixed-reality/design/motion-controllers)** -Windows Mixed Reality モーションコントローラーは、Bluetooth を使用して PC とワイヤレスでペアリングされます。また、6度の自由度の追跡、豊富な入力方法、および imus 機能を利用できます。
+* **[簡単なセットアップと移植性](./recommended-adapters-for-windows-mixed-reality-capable-pcs.md)** -10 分以内にセットアップして開始します。 イマーシブヘッドセットは、自由を使用して、移動とモーションコントローラーを追跡します。 外部カメラまたは lighthouse マーカーは不要です。
+* より **[広範な pc のサポート](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)**-Windows Mixed Reality を使用すると、より多くの人が以前よりも多くの人にデスクトップ VR を提供できるようになり、$499 米ドルからの統合グラフィックスカードと pc の選択がサポートされるようになります。
+* **[Windows Mixed Reality ホーム](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)** -世界初の空間オペレーティングシステムは、2d アプリを使用したマルチタスク、VR ゲームとアプリの起動、および装飾型のホログラムの配置を行うための使い慣れたホーム環境を提供します。
 * **[Microsoft Store 内のすばらしい VR ゲームとアプリ](https://www.microsoft.com/store/collections/MR-All-ImmersiveContent/)** -Hulu VR や360ビデオなどのイマーシブエンターテインメントから SUPERHOT VR やアリゾナ陽などのエピックゲームまで、Microsoft Store は Windows Mixed Reality のさまざまなコンテンツを提供しています。
-* **[Steamvr 早期アクセス](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)** -windows 10 の秋の作成者の更新プログラムにより、Windows mixed reality ヘッドセットとコントローラーで SteamVR タイトルを再生できるようになり、Windows mixed reality ユーザーが使用できる VR タイトルの最大のカタログが作成されます。
+* **[Steamvr 早期アクセス](./using-steamvr-with-windows-mixed-reality.md)** -windows 10 の秋の作成者の更新プログラムにより、Windows mixed reality ヘッドセットとコントローラーで SteamVR タイトルを再生できるようになり、Windows mixed reality ユーザーが使用できる VR タイトルの最大のカタログが作成されます。
 
 ## <a name="known-issues"></a>既知の問題
 
-Windows Mixed Reality エクスペリエンスの向上に努めていましたが、まだいくつかの既知の問題を追跡しています。 他のユーザーが見つかった場合は、 [フィードバックをお](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)寄せください。
+Windows Mixed Reality エクスペリエンスの向上に努めていましたが、まだいくつかの既知の問題を追跡しています。 他のユーザーが見つかった場合は、 [フィードバックをお](/windows/mixed-reality/give-us-feedback)寄せください。
 
 ### <a name="desktop-app-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality ホームのデスクトップアプリ
 * Snipping tool はデスクトップアプリでは機能しません。
@@ -95,7 +95,7 @@ Windows Mixed Reality エクスペリエンスの向上に努めていました�
 * [リリース ノート - 2016 年 3 月](release-notes-march-2016.md)
 
 ## <a name="see-also"></a>関連項目
-* [イマーシブヘッドセットのサポート (外部リンク)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
-* [HoloLens の既知の問題](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [ツールのインストール](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [フィードバックの送信](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)
+* [イマーシブヘッドセットのサポート (外部リンク)](./troubleshooting-windows-mixed-reality.md)
+* [HoloLens の既知の問題](/windows/mixed-reality/hololens-known-issues)
+* [ツールのインストール](/windows/mixed-reality/develop/install-the-tools)
+* [フィードバックの送信](/windows/mixed-reality/give-us-feedback)

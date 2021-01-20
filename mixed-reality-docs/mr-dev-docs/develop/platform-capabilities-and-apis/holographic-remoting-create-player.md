@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、NuGet、アプリケーションマニフェスト、プレーヤーコンテキスト、リモートアプリ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 23449749e709075e6530730e596bfcc9cd088c1e
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b6a0d65b8ec1f07f7ebaae17b9921d48105474a4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006552"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581244"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>カスタム Holographic リモート処理プレーヤーアプリの作成
 
@@ -27,7 +27,7 @@ Holographic リモート処理プレーヤーを使用すると、アプリは�
 開始点としては、既に Windows Mixed Reality API を対象としている、動作する DirectX ベースの UWP アプリを使用することをお勧めします。 詳細については、「 [DirectX 開発の概要](../native/directx-development-overview.md)」を参照してください。 既存のアプリがなく、最初から開始する場合は、 [C++ holographic プロジェクトテンプレート](../native/creating-a-holographic-directx-project.md) を使用することをお勧めします。
 
 >[!IMPORTANT]
->Holographic リモート処理を使用するすべてのアプリは、 [マルチスレッドアパートメント](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments)を使用するように作成する必要があります。 [シングルスレッドアパートメント](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments)の使用はサポートされていますが、パフォーマンスが低下し、再生中に途切れが生じる可能性があります。 C++ を使用している場合、winrt [winrt:: init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) 、マルチスレッドアパートメントが既定値です。
+>Holographic リモート処理を使用するすべてのアプリは、 [マルチスレッドアパートメント](//windows/win32/com/multithreaded-apartments)を使用するように作成する必要があります。 [シングルスレッドアパートメント](//windows/win32/com/single-threaded-apartments)の使用はサポートされていますが、パフォーマンスが低下し、再生中に途切れが生じる可能性があります。 C++ を使用している場合、winrt [winrt:: init_apartment](//windows/uwp/cpp-and-winrt-apis/get-started) 、マルチスレッドアパートメントが既定値です。
 
 ## <a name="get-the-holographic-remoting-nuget-package"></a>Holographic リモート処理 NuGet パッケージを取得する
 
@@ -94,7 +94,7 @@ m_playerContext = winrt::Microsoft::Holographic::AppRemoting::PlayerContext::Cre
 >[!WARNING]
 >Holographic リモート処理は、Windows の一部である Windows Mixed Reality ランタイムをリモート処理固有のランタイムに置き換えることによって機能します。 これは、プレーヤーのコンテキストの作成時に実行されます。 そのため、プレーヤーコンテキストを作成する前に Windows Mixed Reality API を呼び出すと、予期しない動作が発生する可能性があります。 推奨される方法は、任意の混合 Reality API と対話する前に、可能な限り早くプレーヤーコンテキストを作成することです。 Windows Mixed Reality API を使用して作成または取得したオブジェクトを、 ```PlayerContext::Create``` 後で作成または取得したオブジェクトで混在させないでください。
 
-次に、 [HolographicSpace](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicspace.createforcorewindow)を呼び出して、HolographicSpace を作成します。
+次に、 [HolographicSpace](//uwp/api/windows.graphics.holographic.holographicspace.createforcorewindow)を呼び出して、HolographicSpace を作成します。
 
 ```cpp
 m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::CreateForCoreWindow(window);
@@ -177,9 +177,9 @@ winrt::Microsoft::Holographic::AppRemoting::ConnectionState state = m_playerCont
 
 ## <a name="display-the-remotely-rendered-frame"></a>リモートで描画されたフレームを表示する
 
-リモートでレンダリングされるコンテンツを表示するには、 ```PlayerContext::BlitRemoteFrame``` [HolographicFrame](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicframe)のレンダリング中にを呼び出します。 
+リモートでレンダリングされるコンテンツを表示するには、 ```PlayerContext::BlitRemoteFrame``` [HolographicFrame](//uwp/api/windows.graphics.holographic.holographicframe)のレンダリング中にを呼び出します。 
 
-```BlitRemoteFrame``` 現在の HolographicFrame のバックバッファーがレンダーターゲットとしてバインドされている必要があります。 バックバッファーは、 [Direct3D11BackBuffer](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.direct3d11backbuffer)プロパティを介して[HolographicCameraRenderingParameters](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicframe.getrenderingparameters)から受け取ることができます。
+```BlitRemoteFrame``` 現在の HolographicFrame のバックバッファーがレンダーターゲットとしてバインドされている必要があります。 バックバッファーは、 [Direct3D11BackBuffer](//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.direct3d11backbuffer)プロパティを介して[HolographicCameraRenderingParameters](//uwp/api/windows.graphics.holographic.holographicframe.getrenderingparameters)から受け取ることができます。
 
 呼び出されると、 ```BlitRemoteFrame``` リモートアプリケーションから最後に受信したフレームを HolographicFrame の BackBuffer にコピーします。 さらに、リモートアプリケーションがリモートフレームのレンダリング中にフォーカスポイントを指定している場合は、フォーカスポイントが設定されます。
 
@@ -190,8 +190,8 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 
 >[!NOTE]
 >```PlayerContext::BlitRemoteFrame``` 現在のフレームのフォーカスポイントを上書きする可能性があります。 
->- フォールバックフォーカスポイントを指定するには、前に [HolographicCameraRenderingParameters:: SetFocusPoint](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) を呼び出し ```PlayerContext::BlitRemoteFrame``` ます。 
->- リモートフォーカスポイントを上書きするには、 [HolographicCameraRenderingParameters:: SetFocusPoint](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)  を呼び出し ```PlayerContext::BlitRemoteFrame``` ます。
+>- フォールバックフォーカスポイントを指定するには、前に [HolographicCameraRenderingParameters:: SetFocusPoint](//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) を呼び出し ```PlayerContext::BlitRemoteFrame``` ます。 
+>- リモートフォーカスポイントを上書きするには、 [HolographicCameraRenderingParameters:: SetFocusPoint](//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)  を呼び出し ```PlayerContext::BlitRemoteFrame``` ます。
 
 成功した場合、は ```BlitRemoteFrame``` を返し ```BlitResult::Success_Color``` ます。 それ以外の場合は、エラーの理由を返します。
 - ```BlitResult::Failed_NoRemoteFrameAvailable```: 使用可能なリモートフレームがないため、失敗しました。
@@ -203,18 +203,18 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 
 ```BlitResult``` は ```BlitResult::Success_Color_Depth``` 、次の条件下でもを返すことができます。
 
-- リモートアプリは、HolographicCameraRenderingParameters を使用して深度バッファーをコミットしました。 [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)。
+- リモートアプリは、HolographicCameraRenderingParameters を使用して深度バッファーをコミットしました。 [CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)。
 - カスタムプレーヤーアプリは、を呼び出す前に有効な深度バッファーをバインドしました ```BlitRemoteFrame``` 。
 
-これらの条件が満たされる ```BlitRemoteFrame``` と、リモートの深さが現在バインドされているローカルの深度バッファーに array.blit ます。 その後、追加のローカルコンテンツをレンダリングできます。これには、リモートでレンダリングされるコンテンツとの深さの積集合があります。 さらに、カスタムプレーヤーで [HolographicCameraRenderingParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) を使用してローカル深度バッファーをコミットし、リモートおよびローカルでレンダリングされるコンテンツの深さを再予測することもできます。 詳細については、「 [深度 Reprojection](hologram-stability.md#reprojection) 」を参照してください。
+これらの条件が満たされる ```BlitRemoteFrame``` と、リモートの深さが現在バインドされているローカルの深度バッファーに array.blit ます。 その後、追加のローカルコンテンツをレンダリングできます。これには、リモートでレンダリングされるコンテンツとの深さの積集合があります。 さらに、カスタムプレーヤーで [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) を使用してローカル深度バッファーをコミットし、リモートおよびローカルでレンダリングされるコンテンツの深さを再予測することもできます。 詳細については、「 [深度 Reprojection](hologram-stability.md#reprojection) 」を参照してください。
 
 ### <a name="projection-transform-mode"></a>プロジェクション変換モード
 
-問題の1つは、Holographic リモート処理を使用して深さの reprojection を使用しているときに、カスタムプレーヤーアプリによって直接レンダリングされるローカルコンテンツとは別のプロジェクション変換を使用してリモートコンテンツをレンダリングできることです。 一般的なユースケースでは、プレーヤー側とリモート側で ( [HolographicCamera:: SetNearPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setnearplanedistance) と [HolographicCamera:: SetFarPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setfarplanedistance)を使用して) 近距離および遠平面に対して異なる値を指定します。 この場合、プレーヤー側の射影変換にリモートの近距離/遠距離またはローカルの距離が反映されているかどうかは明確ではありません。
+問題の1つは、Holographic リモート処理を使用して深さの reprojection を使用しているときに、カスタムプレーヤーアプリによって直接レンダリングされるローカルコンテンツとは別のプロジェクション変換を使用してリモートコンテンツをレンダリングできることです。 一般的なユースケースでは、プレーヤー側とリモート側で ( [HolographicCamera:: SetNearPlaneDistance](/uwp/api/windows.graphics.holographic.holographiccamera.setnearplanedistance) と [HolographicCamera:: SetFarPlaneDistance](/uwp/api/windows.graphics.holographic.holographiccamera.setfarplanedistance)を使用して) 近距離および遠平面に対して異なる値を指定します。 この場合、プレーヤー側の射影変換にリモートの近距離/遠距離またはローカルの距離が反映されているかどうかは明確ではありません。
 
 バージョン [2.1.0](holographic-remoting-version-history.md#v2.1.0) 以降では、を使用して投影変換モードを制御でき ```PlayerContext::ProjectionTransformConfig``` ます。 サポートされる値は次のとおりです。
 
-- ```Local``` - [HolographicCameraPose::P rojectiontransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.projectiontransform) は、HolographicCamera 上のカスタムプレーヤーアプリによって設定された近距離/遠平面距離を反映する射影変換を返します。
+- ```Local``` - [HolographicCameraPose::P rojectiontransform](/uwp/api/windows.graphics.holographic.holographiccamerapose.projectiontransform) は、HolographicCamera 上のカスタムプレーヤーアプリによって設定された近距離/遠平面距離を反映する射影変換を返します。
 - ```Remote``` -射影変換は、リモートアプリによって指定された近距離距離と遠距離を反映します。
 - ```Merged``` -リモートアプリとカスタムプレーヤーアプリとの間の距離が近い場合は、統合されます。 既定では、これを行うには、近距離距離の最小値と、遠くの平面距離の最大値を取得します。 リモート側またはローカル側のどちらか一方が反転している場合は、遠く < 近くにあるとしても、遠くと遠くに離れた距離の距離が反転します。
 
@@ -237,7 +237,7 @@ m_playerContext.BlitRemoteFrameTimeout(500ms);
 
 ## <a name="optional-get-statistics-about-the-last-remote-frame"></a>省略可能: 最後のリモートフレームに関する統計を取得する
 
-パフォーマンスまたはネットワークの問題を診断するために、プロパティを使用して最後のリモートフレームに関する統計を取得でき ```PlayerContext::LastFrameStatistics``` ます。 統計は [HolographicFrame::P](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction)の呼び出し中に更新されます。 current予測。
+パフォーマンスまたはネットワークの問題を診断するために、プロパティを使用して最後のリモートフレームに関する統計を取得でき ```PlayerContext::LastFrameStatistics``` ます。 統計は [HolographicFrame::P](//uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction)の呼び出し中に更新されます。 current予測。
 
 ```cpp
 // Get statistics for the last presented frame.
@@ -256,5 +256,5 @@ winrt::Microsoft::Holographic::AppRemoting::PlayerFrameStatistics statistics = m
 * [カスタムの Holographic Remoting データ チャネル](holographic-remoting-custom-data-channels.md)
 * [Holographic Remoting を使用したセキュリティで保護された接続の確立](holographic-remoting-secure-connection.md)
 * [Holographic リモート処理のトラブルシューティングと制限事項](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting ソフトウェア ライセンス条項](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting ソフトウェア ライセンス条項](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft プライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)

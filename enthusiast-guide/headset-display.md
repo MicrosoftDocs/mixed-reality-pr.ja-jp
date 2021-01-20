@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6bcd6db30bf3a8a6e69d45c10be523d45ee4f82a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: f448cafe3d0952ada63d545e44b58001779a1470
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725413"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580516"
 ---
 # <a name="headset-display-faqs"></a>ヘッドセットの Faq を表示する
 
@@ -52,7 +52,7 @@ ms.locfileid: "97725413"
 
 ## <a name="my-headset-display-occasionally-turns-black-after-some-use"></a>使用したヘッドセットの表示が黒に変わることがある
 
-* PC で USB 一時停止機能または省電力機能を無効にしてみてください。 たとえば、[ **設定 > システム > 電源 & スリープ > [USB セレクティブサスペンド](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-selective-suspend)**] では、[コンピューターがこのデバイスの電源をオフにして電源を入れることを許可する] デバイスマネージャー設定と、PC のファームウェアで usb 省電力設定を使用できるようにします。
+* PC で USB 一時停止機能または省電力機能を無効にしてみてください。 たとえば、[ **設定 > システム > 電源 & スリープ > [USB セレクティブサスペンド](/windows-hardware/drivers/usbcon/usb-selective-suspend)**] では、[コンピューターがこのデバイスの電源をオフにして電源を入れることを許可する] デバイスマネージャー設定と、PC のファームウェアで usb 省電力設定を使用できるようにします。
 * PC に接続されている他の USB デバイスと周辺機器を一時的に切断します。
 * GPU ドライバーのバージョンが最新であることを確認し、新しいドライバーのパフォーマンスと互換性に関する新しい問題と回帰を確認します。
 

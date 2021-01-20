@@ -6,16 +6,16 @@ ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、デザイン、カラー、ライト、マテリアル、Mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 5d99941f068e808ba14d97084ef840a66aded2a9
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bf64413793aa40d158fde9f9a416d9a9b66af236
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848060"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580059"
 ---
 # <a name="color-light-and-materials"></a>色、ライト、素材
 
-![色、ライト、マテリアル](images/RemoteRendering.jpg)
+![色、光、マテリアル](images/RemoteRendering.jpg)
 
 混合現実のコンテンツを設計するには、すべての仮想資産の色、照明、マテリアルを慎重に検討する必要があります。 見た目を向上させるには、光と素材を使用してイマーシブ環境の雰囲気を設定することができます。また、機能的な目的で、わかりやすい色を使用して、近いアクションをユーザーに通知することもできます。 これらの各決定は、エクスペリエンスのターゲットデバイスの機会と制約に照らし合わせて検討する必要があります。
 
@@ -105,4 +105,4 @@ Holographic 表示用にコンテンツをデザインする場合、最適な�
 * [色の分離](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
 * [ホログラム](../discover/hologram.md)
 * [Microsoft デザイン言語-色](https://www.microsoft.com/design/color)
-* [ユニバーサル Windows プラットフォーム-色](https://docs.microsoft.com/windows/uwp/style/color)
+* [ユニバーサル Windows プラットフォーム-色](/windows/uwp/style/color)

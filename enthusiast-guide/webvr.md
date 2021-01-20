@@ -3,12 +3,12 @@ title: Windows Mixed Reality での WebVR の使用
 description: WebVR の基本、Windows Mixed Reality ヘッドセットで Microsoft Edge と共に使用する方法、および一般的なトラブルシューティングの問題について説明します。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、WebVR、Edge、Microsoft Edge、web 閲覧
-ms.openlocfilehash: 0b0d07383b43feaa11fb9bfac2b071d8d4d80b19
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 89d9e51bf4adb63e7836968a0112849f7ac403d0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009442"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581758"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>Windows Mixed Reality での WebVR の使用
 
@@ -35,7 +35,7 @@ VR で web を閲覧することは、プラグインを装着するときに Ed
 
 ## <a name="where-can-i-find-the-webvr-developer-documentation"></a>WebVR 開発者向けドキュメントはどこで入手できますか。
 
-開発者向けドキュメントについては、「 [Webvr Developer documentation](https://docs.microsoft.com/microsoft-edge/webvr/)」を参照してください。
+開発者向けドキュメントについては、「 [Webvr Developer documentation](/microsoft-edge/webvr/)」を参照してください。
 
 ## <a name="ive-found-a-website-with-webvr-that-doesnt-work-in-windows-mixed-reality-what-do-i-do"></a>Windows Mixed Reality では動作しない WebVR を使用した web サイトが見つかりました。 どうしようか
 

@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、リバーブ、リバーブ G2、HP リバーブ G2、mixed reality、development、motion controller、ユーザー入力、機能、新しいプロジェクト、エミュレーター、ドキュメント、ガイド、機能、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 83ff19c0527ee2d10a4f00ccd84539ca16d05517
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 006c70208ec0eaa45447caecf39f799c4be1bfeb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009992"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582688"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Unreal の HP リバーブ G2 コントローラー 
 
@@ -54,5 +54,5 @@ HP リバーブ G2 コントローラーには、"つかみ軸" バインドを�
 
 ## <a name="see-also"></a>関連項目
 * [SteamVR 入力](https://docs.unrealengine.com/Platforms/VR/SteamVR/HowTo/SteamVRInput/index.html)
-* [Windows Mixed Reality で SteamVR を使用する](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
+* [Windows Mixed Reality で SteamVR を使用する](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
 * [Unreal Player カメラ](https://docs.unrealengine.com/Programming/Tutorials/PlayerCamera/3/index.html)

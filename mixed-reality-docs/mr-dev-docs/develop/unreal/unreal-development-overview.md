@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, ストリーミング, リモート処理, Mixed Reality, 開発, 入門, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 特徴, ホログラム, ゲームの開発, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, OpenXR
-ms.openlocfilehash: 3d9a33ca98734d40a37e24805f28f7f70b6a4ba9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: eb9ec39d663dec2b5bf4c9177524449f31aaf554
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009762"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247735"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開発の概要
 
@@ -54,7 +54,7 @@ Unreal 開発が初めての場合は、よくわからないまま開始しな�
 > [!NOTE]
 > 詳細については、 **[Unreal GitHub リポジトリの UX ツール](https://github.com/microsoft/MixedReality-UXTools-Unreal)** をご確認ください。
 
-### <a name="3-platform-capabilities-and-apis"></a>3.プラットフォームの機能と API
+### <a name="3-advanced-features"></a>3.高度な機能
 
 Mixed Reality アプリケーションで何らかの役割を果たすその他の主要な機能は、追加のパッケージやセットアップなしで利用できます。 これらの機能は、MRTK がインストールされているかいないかに関係なく、Unreal プロジェクトに追加できます。 これらの高度な機能について確認したら、より複雑な Mixed Reality アプリを構築できるようになります。
 

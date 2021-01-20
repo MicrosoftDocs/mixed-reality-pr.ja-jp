@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality、手動追跡、Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、Mixed Reality、開発、機能、ドキュメント、ガイド、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1888258321af978ca52623008193e6dae94833a8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010162"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581118"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal での手の追跡
 
@@ -156,7 +156,7 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 
 ## <a name="gestures"></a>ジェスチャ
 
-HoloLens 2 は、空間ジェスチャを追跡します。これは、これらのジェスチャを入力としてキャプチャできることを意味します。 ジェスチャの追跡は、サブスクリプションモデルに基づいています。 追跡するジェスチャをデバイスに通知するには、"ジェスチャの構成" 機能を使用する必要があります。 ジェスチャの詳細については、「 [HoloLens 2 の基本的な使用方法](https://docs.microsoft.com/hololens/hololens2-basic-usage) 」を参照してください。
+HoloLens 2 は、空間ジェスチャを追跡します。これは、これらのジェスチャを入力としてキャプチャできることを意味します。 ジェスチャの追跡は、サブスクリプションモデルに基づいています。 追跡するジェスチャをデバイスに通知するには、"ジェスチャの構成" 機能を使用する必要があります。 ジェスチャの詳細については、「 [HoloLens 2 の基本的な使用方法](/hololens/hololens2-basic-usage) 」を参照してください。
 
 [!INCLUDE[](includes/tabs-tracking-gestures.md)]
 

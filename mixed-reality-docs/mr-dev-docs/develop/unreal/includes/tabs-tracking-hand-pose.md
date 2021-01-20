@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c5a13798ca6a73f1a6410abe310c2166b67f4626
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: 21c29b2c8d540378259200cc834f7a36065f8ab3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717423"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581113"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -57,7 +57,7 @@ enum class EWMRHandKeypoint : uint8
 };
 ```
 
-各列挙型のケースの数値は、 [HandJointKind](https://docs.microsoft.com/uwp/api/windows.perception.people.handjointkind) テーブルで確認できます。
+各列挙型のケースの数値は、 [HandJointKind](/uwp/api/windows.perception.people.handjointkind) テーブルで確認できます。
 
 ### <a name="supporting-hand-tracking"></a>ハンドトラッキングのサポート
 
@@ -95,4 +95,3 @@ GetHandJointTransform の関数パラメーターの詳細を次に示します�
 * **Transform** –ボーンの基本の座標と向きを調整します。 次のボーンのベースを要求して、ボーンの終点の変換データを取得できます。 特別なヒントのボーンは、distal の終わりを示します。
 * * * 半径: ボーンのベースの半径。
 * * * 戻り値—ボーンがこのフレームを追跡している場合は true、ボーンが追跡されていない場合は false。
-

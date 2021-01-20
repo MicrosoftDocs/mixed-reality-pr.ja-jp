@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: アプリ品質基準、mixed reality、mixed reality アプリ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 8037b573f50ef1f1137a6c50913990fadf40e92e
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 3f6752c0a15ae7db21be1f4a6d2843339ab28a5c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192680"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581268"
 ---
 # <a name="app-quality-criteria"></a>アプリの品質基準
 
@@ -36,7 +36,7 @@ ms.locfileid: "98192680"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>
@@ -99,7 +99,7 @@ ms.locfileid: "98192680"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>
@@ -161,7 +161,7 @@ ms.locfileid: "98192680"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>
@@ -224,7 +224,7 @@ ms.locfileid: "98192680"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>
@@ -281,7 +281,7 @@ ms.locfileid: "98192680"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>
@@ -324,7 +324,7 @@ Windows Mixed Reality では、音声エンジンは、方向、距離、およ�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>
@@ -382,7 +382,7 @@ Windows Mixed Reality では、音声エンジンは、方向、距離、およ�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>
@@ -438,7 +438,7 @@ Windows Mixed Reality では、音声エンジンは、方向、距離、およ�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>
@@ -479,7 +479,7 @@ Windows Mixed Reality では、音声エンジンは、方向、距離、およ�
 #### <a name="documentation"></a>ドキュメント
 
 * [操作の設計](../../discover/hologram.md)
-* [色、光、素材](../../color,-light-and-materials.md)
+* [色、光、素材](../../design/color-light-and-materials.md)
 * [Billboard と Tag-along](../../design/billboarding-and-tag-along.md)
 * [本能的な操作](../../design/interaction-fundamentals.md)
 * [自発運動とユーザー移動](../../design/comfort.md#self-motion-and-user-locomotion)
@@ -497,7 +497,7 @@ Windows Mixed Reality では、音声エンジンは、方向、距離、およ�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>
@@ -548,7 +548,7 @@ Windows Mixed Reality では、音声エンジンは、方向、距離、およ�
 * [Unity のモーションコントローラー](../unity/motion-controllers-in-unity.md)
 * [Unity でのジェスチャ](../unity/gestures-in-unity.md)
 * [Unity の音声入力](../unity/voice-input-in-unity.md)
-* [DirectX でのキーボード、マウス、およびコントローラー入力](../../keyboard,-mouse,-and-controller-input-in-directx.md)
+* [DirectX でのキーボード、マウス、およびコントローラー入力](./keyboard-mouse-and-controller-input-in-directx.md)
 * [DirectX でのヘッド視線入力とアイ視線入力](../native/gaze-in-directx.md)
 * [DirectX での手とモーション コントローラー](../native/hands-and-motion-controllers-in-directx.md)
 * [DirectX の音声入力](../native/voice-input-in-directx.md)
@@ -573,7 +573,7 @@ Windows Mixed Reality では、音声エンジンは、方向、距離、およ�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>
@@ -628,7 +628,7 @@ Windows Mixed Reality では、音声エンジンは、方向、距離、およ�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>
@@ -683,7 +683,7 @@ Mixed reality アプリでは、コンテンツは、実際のオブジェクト
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>
@@ -726,7 +726,7 @@ Mixed reality アプリでは、コンテンツは、実際のオブジェクト
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
         <td></td>
     </tr>

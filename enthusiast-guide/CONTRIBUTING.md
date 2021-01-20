@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 28ca1653019252c749fe5977a06bff4503800c10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865437"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580183"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>Mixed Reality 愛好ガイドへの貢献
 
@@ -22,9 +22,9 @@ ms.locfileid: "97865437"
 > [!IMPORTANT]
 > docs.microsoft.com に公開されるすべてのリポジトリには、「[Microsoft Open Source Code of Conduct (Microsoft オープンソース倫理規定)](https://opensource.microsoft.com/codeofconduct/)」が適用されています。 詳細については、[倫理規定についてのよくある質問](https://opensource.microsoft.com/codeofconduct/faq/)に関するページをご覧いただくか、[opencode@microsoft.com](mailto:opencode@microsoft.com) 宛てに質問またはコメントを送信してください。<br>
 >
-> パブリック リポジトリにあるドキュメントおよびコード例に対する軽微な修正や明確化は、「[docs.microsoft.com - 使用条件](https://docs.microsoft.com/legal/termsofuse)」の対象になります。 Microsoft の従業員ではない共同作成者が新規または大幅な変更を行うと、オンライン貢献者使用許諾契約書 (CLA) の提出をお願いするコメントが pull request 内に生成されます。 pull request が正しく受理されるように、オンライン フォームへのご記入をお願いいたします。
+> パブリック リポジトリにあるドキュメントおよびコード例に対する軽微な修正や明確化は、「[docs.microsoft.com - 使用条件](/legal/termsofuse)」の対象になります。 Microsoft の従業員ではない共同作成者が新規または大幅な変更を行うと、オンライン貢献者使用許諾契約書 (CLA) の提出をお願いするコメントが pull request 内に生成されます。 pull request が正しく受理されるように、オンライン フォームへのご記入をお願いいたします。
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 
 まだお持ちでない場合は、 [GitHub アカウントを作成](https://github.com/join)する必要があります。
 
@@ -53,7 +53,7 @@ GitHub アカウントを設定するときは、次のセキュリティに関�
 | 5. [変更のプレビュー] をクリックして、書式設定が想定どおりに表示されることを確認します。 | ![変更のプレビュー](images/edit-in-github.png)|
 | 6. 完了したら、ページの一番下までスクロールし、[ファイルの変更の提案] をクリックすると、[変更の比較] ページが表示され、変更を確認できます。 次に、[プル要求の作成] ボタンをクリックして、変更を送信します。 これで完了です。 | ![変更を提案する](images/propose.jpg)|
 
-(プル要求を使用して) 変更を送信した後は、ドキュメントチームのメンバーによってレビューされます。 要求が受け入れられた場合、更新プログラムはに発行され [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide) ます。
+(プル要求を使用して) 変更を送信した後は、ドキュメントチームのメンバーによってレビューされます。 要求が受け入れられた場合、更新プログラムはに発行され [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](/windows/mixed-reality/enthusiast-guide) ます。
 
 * 内部レビューのみの場合は、で変更を確認でき [https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://review.docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/?branch=master) ます。
 
@@ -85,7 +85,7 @@ GitHub アカウントを設定するときは、次のセキュリティに関�
 
 - `source_path`は、削除しようとしている古いアーティクルへの相対リポジトリパスです。 パスがで始まり、で終わることを確認してください `mixed-reality-docs/enthusiast-guide` `.md` 。
 - は、 `redirect_url` 以前の記事から新しい記事までの相対パブリック URL です。 この URL は、  `mixed-reality-docs/enthusiast-guide` `.md` リポジトリパスではなくパブリック url を参照しているため、またはを含んでいないことを確認してください。 を使用した新しいアーティクル内のセクションへのリンク `#section` は許可されます。 必要に応じて、ここで別のサイトへの絶対パスを使用することもできます。
-- `redirect_document_id` 前のファイルのドキュメント ID を保持するかどうかを示します。 既定値は、`false` です。 リダイレクトされたアーティクルの属性値を保持する場合は、を使用し `true` `ms.documentid` ます。 ドキュメント ID を保持している場合は、ページビューやランキングなどのデータがターゲットアーティクルに転送されます。 これは、リダイレクトが主に名前の変更であり、同じコンテンツの一部のみをカバーする別の記事へのポインターではない場合に実行します。
+- `redirect_document_id` 前のファイルのドキュメント ID を保持するかどうかを示します。 既定では、 `false`です。 リダイレクトされたアーティクルの属性値を保持する場合は、を使用し `true` `ms.documentid` ます。 ドキュメント ID を保持している場合は、ページビューやランキングなどのデータがターゲットアーティクルに転送されます。 これは、リダイレクトが主に名前の変更であり、同じコンテンツの一部のみをカバーする別の記事へのポインターではない場合に実行します。
 
 リダイレクトを追加する場合は、古いファイルも必ず削除してください。
 
@@ -128,7 +128,7 @@ GitHub アカウントを設定するときは、次のセキュリティに関�
 
 ## <a name="working-with-branches"></a>ブランチを操作する
 
-2つの主要な親分岐 ([マスター](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master)) を使用するのは、 [Mixed Reality のガイド GitHub リポジトリ](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide)です。このコンテンツ[は、](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live)[ライブサイト](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)で表示されるコンテンツの[ステージングサイト](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)で確認できます。
+2つの主要な親分岐 ([マスター](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master)) を使用するのは、 [Mixed Reality のガイド GitHub リポジトリ](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide)です。このコンテンツ[は、](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live)[ライブサイト](/windows/mixed-reality/enthusiast-guide)で表示されるコンテンツの[ステージングサイト](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)で確認できます。
 
 投稿を作成するときは、プル要求 (PR) を **Master** ブランチに送信してください。 このブランチはステージング サイトで表示でき、ライブで公開する準備ができている投稿のみを含んでいます。 また、独自の一意のブランチ名を使用してブランチを作成し、送信することもできます。これは、ステージングサイトで選択して表示できます。 ( **ライブ** ブランチは、コンテンツ管理者のみが使用できます)。
 
@@ -138,13 +138,13 @@ Markdown 言語を使用してドキュメントを編集する方法につい�
 
 - [Markdown の基礎](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown リファレンスポスターの概要](images/MarkdownPoster.pdf)
-- [Docs.microsoft.com の Markdown を作成するためのその他のリソース](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Docs.microsoft.com の Markdown を作成するためのその他のリソース](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>テーブルの追加
 
 Docs.microsoft.com スタイルの表では、インライン CSS を試す場合でも、罫線やカスタムスタイルはありません。 これは短時間は機能しているように見えますが、最終的には、プラットフォームによってテーブルからスタイルが除去されます。 そのため、事前に計画し、テーブルを単純にしておきます。 [Markdown テーブルを簡単に作成できるサイトは次のように](https://www.tablesgenerator.com/markdown_tables)なります。
 
-[Visual Studio Code の Docs Markdown 拡張機能](https://docs.microsoft.com/teamblog/docs-extension)では、 [Visual Studio Code (下記参照)](#using-visual-studio-code)を使用してドキュメントを編集する場合にも、テーブルの生成を簡単に行うことができます。
+[Visual Studio Code の Docs Markdown 拡張機能](/teamblog/docs-extension)では、 [Visual Studio Code (下記参照)](#using-visual-studio-code)を使用してドキュメントを編集する場合にも、テーブルの生成を簡単に行うことができます。
 
 ### <a name="adding-images"></a>追加 (イメージを)
 

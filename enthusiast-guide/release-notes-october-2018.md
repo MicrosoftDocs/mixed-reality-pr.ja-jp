@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 10/02/2018
 ms.topic: article
 keywords: リリースノート、バージョン、windows 10、ビルド、rs5、os
-ms.openlocfilehash: f7d95481d166f2c8795701c516946346101a21d0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f62bc5b1e172958a6aebf366852cfd921f7817a3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007112"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581484"
 ---
 # <a name="release-notes---october-2018"></a>リリース ノート - 2018 年 10 月
 
@@ -33,7 +33,7 @@ Windows 10 10 月2018更新プログラムには、デスクトップ PC で Win
     ![Mixed Reality 懐中電灯](images/mr-flashlight.png)
 
 * **新しいアプリと、mixed reality ホームでコンテンツを起動する方法**
-    * [SteamVR で Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)を使用している場合、steamvr タイトルが [スタート] メニューに表示され、それぞれのアプリランチャーが Mixed reality ホームに配置されるようになりました。
+    * [SteamVR で Windows Mixed Reality](./using-steamvr-with-windows-mixed-reality.md)を使用している場合、steamvr タイトルが [スタート] メニューに表示され、それぞれのアプリランチャーが Mixed reality ホームに配置されるようになりました。
     
         ![SteamVR アプリランチャー](images/steamvr-launchers.png)
         
@@ -50,9 +50,9 @@ Windows 10 10 月2018更新プログラムには、デスクトップ PC で Win
     
 ### <a name="for-developers"></a>開発者向け
 
-* **[Qr コードの追跡](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/qr-code-tracking)** -mixed reality アプリで qr コード追跡を有効にします。これにより、Windows mixed reality イマーシブ (VR) ヘッドセットで qr コードをスキャンして、関心のあるアプリに報告することができます。
+* **[Qr コードの追跡](/windows/mixed-reality/develop/platform-capabilities-and-apis/qr-code-tracking)** -mixed reality アプリで qr コード追跡を有効にします。これにより、Windows mixed reality イマーシブ (VR) ヘッドセットで qr コードをスキャンして、関心のあるアプリに報告することができます。
 * **アプリのハードウェア DRM サポート** -ディスプレイハードウェアでサポートされている場合は、ハードウェアで保護された backbuffer テクスチャを要求できるようになりました。これにより、アプリケーションは PlayReady などのソースからハードウェアで保護されたコンテンツを使用できるようになります。
-* **[Mixed reality キャプチャ ui をイマーシブアプリに統合](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** する-開発者は、組み込みの Windows [カメラキャプチャ ui](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) を使用して、いくつかのコード行だけを使用して、混合 reality キャプチャをアプリに統合できます。
+* **[Mixed reality キャプチャ ui をイマーシブアプリに統合](/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** する-開発者は、組み込みの Windows [カメラキャプチャ ui](/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) を使用して、いくつかのコード行だけを使用して、混合 reality キャプチャをアプリに統合できます。
 
 ## <a name="new-features-for-hololens"></a>HoloLens の新機能
 
@@ -72,7 +72,7 @@ Windows 10 10 月2018更新プログラムは、すべての HoloLens のお客�
 
 ### <a name="for-developers"></a>開発者向け
 
-* **[Mixed reality キャプチャ ui をイマーシブアプリに統合](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** する-開発者は、組み込みの Windows [カメラキャプチャ ui](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) を使用して、いくつかのコード行だけを使用して、混合 reality キャプチャをアプリに統合できます。
+* **[Mixed reality キャプチャ ui をイマーシブアプリに統合](/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** する-開発者は、組み込みの Windows [カメラキャプチャ ui](/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) を使用して、いくつかのコード行だけを使用して、混合 reality キャプチャをアプリに統合できます。
 
 ### <a name="for-commercial-customers"></a>商用のお客様向け
 
@@ -88,7 +88,7 @@ Windows 10 10 月2018更新プログラムは、すべての HoloLens のお客�
 
 ## <a name="known-issues"></a>既知の問題
 
-Windows Mixed Reality エクスペリエンスの向上に努めていましたが、まだいくつかの既知の問題を追跡しています。 他のユーザーが見つかった場合は、フィードバックをお [送り](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)ください。
+Windows Mixed Reality エクスペリエンスの向上に努めていましたが、まだいくつかの既知の問題を追跡しています。 他のユーザーが見つかった場合は、フィードバックをお [送り](/windows/mixed-reality/give-us-feedback)ください。
 
 ### <a name="hololens"></a>HoloLens
  
@@ -99,7 +99,7 @@ HoloLens で Windows 10 10 月2018更新プログラムを使用すると、次�
 
 ## <a name="provide-feedback-and-report-issues"></a>フィードバックの提供と問題の報告
 
-[お客様の HoloLens または Windows 10 PC でフィードバックハブアプリ](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)を使用して、フィードバックを提供し、問題を報告してください。 フィードバックハブを使用すると、エンジニアが迅速に問題をデバッグして解決できるように、必要な診断情報がすべて含まれるようになります。
+[お客様の HoloLens または Windows 10 PC でフィードバックハブアプリ](/windows/mixed-reality/give-us-feedback)を使用して、フィードバックを提供し、問題を報告してください。 フィードバックハブを使用すると、エンジニアが迅速に問題をデバッグして解決できるように、必要な診断情報がすべて含まれるようになります。
 
 >[!NOTE]
 >フィードバックハブがドキュメントフォルダーにアクセスするかどうかを確認するメッセージが表示されることを確認します (メッセージが表示されたら [ **はい]** を選択します)。
@@ -113,8 +113,7 @@ HoloLens で Windows 10 10 月2018更新プログラムを使用すると、次�
 * [リリース ノート - 2016 年 3 月](release-notes-march-2016.md)
 
 ## <a name="see-also"></a>関連項目
-* [イマーシブヘッドセットのサポート (外部リンク)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+* [イマーシブヘッドセットのサポート (外部リンク)](./troubleshooting-windows-mixed-reality.md)
 * [HoloLens サポート (外部リンク)](https://support.microsoft.com/products/hololens)
-* [ツールのインストール](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [フィードバックの送信](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)
-
+* [ツールのインストール](/windows/mixed-reality/develop/install-the-tools)
+* [フィードバックの送信](/windows/mixed-reality/give-us-feedback)

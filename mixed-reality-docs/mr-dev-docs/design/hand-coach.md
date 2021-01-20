@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality、設計、手作業、イマーシブヘッドセット、MRTK、ハンズオン、ハンズオン、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 69afe767e01c57535b79575e4f25fabe4a9f6f39
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009162"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582271"
 ---
 # <a name="hand-coach"></a>ハンド コーチ
 
@@ -85,7 +85,7 @@ UI メニューを使用してさまざまなサイズをテストしました�
 
 ## <a name="can-i-create-my-own"></a>自分で作成できますか。
 
-はい。 ゲーム用に独自の独自のジェスチャを作成し、コミュニティに投稿することをお勧めします。
+はい、ご利用いただけます。 ゲーム用に独自の独自のジェスチャを作成し、コミュニティに投稿することをお勧めします。
 アプリに使用できる Rigged ハンドの Maya ファイルが用意されています。これは、 <a href="files/HandCoach_MRTK.zip">HandCoach_MRTK.zip ダウンロード</a>できます。
 
 ![Maya でのアニメーションの例](images/HandCoach/MayaSelect_Gif.gif)<br>
@@ -177,7 +177,7 @@ UI メニューを使用してさまざまなサイズをテストしました�
 
 * [相互作用-基本](interaction-fundamentals.md)
 * [資産の作成プロセス](asset-creation-process.md)
-* [ジェスチャ](../gestures.md)
+* [ジェスチャ](./interaction-fundamentals.md)
 * [ツールをインストールする](../develop/install-the-tools.md)
 * [Unity プロジェクトの構成](../develop/unity/Configure-Unity-Project.md)
 * [Unity 開発の概要](../develop/unity/unity-development-overview.md)

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、ソフトウェアコンポーネント、リリース履歴、リリースノート、バージョン履歴
 appliesto:
 - Windows 10
-ms.openlocfilehash: 763814e7ab81feeb22c4cbe4f5daf02d62db38fa
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
+ms.openlocfilehash: a5261303a8ba1c0ffbf87ec9e28bd392c19da9a7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166757"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581653"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Mixed Reality ソフトウェアの概要とリリース履歴
 
@@ -24,7 +24,7 @@ Windows Mixed Reality は、次の主要なソフトウェアコンポーネン�
 1. Windows Mixed Reality の主要なエクスペリエンスを提供する **Mixed Reality ポータル**
     * Windows 10 バージョン1709および1803では、Mixed Reality ポータルは Windows Update によって更新された Windows 10 オペレーティングシステムの重要なコンポーネントです。
     * Windows 10 バージョン1809以降では、Mixed Reality ポータルは Microsoft Store アプリを使用して更新されます。
-2. Mixed **reality のオンデマンドパッケージ** ("d") は、Mixed reality ポータルの初回実行時に自動的にダウンロードされ、インストールされます。 パッケージの詳細については、こちらを参照して[ください](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)。
+2. Mixed **reality のオンデマンドパッケージ** ("d") は、Mixed reality ポータルの初回実行時に自動的にダウンロードされ、インストールされます。 パッケージの詳細については、こちらを参照して[ください](/windows/application-management/manage-windows-mixed-reality)。
 3. **Mixed reality ヘッドセットと motion controller ドライバー**(HoloLens センサードライバーとも呼ばれます) は、Windows mixed reality ヘッドセットが Windows mixed reality と連携できるようにするための主要なドライバーパッケージです。 これは、Mixed Reality ヘッドセットが初めて接続されたときに Windows Update によって自動的にダウンロードおよびインストールされ Windows Update
 4. * * 混合現実運動コントローラーモデルのドライバーには、混合現実のモーションコントローラーの3D モデルが含まれており、サードパーティの Mixed Reality エクスペリエンスに必要です。 これは、Mixed Reality モーションコントローラーが PC とペアリングされて初めて Windows Update によって自動的にダウンロードおよびインストールされ Windows Update
 5. **Windows 10 バージョン 1709 (秋の作成者の更新プログラム) 以降には、** Windows Mixed Reality を有効にする主要な OS コンポーネントとテクノロジが含まれています。
@@ -50,7 +50,7 @@ Windows Mixed Reality イマーシブ (VR) ヘッドセットの最新の PC リ
 
 #### <a name="introducing-the-new-microsoft-edge"></a>新しい Microsoft Edge の紹介
 
-[以前に発表](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge)したように、Windows Mixed Reality の新しい Microsoft Edge ブラウザーを使用したサポートの向上に向けた更新が行われています。 新しい Microsoft Edge は、Chromium のオープンソースプロジェクトを採用して、顧客向けのより優れた web 互換性を作成し、すべての web 開発者に web の断片化を減らします。 また、WebXR をサポートしています。これは、web Vr の代わりに、VR ヘッドセットのイマーシブ web エクスペリエンスを作成するための新しい標準です。
+[以前に発表](/windows/mixed-reality/new-microsoft-edge)したように、Windows Mixed Reality の新しい Microsoft Edge ブラウザーを使用したサポートの向上に向けた更新が行われています。 新しい Microsoft Edge は、Chromium のオープンソースプロジェクトを採用して、顧客向けのより優れた web 互換性を作成し、すべての web 開発者に web の断片化を減らします。 また、WebXR をサポートしています。これは、web Vr の代わりに、VR ヘッドセットのイマーシブ web エクスペリエンスを作成するための新しい標準です。
 
 #### <a name="improved-settings-for-wmr"></a>WMR の設定の改善
 
@@ -167,14 +167,14 @@ Windows 10 バージョン1809以降では、 [Mixed Reality ポータル](https
 
    | Version            | リリース日          | メジャーの変更                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
-   | 2000.20111.1381.0  | 2020年12月10日        | <ul><li>Mixed Reality ポータルのランディングページを更新します。</li><li>ファームウェアの更新中にヘッドセット接続エラーを軽減します。 </li></ul>  |    | 2000.20071.1133.0  | 2020 年 8 月 5 日        | <ul><li>プレビューウィンドウを一時停止する [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) のサポート。</li></ul>  | 
-   | 2000.20071.1133.0  | 2020 年 8 月 5 日        | <ul><li>プレビューウィンドウを一時停止する [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) のサポート。</li></ul>  | 
+   | 2000.20111.1381.0  | 2020年12月10日        | <ul><li>Mixed Reality ポータルのランディングページを更新します。</li><li>ファームウェアの更新中にヘッドセット接続エラーを軽減します。 </li></ul>  |    | 2000.20071.1133.0  | 2020 年 8 月 5 日        | <ul><li>プレビューウィンドウを一時停止する [OpenXR](/windows/mixed-reality/openxr) のサポート。</li></ul>  | 
+   | 2000.20071.1133.0  | 2020 年 8 月 5 日        | <ul><li>プレビューウィンドウを一時停止する [OpenXR](/windows/mixed-reality/openxr) のサポート。</li></ul>  | 
    | 2000.20041.1212.0  | 2020 年 5 月 11 日          | <ul><li>エラー15-5 エラーが発生したタイミングの問題に対処します。</li><li>インターネットに接続していない Windows Mixed Reality を実行するためのサポートが強化されました。</li><li>**セットアップコントローラー** による、モーションコントローラーのペアリングのサポートが向上しました。</li></ul>  | 
    | 2000.20031.1202.0  | 2020 年 4 月 14 日        | <ul><li>Windows Mixed Reality に関する情報、ヒント、プランのサインアップがサポートされています。</li></ul>  | 
-   | 2000.20011.1312.0  | 2020 年 2 月 11 日     | <ul><li>2019年5月の更新プログラムが適用されたデバイスで [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) を使用するアプリケーションのサポートが向上しました。</li><li>ユーザー補助とキーボードフォーカスの問題に対処する</li></ul>  | 
+   | 2000.20011.1312.0  | 2020 年 2 月 11 日     | <ul><li>2019年5月の更新プログラムが適用されたデバイスで [OpenXR](/windows/mixed-reality/openxr) を使用するアプリケーションのサポートが向上しました。</li><li>ユーザー補助とキーボードフォーカスの問題に対処する</li></ul>  | 
    | 2000.19101.1211.0  | 2019 年 11 月 11 日     | <ul><li>部屋の境界のビジュアルを切り替えることができない問題に対処します。</li><li>部屋の境界のセットアップ中にヘッドセットをセンタリングできない問題に対処します。</li></ul>  | 
    | 2000.19081.1301.0  | 2019 年 9 月 23 日    | <ul><li>ハードウェアの問題のあるヘッドセットに誤ったエラーメッセージが表示される問題に対処します。 以前のバージョンで1-4 エラーコードを受け取ったユーザーは、デバイスの状態により具体的なエラーコードを受け取ることができるようになりました。</li></ul>  |
-   | 2000.19071.1302.0  | 2019 年 8 月 13 日     | <ul><li>2019年5月の更新プログラムが適用されたデバイスで [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) を使用するアプリケーションのサポート。</li></ul>  | 
+   | 2000.19071.1302.0  | 2019 年 8 月 13 日     | <ul><li>2019年5月の更新プログラムが適用されたデバイスで [OpenXR](/windows/mixed-reality/openxr) を使用するアプリケーションのサポート。</li></ul>  | 
    | 2000.19061.1011.0  | 2019 年 7 月 16 日         | <ul><li>アプリの動作をカスタマイズするための JSON 構成オプションをサポートします。 詳細については https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup 、を参照してください。</li></ul>  | 
 
 ### <a name="steamvr-release-history"></a>SteamVR リリース履歴 ###

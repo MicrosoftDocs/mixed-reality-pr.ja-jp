@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality、デザイン、スタイル、フォント、タイポグラフィ、ui、ux、テキスト、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens
-ms.openlocfilehash: 38acc8c0d2c7dbd7bcb192f82bb1bb52838323ac
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 015273c84462e48e145af77421da4131bb650d9e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007652"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580273"
 ---
 # <a name="typography"></a>文字体裁
 
@@ -37,15 +37,15 @@ HoloLens では、加法色システムに基づいた光を使用したホロ�
 
 ### <a name="limit-your-fonts"></a>フォントを制限する
 
-1つのコンテキストで2つ以上の異なるフォントファミリを使用することは避けてください。 フォントが多すぎると、使いやすさと一貫性が損なわれ、情報を使用することが難しくなります。 HoloLens では、情報は物理環境の上に重なっているため、使用するフォントスタイルが多すぎるとエクスペリエンスが低下します。 Segoe UI は、すべての Microsoft デジタルデザインのフォントです。 これは、Windows Mixed Reality シェルで一貫して使用されます。 Segoe UI フォントファイルは、 [Windows design toolkit のページ](https://docs.microsoft.com/windows/uwp/design-downloads/)からダウンロードできます。
+1つのコンテキストで2つ以上の異なるフォントファミリを使用することは避けてください。 フォントが多すぎると、使いやすさと一貫性が損なわれ、情報を使用することが難しくなります。 HoloLens では、情報は物理環境の上に重なっているため、使用するフォントスタイルが多すぎるとエクスペリエンスが低下します。 Segoe UI は、すべての Microsoft デジタルデザインのフォントです。 これは、Windows Mixed Reality シェルで一貫して使用されます。 Segoe UI フォントファイルは、 [Windows design toolkit のページ](/windows/uwp/design-downloads/)からダウンロードできます。
 
-[Segoe UI タイプフェイスに関する詳細情報](https://docs.microsoft.com/windows/uwp/design/style/typography)
+[Segoe UI タイプフェイスに関する詳細情報](/windows/uwp/design/style/typography)
 
 ### <a name="avoid-thin-font-weights"></a>細いフォントの太さを避ける
 
 42 pt 未満の型サイズに対しては薄いまたは semilight のフォントの重みを使用しないでください。薄い縦線のストロークはバイブレーションで、読みにくくなります。 ストロークの太さが十分にある最新のフォントがうまく機能します。 たとえば、Helvetica, と Arial は、標準または太字の重みを使用して HoloLens で判読できます。
 
-### <a name="color"></a>Color
+### <a name="color"></a>色
 
 HoloLens では、ホログラムは加法の光源システムを使用して構築されるため、白のテキストは非常に読みやすくなります。 ホワイトテキストの例については、[スタート] メニューとアプリバーを参照してください。 HoloLens でバックプレートを使用しなくても白のテキストは適切に機能しますが、複雑な物理的背景によって型が読みづらくなる可能性があります。 ユーザーのフォーカスを改善し、物理的な背景からの邪魔を最小限に抑えるために、暗い色または色の裏面に白いテキストを使用することをお勧めします。
 
@@ -132,4 +132,4 @@ Segoe UI (Windows の既定のフォント) は、ほとんどの場合に適し
 ## <a name="see-also"></a>関連項目
 
 * [Unity のテキスト](../develop/unity/text-in-unity.md)
-* [色、ライト、素材](../color,-light-and-materials.md)
+* [色、ライト、素材](./color-light-and-materials.md)

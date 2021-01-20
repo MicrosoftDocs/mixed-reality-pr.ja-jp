@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, 開発, 作業の開始, 新しいプロジェクト, 移植, 機能, カメラ, シミュレーション, エミュレーション, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, 拡張現実とは, MRTK, Mixed Reality Toolkit, 音声入力, 場所を特定できるカメラ, エミュレーター, Azure, チュートリアル
-ms.openlocfilehash: ba63f137e90b68345f3e5bbb831aba6abd6fe538
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: edd75def71ad31a1d29a480d0b2a7f7ffbd8c037
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98040578"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226431"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>VR と Windows Mixed Reality 向けの Unity 開発
 
@@ -42,7 +42,7 @@ Unity には、Windows Mixed Reality と VR の開発用に手動で変更する
 
 [!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
 
-### <a name="3-platform-capabilities-and-apis"></a>3.プラットフォームの機能と API
+### <a name="3-advanced-features"></a>3.高度な機能
 
 イマーシブ アプリケーションで役割を果たすその他の主要な機能は、Unity API を通じて利用できます。追加のパッケージやセットアップは不要です。 Unity によって提供される高度な機能について確認したら、より高度で複雑な VR アプリを構築することができるようになります。
 

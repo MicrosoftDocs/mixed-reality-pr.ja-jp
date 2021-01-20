@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 座標系、空間座標系、方向専用、取り付けられたスケール、拡大/縮小、ルームスケール、ワールドスケール、360度、取り付けられている、静止した部屋、ワールド、スケール、位置、向き、固定、接続、ステージ、アンカー、空間アンカー、ワールドロック、ワールドロック、本文ロック、ボディロック、境界、永続化、共有、紛失の追跡、クラウド空間アンカー、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のケースキット、HoloLens、MRTK
-ms.openlocfilehash: 42efc1444c030641ad215501c4a12d6315ea9857
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 6d4bddc17027ad32f82fbc8c37860e64b2bc57eb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848022"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582415"
 ---
 # <a name="coordinate-systems"></a>座標系
 
@@ -32,9 +32,9 @@ ms.locfileid: "97848022"
     </colgroup>
     <tr>
         <td><strong>機能</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (第 1 世代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 世代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>イマーシブ ヘッドセット</strong></a></td>
+        <td><a href="/windows/mixed-reality/immersive-headset-hardware-details"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
      <tr>
         <td><a href="coordinate-systems.md#stationary-frame-of-reference">静止フレーム (参照)</a></td>
@@ -105,7 +105,7 @@ ms.locfileid: "97848022"
 
 ## <a name="spatial-coordinate-systems"></a>空間座標系
 
-すべての3D グラフィックスアプリケーションは、 [デカルト座標系](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) を使用して、仮想オブジェクトの位置と方向を理解します。 これらの座標系は、オブジェクトの位置を表す3つの垂直軸 (X、Y、Z 軸) を確立します。
+すべての3D グラフィックスアプリケーションは、 [デカルト座標系](/windows/uwp/graphics-concepts/coordinate-systems) を使用して、仮想オブジェクトの位置と方向を理解します。 これらの座標系は、オブジェクトの位置を表す3つの垂直軸 (X、Y、Z 軸) を確立します。
 
 [混合現実](../discover/mixed-reality.md)では、アプリは仮想および物理座標系に関するものです。 Windows は、物理的な世界で **空間座標系** の真の意味を持つ座標系を呼び出します。
 
@@ -191,13 +191,13 @@ Windows Mixed Reality は、前のセクションで説明した問題を解決�
 
 ストアにアンカーを保持することで、ユーザーは個々のホログラムを配置したり、アプリがさまざまなホログラムを配置するワークスペースを配置したりできます。また、アプリの多くの使用において、これらのホログラムを予想される場所で探すことができます。
 
-<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間アンカー</a>を使用して、HoloLens、iOS、および Android デバイス間での非同期ホログラム永続化を行うこともできます。  持続性のあるクラウド空間アンカーを共有することにより、複数のデバイスが同時に存在しない場合でも、同じ永続化されたホログラムを時間の経過とともに観察できます。
+<a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間アンカー</a>を使用して、HoloLens、iOS、および Android デバイス間での非同期ホログラム永続化を行うこともできます。  持続性のあるクラウド空間アンカーを共有することにより、複数のデバイスが同時に存在しない場合でも、同じ永続化されたホログラムを時間の経過とともに観察できます。
 
 ### <a name="spatial-anchor-sharing"></a>空間アンカーの共有
 
 アプリでは、空間アンカーを他のデバイスとリアルタイムで共有することもできます。これにより、リアルタイムの共有エクスペリエンスが可能になります。
 
-<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間アンカー</a>を使用すると、アプリは複数の HoloLens、iOS、および Android デバイス間で空間アンカーを共有できます。 各デバイスで同じ空間アンカーを使用してホログラムをレンダリングすると、現実世界の同じ場所ですべてのユーザーがホログラムを見ることができます。
+<a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間アンカー</a>を使用すると、アプリは複数の HoloLens、iOS、および Android デバイス間で空間アンカーを共有できます。 各デバイスで同じ空間アンカーを使用してホログラムをレンダリングすると、現実世界の同じ場所ですべてのユーザーがホログラムを見ることができます。
 
 ## <a name="avoid-head-locked-content"></a>ヘッドロックされたコンテンツを避ける
 
@@ -239,5 +239,5 @@ Windows Mixed Reality は、前のセクションで説明した問題を解決�
 * [DirectX の座標系](../develop/native/coordinate-systems-in-directx.md)
 * [空間アンカー](spatial-anchors.md)
 * [複合現実での共有エクスペリエンス](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [ケース スタディ - Mixed Reality で穴から覗く](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

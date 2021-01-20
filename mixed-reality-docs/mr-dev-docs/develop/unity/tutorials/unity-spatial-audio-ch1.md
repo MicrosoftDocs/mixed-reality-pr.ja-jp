@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、head 関連の転送機能、リバーブ、Microsoft Spatializer
-ms.openlocfilehash: 1eb2913f1953e334cfe75b786f96bb51a9852fc5
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 7d4702a21fccbb18c7c4b07675953c37785ae6db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578453"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580226"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. Unity プロジェクトに空間オーディオを追加する
 
@@ -21,7 +21,7 @@ HoloLens2 上の Unity の空間オーディオチュートリアルへようこ
 
 [Microsoft Spatializer GitHub リポジトリ](https://github.com/microsoft/spatialaudio-unity)には、このチュートリアルシーケンスの完成した Unity プロジェクトが用意されています。
 
-HRTF ベースの spatialization テクノロジを使用してサウンドを spatialize することの意味と、役に立つ可能性がある場合の推奨事項については、「 [空間サウンドの設計](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design)」を参照してください。
+HRTF ベースの spatialization テクノロジを使用してサウンドを spatialize することの意味と、役に立つ可能性がある場合の推奨事項については、「 [空間サウンドの設計](/windows/mixed-reality/spatial-sound-design)」を参照してください。
 
 ## <a name="what-is-hrtf-offload"></a>HRTF offload とは
 

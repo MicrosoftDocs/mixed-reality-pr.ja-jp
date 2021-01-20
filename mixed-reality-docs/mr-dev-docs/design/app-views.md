@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: イマーシブビュー、2D ビュー、スレート、アプリ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: a9cd03212fcbb0d7b3d9e4d2b3108e4d09972455
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b6a16fc3b1ac45d74874f37ce44a36d3e144fee8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009632"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580101"
 ---
 # <a name="app-views"></a>アプリ ビュー
 
@@ -24,7 +24,7 @@ Windows アプリには、 **イマーシブビュー** と **2d ビュー** の
 ![イマーシブビューでは、ホログラムを世界中に配置できます。](images/designoverview-940px.jpg)<br>
 *イマーシブビューでは、ホログラムを世界中に配置できます。*
 
-[HoloLens](https://docs.microsoft.com/hololens/hololens1-hardware)では、アプリはユーザーの実際の環境の上にホログラムをレンダリングします。 [Windows Mixed Reality のイマーシブヘッドセット](../discover/immersive-headset-hardware-details.md)では、ユーザーは実際の世界を見ることができないため、ユーザーに表示されるすべてのものをアプリでレンダリングする必要があります。
+[HoloLens](/hololens/hololens1-hardware)では、アプリはユーザーの実際の環境の上にホログラムをレンダリングします。 [Windows Mixed Reality のイマーシブヘッドセット](../discover/immersive-headset-hardware-details.md)では、ユーザーは実際の世界を見ることができないため、ユーザーに表示されるすべてのものをアプリでレンダリングする必要があります。
 
 [Windows Mixed Reality ホーム](../discover/navigating-the-windows-mixed-reality-home.md)(環境の周囲に配置した [スタート] メニューとホログラムを含む) は、イマーシブビューではレンダリングされません。 HoloLens では、Cortana は、イマーシブビューの表示中に発生したすべてのシステム通知をリレーし、ユーザーが音声入力を使用して応答できるようにします。
 

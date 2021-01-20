@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: シェル, os, プラットフォーム, 崖家, 家, ホーム, 環境, スタート, スタートメニュー, ホームメニュー, pin, アプリ, 起動アプリ, 配置アプリ, テレポート, 移動, 移動, mixed reality ヘッドセット, 仮想現実のヘッドセット, 仮想現実とは
-ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6b021aff20363f0e3efc1c2675df41ee5819aef6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009692"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582631"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Windows Mixed Reality ホームのナビゲーション
 
@@ -28,7 +28,7 @@ Windows PC エクスペリエンスがデスクトップで起動するのと同
 * Cortana (最初の段階で、HoloLens ではスタートタイル、最初は HoloLens)
 * ピン留めされたアプリ
 * [すべてのアプリ] ボタン (プラス記号)
-* [Mixed reality キャプチャ](../mixed-reality-capture.md)の写真ボタンとビデオボタン
+* [Mixed reality キャプチャ](/hololens/holographic-photos-and-videos)の写真ボタンとビデオボタン
 
 プラスボタンまたはマイナスボタンを選択して、ピン留めされたアプリとすべてのアプリビューを切り替えます。 HoloLens で [スタート] メニューを開くには、ブルームジェスチャを使用します。 イマーシブヘッドセットで、コントローラーの [Windows] ボタンを押します。
 
@@ -40,7 +40,7 @@ Windows PC エクスペリエンスがデスクトップで起動するのと同
 1. 目的の場所にアプリを配置するには、 [宝石](../design/gaze-and-commit.md) またはコントローラーを使用します。 配置した領域に合わせて、自動的に (サイズと位置で) 調整されます。
 2. エアタップ (HoloLens) または [選択] ボタン (イマーシブヘッドセット) を使用してアプリを配置します。 [スタート] メニューをキャンセルして元に戻すには、ブルームジェスチャまたは Windows ボタンを使用します。
 
-デスクトップ、モバイル、または Xbox 用に作成された[2d アプリ](../develop/porting-apps/building-2d-apps.md)は、 [HolographicSpace API](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx)を使用して mixed reality イマーシブアプリとして実行するように変更できます。 イマーシブアプリによって、ユーザーは家庭から、またはイマーシブエクスペリエンスを利用できます。 ユーザーは、ブルームジェスチャ (HoloLens) を使用するか、コントローラー (イマーシブヘッドセット) の Windows ボタンを押すことによって、自宅を返すことができます。
+デスクトップ、モバイル、または Xbox 用に作成された[2d アプリ](../develop/porting-apps/building-2d-apps.md)は、 [HolographicSpace API](/uwp/api/Windows.Graphics.Holographic.HolographicSpace)を使用して mixed reality イマーシブアプリとして実行するように変更できます。 イマーシブアプリによって、ユーザーは家庭から、またはイマーシブエクスペリエンスを利用できます。 ユーザーは、ブルームジェスチャ (HoloLens) を使用するか、コントローラー (イマーシブヘッドセット) の Windows ボタンを押すことによって、自宅を返すことができます。
 
 アプリはアプリ間 API または Cortana を使用して起動することもできます。
 
@@ -122,7 +122,7 @@ Windows Mixed Reality ホーム内:
 Windows Mixed Reality には、次のようないくつかの組み込みアプリがあります。
 * アプリとゲームを取得するための **Microsoft Store**
 * システムアプリとシステムアプリに関するフィードバックを送信する **フィードバックハブ**
-* システム設定を構成するための **設定**(ネットワークとシステムの更新プログラムを [含む](../connecting-to-wi-fi-on-hololens.md))
+* システム設定を構成するための **設定**(ネットワークとシステムの更新プログラムを [含む](/hololens/hololens-network))
 * Web サイトを参照するための **Microsoft Edge**
 * 写真とビデオを表示して共有するための **写真**
 * 現在のユーザーに対して HoloLens エクスペリエンスを調整するための **調整**(hololens のみ)
@@ -138,6 +138,6 @@ Windows Mixed Reality には、次のようないくつかの組み込みアプ�
 * [アプリ ビュー](../design/app-views.md)
 * [モーション コントローラー](../design/motion-controllers.md)
 * [ハードウェア アクセサリ](hardware-accessories.md)
-* [HoloLens の環境への配慮](../environment-considerations-for-hololens.md)
+* [HoloLens の環境への配慮](/hololens/hololens-environment-considerations)
 * [3D アプリ起動ツールの実装](../distribute/implementing-3d-app-launchers.md)
 * [Windows Mixed Reality ホームで使用するための3D モデルの作成](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)

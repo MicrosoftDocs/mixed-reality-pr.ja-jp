@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Mixed Reality、宝石、ビジョン化、相互作用、設計、視線追跡、ヘッド追跡、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: f9e79f8d600002f63e87316ea588741a21c0d68b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bfbf58ad065f91b27208d36ba63672ee5c28dfdd
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847930"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582330"
 ---
 # <a name="gaze-and-commit"></a>視線入力とコミット
 
@@ -40,7 +40,7 @@ Mixed reality ヘッドセットでは、ユーザーのヘッドの位置と向
     </colgroup>
     <tr>
         <td><strong>入力モデル</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 世代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 世代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
@@ -135,7 +135,7 @@ Mixed reality ヘッドセットでは、ユーザーのヘッドの位置と向
 以下のコミット方法がサポートされています。
 - エアタップハンドジェスチャ (つまり、自分の正面に手を付けて、インデックスの指とつまみをまとめる)
 - _"選択"_ または対象となる音声コマンドの1つを言います。
-- [HoloLens Clicker](https://docs.microsoft.com/hololens/hololens1-clicker)で1つのボタンを押す
+- [HoloLens Clicker](/hololens/hololens1-clicker)で1つのボタンを押す
 - Xbox ゲームパッドで [A] ボタンを押す
 - Xbox adaptive コントローラーで [A] ボタンを押す
 
@@ -253,7 +253,7 @@ Xbox Adaptive Controller は、"A" ボタンを使用して、2番目の入力�
 操作ジェスチャを使用すると、ホログラムがユーザーの手の動きに1:1 を反応させる場合に、ホログラムの移動、サイズ変更、または回転を行うことができます。 このような 1 対 1 の動きの 1 つの用途は、ユーザーが世界中で絵を描いたりペイントしたりできるようにすることです。
 操作のジェスチャの最初のターゲット設定は、視線入力またはポインティングによって行う必要があります。 タップとホールドが開始されると、オブジェクトの操作は手作業で処理されます。これにより、操作中にユーザーを移動させることができます。
 
-### <a name="navigation"></a>［ナビゲーション］
+### <a name="navigation"></a>ナビゲーション
 ナビゲーションのジェスチャは仮想ジョイスティックのように動作し、リング メニューなどの UI ウィジェット内で移動するために使用できます。 タップ アンド ホールドでジェスチャを始めてから、最初に押したところを中心に、正規化された 3D 立方体の中で手を動かします。 X、Y、または Z 軸に沿って、値を-1 から1に移動できます。0は開始点となります。
 ナビゲーションを使用すると、マウスの中央ボタンをクリックしてからマウスを上下に移動して 2 次元の UI をスクロールするのと同様に、速度ベースの連続したスクロールやズームのジェスチャを作成できます。
 
@@ -295,4 +295,3 @@ HoloLens でのジェスチャでは、ジェスチャが検出されたカメ�
 * [手 - ポイントとコミット](point-and-commit.md)
 * [本能的な操作](interaction-fundamentals.md)
 * [音声入力](voice-input.md)
-

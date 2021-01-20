@@ -3,12 +3,12 @@ title: Windows Mixed Reality で SteamVR を使用する
 description: Windows Mixed Reality ヘッドセットと互換性のある Pc を使用するコントローラーで、SteamVR ゲームを設定して再生する方法について説明します。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、ゲーム、SteamVR、蒸気、システム要件
-ms.openlocfilehash: 01fac0f6ce88e473da8a8d9300a4169b37b74078
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: 4a2d3065a12cdc413eae5b7ad164db6e820455ae
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031968"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581789"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Windows Mixed Reality で SteamVR を使用する
 
@@ -163,6 +163,6 @@ Windows Mixed Reality SteamVR エクスペリエンスを向上させるため�
 
 * [Windows Mixed Reality を使用した SteamVR のトラブルシューティング](steamvr-questions.md)
 * [Windows Mixed Reality でのゲームとアプリの使用](using-games-and-apps-in-windows-mixed-reality.md)
-* [Unity での HP コントローラーの使用](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-* [Unreal での HP Controller の使用](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+* [Unity での HP コントローラーの使用](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+* [Unreal での HP Controller の使用](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 * [バグとフィードバックを提出する](filing-feedback.md)

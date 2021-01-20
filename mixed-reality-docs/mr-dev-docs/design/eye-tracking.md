@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 視線追跡、mixed reality、インプット、視線、調整、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、インテント、アクション
-ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d603e2576856fe48080a1a1f06c1814a78381192
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009602"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582323"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2 上の視線追跡
 
@@ -32,7 +32,7 @@ HoloLens 2 では、開発者がユーザーの注目に関する情報を使用
 </colgroup>
 <tr>
      <td><strong>機能</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 世代)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 世代)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
 </tr>
@@ -48,7 +48,7 @@ HoloLens 2 では、開発者がユーザーの注目に関する情報を使用
 
 ## <a name="calibration"></a>調整 
 
-視線追跡を正確に機能させるには、各ユーザーが、一連の holographic ターゲットを確認する必要がある、 [目の追跡ユーザーの調整](../calibration.md) を行う必要があります。 これにより、デバイスはシステムを調整して、より快適で品質の高い閲覧エクスペリエンスをユーザーに提供し、同時に正確な視点を追跡することができます。 
+視線追跡を正確に機能させるには、各ユーザーが、一連の holographic ターゲットを確認する必要がある、 [目の追跡ユーザーの調整](/hololens/hololens-calibration) を行う必要があります。 これにより、デバイスはシステムを調整して、より快適で品質の高い閲覧エクスペリエンスをユーザーに提供し、同時に正確な視点を追跡することができます。 
 
 視線追跡はほとんどのユーザーに対して機能しますが、ユーザーが正常に調整できない場合もまれにあります。 調整は次のようなさまざまな理由で失敗する可能性があります。 
 * ユーザーが以前に調整プロセスをオプトアウトした
@@ -59,13 +59,13 @@ HoloLens 2 では、開発者がユーザーの注目に関する情報を使用
 
 開発者は、視線追跡データが使用できない (正常に調整できない) ユーザーに対して十分なサポートを提供する必要があります。 このページの下部にあるセクションで、フォールバックソリューションに関する推奨事項を提供しています。 
 
-調整の詳細と、スムーズなエクスペリエンスを保証する方法の詳細については、「 [ユーザー調整の視点](../calibration.md) 」ページをご覧ください。
+調整の詳細と、スムーズなエクスペリエンスを保証する方法の詳細については、「 [ユーザー調整の視点](/hololens/hololens-calibration) 」ページをご覧ください。
 
 <br>
 
 ## <a name="available-eye-tracking-data"></a>利用可能なアイトラッキングデータ
 
-目を見つめた入力の特定のユースケースについて詳しく説明する前に、HoloLens 2 [目の追跡 API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) によって提供される機能について簡単に説明します。 開発者は約 _30 FPS (30 Hz)_ で、1つの目を見つめた射線 (宝石の出発点と向き) にアクセスできます。
+目を見つめた入力の特定のユースケースについて詳しく説明する前に、HoloLens 2 [目の追跡 API](/uwp/api/windows.perception.people.eyespose) によって提供される機能について簡単に説明します。 開発者は約 _30 FPS (30 Hz)_ で、1つの目を見つめた射線 (宝石の出発点と向き) にアクセスできます。
 視線追跡データへのアクセス方法の詳細については、「開発者ガイド」を参照してください。 [DirectX での視線](../develop/native/gaze-in-directx.md) と、 [Unity で](https://aka.ms/mrtk-eyes)の視線の使用に関するガイドを参照してください。
 
 予測された視線は、実際のターゲットを中心に約1.5 °の範囲で表示されます (次の図を参照してください)。 わずかな不正確性が想定されているため、開発者はこの下限値の周りにいくらかの余白を計画する必要があります (たとえば、2.0-3.0 度では、より快適なエクスペリエンスが得られる可能性があります)。 以下では、小規模なターゲットの選択に対処する方法について説明します。 視線追跡が正しく機能するためには、各ユーザーが視線追跡ユーザー調整を行う必要があります。 
@@ -135,8 +135,8 @@ Microsoft は、イノベーションを促進することを専門としてい�
 
 まれに、視線追跡データが使用できない場合があります。
 この原因として、最も一般的なものが次のとおりです。
-* システムはユーザーを [調整](../calibration.md)できませんでした。
-* ユーザーが [調整](../calibration.md)をスキップしました。    
+* システムはユーザーを [調整](/hololens/hololens-calibration)できませんでした。
+* ユーザーが [調整](/hololens/hololens-calibration)をスキップしました。   
 * ユーザーは調整されていますが、目の追跡データを使用するためのアクセス許可をアプリに付与しないことに決定しました。    
 * このユーザーには、システムがまだサポートしていない、一意の眼鏡またはいくつかの目の状態があります。 
 * 外部要因は、損なわれるのような信頼性の高い視線の追跡を実現しています。これは、眼鏡の表面に髪があるため、直射日光や occlusions が強いことです。  
@@ -168,12 +168,10 @@ Microsoft は、イノベーションを促進することを専門としてい�
 
 ## <a name="see-also"></a>関連項目
 
-* [調整](../calibration.md)
+* [調整](/hololens/hololens-calibration)
 * [快適性](comfort.md)
 * [目の視線入力ベースの操作](eye-gaze-interaction.md)
 * [DirectX での視線](../develop/native/gaze-in-directx.md)
 * [Unity での視線 (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
 * [視線入力とコミット](gaze-and-commit.md)
 * [音声入力](../out-of-scope/voice-design.md)
-
-

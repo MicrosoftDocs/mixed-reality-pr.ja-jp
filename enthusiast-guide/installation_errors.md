@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、インストール
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56ead28a5809eadef1797507168b68cbaf79953e
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 056caca0b7e562007178929d4a59c2faeaece450
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726063"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581659"
 ---
 # <a name="installation-errors"></a>インストール エラー
 
@@ -31,7 +31,7 @@ Windows Mixed Reality には、少なくとも WDDM 2.2 をサポートするグ
 
 ## <a name="before-we-can-set-up-windows-mixed-reality-your-administrator-will-need-to-enable-it-for-your-organization-learn-more"></a>"Windows Mixed Reality をセットアップする前に、管理者が組織に対してこれを有効にする必要があります。 詳細情報
 
-企業によって管理されているネットワーク上にあり、組織が Windows Server Update Services (WSUS) を使用しているとします。 これらのポリシーと、ダウンロードをブロックする可能性のあるその他のポリシー。 [Windows Mixed Reality を有効](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality#enable)にするには、組織の IT 部門またはシステム管理者に問い合わせてください。
+企業によって管理されているネットワーク上にあり、組織が Windows Server Update Services (WSUS) を使用しているとします。 これらのポリシーと、ダウンロードをブロックする可能性のあるその他のポリシー。 [Windows Mixed Reality を有効](/windows/application-management/manage-windows-mixed-reality#enable)にするには、組織の IT 部門またはシステム管理者に問い合わせてください。
 
 ## <a name="we-couldnt-download-the-mixed-reality-software-or-hang-tight-while-we-do-some-downloading"></a>"Mixed reality ソフトウェアをダウンロードできませんでした" または "ダウンロード中にハングしています"
 

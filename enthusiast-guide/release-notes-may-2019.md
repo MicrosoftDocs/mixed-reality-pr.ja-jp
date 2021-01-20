@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: リリースノート、バージョン、windows 10、ビルド、19h1、os、2019年5月
-ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b8df518b03544bd2473ff67030ed008e1a2bc26e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007122"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581504"
 ---
 # <a name="release-notes---may-2019"></a>リリースノート-2019 年5月
 
@@ -50,7 +50,7 @@ HoloLens (第1世代) は、長期的なサービス (LTS) 状態に入ります
 
 ## <a name="provide-feedback-and-report-issues"></a>フィードバックの提供と問題の報告
 
-Windows 10 PC または HoloLens デバイス [でフィードバックハブアプリ](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) を使用して、フィードバックを提供し、問題を報告します。 フィードバックハブを使用すると、エンジニアが迅速に問題をデバッグして解決できるように、必要な診断情報がすべて含まれるようになります。
+Windows 10 PC または HoloLens デバイス [でフィードバックハブアプリ](/windows/mixed-reality/give-us-feedback) を使用して、フィードバックを提供し、問題を報告します。 フィードバックハブを使用すると、エンジニアが迅速に問題をデバッグして解決できるように、必要な診断情報がすべて含まれるようになります。
 
 >[!NOTE]
 >フィードバックハブがドキュメントフォルダーにアクセスするかどうかを確認するメッセージが表示されることを確認します (メッセージが表示されたら [ **はい]** を選択します)。
@@ -66,8 +66,7 @@ Windows 10 PC または HoloLens デバイス [でフィードバックハブア
 * [リリース ノート - 2016 年 3 月](release-notes-march-2016.md)
 
 ## <a name="see-also"></a>関連項目
-* [イマーシブヘッドセットのサポート (外部リンク)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+* [イマーシブヘッドセットのサポート (外部リンク)](./troubleshooting-windows-mixed-reality.md)
 * [HoloLens サポート (外部リンク)](https://support.microsoft.com/products/hololens)
-* [ツールのインストール](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
+* [ツールのインストール](/windows/mixed-reality/develop/install-the-tools)
 * [フィードバックをお寄せください](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback
-

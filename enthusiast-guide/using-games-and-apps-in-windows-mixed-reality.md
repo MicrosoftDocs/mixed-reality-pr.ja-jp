@@ -3,12 +3,12 @@ title: Windows Mixed Reality でのゲームとアプリの使用
 description: イマーシブおよび2D のアプリとゲームを起動し、デスクトップを表示し、WebVR と SteamVR のコンテンツを体験する方法。
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、アプリ、ゲーム、デスクトップ、SteamVR、WebVR、蒸気
-ms.openlocfilehash: 24d8e0fcf93b40e21484c9b1dddd1adaaf75fb00
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: e277ede1af3e38d7f1525412431d9006092f93b6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725853"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581375"
 ---
 # <a name="using-games-and-apps-in-windows-mixed-reality"></a>Windows Mixed Reality でのゲームとアプリの使用
 
@@ -75,7 +75,7 @@ Windows Mixed Reality は Windows のみです。つまり、mixed reality 向�
 
 Windows mixed Reality for SteamVR では、ユーザーは Windows Mixed Reality のイマーシブヘッドセットで SteamVR エクスペリエンスを実行できます。 SteamVR 用の Windows Mixed Reality をインストールした後、お気に入りの SteamVR アプリケーションをデスクトップまたは蒸気 library から起動し、Windows ヘッドセットで直接再生できます。
 
-作業を開始するには、 [Windows Mixed Reality 用の Steamvr セットアップ手順](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)に従います。
+作業を開始するには、 [Windows Mixed Reality 用の Steamvr セットアップ手順](./using-steamvr-with-windows-mixed-reality.md)に従います。
 
 ## <a name="see-also"></a>関連項目
 

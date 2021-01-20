@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、フィードバック、フィードバックハブ、バグ
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5f2e02c85b443497f539d1bfcbf165214e3ac3c1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 960b26d16e9edd387eb94c469d45b0c669fadc10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007802"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580546"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality のモーション コントローラー
 
@@ -94,7 +94,7 @@ Led が点灯するまで、2秒間、Windows ボタンを押してコントロ�
 |  目的  |  モーション コントローラー  | ゲームパッド | マウス + キーボード |
 | --- | --- | --- | --- |
 | 遠距離 | サムスティックを前方に押し、移動先のコントローラーをポイントします。 サムスティックを離します。 | 左スティックを順方向に押し、移動先を確認します。 サムスティックを離します。 | 右側のボタンを選択して保持し、マウスをポイントします。 ボタンを離します。 |
-| 選択 | コントローラーをポイントし、トリガーをプルするか、タッチパッドを使用します。 | ターゲットを見つめ、を押します。 | マウスをポイントし、左クリックします。 |
+| Select | コントローラーをポイントし、トリガーをプルするか、タッチパッドを使用します。 | ターゲットを見つめ、を押します。 | マウスをポイントし、左クリックします。 |
 | [スタート] メニューを開く | **Windows** ボタンを押します。 | **Xbox** ボタンを押します。 | **Windows ロゴキー** を押します。 |
 | イマーシブアプリを終了する | **Windows** ボタンを押します。 次に、[クイックアクション] メニューの [ **Mixed reality ホーム** ] を選択します。 | **Xbox** ボタンを押します。 次に、[クイックアクション] メニューの [ **Mixed reality ホーム** ] ボタンを選択します。 | * * Windows ロゴキーを押します。 次に、表示される [クイックアクション] メニューの [ **Mixed reality ホーム** ] ボタンを選択します。 |
 | Rotate | サムスティックを左または右に移動します。 | 右スティックを左または右に移動します。 | 使用できません。 |
@@ -151,8 +151,8 @@ Led が点灯するまで、2秒間、Windows ボタンを押してコントロ�
 
 ## <a name="see-also"></a>関連項目
 
-- [Unity の HP コントローラー](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-- [Unreal の HP コントローラー](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [Unity の HP コントローラー](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [Unreal の HP コントローラー](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 - [コミュニティへの質問](https://answers.microsoft.com)
 - [サポートについては、お問い合わせください](https://support.microsoft.com/contactus/)
 - [トラブルシューティング](troubleshooting-windows-mixed-reality.md)

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/10/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、development、プロファイリング、Unreal insights、documentation、ガイド、features、ホログラム、game development、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 20e620f147f2cf5ee05073467c8ce7335340d59d
-ms.sourcegitcommit: 53bde413a174712cb9d3794d02d96363a2d599cd
+ms.openlocfilehash: b41d36679adfb35b5cc3561b8d5e7734654e7fb5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97486377"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580836"
 ---
 # <a name="profiling-with-unreal-insights"></a>Unreal Insights を使用したプロファイリング 
 

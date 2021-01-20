@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、空間マッピング、レンダラー、collider、メッシュ、スキャン、コンポーネント、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: b4c45ba91a3e864c8cd29f3ebc3396d0250948f4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 841cc1fa2a37884545ae12865f9b7cf56338dc07
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009292"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582542"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity の空間マッピング
 
@@ -34,7 +34,7 @@ Unity には、次の方法で開発者に公開される空間マッピング�
     </colgroup>
     <tr>
         <td><strong>機能</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (最初の世代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (最初の世代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
@@ -487,7 +487,7 @@ Dll を理解することで、内部的には、playspace を 8 cm サイズの
 Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次の構成要素を続けることができます。 
 
 > [!div class="nextstepaction"]
-> [テキスト](text-in-unity.md)
+> [[テキスト]](text-in-unity.md)
 
 または、Mixed Reality プラットフォームの機能と API に移動します。
 

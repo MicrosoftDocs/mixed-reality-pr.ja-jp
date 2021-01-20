@@ -6,32 +6,32 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, 同期, 空間アンカー, 転送, マルチプレイヤー, ビュー, シナリオ, チュートリアル, サンプルコード, 転送, ローカルアンカー転送, アンカーエクスポート, アンカーインポート
-ms.openlocfilehash: 5007220f480a3093864502e624737e9707bd3952
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5d539338a25657441ee07acac38a4edd6cd86e58
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009652"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582807"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>DirectX でのローカルアンカー転送
 
-<a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure 空間アンカー</a>を使用できない場合、ローカルアンカー転送では、1つの hololens デバイスが2つ目の hololens デバイスによってインポートされるアンカーをエクスポートできるようにします。
+<a href="/azure/spatial-anchors" target="_blank">Azure 空間アンカー</a>を使用できない場合、ローカルアンカー転送では、1つの hololens デバイスが2つ目の hololens デバイスによってインポートされるアンカーをエクスポートできるようにします。
 
 >[!NOTE]
->ローカルアンカー転送は、 <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure 空間アンカー</a>よりも堅牢なアンカーの再呼び出しを提供します。この方法では、iOS デバイスと Android デバイスはサポートされていません。
+>ローカルアンカー転送は、 <a href="/azure/spatial-anchors" target="_blank">Azure 空間アンカー</a>よりも堅牢なアンカーの再呼び出しを提供します。この方法では、iOS デバイスと Android デバイスはサポートされていません。
 
 >[!NOTE]
 >この記事のコードスニペットでは、 [C++ holographic プロジェクトテンプレート](../develop/native/creating-a-holographic-directx-project.md)で使用される c + c++ 17 準拠の c++/WinRT ではなく、c++/cx の使用方法を現在説明しています。  概念は C++/WinRT プロジェクトに相当しますが、コードを変換する必要があります。
 
 ## <a name="transferring-spatial-anchors"></a>空間アンカーの転送
 
-[SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx)を使用して、Windows Mixed Reality デバイス間で空間アンカーを転送できます。 この API を使用すると、世界中の正確な場所を特定し、そのバンドルを別のデバイスにインポートするために必要なすべてのサポートセンサーデータを使用してアンカーをまとめることができます。 2番目のデバイス上のアプリがアンカーをインポートすると、各アプリは、その共有空間アンカーの座標系を使用してホログラムをレンダリングできます。これは、実際の世界の同じ場所に表示されます。
+[SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)を使用して、Windows Mixed Reality デバイス間で空間アンカーを転送できます。 この API を使用すると、世界中の正確な場所を特定し、そのバンドルを別のデバイスにインポートするために必要なすべてのサポートセンサーデータを使用してアンカーをまとめることができます。 2番目のデバイス上のアプリがアンカーをインポートすると、各アプリは、その共有空間アンカーの座標系を使用してホログラムをレンダリングできます。これは、実際の世界の同じ場所に表示されます。
 
 空間アンカーは異なる種類のデバイス間では転送できないことに注意してください。たとえば、1つの HoloLens 空間アンカーは、イマーシブヘッドセットを使用して指定することはできません。  転送されたアンカーは、iOS または Android デバイスとも互換性がありません。
 
 ## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>SpatialPerception 機能を使用するようにアプリを設定する
 
-[SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx)を使用するには、アプリに SpatialPerception 機能を使用するためのアクセス許可が付与されている必要があります。 これは、空間アンカーを転送する場合に必要です。これは、そのアンカーの近くで、時間の経過と共に収集されるセンサーイメージを共有することです。
+[SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)を使用するには、アプリに SpatialPerception 機能を使用するためのアクセス許可が付与されている必要があります。 これは、空間アンカーを転送する場合に必要です。これは、そのアンカーの近くで、時間の経過と共に収集されるセンサーイメージを共有することです。
 
 この機能をアプリの package.appxmanifest ファイルで宣言します。 次に例を示します。
 
@@ -53,11 +53,11 @@ ms.locfileid: "98009652"
     >
 ```
 
-**注:** SpatialAnchor export/import Api にアクセスするには、アプリが実行時に機能を要求する必要があります。 次の例の [Requestaccessasync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.requestaccessasync.aspx) を参照してください。
+**注:** SpatialAnchor export/import Api にアクセスするには、アプリが実行時に機能を要求する必要があります。 次の例の [Requestaccessasync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) を参照してください。
 
 ## <a name="serialize-anchor-data-by-exporting-it-with-the-spatialanchortransfermanager"></a>SpatialAnchorTransferManager を使用してエクスポートすることによってアンカーデータをシリアル化する
 
-ヘルパー関数は、 [SpatialAnchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) データをエクスポート (シリアル化) するためのコードサンプルに含まれています。 この export API は、文字列をアンカーに関連付けるキーと値のペアのコレクション内のすべてのアンカーをシリアル化します。
+ヘルパー関数は、 [SpatialAnchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) データをエクスポート (シリアル化) するためのコードサンプルに含まれています。 この export API は、文字列をアンカーに関連付けるキーと値のペアのコレクション内のすべてのアンカーをシリアル化します。
 
 ```
 // ExportAnchorDataAsync: Exports a byte buffer containing all of the anchors in the given collection.
@@ -274,7 +274,7 @@ return create_task(SpatialAnchorTransferManager::RequestAccessAsync()).then(
 
 ## <a name="special-considerations"></a>特別な考慮事項
 
-[TryExportAnchorsAsync](https://msdn.microsoft.com/library/windows/apps/mt592763.aspx) API を使用すると、複数の[SpatialAnchors](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx)を同じ不透明なバイナリ blob にエクスポートできます。 ただし、単一の SpatialAnchor または複数の SpatialAnchors が1回の呼び出しでエクスポートされるかどうかによって、blob に含まれるデータには微妙な違いがあります。
+[TryExportAnchorsAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) API を使用すると、複数の[SpatialAnchors](/uwp/api/Windows.Perception.Spatial.SpatialAnchor)を同じ不透明なバイナリ blob にエクスポートできます。 ただし、単一の SpatialAnchor または複数の SpatialAnchors が1回の呼び出しでエクスポートされるかどうかによって、blob に含まれるデータには微妙な違いがあります。
 
 ### <a name="export-of-a-single-spatialanchor"></a>1つの SpatialAnchor のエクスポート
 
@@ -672,9 +672,9 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 }
 ```
 
-以上で作業は終了です。 これで、ネットワーク経由で受信したアンカーを特定するための十分な情報が得られます。 ここでも、クライアントがアンカーを正常に見つけるために十分な数のビジュアル追跡データが必要であることに注意してください。すぐに機能しない場合は、しばらく試してみてください。 それでもうまくいかない場合は、サーバーがより多くのアンカーを送信するようにし、ネットワーク通信を使用してクライアントに対して機能するものに同意してください。 これを試すには、HolographicSpatialAnchorTransferSample をダウンロードし、クライアントとサーバーの Ip アドレスを構成して、クライアントとサーバーの HoloLens デバイスに展開します。
+これで完了です。 これで、ネットワーク経由で受信したアンカーを特定するための十分な情報が得られます。 ここでも、クライアントがアンカーを正常に見つけるために十分な数のビジュアル追跡データが必要であることに注意してください。すぐに機能しない場合は、しばらく試してみてください。 それでもうまくいかない場合は、サーバーがより多くのアンカーを送信するようにし、ネットワーク通信を使用してクライアントに対して機能するものに同意してください。 これを試すには、HolographicSpatialAnchorTransferSample をダウンロードし、クライアントとサーバーの Ip アドレスを構成して、クライアントとサーバーの HoloLens デバイスに展開します。
 
 ## <a name="see-also"></a>関連項目
-* [並列パターン ライブラリ (PPL)](https://msdn.microsoft.com/library/dd492418.aspx)
-* [Windows. ネットワーク. StreamSocket](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocket.aspx)
-* [Windows. ネットワーク. StreamSocketListener](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocketlistener.aspx)
+* [並列パターン ライブラリ (PPL)](/cpp/parallel/concrt/parallel-patterns-library-ppl)
+* [Windows. ネットワーク. StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
+* [Windows. ネットワーク. StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)

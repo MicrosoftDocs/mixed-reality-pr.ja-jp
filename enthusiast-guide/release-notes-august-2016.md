@@ -6,30 +6,30 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens、リリースノート、os、プラットフォーム、機能、商用スイート
-ms.openlocfilehash: 9d65d0a2454b5eb076e7c350a6d26e11660af9a5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c70da10043cfbcfa88105635f2467c8feaadbedf
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009262"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581639"
 ---
 # <a name="release-notes---august-2016"></a>リリース ノート - 2016 年 8 月
 
-HoloLens チームは、作業の優先順位を決定するために、Windows Insider プログラムの開発者からのフィードバックをリッスンしています。 フィードバックハブ、[開発者フォーラム](https://forums.hololens.com)、 [ @HoloLens および Twitter](https://twitter.com/hololens)を通じてフィードバックを引き続き[お](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)寄せください。 Windows 10 が記念日の更新を採用しているため、HoloLens チームは holographic エクスペリエンスにさらなる改善を提供しています。 この更新プログラムでは、Microsoft HoloLens 商用 Suite で利用できる、ビジネスによって要求された機能の主な修正、改善、導入に焦点を絞っています。
+HoloLens チームは、作業の優先順位を決定するために、Windows Insider プログラムの開発者からのフィードバックをリッスンしています。 フィードバックハブ、[開発者フォーラム](https://forums.hololens.com)、 [ @HoloLens および Twitter](https://twitter.com/hololens)を通じてフィードバックを引き続き[お](/windows/mixed-reality/give-us-feedback)寄せください。 Windows 10 が記念日の更新を採用しているため、HoloLens チームは holographic エクスペリエンスにさらなる改善を提供しています。 この更新プログラムでは、Microsoft HoloLens 商用 Suite で利用できる、ビジネスによって要求された機能の主な修正、改善、導入に焦点を絞っています。
 
 **最新リリース:** Windows Holographic 8 月2016更新プログラム (**10.0.14393.0**、Windows 10 記念日リリース)
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
-[現在のリリースに更新](https://docs.microsoft.com/windows/mixed-reality/updating-hololens)するには、*設定* アプリを開き、[ *update & Security*] にアクセスして、[*更新プログラムの確認*] ボタンを選択します。
+[現在のリリースに更新](/windows/mixed-reality/updating-hololens)するには、*設定* アプリを開き、[ *update & Security*] にアクセスして、[*更新プログラムの確認*] ボタンを選択します。
 
 ## <a name="new-features"></a>新機能
 
-**プロセスデバッグにアタッチ** HoloLens では、プロセス間のデバッグがサポートされるようになりました。 Visual Studio 2015 Update 3 を使用して、HoloLens で実行中のアプリに接続し、 [デバッグを開始](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio#debugging-an-installed-or-running-app)することができます。 これは、Visual Studio プロジェクトから配置する必要がない場合に機能します。
+**プロセスデバッグにアタッチ** HoloLens では、プロセス間のデバッグがサポートされるようになりました。 Visual Studio 2015 Update 3 を使用して、HoloLens で実行中のアプリに接続し、 [デバッグを開始](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio#debugging-an-installed-or-running-app)することができます。 これは、Visual Studio プロジェクトから配置する必要がない場合に機能します。
 
 **HoloLens エミュレーターを更新しました** また、更新されたバージョンの HoloLens エミュレーターもリリースしました。
 
-**ゲームパッドのサポート** HoloLens で Bluetooth ゲームパッドを使用できるようになりました。 新しくリリースされた Xbox ワイヤレスコントローラーは、Bluetooth 機能を搭載しており、お気に入りのゲーム用ゲームやアプリの再生に使用できます。 Xbox ワイヤレスコントローラーを HoloLens に接続する前に、 [コントローラーの更新プログラム](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) を適用する必要があります。 Xbox ワイヤレスコントローラーは、XInput api と[](https://msdn.microsoft.com/library/windows/desktop/hh405053(v=vs.85).aspx) api によってサポートされてい[ます。](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) その他の Bluetooth コントローラーモデルには、 [Windows のゲーム](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) API を介してアクセスできます。
+**ゲームパッドのサポート** HoloLens で Bluetooth ゲームパッドを使用できるようになりました。 新しくリリースされた Xbox ワイヤレスコントローラーは、Bluetooth 機能を搭載しており、お気に入りのゲーム用ゲームやアプリの再生に使用できます。 Xbox ワイヤレスコントローラーを HoloLens に接続する前に、 [コントローラーの更新プログラム](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) を適用する必要があります。 Xbox ワイヤレスコントローラーは、XInput api と[](/windows/win32/xinput/xinput-game-controller-apis-portal) api によってサポートされてい[ます。](/uwp/api/Windows.Gaming.Input) その他の Bluetooth コントローラーモデルには、 [Windows のゲーム](/uwp/api/Windows.Gaming.Input) API を介してアクセスできます。
 
 ## <a name="improvements-and-fixes"></a>機能強化と修正
 
@@ -53,7 +53,7 @@ Microsoft では、Windows 10 の記念日更新プログラムと同期して�
 
 ## <a name="introducing-microsoft-hololens-commercial-suite"></a>Microsoft HoloLens 商用スイートの概要
 
-Microsoft HoloLens 商用 Suite は、エンタープライズ展開の準備ができています。 初期のビジネスパートナーから、高度に要求された [商用機能](https://docs.microsoft.com/windows/mixed-reality/commercial-features) がいくつか追加されました。
+Microsoft HoloLens 商用 Suite は、エンタープライズ展開の準備ができています。 初期のビジネスパートナーから、高度に要求された [商用機能](/windows/mixed-reality/commercial-features) がいくつか追加されました。
 
 Microsoft HoloLens 商用スイートを購入するには、ローカルの Microsoft アカウントマネージャーに問い合わせてください。
 
@@ -72,13 +72,13 @@ Microsoft HoloLens 商用スイートを購入するには、ローカルの Mic
 
 <table>
 <tr>
-<th>機能</th><th>Development Edition</th><th>商用スイート</th>
+<th>特徴</th><th>Development Edition</th><th>商用スイート</th>
 </tr><tr>
 <td>デバイスの暗号化 (Bitlocker)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>仮想プライベート ネットワーク (VPN)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#kiosk-mode">キオスクモード</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#kiosk-mode">キオスクモード</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> 管理と展開</th>
 </tr><tr>
@@ -90,7 +90,7 @@ Microsoft HoloLens 商用スイートを購入するには、ローカルの Mic
 </tr><tr>
 <td>Microsoft Store (コンシューマー)</td><td style="text-align: center;">コンシューマー</td><td style="text-align: center;">MDM を使用したフィルター処理</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps">ビジネスストアポータル</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/microsoft-store/working-with-line-of-business-apps">ビジネスストアポータル</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> セキュリティと ID</th>
 </tr><tr>
@@ -100,13 +100,13 @@ Microsoft HoloLens 商用スイートを購入するには、ローカルの Mic
 </tr><tr>
 <td>PIN のロック解除を含む次世代の資格情報</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview">セキュア ブート</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td><a href="/windows-hardware/design/device-experiences/oem-secure-boot">セキュア ブート</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> サービスとサポート</th>
 </tr><tr>
 <td>自動的にシステムを更新する</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/windows/deployment/update/waas-manage-updates-wufb">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>Long Term Servicing Branch</td><td></td><td style="text-align: center;">✔️</td>
 </tr>
@@ -117,7 +117,7 @@ Microsoft HoloLens 商用スイートを購入するには、ローカルの Mic
 * [リリース ノート - 2016 年 3 月](release-notes-march-2016.md)
 
 ## <a name="see-also"></a>関連項目
-* [HoloLens の既知の問題](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [Commercial 機能](https://docs.microsoft.com/windows/mixed-reality/commercial-features)
-* [ツールのインストール](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [HoloLens エミュレーターを使用する](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)
+* [HoloLens の既知の問題](/windows/mixed-reality/hololens-known-issues)
+* [Commercial 機能](/windows/mixed-reality/commercial-features)
+* [ツールのインストール](/windows/mixed-reality/develop/install-the-tools)
+* [HoloLens エミュレーターを使用する](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)

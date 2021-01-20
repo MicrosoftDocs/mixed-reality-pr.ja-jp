@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、前払い、研究、購入、購入前
 appliesto:
 - Windows 10
-ms.openlocfilehash: e9b9254166b3ac4c188531d3651407ecfd853460
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 1f7eaa59a18598d1df2ecef611a9ea7d58e6a36a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725513"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580295"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>よく寄せられる質問を購入する前に
 
@@ -63,7 +63,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 * **外部での追跡** Oculus、Naopak、その他は、外部での追跡を使用します。  外部の追跡では、ヘッドセットが1つ以上の外部デバイスによって追跡されます。 カメラは、環境に合わせてこれらの外部デバイスに組み込まれており、環境に基づいてヘッドセットの位置を決定するために使用されます。
 
-詳細については [、](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)「」を参照してください。
+詳細については [、](./tracking-system.md)「」を参照してください。
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>カメラの視界によるゲームプレイに影響する、モーションコントローラーの内部での追跡が可能
 
@@ -82,7 +82,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 <tr>
 <th style="width:25%"> Headset </th>
 <th style="width:15%"> 解決方法 </th>
-<th style="width:10%"> ディスプレイ </th>
+<th style="width:10%"> 表示 </th>
 <th style="width:10%"> 更新間隔 </th>
 <th style="width:10%"> 視界 </th>
 <th style="width:15%"> オーディオ </th>
@@ -368,7 +368,7 @@ Mixed Reality の詳細については、こちらを参照してください。
 
 **クイック回答:** はい。 Windows Mixed Reality は、十分なスペースがない場合でも機能します。 この設定は、セットアップ中に "デスクスケール" エクスペリエンスを選択することによって行うことができます。
 
-## <a name="content"></a>コンテンツ
+## <a name="content"></a>Content
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Windows Mixed Reality ではどのようなゲームとアプリが実行されますか。
 

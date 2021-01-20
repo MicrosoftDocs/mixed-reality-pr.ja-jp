@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 05/21/2018
 ms.topic: article
 keywords: リリースノート、バージョン、windows 10、ビルド、rs4、os
-ms.openlocfilehash: 8590cf8f813f22fb4f91fef0862b1e2e4ad43b1a
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: cdaed2b653faeac81b539422aba6f6e0c7f6c064
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009242"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581625"
 ---
 # <a name="release-notes---april-2018"></a>リリースノート-2018 年4月
 
@@ -31,12 +31,12 @@ ms.locfileid: "98009242"
 
 Windows 10 の2018年4月の更新プログラムには、デスクトップ PC で Windows Mixed Reality イマーシブ (VR) ヘッドセットを使用するための多くの機能強化が含まれています。次に例を示します。 
 
-* **Mixed reality ホームの新しい環境** -[スタート] メニューの [ **場所** ] を選択して、崖家と new Skyloft 環境のどちらかを選択します。 また、作成したカスタム環境を使用できるようにするための [試験的な機能](https://docs.microsoft.com/windows/mixed-reality/design/add-custom-home-environments) も追加されました。
+* **Mixed reality ホームの新しい環境** -[スタート] メニューの [ **場所** ] を選択して、崖家と new Skyloft 環境のどちらかを選択します。 また、作成したカスタム環境を使用できるようにするための [試験的な機能](/windows/mixed-reality/design/add-custom-home-environments) も追加されました。
 * **Mixed reality キャプチャにすばやくアクセスでき** ます。環境やアプリ間でモーションコントローラーを使用して mixed reality の写真を撮影しますが、DRM で保護されたコンテンツをキャプチャすることはありません。 Windows ボタンを押したまま、トリガーをタップします。 .
 * **コンテンツの起動とサイズ変更のための新しいオプション** -アプリを [スタート] メニューから起動すると、その前に自動的に配置されるようになりました。 また、ウィンドウの端と隅をドラッグして、2D アプリのサイズを変更することもできます。
 * **"テレポート" 音声コマンドを使用してコンテンツに簡単に移動** できます。 Windows Mixed Reality ホームのコンテンツの前にすばやくテレポートします。
-* **混合現実ホーム用のアニメーション化された [3d アプリランチャー](https://docs.microsoft.com/windows/mixed-reality/distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home#animation-guidelines)と [装飾3d オブジェクト](https://docs.microsoft.com/windows/mixed-reality/distribute/enable-placement-of-3d-models-in-the-home)**。 3D アプリランチャーにアニメーションを追加できるようになりました。ユーザーは、web ページまたは2D アプリから Windows Mixed Reality ホームに装飾的な3D モデルを配置できます。
-* **[Steamvr の Windows Mixed reality の機能強化](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality)** -steamvr 用の Windows mixed reality は、新しいアップグレードによって "早期アクセス" から出てきました。たとえば、モーションコントローラーを使用する場合の haptic フィードバック、パフォーマンスと信頼性の向上、SteamVR のモーションコントローラーの外観の向上などがあります。
+* **混合現実ホーム用のアニメーション化された [3d アプリランチャー](/windows/mixed-reality/distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home#animation-guidelines)と [装飾3d オブジェクト](/windows/mixed-reality/distribute/enable-placement-of-3d-models-in-the-home)**。 3D アプリランチャーにアニメーションを追加できるようになりました。ユーザーは、web ページまたは2D アプリから Windows Mixed Reality ホームに装飾的な3D モデルを配置できます。
+* **[Steamvr の Windows Mixed reality の機能強化](/windows/mixed-reality/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality)** -steamvr 用の Windows mixed reality は、新しいアップグレードによって "早期アクセス" から出てきました。たとえば、モーションコントローラーを使用する場合の haptic フィードバック、パフォーマンスと信頼性の向上、SteamVR のモーションコントローラーの外観の向上などがあります。
 * **その他の機能強化** -更新された自動パフォーマンス設定は、より最適化されたエクスペリエンスを提供します (この設定は [手動で上書き](#visual-quality) できます)。 セットアップで、USB 3.0 コントローラーおよびグラフィックスカードとの一般的な互換性の問題に関する詳細情報が提供されるようになりました。
 
 ## <a name="new-features-for-hololens"></a>HoloLens の新機能
@@ -47,10 +47,10 @@ Windows 10 の2018年4月の更新プログラムには、デスクトップ PC 
 
 <table>
   <tr>
-    <th>機能</th><th>詳細</th><th>Instructions</th>
+    <th>特徴量</th><th>詳細</th><th>Instructions</th>
   </tr>
   <tr>
-    <td>起動時の2D および3D コンテンツの自動配置</td><td>2D アプリランチャーまたは 2D UWP アプリが、起動時にユーザーによる配置を要求する代わりに、最適なサイズと距離で世界中に自動的に配置されます。 <a href="https://docs.microsoft.com/windows/mixed-reality/design/app-views">イマーシブアプリ</a>で<a href="https://docs.microsoft.com/windows/mixed-reality/distribute/3d-app-launcher-design-guidance">3d アプリランチャー</a>ではなく2d アプリランチャーが使用されている場合、イマーシブアプリは RS1 の場合と同じように2d アプリランチャーから自動的に起動します。<br><br>[スタート] メニューの3D アプリランチャーも、世界中に自動的に配置されます。 アプリを自動的に起動する代わりに、ユーザーはランチャーをクリックして、イマーシブアプリを起動することができます。 ホログラムアプリから開かれた3D コンテンツと Edge から、世界中の自動配置されます。</td><td>[スタート] メニューからアプリを開くときに、そのアプリを世界中に配置するように求められることはありません。<br><br>2D アプリ/<a href="https://docs.microsoft.com/windows/mixed-reality/distribute/3d-app-launcher-design-guidance">3d アプリランチャー</a> の配置が最適でない場合は、以下に説明する新しい流動的なアプリ操作を使用して簡単に移動できます。 また、2D アプリランチャー/3D コンテンツの位置を変更するには、「移動」と入力してから、宝石を使用してコンテンツの位置を変更します。</td>
+    <td>起動時の2D および3D コンテンツの自動配置</td><td>2D アプリランチャーまたは 2D UWP アプリが、起動時にユーザーによる配置を要求する代わりに、最適なサイズと距離で世界中に自動的に配置されます。 <a href="/windows/mixed-reality/design/app-views">イマーシブアプリ</a>で<a href="/windows/mixed-reality/distribute/3d-app-launcher-design-guidance">3d アプリランチャー</a>ではなく2d アプリランチャーが使用されている場合、イマーシブアプリは RS1 の場合と同じように2d アプリランチャーから自動的に起動します。<br><br>[スタート] メニューの3D アプリランチャーも、世界中に自動的に配置されます。 アプリを自動的に起動する代わりに、ユーザーはランチャーをクリックして、イマーシブアプリを起動することができます。 ホログラムアプリから開かれた3D コンテンツと Edge から、世界中の自動配置されます。</td><td>[スタート] メニューからアプリを開くときに、そのアプリを世界中に配置するように求められることはありません。<br><br>2D アプリ/<a href="/windows/mixed-reality/distribute/3d-app-launcher-design-guidance">3d アプリランチャー</a> の配置が最適でない場合は、以下に説明する新しい流動的なアプリ操作を使用して簡単に移動できます。 また、2D アプリランチャー/3D コンテンツの位置を変更するには、「移動」と入力してから、宝石を使用してコンテンツの位置を変更します。</td>
   </tr>
   <tr>
     <td>流動的アプリの操作</td><td>"調整" モードを入力しなくても、2D および3D コンテンツの移動、サイズ変更、および回転を行うことができます。</td><td>2D UWP アプリまたは2D アプリランチャーを移動するには、単にアプリバーを見つめ、tap + hold + ドラッグジェスチャを使用します。 3D コンテンツを移動するには、オブジェクト上の任意の場所に移動し、tap + hold + drag を使用します。<br><br>2D コンテンツのサイズを変更するには、そのコーナーを見つめます。 見つめカーソルはサイズ変更カーソルに変わります。その後、[+ 押し + ドラッグ] をタップしてサイズを変更できます。 また、端を見てドラッグすることで、2D コンテンツを縦または横に並べて表示することもできます。<br><br>3D コンテンツのサイズを変更するには、両手でジェスチャフレームを持ち上げ、準備完了の位置に指を置きます。 カーソルが2つの両手で状態になることがわかります。 タップして、両方の手でジェスチャを押します。 手を加えたり、遠くに移動したりすると、オブジェクトのサイズが変わります。 前後を移動すると、オブジェクトが回転します。 この方法で、2D コンテンツのサイズを変更したり、回転させたりすることもできます。</td>
@@ -59,7 +59,7 @@ Windows 10 の2018年4月の更新プログラムには、デスクトップ PC 
     <td>リフローによる2D アプリの水平方向のサイズ変更</td><td>2D UWP アプリの縦横比を広げることで、アプリのコンテンツをさらに表示します。 たとえば、プレビューウィンドウを表示するのに十分な幅のメールアプリを作成します。</td><td>2D UWP アプリの左端または右端を見つめてサイズ変更カーソルを表示し、tap + hold + ドラッグジェスチャを使用してサイズを変更します。</td>
   </tr>
   <tr>
-    <td>拡張された音声コマンドのサポート</td><td>音声を使用するだけで、より多くのことができます。</td><td>次の音声コマンドを試してください。<ul><li>[スタート画面に移動]-[スタート] メニューを表示するか、 <a href="https://docs.microsoft.com/windows/mixed-reality/design/app-views">イマーシブアプリ</a>を終了します。</li><li>[移動]: オブジェクトを移動できます。</li></ul></td>
+    <td>拡張された音声コマンドのサポート</td><td>音声を使用するだけで、より多くのことができます。</td><td>次の音声コマンドを試してください。<ul><li>[スタート画面に移動]-[スタート] メニューを表示するか、 <a href="/windows/mixed-reality/design/app-views">イマーシブアプリ</a>を終了します。</li><li>[移動]: オブジェクトを移動できます。</li></ul></td>
   </tr>
   <tr>
     <td>ホログラムと Photos アプリが更新されました</td><td>新しいホログラムでホログラムアプリを更新しました。 写真アプリを更新しました。</td><td>ホログラムと Photos アプリの外観が更新されていることがわかります。 ホログラムアプリには、テキストを簡単に作成できるように、新しいホログラムとラベルメーカーがいくつか含まれています。</td>
@@ -92,24 +92,24 @@ Windows 10 の2018年4月の更新プログラムには、デスクトップ PC 
 
 <table>
   <tr>
-    <th>機能</th><th>詳細</th><th>Instructions</th>
+    <th>特徴量</th><th>詳細</th><th>Instructions</th>
   </tr>
   <tr>
     <td>空間マッピングの機能強化</td><td>品質、簡素化、およびパフォーマンスの向上。</td><td>空間マッピングメッシュはクリーナーとして表示されます。同じレベルの詳細を表すために必要な三角形が減少します。 シーンでは、三角形の密度が変化することがあります。</td>
   </tr>
   <tr>
-    <td>深度バッファーに基づくフォーカスポイントの自動選択</td><td>Windows に深度バッファーを送信すると、HoloLens は、ホログラムの安定性を最適化するためにフォーカスポイントを自動的に選択できます。</td><td>Unity で、[ <b>Edit > Project Settings] > Player > ユニバーサル Windows プラットフォーム tab > XR settings</b>]、[ <b>WINDOWS Mixed Reality SDK</b> ] の順に展開し、[ <b>深度バッファー共有を有効に</b>する] チェックボックスをオンにします。 新しいプロジェクトの場合、このチェックボックスは自動的にオンになります。<br><br>DirectX アプリの場合は、各フレームの<b>HolographicRenderingParameters</b>に<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer">CommitDirect3D11DepthBuffer</a>メソッドを呼び出して、深度バッファーを Windows に提供するようにします。
+    <td>深度バッファーに基づくフォーカスポイントの自動選択</td><td>Windows に深度バッファーを送信すると、HoloLens は、ホログラムの安定性を最適化するためにフォーカスポイントを自動的に選択できます。</td><td>Unity で、[ <b>Edit > Project Settings] > Player > ユニバーサル Windows プラットフォーム tab > XR settings</b>]、[ <b>WINDOWS Mixed Reality SDK</b> ] の順に展開し、[ <b>深度バッファー共有を有効に</b>する] チェックボックスをオンにします。 新しいプロジェクトの場合、このチェックボックスは自動的にオンになります。<br><br>DirectX アプリの場合は、各フレームの<b>HolographicRenderingParameters</b>に<a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer">CommitDirect3D11DepthBuffer</a>メソッドを呼び出して、深度バッファーを Windows に提供するようにします。
 </td>
   </tr>
   <tr>
-    <td>Holographic reprojection モード</td><td>HoloLens で位置指定の再プロジェクションを無効にして、360度のビデオなど、本体でロックされているコンテンツのホログラムの安定性を向上させることができるようになりました。</td><td>Unity では、 <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html">HolographicSettings を ReprojectionMode</a> に設定して、ビュー内のすべてのコンテンツが固定本文でロックされている場合に <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html">OrientationOnly</a> に設定します。<br><br>DirectX アプリの場合は、HolographicCameraRenderingParameters を<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicreprojectionmode">HolographicReprojectionMode</a>に設定します。これは、ビューのすべてのコンテンツが固定本文でロックされている場合に<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.reprojectionmode">ReprojectionMode</a>になります。</td>
+    <td>Holographic reprojection モード</td><td>HoloLens で位置指定の再プロジェクションを無効にして、360度のビデオなど、本体でロックされているコンテンツのホログラムの安定性を向上させることができるようになりました。</td><td>Unity では、 <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html">HolographicSettings を ReprojectionMode</a> に設定して、ビュー内のすべてのコンテンツが固定本文でロックされている場合に <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html">OrientationOnly</a> に設定します。<br><br>DirectX アプリの場合は、HolographicCameraRenderingParameters を<a href="/uwp/api/windows.graphics.holographic.holographicreprojectionmode">HolographicReprojectionMode</a>に設定します。これは、ビューのすべてのコンテンツが固定本文でロックされている場合に<a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.reprojectionmode">ReprojectionMode</a>になります。</td>
   </tr>
   <tr>
-    <td>アプリの調整 Api</td><td>Windows Api では、デバイスのディスプレイが透過的 (HoloLens) であるか不透明な (イマーシブヘッドセット) であるか、holographic シェルに UWP アプリの2D ビューが表示されているかどうかなど、アプリが実行されている場所の詳細がわかります。</td><td>Unity は、このビルドよりも前に動作するように HolographicSettings を手動で公開していま <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.IsDisplayOpaque.html">し</a> た。<br><br>DirectX アプリでは、HolographicDisplay () のような既存の Api にアクセスできるようになりました <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.isopaque">。</a> HoloLens でも IsOpaque で <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview.iscurrentviewpresentedonholographicdisplay">HolographicApplicationPreview、IsCurrentViewPresentedOnHolographicDisplay</a> 。
+    <td>アプリの調整 Api</td><td>Windows Api では、デバイスのディスプレイが透過的 (HoloLens) であるか不透明な (イマーシブヘッドセット) であるか、holographic シェルに UWP アプリの2D ビューが表示されているかどうかなど、アプリが実行されている場所の詳細がわかります。</td><td>Unity は、このビルドよりも前に動作するように HolographicSettings を手動で公開していま <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.IsDisplayOpaque.html">し</a> た。<br><br>DirectX アプリでは、HolographicDisplay () のような既存の Api にアクセスできるようになりました <a href="/uwp/api/windows.graphics.holographic.holographicdisplay.isopaque">。</a> HoloLens でも IsOpaque で <a href="/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview.iscurrentviewpresentedonholographicdisplay">HolographicApplicationPreview、IsCurrentViewPresentedOnHolographicDisplay</a> 。
 </td>
   </tr>
   <tr>
-      <td>リサーチモード</td><td>を使用すると、開発者は、次のようなコンピュータービジョンとロボット機構のフィールドで新しいアイデアをテストするために、学術および産業アプリケーションを構築するときに、主要な HoloLens センサーにアクセスできます。<ul><li>4つの環境トラッキングカメラ</li><li>深度マッピングカメラデータの2つのバージョン</li><li>赤外線反射反射ストリームの2つのバージョン</li></ul></td><td><a href="https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode">リサーチモードのドキュメント</a><br><a href="https://github.com/Microsoft/HoloLensForCV">リサーチモードのサンプルアプリ</a></td>
+      <td>リサーチモード</td><td>を使用すると、開発者は、次のようなコンピュータービジョンとロボット機構のフィールドで新しいアイデアをテストするために、学術および産業アプリケーションを構築するときに、主要な HoloLens センサーにアクセスできます。<ul><li>4つの環境トラッキングカメラ</li><li>深度マッピングカメラデータの2つのバージョン</li><li>赤外線反射反射ストリームの2つのバージョン</li></ul></td><td><a href="/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode">リサーチモードのドキュメント</a><br><a href="https://github.com/Microsoft/HoloLensForCV">リサーチモードのサンプルアプリ</a></td>
   </tr>
 </table>
 
@@ -117,10 +117,10 @@ Windows 10 の2018年4月の更新プログラムには、デスクトップ PC 
 
 <table>
   <tr>
-    <th>機能</th><th>詳細</th><th>Instructions</th>
+    <th>特徴量</th><th>詳細</th><th>Instructions</th>
   </tr>
   <tr>
-    <td>1つのデバイスで複数の Azure Active Directory ユーザーアカウントを使用する</td><td>HoloLens を複数の Azure AD ユーザーと共有し、それぞれにユーザー設定とデバイス上のユーザーデータを設定します。</td><td><a href="https://docs.microsoft.com/hololens/hololens-multiple-users">IT Pro センター: HoloLens を複数の担当者と共有する</a></td>
+    <td>1つのデバイスで複数の Azure Active Directory ユーザーアカウントを使用する</td><td>HoloLens を複数の Azure AD ユーザーと共有し、それぞれにユーザー設定とデバイス上のユーザーデータを設定します。</td><td><a href="/hololens/hololens-multiple-users">IT Pro センター: HoloLens を複数の担当者と共有する</a></td>
   </tr>
   <tr>
     <td>サインイン時に Wi-Fi ネットワークを変更する</td><td>サインイン前にネットワークを Wi-Fi 変更して、別のユーザーが自分の Azure AD ユーザーアカウントを使用して初めてサインインできるようにします。これにより、ユーザーはさまざまな場所やジョブサイトでデバイスを共有できるようになります。</td><td>サインイン画面で、[パスワード] フィールドの下にあるネットワークアイコンを使用して、ネットワークに接続できます。 これは、デバイスに初めてサインインするときに役立ちます。</td>
@@ -137,31 +137,31 @@ Windows 10 の2018年4月の更新プログラムには、デスクトップ PC 
 
 <table>
   <tr>
-    <th>機能</th><th>詳細</th><th>Instructions</th>
+    <th>特徴量</th><th>詳細</th><th>Instructions</th>
   </tr>
   <tr>
-    <td>新しい "Windows Holographic for Business" OS 名</td><td>HoloLens で商用スイート機能が有効になっている場合、エディションのアップグレードライセンスアプリケーションの混乱を減らすためにエディション名をクリアします。</td><td>デバイス上の Windows Holographic のエディションは、[ <b>設定 > システム > につい</b>て] で確認できます。 "Windows Holographic for Business" は、エディションの更新プログラムが適用されて市販のスイート機能を有効にした場合に表示されます。 <a href="https://docs.microsoft.com/hololens/hololens-upgrade-enterprise">Windows Holographic For Business の機能のロックを解除</a>する方法について説明します。</td>
+    <td>新しい "Windows Holographic for Business" OS 名</td><td>HoloLens で商用スイート機能が有効になっている場合、エディションのアップグレードライセンスアプリケーションの混乱を減らすためにエディション名をクリアします。</td><td>デバイス上の Windows Holographic のエディションは、[ <b>設定 > システム > につい</b>て] で確認できます。 "Windows Holographic for Business" は、エディションの更新プログラムが適用されて市販のスイート機能を有効にした場合に表示されます。 <a href="/hololens/hololens-upgrade-enterprise">Windows Holographic For Business の機能のロックを解除</a>する方法について説明します。</td>
   </tr>
   <tr>
-  <td>Windows 構成デザイナー (WCD)</td><td>プロビジョニングパッケージを作成および編集して、更新された WCD アプリを使用して HoloLens を構成します。 エディションの更新、構成可能な OOBE、地域/タイムゾーン、一括 Azure AD トークン、ネットワーク、および developer CSP 用の単純な HoloLens ウィザード。 割り当てられたアクセスおよびアカウント管理 Csp を含む、HoloLens がサポートするオプションにフィルターが適用された詳細エディター。</td><td><a href="https://docs.microsoft.com/hololens/hololens-provisioning">IT Pro センター: プロビジョニングパッケージを使用して HoloLens を構成する</a></td>
+  <td>Windows 構成デザイナー (WCD)</td><td>プロビジョニングパッケージを作成および編集して、更新された WCD アプリを使用して HoloLens を構成します。 エディションの更新、構成可能な OOBE、地域/タイムゾーン、一括 Azure AD トークン、ネットワーク、および developer CSP 用の単純な HoloLens ウィザード。 割り当てられたアクセスおよびアカウント管理 Csp を含む、HoloLens がサポートするオプションにフィルターが適用された詳細エディター。</td><td><a href="/hololens/hololens-provisioning">IT Pro センター: プロビジョニングパッケージを使用して HoloLens を構成する</a></td>
   </tr>
   <tr>
-    <td>構成可能なセットアップ (OOBE)</td><td>セットアップ中に、調整、ジェスチャ/宝石トレーニング、Wi-Fi 構成画面を非表示にします。</td><td><a href="https://docs.microsoft.com/hololens/hololens-provisioning#create-a-provisioning-package-for-hololens-using-the-hololens-wizard">IT Pro センター: プロビジョニングパッケージを使用して HoloLens を構成する</a></td>
+    <td>構成可能なセットアップ (OOBE)</td><td>セットアップ中に、調整、ジェスチャ/宝石トレーニング、Wi-Fi 構成画面を非表示にします。</td><td><a href="/hololens/hololens-provisioning#create-a-provisioning-package-for-hololens-using-the-hololens-wizard">IT Pro センター: プロビジョニングパッケージを使用して HoloLens を構成する</a></td>
   </tr>
   <tr>
-    <td>一括 Azure AD トークンのサポート</td><td>ユーザー設定のフローを迅速にするために、デバイスを Azure AD directory テナントに事前登録します。</td><td><a href="https://docs.microsoft.com/hololens/hololens-provisioning">IT Pro センター: プロビジョニングパッケージを使用して HoloLens を構成する</a></td>
+    <td>一括 Azure AD トークンのサポート</td><td>ユーザー設定のフローを迅速にするために、デバイスを Azure AD directory テナントに事前登録します。</td><td><a href="/hololens/hololens-provisioning">IT Pro センター: プロビジョニングパッケージを使用して HoloLens を構成する</a></td>
   </tr>
   <tr>
-  <td>DeveloperSetup CSP</td><td>開発者モードで HoloLens を設定するためのプロファイルを展開します。 開発とデモの両方のデバイスに役立ちます。</td><td><a href="https://docs.microsoft.com/hololens/hololens-provisioning">IT Pro センター: プロビジョニングパッケージを使用して HoloLens を構成する</a></td>
+  <td>DeveloperSetup CSP</td><td>開発者モードで HoloLens を設定するためのプロファイルを展開します。 開発とデモの両方のデバイスに役立ちます。</td><td><a href="/hololens/hololens-provisioning">IT Pro センター: プロビジョニングパッケージを使用して HoloLens を構成する</a></td>
   </tr>
   <tr>
-  <td>AccountManagement CSP</td><td>一時的な使用のために、シングルサインオンまたは非アクティブまたはストレージのしきい値の後に HoloLens デバイスを共有し、ユーザーデータを削除します。 Azure AD アカウントをサポートします。</td><td><a href="https://docs.microsoft.com/hololens/hololens-provisioning">IT Pro センター: プロビジョニングパッケージを使用して HoloLens を構成する</a></td>
+  <td>AccountManagement CSP</td><td>一時的な使用のために、シングルサインオンまたは非アクティブまたはストレージのしきい値の後に HoloLens デバイスを共有し、ユーザーデータを削除します。 Azure AD アカウントをサポートします。</td><td><a href="/hololens/hololens-provisioning">IT Pro センター: プロビジョニングパッケージを使用して HoloLens を構成する</a></td>
   </tr>
   <tr>
-  <td>割り当てられたアクセス</td><td>最初のワーカーまたはデモのために割り当てられた Windows アクセス。 1つまたは複数のアプリによるロックダウン。 開発者によるロック解除は必要ありません。</td><td><a href="https://docs.microsoft.com/hololens/hololens-kiosk">IT Pro センター: キオスクモードでの HoloLens のセットアップ</a></td>
+  <td>割り当てられたアクセス</td><td>最初のワーカーまたはデモのために割り当てられた Windows アクセス。 1つまたは複数のアプリによるロックダウン。 開発者によるロック解除は必要ありません。</td><td><a href="/hololens/hololens-kiosk">IT Pro センター: キオスクモードでの HoloLens のセットアップ</a></td>
   </tr>
   <tr>
-  <td>キオスクデバイスのゲストアクセス</td><td>デモ用のパスワードのない guest アカウントを使用した Windows 割り当てアクセス。 1つまたは複数のアプリによるロックダウン。 開発者によるロック解除は必要ありません。</td><td><a href="https://docs.microsoft.com/hololens/hololens-kiosk#guest">IT Pro センター: キオスクモードでの HoloLens のセットアップ</a></td>
+  <td>キオスクデバイスのゲストアクセス</td><td>デモ用のパスワードのない guest アカウントを使用した Windows 割り当てアクセス。 1つまたは複数のアプリによるロックダウン。 開発者によるロック解除は必要ありません。</td><td><a href="/hololens/hololens-kiosk#guest">IT Pro センター: キオスクモードでの HoloLens のセットアップ</a></td>
   </tr>
   <tr>
     <td>セットアップ (OOBE) 診断</td><td>HoloLens から診断ログを取得して Azure AD サインインエラーのトラブルシューティングを行えるようにします (サインインに失敗したユーザーはフィードバックハブを利用できます)。</td><td>セットアップまたはサインインに失敗した場合は、[新しい <b>収集情報</b> ] オプションを選択して、トラブルシューティングの診断ログを取得します。</td>
@@ -176,7 +176,7 @@ Windows 10 の2018年4月の更新プログラムには、デスクトップ PC 
 
 ## <a name="known-issues"></a>既知の問題
 
-Windows Mixed Reality エクスペリエンスの向上に努めていましたが、まだいくつかの既知の問題を追跡しています。 他のユーザーが見つかった場合は、フィードバックをお [送り](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)ください。
+Windows Mixed Reality エクスペリエンスの向上に努めていましたが、まだいくつかの既知の問題を追跡しています。 他のユーザーが見つかった場合は、フィードバックをお [送り](/windows/mixed-reality/give-us-feedback)ください。
 
 ### <a name="hololens"></a>HoloLens
 
@@ -187,13 +187,13 @@ HoloLens で RS1 から RS4 に更新すると、次の問題が発生する場�
 * **アプリと配置** されたホログラムのリセット-世界中に配置されたアプリは更新後に削除され、スペース全体に再配置する必要があります。 
 * **フィードバックハブはすぐに起動しないことがあり** ます。更新後すぐに、フィードバックハブなどの一部の受信トレイアプリを更新するまでに数分かかることがあります。 
 * **企業の Wi-Fi 証明書は再同期する必要があり** ます。企業の証明書をデバイスに再同期してから、証明書を使用して企業ネットワークに再接続できるようにするために、HoloLens を別のネットワークに接続する必要がある問題を調査しています。 
-* - **265 HEVC ビデオ再生が機能しない**-265 のビデオを再生しようとすると、エラーメッセージが表示されます。 回避策として、 [Windows デバイスポータルにアクセス](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)し、左側のナビゲーションバーで [ **アプリ** ] を選択して、HEVC アプリケーションを **削除** します。 次に、Microsoft Store から最新の [HEVC ビデオ拡張機能](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) をインストールします。 問題を調査しています。 
+* - **265 HEVC ビデオ再生が機能しない**-265 のビデオを再生しようとすると、エラーメッセージが表示されます。 回避策として、 [Windows デバイスポータルにアクセス](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)し、左側のナビゲーションバーで [ **アプリ** ] を選択して、HEVC アプリケーションを **削除** します。 次に、Microsoft Store から最新の [HEVC ビデオ拡張機能](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) をインストールします。 問題を調査しています。 
 
 #### <a name="for-developers-updating-hololens-apps-for-devices-running-windows-10-april-2018-update"></a>開発者向け: Windows 10 April 2018 更新プログラムを実行しているデバイスの HoloLens アプリを更新する
 
 [新しい機能](#new-features-for-hololens)の一覧と共に、Windows 10 April 2018 UPDATE (RS4) for HoloLens では、以前のバージョンではなかったコードの動作が適用されています。
-* **機密リソース (カメラ、マイクなど) を使用するためのアクセス許可要求** -HoloLens で RS4 は、カメラやマイクなどの機密リソースにアクセスするように設定されているアプリのアクセス許可要求を適用します。 HoloLens の RS1 はこれらのプロンプトを強制しませんでした。したがって、アプリがこれらのリソースへの即時アクセスを前提としている場合は、ユーザーが要求されたリソースにアクセス許可を付与したとしても、RS4 でクラッシュする可能性があります。 詳細については、関連する [UWP アプリ機能の宣言](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations) に関する記事を参照してください。
-* HoloLens で RS4 の **外部のアプリを呼び出す** と、Windows.System が適切に使用され [*ます。ランチャー* クラス](https://docs.microsoft.com/uwp/api/Windows.System.Launcher)を使用して、自分で別のアプリを起動します。 たとえば、Windows.System を呼び出しているアプリに関する問題が見つかりました *。* ASTA (UI) 以外のスレッドから起動します。 これは HoloLens の RS1 で成功しますが、RS4 では、UI スレッドでの呼び出しを実行する必要があります。
+* **機密リソース (カメラ、マイクなど) を使用するためのアクセス許可要求** -HoloLens で RS4 は、カメラやマイクなどの機密リソースにアクセスするように設定されているアプリのアクセス許可要求を適用します。 HoloLens の RS1 はこれらのプロンプトを強制しませんでした。したがって、アプリがこれらのリソースへの即時アクセスを前提としている場合は、ユーザーが要求されたリソースにアクセス許可を付与したとしても、RS4 でクラッシュする可能性があります。 詳細については、関連する [UWP アプリ機能の宣言](/windows/uwp/packaging/app-capability-declarations) に関する記事を参照してください。
+* HoloLens で RS4 の **外部のアプリを呼び出す** と、Windows.System が適切に使用され [*ます。ランチャー* クラス](/uwp/api/Windows.System.Launcher)を使用して、自分で別のアプリを起動します。 たとえば、Windows.System を呼び出しているアプリに関する問題が見つかりました *。* ASTA (UI) 以外のスレッドから起動します。 これは HoloLens の RS1 で成功しますが、RS4 では、UI スレッドでの呼び出しを実行する必要があります。
 
 ### <a name="windows-mixed-reality-on-desktop"></a>デスクトップ上の Windows Mixed Reality
 
@@ -254,7 +254,7 @@ HoloLens で RS1 から RS4 に更新すると、次の問題が発生する場�
 
 ## <a name="provide-feedback-and-report-issues"></a>フィードバックの提供と問題の報告
 
-[HoloLens または Windows 10 PC でフィードバックハブアプリ](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)を使用して、フィードバックを提供し、問題を報告します。 フィードバックハブを使用すると、エンジニアが迅速に問題をデバッグして解決できるように、必要な診断情報がすべて含まれるようになります。
+[HoloLens または Windows 10 PC でフィードバックハブアプリ](/windows/mixed-reality/give-us-feedback)を使用して、フィードバックを提供し、問題を報告します。 フィードバックハブを使用すると、エンジニアが迅速に問題をデバッグして解決できるように、必要な診断情報がすべて含まれるようになります。
 
 >[!NOTE]
 >フィードバックハブがドキュメントフォルダーにアクセスするかどうかを確認するメッセージが表示されることを確認します (メッセージが表示されたら [ **はい]** を選択します)。
@@ -267,8 +267,7 @@ HoloLens で RS1 から RS4 に更新すると、次の問題が発生する場�
 * [リリース ノート - 2016 年 3 月](release-notes-march-2016.md)
 
 ## <a name="see-also"></a>関連項目
-* [イマーシブヘッドセットのサポート (外部リンク)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+* [イマーシブヘッドセットのサポート (外部リンク)](./troubleshooting-windows-mixed-reality.md)
 * [HoloLens サポート (外部リンク)](https://support.microsoft.com/products/hololens)
-* [ツールのインストール](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [フィードバックの送信](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)
-
+* [ツールのインストール](/windows/mixed-reality/develop/install-the-tools)
+* [フィードバックの送信](/windows/mixed-reality/give-us-feedback)

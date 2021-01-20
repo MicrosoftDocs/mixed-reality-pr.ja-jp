@@ -1,22 +1,22 @@
 ---
-title: MR 共有 240-複数の HoloLens デバイス
+title: MR 共有 240 - 複数の HoloLens デバイス
 description: Unity、Visual Studio、および HoloLens を使用したこのコーディングのチュートリアルに従って、ホログラムの共有の詳細を確認してください。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、共有、ネットワーク、academy、チュートリアル、HoloLens、Mixed Reality Academy、unity、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、Windows 10
-ms.openlocfilehash: f57629e37463c9a05219ebae92bff8870728d688
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 97f2067c043912e7608361e73e54fdf769b8bf51
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678261"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582920"
 ---
 # <a name="mr-sharing-240-multiple-hololens-devices"></a>MR 共有 240:複数の HoloLens デバイス
 
 >[!NOTE]
->Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](../../../mr-learning-base-01.md)が投稿されています。
+>Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](./mr-learning-base-01.md)が投稿されています。
 
 ホログラムは、領域内での移動によって、世界中に残されています。 HoloLens は、さまざまな [座標](../../../design/coordinate-systems.md) 系を使用して、オブジェクトの位置と向きを追跡することで、ホログラムを保持します。 これらの座標系をデバイス間で共有すると、共有された holographic 世界に参加するための共有エクスペリエンスを作成できます。
 
@@ -31,7 +31,7 @@ ms.locfileid: "94678261"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td>MR 共有 240:複数の HoloLens デバイス</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -39,7 +39,7 @@ ms.locfileid: "94678261"
 
 ## <a name="before-you-start"></a>開始する前に
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>前提条件
 
 * インターネットアクセスを使用して適切な [ツールがインストール](../../../develop/install-the-tools.md) されている WINDOWS 10 PC。
 * [開発用に構成された](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)少なくとも2つの HoloLens デバイス。
@@ -66,10 +66,10 @@ ms.locfileid: "94678261"
 * Unity をセットアップして、holographic アプリを開発します。
 * ホログラムをご覧ください。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * Unity を起動します。
-* **[Open (開く)]** を選択します。
+* **[Open]** を選択します。
 * 以前に unarchived した **Sharedholograms** フォルダーとして場所を入力します。
 * [ **プロジェクト名** ] を選択し、[ **フォルダーの選択**] をクリックします。
 * **階層** で、**メインカメラ** を右クリックし、[**削除**] を選択します。
@@ -121,7 +121,7 @@ ms.locfileid: "94678261"
 * 行方向の入力を使用してカーソルを制御します。
 * ジェスチャ入力を使用して、ホログラムを操作します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 **視線入力**
 
@@ -168,7 +168,7 @@ ms.locfileid: "94678261"
 >2. [Windows ストア] タブをクリックします。
 >3. [発行の設定 > 機能] セクションで、 **Internetclientserver** の機能と **PrivateNetworkClientServer** 機能を確認します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * [ **プロジェクト] パネル** で、 **HoloToolkit-Sharing-240\Prefabs\Sharing** フォルダーに移動します。
 * **共有** prefab を [**階層] パネル** にドラッグアンドドロップします。
@@ -319,7 +319,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 * プレーヤーアバターを選択して共有します。
 * すべてのユーザーのヘッドの横に、プレーヤーアバターを添付します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * [ **プロジェクト] パネル** で、[ **ホログラム** ] フォルダーに移動します。
 * **PlayerAvatarStore** を **階層** にドラッグアンドドロップします。
@@ -618,7 +618,7 @@ public class AppStateManager : Singleton<AppStateManager>
 
 * プレーヤーのヘッド位置に基づいて、空間マッピングメッシュにホログラムを配置します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * [ **プロジェクト] パネル** で、[ **ホログラム** ] フォルダーに移動します。
 * **CustomSpatialMapping** Prefab を **階層** にドラッグアンドドロップします。
@@ -997,7 +997,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 * 現実世界の表面にバウンドする projectiles を起動します。
 * 他のプレーヤーが見ることができるように、projectiles を共有します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * **階層** で、 **HologramCollection** オブジェクトを選択します。
 * **インスペクター** で [**コンポーネントの追加**] をクリックします。
@@ -1019,7 +1019,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 * 連携して、秘密ポータルを見つけるために十分な projectiles をアンカーで立ち上げましょう。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * [ **プロジェクト] パネル** で、[ **ホログラム** ] フォルダーに移動します。
 * **HologramCollection の子** として、**黄泉** の資産をドラッグアンドドロップします。

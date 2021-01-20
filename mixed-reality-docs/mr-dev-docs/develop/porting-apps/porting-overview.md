@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 移植, unity, ミドルウェア, エンジン, UWP, Win32
-ms.openlocfilehash: 5a57c73481e80e5ab6fac1bd02b83c5d3dfaabb6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 268d98b45aa659614e0266bfd1add7c7ed2f684a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007492"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583583"
 ---
 # <a name="porting-overview"></a>移植の概要
 
@@ -48,7 +48,7 @@ Mixed Reality での Unreal development の現在の推奨事項は、 **Unreal 
 
 ### <a name="hololens-1st-gen-unity-apps-to-hololens-2"></a>HoloLens (第1世代) Unity アプリから HoloLens 2
 
-HoloLens 2 に移植する既存の HoloLens (第1世代) Unity アプリケーションがある場合は、 [hololens 移植](../unity/mrtk-porting-guide.md)に関する記事の手順に従ってください。
+HoloLens 2 に移植する既存の HoloLens (第1世代) Unity アプリケーションがある場合は、 [hololens 移植](./porting-hl1-hl2.md)に関する記事の手順に従ってください。
 
 ### <a name="windows-mixed-reality-headsets"></a>Windows Mixed Reality ヘッドセット
 
@@ -61,4 +61,3 @@ Windows Mixed Reality ヘッドセット用に更新する SteamVR エクスペ�
 ### <a name="2d-universal-windows-applications"></a>2D ユニバーサル Windows アプリケーション
 
 Windows Mixed Reality のイマーシブヘッドセットまたは HoloLens に移植する既存の 2D UWP アプリがある場合は、「 [Windows Mixed reality 向けの 2D uwp アプリの移植」の](building-2d-apps.md) 手順に従ってください。
-

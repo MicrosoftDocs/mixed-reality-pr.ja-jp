@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、academy、チュートリアル、宝石、HoloLens、Mixed Reality Academy、unity、mixed reality ヘッドセット、windows Mixed reality ヘッドセット、virtual Reality ヘッドセット、Windows 10
-ms.openlocfilehash: 2cbbdba0a74ab94c6a291cbe6af1cd1ae9020fe4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7e8d72bc4d37d76f8f9ec40956cb85591e237ac8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677251"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583863"
 ---
 # <a name="mr-input-210-gaze"></a>MR 入力 210:視線入力
 
 >[!NOTE]
->Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](../../../mr-learning-base-01.md)が投稿されています。
+>Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](./mr-learning-base-01.md)が投稿されています。
 
 [見つめ](../../../design/gaze-and-commit.md) は入力の最初の形式であり、ユーザーの意図と認識を明らかにします。 MR 入力 210 (プロジェクトエクスプローラーとも呼ばれます) は、Windows Mixed Reality 向けの、宝石に関連する概念について詳しく説明しています。 私たちは、カーソルとホログラムにコンテキスト認識を追加し、アプリがユーザーの宝石について認識していることを最大限に活用します。
 
@@ -37,7 +37,7 @@ ms.locfileid: "94677251"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td>MR 入力 210:視線入力</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -45,7 +45,7 @@ ms.locfileid: "94677251"
 
 ## <a name="before-you-start"></a>開始する前に
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>前提条件
 
 * 適切な [ツールがインストール](../../../develop/install-the-tools.md)された WINDOWS 10 PC。
 * 基本的な C# プログラミング機能。
@@ -74,7 +74,7 @@ ms.locfileid: "94677251"
 * アセットをインポートし、シーンをセットアップする。
 * HoloLens で astronaut を表示します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 1. Unity を起動します。
 2. [**新しいプロジェクト**] を選択します。
@@ -136,7 +136,7 @@ ms.locfileid: "94677251"
 2. [ **新しいフォルダー** ] をクリックし、フォルダーに「 **シーン**」という名前を指定します。
 3. ファイルに "**Modelexplorer**" という名前を付け、[ **シーン** ] フォルダーに保存します。
 
-### <a name="build-the-project"></a>プロジェクトのビルド
+### <a name="build-the-project"></a>プロジェクトをビルドする
 
 1. Unity で、[ **ファイル > ビルド設定**] を選択します。
 2. シーンを追加するには、[開いている **シーンの追加** ] をクリックします。
@@ -184,7 +184,7 @@ HoloLens に展開する場合:
 * カーソルが小さすぎるか、または大きくならないようにしてください。
 * Obstructing コンテンツは避けてください。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 1. **HoloToolkit\Input\Prefabs** フォルダーで、 **inputmanager** 資産を見つけます。
 2. **Inputmanager** を **階層** にドラッグアンドドロップします。
@@ -203,7 +203,7 @@ HoloLens に展開する場合:
 4. [ **デバッグ]、[デバッグなしで開始] の順にクリック >** 、Ctrl キーを押し **ながら F5** キーを押します。
 5. カーソルの描画方法と、ホログラムに触れている場合の外観の変化を確認します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 1. [**階層**] パネルで、[ **AstroMan** -> **GEO_G** -> **Back_Center** ] オブジェクトを展開します。
 2. **Interactible.cs** をダブルクリックして、Visual Studio で開きます。
@@ -248,7 +248,7 @@ void IFocusable.OnFocusExit()
 * ホログラムを簡単にターゲット設定できるようにします。
 * 自然な移動を安定化します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 1. [ **階層** ] パネルで、 **inputmanager** オブジェクトを選択します。
 2. [ **インスペクター** ] パネルで、 **宝石** のスクリプトを見つけます。 表示する場合は、これをクリックして Visual Studio で開きます。
@@ -263,7 +263,7 @@ void IFocusable.OnFocusExit()
 
 * ホログラムの検索に役立つように、カーソルに方向インジケーターを追加します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 **DirectionIndicator.cs** ファイルを次のように使用します。
 
@@ -271,7 +271,7 @@ void IFocusable.OnFocusExit()
 2. ユーザーがホログラムでの表示を切り替えている場合は、方向インジケーターを非表示にします。
 3. ホログラムをポイントするように方向インジケーターを更新します。
 
-始めましょう。
+では、始めましょう。
 
 1. **階層** パネルで **AstroMan** オブジェクトをクリックし、**矢印をクリック** して展開します。
 2. [**階層**] パネルで、[ **AstroMan** **] の [** 方向] を選択します。

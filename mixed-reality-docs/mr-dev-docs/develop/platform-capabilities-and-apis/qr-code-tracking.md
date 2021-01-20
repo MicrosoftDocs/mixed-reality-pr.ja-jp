@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: vr, lbe, 位置情報ベースのエンターテインメント, vr アーケード, アーケード, イマーシブ, qr, qr コード, hololens2
-ms.openlocfilehash: 7e5931e0d23ef6c905b8ec54d08e572a89e747e0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 08ed651deaab0c230142f45b93858f41ee300323
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009402"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583148"
 ---
 # <a name="qr-code-tracking"></a>QR コードの追跡
 
@@ -21,7 +21,7 @@ HoloLens 2 を使用すると、ヘッドセット周辺の環境内の QR コ�
 
 <table>
 <tr>
-<th>特徴</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (最初の世代)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>特徴量</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens (最初の世代)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td> QR コードの検出</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
@@ -128,7 +128,7 @@ private:
 
 QR SDK を直接使用している場合、Z 軸は用紙を指しています (図には示されていません)。 Unity 座標に変換されると、Z 軸は用紙から外れ、左手で示されます。
 
-QR コードの SpatialCoordinateSystem は、示されているように配置されます。 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a>を呼び出し、コードの SpatialGraphNodeId を渡すことによって、プラットフォームから座標系を取得できます。
+QR コードの SpatialCoordinateSystem は、示されているように配置されます。 <a href="/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a>を呼び出し、コードの SpatialGraphNodeId を渡すことによって、プラットフォームから座標系を取得できます。
 
 次の C++ コードは、QR コードの座標系を使用して、四角形を作成して配置する方法を示しています。
 
@@ -222,7 +222,7 @@ Windows Mixed Reality デバイスは、ドライバーのシステムレベル�
 特定のタイムスタンプよりも古い QR コードを無視するようにアプリを構成することをお勧めします。 現在、API は QR コード履歴のクリアをサポートしていません。
 
 ### <a name="qr-code-placement-in-a-space"></a>スペースでの QR コードの配置
-QR コードを配置する場所と方法に関する推奨事項については、「 [HoloLens の環境に関する考慮事項](../../environment-considerations-for-hololens.md)」を参照してください。
+QR コードを配置する場所と方法に関する推奨事項については、「 [HoloLens の環境に関する考慮事項](/hololens/hololens-environment-considerations)」を参照してください。
 
 ## <a name="qr-api-reference"></a>QR API リファレンス
 
@@ -460,4 +460,4 @@ namespace Microsoft.MixedReality.QR
 
 ## <a name="see-also"></a>関連項目
 * [座標系](../../design/coordinate-systems.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

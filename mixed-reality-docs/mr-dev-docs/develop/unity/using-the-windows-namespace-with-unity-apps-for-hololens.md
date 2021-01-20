@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, WinRT, windows mixed reality, API, チュートリアル, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, Mixed Reality Api
-ms.openlocfilehash: 2c57af72a10867b5ef4fc87ff96679e576d203f4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 2116f0025449fdf127998e605f87de456e9bdaf9
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007322"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583554"
 ---
 # <a name="winrt-apis-with-unity-for-hololens"></a>HoloLens 用 Unity を使用した WinRT Api
 
@@ -19,7 +19,7 @@ ms.locfileid: "98007322"
 
 ## <a name="mixed-reality-apis"></a>Mixed Reality Api
 
-Windows SDK のサブセットが混在している .NET Standard 2.0 互換性のある投影で使用できるようになりました。これは、プリプロセッサディレクティブなしでプロジェクトで使用できます。 Windows のほとんどの Api。 認識と Windows. UI. 空間名前空間が含まれており、将来的に追加の Api を含むように拡張される場合があります。 予測された Api は、エディターでの実行中に使用できます。これにより、 [再生モード](https://docs.microsoft.com//windows/mixed-reality/unity-play-mode)を使用できるようになります。 この投影法を使用するには、プロジェクトに次の変更を加えます。
+Windows SDK のサブセットが混在している .NET Standard 2.0 互換性のある投影で使用できるようになりました。これは、プリプロセッサディレクティブなしでプロジェクトで使用できます。 Windows のほとんどの Api。 認識と Windows. UI. 空間名前空間が含まれており、将来的に追加の Api を含むように拡張される場合があります。 予測された Api は、エディターでの実行中に使用できます。これにより、 [再生モード](//windows/mixed-reality/unity-play-mode)を使用できるようになります。 この投影法を使用するには、プロジェクトに次の変更を加えます。
 
 1) [Unity 用の nuget](https://github.com/GlitchEnzo/NuGetForUnity)を使用して、 [MixedReality](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT)の nuget パッケージへの参照を追加します。
 2) 名前空間への参照のプレフィックスは `Windows` `Microsoft.` 次のとおりです。

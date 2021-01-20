@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D、ロゴ、アイコン、モデリング、ランチャー、3D ランチャー、タイル、live cube、ディープリンク、secondarytile、セカンダリタイル、UWP、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、XML、境界ボックス、unity
-ms.openlocfilehash: 40a68d0835ec8fb92d6417650700f41e8a31aab6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7a0b73a0b3638c1aa2c9cbffacd548fb461589ea
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009682"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582978"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>3D アプリ起動ツールの実装 (UWP アプリ)
 
@@ -118,7 +118,7 @@ Unity を使用する場合は、アプリケーションマニフェストを�
 >[!IMPORTANT]
 >3D ディープリンク (secondaryTiles) は、2D UWP アプリでのみ機能します。 ただし、Windows Mixed Reality ホームから排他的なアプリを起動するための [3d アプリランチャー](implementing-3d-app-launchers.md) を作成できます。
 
-Windows の [スタート] メニューの[2d セカンダリタイル](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles)と同じように、アプリから[windows mixed Reality ホーム](../discover/navigating-the-windows-mixed-reality-home.md)に3d モデルを配置する機能を、2d アプリ内のコンテンツへのディープリンクとして追加することで、windows Mixed reality 向けに2d アプリケーションを拡張できます。 たとえば、360°フォトビューアーアプリに直接リンクする360°の球体を作成したり、ユーザーが資産のコレクションから3D コンテンツを配置して、作成者に関する詳細ページを開いたりすることができます。 3D コンテンツを使用して2D アプリケーションの機能を拡張するには、次の2つの方法があります。
+Windows の [スタート] メニューの[2d セカンダリタイル](/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles)と同じように、アプリから[windows mixed Reality ホーム](../discover/navigating-the-windows-mixed-reality-home.md)に3d モデルを配置する機能を、2d アプリ内のコンテンツへのディープリンクとして追加することで、windows Mixed reality 向けに2d アプリケーションを拡張できます。 たとえば、360°フォトビューアーアプリに直接リンクする360°の球体を作成したり、ユーザーが資産のコレクションから3D コンテンツを配置して、作成者に関する詳細ページを開いたりすることができます。 3D コンテンツを使用して2D アプリケーションの機能を拡張するには、次の2つの方法があります。
 
 ### <a name="creating-a-3d-secondarytile"></a>3D "secondaryTile" の作成
 
@@ -191,7 +191,7 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 ### <a name="checking-that-the-user-is-in-windows-mixed-reality"></a>ユーザーが Windows Mixed Reality であることを確認しています
 
-3D ディープリンク (secondaryTiles) は、ビューが Windows Mixed Reality ヘッドセットに表示されている場合にのみ作成できます。 Windows Mixed Reality ヘッドセットにビューが表示されていない場合は、エントリポイントを非表示にするか、エラーメッセージを表示することで、これを適切に処理することをお勧めします。 これを確認するには、 [IsCurrentViewPresentedOnHolographic ()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)に対してクエリを実行します。
+3D ディープリンク (secondaryTiles) は、ビューが Windows Mixed Reality ヘッドセットに表示されている場合にのみ作成できます。 Windows Mixed Reality ヘッドセットにビューが表示されていない場合は、エントリポイントを非表示にするか、エラーメッセージを表示することで、これを適切に処理することをお勧めします。 これを確認するには、 [IsCurrentViewPresentedOnHolographic ()](/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)に対してクエリを実行します。
 
 ## <a name="tile-notifications"></a>タイル通知
 
@@ -201,7 +201,7 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 * 定期的なポーリング
 * スケジュールされた通知
 
-その他のタイルの特徴と属性、およびそれらが2D タイルでどのように使用されるかの詳細については、 [UWP アプリのドキュメントのタイル](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles)を参照してください。
+その他のタイルの特徴と属性、およびそれらが2D タイルでどのように使用されるかの詳細については、 [UWP アプリのドキュメントのタイル](/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

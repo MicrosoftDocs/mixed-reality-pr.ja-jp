@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens、Mixed Reality、イマーシブヘッドセット、アプリ、uwp、送信、送信、フィルター、メタデータ、システム要件、キーワード、wack、認定、パッケージ、appx、販売促進
-ms.openlocfilehash: b729bd65413587d3ad3b05bef495349b60a6fffd
-ms.sourcegitcommit: 47a5c86b4694449c825902631777a9962a40e332
+ms.openlocfilehash: eb06ff46be6fbe6e480f9b43fa7f23ee47982192
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98215977"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582853"
 ---
 # <a name="distributing-your-apps"></a>アプリの配布
 
@@ -27,8 +27,8 @@ ms.locfileid: "98215977"
 > * 別のパーティとアプリを共有している場合は、appx ファイルをビルドして提供する必要があります。 
 >     * アプリインストーラーを使用している場合は、ユーザーと証明書を共有する必要もあります。
 > 
-> * 組織と共有している場合は、職場または学校のアカウントがあり、組織の [MDM (モバイルデバイス管理)](https://docs.microsoft.com/hololens/hololens-enroll-mdm) インフラストラクチャにアクセスできる必要があります。  
->    * 共有パーティの場合は、テナントの管理者であり、 [Microsoft Endpoint Manager 管理センター](https://docs.microsoft.com/mem/intune/apps/apps-deploy) を使用してアプリを利用できるようにする必要があります。 別の方法として、appx ファイルとアプリの依存関係をエンドユーザーと共有することもできます。
+> * 組織と共有している場合は、職場または学校のアカウントがあり、組織の [MDM (モバイルデバイス管理)](/hololens/hololens-enroll-mdm) インフラストラクチャにアクセスできる必要があります。  
+>    * 共有パーティの場合は、テナントの管理者であり、 [Microsoft Endpoint Manager 管理センター](/mem/intune/apps/apps-deploy) を使用してアプリを利用できるようにする必要があります。 別の方法として、appx ファイルとアプリの依存関係をエンドユーザーと共有することもできます。
 >    * エンドユーザーの場合、アプリは、共有組織のテナントに登録すると、自動的にダウンロードされるか、ダウンロードできるようになります。 
 
 <table>
@@ -51,13 +51,13 @@ ms.locfileid: "98215977"
     <td>❌</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>MDM-ポータルサイト</strong></a></td>
+    <td><a href="/hololens/app-deploy-app-installer"><strong>MDM-ポータルサイト</strong></a></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-intune"><strong>MDM-必須アプリのインストール</strong></a></td>
+    <td><a href="/hololens/app-deploy-intune"><strong>MDM-必須アプリのインストール</strong></a></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️</td>
@@ -69,13 +69,13 @@ ms.locfileid: "98215977"
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-store-business"><strong>ビジネス向け Microsoft Store</strong></a></td>
+    <td><a href="/hololens/app-deploy-store-business"><strong>ビジネス向け Microsoft Store</strong></a></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-provisioning-package"><strong>プロビジョニングパッケージ</strong></a></td>
+    <td><a href="/hololens/app-deploy-provisioning-package"><strong>プロビジョニングパッケージ</strong></a></td>
     <td>✔️</td>
     <td>✔️</td>
     <td>✔️</td>
@@ -95,10 +95,9 @@ ms.locfileid: "98215977"
 
 * Win32 を作成できます。ストリームとゲームパスを含む、Win32 アプリケーションのデプロイのために Unity からの PC スタンドアロンビルドターゲットを使用する EXE ファイル。 を作成したら、EXE を使用して、選択したプラットフォームに通常どおりにアプリを送信できます。 
 
-* オフライン中に HoloLens 2 アプリケーションをインストールする必要がある場合は、オフラインの [Secure HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) の手順を参照するか、開発者モードを有効にせずにプロビジョニングパッケージを使用してアプリをインストールしてください。
+* オフライン中に HoloLens 2 アプリケーションをインストールする必要がある場合は、オフラインの [Secure HoloLens 2](/hololens/hololens-common-scenarios-offline-secure) の手順を参照するか、開発者モードを有効にせずにプロビジョニングパッケージを使用してアプリをインストールしてください。
 
 * また、ビルドをデバイスに配置し、開発者モードが有効になっている他の開発者と共有することもできます。これには、 [Visual Studio でのデプロイとデバッグ](../develop/platform-capabilities-and-apis/using-visual-studio.md) 、または [デバイスポータルを使用したアプリケーションパッケージのインストール](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#sideloading-applications)が含まれます。
 
-## <a name="see-also"></a>こちらもご覧ください
-* [Microsoft Store からのアプリケーションの検索、インストール、およびアンインストール](https://docs.microsoft.com/hololens/holographic-store-apps)
-
+## <a name="see-also"></a>関連項目
+* [Microsoft Store からのアプリケーションの検索、インストール、およびアンインストール](/hololens/holographic-store-apps)

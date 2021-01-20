@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv, 音声, cortana, 音声, 入力, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, MRTK, Mixed Reality ツールキット, 宝石
-ms.openlocfilehash: 09f99083d769be80d8c15016b3de8713eae76515
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 079a3d457da9403611d2f825dd6e599a4e9f0353
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848132"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583221"
 ---
 # <a name="voice-input"></a>音声入力
 
@@ -19,7 +19,7 @@ ms.locfileid: "97848132"
 
 音声は、HoloLens の主な入力形式の 1 つです。 [ハンドジェスチャ](gaze-and-commit.md#composite-gestures)を使用しなくても、ホログラムに直接コマンドを渡すことができます。 音声入力は、意図を伝える自然な方法として使用できます。 複雑なインターフェイスを走査するのは、ユーザーが1つのコマンドで入れ子になったメニューを使用できるため、音声は特に便利です。
 
-音声入力は、すべての _ユニバーサル Windows アプリ_ で音声をサポートするのと [同じエンジン](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx)によって機能します。 HoloLens では、音声認識は、デバイス設定で構成されている Windows の表示言語で常に機能します。 
+音声入力は、すべての _ユニバーサル Windows アプリ_ で音声をサポートするのと [同じエンジン](/windows/uwp/design/input/speech-recognition)によって機能します。 HoloLens では、音声認識は、デバイス設定で構成されている Windows の表示言語で常に機能します。 
 
 <br>
 
@@ -43,7 +43,7 @@ ms.locfileid: "97848132"
     </colgroup>
     <tr>
         <td><strong>機能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 世代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 世代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
@@ -59,7 +59,7 @@ ms.locfileid: "97848132"
 
 **HoloLens (第 1 世代)**
 
-特に音声サポートをアプリに追加しなくても、ユーザーはシステム音声コマンド "select" を指定するだけで、ホログラムをアクティブにすることができます。 これは、HoloLens での [エアタップ](gaze-and-commit.md#composite-gestures) と同じように動作します。また、 [hololens clicker](https://docs.microsoft.com/hololens/hololens1-clicker)の [選択] ボタンを押すか、 [Windows Mixed Reality モーションコントローラー](motion-controllers.md)でトリガーを押します。 サウンドが聞こえ、[選択] というヒントが確認として表示されます。 "Select" は、低電力のキーワード検出アルゴリズムによって有効にされます。これは、バッテリ寿命の影響を最小限に抑えていつでも使用できることを意味します。 自分の手で "選択" することもできます。
+特に音声サポートをアプリに追加しなくても、ユーザーはシステム音声コマンド "select" を指定するだけで、ホログラムをアクティブにすることができます。 これは、HoloLens での [エアタップ](gaze-and-commit.md#composite-gestures) と同じように動作します。また、 [hololens clicker](/hololens/hololens1-clicker)の [選択] ボタンを押すか、 [Windows Mixed Reality モーションコントローラー](motion-controllers.md)でトリガーを押します。 サウンドが聞こえ、[選択] というヒントが確認として表示されます。 "Select" は、低電力のキーワード検出アルゴリズムによって有効にされます。これは、バッテリ寿命の影響を最小限に抑えていつでも使用できることを意味します。 自分の手で "選択" することもできます。
 
 <br>
 
@@ -266,7 +266,7 @@ Holographic キーボードがアクティブなときはいつでも、入力�
 
 ## <a name="communication"></a>通信
 
-HoloLens が提供するカスタマイズされたオーディオ入力処理オプションを利用する必要があるアプリケーションでは、アプリが使用できるさまざまな [オーディオストリームのカテゴリ](https://msdn.microsoft.com/library/windows/desktop/hh404178(v=vs.85).aspx) を理解することが重要です。 Windows 10 では、さまざまなストリームカテゴリがサポートされています。 HoloLens では、これらのうちの3つを使用して、音声、通信、その他に調整されたマイクオーディオ品質をカスタム処理によって最適化します。これは、アンビエント環境のオーディオキャプチャ (つまり、"ビデオカメラ") シナリオで使用できます。
+HoloLens が提供するカスタマイズされたオーディオ入力処理オプションを利用する必要があるアプリケーションでは、アプリが使用できるさまざまな [オーディオストリームのカテゴリ](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) を理解することが重要です。 Windows 10 では、さまざまなストリームカテゴリがサポートされています。 HoloLens では、これらのうちの3つを使用して、音声、通信、その他に調整されたマイクオーディオ品質をカスタム処理によって最適化します。これは、アンビエント環境のオーディオキャプチャ (つまり、"ビデオカメラ") シナリオで使用できます。
 * AudioCategory_Communications ストリームカテゴリは、通話の品質とナレーションのシナリオに合わせてカスタマイズされ、クライアントにユーザーの声の 16 kHz 24 ビットの mono オーディオストリームを提供します。
 * AudioCategory_Speech ストリームカテゴリは、HoloLens (Windows) 音声エンジン用にカスタマイズされており、ユーザーの声の 16 kHz 24 ビットの mono ストリームを提供します。 このカテゴリは、サードパーティの音声エンジンで必要に応じて使用できます。
 * AudioCategory_Other ストリームカテゴリは、アンビエント環境のオーディオ記録用にカスタマイズされており、クライアントには 48 kHz 24 ビットのステレオオーディオストリームが用意されています。
@@ -275,7 +275,7 @@ HoloLens が提供するカスタマイズされたオーディオ入力処理�
 
 ## <a name="languages"></a>言語
 
-HoloLens 2 では、 [複数の言語がサポート](https://docs.microsoft.com/hololens/hololens2-language-support)されています。 複数のキーボードがインストールされている場合や、アプリが別の言語で音声認識エンジンを作成しようとした場合でも、音声コマンドは常にシステムの表示言語で実行されることに注意してください。
+HoloLens 2 では、 [複数の言語がサポート](/hololens/hololens2-language-support)されています。 複数のキーボードがインストールされている場合や、アプリが別の言語で音声認識エンジンを作成しようとした場合でも、音声コマンドは常にシステムの表示言語で実行されることに注意してください。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

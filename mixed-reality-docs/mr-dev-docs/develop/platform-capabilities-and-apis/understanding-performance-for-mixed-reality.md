@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、パフォーマンス、最適化、CPU、GPU
-ms.openlocfilehash: ff3db5d49ddab13a20c4c32de8e5640fff4f0d81
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 68aae6408a59b197227ab8cd9042e11f8a255d10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008472"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583079"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Mixed reality のパフォーマンスについて
 
@@ -21,7 +21,7 @@ ms.locfileid: "98008472"
 
 | プラットフォーム | ターゲットフレームレート |
 |----------|-------------------|
-| [HoloLens](../../hololens-hardware-details.md) | 60 FPS |
+| [HoloLens](/hololens/hololens1-hardware) | 60 FPS |
 | [Windows Mixed Reality ウルトラ Pc](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
 | [Windows Mixed Reality Pc](../../discover/immersive-headset-hardware-details.md) | 60 FPS |
 
@@ -46,7 +46,7 @@ ms.locfileid: "98008472"
 
 アプリケーションの詳細なプロファイル情報を収集するための一般的なツールを次に示します。
 - [Intel グラフィックスパフォーマンスアナライザー](https://software.intel.com/gpa)
-- [Visual Studio のグラフィックスデバッガー](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
+- [Visual Studio のグラフィックスデバッガー](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
 - [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)
 - [Unity フレームデバッガー](https://docs.unity3d.com/Manual/FrameDebugger.html)
 
@@ -100,7 +100,7 @@ Fill rate は、次のように、最終的に表示されるピクセルに対�
 
 #### <a name="reduce-polygon-count"></a>多角形の数を減らす
 
-多角形の数が多いほど GPU に対する操作が多くなります。そのため、シーン [の多角形の数を減らす](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) とレンダリング時間が短縮されます。 ジオメトリの負荷が高くなる要因は他にもありますが、polygon count は、シーンをレンダリングするために必要な作業量を決定するための最も簡単なメトリックです。
+多角形の数が多いほど GPU に対する操作が多くなります。そのため、シーン [の多角形の数を減らす](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) とレンダリング時間が短縮されます。 ジオメトリの負荷が高くなる要因は他にもありますが、polygon count は、シーンをレンダリングするために必要な作業量を決定するための最も簡単なメトリックです。
 
 #### <a name="limit-overdraw"></a>オーバードローを制限する
 
@@ -139,6 +139,5 @@ Occluding オブジェクトによって非表示になっているため、複�
 ## <a name="see-also"></a>関連項目
 - [Unity のパフォーマンスに関する推奨事項](../unity/performance-recommendations-for-unity.md)
 - [Unity で推奨される設定](../unity/recommended-settings-for-unity.md)
-- [3D モデルの最適化](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
-- [リアルタイム3D モデルの変換と最適化に関するベストプラクティス](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
-
+- [3D モデルの最適化](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
+- [リアルタイム3D モデルの変換と最適化に関するベストプラクティス](/dynamics365/mixed-reality/import-tool/best-practices)

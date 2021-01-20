@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens、HoloLens 2、PIX、capture、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
-ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
+ms.openlocfilehash: 29cb741cd986fbb98dabb1faf2051450fd0286c3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97822928"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583092"
 ---
 # <a name="installing-pix-for-hololens-2"></a>HoloLens 2 用の PIX をインストールする
 
@@ -21,7 +21,7 @@ ms.locfileid: "97822928"
 
 1. ホスト PC から最新の PIX [リリース]( https://devblogs.microsoft.com/pix/download) を入手し、USB ケーブル経由で HoloLens 2 を PC に接続します。
 
-2. HoloLens 2 が [Windows Insider ビルド](https://insider.windows.com) にある場合、または PIX を中断する構成がある場合は、  [デバイスを更新](https://docs.microsoft.com/hololens/hololens-recovery) してすべてのデータを消去します。
+2. HoloLens 2 が [Windows Insider ビルド](https://insider.windows.com) にある場合、または PIX を中断する構成がある場合は、  [デバイスを更新](/hololens/hololens-recovery) してすべてのデータを消去します。
 
 3. **開発者モード** と **デバイスポータル** を有効にする:
 
@@ -46,7 +46,7 @@ ms.locfileid: "97822928"
 * デバイスが接続された状態で、ユーザーがログインした状態で、Visual Studio を起動します。
 
 > [!IMPORTANT]
-> デバイスがスタンバイモードまたはスリープ状態になっていないことを確認します。 この手順で問題が発生した場合は、 [Windows デバイスポータルの手順](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)を参照してください。
+> デバイスがスタンバイモードまたはスリープ状態になっていないことを確認します。 この手順で問題が発生した場合は、 [Windows デバイスポータルの手順](./using-the-windows-device-portal.md)を参照してください。
 
 ## <a name="preparing-for-deployment"></a>展開の準備
 

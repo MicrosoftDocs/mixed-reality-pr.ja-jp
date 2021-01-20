@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、イマーシブ、motion controller、academy、チュートリアル
-ms.openlocfilehash: c83fd4970e40919e146b0a4e8b4f0f516e9d0906
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1f747c73846f59fdc62a0559068123a50f8a1b07
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685378"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583058"
 ---
 # <a name="mr-input-213-motion-controllers"></a>MR 入力 213:モーション コントローラー
 
 >[!NOTE]
->Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは " **_ありません_** "。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](../mr-learning-base-01.md)が投稿されています。
+>Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](../develop/unity/tutorials/mr-learning-base-01.md)が投稿されています。
 
 混合現実世界のモーションコントローラーは、別のレベルの対話機能を追加します。 [モーションコントローラー](../design/motion-controllers.md)を使用すると、リアルタイムでの物理的な相互作用と同様に、オブジェクトをより自然な方法で直接やり取りし、アプリのエクスペリエンスの immersion と満足させるを増やすことができます。
 
@@ -33,7 +33,7 @@ MR 入力213では、単純な空間描画エクスペリエンスを作成す�
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td>MR 入力 213:モーション コントローラー</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -67,23 +67,23 @@ MR 入力213では、単純な空間描画エクスペリエンスを作成す�
 ### <a name="instructions"></a>Instructions
 
 * Unity を起動します。
-* **[Open (開く)]** を選択します。
+* **[Open]** を選択します。
 * デスクトップに移動し、以前に unarchived した **MixedReality213** フォルダーを探します。
 * **[フォルダーの選択]** をクリックします。
 * Unity がプロジェクトファイルの読み込みを完了すると、Unity エディターを表示できるようになります。
-* Unity で、[ **ファイル > ビルド設定** ] を選択します。
+* Unity で、[ **ファイル > ビルド設定**] を選択します。
 
     ![MR213_BuildSettings](images/mr213-buildsettings-450px.png)
 
-* [ **プラットフォーム** ] ボックスの一覧の [ **ユニバーサル Windows プラットフォーム** ] を選択し、[ **プラットフォームの切り替え** ] ボタンをクリックします。
+* [**プラットフォーム**] ボックスの一覧の [**ユニバーサル Windows プラットフォーム**] を選択し、[**プラットフォームの切り替え**] ボタンをクリックします。
 * ターゲットデバイスを **任意のデバイス** に設定する
 * ビルドの種類を **D3D** に設定
 * SDK を **最新のインストール済み** に設定する
 * **Unity C# プロジェクト** を確認する
     * これにより、Unity プロジェクトを再構築しなくても、Visual Studio プロジェクトでスクリプトファイルを変更できます。
-* [ **プレーヤーの設定** ] をクリックします。
+* [ **プレーヤーの設定**] をクリックします。
 * [ **インスペクター** ] パネルで、下にスクロールします。
-* XR の設定で、[ **Virtual Reality がサポートされる** ] をオンにします。
+* XR の設定で、[ **Virtual Reality がサポートされる**] をオンにします。
 * [Virtual Reality Sdk] で、[ **Windows Mixed reality** ] を選択します。
 
     ![MR213_XRSettings](images/mr213-xrsettings-500px.png)
@@ -99,29 +99,29 @@ MR 入力213では、単純な空間描画エクスペリエンスを作成す�
 **参照のための完了したシーン**
 
 * [ **シーン** ] フォルダーの下に2つの Unity シーンが完成していることがわかります。
-    * **MixedReality213** : 1 つのブラシを使用した完成したシーン
-    * **MixedReality213Advanced** : 複数のブラシを使用した高度なデザインのための完成したシーン
+    * **MixedReality213**: 1 つのブラシを使用した完成したシーン
+    * **MixedReality213Advanced**: 複数のブラシを使用した高度なデザインのための完成したシーン
 
 **チュートリアルの新しいシーンの設定**
 
-* Unity で、[ **ファイル > 新しいシーン** ] をクリックします。
+* Unity で、[**ファイル > 新しいシーン**] をクリックします。
 * **メインカメラ** と **指向性ライト** の削除
 * [ **プロジェクト] パネル** で、次の prefabs を検索し、[ **階層** ] パネルにドラッグします。
-    * Assets/HoloToolkit/Input/Prefabs/ **MixedRealityCamera**
-    * Assets/AppPrefabs/ **Environment**
+    * Assets/HoloToolkit/Input/Prefabs/**MixedRealityCamera**
+    * Assets/AppPrefabs/**Environment**
 
     ![カメラと環境](images/mr213-cameraenvironment-300px.jpg)
 
 * Mixed Reality Toolkit には、次の2つのカメラ prefabs があります。
-    * **MixedRealityCamera** : カメラのみ
-    * **MixedRealityCameraParent** : カメラ + テレの境界線
+    * **MixedRealityCamera**: カメラのみ
+    * **MixedRealityCameraParent**: カメラ + テレの境界線
     * このチュートリアルでは、 **MixedRealityCamera** 機能を使用せずに、この機能を使用します。 このため、基本的なフロアを含む単純な **環境** prefab を追加し、ユーザーが接地できるようにしました。
-    * **MixedRealityCameraParent** を使用した電話の詳細については、 [上級設計と locomotion](#advanced-design---teleportation-and-locomotion)に関するページを参照してください。
+    * **MixedRealityCameraParent** を使用した電話の詳細については、[上級設計と locomotion](#advanced-design---teleportation-and-locomotion)に関するページを参照してください。
 
 **スカイボックスのセットアップ**
 
-* [ **ウィンドウ > 照明 > 設定** ] をクリックします。
-* [ **スカイボックス素材] フィールド** の右側にある円をクリックします。
+* [**ウィンドウ > 照明 > 設定**] をクリックします。
+* [**スカイボックス素材] フィールド** の右側にある円をクリックします。
 * 「Gray」と入力し、[ **SkyboxGray** (Assets/AppPrefabs/Support/マテリアル/SkyboxGray)] を選択します。
 
     ![スカイボックスの設定](images/mr123-skyboxsetting-400px.jpg)
@@ -134,7 +134,7 @@ MR 入力213では、単純な空間描画エクスペリエンスを作成す�
 
     ![MixedReality213 環境](images/mr213-environment-600px.jpg)
 
-* [ **ファイル > をクリックしてシーンを保存** ]
+* [**ファイル > をクリックしてシーンを保存**]
 * シーンを任意の名前でシーンフォルダーに **保存** する
 
 ## <a name="chapter-1---controller-visualization"></a>第1章-コントローラーの視覚化
@@ -156,8 +156,8 @@ Windows Mixed Reality は、コントローラーを視覚化するためのア�
 ### <a name="instructions"></a>Instructions
 
 * [ **プロジェクト** ] パネルで、検索ボックスに「 **motioncontrollers** 」と入力します。 また、Assets/HoloToolkit/Input/Prefabs/で見つけることもできます。
-* **Motioncontrollers** prefab を [ **階層** ] パネルにドラッグします。
-* [ **階層** ] パネルで、 **motioncontrollers** prefab をクリックします。
+* **Motioncontrollers** prefab を [**階層**] パネルにドラッグします。
+* [**階層**] パネルで、 **motioncontrollers** prefab をクリックします。
 
 **MotionControllers prefab**
 
@@ -189,9 +189,9 @@ protected override void Awake()
 
 この後の章では、これらのスクリプトを使用して、UI 要素をコントローラーにアタッチする方法について説明します。
 
-*スクリプトによっては、#if のあるコードブロックを見つけることができます **。UNITY_EDITOR** または **UNITY_WSA** 。これらのコードブロックは、Windows に配置するときに UWP ランタイムでのみ実行されます。これは、Unity エディターと UWP アプリのランタイムで使用される Api のセットが異なるためです。*
+*スクリプトによっては、#if のあるコードブロックを見つけることができます **。UNITY_EDITOR** または **UNITY_WSA**。これらのコードブロックは、Windows に配置するときに UWP ランタイムでのみ実行されます。これは、Unity エディターと UWP アプリのランタイムで使用される Api のセットが異なるためです。*
 
-* シーンを **保存** し、[ **再生** ] ボタンをクリックします。
+* シーンを **保存** し、[**再生**] ボタンをクリックします。
 
 ヘッドセットには、モーションコントローラーを含むシーンを表示できます。 ボタンのクリック、サムスティックの移動、およびタッチパッドのタッチの強調表示に関する詳細なアニメーションを表示できます。
 
@@ -219,7 +219,7 @@ protected override void Awake()
 
 ![MR213 Motionコントローラー要素](images/mr213-motioncontrollerelements-1000px.jpg)
 
-* **ホーム**
+* **Home**
 * **Menu**
 * **つかん**
 * **スティック**
@@ -279,16 +279,16 @@ private void AttachElementToController(MotionControllerInfo newController)
 
 **手順**
 
-* [ **プロジェクト** ] パネルで、検索ボックスに「 **ColorPickerWheel** 」と入力します。 [Assets/AppPrefabs/] の下にも表示されます。
-* **ColorPickerWheel** prefab を [ **階層** ] パネルにドラッグします。
-* [ **階層** ] パネルの [ **ColorPickerWheel** prefab] をクリックします。
+* [ **プロジェクト** ] パネルで、検索ボックスに「 **ColorPickerWheel**」と入力します。 [Assets/AppPrefabs/] の下にも表示されます。
+* **ColorPickerWheel** prefab を [**階層**] パネルにドラッグします。
+* [**階層**] パネルの [ **ColorPickerWheel** prefab] をクリックします。
 * [ **インスペクター** ] パネルで [ **ColorPickerWheel** Script] をダブルクリックして、Visual Studio でコードを表示します。
 
 ![ColorPickerWheel prefab](images/mr213-colorpickerwheel-1000px.jpg)
 
 **ColorPickerWheel スクリプト**
 
-**ColorPickerWheel** は **attachtocontroller** を継承するため **Handedness** 、Inspector と **要素** が **インスペクター** パネルに表示されます。 左側のコントローラーのタッチパッド要素に UI をアタッチします。
+**ColorPickerWheel** は **attachtocontroller** を継承するため 、Inspector と **要素** が **インスペクター** パネルに表示されます。 左側のコントローラーのタッチパッド要素に UI をアタッチします。
 
 ![ColorPickerWheel スクリプト](images/mr213-attachtocontroller-300px.jpg)
 
@@ -314,7 +314,7 @@ public class ColorPickerWheel : AttachToController, IPointerTarget
 }
 ```
 
-* シーンを **保存** し、[ **再生** ] ボタンをクリックします。
+* シーンを **保存** し、[**再生**] ボタンをクリックします。
 
 **オブジェクトをコントローラーにアタッチするための別の方法**
 
@@ -343,8 +343,8 @@ private IEnumerator Start() {
 
 ### <a name="instructions"></a>Instructions
 
-* [ **階層** ] パネルで、[ **ColorPickerWheel** ] をクリックします。
-* [ **インスペクター** ] パネルの [ **アニメーター** ] の下で、[ **ColorPickerWheelController** ] をダブルクリックします。
+* [**階層**] パネルで、[ **ColorPickerWheel** ] をクリックします。
+* [**インスペクター** ] パネルの [**アニメーター**] の下で、[ **ColorPickerWheelController** ] をダブルクリックします。
 * [ **アニメーター** ] タブが開いていることを確認できます。
 
 **Unity のアニメーションコントローラーを使用した UI の表示/非表示**
@@ -364,10 +364,10 @@ private IEnumerator Start() {
 
 **Interactionsourceupdated ()** では、スクリプトはまず次のことを確認します。
 
-* は、実際にはタッチパッドイベント (obj. state. **touchpadTouched** )
-* 左のコントローラー (obj. state. source. **きき手** )
+* は、実際にはタッチパッドイベント (obj. state.**touchpadTouched**)
+* 左のコントローラー (obj. state. source.**きき手**)
 
-両方が true の場合、タッチパッドの位置 (obj. **touchpadPosition** ) は **selectorPosition** に割り当てられます。
+両方が true の場合、タッチパッドの位置 (obj.**touchpadPosition**) は **selectorPosition** に割り当てられます。
 
 ```cs
 private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
@@ -441,14 +441,14 @@ if (visible != visibleLastFrame)
 
 ### <a name="instructions"></a>Instructions
 
-* [ **階層** ] パネルの [ **motioncontrollers** ] をクリックします。
+* [**階層**] パネルの [ **motioncontrollers** ] をクリックします。
 * [ **代替右コントローラー** ] フィールドの右側にある円をクリックします。
-* **「BrushController** 」と入力し、結果から prefab を選択します。 これは Assets/AppPrefabs/ **BrushController** にあります。
+* **「BrushController**」と入力し、結果から prefab を選択します。 これは Assets/AppPrefabs/**BrushController** にあります。
 * **常に代替右モデルを使用することを確認する**
 
 ![MR213_BrushToolOverrideSlot](images/mr213-motioncontrollersoverride-700px.jpg)
 
-**BrushController** prefab は、 **階層** パネルに含まれている必要はありません。 ただし、子コンポーネントを確認するには、次のようにします。
+**BrushController** prefab は、**階層** パネルに含まれている必要はありません。 ただし、子コンポーネントを確認するには、次のようにします。
 
 * [ **プロジェクト** ] パネルで、「 **BrushController** 」と入力し、[ **BrushController** prefab] を [ **階層** ] パネルにドラッグします。
 
@@ -456,8 +456,8 @@ if (visible != visibleLastFrame)
 
 **Tip** コンポーネントは **BrushController** にあります。 この変換を使用して、描画線を開始または停止します。
 
-* [ **階層** ] パネルから **BrushController** を削除します。
-* シーンを **保存** し、[ **再生** ] ボタンをクリックします。 ブラシモデルは、右側のモーションコントローラーに置き換えられていることがわかります。
+* [**階層**] パネルから **BrushController** を削除します。
+* シーンを **保存** し、[**再生**] ボタンをクリックします。 ブラシモデルは、右側のモーションコントローラーに置き換えられていることがわかります。
 
 ## <a name="chapter-5---painting-with-select-input"></a>Chapter 5-Select 入力による塗りつぶし
 
@@ -469,12 +469,12 @@ if (visible != visibleLastFrame)
 
 ### <a name="instructions"></a>Instructions
 
-* [ **プロジェクト** ] パネルで **BrushController** prefab を検索します。
+* [**プロジェクト**] パネルで **BrushController** prefab を検索します。
 * [ **インスペクター** ] パネルで [ **BrushController** Script] をダブルクリックして、Visual Studio でコードを表示します。
 
 **BrushController スクリプト**
 
-**BrushController** は、InteractionManager の **Interactionsource押さ** れたイベントと **InteractionSourceReleased** イベントをサブスクライブします。 **Interactionsourcepressed** れたイベントがトリガーされると、ブラシの **Draw** プロパティが true に設定されます。 **InteractionSourceReleased** イベントがトリガーされると、ブラシの **Draw** プロパティが false に設定されます。
+**BrushController** は、InteractionManager の **Interactionsource押さ** れたイベントと **InteractionSourceReleased** イベントをサブスクライブします。 **Interactionsourcepressed** れたイベントがトリガーされると、ブラシの **Draw** プロパティが true に設定されます。**InteractionSourceReleased** イベントがトリガーされると、ブラシの **Draw** プロパティが false に設定されます。
 
 ```cs
 private void InteractionSourcePressed(InteractionSourcePressedEventArgs obj)
@@ -549,7 +549,7 @@ private void OnEnable()
 }
 ```
 
-* シーンを **保存** し、[ **再生** ] ボタンをクリックします。 右側のコントローラーの [選択] ボタンを使用して、線を描画し、塗りつぶすことができます。
+* シーンを **保存** し、[**再生**] ボタンをクリックします。 右側のコントローラーの [選択] ボタンを使用して、線を描画し、塗りつぶすことができます。
 
 ## <a name="chapter-6---object-spawning-with-select-input"></a>Chapter 6-Select 入力を使用したオブジェクトの生成
 
@@ -563,14 +563,14 @@ private void OnEnable()
 ### <a name="instructions"></a>Instructions
 
 * [ **プロジェクト** ] パネルの [検索] ボックスに「 **ObjectSpawner** 」と入力します。 また、Assets/AppPrefabs の下にあります。
-* **ObjectSpawner** prefab を [ **階層** ] パネルにドラッグします。
-* [ **階層** ] パネルの [ **ObjectSpawner** ] をクリックします。
+* **ObjectSpawner** prefab を [**階層**] パネルにドラッグします。
+* [**階層**] パネルの [ **ObjectSpawner** ] をクリックします。
 * **ObjectSpawner** には、 **Color Source** という名前のフィールドがあります。
 * [ **階層** ] パネルで、 **ColorPickerWheel** 参照をこのフィールドにドラッグします。
 
     ![オブジェクト Spawner Inspector](images/mr213-objectspawnercolorpickerwheel-650px.jpg)
 
-* [ **階層** ] パネルの [ **ObjectSpawner** prefab] をクリックします。
+* [**階層**] パネルの [ **ObjectSpawner** prefab] をクリックします。
 * [ **インスペクター** ] パネルで [ **ObjectSpawner** Script] をダブルクリックして、Visual Studio でコードを表示します。
 
 **ObjectSpawner スクリプト**
@@ -633,15 +633,15 @@ private void SpawnObject()
 
 **ObjectSpawner** は、 **ColorPickerWheel** を使用して、表示オブジェクトの素材の色を設定します。 生成されたオブジェクトには、その色が保持されるように、このマテリアルのインスタンスが与えられます。
 
-* シーンを **保存** し、[ **再生** ] ボタンをクリックします。
+* シーンを **保存** し、[**再生**] ボタンをクリックします。
 
 ボタンを使用してオブジェクトを変更し、[選択] ボタンを使用してオブジェクトを生成することができます。
 
 ## <a name="build-and-deploy-app-to-mixed-reality-portal"></a>アプリをビルドし、Mixed Reality ポータルにデプロイする
 
-* Unity で、[ **ファイル > ビルド設定** ] を選択します。
+* Unity で、[ **ファイル > ビルド設定**] を選択します。
 * [ **開い** ているシーンの追加] をクリックして、 **ビルドのシーン** に現在のシーンを追加します。
-* [ **ビルド** ] をクリックします。
+* [**ビルド**] をクリックします。
 * "App" という名前の **新しいフォルダー** を作成します。
 * **アプリ** フォルダーをシングルクリックします。
 * **[フォルダーの選択]** をクリックします。
@@ -649,7 +649,7 @@ private void SpawnObject()
 * **アプリ** フォルダーを開きます。
 * **YourSceneName** Visual Studio ソリューションファイルをダブルクリックします。
 * Visual Studio の上部のツールバーを使用して、ターゲットをデバッグから **リリース** に、ARM から **X64** に変更します。
-* [デバイス] ボタンの横にあるドロップダウン矢印をクリックし、[ **ローカルコンピューター** ] を選択します。
+* [デバイス] ボタンの横にあるドロップダウン矢印をクリックし、[ **ローカルコンピューター**] を選択します。
 * メニューで [デバッグ] **、[デバッグなしで開始** ] の順にクリックする >、Ctrl キーを押し **ながら F5** キーを押します。
 
 これで、アプリがビルドされ、Mixed Reality ポータルにインストールされます。 これは、Mixed Reality ポータルの [スタート] メニューを使用して再度起動することができます。
@@ -658,28 +658,28 @@ private void SpawnObject()
 
 ![MixedReality213 Main](images/mr213-main-600px.jpg)
 
-この章では、既定のモーションコントローラーモデルをカスタムブラシツールコレクションに置き換える方法について説明します。 参考までに **、[シーン** ] フォルダーの下の完成したシーン **MixedReality213Advanced** を見つけることができます。
+この章では、既定のモーションコントローラーモデルをカスタムブラシツールコレクションに置き換える方法について説明します。 参考までに **、[シーン**] フォルダーの下の完成したシーン **MixedReality213Advanced** を見つけることができます。
 
 ### <a name="instructions"></a>Instructions
 
 * [ **プロジェクト** ] パネルの [検索] ボックスに「 **BrushSelector** 」と入力します。 また、Assets/AppPrefabs の下にあります。
-* **BrushSelector** prefab を [ **階層** ] パネルにドラッグします。
-* 組織の場合は、 **ブラシ** と呼ばれる空のオブジェクトを作成します。
-* [ **プロジェクト** ] パネルから [ **ブラシ** ] に次の prefabs をドラッグします。
-    * Assets/AppPrefabs/ **BrushFat**
-    * Assets/AppPrefabs/ **BrushThin**
-    * Assets/AppPrefabs/ **消しゴム**
-    * Assets/AppPrefabs/ **MarkerFat**
-    * Assets/AppPrefabs/ **MarkerThin**
-    * Assets/AppPrefabs/ **鉛筆**
+* **BrushSelector** prefab を [**階層**] パネルにドラッグします。
+* 組織の場合は、**ブラシ** と呼ばれる空のオブジェクトを作成します。
+* [**プロジェクト**] パネルから [**ブラシ**] に次の prefabs をドラッグします。
+    * Assets/AppPrefabs/**BrushFat**
+    * Assets/AppPrefabs/**BrushThin**
+    * Assets/AppPrefabs/**消しゴム**
+    * Assets/AppPrefabs/**MarkerFat**
+    * Assets/AppPrefabs/**MarkerThin**
+    * Assets/AppPrefabs/**鉛筆**
 
     ![ブラシ](images/mixedreality213-brushes-250px.png)
 
-* [ **階層** ] パネルの [ **motioncontrollers** prefab] をクリックします。
-* [ **インスペクター** ] パネルの [ **モーションコントローラービジュアライザー** で **常に代替モデルを使用する** ] チェックボックスをオフにします。
-* [ **階層** ] パネルで、[ **BrushSelector** ] をクリックします。
+* [**階層**] パネルの [ **motioncontrollers** prefab] をクリックします。
+* [**インスペクター** ] パネルの [**モーションコントローラービジュアライザー** で **常に代替モデルを使用する**] チェックボックスをオフにします。
+* [**階層**] パネルで、[ **BrushSelector** ] をクリックします。
 * **BrushSelector** に **colorpicker** という名前のフィールドがある
-* [ **階層** ] パネルで、[ **ColorPickerWheel** ] を [ **インスペクター** ] パネルの [ **colorpicker** ] フィールドにドラッグします。
+* [**階層**] パネルで、[ **ColorPickerWheel** ] を [**インスペクター** ] パネルの [ **colorpicker** ] フィールドにドラッグします。
 
     ![ColorPickerWheel をブラシセレクターに割り当てる](images/mr213-brushselector-500px.jpg)
 
@@ -695,8 +695,8 @@ private void SpawnObject()
 
 **BrushSelector** は、次の2つのユーティリティを使用します。
 
-* **楕円** : 楕円形に沿って空間内のポイントを生成するために使用されます。
-* **Lineobjectcollection** : 任意の行クラスによって生成された点を使用してオブジェクトを分散します (例: 楕円)。 ここでは、楕円の形状に沿ってブラシを配置するために使用します。
+* **楕円**: 楕円形に沿って空間内のポイントを生成するために使用されます。
+* **Lineobjectcollection**: 任意の行クラスによって生成された点を使用してオブジェクトを分散します (例: 楕円)。 ここでは、楕円の形状に沿ってブラシを配置するために使用します。
 
 これらのユーティリティを組み合わせて使用すると、放射状メニューを作成できます。
 
@@ -803,21 +803,21 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 
 ### <a name="instructions"></a>Instructions
 
-* [ **階層** ] パネルで、 **MixedRealityCamera** 、 **Environment** 、 **motioncontrollers** を削除します。
+* [**階層**] パネルで、 **MixedRealityCamera**、 **Environment** 、 **motioncontrollers** を削除します。
 * [ **プロジェクト] パネル** で、次の prefabs を検索し、[ **階層** ] パネルにドラッグします。
-    * Assets/AppPrefabs/Input/Prefabs/ **MixedRealityCameraParent**
-    * Assets/AppPrefabs/Input/Prefabs/ **Inputmanager**
-    * Assets/AppPrefabs/Input/Prefabs/Cursor/ **Defaultcursor**
+    * Assets/AppPrefabs/Input/Prefabs/**MixedRealityCameraParent**
+    * Assets/AppPrefabs/Input/Prefabs/**Inputmanager**
+    * Assets/AppPrefabs/Input/Prefabs/Cursor/**Defaultcursor**
 
     ![Mixed Reality カメラの親](images/mr213-cameraparent-300px.png)
 
-* [ **階層** ] パネルで、[ **入力マネージャー** ] をクリックします。
+* [**階層**] パネルで、[**入力マネージャー** ] をクリックします。
 * [ **インスペクター** ] パネルで、 **単純な単一ポインターセレクター** セクションまで下にスクロールします。
 * [ **階層** ] パネルで、[ **Defaultcursor** ] を **カーソル** フィールドにドラッグします。
 
     ![DefaultCursor の割り当て](images/mr213-defaultcursor-500px.png)
 
-* シーンを **保存** し、[ **再生** ] ボタンをクリックします。 サムスティックを使用して、左/右に回転したり、テレポートしたりすることができます。
+* シーンを **保存** し、[**再生**] ボタンをクリックします。 サムスティックを使用して、左/右に回転したり、テレポートしたりすることができます。
 
 ## <a name="the-end"></a>最後です
 
@@ -833,8 +833,8 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 
 * Unity の [ **プロジェクト** ] パネルで、[ **シーン** ] フォルダーをクリックします。
 * Unity シーン **MixedReality213** と **MixedReality213Advanced** が2つ見つかります。
-    * **MixedReality213** : 1 つのブラシを使用した完成したシーン
-    * **MixedReality213Advanced** : 複数のブラシを持つ完成したシーンを選択ボタンの押す回数の例
+    * **MixedReality213**: 1 つのブラシを使用した完成したシーン
+    * **MixedReality213Advanced**: 複数のブラシを持つ完成したシーンを選択ボタンの押す回数の例
 
 ## <a name="see-also"></a>関連項目
 

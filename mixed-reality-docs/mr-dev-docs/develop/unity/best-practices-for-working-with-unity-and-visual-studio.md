@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: デプロイ、unity、visual studio、HoloLens、HoloLens 2、イマーシブヘッドセット、ベストプラクティス、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、UWP、Visual Studio Tools、Windows SDK
-ms.openlocfilehash: 9464c86826b9a8ea2c64384dfa699fc6d98743dd
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6940382af605c28686cec862cf2d9b6cb8411387
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009372"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583460"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Unity と Visual Studio を使用するためのベスト プラクティス
 
@@ -35,7 +35,7 @@ Unity での .NET スクリプティングバックエンドのサポートは�
 
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 
-ダウンロード [Visual Studio Tools for Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
+ダウンロード [Visual Studio Tools for Unity](/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
 
 **Visual Studio Tools for Unity の利点**
 * ブレークポイントを配置し、変数や複雑な式を評価することで、Visual Studio から Unity のエディター内再生モードをデバッグします。

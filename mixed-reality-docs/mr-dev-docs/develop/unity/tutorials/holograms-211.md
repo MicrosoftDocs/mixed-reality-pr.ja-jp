@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、academy、チュートリアル、ジェスチャ、HoloLens、Mixed Reality Academy、unity、mixed reality ヘッドセット、windows Mixed reality ヘッドセット、virtual Reality ヘッドセット、Windows 10
-ms.openlocfilehash: 9f83e2f3b02cf8d83b2fb58a3a0d05dc8576b0e8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: dfb31901001f760abd60bda3022902267b7c05cf
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678291"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583706"
 ---
 # <a name="mr-input-211-gesture"></a>MR 入力 211:ジェスチャ
 
 >[!NOTE]
->Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](../../../mr-learning-base-01.md)が投稿されています。
+>Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](./mr-learning-base-01.md)が投稿されています。
 
 [ジェスチャ](../../../design/gaze-and-commit.md#composite-gestures) によって、ユーザーの意図が動作するようになります。 ユーザーはジェスチャを使用して、ホログラムを操作できます。 このコースでは、ユーザーの手を追跡し、ユーザー入力に応答して、手動による状態と場所に基づいてユーザーにフィードバックを送る方法について説明します。
 
@@ -38,7 +38,7 @@ ms.locfileid: "94678291"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td>MR 入力 211:ジェスチャ</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -46,7 +46,7 @@ ms.locfileid: "94678291"
 
 ## <a name="before-you-start"></a>開始する前に
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>前提条件
 
 * 適切な [ツールがインストール](../../../develop/install-the-tools.md)された WINDOWS 10 PC。
 * 基本的な C# プログラミング機能。
@@ -68,12 +68,12 @@ ms.locfileid: "94678291"
 
 ## <a name="chapter-0---unity-setup"></a>章 0-Unity のセットアップ
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 1. Unity を起動します。
-2. **[Open (開く)]** を選択します。
+2. **[Open]** を選択します。
 3. 以前にアーカイブしていない **ジェスチャ** フォルダーに移動します。
-4. [モデルエクスプローラーの **開始**] フォルダーを見つけて選択し / **Model Explorer** ます。
+4. [モデルエクスプローラーの **開始**] フォルダーを見つけて選択し / ます。
 5. [ **フォルダーの選択** ] ボタンをクリックします。
 6. [ **プロジェクト** ] パネルで、[ **シーン** ] フォルダーを展開します。
 7. [ **Modelexplorer** シーン] をダブルクリックして Unity に読み込みます。
@@ -124,7 +124,7 @@ HoloLens に展開する場合:
 >[!NOTE]
 >HoloLens 2 では、両手が表示されると (指が指されているときだけではなく)、ハンド検出が発生します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * [ **階層** ] パネルで、[ **inputmanager** ] オブジェクトを展開します。
 * **GesturesInput** オブジェクトを探して選択します。
@@ -170,7 +170,7 @@ HoloLens に展開する場合:
 
 * Astronaut を回転させるには、ナビゲーションジェスチャイベントを使用します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 アプリでナビゲーションジェスチャを使用するには、 **GestureAction.cs** を編集して、ナビゲーションジェスチャが発生したときにオブジェクトを回転させます。 また、ナビゲーションが利用可能になったときに表示されるように、カーソルにフィードバックを追加します。
 
@@ -314,7 +314,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * ハンド **ガイダンススコア** を使用して、ハンドトラッキングがいつ失われるかを予測できます。
 * ユーザーがカメラのビューの端に近づいたときに表示されるように **、カーソルに関するフィードバック** を提供します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 1. [ **階層** ] パネルで、[ **カーソルとフィードバック** ] オブジェクトを選択します。
 2. [ **インスペクター** ] パネルで、[ **コンポーネントの追加** ] ボタンをクリックします。
@@ -339,14 +339,14 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * 操作イベントを使用して、astronaut を自分の手に移動します。
 * カーソルに関するフィードバックを提供して、操作を使用できるタイミングをユーザーに知らせます。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 GestureManager.cs と AstronautManager.cs では、次のことを行うことができます。
 
 1. Speech キーワード "**Move Astronaut**" を使用して **操作** ジェスチャを有効にし、"**Rotate Astronaut**" を使用して無効にします。
 2. **操作ジェスチャレコグナイザー** に応答するように切り替えます。
 
-始めましょう。
+では、始めましょう。
 
 1. [ **階層** ] パネルで、新しい空の作成オブジェクトを作成します。 "**AstronautManager**" という名前を指定します。
 2. [ **インスペクター** ] パネルで、[ **コンポーネントの追加** ] ボタンをクリックします。
@@ -506,7 +506,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * Astronaut モデルを、ユーザーが対話できる複数の小さなピースに拡張します。
 * ナビゲーションと操作のジェスチャを使用して、各部分を個別に移動します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 このセクションでは、次のタスクを実行します。
 
@@ -543,7 +543,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 
 ## <a name="the-end"></a>最後です
 
-おめでとうございます。 これで **MR 入力 211: ジェスチャ** が完了しました。
+お疲れさまでした。 これで **MR 入力 211: ジェスチャ** が完了しました。
 
 * ハンドトラッキング、ナビゲーション、操作のイベントを検出して対応する方法がわかります。
 * ナビゲーションジェスチャと操作ジェスチャの違いを理解します。

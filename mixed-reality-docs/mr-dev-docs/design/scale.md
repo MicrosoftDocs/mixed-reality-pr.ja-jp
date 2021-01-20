@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、Style、design、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens、scale、ホログラム
-ms.openlocfilehash: 6711a58fb4dde2aa28272c3003e642c4f4d3e236
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 12b1c96146f76274831c9bc3427cef93bb326f70
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848271"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583314"
 ---
 # <a name="scale"></a>スケール
 
@@ -81,6 +81,6 @@ ms.locfileid: "97848271"
 ---
 
 ## <a name="see-also"></a>関連項目
-* [色、ライト、素材](../color,-light-and-materials.md)
+* [色、ライト、素材](./color-light-and-materials.md)
 * [文字体裁](typography.md)
 * [立体音響の設計](spatial-sound-design.md)

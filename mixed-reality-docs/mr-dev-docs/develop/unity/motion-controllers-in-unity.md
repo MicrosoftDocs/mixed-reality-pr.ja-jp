@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: モーションコントローラー, unity, 入力, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実のヘッドセット, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: bf9aad0ee67a406280cefedec8b55fb1de130b8b
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: db103e674a369f13e62aac5e8c0513b2c2c17f9e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192962"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583506"
 ---
 # <a name="motion-controllers-in-unity"></a>Unity のモーションコントローラー
 
@@ -445,7 +445,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 - [MR 入力 211:ジェスチャ](tutorials/holograms-211.md)
 - [MR 入力 213:モーション コントローラー](../../deprecated/mixed-reality-213.md)
 
-[![MR 入力 213-モーションコントローラー](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
+[![MR 入力 213-モーションコントローラー](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
 *MR 入力 213-モーションコントローラー*
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
@@ -453,7 +453,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次の構成要素を続けることができます。
 
 > [!div class="nextstepaction"]
-> [手と視線の追跡](hand-eye-in-unit.md)
+> [手と視線の追跡](./hand-eye-in-unity.md)
 
 または、Mixed Reality プラットフォームの機能と API に移動します。
 

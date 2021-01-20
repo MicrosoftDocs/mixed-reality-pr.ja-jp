@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, エッジ, iot edge, チュートリアル, api, 通知, 関数, テーブル, hololens, イマーシブ, vr, iot, 仮想マシン, ubuntu, python, Windows 10, Visual Studio
-ms.openlocfilehash: 3c01c7351ee284b72a15fd7d5bdd3205fec91e49
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f23a9bf5bcdb0868ef9b0e6f77fbdb7a15dfdce1
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009302"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582814"
 ---
 # <a name="mr-and-azure-313-iot-hub-service"></a>MR と Azure 313:IoT Hub サービス
 
@@ -39,9 +39,9 @@ ms.locfileid: "98009302"
 
 - **Azure Container Registry** は、さまざまな種類のコンテナーについて、開発者がコンテナーイメージを格納できるようにする、Microsoft Azure サービスです。 詳細については、 [ **Azure Container Registry サービス**](https://azure.microsoft.com/services/container-registry/)に関するページを参照してください。
 
-- **Azure Function App** は Microsoft Azure サービスであり、開発者は azure で小さなコードである "functions" を実行できます。 これにより、ローカルアプリケーションではなく、クラウドに作業を委任することができます。これには多くのメリットがあります。 **Azure Functions** は、C \# 、F \# 、Node.js、Java、PHP など、いくつかの開発言語をサポートしています。 詳細については、 [ **Azure Functions** のページ](https://docs.microsoft.com/azure/azure-functions/functions-overview)を参照してください。
+- **Azure Function App** は Microsoft Azure サービスであり、開発者は azure で小さなコードである "functions" を実行できます。 これにより、ローカルアプリケーションではなく、クラウドに作業を委任することができます。これには多くのメリットがあります。 **Azure Functions** は、C \# 、F \# 、Node.js、Java、PHP など、いくつかの開発言語をサポートしています。 詳細については、 [ **Azure Functions** のページ](/azure/azure-functions/functions-overview)を参照してください。
 
-- **Azure Storage: テーブル** は Microsoft Azure サービスです。これにより、開発者は構造化された SQL 以外のデータをクラウドに格納し、どこからでも簡単にアクセスできるようになります。 このサービスでは、スキーマのない設計が非常に優れているため、必要に応じてテーブルを進化させることができるため、非常に柔軟性があります。 詳細については、 [ **Azure のテーブル** に関するページを参照してください。](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
+- **Azure Storage: テーブル** は Microsoft Azure サービスです。これにより、開発者は構造化された SQL 以外のデータをクラウドに格納し、どこからでも簡単にアクセスできるようになります。 このサービスでは、スキーマのない設計が非常に優れているため、必要に応じてテーブルを進化させることができるため、非常に柔軟性があります。 詳細については、 [ **Azure のテーブル** に関するページを参照してください。](/azure/cosmos-db/table-storage-overview)
 
 このコースでは、IoT Hub サービスを設定して使用する方法と、デバイスによって提供される応答を視覚化する方法について説明します。 これらの概念は、作成するカスタム IoT Hub サービスのセットアップに適用する必要があります。
 
@@ -49,7 +49,7 @@ ms.locfileid: "98009302"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td> MR と Azure 313:IoT Hub サービス</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -57,7 +57,7 @@ ms.locfileid: "98009302"
 
 ## <a name="prerequisites"></a>前提条件
 
-Microsoft HoloLens など、mixed reality を使用した開発に関する最新の前提条件については、 [ツールのインストール](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) に関する記事をご覧ください。
+Microsoft HoloLens など、mixed reality を使用した開発に関する最新の前提条件については、 [ツールのインストール](/windows/mixed-reality/install-the-tools) に関する記事をご覧ください。
 
 > [!NOTE]
 > このチュートリアルは、Python の基本的な経験がある開発者向けに設計されています。 また、このドキュメントに記載されている前提条件と記述に記載されている手順は、作成時にテストおよび検証された内容 (2018 年7月) を表しています。 「 [ツールのインストール](../../install-the-tools.md) 」の記事に記載されているように、最新のソフトウェアを自由に使用できます。ただし、このコースの情報は、以下に示したソフトウェアより新しいソフトウェアでは完全に一致するとは限りません。
@@ -79,19 +79,19 @@ Microsoft HoloLens など、mixed reality を使用した開発に関する最�
 
 
 
-### <a name="before-you-start"></a>アップグレードを開始する前に
+### <a name="before-you-start"></a>開始する前に
 
-1. HoloLens をセットアップしてテストします。 HoloLens のセットアップをサポートする必要がある場合は、 [hololens セットアップに関する記事にアクセスして](https://docs.microsoft.com/hololens/hololens-setup)ください。
+1. HoloLens をセットアップしてテストします。 HoloLens のセットアップをサポートする必要がある場合は、 [hololens セットアップに関する記事にアクセスして](/hololens/hololens-setup)ください。
 2. 新しい HoloLens アプリの開発を開始するときは、 **調整** と **センサーのチューニング** を実行することをお勧めします (ユーザーごとにこれらのタスクを実行するのに役立つ場合があります)。
 
-調整の詳細については、 [「HoloLens の調整に関する記事へのリンク」を](../../../calibration.md#hololens-2)参照してください。
+調整の詳細については、 [「HoloLens の調整に関する記事へのリンク」を](/hololens/hololens-calibration#hololens-2)参照してください。
 
-センサーチューニングの詳細については、 [HoloLens センサーチューニングに関する記事へのリンクを](../../../sensor-tuning.md)参照してください。
+センサーチューニングの詳細については、 [HoloLens センサーチューニングに関する記事へのリンクを](/hololens/hololens-updates)参照してください。
 
 3. **Hyper-v** を使用して **Ubuntu 仮想マシン** をセットアップします。 このプロセスには、次のリソースが役立ちます。
     1.  まず、このリンクに従っ [て Ubuntu 16.04.4 LTS (Xenial Xerus) ISO をダウンロード](https://au.releases.ubuntu.com/16.04/)します。 64ビット **PC (AMD64) デスクトップイメージ** を選択します。
-    2.  Windows 10 コンピューターで **hyper-v** が有効になっていることを確認します。 [Windows 10 で hyper-v をインストールして有効](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)にする方法については、こちらのリンクを参照してください。
-    3.  Hyper-v を起動し、新しい Ubuntu VM を作成します。 [Hyper-v を使用して VM を作成する手順](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine)については、こちらのリンクを参照してください。 **[起動可能なイメージファイルからオペレーティングシステムをインストール** する] に要求された場合は、前の手順でダウンロードした **Ubuntu ISO** を選択します。
+    2.  Windows 10 コンピューターで **hyper-v** が有効になっていることを確認します。 [Windows 10 で hyper-v をインストールして有効](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)にする方法については、こちらのリンクを参照してください。
+    3.  Hyper-v を起動し、新しい Ubuntu VM を作成します。 [Hyper-v を使用して VM を作成する手順](/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine)については、こちらのリンクを参照してください。 **[起動可能なイメージファイルからオペレーティングシステムをインストール** する] に要求された場合は、前の手順でダウンロードした **Ubuntu ISO** を選択します。
 
     > [!NOTE]
     > **Hyper-v の簡易作成** を使用することは推奨されません。  
@@ -186,7 +186,7 @@ Microsoft HoloLens など、mixed reality を使用した開発に関する最�
 
     1. リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのコースなど) を共通のリソースグループに保持することをお勧めします。
 
-        > Azure リソースグループの詳細については、 [リソースグループの管理方法に関するリンク](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)を参照してください。
+        > Azure リソースグループの詳細については、 [リソースグループの管理方法に関するリンク](/azure/azure-resource-manager/resource-group-portal)を参照してください。
 
 
     2. 適切な **場所** を選択します (このコースで作成するすべてのサービスで同じ場所を使用します)。
@@ -382,7 +382,7 @@ Microsoft HoloLens など、mixed reality を使用した開発に関する最�
     >1. VS Code、またはコンピューターを再起動します。
     >2. **VS Code ターミナル** を、python のインストールに使用している **もの (特** に、python 環境がコンピューターに既にインストールされている場合) に切り替える必要がある場合があります。 ターミナルを開いた状態で、ターミナルの右側にドロップダウンメニューが表示されます。
      ![コンテナーを作成する](images/AzureLabs-Lab313-24b.png) 
-    >3. **Python** インストールパスが **環境変数** としてコンピューターに追加されていることを確認します。 Cookiecutter は同じ場所のパスの一部にする必要があります。 [環境変数の詳細につい](https://msdn.microsoft.com/library/windows/desktop/ms682653(v=vs.85).aspx)ては、このリンクに従ってください。 
+    >3. **Python** インストールパスが **環境変数** としてコンピューターに追加されていることを確認します。 Cookiecutter は同じ場所のパスの一部にする必要があります。 [環境変数の詳細につい](/windows/win32/procthread/environment-variables)ては、このリンクに従ってください。 
 
 7. **Cookiecutter** のインストールが完了したら、コンピューターを再起動して、 **Cookiecutter** がシステムの環境内でコマンドとして認識されるようにします。
 
@@ -870,11 +870,11 @@ Azure Portal に戻ります。ここでは、ストレージリソースを作�
 
     9. リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループを使用すると、Azure 資産のコレクションの監視、アクセスの制御、プロビジョニング、管理を行うことができます。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのコースなど) を共通のリソースグループに保持することをお勧めします。
 
-        > Azure リソースグループの詳細については、 [リソースグループの管理方法に関するリンク](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)を参照してください。
+        > Azure リソースグループの詳細については、 [リソースグループの管理方法に関するリンク](/azure/azure-resource-manager/resource-group-portal)を参照してください。
 
     10. このオプションが選択されている場合は、[ **仮想ネットワーク** ] を [ **無効**] のままにします。
 
-    11. **[作成]** をクリックします。
+    11. **Create** をクリックしてください。
 
         ![ストレージの詳細の入力](images/AzureLabs-Lab313-37.png)
 
@@ -1011,7 +1011,7 @@ Azure Portal に戻ります。ここでは、ストレージリソースを作�
 
     4. リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループを使用すると、Azure 資産のコレクションの監視、アクセスの制御、プロビジョニング、管理を行うことができます。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのコースなど) を共通のリソースグループに保持することをお勧めします。
 
-        > Azure リソースグループの詳細については、 [リソースグループの管理方法に関するリンク](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)を参照してください。
+        > Azure リソースグループの詳細については、 [リソースグループの管理方法に関するリンク](/azure/azure-resource-manager/resource-group-portal)を参照してください。
 
     5. **OS** の場合は、[Windows] をクリックします。これは目的のプラットフォームです。
 
@@ -1023,7 +1023,7 @@ Azure Portal に戻ります。ここでは、ストレージリソースを作�
 
     9. このアプリで *Application Insights* は必要ありませ **ん。そのままにして** おいてもかまいません。
 
-    10. **[作成]** をクリックします。
+    10. **Create** をクリックしてください。
 
         ![新しいインスタンスの作成](images/AzureLabs-Lab313-55.png)
 

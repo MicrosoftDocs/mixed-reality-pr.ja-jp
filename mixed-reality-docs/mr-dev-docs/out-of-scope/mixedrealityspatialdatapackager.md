@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 08/03/2020
 ms.topic: article
 keywords: lbe、MixedRealitySpatialDataPackager.exe、MixedRealitySpatialDataPackager
-ms.openlocfilehash: df6757730c8a5448d96811bfe4ce024f6942dc07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 93d598a6add8350850faadab241b254e9cb341aa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686266"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583645"
 ---
 # <a name="mixed-reality-spatial-data-packager-documentation"></a>Mixed Reality 空間データパッケージャーのドキュメント
 
@@ -37,7 +37,7 @@ ms.locfileid: "91686266"
     </colgroup>
     <tr>
         <td><strong>機能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 世代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 世代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
@@ -49,7 +49,7 @@ ms.locfileid: "91686266"
     </tr>
 </table>
 
-## <a name="quickstart"></a>クイックスタート
+## <a name="quickstart"></a>クイック スタート
 
 Mixed Reality 空間データパッケージャーツールは、エクスポートとインポートの2つの手順を通じて、ターゲットアプリの空間データをある PC から別の PC にコピーします。 このツールは、管理者特権で実行する必要があり、インポート時に既存の空間データを削除します。 Export は、既存の空間データをそのまま残します。
 
@@ -71,8 +71,7 @@ Mixed Reality 空間データパッケージャーツールは、エクスポー
 4. 空白の領域を最小化する (たとえば、異なるポスターの範囲をホワイトウォールに配置する)
 5. オブジェクトの移動など、シーンに動的オブジェクトを使用せずに領域をマップする
 6. インポート時にマップをロックする (Insider Preview 経由で利用可能)
-7. 品質の追跡が低下したとき、または環境に変化があった場合に、マップのロックを解除して環境を再スキャンする (照明またはオブジェクトのレイアウトの変更)
-***
+7. 品質の追跡が低下したとき、または環境に変化があった場合に、マップのロックを解除して環境を再スキャンする (照明またはオブジェクトレイアウトの変更) * * _
 
 ## <a name="running-mixed-reality-spatial-data-packager-with-companion-script"></a>コンパニオンスクリプトを使用した Mixed Reality 空間データパッケージャーの実行
 
@@ -154,7 +153,7 @@ MixedRealitySpatialDataPackager.exe import <folderpath to mapx files> <target pa
 インポートによって既存の空間データが削除され、指定したディレクトリのデータで置き換えられます。 アプリ名の入力では、空間アンカーをインポートする対象アプリのパッケージ名を指定し、ターゲットユーザー SID で、インポートされた空間アンカーへのアクセス権を持つユーザーを指定します。 ターゲットパッケージファミリ名とユーザー Sid が PC 上の既存の値と一致している必要があります。指定しないと、exe は失敗します。
 
 
-***
+_**
 ## <a name="error-messages"></a>エラー メッセージ
 さらに、次のエラーメッセージにも HRESULT が付随します。
 

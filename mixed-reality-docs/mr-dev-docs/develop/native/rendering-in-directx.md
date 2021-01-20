@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, ホログラム, レンダリング, 3D グラフィックス, HolographicFrame, レンダリングループ, 更新ループ, チュートリアル, サンプルコード, Direct3D
-ms.openlocfilehash: aafead61b45550f499405ae63bda7d7f8e79d224
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f62df75f8febc3f3ee6e7c98f2c8fd91082a4466
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006722"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583779"
 ---
 # <a name="rendering-in-directx"></a>DirectX でのレンダリング
 
@@ -25,7 +25,7 @@ Windows Mixed Reality は DirectX 上に構築されており、ユーザーに�
 ## <a name="update-for-the-current-frame"></a>現在のフレームの更新
 
 ホログラムのアプリケーションの状態を更新するには、次のようにします。
-* 表示管理システムから <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> を取得します。
+* 表示管理システムから <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> を取得します。
 * レンダリングが完了したら、カメラビューが配置されるの現在の予測でシーンを更新します。 Holographic シーンでは、複数のカメラを使用できます。
 
 Holographic カメラビューにレンダリングするには、アプリがフレームごとに1回、次のようになります。
@@ -33,7 +33,7 @@ Holographic カメラビューにレンダリングするには、アプリが�
 
 ### <a name="create-a-new-holographic-frame-and-get-its-prediction"></a>新しい holographic フレームを作成し、予測を取得する
 
-<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>には、アプリが現在のフレームを更新して表示するために必要な情報が含まれています。 アプリは、 **Createnextframe** メソッドを呼び出すことによって、各新しいフレームを開始します。 このメソッドが呼び出されると、予測は、使用可能な最新のセンサーデータを使用して作成され、 **currentprediction** オブジェクトにカプセル化されます。
+<a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>には、アプリが現在のフレームを更新して表示するために必要な情報が含まれています。 アプリは、 **Createnextframe** メソッドを呼び出すことによって、各新しいフレームを開始します。 このメソッドが呼び出されると、予測は、使用可能な最新のセンサーデータを使用して作成され、 **currentprediction** オブジェクトにカプセル化されます。
 
 レンダリングされた各フレームは、瞬時に有効であるため、新しいフレームオブジェクトを使用する必要があります。 **Currentprediction** プロパティには、カメラの位置などの情報が含まれています。 この情報は、フレームがユーザーに表示されることが予想される正確な時点に対して推定されます。
 
@@ -73,7 +73,7 @@ for (HolographicCameraPose const& cameraPose : prediction.CameraPoses())
 
 ### <a name="get-the-coordinate-system-to-use-as-a-basis-for-rendering"></a>描画の基準として使用する座標系を取得します。
 
-Windows Mixed Reality を使用すると、アプリは、物理的な世界での場所を追跡するために、接続された、静止した参照フレームなどのさまざまな [座標系](coordinate-systems-in-directx.md)を作成できます。 これにより、アプリはこれらの座標系を使用して、各フレームのホログラムのレンダリングを行うことができます。 API から座標を要求するときは、その座標を表現する <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a> を常に渡す必要があります。
+Windows Mixed Reality を使用すると、アプリは、物理的な世界での場所を追跡するために、接続された、静止した参照フレームなどのさまざまな [座標系](coordinate-systems-in-directx.md)を作成できます。 これにより、アプリはこれらの座標系を使用して、各フレームのホログラムのレンダリングを行うことができます。 API から座標を要求するときは、その座標を表現する <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a> を常に渡す必要があります。
 
 **Appmain:: Update** から:
 
@@ -313,7 +313,7 @@ context->VSSetConstantBuffers(
 
 Windows Mixed Reality には、開発者やユーザーが配置したホログラムをどこに配置しても、 [イメージを安定化](../platform-capabilities-and-apis/hologram-stability.md) させておくための機能が含まれています。 イメージの安定化は、ユーザーに最適な holographic エクスペリエンスを確保するために、レンダリングパイプラインに固有の待機時間を非表示にするのに役立ちます。 さらに、イメージの安定化をさらに強化するためにフォーカスポイントを指定することも、最適化されたイメージ安定化をリアルタイムで計算するために深度バッファーを指定することもできます。
 
-最良の結果を得るために、アプリは <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> API を使用して深度バッファーを提供する必要があります。 Windows Mixed Reality は、深度バッファーからのジオメトリ情報を使用して、イメージの安定化をリアルタイムで最適化できます。 Windows Holographic アプリテンプレートでは、アプリの深度バッファーが既定でコミットされるため、ホログラムの安定性が最適化されます。
+最良の結果を得るために、アプリは <a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> API を使用して深度バッファーを提供する必要があります。 Windows Mixed Reality は、深度バッファーからのジオメトリ情報を使用して、イメージの安定化をリアルタイムで最適化できます。 Windows Holographic アプリテンプレートでは、アプリの深度バッファーが既定でコミットされるため、ホログラムの安定性が最適化されます。
 
 **Appmain:: Render** から:
 
@@ -600,7 +600,7 @@ void main(triangle GeometryShaderInput input[3], inout TriangleStream<GeometrySh
 
 ### <a name="enable-the-holographic-frame-to-present-the-swap-chain"></a>Holographic フレームでスワップチェーンを表示できるようにします
 
-Windows Mixed Reality では、システムによってスワップチェーンが制御されます。 次に、システムは、各 holographic カメラへのフレームの表示を管理して、高品質なユーザーエクスペリエンスを実現します。 また、イメージの安定化や Mixed Reality のキャプチャなどのシステムの側面を最適化するために、各カメラの各フレームを更新するためのビューポートも用意されています。 そのため、DirectX を使用している holographic アプリは、DXGI スワップチェーンでは **を呼び出す** ことができません。 代わりに、 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> クラスを使用して、フレームを描画した後、そのすべてのスワップチェーンを表示します。
+Windows Mixed Reality では、システムによってスワップチェーンが制御されます。 次に、システムは、各 holographic カメラへのフレームの表示を管理して、高品質なユーザーエクスペリエンスを実現します。 また、イメージの安定化や Mixed Reality のキャプチャなどのシステムの側面を最適化するために、各カメラの各フレームを更新するためのビューポートも用意されています。 そのため、DirectX を使用している holographic アプリは、DXGI スワップチェーンでは **を呼び出す** ことができません。 代わりに、 <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> クラスを使用して、フレームを描画した後、そのすべてのスワップチェーンを表示します。
 
 From **DeviceResources::P** 再送信します。
 
@@ -608,11 +608,11 @@ From **DeviceResources::P** 再送信します。
 HolographicFramePresentResult presentResult = frame.PresentUsingCurrentPrediction();
 ```
 
-既定では、この API はフレームが終了するまで待機してから制御を戻します。 Holographic アプリは、新しいフレームで作業を開始する前に、前のフレームが終了するまで待機する必要があります。これにより、待機時間が短縮され、Holographic フレーム予測の結果が向上します。 これは難しいルールではなく、1つの画面の更新をレンダリングするのに時間がかかるフレームがある場合は、HolographicFramePresentWaitBehavior パラメーターを使用して <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">Current予測</a>を実行することで、この待機を無効にすることができます。 この場合、GPU に継続的な負荷を維持するために、非同期レンダリングスレッドを使用する可能性があります。 HoloLens デバイスのリフレッシュレートは 60 hz で、1つのフレームの期間は約16ミリ秒です。 イマーシブヘッドセットデバイスは、60 hz から 90 hz までの範囲で指定できます。ディスプレイを 90 hz で更新すると、各フレームの期間は約11ミリ秒になります。
+既定では、この API はフレームが終了するまで待機してから制御を戻します。 Holographic アプリは、新しいフレームで作業を開始する前に、前のフレームが終了するまで待機する必要があります。これにより、待機時間が短縮され、Holographic フレーム予測の結果が向上します。 これは難しいルールではなく、1つの画面の更新をレンダリングするのに時間がかかるフレームがある場合は、HolographicFramePresentWaitBehavior パラメーターを使用して <a href="/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">Current予測</a>を実行することで、この待機を無効にすることができます。 この場合、GPU に継続的な負荷を維持するために、非同期レンダリングスレッドを使用する可能性があります。 HoloLens デバイスのリフレッシュレートは 60 hz で、1つのフレームの期間は約16ミリ秒です。 イマーシブヘッドセットデバイスは、60 hz から 90 hz までの範囲で指定できます。ディスプレイを 90 hz で更新すると、各フレームの期間は約11ミリ秒になります。
 
 ### <a name="handle-devicelost-scenarios-in-cooperation-with-the-holographicframe"></a>HolographicFrame と連携して、Devicのシナリオを処理します
 
-DirectX 11 アプリは通常、DXGI スワップチェーンの **present** 関数によって返された HRESULT を確認して、 **devicループ** エラーが発生したかどうかを調べます。 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>クラスはこれを処理します。 返された <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframepresentresult" target="_blank">HolographicFramePresentResult</a> を調べて、Direct3D デバイスとデバイスベースのリソースを解放して再作成する必要があるかどうかを確認します。
+DirectX 11 アプリは通常、DXGI スワップチェーンの **present** 関数によって返された HRESULT を確認して、 **devicループ** エラーが発生したかどうかを調べます。 <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>クラスはこれを処理します。 返された <a href="/uwp/api/windows.graphics.holographic.holographicframepresentresult" target="_blank">HolographicFramePresentResult</a> を調べて、Direct3D デバイスとデバイスベースのリソースを解放して再作成する必要があるかどうかを確認します。
 
 ```cpp
 // The PresentUsingCurrentPrediction API will detect when the graphics device
@@ -625,7 +625,7 @@ if (presentResult == HolographicFramePresentResult::DeviceRemoved)
 }
 ```
 
-Direct3D デバイスが失われ、再作成した場合は、新しいデバイスの使用を開始するように <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> に指示する必要があります。 スワップチェーンは、このデバイスに対して再作成されます。
+Direct3D デバイスが失われ、再作成した場合は、新しいデバイスの使用を開始するように <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> に指示する必要があります。 スワップチェーンは、このデバイスに対して再作成されます。
 
 **DeviceResources:: InitializeUsingHolographicSpace** から:
 
@@ -641,7 +641,7 @@ Windows 10 の作成者更新 Pc は、離散 Gpu と統合 Gpu の **両方** �
 
 一般的な Direct3D サンプルコードでは、既定のハードウェアアダプターを使用して DirectX デバイスを作成する方法を示しています。このハードウェアアダプターは、ヘッドホンで使用されているものと同じではない場合があります。
 
-問題を回避するには、いずれかの<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>の<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicadapterid" target="_blank">HolographicAdapterID</a>を使用します。PrimaryAdapterId () または<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay" target="_blank">HolographicDisplay</a>。AdapterId ()。 この adapterId を使用すると、IDXGIFactory4 を使用して適切に DXGIAdapter を選択できます。
+問題を回避するには、いずれかの<a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>の<a href="/uwp/api/windows.graphics.holographic.holographicadapterid" target="_blank">HolographicAdapterID</a>を使用します。PrimaryAdapterId () または<a href="/uwp/api/windows.graphics.holographic.holographicdisplay" target="_blank">HolographicDisplay</a>。AdapterId ()。 この adapterId を使用すると、IDXGIFactory4 を使用して適切に DXGIAdapter を選択できます。
 
 **DeviceResources:: InitializeUsingHolographicSpace** から:
 
@@ -711,7 +711,7 @@ const HRESULT hr = D3D11CreateDevice(
 
 ハイブリッドシステムでメディアファンデーションを使用すると、メディアファンデーションがシステムの動作を既定にするため、ビデオがレンダリングされない、またはビデオテクスチャが破損する問題が発生する可能性があります。 場合によっては、マルチスレッドをサポートするために個別の ID3D11Device を作成する必要があり、適切な作成フラグが設定されます。
 
-ID3D11Device を初期化するときは、D3D11_CREATE_DEVICE_VIDEO_SUPPORT フラグを D3D11_CREATE_DEVICE_FLAG の一部として定義する必要があります。 デバイスとコンテキストが作成されたら、 <a href="https://docs.microsoft.com/windows/desktop/api/d3d10/nf-d3d10-id3d10multithread-setmultithreadprotected" target="_blank">Setmultithreadprotected</a> を呼び出してマルチスレッドを有効にします。 デバイスを <a href="https://docs.microsoft.com/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager" target="_blank">Imfdxgidevicemanager</a>に関連付けるには、 <a href="https://docs.microsoft.com/windows/desktop/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-resetdevice" target="_blank">Imfdxgidevicemanager:: resetdevice</a> 関数を使用します。
+ID3D11Device を初期化するときは、D3D11_CREATE_DEVICE_VIDEO_SUPPORT フラグを D3D11_CREATE_DEVICE_FLAG の一部として定義する必要があります。 デバイスとコンテキストが作成されたら、 <a href="/windows/desktop/api/d3d10/nf-d3d10-id3d10multithread-setmultithreadprotected" target="_blank">Setmultithreadprotected</a> を呼び出してマルチスレッドを有効にします。 デバイスを <a href="/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager" target="_blank">Imfdxgidevicemanager</a>に関連付けるには、 <a href="/windows/desktop/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-resetdevice" target="_blank">Imfdxgidevicemanager:: resetdevice</a> 関数を使用します。
 
 **ID3D11Device を IMFDXGIDeviceManager に関連付ける** コード。
 

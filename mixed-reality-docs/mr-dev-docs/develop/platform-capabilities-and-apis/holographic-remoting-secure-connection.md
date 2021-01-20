@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、セキュリティ、認証、サーバー対クライアント
-ms.openlocfilehash: 0881238bfca199958802598a3e1829a9de0d8e5b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6b8c26bfa32661a180f1f58acc5c4aa13529f3bb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006482"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583846"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Holographic リモート処理の接続セキュリティを有効にする
 
@@ -97,7 +97,7 @@ Holographic リモート処理でセキュリティを有効にすると、ネ�
 * クライアントは、Holographic Remoting を使用してこのトークンをサーバーに送信します。
 * サーバーは、クライアントのトークンを id プロバイダーに対して検証します。
 
-Id プロバイダーの1つの例として、 [Microsoft id プラットフォーム](https://docs.microsoft.com/azure/active-directory/develop/)があります。
+Id プロバイダーの1つの例として、 [Microsoft id プラットフォーム](/azure/active-directory/develop/)があります。
 
 前のユースケースと同様に、これらのトークンが安全でないチャネル経由で送信されないようにするか、または公開するようにしてください。
 
@@ -115,7 +115,7 @@ Id プロバイダーの1つの例として、 [Microsoft id プラットフォ�
 すべてのインターフェイスには、アクションを実行するための関数があります。これは、コールバックオブジェクトをパラメーターとして受け取ります。 このオブジェクトを使用すると、要求の非同期処理を簡単に実装できます。 このオブジェクトへの参照を保持し、非同期アクションが完了したときに completion 関数を呼び出します。 完了関数は、任意のスレッドから呼び出すことができます。
 
 >[!TIP]
->WinRT インターフェイスの実装は、C++/winrtを使用して簡単に行うことができます。 この詳細については、「 [C++/WinRT での api の作成」を](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/author-apis) 参照してください。
+>WinRT インターフェイスの実装は、C++/winrtを使用して簡単に行うことができます。 この詳細については、「 [C++/WinRT での api の作成」を](//windows/uwp/cpp-and-winrt-apis/author-apis) 参照してください。
 
 >[!IMPORTANT]
 >`build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl`NuGet パッケージ内には、セキュリティで保護された接続に関連する API の詳細なドキュメントが含まれています。
@@ -193,5 +193,5 @@ OpenXR 拡張機能を使用したセキュリティで保護された接続の�
 * [OpenXR Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md)
 * [カスタム Holographic リモート処理プレーヤーアプリの作成](holographic-remoting-create-player.md)
 * [Holographic リモート処理のトラブルシューティングと制限事項](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting ソフトウェア ライセンス条項](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting ソフトウェア ライセンス条項](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft プライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)

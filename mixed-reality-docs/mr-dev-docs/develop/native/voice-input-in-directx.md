@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: チュートリアル、音声コマンド、語句、認識、音声、directx、プラットフォーム、cortana、windows mixed reality
-ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5f7ed587b474d147c0b13e4896a89f655f8dc30b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613106"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583741"
 ---
 # <a name="voice-input-in-directx"></a>DirectX の音声入力
 
@@ -67,7 +67,7 @@ m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-Speech レコグナイザーの制約の一覧にコマンドリストを読み込むには、 [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) オブジェクトを使用します。
+Speech レコグナイザーの制約の一覧にコマンドリストを読み込むには、 [SpeechRecognitionListConstraint](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint) オブジェクトを使用します。
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -86,7 +86,7 @@ SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListCon
    });
 ```
 
-音声認識エンジンの[SpeechContinuousRecognitionSession](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx)で[resultgenerated](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx)イベントをサブスクライブします。 このイベントは、いずれかのコマンドが認識されたときにアプリに通知します。
+音声認識エンジンの[SpeechContinuousRecognitionSession](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession)で[resultgenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession)イベントをサブスクライブします。 このイベントは、いずれかのコマンドが認識されたときにアプリに通知します。
 
 ```
 m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
@@ -95,7 +95,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-*Onresultgenerated* イベントハンドラーは、 [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx)インスタンス内のイベントデータを受信します。 確信度が定義したしきい値を超える場合、アプリはイベントが発生したことを確認する必要があります。 後の更新ループで使用できるように、イベントデータを保存します。
+*Onresultgenerated* イベントハンドラーは、 [SpeechContinuousRecognitionResultGeneratedEventArgs](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs)インスタンス内のイベントデータを受信します。 確信度が定義したしきい値を超える場合、アプリはイベントが発生したことを確認する必要があります。 後の更新ループで使用できるように、イベントデータを保存します。
 
 *HolographicVoiceInputSampleMain* から:
 
@@ -256,7 +256,7 @@ catch (Exception^ exception)
 ```
 
 > [!NOTE]
-> 音声認識を最適化するために使用できる定義済みの [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) がいくつかあります。
+> 音声認識を最適化するために使用できる定義済みの [SpeechRecognitionScenarios](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) がいくつかあります。
 
 * ディクテーション用に最適化するには、ディクテーションのシナリオを使用します。<br/>
    ```
@@ -431,5 +431,5 @@ catch (Exception^ exception)
 ```
 
 ## <a name="see-also"></a>関連項目
-* [音声アプリの設計](https://msdn.microsoft.com/library/dn596121.aspx)
+* [音声アプリの設計](/windows/uwp/design/input/speech-interactions)
 * [SpeechRecognitionAndSynthesis サンプル](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

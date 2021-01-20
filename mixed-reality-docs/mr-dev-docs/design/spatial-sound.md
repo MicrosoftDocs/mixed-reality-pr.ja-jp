@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: 空間サウンド, サラウンドサウンド, 3d オーディオ, 3d サウンド, 空間オーディオ, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, MRTK, Mixed Reality ツールキット, ケーススタディ, acoustics
-ms.openlocfilehash: b65a4ff3dc64863f02f1459fa0c3adc5d34b0703
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 335ff8acf036591bbbf9868f591ca2c3cef1386c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848174"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583253"
 ---
 # <a name="audio-in-mixed-reality"></a>混合現実のオーディオ
 
@@ -43,7 +43,7 @@ Acoustics により深い接続ホログラムが混合現実の世界になり�
     </colgroup>
     <tr>
         <td><strong>機能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (最初の世代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (最初の世代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
@@ -91,7 +91,7 @@ HRTFs は、頻度の範囲内の耳間のレベルとフェーズの差を操�
 
 ### <a name="spatializer-platform-support"></a>Spatializer プラットフォームのサポート
 
-Windows では、 [ISPATIALAUDIOCLIENT API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound)を使用して、hrtfs などの spatialization を提供しています。 この API は、HoloLens 2 HRTF ハードウェアアクセラレーションをアプリケーションに公開します。
+Windows では、 [ISPATIALAUDIOCLIENT API](/windows/win32/coreaudio/spatial-sound)を使用して、hrtfs などの spatialization を提供しています。 この API は、HoloLens 2 HRTF ハードウェアアクセラレーションをアプリケーションに公開します。
 
 ### <a name="spatializer-middleware-support"></a>Spatializer ミドルウェアのサポート
 
@@ -103,7 +103,7 @@ Windows の HRTFs のサポートは、次のサードパーティのオーデ�
 
 空間オーディオは、方向よりも大きくなります。 その他のディメンションには、遮蔽、障害、リバーブ、portaling、ソースモデリングなどがあります。 これらのディメンションをまとめて、 *acoustics* と呼びます。 Acoustics を使用しない場合、spatialized は認識できない距離になります。
 
-Acoustics は単純なものから複雑なものまでの範囲です。 任意のオーディオエンジンでサポートされているリバーブを使用して、spatialized サウンドをリスナーの環境にプッシュできます。 [Project Acoustics](https://aka.ms/acoustics)などの Acoustics システムでは、より豊富で説得力の高い Acoustics 処理が提供されています。 プロジェクト Acoustics は、壁、ドア、およびその他のシーンジオメトリの効果をサウンドでモデル化できます。 これは、開発時に関連するシーンジオメトリが既知の場合に有効なオプションです。
+Acoustics は単純なものから複雑なものまでの範囲です。 任意のオーディオエンジンでサポートされているリバーブを使用して、spatialized サウンドをリスナーの環境にプッシュできます。 [Project Acoustics](/gaming/acoustics/what-is-acoustics)などの Acoustics システムでは、より豊富で説得力の高い Acoustics 処理が提供されています。 プロジェクト Acoustics は、壁、ドア、およびその他のシーンジオメトリの効果をサウンドでモデル化できます。 これは、開発時に関連するシーンジオメトリが既知の場合に有効なオプションです。
 
 ## <a name="next-steps"></a>次のステップ
 

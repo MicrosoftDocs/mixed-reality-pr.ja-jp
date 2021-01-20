@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows mixed reality, 空間マッピング, 環境, 相互作用, directx, winrt, api, サンプルコード, UWP, SDK, チュートリアル
-ms.openlocfilehash: bcd78487e96aaf09707aa4bf58917223cc2e8583
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 19479a4efb577bad629e46b59334f0d23b0b2db4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006712"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583773"
 ---
 # <a name="spatial-mapping-in-directx"></a>DirectX の空間マッピング
 
@@ -36,7 +36,7 @@ ms.locfileid: "98006712"
     </colgroup>
     <tr>
         <td><strong>機能</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (第 1 世代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 世代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
@@ -50,35 +50,35 @@ ms.locfileid: "98006712"
 
 ## <a name="directx-development-overview"></a>DirectX 開発の概要
 
-空間マッピングのネイティブアプリケーション開発では、 [Windows](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx) のような名前空間の api を使用します。 これらの Api を使用すると、空間マッピング Api が [Unity](../unity/spatial-mapping-in-unity.md)によって公開されるのと同じ方法で、空間マッピング機能を完全に制御できます。
+空間マッピングのネイティブアプリケーション開発では、 [Windows](/uwp/api/Windows.Perception.Spatial) のような名前空間の api を使用します。 これらの Api を使用すると、空間マッピング Api が [Unity](../unity/spatial-mapping-in-unity.md)によって公開されるのと同じ方法で、空間マッピング機能を完全に制御できます。
 
 ### <a name="perception-apis"></a>認識 Api
 
 空間マッピング開発の主な種類は次のとおりです。
-* [SpatialSurfaceObserver](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.aspx) は、SpatialSurfaceInfo オブジェクトの形式で、ユーザーの近くにある、アプリケーションで指定された領域内のサーフェイスに関する情報を提供します。
-* [SpatialSurfaceInfo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.aspx) は、一意の ID、境界ボリューム、最後の変更の時間など、1つの既存空間サーフェスを表します。 要求に応じて非同期的に SpatialSurfaceMesh を提供します。
-* [SpatialSurfaceMeshOptions](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemeshoptions.aspx) には、SpatialSurfaceInfo から要求された SpatialSurfaceMesh オブジェクトをカスタマイズするために使用されるパラメーターが含まれています。
-* [SpatialSurfaceMesh](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.aspx) は、1つの空間サーフェスのメッシュデータを表します。 頂点の位置、頂点の法線、三角形のインデックスのデータは、メンバーの SpatialSurfaceMeshBuffer オブジェクトに含まれています。
-* [SpatialSurfaceMeshBuffer](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemeshbuffer.aspx) は、単一の種類のメッシュデータをラップします。
+* [SpatialSurfaceObserver](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) は、SpatialSurfaceInfo オブジェクトの形式で、ユーザーの近くにある、アプリケーションで指定された領域内のサーフェイスに関する情報を提供します。
+* [SpatialSurfaceInfo](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo) は、一意の ID、境界ボリューム、最後の変更の時間など、1つの既存空間サーフェスを表します。 要求に応じて非同期的に SpatialSurfaceMesh を提供します。
+* [SpatialSurfaceMeshOptions](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshOptions) には、SpatialSurfaceInfo から要求された SpatialSurfaceMesh オブジェクトをカスタマイズするために使用されるパラメーターが含まれています。
+* [SpatialSurfaceMesh](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh) は、1つの空間サーフェスのメッシュデータを表します。 頂点の位置、頂点の法線、三角形のインデックスのデータは、メンバーの SpatialSurfaceMeshBuffer オブジェクトに含まれています。
+* [SpatialSurfaceMeshBuffer](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshBuffer) は、単一の種類のメッシュデータをラップします。
 
 これらの Api を使用してアプリケーションを開発する場合、基本的なプログラムフローは次のようになります (以下で説明するサンプルアプリケーションで示すように)。
 - **SpatialSurfaceObserver を設定する**
-  - [Requestaccessasync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.requestaccessasync.aspx)を呼び出して、ユーザーがアプリケーションにデバイスの空間マッピング機能を使用するためのアクセス許可を与えられていることを確認します。
+  - [Requestaccessasync](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver)を呼び出して、ユーザーがアプリケーションにデバイスの空間マッピング機能を使用するためのアクセス許可を与えられていることを確認します。
   - SpatialSurfaceObserver オブジェクトをインスタンス化します。
-  - 空間サーフェスに関する情報が必要な領域を指定するには、 [SetBoundingVolumes](https://msdn.microsoft.com/library/windows/apps/mt592747.aspx) を呼び出します。 今後、この関数を呼び出して、これらのリージョンを変更することができます。 各リージョンは、 [SpatialBoundingVolume](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialboundingvolume.aspx)を使用して指定されます。
-  - [ObservedSurfacesChanged](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.observedsurfaceschanged.aspx)イベントに登録します。これは、指定した領域の空間サーフェスに関する新しい情報が利用可能になるたびに起動されます。
+  - 空間サーフェスに関する情報が必要な領域を指定するには、 [SetBoundingVolumes](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) を呼び出します。 今後、この関数を呼び出して、これらのリージョンを変更することができます。 各リージョンは、 [SpatialBoundingVolume](/uwp/api/Windows.Perception.Spatial.SpatialBoundingVolume)を使用して指定されます。
+  - [ObservedSurfacesChanged](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver)イベントに登録します。これは、指定した領域の空間サーフェスに関する新しい情報が利用可能になるたびに起動されます。
 - **ObservedSurfacesChanged イベントの処理**
-  - イベントハンドラーで、 [GetObservedSurfaces](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.getobservedsurfaces.aspx) を呼び出して、SpatialSurfaceInfo オブジェクトのマップを受信します。 このマップを使用して、 [ユーザーの環境内に存在](../../design/spatial-mapping.md#mesh-caching)する空間サーフェスのレコードを更新できます。
-  - 各 SpatialSurfaceInfo オブジェクトに対して、 [Trygetbounds](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.trygetbounds.aspx) に対してクエリを実行し、選択した [空間座標系](../../design/coordinate-systems.md) で表現されるサーフェスの空間範囲を決定することができます。
-  - 空間サーフェスのメッシュを要求する場合は、 [TryComputeLatestMeshAsync](https://msdn.microsoft.com/library/windows/apps/mt592715.aspx)を呼び出します。 三角形の密度、および返されるメッシュデータの形式を指定するオプションを指定できます。
+  - イベントハンドラーで、 [GetObservedSurfaces](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) を呼び出して、SpatialSurfaceInfo オブジェクトのマップを受信します。 このマップを使用して、 [ユーザーの環境内に存在](../../design/spatial-mapping.md#mesh-caching)する空間サーフェスのレコードを更新できます。
+  - 各 SpatialSurfaceInfo オブジェクトに対して、 [Trygetbounds](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo) に対してクエリを実行し、選択した [空間座標系](../../design/coordinate-systems.md) で表現されるサーフェスの空間範囲を決定することができます。
+  - 空間サーフェスのメッシュを要求する場合は、 [TryComputeLatestMeshAsync](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo)を呼び出します。 三角形の密度、および返されるメッシュデータの形式を指定するオプションを指定できます。
 - **メッシュの受信と処理**
   - TryComputeLatestMeshAsync を呼び出すたびに、1つの SpatialSurfaceMesh オブジェクトが非同期に返されます。
-  - このオブジェクトから、含まれている SpatialSurfaceMeshBuffer オブジェクトにアクセスできます。これにより、メッシュの三角形のインデックス、頂点位置、および頂点法線を要求した場合にアクセスできます。 このデータは、メッシュのレンダリングに使用される [Direct3D 11 api](https://msdn.microsoft.com/library/windows/desktop/ff476501(v=vs.85).aspx) と直接互換性がある形式になります。
+  - このオブジェクトから、含まれている SpatialSurfaceMeshBuffer オブジェクトにアクセスできます。これにより、メッシュの三角形のインデックス、頂点位置、および頂点法線を要求した場合にアクセスできます。 このデータは、メッシュのレンダリングに使用される [Direct3D 11 api](/windows/win32/api/d3d11/nf-d3d11-id3d11device-createbuffer) と直接互換性がある形式になります。
   - ここから、アプリケーションでメッシュデータを必要に応じて分析または [処理](../../design/spatial-mapping.md#mesh-processing) し、 [レンダリング](../../design/spatial-mapping.md#rendering) や物理的な [raycasting と競合](../../design/spatial-mapping.md#raycasting-and-collision)に使用することができます。
-  - 注意すべき重要な点の1つは、メッシュの頂点位置 (メッシュのレンダリングに使用される頂点シェーダーなど) にスケールを適用して、バッファーに格納されている最適化された整数単位からメーターに変換する必要があることです。 このスケールを取得するには、 [Vertexpositionscale](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx)を呼び出します。
+  - 注意すべき重要な点の1つは、メッシュの頂点位置 (メッシュのレンダリングに使用される頂点シェーダーなど) にスケールを適用して、バッファーに格納されている最適化された整数単位からメーターに変換する必要があることです。 このスケールを取得するには、 [Vertexpositionscale](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh)を呼び出します。
 
 ### <a name="troubleshooting"></a>トラブルシューティング
-* [SpatialSurfaceMesh スケール](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx)によって返されるスケールを使用して、頂点シェーダー内のメッシュ頂点の位置を必ずスケーリングしてください。
+* [SpatialSurfaceMesh スケール](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh)によって返されるスケールを使用して、頂点シェーダー内のメッシュ頂点の位置を必ずスケーリングしてください。
 
 ## <a name="spatial-mapping-code-sample-walkthrough"></a>空間マッピングコードサンプルのチュートリアル
 
@@ -159,7 +159,7 @@ initSurfaceObserverTask.then([this, coordinateSystem](Windows::Perception::Spati
 
 ### <a name="create-a-surface-observer"></a>Surface オブザーバーを作成する
 
-**Windows::P erception:: 空間::** surface 名前空間には、 [SpatialSurfaceObserver](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.aspx)クラスが含まれています。このクラスは、 [SpatialCoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.aspx)で指定した1つ以上のボリュームを監視します。 [SpatialSurfaceObserver](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.aspx)インスタンスを使用して、リアルタイムでサーフェイスメッシュデータにアクセスします。
+**Windows::P erception:: 空間::** surface 名前空間には、 [SpatialSurfaceObserver](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver)クラスが含まれています。このクラスは、 [SpatialCoordinateSystem](/uwp/api/Windows.Perception.Spatial.SpatialCoordinateSystem)で指定した1つ以上のボリュームを監視します。 [SpatialSurfaceObserver](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver)インスタンスを使用して、リアルタイムでサーフェイスメッシュデータにアクセスします。
 
 **Appmain** から:
 
@@ -219,7 +219,7 @@ m_surfaceObserver->SetBoundingVolume(
             );
 ```
 
-Surface マッピングデータを使用できない場合にアプリの動作を変える必要がある場合は、 [SpatialPerceptionAccessStatus](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialperceptionaccessstatus.aspx) が **許可** されていない場合に応答するコードを記述できます。たとえば、デバイスにデバイスが搭載されていても、空間マッピング用のハードウェアがないため、このようなデバイスは許可されません。 これらのデバイスでは、代わりに、ユーザーの環境とデバイスの構成に関する情報を空間ステージに依存させる必要があります。
+Surface マッピングデータを使用できない場合にアプリの動作を変える必要がある場合は、 [SpatialPerceptionAccessStatus](/uwp/api/Windows.Perception.Spatial.SpatialPerceptionAccessStatus) が **許可** されていない場合に応答するコードを記述できます。たとえば、デバイスにデバイスが搭載されていても、空間マッピング用のハードウェアがないため、このようなデバイスは許可されません。 これらのデバイスでは、代わりに、ユーザーの環境とデバイスの構成に関する情報を空間ステージに依存させる必要があります。
 
 ### <a name="initialize-and-update-the-surface-mesh-collection"></a>Surface メッシュコレクションの初期化と更新
 
@@ -250,7 +250,7 @@ m_surfaceObserver->ObservedSurfacesChanged += ref new TypedEventHandler<SpatialS
 
 **注:** これは、アプリがメッシュデータを処理するための最も効率的な方法ではない可能性があります。 このコードはわかりやすくするために記述されており、最適化されていません。
 
-Surface メッシュデータは、key 値として[Platform:: guid](https://msdn.microsoft.com/library/windows/desktop/aa373931.aspx)を使用して[SpatialSurfaceInfo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.aspx)オブジェクトを格納する読み取り専用マップで提供されます。
+Surface メッシュデータは、key 値として[Platform:: guid](https://msdn.microsoft.com/library/windows/desktop/aa373931.aspx)を使用して[SpatialSurfaceInfo](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo)オブジェクトを格納する読み取り専用マップで提供されます。
 
 ```cpp
 IMapView<Guid, SpatialSurfaceInfo^>^ const& surfaceCollection = sender->GetObservedSurfaces();
@@ -397,7 +397,7 @@ CreateDirectXBuffer(device, D3D11_BIND_VERTEX_BUFFER, positions, m_vertexPositio
 
 ### <a name="update-and-render-surface-meshes"></a>サーフェイスメッシュの更新とレンダリング
 
-SurfaceMesh クラスには、特殊な更新関数があります。 各 [SpatialSurfaceMesh](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.aspx) には独自の変換があり、このサンプルでは、 **SpatialStationaryReferenceFrame** の現在の座標系を使用して変換を取得します。 次に、GPU のモデル定数バッファーを更新します。
+SurfaceMesh クラスには、特殊な更新関数があります。 各 [SpatialSurfaceMesh](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh) には独自の変換があり、このサンプルでは、 **SpatialStationaryReferenceFrame** の現在の座標系を使用して変換を取得します。 次に、GPU のモデル定数バッファーを更新します。
 
 ```cpp
 void SurfaceMesh::UpdateTransform(
@@ -678,4 +678,4 @@ m_meshCollection->Render(pCameraResources->IsRenderingStereoscopic(), false);
 
 ## <a name="see-also"></a>関連項目
 * [ホログラフィック DirectX プロジェクトを作成する](creating-a-holographic-directx-project.md)
-* [Windows... 空間 API](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx)
+* [Windows... 空間 API](/uwp/api/Windows.Perception.Spatial)

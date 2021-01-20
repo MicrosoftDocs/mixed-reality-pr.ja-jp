@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 6dof コントローラー、モーションコントローラー、ペアリング、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット、HoloLens、スクロール、グリップ、状態
-ms.openlocfilehash: 94a9292b3a765131ae197fd9f91c27a52a463eef
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 367c9d9e0179c82af05af3fded9341ff7960d19e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192620"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583660"
 ---
 # <a name="motion-controllers"></a>モーション コントローラー
 
@@ -41,7 +41,7 @@ ms.locfileid: "98192620"
 </colgroup>
 <tr>
      <td><strong>機能</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 世代)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 世代)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
 </tr>
@@ -80,14 +80,14 @@ Windows Mixed Reality モーションコントローラーは、イマーシブ�
 
 **Windows、Unity、ドライバーの更新プログラムを確認する**
 * Mixed reality 開発については、「Windows、Unity、およびその他のバージョン用の [ツールをインストール](../develop/install-the-tools.md) する」を参照してください。
-* 最新の [ヘッドセットとモーションコントローラードライバー](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)があることを確認します。
+* 最新の [ヘッドセットとモーションコントローラードライバー](/windows/mixed-reality/enthusiast-guide/mixed-reality-software)があることを確認します。
 
 ### <a name="pairing-controllers"></a>コントローラーのペアリング
 
 モーションコントローラーは、他の Bluetooth デバイスと同様に、Windows 設定を使用してホスト PC と結合できます。
 
 1. 2つの AA バッテリをコントローラーの背面に挿入します。 ここではバッテリカバーをオフのままにします。
-2. 組み込みの Bluetooth ラジオではなく外部 USB Bluetooth アダプターを使用している場合は、先に進む前に、 [bluetooth のベストプラクティス](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) を確認してください。 組み込みのラジオを使用したデスクトップ構成の場合は、アンテナが接続されていることを確認します。
+2. 組み込みの Bluetooth ラジオではなく外部 USB Bluetooth アダプターを使用している場合は、先に進む前に、 [bluetooth のベストプラクティス](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) を確認してください。 組み込みのラジオを使用したデスクトップ構成の場合は、アンテナが接続されていることを確認します。
 3. [ **Windows 設定**  ->  ] [**デバイス**  ->  ] を開き、**bluetooth またはその他のデバイス**  ->  **bluetooth** を追加し、以前の "motion controller – Right" と "motion controller – Left" のインスタンスをすべて削除します。 一覧の下部にある [その他のデバイス] カテゴリも確認します。
 4. [ **Bluetooth またはその他のデバイスの追加** ] を選択すると、bluetooth デバイスの検出が開始されます。
 5. コントローラーの [Windows] ボタンを押してコントローラーをオンにすると、buzzes すると解放されます。
@@ -142,7 +142,7 @@ Windows Mixed Reality モーションコントローラーは、イマーシブ�
 
 * コントローラーが正常に動作することを確認します。
     1. **Mixed Reality ポータル** を起動し、Mixed reality ホームを入力します。
-    2. コントローラーを移動し、追跡、テストボタンを確認して、 [テレ](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) を確認します。 そうでない場合は、「 [モーションコントローラーのトラブルシューティング](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers)」をご覧ください。
+    2. コントローラーを移動し、追跡、テストボタンを確認して、 [テレ](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) を確認します。 そうでない場合は、「 [モーションコントローラーのトラブルシューティング](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers)」をご覧ください。
 
 ## <a name="gazing-and-pointing"></a>ガスとポイント
 
@@ -257,7 +257,7 @@ Unity でコントローラーモデルを動的に読み込む方法の詳細�
 
 ### <a name="how-do-i-update-motion-controller-firmware"></a>モーションコントローラーのファームウェアを更新操作方法ますか?
 
-モーションコントローラーのファームウェアはヘッドセットドライバーの一部であり、必要に応じて、接続時に自動的に更新されます。 通常、ファームウェアの更新は、Bluetooth ラジオとリンクの品質に応じて1-2 分かかります。 まれに、コントローラーのファームウェアの更新に最大で10分かかる場合があります。これは、Bluetooth 接続や無線の干渉が低いことを示している可能性があります。 接続の問題をトラブルシューティングする方法について [は、「Bluetooth のベストプラクティス](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) 」を参照してください。 ファームウェアの更新後、コントローラーは再起動し、ホスト PC に再接続します (Led が監視に対して明るくなることがあります)。 ファームウェアの更新が中断された場合 (たとえば、コントローラーの電源が切れている場合)、次にコントローラーの電源がオンになったときにもう一度試行されます。
+モーションコントローラーのファームウェアはヘッドセットドライバーの一部であり、必要に応じて、接続時に自動的に更新されます。 通常、ファームウェアの更新は、Bluetooth ラジオとリンクの品質に応じて1-2 分かかります。 まれに、コントローラーのファームウェアの更新に最大で10分かかる場合があります。これは、Bluetooth 接続や無線の干渉が低いことを示している可能性があります。 接続の問題をトラブルシューティングする方法について [は、「Bluetooth のベストプラクティス](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) 」を参照してください。 ファームウェアの更新後、コントローラーは再起動し、ホスト PC に再接続します (Led が監視に対して明るくなることがあります)。 ファームウェアの更新が中断された場合 (たとえば、コントローラーの電源が切れている場合)、次にコントローラーの電源がオンになったときにもう一度試行されます。
 
 ### <a name="how-i-can-check-battery-level"></a>バッテリレベルを確認するにはどうすればよいですか。
 
@@ -269,17 +269,17 @@ Unity でコントローラーモデルを動的に読み込む方法の詳細�
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-ファンガイドの「 [モーションコントローラーのトラブルシューティング](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) 」を参照してください。
+ファンガイドの「 [モーションコントローラーのトラブルシューティング](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) 」を参照してください。
 
 ## <a name="filing-motion-controller-feedbackbugs"></a>モーションコントローラーのフィードバック/バグのファイリング
 
-"Mixed Reality-> 入力" カテゴリを使用してフィードバックハブに[フィードバックをお](../give-us-feedback.md)寄せください。
+"Mixed Reality-> 入力" カテゴリを使用してフィードバックハブに[フィードバックをお](/hololens/hololens-feedback)寄せください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 * [Unity のモーションコントローラー](../develop/unity/motion-controllers-in-unity.md)
 * [DirectX での手とモーション コントローラー](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [ジェスチャ](gaze-and-commit.md#composite-gestures)
-* [愛好家ガイド: Windows Mixed Reality ホーム](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
-* [愛好家ガイド: Windows Mixed Reality でのゲーム & アプリの使用](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [インサイドアウト追跡のしくみ](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [愛好家ガイド: Windows Mixed Reality ホーム](/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
+* [愛好家ガイド: Windows Mixed Reality でのゲーム & アプリの使用](/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
+* [インサイドアウト追跡のしくみ](/windows/mixed-reality/enthusiast-guide/tracking-system)

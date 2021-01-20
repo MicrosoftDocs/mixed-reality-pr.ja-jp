@@ -6,19 +6,19 @@ ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、Home、Custom Environment、地名、崖ハウス、skyloft、user、create、Mixed reality ヘッドセット、windows Mixed reality ヘッドセット、Virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 2d88b4e20c2703b554572c0d39d5c69767164694
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ca6a41f8388a767b1191ddc3b377822567a603a6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848084"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583301"
 ---
 # <a name="design-your-own-immersive-environments"></a>独自のイマーシブ環境を設計する
 
 >[!NOTE]
 >これは試験段階の機能です。 試してみてください。しかし、すべてが期待どおりに動作しない場合、驚かれることはありません。 この機能の有効性を評価し、それを使用することに関心があるので、 [開発者フォーラム](https://forums.hololens.com/categories/custom-home-environments)で、経験 (および発見したバグ) についてご意見をお聞かせください。
 
-[Windows 10 April 2018 update](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)以降では、 [windows Mixed Reality ホーム](../discover/navigating-the-windows-mixed-reality-home.md)として使用するカスタム環境を [スタート] メニューの [場所] ピッカーに追加できる実験的な機能が有効になりました。 Windows Mixed Reality には、崖ハウスと Skyloft という2つの既定の環境があります。ホームとして選択できます。 カスタム環境を作成すると、自分で作成したリストを拡張することができます。 この機能を早期の状態で使用できるようにして、作成者や開発者からの関心を評価しています。 さまざまな作成ツールの使用方法について理解を深め、どのような方法で作業するかをご確認ください。
+[Windows 10 April 2018 update](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)以降では、 [windows Mixed Reality ホーム](../discover/navigating-the-windows-mixed-reality-home.md)として使用するカスタム環境を [スタート] メニューの [場所] ピッカーに追加できる実験的な機能が有効になりました。 Windows Mixed Reality には、崖ハウスと Skyloft という2つの既定の環境があります。ホームとして選択できます。 カスタム環境を作成すると、自分で作成したリストを拡張することができます。 この機能を早期の状態で使用できるようにして、作成者や開発者からの関心を評価しています。 さまざまな作成ツールの使用方法について理解を深め、どのような方法で作業するかをご確認ください。
 
 カスタム環境を使用すると、Skyloft が崖家やの場合と同じように、テレ移植、アプリとの対話、およびホログラムの配置が行われます。 Web を fantasy ランドスケープで閲覧したり、ホログラムを使用して futuristic の都市を埋めることができます。可能性は無限です。
 
@@ -32,7 +32,7 @@ ms.locfileid: "97848084"
     </colgroup>
     <tr>
         <td><strong>機能</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
      <tr>
@@ -101,7 +101,7 @@ Windows Mixed Reality では、環境の読み込み時間を大幅に短縮す�
 -max-テクスチャ-サイズ|1024または2048| テクスチャの品質を向上させるために値を微調整します。既定値は512x512 です。 大きな値を指定すると、環境のファイルサイズに大きく影響するため、256 mb の制限を考慮してください。
 -最小バージョン|1803|カスタム環境は、windows >= 1803 のバージョンでのみサポートされています。 このフラグは、古いバージョンのテクスチャを削除し、最終的な資産のファイルサイズを縮小します
 
-例:
+次に例を示します。
 
 ```cmd
 WindowsMRAssetConverter FileToConvert.gltf -max-texture-size 1024 -min-version 1803
@@ -151,4 +151,3 @@ Windows Mixed Reality は、環境の読み込み時に glTF units を1メート
 
 ## <a name="see-also"></a>関連項目
 * [Windows Mixed Reality 資産コンバーター (GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
-

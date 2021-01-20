@@ -6,12 +6,12 @@ ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy エクスプローラー、HoloLens、Windows Mixed Reality、アイデアの共有、ケーススタディ
-ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ef97920d22df65a9d4fa5e630840759e58c80b53
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009782"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583544"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>ケーススタディ-mixed reality での galaxy の作成
 
@@ -147,7 +147,7 @@ float3 ComputeStarPosition(StarDescriptor star)
 
 ### <a name="a-bit-of-context-first"></a>最初は少しコンテキスト
 
-ゲームでテクスチャを使用する場合、テクスチャサイズはそれを使用する領域とほとんど一致しませんが、さまざまな種類のテクスチャフィルターを使用して、グラフィックカードを取得し、テクスチャのピクセルから必要な色を補間することができます ([テクスチャフィルター](https://msdn.microsoft.com/library/dn642451.aspx))。 興味のあるフィルター処理は、近接している4つの近隣ノードを使用して任意のピクセルの値を計算する、 [バイリニアフィルター](https://msdn.microsoft.com/library/windows/desktop/bb172357.aspx) です。
+ゲームでテクスチャを使用する場合、テクスチャサイズはそれを使用する領域とほとんど一致しませんが、さまざまな種類のテクスチャフィルターを使用して、グラフィックカードを取得し、テクスチャのピクセルから必要な色を補間することができます ([テクスチャフィルター](/previous-versions/visualstudio/visual-studio-2015/debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants))。 興味のあるフィルター処理は、近接している4つの近隣ノードを使用して任意のピクセルの値を計算する、 [バイリニアフィルター](/windows/win32/direct3d9/bilinear-texture-filtering) です。
 
 ![フィルター処理前の元](images/texture-1.png)
 

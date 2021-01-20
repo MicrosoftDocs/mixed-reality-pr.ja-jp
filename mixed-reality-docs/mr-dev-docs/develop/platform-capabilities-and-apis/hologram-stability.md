@@ -8,12 +8,12 @@ ms.topic: article
 keywords: ホログラム、安定性、hololens、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想リアリティヘッドセット、フレームレート、レンダリング、再プロジェクション、色の分離
 appliesto:
 - HoloLens
-ms.openlocfilehash: 36abf928d8f665717bacaf8da372d299b41fabd6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 064e42f771391e77874796e91ea8e4d563c08ec2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006642"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582879"
 ---
 # <a name="hologram-stability"></a>ホログラムの安定性
 
@@ -25,11 +25,11 @@ ms.locfileid: "98006642"
 
 次の用語は、環境に関する問題を特定している場合や、表示速度が一貫していない場合、またはその他の場合に役立ちます。
 * **精度.** ホログラムが世界中にロックされ、実際の世界に配置されると、周囲の環境を基準とした相対的な場所を維持し、ユーザーの動きや小規模な環境の変化に依存しないようにする必要があります。 後でホログラムが予期しない場所に表示される場合は、 *精度* の問題です。 このようなシナリオは、2つの異なるルームが同一である場合に発生する可能性があります。
-* **ずれ.** ユーザーは、ぶれの高周波数のぶれとしてのジッターを観察します。これは、環境の追跡が低下した場合に発生する可能性があります。 ユーザーの場合、ソリューションは [センサーチューニング](../../sensor-tuning.md)を実行しています。
+* **ずれ.** ユーザーは、ぶれの高周波数のぶれとしてのジッターを観察します。これは、環境の追跡が低下した場合に発生する可能性があります。 ユーザーの場合、ソリューションは [センサーチューニング](/hololens/hololens-updates)を実行しています。
 * **Judder.** レンダリング周波数が低いと、ホログラムの動きとダブルイメージが不均一になります。 Judder は、モーションを持つホログラムで特に顕著です。 開発者は、 [60 FPS の定数](hologram-stability.md#frame-rate)を維持する必要があります。
 * **誤差.** ユーザーは、最初に配置された場所から離れるように、ホログラムがずれていることを確認します。 特に、環境のマップされていない部分で、 [空間アンカー](../../design/spatial-anchors.md)から離れた場所にあるホログラムを配置すると、誤差が発生します。 空間アンカーの近くにホログラムを作成すると、誤差の可能性が低くなります。
 * **Jumpiness.** ホログラムが位置をときどき "ポップ" または "ジャンプ" するとき。 Jumpiness は、追跡によって、環境の最新の理解に一致するようにホログラムが調整されると発生する可能性があります。
-* **スイム.** ユーザーの頭の動きに対応する、ホログラムが sway に表示されるとき。 スイムは、アプリケーションに再 [プロジェクション](hologram-stability.md#reprojection)が完全に実装されていない場合、および HoloLens が現在のユーザーに対して [調整](../../calibration.md) されていない場合に発生します。 ユーザーは [調整](../../calibration.md) アプリケーションを再実行して問題を解決できます。 開発者は、安定化平面を更新して安定性をさらに向上させることができます。
+* **スイム.** ユーザーの頭の動きに対応する、ホログラムが sway に表示されるとき。 スイムは、アプリケーションに再 [プロジェクション](hologram-stability.md#reprojection)が完全に実装されていない場合、および HoloLens が現在のユーザーに対して [調整](/hololens/hololens-calibration) されていない場合に発生します。 ユーザーは [調整](/hololens/hololens-calibration) アプリケーションを再実行して問題を解決できます。 開発者は、安定化平面を更新して安定性をさらに向上させることができます。
 * **色の分離。** HoloLens のディスプレイは色分けされています。これは、60 Hz (個々の色フィールドは 240 Hz で表示されます) の赤、緑、青、緑の点滅色チャネルです。 ユーザーが目の付いた可動ホログラムを追跡するたびに、そのホログラムの先頭および末尾のエッジは、その構成色で分離され、レインボー効果が生成されます。 分離の度合いは、ホログラムの速度に依存します。 場合によっては、固定されたホログラムを見ながら1頭を移動すると、 *[色の分離](hologram-stability.md#color-separation)* と呼ばれるレインボー効果が得られることもあります。
 
 ## <a name="frame-rate"></a>フレーム レート
@@ -45,7 +45,7 @@ ms.locfileid: "98006642"
 
 **フレームレートの一貫性** フレームレートの一貫性は、1秒あたりの高フレーム数と同様に重要です。 場合によっては、コンテンツが豊富なアプリケーションでフレームが破棄されることはありません。また、HoloLens は、不定期に発生した障害から復旧するための高度なアルゴリズムを実装します。 ただし、絶えず変動するフレームレートは、ユーザーにとって、より低いフレームレートで一貫して実行するよりもはるかに顕著です。 たとえば、5つのフレーム (これらの5つのフレームの間は 60 FPS) に対してスムーズにレンダリングし、次の10フレーム (10 フレームの間は 30 FPS) に対して他のフレームをすべてドロップするアプリケーションは、30 FPS で一貫してレンダリングされるアプリケーションよりも不安定になります。
 
-関連する注意事項として、 [混合の現実のキャプチャ](../../mixed-reality-capture.md) を実行しているときに、オペレーティングシステムによってアプリケーションが 30 FPS にスロットルされます。
+関連する注意事項として、 [混合の現実のキャプチャ](/hololens/holographic-photos-and-videos) を実行しているときに、オペレーティングシステムによってアプリケーションが 30 FPS にスロットルされます。
 
 **パフォーマンス分析** アプリケーションのフレームレートのベンチマークに使用できるツールには、次のような種類があります。
 * GPUView
@@ -66,7 +66,7 @@ ms.locfileid: "98006642"
 
 Hololens がユーザーから約 2.0 m 離れた場所で固定されているため、HoloLens を装着したユーザーは、常に 2.0 m に対応して明確なイメージを維持します。 アプリ開発者は、さまざまな深度でコンテンツとホログラムを配置することで、ユーザーの目がどのようになるかを制御します。 ユーザーがさまざまな距離に対応して収束すると、2つのキュー間の自然なリンクが解除されます。これにより、特に競合の大きさが大きい場合に、visual 不快感や疲労が発生する可能性があります。 
 
-Vergence は、収束コンテンツをできるだけ 2.0 m の近くに保持することによって、不快感の競合を回避または最小化できます (つまり、可能な場合は、最も多くの分野が m の2.0 近くに配置されているシーンで)。 コンテンツを 2.0 m の近くに配置することはできませんが、ユーザーの距離が異なる場合は、vergence の競合の不快感が最大になります。 言い換えると、時間の経過と共に移動するホログラム 50 cm を離れた状態で、50 cm のままになっている静止したホログラムを見た方がはるかに快適です。
+Vergence は、収束コンテンツをできるだけ 2.0 m の近くに保持することによって、不快感の競合を回避または最小化できます (つまり、可能な場合は、最も多くの分野が m の2.0 近くに配置されているシーンで)。 コンテンツを 2.0 m の近くに配置することはできませんが、ユーザーの距離が異なる場合は、vergence の競合の不快感が最大になります。 言い換えると、50 cm の距離で静止したホログラムを見る方が、50 cm の距離にあるホログラムが時間の経過と共に近づいたり離れたりするのを見るよりもはるかに快適です。
 
 2つのディスプレイがこの距離で完全に重複するように設計されているため、2.0 m にコンテンツを配置することも便利です。 この平面から離れた画像については、holographic フレームの辺から離れたときに、他の画面に表示されている間、1つのディスプレイから表示されます。 この付い双眼鏡 rivalry、ホログラムの深さの知覚に悪影響を及ぼす可能性があります。
 
@@ -91,14 +91,14 @@ HoloLens には、reprojection と呼ばれる高度なハードウェア支援�
 アプリケーションは、さまざまな種類の再プロジェクションを可能にするために、特定のアクションを実行する必要があります。
 * **深さの再投影:** アプリケーションは、描画されたすべてのフレームの深度バッファーをシステムに送信します。  Unity では、[ **XR Plugin Management**] の下にある [ **Windows Mixed Reality の設定**] ウィンドウにある [**共有深度バッファー** ] オプションを使用して深さの再投影が行われます。  DirectX アプリは CommitDirect3D11DepthBuffer を呼び出します。  アプリケーションで SetFocusPoint を呼び出すことはできません。
 * **平面の再プロジェクション:** すべてのフレームで、アプリケーションは、安定する平面の場所をシステムに伝えます。  Unity アプリケーションは SetFocusPointForFrame を呼び出し、 **共有深度バッファー** を無効にする必要があります。  DirectX アプリは SetFocusPoint を呼び出しますが、CommitDirect3D11DepthBuffer を呼び出すことはできません。
-* **自動平面再プロジェクション:** を有効にするには、アプリケーションが深さの再投影の場合と同じように、システムに深度バッファーを送信する必要があります。 Mixed Reality Toolkit (MRTK) を使用するアプリでは、自動平面再プロジェクションを使用するように [カメラ設定プロバイダー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) を構成できます。 ネイティブアプリでは、HolographicCameraRenderingParameters のを各フレームに設定する必要があり `DepthReprojectionMode` [](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) `AutoPlanar` ます。 HoloLens のジェネレーション1の場合、アプリケーションは SetFocusPoint を呼び出すことはできません。
+* **自動平面再プロジェクション:** を有効にするには、アプリケーションが深さの再投影の場合と同じように、システムに深度バッファーを送信する必要があります。 Mixed Reality Toolkit (MRTK) を使用するアプリでは、自動平面再プロジェクションを使用するように [カメラ設定プロバイダー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) を構成できます。 ネイティブアプリでは、HolographicCameraRenderingParameters のを各フレームに設定する必要があり `DepthReprojectionMode` [](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) `AutoPlanar` ます。 HoloLens のジェネレーション1の場合、アプリケーションは SetFocusPoint を呼び出すことはできません。
 
 ### <a name="choosing-reprojection-technique"></a>再プロジェクション技法の選択
 
 安定化の種類 |    イマーシブヘッドセット |    HoloLens の生成1 | HoloLens 2
 --- | --- | --- | ---
-深さの再投影 |    推奨 |   該当なし |   推奨<br/><br/>Unity アプリケーションでは、Unity 2018.4.12 以降または Unity 2019.3 以降を使用する必要があります。 それ以外の場合は、自動平面 Reprojection を使用します。
-自動平面再プロジェクション | 該当なし |   推奨される既定値 |   深さの再プロジェクションで最適な結果が得られない場合に推奨<br/><br/>Unity アプリケーションは、Unity 2018.4.12 以降または Unity 2019.3 以降を使用することをお勧めします。  以前のバージョンの Unity は、わずかに低下した再プロジェクション結果で動作します。
+深さの再投影 |    推奨 |   N/A |   推奨<br/><br/>Unity アプリケーションでは、Unity 2018.4.12 以降または Unity 2019.3 以降を使用する必要があります。 それ以外の場合は、自動平面 Reprojection を使用します。
+自動平面再プロジェクション | N/A |   推奨される既定値 |   深さの再プロジェクションで最適な結果が得られない場合に推奨<br/><br/>Unity アプリケーションは、Unity 2018.4.12 以降または Unity 2019.3 以降を使用することをお勧めします。  以前のバージョンの Unity は、わずかに低下した再プロジェクション結果で動作します。
 平面の再プロジェクション |   推奨されません |   自動平面が最適な結果を得られない場合に推奨 | いずれの深さのオプションでも目的の結果が得られない場合は、を使用します。    
 
 ### <a name="verifying-depth-is-set-correctly"></a>深さが正しく設定されていることを確認しています
@@ -183,6 +183,6 @@ HoloLens ディスプレイの性質上、"カラー分離" と呼ばれるア�
 
 ## <a name="see-also"></a>関連項目
 * [Mixed Reality のパフォーマンスについて](understanding-performance-for-mixed-reality.md)
-* [色、ライト、素材](../../color,-light-and-materials.md)
+* [色、ライト、素材](../../design/color-light-and-materials.md)
 * [本能的な操作](../../design/interaction-fundamentals.md)
 * [MRTK ホログラム安定化](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)

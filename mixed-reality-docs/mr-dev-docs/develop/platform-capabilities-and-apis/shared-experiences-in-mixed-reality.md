@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: 共有エクスペリエンス、mixed reality、ホログラム、空間アンカー、マルチユーザー、複数
-ms.openlocfilehash: 6db5bb13d7e04dbee6b4d9d6568b821347bd769a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3383bcd8b87dad6e817262d96b8ac1ebb3d0c8f5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530117"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583154"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>Mixed reality での共有エクスペリエンス
 
@@ -95,7 +95,7 @@ HoloLens パートナー機関の内部プロトタイプと探索を通じて�
 * **同様** に、類似した家具、アンビエント光とサウンド、物理的な部屋のサイズを持つ環境です。 たとえば、教授が講義の hall であり、学生が講演者 B にいるとします。講義を行うのは、B よりも椅子が少なくても、両方ともホログラムを配置する物理的な机がある可能性があります。
 * **異種**: 家具の設定、部屋のサイズ、ライト、およびサウンドに関する考慮事項が異なる環境。 たとえば、教師はフォーカスを持つ部屋にありますが、生徒は大規模な講義のホールにあり、学生や教師によって設定されています。
 
-次のように、 [環境について考慮](../../environment-considerations-for-hololens.md)することが重要です。
+次のように、 [環境について考慮](/hololens/hololens-environment-considerations)することが重要です。
 
 * これらのオブジェクトをどのように経験するかを説明します。 たとえば、ユーザーがテーブルを使用していて、ユーザーにテーブルがない場合は、次のようになります。 または平らな床面では、ユーザーには乱雑な領域があります。
 * オブジェクトのスケール。 たとえば、テーブルに6フィートのヒューマンモデルを配置することは困難な場合がありますが、ハートのモデルはうまく機能します。
@@ -137,11 +137,11 @@ OnSight のような経験があれば、コラボレーションが新たにチ
 
 共有エクスペリエンスの鍵となるのは、複数のユーザーが自分のデバイスで世界中の同じホログラムを見ることです。多くの場合、アンカーを共有してデバイス間で座標を調整します。
 
-アンカーを共有するには、 [Azure 空間アンカー](https://docs.microsoft.com/azure/spatial-anchors)を使用します。
+アンカーを共有するには、 [Azure 空間アンカー](/azure/spatial-anchors)を使用します。
 
 * まず、ユーザーがホログラムを配置します。
 * アプリは [空間アンカー](../../design/spatial-anchors.md)を作成し、世界中でそのホログラムを正確にピン留めします。
-* アンカーは、 [Azure 空間アンカー](https://docs.microsoft.com/azure/spatial-anchors/)を介して HoloLens、iOS、および Android デバイスに対して共有できます。
+* アンカーは、 [Azure 空間アンカー](/azure/spatial-anchors/)を介して HoloLens、iOS、および Android デバイスに対して共有できます。
 
 共有空間アンカーを使用すると、各デバイスのアプリには、コンテンツを配置できる [共通の座標](../../design/coordinate-systems.md) 系が用意されます。 これで、アプリは、同じ場所にホログラムを配置し、向きを指定できるようになりました。
 
@@ -153,7 +153,7 @@ HoloLens デバイスでは、あるデバイスから別のデバイスにア�
 
 ## <a name="shared-static-holograms-no-interactions"></a>共有スタティックホログラム (相互作用なし)
 
-アプリで [Azure 空間アンカー](https://docs.microsoft.com/azure/spatial-anchors/) を活用します。  デバイス間で空間アンカーを有効にして共有すると、ユーザーが同時にホログラムを表示するアプリケーションを作成できます。  ユーザーがホログラムと対話し、ホログラムの移動または状態の更新を確認できるようにするには、デバイス間の追加の同期が必要です。
+アプリで [Azure 空間アンカー](/azure/spatial-anchors/) を活用します。  デバイス間で空間アンカーを有効にして共有すると、ユーザーが同時にホログラムを表示するアプリケーションを作成できます。  ユーザーがホログラムと対話し、ホログラムの移動または状態の更新を確認できるようにするには、デバイス間の追加の同期が必要です。
 
 ## <a name="share-first-person-perspective"></a>最初の人との共有の視点
 
@@ -172,7 +172,7 @@ PC や TV など、サポートされている Miracast レシーバーを使用
 
 ## <a name="multi-user-collaborative-experience"></a>マルチユーザーコラボレーションエクスペリエンス
 
-ここでは、[マルチユーザー学習チュートリアル](../../mrlearning-sharing(photon)-ch1.md)を開始します。このチュートリアルでは、ローカルユーザーと[Photon SDK](https://www.photonengine.com/PUN)の[Azure 空間アンカー](https://docs.microsoft.com/azure/spatial-anchors/)を利用して、シーンのコンテンツ/状態を同期します。 ローカルに共同作業するアプリケーションを作成します。各ユーザーは、シーン内のホログラムに独自の視点を持ち、各ユーザーがホログラムと完全に対話できます。  すべてのデバイスで更新プログラムが提供され、相互作用の競合管理は Photon によって処理されます。
+ここでは、[マルチユーザー学習チュートリアル](../unity/tutorials/mr-learning-sharing-02.md)を開始します。このチュートリアルでは、ローカルユーザーと[Photon SDK](https://www.photonengine.com/PUN)の[Azure 空間アンカー](/azure/spatial-anchors/)を利用して、シーンのコンテンツ/状態を同期します。 ローカルに共同作業するアプリケーションを作成します。各ユーザーは、シーン内のホログラムに独自の視点を持ち、各ユーザーがホログラムと完全に対話できます。  すべてのデバイスで更新プログラムが提供され、相互作用の競合管理は Photon によって処理されます。
 
 > [!NOTE]
 > [Photon](https://www.photonengine.com/)はマイクロソフト以外の製品であるため、Photon との課金関係が必要になることがあります。そのため、使用率が高くなるように拡張する必要があります。
@@ -185,7 +185,7 @@ PC や TV など、サポートされている Miracast レシーバーを使用
 
 ## <a name="see-also"></a>関連項目
 
-* [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+* [Azure Spatial Anchors](/azure/spatial-anchors)
 * [DirectX での共有された空間アンカー](shared-spatial-anchors-in-directx.md)
 * [Unity での共有エクスペリエンス](../unity/shared-experiences-in-unity.md)
 * [Spectator View](spectator-view.md)

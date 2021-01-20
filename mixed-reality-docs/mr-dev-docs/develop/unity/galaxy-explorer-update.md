@@ -6,16 +6,16 @@ ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: galaxy エクスプローラー, ケーススタディ, プロジェクト, サンプル, MRTK, Mixed Reality Toolkit, Unity, サンプルアプリ, サンプルアプリ, オープンソース, Microsoft Store, HoloLens, mixed reality ヘッドセット, windows Mixed reality ヘッドセット, 仮想現実のヘッドセット
-ms.openlocfilehash: d3a31204275b2d2a9f1f1ea1c283993d2e0285ed
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4a5df06009d2c9c25b12c8e7f4bd1622821964c8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009582"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582898"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>HoloLens 2 用 Galaxy エクスプローラーの作成
 
-HoloLens 2 アプリケーション用に更新された Galaxy エクスプローラーへようこそ。 [Galaxy エクスプローラー](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") は、当初は、アイデアの共有プログラムを通じて HoloLens (最初の gen) 用のオープンソースアプリケーションとして開発されており、多くの人が経験した最初の mixed reality の1つです。 ここでは、 [HoloLens 2 の新機能と魅力的な機能](https://www.microsoft.com/hololens/hardware)を更新しています。
+HoloLens 2 アプリケーション用に更新された Galaxy エクスプローラーへようこそ。 [Galaxy エクスプローラー](/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") は、当初は、アイデアの共有プログラムを通じて HoloLens (最初の gen) 用のオープンソースアプリケーションとして開発されており、多くの人が経験した最初の mixed reality の1つです。 ここでは、 [HoloLens 2 の新機能と魅力的な機能](https://www.microsoft.com/hololens/hardware)を更新しています。
 
 [Microsoft Mixed Reality スタジオ](galaxy-explorer-update.md#mixed-reality-studios)の1つとして、通常、商用レベルのソリューションを開発し、クリエイティブおよび開発プロセスを通じて対象プラットフォームで & テストを開発しています。 私たちは、フレームワークとツール ( [Mrtk](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)など) を使用してこのプロジェクトを着手しています。私たちとコミュニティで利用できるようになったので、このプロジェクトについて説明します。
 

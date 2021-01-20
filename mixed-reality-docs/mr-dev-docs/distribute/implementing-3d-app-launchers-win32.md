@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D、ロゴ、アイコン、モデリング、ランチャー、3D ランチャー、タイル、live cube、win32、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、マニフェスト
-ms.openlocfilehash: 63b07664cb09f51e6d0588fdc50d141ad8985093
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 46d3419d3c8267291496d8f788103d7002e6f230
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009671"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583030"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>3D アプリ起動ツールの実装 (Win32 アプリ)
 
@@ -33,11 +33,11 @@ ms.locfileid: "98009671"
 
 ## <a name="configuring-the-3d-launcher"></a>3D ランチャーの構成
 
-Win32 アプリケーションは、Windows Mixed Reality の [スタート] メニューの [すべてのアプリ] の一覧に表示されます (3D アプリランチャーを作成した場合)。 これを行うには、次の手順に従って、3D アプリランチャーを参照する [ビジュアル要素マニフェスト](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) XML ファイルを作成します。
+Win32 アプリケーションは、Windows Mixed Reality の [スタート] メニューの [すべてのアプリ] の一覧に表示されます (3D アプリランチャーを作成した場合)。 これを行うには、次の手順に従って、3D アプリランチャーを参照する [ビジュアル要素マニフェスト](/previous-versions/windows/apps/dn393983(v=win.10)) XML ファイルを作成します。
 
 1. **3D アプリランチャー ASSET GLB ファイル** を作成します (「[モデリングとエクスポート](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)」を参照してください)。
-2. アプリケーションの **[ビジュアル要素マニフェスト](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx)** を作成します。
-    1. [次のサンプル](#sample-visual-elements-manifest)から始めることができます。  詳細については、 [ビジュアル要素](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) の完全なマニフェストに関するドキュメントを参照してください。
+2. アプリケーションの **[ビジュアル要素マニフェスト](/previous-versions/windows/apps/dn393983(v=win.10))** を作成します。
+    1. [次のサンプル](#sample-visual-elements-manifest)から始めることができます。  詳細については、 [ビジュアル要素](/previous-versions/windows/apps/dn393983(v=win.10)) の完全なマニフェストに関するドキュメントを参照してください。
     2. アプリの PNG/JPG/GIF で **Square150x150Logo** と **Square70x70Logo** を更新します。
         * これらは、Windows Mixed Reality のすべてのアプリの一覧とデスクトップの [スタート] メニューのアプリの2D ロゴに使用されます。
         * ファイルパスは、ビジュアル要素マニフェストを含むフォルダーに基づいています。

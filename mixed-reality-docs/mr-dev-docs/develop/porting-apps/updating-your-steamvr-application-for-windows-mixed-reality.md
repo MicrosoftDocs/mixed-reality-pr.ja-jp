@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: SteamVR、互換性、移植、HoloLens ファースト世代、mixed reality ヘッドセット、windows mixed reality ヘッドセット、移行、Windows 10、蒸気、motion controller、haptics
-ms.openlocfilehash: c67eed489f626c804583592e496fcfaff5d8c291
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: b6d92d558218f71af0e8c7693f64a50a44524c63
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192630"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583826"
 ---
 # <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>Windows Mixed Reality 用に SteamVR アプリを更新する
 
@@ -19,7 +19,7 @@ Windows Mixed Reality ヘッドセットで実行するために、開発者は 
 
 ## <a name="initial-setup-instructions"></a>初期セットアップの手順
 
-Windows Mixed Reality でゲームやアプリのテストを開始するには、まず、[ファーストステップガイド](https://aka.ms/WindowsMixedRealitySteamVR)に従ってください。
+Windows Mixed Reality でゲームやアプリのテストを開始するには、まず、[ファーストステップガイド](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)に従ってください。
 
 ## <a name="controller-models"></a>コントローラーモデル
 
@@ -48,7 +48,7 @@ Windows Mixed Reality でゲームやアプリのテストを開始するには�
 
 ## <a name="haptics"></a>Haptics
 
-[Windows 10 April 2018 Update](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)以降では、Haptics が Windows Mixed Reality での SteamVR エクスペリエンスでサポートされるようになりました。 SteamVR アプリまたはゲームに既に haptics のサポートが含まれている場合は、 [Windows Mixed Reality モーションコントローラー](../../design/motion-controllers.md)を使用して (追加の作業を行わずに) 動作するようになります。
+[Windows 10 April 2018 Update](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)以降では、Haptics が Windows Mixed Reality での SteamVR エクスペリエンスでサポートされるようになりました。 SteamVR アプリまたはゲームに既に haptics のサポートが含まれている場合は、 [Windows Mixed Reality モーションコントローラー](../../design/motion-controllers.md)を使用して (追加の作業を行わずに) 動作するようになります。
 
 Windows Mixed Reality モーションコントローラーでは、他の SteamVR モーションコントローラーの線形アクチュエータではなく、標準の haptics モータが使用されます。 これにより、想定外のユーザーエクスペリエンスが多少異なります。 そのため、Windows Mixed Reality motion controller を使用して haptics の設計をテストおよびチューニングすることをお勧めします。 たとえば、Windows Mixed Reality モーションコントローラーでは、短い haptic パルス (5-10 ミリ秒) があまり目立たない場合があります。 より顕著なパルスを生成するには、もう一度電源をオフにするように指示する前に、より長い "クリック" (40-70 ミリ秒) を送信してみてください。
 
@@ -62,16 +62,16 @@ Windows Mixed Reality モーションコントローラーでは、他の SteamV
 
 ## <a name="bugs-and-feedback"></a>バグとフィードバック
 
-Windows Mixed Reality SteamVR エクスペリエンスを向上させるために、お客様のフィードバックは非常に重要です。 [Windows フィードバックハブ](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/filing-feedback)を通じてすべてのフィードバックとバグを送信します。 ここでは [、SteamVR フィードバックを可能な限り活用するためのヒント](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr)を紹介します。
+Windows Mixed Reality SteamVR エクスペリエンスを向上させるために、お客様のフィードバックは非常に重要です。 [Windows フィードバックハブ](/windows/mixed-reality/enthusiast-guide/filing-feedback)を通じてすべてのフィードバックとバグを送信します。 ここでは [、SteamVR フィードバックを可能な限り活用するためのヒント](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr)を紹介します。
 
 共有する質問やコメントがある場合は、 [ストリームフォーラム](https://steamcommunity.com/app/719950/discussions/)からもご連絡いただけます。
 
 ## <a name="faqs-and-troubleshooting"></a>FAQ とトラブルシューティング
 
-一般的な問題が発生したときに、エクスペリエンスをセットアップまたは再生するには、 [最新のトラブルシューティング手順を確認](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#steamvr)してください。
+一般的な問題が発生したときに、エクスペリエンスをセットアップまたは再生するには、 [最新のトラブルシューティング手順を確認](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#steamvr)してください。
 
 ## <a name="see-also"></a>関連項目
 
 * [ツールのインストール](../install-the-tools.md)
-* [ヘッドセットとモーションコントローラーのドライバー履歴](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)
-* [Windows Mixed Reality の PC ハードウェアの最小互換性ガイドライン](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+* [ヘッドセットとモーションコントローラーのドライバー履歴](/windows/mixed-reality/enthusiast-guide/mixed-reality-software)
+* [Windows Mixed Reality の PC ハードウェアの最小互換性ガイドライン](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)

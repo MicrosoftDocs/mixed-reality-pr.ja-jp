@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: OpenXR、Khronos、BasicXRApp、DirectX、ネイティブ、ネイティブアプリ、カスタムエンジン、ミドルウェア
-ms.openlocfilehash: ba03799ff42d3a4c27799dcf2f4035d408360120
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 76193cdf3c790037474b66de9fbbbd1da8f31199
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613132"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583798"
 ---
 # <a name="openxr"></a>OpenXR
 
@@ -80,7 +80,7 @@ OpenXR 拡張機能には、次の3種類があります。
 
 *Minecraft の新しい RenderDragon エンジンは、OpenXR を使用してデスクトップの VR サポートを構築しています*
 
-Microsoft は、Unity およびエピックゲームと連携して、HoloLens 2 だけでなく、 [HP の新しいリバーブ G2 ヘッドセット](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)を含む幅広い PC VR で、mixed reality の未来を確実に開いています。  HoloLens (第1世代) 向けの開発の詳細については、 [リリースノート](https://docs.microsoft.com/hololens/hololens1-release-notes)を参照してください。
+Microsoft は、Unity およびエピックゲームと連携して、HoloLens 2 だけでなく、 [HP の新しいリバーブ G2 ヘッドセット](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)を含む幅広い PC VR で、mixed reality の未来を確実に開いています。  HoloLens (第1世代) 向けの開発の詳細については、 [リリースノート](/hololens/hololens1-release-notes)を参照してください。
 
 Unity、Unreal Engine、または独自のエンジンで OpenXR を開始する方法については、「」を参照してください。
 

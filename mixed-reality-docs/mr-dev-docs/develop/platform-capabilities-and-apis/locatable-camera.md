@@ -6,16 +6,16 @@ ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: カメラ、hololens、カラーカメラ、フロント接続、hololens 2、cv、コンピュータービジョン、基準、マーカー、qr コード、qr、写真、ビデオ
-ms.openlocfilehash: 9261465f362e6aa0e97d9f6b1f61af305c178079
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: bc478aa658b26eb3a4efb16c62d0874b12992e78
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530374"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583628"
 ---
 # <a name="locatable-camera"></a>場所を特定できるカメラ
 
-HoloLens には、デバイスの前面に取り付けられている世界中のカメラが搭載されています。これにより、アプリはユーザーに表示される内容を確認できます。 スマートフォン、ノートブック、またはデスクトップのカラーカメラの場合と同じように、開発者はカメラのアクセスと制御を行うことができます。 モバイルおよびデスクトップで動作する同じユニバーサル windows [media capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) および windows Media foundation Api が HoloLens で動作します。 Unity は、HoloLens でカメラの使用機能を抽象化するために、 [これらの Windows api をラップ](../unity/locatable-camera-in-unity.md) しています。 機能のタスクには、通常の写真やビデオを (ホログラムの有無にかかわらず) 撮影したり、カメラの位置をシーン上で検索したりする作業が含まれます。
+HoloLens には、デバイスの前面に取り付けられている世界中のカメラが搭載されています。これにより、アプリはユーザーに表示される内容を確認できます。 スマートフォン、ノートブック、またはデスクトップのカラーカメラの場合と同じように、開発者はカメラのアクセスと制御を行うことができます。 モバイルおよびデスクトップで動作する同じユニバーサル windows [media capture](/uwp/api/Windows.Media.Capture.MediaCapture) および windows Media foundation Api が HoloLens で動作します。 Unity は、HoloLens でカメラの使用機能を抽象化するために、 [これらの Windows api をラップ](../unity/locatable-camera-in-unity.md) しています。 機能のタスクには、通常の写真やビデオを (ホログラムの有無にかかわらず) 撮影したり、カメラの位置をシーン上で検索したりする作業が含まれます。
 
 ## <a name="device-camera-information"></a>デバイスカメラ情報
 
@@ -25,10 +25,10 @@ HoloLens には、デバイスの前面に取り付けられている世界中�
 * 世界中のホワイトプライバシー LED は、カメラがアクティブになるたびに点灯します
 * カメラは、30、24、20、15、および 5 fps で、次のモード (すべてのモードが16:9 の縦横比) をサポートしています。
 
-  |  ビデオ  |  ［プレビュー］  |  それでもなお  |  ビューの水平方向のフィールド (H 視界) |  推奨される使用方法 | 
+  |  ビデオ  |  プレビュー  |  それでもなお  |  ビューの水平方向のフィールド (H 視界) |  推奨される使用方法 | 
   |----------|----------|----------|----------|----------|
   |  1280 x 720 |  1280 x 720 |  1280 x 720 |  45度  |  (ビデオ安定化を使用した既定のモード) | 
-  |  該当なし |  該当なし |  2048x1152 |  67度 |  高解像度の静止画像 | 
+  |  N/A |  N/A |  2048x1152 |  67度 |  高解像度の静止画像 | 
   |  1408x792 |  1408x792 |  1408x792 |  48度 |  ビデオ安定化前のオーバースキャン (埋め込み) 解像度 | 
   |  1344x756 |  1344x756 |  1344x756 |  67度 |  オーバースキャンによる大規模な視界のビデオモード | 
   |  896x504 |  896x504 |  896x504 |  48度 |  イメージ処理タスクの低電力/低解像度モード | 
@@ -37,10 +37,10 @@ HoloLens には、デバイスの前面に取り付けられている世界中�
 
 * 自動ホワイトバランス、自動露出、完全な画像処理パイプラインを使用して、写真/ビデオ (PV) カメラを自動フォーカスします。
 * 世界中のホワイトプライバシー LED は、カメラがアクティブになるたびに点灯します。
-* HoloLens 2 では、さまざまなカメラプロファイルがサポートされています。 [カメラの機能を検出して選択](https://docs.microsoft.com//windows/uwp/audio-video-camera/camera-profiles)する方法について説明します。
+* HoloLens 2 では、さまざまなカメラプロファイルがサポートされています。 [カメラの機能を検出して選択](//windows/uwp/audio-video-camera/camera-profiles)する方法について説明します。
 * カメラでは、次のプロファイルと解像度がサポートされています (すべてのビデオモードは16:9 縦横比です)。
   
-  | プロファイル                                         | ビデオ     | ［プレビュー］   | それでもなお     | フレーム レート | ビューの水平方向のフィールド (H 視界) | 推奨される使用方法                             |
+  | プロファイル                                         | ビデオ     | プレビュー   | それでもなお     | フレーム レート | ビューの水平方向のフィールド (H 視界) | 推奨される使用方法                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
   | Legacy、0 BalancedVideoAndPhoto、100             | 2272x1278 | 2272x1278 |           | 15.30       | 64.69                            | 高画質のビデオ記録                |
   | Legacy、0 BalancedVideoAndPhoto、100             | 896x504   | 896x504   |           | 15.30       | 64.69                            | 高品質な写真キャプチャのためのプレビューストリーム |
@@ -59,7 +59,7 @@ HoloLens には、デバイスの前面に取り付けられている世界中�
   | ビデオ会議、100 BalancedVideoAndPhoto、120 | 424x240   |           |           | 15、30       | 64.69                            | ビデオ会議、長期間のシナリオ |
 
 > [!NOTE]
-> [混合 reality キャプチャ](../../mixed-reality-capture.md)を利用して、アプリのビデオや写真を撮ることができます。これには、ホログラムやビデオの安定化が含まれます。
+> [混合 reality キャプチャ](/hololens/holographic-photos-and-videos)を利用して、アプリのビデオや写真を撮ることができます。これには、ホログラムやビデオの安定化が含まれます。
 >
 >開発者にとっては、顧客がコンテンツをキャプチャしたときに可能な限り、アプリを作成する際に考慮する必要がある考慮事項があります。 また、アプリ内で直接、mixed reality キャプチャを有効 (およびカスタマイズ) することもできます。 詳細につい [ては、「開発者向けの混合現実のキャプチャ」を](mixed-reality-capture-for-developers.md)参照してください。
 
@@ -75,20 +75,20 @@ HoloLens ドキュメントの他の場所にある "カメラ" は、"仮想ゲ
 
 ### <a name="using-mediaframereference"></a>MediaFrameReference の使用
 
-これらの手順は、 [MediaFrameReference](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) クラスを使用してカメラからイメージフレームを読み取る場合に適用されます。
+これらの手順は、 [MediaFrameReference](//uwp/api/windows.media.capture.frames.mediaframereference) クラスを使用してカメラからイメージフレームを読み取る場合に適用されます。
 
-各イメージフレーム (写真またはビデオ) には、キャプチャ時にカメラでルート化された[SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem)が含まれています。これには、 [MediaFrameReference](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)の[CoordinateSystem](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem)プロパティを使用してアクセスできます。 各フレームには、カメラレンズモデルの説明が含まれています。このモデルは、 [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) プロパティにあります。 これらの変換は、ピクセルを生成した photons によって取得されたパスを表す3D 空間の光をピクセルごとに定義します。 これらの光線は、フレームの座標系から他の座標系 (例: [静止フレーム](../../design/coordinate-systems.md#stationary-frame-of-reference)から) への変換を取得することによって、アプリ内の他のコンテンツに関連付けることができます。 
+各イメージフレーム (写真またはビデオ) には、キャプチャ時にカメラでルート化された[SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem)が含まれています。これには、 [MediaFrameReference](//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)の[CoordinateSystem](//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem)プロパティを使用してアクセスできます。 各フレームには、カメラレンズモデルの説明が含まれています。このモデルは、 [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) プロパティにあります。 これらの変換は、ピクセルを生成した photons によって取得されたパスを表す3D 空間の光をピクセルごとに定義します。 これらの光線は、フレームの座標系から他の座標系 (例: [静止フレーム](../../design/coordinate-systems.md#stationary-frame-of-reference)から) への変換を取得することによって、アプリ内の他のコンテンツに関連付けることができます。 
 
 各イメージフレームには次のものがあります。
 * ピクセルデータ (RGB/NV12/JPEG/など)
-* キャプチャの場所からの[SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem)
-* カメラのレンズモードを含む [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) クラス
+* キャプチャの場所からの[SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem)
+* カメラのレンズモードを含む [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) クラス
 
 [HolographicFaceTracking サンプル](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)は、カメラの座標系と独自のアプリケーション座標系との間の変換をクエリするための非常に簡単な方法を示しています。
 
 ### <a name="using-media-foundation"></a>メディアファンデーションの使用
 
-カメラからイメージフレームを読み取るためにメディアファンデーション直接使用している場合は、次のサンプルコードに示すように、各フレームの [MFSampleExtension_CameraExtrinsics 属性](https://docs.microsoft.com/windows/win32/medfound/mfsampleextension-cameraextrinsics) と [MFSampleExtension_PinholeCameraIntrinsics 属性](https://docs.microsoft.com/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) を使用して、アプリケーションの他の座標系を基準としたカメラフレームを見つけることができます。
+カメラからイメージフレームを読み取るためにメディアファンデーション直接使用している場合は、次のサンプルコードに示すように、各フレームの [MFSampleExtension_CameraExtrinsics 属性](/windows/win32/medfound/mfsampleextension-cameraextrinsics) と [MFSampleExtension_PinholeCameraIntrinsics 属性](/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) を使用して、アプリケーションの他の座標系を基準としたカメラフレームを見つけることができます。
 
 ```cpp
 #include <winrt/windows.perception.spatial.preview.h>
@@ -251,7 +251,7 @@ public static Vector3 ClosestPointBetweenRays(
 
 ### <a name="track-or-identify-tagged-stationary-or-moving-real-world-objectsfaces-using-leds-or-other-recognizer-libraries"></a>Led または他のレコグナイザーライブラリを使用して、タグ付き静止を追跡または特定したり、実際のオブジェクト/顔を移動したりします。
 
-例:
+例 :
 * Led のある工業ロボット (または低速な移動オブジェクトの QR コード)
 * ルーム内のオブジェクトを識別して認識する
 * 部屋の中の人間を識別して認識します。たとえば、顔に holographic の連絡先カードを配置します。
@@ -259,7 +259,7 @@ public static Vector3 ClosestPointBetweenRays(
 ## <a name="see-also"></a>関連項目
 * [お持ちのカメラのサンプル](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
 * [Unity での場所を特定できるカメラ](../unity/locatable-camera-in-unity.md)
-* [複合現実キャプチャ](../../mixed-reality-capture.md)
+* [複合現実キャプチャ](/hololens/holographic-photos-and-videos)
 * [開発者向け複合現実キャプチャ](mixed-reality-capture-for-developers.md)
-* [メディアキャプチャの概要](https://msdn.microsoft.com/library/windows/apps/mt243896.aspx)
+* [メディアキャプチャの概要](/windows/uwp/audio-video-camera/)
 * [Holographic face tracking サンプル](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

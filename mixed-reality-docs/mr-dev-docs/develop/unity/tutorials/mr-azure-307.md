@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure、mixed reality、academy、unity、チュートリアル、api、機械学習、ml、machine learning studio、hololens、イマーシブ、vr、Windows 10、Visual Studio
-ms.openlocfilehash: 3bb50c146e11a340f4223d71dd401ac2b84dd6d4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 95213c3d17bbe0f0f81438d4808db142ad21c595
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679481"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583395"
 ---
 # <a name="mr-and-azure-307-machine-learning"></a>MR と Azure 307:機械学習
 
@@ -42,7 +42,7 @@ ms.locfileid: "94679481"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td> MR と Azure 307:機械学習</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -51,7 +51,7 @@ ms.locfileid: "94679481"
 > [!NOTE]
 > このコースでは主に Windows Mixed Reality イマーシブ (VR) ヘッドセットに焦点を当てていますが、このコースで学習した内容を Microsoft HoloLens に適用することもできます。 このコースに従うと、HoloLens をサポートするために必要となる可能性のある変更に関する注意事項が表示されます。 HoloLens を使用する場合、音声キャプチャ中にエコーが発生することがあります。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 > [!NOTE]
 > このチュートリアルは、Unity と C# の基本的な経験がある開発者向けに設計されています。 また、このドキュメントに記載されている前提条件と記述に記載されている手順は、作成時にテストおよび検証されたものを表します (2018 年5月)。 [「ツールのインストール](../../install-the-tools.md)」の記事に記載されているように、最新のソフトウェアを自由に使用できます。ただし、このコースの情報は、以下に記載されているものよりも新しいソフトウェアで見つかったものと完全に一致するとは限りません。
@@ -63,7 +63,7 @@ ms.locfileid: "94679481"
 - [最新の Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](../../../hololens-hardware-details.md)
+- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](/hololens/hololens1-hardware)
 - Azure のセットアップと ML のデータ取得のためのインターネットアクセス
 
 ## <a name="before-you-start"></a>開始する前に
@@ -100,7 +100,7 @@ Azure Translator API を使用するには、アプリケーションで使用�
     7.  **サブスクリプション** を選択します。
     4. リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのラボなど) を共通のリソースグループに保持することをお勧めします。
 
-        > Azure リソースグループの詳細については、 [リソースグループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
+        > Azure リソースグループの詳細については、 [リソースグループ](/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
     
     5.  リソースグループの **場所** を決定します (新しいリソースグループを作成している場合)。 この場所は、アプリケーションを実行するリージョンに配置するのが理想的です。 一部の Azure 資産は、特定のリージョンでのみ利用できます。
 
@@ -132,7 +132,7 @@ Azure Translator API を使用するには、アプリケーションで使用�
 
     3. リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのラボなど) を共通のリソースグループに保持することをお勧めします。 
 
-        > Azure リソースグループの詳細については、 [リソースグループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
+        > Azure リソースグループの詳細については、 [リソースグループ](/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
 
     4.  リソースグループの **場所** を決定します (新しいリソースグループを作成している場合)。 この場所は、アプリケーションを実行するリージョンに配置するのが理想的です。 一部の Azure 資産は、特定のリージョンでのみ利用できます。 前の章で Azure Storage の作成に使用したものと同じリソースグループを使用する必要があります。
 
@@ -146,7 +146,7 @@ Azure Translator API を使用するには、アプリケーションで使用�
 
     9.  また、このサービスに適用されている使用条件を理解していることを確認する必要があります。
 
-    10. **[作成]** をクリックします。
+    10. **Create** をクリックしてください。
 
         ![Azure Machine Learning Studio (クラシック)](images/AzureLabs-Lab7-6.png)
 
@@ -216,7 +216,7 @@ Machine Learning アルゴリズムが動作する方法の1つは、既存の�
 
 実験の作成を開始するには:
 
-1.  ページの左下にある [ **+ 新規**] ボタンをもう一度クリックし、[**実験** 用の空の実験] をクリックし  >  **Blank Experiment** ます。
+1.  ページの左下にある [ **+ 新規**] ボタンをもう一度クリックし、[**実験** 用の空の実験] をクリックし  >  ます。
 
     ![Machine Learning Studio (クラシック): 実験](images/AzureLabs-Lab7-15.png)
 
@@ -238,11 +238,11 @@ Machine Learning アルゴリズムが動作する方法の1つは、既存の�
 
     ![Machine Learning Studio (クラシック): 実験](images/AzureLabs-Lab7-19.png)
 
-7.  左側の **実験** パネルで、[ **Machine Learning** トレーニング] を展開し  >  **Train** ます。 [ **モデルのトレーニング** ] 項目を実験キャンバスにドラッグします。 キャンバスは次のようになります。
+7.  左側の **実験** パネルで、[ **Machine Learning** トレーニング] を展開し  >  ます。 [ **モデルのトレーニング** ] 項目を実験キャンバスにドラッグします。 キャンバスは次のようになります。
 
     ![Machine Learning Studio (クラシック): 実験](images/AzureLabs-Lab7-20.png)
 
-8.  **_ 分割データ項目 *の* _bottom left_** 左下の [**モデルのトレーニング**] 項目の **右上** にある [接続] をドラッグします。 データセットからの最初の70% の分割は、アルゴリズムをトレーニングするために Train モデルによって使用されます。
+8.  **_ 分割データ項目 *の*** 左下の [**モデルのトレーニング**] 項目の **右上** にある [接続] をドラッグします。 データセットからの最初の70% の分割は、アルゴリズムをトレーニングするために Train モデルによって使用されます。
 
     ![Machine Learning Studio (クラシック): 実験](images/AzureLabs-Lab7-21.png)
 
@@ -252,9 +252,9 @@ Machine Learning アルゴリズムが動作する方法の1つは、既存の�
 
     ![Machine Learning Studio (クラシック): 実験](images/AzureLabs-Lab7-22.png)
 
-11. **多クラスロジスティック回帰** アルゴリズムをトレーニングして、その日の時間と日付に基づいて販売された **製品** を予測します。 Azure Machine Learning studio によって提供されるさまざまなアルゴリズムの詳細については、このドキュメントでは説明しません。ただし、 [Machine Learning アルゴリズム](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)の詳細については、「」を参照してください。
+11. **多クラスロジスティック回帰** アルゴリズムをトレーニングして、その日の時間と日付に基づいて販売された **製品** を予測します。 Azure Machine Learning studio によって提供されるさまざまなアルゴリズムの詳細については、このドキュメントでは説明しません。ただし、 [Machine Learning アルゴリズム](/azure/machine-learning/studio/algorithm-cheat-sheet)の詳細については、「」を参照してください。
 
-12. 左側の [実験項目] パネルで [ **Machine Learning**  >  のモデル分類の **初期化**] を展開  >  **Classification** し、**多クラスロジスティック回帰** 項目を実験キャンバスにドラッグします。
+12. 左側の [実験項目] パネルで [ **Machine Learning**  >  のモデル分類の **初期化**] を展開  >  し、**多クラスロジスティック回帰** 項目を実験キャンバスにドラッグします。
 
 13. **多クラスロジスティック回帰** の一番下にある出力を、[**モデルのトレーニング**] 項目の左上の入力に接続します。
 
@@ -336,7 +336,7 @@ Mixed Reality のイマーシブヘッドセットをセットアップしてテ
 
 1.  **Unity** を開き、MR の "e" という名前の新しい unity プロジェクトを作成し **\_ ます。** プロジェクトの種類が **3d** に設定されていることを確認します。
 
-2.  Unity を開いている場合は、[既定の **スクリプトエディター** ] が **Visual Studio** に設定されていることを確認する必要があります。 [設定の **編集**] に移動し、  >  **Preferences** 新しいウィンドウで [**外部ツール**] に移動します。 **外部スクリプトエディター** を **Visual Studio 2017** に変更します。 [ **基本設定** ] ウィンドウを閉じます。
+2.  Unity を開いている場合は、[既定の **スクリプトエディター** ] が **Visual Studio** に設定されていることを確認する必要があります。 [設定の **編集**] に移動し、  >  新しいウィンドウで [**外部ツール**] に移動します。 **外部スクリプトエディター** を **Visual Studio 2017** に変更します。 [ **基本設定** ] ウィンドウを閉じます。
 
 3.  次に、[**ファイル**  >  ] [**ビルドの設定**] に移動し、[プラットフォームの *_切り替え_*] _ ボタンをクリックして、プラットフォームを **ユニバーサル Windows プラットフォーム** に切り替えます。
 
@@ -529,7 +529,7 @@ Mixed Reality のイマーシブヘッドセットをセットアップしてテ
 
 1.  [**プロジェクト] パネル** の [**スクリプト**] フォルダーにアクセスします。
 
-2.  フォルダー内を右クリックし、[C# スクリプトの **作成**] をクリック  >  **C# Script** します。 **Productprediction** のスクリプトを呼び出します。
+2.  フォルダー内を右クリックし、[C# スクリプトの **作成**] をクリック  >  します。 **Productprediction** のスクリプトを呼び出します。
 
 3.  新しい **Productprediction** スクリプトをダブルクリックして、 **Visual Studio 2017** で開きます。
 
@@ -821,9 +821,9 @@ Mixed Reality のイマーシブヘッドセットをセットアップしてテ
 
 ビルドするには:
 
-1.  [**ファイル**] [保存] [シーン] をクリックして、現在のシーンを保存  >  **Save Scenes** します。
+1.  [**ファイル**] [保存] [シーン] をクリックして、現在のシーンを保存  >  します。
 
-2.  ファイルの **File**  >  **ビルド設定** に進む
+2.  ファイルの  >  **ビルド設定** に進む
 
 3.  **Unity C# プロジェクト** と呼ばれるチェックボックスをオンにします (ビルドの完了後にクラスを編集できるため、これは重要です)。
 

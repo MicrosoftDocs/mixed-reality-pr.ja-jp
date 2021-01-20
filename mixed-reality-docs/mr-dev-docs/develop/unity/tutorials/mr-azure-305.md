@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, unity, チュートリアル, api, 関数, ストレージ, hololens, イマーシブ, vr, Windows 10, Visual Studio
-ms.openlocfilehash: bc609e5a4a1c4252f498ada4dba2206140635667
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5c9784446923b3eae7a600b8e672574ce6465038
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679491"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583425"
 ---
 # <a name="mr-and-azure-305-functions-and-storage"></a>MR と Azure 305:機能とストレージ
 
@@ -26,9 +26,9 @@ ms.locfileid: "94679491"
 
 このコースでは、Azure Functions を作成して使用し、混合の現実アプリケーション内で Azure Storage リソースを使用してデータを格納する方法について説明します。
 
-*Azure Functions* は Microsoft のサービスであり、開発者は Azure で小さなコードである "Functions" を実行できます。 これにより、ローカルアプリケーションではなく、クラウドに作業を委任することができます。これには多くのメリットがあります。 *Azure Functions* は、C \# 、F \# 、Node.js、Java、PHP など、いくつかの開発言語をサポートしています。 詳細については、 [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)に関する記事をご覧ください。
+*Azure Functions* は Microsoft のサービスであり、開発者は Azure で小さなコードである "Functions" を実行できます。 これにより、ローカルアプリケーションではなく、クラウドに作業を委任することができます。これには多くのメリットがあります。 *Azure Functions* は、C \# 、F \# 、Node.js、Java、PHP など、いくつかの開発言語をサポートしています。 詳細については、 [Azure Functions](/azure/azure-functions/functions-overview)に関する記事をご覧ください。
 
-*Azure Storage* は Microsoft のクラウドサービスであり、開発者はデータを格納できます。このサービスは、高可用性、セキュリティ、耐久性、拡張性、および冗長性を備えています。 これは、Microsoft がすべてのメンテナンスと重大な問題を処理することを意味します。 詳細については、 [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction)に関する記事をご覧ください。
+*Azure Storage* は Microsoft のクラウドサービスであり、開発者はデータを格納できます。このサービスは、高可用性、セキュリティ、耐久性、拡張性、および冗長性を備えています。 これは、Microsoft がすべてのメンテナンスと重大な問題を処理することを意味します。 詳細については、 [Azure Storage](/azure/storage/common/storage-introduction)に関する記事をご覧ください。
 
 このコースを完了すると、現実のイマーシブヘッドセットアプリケーションが完成し、次のことができるようになります。
 
@@ -44,7 +44,7 @@ ms.locfileid: "94679491"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td>MR と Azure 305:機能とストレージ</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -53,7 +53,7 @@ ms.locfileid: "94679491"
 > [!NOTE]
 > このコースでは主に Windows Mixed Reality イマーシブ (VR) ヘッドセットに焦点を当てていますが、このコースで学習した内容を Microsoft HoloLens に適用することもできます。 このコースに従うと、HoloLens をサポートするために必要となる可能性のある変更に関する注意事項が表示されます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 > [!NOTE]
 > このチュートリアルは、Unity と C# の基本的な経験がある開発者向けに設計されています。 また、このドキュメントに記載されている前提条件と記述に記載されている手順は、作成時にテストおよび検証されたものを表します (2018 年5月)。 「 [ツールのインストール](../../install-the-tools.md) 」の記事に記載されているように、最新のソフトウェアを自由に使用できます。ただし、このコースの情報は、以下に記載されているものよりも新しいソフトウェアで見つかったものと完全に一致するとは限りません。
@@ -65,7 +65,7 @@ ms.locfileid: "94679491"
 - [最新の Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](../../../hololens-hardware-details.md)
+- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](/hololens/hololens1-hardware)
 - Azure リソースを作成するための Azure アカウントへのサブスクリプション
 - Azure のセットアップとデータ取得のためのインターネットアクセス
 
@@ -113,11 +113,11 @@ ms.locfileid: "94679491"
 
     9. リソースグループを選択するか、新しい *リソースグループ* を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのラボなど) を共通のリソースグループに保持することをお勧めします。 
 
-        > Azure リソースグループの詳細については、 [リソースグループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
+        > Azure リソースグループの詳細については、 [リソースグループ](/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
 
     10. また、このサービスに適用されている使用条件を理解していることを確認する必要があります。
 
-    11. **[作成]** を選択します。
+    11. **［作成］** を選択します
 
         ![入力サービス情報](images/AzureLabs-Lab5-03.png)
 
@@ -166,7 +166,7 @@ Azure 関数を作成するには、次のようにします。
 
     3. リソースグループを選択するか、新しい *リソースグループ* を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのラボなど) を共通のリソースグループに保持することをお勧めします。 
 
-        > Azure リソースグループの詳細については、 [リソースグループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
+        > Azure リソースグループの詳細については、 [リソースグループ](/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
 
     4.  この演習では、選択した **OS** として [ *Windows* ] を選択します。
 
@@ -252,7 +252,7 @@ Mixed reality のイマーシブヘッドセットをセットアップしてテ
 
     ![新しい unity プロジェクトに名前を付ける](images/AzureLabs-Lab5-18.png)
 
-3.  Unity を開いている場合は、[既定の **スクリプトエディター** ] が **Visual Studio** に設定されていることを確認する必要があります。 [設定の **編集**] に移動し、  >  **Preferences** 新しいウィンドウで [**外部ツール**] に移動します。 **外部スクリプトエディター** を **Visual Studio 2017** に変更します。 [ **基本設定** ] ウィンドウを閉じます。
+3.  Unity を開いている場合は、[既定の **スクリプトエディター** ] が **Visual Studio** に設定されていることを確認する必要があります。 [設定の **編集**] に移動し、  >  新しいウィンドウで [**外部ツール**] に移動します。 **外部スクリプトエディター** を **Visual Studio 2017** に変更します。 [ **基本設定** ] ウィンドウを閉じます。
 
     ![visual studio をスクリプトエディターとして設定する](images/AzureLabs-Lab5-19.png)
 
@@ -463,15 +463,15 @@ Mixed reality のイマーシブヘッドセットをセットアップしてテ
 
 ## <a name="chapter-6---import-azure-storage-for-unity"></a>Chapter 6-Unity 用の Azure Storage のインポート
 
-Azure Storage for Unity を使用します (これ自体が .Net SDK for Azure を利用します)。 詳細については、 [「Unity の Azure Storage](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity)」を参照してください。
+Azure Storage for Unity を使用します (これ自体が .Net SDK for Azure を利用します)。 詳細については、 [「Unity の Azure Storage](/sandbox/gamedev/unity/azure-storage-unity)」を参照してください。
 
 現在、Unity には、インポート後にプラグインを再構成する必要がある既知の問題があります。 バグが解決された後、これらの手順 (このセクションでは 4-7) は不要になりました。
 
 SDK を独自のプロジェクトにインポートするには、最新の [". unitypackage" を GitHub から](https://aka.ms/azstorage-unitysdk)ダウンロードしていることを確認します。 次に、以下を実行します。
 
-1.  [ **.unitypackage** **Assets**  >  **Import package**  >  **Custom package (カスタムパッケージ** のインポート)] メニューオプションを使用して、unitypackage ファイルを Unity に追加します。
+1.  [  **Assets**  >  **Import package**  >  **Custom package (カスタムパッケージ** のインポート)] メニューオプションを使用して、unitypackage ファイルを Unity に追加します。
 
-2.  ポップアップ表示される [ **Unity パッケージのインポート**] ボックスで、[**プラグイン** ストレージ] の下のすべてを選択でき  >  **Storage** ます。 このコースでは不要なため、他のすべてをオフにします。
+2.  ポップアップ表示される [ **Unity パッケージのインポート**] ボックスで、[**プラグイン** ストレージ] の下のすべてを選択でき  >  ます。 このコースでは不要なため、他のすべてをオフにします。
 
     ![パッケージへのインポート](images/AzureLabs-Lab5-45.png)
 
@@ -521,7 +521,7 @@ SDK を独自のプロジェクトにインポートするには、最新の [".
 
 このクラスを作成するには:
 
-1.  [プロジェクト] パネルの [フォルダーの **作成**] で、*アセット* フォルダーを右クリックし  >  **Folder** ます。 フォルダーに **スクリプト** の名前を指定します。
+1.  [プロジェクト] パネルの [フォルダーの **作成**] で、*アセット* フォルダーを右クリックし  >  ます。 フォルダーに **スクリプト** の名前を指定します。
 
     ![新しいフォルダーの作成](images/AzureLabs-Lab5-50.png)
 
@@ -529,7 +529,7 @@ SDK を独自のプロジェクトにインポートするには、最新の [".
 
 2.  先ほど作成したフォルダーをダブルクリックして開きます。
 
-3.  フォルダー内を右クリックし、[C# スクリプトの **作成**] をクリック  >  **C# Script** します。 *Azureservices* スクリプトを呼び出します。
+3.  フォルダー内を右クリックし、[C# スクリプトの **作成**] をクリック  >  します。 *Azureservices* スクリプトを呼び出します。
 
 4.  新しい *Azureservices* クラスをダブルクリックして、 *Visual Studio* で開きます。
 
@@ -659,7 +659,7 @@ SDK を独自のプロジェクトにインポートするには、最新の [".
 
 1.  前に作成した **Scripts** フォルダーにアクセスします。
 
-2.  フォルダー内を右クリックし、[C# スクリプトの **作成**] をクリック  >  **C# Script** します。 スクリプト *図形ファクトリ* を呼び出します。
+2.  フォルダー内を右クリックし、[C# スクリプトの **作成**] をクリック  >  します。 スクリプト *図形ファクトリ* を呼び出します。
 
 3.  新しい [ *図形ファクトリ* ] スクリプトをダブルクリックして、 *Visual Studio* で開きます。
 
@@ -769,7 +769,7 @@ SDK を独自のプロジェクトにインポートするには、最新の [".
 
 1.  前に作成した **Scripts** フォルダーにアクセスします。
 
-2.  [プロジェクト] パネル内を右クリック **Create** し、[  >  **C# スクリプト** の作成] をクリックします。 スクリプトを *見つめ* て呼び出します。
+2.  [プロジェクト] パネル内を右クリックし、[  >  **C# スクリプト** の作成] をクリックします。 スクリプトを *見つめ* て呼び出します。
 
 3.  新しい *宝石* のスクリプトをダブルクリックして、 *Visual Studio で開きます。*
 
@@ -1199,7 +1199,7 @@ SDK を独自のプロジェクトにインポートするには、最新の [".
 
 ビルドプロセスを開始するには:
 
-1.  ファイルの **File**  >  **ビルド設定** にアクセスします。
+1.  ファイルの  >  **ビルド設定** にアクセスします。
 
     ![アプリをビルドする](images/AzureLabs-Lab5-54.png)
 
@@ -1221,7 +1221,7 @@ SDK を独自のプロジェクトにインポートするには、最新の [".
 
     > Microsoft HoloLens の場合、これを *リモートコンピューター* に設定する方が簡単な場合があります。これにより、コンピューターにテザリングさされることはありません。 ただし、次の手順も実行する必要があります。
     > - HoloLens の **IP アドレス** を確認します。これは、[**設定**  >  ] [**ネットワーク & [インターネット**  >  **wi-fi**  >  **詳細オプション]** にあります。 IPv4 は使用するアドレスです。 
-    > - **開発者モード** が **オンに** なっていることを確認します。「**設定** の更新」で、  >  開発者向けの **セキュリティ & セキュリティ** が見つかりました  >  **For developers**。
+    > - **開発者モード** が **オンに** なっていることを確認します。「**設定** の更新」で、  >  開発者向けの **セキュリティ & セキュリティ** が見つかりました  >  。
 
     ![ソリューションの配置](images/AzureLabs-Lab5-55.png)
 
@@ -1243,4 +1243,4 @@ SDK を独自のプロジェクトにインポートするには、最新の [".
 
 ### <a name="exercise-2"></a>演習2
 
-毎回アプリケーションを再起動するのではなく、アプリを再起動する方法を作成します。 **読み込みシーン** は、開始するのに適しています。 その後、 *Azure Storage* で格納されている一覧をクリアする方法を作成して、アプリから簡単にリセットできるようにします。 
+毎回アプリケーションを再起動するのではなく、アプリを再起動する方法を作成します。 **読み込みシーン** は、開始するのに適しています。 その後、 *Azure Storage* で格納されている一覧をクリアする方法を作成して、アプリから簡単にリセットできるようにします。

@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: シーンの理解、空間マッピング、Windows Mixed Reality、Unity
-ms.openlocfilehash: 9520ad604125705c60624254b097de5fc93021ec
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 10cb96ffe0496a20c7244ba4c40dec097ebd4bd8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009382"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583750"
 ---
 # <a name="scene-understanding-sdk-overview"></a>シーンについて SDK の概要
 
@@ -119,7 +119,7 @@ SceneObjects は、次のいずれかを持つことができます。
 <tr>
 <th>SceneObjectKind</th> <th>説明</th>
 </tr>
-<tr><td>背景</td><td>SceneObject は、他の認識された種類のシーンオブジェクトの1つでは <b>ない</b> ことがわかっています。 このクラスは、背景が壁、床、天井などではないことがわかっている不明なものと混同しないようにしてください。不明な項目はまだ分類されていません。</b></td></tr>
+<tr><td>バックグラウンド</td><td>SceneObject は、他の認識された種類のシーンオブジェクトの1つでは <b>ない</b> ことがわかっています。 このクラスは、背景が壁、床、天井などではないことがわかっている不明なものと混同しないようにしてください。不明な項目はまだ分類されていません。</b></td></tr>
 <tr><td>Wall</td><td>物理的な壁面。 壁面は、移動可能な環境構造であると見なされます。</td></tr>
 <tr><td>床</td><td>床は、どのような面でも使用できます。 注: 階段は床ではありません。 また、このフロアは、明らかにできることを前提としています。したがって、1つの床面を明確に想定することはできません。 複数レベルの構造、傾斜など...すべてが floor として分類される必要があります。</td></tr>
 <tr><td>Ceiling</td><td>部屋の上面。</td></tr>
@@ -131,7 +131,7 @@ SceneObjects は、次のいずれかを持つことができます。
 
 ### <a name="scenemesh"></a>SceneMesh
 
-SceneMesh は、トライアングルリストを使用して任意のジオメトリックオブジェクトのジオメトリを近似する SceneComponent です。 SceneMeshes は、いくつかの異なるコンテキストで使用されます。 watertight セル構造のコンポーネント、またはシーンに関連付けられた非バインド空間マッピングメッシュを表す WorldMesh として表すことができます。 各メッシュで提供されるインデックスと頂点データは、すべての最新のレンダリング Api で三角形メッシュをレンダリングするために使用される [頂点およびインデックスバッファー](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) と同じ使い慣れたレイアウトを使用します。 シーンの理解では、メッシュは32ビットのインデックスを使用し、特定のレンダリングエンジンのチャンクに分割する必要がある場合があります。
+SceneMesh は、トライアングルリストを使用して任意のジオメトリックオブジェクトのジオメトリを近似する SceneComponent です。 SceneMeshes は、いくつかの異なるコンテキストで使用されます。 watertight セル構造のコンポーネント、またはシーンに関連付けられた非バインド空間マッピングメッシュを表す WorldMesh として表すことができます。 各メッシュで提供されるインデックスと頂点データは、すべての最新のレンダリング Api で三角形メッシュをレンダリングするために使用される [頂点およびインデックスバッファー](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) と同じ使い慣れたレイアウトを使用します。 シーンの理解では、メッシュは32ビットのインデックスを使用し、特定のレンダリングエンジンのチャンクに分割する必要がある場合があります。
 
 #### <a name="winding-order-and-coordinate-systems"></a>ワインディング順序と座標系
 
@@ -265,7 +265,7 @@ foreach (var mesh in firstFloor.Meshes)
 
 シーンの理解により、変換を処理するときに、従来の3D シーン表現に合わせて意図的に配置しようとしました。 そのため、各シーンは、最も一般的な3D 環境表現と同じように、1つの座標系に限定されます。 SceneObjects は、その座標系を基準とした相対的な場所を提供します。 アプリケーションが、1つのオリジンが提供する機能の制限を拡大するシーンを処理している場合は、SceneObjects を SpatialAnchors に固定するか、複数のシーンを生成して結合することができますが、わかりやすくするために、watertight のシーンが独自のオリジンに存在することを想定しています。
 
-次の Unity コードは、Windows 認識と Unity Api を使用して、座標系をまとめて配置する方法を示しています。 Unity の世界の出発点に対応する SpatialCoordinateSystem を取得する[方法の詳細につい](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced)ては、「 [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) and [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) 」を参照してください。
+次の Unity コードは、Windows 認識と Unity Api を使用して、座標系をまとめて配置する方法を示しています。 Unity の世界の出発点に対応する SpatialCoordinateSystem を取得する[方法の詳細につい](//windows/mixed-reality/unity-xrdevice-advanced)ては、「 [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) and [SpatialGraphInteropPreview](//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) 」を参照してください。
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)

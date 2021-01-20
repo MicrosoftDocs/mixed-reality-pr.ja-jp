@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, unity, チュートリアル, api, 翻訳テキスト, hololens, イマーシブ, vr, 言語翻訳, Windows 10, Visual Studio
-ms.openlocfilehash: 3f7d48df92ae5ed979c6fa8d69d348ce084d3fb9
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 0b7e7c2e4146d3c60e62c25764aae48260fdf3ef
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679571"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583291"
 ---
 # <a name="mr-and-azure-301-language-translation"></a>MR と Azure 301:言語翻訳
 
@@ -40,7 +40,7 @@ Translator Text API は、ほぼリアルタイムで動作する翻訳サービ
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td> MR と Azure 301:言語翻訳</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -49,7 +49,7 @@ Translator Text API は、ほぼリアルタイムで動作する翻訳サービ
 > [!NOTE]
 > このコースでは主に Windows Mixed Reality イマーシブ (VR) ヘッドセットに焦点を当てていますが、このコースで学習した内容を Microsoft HoloLens に適用することもできます。 このコースに従うと、HoloLens をサポートするために必要となる可能性のある変更に関する注意事項が表示されます。 HoloLens を使用する場合、音声キャプチャ中にエコーが発生することがあります。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 > [!NOTE]
 > このチュートリアルは、Unity と C# の基本的な経験がある開発者向けに設計されています。 また、このドキュメントに記載されている前提条件と記述に記載されている手順は、作成時にテストおよび検証されたものを表します (2018 年5月)。 「 [ツールのインストール](../../install-the-tools.md) 」の記事に記載されているように、最新のソフトウェアを自由に使用できます。ただし、このコースの情報は、以下に記載されているものよりも新しいソフトウェアで見つかったものと完全に一致するとは限りません。
@@ -61,7 +61,7 @@ Translator Text API は、ほぼリアルタイムで動作する翻訳サービ
 - [最新の Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](../../../hololens-hardware-details.md)
+- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](/hololens/hololens1-hardware)
 - 内蔵マイク付きヘッドホンのセット (ヘッドセットにマイクとスピーカーが組み込まれていない場合)
 - Azure のセットアップと翻訳の取得のためのインターネットアクセス
 
@@ -88,7 +88,7 @@ Azure Translator API を使用するには、アプリケーションで使用�
     > [!NOTE]
     > まだ Azure アカウントを持っていない場合は、アカウントを作成する必要があります。 このチュートリアルを教室またはラボの状況で行っている場合は、新しいアカウントの設定について、インストラクターまたはそのいずれかの対処を依頼してください。
 
-2.  ログインしたら、左上隅にある [ **新規** ] をクリックし、"Translator Text API" を検索します。 **[Enter]** を選択します。
+2.  ログインしたら、左上隅にある [ **新規** ] をクリックし、"Translator Text API" を検索します。 **Enter** キーを押します。
 
     ![新しいリソース](images/AzureLabs-Lab1-02.png)
 
@@ -106,11 +106,11 @@ Azure Translator API を使用するには、アプリケーションで使用�
     3. 適切な **価格レベル** を選択します。これが *Translator Text サービス* を初めて作成する場合は、free レベル (F0) を使用できます。
     4. リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのラボなど) を共通のリソースグループに保持することをお勧めします。
 
-        > Azure リソースグループの詳細については、 [リソースグループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
+        > Azure リソースグループの詳細については、 [リソースグループ](/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
 
     5. リソースグループの **場所** を決定します (新しいリソースグループを作成している場合)。 この場所は、アプリケーションを実行するリージョンに配置するのが理想的です。 一部の Azure 資産は、特定のリージョンでのみ利用できます。
     6. また、このサービスに適用されている使用条件を理解していることを確認する必要があります。
-    7. **[作成]** を選択します。
+    7. **［作成］** を選択します
 
         ![[作成] ボタンを選択します。](images/AzureLabs-Lab1-04.png)
 
@@ -609,7 +609,7 @@ Mixed reality のイマーシブヘッドセットをセットアップしてテ
     ```
 
     > [!NOTE]
-    > - 言語の **列挙** に挿入される言語は、単純な例です。 必要に応じて、さらに自由に追加できます。API は、 [60 を超える言語](https://docs.microsoft.com/azure/cognitive-services/translator/languages) (Klingon を含む) をサポートしています。
+    > - 言語の **列挙** に挿入される言語は、単純な例です。 必要に応じて、さらに自由に追加できます。API は、 [60 を超える言語](/azure/cognitive-services/translator/languages) (Klingon を含む) をサポートしています。
     > - [使用可能な言語についてはより対話的なページ](https://www.microsoft.com/translator/business/languages/)がありますが、サイトの言語が ' ' に設定されている場合にのみページが動作しているように見えますが、Microsoft サイトではネイティブ言語にリダイレクトされる可能性があることに注意してください。 ページの下部にあるサイトの言語を変更するか、URL を変更することができます。
     > - 上記のコードスニペットの **Authorizationkey** 値は、 *Azure Translator Text API* をサブスクライブしたときに受け取った **キー** である必要があります。 これについては、 [第1章](#chapter-1--the-azure-portal)で説明しました。
 

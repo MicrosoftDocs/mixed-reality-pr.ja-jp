@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality、Windows Mixed Reality、ホログラム、academy、チュートリアル、エミュレーター、HoloLens、Mixed Reality Academy、unity、mixed reality ヘッドセット、windows Mixed reality ヘッドセット、仮想リアリティヘッドセット、windows 10、宝石、ジェスチャ、音声入力、空間サウンド、空間マッピング
-ms.openlocfilehash: 3499011b8c91168bf27522e5f6f287b14295283e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: afe62dbc3385b41d08011bf7893672272f25485b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678311"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583698"
 ---
 # <a name="mr-basics-101e-complete-project-with-emulator"></a>MR の基本 101E:エミュレーターを使用した完全なプロジェクト
 
@@ -28,7 +28,7 @@ ms.locfileid: "94678311"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td>MR の基本 101E:エミュレーターを使用した完全なプロジェクト</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -36,7 +36,7 @@ ms.locfileid: "94678311"
 
 ## <a name="before-you-start"></a>開始する前に
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>前提条件
 
 * 適切な [ツールがインストール](../../install-the-tools.md)された WINDOWS 10 PC。
 
@@ -63,10 +63,10 @@ ms.locfileid: "94678311"
 * ホログラムを作成します。
 * 作成したホログラムを確認します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * Unity を起動します。
-* **[Open (開く)]** を選択します。
+* **[Open]** を選択します。
 * 前にアーカイブしていない **Origami** フォルダーとして場所を入力します。
 * [ **Origami** ] を選択し、[ **フォルダーの選択**] をクリックします。
 * 新しいシーンを保存します。 [**ファイル**  /  **名を付けてシーンを保存** する。
@@ -128,7 +128,7 @@ ms.locfileid: "94678311"
 
 * 世界でロックされているカーソルを使用して、宝石を視覚化します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * Unity プロジェクトに戻り、[ビルドの設定] ウィンドウがまだ開いている場合は閉じます。
 * [**プロジェクト] パネル** で [**ホログラム**] フォルダーを選択します。
@@ -204,7 +204,7 @@ public class WorldCursor : MonoBehaviour
 
 * 選択ジェスチャでホログラムを制御します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 まず、Select ジェスチャを検出できるスクリプトを作成します。
 
@@ -316,7 +316,7 @@ public class SphereCommands : MonoBehaviour
 * 常にバックグラウンドで待機する音声コマンドを追加します。
 * 音声コマンドに反応するホログラムを作成します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * **Scripts** フォルダーで、 **SpeechManager** という名前のスクリプトを作成します。
 * **SpeechManager** スクリプトを階層内の **OrigamiCollection** オブジェクトにドラッグします。
@@ -438,7 +438,7 @@ public class SphereCommands : MonoBehaviour
 
 * 世界中のホログラムを聞くことができます。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * Unity で、上部のメニューから [ **> プロジェクトの設定を編集** します] [オーディオ] > 選択します。
 * **Spatializer プラグイン** 設定を探し、[ **MS HRTF Spatializer**] を選択します。
@@ -548,7 +548,7 @@ public class SphereSounds : MonoBehaviour
 * 実際の世界を仮想環境に移します。
 * 自分にとって最も重要な場所にホログラムを配置します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * [プロジェクト] パネルの [ **ホログラム** ] フォルダーをクリックします。
 * **空間マッピング** 資産を **階層** のルートにドラッグします。

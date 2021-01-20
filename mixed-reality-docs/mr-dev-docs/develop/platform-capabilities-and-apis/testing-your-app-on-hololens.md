@@ -6,12 +6,12 @@ ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, テスト
-ms.openlocfilehash: d26a3717da2ee9943e92e3602b6029435815262b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b6f1c6bcff9f9db1a1fb7f5b3ea9d2c4c2be969a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008542"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583762"
 ---
 # <a name="testing-your-app-on-hololens"></a>HoloLens でアプリをテストする
 
@@ -111,7 +111,7 @@ Holographic アプリは、さまざまな環境のセットでスムーズに�
 
 ## <a name="windows-app-certification-kit"></a>Windows アプリ認定キット
 
-アプリを [Windows ストアで公開](../../distribute/submitting-an-app-to-the-microsoft-store.md)する機会を与えるには、証明書を送信する前に、ローカルで検証してテストします。 アプリが Holographic デバイスファミリを対象としている場合、 [Windows アプリ認定キット](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) では、ローカルの静的分析テストのみが PC 上で実行されます。 HoloLens ではテストは実行されません。
+アプリを [Windows ストアで公開](../../distribute/submitting-an-app-to-the-microsoft-store.md)する機会を与えるには、証明書を送信する前に、ローカルで検証してテストします。 アプリが Holographic デバイスファミリを対象としている場合、 [Windows アプリ認定キット](/windows/uwp/debug-test-perf/windows-app-certification-kit) では、ローカルの静的分析テストのみが PC 上で実行されます。 HoloLens ではテストは実行されません。
 
 ## <a name="see-also"></a>関連項目
 

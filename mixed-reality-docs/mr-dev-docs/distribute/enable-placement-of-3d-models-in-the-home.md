@@ -6,17 +6,17 @@ ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D、モデル、ホーム、場所、世界、モデリング、mixed reality ホーム、web、アプリ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
-ms.openlocfilehash: c92ba7a3242b618b9ef9cef01ae400cf4dbf36b2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 58da61add35546331ff8199fa20885f9869a9f43
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010102"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583806"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Mixed Reality ホームで 3D モデルの配置を有効にする
 
 > [!NOTE]
-> この機能は、 [Windows 10 April 2018 更新プログラム](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)の一部として追加されました。 以前のバージョンの Windows は、この機能と互換性がありません。
+> この機能は、 [Windows 10 April 2018 更新プログラム](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)の一部として追加されました。 以前のバージョンの Windows は、この機能と互換性がありません。
 
 [Windows Mixed Reality ホーム](../discover/navigating-the-windows-mixed-reality-home.md)は、アプリケーションを起動する前にユーザーが移動する開始点です。 シナリオによっては、(ホログラムアプリのような) 2D アプリでは、3D モデルを直接混合現実ホームに装飾として配置したり、フル3D でさらに検査したりすることができます。 [ *モデルの追加] プロトコル* を使用すると、web サイトまたはアプリケーションから Windows Mixed Reality ホームに3d モデルを直接送信できます。この場合、 [3d アプリランチャー](3d-app-launcher-design-guidance.md)、2d アプリ、ホログラムのように永続化されます。 
 
@@ -32,7 +32,7 @@ ms.locfileid: "98010102"
     </colgroup>
     <tr>
         <td><strong>機能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
      <tr>

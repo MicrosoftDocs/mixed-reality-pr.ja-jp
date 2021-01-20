@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, unity, チュートリアル, api, 顔認識, hololens, イマーシブ, vr, Windows 10, Visual Studio
-ms.openlocfilehash: a6578950039a0a9267b7191f5b96775dca366c01
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6cdb8b7af9988bbfbc6670d0ef79f00487db7f3c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010152"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583374"
 ---
 # <a name="mr-and-azure-304-face-recognition"></a>MR と Azure 304:顔認識
 
@@ -43,7 +43,7 @@ ms.locfileid: "98010152"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td> MR と Azure 304:顔認識</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -64,19 +64,19 @@ ms.locfileid: "98010152"
 - [最新の Windows 10 SDK](../../install-the-tools.md)
 - [Unity 2017.4](../../install-the-tools.md)
 - [Visual Studio 2017](../../install-the-tools.md)
-- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](../../../hololens-hardware-details.md)
+- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](/hololens/hololens1-hardware)
 - PC に接続されているカメラ (イマーシブヘッドセット開発用)
 - Azure のセットアップと Face API の取得のためのインターネットアクセス
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 
 1.  このプロジェクトのビルドで問題が発生しないように、このチュートリアルで説明されているプロジェクトをルートまたはほぼルートフォルダーに作成することを強くお勧めします (長いフォルダーパスはビルド時に問題を引き起こす可能性があります)。
-2.  HoloLens をセットアップしてテストします。 HoloLens のセットアップをサポートする必要がある場合は、 [hololens セットアップに関する記事にアクセスして](https://docs.microsoft.com/hololens/hololens-setup)ください。 
+2.  HoloLens をセットアップしてテストします。 HoloLens のセットアップをサポートする必要がある場合は、 [hololens セットアップに関する記事にアクセスして](/hololens/hololens-setup)ください。 
 3.  新しい HoloLens アプリの開発を開始するときは、調整とセンサーのチューニングを実行することをお勧めします (ユーザーごとにこれらのタスクを実行するのに役立つ場合があります)。 
 
-調整の詳細については、 [「HoloLens の調整に関する記事へのリンク」を](../../../calibration.md#hololens-2)参照してください。
+調整の詳細については、 [「HoloLens の調整に関する記事へのリンク」を](/hololens/hololens-calibration#hololens-2)参照してください。
 
-センサーチューニングの詳細については、 [HoloLens センサーチューニングに関する記事へのリンクを](../../../sensor-tuning.md)参照してください。
+センサーチューニングの詳細については、 [HoloLens センサーチューニングに関する記事へのリンクを](/hololens/hololens-updates)参照してください。
 
 ## <a name="chapter-1---the-azure-portal"></a>章 1-Azure Portal
 
@@ -108,7 +108,7 @@ Azure で *Face API* サービスを使用するには、アプリケーショ�
 
     4. リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのラボなど) を共通のリソースグループに保持することをお勧めします。 
 
-        > Azure リソースグループの詳細については、 [リソースグループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
+        > Azure リソースグループの詳細については、 [リソースグループ](/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
 
     5. 後で使用する UWP **アプリでは、場所** として "米国西部" を使用する必要があります。
 
@@ -147,7 +147,7 @@ Azure で *Face API* サービスを使用するには、アプリケーショ�
 
 > : **個人所有者** は、いくつかの基本的な調整を使用して、 **無料サブスクリプションレベル** で1分あたりのサービス呼び出し数を超えないようにします。 調整が行われると、上部の緑色のテキストが赤に変わり、' アクティブ ' として更新されます。この場合は、アプリケーションを待機するだけです (これは、次に顔サービスへのアクセスが続行されるまで待機し、再度使用できるように "IN-アクティブ" として更新します)。
 
-このアプリケーションでは、 *ProjectOxford* ライブラリを使用します。これにより、Face API を最大限に活用することができます。 このライブラリは、NuGet パッケージとして無料で利用できます。 これと同様の Api の詳細については、 [api リファレンスの記事を参照して](https://docs.microsoft.com/azure/cognitive-services/face/apireference)ください。
+このアプリケーションでは、 *ProjectOxford* ライブラリを使用します。これにより、Face API を最大限に活用することができます。 このライブラリは、NuGet パッケージとして無料で利用できます。 これと同様の Api の詳細については、 [api リファレンスの記事を参照して](/azure/cognitive-services/face/apireference)ください。
 
 > [!NOTE] 
 > これらの手順は、必要な手順にすぎません。これらを実行する手順については、ドキュメントの後半で説明します。 **個人のメーカー** アプリでは、次のことが可能です。
@@ -842,7 +842,7 @@ HoloLens に展開するには:
 ## <a name="chapter-10---using-the-application"></a>章 10-アプリケーションの使用
 
 1.  HoloLens を装着し、アプリを起動します。
-2.  *Face API* に登録したユーザーを確認します。 次のことを確認してください。
+2.  *Face API* に登録したユーザーを確認します。 以下を確認します。
 
     -  人の顔は遠くすぎて明確に見えません。
     -  環境の光源が暗すぎません

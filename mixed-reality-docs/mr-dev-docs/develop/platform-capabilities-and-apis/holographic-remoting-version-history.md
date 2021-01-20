@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、バージョン履歴、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 84caf761af15645410c7439660747fa2f369c6c7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0eab33a058aee8003b352fbfae3ba038b80319d4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009522"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582877"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic リモート処理のバージョン履歴
 
@@ -39,7 +39,7 @@ ms.locfileid: "98009522"
 
 ## <a name="version-222-july-10-2020"></a>バージョン 2.2.2 (2020 年7月10日) <a name="v2.2.2"></a>
 
-* LeftViewportParameters と[HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters)の[HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters)の問題を修正し、Windows Mixed Reality ヘッドセットからのストリーミング時に非表示領域メッシュ頂点が返されないようにしています。
+* LeftViewportParameters と[HolographicCamera](/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters)の[HolographicCamera](/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters)の問題を修正し、Windows Mixed Reality ヘッドセットからのストリーミング時に非表示領域メッシュ頂点が返されないようにしています。
 * ネットワーク接続が不十分な場合に発生する可能性があるクラッシュを修正します。
 
 ## <a name="version-221-july-6-2020"></a>バージョン 2.2.1 (2020 年7月6日) <a name="v2.2.1"></a>
@@ -51,14 +51,14 @@ ms.locfileid: "98009522"
 ## <a name="version-220-july-1-2020"></a>バージョン 2.2.0 (2020 年7月1日) <a name="v2.2.0"></a>
 
 * [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)を実行している Pc に Holographic リモート処理プレーヤーをインストールできるようになりました。これにより、イマーシブヘッドセットにストリーミングすることができます。
-* Holographic リモート処理によって[モーションコントローラー](../../design/motion-controllers.md)がサポートされるようになり、コントローラー固有のデータを[SpatialInteractionSource](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller)経由で取得できるようになりました。
-* [SpatialStageFrameOfReference](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference) がサポートされるようになり、現在のステージを [SpatialStageFrameOfReference](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)経由で取得できるようになりました。 また、SpatialStageFrameOfReference を使用して新しいステージを要求することもできます [。 RequestNewStageAsync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)です。
+* Holographic リモート処理によって[モーションコントローラー](../../design/motion-controllers.md)がサポートされるようになり、コントローラー固有のデータを[SpatialInteractionSource](/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller)経由で取得できるようになりました。
+* [SpatialStageFrameOfReference](/uwp/api/windows.perception.spatial.spatialstageframeofreference) がサポートされるようになり、現在のステージを [SpatialStageFrameOfReference](/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)経由で取得できるようになりました。 また、SpatialStageFrameOfReference を使用して新しいステージを要求することもできます [。 RequestNewStageAsync](/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)です。
 * 以前のバージョンでは、Holographic リモート処理プレーヤーによって、プレーヤー側で予測が処理されました。 バージョン2.2.0 以降では、Holographic リモート処理に時間の同期があり、予測はリモートアプリケーションによって完全に実行されます。 また、複雑なネットワークの状況下では、ユーザーがホログラムの安定性を向上させる必要があります。
 
 ## <a name="version-213-may-25-2020"></a>バージョン 2.1.3 (2020 年5月 25) <a name="v2.1.3"></a>
 
-* [HolographicSpace CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded)イベントの動作が変更されました。 以前のバージョンでは、追加された [HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera)には、 [HolographicSpace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)を介して次のフレームを作成するときに有効な [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose)があることは保証されて **いません** でした。 バージョン2.1.3 以降では、 [HolographicSpace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) は Holographic Remoting Player からのポーズデータと同期されます。 カメラが追加されると、そのカメラで使用できる有効な [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) も次のフレームに表示されます。
-* DepthBufferStreamResolution に **無効** にしました。これを使用すると、RemoteContext.ConfigureDepthVideoStream を介した深度バッファーのストリーミングを無効にすることができます。 HolographicCameraRenderingParameters を使用すると、 [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) は *E_ILLEGAL_METHOD_CALL* で失敗します。
+* [HolographicSpace CameraAdded](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded)イベントの動作が変更されました。 以前のバージョンでは、追加された [HolographicCamera](/uwp/api/windows.graphics.holographic.holographiccamera)には、 [HolographicSpace](/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)を介して次のフレームを作成するときに有効な [HolographicCameraPose](/uwp/api/windows.graphics.holographic.holographiccamerapose)があることは保証されて **いません** でした。 バージョン2.1.3 以降では、 [HolographicSpace](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) は Holographic Remoting Player からのポーズデータと同期されます。 カメラが追加されると、そのカメラで使用できる有効な [HolographicCameraPose](/uwp/api/windows.graphics.holographic.holographiccamerapose) も次のフレームに表示されます。
+* DepthBufferStreamResolution に **無効** にしました。これを使用すると、RemoteContext.ConfigureDepthVideoStream を介した深度バッファーのストリーミングを無効にすることができます。 HolographicCameraRenderingParameters を使用すると、 [CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) は *E_ILLEGAL_METHOD_CALL* で失敗します。
 * Holographic リモート処理プレーヤーのスタートアップ画面が再設計され、ユーザービューをブロックしないようになりました。
 * 安定性の向上とバグの修正。
 
@@ -75,7 +75,7 @@ ms.locfileid: "98009522"
 ## <a name="version-210-march-11-2020"></a>バージョン 2.1.0 (2020 年3月11日) <a name="v2.1.0"></a>
 
 * UDP 経由で [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) を使用するようにネットワークトランスポートを切り替えました。 セキュリティで保護された接続では、 [Srtp](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) を使用します。 [Holographic リモート処理プレーヤー](holographic-remoting-player.md)は、以前にリリースされたすべての Holographic リモート処理バージョンと互換性があることに注意してください。 新しいネットワークトランスポートの利点を活用するには、Holographic リモート処理プレーヤーと、問題のリモートアプリの両方でバージョン2.1.0 を使用する必要があります。
-* [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)のサポートが追加されました。 
+* [CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)のサポートが追加されました。 
 
 ## <a name="version-2020-february-2-2020"></a>バージョン2.0.20 以降 (2020 年2月2日) <a name="v2.0.20"></a>
 
@@ -83,7 +83,7 @@ ms.locfileid: "98009522"
 
 ## <a name="version-2018-december-17-2019"></a>バージョン 2.0.18 (2019 年12月17日) <a name="v2.0.18"></a>
 
-* [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration)のサポートを追加しました
+* [HolographicViewConfiguration](/uwp/api/windows.graphics.holographic.holographicviewconfiguration)のサポートを追加しました
 * クラッシュの原因となるさまざまなバグが修正されています。
 * HolographicCamera が受け入れられ、HolographicFrame に追加されたカメラとして表示されるために HolographicSpace CameraAdded コールバックが必要なバグを修正しました。
 
@@ -108,7 +108,7 @@ ms.locfileid: "98009522"
 
 ## <a name="version-209-september-19-2019"></a>バージョン 2.0.9 (2019 年9月19日) <a name="v2.0.9"></a>
 
-* [SpatialAnchorExporter](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter)のサポートを追加しました
+* [SpatialAnchorExporter](/uwp/api/windows.perception.spatial.spatialanchorexporter)のサポートを追加しました
 * ```IPlayerContext2```次のメンバーを提供する新しいインターフェイスを追加しました (によって実装され ```PlayerContext``` ます)。
   - [BlitRemoteFrameTimeout](holographic-remoting-create-player.md#BlitRemoteFrameTimeout)  プロパティ。
 * ```Failed_RemoteFrameTooOld```に値を追加しました```BlitResult```
@@ -116,7 +116,7 @@ ms.locfileid: "98009522"
 
 ## <a name="version-208-august-20-2019"></a>バージョン 2.0.8 (2019 年8月20日) <a name="v2.0.8"></a>
 
-* [IDXGISurface2](https://docs.microsoft.com/windows/win32/api/dxgi1_2/nn-dxgi1_2-idxgisurface2) as パラメーターを指定して[HolographicCameraRenderingParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer)を呼び出すときのクラッシュを修正します。
+* [IDXGISurface2](/windows/win32/api/dxgi1_2/nn-dxgi1_2-idxgisurface2) as パラメーターを指定して[HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer)を呼び出すときのクラッシュを修正します。
 * 安定性と信頼性の向上
 
 ## <a name="version-207-july-26-2019"></a>バージョン 2.0.7 (2019 年7月26日) <a name="v2.0.7"></a>
@@ -129,5 +129,5 @@ ms.locfileid: "98009522"
 * [OpenXR Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md)
 * [カスタム Holographic リモート処理プレーヤーアプリの作成](holographic-remoting-create-player.md)
 * [Holographic リモート処理のトラブルシューティングと制限事項](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting ソフトウェア ライセンス条項](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting ソフトウェア ライセンス条項](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft プライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)

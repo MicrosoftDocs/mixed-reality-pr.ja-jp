@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, unity, チュートリアル, api, 言語についてのインテリジェンスサービス, luis, hololens, イマーシブ, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 431858d369bc7007cc5eddbf0e75d9b74b7ba5d3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a91fcd2e20ce1e1731bd398fa72923f6ff5e8406
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679501"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583429"
 ---
 # <a name="mr-and-azure-303-natural-language-understanding-luis"></a>MR と Azure 303: 自然言語について (LUIS)
 
@@ -44,7 +44,7 @@ LUIS を複数回トレーニングできるように準備します。これに
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td>MR と Azure 303: 自然言語について (LUIS)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -53,7 +53,7 @@ LUIS を複数回トレーニングできるように準備します。これに
 > [!NOTE]
 > このコースでは主に Windows Mixed Reality イマーシブ (VR) ヘッドセットに焦点を当てていますが、このコースで学習した内容を Microsoft HoloLens に適用することもできます。 このコースに従うと、HoloLens をサポートするために必要となる可能性のある変更に関する注意事項が表示されます。 HoloLens を使用する場合、音声キャプチャ中にエコーが発生することがあります。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 > [!NOTE]
 > このチュートリアルは、Unity と C# の基本的な経験がある開発者向けに設計されています。 また、このドキュメントに記載されている前提条件と記述に記載されている手順は、作成時にテストおよび検証されたものを表します (2018 年5月)。 「 [ツールのインストール](../../install-the-tools.md) 」の記事に記載されているように、最新のソフトウェアを自由に使用できます。ただし、このコースの情報は、以下に記載されているものよりも新しいソフトウェアで見つかったものと完全に一致するとは限りません。
@@ -65,7 +65,7 @@ LUIS を複数回トレーニングできるように準備します。これに
 - [最新の Windows 10 SDK](../../install-the-tools.md)
 - [Unity 2017.4](../../install-the-tools.md)
 - [Visual Studio 2017](../../install-the-tools.md)
-- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](../../../hololens-hardware-details.md)
+- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](/hololens/hololens1-hardware)
 - 内蔵マイク付きヘッドホンのセット (ヘッドセットにマイクとスピーカーが組み込まれていない場合)
 - Azure のセットアップと LUIS の取得のためのインターネットアクセス
 
@@ -105,11 +105,11 @@ Azure で *Language Understanding* サービスを使用するには、アプリ
     3. 適切な **価格レベル** を選択します。これが *LUIS サービス* を初めて作成する場合は、free レベル (F0) を使用できます。 このコースでは、無料の割り当ては十分ではありません。
     4. リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのコースなど) を共通のリソースグループに保持することをお勧めします。 
 
-        > Azure リソースグループの詳細については、 [リソースグループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
+        > Azure リソースグループの詳細については、 [リソースグループ](/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
 
     5. リソースグループの **場所** を決定します (新しいリソースグループを作成している場合)。 この場所は、アプリケーションを実行するリージョンに配置するのが理想的です。 一部の Azure 資産は、特定のリージョンでのみ利用できます。
     6. また、このサービスに適用されている使用条件を理解していることを確認する必要があります。
-    7. **[作成]** を選択します。
+    7. **［作成］** を選択します
 
         ![Create LUIS service-ユーザー入力](images/AzureLabs-Lab3-03.png)
  
@@ -1117,4 +1117,4 @@ LUIS によって提供される理解レベルを向上させるには、新し
 
 ### <a name="exercise-2"></a>演習2
 
-LUIS とアプリの機能を拡張して、シーンにオブジェクトの機能を追加してみてください。例として、ユーザーの指示に応じて、宝石ヒットポイントに新しいオブジェクトを作成し、既存のコマンドを使用して、それらのオブジェクトを現在のシーンオブジェクトと共に使用できるようにします。 
+LUIS とアプリの機能を拡張して、シーンにオブジェクトの機能を追加してみてください。例として、ユーザーの指示に応じて、宝石ヒットポイントに新しいオブジェクトを作成し、既存のコマンドを使用して、それらのオブジェクトを現在のシーンオブジェクトと共に使用できるようにします。

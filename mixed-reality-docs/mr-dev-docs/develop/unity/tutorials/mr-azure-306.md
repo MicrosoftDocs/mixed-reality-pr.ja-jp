@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure、mixed reality、academy、unity、チュートリアル、api、media services、streaming video、360、イマーシブ、vr、Windows 10、Visual Studio
-ms.openlocfilehash: 1d53b260b2c4b00ff6bf985646a45948472a56a5
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3a0401b7503d8a783ba529cf24cdf6cc55c88311
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679521"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583458"
 ---
 # <a name="mr-and-azure-306-streaming-video"></a>MR と Azure 306:ビデオのストリーム配信
 
@@ -43,13 +43,13 @@ ms.locfileid: "94679521"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td> MR と Azure 306:ビデオのストリーム配信</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 > [!NOTE]
 > このチュートリアルは、Unity と C# の基本的な経験がある開発者向けに設計されています。 また、このドキュメントに記載されている前提条件と記述に記載されている手順は、作成時にテストおよび検証されたものを表します (2018 年5月)。 [「ツールのインストール](../../install-the-tools.md)」の記事に記載されているように、最新のソフトウェアを自由に使用できます。ただし、このコースの情報は、以下に記載されているものよりも新しいソフトウェアで見つかったものと完全に一致するとは限りません。
@@ -142,7 +142,7 @@ Azure Media Service を使用するには、アプリケーションで使用で
 
     3. リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのラボなど) を共通のリソースグループに保持することをお勧めします。 
     
-    > Azure リソースグループの詳細については、 [Azure リソースグループの管理方法に関するこちらのリンク](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)先を参照してください。
+    > Azure リソースグループの詳細については、 [Azure リソースグループの管理方法に関するこちらのリンク](/azure/azure-resource-manager/resource-group-portal)先を参照してください。
 
     4.  リソースグループの **場所** を決定します (新しいリソースグループを作成している場合)。 この場所は、アプリケーションを実行するリージョンに配置するのが理想的です。 一部の Azure 資産は、特定のリージョンでのみ利用できます。
 
@@ -150,7 +150,7 @@ Azure Media Service を使用するには、アプリケーションで使用で
 
     6.  また、このサービスに適用されている使用条件を理解していることを確認する必要があります。
 
-    7.  **[作成]** をクリックします。
+    7.  **Create** をクリックしてください。
 
         ![Azure portal](images/AzureLabs-Lab6-08.png)
 
@@ -250,7 +250,7 @@ Azure Media Service を使用するには、アプリケーションで使用で
     2.  **日付** と **時刻** は、現在の日付から将来の時刻 (この場合は100年) に設定されます。 そのままにするか、またはそれに合わせて変更します。
 
     > [!NOTE]
-    > ロケーターの詳細および選択できる内容については、Azure Media Services の [ドキュメント](https://docs.microsoft.com/azure/media-services/media-services-concepts)を参照してください。
+    > ロケーターの詳細および選択できる内容については、Azure Media Services の [ドキュメント](/azure/media-services/media-services-concepts)を参照してください。
 
 24. パネルの下部にある [ **追加** ] ボタンをクリックします。
 
@@ -281,11 +281,11 @@ Azure Media Service を使用するには、アプリケーションで使用で
 
     ![Azure portal](images/AzureLabs-Lab6-29.png)
 
-3.  Unity を開いている場合は、[既定の **スクリプトエディター** ] が **Visual Studio** に設定されていることを確認する必要があります。 [ **_Edit_ *設定* の編集**] に移動し、新しいウィンドウで [**外部ツール**] に移動します。 **外部スクリプトエディター** を **Visual Studio 2017** に変更します。 [ **基本設定** ] ウィンドウを閉じます。
+3.  Unity を開いている場合は、[既定の **スクリプトエディター** ] が **Visual Studio** に設定されていることを確認する必要があります。 [ ***設定* の編集**] に移動し、新しいウィンドウで [**外部ツール**] に移動します。 **外部スクリプトエディター** を **Visual Studio 2017** に変更します。 [ **基本設定** ] ウィンドウを閉じます。
 
     ![Azure portal](images/AzureLabs-Lab6-30.png)
 
-4.  次に、[ **_ファイル_ *Build Settings*** ] [ビルドの設定] の順に移動し、[**プラットフォームの切り替え**] ボタンをクリックして、プラットフォームを **ユニバーサル Windows プラットフォーム** に切り替えます。
+4.  次に、[ **_ファイル_** ] [ビルドの設定] の順に移動し、[**プラットフォームの切り替え**] ボタンをクリックして、プラットフォームを **ユニバーサル Windows プラットフォーム** に切り替えます。
 
 5.  また、次のことを確認してください。
 
@@ -606,7 +606,7 @@ Azure Media Service を使用するには、アプリケーションで使用で
     ```
 
     > [!TIP] 
-    > この **メソッドは** 、 \# *条件演算子* と呼ばれる便利な C 機能を使用します。 これにより、条件を確認してから、チェックの結果に基づいて値が返されます。すべて1つのステートメント内になります。 [条件演算子の詳細については、こちらのリンクを参照して](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator)ください。
+    > この **メソッドは** 、 \# *条件演算子* と呼ばれる便利な C 機能を使用します。 これにより、条件を確認してから、チェックの結果に基づいて値が返されます。すべて1つのステートメント内になります。 [条件演算子の詳細については、こちらのリンクを参照して](/dotnet/csharp/language-reference/operators/conditional-operator)ください。
 
 11. Unity に戻る前に、変更を Visual Studio に保存します。
 
@@ -629,7 +629,7 @@ Azure Media Service を使用するには、アプリケーションで使用で
 
 2.  [ **プロジェクト** ] パネル内を右クリックし、* [* C スクリプトの *作成* ] * * をクリック \# します。 スクリプトに「」という名前を **指定します**。
 
-3.  新しい宝石 _ スクリプトをダブルクリックして、 **_Gaze_ _ Visual Studio 2017 *で開き* ます。**
+3.  新しい宝石 _ スクリプトをダブルクリックして、 **_ Visual Studio 2017 *で開き* ます。**
 
 4.  次の名前空間がスクリプトの先頭にあることを確認し、その他の名前空間を削除します。
 
@@ -888,5 +888,3 @@ Mixed Reality アプリケーションを実行すると、アプリ内で使用
 **演習2**
 
 Azure と Unity を試し、インターネット接続の強度に応じて、別のファイルサイズでビデオを自動的に選択するアプリの機能を実装します。
-
-

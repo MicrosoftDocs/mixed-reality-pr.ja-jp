@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 座標系、空間座標システム、ワールドスケール、ワールド、スケール、位置、向き、アンカー、空間アンカー、ワールドロック、ワールドロック、永続化、共有、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想リアリティヘッドセット、HoloLens
-ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b11dc8cada8b67a21795dd9838579fc5dd735e6d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009112"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583265"
 ---
 # <a name="spatial-anchors"></a>空間アンカー
 
@@ -19,8 +19,8 @@ ms.locfileid: "98009112"
 
 また、アプリケーションセッション間およびデバイス間で空間アンカーを永続化して共有することもできます。
 * ローカル空間アンカーをディスクに保存し、後で読み込むことによって、アプリケーションは、単一の HoloLens 上の複数のアプリケーションセッションで、実際の環境内の同じ場所を計算できます。
-* <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間アンカー</a>を使用してクラウドアンカーを作成することにより、アプリケーションは複数の HoloLens、iOS、および Android デバイス間で空間アンカーを共有できます。 各デバイスで同じ空間アンカーを使用してホログラムをレンダリングすることにより、ユーザーには、そのホログラムが現実世界の同じ場所に表示されることがわかります。 これにより、リアルタイム共有エクスペリエンスを実現できます。
-* <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間アンカー</a>を使用して、HoloLens、iOS、および Android デバイス間での非同期ホログラム永続化を行うこともできます。 持続性のあるクラウド空間アンカーを共有することにより、複数のデバイスが同時に存在しない場合でも、同じ永続化されたホログラムを時間の経過とともに観察できます。
+* <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間アンカー</a>を使用してクラウドアンカーを作成することにより、アプリケーションは複数の HoloLens、iOS、および Android デバイス間で空間アンカーを共有できます。 各デバイスで同じ空間アンカーを使用してホログラムをレンダリングすることにより、ユーザーには、そのホログラムが現実世界の同じ場所に表示されることがわかります。 これにより、リアルタイム共有エクスペリエンスを実現できます。
+* <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間アンカー</a>を使用して、HoloLens、iOS、および Android デバイス間での非同期ホログラム永続化を行うこともできます。 持続性のあるクラウド空間アンカーを共有することにより、複数のデバイスが同時に存在しない場合でも、同じ永続化されたホログラムを時間の経過とともに観察できます。
 
 5メートルの直径内に収まるテザリングさデスクトップヘッドセットのための、継続的なスケールまたはルームスケールのエクスペリエンスについては、通常、空間アンカーではなく、 [参照のステージフレーム](coordinate-systems.md#stage-frame-of-reference) を使用します。これにより、すべてのコンテンツを表示する1つの座標系が提供されます。 ただし、アプリケーションで、ユーザーが HoloLens で5メートルを超えている場合、たとえばビルのフロア全体で動作する場合は、コンテンツを安定した状態に保つために空間アンカーが必要になります。
 
@@ -75,7 +75,7 @@ ms.locfileid: "98009112"
 
 * [座標系](coordinate-systems.md)
 * [複合現実での共有エクスペリエンス](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Unity の永続化](../develop/unity/persistence-in-unity.md)
 * [DirectX の空間アンカー](../develop/native/coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors)
 * [ケース スタディ - Mixed Reality で穴から覗く](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

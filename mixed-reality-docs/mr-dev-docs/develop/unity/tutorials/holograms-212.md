@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、academy、チュートリアル、音声、HoloLens、Mixed Reality Academy、unity、mixed reality ヘッドセット、windows Mixed reality ヘッドセット、virtual Reality ヘッドセット、Windows 10
-ms.openlocfilehash: b9d9002180da7a59c62b77b83872e77499da4c09
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6fb3e10cb440fdda941a6d68b106da1bbaaedbc9
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677241"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583684"
 ---
 # <a name="mr-input-212-voice"></a>MR 入力 212:音声
 
 >[!NOTE]
->Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](../../../mr-learning-base-01.md)が投稿されています。
+>Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](./mr-learning-base-01.md)が投稿されています。
 
 [音声入力](../../../design/voice-input.md) によって、ホログラムを操作するもう1つの方法が提供されます。 音声コマンドは、非常に自然で簡単な方法で動作します。 次のような音声コマンドを設計します。
 
@@ -45,7 +45,7 @@ ms.locfileid: "94677241"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td>MR 入力 212:音声</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -53,7 +53,7 @@ ms.locfileid: "94677241"
 
 ## <a name="before-you-start"></a>開始する前に
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>前提条件
 
 * 適切な [ツールがインストール](../../../develop/install-the-tools.md)された WINDOWS 10 PC。
 * 基本的な C# プログラミング機能。
@@ -76,12 +76,12 @@ ms.locfileid: "94677241"
 
 ## <a name="unity-setup"></a>Unity のセットアップ
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 1. Unity を起動します。
-2. **[Open (開く)]** を選択します。
+2. **[Open]** を選択します。
 3. 以前にアーカイブしていた **HolographicAcademy-212-Voice** フォルダーに移動します。
-4. [モデルエクスプローラーの **開始**] フォルダーを見つけて選択し / **Model Explorer** ます。
+4. [モデルエクスプローラーの **開始**] フォルダーを見つけて選択し / ます。
 5. [ **フォルダーの選択** ] ボタンをクリックします。
 6. [ **プロジェクト** ] パネルで、[ **シーン** ] フォルダーを展開します。
 7. [ **Modelexplorer** シーン] をダブルクリックして Unity に読み込みます。
@@ -149,10 +149,10 @@ HoloLens に展開する場合:
     3. ズームツール
     4. ツールのドラッグ
     5. Adjust
-    6. 削除
+    6. [削除]
 * 同様のサウンドを使用します。 Rhyme する音声コマンドを使用しないようにしてください。 *"Show Store"* と *"More show More"* がサポートされているショッピングアプリケーションがある場合は、もう一方のコマンドを使用している間に、いずれかのコマンドを無効にする必要があります。 たとえば、[ *Show store]* \ (ストアの表示 \) ボタンを使用してストアを開き、ストアが表示されたときにそのコマンドを無効にして、[ *さらに表示]* コマンドを使用して参照することができます。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * Unity の [ **階層** ] パネルで、検索ツールを使用して **holoComm_screen_mesh** オブジェクトを検索します。
 * **HoloComm_screen_mesh** オブジェクトをダブルクリックして、**シーン** で表示します。 これは、音声コマンドに応答する astronaut の watch です。
@@ -192,7 +192,7 @@ HoloLens に展開する場合:
 >2. [ユニバーサル Windows プラットフォーム] タブをクリックします。
 >3. [発行設定 > 機能] セクションで、 **マイク** の機能を確認します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 * Unity の [ **階層** ] パネルで、 **holoComm_screen_mesh** オブジェクトが選択されていることを確認します。
 * [ **インスペクター** ] パネルで、 **Astronaut Watch (スクリプト)** コンポーネントを見つけます。
@@ -248,7 +248,7 @@ MessageUIRenderer.gameObject.SetActive(false);
 >2. [ユニバーサル Windows プラットフォーム] タブをクリックします。
 >3. [発行設定 > 機能] セクションで、 **マイク** の機能を確認します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 ディクテーション認識エンジンを使用するように **MicrophoneManager.cs** を編集します。 次のように追加します。
 
@@ -259,7 +259,7 @@ MessageUIRenderer.gameObject.SetActive(false);
 5. [ **停止] ボタン** が押されたとき、または mic セッションがタイムアウトになった場合は、 **DictationRecognizer を停止** します。
 6. **KeywordRecognizer** を再起動します。これにより、[**メッセージの送信**] コマンドがリッスンされます。
 
-始めましょう。 **MicrophoneManager.cs** の 3. a のコード演習をすべて完了するか、以下の完成したコードをコピーして貼り付けます。
+では、始めましょう。 **MicrophoneManager.cs** の 3. a のコード演習をすべて完了するか、以下の完成したコードをコピーして貼り付けます。
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -475,7 +475,7 @@ namespace Academy
 >2. [ユニバーサル Windows プラットフォーム] タブをクリックします。
 >3. [発行設定 > 機能] セクションで、 **マイク** の機能を確認します。
 
-### <a name="instructions"></a>手順
+### <a name="instructions"></a>Instructions
 
 1. [ **階層** ] パネルで **Jetpack_Center** を検索して選択します。
 2. [**インスペクター** ] パネルで **tagalong** スクリプトを探します。
@@ -500,7 +500,7 @@ namespace Academy
 
 ## <a name="the-end"></a>最後です
 
-おめでとうございます。 これで **MR 入力 212: Voice** が完了しました。
+お疲れさまでした。 これで **MR 入力 212: Voice** が完了しました。
 
 * 音声コマンドの Dos とすべきがわかっています。
 * ユーザーが音声コマンドを認識できるように、ツールヒントがどのように使用されたかを見てきました。

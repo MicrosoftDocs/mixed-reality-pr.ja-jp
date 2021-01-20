@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: レンダリング、ホログラム
-ms.openlocfilehash: 1f8f9954aee988fa092e25910c5d6d575341b7f2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: eea302aa31829bb91ccf1cc8ad55faed5a380d17
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009392"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583125"
 ---
 # <a name="rendering"></a>表示
 
@@ -28,7 +28,7 @@ Holographic のレンダリングを使用すると、アプリケーション�
     </colgroup>
     <tr>
         <td><strong>機能</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (最初の世代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (最初の世代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
@@ -42,7 +42,7 @@ Holographic のレンダリングを使用すると、アプリケーション�
 
 ## <a name="holographic-rendering"></a>ホログラフィック レンダリング
 
-Holographic のレンダリングでは、使用されているデバイスの種類がわかります。 **「** [HoloLens](../../hololens-hardware-details.md)」などの表示を使用するデバイスでは、世界に光を追加します。 黒いピクセルは完全に透明ですが、より明るいピクセルは徐々に不透明になります。 ディスプレイのライトが現実世界の光に追加されるため、白ピクセルは半透明です。
+Holographic のレンダリングでは、使用されているデバイスの種類がわかります。 **「** [HoloLens](/hololens/hololens1-hardware)」などの表示を使用するデバイスでは、世界に光を追加します。 黒いピクセルは完全に透明ですが、より明るいピクセルは徐々に不透明になります。 ディスプレイのライトが現実世界の光に追加されるため、白ピクセルは半透明です。
 
 ステレオスコピックのレンダリングでは、ホログラムに対して1つの深さの手掛かりが提供されますが、 [接地効果](../../design/interaction-fundamentals.md) を追加すると、ホログラムの近くにある表面をより簡単に表示できます。 1つの接地方法として、近くの表面にホログラムの周りに光彩を追加し、この光彩に対して影を描画します。 このようにして、影は環境から光を引くように見えます。 [空間サウンド](../../design/spatial-sound.md) はもう1つの重要な詳細キューであり、ホログラムの距離と相対位置をユーザーが理解できるようにします。
 
@@ -61,11 +61,11 @@ Mixed reality ヘッドセット (HoloLens とイマーシブヘッドセット�
 
 フレームをレンダリングする場合、システムは、アプリケーションが描画する必要があるバックバッファービューポートを指定します。 このビューポートは、多くの場合、フレームバッファーの最大サイズよりも小さくなります。 ビューポートのサイズにかかわらず、アプリケーションによってフレームがレンダリングされると、システムによってイメージが拡張され、ディスプレイ全体がいっぱいになります。
 
-必要なリフレッシュレートでレンダリングできないアプリケーションの場合、 [システムレンダリングパラメーターを構成して](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) 、メモリ負荷とレンダリングコストを削減できます。これは、ピクセルの別名が高くなります。 バックバッファー形式を変更することもできます。この場合、一部のアプリでは、メモリ帯域幅とピクセルスループットの向上に役立ちます。
+必要なリフレッシュレートでレンダリングできないアプリケーションの場合、 [システムレンダリングパラメーターを構成して](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) 、メモリ負荷とレンダリングコストを削減できます。これは、ピクセルの別名が高くなります。 バックバッファー形式を変更することもできます。この場合、一部のアプリでは、メモリ帯域幅とピクセルスループットの向上に役立ちます。
 
-アプリがレンダリングするように求められている表示の視錐、解像度、フレームレートは、フレームごとに変化する可能性があり、左右に異なる場合があります。 たとえば、 [mixed reality キャプチャ](../../mixed-reality-capture.md) (MRC) がアクティブで、 [写真/ビデオカメラビューの構成](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) がオプトインされていない場合、目に見て見たり、解像度を大きくしたりすることがあります。
+アプリがレンダリングするように求められている表示の視錐、解像度、フレームレートは、フレームごとに変化する可能性があり、左右に異なる場合があります。 たとえば、 [mixed reality キャプチャ](/hololens/holographic-photos-and-videos) (MRC) がアクティブで、 [写真/ビデオカメラビューの構成](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) がオプトインされていない場合、目に見て見たり、解像度を大きくしたりすることがあります。
 
-特定のフレームに対して、アプリケーションは、システムによって提供されるビュー変換、プロジェクション変換、およびビューポートの解決を使用してレンダリング *する必要があり* ます。 また、アプリケーションでは、レンダリングまたは表示パラメーターがフレーム間で固定されたままであると想定することはできません。 Unity のようなエンジンは、これらすべての変換を独自のカメラオブジェクトで処理するので、ユーザーの物理的な動きとシステムの状態が常に尊重されます。 アプリケーションで世界中のユーザーの仮想移動が許可されている場合 (ゲームパッドでのサムスティックの使用など)、そのオブジェクトを移動する、カメラの上に親のリモート処理オブジェクトを追加できます。 これにより、カメラにユーザーの仮想と物理の両方の動きが反映されます。 アプリケーションで、システムによって提供されるビュー変換、プロジェクション変換、またはビューポートの各ディメンションを変更する場合は、適切な [OVERRIDE API](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicCameraPose#Windows_Graphics_Holographic_HolographicCameraPose)を呼び出すことによってシステムに通知する必要があります。
+特定のフレームに対して、アプリケーションは、システムによって提供されるビュー変換、プロジェクション変換、およびビューポートの解決を使用してレンダリング *する必要があり* ます。 また、アプリケーションでは、レンダリングまたは表示パラメーターがフレーム間で固定されたままであると想定することはできません。 Unity のようなエンジンは、これらすべての変換を独自のカメラオブジェクトで処理するので、ユーザーの物理的な動きとシステムの状態が常に尊重されます。 アプリケーションで世界中のユーザーの仮想移動が許可されている場合 (ゲームパッドでのサムスティックの使用など)、そのオブジェクトを移動する、カメラの上に親のリモート処理オブジェクトを追加できます。 これにより、カメラにユーザーの仮想と物理の両方の動きが反映されます。 アプリケーションで、システムによって提供されるビュー変換、プロジェクション変換、またはビューポートの各ディメンションを変更する場合は、適切な [OVERRIDE API](/uwp/api/Windows.Graphics.Holographic.HolographicCameraPose#Windows_Graphics_Holographic_HolographicCameraPose)を呼び出すことによってシステムに通知する必要があります。
 
 Holographic レンダリングの安定性を向上させるには、アプリで、レンダリングに使用した深度バッファーを各フレームに Windows に提供する必要があります。 アプリが深度バッファーを提供している場合は、カメラからの深さをメートル単位で表した、一貫した深さの値を持つ必要があります。 これにより、ユーザーのヘッドが予測された位置から少しずれている場合に、システムがピクセルごとの深度データを使用して、コンテンツの安定化を向上させることができます。 深度バッファーを提供できない場合は、フォーカスポイントと法線を提供して、コンテンツの大部分を切削する平面を定義することができます。 深度バッファーとフォーカスプレーンの両方が指定されている場合、システムは両方を使用する可能性があります。 特に、アプリケーションで動きがあるホログラムを表示する場合は、深度バッファーと、速度ベクトルを含むフォーカスポイントの両方を提供すると便利です。
 
@@ -75,7 +75,7 @@ Holographic レンダリングの安定性を向上させるには、アプリ�
 
 Windows Mixed Reality では、 **holographic カメラ** の概念が導入されています。 Holographic カメラは、3D グラフィックステキストにある従来のカメラに似ています。外部 (位置と向き) と固有のカメラプロパティの両方を定義します。 (たとえば、ビューのフィールドは、仮想3D シーンを表示するために使用されます)。従来の3D カメラとは異なり、アプリケーションはカメラの位置、向き、および組み込みプロパティを制御していません。 代わりに、holographic カメラの位置と向きは、ユーザーの移動によって暗黙的に制御されます。 ユーザーの移動は、ビュー変換を使用してフレーム単位でアプリケーションにリレーされます。 同様に、カメラの組み込みプロパティはデバイスの調整された光によって定義され、射影変換を介してフレーム単位でリレーされます。
 
-一般に、1つのステレオカメラ用にアプリケーションがレンダリングされます。 堅牢なレンダリングループでは、複数のカメラがサポートされ、mono カメラとステレオカメラの両方がサポートされます。 たとえば、ユーザーがヘッドホンの図形に応じて [mixed reality capture](../../mixed-reality-capture.md) (MRC) のような機能をアクティブにした場合に、別の観点からアプリケーションを表示するように要求することがあります。 複数のカメラをサポートするアプリケーションでは、サポートできるカメラの[種類](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind)を[オプトイン](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration)することによって、それらを取得できます。
+一般に、1つのステレオカメラ用にアプリケーションがレンダリングされます。 堅牢なレンダリングループでは、複数のカメラがサポートされ、mono カメラとステレオカメラの両方がサポートされます。 たとえば、ユーザーがヘッドホンの図形に応じて [mixed reality capture](/hololens/holographic-photos-and-videos) (MRC) のような機能をアクティブにした場合に、別の観点からアプリケーションを表示するように要求することがあります。 複数のカメラをサポートするアプリケーションでは、サポートできるカメラの[種類](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind)を[オプトイン](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration)することによって、それらを取得できます。
 
 ## <a name="volume-rendering"></a>ボリューム レンダリング
 
@@ -83,14 +83,14 @@ Windows Mixed Reality では、 **holographic カメラ** の概念が導入さ�
 
 ## <a name="supported-resolutions-on-hololens-first-gen"></a>HoloLens でサポートされている解像度 (最初の世代)
 
-* ビューポートの最大サイズは、 [HolographicDisplay](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay)のプロパティです。 HoloLens は、既定では、ビューポートの最大サイズ (720p (1268x720)) に設定されています。
+* ビューポートの最大サイズは、 [HolographicDisplay](/uwp/api/windows.graphics.holographic.holographicdisplay)のプロパティです。 HoloLens は、既定では、ビューポートの最大サイズ (720p (1268x720)) に設定されています。
 * ビューポートのサイズは、HolographicCamera で ViewportScaleFactor を設定することによって変更できます。 このスケール係数は 0 ~ 1 の範囲内です。
 * HoloLens (最初の gen) でサポートされている最も低いビューポートのサイズは720p の50% です。これは 360p (634x360) です。 これは0.5 の ViewportScaleFactor です。
 * 視覚の劣化のために540p よりも低いものは推奨されませんが、ピクセルフィルレートのボトルネックを特定するために使用できます。
 
 ## <a name="supported-resolutions-on-hololens-2"></a>HoloLens 2 でサポートされている解像度
 
-* サポートされているレンダーターゲットの最大サイズは、 [ビュー構成](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration)のプロパティです。 HoloLens 2 は、既定では1440x936 という最大レンダーターゲットサイズに設定されています。
+* サポートされているレンダーターゲットの最大サイズは、 [ビュー構成](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration)のプロパティです。 HoloLens 2 は、既定では1440x936 という最大レンダーターゲットサイズに設定されています。
 * アプリでは、RequestRenderTargetSize メソッドを呼び出して新しいレンダーターゲットサイズを要求することによって、レンダーターゲットバッファーのサイズを変更できます。 新しいレンダーターゲットサイズが選択されます。これは、要求されたレンダーターゲットサイズ以上になります。 この API はレンダーターゲットバッファーのサイズを変更します。これにより、GPU でのメモリの再割り当てが必要になります。 これには、GPU のメモリ負荷を減らすためにレンダーターゲットのサイズをスケールダウンすることがあります。また、このメソッドを高頻度で呼び出すことはできません。
 * アプリでは、HoloLens 1 と同じ方法でビューポートのサイズを変更することもできます。 GPU にメモリの再割り当ては追加されていないため、高頻度で変更できますが、GPU のメモリ負荷を軽減するために使用することはできません。
 * HoloLens 2 でサポートされている最も低いビューポートのサイズは634x412 で、既定のレンダーターゲットサイズが使用されている場合は約0.44 の ViewportScaleFactor です。

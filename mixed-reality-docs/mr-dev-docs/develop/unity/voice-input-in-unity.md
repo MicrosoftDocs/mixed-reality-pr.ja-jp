@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 音声入力、KeywordRecognizer、GrammarRecognizer、マイク、ディクテーション、音声、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、MRTK、Mixed Reality ツールキット
-ms.openlocfilehash: d07909bbf05ff882eb0a4b6123c39eae9280e3e8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c6364b190ca90c5e6faf7fb8ef79314134e93cfc
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009802"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583724"
 ---
 # <a name="voice-input-in-unity"></a>Unity の音声入力
 
@@ -105,7 +105,7 @@ keywordRecognizer.Start();
 **名前空間:** *Unityengine。 Windows. Speech*<br>
 **型**: *GrammarRecognizer*、 *PhraseRecognizedEventArgs*、 *SpeechError*、 *SpeechSystemStatus*
 
-GrammarRecognizer は、SRGS を使用して認識文法を指定する場合に使用します。 これは、アプリにいくつかのキーワードしか含まれていない場合、より複雑な語句を認識する場合、またはコマンドのセットを簡単にオン/オフにする場合に便利です。 詳細については、「 [SRGS XML を使用して](https://msdn.microsoft.com/library/hh378349(v=office.14).aspx) ファイル形式情報を作成する」を参照してください。
+GrammarRecognizer は、SRGS を使用して認識文法を指定する場合に使用します。 これは、アプリにいくつかのキーワードしか含まれていない場合、より複雑な語句を認識する場合、またはコマンドのセットを簡単にオン/オフにする場合に便利です。 詳細については、「 [SRGS XML を使用して](/previous-versions/office/developer/speech-technologies/hh378349(v=office.14)) ファイル形式情報を作成する」を参照してください。
 
 SRGS 文法を取得し、それがプロジェクト内の [Streamingassets フォルダー](https://docs.unity3d.com/Manual/StreamingAssets.html)にある場合は、次のようになります。
 

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: アプリ内購入, hololens, XAML, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実のヘッドセット
-ms.openlocfilehash: a87cc68f67def1d46a3a6ba352e723d356f51fa2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: dfc5a0cfcc7a4d63147a753c8892d65dfae5e495
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008672"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582949"
 ---
 # <a name="in-app-purchases"></a>アプリ内購入
 
@@ -20,7 +20,7 @@ ms.locfileid: "98008672"
 アプリ購入機能でを使用するには、次のことを行う必要があります。
 * スレートとして表示される XAML [2d ビュー](../design/app-views.md) を作成する
 * これに切り替えて配置をアクティブにします。これにより、イマーシブビューが残されます。
-* API: await [Currentapp ("DurableItemIAPName")](https://docs.microsoft.com/uwp/api/windows.applicationmodel.store.currentapp#Windows_ApplicationModel_Store_CurrentApp_RequestProductPurchaseAsync_System_String_)を呼び出します。
+* API: await [Currentapp ("DurableItemIAPName")](/uwp/api/windows.applicationmodel.store.currentapp#Windows_ApplicationModel_Store_CurrentApp_RequestProductPurchaseAsync_System_String_)を呼び出します。
 
 この API は、アプリ内購入の名前、説明、価格を表示する Windows OS のストックポップアップを表示します。 ユーザーは購入オプションを選択できます。 アクションが完了したら、アプリは UI を提示する必要があります。 UI を使用すると、ユーザーはそのユーザーの [イマーシブビュー](../design/app-views.md)に戻ることができます。
 

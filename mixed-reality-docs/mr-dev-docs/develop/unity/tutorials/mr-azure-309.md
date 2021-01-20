@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure、mixed reality、academy、unity、チュートリアル、api、application insights、hololens、イマーシブ、vr、Windows 10、Visual Studio
-ms.openlocfilehash: d663da0e3a0d00532669a122dc95f2089bf08712
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5d599e7c3c6f887675bf010a10fb8841e80143db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679471"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582967"
 ---
 # <a name="mr-and-azure-309-application-insights"></a>MR と Azure 309:Application Insights
 
@@ -40,7 +40,7 @@ Application Insights は Microsoft のサービスであり、開発者はアプ
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td> MR と Azure 309:Application Insights</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -49,7 +49,7 @@ Application Insights は Microsoft のサービスであり、開発者はアプ
 > [!NOTE]
 > このコースでは主に Windows Mixed Reality イマーシブ (VR) ヘッドセットに焦点を当てていますが、このコースで学習した内容を Microsoft HoloLens に適用することもできます。 このコースに従うと、HoloLens をサポートするために必要となる可能性のある変更に関する注意事項が表示されます。 HoloLens を使用する場合、音声キャプチャ中にエコーが発生することがあります。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 > [!NOTE]
 > このチュートリアルは、Unity と C# の基本的な経験がある開発者向けに設計されています。 また、このドキュメントに記載されている前提条件と記述に記載されている手順は、作成時にテストおよび検証された内容 (2018 年7月) を表しています。 「 [ツールのインストール](../../install-the-tools.md) 」の記事に記載されているように、最新のソフトウェアを自由に使用できます。ただし、このコースの情報は、以下に記載されているものより新しいソフトウェアの内容と完全に一致するとは限りません。
@@ -61,7 +61,7 @@ Application Insights は Microsoft のサービスであり、開発者はアプ
 - [最新の Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](../../../hololens-hardware-details.md)
+- [Windows Mixed Reality イマーシブ (VR) ヘッドセット](../../../discover/immersive-headset-hardware-details.md)または開発者モードを有効にした[Microsoft HoloLens](/hololens/hololens1-hardware)
 - 内蔵マイク付きヘッドホンのセット (ヘッドセットにマイクとスピーカーが組み込まれていない場合)
 - Azure セットアップとデータ取得のためのインターネットアクセス Application Insights
 
@@ -102,13 +102,13 @@ Application Insights は Microsoft のサービスであり、開発者はアプ
 
     4.  リソースグループを選択するか、新しい **リソースグループ** を作成します。 リソースグループは、Azure 資産のコレクションの課金を監視、制御する方法を提供します。 1つのプロジェクトに関連付けられているすべての Azure サービス (たとえば、これらのコースなど) を共通のリソースグループに保持することをお勧めします。
 
-        > Azure リソースグループの詳細については、 [リソースグループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
+        > Azure リソースグループの詳細については、 [リソースグループ](/azure/azure-resource-manager/resource-group-portal)に関する記事をご覧ください。
 
     5.  **[場所]** を選択します。
 
     6.  また、このサービスに適用されている使用条件を理解していることを確認する必要があります。
 
-    7.  **[作成]** を選択します。
+    7.  **［作成］** を選択します
 
         ![Azure portal](images/AzureLabs-Lab309-03.png)
 
@@ -265,7 +265,7 @@ Application Insights を独自のプロジェクトにインポートするに�
     > [!NOTE]
     > このようなプラグインをマークすると、Unity エディターでのみ使用されるように構成されます。 WSA フォルダーには、Unity からプロジェクトがエクスポートされた後に使用される、異なる Dll のセットがあります。
 
-6.  次に、[ **Insights** ] フォルダー内の **WSA** フォルダーを開く必要があります。 先ほど構成したものと同じファイルのコピーが表示されます。 このファイルを選択し、インスペクターで、**すべてのプラットフォーム** が **オフ** になっていることを確認してから、[ **wsaplayer** ]**のみ** が **オン** になっていることを確認します。 **[適用]** をクリックします。
+6.  次に、[ **Insights** ] フォルダー内の **WSA** フォルダーを開く必要があります。 先ほど構成したものと同じファイルのコピーが表示されます。 このファイルを選択し、インスペクターで、**すべてのプラットフォーム** が **オフ** になっていることを確認してから、[ **wsaplayer** ]**のみ** が **オン** になっていることを確認します。 **[Apply]** をクリックします。
 
     ![Unity パッケージのインポート](images/AzureLabs-Lab309-25.png)
 
@@ -277,7 +277,7 @@ Application Insights を独自のプロジェクトにインポートするに�
 
 この章では、カメラとコントロールを設定して、ユーザーがシーン内を表示して移動できるようにします。
 
-1.  [階層] パネルの空の領域を右クリックし、[空の **作成**] をクリックし  >  **Empty** ます。
+1.  [階層] パネルの空の領域を右クリックし、[空の **作成**] をクリックし  >  ます。
 
     ![カメラとユーザーコントロールを設定する](images/AzureLabs-Lab309-26.png)
 
@@ -379,11 +379,11 @@ Application Insights を独自のプロジェクトにインポートするに�
 
 このクラスを作成するには:
 
-1.  [*プロジェクト] パネル* 内を右クリックし、[フォルダーの **作成**] をクリックし  >  **Folder** ます。 フォルダーに **スクリプト** の名前を指定します。
+1.  [*プロジェクト] パネル* 内を右クリックし、[フォルダーの **作成**] をクリックし  >  ます。 フォルダーに **スクリプト** の名前を指定します。
 
     ![ApplicationInsightsTracker クラスを作成する](images/AzureLabs-Lab309-46.png)  ![ApplicationInsightsTracker クラスを作成する](images/AzureLabs-Lab309-47.png)
 
-2.  **Scripts** フォルダーを作成したら、それをダブルクリックして開きます。 次に、そのフォルダー内で右クリックし **Create**、[  >  **C# スクリプト** の作成] をクリックします。 スクリプトに **ApplicationInsightsTracker** という名前を指定します。
+2.  **Scripts** フォルダーを作成したら、それをダブルクリックして開きます。 次に、そのフォルダー内で右クリックし、[  >  **C# スクリプト** の作成] をクリックします。 スクリプトに **ApplicationInsightsTracker** という名前を指定します。
 
 3.  新しい **ApplicationInsightsTracker** スクリプトをダブルクリックして、 **Visual Studio** で開きます。
 
@@ -507,7 +507,7 @@ Application Insights を独自のプロジェクトにインポートするに�
 
 1.  [ **Scripts** ] フォルダーをダブルクリックして開きます。
 
-2.  **Scripts** フォルダー内を右クリックし、[ **Create**  >  **C# スクリプト** の作成] をクリックします。 スクリプトに「」という名前を **指定します**。
+2.  **Scripts** フォルダー内を右クリックし、[   >  **C# スクリプト** の作成] をクリックします。 スクリプトに「」という名前を **指定します**。
 
 3.  スクリプトをダブルクリックして、Visual Studio で開きます。
 
@@ -701,7 +701,7 @@ Application Insights を独自のプロジェクトにインポートするに�
 
 1.  [ **Scripts** ] フォルダーをダブルクリックして開きます。
 
-2.  **Scripts** フォルダー内を右クリックし、[ **Create**  >  **C# スクリプト** の作成] をクリックします。 スクリプト **Objecttrigger** にという名前を指定します。
+2.  **Scripts** フォルダー内を右クリックし、[   >  **C# スクリプト** の作成] をクリックします。 スクリプト **Objecttrigger** にという名前を指定します。
 
 3.  スクリプトをダブルクリックして、Visual Studio で開きます。 既存のコードを次のコードに置き換えます。
 
@@ -773,7 +773,7 @@ Application Insights を独自のプロジェクトにインポートするに�
 
 1.  [ **Scripts** ] フォルダーをダブルクリックして開きます。
 
-2.  **Scripts** フォルダー内を右クリックし、[ **Create**  >  **C# スクリプト** の作成] をクリックします。 スクリプトに **DataFromAnalytics** という名前を指定します。
+2.  **Scripts** フォルダー内を右クリックし、[   >  **C# スクリプト** の作成] をクリックします。 スクリプトに **DataFromAnalytics** という名前を指定します。
 
 3.  スクリプトをダブルクリックして、Visual Studio で開きます。
 
@@ -1002,7 +1002,7 @@ Application Insights を独自のプロジェクトにインポートするに�
 
 1.  [ **Scripts** ] フォルダーをダブルクリックして開きます。
 
-2.  **Scripts** フォルダー内を右クリックし、[ **Create**  >  **C# スクリプト** の作成] をクリックします。 スクリプトの **移動** に名前を指定します。
+2.  **Scripts** フォルダー内を右クリックし、[   >  **C# スクリプト** の作成] をクリックします。 スクリプトの **移動** に名前を指定します。
 
 3.  スクリプトをダブルクリックして、 *Visual Studio* で開きます。
 
@@ -1281,4 +1281,3 @@ Application Insights を独自のプロジェクトにインポートするに�
 **演習2**
 
 Application Insights の結果を時間で並べ替えて、最も関連性の高いデータを取得し、その時間に依存するデータをアプリケーションに実装します。
-

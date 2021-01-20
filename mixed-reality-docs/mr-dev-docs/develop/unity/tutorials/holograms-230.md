@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、academy、チュートリアル、空間マッピング、surface 再構築、メッシュ、HoloLens、Mixed Reality Academy、unity、mixed reality ヘッドセット、windows Mixed reality ヘッドセット、virtual Reality ヘッドセット、Windows 10
-ms.openlocfilehash: dc96fbff43c21216e3b860f1dbbbaae330e1f176
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6b218de239da04190fbf08ff8668fa16009df949
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677191"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582933"
 ---
 # <a name="mr-spatial-230-spatial-mapping"></a>MR 空間 230:空間マッピング
 
 >[!NOTE]
->Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](../../../mr-learning-base-01.md)が投稿されています。
+>Mixed Reality Academy のチュートリアルは、HoloLens (第 1 世代) と Mixed Reality イマーシブ ヘッドセットを念頭に置いて編成されています。  そのため、それらのデバイスの開発に関するガイダンスを引き続き探している開発者のために、これらのチュートリアルをそのまま残しておくことが重要だと考えています。  これらのチュートリアルが、HoloLens 2 に使用されている最新のツールセットや操作に更新されることは "**_ありません_**"。  これらは、サポートされているデバイス上で継続して動作するように、保守されます。 HoloLens 2 向けには、[新しいチュートリアル シリーズ](./mr-learning-base-01.md)が投稿されています。
 
 [空間マッピング](../../../design/spatial-mapping.md) は、環境に関するホログラムを教えることによって、現実世界と仮想世界を組み合わせたものです。 MR 空間 230 (Project Planetarium) では、次の方法を学習します。
 
@@ -32,7 +32,7 @@ ms.locfileid: "94677191"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td>MR 空間 230:空間マッピング</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -40,7 +40,7 @@ ms.locfileid: "94677191"
 
 ## <a name="before-you-start"></a>開始する前に
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>前提条件
 
 * 適切な [ツールがインストール](../../../develop/install-the-tools.md)された WINDOWS 10 PC。
 * 基本的な C# プログラミング機能。
@@ -58,7 +58,7 @@ ms.locfileid: "94677191"
 >[!NOTE]
 >ダウンロードする前にソースコードを確認する場合は、GitHub から [入手でき](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-230-SpatialMapping)ます。
 
-### <a name="notes"></a>メモ
+### <a name="notes"></a>Notes
 
 * コード内のブレークポイントにヒットするには、Visual Studio の [マイコードのみの有効化] を無効 (*オフ*> >) にする必要があります。
 
@@ -134,7 +134,7 @@ ms.locfileid: "94677191"
 * Visual Studio で、上部のツールバーを使用して、構成を [ **リリース**] に変更します。
 * プラットフォームを **x86** に変更します。
 * [ローカルコンピューター] の右側にあるドロップダウン矢印をクリックし、[ **リモートコンピューター**] を選択します。
-* [アドレス] フィールドに [デバイスの IP アドレス](../../../connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) を入力し、[認証モード] を [ **ユニバーサル (暗号化** されていないプロトコル)] に変更します。
+* [アドレス] フィールドに [デバイスの IP アドレス](/hololens/hololens-network#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) を入力し、[認証モード] を [ **ユニバーサル (暗号化** されていないプロトコル)] に変更します。
 * [ **デバッグ]、[デバッグなしで開始] の順にクリック >** 、Ctrl キーを押し **ながら F5** キーを押します。
 * ビルドと配置の状態については、Visual Studio の [ **出力** ] パネルをご覧ください。
 * アプリがデプロイされたら、ルームを案内します。 周囲のサーフェスが黒と白のワイヤーフレームメッシュで覆われていることがわかります。
@@ -1208,7 +1208,7 @@ public class PlanetOcclusion : MonoBehaviour
 
 ## <a name="the-end"></a>最後です
 
-おめでとうございます。 これで、 **MR 空間 230: 空間マッピング** が完了しました。
+お疲れさまでした。 これで、 **MR 空間 230: 空間マッピング** が完了しました。
 
 * 環境をスキャンして、Unity に空間マッピングデータを読み込む方法について説明します。
 * シェーダーの基本と、マテリアルを使用して世界を再視覚化する方法について説明します。

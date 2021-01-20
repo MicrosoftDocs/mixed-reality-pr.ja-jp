@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、NuGet
-ms.openlocfilehash: b78d1c93c8b2890ba8d904c289c8d61a14380824
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 65c76266c00f51cbe17f6bfd2991a6adf4103855
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006502"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583850"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>HolographicSpace API を使用した Holographic リモート処理リモートアプリの作成
 
@@ -27,7 +27,7 @@ Holographic リモート処理アプリを使用すると、リモートでレ�
 開始点としては、 [HOLOGRAPHICSPACE API](../native/getting-a-holographicspace.md)を対象とする、動作する DirectX ベースのデスクトップまたは UWP アプリを使用することをお勧めします。 詳細については、「 [DirectX 開発の概要](../native/directx-development-overview.md)」を参照してください。 [C++ holographic プロジェクトテンプレート](../native/creating-a-holographic-directx-project.md)は、出発点として適しています。
 
 >[!IMPORTANT]
->Holographic リモート処理を使用するすべてのアプリは、 [マルチスレッドアパートメント](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments)を使用するように作成する必要があります。 [シングルスレッドアパートメント](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments)の使用はサポートされていますが、パフォーマンスが低下し、再生中に途切れが生じる可能性があります。 C++ を使用している場合、winrt [winrt:: init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) 、マルチスレッドアパートメントが既定値です。
+>Holographic リモート処理を使用するすべてのアプリは、 [マルチスレッドアパートメント](//windows/win32/com/multithreaded-apartments)を使用するように作成する必要があります。 [シングルスレッドアパートメント](//windows/win32/com/single-threaded-apartments)の使用はサポートされていますが、パフォーマンスが低下し、再生中に途切れが生じる可能性があります。 C++ を使用している場合、winrt [winrt:: init_apartment](//windows/uwp/cpp-and-winrt-apis/get-started) 、マルチスレッドアパートメントが既定値です。
 
 
 
@@ -104,7 +104,7 @@ catch(winrt::hresult_error& e)
 >C++/WinRT API と同様に、 ```Connect``` 処理する必要がある winrt:: hresult_error をスローすることがあります。
 
 >[!TIP]
->[C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/)言語のプロジェクションを使用しないようにするには、 ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` Holographic リモート処理 NuGet パッケージ内にあるファイルを含めることができます。 これには、基になる COM インターフェイスの宣言が含まれます。 ただし、C++/WinRT を使用することをお勧めします。
+>[C++/WinRT](//windows/uwp/cpp-and-winrt-apis/)言語のプロジェクションを使用しないようにするには、 ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` Holographic リモート処理 NuGet パッケージ内にあるファイルを含めることができます。 これには、基になる COM インターフェイスの宣言が含まれます。 ただし、C++/WinRT を使用することをお勧めします。
 
 リモートアプリでの着信接続のリッスンは、メソッドを呼び出すことによって行うことができ ```Listen``` ます。 この呼び出しでは、ハンドシェイクポートとトランスポートポートの両方を指定できます。 ハンドシェイクポートは、初期ハンドシェイクに使用されます。 データは、トランスポートポートを介して送信されます。 既定では、 **8265** および **8266** が使用されます。
 
@@ -197,7 +197,7 @@ if (auto remoteSpeech = m_remoteContext.GetRemoteSpeech())
 }
 ```
 
-非同期ヘルパーメソッドを使用すると、リモート音声を初期化できます。 初期化にはかなりの時間がかかる場合があるため、非同期的に実行する必要があります。 C++ での[同時実行と非同期操作](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/concurrency)c++/winrtで非同期関数を作成する方法について説明します。
+非同期ヘルパーメソッドを使用すると、リモート音声を初期化できます。 初期化にはかなりの時間がかかる場合があるため、非同期的に実行する必要があります。 C++ での[同時実行と非同期操作](//windows/uwp/cpp-and-winrt-apis/concurrency)c++/winrtで非同期関数を作成する方法について説明します。
 
 ```cpp
 winrt::Windows::Foundation::IAsyncOperation<winrt::Windows::Storage::StorageFile> LoadGrammarFileAsync()
@@ -234,7 +234,7 @@ winrt::fire_and_forget InitializeSpeechAsync(
 ```
 
 認識する語句を指定する方法は2つあります。
-1) 音声文法 xml ファイル内の仕様。 詳細について [は、「基本的な XML 文法を作成する方法](https://docs.microsoft.com//previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) 」を参照してください。
+1) 音声文法 xml ファイル内の仕様。 詳細について [は、「基本的な XML 文法を作成する方法](//previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) 」を参照してください。
 2) を指定するには、をディクショナリベクター内に渡し ```ApplyParameters``` ます。
 
 次に、On認識された音声コールバック内で、speech イベントを処理できます。
@@ -315,7 +315,7 @@ m_remoteContext.ConfigureDepthVideoStream(DepthBufferStreamResolution::Half_Reso
 
 完全な解像度の深度バッファーを使用することは、帯域幅の要件にも影響し、指定した最大帯域幅の値について考慮する必要があることに注意してください ```CreateRemoteContext``` 。
 
-解像度を構成した後、HolographicCameraRenderingParameters を使用して深度バッファーをコミットする必要もあります [。 CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)を使用します。
+解像度を構成した後、HolographicCameraRenderingParameters を使用して深度バッファーをコミットする必要もあります [。 CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)を使用します。
 
 ```cpp
 
@@ -362,5 +362,5 @@ void SampleRemoteMain::Render(HolographicFrame holographicFrame)
 * [カスタムの Holographic Remoting データ チャネル](holographic-remoting-custom-data-channels.md)
 * [Holographic Remoting を使用したセキュリティで保護された接続の確立](holographic-remoting-secure-connection.md)
 * [Holographic リモート処理のトラブルシューティングと制限事項](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting ソフトウェア ライセンス条項](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting ソフトウェア ライセンス条項](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft プライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)

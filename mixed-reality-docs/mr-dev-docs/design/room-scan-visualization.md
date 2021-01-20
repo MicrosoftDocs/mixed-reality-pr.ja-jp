@@ -6,12 +6,12 @@ ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, アプリパターン, 設計, HoloLens, ルームスキャン, 空間マッピング, メッシュ, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, HoloLens
-ms.openlocfilehash: f4ec072c8fde8d3e7e390bd837116a8262bac38b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 0bef09d7f023127f1f5eedf28065758b4a438f3e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848251"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583600"
 ---
 # <a name="room-scan-visualization"></a>部屋のスキャンの可視化
 
@@ -34,7 +34,7 @@ ms.locfileid: "97848251"
     </colgroup>
     <tr>
         <td><strong>機能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
      <tr>

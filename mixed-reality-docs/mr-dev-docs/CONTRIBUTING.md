@@ -5,12 +5,12 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 01/11/2021
 ms.topic: article
-ms.openlocfilehash: 8add6413b0ff4bb32c15d1fce10977397aa33ba1
-ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
+ms.openlocfilehash: f60179c35f6103c4771ea2777e05829bfb7a8ce4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108855"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583042"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Mixed Reality 開発者向けドキュメントへの貢献
 
@@ -22,9 +22,9 @@ Mixed Reality ドキュメントは現在、docs.microsoft.com プラットフ�
 
 ## <a name="available-repos"></a>利用可能なリポジトリ
 
-| リポジトリ名です | [URL] |
+| リポジトリ名です | URL |
 | --- | --- |
-| Mixed Reality | [Microsoft Docs/mixed-現実](https://docs.microsoft.com/windows/mixed-reality) |
+| Mixed Reality | [Microsoft Docs/mixed-現実](/windows/mixed-reality) |
 | VR 愛好家ガイド | [Microsoft Docs/mixed-現実ガイド](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 | HoloLens | [Microsoft Docs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
@@ -84,7 +84,7 @@ GitHub アカウントを設定するときは、次のセキュリティに関�
 
 - `source_path`は、削除しようとしている古いアーティクルへの相対リポジトリパスです。 パスがで始まり、で終わることを確認してください `mixed-reality-docs` `.md` 。
 - は、 `redirect_url` 以前の記事から新しい記事までの相対パブリック URL です。 この URL は、  `mixed-reality-docs` `.md` リポジトリパスではなくパブリック url を参照しているため、またはを含んでいないことを確認してください。 を使用した新しいアーティクル内のセクションへのリンク `#section` は許可されます。 必要に応じて、ここで別のサイトへの絶対パスを使用することもできます。
-- `redirect_document_id` 前のファイルのドキュメント ID を保持するかどうかを示します。 既定値は、`false` です。 リダイレクトされたアーティクルの属性値を保持する場合は、を使用し `true` `ms.documentid` ます。 ドキュメント ID を保持している場合は、ページビューやランキングなどのデータがターゲットアーティクルに転送されます。 これは、リダイレクトが主に名前の変更であり、同じコンテンツの一部のみをカバーする別の記事へのポインターではない場合に実行します。
+- `redirect_document_id` 前のファイルのドキュメント ID を保持するかどうかを示します。 既定では、 `false`です。 リダイレクトされたアーティクルの属性値を保持する場合は、を使用し `true` `ms.documentid` ます。 ドキュメント ID を保持している場合は、ページビューやランキングなどのデータがターゲットアーティクルに転送されます。 これは、リダイレクトが主に名前の変更であり、同じコンテンツの一部のみをカバーする別の記事へのポインターではない場合に実行します。
 
 リダイレクトを追加する場合は、古いファイルも必ず削除してください。
 
@@ -131,13 +131,13 @@ Markdown 言語を使用してドキュメントを編集する方法につい�
 
 - [Markdown の基礎](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown リファレンスポスターの概要](images/MarkdownPoster.pdf)
-- [Docs.microsoft.com の Markdown を作成するためのその他のリソース](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Docs.microsoft.com の Markdown を作成するためのその他のリソース](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>テーブルの追加
 
 Docs.microsoft.com スタイルの表では、インライン CSS を試す場合でも、罫線やカスタムスタイルはありません。 これは短時間は機能しているように見えますが、最終的には、プラットフォームによってテーブルからスタイルが除去されます。 そのため、事前に計画し、テーブルを単純にしておきます。 [Markdown テーブルを簡単に作成できるサイトは次のように](https://www.tablesgenerator.com/markdown_tables)なります。
 
-[Visual Studio Code の Docs Markdown 拡張機能](https://docs.microsoft.com/teamblog/docs-extension)では、 [Visual Studio Code (下記参照)](#using-visual-studio-code)を使用してドキュメントを編集する場合にも、テーブルの生成を簡単に行うことができます。
+[Visual Studio Code の Docs Markdown 拡張機能](/teamblog/docs-extension)では、 [Visual Studio Code (下記参照)](#using-visual-studio-code)を使用してドキュメントを編集する場合にも、テーブルの生成を簡単に行うことができます。
 
 ### <a name="adding-images"></a>追加 (イメージを)
 

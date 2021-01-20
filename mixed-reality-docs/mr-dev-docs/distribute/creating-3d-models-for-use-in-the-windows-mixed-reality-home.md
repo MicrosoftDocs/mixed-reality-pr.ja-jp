@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, モデリング, モデリングガイダンス, 資産要件, 作成のガイドライン, ランチャー, 3D ランチャー, テクスチャ, マテリアル, 複雑さ, 三角形, メッシュ, 多角形, polycount, 制限, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 17014e3deaaa161dd7949a55679b916e872ad5a7
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c5447661bdbe6aeb59a3e7a524863d68b717ee0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757789"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583814"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>家で使用する 3D モデルの作成
 
@@ -62,7 +62,7 @@ Windows Mixed Reality ホームでは、1万を超える三角形のモデルは
 
 Windows Mixed Reality ホームは、64ノード以上のモデル、または LOD あたり 32 submeshes をサポートしていません。 ノードは、シーン内のオブジェクトを定義する [Gltf 仕様](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) の概念です。 Submeshes は、オブジェクトのメッシュ上の [プリミティブ](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) の配列で定義されます。 
 
-|  機能 |  説明  |  サポートされる最大数 | ドキュメント |
+|  特徴量 |  説明  |  サポートされる最大数 | ドキュメント |
 |------|------|------|------|
 |  Nodes |  GlTF シーン内のオブジェクト |  LOD あたり64 | [ここは](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy)|
 |  Submeshes |  すべてのメッシュのプリミティブの合計 |  LOD あたり32 | [ここは](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes)|
@@ -101,7 +101,7 @@ Windows Mixed Reality ホームは、64ノード以上のモデル、または L
 Windows Mixed Reality ホームには、カスタム拡張機能を使用して定義された核となる glTF 仕様に加えて、一連の最適化が用意されています。 これらの最適化は、Windows バージョン <= 1709 であり、新しいバージョンの Windows で推奨されます。 GitHub で提供されている [Windows Mixed Reality アセットコンバーター](https://github.com/Microsoft/glTF-Toolkit/releases)を使用して、任意の gltf 2.0 モデルを簡単に最適化できます。 このツールでは、次に示すように、正しいテクスチャパッキングと最適化が実行されます。 一般的な使用方法として、WindowsMRAssetConverter を使用することをお勧めしますが、エクスペリエンスをより細かく制御する必要があり、独自の最適化パイプラインを作成する必要がある場合は、以下の詳細な仕様を参照できます。  
 
 > [!NOTE]
-> モデルの正確な制限の意味については、「 [3d モデルの最適化](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) 365」を参照してください。
+> モデルの正確な制限の意味については、「 [3d モデルの最適化](/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) 365」を参照してください。
 
 ### <a name="materials"></a>素材
 
@@ -192,7 +192,7 @@ LODs は、各 LOD に設定された画面カバレッジ値によって制御�
 ## <a name="animation-guidelines"></a>アニメーションのガイドライン
 
 > [!NOTE]
-> この機能は、 [Windows 10 April 2018 更新プログラム](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)の一部として追加されました。 以前のバージョンの Windows では、これらのアニメーションは再生されませんが、この記事のガイダンスに従って作成された場合でも読み込まれます。  
+> この機能は、 [Windows 10 April 2018 更新プログラム](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)の一部として追加されました。 以前のバージョンの Windows では、これらのアニメーションは再生されませんが、この記事のガイダンスに従って作成された場合でも読み込まれます。  
 
 Mixed reality ホームでは、HoloLens およびイマーシブ (VR) ヘッドセットでのアニメーション化された glTF オブジェクトがサポートされています。 モデルでアニメーションをトリガーする場合は、glTF 形式でアニメーションマップ拡張機能を使用する必要があります。 この拡張機能を使用すると、ユーザーが世界中に存在することに基づいて glTF モデルのアニメーションをトリガーできます。たとえば、ユーザーがオブジェクトに近づいたとき、またはそのオブジェクトを見ているときにアニメーションをトリガーすることができます。 実際に Tf オブジェクトにアニメーションがあり、トリガーが定義されていない場合は、アニメーションは再生されません。 以下のセクションでは、これらのトリガーをアニメーション化された glTF オブジェクトに追加するためのワークフローについて説明します。
 
@@ -245,7 +245,7 @@ GlTF モデルに変更を加えた後は、glTF として直接保存できま�
 
 アニメーションは20分より長くすることはできません。また、36000のキーフレーム (30 FPS で20分) を超えることはできません。 また、変形ターゲットベースのアニメーションを使用する場合、8192の変形ターゲット頂点以下を超えることはありません。 これらのカウントを超えると、アニメーション化された資産が Windows Mixed Reality ホームでサポートされなくなります。 
 
-|機能|最大値|
+|特徴量|最大値|
 |-----|-----|
 |Duration|20 分|
 |キーフレーム|36,000| 
@@ -255,7 +255,7 @@ GlTF モデルに変更を加えた後は、glTF として直接保存できま�
 
 Windows MR では、負のスケールを使用した geometry の反転はサポートしていません。 負の目盛りを持つジオメトリでは、ビジュアル成果物が生成される可能性があります。
 
-GlTF 資産は、Windows MR によって表示されるシーン属性を使用して、既定のシーンをポイントする必要があります。 さらに、windows [10 の2018年4月の更新](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)の前に、WINDOWS の MR gltf ローダーでは、アクセサー **が必要** です。
+GlTF 資産は、Windows MR によって表示されるシーン属性を使用して、既定のシーンをポイントする必要があります。 さらに、windows [10 の2018年4月の更新](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)の前に、WINDOWS の MR gltf ローダーでは、アクセサー **が必要** です。
 * 最小値と最大値が必要です。
 * 型スカラーは、componentType UNSIGNED_SHORT (5123) または UNSIGNED_INT (5125) である必要があります。
 * 型 VEC2 と VEC3 は、componentType FLOAT (5126) である必要があります。

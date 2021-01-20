@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: ジェスチャ, unity, 宝石, 入力, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実のヘッドセット, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 2a968235abaeff9187580b7f5f77263b27c38c28
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 44c42abdd4628cacd6af334a916fb725da8bb022
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192959"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583894"
 ---
 # <a name="gestures-in-unity"></a>Unity でのジェスチャ
 
@@ -145,7 +145,7 @@ void OnDestroy()
 - [MR 入力 211:ジェスチャ](tutorials/holograms-211.md)
 - [MR 入力 213:モーション コントローラー](../../deprecated/mixed-reality-213.md)
 
-[![MR 入力 213-モーションコントローラー](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
+[![MR 入力 213-モーションコントローラー](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
 *MR 入力 213-モーションコントローラー*
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
@@ -153,7 +153,7 @@ void OnDestroy()
 Unity の開発に関する体験に従っている場合は、MRTK コアのビルディングブロックを調べています。 ここから、次の構成要素を続けることができます。
 
 > [!div class="nextstepaction"]
-> [手と視線の追跡](hand-eye-in-unit.md)
+> [手と視線の追跡](./hand-eye-in-unity.md)
 
 または、Mixed Reality プラットフォームの機能と API に移動します。
 

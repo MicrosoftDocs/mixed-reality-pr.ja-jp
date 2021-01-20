@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、ホログラム、設計、対話、Mixed reality ヘッドセット、windows mixed reality ヘッドセット、強化された現実
-ms.openlocfilehash: b390910fcece8e6263d19f52c80b784efb2561f6
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: cc6b4a4838e7a275b1ef3a45e54c4b894a04b9c2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757560"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583343"
 ---
 # <a name="what-is-a-hologram"></a>ホログラムとは
 
@@ -33,7 +33,7 @@ HoloLens では **ホログラム** を作成できます。これは、実際�
     </colgroup>
     <tr>
         <td><strong>機能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 世代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 世代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>イマーシブ ヘッドセット</strong></a></td>
     </tr>
@@ -126,8 +126,7 @@ HoloLens が [レンダリング](../develop/platform-capabilities-and-apis/rend
 
 ## <a name="next-discovery-checkpoint"></a>次の探索チェックポイント
 
-私たちが用意した[探索ツアー](get-started-with-mr.md)を進んでいる場合、あなたの現在地は Mixed Reality の基本の探索の中盤の段階です。 ここからは、次の基本トピックに進むことができます。 
+私たちが用意した[探索ツアー](get-started-with-mr.md)を進んでいる場合、あなたの現在地は Mixed Reality の基本の探索の中盤の段階です。 こちらから、次の基本トピックに進むことができます。 
 
 > [!div class="nextstepaction"]
 > [デザイン プロセスを展開する](case-study-expanding-the-design-process-for-mixed-reality.md)
-

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, unity, チュートリアル, api, microsoft graph, hololens, イマーシブ, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 341b6fea537fe6001a8f7dcf2e98efea0a0b09b6
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 699e520fb9db8d8d3b5bab8b98d92fa39f0acb2d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679441"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583446"
 ---
 # <a name="mr-and-azure-311---microsoft-graph"></a>MR と Azure 311 - Microsoft Graph
 
@@ -37,13 +37,13 @@ ms.locfileid: "94679441"
 
 <table>
 <tr>
-<th>コース</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>コース</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td> MR と Azure 311:Microsoft Graph</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
 </table>
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 > [!NOTE]
 > このチュートリアルは、Unity と C# の基本的な経験がある開発者向けに設計されています。 また、このドキュメントに記載されている前提条件と記述に記載されている手順は、作成時にテストおよび検証された内容 (2018 年7月) を表しています。 「 [ツールのインストール](../../install-the-tools.md) 」の記事に記載されているように、最新のソフトウェアを自由に使用できます。ただし、このコースの情報は、以下に記載されているものより新しいソフトウェアの内容と完全に一致するとは限りません。
@@ -55,7 +55,7 @@ ms.locfileid: "94679441"
 - [最新の Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- 開発者モードが有効になっている[Microsoft HoloLens](../../../hololens-hardware-details.md)
+- 開発者モードが有効になっている[Microsoft HoloLens](/hololens/hololens1-hardware)
 - Azure セットアップとデータ取得のためのインターネットアクセス Microsoft Graph
 - 有効な **Microsoft アカウント** (個人または職場/学校)
 - 同じ Microsoft アカウントを使用して、現在の日にスケジュールされているいくつかの会議
@@ -63,12 +63,12 @@ ms.locfileid: "94679441"
 ### <a name="before-you-start"></a>開始する前に
 
 1.  このプロジェクトのビルドで問題が発生しないように、このチュートリアルで説明されているプロジェクトをルートまたはほぼルートフォルダーに作成することを強くお勧めします (長いフォルダーパスはビルド時に問題を引き起こす可能性があります)。
-2.  HoloLens をセットアップしてテストします。 HoloLens のセットアップをサポートする必要がある場合は、 [hololens セットアップに関する記事にアクセスして](https://docs.microsoft.com/hololens/hololens-setup)ください。 
+2.  HoloLens をセットアップしてテストします。 HoloLens のセットアップをサポートする必要がある場合は、 [hololens セットアップに関する記事にアクセスして](/hololens/hololens-setup)ください。 
 3.  新しい HoloLens アプリの開発を開始するときは、調整とセンサーのチューニングを実行することをお勧めします (ユーザーごとにこれらのタスクを実行するのに役立つ場合があります)。 
 
-調整の詳細については、 [「HoloLens の調整に関する記事へのリンク」を](../../../calibration.md#hololens-2)参照してください。
+調整の詳細については、 [「HoloLens の調整に関する記事へのリンク」を](/hololens/hololens-calibration#hololens-2)参照してください。
 
-センサーチューニングの詳細については、 [HoloLens センサーチューニングに関する記事へのリンクを](../../../sensor-tuning.md)参照してください。
+センサーチューニングの詳細については、 [HoloLens センサーチューニングに関する記事へのリンクを](/hololens/hololens-updates)参照してください。
 
 ## <a name="chapter-1---create-your-app-in-the-application-registration-portal"></a>第1章-アプリケーション登録ポータルでのアプリの作成
 
@@ -123,11 +123,11 @@ ms.locfileid: "94679441"
 
     ![](images/AzureLabs-Lab311-10.png)
 
-3.  Unity を開いている場合は、[既定の **スクリプトエディター** ] が **Visual Studio** に設定されていることを確認する必要があります。 [設定の **編集**] に移動し、  >  **Preferences** 新しいウィンドウで [**外部ツール**] に移動します。 **外部スクリプトエディター** を **Visual Studio 2017** に変更します。 [ **基本設定** ] ウィンドウを閉じます。
+3.  Unity を開いている場合は、[既定の **スクリプトエディター** ] が **Visual Studio** に設定されていることを確認する必要があります。 [設定の **編集**] に移動し、  >  新しいウィンドウで [**外部ツール**] に移動します。 **外部スクリプトエディター** を **Visual Studio 2017** に変更します。 [ **基本設定** ] ウィンドウを閉じます。
 
     ![](images/AzureLabs-Lab311-11.png)
 
-4.  ファイルの **File**  >  **ビルド設定** に移動して [**ユニバーサル Windows プラットフォーム**] を選択し、[**プラットフォームの切り替え**] ボタンをクリックして選択内容を適用します。
+4.  ファイルの  >  **ビルド設定** に移動して [**ユニバーサル Windows プラットフォーム**] を選択し、[**プラットフォームの切り替え**] ボタンをクリックして選択内容を適用します。
 
     ![](images/AzureLabs-Lab311-12.png)
 
@@ -234,7 +234,7 @@ Unity 内で *Microsoft Graph* を使用するには、  **Microsoft Identity. C
 
         ![](images/AzureLabs-Lab311-23.png)
 
-7.  **[適用]** をクリックします。
+7.  **[Apply]** をクリックします。
 
 ## <a name="chapter-4---camera-setup"></a>第4章-カメラの設定
 
@@ -266,12 +266,12 @@ Unity 内で *Microsoft Graph* を使用するには、  **Microsoft Identity. C
 
 このクラスを作成するには:
 
-1.  [*プロジェクト] パネル* の [**アセット**] フォルダーを右クリックし、[フォルダーの **作成**] を選択し  >  **Folder** ます。 フォルダーに **スクリプト** の名前を指定します。
+1.  [*プロジェクト] パネル* の [**アセット**] フォルダーを右クリックし、[フォルダーの **作成**] を選択し  >  ます。 フォルダーに **スクリプト** の名前を指定します。
 
     ![](images/AzureLabs-Lab311-26.png)
     ![](images/AzureLabs-Lab311-27.png)
 
-2.  **Scripts** フォルダーを開き、そのフォルダー内で右クリックして、 **Create**[  >  **C# スクリプト** の作成] をクリックします。 スクリプトに MeetingsUI という名前を指定 **します。**
+2.  **Scripts** フォルダーを開き、そのフォルダー内で右クリックして、 [  >  **C# スクリプト** の作成] をクリックします。 スクリプトに MeetingsUI という名前を指定 **します。**
 
     ![](images/AzureLabs-Lab311-28.png)
 
@@ -377,7 +377,7 @@ Unity 内で *Microsoft Graph* を使用するには、  **Microsoft Identity. C
 
 1.  [ **Scripts** ] フォルダーをダブルクリックして開きます。
 
-2.  **Scripts** フォルダー内を右クリックし、[ **Create**  >  **C# スクリプト** の作成] をクリックします。 スクリプト **グラフ** にという名前を指定します。
+2.  **Scripts** フォルダー内を右クリックし、[   >  **C# スクリプト** の作成] をクリックします。 スクリプト **グラフ** にという名前を指定します。
 
 3.  スクリプトをダブルクリックして、Visual Studio で開きます。
 
@@ -624,7 +624,7 @@ Unity 内で *Microsoft Graph* を使用するには、  **Microsoft Identity. C
 
 1.  [ **Scripts** ] フォルダーをダブルクリックして開きます。
 
-2.  **Scripts** フォルダー内を右クリックし、[ **Create**  >  **C# スクリプト** の作成] をクリックします。 スクリプトに **GazeInput** という名前を指定します。
+2.  **Scripts** フォルダー内を右クリックし、[   >  **C# スクリプト** の作成] をクリックします。 スクリプトに **GazeInput** という名前を指定します。
 
 3.  スクリプトをダブルクリックして、Visual Studio で開きます。
 
@@ -818,7 +818,7 @@ Unity 内で *Microsoft Graph* を使用するには、  **Microsoft Identity. C
 
 1.  [ **Scripts** ] フォルダーをダブルクリックして開きます。
 
-2.  **Scripts** フォルダー内を右クリックし、[ **Create**  >  **C# スクリプト** の作成] をクリックします。 スクリプトの **操作** に名前を指定します。
+2.  **Scripts** フォルダー内を右クリックし、[   >  **C# スクリプト** の作成] をクリックします。 スクリプトの **操作** に名前を指定します。
 
 3.  スクリプトをダブルクリックして、Visual Studio で開きます。
 
@@ -829,7 +829,7 @@ Unity 内で *Microsoft Graph* を使用するには、  **Microsoft Identity. C
     using UnityEngine.XR.WSA.Input;
     ```
 
-5.  **相互作用** クラスの継承を、GazeInput *に変更* し **GazeInput** ます。
+5.  **相互作用** クラスの継承を、GazeInput *に変更* します。
 
     ~~パブリッククラスの相互作用: モノの動作~~
 
@@ -955,7 +955,7 @@ Unity 内で *Microsoft Graph* を使用するには、  **Microsoft Identity. C
 
 HoloLens に展開するには:
 
-1.  Hololens が **開発者モード** になっていることを確認するには、HOLOLENS の IP アドレス (リモートデプロイ用) が必要です。 この操作を行うには、次の手順を実行します。
+1.  Hololens が **開発者モード** になっていることを確認するには、HOLOLENS の IP アドレス (リモートデプロイ用) が必要です。 これを行うには、次の手順を実行します。
 
     1.  HoloLens を装着した後、 **設定** を開きます。
 
@@ -963,7 +963,7 @@ HoloLens に展開するには:
 
     3.  **IPv4** アドレスをメモしておきます。
 
-    4.  次に、[**設定**] に戻り、 **Update & Security**  >  **開発者の**& セキュリティを更新します。
+    4.  次に、[**設定**] に戻り、   >  **開発者の**& セキュリティを更新します。
 
     5.  **開発者モードをに** 設定します。
 

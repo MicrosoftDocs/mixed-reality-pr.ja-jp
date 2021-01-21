@@ -3,25 +3,25 @@ title: QR コードの追跡
 description: HoloLens 2 で、mixed reality アプリで QR コードを検出し、web カメラ機能を追加し、座標系を管理する方法について説明します。
 author: dorreneb
 ms.author: dobrown
-ms.date: 05/15/2019
+ms.date: 01/21/2021
 ms.topic: article
 keywords: vr, lbe, 位置情報ベースのエンターテインメント, vr アーケード, アーケード, イマーシブ, qr, qr コード, hololens2
-ms.openlocfilehash: 08ed651deaab0c230142f45b93858f41ee300323
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 0f53b8def268b2d501c6efe3c3e40ea18f9323e0
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583148"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635434"
 ---
 # <a name="qr-code-tracking"></a>QR コードの追跡
 
-HoloLens 2 を使用すると、ヘッドセット周辺の環境内の QR コードを検出し、各コードの実際の場所で座標系を確立することができます。
+HoloLens 2 を使用すると、ヘッドセット周辺の環境内の QR コードを検出し、各コードの実際の場所で座標系を確立することができます。 デバイスの web カメラを有効にすると、Unreal または Unity のプロジェクトの最新バージョンで QR コードを認識できるようになります。 運用環境に移行する前に、記事の最後に掲載した [ベストプラクティス](#best-practices-for-qr-code-detection) に従うことをお勧めします。
 
 ## <a name="device-support"></a>デバイス サポート
 
 <table>
 <tr>
-<th>特徴量</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens (最初の世代)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
+<th>機能</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens (最初の世代)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">イマーシブ ヘッドセット</a></th>
 </tr><tr>
 <td> QR コードの検出</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
@@ -458,6 +458,6 @@ namespace Microsoft.MixedReality.QR
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 * [座標系](../../design/coordinate-systems.md)
 * <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

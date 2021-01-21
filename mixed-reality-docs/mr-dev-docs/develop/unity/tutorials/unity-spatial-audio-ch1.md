@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、head 関連の転送機能、リバーブ、Microsoft Spatializer
-ms.openlocfilehash: 7d4702a21fccbb18c7c4b07675953c37785ae6db
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: cc7a4db5a3b4d853f2912a5e8e022fddd372e105
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580226"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635390"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. Unity プロジェクトに空間オーディオを追加する
 
@@ -63,7 +63,7 @@ HRTF ベースのアルゴリズムを使用してオーディオを処理する
 
 1. [シーンを作成および設定](mr-learning-base-02.md#creating-and-configuring-the-scene)し、シーンに適切な名前を付けます (たとえば、 *SpatialAudio* )。
 
-次に、「 [空間認識表示オプションの変更」](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) の手順に従って、シーンの MRTK 構成プロファイルが **DefaultXRSDKConfigurationProfile** になっていることを確認し、空間認識メッシュの表示オプションを **オクルージョン** に変更します。
+次に、「 [空間認識表示オプションの変更」](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) の手順に従って、シーンの MRTK 構成プロファイルが **DefaultHoloLens2ConfigurationProfile** になっていることを確認し、空間認識メッシュの表示オプションを **オクルージョン** に変更します。
 
 ## <a name="adding-microsoft-spatializer-to-the-project"></a>プロジェクトへの Microsoft Spatializer の追加
 

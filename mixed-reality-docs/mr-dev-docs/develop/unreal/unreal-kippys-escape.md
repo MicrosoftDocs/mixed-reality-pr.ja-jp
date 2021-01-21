@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、デバイスへの展開、PC、ドキュメント、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7302e6c8d5de866b652ec4741fbef128eca616e0
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: eca0b12cd9ba4e3d5d4033790184ffd770b44280
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580815"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635400"
 ---
 # <a name="the-making-of-kippys-escape"></a>Kippy のエスケープの作成
 
@@ -62,21 +62,21 @@ HoloLens 2 は、今日のゲームでは、他の場所ではない設計機能
 
 Kippy のエスケープは、ゲームをインタラクティブにするために、混合現実 UX ツールコンポーネントに大きく依存しています。つまり、手作業でアクター、境界コントロール、マニピュレーター、スライダー、およびボタンを使用します。   
 
-[ハンドインタラクションアクター](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html)は、ホログラムの直接および遠くの操作の両方を可能にします。 Kippy のエスケープの開始時に、ユーザーにゲームの場所を設定する機会が与えられます。 ユーザーの palm から手のひらを使用すると、以下の gif に示すように、はるかに離れた大きなホログラムを簡単に操作できるようになります。  
+[ハンドインタラクションアクター](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html)は、ホログラムの直接および遠くの操作の両方を可能にします。 Kippy のエスケープの開始時に、ユーザーにゲームの場所を設定する機会が与えられます。 ユーザーの palm から手のひらを使用すると、以下の gif に示すように、はるかに離れた大きなホログラムを簡単に操作できるようになります。  
 
 ![ハンド相互作用アクター gif](images/kippys-escape/kippys-escape-img-06.gif)
 
-プレースホルダーシーン自体は、UX ツールの [境界制御](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/BoundsControl.html) コンポーネントを使用してドラッグアンドローテーションすることができます。  
+プレースホルダーシーン自体は、UX ツールの [境界制御](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/BoundsControl.html) コンポーネントを使用してドラッグアンドローテーションすることができます。  
 
-2番目の島では、ユーザーは gem を選択し、対応するスロットに配置する必要があります。 Gem には、ユーザーが選択して下に配置できるようにする [マニピュレーター](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/Manipulator.html) が関連付けられています。 
+2番目の島では、ユーザーは gem を選択し、対応するスロットに配置する必要があります。 Gem には、ユーザーが選択して下に配置できるようにする [マニピュレーター](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) が関連付けられています。 
 
 ![マニピュレーターの例 gif](images/kippys-escape/kippys-escape-img-07.gif)
 
-[Pressable ボタン](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PressableButton.html)は、3つ目の島で使用するために爆弾を立ち上げる鍵です。  
+[Pressable ボタン](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html)は、3つ目の島で使用するために爆弾を立ち上げる鍵です。  
 
 ![Pressable button の例 gif](images/kippys-escape/kippys-escape-img-08.gif)
 
-4つ目の島に [スライダー](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PinchSlider.html) コンポーネントが表示され、最終的なブリッジが発生します。  
+4つ目の島に [スライダー](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PinchSlider.html) コンポーネントが表示され、最終的なブリッジが発生します。  
 
 ![スライダーコンポーネントの例 gif](images/kippys-escape/kippys-escape-img-09.gif) 
 

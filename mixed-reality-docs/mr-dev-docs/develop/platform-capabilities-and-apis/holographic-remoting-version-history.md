@@ -6,17 +6,22 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、バージョン履歴、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 0eab33a058aee8003b352fbfae3ba038b80319d4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e1f80d0d2cbd02b78ed07e3ec60825ffe1059309
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582877"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699011"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic リモート処理のバージョン履歴
 
 > [!IMPORTANT]
 > このガイダンスは、HoloLens 2 の Holographic リモート処理に固有のものです。
+
+## <a name="version-241-january-22-2021"></a>バージョン 2.4.1 (2021 年1月22日) <a name="v2.4.1"></a>
+
+* 接続中に呼び出されたときに SpatialAnchorManager:: RequestStoreAsync が確実に動作しない問題を修正しました。
+* 対象のアンカーが見つからない場合に、SpatialAnchorManager:: TrySave がアンカーを正しく保存しないという問題を修正しています。
 
 ## <a name="version-240-december-1-2020"></a>バージョン 2.4.0 (2020 年12月1日) <a name="v2.4.0"></a>
 

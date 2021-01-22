@@ -5,19 +5,19 @@ brand: windows
 metadata:
   title: Windows Mixed Reality VR のドキュメント
   description: ゲーム、旅行、ストリーミングで仮想現実のスリルを体験してください。 ここでは、Windows Mixed Reality で VR の使用を開始し、そして活用する方法を学ぶことができます
-  services: guidance
-  ms.service: guidance
+  services: service
+  ms.service: service
   ms.topic: hub-page
   ms.prod: mixed-reality
   ms.technology: enthusiast-guide
   author: mattwojo
   ms.author: mattwoj
-  ms.openlocfilehash: b8ff9f6abbd27d3f73548e19e13888dcd7321181
-  ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+  ms.openlocfilehash: 3a9ffacb2d62cab93bd41f9842c25ae2c9d35190
+  ms.sourcegitcommit: be33fcda10d1cb98df90b428a923289933d42c77
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/20/2021
-  ms.locfileid: "98581683"
+  ms.lasthandoff: 01/22/2021
+  ms.locfileid: "98672729"
 highlightedContent:
   items:
   - title: Windows Mixed Reality VR について

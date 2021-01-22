@@ -256,8 +256,14 @@
   items:
     - name: Unreal 開発の概要
       href: unreal/unreal-development-overview.md
+    - name: MRTK の概要
+      href: unreal/unreal-mrtk-introduction.md
     - name: Unreal でのプロジェクトのアップグレード
       href: unreal/unreal-porting.md
+    - name: クイックスタート
+      items:
+        - name: HoloLens プロジェクトの作成
+          href: unreal/unreal-quickstart.md
     - name: チュートリアル
       items:
         - name: MRTK UX ツールでチェス アプリを構築する
@@ -290,7 +296,19 @@
           href: unreal/unreal-azure-spatial-anchors.md
         - name: 音声入力
           href: unreal/unreal-voice-input.md
-    - name: 高度な機能
+    - name: ベスト プラクティス
+      items:
+        - name: 全般的なベスト プラクティス
+          href: unreal/unreal-best-practices.md
+        - name: Unreal のパフォーマンスに関する推奨事項
+          href: unreal/performance-recommendations-for-unreal.md
+        - name: Unreal の素材に関する推奨事項
+          href: unreal/unreal-materials.md
+        - name: Unreal Insights を使用したプロファイリング
+          href: unreal/unreal-insights.md
+        - name: Unreal のエディター拡張機能
+          href: unreal/unreal-editor-extensions.md
+    - name: プラットフォームの機能と API
       items:
         - name: HoloLens 写真/ビデオ カメラ
           href: unreal/unreal-hololens-camera.md
@@ -300,6 +318,8 @@
           href: unreal/unreal-umg-keyboard.md
         - name: WinRT
           href: unreal/unreal-winrt.md
+        - name: Unreal でのストリーミング
+          href: unreal/unreal-streaming.md
     - name: イマーシブ VR
       items:
         - name: HP Reverb G2 コントローラー
@@ -308,20 +328,12 @@
       items:
         - name: Kippy's Escape
           href: unreal/unreal-kippys-escape.md
-    - name: デプロイとパフォーマンス
+    - name: デプロイと公開
       items:
         - name: デバイスへのデプロイ
           href: unreal/unreal-deploying.md
         - name: Microsoft Store への発行
           href: unreal/unreal-publishing-to-store.md
-        - name: パフォーマンスの推奨事項
-          href: unreal/performance-recommendations-for-unreal.md
-        - name: 素材に関する推奨事項
-          href: unreal/unreal-materials.md
-        - name: Unreal Insights を使用したプロファイリング
-          href: unreal/unreal-insights.md
-        - name: ストリーミング
-          href: unreal/unreal-streaming.md
 - name: Web
   items:
     - name: Web 開発の概要
@@ -387,7 +399,7 @@
         - name: Mixed Reality での共有エクスペリエンス
           href: platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md
         - name: Azure Spatial Anchors
-          href: 'https://docs.microsoft.com/azure/spatial-anchors/'
+          href: /azure/spatial-anchors/
         - name: Spectator View
           href: platform-capabilities-and-apis/spectator-view.md
         - name: WebRTC
@@ -423,9 +435,9 @@
         - name: バージョン履歴
           href: platform-capabilities-and-apis/holographic-remoting-version-history.md
         - name: Holographic Remoting ソフトウェア ライセンス条項
-          href: 'https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms'
+          href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: HoloLens (第 1 世代) 用ホログラフィック リモート
-          href: 'https://docs.microsoft.com'
+          href: null
         - name: Holographic Remoting の追加
           href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: アプリの品質とテスト

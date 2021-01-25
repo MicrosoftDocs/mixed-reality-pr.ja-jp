@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: シーンの理解、空間マッピング、Windows Mixed Reality、Unity
-ms.openlocfilehash: 10cb96ffe0496a20c7244ba4c40dec097ebd4bd8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 748ec444bfcbabb534f391a889fcc16c7671bf7d
+ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583750"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98758368"
 ---
 # <a name="scene-understanding-sdk-overview"></a>シーンについて SDK の概要
 
@@ -47,7 +47,7 @@ Unity プロジェクトで SDK を使用している場合は、 [unity 用の 
 
 各シーンでは、アプリケーションのメモリ領域にデータが格納されるため、シーンオブジェクトまたはその内部データのすべての関数がアプリケーションのプロセスで常に実行されると想定できます。
 
-### <a name="layout"></a>レイアウト
+### <a name="layout"></a>Layout
 
 シーンの理解を深めるには、ランタイムが論理的および物理的にコンポーネントを表す方法を理解し、理解しておくことが重要な場合があります。 シーンは、主要な改訂を必要とせずに将来の要件を満たすように pliable された、基になる構造を維持しながら、単純なレイアウトを持つデータを表します。 このシーンでは、すべてのコンポーネント (すべてのシーンオブジェクトの構成要素) をフラットリストに格納し、特定のコンポーネントが他のコンポーネントを参照する参照を使用して階層とコンポジションを定義します。
 
@@ -117,9 +117,9 @@ SceneObjects は、次のいずれかを持つことができます。
 
 <table>
 <tr>
-<th>SceneObjectKind</th> <th>説明</th>
+<th>SceneObjectKind</th> <th>[説明]</th>
 </tr>
-<tr><td>バックグラウンド</td><td>SceneObject は、他の認識された種類のシーンオブジェクトの1つでは <b>ない</b> ことがわかっています。 このクラスは、背景が壁、床、天井などではないことがわかっている不明なものと混同しないようにしてください。不明な項目はまだ分類されていません。</b></td></tr>
+<tr><td>背景</td><td>SceneObject は、他の認識された種類のシーンオブジェクトの1つでは <b>ない</b> ことがわかっています。 このクラスは、背景が壁、床、天井などではないことがわかっている不明なものと混同しないようにしてください。不明な項目はまだ分類されていません。</b></td></tr>
 <tr><td>Wall</td><td>物理的な壁面。 壁面は、移動可能な環境構造であると見なされます。</td></tr>
 <tr><td>床</td><td>床は、どのような面でも使用できます。 注: 階段は床ではありません。 また、このフロアは、明らかにできることを前提としています。したがって、1つの床面を明確に想定することはできません。 複数レベルの構造、傾斜など...すべてが floor として分類される必要があります。</td></tr>
 <tr><td>Ceiling</td><td>部屋の上面。</td></tr>
@@ -432,7 +432,7 @@ HoloLens2 を持っている場合は、ComputeSerializedAsync の出力をフ�
 
 HoloLens2 デバイスを持っていないが、シーンを理解したい場合は、キャプチャ済みシーンをダウンロードする必要があります。 現在、シーンに関する理解のサンプルにはシリアル化されたシーンが付属しています。これをダウンロードして、独自の便利な方法で使用できます。 次の場所で見つけることができます。
 
-[シーンについてのサンプルシーン](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples/tree/master/Assets/Resources/SerializedScenesForPCPath)
+[シーンについてのサンプルシーン](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 
 ## <a name="see-also"></a>関連項目
 

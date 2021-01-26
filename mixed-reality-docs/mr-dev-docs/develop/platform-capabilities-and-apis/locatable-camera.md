@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: カメラ、hololens、カラーカメラ、フロント接続、hololens 2、cv、コンピュータービジョン、基準、マーカー、qr コード、qr、写真、ビデオ
-ms.openlocfilehash: bc478aa658b26eb3a4efb16c62d0874b12992e78
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f34973fee56f9469632b320a62dd441ed32e5805
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583628"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810152"
 ---
 # <a name="locatable-camera"></a>場所を特定できるカメラ
 
@@ -37,10 +37,10 @@ HoloLens には、デバイスの前面に取り付けられている世界中�
 
 * 自動ホワイトバランス、自動露出、完全な画像処理パイプラインを使用して、写真/ビデオ (PV) カメラを自動フォーカスします。
 * 世界中のホワイトプライバシー LED は、カメラがアクティブになるたびに点灯します。
-* HoloLens 2 では、さまざまなカメラプロファイルがサポートされています。 [カメラの機能を検出して選択](//windows/uwp/audio-video-camera/camera-profiles)する方法について説明します。
+* HoloLens 2 では、さまざまなカメラプロファイルがサポートされています。 [カメラの機能を検出して選択](/windows/uwp/audio-video-camera/camera-profiles)する方法について説明します。
 * カメラでは、次のプロファイルと解像度がサポートされています (すべてのビデオモードは16:9 縦横比です)。
   
-  | プロファイル                                         | ビデオ     | プレビュー   | それでもなお     | フレーム レート | ビューの水平方向のフィールド (H 視界) | 推奨される使用方法                             |
+  | [プロファイル]                                         | ビデオ     | プレビュー   | それでもなお     | フレーム レート | ビューの水平方向のフィールド (H 視界) | 推奨される使用方法                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
   | Legacy、0 BalancedVideoAndPhoto、100             | 2272x1278 | 2272x1278 |           | 15.30       | 64.69                            | 高画質のビデオ記録                |
   | Legacy、0 BalancedVideoAndPhoto、100             | 896x504   | 896x504   |           | 15.30       | 64.69                            | 高品質な写真キャプチャのためのプレビューストリーム |
@@ -75,14 +75,14 @@ HoloLens ドキュメントの他の場所にある "カメラ" は、"仮想ゲ
 
 ### <a name="using-mediaframereference"></a>MediaFrameReference の使用
 
-これらの手順は、 [MediaFrameReference](//uwp/api/windows.media.capture.frames.mediaframereference) クラスを使用してカメラからイメージフレームを読み取る場合に適用されます。
+これらの手順は、 [MediaFrameReference](/uwp/api/windows.media.capture.frames.mediaframereference) クラスを使用してカメラからイメージフレームを読み取る場合に適用されます。
 
-各イメージフレーム (写真またはビデオ) には、キャプチャ時にカメラでルート化された[SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem)が含まれています。これには、 [MediaFrameReference](//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)の[CoordinateSystem](//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem)プロパティを使用してアクセスできます。 各フレームには、カメラレンズモデルの説明が含まれています。このモデルは、 [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) プロパティにあります。 これらの変換は、ピクセルを生成した photons によって取得されたパスを表す3D 空間の光をピクセルごとに定義します。 これらの光線は、フレームの座標系から他の座標系 (例: [静止フレーム](../../design/coordinate-systems.md#stationary-frame-of-reference)から) への変換を取得することによって、アプリ内の他のコンテンツに関連付けることができます。 
+各イメージフレーム (写真またはビデオ) には、キャプチャ時にカメラでルート化された[SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem)が含まれています。これには、 [MediaFrameReference](/uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)の[CoordinateSystem](/uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem)プロパティを使用してアクセスできます。 各フレームには、カメラレンズモデルの説明が含まれています。このモデルは、 [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) プロパティにあります。 これらの変換は、ピクセルを生成した photons によって取得されたパスを表す3D 空間の光をピクセルごとに定義します。 これらの光線は、フレームの座標系から他の座標系 (例: [静止フレーム](../../design/coordinate-systems.md#stationary-frame-of-reference)から) への変換を取得することによって、アプリ内の他のコンテンツに関連付けることができます。 
 
 各イメージフレームには次のものがあります。
 * ピクセルデータ (RGB/NV12/JPEG/など)
-* キャプチャの場所からの[SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem)
-* カメラのレンズモードを含む [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) クラス
+* キャプチャの場所からの[SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem)
+* カメラのレンズモードを含む [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) クラス
 
 [HolographicFaceTracking サンプル](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)は、カメラの座標系と独自のアプリケーション座標系との間の変換をクエリするための非常に簡単な方法を示しています。
 

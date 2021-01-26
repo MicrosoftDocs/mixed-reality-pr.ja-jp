@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: ハンド、モーションコントローラー、directx、入力、ホログラム、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 843065ccc0989f9c3bc2ad494503ee46d08d0d77
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2f14cb06e440787bbd6541a05a983e0614293727
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580801"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810170"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>DirectX での手とモーション コントローラー
 
@@ -22,7 +22,7 @@ Windows Mixed Reality では、ハンドコントローラー入力と [モー�
 
 ## <a name="getting-started"></a>作業の開始
 
-Windows Mixed Reality で空間入力にアクセスするには、SpatialInteractionManager インターフェイスから開始します。  このインターフェイスにアクセスするには、通常はアプリの起動時に  [SpatialInteractionManager:: GetForCurrentView](//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getforcurrentview)を呼び出します。
+Windows Mixed Reality で空間入力にアクセスするには、SpatialInteractionManager インターフェイスから開始します。  このインターフェイスにアクセスするには、通常はアプリの起動時に  [SpatialInteractionManager:: GetForCurrentView](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getforcurrentview)を呼び出します。
 
 ```cpp
 using namespace winrt::Windows::UI::Input::Spatial;
@@ -30,15 +30,15 @@ using namespace winrt::Windows::UI::Input::Spatial;
 SpatialInteractionManager interactionManager = SpatialInteractionManager::GetForCurrentView();
 ```
 
-SpatialInteractionManager の仕事は、入力のソースを表す [SpatialInteractionSources](//uwp/api/windows.ui.input.spatial.spatialinteractionsource)へのアクセスを提供することです。  システムで使用できる SpatialInteractionSources には3種類あります。
+SpatialInteractionManager の仕事は、入力のソースを表す [SpatialInteractionSources](/uwp/api/windows.ui.input.spatial.spatialinteractionsource)へのアクセスを提供することです。  システムで使用できる SpatialInteractionSources には3種類あります。
 * **ハンド** は、ユーザーの検出されたハンドを表します。 手動ソースは、HoloLens の基本的なジェスチャから HoloLens 2 の完全な形の追跡まで、デバイスに基づいてさまざまな機能を提供します。 
 * **コントローラー** は、対になっているモーションコントローラーを表します。 モーションコントローラーは、トリガー、メニューボタン、ボタン、タッチパッド向け、thumbsticks など、さまざまな機能を提供できます。
 * **音声** は、ユーザーの音声読み上げシステムで検出されたキーワードを表します。 たとえば、このソースでは、ユーザーが "Select" と表示されるたびに、Select press と release が挿入されます。
 
-ソースのフレームごとのデータは、  [SpatialInteractionSourceState](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) インターフェイスによって表されます。 アプリケーションでイベントドリブンモデルとポーリングベースのモデルのどちらを使用するかに応じて、このデータにアクセスする2つの方法があります。
+ソースのフレームごとのデータは、  [SpatialInteractionSourceState](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) インターフェイスによって表されます。 アプリケーションでイベントドリブンモデルとポーリングベースのモデルのどちらを使用するかに応じて、このデータにアクセスする2つの方法があります。
 
 ### <a name="event-driven-input"></a>イベントドリブン入力
-SpatialInteractionManager は、アプリがリッスンできる多数のイベントを提供します。  例として、   [Sourcepressed](//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed)れた、[SourceReleased、 [sourcepressed](//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourceupdated)などがあります。
+SpatialInteractionManager は、アプリがリッスンできる多数のイベントを提供します。  例として、   [Sourcepressed](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed)れた、[SourceReleased、 [sourcepressed](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourceupdated)などがあります。
 
 たとえば、次のコードは、MyApp イベントに対して MyApp:: OnSourcePressed れたイベントハンドラーをフックします。  これにより、アプリは任意の種類の相互作用ソースの押下を検出できます。
 
@@ -67,9 +67,9 @@ void MyApp::OnSourcePressed(SpatialInteractionManager const& sender, SpatialInte
 上のコードでは、デバイスの主なアクションに対応する ' Select ' の押下だけがチェックされます。 たとえば、HoloLens でのエアタップの実行や、モーションコントローラーでのトリガーの取り出しなどです。  ' Select ' は、ターゲットとしているホログラムをアクティブ化するユーザーの意図を表します。  SourcePressed イベントは、さまざまなボタンとジェスチャに対して起動されます。また、SpatialInteractionSource の他のプロパティを調べて、そのようなケースをテストできます。
 
 ### <a name="polling-based-input"></a>ポーリングベースの入力
-また、SpatialInteractionManager を使用して、すべてのフレームに対する入力の現在の状態をポーリングすることもできます。  これを行うには、すべてのフレームで [GetDetectedSourcesAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getdetectedsourcesattimestamp) を呼び出します。  この関数は、アクティブな[SpatialInteractionSource](//uwp/api/windows.ui.input.spatial.spatialinteractionsource)ごとに1つの[SpatialInteractionSourceState](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)を含む配列を返します。 これは、アクティブなモーションコントローラーごとに1つ、つまり、' select ' コマンドが最近発音された場合は、1つずつ、もう1つは音声用です。 その後、各 SpatialInteractionSourceState のプロパティを調べて、アプリケーションへの入力を実行できます。 
+また、SpatialInteractionManager を使用して、すべてのフレームに対する入力の現在の状態をポーリングすることもできます。  これを行うには、すべてのフレームで [GetDetectedSourcesAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getdetectedsourcesattimestamp) を呼び出します。  この関数は、アクティブな[SpatialInteractionSource](/uwp/api/windows.ui.input.spatial.spatialinteractionsource)ごとに1つの[SpatialInteractionSourceState](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)を含む配列を返します。 これは、アクティブなモーションコントローラーごとに1つ、つまり、' select ' コマンドが最近発音された場合は、1つずつ、もう1つは音声用です。 その後、各 SpatialInteractionSourceState のプロパティを調べて、アプリケーションへの入力を実行できます。 
 
-ポーリング方法を使用して ' select ' アクションを確認する方法の例を次に示します。 *予測* 変数は、 [HolographicFrame](//uwp/api/windows.graphics.holographic.holographicframe)から取得できる [HolographicFramePrediction](//uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction)オブジェクトを表します。
+ポーリング方法を使用して ' select ' アクションを確認する方法の例を次に示します。 *予測* 変数は、 [HolographicFrame](/uwp/api/windows.graphics.holographic.holographicframe)から取得できる [HolographicFramePrediction](/uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction)オブジェクトを表します。
 
 ```cpp
 using namespace winrt::Windows::UI::Input::Spatial;
@@ -86,40 +86,40 @@ for (auto& sourceState : sourceStates)
 }
 ```
 
-各 SpatialInteractionSource には ID があり、これを使用して新しいソースを識別し、フレーム間の既存のソースを関連付けることができます。  移動するたびに新しい ID を取得して、視界を入力しますが、コントローラー Id はセッションの間は静的のままです。  [Sourcedetected](//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcedetected)や[Sourcedetected](//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcelost)などの SpatialInteractionManager のイベントを使用して、ユーザーがデバイスのビューを手に入れたり、移動したりしたとき、またはモーションコントローラーがオン/オフになっているとき、またはペア/対になっていないときに反応することができます。
+各 SpatialInteractionSource には ID があり、これを使用して新しいソースを識別し、フレーム間の既存のソースを関連付けることができます。  移動するたびに新しい ID を取得して、視界を入力しますが、コントローラー Id はセッションの間は静的のままです。  [Sourcedetected](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcedetected)や[Sourcedetected](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcelost)などの SpatialInteractionManager のイベントを使用して、ユーザーがデバイスのビューを手に入れたり、移動したりしたとき、またはモーションコントローラーがオン/オフになっているとき、またはペア/対になっていないときに反応することができます。
 
 ### <a name="predicted-vs-historical-poses"></a>予測と履歴のポーズ
-GetDetectedSourcesAtTimestamp にはタイムスタンプパラメーターがあります。 これにより、予測または履歴の状態を要求し、データを供給することができるため、空間の相互作用を他の入力のソースと関連付けることができます。 たとえば、現在のフレームに手の位置を表示する場合は、 [HolographicFrame](//uwp/api/windows.graphics.holographic.holographicframe)によって提供される予測タイムスタンプを渡すことができます。 これにより、システムは、描画されたフレーム出力と密接に一致するようにハンド位置を順方向に予測して、認識される待機時間を最小限に抑えることができます。
+GetDetectedSourcesAtTimestamp にはタイムスタンプパラメーターがあります。 これにより、予測または履歴の状態を要求し、データを供給することができるため、空間の相互作用を他の入力のソースと関連付けることができます。 たとえば、現在のフレームに手の位置を表示する場合は、 [HolographicFrame](/uwp/api/windows.graphics.holographic.holographicframe)によって提供される予測タイムスタンプを渡すことができます。 これにより、システムは、描画されたフレーム出力と密接に一致するようにハンド位置を順方向に予測して、認識される待機時間を最小限に抑えることができます。
 
 ただし、このような予測があると、相互作用ソースをターゲットにするための最適なポイントが生成されません。 たとえば、[モーションコントローラー] ボタンが押されている場合、そのイベントが Bluetooth を通じてオペレーティングシステムにバブルアップされるまでに最大20ミリ秒かかることがあります。 同様に、ユーザーが手の形でジェスチャを実行すると、システムによってジェスチャが検出され、アプリがそのジェスチャをポーリングするまでに、一定の時間がかかることがあります。 アプリが状態の変更をポーリングするまでに、その相互作用をターゲットとするために使用されるヘッドとハンドは、実際には過去に発生しました。 現在の HolographicFrame のタイムスタンプを GetDetectedSourcesAtTimestamp に渡すことによってターゲットを設定した場合は、フレームが表示された時点で、その対象のレイに対して予測が転送されます。これは、今後20ミリ秒を超える可能性があります。 これは、相互作用ソースを *レンダリング* する場合に適していますが、ユーザーの対象が過去に発生したため、相互作用を *対象* とした時間の問題が複雑になります。
 
-幸い、 [Sourcepressed](//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed)れている、[SourceReleased]、および [ [sourcepressed](//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourceupdated) ] イベントは、各入力イベントに関連付けられた履歴 [状態](//uwp/api/windows.ui.input.spatial.spatialinteractionsourceeventargs.state) を提供します。  これには、 [Trygetポインター](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose)によって使用可能な履歴のヘッドとハンドのポーズと、他の api に渡してこのイベントと関連付けることができる履歴 [タイムスタンプ](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.timestamp) が含まれます。
+幸い、 [Sourcepressed](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed)れている、[SourceReleased]、および [ [sourcepressed](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourceupdated) ] イベントは、各入力イベントに関連付けられた履歴 [状態](/uwp/api/windows.ui.input.spatial.spatialinteractionsourceeventargs.state) を提供します。  これには、 [Trygetポインター](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose)によって使用可能な履歴のヘッドとハンドのポーズと、他の api に渡してこのイベントと関連付けることができる履歴 [タイムスタンプ](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.timestamp) が含まれます。
 
 次のベストプラクティスに従って、各フレームでハンドおよびコントローラーをレンダリングして対象を設定します。
-* 各フレームを **レンダリング** するには、アプリは、現在のフレームの photon 時間における各相互作用ソースの **フォワード予測** を **ポーリング** する必要があります。  各フレーム [GetDetectedSourcesAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getdetectedsourcesattimestamp) を呼び出し、 [HolographicFrame:: currentprediction](//uwp/api/windows.graphics.holographic.holographicframe.currentprediction)によって提供される予測タイムスタンプを渡すことによって、すべての相互作用ソースをポーリングできます。
-* プレスまたはリリースを対象とする手動または **コントローラー** の場合、アプリでは、そのイベントの **履歴** ヘッドまたはハンド raycasting に基づいて、押されたイベントまたは解放された **イベント** を処理する必要があります。 このターゲット設定を取得するには、 [Sourcepressed](//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed) れたイベントまたは [SourceReleased](//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcereleased) イベントを処理し、イベント引数から [State](//uwp/api/windows.ui.input.spatial.spatialinteractionsourceeventargs.state) プロパティを取得して、その [trygetポインタポーズ](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) メソッドを呼び出します。
+* 各フレームを **レンダリング** するには、アプリは、現在のフレームの photon 時間における各相互作用ソースの **フォワード予測** を **ポーリング** する必要があります。  各フレーム [GetDetectedSourcesAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getdetectedsourcesattimestamp) を呼び出し、 [HolographicFrame:: currentprediction](/uwp/api/windows.graphics.holographic.holographicframe.currentprediction)によって提供される予測タイムスタンプを渡すことによって、すべての相互作用ソースをポーリングできます。
+* プレスまたはリリースを対象とする手動または **コントローラー** の場合、アプリでは、そのイベントの **履歴** ヘッドまたはハンド raycasting に基づいて、押されたイベントまたは解放された **イベント** を処理する必要があります。 このターゲット設定を取得するには、 [Sourcepressed](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed) れたイベントまたは [SourceReleased](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcereleased) イベントを処理し、イベント引数から [State](/uwp/api/windows.ui.input.spatial.spatialinteractionsourceeventargs.state) プロパティを取得して、その [trygetポインタポーズ](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) メソッドを呼び出します。
 
 ## <a name="cross-device-input-properties"></a>デバイス間の入力プロパティ
 SpatialInteractionSource API では、さまざまな機能を備えたコントローラーおよびハンドトラッキングシステムがサポートされています。 これらの機能の多くは、デバイスの種類によって一般的です。 たとえば、ハンドトラッキングとモーションコントローラーは、どちらも ' select ' アクションと3D 位置を提供します。 可能な限り、API はこれらの共通機能を SpatialInteractionSource の同じプロパティにマップします。  これにより、アプリケーションは幅広い種類の入力をより簡単にサポートできるようになります。 次の表では、サポートされるプロパティと、入力の種類間での比較方法について説明します。
 
 | プロパティ | 説明 | HoloLens (第1世代) ジェスチャ | モーションコントローラー | 手によるハンド|
 |--- |--- |--- |--- |--- |
-| [SpatialInteractionSource::**きき**](//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | Right または left/controller。 | サポートされていません | サポートされています | サポートされています |
-| [SpatialInteractionSourceState::**Isselectpressed** れました](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | プライマリボタンの現在の状態。 | エアタップ | トリガー | 緩やかに出た空気タップ (垂直ピンチ) |
-| [SpatialInteractionSourceState::**IsGrasped**](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | グラブボタンの現在の状態です。 | サポートされていません | グラブボタン | ピンチまたは閉じた手 |
-| [SpatialInteractionSourceState::**IsMenuPressed**](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | メニューボタンの現在の状態。    | サポートされていません | メニューボタン | サポートされていません |
-| [SpatialInteractionSourceLocation::**Position**](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | コントローラー上の手またはグリップ位置の XYZ 位置。 | パームの場所 | グリップの発生位置 | パームの場所 |
-| [SpatialInteractionSourceLocation::**Orientation**](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | コントローラー上の手やグリップの向きを表す四元数。 | サポートされていません | グリップの向き | パームの向き |
-| [SpatialPointerInteractionSourcePose::**Position**](//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | ポイントの原点。 | サポートされていません | サポートされています | サポートされています |
-| [SpatialPointerInteractionSourcePose::**Forwarddirection**](//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | ポイントの方向。 | サポートされていません | サポートされています | サポートされています |
+| [SpatialInteractionSource::**きき**](/uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | Right または left/controller。 | サポートされていません | サポートされています | サポートされています |
+| [SpatialInteractionSourceState::**Isselectpressed** れました](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | プライマリボタンの現在の状態。 | エアタップ | トリガー | 緩やかに出た空気タップ (垂直ピンチ) |
+| [SpatialInteractionSourceState::**IsGrasped**](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | グラブボタンの現在の状態です。 | サポートされていません | グラブボタン | ピンチまたは閉じた手 |
+| [SpatialInteractionSourceState::**IsMenuPressed**](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | メニューボタンの現在の状態。    | サポートされていません | メニューボタン | サポートされていません |
+| [SpatialInteractionSourceLocation::**Position**](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | コントローラー上の手またはグリップ位置の XYZ 位置。 | パームの場所 | グリップの発生位置 | パームの場所 |
+| [SpatialInteractionSourceLocation::**Orientation**](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | コントローラー上の手やグリップの向きを表す四元数。 | サポートされていません | グリップの向き | パームの向き |
+| [SpatialPointerInteractionSourcePose::**Position**](/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | ポイントの原点。 | サポートされていません | サポートされています | サポートされています |
+| [SpatialPointerInteractionSourcePose::**Forwarddirection**](/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | ポイントの方向。 | サポートされていません | サポートされています | サポートされています |
 
-上記の一部のプロパティは、すべてのデバイスで使用できるわけではありません。また、API はこのことをテストする手段を提供します。 たとえば、 [SpatialInteractionSource:: IsGraspSupported](//uwp/api/windows.ui.input.spatial.spatialinteractionsource.isgraspsupported) プロパティを調べて、ソースがつかみアクションを提供するかどうかを判断できます。
+上記の一部のプロパティは、すべてのデバイスで使用できるわけではありません。また、API はこのことをテストする手段を提供します。 たとえば、 [SpatialInteractionSource:: IsGraspSupported](/uwp/api/windows.ui.input.spatial.spatialinteractionsource.isgraspsupported) プロパティを調べて、ソースがつかみアクションを提供するかどうかを判断できます。
 
 ### <a name="grip-pose-vs-pointing-pose"></a>グリップポーズとポインティングポーズ
 
 Windows Mixed Reality では、さまざまなフォームファクターのモーションコントローラーがサポートされています。  また、独自の追跡システムもサポートしています。  これらのシステムはすべて、ユーザーの手の中でオブジェクトをポイントまたは表示するためにアプリが使用する必要がある自然な位置と自然な "転送" 方向との間には異なる関係があります。  これらのすべてをサポートするために、ハンドトラッキングとモーションコントローラーの両方に3種類の3D が用意されています。  1つ目は、ユーザーの手の位置を表すグリップです。  2つ目の方法は、ユーザーの手またはコントローラーからのポイントを示すポイントを指します。 そのため、 **ユーザーの手** や、剣や銃などの **ユーザーの手に保持** されているオブジェクトをレンダリングする場合は、グリップを使用します。 たとえば、ユーザーが * * をポイントしているときに、コントローラーまたはハンドから raycast する場合は、ポイントアンドポーズを使用します。
 
-**グリップ** にアクセスするには、 [SpatialInteractionSourceState::P R.:: trygetlocation (...)](//uwp/api/windows.ui.input.spatial.spatialinteractionsourceproperties.trygetlocation#Windows_UI_Input_Spatial_SpatialInteractionSourceProperties_TryGetLocation_Windows_Perception_Spatial_SpatialCoordinateSystem_)を使用します。次のように定義されています。
+**グリップ** にアクセスするには、 [SpatialInteractionSourceState::P R.:: trygetlocation (...)](/uwp/api/windows.ui.input.spatial.spatialinteractionsourceproperties.trygetlocation#Windows_UI_Input_Spatial_SpatialInteractionSourceProperties_TryGetLocation_Windows_Perception_Spatial_SpatialCoordinateSystem_)を使用します。次のように定義されています。
 * **グリップの位置**: コントローラーを自然に保持するときのパーム重心。グリップ内の位置を中央に配置するように左右に調整されます。
 * **グリップの向きの右軸**: 手を完全に開いて平らな5本の指を作成した場合 (左側のパームから前方、右側のパームから後方)、
 * **グリップの向きの前方軸**: ハンドを部分的に閉じた場合 (コントローラーを保持している場合と同様)、非表示の指で形成されたチューブを通過する光線。
@@ -156,7 +156,7 @@ Windows Mixed Reality API は、HoloLens 2 でのように、独自の追跡を�
 |Radius | ジョイント位置のスキンの表面までの距離。 指の幅に依存する直接の対話や視覚エフェクトをチューニングする場合に便利です。 |
 |精度 | この共同の情報についてシステムがどの程度自信を持っているかについてのヒントを提供します。 |
 
-[SpatialInteractionSourceState](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)の関数を使用して、ハンドスケルトンデータにアクセスできます。  関数は [TryGetHandPose](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygethandpose#Windows_UI_Input_Spatial_SpatialInteractionSourceState_TryGetHandPose)と呼ばれ、この関数は、"" と [いう名前の](//uwp/api/windows.perception.people.handpose)オブジェクトを返します。  変換元が変換をサポートしていない場合、この関数は null を返します。  準備ができたら、必要な結合の名前を使用して [Trygetjoint](//uwp/api/windows.perception.people.handpose.trygetjoint#Windows_Perception_People_HandPose_TryGetJoint_Windows_Perception_Spatial_SpatialCoordinateSystem_Windows_Perception_People_HandJointKind_Windows_Perception_People_JointPose__)を呼び出して、現在のジョイントデータを取得できます。  データは [JointPose](//uwp/api/windows.perception.people.jointpose) 構造体として返されます。  次のコードは、インデックスのフィンガーヒントの位置を取得します。 変数は [SpatialInteractionSourceState](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)の *インスタンスを表し* ます。
+[SpatialInteractionSourceState](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)の関数を使用して、ハンドスケルトンデータにアクセスできます。  関数は [TryGetHandPose](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygethandpose#Windows_UI_Input_Spatial_SpatialInteractionSourceState_TryGetHandPose)と呼ばれ、この関数は、"" と [いう名前の](/uwp/api/windows.perception.people.handpose)オブジェクトを返します。  変換元が変換をサポートしていない場合、この関数は null を返します。  準備ができたら、必要な結合の名前を使用して [Trygetjoint](/uwp/api/windows.perception.people.handpose.trygetjoint#Windows_Perception_People_HandPose_TryGetJoint_Windows_Perception_Spatial_SpatialCoordinateSystem_Windows_Perception_People_HandJointKind_Windows_Perception_People_JointPose__)を呼び出して、現在のジョイントデータを取得できます。  データは [JointPose](/uwp/api/windows.perception.people.jointpose) 構造体として返されます。  次のコードは、インデックスのフィンガーヒントの位置を取得します。 変数は [SpatialInteractionSourceState](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)の *インスタンスを表し* ます。
 
 ```cpp
 using namespace winrt::Windows::Perception::People;
@@ -177,9 +177,9 @@ if (handPose)
 
 ### <a name="hand-mesh"></a>手動メッシュ
 
-修飾されたハンドトラッキング API を使用すると、完全に非フォーム化可能な三角形ハンドメッシュが可能になります。  このメッシュは、ハンドスケルトンと共にリアルタイムで変形でき、視覚エフェクトや高度な物理手法に役立ちます。  手メッシュにアクセスするには、最初に[SpatialInteractionSource](//uwp/api/windows.ui.input.spatial.spatialinteractionsource)で[TryCreateHandMeshObserverAsync](//uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserverasync)を呼び出して[HandMeshObserver](//uwp/api/windows.perception.people.handmeshobserver)オブジェクトを作成する必要があります。  これは、ソースごとに1回だけ実行する必要があります。通常は、最初に表示されます。  つまり、この関数を呼び出して、手動で視界に入ったときに HandMeshObserver オブジェクトを作成します。  これは非同期関数なので、ここで少しの同時実行を処理する必要があります。  使用できるようになったら、 [GetTriangleIndices](//uwp/api/windows.perception.people.handmeshobserver.gettriangleindices#Windows_Perception_People_HandMeshObserver_GetTriangleIndices_System_UInt16___)を呼び出して、三角形インデックスバッファーの HandMeshObserver オブジェクトに要求できます。  インデックスはフレームに対して変更されないため、これらを一度取得し、ソースの有効期間にわたってキャッシュすることができます。  インデックスは、回転順に指定します。
+修飾されたハンドトラッキング API を使用すると、完全に非フォーム化可能な三角形ハンドメッシュが可能になります。  このメッシュは、ハンドスケルトンと共にリアルタイムで変形でき、視覚エフェクトや高度な物理手法に役立ちます。  手メッシュにアクセスするには、最初に[SpatialInteractionSource](/uwp/api/windows.ui.input.spatial.spatialinteractionsource)で[TryCreateHandMeshObserverAsync](/uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserverasync)を呼び出して[HandMeshObserver](/uwp/api/windows.perception.people.handmeshobserver)オブジェクトを作成する必要があります。  これは、ソースごとに1回だけ実行する必要があります。通常は、最初に表示されます。  つまり、この関数を呼び出して、手動で視界に入ったときに HandMeshObserver オブジェクトを作成します。  これは非同期関数なので、ここで少しの同時実行を処理する必要があります。  使用できるようになったら、 [GetTriangleIndices](/uwp/api/windows.perception.people.handmeshobserver.gettriangleindices#Windows_Perception_People_HandMeshObserver_GetTriangleIndices_System_UInt16___)を呼び出して、三角形インデックスバッファーの HandMeshObserver オブジェクトに要求できます。  インデックスはフレームに対して変更されないため、これらを一度取得し、ソースの有効期間にわたってキャッシュすることができます。  インデックスは、回転順に指定します。
 
-次のコードは、切り離された std:: thread をスピンアップしてメッシュオブザーバーを作成し、メッシュオブザーバーが使用可能になったときにインデックスバッファーを抽出します。  SpatialInteractionSourceState と呼ばれる変数から開始します。これ *は、追跡* されたハンドを表す、 [](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)のインスタンスです。
+次のコードは、切り離された std:: thread をスピンアップしてメッシュオブザーバーを作成し、メッシュオブザーバーが使用可能になったときにインデックスバッファーを抽出します。  SpatialInteractionSourceState と呼ばれる変数から開始します。これ *は、追跡* されたハンドを表す、 [](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)のインスタンスです。
 
 ```cpp
 using namespace Windows::Perception::People;
@@ -198,9 +198,9 @@ std::thread createObserverThread([this, currentState]()
 });
 createObserverThread.detach();
 ```
-デタッチされたスレッドの開始は、非同期呼び出しを処理するためのオプションの1つにすぎません。  または、C++/winrtでサポートされている新しい [co_await](//windows/uwp/cpp-and-winrt-apis/concurrency) 機能を使用することもできます。
+デタッチされたスレッドの開始は、非同期呼び出しを処理するためのオプションの1つにすぎません。  または、C++/winrtでサポートされている新しい [co_await](/windows/uwp/cpp-and-winrt-apis/concurrency) 機能を使用することもできます。
 
-HandMeshObserver オブジェクトを作成したら、それに対応する SpatialInteractionSource がアクティブになるまで、そのオブジェクトを保持する必要があります。  次に、各フレームに対して、 [Getvertexstateforpose](//uwp/api/windows.perception.people.handmeshobserver.getvertexstateforpose) を呼び出して、頂点の対象と [なるポーズを](//uwp/api/windows.perception.people.handpose) 表すのに渡すことによって、ハンドを表す最新の頂点バッファーを要求できます。  バッファー内の各頂点は、位置と法線を持ちます。  手メッシュの頂点の現在のセットを取得する方法の例を次に示します。  前と同様に、 [SpatialInteractionSourceState](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)*変数は、の* インスタンスを表します。
+HandMeshObserver オブジェクトを作成したら、それに対応する SpatialInteractionSource がアクティブになるまで、そのオブジェクトを保持する必要があります。  次に、各フレームに対して、 [Getvertexstateforpose](/uwp/api/windows.perception.people.handmeshobserver.getvertexstateforpose) を呼び出して、頂点の対象と [なるポーズを](/uwp/api/windows.perception.people.handpose) 表すのに渡すことによって、ハンドを表す最新の頂点バッファーを要求できます。  バッファー内の各頂点は、位置と法線を持ちます。  手メッシュの頂点の現在のセットを取得する方法の例を次に示します。  前と同様に、 [SpatialInteractionSourceState](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)*変数は、の* インスタンスを表します。
 
 ```cpp
 using namespace winrt::Windows::Perception::People;
@@ -220,7 +220,7 @@ if (handPose)
 }
 ```
 
-スケルトンジョイントとは対照的に、ハンドメッシュ API では、頂点の座標系を指定することはできません。  代わりに、 [HandMeshVertexState](//uwp/api/windows.perception.people.handmeshvertexstate) は、頂点が提供される座標系を指定します。  次 [に、Trygettransformto](//uwp/api/windows.perception.spatial.spatialcoordinatesystem.trygettransformto#Windows_Perception_Spatial_SpatialCoordinateSystem_TryGetTransformTo_Windows_Perception_Spatial_SpatialCoordinateSystem_) 呼び出して、必要な座標系を指定することで、メッシュ変換を取得できます。  頂点を操作するときは常に、このメッシュ変換を使用する必要があります。  この方法では、特にレンダリング専用のメッシュを使用している場合に、CPU のオーバーヘッドが軽減されます。
+スケルトンジョイントとは対照的に、ハンドメッシュ API では、頂点の座標系を指定することはできません。  代わりに、 [HandMeshVertexState](/uwp/api/windows.perception.people.handmeshvertexstate) は、頂点が提供される座標系を指定します。  次 [に、Trygettransformto](/uwp/api/windows.perception.spatial.spatialcoordinatesystem.trygettransformto#Windows_Perception_Spatial_SpatialCoordinateSystem_TryGetTransformTo_Windows_Perception_Spatial_SpatialCoordinateSystem_) 呼び出して、必要な座標系を指定することで、メッシュ変換を取得できます。  頂点を操作するときは常に、このメッシュ変換を使用する必要があります。  この方法では、特にレンダリング専用のメッシュを使用している場合に、CPU のオーバーヘッドが軽減されます。
 
 ## <a name="gaze-and-commit-composite-gestures"></a>複合ジェスチャを見つめてコミットする
 特に HoloLens (最初の gen) で、SpatialGestureRecognizer 入力モデルを使用するアプリケーションでは、"select" イベントの上に構築された複合ジェスチャを有効にするために使用できるオプションの[](/uwp/api/Windows.UI.Input.Spatial.SpatialGestureRecognizer)が用意されています。  アプリでは、SpatialInteractionManager からホログラムの SpatialGestureRecognizer に対する相互作用をルーティングすることにより、手動での押下と解放を処理することなく、両手、音声、および空間入力デバイス全体で、タップ、ホールド、操作、およびナビゲーションイベントを一貫して検出できます。

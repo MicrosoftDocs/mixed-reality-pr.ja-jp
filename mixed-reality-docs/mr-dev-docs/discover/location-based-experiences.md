@@ -6,12 +6,12 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: mixed reality、vr、lbe、場所、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、ハードウェア、HoloLens、マルチプレーヤー、クラウドサービス、azure
-ms.openlocfilehash: 41b35e7f92f8410357c685362ebc1714aea616e8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 1cc54ad0ef4b9892c49e13c7437a4d5356093c79
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580673"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810109"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Windows Mixed Reality を使用した場所ベースのエンターテインメント
 
@@ -98,11 +98,11 @@ JSON ファイルの内容は、有効にする上記の設定のいずれかに
  
 **Q: playspace の構成についてのガイダンスはありますか。**
 
-A: playspace の構成は、コンシューマーのセットアップエクスペリエンスの場合と同じように行う必要があります。 ルームのセットアッププロセスでは、部屋の境界を定義することもできます。 ルーム境界の構成の詳細については、 [こちら](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)を参照してください。
+A: playspace の構成は、コンシューマーのセットアップエクスペリエンスの場合と同じように行う必要があります。 ルームのセットアッププロセスでは、部屋の境界を定義することもできます。 ルーム境界の構成の詳細については、 [こちら](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)を参照してください。
 
 上のドキュメントで説明したように、最大の適正な1座標の再生領域は5mx5m を中心にしています。 より大きな領域を作成する場合は、Windows Holographic API スタックで空間アンカー機能を使用できます。 この API を使用するには、生成中のエクスペリエンスにカスタムエンジニアリングが必要です。  
 
-さまざまな領域サイズに合わせてコンテンツを最適化する方法の詳細については、 [こちら](//windows/mixed-reality/coordinate-systems)を参照してください。
+さまざまな領域サイズに合わせてコンテンツを最適化する方法の詳細については、 [こちら](/windows/mixed-reality/coordinate-systems)を参照してください。
  
 
 **Q: 空間が大きすぎて、境界を使用して継続的なエクスペリエンスを設定しようとしたときにエラーが発生しています。大規模な無料ローミングエクスペリエンスを設定するにはどうすればよいですか。**
@@ -113,7 +113,7 @@ A: ~ 18x18ft よりも大きな領域を設定する場合、システムによ�
 
 アプリケーション開発者は、ユーザーが物理的な環境と競合しないように、必要なセーフガードを表示する責任があります。  これらは、エクスペリエンス内のデジタル壁面や、カスタマイズされたゲームの境界ビジュアルです。 
 
-WMR を使用したルーム境界の設定に関するガイダンスについては、 [こちら](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)を参照してください。
+WMR を使用したルーム境界の設定に関するガイダンスについては、 [こちら](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)を参照してください。
 
 **Q: playspace の起点はどこですか。**
 
@@ -140,7 +140,7 @@ A: Insider プログラムを使用して Windows 20H1 以降のビルドを選�
 
 Q: Windows Mixed Reality ヘッドセットの追跡テクノロジはどのように動作しますか。  
 
-Mixed Reality は、HoloLens と同じ追跡テクノロジを共有します。 内部アウト追跡システムの詳細については、 [こちら](//windows/mixed-reality/enthusiast-guide/tracking-system)のドキュメントを参照してください。
+Mixed Reality は、HoloLens と同じ追跡テクノロジを共有します。 内部アウト追跡システムの詳細については、 [こちら](/windows/mixed-reality/enthusiast-guide/tracking-system)のドキュメントを参照してください。
 
 上位レベルの空間マッピングシステムの動作の詳細については、 [こちらで](../design/spatial-mapping.md)説明を参照してください。
 
@@ -188,13 +188,13 @@ A: Azure PlayFab は、ライブゲーム用の完全なバックエンドプラ
 
 **Q: SteamVR を使用して自分のエクスペリエンスをデプロイします。Windows Mixed Reality は SteamVR と連携しますか。**
 
-A: SteamVR の Windows Mixed Reality では、ユーザーは Windows Mixed Reality のイマーシブヘッドセットで SteamVR エクスペリエンスを実行できます。 SteamVR と WMR の詳細について [は、こちら](//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)を参照してください。
+A: SteamVR の Windows Mixed Reality では、ユーザーは Windows Mixed Reality のイマーシブヘッドセットで SteamVR エクスペリエンスを実行できます。 SteamVR と WMR の詳細について [は、こちら](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)を参照してください。
 
 ### <a name="support-and-community"></a>サポートとコミュニティ  
 
 チームで分野の専門家と連携し、トラブルシューティングサポートを受け、より広範な mixed reality 開発コミュニティに貢献するうえで役立つリソースがいくつか用意されています。  
 
-公開されているすべての機能で問題が発生した場合は、フィードバックハブを使用してバグを報告してください。ガイダンスについては、この [ページ](//windows/mixed-reality/enthusiast-guide/filing-feedback)を参照してください。
+公開されているすべての機能で問題が発生した場合は、フィードバックハブを使用してバグを報告してください。ガイダンスについては、この [ページ](/windows/mixed-reality/enthusiast-guide/filing-feedback)を参照してください。
 
 WMR のその他のトラブルシューティングのヘルプについては、カスタマーサポート [チームにお](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782) 問い合わせください。
 

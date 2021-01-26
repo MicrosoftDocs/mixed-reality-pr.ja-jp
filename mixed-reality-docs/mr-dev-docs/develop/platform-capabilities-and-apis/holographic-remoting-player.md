@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、診断、パフォーマンス
-ms.openlocfilehash: 7a7c7762f079dcc4ec05bacec8bd7ab0d3625e0e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 768ac55bdd117648977c64a1947254540ec7306a
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583163"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810146"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting Player
 
@@ -83,5 +83,5 @@ Holographic remoting 接続は暗号化されて **いません**。 Holographic
 * [HoloLens (第1世代): Holographic リモート処理の追加](add-holographic-remoting.md)
 * [Windows Mixed Reality Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-wmr.md)
 * [OpenXR Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md)
-* [Holographic Remoting ソフトウェア ライセンス条項](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting ソフトウェア ライセンス条項](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft プライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)

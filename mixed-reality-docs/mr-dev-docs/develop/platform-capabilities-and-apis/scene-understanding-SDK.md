@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: シーンの理解、空間マッピング、Windows Mixed Reality、Unity
-ms.openlocfilehash: 748ec444bfcbabb534f391a889fcc16c7671bf7d
-ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
+ms.openlocfilehash: 2a1bf87ae4ce13b47d373f44e398d02382674fe7
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98758368"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810137"
 ---
 # <a name="scene-understanding-sdk-overview"></a>シーンについて SDK の概要
 
@@ -47,7 +47,7 @@ Unity プロジェクトで SDK を使用している場合は、 [unity 用の 
 
 各シーンでは、アプリケーションのメモリ領域にデータが格納されるため、シーンオブジェクトまたはその内部データのすべての関数がアプリケーションのプロセスで常に実行されると想定できます。
 
-### <a name="layout"></a>Layout
+### <a name="layout"></a>レイアウト
 
 シーンの理解を深めるには、ランタイムが論理的および物理的にコンポーネントを表す方法を理解し、理解しておくことが重要な場合があります。 シーンは、主要な改訂を必要とせずに将来の要件を満たすように pliable された、基になる構造を維持しながら、単純なレイアウトを持つデータを表します。 このシーンでは、すべてのコンポーネント (すべてのシーンオブジェクトの構成要素) をフラットリストに格納し、特定のコンポーネントが他のコンポーネントを参照する参照を使用して階層とコンポジションを定義します。
 
@@ -117,9 +117,9 @@ SceneObjects は、次のいずれかを持つことができます。
 
 <table>
 <tr>
-<th>SceneObjectKind</th> <th>[説明]</th>
+<th>SceneObjectKind</th> <th>説明</th>
 </tr>
-<tr><td>背景</td><td>SceneObject は、他の認識された種類のシーンオブジェクトの1つでは <b>ない</b> ことがわかっています。 このクラスは、背景が壁、床、天井などではないことがわかっている不明なものと混同しないようにしてください。不明な項目はまだ分類されていません。</b></td></tr>
+<tr><td>バックグラウンド</td><td>SceneObject は、他の認識された種類のシーンオブジェクトの1つでは <b>ない</b> ことがわかっています。 このクラスは、背景が壁、床、天井などではないことがわかっている不明なものと混同しないようにしてください。不明な項目はまだ分類されていません。</b></td></tr>
 <tr><td>Wall</td><td>物理的な壁面。 壁面は、移動可能な環境構造であると見なされます。</td></tr>
 <tr><td>床</td><td>床は、どのような面でも使用できます。 注: 階段は床ではありません。 また、このフロアは、明らかにできることを前提としています。したがって、1つの床面を明確に想定することはできません。 複数レベルの構造、傾斜など...すべてが floor として分類される必要があります。</td></tr>
 <tr><td>Ceiling</td><td>部屋の上面。</td></tr>
@@ -265,7 +265,7 @@ foreach (var mesh in firstFloor.Meshes)
 
 シーンの理解により、変換を処理するときに、従来の3D シーン表現に合わせて意図的に配置しようとしました。 そのため、各シーンは、最も一般的な3D 環境表現と同じように、1つの座標系に限定されます。 SceneObjects は、その座標系を基準とした相対的な場所を提供します。 アプリケーションが、1つのオリジンが提供する機能の制限を拡大するシーンを処理している場合は、SceneObjects を SpatialAnchors に固定するか、複数のシーンを生成して結合することができますが、わかりやすくするために、watertight のシーンが独自のオリジンに存在することを想定しています。
 
-次の Unity コードは、Windows 認識と Unity Api を使用して、座標系をまとめて配置する方法を示しています。 Unity の世界の出発点に対応する SpatialCoordinateSystem を取得する[方法の詳細につい](//windows/mixed-reality/unity-xrdevice-advanced)ては、「 [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) and [SpatialGraphInteropPreview](//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) 」を参照してください。
+次の Unity コードは、Windows 認識と Unity Api を使用して、座標系をまとめて配置する方法を示しています。 Unity の世界の出発点に対応する SpatialCoordinateSystem を取得する[方法の詳細につい](/windows/mixed-reality/unity-xrdevice-advanced)ては、「 [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) and [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) 」を参照してください。
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)

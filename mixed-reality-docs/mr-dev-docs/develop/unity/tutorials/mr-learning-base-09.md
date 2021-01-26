@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, 音声コマンド, 音声入力
 ms.localizationpriority: high
-ms.openlocfilehash: 8aea8ead6416787f2979e0deff46ee5d6d45eb19
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c052c3501ab34811f33f1f6464c8394669eebe77
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007912"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635450"
 ---
 # <a name="9-using-speech-commands"></a>9.音声コマンドの使用
 
@@ -30,7 +30,7 @@ ms.locfileid: "98007912"
 ![マイク機能を有効にする](images/mr-learning-base/base-09-section1-step1-1.png)
 
 > [!NOTE]
-> このチュートリアル シリーズの冒頭で Unity プロジェクトを構成したときに、[MRTK Project Configurator 設定を適用する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)手順中にマイク機能を有効にしておく必要がありました。 しかし、有効にしていない場合は、ここで有効にしてください。
+> このチュートリアル シリーズの冒頭で Unity プロジェクトを構成したときに、[MRTK Project Configurator 設定を適用する](mr-learning-base-02.md#creating-and-configuring-the-scene)手順中にマイク機能を有効にしておく必要がありました。 しかし、有効にしていない場合は、ここで有効にしてください。
 
 ## <a name="creating-speech-commands"></a>音声コマンドを作成する
 
@@ -147,4 +147,3 @@ SpeechInputHandler コンポーネントで、小さい **+** アイコンをク
 > [基本的な対話式操作](../mrtk-101.md)
 
 いつでも [Unity 開発チェックポイント](../unity-development-overview.md#1-getting-started)に戻ることができます。
-

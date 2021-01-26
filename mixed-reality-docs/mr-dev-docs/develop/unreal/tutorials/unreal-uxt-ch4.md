@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, チュートリアル, はじめに, mrtk, uxt, UX ツール, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 12e94e880f8b681ed9c4720b841f8a44ae9e0fd7
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: c26f5579aad29624c9a8f374caa4799423d0637e
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609583"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635442"
 ---
 # <a name="4-making-your-scene-interactive"></a>4.シーンを対話型にする
 
@@ -56,7 +56,7 @@ UX 要素とのハンド インタラクションは、ハンド インタラク
 - ポーンを介して操作できる多関節ハンド入力イベントを提供します。
 - 仮想ハンドの手のひらから伸びる手の光線を通して、遠くの相互作用入力イベントを許可します。
 
-続ける前に、ハンド インタラクションに関する[ドキュメント](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html)を参照することをお勧めします。
+続ける前に、ハンド インタラクションに関する[ドキュメント](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html)を参照することをお勧めします。
 
 準備ができたら、**MRPawn** ブループリントを開き、 **[Event Graph]\(イベント グラフ\)** に移動します。
 
@@ -85,7 +85,7 @@ Uxt ハンド インタラクション アクターには、オーナーと最�
 
 ![Uxt ハンド インタラクション アクターのセットアップを完了する](images/unreal-uxt/4-fingerptrs.PNG)
 
-ハンド インタラクション アクターの詳細については、[UX Tools のドキュメント](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html)にもあります。
+ハンド インタラクション アクターの詳細については、[UX Tools のドキュメント](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html)にもあります。
 
 これで、プロジェクトの仮想ハンドはオブジェクトを選択できるようになりましたが、オブジェクトを操作することはできません。 アプリをテストする前の最後のタスクは、シーン内のアクターにマニピュレーター コンポーネントを追加することです。
 

@@ -7,12 +7,12 @@ ms.date: 12/3/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, 学習, サンプル, MRTK, Research モード, HoloLens 2, QR コード, WebRTC, Mixed Reality キャプチャ, Holographic Remoting, UX Tools
 ms.localizationpriority: high
-ms.openlocfilehash: 3aa0e51a92b909689ff97a07b45900ab65579c59
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007612"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583195"
 ---
 # <a name="samples-and-feature-apps"></a>サンプルとおすすめアプリ
 
@@ -30,7 +30,7 @@ ms.locfileid: "98007612"
 
 ### <a name="research-mode"></a>Research モード
 
-Research モードは、デバイス上の主要センサーへのアクセスを提供するために、第 1 世代の HoloLens で導入されました。特に、配置を意図されていない研究アプリケーションを対象としています。 次のサンプル アプリケーションは、Research モードのストリームにアクセスして記録し、[組み込みのものと外部のもの](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)を使用する例です。
+Research モードは、デバイス上の主要センサーへのアクセスを提供するために、第 1 世代の HoloLens で導入されました。特に、配置を意図されていない研究アプリケーションを対象としています。 次のサンプル アプリケーションは、Research モードのストリームにアクセスして記録し、[組み込みのものと外部のもの](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)を使用する例です。
 
 <br>
 
@@ -67,7 +67,7 @@ Mixed Reality キャプチャ (MRC) を使用すると、現実とデジタル�
 
 | 参照記事 | サンプル |
 | --- | --- |
-| [Mixed Reality キャプチャ](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Mixed Reality キャプチャのサンプル](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
+| [Mixed Reality キャプチャ](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Mixed Reality キャプチャのサンプル](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
 
 ### <a name="holographic-remoting"></a>Holographic Remoting
 

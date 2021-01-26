@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 31f11712c2f1cbe7e6726ecf5a83ccd31a2e616e
-ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
+ms.openlocfilehash: 2ccad1adee0098233d08c6694dbb84d9fc1df6ff
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96912176"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580036"
 ---
 # <a name="426"></a>[4.26](#tab/ue426)
 
 最新の Unreal Engine 4.26 リリースには次のものが含まれます。
-* 新しい[クロスデバイス XR API](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-porting) のサポート
+* 新しい[クロスデバイス XR API](../unreal-porting.md) のサポート
 * OpenXR のサポート + [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) プラグイン 
 * 高パフォーマンスのビデオ再生用の HoloLens Media Player プラグイン
 * iOS および Android 用の Azure Spatial Anchors (ベータ)
@@ -31,4 +31,4 @@ Unreal Engine 4.25 には次のものが含まれます。
 * 複合現実キャプチャ
 * Azure Spatial Anchors の初期サポート
 
-詳細については、Unreal Engine 4.25 の<a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Unreal Engine 4.25 リリースノート">リリースノート</a>を参照してください。 
+詳細については、Unreal Engine 4.25 の<a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Unreal Engine 4.25 リリースノート">リリースノート</a>を参照してください。

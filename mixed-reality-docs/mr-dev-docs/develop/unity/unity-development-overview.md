@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, 開発, 作業の開始, 新しいプロジェクト, 移植, 機能, カメラ, シミュレーション, エミュレーション, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, 拡張現実とは, MRTK, Mixed Reality Toolkit, 空間マッピング, 音声入力, 場所を特定できるカメラ, エミュレーター, Azure, チュートリアル
-ms.openlocfilehash: c5b7683574378565c71e95bc6205be3dbf92fcaf
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: fc444f4d40d8bc013253869fe77ddd563e889d85
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226441"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583002"
 ---
 # <a name="unity-development-for-hololens"></a>HoloLens 向けの Unity の開発
 
@@ -85,7 +85,7 @@ Mixed Reality アプリケーションで何らかの役割を果たすその他
 
 移植したい既存のアプリがある場合は、以下の記事を次に確認してください。
 
-* [HoloToolkit または MRTK から MRTK v2 へ](mrtk-porting-guide.md)
+* [HoloToolkit または MRTK から MRTK v2 へ](../porting-apps/porting-hl1-hl2.md)
 * [イマーシブ アプリの移植ガイド](../porting-apps/porting-guides.md)
 * [入力移植ガイド](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 

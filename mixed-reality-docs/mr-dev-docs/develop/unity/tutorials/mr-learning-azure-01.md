@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Azure, Mixed Reality, Unity, チュートリアル, Hololens, Hololens 2, Azure Blob Storage, Azure Table Storage, Azure Spatial Anchors, Azure Bot Framework, Azure クラウド サービス, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 24f44e7ecef3aeab45978787bf09d1f947bc2411
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 8f8727074870d07ac9fcd7190f5f53931d75643f
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008322"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635546"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1.HoloLens 2 用の Azure Cloud Services
 
@@ -82,13 +82,13 @@ ms.locfileid: "98008322"
 
 このセクションでは、新しい Unity プロジェクトを作成し、MRTK 開発用に準備をします。
 
-最初に、「[プロジェクトと最初のアプリケーションの初期化](mr-learning-base-02.md)」に従います (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
+最初に、「[プロジェクトと最初のアプリケーションの初期化](mr-learning-base-02.md)」に従います (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-your-application-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
 
 1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、"*Azure クラウド チュートリアル*" などの適切な名前を付ける
 2. [ビルド プラットフォームを切り替える](mr-learning-base-02.md#switching-the-build-platform)
 3. [TextMeshPro の重要なリソースをインポートする](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Unity プロジェクトを構成する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)
 6. [シーンを作成して構成](mr-learning-base-02.md#creating-and-configuring-the-scene)し、シーンに *AzureCloudServices* などの適切な名前を付ける
 
 その後、「[空間認識表示オプションの変更](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)」の手順に従って、シーンの MRTK 構成プロファイルを **[DefaultHoloLens2ConfigurationProfile]** に変更し、空間認識メッシュの表示オプションを **[Occlusion]\(オクルージョン\)** に変更します。
@@ -197,7 +197,7 @@ Unity メニューで、 **[Edit]\(編集\)**  >  **[Project Settings...]\(プ�
 このチュートリアル シリーズで使用するすべての機能が、Unity エディター内で実行できるわけではありません。つまり、アプリケーションを HoloLens 2 デバイスにデプロイする方法についてよく理解しておく必要があります。
 
 > [!TIP]
-> HoloLens 2 に Unity プロジェクトをビルドしてデプロイする方法については、「[入門チュートリアル」のデバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)に関するセクションの手順を参照してください。
+> HoloLens 2 に Unity プロジェクトをビルドしてデプロイする方法については、「[入門チュートリアル」のデバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-your-application-to-your-hololens-2)に関するセクションの手順を参照してください。
 
 ### <a name="3-run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a>3.HoloLens 2 でアプリを実行し、アプリ内の指示に従う
 

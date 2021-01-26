@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Mixed Reality, ホログラフィック, AR, VR, MR, XR, 拡張現実, 仮想現実, 説明, ケース スタディ, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, 拡張現実とは
 ms.localizationpriority: high
-ms.openlocfilehash: 7f06909b12137598649d113697651277751bcb22
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 2eac20b85ceeb9413dfc0b6820cceda2ddf335c5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757700"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583013"
 ---
 # <a name="what-is-mixed-reality"></a>Mixed Reality とは
 
@@ -34,7 +34,7 @@ Mixed Reality は、物理とデジタルの世界を融合し、人間、コン
 
 過去数十年にわたって、人間とコンピューターの入力の関係についての研究が続いており、"*ヒューマン コンピューター インタラクション*" または HCI と呼ばれる分野につながっています。 人間入力は、キーボード、マウス、タッチ、インク、音声、さらには Kinect の骨格追跡など、さまざまな方法で行われます。
 
-センサーと処理の進歩により、環境からのコンピューター入力に新しい領域が作り出されています。 コンピューターと環境との対話式操作とは、環境を理解または "*認識*" することです。そのため、環境情報を公開する Windows の API は、[認識 API](https://docs.microsoft.com/uwp/api/Windows.Perception) と呼ばれています。 環境入力では、世界での人の位置 ([頭の追跡](../design/coordinate-systems.md))、表面と境界 ([空間マッピング](../design/spatial-mapping.md)や[シーンの理解](../design/scene-understanding.md))、環境光、環境音、オブジェクト認識、場所などがキャプチャされます。
+センサーと処理の進歩により、環境からのコンピューター入力に新しい領域が作り出されています。 コンピューターと環境との対話式操作とは、環境を理解または "*認識*" することです。そのため、環境情報を公開する Windows の API は、[認識 API](/uwp/api/Windows.Perception) と呼ばれています。 環境入力では、世界での人の位置 ([頭の追跡](../design/coordinate-systems.md))、表面と境界 ([空間マッピング](../design/spatial-mapping.md)や[シーンの理解](../design/scene-understanding.md))、環境光、環境音、オブジェクト認識、場所などがキャプチャされます。
 
 <br>
 
@@ -117,5 +117,3 @@ Windows Mixed Reality のエクスペリエンスを提供するデバイスに�
 
 > [!div class="nextstepaction"]
 > [ホログラムとは](hologram.md)
-
-

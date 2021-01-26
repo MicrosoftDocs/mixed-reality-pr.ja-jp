@@ -7,12 +7,12 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, カメラ, ARKit, HoloLens, 複合現実, MixedRealityToolkit, デモ, 記録
-ms.openlocfilehash: 1f61d2094ec2762ab22576d2eac85ed6bf81d5c7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: aa85b54283b260447c36072b74031554e1aa1939
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008612"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583112"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>HoloLens および HoloLens 2 向けの Spectator View
 
@@ -60,6 +60,6 @@ HoloLens を装着していると、自分が見ている素晴らしい世界�
 | ランタイムのセットアップ期間               |         即時          |                     遅い                    |
 ## <a name="see-also"></a>関連項目
 
-* [複合現実キャプチャ](../../mixed-reality-capture.md) 
+* [複合現実キャプチャ](/hololens/holographic-photos-and-videos) 
 * [開発者向け複合現実キャプチャ](mixed-reality-capture-for-developers.md)
 * [複合現実での共有エクスペリエンス](shared-experiences-in-mixed-reality.md)

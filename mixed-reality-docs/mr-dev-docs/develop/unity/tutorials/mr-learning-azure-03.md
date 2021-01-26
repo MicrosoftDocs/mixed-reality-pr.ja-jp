@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, HoloLens, HoloLens 2, Azure Custom Vision, Azure Cognitive Services, Azure クラウド サービス, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: bd99b2ca8f41c276db747dc7fc75328c31807512
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: aa3ad219ab2cd45b14d06881757ec776d3e098f3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008212"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581931"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3.Azure Custom Vision の統合
 
@@ -28,13 +28,13 @@ ms.locfileid: "98008212"
 
 **Azure Custom Vision** は、**Cognitive Services** ファミリの一部であり、画像分類子のトレーニングに使用されます。 画像分類子とは、トレーニング済みモデルを使用して一致するタグを適用する AI サービスです。 この分類機能は、アプリケーションで "*追跡対象オブジェクト*" を検出するために使用されます。
 
-詳細については、[Azure Custom Vision](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) に関するページを参照してください。
+詳細については、[Azure Custom Vision](/azure/cognitive-services/custom-vision-service/home) に関するページを参照してください。
 
 ## <a name="preparing-azure-custom-vision"></a>Azure Custom Vision の準備
 
 開始する前に、Custom Vision プロジェクトを作成する必要があります。最短の方法は、Web ポータルを使用することです。
 
-この [クイックスタート チュートリアル](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images)に従って、セクション「*画像をアップロードし、タグ付けする*」までアカウントとプロジェクトの設定を進めます。
+この [クイックスタート チュートリアル](/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images)に従って、セクション「*画像をアップロードし、タグ付けする*」までアカウントとプロジェクトの設定を進めます。
 
 > [!WARNING]
 > モデルをトレーニングするには、少なくとも 2 つのタグと、タグごとに 5 つの画像が必要です。 このアプリケーションを使用するには、少なくとも 5 つの画像を含むタグを 1 つ作成し、後でトレーニング プロセスが失敗しないようにする必要があります。

@@ -7,12 +7,12 @@ ms.date: 12/3/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, ドキュメント, ガイド, 機能, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 発行, 配布, Microsoft Store
-ms.openlocfilehash: 41f081f11cdb9ac2fdf96a81bb761a1321d1776f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 3a975d9c66e64f56919163e9d3aa65a3126d6379
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010022"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583593"
 ---
 # <a name="publishing-to-the-microsoft-store"></a>Microsoft Store への発行
 
@@ -111,4 +111,4 @@ if(Target.Platform == UnrealTargetPlatform.Win64)
 
 * [Microsoft Store へのアプリの送信](../../distribute/submitting-an-app-to-the-microsoft-store.md)
 * [Windows アプリ認定キット](https://developer.microsoft.com/windows/downloads/app-certification-kit)
-* [アプリ インストーラー ファイルの手動作成](https://docs.microsoft.com/windows/msix/app-installer/how-to-create-appinstaller-file)
+* [アプリ インストーラー ファイルの手動作成](/windows/msix/app-installer/how-to-create-appinstaller-file)

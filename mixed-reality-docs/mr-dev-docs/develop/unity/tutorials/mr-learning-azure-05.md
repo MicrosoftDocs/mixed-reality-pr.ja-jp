@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, Hololens 2, Azure Bot Service, LUIS, 自然言語, 会話ボット, Azure クラウド サービス, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 70d136467bc677c028614429e6e197ce25b30327
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7119dfd54c2b5384ff0e219a494ca8423fe4ebfc
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008252"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583388"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5.Azure Bot Service の統合
 
-このチュートリアルでは、**HoloLens 2** デモ アプリケーションの **Azure Bot Service** を使用して Language Understanding (LUIS) を追加し、ユーザーが **追跡対象オブジェクト** を検索するときにボットで支援できるようにする方法について説明します。 これは 2 部構成のチュートリアルです。第 1 部では [Bot Composer](https://docs.microsoft.com/composer/introduction) を使用して、コード不要のソリューションとしてボットを作成します。また、必要なデータをボットにフィードする Azure 関数を簡単に確認します。 第 2 部では、Unity プロジェクトの **BotManager (スクリプト)** を使用して、ホストされた Bot Service を使用します。
+このチュートリアルでは、**HoloLens 2** デモ アプリケーションの **Azure Bot Service** を使用して Language Understanding (LUIS) を追加し、ユーザーが **追跡対象オブジェクト** を検索するときにボットで支援できるようにする方法について説明します。 これは 2 部構成のチュートリアルです。第 1 部では [Bot Composer](/composer/introduction) を使用して、コード不要のソリューションとしてボットを作成します。また、必要なデータをボットにフィードする Azure 関数を簡単に確認します。 第 2 部では、Unity プロジェクトの **BotManager (スクリプト)** を使用して、ホストされた Bot Service を使用します。
 
 ## <a name="objectives"></a>目標
 
@@ -33,9 +33,9 @@ ms.locfileid: "98008252"
 
 ## <a name="understanding-azure-bot-service"></a>Azure Bot Service について
 
-**Azure Bot Service** によって開発者は、**LUIS** を利用してユーザーとの自然な会話を維持できるインテリジェントなボットを作成できます。 会話ボットは、ユーザーがどのようにアプリケーションと対話できるかを拡張する優れた方法です。 ボットは、[Language Understanding (LUIS)](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) の優れた機能によって高度な会話を維持する、[QnA Maker](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&tabs=cs&preserve-view=true) を使用したナレッジ ベースとして機能することができます。
+**Azure Bot Service** によって開発者は、**LUIS** を利用してユーザーとの自然な会話を維持できるインテリジェントなボットを作成できます。 会話ボットは、ユーザーがどのようにアプリケーションと対話できるかを拡張する優れた方法です。 ボットは、[Language Understanding (LUIS)](/azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=azure-bot-service-4.0) の優れた機能によって高度な会話を維持する、[QnA Maker](/azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=azure-bot-service-4.0) を使用したナレッジ ベースとして機能することができます。
 
-[Azure Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0&preserve-view=true) の詳細情報を参照してください。
+[Azure Bot Service](/azure/bot-service/bot-service-overview-introduction?preserve-view=true&view=azure-bot-service-4.0) の詳細情報を参照してください。
 
 ## <a name="part-1---creating-the-bot"></a>第 1 部 - ボットを作成する
 
@@ -50,18 +50,18 @@ Unity アプリケーションでボットを使用するには、まずそれ�
 
 この Azure 関数には、**Count** と **Find** という 2 つのアクションがあり、基本的な *HTTP* *GET* 呼び出しを使用して呼び出すことができます。 **Visual Studio** でコードを調べることができます。
 
-[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) の詳細情報を参照してください。
+[Azure Functions](/azure/azure-functions/functions-overview) の詳細情報を参照してください。
 
 **Count** 関数では、非常にシンプルに、テーブルにあるすべての **TrackedObjects** のクエリを **Table Storage** に実行します。 一方、**Find** 関数では、*GET* 要求から *name* クエリ パラメーターを受け取り、一致する **TrackedObject** のクエリを **テーブル ストレージ** に対して実行し、DTO を JSON として返します。
 
 この **Azure 関数** を **Visual Studio** から直接デプロイできます。
-Azure 関数のデプロイについては、[こちら](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-functions?view=azure-devops&tabs=dotnet-core%2Cyaml&preserve-view=true)を参照してください。
+Azure 関数のデプロイについては、[こちら](/azure/devops/pipelines/targets/azure-functions?preserve-view=true&tabs=dotnet-core%2cyaml&view=azure-devops)を参照してください。
 
 デプロイが完了したら、対応するリソースを **Azure Portal** で開き、 *[設定]* セクションの下にある **[構成]** をクリックします。 **[アプリケーション設定]** で、**追跡対象オブジェクト** が格納されている **Azure ストレージ** への "*接続文字列*" を指定する必要があります。 **[新しいアプリケーション設定]** をクリックし、名前として **AzureStorageConnectionString** を使用し、値として正しい "*接続文字列*" を指定します。 その後、 **[保存]** をクリックすると、**Azure 関数** の準備が完了し、次に作成する "*ボット*" にサービスを提供できるようになります。
 
 ### <a name="creating-a-conversation-bot"></a>会話ボットの作成
 
-Bot Framework ベースの会話ボットを開発するには、いくつかの方法があります。 このレッスンでは、[Bot Framework Composer](https://docs.microsoft.com/composer/) デスクトップ アプリケーションを使用します。これは、迅速な開発に最適なビジュアル デザイナーです。
+Bot Framework ベースの会話ボットを開発するには、いくつかの方法があります。 このレッスンでは、[Bot Framework Composer](/composer/) デスクトップ アプリケーションを使用します。これは、迅速な開発に最適なビジュアル デザイナーです。
 
 最新リリースは、[GitHub リポジトリ](https://github.com/microsoft/BotFramework-Composer/releases)からダウンロードできます。 Windows、Mac、Linux で使用できます。
 
@@ -77,7 +77,7 @@ Bot Framework ベースの会話ボットを開発するには、いくつかの
 
 左側にフォーカスを移動して、**ダイアログ パネル** を確認してみましょう。 **TrackedObjectsBot** という名前のダイアログが 1 つあります。その下に、いくつかの **トリガー** を確認できます。
 
-[Bot Framework の概念](https://docs.microsoft.com/composer/concept-dialog)についての詳細情報を参照してください。
+[Bot Framework の概念](/composer/concept-dialog)についての詳細情報を参照してください。
 
 これらのトリガーで以下のことを実行します。
 
@@ -97,7 +97,7 @@ Bot Framework ベースの会話ボットを開発するには、いくつかの
 
 ![TrackedObjectsBot プロジェクト ダイアログのトリガー AskForCount](images/mr-learning-azure/tutorial5-section4-step1-4.png)
 
-[LUIS](https://docs.microsoft.com/composer/how-to-use-luis) を活用することで、"*ユーザー*" はそのように厳密なフレーズでたずねる必要がなく、"*ユーザー*" にとって自然な会話ができます。
+[LUIS](/composer/how-to-use-luis) を活用することで、"*ユーザー*" はそのように厳密なフレーズでたずねる必要がなく、"*ユーザー*" にとって自然な会話ができます。
 
 このダイアログでは、"*ボット*" から Azure 関数 **Count** への会話も行われます。それについては後で詳しく説明します。
 
@@ -130,7 +130,7 @@ Bot Framework ベースの会話ボットを開発するには、いくつかの
 
 これですべてを設定したので、ボットをデプロイする準備ができました。 Bot Framework Composer をインストール済みであるため、そこから直接発行することができます。
 
-[Bot Composer からのボットの発行](https://docs.microsoft.com/composer/how-to-publish-bot)に関する詳細情報を参照してください。
+[Bot Composer からのボットの発行](/composer/how-to-publish-bot)に関する詳細情報を参照してください。
 
 > [!TIP]
 > トリガー フレーズ、新たな応答、会話の分岐を追加して、ボットを自由に試してみてください。

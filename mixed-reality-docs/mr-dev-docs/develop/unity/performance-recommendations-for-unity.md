@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: グラフィックス, cpu, gpu, レンダリング, ガベージ コレクション, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 3508edae9fa0e60e9d9b60000186dfd3e49ff134
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 738f9032b0e0500e0f5daa3b59cc1740ef570928
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009352"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583187"
 ---
 # <a name="performance-recommendations-for-unity"></a>Unity のパフォーマンスに関する推奨事項
 
@@ -84,7 +84,7 @@ public class ExampleClass : MonoBehaviour
 
 #### <a name="avoid-expensive-operations"></a>コストのかかる操作を避ける
 
-1) **[LINQ](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq) を使わないようにする**
+1) **[LINQ](/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq) を使わないようにする**
 
     LINQ はクリーンで、読み取りと書き込みが簡単である可能性はありますが、一般的にアルゴリズムを手動で記述した場合よりも多くの計算とメモリが必要になります。
 
@@ -120,7 +120,7 @@ public class ExampleClass : MonoBehaviour
 
 3) **ボックス化に注意する**
 
-    [ボックス化](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)は、C# 言語とランタイムの中核となる概念です。 これは、`char`、`int`、`bool` などの値型変数を参照型変数の中にラップするプロセスです。 値型変数が "ボックス化" されると、マネージド ヒープに格納される `System.Object` の内部にラップされます。 メモリが割り当てられ、最終的に破棄されるときは、ガベージ コレクターによって処理される必要があります。 これらの割り当てと割り当て解除は、パフォーマンス コストの原因になり、多くのシナリオでは、不要であるか、低コストの代替手段で簡単に置き換えることができます。
+    [ボックス化](/dotnet/csharp/programming-guide/types/boxing-and-unboxing)は、C# 言語とランタイムの中核となる概念です。 これは、`char`、`int`、`bool` などの値型変数を参照型変数の中にラップするプロセスです。 値型変数が "ボックス化" されると、マネージド ヒープに格納される `System.Object` の内部にラップされます。 メモリが割り当てられ、最終的に破棄されるときは、ガベージ コレクターによって処理される必要があります。 これらの割り当てと割り当て解除は、パフォーマンス コストの原因になり、多くのシナリオでは、不要であるか、低コストの代替手段で簡単に置き換えることができます。
 
     ボックス化を回避するには、数値型と構造体 (`Nullable<T>` を含む) が格納される変数、フィールド、プロパティを、オブジェクトを使用するのではなく、`int`、`float?`、`MyStruct` などの特定の型として厳密に型指定します。  これらのオブジェクトをリストに配置する場合は、`List<object>` や `ArrayList` ではなく、`List<int>` などの厳密に型指定されたリストを使用します。
 
@@ -180,7 +180,7 @@ public class ExampleClass : MonoBehaviour
 
 4) **構造体を値で渡さないようにする**
 
-    クラスとは異なり、構造体は値型であり、関数に直接渡すと、その内容が新しく作成されるインスタンスにコピーされます。 このコピーにより、CPU コストが発生し、スタックにメモリが追加されます。 小さい構造体であれば、影響は最小限であるため、許容されます。 しかし、すべてのフレームで繰り返し呼び出される関数や、大きな構造体を受け取る関数の場合は、可能であれば、関数定義を変更して参照渡しにします。 [詳細については、こちらを参照してください](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
+    クラスとは異なり、構造体は値型であり、関数に直接渡すと、その内容が新しく作成されるインスタンスにコピーされます。 このコピーにより、CPU コストが発生し、スタックにメモリが追加されます。 小さい構造体であれば、影響は最小限であるため、許容されます。 しかし、すべてのフレームで繰り返し呼び出される関数や、大きな構造体を受け取る関数の場合は、可能であれば、関数定義を変更して参照渡しにします。 [詳細については、こちらを参照してください](/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
 
 #### <a name="miscellaneous"></a>その他
 
@@ -337,9 +337,9 @@ Unity では、ガベージ コレクターの詳細なしくみと、メモリ�
 ガベージ コレクションが過剰になる最も一般的な状況の 1 つは、Unity の開発においてコンポーネントとクラスへの参照をキャッシュしないことです。 Start() または Awake() の間にすべての参照をキャプチャし、後の Update() や LateUpdate() などの関数で再利用する必要があります。
 
 その他のクイックヒント:
-- C# の [StringBuilder](https://docs.microsoft.com/dotnet/api/system.text.stringbuilder) クラスを使用して、実行時に複雑な文字列を動的に構築します
+- C# の [StringBuilder](/dotnet/api/system.text.stringbuilder) クラスを使用して、実行時に複雑な文字列を動的に構築します
 - アプリのすべてのビルド バージョンで実行されるため、Debug.Log() の呼び出しは不要になったら削除します
-- ホログラフィック アプリで一般に多くのメモリが必要な場合は、読み込み中や移行中の画面を表示するときなど、読み込みフェーズの間に、[_**System.GC.Collect()**_](https://docs.microsoft.com/dotnet/api/system.gc.collect) を呼び出すことを検討します
+- ホログラフィック アプリで一般に多くのメモリが必要な場合は、読み込み中や移行中の画面を表示するときなど、読み込みフェーズの間に、[_**System.GC.Collect()**_](/dotnet/api/system.gc.collect) を呼び出すことを検討します
 
 #### <a name="object-pooling"></a>オブジェクト プーリング
 

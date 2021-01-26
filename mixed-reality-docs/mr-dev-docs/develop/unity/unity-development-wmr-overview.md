@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, 開発, 作業の開始, 新しいプロジェクト, 移植, 機能, カメラ, シミュレーション, エミュレーション, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, 拡張現実とは, MRTK, Mixed Reality Toolkit, 音声入力, 場所を特定できるカメラ, エミュレーター, Azure, チュートリアル
-ms.openlocfilehash: edd75def71ad31a1d29a480d0b2a7f7ffbd8c037
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: 65b45d448854f8903ed37466ebaa3c427dea3089
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226431"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582948"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>VR と Windows Mixed Reality 向けの Unity 開発
 
@@ -66,14 +66,14 @@ Unity には、Windows Mixed Reality と VR の開発用に手動で変更する
 
 移植したい既存のアプリがある場合は、以下の記事を次に確認してください。
 
-* [Windows Mixed Reality に VR アプリを移植する](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=project)
-* [Windows Mixed Reality 用に SteamVR アプリを更新する](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality)
+* [Windows Mixed Reality に VR アプリを移植する](../porting-apps/porting-guides.md?tabs=project)
+* [Windows Mixed Reality 用に SteamVR アプリを更新する](../porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md)
 
 ### <a name="additional-resources"></a>その他のリソース
 
 独自の Mixed Reality の世界に進む前に、さらに以下のドキュメントを参照することをお勧めします。 
 
-* [VR 技術者向けガイド](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey)
+* [VR 技術者向けガイド](/windows/mixed-reality/enthusiast-guide/vr-journey)
 * [Unity 資産ストア](https://www.assetstore.unity3d.com)
 
 ## <a name="see-also"></a>関連項目 

@@ -7,12 +7,12 @@ ms.date: 01/13/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, エミュレーター
-ms.openlocfilehash: c26048db18c482312472210c133b20a42fdecae6
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
+ms.openlocfilehash: 6770ce215fb846b7863b77e4b9fe6da7d7b0c98f
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166787"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583480"
 ---
 # <a name="using-the-hololens-emulator"></a>HoloLens エミュレーターを使用する
 
@@ -43,7 +43,7 @@ HoloLens エミュレーターでは、ハードウェア アクセラレータ�
 * 64 ビット CPU
 * 4 コアの CPU (または合計 4 コアとなる複数の CPU)
 * 8 GB 以上の RAM
-* BIOS で以下の機能が[サポートされ、有効になっている](https://blogs.technet.com/b/iftekhar/archive/2010/08/09/enable-hardware-settings-in-bios-to-run-hyper-v.aspx)必要があります。
+* BIOS で以下の機能が[サポートされ、有効になっている](/archive/blogs/iftekhar/enable-hardware-settings-in-bios-to-run-hyper-v)必要があります。
    * ハードウェア補助による仮想化
    * Second Level Address Translation (SLAT)
    * ハードウェアベースのデータ実行防止 (DEP)
@@ -255,7 +255,7 @@ HoloLens (第 1 世代) 上で [Windows デバイス ポータル](using-the-win
 * HoloLens 2 エミュレーターをアンインストールするときに、ハード ドライブの Windows Kits\10\Emulation\HoloLens\<build number> フォルダーに、ハード ディスク イメージ (Flash.vhdx) が残ったままになる場合があります。  このファイルは削除しても問題ありません。
 * ハードウェア グラフィック アクセラレータが原因で、AMD または Intel のグラフィックスを使用している一部のシステムではホログラフィック アプリがクラッシュする場合があります。  エミュレーターの [ツール] ウィンドウでハードウェア グラフィック アクセラレータを無効にすることにより、この問題を回避できます。
 * 2020 年 7 月時点の最新の Windows 更新プログラムをインストールすると、HoloLens エミュレーター (第 1 世代) のハードウェア グラフィックス アクセラレータが使用できなくなる可能性があります。
-ハードウェア グラフィックス アクセラレータに必要だった RemoteFX コンポーネントは非推奨になったため、今後の Windows リリースで削除される予定です。  ハードウェア グラフィックス アクセラレータを再び有効にするには、[Enable-VMRemoteFXPhysicalVideoAdapter PowerShell コマンドレット](https://docs.microsoft.com/powershell/module/hyper-v/enable-vmremotefxphysicalvideoadapter)を使用します。  詳細については、[Windows での RemoteFX サポートの非推奨化と削除に関するドキュメント](https://support.microsoft.com/help/4570006/update-to-disable-and-remove-the-remotefx-vgpu-component)を参照してください。
+ハードウェア グラフィックス アクセラレータに必要だった RemoteFX コンポーネントは非推奨になったため、今後の Windows リリースで削除される予定です。  ハードウェア グラフィックス アクセラレータを再び有効にするには、[Enable-VMRemoteFXPhysicalVideoAdapter PowerShell コマンドレット](/powershell/module/hyper-v/enable-vmremotefxphysicalvideoadapter)を使用します。  詳細については、[Windows での RemoteFX サポートの非推奨化と削除に関するドキュメント](https://support.microsoft.com/help/4570006/update-to-disable-and-remove-the-remotefx-vgpu-component)を参照してください。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

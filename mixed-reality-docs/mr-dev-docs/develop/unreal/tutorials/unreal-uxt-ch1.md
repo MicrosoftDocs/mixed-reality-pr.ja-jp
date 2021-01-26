@@ -7,16 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, チュートリアル, はじめに, mrtk, uxt, UX ツール, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 762247f550a3471bbbb6d1004283c6f901346503
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a46b9fef96f75f3d80b9ebbd5cbd724730374b41
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009792"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580560"
 ---
 # <a name="1-getting-started"></a>1.はじめに
 
-Mixed Reality を初めて使用する場合でも、経験豊富なプロの方でも、ここは [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/) と [Unreal Engine](https://www.unrealengine.com/en-US/) の体験を始めるのに適した場所です。 このチュートリアル シリーズでは、[Unreal 用 Mixed Reality ツールキット](https://github.com/microsoft/MixedRealityToolkit-Unreal)の一部である [UX Tools プラグイン](https://github.com/microsoft/MixedReality-UXTools-Unreal)を使用してインタラクティブなチェス アプリを構築する方法を、1 ステップずつ説明します。 プラグインは、コード、ブループリント、例を使用してプロジェクトに一般的な UX 機能を追加するのに役立ちます。 
+Mixed Reality を初めて使用する場合でも、経験豊富なプロの方でも、ここは [HoloLens 2](../../../index.yml) と [Unreal Engine](https://www.unrealengine.com/en-US/) の体験を始めるのに適した場所です。 このチュートリアル シリーズでは、[Unreal 用 Mixed Reality ツールキット](https://github.com/microsoft/MixedRealityToolkit-Unreal)の一部である [UX Tools プラグイン](https://github.com/microsoft/MixedReality-UXTools-Unreal)を使用してインタラクティブなチェス アプリを構築する方法を、1 ステップずつ説明します。 プラグインは、コード、ブループリント、例を使用してプロジェクトに一般的な UX 機能を追加するのに役立ちます。 
 
 ![ビューポートの終わりのシーン](images/unreal-uxt/5-endscene.PNG)
 
@@ -40,7 +40,7 @@ Mixed Reality を初めて使用する場合でも、経験豊富なプロの方
 
 最初に、必要な Visual Studio パッケージがすべてセットアップされていることを確認します。
 1. [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) の最新バージョンのインストール
-1. 次の[ワークロード](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads)をインストールします。
+1. 次の[ワークロード](/visualstudio/install/modify-visual-studio#modify-workloads)をインストールします。
     * C++ によるデスクトップ開発
     * .NET デスクトップ開発
     * ユニバーサル Windows プラットフォームの開発
@@ -48,7 +48,7 @@ Mixed Reality を初めて使用する場合でも、経験豊富なプロの方
     * USB デバイスの接続
     * C++ (v142) ユニバーサル Windows プラットフォーム ツール
 
-1. 次の[コンポーネント](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components)をインストールします。
+1. 次の[コンポーネント](/visualstudio/install/modify-visual-studio#modify-individual-components)をインストールします。
     * コンパイラ、ビルド ツール、ランタイム > MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (最新バージョン)
 
 次の図を使用して、インストールを確認します。

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, Hololens 2, Azure Spatial Anchors, Azure クラウド サービス, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 50e5bccf09e03ebda8057dbb3ca9d83fc01694bd
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 75c3f98c2f40f03240906716d9b942a157994130
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008172"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581897"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4.Azure Spatial Anchors の統合
 
@@ -28,12 +28,12 @@ ms.locfileid: "98008172"
 
  **Azure Spatial Anchors** は Azure Cloud Services ファミリーに含まれており、アンカーの場所を保存するために使用します。 保存されたアンカーの場所は、*アンカー ID* に基づいてクラウドから取得できます。 このアンカーの場所は、HoloLens、iOS、Android デバイスなどのマルチプラットフォーム デバイスで共有およびアクセスできます。
 
-[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) の詳細をご確認ください。
+[Azure Spatial Anchors](/azure/spatial-anchors/overview) の詳細をご確認ください。
 
 ## <a name="preparing-azure-spatial-anchors"></a>Azure Spatial Anchors の準備
 
 開始する前に、Azure portal で空間アンカー リソースを作成する必要があります。
-[空間アンカー リソース](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource)を作成する方法を学習します。
+[空間アンカー リソース](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource)を作成する方法を学習します。
 
 ## <a name="preparing-the-scene"></a>シーンの準備
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, ソルバー
 ms.localizationpriority: high
-ms.openlocfilehash: 959ed164e566f5bee3db203437145fa08ce168d8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6006bf5e3edaee13c8ede0bdc04fd5ea928f1757
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008022"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579163"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.ソルバーを使用した動的なコンテンツの作成
 
@@ -141,4 +141,5 @@ DirectionalIndicator および SolverHandler コンポーネントを次のよ�
 
 MRTK に含まれるこれらのソルバーや他のソルバーについて学ぶには、[MRTK ドキュメント ポータル](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)の[ソルバー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)に関するガイドを参照してください。
 
-[次のチュートリアル:6.ユーザー インターフェイスの作成](mr-learning-base-06.md)
+> [!div class="nextstepaction"]
+>[次のチュートリアル:6.ユーザー インターフェイスの作成](mr-learning-base-06.md)

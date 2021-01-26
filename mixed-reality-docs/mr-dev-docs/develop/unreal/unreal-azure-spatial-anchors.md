@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, Azure, Azure 開発, Spatial Anchors, Mixed Reality, 開発, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, ホログラム, ゲーム開発, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 95e8ad708dd44a05fb306b2ea49f167fd400c5d8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5797cd48198b163b55f3724685126b1d4d85c69c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009772"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583028"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal での Azure Spatial Anchors
 
@@ -30,17 +30,17 @@ Azure Spatial Anchors は、現実世界のアンカー ポイントを拡張現
 
 - インストール済みの [Unreal バージョン 4.25](https://www.unrealengine.com/get-now) 以降
 - Unreal にセットアップされた [HoloLens 2 プロジェクト](tutorials/unreal-uxt-ch1.md) 
-- 「[Azure Spatial Anchors の概要](https://docs.microsoft.com/azure/spatial-anchors/overview)」の確認
+- 「[Azure Spatial Anchors の概要](/azure/spatial-anchors/overview)」の確認
 - C++ と Unreal に関する基本的な知識
 
 ## <a name="getting-azure-spatial-anchors-account-info"></a>Azure Spatial Anchors アカウント情報を取得する
 
 プロジェクトで Azure Spatial Anchors を使用する前に、次のことを行う必要があります。
-* [Spatial Anchors リソースを作成](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource)し、次に示すアカウント フィールドをコピーします。 これらの値は、アプリケーションのアカウントでユーザーを認証するために使用されます。
+* [Spatial Anchors リソースを作成](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource)し、次に示すアカウント フィールドをコピーします。 これらの値は、アプリケーションのアカウントでユーザーを認証するために使用されます。
     * **アカウント ID**
     * **アカウント キー**
 
-詳細については、[Azure Spatial Anchors の認証](https://docs.microsoft.com/azure/spatial-anchors/concepts/authentication?tabs=csharp)に関するドキュメントを参照してください。
+詳細については、[Azure Spatial Anchors の認証](/azure/spatial-anchors/concepts/authentication?tabs=csharp)に関するドキュメントを参照してください。
 
 > [!NOTE]
 > Unreal 4.25 での Azure Spatial Anchors では、Azure AD 認証トークンがサポートされていませんが、この機能のサポートは今後のリリースで導入される予定です。
@@ -65,7 +65,7 @@ Azure Spatial Anchors セッションを使用すると、クライアント ア
 ![Azure Spatial Anchors のアカウント ID、キー、変数の種類が強調表示されている詳細パネルのスクリーンショット](images/asa-unreal/unreal-spatial-anchors-img-02.png)
 
 次の手順で、Azure Spatial Anchors セッションを開始します。
-1. **AR セッション** が HoloLens アプリケーションで実行されていることを確認します。これは、AR セッションが実行されていないと、Azure Spatial Anchors セッションを開始できないからです。 セットアップされているものがない場合は、[AR セッション資産を作成](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)します。
+1. **AR セッション** が HoloLens アプリケーションで実行されていることを確認します。これは、AR セッションが実行されていないと、Azure Spatial Anchors セッションを開始できないからです。 セットアップされているものがない場合は、[AR セッション資産を作成](/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)します。
 2. **Start Azure Spatial Anchors Session** カスタム イベントを追加し、次のスクリーンショットに示すように構成します。
     * セッションを作成しても、既定ではセッションは開始されません。このため、Azure Spatial Anchors サービスでの認証用にセッションを構成できます。
 
@@ -216,6 +216,6 @@ Azure 空間アンカーを見つけたら、**Stop Watcher** を呼び出して
 
 ## <a name="next-steps"></a>次の手順
 * [ローカル空間アンカー](unreal-spatial-anchors.md)
-* [Spatial Anchors のドキュメント](https://docs.microsoft.com/azure/spatial-anchors/)
+* [Spatial Anchors のドキュメント](/azure/spatial-anchors/)
 * [空間アンカーの機能](https://azure.microsoft.com/services/spatial-anchors/#features)
-* [効果的なアンカー エクスペリエンスのガイドライン](https://docs.microsoft.com/azure/spatial-anchors/concepts/guidelines-effective-anchor-experiences)
+* [効果的なアンカー エクスペリエンスのガイドライン](/azure/spatial-anchors/concepts/guidelines-effective-anchor-experiences)

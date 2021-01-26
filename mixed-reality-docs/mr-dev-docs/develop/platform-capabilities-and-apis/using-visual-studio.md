@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, デバッグ, 配置
-ms.openlocfilehash: 20bda2cd247f18680d3f9fe95284e238a32e1140
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: c4ffe3a426ad82c324efef20639cf836f16a7f63
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97529972"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583614"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Visual Studio を使用した配置とデバッグ
 
@@ -129,7 +129,7 @@ Visual Studio から HoloLens にアプリを初めて配置するときは、PI
 
 ## <a name="graphics-debugger-for-hololens-1st-gen"></a>HoloLens (第 1 世代) 用グラフィックス デバッガー
 
-Visual Studio グラフィックス診断ツールは、ホログラフィック アプリを作成して最適化するときに役立ちます。 詳細については、[MSDN の「Visual Studio グラフィックス診断」](https://msdn.microsoft.com/library/hh315751.aspx)を参照してください。
+Visual Studio グラフィックス診断ツールは、ホログラフィック アプリを作成して最適化するときに役立ちます。 詳細については、[MSDN の「Visual Studio グラフィックス診断」](/previous-versions/visualstudio/visual-studio-2015/debugger/visual-studio-graphics-diagnostics)を参照してください。
 
 **グラフィックス デバッガーを起動するには**
 1. 上記の手順に従って、デバイスまたはエミュレーターをターゲットにします
@@ -138,7 +138,7 @@ Visual Studio グラフィックス診断ツールは、ホログラフィック
 
 ## <a name="profiling"></a>プロファイリング
 
-Visual Studio プロファイリング ツールを使用すると、アプリのパフォーマンスとリソースの使用量を分析できます。 これには、CPU、メモリ、グラフィックス、およびネットワークの使用を最適化するツールが含まれます。 詳細については、[MSDN のデバッグなしで診断ツールを実行する](https://msdn.microsoft.com/library/dn957936.aspx)方法に関する記事を参照してください。
+Visual Studio プロファイリング ツールを使用すると、アプリのパフォーマンスとリソースの使用量を分析できます。 これには、CPU、メモリ、グラフィックス、およびネットワークの使用を最適化するツールが含まれます。 詳細については、[MSDN のデバッグなしで診断ツールを実行する](/previous-versions/visualstudio/visual-studio-2015/profiling/profiling-tools)方法に関する記事を参照してください。
 
 **HoloLens でプロファイリング ツールを開始するには**
 1. 上記の手順に従って、デバイスまたはエミュレーターをターゲットにします
@@ -175,5 +175,5 @@ Visual Studio を使用して、Visual Studio プロジェクトから配置せ�
 ## <a name="see-also"></a>関連項目
 * [ツールのインストール](../install-the-tools.md)
 * [HoloLens エミュレーターを使用する](using-the-hololens-emulator.md)
-* [ユニバーサル Windows プラットフォーム (UWP) アプリのデプロイとデバッグ](https://msdn.microsoft.com/library/windows/apps/xaml/mt613243.aspx)
-* [デバイスを開発用に有効にする](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
+* [ユニバーサル Windows プラットフォーム (UWP) アプリのデプロイとデバッグ](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps)
+* [デバイスを開発用に有効にする](/windows/uwp/get-started/enable-your-device-for-development)

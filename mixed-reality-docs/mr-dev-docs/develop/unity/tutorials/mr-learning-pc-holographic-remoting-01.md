@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, PC Holographic Remoting, ヒント, 視線追跡
 ms.localizationpriority: high
-ms.openlocfilehash: 551c6427d9659dd7f5bad8558c777e918456b4d7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d8c7de8a93a32107afe67a1d0375612ab6245be9
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007922"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581967"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1.PC Holographic Remoting の概要
 
@@ -46,7 +46,7 @@ HoloLens 2 のチュートリアルへようこそ。 2 部構成のこのチュ
 
 このセクションでは、新しい Unity プロジェクトを作成し、MRTK 開発用に準備します。
 
-このためには、まず「[プロジェクトと最初のアプリケーションの初期化](mr-learning-base-02.md)」に従ってください (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
+このためには、まず「[プロジェクトと最初のアプリケーションの初期化](mr-learning-base-02.md)」に従ってください (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-your-application-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
 
 1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、"*MRTK チュートリアル*" などの適切な名前を付ける
 
@@ -56,7 +56,7 @@ HoloLens 2 のチュートリアルへようこそ。 2 部構成のこのチュ
 
 4. [Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 
-5. [Unity プロジェクトを構成する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)
 
 6. [シーンを作成して設定](mr-learning-base-02.md#creating-and-configuring-the-scene)し、シーンに **PC Holographic Remoting** などの適切な名前を付ける
 
@@ -67,7 +67,7 @@ HoloLens 2 のチュートリアルへようこそ。 2 部構成のこのチュ
 [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage) をダウンロードして **インポート** します。
 
 >[!TIP]
-> Unity カスタム パッケージをインポートする方法については、「[Mixed Reality Toolkit をインポートする](../../../mrlearning-base-ch1.md#import-the-mixed-reality-toolkit)」の手順を参照してください。
+> Unity カスタム パッケージをインポートする方法については、「[Mixed Reality Toolkit をインポートする](./mr-learning-base-02.md#importing-the-mixed-reality-toolkit)」の手順を参照してください。
 
 チュートリアル アセットをインポートすると、[プロジェクト] ウィンドウは次のようになります。
 
@@ -191,7 +191,7 @@ ModelParent オブジェクトの子オブジェクトを、これらのフィ�
 
 同じプロセスに従い、同じ **MarsCuriosityRover** パーツの **While Looking At Target ()**  & **On Look Away ()** イベントに、それぞれのヒント オブジェクトを割り当てます。
 
-視線追跡を有効にするには、こちらの[ガイドライン](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations)に従ってください。
+視線追跡を有効にするには、こちらの[ガイドライン](/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations)に従ってください。
 
 ## <a name="congratulations"></a>結論
 

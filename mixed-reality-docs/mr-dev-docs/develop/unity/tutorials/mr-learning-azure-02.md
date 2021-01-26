@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, HoloLens, HoloLens 2, Azure Storage, Azure クラウド サービス, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a948e035a467588091a2b5e16a3e2632ab3049d3
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 9c2041f9dac284fc4a7bea7d79b95e3e6240902a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008202"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581919"
 ---
 # <a name="2-integrating-azure-storage"></a>2.Azure Storage の統合
 
@@ -28,7 +28,7 @@ ms.locfileid: "98008202"
 
 **Azure Storage** は、クラウドでの Microsoft のストレージ ソリューションであり、多くのシナリオと要件に対応できます。 非常に大規模なスケーリングが可能で、開発者が簡単に使用できます。 すべてのサービスを、**Azure ストレージ アカウント** の包括的なサービスとして利用することができます。 このユース ケースでは、*Table Storage* と *Blob Storage* を使用します。
 
-詳細については、[Azure ストレージ サービス](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview)に関するページを参照してください。
+詳細については、[Azure ストレージ サービス](/azure/storage/blobs/storage-blobs-overview)に関するページを参照してください。
 
 ### <a name="azure-table-storage"></a>Azure Table Storage
 
@@ -36,18 +36,18 @@ ms.locfileid: "98008202"
 
 デモ アプリケーションのコンテキストでは、2 つのテーブルが必要です。1 つは、プロジェクトに関する情報とトレーニング済みモデルの状態に関する情報 (詳細についてはチュートリアル「[Azure Custom Vision の統合](mr-learning-azure-03.md)」を参照) を格納するテーブルであり、もう 1 つは "*追跡オブジェクト*" に関する情報を格納するものです。
 
-詳細については、[Azure Table Storage](https://docs.microsoft.com/azure/storage/tables/table-storage-overview) に関するページを参照してください。
+詳細については、[Azure Table Storage](/azure/storage/tables/table-storage-overview) に関するページを参照してください。
 
 ### <a name="azure-blob-storage"></a>Azure Blob Storage
 
 このサービスでは、大規模なバイナリ ファイルを格納することができます。"*追跡オブジェクト*" について撮影した写真をサムネイルとして格納するために、これを使用します。
 デモ アプリケーションでは、画像を格納するために、BLOB コンテナーが 1 つ必要です。
 
-詳細については、[Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) に関するページを参照してください。
+詳細については、[Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) に関するページを参照してください。
 
 ## <a name="preparing-azure-storage"></a>Azure Storage の準備
 
-Azure ストレージ サービスを利用するには、Azure ストレージ アカウントが必要です。 ストレージ アカウントを作成するには、[ストレージ アカウントの作成](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal)に関するページを参照してください。 ストレージ アカウントの詳細については、[Azure ストレージ アカウントの概要](https://docs.microsoft.com/azure/storage/common/storage-account-overview)に関するページを参照してください。
+Azure ストレージ サービスを利用するには、Azure ストレージ アカウントが必要です。 ストレージ アカウントを作成するには、[ストレージ アカウントの作成](/azure/storage/common/storage-account-create?tabs=azure-portal)に関するページを参照してください。 ストレージ アカウントの詳細については、[Azure ストレージ アカウントの概要](/azure/storage/common/storage-account-overview)に関するページを参照してください。
 
 ストレージ アカウントを作成したら、このレッスンの次のセクションで必要となる接続文字列を **Azure portal** から取得できます。
 
@@ -57,7 +57,7 @@ Azure ストレージ サービスを利用するには、Azure ストレージ 
 
 > [!TIP]
 > Unity エディター内からテストする場合は、次のローカル エミュレーターを使用できます。
-> * Windows 10 では、[Azure ストレージ エミュレーター](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)を使用できます。
+> * Windows 10 では、[Azure ストレージ エミュレーター](/azure/storage/common/storage-use-emulator)を使用できます。
 > * MacOS、Linux では、Docker 用の [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite) を使用できます。
 
 ## <a name="preparing-the-scene"></a>シーンの準備

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, アプリ セッション
 ms.localizationpriority: high
-ms.openlocfilehash: abe0c8bc70469826e25f7016a3cc1ba971c1fcc1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4bae36bfb24130fc7914563af07c09374162f3cb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008362"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582053"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3.Azure Spatial Anchors の保存、取得、および共有
 
@@ -58,7 +58,7 @@ ms.locfileid: "98008362"
 8. Azure Anchor を見つけます (手順 3 の場所に Rover Explorer を配置します)
 
 > [!NOTE]
-> アプリを完全に再起動するには、イマーシブ アプリ ビューを終了した後、[スタート] メニューからこれを再起動する前に、Mixed Reality ホームのアプリ ウィンドウを閉じる必要があります。 詳細については、「[HoloLens でアプリを使用する](https://docs.microsoft.com/hololens/holographic-home#using-apps-on-hololens)」のドキュメントを参照してください。
+> アプリを完全に再起動するには、イマーシブ アプリ ビューを終了した後、[スタート] メニューからこれを再起動する前に、Mixed Reality ホームのアプリ ウィンドウを閉じる必要があります。 詳細については、「[HoloLens でアプリを使用する](/hololens/holographic-home#using-apps-on-hololens)」のドキュメントを参照してください。
 
 ## <a name="sharing-azure-spatial-anchors-between-devices"></a>デバイス間での Azure Spatial Anchors の共有
 

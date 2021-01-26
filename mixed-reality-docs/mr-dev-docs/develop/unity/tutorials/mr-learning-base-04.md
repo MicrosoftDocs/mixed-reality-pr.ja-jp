@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, ソルバー, Grid Object Collection
 ms.localizationpriority: high
-ms.openlocfilehash: e09047e4f75697722f76301630c275f126b3cbda
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 27964cad03111a3f7dad89c66df0cb9a4f95a9e2
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613256"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579211"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4.シーンへのオブジェクトの配置
 
@@ -143,4 +143,5 @@ ms.locfileid: "97613256"
 
 このチュートリアルでは、シーン内のオブジェクトをユーザーに対して配置し、MRTK の Grid Object Collection 機能を使用してコレクション内のオブジェクトを整理する方法について学習しました。
 
-[次のチュートリアル:5.ソルバーを使用した動的なコンテンツの作成](mr-learning-base-05.md)
+> [!div class="nextstepaction"]
+>[次のチュートリアル:5.ソルバーを使用した動的なコンテンツの作成](mr-learning-base-05.md)

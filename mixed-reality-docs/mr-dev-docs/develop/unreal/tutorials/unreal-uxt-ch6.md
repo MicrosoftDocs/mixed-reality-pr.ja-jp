@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, チュートリアル, 入門, mrtk, uxt, UX ツール, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 83d8068ca8ce73f23edb85cf9044db5409105380
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 7b706cf2a8685954ed916c825c3617ade190f1e0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865397"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583655"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6.デバイスまたはエミュレーターへのパッケージ化とデプロイ
 
@@ -25,7 +25,7 @@ ms.locfileid: "97865397"
 
 ## <a name="device-only-streaming"></a>[デバイスのみ] ストリーミング
 
-[Holographic Remoting](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting) は、チャネルを切り替えるのではなく、PC またはスタンドアロンの UWP デバイスから HoloLens 2 にデータをストリーミングすることを意味します。 HoloLens から入力データ ストリームを受け取ったリモート処理ホスト アプリにより、仮想イマーシブ ビューでコンテンツがレンダリングされ、Wi-Fi 経由でコンテンツ フレームが HoloLens にストリーミングされます。 ストリーミングを使用すると、リモートのイマーシブ ビューを既存のデスクトップ PC ソフトウェアに追加し、より多くのシステム リソースにアクセスできます。
+[Holographic Remoting](/windows/mixed-reality/add-holographic-remoting) は、チャネルを切り替えるのではなく、PC またはスタンドアロンの UWP デバイスから HoloLens 2 にデータをストリーミングすることを意味します。 HoloLens から入力データ ストリームを受け取ったリモート処理ホスト アプリにより、仮想イマーシブ ビューでコンテンツがレンダリングされ、Wi-Fi 経由でコンテンツ フレームが HoloLens にストリーミングされます。 ストリーミングを使用すると、リモートのイマーシブ ビューを既存のデスクトップ PC ソフトウェアに追加し、より多くのシステム リソースにアクセスできます。
 
 チェス アプリでこのルートを使用する場合は、次のことを行う必要があります。
 
@@ -81,7 +81,7 @@ ms.locfileid: "97865397"
 5. **[File]\(ファイル\) > [Package Project]\(プロジェクトをパッケージ化\)** に移動し、 **[HoloLens]** を選択します。
     * パッケージを保存する新しいフォルダーを作成し、 **[Select Folder]\(フォルダーの選択\)** をクリックします。
 
-6.  アプリがパッケージ化されたら、[Windows デバイス ポータル](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)を開き、 **[ビュー] > [アプリ]** に移動して、 **[Deploy apps]\(アプリのデプロイ\)** セクションを見つけます。
+6.  アプリがパッケージ化されたら、[Windows デバイス ポータル](/windows/mixed-reality/using-the-windows-device-portal)を開き、 **[ビュー] > [アプリ]** に移動して、 **[Deploy apps]\(アプリのデプロイ\)** セクションを見つけます。
 
 7.  **[参照...]** をクリックし、**ChessApp.appxbundle** ファイルに移動して **[開く]** をクリックします。
 
@@ -91,7 +91,7 @@ ms.locfileid: "97865397"
 8.  **[Install]** (インストール) をクリックします。
     * これで、 **[All Apps]\(すべてのアプリ\)** に移動して新しくインストールしたアプリをタップして実行するか、**Windows デバイス ポータル** から直接アプリを起動できます。 
 
-お疲れさまでした。 HoloLens Mixed Reality アプリケーションが完成し、準備が整いました。 ただし、これが終点ではありません。 MRTK には、空間マッピング、視線入力および音声入力、さらには QR コードなど、プロジェクトに追加できるスタンドアロン機能が多数用意されています。 これらの機能の詳細については、[Unreal 開発の概要](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview)を参照してください。
+お疲れさまでした。 HoloLens Mixed Reality アプリケーションが完成し、準備が整いました。 ただし、これが終点ではありません。 MRTK には、空間マッピング、視線入力および音声入力、さらには QR コードなど、プロジェクトに追加できるスタンドアロン機能が多数用意されています。 これらの機能の詳細については、[Unreal 開発の概要](/windows/mixed-reality/unreal-development-overview)を参照してください。
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 

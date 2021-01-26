@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 検出, 配布, インデックス, ランディング ページ, 設計, 開発, チュートリアル, サンプル アプリ, 基本事項, ケース スタディ, リソース, HoloLens の使い方, オープン ソース プロジェクト, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 03db5f79a531d77bfd1cd6513c5bed9ad1202189
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 222c70882826e61d2b60e104c460156687f8b5df
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009722"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583356"
 ---
 # <a name="get-started-with-mixed-reality"></a>Mixed Reality の概要
 
@@ -152,7 +152,7 @@ Mixed Reality を初めて使用する場合は、その基本を理解するこ
 |  概念  |  結果  |
 | --- | --- |
 | [HoloLens ハードウェア](https://www.microsoft.com//hololens/hardware) | HoloLens 2 は、数分で価値を提供できる業界最先端のソリューションにより、最も快適でイマーシブな複合現実エクスペリエンスを提供します。これらはすべて、Microsoft のクラウドおよび AI サービスの信頼性、セキュリティ、および拡張性によって強化されています |
-| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview)、Layout、[Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/) など、従業員を支援し、Dynamics 365 での操作を最適化できる、さまざまな製品を紹介します 実際の仕事、実際のデバイス、実際のユーザーの実体験から、実践的な分析情報が得られます |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview)、Layout、[Guides](/dynamics365/mixed-reality/guides/) など、従業員を支援し、Dynamics 365 での操作を最適化できる、さまざまな製品を紹介します 実際の仕事、実際のデバイス、実際のユーザーの実体験から、実践的な分析情報が得られます |
 | [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | 空間認識、空間アンカー、複雑な 3D モデル レンダリングを使用して、異なるプラットフォームで魅力的なイマーシブ エクスペリエンスを構築します |
 
 ## <a name="what-would-you-like-to-do-next"></a>次に行うこと
@@ -181,5 +181,4 @@ Mixed Reality を初めて使用する場合は、その基本を理解するこ
 <br>
 
 >[!IMPORTANT]
->このサイトで提供されるすべての複合現実の開発に関する資料は参照のみを目的としています。 アプリケーションとその使用法およびエンド ユーザーに与える影響は、アプリケーション開発者としてお客様に責任があるものとし、これには、アプリがエンド ユーザーに対して不快感、傷害、またはその他の害をもたらしたりするものではないことや適切な警告文および免責文を含むことが含まれます。 お客様は、自分のアプリケーションが安全であり、「[Microsoft とのアプリ開発者契約](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement)」のすべての責務を満たしていることを保証するために、アプリケーションの開発と発行において常に適切な手順を踏む必要があります。
-
+>このサイトで提供されるすべての複合現実の開発に関する資料は参照のみを目的としています。 アプリケーションとその使用法およびエンド ユーザーに与える影響は、アプリケーション開発者としてお客様に責任があるものとし、これには、アプリがエンド ユーザーに対して不快感、傷害、またはその他の害をもたらしたりするものではないことや適切な警告文および免責文を含むことが含まれます。 お客様は、自分のアプリケーションが安全であり、「[Microsoft とのアプリ開発者契約](/legal/windows/agreements/app-developer-agreement)」のすべての責務を満たしていることを保証するために、アプリケーションの開発と発行において常に適切な手順を踏む必要があります。

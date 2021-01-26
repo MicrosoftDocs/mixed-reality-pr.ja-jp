@@ -7,18 +7,18 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows デバイス ポータル, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 75eda2775486b1ace82b574816db34a2f895c80b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c354a6f7c3afd6164182f915c39bbf1ce306ef39
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007792"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583244"
 ---
 # <a name="using-the-windows-device-portal"></a>Windows デバイス ポータルを使用する
 
 <table>
 <tr>
-<th>機能</th><th style="width:150px"><a href="../../hololens-hardware-details.md">HoloLens (第 1 世代)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px">
+<th>機能</th><th style="width:150px"><a href="/hololens/hololens1-hardware">HoloLens (第 1 世代)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px">
 </tr><tr>
 <td> Windows デバイス ポータル</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
@@ -26,19 +26,19 @@ ms.locfileid: "98007792"
 
 HoloLens 用の Windows デバイス ポータルでは、Wi-Fi または USB 経由でリモートからデバイスを構成および管理できます。 デバイス ポータルは、お使いの PC に Web ブラウザーから接続することができる HoloLens 上の Web サーバーです。 デバイス ポータルには、HoloLens を管理し、アプリをデバッグおよび最適化するのに役立つ多くのツールが用意されています。
 
-このドキュメントは、特に HoloLens 用 Windows デバイス ポータルに関するものです。 デスクトップ用 Windows デバイス ポータル (Windows Mixed Reality 用を含みます) を使用するには、「[Windows Device Portal の概要](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal)」を参照してください
+このドキュメントは、特に HoloLens 用 Windows デバイス ポータルに関するものです。 デスクトップ用 Windows デバイス ポータル (Windows Mixed Reality 用を含みます) を使用するには、「[Windows Device Portal の概要](/windows/uwp/debug-test-perf/device-portal)」を参照してください
 
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>Windows デバイス ポータルを使用するように HoloLens をセットアップする
 
 1. HoloLens の電源を入れ、デバイスを装着します。
-2. HoloLens 2 の[スタート ジェスチャ](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture)または HoloLens (第 1 世代) の[ブルーム](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom)を使用して、メイン メニューを起動します。 
-3. HoloLens (第 1 世代) 上では、 **[Settings]\(設定\)** タイルを見つめて [エアタップ](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) ジェスチャを実行します。 HoloLens 2 上では、[タッチするかハンド レイを使用](https://docs.microsoft.com/hololens/hololens2-basic-usage)してそれを選択することもできます。 
+2. HoloLens 2 の[スタート ジェスチャ](/hololens/hololens2-basic-usage#start-gesture)または HoloLens (第 1 世代) の[ブルーム](/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom)を使用して、メイン メニューを起動します。 
+3. HoloLens (第 1 世代) 上では、 **[Settings]\(設定\)** タイルを見つめて [エアタップ](/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) ジェスチャを実行します。 HoloLens 2 上では、[タッチするかハンド レイを使用](/hololens/hololens2-basic-usage)してそれを選択することもできます。 
 4. **[Update]** (更新) メニュー項目を選択します。
 5. **[For developers]** (開発者向け) メニュー項目を選択します。
 6. **[Developer Mode]** (開発者モード) を有効にします。
 
 > [!IMPORTANT]
-> 管理者ではなく、マルチユーザーである場合は、開発者モードに入る機能が淡色表示されることがあります。自分が **[デバイスの管理者](https://docs.microsoft.com/hololens/security-adminless-os)** であることを確認してください。
+> 管理者ではなく、マルチユーザーである場合は、開発者モードに入る機能が淡色表示されることがあります。自分が **[デバイスの管理者](/hololens/security-adminless-os)** であることを確認してください。
 
 7. [下へスクロール](../../design/gaze-and-commit.md#composite-gestures)し、**デバイス ポータル** を有効にします。
 8. USB または Wi-Fi 経由でこの HoloLens にアプリをデプロイできるように Windows デバイス ポータルを設定している場合は、 **[ペアリング]** を選択して、[ペアリング PIN を生成](using-visual-studio.md)します。 最初のデプロイ中に Visual Studio に PIN を入力するまで、設定アプリは PIN ポップアップのままにしておきます。
@@ -47,7 +47,7 @@ HoloLens 用の Windows デバイス ポータルでは、Wi-Fi または USB �
 
 ## <a name="connecting-over-wi-fi"></a>Wi-Fi 経由で接続する
 
-1. [HoloLens を Wi-Fi に接続します](../../connecting-to-wi-fi-on-hololens.md)。
+1. [HoloLens を Wi-Fi に接続します](/hololens/hololens-network)。
 2. 次のどちらかの方法でデバイスの IP アドレスを検索します。
    * **[設定] > [ネットワークとインターネット] > [Wi-Fi] > [詳細オプション]** の順に移動する。
    * **[設定] > [ネットワークとインターネット]** の順に移動し、 **[ハードウェアのプロパティ]** を選択する。
@@ -281,13 +281,13 @@ Mixed Reality キャプチャ ページを使うと、HoloLens からメディ�
 ![Microsoft HoloLens の Windows デバイス ポータルの [Performance Tracing]\(パフォーマンス トレース\) ページ](images/using-windows-portal-img-08.png)<br>
 *Microsoft HoloLens の Windows デバイス ポータルの [Performance Tracing]\(パフォーマンス トレース\) ページ*
 
-[Windows Performance Recorder](https://msdn.microsoft.com/library/windows/hardware/hh448205.aspx) (WPR) のトレースを HoloLens からキャプチャします。
+[Windows Performance Recorder](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448205(v=win.10)) (WPR) のトレースを HoloLens からキャプチャします。
 * **[Available profiles]\(利用可能なプロファイル\)** : ドロップダウンから WPR プロファイルを選択し、 **[Start]\(開始\)** を選択またはタップすると、トレースを開始できます。
 * **[Custom profiles]\(カスタム プロファイル\)** : **[Browse]\(参照\)** を選択またはタップして、PC から WPR プロファイルを選択します。 **[Upload and start]\(アップロードして開始\)** を選択またはタップすると、トレースが開始します。
 
 トレースを停止するには、停止リンクを選択します。 トレース ファイルのダウンロードが完了するまで、このページを閉じないでください。
 
-キャプチャした ETL ファイルは、[Windows Performance Analyzer](https://msdn.microsoft.com/library/windows/hardware/hh448170.aspx) で開いて分析に使用できます。
+キャプチャした ETL ファイルは、[Windows Performance Analyzer](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)) で開いて分析に使用できます。
 
 ### <a name="processes"></a>プロセス
 
@@ -330,7 +330,7 @@ HoloLens にインストールされているアプリを管理します。
 ![Microsoft HoloLens の Windows デバイス ポータルの [App Crash Dumps]\(アプリのクラッシュ ダンプ\) ページ](images/using-windows-portal-img-12.png)<br>
 *Microsoft HoloLens の Windows デバイス ポータルの [App Crash Dumps]\(アプリのクラッシュ ダンプ\) ページ*
 
-このページでは、サイドローディングしたアプリのクラッシュ ダンプを収集できます。 クラッシュ ダンプを収集する各アプリについて、 **[Crash Dumps Enabled]\(クラッシュ ダンプ有効\)** チェック ボックスをオンにします。 後でこのページに戻ると、クラッシュ ダンプが収集されています。 ダンプ ファイルは、[デバッグ用に Visual Studio で開く](https://msdn.microsoft.com/library/d5zhxt22.aspx)ことができます。
+このページでは、サイドローディングしたアプリのクラッシュ ダンプを収集できます。 クラッシュ ダンプを収集する各アプリについて、 **[Crash Dumps Enabled]\(クラッシュ ダンプ有効\)** チェック ボックスをオンにします。 後でこのページに戻ると、クラッシュ ダンプが収集されています。 ダンプ ファイルは、[デバッグ用に Visual Studio で開く](/previous-versions/visualstudio/visual-studio-2015/debugger/using-dump-files)ことができます。
 
 ### <a name="file-explorer"></a>エクスプローラー
 
@@ -342,11 +342,11 @@ HoloLens にインストールされているアプリを管理します。
 ### <a name="kiosk-mode"></a>キオスク モード
 
 >[!NOTE]
->キオスク モードは、[Microsoft HoloLens Commercial Suite](../../commercial-features.md) でのみ使用できます。
+>キオスク モードは、[Microsoft HoloLens Commercial Suite](/hololens/hololens-commercial-features) でのみ使用できます。
 
 ![Microsoft HoloLens 上の Windows デバイス ポータルのキオスク モード ページ](images/using-windows-portal-img-14.png)
 
-Windows デバイス ポータルを使用してキオスク モードを有効にするための最新の手順については、Windows IT Pro Center の「[キオスク モードでの HoloLens のセットアップ](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803)」記事を参照してください。
+Windows デバイス ポータルを使用してキオスク モードを有効にするための最新の手順については、Windows IT Pro Center の「[キオスク モードでの HoloLens のセットアップ](/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803)」記事を参照してください。
 
 ### <a name="logging"></a>ログ記録
 

@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, 機能, ドキュメント, ガイド, ホログラム, QR コード, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: d896af683a86a1b27e5d100df744222085574a93
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: d9f23bacf31b310da6d49e74de2153b50e642c7d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247745"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582666"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal での QR コード
 
@@ -22,7 +22,7 @@ HoloLens 2 を使用すると、Web カメラを使用してワールド空間�
 - 照明と背景
 - サイズ、距離、および角度の位置
 
-QR コードがアプリに配置されている場合、[環境への配慮](../../environment-considerations-for-hololens.md)に特に注意してください。 これらの各トピックの詳細と、必要な NuGet パッケージをダウンロードする方法の手順については、メインの [QR コードの追跡](../platform-capabilities-and-apis/qr-code-tracking.md)ドキュメントをご覧ください。
+QR コードがアプリに配置されている場合、[環境への配慮](/hololens/hololens-environment-considerations)に特に注意してください。 これらの各トピックの詳細と、必要な NuGet パッケージをダウンロードする方法の手順については、メインの [QR コードの追跡](../platform-capabilities-and-apis/qr-code-tracking.md)ドキュメントをご覧ください。
 
 > [!CAUTION]
 > QR コードは、HoloLens で何も設定せずに追跡できる唯一の画像の種類です。Unreal の **UARTrackedImage** モジュールは、HoloLens ではサポートされていません。 カスタム画像を追跡する必要がある場合は、デバイスの [Web カメラ](unreal-hololens-camera.md)にアクセスし、サードパーティ製の画像認識ライブラリを使用して画像を処理することができます。 
@@ -32,7 +32,7 @@ QR コードがアプリに配置されている場合、[環境への配慮](..
 HoloLens 2 で QR コードを表示するには Web カメラを使用する必要があるため、プロジェクトの設定で有効にする必要があります。
 - **[Edit]\(編集\) > [Project Settings]\(プロジェクトの設定\)** を開き、 **[Platforms]\(プラットフォーム\)** セクションまでスクロールして、 **[HoloLens]** を選択します。
     + **[機能]** セクションを展開し、 **[Web カメラ]** をオンにします。  
-- [ARSessionConfig アセットを追加する](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)ことによって、QR コードの追跡をオプトインする必要もあります。
+- [ARSessionConfig アセットを追加する](/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)ことによって、QR コードの追跡をオプトインする必要もあります。
 
 [!INCLUDE[](includes/tabs-qr-codes-1.md)]
 
@@ -62,7 +62,7 @@ QR コードは、追跡対象のイメージとして、Unreal の AR で追跡
 1. 最初に、追跡したイメージが **ARTrackedQRCode** にキャストされ、現在の更新されたイメージが QR コードであることを確認します。  
 2. エンコードされたデータは **QRCode** 変数から取得されます。 **GetLocalToWorldTransform** の位置と **GetEstimateSize** のディメンションから QR コードの左上を取得できます。
 
-また、コードで [QR コードの座標系を取得する](https://docs.microsoft.com/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code)こともできます。
+また、コードで [QR コードの座標系を取得する](/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code)こともできます。
 
 ## <a name="finding-the-unique-id"></a>一意の ID の検索
 

@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 設計, 快適性, HoloLens 2, HoloLens (第 1 世代), Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, MRTK, Mixed Reality Toolkit, 移動
-ms.openlocfilehash: 74ead209beb3396db83e5e446490efe17293b14e
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9f366b2eb3ef33d3f63d3227d14aec642e8203b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847487"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582496"
 ---
 # <a name="comfort"></a>快適性
 
@@ -78,15 +78,15 @@ IPD は、個々の目の瞳孔または中心の間の距離を指します。 
 
 #### <a name="hololens-1st-gen"></a>HoloLens (第 1 世代)
 
-HoloLens (第 1 世代) では、IPD が推定され、デバイスの[調整](https://docs.microsoft.com/hololens/hololens-calibration)中に設定されます。 設定済みのデバイスを初めて使うユーザーの場合、調整を実行するか、IPD を手動で設定する必要があります。 VO はデバイスの適合度に完全に依存しています。 具体的には、VO を最小限に抑えるには、ディスプレイが目の軸と水平になるように、デバイスをユーザーの頭に装着する必要があります。 
+HoloLens (第 1 世代) では、IPD が推定され、デバイスの[調整](/hololens/hololens-calibration)中に設定されます。 設定済みのデバイスを初めて使うユーザーの場合、調整を実行するか、IPD を手動で設定する必要があります。 VO はデバイスの適合度に完全に依存しています。 具体的には、VO を最小限に抑えるには、ディスプレイが目の軸と水平になるように、デバイスをユーザーの頭に装着する必要があります。 
 
 #### <a name="hololens-2"></a>HoloLens 2
 
-HoloLens 2 の場合、目またはデバイスの[調整](https://docs.microsoft.com/hololens/hololens-calibration)中に IPD が推定され、設定されます。 設定済みのデバイスを初めて使うユーザーの場合、IPD が正しく設定されるように調整を実行する必要があります。 HoloLens 2 では、自動的に VO が考慮されます。 
+HoloLens 2 の場合、目またはデバイスの[調整](/hololens/hololens-calibration)中に IPD が推定され、設定されます。 設定済みのデバイスを初めて使うユーザーの場合、IPD が正しく設定されるように調整を実行する必要があります。 HoloLens 2 では、自動的に VO が考慮されます。 
 
 ### <a name="guidance-for-immersive-devices"></a>イマーシブ デバイスのガイダンス
 
-Windows Mixed Reality イマーシブ HMD では、IPD または VO の自動調整は行われません。 IPD は、ソフトウェア (Mixed Reality ポータルの設定) で手動で設定することができます ([調整](https://docs.microsoft.com/hololens/hololens-calibration)に関する記事を参照してください)。また、一部の HMD には、ユーザーがレンズの間隔を IPD とおおよそ一致する快適な位置に調整できる機械的なスライダーがあります。 
+Windows Mixed Reality イマーシブ HMD では、IPD または VO の自動調整は行われません。 IPD は、ソフトウェア (Mixed Reality ポータルの設定) で手動で設定することができます ([調整](/hololens/hololens-calibration)に関する記事を参照してください)。また、一部の HMD には、ユーザーがレンズの間隔を IPD とおおよそ一致する快適な位置に調整できる機械的なスライダーがあります。 
 
 ## <a name="rendering-rates"></a>レンダリング率
 
@@ -177,4 +177,4 @@ Mixed Reality アプリがユニークなのは、ユーザーが世界を自由
 * [ホログラムの安定性](../develop/platform-capabilities-and-apis/hologram-stability.md)
 * [本能的な操作](interaction-fundamentals.md)
 * [ホログラフィック フレーム](holographic-frame.md)
-* [調整](https://docs.microsoft.com/hololens/hololens-calibration)
+* [調整](/hololens/hololens-calibration)

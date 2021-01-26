@@ -7,19 +7,19 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, チュートリアル, はじめに, mrtk, uxt, UX ツール, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 464df846d0fc6e1bd22ee3862adcdf110c377728
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 9e02ea6cb2710b4661e97dc8b0d5f4f48ab09fa7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609653"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583904"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2.プロジェクトと最初のアプリケーションの初期化
 
 最初のチュートリアルでは、新しい Unreal プロジェクトから始めて、HoloLens プラグインを有効にし、レベルを作成して照明し、チェスの駒を追加します。 3D のすべてのオブジェクトとマテリアルには、事前に作成された資産を使用するため、自分でモデリングする必要はありません。 このチュートリアルを完了するまでに、Mixed Reality に対応できる空のキャンバスが完成します。
 
 > [!IMPORTANT]
-> 「[はじめに](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch1)」ページにあるすべての前提条件を確認してください。
+> 「[はじめに](/windows/mixed-reality/unreal-uxt-ch1)」ページにあるすべての前提条件を確認してください。
 
 ## <a name="objectives"></a>目標
 
@@ -29,7 +29,7 @@ ms.locfileid: "96609653"
 
 ## <a name="creating-a-new-unreal-project"></a>新しい Unreal プロジェクトの作成
 
-最初に必要なのは、作業するプロジェクトです。 Unreal で初めて開発する場合は、Epic Launcher から[サポート ファイルをダウンロードする](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch6#packaging-and-deploying-the-app-via-device-portal)必要があります。
+最初に必要なのは、作業するプロジェクトです。 Unreal で初めて開発する場合は、Epic Launcher から[サポート ファイルをダウンロードする](./unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal)必要があります。
 
 1. Unreal Engine を起動します。
 

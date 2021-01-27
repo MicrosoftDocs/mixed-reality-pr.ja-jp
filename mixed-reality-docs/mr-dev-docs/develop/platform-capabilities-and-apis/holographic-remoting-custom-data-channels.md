@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実のヘッドセット、データチャネル
-ms.openlocfilehash: a11fe0bb023ae34692015585f6e1689db4330ac7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ed9da4a21c2fe9b25ae29e9b2044d82438b19559
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582611"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810093"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>カスタムの Holographic Remoting データ チャネル
 
@@ -118,5 +118,5 @@ m_customDataChannel.Close();
 * [OpenXR Api を使用した Holographic リモート処理リモートアプリの作成](holographic-remoting-create-remote-openxr.md)
 * [カスタム Holographic リモート処理プレーヤーアプリの作成](holographic-remoting-create-player.md)
 * [Holographic リモート処理のトラブルシューティングと制限事項](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting ソフトウェア ライセンス条項](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting ソフトウェア ライセンス条項](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft プライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)

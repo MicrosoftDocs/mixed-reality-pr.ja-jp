@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー
 ms.localizationpriority: high
-ms.openlocfilehash: a31d398621c581460e49ed81d23c446e60bc530f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 60d4ae99629f0caf7e5cc7e73b05ed35ee3f4ac4
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008512"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699219"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2.Azure Spatial Anchors をお使いになる前に
 
@@ -27,13 +27,13 @@ ms.locfileid: "98008512"
 
 このセクションでは、新しい Unity プロジェクトを作成し、MRTK 開発用に準備します。
 
-最初に、「[プロジェクトの初期化と最初のアプリケーションの配置](mr-learning-base-02.md)」に従います (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
+最初に、「[プロジェクトの初期化と最初のアプリケーションの配置](mr-learning-base-02.md)」に従います (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-your-application-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
 
 1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、"*MRTK チュートリアル*" などの適切な名前を付ける
 2. [ビルド プラットフォームを切り替える](mr-learning-base-02.md#switching-the-build-platform)
 3. [TextMeshPro の重要なリソースをインポートする](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Unity プロジェクトを構成する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)
 6. [シーンを作成して構成](mr-learning-base-02.md#creating-and-configuring-the-scene)し、シーンに *AzureSpatialAnchors* などの適切な名前を付ける
 
 次に、「[空間認識表示オプションの変更](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)」の指示に従い、次の作業を行います。
@@ -52,9 +52,11 @@ Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Package Manager]
 
 ## <a name="importing-the-tutorial-assets"></a>チュートリアルのアセットのインポート
 
+AzurespatialAnchors SDK V2.7.1 を Unity プロジェクトに追加します。パッケージを追加するには、こちらの[チュートリアル](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)に従ってください
+
 次の Unity カスタム パッケージを、**記載されている順で** ダウンロードして **インポート** します。
 
-* [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage) (バージョン 2.2.1)
+
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage)
 
@@ -188,7 +190,7 @@ Azure Spatial Anchors は Unity では実行できないため、Azure Spatial A
 ここでプロジェクトを再ビルドして、アプリをご利用のデバイスにデプロイすると、サイズ変更したキューブを移動して、Rover エクスプローラー エクスペリエンス全体を再配置できます。
 
 > [!TIP]
-> エクスペリエンスの再配置には、再配置オブジェクト (このチュートリアルで使用するキューブなど) の使用、エクスペリエンスを囲む境界ボックスを切り替えるボタンの使用、位置と回転のギズモの使用など、さまざまなユーザー エクスペリエンス フローがあります。
+> エクスペリエンスの再配置には、再配置オブジェクト (このチュートリアルで使用するキューブなど) の使用、エクスペリエンスを囲む境界コントロールを切り替えるボタンの使用、位置と回転のギズモの使用など、さまざまなユーザー エクスペリエンス フローがあります。
 
 ## <a name="congratulations"></a>結論
 

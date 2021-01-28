@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, マルチユーザー機能, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー
 ms.localizationpriority: high
-ms.openlocfilehash: 6cc77b32e9479bafeb53dcb99cba4f2f29865fd7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0c6bf0871836ad7aae9c3906b2042f97ae003ebf
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007212"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699066"
 ---
 # <a name="3-connecting-multiple-users"></a>3.複数のユーザーの接続
 
@@ -63,13 +63,13 @@ ms.locfileid: "98007212"
 
 [Inspector]\(インスペクター\) ウィンドウで、 **[Add Component]\(コンポーネントの追加\)** ボタンを使用して PhotonUser オブジェクトに **Photon View (Script)** コンポーネントを追加し、次のように構成します。
 
-* **[Observed Components]\(観察されるコンポーネント\)** フィールドに、**Generic Net Sync (Script)** コンポーネントを割り当てる
+* **[Observed Components]\(観察されるコンポーネント\)** フィールドに **Generic Net Sync (Script)** コンポーネントを割り当てられていることを確認します
 
 ![Photon View コンポーネントが追加され構成された Unity](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### <a name="2-create-the-avatar"></a>2.アバターを作成する
 
-[Project]\(プロジェクト\) ウィンドウで、 **[Assets]\(アセット\)**  > **MRTK** > **SDK** > **StandardAssets** >  **[Materials]\(素材\)** に移動し、MRTK の素材を見つけます。
+[Project]\(プロジェクト\) ウィンドウで、 **[Assets]\(アセット\)**  > **MRTK** > **StandardAssets** > **Materials** フォルダーに移動し、MRTK の素材を見つけます。
 
 次に、[Hierarchy]\(階層\) ウィンドウで、**PhotonUser** オブジェクトを右クリックして **[3D Object]\(3D オブジェクト\)**  >  **[Sphere]\(球体\)** を選択し、PhotonUser オブジェクトの子として球体オブジェクトを作成して次のように構成します。
 
@@ -112,7 +112,7 @@ Unity プロジェクトをビルドして HoloLens に配置してから Unity 
 ![ネットワーク接続されたユーザーが表示された Unity を表示するアニメーション](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
-> HoloLens 2 に Unity プロジェクトをビルドして配置する方法を再確認するには、[HoloLens 2 にアプリをビルドする](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)手順に関する記事を参照してください。
+> HoloLens 2 に Unity プロジェクトをビルドして配置する方法を再確認するには、[HoloLens 2 にアプリをビルドする](mr-learning-base-02.md#building-your-application-to-your-hololens-2)手順に関する記事を参照してください。
 
 > [!CAUTION]
 > アプリから Photon に接続する必要があるため、お使いのコンピューターまたはデバイスがインターネットに接続されていることを確認してください。

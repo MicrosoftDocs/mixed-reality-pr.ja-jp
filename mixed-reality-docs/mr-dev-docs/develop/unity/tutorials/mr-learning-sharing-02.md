@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, マルチユーザー機能, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 8bf8d440cb47d817514e34c98ac45f34f495c2bb
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1c47da28b3ccdc706f372749f265ac0329a2327b
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007302"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699146"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2.Photon Unity Networking の設定
 
@@ -28,13 +28,13 @@ ms.locfileid: "98007302"
 
 このセクションでは、新しい Unity プロジェクトを作成し、MRTK 開発用に準備します。
 
-最初に、「[プロジェクトの初期化と最初のアプリケーションの配置](mr-learning-base-02.md)」に従います (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
+最初に、「[プロジェクトの初期化と最初のアプリケーションの配置](mr-learning-base-02.md)」に従います (「[デバイスへのアプリケーションのビルド](mr-learning-base-02.md#building-your-application-to-your-hololens-2)」の手順は除く)。これには、次の手順が含まれます。
 
 1. [Unity プロジェクトを作成](mr-learning-base-02.md#creating-the-unity-project)し、"*MRTK チュートリアル*" などの適切な名前を付ける
 2. [ビルド プラットフォームを切り替える](mr-learning-base-02.md#switching-the-build-platform)
 3. [TextMeshPro の重要なリソースをインポートする](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Unity プロジェクトを構成する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)
 6. [シーンを作成して構成](mr-learning-base-02.md#creating-and-configuring-the-scene)し、シーンに *MultiUserCapabilities* などの適切な名前を付ける
 
 次に、「[空間認識表示オプションの変更](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)」の指示に従い、次の作業を行います。
@@ -48,7 +48,7 @@ Unity メニューで **[Edit]\(編集\)**  >  **[Project Settings]\(プロジ�
 
 ![[Player]\(プレーヤー\) 設定が表示された Unity](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-**[Publishing Settings]\(公開の設定\)** で、 **[Capabilities]\(機能\)** セクションまで下にスクロールして、上の「[Unity プロジェクトを構成する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)」手順で有効にした **InternetClient**、**Microphone**、**SpatialPerception**、**GazeInput** の機能が有効になっていることを再確認します。
+**[Publishing Settings]\(公開の設定\)** で、 **[Capabilities]\(機能\)** セクションまで下にスクロールして、上の「[Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)」手順で有効にした **InternetClient**、**Microphone**、**SpatialPerception**、**GazeInput** の機能が有効になっていることを再確認します。
 
 その後、次の追加機能を有効にします。
 
@@ -68,9 +68,11 @@ Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Package Manager]
 
 ## <a name="importing-the-tutorial-assets"></a>チュートリアルのアセットのインポート
 
-次の Unity カスタム パッケージを、**記載されている順で** ダウンロードして **インポート** します。
+AzurespatialAnchors SDK V2.7.1 を Unity プロジェクトに追加します。パッケージを追加するには、こちらの[チュートリアル](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)に従ってください
 
-* [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage) (バージョン 2.2.1)
+
+次の Unity カスタム パッケージを、**記載されている順で** ダウンロードして **インポート** します。
+ 
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.4.0.unitypackage)
@@ -83,7 +85,7 @@ Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Package Manager]
 > Unity カスタム パッケージをインポートする方法については、「[Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)」の手順を参照してください。
 
 > [!NOTE]
-> MultiUserCapabilities チュートリアル アセット パッケージをインポートすると、型または名前空間が存在しないことを示すいくつかの [CS0246](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0246) エラーが [Console]\(コンソール\) ウィンドウに表示されます。 これは想定されているものであり、次のセクションで PUN アセットをインポートする際に解決されます。
+> MultiUserCapabilities チュートリアル アセット パッケージをインポートすると、型または名前空間が存在しないことを示すいくつかの [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) エラーが [Console]\(コンソール\) ウィンドウに表示されます。 これは想定されているものであり、次のセクションで PUN アセットをインポートする際に解決されます。
 
 ## <a name="importing-the-pun-assets"></a>PUN アセットをインポートする
 

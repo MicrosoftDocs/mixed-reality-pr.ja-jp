@@ -7,12 +7,12 @@ ms.date: 02/26/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, 音声認識, Windows 10, LUIS, LUIS ポータル, 意図, エンティティ, 発話, 自然言語の理解
 ms.localizationpriority: high
-ms.openlocfilehash: 07044d3dc38be12d5d601d34a23a241a71c5b06d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 8d840855321de5d4e055b944783649c9d8028f9a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007772"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581478"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4.意図と自然言語の理解の設定
 
@@ -55,7 +55,7 @@ ms.locfileid: "98007772"
 [作成] ページで、 **[予測]** オプションをクリックし、次の値を入力します。
 
 * **[サブスクリプション]** では、試用版のサブスクリプションをお持ちの場合は **[Free Trail]\(無料試用版\)** を選択します。それ以外の場合は、他のいずれかのサブスクリプションを選択します
-* **[リソース グループ]** では、 **[新規作成]** リンクをクリックし、適切な名前 (*MRKT-Tutorials* など) を入力して、 **[OK]** をクリックします
+* **[リソース グループ]** で **[新規作成]** リンクをクリックし、適切な名前 (*MRKT-Tutorials* など) を入力して、 **[OK]** をクリックします
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-3.png)
 
@@ -73,7 +73,7 @@ ms.locfileid: "98007772"
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-4.png)
 
-次に、 **[Review + create]\(確認および作成\)** タブに移動し、詳細を確認してから、ページの下部にある **[作成]** ボタンをクリックしてリソースを作成し、新しいリソース グループも (作成するように構成した場合は) 作成します。
+次に、 **[確認および作成]** タブをクリックし、詳細を確認してから、ページの下部にある **[作成]** ボタンをクリックしてリソースを作成し、新しいリソース グループも (作成するように構成した場合は) 作成します。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-5.png)
 
@@ -107,13 +107,14 @@ ms.locfileid: "98007772"
 前のセクションで Azure リソースを作成するときに使用したものと同じユーザー アカウントを使用して、<a href="https://www.luis.ai" target="_blank">LUIS</a> にサインインし、国を選択して、使用条件に同意します。 次の手順では、**Azure アカウントをリンクする** ように求められたら、代わりに Azure 作成リソースを使用するために、 **[Continue using your trial key]\(試用版キーを引き続き使用する\)** を選択します。
 
 > [!NOTE]
-> LUIS に既にサインアップしていて、作成試用版キーの有効期限が切れている場合は、ドキュメント「[Azure リソース作成キーに移行する](https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-authoring)」を参照して、LUIS 作成リソースを Azure に切り替えることができます。
+> LUIS に既にサインアップしていて、作成試用版キーの有効期限が切れている場合は、ドキュメント「[Azure リソース作成キーに移行する](/azure/cognitive-services/luis/luis-migration-authoring)」を参照して、LUIS 作成リソースを Azure に切り替えることができます。
 
-サインインしたら、 **[マイ アプリ]** ページに移動し、 **[新しいアプリの作成]** をクリックして、 **[新しいアプリの作成]** ポップアップ ウィンドウに次の値を入力します。
+サインインしたら、 **[新しいアプリ]** をクリックし、 **[新しいアプリの作成]** ポップアップ ウィンドウに次の値を入力します。
 
 * **[名前]** には、適切な名前 (*MRTK Tutorials - AzureSpeechServices* など) を入力します
 * **[カルチャ]** では、 **[英語]** を選択します
 * **[説明]** には、必要に応じて適切な説明を入力します
+* **[予測リソース]** で、Azure portal で作成された予測リソースをドロップダウン リストで選択します。
 
 次に、 **[完了]** ボタンをクリックして、新しいアプリを作成します。
 
@@ -125,7 +126,7 @@ ms.locfileid: "98007772"
 
 ### <a name="2-create-intents"></a>2.意図の作成
 
-[ダッシュボード] ページで、[ビルド] > [App Assets]\(アプリ資産\) > **[意図]** ページに移動し、 **[Create new intent]\(新しい意図の作成\)** をクリックして、 **[Create new intent]\(新しい意図の作成\)** ポップアップ ウィンドウに次の値を入力します。
+[ダッシュボード] ページで、[ビルド] > [App Assets]\(アプリ アセット\) > **[意図]** ページに移動し、 **[作成]** をクリックして、 **[Create new intent]\(新しい意図の作成\)** ポップアップ ウィンドウで次の値を入力します。
 
 * **[Intent name]\(意図名\)** に「**PressButton**」と入力します
 
@@ -164,12 +165,12 @@ ms.locfileid: "98007772"
 
 ### <a name="4-create-entities"></a>4.エンティティの作成
 
-[PressButton] 意図ページで、[ビルド] > [App Assets]\(アプリ資産\) > **[エンティティ]** ページに移動し、 **[新しいエンティティを作成する]** をクリックして、 **[新しいエンティティを作成する]** ポップアップ ウィンドウに次の値を入力します。
+PressButton の意図ページから、[ビルド] > [App Assets]\(アプリ アセット\) > **[エンティティ]** ページに移動し、 **[作成]** をクリックして、 **[新しいエンティティの作成]** ポップアップ ウィンドウで次の値を入力します。
 
 * **[エンティティ名]** には、「**Action**」と入力します
-* **[エンティティ型]** では、 **[シンプル]** を選択します
+* **[エンティティ型]** で、 **[Machine learned]\(機械学習\)** を選択します
 
-次に、 **[完了]** ボタンをクリックして、新しいエンティティを作成します。
+**[作成]** ボタンをクリックして、新しいエンティティを作成します。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-1.png)
 
@@ -188,7 +189,7 @@ ms.locfileid: "98007772"
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
-これで、**go ahead** という語句が **Action** エンティティ値として定義されました。 Action エンティティ名の上にマウス カーソルを置くと、関連付けられている Action エンティティ値を表示できます。
+これで、**go ahead** という語句が **Action** エンティティ値として定義されました。 go ahead という語句の下にアクション エンティティの値が表示されます。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-2.png)
 
@@ -199,7 +200,7 @@ ms.locfileid: "98007772"
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-3.png)
 
-これで、**launch** という単語が **Target** エンティティ値として定義されました。 Target エンティティ名の上にマウス カーソルを置くと、関連付けられている Target エンティティ値を表示できます。
+**launch** という単語が **Target** エンティティの値として定義されるようになります。これで、単語 launch の下で Target エンティティの値がわかります。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-4.png)
 
@@ -219,14 +220,6 @@ PressButton 意図のサンプル発話の "go ahead and launch the rocket" は�
 すべてのサンプル発話にラベルを付けると、[PressButton] 意図ページは次のようになります。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-5.png)
-
-適切なエンティティが割り当てられていることを再確認する別の方法として、 **[View options]\(表示オプション\)** メニューをクリックして、ビューを **[Show entity values]\(エンティティ値の表示\)** に切り替えます。
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-6.png)
-
-エンティティ値を表示するように設定したビューでは、ラベル付けされた単語や語句の上にマウス カーソルを置くと、割り当てられているエンティティ名をすぐに確認できます。
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-7.png)
 
 ### <a name="6-train-test-and-publish-the-app"></a>6.アプリのトレーニング、テスト、発行
 
@@ -249,7 +242,7 @@ PressButton 意図のサンプル発話の "go ahead and launch the rocket" は�
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-3.png)
 
-アプリを発行するには、右上にある **[発行]** ボタンをクリックし、 **[Choose your publishing slot and settings]\(発行スロットと設定の選択\)** ポップアップ ウィンドウで、 **[Production]\(実稼働\)** を選択し、 **[発行]** ボタンをクリックします。
+アプリを発行するには、右上にある **[発行]** ボタンをクリックし、 **[Choose your publishing slot and settings]\(発行スロットと設定を選択する\)** ポップアップ ウィンドウで、 **[Production]\(運用\)** を選択して **[完了]** ボタンをクリックします。
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-4.png)
 
@@ -257,25 +250,9 @@ PressButton 意図のサンプル発話の "go ahead and launch the rocket" は�
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-5.png)
 
-### <a name="7-assign-an-azure-prediction-resource-to-the-app"></a>7.アプリへの Azure 予測リソースの割り当て
+[管理] > [アプリケーションの設定] > **[Azure リソース]** ページに移動すると、[Azure リソース] ページは次のようになります。
 
-[管理] > [アプリケーションの設定] > **[Azure リソース]** ページに移動します。
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-1.png)
-
-[Azure リソース] ページで、 **[Add prediction resource]\(予測リソースの追加\)** ボタンをクリックし、 **[Assign a resource to your app]\(リソースをアプリに割り当てる\)** ポップアップ ウィンドウで次の値を選択します。
-
-* **[テナント名]** では、テナント名を選択します
-* **[サブスクリプション名]** では、以前、[Azure Language Understanding リソースの作成](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource)時に使用したものと同じサブスクリプションを選択します
-* **[LUIS resource name]\(LUIS リソース名\)** では、以前、[Azure Language Understanding リソースの作成](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource)時に作成した予測リソースを選択します
-
-次に、 **[リソースの割り当て]** ボタンをクリックして、アプリに Azure 予測リソースを割り当てます。
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-2.png)
-
-リソースが割り当てられると、[Azure リソース] ページは次のようになります。
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-3.png)
+![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-6.png)
 
 ## <a name="connecting-the-unity-project-to-the-luis-app"></a>Unity プロジェクトを LUIS アプリに接続する
 

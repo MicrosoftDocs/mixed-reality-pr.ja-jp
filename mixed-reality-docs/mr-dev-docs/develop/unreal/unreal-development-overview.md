@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, ストリーミング, リモート処理, Mixed Reality, 開発, 入門, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 特徴, ホログラム, ゲームの開発, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, OpenXR
-ms.openlocfilehash: eb9ec39d663dec2b5bf4c9177524449f31aaf554
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: a5b65bbfe5a1f365a93836406365fdc395b73c47
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247735"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580029"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開発の概要
 
@@ -49,6 +49,8 @@ Unreal 開発が初めての場合は、よくわからないまま開始しな�
 
 * [Unreal 用 UX Tools](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) はリリースされる最初のプラグインあり、現在 HoloLens 2 でのみサポートされています。 このプラグインには、入力シミュレーション、ハンド インタラクション、表面吸着などの一般的な UX 機能の C++ コード、ブループリント、サンプル資産が含まれています。
 
+* [Unreal 用 Graphics Tools](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) は、パフォーマンス バジェットを維持しながら Mixed Reality アプリケーションの視覚的な忠実性を向上させるために作成されたコード、ブループリント、サンプルの資産が含まれる、UE ゲーム プラグインです。
+
 [!INCLUDE[](../includes/unreal-building-blocks.md)]
 
 > [!NOTE]
@@ -82,7 +84,7 @@ HoloLens 2 に Unreal アプリを初めて配置する場合は、Epic Launcher
 
 ### <a name="debugging"></a>デバッグ
 
-Visual Studio を使用してデバイスで実行しながらアプリケーションをデバッグする場合は、こちらの[手順](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package#remote)にしたがってください。
+Visual Studio を使用してデバイスで実行しながらアプリケーションをデバッグする場合は、こちらの[手順](/visualstudio/debugger/debug-installed-app-package#remote)にしたがってください。
 
 ### <a name="performance"></a>[パフォーマンス]
 
@@ -104,7 +106,7 @@ Mixed Reality 向けの開発には、プラットフォームに依存するパ
 | 空間オーディオ | 4.23 | ✔️ |
 | ストリーミング用の観戦スクリーンのサポート | 4.24 |
 | ストリーミングに対する Planar LSR | 4.24 |
-| [サンプル アプリ](unreal-samples.md) | 4.24 | ✔️ |
+| [サンプル アプリ](../features-and-samples.md) | 4.24 | ✔️ |
 | モバイル マルチビュー: パフォーマンス ヒット 60 fps | 4.25 | ✔️ |
 | 3 番目のカメラのレンダリング | 4.25 |
 | パッケージ化されたデスクトップ アプリからのストリーミング | 4.25.1 | ✔️ |

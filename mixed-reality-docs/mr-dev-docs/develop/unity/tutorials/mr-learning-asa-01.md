@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, iOS, Android, Windows 10, ARCore, macOS, Android ビルド サポート, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 6ac412913f8d475d213a26cb4f9f82e12d129b82
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 9529b12968c5cbc985f4af8eb0053d277eb00c03
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008402"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699031"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1. Azure Spatial Anchors チュートリアルの概要
 
@@ -38,22 +38,22 @@ Azure Spatial Anchors チュートリアルにようこそ。 このチュート
 * 正しい[ツールがインストールされている](../../install-the-tools.md)構成済みの Windows 10 コンピューター
 * Windows 10 SDK 10.0.18362.0 以降のバージョン
 * [開発用に構成された](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) HoloLens 2 デバイス
-* Unity 2019.3.15 がインストールされ、ユニバーサル Windows プラットフォーム ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
+* Unity 2019 LTS がインストールされ、ユニバーサル Windows プラットフォーム ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 * 「[Spatial Anchors リソースを作成する](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource)」セクション ([クイック スタート:Azure Spatial Anchors を使用する Unity HoloLens アプリを作成する](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) チュートリアルにあります) を完了します。
 * [入門チュートリアル](mr-learning-base-01.md) シリーズを完了しているか、以前に Unity と MRTK の基本操作を経験していること
 * HoloLens に加えて Android にもデプロイする場合
   * Windows コンピューターか macOS コンピューターに USB 接続された、<a href="https://developer.android.com/studio/debug/dev-options" target="_blank">開発者向けオプションが有効</a>に設定された <a href="https://developers.google.com/ar/discover/supported-devices" target="_blank">ARCore 対応</a>の Android デバイス
-  * Unity 2019.3.15 がインストールされ、Android ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
+  * Unity 2019 LTS がインストールされ、Android ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 * HoloLens に加えて iOS にもデプロイする場合
   * <a href="https://geo.itunes.apple.com/us/app/xcode/id497799835?mt=12" target="_blank">Xcode</a> および <a href="https://cocoapods.org" target="_blank">CocoaPods</a> の最新バージョンがインストールされた macOS コンピューター
   * macOS コンピューターに USB 接続された、<a href="https://developer.apple.com/documentation/arkit/verifying_device_support_and_user_permission" target="_blank">ARKit 互換</a> iOS デバイス
-  * 2019.3.15 がインストールされ、iOS ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
+  * Unity 2019 LTS がインストールされ、iOS ビルド サポート モジュールが追加された <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 
 > [!CAUTION]
-> このチュートリアル シリーズで推奨されている Mixed Reality Toolkit のバージョンは MRTK 2.4.0 です。
+> このチュートリアル シリーズで推奨されている Mixed Reality Toolkit のバージョンは MRTK 2.5.1 です。
 
 > [!CAUTION]
-> このチュートリアル シリーズで推奨されている Unity バージョンは Unity 2019.3.15 です。 これは、上のリンクされた前提条件に記載されている Unity のバージョン要件に代わるものです。
+> このチュートリアル シリーズで推奨される Unity のバージョンは Unity 2019 LTS です。これは、上のリンク先の前提条件に記載されているすべての Unity のバージョンに代わるものです。
 
 > [!div class="nextstepaction"]
 > [次のチュートリアル:2.Azure Spatial Anchors をお使いになる前に](mr-learning-asa-02.md)

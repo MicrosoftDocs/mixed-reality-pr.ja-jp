@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, プレハブ, ホログラム, ヒント
 ms.localizationpriority: high
-ms.openlocfilehash: 989de4871332608448619e75ffd760c616332533
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008062"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635554"
 ---
 # <a name="6-creating-user-interfaces"></a>6.ユーザー インターフェイスの作成
 
@@ -97,17 +97,17 @@ ms.locfileid: "98008062"
 
 ![Menu オブジェクトが選択されて ButtonCollection オブジェクトが展開されている Unity](images/mr-learning-base/base-06-section2-step1-2.png)
 
-最初のボタンの名前を **Indicator** に変更します。その後、[インスペクター] ウィンドウで、次のように **Button Config Helper (Script)** コンポーネントを構成します。
+ButtonCollection の最初のボタンの名前を Indicator に変更します。その後、[Inspector]\(インスペクター\) ウィンドウで、次のように Button Config Helper (Script) コンポーネントを構成します。
 
 * ボタンの名前と一致するように **[Main Label Text]\(メイン ラベル テキスト\)** を変更します
-* **Indicator** オブジェクトを **[None (Object)]\(なし (オブジェクト)\)** フィールドに割り当てます
+* シェブロンのような見た目の Indicator オブジェクトを [None (Object)]\(なし (オブジェクト)\) フィールドに割り当てます
 * **[No Function]\(関数なし\)** ドロップダウンから、**GameObject** > **SetActive (bool)** の順に選択し、イベントがトリガーされたときに実行するアクションとして、この関数を設定します
 * 引数チェックボックスが **オン** になっていることを確認します
 * **アイコン** を [検索] アイコンに変更します
 
 ![Indicator ボタン オブジェクトのボタン構成ヘルパーが構成されている Unity](images/mr-learning-base/base-06-section2-step1-3.png)
 
-[階層] ウィンドウで **Indicator** オブジェクトを選択します。次に、[インスペクター] ウィンドウで以下を実行します。
+シェブロン インジケーター オブジェクトを無効にするには、[Hierarchy]\(階層\) ウィンドウで、シェブロンのような見た目の Indicator オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで次のようにします。
 
 * その名前の横にあるチェックボックスをオフにして、既定で非アクティブにします
 * **[コンポーネントの追加]** ボタンを使用して **Directional Indicator Controller (Script)** コンポーネントを追加します
@@ -115,7 +115,7 @@ ms.locfileid: "98008062"
 ![Indicator オブジェクトが選択されて無効化され、DirectionalIndicatorController コンポーネントが追加された Unity](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> これで、アプリの起動時にインジケーターは既定で無効になり、[Indicator]\(インジケーター\) ボタンを押すと有効にできるようになりました。
+> これで、アプリの起動時にシェブロン インジケーターは既定で無効になり、[Indicator]\(インジケーター\) ボタンを押すと有効にできるようになりました。
 
 2 番目のボタンの名前を **TapToPlace** に変更します。その後、[インスペクター] ウィンドウで、次のように **Button Config Helper (Script)** コンポーネントを構成します。
 
@@ -169,7 +169,7 @@ ms.locfileid: "98008062"
 [階層] ウィンドウで、RoverExplorer > **RoverParts** オブジェクトの順に展開し、そのすべての子のローバー パーツ オブジェクトを選択します。次に、[インスペクター] ウィンドウで **[コンポーネントの追加]** ボタンを使用し、**ToolTipSpawner** コンポーネントを追加して、次のように構成します。
 
 * ヒントを表示するにはユーザーがそのパーツに視線を向けることが必要であるようにするため、 **[Focus Enabled]\(フォーカスが有効\)** チェックボックスがオンになっていることを確認します
-* **Simple Line ToolTip** プレハブを、[プロジェクト] ウィンドウから **[Tool Tip Prefab]\(ツール ヒント プレハブ\)** フィールドに割り当てます
+* **Simple Line ToolTip** プレハブを、[プロジェクト] ウィンドウから **[Prefab]\(プレハブ\)** フィールドに割り当てます
 * [ToolTip Override Settings]\(ヒントのオーバーライド設定\) > **[設定モード]** を **[オーバーライド]** に変更します
 * [ToolTip Override Settings]\(ヒントのオーバーライド設定\) > **[Manual Pivot Local Position Y]\(手動のピボットのローカル位置 Y\)** を **1.5** に変更します
 
@@ -196,4 +196,5 @@ ms.locfileid: "98008062"
 
 このチュートリアルでは、MRTK で用意されているボタンとメニュー プレハブを Unity の TextMeshPro コンポーネントと共に使用して、シンプルなユーザー インターフェイスを作成する方法について学習しました。また、ボタンが押されたときにイベントがトリガーされるようにボタンを構成する方法についても学習しました。 さらに、動的なヒント UI 要素を追加して、ユーザーに追加情報を提供する方法についても学習しました。
 
-[次のチュートリアル:7.3D オブジェクトの操作](mr-learning-base-07.md)
+> [!div class="nextstepaction"]
+>[次のチュートリアル:7.3D オブジェクトの操作](mr-learning-base-07.md)

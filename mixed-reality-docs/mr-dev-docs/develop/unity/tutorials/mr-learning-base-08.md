@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, 視線追跡
 ms.localizationpriority: high
-ms.openlocfilehash: f464ba4e08f1446f1d50eda577aedf9d070630ee
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5efe1c54d9e3b4096dfec4221e4ce04e7370ca47
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007892"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635474"
 ---
 # <a name="8-using-eye-tracking"></a>8.視線追跡の使用
 
@@ -33,7 +33,7 @@ ms.locfileid: "98007892"
 ![[MRTK Project Configurator]\(MRTK プロジェクト コンフィギュレーター\) ウィンドウが表示された Unity](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> 視線入力機能は、このチュートリアル シリーズの冒頭で Unity プロジェクトを構成したときに、[MRTK Project Configurator 設定を適用する](mr-learning-base-02.md#selecting-mrtk-and-project-settings)手順で有効にする必要がありました。 しかし、有効にしていない場合は、ここで必ず有効にしてください。
+> 視線入力機能は、このチュートリアル シリーズの冒頭で Unity プロジェクトを構成したときに、[MRTK Project Configurator 設定を適用する](mr-learning-base-02.md#creating-and-configuring-the-scene)手順で有効にする必要がありました。 しかし、有効にしていない場合は、ここで必ず有効にしてください。
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Gaze Provider で目の動きに基づく視線入力を有効にする
 
@@ -55,9 +55,9 @@ ms.locfileid: "98007892"
 
 * **[Input Data Providers]\(入力データ プロバイダー\)**  >  **[Input Simulation Service]\(入力シミュレーション サービス\)** セクションの順に展開します
 * **DefaultMixedRealityInputSimulationProfile** をクローンし、適切な名前 (たとえば、_GettingStarted_MixedRealityInputSimulationProfile_) を付けます
-* **[Eye Simulation]\(視線シミュレーション\)** セクションを見つけて、 **[Simulate Eye Position]\(目の位置のシミュレーション\)** チェックボックスをオンにします
+* **[Eye Gaze Simulation]\(視線入力シミュレーション\)** を見つけて、 **[Default Eye Gaze Simulation Mode]\(既定の視線入力シミュレーション モード\)** を **[Camera Forward Axis]\(カメラの前方の軸\)** に設定します
 
-![新しく作成されたプロファイルが適用され、視線シミュレーションが有効にされた MixedRealityToolkit コンポーネントが表示された Unity](images/mr-learning-base/base-08-section3-step1-1.png)
+![TextMeshPro オブジェクトが選択されている Unity](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## <a name="adding-eye-tracking-to-objects"></a>視線追跡をオブジェクトに追加する
 

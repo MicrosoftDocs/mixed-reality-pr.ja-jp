@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, Android, iOS, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 545373ed169a77614b0a00264f5ba1bf1f3deb8e
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 741c000de0ab2feb3dcbff33e2a0b0acc70838e8
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008392"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699253"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5.Android と iOS 用の Azure Spatial Anchors
 
@@ -28,7 +28,7 @@ ms.locfileid: "98008392"
 このセクションでは、次の組み込みパッケージをアップグレードしてインストールします。
 
 * AR Foundation 3.1.3
-* XR Legacy Input Helpers 2.1.4
+* XR Legacy Input Helpers 2.1.6
 * ARCore XR Plugin 3.1.3 for Android のサポート
 * ARKit XR Plugin 3.1.3 for iOS のサポート
 
@@ -73,6 +73,10 @@ Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[Package Manager]
 > [!NOTE]
 > AR Reference Point Manager (スクリプト) コンポーネントを追加すると、AR Session Origin (スクリプト) コンポーネントも自動的に追加されます。AR Reference Point Manager (スクリプト) コンポーネントで必要になるためです。
 
+
+
+次のメニュー項目を呼び出して、MRTK UnityAR スクリプトの定義を更新します: **[Mixed Reality Toolkit]\(Mixed Reality ツールキット\)**  >  **[Utilities]\(ユーティリティ\)**  >  **[UnityAR]** > [Update Scripting Defines]\(スクリプト定義更新\)
+
 ## <a name="building-your-application-to-your-android-device"></a>ご利用の Android デバイス用のアプリケーションのビルド
 
 このセクションでは、プロジェクトを Android デバイス用にビルドして配置するように構成する方法について学習します。
@@ -93,6 +97,10 @@ Unity メニューで、 **[Mixed Reality ツールキット]**  >  **[Utilities
 Unity メニューで **[Edit]\(編集\)**  >  **[Project Settings...]\(プロジェクトの設定...\)** の順に選択して、[Player Settings]\(プレーヤーの設定\) ウィンドウを開きます。次に、 **[Player]\(プレーヤー\)**  >   **[他の設定]** セクションを見つけます。 **[Vulkan]** を選択してから、 **"-"** シンボルをクリックしてそれを削除します。
 
 ![[Vulcan] が選択されている [他の設定] が表示された Unity](images/mr-learning-asa/asa-05-section3-step1-3.png)
+
+Unity のメニューで、 **[Edit]\(編集\)**  >  **[Project Settings...]\(プロジェクトの設定...\)**  > **[Player]\(プレーヤー\)** >  **[XR Setting]\(XR 設定\)** を選択して、**Android** プラットフォームであることを確認し、 **[Virtual Reality Supported]\(サポートされる仮想現実\)** チェック ボックスをオンにして [+] アイコンをクリックし、[None]\(なし\) を選択します。
+
+![Android の [MRTK Project Configurator]\(MRTK プロジェクト コンフィギュレーター\) ウィンドウが表示された Unity](images/mr-learning-asa/asa-05-section3-step1-2-1.png)
 
 [Player Settings]\(プレーヤーの設定\) ウィンドウを閉じ、もう一度 [ビルド設定] ウィンドウを開きます。
 
@@ -147,7 +155,7 @@ Xcode プロジェクトを格納するのに適切な場所 (たとえば _D:\M
 
 ![[保存] プロンプト ウィンドウが表示されている iOS の [Build Settings]\(ビルド設定\) ウィンドウが表示された Unity](images/mr-learning-asa/asa-05-section4-step1-5.png)
 
-ビルド プロセスが完了したら、「[Xcode プロジェクトをエクスポートする](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project)」にある手順に従って、Xcode プロジェクトを iOS デバイスにデプロイする方法を学習します。
+ビルド プロセスが完了したら、「[Xcode プロジェクトをエクスポートする](/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project)」にある手順に従って、Xcode プロジェクトを iOS デバイスにデプロイする方法を学習します。
 
 ## <a name="congratulations"></a>結論
 

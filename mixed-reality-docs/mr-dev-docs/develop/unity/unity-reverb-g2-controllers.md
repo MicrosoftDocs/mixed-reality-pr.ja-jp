@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity, リバーブ, リバーブ G2, HP リバーブ G2, mixed reality, 開発, モーションコントローラー, ユーザー入力, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 機能, ホログラム, ゲーム開発
-ms.openlocfilehash: fa9b80076d65978ae1602fc4f9519d7e11c651b5
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 26435ef57c9baf59b1008fb4750aedd913a19814
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583576"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421397"
 ---
 # <a name="hp-reverb-g2-controllers-in-unity"></a>Unity の HP リバーブ G2 コントローラー
 
@@ -31,38 +31,11 @@ HP Motion controller は、まったく新しい種類の Windows Mixed Reality 
 
 MotionController のインスタンスを取得するには、 *Motioncontroller ウォッチャー* を作成し、そのイベントをサブスクライブします。 *interactionmanager* イベントを使用して新しい *interactionmanager* インスタンスを検出するのと同様です。 MotionController のメソッドとプロパティは、コントローラーでサポートされている入力 (ボタン、トリガー、2D 軸、およびサムスティックを含む) を記述します。 MotionController クラスは、 *Motioncontroller 読み取り* クラスを介して入力状態にアクセスするためのメソッドも公開します。 Motioncontroller 読み取りクラスは、特定の時点でのコントローラーの状態のスナップショットを表します。 
 
-## <a name="installing-microsoftmixedrealityinput-using-the-unity-package-manager"></a>Unity パッケージマネージャーを使用した MixedReality のインストール 
+## <a name="installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool"></a>Mixed Reality 機能ツールを使用した MixedReality のインストール
 
-Unity パッケージマネージャーでは、 [マニフェストファイル](https://docs.unity3d.com/Manual/upm-manifestPkg.html) (で manifest.js) を使用して、インストールするパッケージと、インストール先として使用できるレジストリ (サーバー) を決定します。 MixedReality パッケージを使用するには、その前に Mixed Reality コンポーネントサーバーを登録する必要があります。
+新しい Mixed Reality 機能ツールアプリケーションを使用して MixedReality プラグインをインストールします。 [インストールと使用に関する指示](welcome-to-mr-feature-tool.md)に従って、Mixed reality Toolkit カテゴリで **mixed reality 入力** パッケージを選択します。
 
-### <a name="registering-the-mixed-reality-component-server"></a>Mixed Reality コンポーネントサーバーを登録しています 
-
-Mixed Reality 入力パッケージを使用するプロジェクトごとに、(Packages フォルダー内の) ファイルの manifest.jsには、Mixed Reality スコープレジストリが追加されている必要があります。 Mixed Reality をサポートするために manifest.jsを適切に変更するには、次のようにします。 
-    1. <projectRoot>Visual Studio Code などのテキストエディターで、/パッケージ/manifest.jsを開きます。 
-    2. マニフェストファイルの先頭にある [スコープされたレジストリ] セクションに Mixed Reality サーバーを追加し、ファイルを保存します。 
-    
-<pre>
-{ 
-  "scopedRegistries": [ 
-    { 
-      "name": "Microsoft Mixed Reality", 
-      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/", 
-      "scopes": [ 
-        "com.microsoft.mixedreality" 
-      ] 
-    } 
-  ], 
-</pre>
-
-### <a name="adding-the-microsoftmixedrealityinput-package"></a>MixedReality パッケージの追加 
-
-<projectRoot>Mixedreality パッケージを追加してファイルを保存するには、テキストエディターで、ファイルの [依存関係] manifest.jsセクションを変更します。 
-
-<pre>
-  "dependencies": { 
-    "com.microsoft.mixedreality.input": "0.9.2006", 
-  }
-</pre>
+![Mixed reality 入力が強調表示されている mixed Reality 機能ツールパッケージウィンドウ](images/feature-tool-mrinput.png)
 
 ## <a name="using-microsoftmixedrealityinput"></a>MixedReality の使用 
 

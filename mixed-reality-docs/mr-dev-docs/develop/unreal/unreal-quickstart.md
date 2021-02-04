@@ -1,5 +1,5 @@
 ---
-title: HoloLens プロジェクトの作成
+title: 初めての HoloLens Unreal アプリケーションの作成
 description: HoloLens Mixed Reality 開発用のシーン オブジェクトと入力対話式操作を含む Unreal プロジェクトを正しく構成する方法について説明します。
 author: hferrone
 ms.author: safarooq
@@ -7,14 +7,27 @@ ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, Unreal エディター, UE4, HoloLens, HoloLens 2, Mixed Reality, 開発, ドキュメント, ガイド, 機能, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 移植, アップグレード
-ms.openlocfilehash: 3b2b88ac897a8791fec1ca2942d0db34efcee598
-ms.sourcegitcommit: be33fcda10d1cb98df90b428a923289933d42c77
+ms.openlocfilehash: 467987f69b50c0ec635c99899d6bcecab5a62af0
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98672739"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421431"
 ---
-# <a name="creating-a-hololens-project"></a>HoloLens プロジェクトの作成
+# <a name="creating-your-first-hololens-unreal-application"></a>初めての HoloLens Unreal アプリケーションの作成
+
+このガイドでは、Unreal Engine の HoloLens 上で初めての Mixed Reality アプリを実行する手順について説明します。 "Hello World" のように、画面にキューブを表示する簡単なアプリを作成します。 さらに便利にするために、最初のジェスチャも作成してキューブを回転させ、アプリケーションを終了します。 
+
+## <a name="objectives"></a>目標
+
+* HoloLens プロジェクトを開始する
+* 正しいプラグインを有効にする
+* ARSessionConfig データ資産を使用する
+* ジェスチャ入力を設定する
+* 基本レベルを構築する
+* ピンチ ジェスチャを実装する
+
+## <a name="creating-a-new-project"></a>新しいプロジェクトの作成
 
 最初に必要なのは、作業するプロジェクトです。 Unreal で初めて開発する場合は、Epic Launcher から[サポート ファイルをダウンロードする](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal)必要があります。
 
@@ -29,7 +42,8 @@ ms.locfileid: "98672739"
 
 4. **[Project Settings]\(プロジェクト設定\)** で、 **[C++]、[Scalable 3D or 2D]\(スケーラブル 3D または 2D\)、[Mobile/Tablet]\(モバイル/タブレット\)** 、 **[No Starter Content]\(スターター コンテンツを有効にしない\)** を設定し、保存場所を選択して、 **[Create Project]\(プロジェクトの作成)** をクリックします
 
-> [!NOTE] 後で OpenXR プラグインを使用できるようにするため、ブループリント プロジェクトではなく C++ を使用しています。 この QuickStart では、Unreal Engine に付属する既定の OpenXR プラグインを使用します。 ただし、公式の Microsoft OpenXR プラグインをダウンロードして使用することをお勧めします。 それには、プロジェクトが C++ プロジェクトである必要があります。
+> [!NOTE] 
+> 後で OpenXR プラグインを使用できるようにするため、ブループリント プロジェクトではなく C++ を使用しています。 この QuickStart では、Unreal Engine に付属する既定の OpenXR プラグインを使用します。 ただし、公式の Microsoft OpenXR プラグインをダウンロードして使用することをお勧めします。 それには、プロジェクトが C++ プロジェクトである必要があります。
 
 ![プロジェクト、パフォーマンス、ターゲット プラットフォーム、スターター コンテンツの選択が強調表示されているプロジェクト設定ウィンドウ](images/unreal-quickstart-img-03.png)
 
@@ -131,14 +145,18 @@ Unreal の AR セッションは、それ自体では発生しません。 セ�
 
 ![OpenXR Msft ハンド インタラクション オプションが強調表示されたアクション マッピング](images/unreal-quickstart-img-16.jpg)
 
-4. **[Level Blueprint]\(Level ブループリント\)** を開き、**InputAction RightPinch** と **InputAction LeftPinch** を追加します
+## <a name="setting-up-gestures"></a>ジェスチャの設定
+
+入力を設定したので、わくわくする部分に進むことができます。ジェスチャの追加です。 右ピンチでキューブを回転させ、左ピンチでアプリケーションを終了しましょう。
+
+1. **[Level Blueprint]\(Level ブループリント\)** を開き、**InputAction RightPinch** と **InputAction LeftPinch** を追加します
 * ターゲットを **Cube** に設定し、 **[Delta Rotation]\(デルタ回転\)** を **X = 0、Y = 0**、**Z = 20** に設定して、右ピンチ イベントを **AddActorLocalRotation** に接続します。 これで、ピンチするたびにキューブが 20 度回転するようになります
 * 左ピンチ イベントを **Quit Game** に接続します
 
 ![右と左のピンチ イベントに対する入力アクションが設定された Level ブループリント](images/unreal-quickstart-img-17.jpg)
 
-5. キューブの **[Transform]\(変換\)** の設定で、 **[Mobility]\(モビリティ\)** を **[Movable]\(移動可能\)** に設定して、動的に移動できるようにします。
+2. キューブの **[Transform]\(変換\)** の設定で、 **[Mobility]\(モビリティ\)** を **[Movable]\(移動可能\)** に設定して、動的に移動できるようにします。
 
 ![モビリティ プロパティが強調表示されている変換設定](images/unreal-quickstart-img-18.jpg)
 
-これで、アプリケーションを展開してテストする準備ができました。
+これで、アプリケーションをデプロイしてテストする準備ができました。

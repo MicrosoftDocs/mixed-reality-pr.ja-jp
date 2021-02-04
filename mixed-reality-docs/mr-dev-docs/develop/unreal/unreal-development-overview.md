@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, ストリーミング, リモート処理, Mixed Reality, 開発, 入門, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, 特徴, ホログラム, ゲームの開発, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, OpenXR
-ms.openlocfilehash: a5b65bbfe5a1f365a93836406365fdc395b73c47
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 99540b9cd3473097896d847943b9736300000305
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580029"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421421"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開発の概要
 
@@ -38,6 +38,7 @@ Unreal 開発が初めての場合は、よくわからないまま開始しな�
 |  Checkpoint  |  結果  |
 | --- | --- |
 | [最新のツールをインストールする](../install-the-tools.md) | 最新のバージョンの Unreal Engine をダウンロードしてインストールし、Mixed Reality 用のプロジェクトをセットアップできます |
+| [初めての HoloLens Unreal アプリケーションの作成](unreal-quickstart.md) | 基本的な Mixed Reality アプリケーションを構築して、Unreal と HoloLens の開発体験を始めます |
 | [HoloLens 2 チュートリアル シリーズ](tutorials/unreal-uxt-ch1.md) | Unreal での Mixed Reality 開発の準備を整え、MRTK を使用して最初のアプリを作成し、HoloLens 2 にアプリをデプロイします |
 | (オプション) Unreal での [OpenXR](../native/openxr.md) の使用を開始します | Unreal で OpenXR アプリを構築する場合は、次のエンジン プラグインを無効にする必要があります。<ul><li>Windows Mixed Reality</li></ul><br>GitHub から次のプラグインをダウンロードし、プロジェクトで有効にします。<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>OpenXR で現在サポートされている機能の完全な一覧については、[後述](#supported-features)します。|
 

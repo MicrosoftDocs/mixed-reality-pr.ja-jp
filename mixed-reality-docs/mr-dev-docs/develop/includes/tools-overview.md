@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: b6e75419ef9cdd4595e23e6217ab1b1762cd134e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c205e3b812eeb7a85bfe361d4fd83f9aec7b7999
+ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98605304"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99244849"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -13,21 +13,30 @@ ms.locfileid: "98605304"
 ### <a name="1-download-the-latest-version"></a>1.最新バージョンをダウンロードする
 
 新しいプロジェクトを開始する際に使用する最適なバージョンとして、[Unity LTS (長期サポート)](https://unity3d.com/unity/qa/lts-releases) ストリームをお勧めします。最新の安定した修正プログラムを取得するには最新リビジョンに更新します。
-* 現在は、**Unity 2019** を使用することをお勧めしています。これは、以下の MRTK v2 に必要な LTS ビルドです。
+* 現在は、 **[Unity 2019.4 LTS](https://unity3d.com/unity/qa/lts-releases?version=2019.4)** を使用することをお勧めしています。これは、以下の MRTK v2 に必要な LTS ビルドです。
 * 特定の理由から別のバージョンの Unity を使用する必要がある場合、Unity では異なるバージョンの side-by-side インストールをサポートしています。
 
-### <a name="2-import-mixed-reality-toolkit-mrtk"></a>2.Mixed Reality Toolkit (MRTK) をインポートする
+### <a name="2-install-the-mixed-reality-feature-tool"></a>2.Mixed Reality Feature Tool をインストールする
+
+[Mixed Reality Feature Tool](../unity/welcome-to-mr-feature-tool.md) は、開発者が Mixed Reality 機能パッケージを検出し、Unity プロジェクトに追加するための新しい方法です。 
+
+名前またはカテゴリでパッケージを検索し、それらの依存関係を確認し、インポートする前にプロジェクト マニフェスト ファイルに提案された変更を確認することもできます。 必要なパッケージを検証すると、Mixed Reality Feature Tool によって、それらが選択したプロジェクトにダウンロードされます。
+
+#### <a name="importing-the-mixed-reality-toolkit"></a>Mixed Reality Toolkit をインポートする
+
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
 
-[Mixed Reality Toolkit](../unity/mrtk-getting-started.md) (MRTK) は、Mixed Reality アプリケーション向けのオープンソースのクロスプラットフォーム開発キットです。 MRTK には、空間でのインタラクションのための、クロスプラットフォームの入力システム、基本コンポーネント、共通の構成要素が備わっています。 このツールキットは、Microsoft HoloLens、Windows Mixed Reality イマーシブ (VR) ヘッドセット、OpenVR プラットフォームをターゲットとしたアプリケーションの開発を加速することを目的としています。
+[Mixed Reality Toolkit](../unity/mrtk-getting-started.md) (MRTK) は、Mixed Reality アプリケーション向けのオープンソースのクロスプラットフォーム開発キットです。 
 
-インストールについては、整理された [HoloLens](../unity/unity-development-overview.md#1-getting-started) または [VR](../unity/unity-development-wmr-overview.md#1-getting-started) の開発体験の概要セクションを完了することをお勧めします。 既に HoloLens 用 Unity 開発体験に従っている場合は、以下の一覧で示されている残りの設定手順を完了し、[HoloLens 2 入門チュートリアル](../unity/tutorials/mr-learning-base-01.md)に進んでください。
+* [インストールと使用方法の手順](../unity/welcome-to-mr-feature-tool.md#system-requirements)に関するページに従い、**Mixed Reality Toolkit Foundation** パッケージを選択して、Mixed Reality Toolkit パッケージをインストールします。
+
+整理された [HoloLens](../unity/unity-development-overview.md#1-getting-started) または [VR](../unity/unity-development-wmr-overview.md#1-getting-started) の開発体験の概要セクションを完了することをお勧めします。 既に HoloLens 用 Unity 開発体験に従っている場合は、以下の一覧で示されている残りの設定手順を完了し、[HoloLens 2 入門チュートリアル](../unity/tutorials/mr-learning-base-01.md)に進んでください。
 
 > [!IMPORTANT]
-> インストール手順では MRTK と Unity リリースの最新の安定した組み合わせである **MRTK 2.4.0** と **Unity 2019.3.15** を対象としていることに注意してください。
+> インストール手順では MRTK と Unity リリースの最新の安定した組み合わせである **MRTK 2.5.1** と **Unity 2019.4 LTS** を対象としていることに注意してください。
 
 > [!NOTE]
-> Unity 用の MRTK を使用しない場合は、すべての対話式操作と動作のスクリプトを開発者が自分で作成する必要があります。
+> Unity 用の MRTK を使用しない場合は、[すべての対話式操作と動作のスクリプトを開発者が自分で作成する](../unity/configure-unity-project.md)必要があります。
 
 :::row:::
     :::column:::

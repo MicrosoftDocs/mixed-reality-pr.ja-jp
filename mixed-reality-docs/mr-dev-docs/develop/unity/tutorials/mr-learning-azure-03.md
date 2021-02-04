@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, HoloLens, HoloLens 2, Azure Custom Vision, Azure Cognitive Services, Azure クラウド サービス, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: aa3ad219ab2cd45b14d06881757ec776d3e098f3
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 7676a55a2276b88f3bc123dda90a1b8d39536a61
+ms.sourcegitcommit: daa45a19a3a353334380cda78fee7fa149f0e48b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581931"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98981721"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3.Azure Custom Vision の統合
 
@@ -50,17 +50,17 @@ ms.locfileid: "98581931"
 ![ObjectDetectionManager スクリプト コンポーネント構成フィールドがインスペクターに表示された Unity](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 [Hierarchy]\(階層\) ウィンドウで、**ObjectDetectionManager** オブジェクトを見つけて選択します。
-**ObjectDetectionManager** プレハブには **ObjectDetectionManager (script)** コンポーネントが含まれており、[Inspector]\(インスペクター\) ウィンドウからわかるように、いくつかの設定に依存しています。
+**ObjectDetectionManager** プレハブには **ObjectDetectionManager (script)** コンポーネントが含まれており、インスペクター ウィンドウからわかるように、それは Azure の設定とプロジェクトの設定に依存します。
 
 ## <a name="retrieving-azure-api-resource-credentials"></a>Azure api リソースの資格情報の取得
 
 **ObjectDetectionManager (script)** の設定に必要な資格情報は、Azure portal と Custom Vision ポータルから取得できます。
 
-### <a name="azure-portal"></a>Azure portal
+### <a name="retrieving-azure-settings-credentials"></a>Azure の設定の資格情報の取得
 
-このチュートリアルの「*シーンの準備*」セクションで作成した種類 **Cognitive Services** の Custom Vision リソースを探して見つけます。 *[Keys and Endpoint]\(キーとエンドポイント\)* をクリックして必要な資格情報を取得します。
+このチュートリアルの「*シーンの準備*」セクションで作成した種類 **Cognitive Services** の Custom Vision リソースを探して見つけます (後に *-Prediction* が付いている Custom Vision リソース名を選択します)。 *[概要]* または *[Keys and Endpoint]\(キーとエンドポイント\)* をクリックして、必要な資格情報を取得します。
 
-### <a name="custom-vision-dashboard"></a>Custom Vision ダッシュボード
+### <a name="retrieving-project-settings-credentials"></a>プロジェクトの設定の資格情報の取得
 
 [Custom Vision](https://www.customvision.ai/projects) ダッシュボードで、このチュートリアル用に作成したプロジェクトを開き、ページの右上隅にある歯車アイコンをクリックして設定ページを開きます。 この右側の *[Resources]\(リソース\)* セクションで、必要な資格情報を確認できます。
 
@@ -87,6 +87,10 @@ ms.locfileid: "98581931"
 > 撮影された画像は、**ObjectDetectionManager (script)** によって Custom Vision サービスに直接アップロードされます。 また、Custom Vision API で画像の URL を受け取る方法もあります。演習として、**ObjectDetectionManager (script)** を変更し、代わりに画像を BLOB ストレージにアップロードすることができます。
 
 ## <a name="detect-objects"></a>オブジェクトを検出する
+
+オブジェクトを検出する前に、Custom Vision キーで既に割り当てたプロジェクトの設定の下にある **ObjectDetectionManager (script)** に存在する Api キーを変更する必要があります。
+
+Azure portal で Custom Vision リソースを見つけます。 *[Keys and Endpoint]\(キーとエンドポイント\)* をクリックして Api キーを取得し、プロジェクトの設定の古い Api キーを置き換えます。
 
 これで、トレーニング済みモデルをテストに配置し、アプリケーションを実行し、*メイン メニュー* から **[Search Object]\(オブジェクトの検索\)** をクリックして、問題の **追跡対象オブジェクト** の名前を入力することができます。 **[Object Card]\(オブジェクト カード\)** が表示されたら **[Custom Vision]** ボタンをクリックします。 ここから、**ObjectDetectionManager** によって、バックグラウンドでカメラから画像キャプチャの取得が開始され、進行状況がメニューに表示されます。 モデルのトレーニングに使用したオブジェクトにカメラを向け、少し待つと、オブジェクトが検出されることがわかります。
 

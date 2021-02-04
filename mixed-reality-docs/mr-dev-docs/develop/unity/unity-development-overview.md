@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, 開発, 作業の開始, 新しいプロジェクト, 移植, 機能, カメラ, シミュレーション, エミュレーション, ドキュメント, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, 仮想現実とは, 拡張現実とは, MRTK, Mixed Reality Toolkit, 空間マッピング, 音声入力, 場所を特定できるカメラ, エミュレーター, Azure, チュートリアル
-ms.openlocfilehash: fc444f4d40d8bc013253869fe77ddd563e889d85
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 59bb269bfb8d7e0a9cfd6963cf144ddb0e070c5f
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583002"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421411"
 ---
 # <a name="unity-development-for-hololens"></a>HoloLens 向けの Unity の開発
 
@@ -36,6 +36,7 @@ Unity で開発する場合の最も簡単な方法は、Mixed Reality Toolkit �
 | [MSIX とは](mrtk-getting-started.md) | 作業を始めるにあたって、まず Mixed Reality Toolkit とその機能を理解できます |
 | [最新のツールをインストールする](../install-the-tools.md) | 最新の Unity パッケージをダウンロードしてインストールし、Mixed Reality 用のプロジェクトをセットアップできます |
 | [HoloLens 2 チュートリアル シリーズ](tutorials/mr-learning-base-01.md) | HoloLens 2 ハードウェア向けの初級レベルの MRTK チュートリアルを確認できます |
+| **省略可能** [Mixed Reality Feature Tool をダウンロードする](welcome-to-mr-feature-tool.md) | Mixed Reality 機能パッケージを検出し、更新し、Unity プロジェクトに追加するための新しい開発者ツールです |
 
 > [!IMPORTANT]
 > Mixed Reality Toolkit をインポートせずに新しい Unity プロジェクトを作成する場合には、Windows Mixed Reality 用に手動で変更する必要がある小規模な Unity 設定のセットがあります。 これらは、プロジェクトごととシーンごとの 2 つのカテゴリに分類されます。 詳細なプロセスについては、[構成ガイド](configure-unity-project.md)を参照してください。

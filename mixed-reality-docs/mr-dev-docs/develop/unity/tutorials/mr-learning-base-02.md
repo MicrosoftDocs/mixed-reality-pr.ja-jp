@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 4d82d0974a0a797e7f8d2de2d4943666f7d32a4f
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: ff479df81316ab5ceeabf045ad1bbae007190ed4
+ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635510"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99238148"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. プロジェクトの初期化と最初のアプリケーションの配置
 
@@ -86,7 +86,13 @@ Unity メニューで、 **[Window]\(ウィンドウ\)**  >  **[TextMeshPro]**  
 
 ## <a name="importing-the-mixed-reality-toolkit"></a>Mixed Reality Toolkit をインポートする
 
-Unity カスタム パッケージをダウンロードします。
+### <a name="using-the-mixed-reality-feature-tool"></a>Mixed Reality Feature Tool の使用
+
+新しい Mixed Reality Feature Tool アプリケーションを使用して MRTK をインストールするには、[インストールと使用方法の手順](../welcome-to-mr-feature-tool.md)に関するページに従い、Mixed Reality Toolkit カテゴリの **Mixed Reality Toolkit Foundation** パッケージを選択します。
+
+### <a name="using-unity-packages"></a>Unity パッケージの使用
+
+カスタム パッケージを使用して MRTK をインストールするには、次のようにします。
 
 * [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.5.1/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage)
 
@@ -128,7 +134,7 @@ Unity メニューで、 **[Edit]\(編集\)**  >  **[Project Settings...]\(プ�
 
 [Project Settings]\(プロジェクトの設定\) ウィンドウで、 **[XR Plug-in Management]\(XR プラグイン管理\)**  >  **[Install XR Plug-in Management]\(XR プラグイン管理のインストール\)** を選択して、XR プラグイン管理をインストールします。
 
-![パッケージ名が構成されている Unity の公開設定](images/mr-learning-base/base-02-section5-step2-2.png)
+![[XR Plug-in Management]\(XR プラグイン管理\) が選択されたプロジェクトの設定](images/mr-learning-base/base-02-section5-step2-2.png)
 
 Unity による XR プラグイン管理のインストールが完了した後。 ユニバーサル Windows プラットフォームの設定になっていることを確認し、[Initialize XR on Startup]\(起動時に XR を初期化する\) をオンにします。
 
@@ -142,10 +148,10 @@ Unity によって Windows Mixed Reality SDK のインポートが完了する�
 
 [MRTK Project Configurator]\(MRTK プロジェクト コンフィギュレーター\) ウィンドウで、 **[Audio Spatializer]** ドロップダウンを使用して **[MS HRTF Spatializer]** を選択してから、 **[Apply]\(適用\)** ボタンをクリックしてこの設定を適用します。
 
-![Windows Mixed Reality SDK の追加が選択された Unity の XR 設定](images/mr-learning-base/base-02-section5-step2-5.png)
+![[Audio Spatializer] プロパティが強調表示されている [MRTK Project Configurator]\(MRTK プロジェクト コンフィギュレーター\) ウィンドウ](images/mr-learning-base/base-02-section5-step2-5.png)
 
 > [!TIP]
->Audio Spatializer プロパティの設定はオプションですが、プロジェクトでのオーディオ エクスペリエンスが向上する場合があります。 MS HRTF Spatializer に設定した場合、Unity の AudioSource.spatialize プロパティが有効になっていると、この Spatializer プラグインが使用されます。 このトピックの詳細については、<a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank">立体オーディオのチュートリアル</a>に関するページを参照してください。
+>Audio Spatializer プロパティの設定はオプションですが、プロジェクトでのオーディオ エクスペリエンスが向上する場合があります。 MS HRTF Spatializer に設定した場合、Unity の AudioSource.spatialize プロパティが有効になっていると、この Spatializer プラグインが使用されます。 このトピックの詳細については、<a href="https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank">立体オーディオのチュートリアル</a>に関するページを参照してください。
 
 [Project Settings]\(プロジェクト設定\) ウィンドウで、 **[Player]\(プレーヤー\)**  >  **[XR Settings]\(XR 設定\)** を選択してから、 **[Depth Format]\(深度形式\)** ドロップダウンを使用して **[16-bit depth]\(16 ビット深度\)** を選択します。
 

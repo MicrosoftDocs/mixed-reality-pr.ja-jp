@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Azure, Mixed Reality, Unity, チュートリアル, Hololens, Hololens 2, Azure Blob Storage, Azure Table Storage, Azure Spatial Anchors, Azure Bot Framework, Azure クラウド サービス, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 8f8727074870d07ac9fcd7190f5f53931d75643f
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 02bb52653b8df38a497a9acc803a84eb09909a9f
+ms.sourcegitcommit: daa45a19a3a353334380cda78fee7fa149f0e48b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635546"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98981731"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1.HoloLens 2 用の Azure Cloud Services
 
@@ -91,7 +91,7 @@ ms.locfileid: "98635546"
 5. [Unity プロジェクトを構成する](mr-learning-base-02.md#configuring-the-unity-project)
 6. [シーンを作成して構成](mr-learning-base-02.md#creating-and-configuring-the-scene)し、シーンに *AzureCloudServices* などの適切な名前を付ける
 
-その後、「[空間認識表示オプションの変更](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)」の手順に従って、シーンの MRTK 構成プロファイルを **[DefaultHoloLens2ConfigurationProfile]** に変更し、空間認識メッシュの表示オプションを **[Occlusion]\(オクルージョン\)** に変更します。
+その後、「[空間認識表示オプションを変更する](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)」の手順に従って、シーンの MRTK 構成プロファイルが **DefaultXRSDKConfigurationProfile** であることを確認し、空間認識メッシュの表示オプションを **[Occlusion]\(オクルージョン\)** に変更します。
 
 ## <a name="installing-inbuilt-unity-packages"></a>組み込みの Unity パッケージのインストール
 
@@ -104,9 +104,10 @@ Unity メニューで、 **[ウィンドウ]**  >  **[パッケージ マネー�
 
 ## <a name="importing-the-tutorial-assets"></a>チュートリアルのアセットのインポート
 
+AzurespatialAnchors SDK V2.7.1 を Unity プロジェクトに追加します。パッケージを追加するには、こちらの[チュートリアル](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)に従ってください
+
 次の Unity カスタム パッケージを、**記載されている順で** ダウンロードして **インポート** します。
 
-* [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage)
 * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
 * [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
 

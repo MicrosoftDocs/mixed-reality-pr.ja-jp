@@ -3,15 +3,15 @@ title: 空間オーディオチュートリアル-3. ビデオからオーディ
 description: ビデオ資産を Unity プロジェクトにインポートし、ビデオからオーディオを spatialize します。
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、ヘッド関連の転送機能、リバーブ、Microsoft Spatializer、ビデオのインポート、ビデオプレーヤー
-ms.openlocfilehash: 6474da522e650d23349a21c3deeac00222b8ce93
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 876918c3e886fae6cd2066d84c55a6e158e4c773
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578574"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590054"
 ---
 # <a name="3-spatializing-audio-from-a-video"></a>3.ビデオからオーディオの立体化
 

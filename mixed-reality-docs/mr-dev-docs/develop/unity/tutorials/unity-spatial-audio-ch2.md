@@ -3,15 +3,15 @@ title: 空間オーディオチュートリアル-2. ボタンの対話式操作
 description: ボタンをプロジェクトに追加し、ボタンの相互作用サウンドを spatialize します。
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality、unity、チュートリアル、hololens2、空間オーディオ、MRTK、mixed reality toolkit、UWP、Windows 10、HRTF、ヘッド関連の転送関数、リバーブ、Microsoft Spatializer、prefabs、volume curve
-ms.openlocfilehash: e4b2ed99f56fea82b1c72e4fce5205c14e1d3533
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 12d159cb162cbf136483f7be94b0d297319a0737
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578493"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590764"
 ---
 # <a name="2-spatializing-button-interaction-sounds"></a>2.ボタンの対話式操作サウンドの立体化
 
@@ -25,7 +25,7 @@ ms.locfileid: "98578493"
 
 ## <a name="add-a-button"></a>ボタンを追加する
 
-Prefab ボタンを追加するには、[ **プロジェクト** ] ウィンドウで [ **資産** ] を選択し、検索バーに「PressableButtonHoloLens2」と入力します。
+Prefab ボタンを追加するには、[ **プロジェクト** ] ウィンドウで [ **パッケージ** ] を選択し、検索バーに「PressableButtonHoloLens2」と入力します。
 
 ![アセット内のボタンの事前 fab](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
 

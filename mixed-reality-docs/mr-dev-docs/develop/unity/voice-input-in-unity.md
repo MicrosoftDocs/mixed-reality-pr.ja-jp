@@ -6,37 +6,40 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 音声入力、KeywordRecognizer、GrammarRecognizer、マイク、ディクテーション、音声、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、MRTK、Mixed Reality ツールキット
-ms.openlocfilehash: c6364b190ca90c5e6faf7fb8ef79314134e93cfc
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 7268a4df9c7fce03029937c72540ed274574067d
+ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583724"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99606117"
 ---
 # <a name="voice-input-in-unity"></a>Unity の音声入力
 
->[!NOTE]
->以下の情報の代わりに、認識音声サービス SDK の Unity プラグインを使用することを検討してください。これにより、音声の精度が大幅に向上します。また、音声からテキストへのデコードや、ダイアログ、インテントベースの対話、翻訳、テキスト合成合成、自然言語音声認識などの高度な音声機能に簡単にアクセスできます。 ここでサンプルとドキュメントを見つけます。 https://docs.microsoft.com//azure/cognitive-services/speech-service/quickstart-csharp-unity   
+> [!CAUTION]
+> 開始する前に、認識音声サービス SDK の Unity プラグインを使用することを検討してください。 このプラグインを使用すると、音声からテキストへのデコードが簡単になります。また、ダイアログ、インテントベースの対話、翻訳、テキスト合成合成、自然言語音声認識などの高度な音声機能も利用できます。 まず、 [サンプルとドキュメント](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-unity)を確認してください。
 
-Unity では、Unity アプリケーションに [音声入力](../../design/voice-input.md) を追加する3つの方法が公開されています。
+Unity では、Unity アプリケーションに [音声入力](../../design/voice-input.md) を追加する3つの方法を公開しています。最初の2つは、PhraseRecognizer の種類です。
+* は、アプリに、 `KeywordRecognizer` リッスンする文字列コマンドの配列を提供します。
+* は、 `GrammarRecognizer` アプリに、リッスンする特定の文法を定義する SRGS ファイルを提供します。
+* を使用する `DictationRecognizer` と、アプリは任意の単語をリッスンし、ユーザーに対してノートまたはその他の音声の表示を提供できます。
 
-KeywordRecognizer (2 種類の PhraseRecognizers のいずれか) では、アプリには、リッスンする文字列コマンドの配列を指定できます。 GrammarRecognizer (他の種類の PhraseRecognizer) では、リッスンする特定の文法を定義する SRGS ファイルをアプリに与えることができます。 DictationRecognizer を使用すると、アプリは任意の単語をリッスンし、ユーザーにノートやその他の音声の表示を提供できます。
-
->[!NOTE]
->ディクテーションまたはフレーズ認識だけを一度に処理できます。 つまり、GrammarRecognizer または KeywordRecognizer がアクティブである場合、DictationRecognizer をアクティブにすることはできず、その逆も可能です。
+> [!NOTE]
+> ディクテーションと語句の認識を同時に処理することはできません。 GrammarRecognizer または KeywordRecognizer がアクティブである場合、DictationRecognizer をアクティブにすることはできず、その逆も可能です。
 
 ## <a name="enabling-the-capability-for-voice"></a>音声用の機能を有効にする
 
 音声入力を使用するアプリの **マイク** 機能を宣言する必要があります。
-1. Unity エディターで、[Edit > Project Settings > Player] の順に移動して、windows media player の設定に移動します。
-2. [Windows ストア] タブを選択します。
-3. [発行設定 > 機能] セクションで、 **マイク** の機能を確認します。
+1. Unity エディターで、[ **Edit > Project Settings > Player** ] に移動します。
+2. [ **Windows ストア** ] タブを選択します。
+3. [ **発行の設定 > 機能** ] セクションで、 **マイク** の機能を確認します。
+4. HoloLens デバイスでマイクにアクセスするためのアクセス許可をアプリに付与する
+    * デバイスの起動時にこれを行うように求められますが、誤って [いいえ] をクリックした場合は、デバイスの設定でアクセス許可を変更できます。
 
 ## <a name="phrase-recognition"></a>フレーズ認識
 
 ユーザーによって読み上げられた特定の語句をアプリでリッスンできるようにするには、次の操作を行う必要があります。
-1. KeywordRecognizer または GrammarRecognizer を使用してリッスンする語句を指定します
-2. OnPhraseRecognized イベントを処理し、認識された語句に対応するアクションを実行します。
+1. またはを使用してリッスンする語句を指定します `KeywordRecognizer``GrammarRecognizer`
+2. イベントを処理 `OnPhraseRecognized` し、認識された語句に対応するアクションを実行します。
 
 ### <a name="keywordrecognizer"></a>KeywordRecognizer
 
@@ -58,7 +61,7 @@ KeywordRecognizer keywordRecognizer;
 Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 ```
 
-次に、キーワードを辞書に追加します。たとえば、Start () メソッドのようにします。 この例では、"activate" キーワードを追加しています。
+次に、メソッドのなど、辞書にキーワードを追加 `Start()` します。 この例では、"activate" キーワードを追加しています。
 
 ```
 //Create keywords for keyword recognizer
@@ -74,7 +77,7 @@ keywords.Add("activate", () =>
 keywordRecognizer = new KeywordRecognizer(keywords.Keys.ToArray());
 ```
 
-次に、OnPhraseRecognized イベントに登録します。
+ここでイベントに登録します `OnPhraseRecognized`
 
 ```
 keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
@@ -113,20 +116,20 @@ SRGS 文法を取得し、それがプロジェクト内の [Streamingassets フ
 <PROJECT_ROOT>/Assets/StreamingAssets/SRGS/myGrammar.xml
 ```
 
-GrammarRecognizer を作成し、SRGS ファイルへのパスを渡します。
+を作成 `GrammarRecognizer` し、SRGS ファイルへのパスを渡します。
 
 ```
 private GrammarRecognizer grammarRecognizer;
 grammarRecognizer = new GrammarRecognizer(Application.streamingDataPath + "/SRGS/myGrammar.xml");
 ```
 
-次に、OnPhraseRecognized イベントに登録します。
+ここでイベントに登録します `OnPhraseRecognized`
 
 ```
 grammarRecognizer.OnPhraseRecognized += grammarRecognizer_OnPhraseRecognized;
 ```
 
-SRGS 文法に指定されている情報を含むコールバックが取得されます。これは適切に処理できます。 重要な情報の大部分は、semanticMeanings 配列に記載されています。
+SRGS 文法に指定されている情報を含むコールバックが取得されます。これは適切に処理できます。 重要な情報の大部分は配列で提供され `semanticMeanings` ます。
 
 ```
 private void Grammar_OnPhraseRecognized(PhraseRecognizedEventArgs args)
@@ -147,19 +150,22 @@ grammarRecognizer.Start();
 **名前空間:** *Unityengine。 Windows. Speech*<br>
 **型**: *DictationRecognizer*、 *SpeechError*、 *SpeechSystemStatus*
 
-DictationRecognizer を使用して、ユーザーの音声をテキストに変換します。 DictationRecognizer は [ディクテーション](../../design/voice-input.md#dictation) 機能を公開しており、仮説と語句の完了イベントの登録とリッスンをサポートしているので、ユーザーが話すときと後の両方でユーザーにフィードバックを提供できます。 Start () メソッドと Stop () メソッドは、それぞれディクテーション認識を有効または無効にします。 レコグナイザーを使用したら、Dispose () メソッドを使用して破棄し、使用するリソースを解放する必要があります。 これらのリソースは、その前にリリースされていない場合は、追加のパフォーマンスコストで、ガベージコレクション中に自動的に解放されます。
+を使用して、 `DictationRecognizer` ユーザーの音声をテキストに変換します。 DictationRecognizer は [ディクテーション](../../design/voice-input.md#dictation) 機能を公開しており、仮説と語句の完了イベントの登録とリッスンをサポートしているので、ユーザーが話すときと後の両方でユーザーにフィードバックを提供できます。 `Start()` および `Stop()` メソッドは、それぞれディクテーション認識を有効または無効にします。 レコグナイザーを使用したら、を使用して破棄し、使用するリソースを解放する必要があり `Dispose()` ます。 これらのリソースは、その前にリリースされていない場合、追加のパフォーマンスコストで、ガベージコレクション中に自動的に解放されます。
 
 ディクテーションを開始するには、いくつかの手順を実行する必要があります。
-1. 新しい DictationRecognizer を作成する
+1. 新しいを作成する `DictationRecognizer`
 2. ディクテーションイベントの処理
 3. DictationRecognizer を開始する
 
 ### <a name="enabling-the-capability-for-dictation"></a>ディクテーション用の機能を有効にする
 
-"インターネットクライアント" 機能は、前述の "マイク" 機能と共に、ディクテーションを利用するためにアプリに対して宣言されている必要があります。
-1. Unity エディターで、[Edit > Project Settings > Player] ページに移動して、windows media player の設定に移動します。
-2. [Windows ストア] タブを選択します。
-3. [発行の設定 > 機能] セクションで、 **Internetclient** の機能を確認します。
+音声認識を使用するには、 **インターネットクライアント** と **マイク** の機能を次のように宣言する必要があります。
+1. Unity エディターで、[ **Edit > Project Settings > Player** ] を開きます。
+2. [ **Windows ストア** ] タブで、を選択します。
+3. [ **発行の設定 > 機能** ] セクションで、 **internetclient** の機能を確認します。
+    * マイクをまだ有効にしていない場合は、必要に応じて **マイク** の機能を確認します。
+4. HoloLens デバイスでマイクアクセスを行うためのアクセス許可をアプリに付与します (まだインストールしていない場合)。
+    * デバイスの起動時にこれを行うように求められますが、誤って [いいえ] をクリックした場合は、デバイスの設定でアクセス許可を変更できます。
 
 ### <a name="dictationrecognizer"></a>DictationRecognizer
 
@@ -170,16 +176,16 @@ dictationRecognizer = new DictationRecognizer();
 ```
 
 ディクテーションの動作を実装するためにサブスクライブおよび処理できるディクテーションイベントは4つあります。
-1. DictationResult
-2. DictationComplete
-3. DictationHypothesis
-4. DictationError
+1. `DictationResult`
+2. `DictationComplete`
+3. `DictationHypothesis`
+4. `DictationError`
 
 **DictationResult**
 
 このイベントは、ユーザーが一時停止した後、通常は文の最後に発生します。 完全に認識された文字列がここに返されます。
 
-まず、DictationResult イベントをサブスクライブします。
+まず、イベントをサブスクライブし `DictationResult` ます。
 
 ```
 dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
@@ -198,7 +204,7 @@ private void DictationRecognizer_DictationResult(string text, ConfidenceLevel co
 
 このイベントは、ユーザーが話している間、継続的に発生します。 認識エンジンがリッスンすると、これまでに知られている内容のテキストが提供されます。
 
-まず、DictationHypothesis イベントをサブスクライブします。
+まず、イベントをサブスクライブし `DictationHypothesis` ます。
 
 ```
 dictationRecognizer.DictationHypothesis += DictationRecognizer_DictationHypothesis;
@@ -217,7 +223,7 @@ private void DictationRecognizer_DictationHypothesis(string text)
 
 このイベントは、レコグナイザー () が呼び出されているか、タイムアウトが発生したか、またはその他のエラーが発生した場合に、レコグナイザーが停止したときに発生します。
 
-まず、DictationComplete イベントをサブスクライブします。
+まず、イベントをサブスクライブし `DictationComplete` ます。
 
 ```
 dictationRecognizer.DictationComplete += DictationRecognizer_DictationComplete;
@@ -236,7 +242,7 @@ private void DictationRecognizer_DictationComplete(DictationCompletionCause caus
 
 このイベントは、エラーが発生したときに発生します。
 
-まず、DictationError イベントをサブスクライブします。
+まず、イベントをサブスクライブし `DictationError` ます。
 
 ```
 dictationRecognizer.DictationError += DictationRecognizer_DictationError;
@@ -268,9 +274,9 @@ dictationRecognizer.Dispose();
 ```
 
 **ヒント**
-* Start () メソッドと Stop () メソッドは、それぞれディクテーション認識を有効または無効にします。
-* レコグナイザーを使用したら、Dispose () メソッドを使用して破棄し、使用するリソースを解放する必要があります。 これらのリソースは、その前にリリースされていない場合は、追加のパフォーマンスコストで、ガベージコレクション中に自動的に解放されます。
-* タイムアウトは、一定の時間が経過すると発生します。 これらのタイムアウトは、DictationComplete イベントで確認できます。 次の2つの点に注意する必要があります。
+* `Start()` および `Stop()` メソッドは、それぞれディクテーション認識を有効または無効にします。
+* 認識エンジンが完成したら、を使用してそのレコグナイザーを破棄し、使用するリソースを解放する必要があり `Dispose()` ます。 これらのリソースは、その前にリリースされていない場合、追加のパフォーマンスコストで、ガベージコレクション中に自動的に解放されます。
+* タイムアウトは、一定の時間が経過すると発生します。 これらのタイムアウトは、イベントで確認でき `DictationComplete` ます。 次の2つの点に注意する必要があります。
    1. 認識エンジンが起動し、最初の5秒間オーディオが聞こえない場合は、タイムアウトになります。
    2. 認識エンジンから結果が得られたが、20秒間、無音が聞こえた場合、タイムアウトになります。
 
@@ -282,7 +288,7 @@ dictationRecognizer.Dispose();
 PhraseRecognitionSystem.Shutdown();
 ```
 
-すべてのレコグナイザーを前の状態に復元するには、DictationRecognizer が停止した後、次のように呼び出します。
+`Restart()`を呼び出して、DictationRecognizer が停止した後、すべてのレコグナイザーを前の状態に復元することができます。
 
 ```
 PhraseRecognitionSystem.Restart();
@@ -290,16 +296,11 @@ PhraseRecognitionSystem.Restart();
 
 KeywordRecognizer を開始することもできます。これにより、PhraseRecognitionSystem も再起動されます。
 
-## <a name="using-the-microphone-helper"></a>マイクヘルパーの使用
-
-GitHub の Mixed Reality Toolkit には、システムに使用可能なマイクがある場合に開発者にヒントを表示するマイクヘルパークラスが含まれています。 アプリケーションで音声操作のヒントを表示する前に、システムにマイクがあるかどうかを確認する必要がある場合は、それを使用します。
-
-マイクヘルパースクリプトは、[ [入力/スクリプト/ユーティリティ] フォルダー](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs)にあります。 GitHub リポジトリには、ヘルパーの使用方法を示す [小さなサンプル](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) も含まれています。
-
 ## <a name="voice-input-in-mixed-reality-toolkit"></a>混合 Reality ツールキットでの音声入力
-このシーンでは、音声入力の例を確認できます。
 
-- [HoloToolkit-Examples/Input/シーン/SpeechInputSource](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity)
+音声入力の MRTK の例については、次のデモシーンをご覧ください。
+* [ディクテーション](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Dictation)
+* [Speech](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Speech)
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 

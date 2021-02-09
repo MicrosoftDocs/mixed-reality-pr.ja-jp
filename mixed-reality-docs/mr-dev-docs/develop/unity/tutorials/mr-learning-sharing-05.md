@@ -3,16 +3,16 @@ title: Azure Spatial Anchors の共有エクスペリエンスへの統合
 description: このコースを完了すると、Azure Spatial Anchors を使用して共有マルチユーザー HoloLens 2 アプリケーション内でオブジェクトを固定する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, マルチユーザー機能, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー
 ms.localizationpriority: high
-ms.openlocfilehash: 665979d860a2507fbf6cc9b962f5449c7d7d12f2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4eb7470487a584ef820be82f651ed9bd16392395
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010132"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590224"
 ---
 # <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5.Azure Spatial Anchors の共有エクスペリエンスへの統合
 

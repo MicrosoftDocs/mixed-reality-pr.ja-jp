@@ -3,16 +3,16 @@ title: ローカル音声テキスト変換用のオフライン モードの追
 description: このコースを完了すると、Mixed Reality アプリケーションでローカル音声テキスト変換用のオフライン モードを追加する方法がわかります。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 06/27/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, 音声認識, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: db495d6cdfa99721e68b4004535a5411bde9b17d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 2e7a48dc4bb64eb177e6fa290f4918345c3d642f
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010082"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590154"
 ---
 # <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2.ローカル音声からテキストへの変換用のオフライン モードの追加
 

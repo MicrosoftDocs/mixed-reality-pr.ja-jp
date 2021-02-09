@@ -3,16 +3,16 @@ title: 複数のユーザーとオブジェクトの移動を共有する
 description: このコースを完了すると、HoloLens 2 アプリケーション内でオブジェクトの移動を複数のユーザーで共有する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, マルチユーザー機能, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー
 ms.localizationpriority: high
-ms.openlocfilehash: 872f33c3675f67d8afe47b0006aeff731751a7e4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d4dc943c8ca57331b4916e40db67df3cd3d6d2e6
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007172"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590064"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4.複数のユーザーとオブジェクトの移動を共有する
 

@@ -1,20 +1,22 @@
 ---
-title: MRTK プロファイルの構成
-description: このコースでは、Mixed Reality アプリ用に Mixed Reality Toolkit (MRTK) プロファイルを構成する方法について説明します。
+title: 入門チュートリアル - 3. MRTK プロファイルの構成
+description: このコースでは、Mixed Reality Toolkit (MRTK) プロファイルを構成する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, 空間認識
 ms.localizationpriority: high
-ms.openlocfilehash: 9b0c914bd1f518d53abdd681b3a5f6959c9a6211
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 8a45037f7a73d9e74cd714ae4af49b58f44ce297
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579353"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590474"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3.MRTK プロファイルの構成
+
+## <a name="overview"></a>概要
 
 このチュートリアルでは、MRTK プロファイルをカスタマイズして構成する方法について学習します。
 
@@ -47,7 +49,7 @@ ms.locfileid: "98579353"
 > [!NOTE]
 > 構成プロファイルは最上位のプロファイルです。 そのため、他のプロファイルを編集できるようにするには、まず構成プロファイルを複製する必要があります。
 
-[Hierarchy]\(階層\) ウィンドウで **MixedRealityToolkit** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで、**MixedRealityToolkit** の構成プロファイルが **DefaultXRSDKConfigurationProfile** に設定されていることを確認します。
+[Hierarchy]\(階層\) ウィンドウで **MixedRealityToolkit** オブジェクトを選択し、[Inspector]\(インスペクター\) ウィンドウで、**MixedRealityToolkit** の構成プロファイルを **DefaultHoloLens2ConfigurationProfile** に変更します。
 
 ![DefaultHoloLens2ConfigurationProfile が選択された Unity MixedRealityToolkit コンポーネント](images/mr-learning-base/base-03-section1-step1-1.png)
 
@@ -55,7 +57,7 @@ ms.locfileid: "98579353"
 
 ![Unity MixedRealityToolkit コンポーネントの [Copy & Customize]\(コピーしてカスタマイズ\) ボタン](images/mr-learning-base/base-03-section1-step1-2.png)
 
-[Clone Profile]\(プロファイルのクローン\) ウィンドウで、適切な **[Profile Name]\(プロファイル名\)** (例: _GettingStarted_XRSDKConfigurationProfile_) を入力し、 **[Clone]\(クローン\)** ボタンをクリックし、**DefaultXRSDKConfigurationProfile** の編集可能なコピーを作成します。
+[Clone Profile]\(プロファイルのクローン\) ウィンドウで、適切な **[Profile Name]\(プロファイル名\)** (例: _GettingStarted_HoloLens2ConfigurationProfile_) を入力し、 **[Clone]\(クローン\)** ボタンをクリックし、**DefaultHololens2ConfigurationProfile** の編集可能なコピーを作成します。
 
 ![Unity MixedRealityToolkit の構成プロファイルのクローン ポップアップ ウィンドウ](images/mr-learning-base/base-03-section1-step1-3.png)
 
@@ -83,7 +85,7 @@ Unity メニューで、 **[File]\(ファイル\)**  >  **[Save]\(保存\)** の
 
 ![[Spatial Awareness]\(空間認識\) タブが選択された Unity MixedRealityToolkit コンポーネント](images/mr-learning-base/base-03-section1-step3-1.png)
 
-[Clone Profile]\(プロファイルのクローン\) ウィンドウで、適切な **[Profile Name]\(プロファイル名\)** (例: _GettingStarted_XRSDKSpatialAwarenessSystemProfile_) を入力し、 **[Clone]\(クローン\)** ボタンをクリックし、**DefaultXRSDKSpatialAwarenessSystemProfile** の編集可能なコピーを作成します。
+[Clone Profile]\(プロファイルのクローン\) ウィンドウで、適切な **[Profile Name]\(プロファイル名\)** (例: _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_) を入力し、 **[Clone]\(クローン\)** ボタンをクリックし、**DefaultMixedRealitySpatialAwarenessSystemProfile** の編集可能なコピーを作成します。
 
 ![Unity MixedRealityToolkit 空間認識システム プロファイル クローン ポップアップ ウィンドウ](images/mr-learning-base/base-03-section1-step3-2.png)
 
@@ -93,7 +95,7 @@ Unity メニューで、 **[File]\(ファイル\)**  >  **[Save]\(保存\)** の
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4.既定の空間認識メッシュ オブザーバーのプロファイルを複製する
 
-**[Spatial Awareness]\(空間認識\)** タブを引き続き選択した状態で、 **[XR SDK Windows Mixed Reality Spatial Mesh Observer]\(XR SDK Windows Mixed Reality 空間メッシュ オブザーバー\)** セクションを展開し、 **[Clone]\(複製\)** ボタンをクリックして、[Clone Profile]\(プロファイルの複製\) ウィンドウを開きます。
+**[Spatial Awareness]\(空間認識\)** タブを引き続き選択した状態で、 **[Windows Mixed Reality Spatial Mesh Observer]\(Windows Mixed Reality 空間メッシュ オブザーバー\)** セクションを展開し、 **[Clone]\(複製\)** ボタンをクリックして、[Clone Profile]\(プロファイルの複製\) ウィンドウを開きます。
 
 ![Windows Mixed Reality 空間メッシュ オブザーバー セクションが展開された Unity MixedRealityToolkit コンポーネント](images/mr-learning-base/base-03-section1-step4-1.png)
 

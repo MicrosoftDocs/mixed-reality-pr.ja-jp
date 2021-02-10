@@ -116,54 +116,56 @@
                   href: unity/tutorials/mr-learning-pc-holographic-remoting-02.md
         - name: HoloLens (第 1 世代) とイマーシブ ヘッドセットのチュートリアル
           items:
-            - name: MR の基本 100 - Unity の概要
-              href: unity/tutorials/holograms-100.md
-            - name: MR の基本 101 - デバイスを使用した完全なプロジェクト
-              href: unity/tutorials/holograms-101.md
-            - name: MR の基本 101E - エミュレーターを使用した完全なプロジェクト
-              href: unity/tutorials/holograms-101e.md
-            - name: MR 入力 210 - 視線入力
-              href: unity/tutorials/holograms-210.md
-            - name: MR 入力 211 - ジェスチャ
-              href: unity/tutorials/holograms-211.md
-            - name: MR 入力 212 - 音声
-              href: unity/tutorials/holograms-212.md
-            - name: MR 空間 220 - 立体音響
-              href: unity/tutorials/holograms-220.md
-            - name: MR 空間 230 - 空間マッピング
-              href: unity/tutorials/holograms-230.md
-            - name: MR 共有 240 - 複数の HoloLens デバイス
-              href: unity/tutorials/holograms-240.md
-        - name: Mixed Reality および Azure サービスのチュートリアル
-          items:
-            - name: MR と Azure 301 - 言語翻訳
-              href: unity/tutorials/mr-azure-301.md
-            - name: MR と Azure 302 - コンピューター ビジョン
-              href: unity/tutorials/mr-azure-302.md
-            - name: MR と Azure 302b - カスタム ビジョン
-              href: unity/tutorials/mr-azure-302b.md
-            - name: MR と Azure 303 - 自然言語の理解
-              href: unity/tutorials/mr-azure-303.md
-            - name: MR と Azure 304 - 顔認識
-              href: unity/tutorials/mr-azure-304.md
-            - name: MR と Azure 305 - 機能とストレージ
-              href: unity/tutorials/mr-azure-305.md
-            - name: MR と Azure 306 - ビデオのストリーミング
-              href: unity/tutorials/mr-azure-306.md
-            - name: MR と Azure 307 - Machine Learning
-              href: unity/tutorials/mr-azure-307.md
-            - name: MR と Azure 308 - クロスデバイス通知
-              href: unity/tutorials/mr-azure-308.md
-            - name: MR と Azure 309 - アプリケーションの分析情報
-              href: unity/tutorials/mr-azure-309.md
-            - name: MR と Azure 310 - 物体検出
-              href: unity/tutorials/mr-azure-310.md
-            - name: MR と Azure 311 - Microsoft Graph
-              href: unity/tutorials/mr-azure-311.md
-            - name: MR と Azure 312 - ボットの統合
-              href: unity/tutorials/mr-azure-312.md
-            - name: MR と Azure 313 - IoT Hub サービス
-              href: unity/tutorials/mr-azure-301.md
+            - name: Mixed Reality 機能
+              items:
+                - name: MR の基本 100 - Unity の概要
+                  href: unity/tutorials/holograms-100.md
+                - name: MR の基本 101 - デバイスを使用した完全なプロジェクト
+                  href: unity/tutorials/holograms-101.md
+                - name: MR の基本 101E - エミュレーターを使用した完全なプロジェクト
+                  href: unity/tutorials/holograms-101e.md
+                - name: MR 入力 210 - 視線入力
+                  href: unity/tutorials/holograms-210.md
+                - name: MR 入力 211 - ジェスチャ
+                  href: unity/tutorials/holograms-211.md
+                - name: MR 入力 212 - 音声
+                  href: unity/tutorials/holograms-212.md
+                - name: MR 空間 220 - 立体音響
+                  href: unity/tutorials/holograms-220.md
+                - name: MR 空間 230 - 空間マッピング
+                  href: unity/tutorials/holograms-230.md
+                - name: MR 共有 240 - 複数の HoloLens デバイス
+                  href: unity/tutorials/holograms-240.md
+            - name: Mixed Reality および Azure サービス
+              items:
+                - name: MR と Azure 301 - 言語翻訳
+                  href: unity/tutorials/mr-azure-301.md
+                - name: MR と Azure 302 - コンピューター ビジョン
+                  href: unity/tutorials/mr-azure-302.md
+                - name: MR と Azure 302b - カスタム ビジョン
+                  href: unity/tutorials/mr-azure-302b.md
+                - name: MR と Azure 303 - 自然言語の理解
+                  href: unity/tutorials/mr-azure-303.md
+                - name: MR と Azure 304 - 顔認識
+                  href: unity/tutorials/mr-azure-304.md
+                - name: MR と Azure 305 - 機能とストレージ
+                  href: unity/tutorials/mr-azure-305.md
+                - name: MR と Azure 306 - ビデオのストリーミング
+                  href: unity/tutorials/mr-azure-306.md
+                - name: MR と Azure 307 - Machine Learning
+                  href: unity/tutorials/mr-azure-307.md
+                - name: MR と Azure 308 - クロスデバイス通知
+                  href: unity/tutorials/mr-azure-308.md
+                - name: MR と Azure 309 - アプリケーションの分析情報
+                  href: unity/tutorials/mr-azure-309.md
+                - name: MR と Azure 310 - 物体検出
+                  href: unity/tutorials/mr-azure-310.md
+                - name: MR と Azure 311 - Microsoft Graph
+                  href: unity/tutorials/mr-azure-311.md
+                - name: MR と Azure 312 - ボットの統合
+                  href: unity/tutorials/mr-azure-312.md
+                - name: MR と Azure 313 - IoT Hub サービス
+                  href: unity/tutorials/mr-azure-301.md
     - name: プロジェクトの設定
       items:
         - name: MRTK の概要

@@ -3,16 +3,16 @@ title: Azure Spatial Anchors をお使いになる前に
 description: このコースを完了すると、Azure Spatial Anchors を使用して Mixed Reality アプリケーション内でオブジェクトを固定する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー
 ms.localizationpriority: high
-ms.openlocfilehash: 60d4ae99629f0caf7e5cc7e73b05ed35ee3f4ac4
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: a0621403ec3c4d8d0fa6f13672530756bcb6da39
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699219"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590750"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2.Azure Spatial Anchors をお使いになる前に
 
@@ -58,7 +58,7 @@ AzurespatialAnchors SDK V2.7.1 を Unity プロジェクトに追加します。
 
 
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
 
 チュートリアルのアセットをインポートすると、プロジェクト ウィンドウは次のようになります。
 
@@ -68,7 +68,7 @@ AzurespatialAnchors SDK V2.7.1 を Unity プロジェクトに追加します。
 > "WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)" が廃止されていることに関する CS0618 警告が表示されても、無視してかまいません。
 
 > [!TIP]
-> Unity カスタム パッケージをインポートする方法については、「[Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)」の手順を参照してください。
+> Unity カスタム パッケージをインポートする方法については、「[チュートリアルのアセットのインポート](mr-learning-base-04.md#importing-the-tutorial-assets)」の手順を参照してください。
 
 ## <a name="preparing-the-scene"></a>シーンの準備
 
@@ -140,6 +140,7 @@ AzurespatialAnchors SDK V2.7.1 を Unity プロジェクトに追加します。
 
 * **"Spatial Anchors Account ID"(Spatial Anchors アカウント ID)** フィールドに、Azure Spatial Anchors アカウントからの **アカウント ID** を貼り付ける
 * **"Spatial Anchors Account Key"(Spatial Anchors アカウント キー)** フィールドに、Azure Spatial Anchors アカウントからのプライマリまたはセカンダリ **アクセス キー** を貼り付ける
+* **"Spatial Anchors Account Domain"(Spatial Anchors アカウント ドメイン)** フィールドに、Azure Spatial Anchors アカウントからの **アカウント ドメイン** を貼り付ける
 
 ![Spatial Anchor Manager が構成された Unity](images/mr-learning-asa/asa-02-section6-step1-1.png)
 

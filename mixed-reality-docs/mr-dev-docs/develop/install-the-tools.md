@@ -7,20 +7,22 @@ ms.date: 01/13/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新, ツール, はじめに, 基本, Unity, Visual Studio, ツールキット, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, インストール, Windows, HoloLens, エミュレーター, Unreal, OpenXR
-ms.openlocfilehash: c45fa347768e5d35441f2c1fd59da815a80ec707
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
+ms.openlocfilehash: 0b952922c7723bf0e2c87ddb7fed9a896d65e833
+ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166777"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99606127"
 ---
 # <a name="install-the-tools"></a>ツールのインストール
 
 Microsoft HoloLens および Windows Mixed Reality イマーシブ (VR) ヘッドセット用のアプリケーションを構築するために必要なツールを取得します。 Windows Mixed Reality 開発用の別個の SDK はありません。Windows 10 SDK と一緒に Visual Studio をご使用ください。
 
-Mixed Reality デバイスをお持ちでない場合はどのようにしたらよいでしょうか。 HoloLens なしで Mixed Reality アプリの機能をテストするために、[HoloLens エミュレーター](platform-capabilities-and-apis/using-the-hololens-emulator.md)をインストールすることができます。 [Windows Mixed Reality シミュレーター](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)を使用して、イマーシブ ヘッドセット用の Mixed Reality アプリをテストすることもできます。 Unity を使用している場合は、[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity) の入力シミュレーションを使用して、ハンドトラッキングや視線追跡入力などのさまざまな種類の入力操作をテストできます。
+Mixed Reality デバイスをお持ちでない場合はどのようにしたらよいでしょうか。 HoloLens なしで Mixed Reality アプリの機能をテストするために、[HoloLens エミュレーター](platform-capabilities-and-apis/using-the-hololens-emulator.md)をインストールすることができます。 [Windows Mixed Reality シミュレーター](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)を使用して、イマーシブ ヘッドセット用の Mixed Reality アプリをテストすることもできます。 
 
-Mixed Reality アプリの作成を開始する最も簡単な方法として、Unity ゲーム エンジンをインストールすることをお勧めします。 ただし、カスタム エンジンを使用する場合は、DirectX に対してビルドすることもできます。
+Mixed Reality アプリの作成を開始する最も簡単な方法として、Unity または Unreal のいずれかのゲーム エンジンをインストールすることをお勧めします。 ただし、カスタム エンジンを使用する場合は、DirectX に対してビルドすることもできます。
+
+Unity を使用する場合は、[Unity 用 Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) の入力シミュレーションを使用して、ハンドトラッキングや視線追跡入力などのさまざまな種類の入力操作をテストできます。 Unreal プロジェクトの場合は、 [UX Tools プラグイン](https://github.com/microsoft/MixedReality-UXTools-Unreal) を使用して、一般的な入力操作とユーザー エクスペリエンス機能をテストします。
 
 >[!TIP]
 >このページをブックマークに登録して定期的にチェックし、Mixed Reality 開発に推奨される各ツールの最新バージョンを常に最新の状態に保ってください。

@@ -3,16 +3,16 @@ title: Photon Unity Networking の設定
 description: このコースを完了すると、HoloLens 2 Mixed Reality アプリケーションで Photon Unity Network を実装する方法がわかります。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, マルチユーザー機能, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 1c47da28b3ccdc706f372749f265ac0329a2327b
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 372cb7c9516a994cb7c3da1efb6cade792e862d1
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699146"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590314"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2.Photon Unity Networking の設定
 
@@ -82,7 +82,7 @@ AzurespatialAnchors SDK V2.7.1 を Unity プロジェクトに追加します。
 ![チュートリアルのアセットがインポートされた後の Unity の [Hierarchy]\(階層\)、[Scene]\(シーン\)、[Project]\(プロジェクト\) ウィンドウ](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
-> Unity カスタム パッケージをインポートする方法については、「[Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)」の手順を参照してください。
+> Unity カスタム パッケージをインポートする方法については、「[チュートリアルのアセットのインポート](mr-learning-base-04.md#importing-the-tutorial-assets)」の手順を参照してください。
 
 > [!NOTE]
 > MultiUserCapabilities チュートリアル アセット パッケージをインポートすると、型または名前空間が存在しないことを示すいくつかの [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) エラーが [Console]\(コンソール\) ウィンドウに表示されます。 これは想定されているものであり、次のセクションで PUN アセットをインポートする際に解決されます。

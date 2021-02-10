@@ -3,16 +3,16 @@ title: HoloLens 2 用の Azure Cloud Services
 description: このコースを完了すると、HoloLens 2 アプリケーション内でさまざまな Azure サービスを実装する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Azure, Mixed Reality, Unity, チュートリアル, Hololens, Hololens 2, Azure Blob Storage, Azure Table Storage, Azure Spatial Anchors, Azure Bot Framework, Azure クラウド サービス, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 02bb52653b8df38a497a9acc803a84eb09909a9f
-ms.sourcegitcommit: daa45a19a3a353334380cda78fee7fa149f0e48b
+ms.openlocfilehash: 60ca15ebccaa8348ebd47f7d4bf6245ca1496775
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98981731"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590704"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1.HoloLens 2 用の Azure Cloud Services
 
@@ -112,7 +112,7 @@ AzurespatialAnchors SDK V2.7.1 を Unity プロジェクトに追加します。
 * [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
 > [!TIP]
-> Unity カスタム パッケージをインポートする方法については、「[Mixed Reality Toolkit をインポートする](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)」の手順を参照してください。
+> Unity カスタム パッケージをインポートする方法については、「[チュートリアルのアセットのインポート](mr-learning-base-04.md#importing-the-tutorial-assets)」の手順を参照してください。
 
 チュートリアルのアセットをインポートすると、プロジェクト ウィンドウは次のようになります。
 

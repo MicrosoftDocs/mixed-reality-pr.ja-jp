@@ -3,16 +3,16 @@ title: PC Holographic Remoting の概要
 description: このコースを完了すると、Mixed Reality アプリケーションを PC から HoloLens 2 にリモート ストリーム配信する方法がわかります。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/29/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, PC Holographic Remoting, ヒント, 視線追跡
 ms.localizationpriority: high
-ms.openlocfilehash: d8c7de8a93a32107afe67a1d0375612ab6245be9
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5a779ca03921701b2111e4ed5525b6f7bc250070
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581967"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590384"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1.PC Holographic Remoting の概要
 
@@ -67,7 +67,7 @@ HoloLens 2 のチュートリアルへようこそ。 2 部構成のこのチュ
 [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage) をダウンロードして **インポート** します。
 
 >[!TIP]
-> Unity カスタム パッケージをインポートする方法については、「[Mixed Reality Toolkit をインポートする](./mr-learning-base-02.md#importing-the-mixed-reality-toolkit)」の手順を参照してください。
+> Unity カスタム パッケージをインポートする方法については、「[チュートリアルのアセットのインポート](mr-learning-base-04.md#importing-the-tutorial-assets)」の手順を参照してください。
 
 チュートリアル アセットをインポートすると、[プロジェクト] ウィンドウは次のようになります。
 
@@ -129,9 +129,9 @@ HoloLens 2 のチュートリアルへようこそ。 2 部構成のこのチュ
 
 これで、モデルの切り替えとクリッピング機能をデモンストレーションできるようにボタンが構成されました。 次に、3D モデルとクリッピング オブジェクトをスクリプトに追加します。
 
-デモンストレーション用に 6 つの異なる 3D モデルが用意されています。**_ModelParentobject_* _ を展開して、これらの 3D モデルを表示します。
+デモンストレーション用に 6 つの異なる 3D モデルが用意されています。***ModelParentobject*** を展開して、これらの 3D モデルを表示します。
 
-[階層] ウィンドウで ButtonParent オブジェクトを選択したまま、[インスペクター] ウィンドウで、_ *View Button Control (Script)* * コンポーネントを見つけて、**Models** 変数を展開します。
+[階層] ウィンドウで ButtonParent オブジェクトを選択したまま、[インスペクター] ウィンドウで、**View Button Control (Script)** コンポーネントを見つけて、**Models** 変数を展開します。
 
 **[サイズ]** フィールドに、シーンに含める 3D モデルの数を入力します。 この例では、6 を入力します。 これで、新しい 3D モデルを追加するためのフィールドが作成されます。
 
@@ -169,7 +169,7 @@ ModelParent オブジェクトの子オブジェクトを、これらのフィ�
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1.ターゲット オブジェクトおよび関連するヒントを特定する
 
-[階層] ウィンドウで、ModelParent オブジェクトを選択します。 **_MarsCuriosity -> Rover_ *_ を展開し、MarsCuriosityRover の 5 つの主要なパーツ _* POI-Camera**、**POI-Wheels**、**POI-Antenna**、**POI-Spectrometer**、**POI-RUHF Antenna** を見つけます。
+[階層] ウィンドウで、ModelParent オブジェクトを選択します。 * **[MarsCuriosity] -> [Rover]** _ を展開し、MarsCuriosityRover の 5 つの主要なパーツ _*POI-Camera**、**POI-Wheels**、**POI-Antenna**、**POI-Spectrometer**、**POI-RUHF Antenna** を見つけます。
 
 * [階層] ウィンドウで、MarsCuriosityRover パーツに関連付けられている、対応する 5 つのヒント オブジェクトを確認します。
 * これらの MarsCuriosityRover パーツに視線を向けたときにそのエクスペリエンスを強調表示するように、これらのオブジェクトを構成していきます。

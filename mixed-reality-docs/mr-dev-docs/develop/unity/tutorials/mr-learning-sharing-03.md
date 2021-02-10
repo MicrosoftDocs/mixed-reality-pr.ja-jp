@@ -3,16 +3,16 @@ title: 複数のユーザーの接続
 description: このコースを完了すると、HoloLens 2 Mixed Reality アプリケーション内で複数のユーザーを接続する方法がわかります。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, マルチユーザー機能, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー
 ms.localizationpriority: high
-ms.openlocfilehash: 0c6bf0871836ad7aae9c3906b2042f97ae003ebf
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 58ea52332485a3e0ca460322f6af60266b119ede
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699066"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590194"
 ---
 # <a name="3-connecting-multiple-users"></a>3.複数のユーザーの接続
 
@@ -69,7 +69,7 @@ ms.locfileid: "98699066"
 
 ### <a name="2-create-the-avatar"></a>2.アバターを作成する
 
-[Project]\(プロジェクト\) ウィンドウで、 **[Assets]\(アセット\)**  > **MRTK** > **StandardAssets** > **Materials** フォルダーに移動し、MRTK の素材を見つけます。
+[プロジェクト] ウィンドウで、 **[パッケージ]**  >  **[Mixed Reality Toolkit Foundation]**  >  **[SDK]**  >  **[StandardAssets]**  >  **[Materials]\(素材\)** フォルダーに移動し、MRTK の素材を見つけます。
 
 次に、[Hierarchy]\(階層\) ウィンドウで、**PhotonUser** オブジェクトを右クリックして **[3D Object]\(3D オブジェクト\)**  >  **[Sphere]\(球体\)** を選択し、PhotonUser オブジェクトの子として球体オブジェクトを作成して次のように構成します。
 

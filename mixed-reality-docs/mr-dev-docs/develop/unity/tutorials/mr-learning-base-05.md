@@ -3,16 +3,16 @@ title: ソルバーを使用した動的なコンテンツの作成
 description: このコースでは、Mixed Reality Toolkit (MRTK) のソルバーを使用して動的コンテンツを作成する方法について説明します。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, ソルバー
 ms.localizationpriority: high
-ms.openlocfilehash: 6006bf5e3edaee13c8ede0bdc04fd5ea928f1757
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 73fbbc64eadec1e3b83d6e10866bd227217f0c9c
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579163"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590484"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.ソルバーを使用した動的なコンテンツの作成
 
@@ -26,14 +26,14 @@ ms.locfileid: "98579163"
 
 ## <a name="location-of-solvers-in-the-mrtk"></a>MRTK でのソルバーの場所
 
- MRTK のソルバーは、MRTK SDK フォルダーにあります。 プロジェクトで使用可能なソルバーを表示するには、[プロジェクト] ウィンドウで、 **[アセット]**  >  **[MRTK]**  >  **[SDK]**  >  **[機能]**  >  **[ユーティリティ]**  >  **[ソルバー]** の順に移動します。
+ MRTK のソルバーは、MRTK SDK フォルダーにあります。 プロジェクトで使用可能なソルバーを表示するには、[プロジェクト] ウィンドウで、 **[パッケージ]**  >  **[Mixed Reality Toolkit Foundation]**  >  **[SDK]**  >  **[Features]\(機能\)**  >  **[Utilities]\(ユーティリティ\)**  >  **[Solvers]\(ソルバー\)** に移動します。
 
 ![Solvers フォルダーが選択されている Unity プロジェクト ウィンドウ](images/mr-learning-base/base-05-section1-step1-1.png)
 
 このチュートリアルでは、Directional Indicator Solver と Tap To Place Solver の実装方法について説明します。 MRTK で利用可能なすべてのソルバーの詳細については、[MRTK ドキュメント ポータル](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)の[ソルバー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)に関するガイドを参照してください。
 
 > [!NOTE]
-> Directional Indicator Solver は、上記の [Solvers] フォルダーには含まれていません。これは試験的な機能であるため、[アセット] > [MRTK] > [SDK] > [試験的] > [機能] > [ユーティリティ] フォルダーにあります。
+> Directional Indicator Solver は、上記の [Solvers] フォルダーには含まれていません。これは試験的な機能であるため、[パッケージ] > [Mixed Reality Toolkit Foundation] > [SDK] > [Experimental]\(試験的\) > [Features]\(機能\) > [Utilities]\(ユーティリティ\) フォルダーにあります。
 
 ## <a name="using-the-directional-indicator-solver-to-direct-the-user-to-objects"></a>Directional Indicator Solver を使用してユーザーをオブジェクトに誘導する
 

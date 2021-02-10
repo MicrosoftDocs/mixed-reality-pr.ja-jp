@@ -7,12 +7,12 @@ ms.date: 01/27/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新, ツール, はじめに, 基本, Unity, Visual Studio, ツールキット, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, インストール, Windows, HoloLens, エミュレーター, Unreal, OpenXR
-ms.openlocfilehash: b9d54edb251cfe22d4f5fbea6fa8c923f6ff2d69
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 0aad81ddd625467dd9159232d590b1a4bf68d06b
+ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99244067"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570255"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Mixed Reality Feature Tool へようこそ
 
@@ -33,9 +33,11 @@ Mixed Reality Feature Tool を実行するには、次のものが必要です�
 > [!NOTE]
 > 現在、Mixed Reality Feature Tool は、Windows 上でのみ動作しますが、MacOS のサポートも間もなく始まります。
 
+## <a name="download"></a>ダウンロード 
+
 環境を設定したら、次のようにします。
 
-* [Microsoft ダウンロード センター](https://aka.ms/MRFeatureTool)から Mixed Reality Feature Tool の最新バージョンをダウンロードします。
+* Microsoft ダウンロード センターから [Mixed Reality Feature Tool の最新バージョンをダウンロードします](https://aka.ms/MRFeatureTool)。
 * ダウンロードが完了したら、ファイルを展開してデスクトップに保存します
     * 簡単にアクセスできるように、実行可能ファイルのショートカットを作成することをお勧めします
 
@@ -47,7 +49,7 @@ Mixed Reality Feature Tool を実行するには、次のものが必要です�
 
 スタート ページでは、次のことができます。
 
-* **歯車アイコン** ボタンを使用してツール設定を[構成](configuring-feature-tool.md)します
+* **歯車アイコン** ボタンを使用してツール設定を [構成](configuring-feature-tool.md)します
 * **疑問符** ボタンを使用して既定の Web ブラウザーを起動し、ドキュメントを表示します
 * **[開始]** を選択して、機能パッケージの検出を開始します
 

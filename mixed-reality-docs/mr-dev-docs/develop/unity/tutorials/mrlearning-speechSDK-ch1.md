@@ -3,16 +3,16 @@ title: Azure Speech Services のチュートリアル - 1. 音声認識と文字
 description: このコースを完了すると、Mixed Reality アプリケーション内で Azure Speech SDK を実装する方法を学習できます。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, Azure 空間アンカー, 音声認識, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: c663bbf443c206750854c1b8f4cd8946eacd28b1
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 818e4c7ab60a2b17b60bfc97f564a4a87bf33a9b
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635458"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590124"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1.音声認識と文字起こしの統合と使用
 
@@ -63,7 +63,7 @@ ms.locfileid: "98635458"
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section2-step1-1.png)
 
 > [!TIP]
-> MRTK プロファイルを複製し、構成する方法については、[Mixed Reality ツールキット プロファイルの構成](mr-learning-base-03.md)に関するページにある手順を参照してください。
+> Unity カスタム パッケージをインポートする方法については、「[チュートリアルのアセットのインポート](mr-learning-base-04.md#importing-the-tutorial-assets)」の手順を参照してください。
 
 ## <a name="configuring-the-capabilities"></a>機能の構成
 

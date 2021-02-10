@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 開発する, 開発, HoloLens, クラウド サービス, Azure, リモート レンダリング, 空間アンカー, Cognitive Services, 認知, Unity, 機械学習, 音声翻訳, コンピューター ビジョン, Microsoft Graph
-ms.openlocfilehash: e4ddfd5951945cc6a5bc9d7b71cad86a296fe725
-ms.sourcegitcommit: cd2987467044fde1e2eb227e6c25d00e744aabfc
+ms.openlocfilehash: abd1515b587842dbccb1747b606059e190559480
+ms.sourcegitcommit: 07d6a5c19c9f6ffd0316bce5629ab0e185e1d542
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98923811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99973072"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 複合現実クラウド サービスの概要
 
@@ -47,9 +47,9 @@ ARR では、レンダリング ワークロードをクラウド内のハイエ
 
 ### <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-[Azure Spatial Anchors](https://docs.microsoft.com /azure/spatial-anchors/) (ASA) は、空間認識 Mixed Reality アプリケーションを構築するための、クロスプラットフォームのサービスです。 Azure Spatial Anchors を使用すると、複数デバイス間でのホログラフィック コンテンツのマッピング、保持、共有を、現実世界のスケールで実現できます。 
+[Azure Spatial Anchors](https://docs.microsoft.com /azure/spatial-anchors/) は、空間認識 Mixed Reality アプリケーションを構築するための、クロスプラットフォームのサービスです。 Azure Spatial Anchors を使用すると、複数デバイス間でのホログラフィック コンテンツのマッピング、保持、共有を、現実世界のスケールで実現できます。 
 
-ASA は、次のような Mixed Reality の一般的なユースケース向けに独自にカスタマイズされたソリューションです。
+Azure Spatial Anchors は、次のような Mixed Reality の一般的なユースケース向けに独自にカスタマイズされたソリューションです。
 * **ウェイファインディング**: 2 つ以上の空間アンカーを接続して、ユーザーが操作する必要のあるタスク リストまたは関心のあるポイントを作成できます。
 * **マルチユーザー エクスペリエンス**: 同じ仮想空間内のオブジェクトを操作することで、ユーザー間で動作のやり取りを行えます。
 * **現実世界での仮想コンテンツの保持**: ユーザーは、他のサポートされているデバイスでも表示可能な仮想オブジェクトを現実世界に配置できます。

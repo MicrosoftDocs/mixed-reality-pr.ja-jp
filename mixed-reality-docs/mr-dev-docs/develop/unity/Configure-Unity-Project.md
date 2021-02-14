@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity、mixed reality、開発、作業の開始、新しいプロジェクト、Windows Mixed Reality、UWP、XR、パフォーマンス
-ms.openlocfilehash: 70df0314cb714d78c2eeb17335f67d6d90134770
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: 6a9bc0d9a565de1d25e1906c439e39773cb99244
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226451"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496080"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>MRTK を使用しないプロジェクトを構成する
 
@@ -119,13 +119,13 @@ HoloLens には、モバイルクラスの GPU があります。 アプリが H
 > [!IMPORTANT]
 > 新しいカメラを削除して作成する場合は、新しいカメラが **maincamera** としてタグ付けされていることを確認してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プロジェクトの準備ができたので、次のように Mixed Reality エクスペリエンスの開発を開始できます。
 
 * [コア構成要素](unity-development-overview.md#2-core-building-blocks)の追加
 * 使用可能な[プラットフォーム機能と api を](unity-development-overview.md#3-advanced-features)確認する
-* [アプリをデプロイ](../platform-capabilities-and-apis/using-visual-studio.md#deploying-an-app-to-your-local-pc---immersive-headset)する方法を学習する
+* [アプリをデプロイ](../platform-capabilities-and-apis/using-visual-studio.md#)する方法を学習する
 * [Mixed Reality シミュレーター](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)を使用する
 
 ## <a name="see-also"></a>関連項目

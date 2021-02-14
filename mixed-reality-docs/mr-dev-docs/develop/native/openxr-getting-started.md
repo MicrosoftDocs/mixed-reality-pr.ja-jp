@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR、Khronos、BasicXRApp、Windows Mixed Reality、OpenXR 開発者ツール、DirectX、ネイティブ、ネイティブアプリ、カスタムエンジン、ミドルウェア、作業の開始、101、プレビュー拡張機能、OpenXR ランタイムバージョン、システムステータス
-ms.openlocfilehash: 918dfb1f336598548735b1699c61d1b350fed293
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 99bf2e19c0bd7708f8c2421d7a466e77a6a75d84
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613196"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496070"
 ---
 # <a name="getting-started-with-openxr"></a>OpenXR の概要
 
@@ -35,7 +35,7 @@ HoloLens 2 用の OpenXR アプリケーションの開発を開始するには:
 1. 少なくとも Windows 10 2019 更新プログラム (1903) を実行していることを確認してください。これは、Windows Mixed Reality エンドユーザーが OpenXR アプリケーションを実行するための最小要件です。  以前のバージョンの Windows 10 を使用している場合は、 <a href="https://www.microsoft.com/software-download/windows10" target="_blank">windows 10 Update Assistant</a>を使用してアップグレードできます。
 2. Windows Mixed reality ヘッドセットを設定するか、指示に従って [Windows Mixed reality シミュレーターを有効](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)にします。
 
-以上で作業は終了です。  Windows mixed Reality OpenXR ランタイムがインストールされ、すべての Windows Mixed Reality ユーザーに対して自動的にアクティブになります。  Microsoft Store は、ランタイムを最新の状態に保ちます。
+これで完了です。  Windows mixed Reality OpenXR ランタイムがインストールされ、すべての Windows Mixed Reality ユーザーに対して自動的にアクティブになります。  Microsoft Store は、ランタイムを最新の状態に保ちます。
 
 Windows Mixed Reality OpenXR Runtime を再度アクティブ化するには、[スタート] メニューから Mixed Reality ポータルを起動し、ウィンドウの上部にある [修正] を選択します。  このボタンがない場合、OpenXR ランタイムは既にアクティブになっています。<br>
 

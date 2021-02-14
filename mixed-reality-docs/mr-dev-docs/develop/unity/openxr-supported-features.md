@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 拡張現実, 仮想現実, mixed reality ヘッドセット, 学習, チュートリアル, 概要
-ms.openlocfilehash: 09067498d33fb2c96da53aa54c0449959355d809
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: bad18c5f30465120bce370aa91c13ff3f229bef6
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583510"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496148"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Unity でサポートされている Mixed Reality OpenXR の機能
 
-**Mixed Reality OpenXR プラグイン** パッケージは Unity の **OpenXR プラグイン** の拡張機能であり、HoloLens 2 および Windows Mixed Reality ヘッドセットの一連の機能をサポートしています。 続行する前に、 **unity 2020.2** 以降、 **OpenXR プラグインバージョン 0.1.2** 以降がインストールされていること、および unity プロジェクトが [OpenXR 用に構成](openxr-getting-started.md)されていることを確認してください。
+**Mixed Reality OpenXR プラグイン** パッケージは Unity の **OpenXR プラグイン** の拡張機能であり、HoloLens 2 および Windows Mixed Reality ヘッドセットの一連の機能をサポートしています。 続行する前に、 **unity 2020.2** 以降、 **OpenXR プラグインバージョン 0.1.3** 以降がインストールされていること、および unity プロジェクトが [OpenXR 用に構成](openxr-getting-started.md)されていることを確認してください。
 
 ## <a name="whats-supported"></a>サポートされる操作
 
@@ -32,24 +32,28 @@ ms.locfileid: "98583510"
 * PV カメラを使用した第3目のレンダリングを使用した Mixed Reality キャプチャ。
 * [Holographic リモート処理アプリでの HoloLens 2 への "Play" を](#holographic-remoting-in-unity-editor-play-mode)サポートします。これにより、開発者は、デバイスにビルドしてデプロイすることなく、スクリプトをデバッグできます。
 * MRTK Unity 2.5.3 以降の [Mrtk OpenXR プロバイダーのサポート](openxr-getting-started.md#using-mrtk-with-openxr-support)と互換性があります。
-* Unity [Arfoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 以降との互換性
+* Unity [Arfoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 以降と互換性があります。
+* (0.1.3 で追加)では、Windows スタンドアロンのビルドおよび展開されたアプリから [デスクトップアプリの Holographic リモート処理](#holographic-remoting-in-desktop-app) をサポートしています。
 
-## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Unity エディター再生モードでの Holographic リモート処理
+## <a name="holographic-remoting-setup"></a>Holographic リモート処理のセットアップ
 
-Visual Studio プロジェクトで UWP Unity プロジェクトをビルドしてから、パッケージ化して HoloLens 2 デバイスに配置すると、時間がかかることがあります。 1つの解決策は、Holographic エディターのリモート処理を有効にすることです。これにより、ネットワーク上の HoloLens 2 デバイスに対して "Play" モードで直接 C# スクリプトをデバッグできます。 このシナリオでは、UWP パッケージをビルドしてリモートデバイスに配置するオーバーヘッドを回避します。
-
-1. まず、HoloLens 2 のストアから [Holographic Remoting Player アプリをインストール](https://www.microsoft.com/store/productId/9NBLGGH4SV40) する必要があります。
+1. まず、HoloLens 2 の Microsoft Store から [Holographic Remoting プレーヤーアプリをインストール](https://www.microsoft.com/store/productId/9NBLGGH4SV40) する必要があります。
 2. HoloLens 2 で Holographic リモート処理プレーヤーアプリを実行すると、接続先のバージョン番号と IP アドレスが表示されます。
     * OpenXR プラグインを使用するには、v2.0 以降が必要です。
 
     ![HoloLens で実行されている Holographic リモート処理プレーヤーのスクリーンショット](images/openxr-features-img-01.png)
 
-3. [ **編集-> プロジェクトの設定**] を開き、 **XR プラグイン管理** に移動して、[ **Windows Mixed Reality] 機能セット** ボックスをオンにします。
+## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Unity エディター再生モードでの Holographic リモート処理
+
+Visual Studio プロジェクトで UWP Unity プロジェクトをビルドしてから、パッケージ化して HoloLens 2 デバイスに配置すると、時間がかかることがあります。 1つの解決策は、Holographic エディターのリモート処理機能を有効にすることです。これにより、ネットワーク上の HoloLens 2 デバイスに対して "Play" モードで直接 C# スクリプトをデバッグできます。 このシナリオでは、UWP パッケージをビルドしてリモートデバイスに配置するオーバーヘッドを回避します。
+
+1. [Holographic リモート処理のセットアップ](#holographic-remoting-setup)の手順に従います。
+2. [ **編集-> プロジェクトの設定**] を開き、 **XR プラグイン管理** に移動して、[ **Windows Mixed Reality] 機能セット** ボックスをオンにします。
 
     ![XR プラグイン管理が強調表示されている Unity エディターで開いているプロジェクト設定パネルのスクリーンショット](images/openxr-features-img-02.png)
 
-4. **OpenXR** の [**機能**] セクションを展開し、[**すべて表示**] を選択します。
-5. [ **Holographic エディターリモート処理** ] チェックボックスをオンにして、Holographic リモート処理アプリから取得した IP アドレスを入力します。
+3. **OpenXR** の [**機能**] セクションを展開し、[**すべて表示**] を選択します。
+4. [ **Holographic エディターリモート処理** ] チェックボックスをオンにして、Holographic リモート処理アプリから取得した IP アドレスを入力します。
 
     ![機能が強調表示されている Unity エディターでプロジェクト設定パネルが開いているスクリーンショット](images/openxr-features-img-03.png)
 
@@ -57,6 +61,56 @@ Visual Studio プロジェクトで UWP Unity プロジェクトをビルドし�
 
 > [!NOTE]
 > バージョン0.1.0 の場合、Holographic リモート処理ランタイムはアンカーをサポートしておらず、ARAnchorManager 機能はリモート処理では機能しません。  この機能は今後のリリースで予定されています。
+
+## <a name="holographic-remoting-in-desktop-app"></a>デスクトップアプリでの Holographic リモート処理
+
+> [!NOTE]
+> Windows スタンドアロンアプリのリモート処理サポートは、0.1.3 パッケージリリースで追加されました。
+> バージョン0.1.3 の場合、この機能は UWP ビルドをサポートしていません。
+
+1. [Holographic リモート処理のセットアップ](#holographic-remoting-setup)の手順に従います。
+2. [ **編集-> プロジェクトの設定**] を開き、 **XR プラグイン管理** に移動して、[ **Windows Mixed Reality] 機能セット** ボックスをオンにします。 また、 **[起動時に XR を初期化** する] チェックボックスをオフにします。
+
+    ![[スタートアップ時に XR を初期化する] チェックがオフになっている Unity エディターでプロジェクト設定パネルが開いているスクリーンショット](images/openxr-features-img-02-app.png)
+
+3. **OpenXR** の [**機能**] セクションを展開し、[**すべて表示**] を選択します。
+4. [ **Holographic App リモート処理** ] チェックボックスをオンにします。
+
+    ![アプリのリモート処理が有効になっている Unity エディターで開いているプロジェクト設定パネルのスクリーンショット](images/openxr-features-img-03-app.png)
+
+5. 次に、リモート処理の構成を設定し、XR の初期化をトリガーするコードを記述します。 [Mixed Reality OpenXR プラグイン](openxr-getting-started.md#hololens-2-samples)と共に配布されるサンプルアプリには、AppRemoting.cs が含まれています。これは、実行時に特定の IP アドレスに接続するためのシナリオ例を示しています。 この時点でローカルコンピューターにサンプルアプリをデプロイすると、[接続] ボタンを含む [IP アドレス] 入力フィールドが表示されます。 IP アドレスを入力して [接続] をクリックすると、XR が初期化され、ターゲットデバイスへの接続が試行されます。
+
+    ![アプリのリモート処理の UI の例を表示しているサンプルアプリのスクリーンショット](images/openxr-sample-app-remoting.png)
+
+6. カスタム接続コードを記述するに `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Connect` は、を入力してを呼び出し `RemotingConfiguration` ます。 このサンプルアプリでは、これをインスペクターで公開し、テキストフィールドから IP アドレスを入力する方法を示します。 を呼び出す `Connect` と、構成が設定され、XR が自動的に初期化されます。このため、コルーチンとして呼び出す必要があります。
+
+    ``` cs
+    StartCoroutine(Remoting.AppRemoting.Connect(remotingConfiguration));
+    ```
+
+7. を実行している間、API を使用して現在の接続状態を取得 `AppRemoting.TryGetConnectionState` し、必要に応じて、を使用して XR を切断または初期化解除でき `AppRemoting.Disconnect()` ます。 これは、同じアプリセッション内で別のデバイスを切断して再接続するために使用できます。 サンプルアプリには、tappable キューブが用意されています。このキューブは、タップされた場合にリモート処理セッションを切断します。
+
+### <a name="migration-from-previous-apis"></a>以前の Api からの移行
+
+#### <a name="unityenginexrwsaholographicremoting"></a>UnityEngine. XR. HolographicRemoting
+
+[Unity のドキュメント](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/XR.WSA.HolographicRemoting.html)のサンプルコードを次に示します。
+
+| XR.付い.HolographicRemoting | OpenXR (AppRemoting) |
+| ---- | ---- |
+| `HolographicRemoting.Connect(String)` | `AppRemoting.Connect(RemotingConfiguration)` |
+| `HolographicRemoting.ConnectionState` | `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
+| `StartCoroutine(LoadDevice("WindowsMR"))`| [N/A: の呼び出し時に自動的に発生します `AppRemoting.Connect` ]  |
+
+#### <a name="unityenginexrwindowsmrwindowsmrremoting"></a>UnityEngine. XR. WindowsMRRemoting
+
+| XR.WindowsMR. WindowsMRRemoting | OpenXR (AppRemoting) |
+| ---- | ---- |
+| `WindowsMRRemoting.Connect()` | `AppRemoting.Connect(RemotingConfiguration)` |
+| `WindowsMRRemoting.Disconnect()` | `AppRemoting.Disconnect()` |
+| `WindowsMRRemoting.TryGetConnectionState(out ConnectionState)` および `WindowsMRRemoting.TryGetConnectionFailureReason(out ConnectionFailureReason)`| `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
+| `WindowsMRRemoting.isAudioEnabled`, `WindowsMRRemoting.maxBitRateKbps`, `WindowsMRRemoting.remoteMachineName` | `AppRemoting.Connect`構造体を介してに渡されます。 `RemotingConfiguration` |
+| `WindowsMRRemoting.isConnected` | `AppRemoting.TryGetConnectionState(out ConnectionState state, out _) && state == ConnectionState.Connected`
 
 ## <a name="anchors-and-anchor-persistence"></a>アンカーとアンカーの永続化
 
@@ -164,4 +218,5 @@ Unity の XR 入力システムで haptics を使用する方法の詳細につ�
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 HoloLens 2 で Unity アプリを中断および再開すると、アプリは正しく再開できなくなります。これにより、HoloLens ビューでは、4つのスピン点が表示されます。
+
 * 回避策として、OpenXR プロジェクト設定で [ **深さの送信モード** ] を **[なし** ] に設定します。

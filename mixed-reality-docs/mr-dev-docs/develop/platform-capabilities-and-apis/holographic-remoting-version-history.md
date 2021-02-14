@@ -6,17 +6,29 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、リモート処理、Holographic リモート処理、バージョン履歴、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: e1f80d0d2cbd02b78ed07e3ec60825ffe1059309
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 8fa1671657a7cb057f88da24fe4cfe68b0401397
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699011"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496040"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic リモート処理のバージョン履歴
 
 > [!IMPORTANT]
 > このガイダンスは、HoloLens 2 の Holographic リモート処理に固有のものです。
+
+## <a name="version-250-february-12-2021"></a>バージョン 2.5.0 (2021 年2月12日) <a name="v2.5.0"></a>
+* [OPENXR API](../native/openxr.md)を使用した Holographic リモート処理がサポートされるようになりました。
+  * XR_MSFT_spatial_anchor 拡張機能。 この拡張機能により、アプリケーションは、ランタイムによって追跡されるユーザーの物理環境内の任意の空き領域空間アンカーを作成できます。
+  * XR_MSFT_controller_model 拡張機能。 この拡張機能には、コントローラーの GLTF モデルを読み込むメカニズムが用意されています。
+  * XR_MSFT_holographic_remoting 拡張機能の一部としてのカスタムデータチャネル。 その例については、 [OpenXR リモートサンプル](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)を参照してください。
+* プレーヤーとリモート側の同期が改善されました。 これにより、動的に変更されたポーズとフレームバッファリングが可能になります。これにより、リモートでレンダリングされたコンテンツが、期待されるターゲットフレームレートでスムーズに表示されるように
+* Microsoft Store 経由で利用できる Holographic リモート処理プレーヤーのパフォーマンスが向上しました。 HoloLens 2 では、プレーヤーは1秒あたり60フレームで安定した状態で動作するようになりました。
+* リモートアプリによって [SpatialSurfaceObserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) 経由で照会できる空間サーフェスメッシュの転送が最適化されています。
+* SpatialAnchorManager メソッドの呼び出しまたはアンカーの解放によって切断時に例外が発生する問題を修正しました。
+* PlayerContext または RemoteContext インスタンスを閉じるときにクラッシュするように、スレッドの問題を修正しています。
+* その他の多くのバグ修正と安定性の向上。
 
 ## <a name="version-241-january-22-2021"></a>バージョン 2.4.1 (2021 年1月22日) <a name="v2.4.1"></a>
 

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: OpenXR、Khronos、BasicXRApp、DirectX、ネイティブ、ネイティブアプリ、カスタムエンジン、ミドルウェア
-ms.openlocfilehash: 76193cdf3c790037474b66de9fbbbd1da8f31199
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: afb0627a0fb29ff63ea2174676fc2fdfbd252de6
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583798"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496060"
 ---
 # <a name="openxr"></a>OpenXR
 

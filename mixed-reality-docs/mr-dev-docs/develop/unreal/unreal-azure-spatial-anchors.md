@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, Azure, Azure 開発, Spatial Anchors, Mixed Reality, 開発, 機能, 新しいプロジェクト, エミュレーター, ドキュメント, ガイド, ホログラム, ゲーム開発, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット
-ms.openlocfilehash: 5797cd48198b163b55f3724685126b1d4d85c69c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 01d7217f038519d68eabfbf4f273c7ff8cbe7193
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583028"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496197"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal での Azure Spatial Anchors
 
@@ -44,6 +44,12 @@ Azure Spatial Anchors は、現実世界のアンカー ポイントを拡張現
 
 > [!NOTE]
 > Unreal 4.25 での Azure Spatial Anchors では、Azure AD 認証トークンがサポートされていませんが、この機能のサポートは今後のリリースで導入される予定です。
+
+## <a name="enabling-internet-access"></a>インターネット アクセスの有効化
+
+**[プロジェクトの設定] > [HoloLens]** を開き、**インターネット クライアント** 機能を有効にします。
+
+![機能がハイライトされた HoloLens プロジェクトの設定](images/asa-enable-wifi-connection.jpg)
 
 ## <a name="adding-azure-spatial-anchors-plugins"></a>Azure Spatial Anchors プラグインを追加する
 

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity、mixed reality、開発、作業の開始、新しいプロジェクト、Windows Mixed Reality、UWP、XR、パフォーマンス
-ms.openlocfilehash: 6a9bc0d9a565de1d25e1906c439e39773cb99244
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: bd25c56947007f90c0310ea9802bba91a81b0914
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496080"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102117626"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>MRTK を使用しないプロジェクトを構成する
 
@@ -56,8 +56,10 @@ HoloLens 2 を対象としている場合は、ユニバーサル Windows プラ
 
 ![XR Plugin management が強調表示されている unity エディターで開き、[プロジェクトの設定] ウィンドウのスクリーンショット](images/wmr-config-img-7.png)
 
-4. [ **XR プラグイン管理**] セクションを展開し、[ **Windows Mixed Reality** ] を選択します。
-5. すべてのチェックボックスをオンにし、**深さの送信モード** を **深さ16ビット** に設定します
+4. **XR プラグイン管理** セクションを展開し、[**ユニバーサル Windows Platform Settings** ] タブを選択します。
+5. Unity 2020 以降を使用している場合は、 **OpenXR (プレビュー)** または **Windows Mixed Reality** を確認するためのオプションが表示されます。
+6. いずれかのランタイムを選択できます。  HoloLens 2 または HP リバーブ G2 用に特に開発していて、 **OpenXR (プレビュー)** を試す場合は、[OpenXR (プレビュー)] ボックスを選択して、このチュートリアルに戻る前に、 [Unity 用の Mixed Reality OpenXR プラグインを使用して](openxr-getting-started.md) 、これらのデバイスに適切に設定するためのガイドを参照してください。
+7. **Windows Mixed Reality** プラグインを選択する場合は、すべてのチェックボックスをオンにし、**深さの送信モード** を **深さ16ビット** に設定します。
 
 ![Windows Mixed Reality セクションが強調表示されている unity エディターで開いているプロジェクト設定ウィンドウのスクリーンショット](images/wmr-config-img-8.png)
 
@@ -90,11 +92,11 @@ HoloLens 2 を対象としている場合は、ユニバーサル Windows プラ
 
 ### <a name="quality-settings"></a>品質設定
 
-HoloLens には、モバイルクラスの GPU があります。 アプリが HoloLens を対象としている場合は、アプリの品質設定を最適なパフォーマンスのために調整して、完全なフレームレートを維持する必要があります。
+HoloLens には、モバイルクラスの GPU があります。 アプリが HoloLens を対象としている場合は、アプリの品質設定から開始して、最大のパフォーマンスを実現し、完全なフレームレートを維持することをお勧めします。  を開発に追加した後は、品質設定への ping を実行して品質とパフォーマンスのバランスを適切に調べることを検討できます。 
 
-1. [**プロジェクト設定の編集 > の > 品質**] を選択します。
-2. **Windows ストア** のロゴの下にある **ドロップダウン** を選択し、[**非常に低い**] を選択します。 Windows ストアの列のボックスと **非常に少ない** 行が緑色になっていると、設定が正しく適用されていることがわかります。
-3. [**影**] セクションで、[**影を無効にする**] を選択します。
+1. [ **プロジェクト設定の編集 > の > 品質**] を選択します。 
+2.  **Windows ストア** のロゴの下にある **ドロップダウン** を選択し、   [ **非常に低い**] を選択します。 Windows ストアの列のボックスと非常に少ない行が緑色になっていると、設定が正しく適用されていることがわかります。 
+3. [ **影**   ] セクションで、[ **影を無効にする**] を選択します。 
 
 ![[品質設定] セクションが強調表示されている unity エディターで開いているプロジェクト設定ウィンドウのスクリーンショット](images/wmr-config-img-10.png)<br>
 *Unity の品質設定*

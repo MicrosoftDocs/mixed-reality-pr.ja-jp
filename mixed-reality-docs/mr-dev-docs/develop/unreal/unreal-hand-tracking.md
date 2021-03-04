@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality、手動追跡、Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、Mixed Reality、開発、機能、ドキュメント、ガイド、ホログラム、ゲーム開発、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット
-ms.openlocfilehash: 1888258321af978ca52623008193e6dae94833a8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ea4ba3ad5905e899eae474e4d571585fef77c0c2
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581118"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102117656"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal での手の追跡
 
@@ -21,7 +21,7 @@ ms.locfileid: "98581118"
 
 手の形では、ユーザーの手と指を入力として追跡し、使用することができます。これは、ブループリントと C++ の両方でアクセスできます。 Unreal API は、Unreal エンジンとの間で同期されたティックを使用して、データを座標系として送信します。
 
-![手スケルトン](../native/images/hand-skeleton.png)
+![手スケルトン](images/hand-tracking-skeleton-update.png)
 
 [!INCLUDE[](includes/tabs-tracking-hand-pose.md)]
 

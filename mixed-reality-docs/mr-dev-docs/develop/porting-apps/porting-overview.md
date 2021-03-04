@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 移植, unity, ミドルウェア, エンジン, UWP, Win32
-ms.openlocfilehash: 268d98b45aa659614e0266bfd1add7c7ed2f684a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 693891d67ae26098f0810a539059da8d34f4731c
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583583"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759113"
 ---
 # <a name="porting-overview"></a>移植の概要
 
@@ -35,7 +35,7 @@ Unity を Mixed Reality で開発するための現在の推奨事項は **、�
 > [!CAUTION]
 > XR SDK はこのバージョンの Unity で使用できますが、現在、Azure 空間アンカーはこのセットアップと互換性がありません。 この推奨事項は、Unity 用 Azure 空間アンカーパッケージの今後のリリースで更新されます。 
 > 
-> * Azure 空間アンカーが不要な場合は、 [XR 用に Unity プロジェクトを構成](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) し、 [MRTK と XR SDK を使っ](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html)てみることができます。
+> * Azure 空間アンカーが不要な場合は、 [XR 用に Unity プロジェクトを構成](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) し、 [MRTK と XR SDK を使っ](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md)てみることができます。
 > 
 > * 現在プロジェクトで XR SDK を使用していて、Azure 空間アンカーを使用する場合は、XR SDK をアンインストールし、レガシ XR パッケージを再インストールしてプロジェクト設定を元に戻します。
 

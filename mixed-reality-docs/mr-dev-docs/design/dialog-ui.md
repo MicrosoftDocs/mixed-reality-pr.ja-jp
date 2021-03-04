@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Mixed Reality、HoloLens、UI コントロール、相互作用、UI、ux、UX デザイン、空間 UI、空間相互作用、3D UI、3D UX、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 9ef4fc5e4d781d235996a645e8d1bb81e040a64c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c9e1bf3e263214f9691f6c788f6115f93e690489
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009052"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759257"
 ---
 # <a name="dialog"></a>ダイアログ
 
@@ -33,7 +33,7 @@ MRTK は、1つまたは2つのボタンオプションを持つ3つのサイズ
 ![HoloLens で実行されているさまざまなサイズのダイアログのオーバーレイのスクリーンショット](images/MRTK_UX_Dialog_Types.jpg)
 
 
-* 詳細については、「 [Mrtk-Dialog](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html)」を参照してください。
+* 詳細については、「 [Mrtk-Dialog](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/dialog.md)」を参照してください。
 
 <br>
 

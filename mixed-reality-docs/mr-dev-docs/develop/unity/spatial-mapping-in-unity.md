@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、空間マッピング、レンダラー、collider、メッシュ、スキャン、コンポーネント、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 841cc1fa2a37884545ae12865f9b7cf56338dc07
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: a713497e0c5f061e9e81bf66197b3e2116218219
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582542"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759748"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity の空間マッピング
 
@@ -480,7 +480,7 @@ Dll を理解することで、内部的には、playspace を 8 cm サイズの
 * 追跡が失われると、次の OnSurfaceChanged イベントによってすべてのメッシュが削除されます。
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>混合 Reality ツールキットでの空間マッピング
-混合 Reality Toolkit v2 での空間マッピングの使用の詳細については、MRTK ドキュメントの「 <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">空間認識」セクション</a> を参照してください。
+混合 Reality Toolkit v2 での空間マッピングの使用の詳細については、MRTK ドキュメントの「 <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">空間認識」セクション</a> を参照してください。
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 

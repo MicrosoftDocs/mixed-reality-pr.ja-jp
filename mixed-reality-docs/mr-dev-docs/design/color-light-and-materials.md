@@ -6,12 +6,12 @@ ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、デザイン、カラー、ライト、マテリアル、Mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: bf64413793aa40d158fde9f9a416d9a9b66af236
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6e5857436b0325537d0ea5d0321d296c58c09eae
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580059"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759267"
 ---
 # <a name="color-light-and-materials"></a>色、ライト、素材
 
@@ -88,7 +88,7 @@ Holographic 表示用にコンテンツをデザインする場合、最適な�
     :::column:::
 マテリアルは、現実的なホログラムを作成するための重要な要素です。 適切な視覚的特性を提供することにより、物理環境に合わせて優れた holographic オブジェクトを作成できます。 さまざまな種類のユーザー入力のやり取りについて視覚的なフィードバックを提供するために、素材も重要です。  
 
-[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity) には、視覚的なフィードバックに使用できるさまざまな視覚効果オプションを備えた Mrtk Standard シェーダーが用意されています。 たとえば、"近接光" プロパティを使用して、ユーザーの指がオブジェクトの表面に近づいたときに光源効果を与えることができます。 [Mrtk Standard Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)の詳細情報
+[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity) には、視覚的なフィードバックに使用できるさまざまな視覚効果オプションを備えた Mrtk Standard シェーダーが用意されています。 たとえば、"近接光" プロパティを使用して、ユーザーの指がオブジェクトの表面に近づいたときに光源効果を与えることができます。 [Mrtk Standard Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)の詳細情報
     :::column-end:::
         :::column:::
     *ビデオループ: 境界ボックス* 

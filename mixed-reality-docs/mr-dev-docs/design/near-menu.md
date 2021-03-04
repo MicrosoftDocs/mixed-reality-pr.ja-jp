@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合現実、コントロール、対話、ui、ux、メニュー、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 3cba4452861f05a1ce921c1f18f6636661ee34b0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 71e88ab94f9051d58b666f2b3c27c33564194e19
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009932"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759173"
 ---
 # <a name="near-menu"></a>メニューの近く
 
@@ -26,7 +26,7 @@ Near メニューは、ユーザーに [タグに沿った動作](billboarding-a
 ## <a name="near-menu-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 用 MRTK (Mixed Reality Toolkit) の Near メニュー
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** には、さまざまなメニュー事前 fab の例が用意されています。
 
-* [MRTK-Near メニュー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_NearMenu.html)
+* [MRTK-Near メニュー](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/near-menu.md)
 
 <br>
 

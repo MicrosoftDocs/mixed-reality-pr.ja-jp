@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv, 音声, cortana, 音声, 入力, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, MRTK, Mixed Reality ツールキット, 宝石
-ms.openlocfilehash: 079a3d457da9403611d2f825dd6e599a4e9f0353
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: cc1ecd7d236748c3c4de77678e6f67c69a2c1af1
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583221"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759143"
 ---
 # <a name="voice-input"></a>音声入力
 
@@ -273,7 +273,7 @@ HoloLens が提供するカスタマイズされたオーディオ入力処理�
 
 このようなオーディオ処理はすべてハードウェアアクセラレータです。これは、HoloLens CPU で同じ処理が行われた場合と比べて、機能の電力消費が多くなることを意味します。 システムのバッテリ寿命を最大化し、組み込みのオフロードオーディオ入力処理を活用するために、CPU で他のオーディオ入力処理を実行しないようにします。
 
-## <a name="languages"></a>言語
+## <a name="languages"></a>Languages
 
 HoloLens 2 では、 [複数の言語がサポート](/hololens/hololens2-language-support)されています。 複数のキーボードがインストールされている場合や、アプリが別の言語で音声認識エンジンを作成しようとした場合でも、音声コマンドは常にシステムの表示言語で実行されることに注意してください。
 
@@ -290,7 +290,7 @@ Windows Mixed Reality Developer Edition release 2017 では、オーディオエ
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 用の MRTK (Mixed Reality Toolkit) での音声入力
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** では、任意のオブジェクトに音声コマンドを簡単に割り当てることができます。 MRTK の **音声入力プロファイル** を使用して、キーワードを定義します。 **SpeechInputHandler** スクリプトを割り当てることにより、音声入力プロファイルで定義されているキーワードにオブジェクトを応答させることができます。 また、SpeechInputHandler は、ユーザーの信頼度を向上させるための音声確認ラベルも提供します。
 
-* [MRTK-Voice コマンド](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
+* [MRTK-Voice コマンド](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/speech.md)
 
 ---
 

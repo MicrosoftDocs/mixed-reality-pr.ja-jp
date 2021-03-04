@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: 混合現実、コントロール、対話、キュー、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、audio
-ms.openlocfilehash: d0dc8ce6425d597d04b47a6c8b08f72534488594
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b93092b597d0267c1169cf823b1a5c1fa03c3c3f
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007202"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759878"
 ---
 # <a name="interactable-object"></a>対話可能なオブジェクト
 
@@ -41,19 +41,19 @@ Holographic オブジェクトは、mixed reality の実際の環境とブレン
 
 :::row:::
     :::column:::
-       ![interactibleobject-既定値](images/interactibleobject-states-default.jpg)<br>
+       ![既定の状態の対話型オブジェクト](images/interactibleobject-states-default.jpg)<br>
        **既定 (監視) の状態**<br>
         オブジェクトの既定のアイドル状態。
     カーソルがオブジェクト上にありません。 ハンドが検出されません。
     :::column-end:::
     :::column:::
-       ![interactibleobject-対象](images/interactibleobject-states-targeted.jpg)<br>
+       ![ターゲットとホバー状態の対話型オブジェクト](images/interactibleobject-states-targeted.jpg)<br>
         **ターゲット (ホバー) 状態**<br>
         オブジェクトが、見つめカーソル、指近接、またはモーションコントローラーのポインターの対象になっている場合。
     カーソルがオブジェクト上にあります。 ハンドが検出され、準備が完了しました。
     :::column-end:::
     :::column:::
-       ![interactibleobject-押された状態](images/interactibleobject-states-pressed.jpg)<br>
+       ![押された状態の対話型オブジェクト](images/interactibleobject-states-pressed.jpg)<br>
        **押された状態**<br>
         オブジェクトがエアタップジェスチャで押されたときに、指を押すか、モーションコントローラーの [選択] ボタンをクリックします。
     カーソルがオブジェクト上にあります。 ハンドが検出されました。
@@ -70,15 +70,15 @@ Holographic オブジェクトは、mixed reality の実際の環境とブレン
 
 :::row:::
     :::column:::
-       ![interactibleobject-既定値](images/MRTK_InteractableState-default.jpg)<br>
+       ![既定の状態の Holographic ボタン](images/MRTK_InteractableState-default.jpg)<br>
        **既定 (監視) の状態**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-対象](images/MRTK_InteractableState-targeted.jpg)<br>
+       ![ターゲットとホバー状態の Holographic ボタン](images/MRTK_InteractableState-targeted.jpg)<br>
         **ターゲット (ホバー) 状態**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-押された状態](images/MRTK_InteractableState-pressed.jpg)<br>
+       ![押された状態の Holographic ボタン](images/MRTK_InteractableState-pressed.jpg)<br>
        **押された状態**<br>
     :::column-end:::
 :::row-end:::
@@ -264,12 +264,12 @@ HoloLens 2 では、オブジェクトとの対話を可能にする、手によ
 
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** では、スクリプト [**対話型**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts)を使用して、オブジェクトがさまざまな種類の入力相互作用状態に応答するようにすることができます。 色、サイズ、素材、シェーダーなどのオブジェクトプロパティを制御することで、視覚的な状態を定義できるさまざまなテーマをサポートしています。
 
-* [対話型](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
-* [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [対話型](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/interactable.md)
+* [Button](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md)
 * [ハンド操作の例シーン](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit の標準シェーダーには、ビジュアルおよびオーディオキューを作成するのに役立つ **近接光** などのさまざまなオプションが用意されています。
-* [MRTK 標準シェーダー](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
+* [MRTK 標準シェーダー](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
 
 <br>

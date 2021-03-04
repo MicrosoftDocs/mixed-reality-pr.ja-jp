@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、Mixed Reality、Virtual Reality、VR、MR、トラブルシューティング、エラー、ヘルプ、サポート、パフォーマンス
 appliesto:
 - Windows 10
-ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
-ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
+ms.openlocfilehash: 9b477042ebed33600a007778cd534d3074e34770
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98242539"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759287"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP リバーブ G2 に関してよく寄せられる質問
 
@@ -102,3 +102,8 @@ HP リバーブ G2 マイクが Windows PC によって最初に認識される�
 ## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>PC を引き続き使用しているときにヘッドセットの電源を切る方法
 
 ヘッドセットケーブルのリンクボックスから AC 接続アダプターを取り外して、ヘッドセットの電源を取り外します。
+
+## <a name="the-image-of-the-displays-of-the-reverb-g2-is-smaller-and-only-in-the-upper-left"></a>リバーブ G2 のディスプレイの画像が小さく、左上にのみ表示されます。
+
+AMD power GPU がある場合は、自動 upscaling を無効にする必要があります。 ヘッドセットが接続されている間、[設定]-> Mixed Reality-> ヘッドセット-> 解像度] に移動します。
+ドロップダウンメニューで、[4320 x 2160 (最高品質)] オプションを選択します。 [自動アップスケーリング (最適なパフォーマンス)] が選択されている場合は、表示で問題が発生する可能性があります。

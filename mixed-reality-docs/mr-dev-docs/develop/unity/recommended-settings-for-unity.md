@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: unity, 設定, mixed reality, HoloLens, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, パフォーマンス, 品質設定, 照明設定, 深度バッファー, xr, 追跡損失
-ms.openlocfilehash: be85b592a6857c9dd40e2b3bb3f09dec0a6273be
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: cc1d2692a172c84274299580a0ce580264f65fcf
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009332"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759698"
 ---
 # <a name="recommended-settings-for-unity"></a>Unity で推奨される設定
 
@@ -68,7 +68,7 @@ Unity プロジェクトでこの機能を有効にするには
 
 Windows Mixed Reality プラットフォームがホログラムの安定性を最適化するためには、深度バッファーが正確であり、画面上のレンダリングされたホログラムに一致することに依存します。 したがって、で深度バッファーを共有する場合は、色をレンダリングするときに、深度も表示することが重要です。 Unity では、ほとんどの不透明または TransparentCutout のマテリアルは、既定で深度を表示しますが、透明でテキストオブジェクトはシェーダーに依存しますが、深度は表示されません。
 
-[Mixed Reality Toolkit 標準シェーダー](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md)を使用する場合、透過オブジェクトの深度をレンダリングするには、次のようにします。
+[Mixed Reality Toolkit 標準シェーダー](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md)を使用する場合、透過オブジェクトの深度をレンダリングするには、次のようにします。
 
 1) MRTK Standard シェーダーを使用している透明な素材を選択し、[インスペクターエディター] ウィンドウを開きます。
 2) [深度バッファーの共有] 警告で [ **今すぐ修正** ] ボタンを選択します。 これは、**表示モード** を **カスタム** に設定することによって、手動でも実行できます。次に、[**モード**] を [**透明**] に設定し、最後に [**深度書き込み**] を **オン** に設定します。
@@ -114,10 +114,10 @@ Holographic スプラッシュスクリーンを切り替えるには、次の�
 
 |  Unity スプラッシュスクリーンを表示する  |  Holographic スプラッシュイメージ  |  動作 |
 |----------|----------|----------|
-|  オン  |  なし  |  既定の Unity スプラッシュスクリーンを5秒間、またはアプリが読み込まれるまでのいずれか長い方に表示します。 |
-|  オン  |  Custom  |  5秒間、またはアプリが読み込まれるまでのいずれか長い方のカスタムスプラッシュスクリーンを表示します。 |
-|  オフ  |  なし  |  アプリが読み込まれるまで、透明な黒 (何も表示されません) を表示します。 |
-|  オフ  |  Custom  |  5秒間、またはアプリが読み込まれるまでのいずれか長い方のカスタムスプラッシュスクリーンを表示します。 |
+|  On  |  なし  |  既定の Unity スプラッシュスクリーンを5秒間、またはアプリが読み込まれるまでのいずれか長い方に表示します。 |
+|  On  |  Custom  |  5秒間、またはアプリが読み込まれるまでのいずれか長い方のカスタムスプラッシュスクリーンを表示します。 |
+|  Off  |  なし  |  アプリが読み込まれるまで、透明な黒 (何も表示されません) を表示します。 |
+|  Off  |  Custom  |  5秒間、またはアプリが読み込まれるまでのいずれか長い方のカスタムスプラッシュスクリーンを表示します。 |
 
 詳細については、 [Unity のスプラッシュスクリーンのドキュメント](https://docs.unity3d.com/Manual/class-PlayerSettingsSplashScreen.html) を参照してください。
 

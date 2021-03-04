@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合現実、コントロール、相互作用、ui、ux、シェーダー、mixed reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット、reality、MRTK、Mixed Reality Toolkit、視覚効果
-ms.openlocfilehash: 68e40c053f9557debf9ad22baf2f48a8e06a1bbb
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 046969d1d16c2bddcf5b0a392d721c291b945a94
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008862"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759123"
 ---
 # <a name="shader"></a>シェーダー
 
@@ -38,7 +38,7 @@ Holographic オブジェクトは実際の環境の物理的なオブジェク�
 
 ## <a name="standard-shader-in-mrtk-for-unity"></a>Unity の MRTK の標準シェーダー
 
-* [MRTK-標準シェーダー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
+* [MRTK-標準シェーダー](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
 <br>
 

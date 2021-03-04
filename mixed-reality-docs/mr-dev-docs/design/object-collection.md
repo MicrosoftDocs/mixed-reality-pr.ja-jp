@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、コントロール、デザイン、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual Reality ヘッドセット、HoloLens、オブジェクトコレクション、2D、3D、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: a459d03246b8df4c17d523f57ece54997849c209
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 53ec99b998f1c65fdd3ca8b5d935b43ff0070500
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847216"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759153"
 ---
 # <a name="object-collection"></a>オブジェクト コレクション
 
@@ -48,7 +48,7 @@ ms.locfileid: "97847216"
 
 ## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 用の MRTK (Mixed Reality Toolkit) のオブジェクトコレクション
 
-* [MRTK-オブジェクトコレクション](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)
+* [MRTK-オブジェクトコレクション](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/object-collection.md)
 
 <br>
 

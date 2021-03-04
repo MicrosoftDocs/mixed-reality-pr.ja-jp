@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合現実、コントロール、相互作用、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、surface 吸着
-ms.openlocfilehash: 5bc1b22db00e46d95d05c719b46c8f17426be8ef
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: e8a77d2fb1c147c353d74349961977f27aea71e0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848155"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759788"
 ---
 # <a name="surface-magnetism"></a>表面吸着
 
@@ -27,7 +27,7 @@ Surface 吸着を使用すると、holographic オブジェクトを実際の物
 
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** には、サーフェスの吸着手法に関するスクリプトと例のシーンが用意されています。 表面吸着は、ハンドレイ、視線、およびモーションコントローラーなどのさまざまな種類の入力で使用できます。
 
-* [MRTK-Surface の吸着ソルバー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html#surfacemagnetism)
+* [MRTK-Surface の吸着ソルバー](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#surfacemagnetism)
 * [MRTK-空間認識 + 表面吸着の例シーン](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
 
 <br>

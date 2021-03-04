@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: UI デザイン, holographic 表示, コンテンツデザイン, ダークテーマ, ライトテーマ, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実ヘッドセット, HoloLens, MRTK, Mixed Reality Toolkit, 設計, ピクセル
-ms.openlocfilehash: 371d9aac610a765e7ecc6dd1f17401e5d7855672
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6bf65b9e40e42f1609b1108b366ac65637fcf106
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009092"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759277"
 ---
 # <a name="designing-content-for-holographic-display"></a>ホログラフィック ディスプレイのコンテンツを設計する
 
@@ -85,7 +85,7 @@ Holographic の再プロジェクションやホログラムの安定性を向�
 
 既定では、透明または半透明のオブジェクトは、適切なブレンドを可能にするための深度を書き込みません。 この問題を軽減するには、不透明なオブジェクトを使用して、透明なオブジェクトが不透明なオブジェクト (不透明な backplate の前面にある半透明のボタンなど) の近くに表示されるようにする、半透明なオブジェクトを強制的に書き込み (すべてのシナリオでは適用しない)、またはフレームの最後に深さの値のみを提供する
 
-MRTK-Unity 内のソリューション: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html#depth-buffer-sharing-in-unity  
+MRTK-Unity 内のソリューション: https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/performance/hologram-stabilization.md#depth-buffer-sharing-in-unity  
 
 純色と不透明なバックプレートを使用することにより、読みやすさと相互作用の信頼を確保できます。
 
@@ -103,9 +103,9 @@ MRTK-Unity 内のソリューション: https://microsoft.github.io/MixedReality
 
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** には、濃色配色に基づく多数の UI 構成ブロックの例が用意されています。
 
-* [Near メニュー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_NearMenu.html)
-* [ダイアログ](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html)
-* [ハンドメニュー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandMenu.html)
+* [Near メニュー](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/near-menu.md)
+* [ダイアログ](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/dialog.md)
+* [ハンドメニュー](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/hand-menu.md)
 
 <br>
 

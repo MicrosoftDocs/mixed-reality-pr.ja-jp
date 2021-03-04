@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 視線、ヘッド・宝石、unity、ホログラム、mixed reality、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、unity、Mixed Reality ツールキット
-ms.openlocfilehash: 7efc77eff90a164fdc0476a90912a0f52c9bb33d
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 7602eb27da19dc77e4eab1c1a428dc9a1cf8b252
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192640"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759688"
 ---
 # <a name="head-gaze-in-unity"></a>Unity でのヘッドを見つめます
 
@@ -52,7 +52,7 @@ void Update()
 コンピューター上のマウスポインターと同じように、ユーザーの顔を示す [カーソル](../../design/cursors.md) を実装する必要があります。 ユーザーが対象としているコンテンツを把握することで、ユーザーが操作しようとしている内容の信頼性が向上します。
 
 ## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Mixed Reality ツールキットの頭を見つめます 
-MRTK の [入力マネージャー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) から、ヘッドを使用してアクセスできます。
+MRTK の [入力マネージャー](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md) から、ヘッドを使用してアクセスできます。
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 

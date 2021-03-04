@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit、holographic レンダリング、holographic、イマーシブ、フォーカスポイント、深度バッファー、方向専用、位置指定、不透明、透明、クリップ、混合 reality ヘッドセット、windows mixed reality ヘッドセット、仮想現実ヘッドセット
-ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 865d19482e5f612eab95fa2f74cb2bad59171496
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581119"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759768"
 ---
 # <a name="camera-in-unity"></a>Unity のカメラ
 
@@ -93,7 +93,7 @@ Unity アプリで Windows に深度バッファーを提供するかどうか�
 
 ## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit"></a>混合 Reality ツールキットを使用した自動シーンおよびカメラ設定 
 
-ステップ [バイステップ](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) ガイドに従って Unity プロジェクトに Mixed Reality Toolkit を追加すると、プロジェクトが自動的に構成されます。 また、次のセクションのガイドを使用して、MRTK なしでプロジェクトを手動で構成することもできます。
+ステップ [バイステップ](tutorials/mr-learning-base-01.md) ガイドに従って Unity プロジェクトに Mixed Reality Toolkit を追加すると、プロジェクトが自動的に構成されます。 また、次のセクションのガイドを使用して、MRTK なしでプロジェクトを手動で構成することもできます。
 
 ## <a name="next-development-checkpoint"></a>次の開発チェックポイント
 

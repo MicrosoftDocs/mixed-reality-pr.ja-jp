@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality、設計、手作業、イマーシブヘッドセット、MRTK、ハンズオン、ハンズオン、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit
-ms.openlocfilehash: 69afe767e01c57535b79575e4f25fabe4a9f6f39
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ca23617e18c84f592ebd0575195b6bf4a98e80e5
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582271"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759478"
 ---
 # <a name="hand-coach"></a>ハンド コーチ
 
@@ -85,7 +85,7 @@ UI メニューを使用してさまざまなサイズをテストしました�
 
 ## <a name="can-i-create-my-own"></a>自分で作成できますか。
 
-はい、ご利用いただけます。 ゲーム用に独自の独自のジェスチャを作成し、コミュニティに投稿することをお勧めします。
+はい。 ゲーム用に独自の独自のジェスチャを作成し、コミュニティに投稿することをお勧めします。
 アプリに使用できる Rigged ハンドの Maya ファイルが用意されています。これは、 <a href="files/HandCoach_MRTK.zip">HandCoach_MRTK.zip ダウンロード</a>できます。
 
 ![Maya でのアニメーションの例](images/HandCoach/MayaSelect_Gif.gif)<br>
@@ -169,7 +169,7 @@ UI メニューを使用してさまざまなサイズをテストしました�
 * ハンズオンは、1回だけ学習する必要があります。 教育を超えると混乱を招き、messiness
 *   Unity に取り込むには、最新の MRTK をこちらからダウンロードしてください。 https://github.com/microsoft/MixedRealityToolkit-Unity
     *   素材: Teaching_Hand2
-    *   スクリプト: <a href= "https://github.com/MixedRealityToolkit-Unity/blob/'HandCoachUX'/Documentation/README_HandCoach.md">mrtk</a>での mrtk のガイドラインを参照してください。
+    *   スクリプト: <a href= "https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md">mrtk</a>での mrtk のガイドラインを参照してください。
     *   プロジェクトごとの設定
         *   UWP に設定されたシーン: 命令は、「Windows Mixed Reality 用の [Unity プロジェクトの構成](../develop/unity/Configure-Unity-Project.md) 」にあります。
 

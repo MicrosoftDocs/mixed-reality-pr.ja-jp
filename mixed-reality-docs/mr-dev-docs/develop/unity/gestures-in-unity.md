@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: ジェスチャ, unity, 宝石, 入力, mixed reality ヘッドセット, windows mixed reality ヘッドセット, 仮想現実のヘッドセット, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 44c42abdd4628cacd6af334a916fb725da8bb022
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 4c3db98e3047cdc74663c5cbee1c4607b77008e0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583894"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759083"
 ---
 # <a name="gestures-in-unity"></a>Unity でのジェスチャ
 
@@ -131,11 +131,11 @@ void OnDestroy()
 
 今後の Windows 更新プログラムでは、のスローが引き続き改善され、詳細についてはここで確認できます。
 
-## <a name="gesture-and-motion-controllers-in-mrtk-v2"></a>MRTK v2 のジェスチャとモーションコントローラー
+## <a name="gesture-and-motion-controllers-in-mrtk"></a>MRTK のジェスチャとモーションコントローラー
 
 入力マネージャーからジェスチャとモーションコントローラーにアクセスできます。
-* [MRTK v2 でのジェスチャ](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Gestures.html)
-* [MRTK v2 のモーションコントローラー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html)
+* [MRTK のジェスチャ](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/gestures.md)
+* [MRTK の Motion Controller](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md)
 
 
 ## <a name="follow-along-with-tutorials"></a>チュートリアルに従う

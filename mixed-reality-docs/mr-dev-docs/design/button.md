@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合現実、コントロール、相互作用、ui、ux、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、HoloLens、MRTK、Mixed Reality Toolkit、ボタン
-ms.openlocfilehash: b4e8388c4e3ea855c191cbdfc06621018274ff86
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e4d0637d8c10c3cd23bd2ee1369fd57137af795
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847596"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759428"
 ---
 # <a name="button"></a>Button
 
@@ -46,13 +46,13 @@ ms.locfileid: "97847596"
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Unity の MRTK (Mixed Reality Toolkit) のボタン
-**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** には、hololens 2 および hololens (第1世代) のシェルスタイルのボタンなど、さまざまな種類のボタン prefabs が用意されています。 HoloLens 2 ボタンの prefab には、ユーザーの信頼度の向上に役立ついくつかの詳細な affordances が含まれています。
+**[Mrtk For Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** には、hololens 2 および hololens (第1世代) 用のシェルスタイルのボタンを含む、さまざまな種類のボタン prefabs が用意されています。 HoloLens 2 ボタンの prefab には、ユーザーの信頼度の向上に役立ついくつかの詳細な affordances が含まれています。
 
 * 近接度に基づく強調表示
 * フロントケージの圧縮
 * トリガーに対するパルス効果。
 
-* 詳細な手順とカスタマイズされた例については、 [Mrtk のボタン](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) をご覧ください。
+* 詳細な手順とカスタマイズされた例については、 [Mrtk のボタン](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md) をご覧ください。
 
 <br>
 

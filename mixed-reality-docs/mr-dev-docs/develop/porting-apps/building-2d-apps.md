@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 2D アプリ、UWP、フラットアプリ、HoloLens、イマーシブヘッドセット、アプリモデル、戻るボタン、アプリバー、dpi、解像度、スケール、移植、HoloLens 1 世代、HoloLens 2、mixed reality ヘッドセット、windows mixed reality ヘッドセット、移行、Windows 10
-ms.openlocfilehash: 2d6b03a8cca70ac2db810209263139ebdf3c22a7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6e8e000f694b40f637c932ee9764415ec3a57698
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583534"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759798"
 ---
 # <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Windows Mixed Reality 用に 2D UWP アプリを更新する
 
@@ -51,7 +51,7 @@ Mixed reality ヘッドセット内の [スタート] メニューにアクセ�
 
 ## <a name="targeting-both-immersive-headsets-and-hololens"></a>イマーシブヘッドセットと HoloLens の両方を対象とする
 
-お疲れさまでした。 これで、アプリは Windows 10 ユニバーサル Windows プラットフォーム (UWP) を使用しています。
+おめでとうございます。 これで、アプリは Windows 10 ユニバーサル Windows プラットフォーム (UWP) を使用しています。
 
 これで、アプリは現在の Windows デバイス (デスクトップ、モバイル、Xbox、Windows Mixed Reality イマーシブヘッドセット、HoloLens、および将来の Windows デバイス) で実行できるようになりました。 ただし、これらのデバイスをすべてターゲットにするには、アプリが Windows を対象としていることを確認する必要があります。 ユニバーサルデバイスファミリ。
 
@@ -108,7 +108,7 @@ HoloLens での UWP アプリの起動を停止している可能性のある問
 
 ## <a name="update-your-ui"></a>UI を更新する
 
-UWP アプリが2D ホログラムとしてイマーシブヘッドセットと HoloLens で実行されるようになったので、次は見栄えが良いことを確認します。 次の点を考慮することをお勧めします。
+UWP アプリが2D ホログラムとしてイマーシブヘッドセットと HoloLens で実行されるようになったので、次は見栄えが良いことを確認します。 考慮事項をいくつか以下に示します。
 * Windows Mixed Reality は、853x480 有効ピクセルに相当する固定解像度および DPI ですべての2D アプリを実行します。 このスケールで設計を改良する必要があるかどうかを検討し、以下の設計ガイダンスを確認して、HoloLens とイマーシブヘッドセットのエクスペリエンスを向上させてください。
 * Windows Mixed Reality では、2d ライブタイルはサポートされて [いません](../../design/app-model.md) 。 コア機能がライブタイルに関する情報を表示している場合は、その情報をアプリに戻したり、 [3d アプリランチャー](../../distribute/3d-app-launcher-design-guidance.md)を調べたりすることを検討してください。
 

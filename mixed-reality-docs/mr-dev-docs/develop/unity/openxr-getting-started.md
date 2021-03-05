@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 拡張現実, 仮想現実, mixed reality ヘッドセット, 学習, チュートリアル, 概要
-ms.openlocfilehash: cae588acbcddeefae45a555f335f1c74389f1824
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: a4606eeb1fa6c8dc0858653a196c1e536ae473d4
+ms.sourcegitcommit: e2228b9585302eeff1d853ddb54be8421a21c954
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496170"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102189124"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Unity に Mixed Reality OpenXR プラグインを使用する
 
 Unity バージョン2020.2 以降、Microsoft の Mixed Reality OpenXR プラグインパッケージは、Unity パッケージマネージャー (UPM) を使用して利用できます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 * Unity 2020.2 以降
 * Unity OpenXR plugin 0.1.3 以降
@@ -84,20 +84,23 @@ HoloLens 2 用に開発している場合は、 **Mixed Reality> > OpenXR に移
 
 ## <a name="using-mrtk-with-openxr-support"></a>OpenXR サポートでの MRTK の使用
 
-MRTK Unity では、2.5.3 リリース以降の Mixed Reality OpenXR プラグインがサポートされています。  
+MRTK-Unity では、2.5.3 リリース以降の Mixed Reality OpenXR プラグインがサポートされています。
 
-1. [Mixed Reality 機能ツール](welcome-to-mr-feature-tool.md)をもう一度開き、プラットフォームサポートカテゴリで **Mixed reality OpenXR プラグイン** パッケージを選択します。
+1. Mixed reality [ツール](welcome-to-mr-feature-tool.md) キットをまだインストールしていない場合は、それをもう一度開きます。 OpenXR のサポートは、 **Foundation** パッケージに含まれています。
 2. インスペクターの MixedReality Toolkit コンポーネントスクリプトに移動し、 **DefaultOpenXRConfigurationProfile** プロファイルに切り替えます。
 
-![インスペクターの Mixed Reality Toolkit コンポーネントでの MRTK 構成の切り替えのスクリーンショット](images/openxr-img-11.png)
+    ![インスペクターの Mixed Reality Toolkit コンポーネントでの MRTK 構成の切り替えのスクリーンショット](images/openxr-img-11.png)
 
-### <a name="known-issues"></a>既知の問題 
+    1. [OpenXR への移行の詳細につい](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline)ては、MRTK のドキュメントを参照してください。
 
-ハンドトラッキング機能を使用する場合は、 **Assets/MixedRealityToolkit/link.xml** ファイルに次の行を追加します。
-
-```
-<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
-```
+> [!NOTE]
+> 以前のバージョンの MRTK からアップグレードする場合は、 **Assets/MixedRealityToolkit/link.xml** ファイルに次の行が含まれていることを確認してください。
+>
+> ```xml
+> <assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
+> ```
+>
+> MRTK 2.5.4 以降を使用して開始した場合、この行は既定で追加されます。
 
 ## <a name="next-steps"></a>次のステップ
 

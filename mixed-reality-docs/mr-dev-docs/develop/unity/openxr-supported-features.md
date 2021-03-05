@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 拡張現実, 仮想現実, mixed reality ヘッドセット, 学習, チュートリアル, 概要
-ms.openlocfilehash: bad18c5f30465120bce370aa91c13ff3f229bef6
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: 0501abe5a417c17283347455ccea8ec6f49a6a45
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496148"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230743"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Unity でサポートされている Mixed Reality OpenXR の機能
 
@@ -34,6 +34,7 @@ ms.locfileid: "100496148"
 * MRTK Unity 2.5.3 以降の [Mrtk OpenXR プロバイダーのサポート](openxr-getting-started.md#using-mrtk-with-openxr-support)と互換性があります。
 * Unity [Arfoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 以降と互換性があります。
 * (0.1.3 で追加)では、Windows スタンドアロンのビルドおよび展開されたアプリから [デスクトップアプリの Holographic リモート処理](#holographic-remoting-in-desktop-app) をサポートしています。
+* (0.1.4 で追加)SpatialGraphNode を通じて HoloLens2 で [QR コード追跡](#qr-codes) をサポート
 
 ## <a name="holographic-remoting-setup"></a>Holographic リモート処理のセットアップ
 
@@ -205,13 +206,19 @@ public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFea
 
 Unity の XR 入力システムで haptics を使用する方法の詳細については、unity の unity [マニュアルの「UNITY XR](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics)」を参照してください。
 
+## <a name="qr-codes"></a>QR コード
+
+HoloLens 2 を使用すると、ヘッドセット周辺の環境内の QR コードを検出し、各コードの実際の場所で座標系を確立することができます。 詳細については、 [QR コードの追跡](../platform-capabilities-and-apis/qr-code-tracking.md) に関するドキュメントを参照してください。  OpenXR プラグインを使用する場合は、 [ `SpatialGraphNodeId` qr api から](../platform-capabilities-and-apis/qr-code-tracking.md#qr-api-reference)を取得し、API を使用して `Microsoft.MixedReality.OpenXR.SpatialGraphNode` qr コードを見つけます。
+
+参考までに、 [ `SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs)の詳細な使用方法については、 [GitHub の QR 追跡サンプルプロジェクト](https://github.com/yl-msft/QRTracking)を参照してください。
+
 ## <a name="whats-coming-soon"></a>近日公開予定
 
 次の問題および不足している機能は、Mixed Reality OpenXR プラグイン **バージョン 0.1.0** で知られています。 これらの機能については、今後のリリースで修正と新機能をリリースする予定です。
 
 * **ARPlaneSubsystem** はまだサポートされていません。 HoloLens 2 では、 **Arplan emanager**、 **ARRaycastManager**、および ARANCHORMANAGER などの関連 API もサポートされていません **。**
-* **アンカー** は Holographic リモート処理ではまだサポートされていませんが、近い将来に登場します。
-* **手動メッシュ** 追跡、 **QR コード**、 **XRMeshSubsystem** はまだサポートされていません。
+* **アンカーの永続** 化は、Holographic リモート処理ではまだサポートされていませんが、近い将来に登場します。
+* **手動メッシュ** 追跡と **XRMeshSubsystem** はまだサポートされていません。
 * **Azure 空間アンカー** のサポートは、今後のリリースで予定されています。
 * **ARM64** は、HoloLens 2 アプリで唯一サポートされているプラットフォームです。 **ARM** プラットフォームは今後のリリースで予定されています。
 

@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: event、calendar、academy、schedule、sf、サンフランシスコ、リアクター
-ms.openlocfilehash: 2e7cb5d06cb0903e3dc3f850f452ded6597cd929
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f534a170594eb26e0d7f56e8694b9112cb0acbac
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101760058"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230883"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Microsoft Mixed Reality イベント
 
@@ -30,5 +30,7 @@ ms.locfileid: "101760058"
 | HoloLens & Mixed Reality Meetup|2020 年 9 月 8 日|[人間の知覚と Mixed Reality](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Human-Perception-and-Mixed-Reality)|
 | Mixed Reality Speaker シリーズ|2020 年 9 月 22 日|[Kippy のエスケープ: HoloLens 2 の & MRTK の概要](../develop/unreal/unreal-kippys-escape.md)|
 | Mixed Reality Speaker シリーズ|2020年10月22日|[BabylonJS を使用した WebXR の概要](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
+| Mixed Reality Speaker シリーズ|2020 年 11 月 3 日|[混合現実における視覚効果](https://channel9.msdn.com/Shows/Mixed-Reality/Visual-Effects-in-Mixed-Reality)|
 | Mixed Reality Speaker シリーズ|2020 年 11 月 17 日|[将来の構築: MRTK の新要素](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | Mixed Reality Speaker シリーズ|2020 年 12 月 1 日|[ホログラムのデザイン](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|
+| Mixed Reality Speaker シリーズ|2021 年 2 月 11 日|[MR の1日: 空間コンピューティングが毎日の有効期間](https://channel9.msdn.com/Shows/Mixed-Reality/One-Day-In-MR-How-Spatial-Computing-Effects-Every-Day-Life)|

@@ -6,21 +6,21 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 拡張現実, 仮想現実, mixed reality ヘッドセット, 学習, チュートリアル, 概要
-ms.openlocfilehash: a4606eeb1fa6c8dc0858653a196c1e536ae473d4
-ms.sourcegitcommit: e2228b9585302eeff1d853ddb54be8421a21c954
+ms.openlocfilehash: 9b95a0978522fb9fefaca3c4b96189131b88d0ec
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102189124"
+ms.locfileid: "102230861"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Unity に Mixed Reality OpenXR プラグインを使用する
 
 Unity バージョン2020.2 以降、Microsoft の Mixed Reality OpenXR プラグインパッケージは、Unity パッケージマネージャー (UPM) を使用して利用できます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
 
 * Unity 2020.2 以降
-* Unity OpenXR plugin 0.1.3 以降
+* Unity OpenXR plugin 0.1.4 以降
 * Visual Studio 2019 以降
 * HoloLens 2 アプリの **UWP** プラットフォームサポートを Unity でインストールする
 
@@ -102,7 +102,7 @@ MRTK-Unity では、2.5.3 リリース以降の Mixed Reality OpenXR プラグ�
 >
 > MRTK 2.5.4 以降を使用して開始した場合、この行は既定で追加されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 プロジェクトが OpenXR 用に構成され、サンプルにアクセスできるようになったので、OpenXR プラグインで現在サポートされている [機能](openxr-supported-features.md) を確認してください。
 

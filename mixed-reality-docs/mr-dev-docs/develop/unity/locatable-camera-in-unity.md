@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: photo、video、hololens、カメラ、unity、入手、PVC、フォトビデオカメラ、mixed reality ヘッドセット、windows mixed reality ヘッドセット、virtual reality ヘッドセット、web カメラ、写真キャプチャ、ビデオキャプチャ
-ms.openlocfilehash: 8916b332774185e4453b514ca7b6916947bdcd81
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: ccf0c17a5f419341e64a87fb9ef04ef0a40c2a33
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226421"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236903"
 ---
 # <a name="locatable-camera-in-unity"></a>Unity での場所を特定できるカメラ
 
@@ -26,7 +26,8 @@ ms.locfileid: "98226421"
 
 ## <a name="photo-capture"></a>写真のキャプチャ
 
-**名前空間:** *UNITYENGINE. XR*<br>
+**名前空間:**  
+*UnityEngine. XR (Unity \~ 2018) unityengine. Windows. Web カメラ (unity 2019 \~ )*<br>
 **種類:** *photocapture*
 
 *Photocapture* の種類を使用すると、写真ビデオカメラで引き続き写真を撮ることができます。 *Photocapture* を使用して写真を撮影する一般的なパターンを次に示します。
@@ -321,5 +322,5 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 いつでも [Unity 開発チェックポイント](unity-development-overview.md#3-advanced-features)に戻ることができます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 * [場所を特定できるカメラ](../platform-capab ilities-and-apis/locatable-camera.md)

@@ -1,0 +1,6 @@
+- name: Configuring Diagnostics
+  href: configuring-diagnostics.md
+- name: 診断システムの概要
+  href: diagnostics-system-getting-started.md
+- name: Visual Profiler の使用
+  href: using-visual-profiler.md

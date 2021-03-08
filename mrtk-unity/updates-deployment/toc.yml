@@ -1,0 +1,8 @@
+- name: ビルドと配置
+  href: build-and-deploy.md
+- name: HTK からのアップグレード
+  href: htk-to-mrtk-porting-guide.md
+- name: MRTK とマネージド コードの削除
+  href: mrtk-and-managed-code-stripping.md
+- name: 以前のバージョンからの更新
+  href: updating.md

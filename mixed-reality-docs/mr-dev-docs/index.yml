@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: a4a869ca70c630956427130b01928c3154164f46
-  ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+  ms.openlocfilehash: 2113307483f95901b061bb91ea8a91a68b3d5e1f
+  ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/20/2021
-  ms.locfileid: "98582864"
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "101759898"
 highlightedContent:
   items:
   - title: Mixed Reality とは
@@ -42,9 +42,9 @@ highlightedContent:
   - title: VR 愛好者
     itemType: how-to-guide
     url: /windows/mixed-reality/enthusiast-guide/vr-journey
-  - title: Mixed Reality の Learn モジュール
-    itemType: learn
-    url: ./discover/mr-learning-overview.md
+  - title: Microsoft Mesh (プレビュー)
+    itemType: whats-new
+    url: /mesh/overview
 productDirectory:
   title: Mixed Reality を使ってみる
   summary: デザイナー、開発者、IT 専門家それぞれが使用を開始するためのパスが用意されています。

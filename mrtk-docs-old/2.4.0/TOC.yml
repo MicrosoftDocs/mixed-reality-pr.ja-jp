@@ -1,0 +1,20 @@
+- name: MRTK へようこそ
+  href: WelcomeToMRTK.md
+- name: インストール ガイド
+  href: Installation.md
+- name: 構成
+  href: configuration/toc.yml
+- name: アーキテクチャ
+  href: architecture/toc.yml
+- name: 特徴
+  href: features/toc.yml
+- name: パフォーマンスとベスト プラクティス
+  href: performance/toc.yml
+- name: 更新プログラムと展開
+  href: updates-deployment/toc.yml
+- name: パッケージとリリース ノート
+  href: packages-releases/toc.yml
+- name: 寄与
+  href: contributing/toc.yml
+- name: 計画
+  href: planning/toc.yml

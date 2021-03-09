@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows デバイス ポータル, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: c354a6f7c3afd6164182f915c39bbf1ce306ef39
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 83bc2183d40f9dbfb00799475522606ff59ccfa0
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583244"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102117646"
 ---
 # <a name="using-the-windows-device-portal"></a>Windows デバイス ポータルを使用する
 
@@ -65,7 +65,7 @@ HoloLens 用の Windows デバイス ポータルでは、Wi-Fi または USB �
 > USB 接続に関する問題が発生した場合は、USB デバイス接続のオプション コンポーネントが **[Visual Studio ツール パッケージ](../install-the-tools.md#installation-checklist)** の一部としてインストールされていることを再確認します。
 
 2. Hololens 用のマイクロ USB ケーブル (第 1 世代) または HoloLens 2 用の USB-C を使用して、HoloLens を PC に接続します。
-3. PC の Web ブラウザーから、[https://127.0.0.1:10080](https://127.0.0.1:10080) にアクセスします。
+3. PC の Web ブラウザーから、[http://127.0.0.1:10080](http://127.0.0.1:10080) にアクセスします。
 
 ### <a name="moving-files-over-usb"></a>USB 経由でファイルを移動する
 

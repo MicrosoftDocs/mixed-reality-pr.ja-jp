@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 視線入力, 視線入力ターゲット設定, 対話, 設計, 手に近い, HoloLens, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, MRTK, Mixed Reality Toolkit, ボタン, コライダー, 境界ボックス, 2D, 本能的なジェスチャ
-ms.openlocfilehash: 194212fd19196990eaf873299afbf1c11846946d
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8316452b8308e159612a81d097c352cf1d935362
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583418"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759324"
 ---
 # <a name="direct-manipulation-with-hands"></a>手で直接操作
 
@@ -327,8 +327,7 @@ AR の手と VR のモーション コントローラーとの間には、操作
 ## <a name="manipulation-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 向け MRTK (Mixed Reality ツールキット) の操作
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** を使用すると、スクリプト **ObjectManipulator** を使って一般的な操作の動作を簡単に実行できます。 ObjectManipulator を使用すると、手で直接またはハンド レイを使って、オブジェクトをつかんで移動させることができます。 また、オブジェクトのスケーリングおよび回転に対する両手の操作もサポートしています。
 
-* [MRTK - 操作](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)
-
+* [MRTK - 操作](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/object-manipulator.md)
 
 ---
 

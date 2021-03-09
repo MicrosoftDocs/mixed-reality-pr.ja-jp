@@ -3,16 +3,16 @@ title: 機能のインポート
 description: HoloLens および VR 開発用 MR Feature Tool から機能をインポートしてインストールする方法について説明します。
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新, ツール, はじめに, 基本, Unity, Visual Studio, ツールキット, Mixed Reality ヘッドセット, Windows Mixed Reality ヘッドセット, 仮想現実ヘッドセット, インストール, Windows, HoloLens, エミュレーター, Unreal, OpenXR
-ms.openlocfilehash: a82eea93a07b662314f3a718eef0c1bd18a4ca4e
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 0d9139835b9eb4e3e5ce3d1f378c56a4724bfa55
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99243986"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230823"
 ---
 # <a name="importing-features"></a>機能のインポート
 
@@ -22,26 +22,18 @@ ms.locfileid: "99243986"
 
 ## <a name="features-list"></a>Features list
 
-**[機能]** 一覧には、検出中に選択されたパッケージのコレクションが表示されます。 
-* インポートする前に、各機能を選択または選択解除することができます。 次に示す **[詳細]** リンクを使用してパッケージの詳細を確認することができます
+**[機能]** 一覧には、検出中に選択されたパッケージのコレクションが表示されます。 インポートする前に、各機能を選択または選択解除することができます。 次に示す **[詳細]** リンクを使用してパッケージの詳細を確認することができます
 
 ![Features list](images/FeaturesList.png)
 
 ## <a name="required-dependencies-list"></a>[Required dependencies]\(必要な依存関係\) 一覧
 
-**[Required dependencies]\(必要な依存関係\)** 一覧には、選択した 1 つまたは複数の機能が機能するために必要なパッケージが表示されます。 この一覧には、依存関係の依存関係も含まれます。
-* 各依存関係は、インポートする前に選択または選択解除することができます。 次に示す **[詳細]** リンクを使用してパッケージの詳細を確認することができます
+**[Required dependencies]\(必要な依存関係\)** 一覧には、選択した 1 つまたは複数の機能が機能するために必要なパッケージが表示されます。 この一覧には、依存関係の依存関係も含まれます。 各依存関係は、インポートする前に選択または選択解除することができます。 次に示す **[詳細]** リンクを使用してパッケージの詳細を確認することができます
 
 ![依存関係の一覧](images/RequiredDependencyList.png)
 
 > [!NOTE]
 > 必要な依存関係をオフにすると、Unity でプロジェクトを読み込むときに依存関係の不足エラーが 1 つ以上発生します。 このような機能はプロジェクトで使用できません。
-
-## <a name="specifying-the-unity-project-path"></a>Unity プロジェクト パスの指定
-
-プロジェクトに機能をインポートする前に、Mixed Reality Feature Tool にパスを登録する必要があります。
-
-![プロジェクト パスの設定](images/ProjectPath.png)
 
 ## <a name="validating-selections"></a>選択の検証
 
@@ -50,11 +42,6 @@ ms.locfileid: "99243986"
 ![検証の問題](images/ValidationIssues.png)
 
 Mixed Reality Feature Tool には、次のセクションで説明する 2 つの自動問題解決機能と、問題を手動で取り消して解決するオプションが用意されています。
-
-> [!IMPORTANT]
-> Mixed Reality Feature Tool には、Unity の必要なバージョンに関連する問題を自動的に解決する機能がありません。 このような問題を手動で処理するには、プロジェクトで使用されている Unity のバージョンをアップグレードするか、新しいバージョンを必要とする機能を無効にする必要があります。
->
-> Mixed Reality Feature Tool の今後のリリースでは、プロジェクトで使用されている Unity のバージョンに基づく機能のフィルター処理が改善される予定です。
 
 ### <a name="enable-dependencies"></a>依存関係を有効にする
 
@@ -75,7 +62,7 @@ Mixed Reality Feature Tool には、次のセクションで説明する 2 つ�
 
 ## <a name="going-back-to-the-previous-step"></a>前の手順に戻る
 
-Mixed Reality Feature Tool では、 **[Import features]\(機能のインポート\)** から[検出](discovering-features.md)に戻ることができます。 他の機能パッケージをダウンロードするには、 **[Go back]\(戻る\)** を選択します。
+Mixed Reality Feature Tool では、 **[Import features]\(機能のインポート\)** から [検出](discovering-features.md)に戻ることができます。 他の機能パッケージをダウンロードするには、 **[Go back]\(戻る\)** を選択します。
 
 ## <a name="see-also"></a>こちらもご覧ください
 

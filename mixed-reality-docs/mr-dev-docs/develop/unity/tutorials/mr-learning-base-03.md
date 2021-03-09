@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality Toolkit, UWP, 空間認識
 ms.localizationpriority: high
-ms.openlocfilehash: 8a45037f7a73d9e74cd714ae4af49b58f44ce297
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 0a8beb647516ebcb5bc07cb58d0193e8fe71e9fc
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590474"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101760018"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3.MRTK プロファイルの構成
 
@@ -20,11 +20,11 @@ ms.locfileid: "99590474"
 
 このチュートリアルでは、MRTK プロファイルをカスタマイズして構成する方法について学習します。
 
-<a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html" target="_blank">MRTK プロファイル</a>は入れ子になったプロファイルのツリーであり、MRTK システムと機能の初期化方法に関する構成情報を構成しています。 最上位レベルのプロファイルである構成プロファイルには、各プライマリ コア システムに対する入れ子になったプロファイルが含まれています。 入れ子になった各プロファイルは、対応するシステムの動作を構成するように設計されています。
+<a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md" target="_blank">MRTK プロファイル</a>は入れ子になったプロファイルのツリーであり、MRTK システムと機能の初期化方法に関する構成情報を構成しています。 最上位レベルのプロファイルである構成プロファイルには、各プライマリ コア システムに対する入れ子になったプロファイルが含まれています。 入れ子になった各プロファイルは、対応するシステムの動作を構成するように設計されています。
 
 この特定の例では、空間メッシュ オブザーバーの設定を変更して、空間認識メッシュを非表示にする方法を示します。 ただし、次の同じ原則に従って、MRTK プロファイルのすべての設定または値をカスタマイズできます。
 
-[前のチュートリアル](mr-learning-base-02.md#congratulations)の間にプロジェクトを HoloLens 2 に展開したときのように、<a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">空間認識</a>メッシュは環境のジオメトリを表すメッシュのコレクションです。 これは最初に見ておくと役に立つ視覚情報ですが、見た目が繁雑になるのと、パフォーマンスに影響するのを避けるため、通常はオフになっています。
+[前のチュートリアル](mr-learning-base-02.md#congratulations)の間にプロジェクトを HoloLens 2 に展開したときのように、<a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">空間認識</a>メッシュは環境のジオメトリを表すメッシュのコレクションです。 これは最初に見ておくと役に立つ視覚情報ですが、見た目が繁雑になるのと、パフォーマンスに影響するのを避けるため、通常はオフになっています。
 
 ## <a name="objectives"></a>目標
 
@@ -116,7 +116,7 @@ Unity メニューで、 **[File]\(ファイル\)**  >  **[Save]\(保存\)** の
 > [!NOTE]
 > 空間マッピング メッシュは非表示になっていますが、引き続き存在して、機能しています。 たとえば、物理的な壁の後ろのホログラムなど、空間マッピング メッシュの背後にあるホログラムは表示されません。
 
-ここまで、MRTK プロファイル内の設定を変更する方法を学習しました。 ご覧のように、MRTK の設定をカスタマイズするには、最初に既定のプロファイルのコピーを作成する必要があります。 既定のプロファイルは編集できないため、既定の設定に戻す場合の参照として常に保持します。 MRTK プロファイルとそのアーキテクチャの詳細については、[MRTK ドキュメント ポータル](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)にある [MRTK プロファイルの構成ガイド](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html)に関するページを参照してください。
+ここまで、MRTK プロファイル内の設定を変更する方法を学習しました。 ご覧のように、MRTK の設定をカスタマイズするには、最初に既定のプロファイルのコピーを作成する必要があります。 既定のプロファイルは編集できないため、既定の設定に戻す場合の参照として常に保持します。 MRTK プロファイルとそのアーキテクチャの詳細については、[MRTK ドキュメント ポータル](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs)にある [MRTK プロファイルの構成ガイド](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md)に関するページを参照してください。
 
 ## <a name="congratulations"></a>結論
 

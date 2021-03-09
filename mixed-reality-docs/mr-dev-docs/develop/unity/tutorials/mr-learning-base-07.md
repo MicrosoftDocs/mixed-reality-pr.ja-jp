@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, チュートリアル, Hololens, MRTK, Mixed Reality ツールキット, UWP, オブジェクトの操作, 境界コントロール
 ms.localizationpriority: high
-ms.openlocfilehash: f92eca294e2114207a5e28ebe80aa480b9029b66
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 1ab7b3a334639be564717d77d3bbc478a25e8326
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590448"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237243"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7.3D オブジェクトの操作
 
@@ -113,7 +113,7 @@ ms.locfileid: "99590448"
 
 ![[リセット] ボタンが押されている再生モードの分割ビューが表示された Unity](images/mr-learning-base/base-07-section1-step1-7.png)
 
-Object Manipulator コンポーネントとその関連プロパティの詳細については、[MRTK ドキュメント ポータル](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)の「[オブジェクト マニピュレーター](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)」のガイドを参照してください。
+Object Manipulator コンポーネントとその関連プロパティの詳細については、[MRTK ドキュメント ポータル](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)の「[オブジェクト マニピュレーター](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)」のガイドを参照してください。
 
 ## <a name="adding-bounds-control"></a>境界コントロールの追加
 
@@ -132,9 +132,6 @@ Object Manipulator コンポーネントとその関連プロパティの詳細�
 
 > [!NOTE]
 > 境界コントロールの視覚エフェクトは実行時に作成されるため、ゲーム モードに入る前には表示されません。
-
-> [!NOTE]
->実行時に、BoundsControl コンポーネントによって NearInteractionGrabbable コンポーネントが自動的に追加されます。 したがって、このコンポーネントを追加して、追跡対象の手で囲まれたオブジェクトをつかむ必要はありません。
 
 > [!NOTE]
 >Object Manipulator (Script) により、Constraint Manager (Script) が自動的に追加されます
@@ -171,7 +168,7 @@ Object Manipulator コンポーネントとその関連プロパティの詳細�
 
 ![境界コントロールが操作されている Unity Play モードの分割ビュー](images/mr-learning-base/base-07-section2-step1-4.png)
 
-Bounds Control コンポーネントとその関連プロパティの詳細については、[MRTK ドキュメント ポータル](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)の[境界コントロール](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html)に関するガイドを参照してください。
+Bounds Control コンポーネントとその関連プロパティの詳細については、[MRTK ドキュメント ポータル](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)の[境界コントロール](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html)に関するガイドを参照してください。
 
 ## <a name="congratulations"></a>結論
 

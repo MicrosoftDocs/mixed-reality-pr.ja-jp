@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: e4eb106a92b953f7c16f5cf1fc9322d7103ad182
-ms.sourcegitcommit: 924f8c1ceb93c378f800cf88d82944cf80f092bc
+ms.openlocfilehash: 465229efca35a5ac3e254ac60481a447c8708ea1
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96615546"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102244873"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -29,7 +29,7 @@ Microsoft のチームによって作成されたオープン ソースのサン
 
 ### <a name="hololens-2-open-source-sample-apps"></a>HoloLens 2 オープン ソースのサンプル アプリ
 
-* [HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/HoloLens2Example) 
+* [HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/HoloLens2Example)
 * [HoloPipes](https://github.com/microsoft/MixedReality-Unreal-HoloPipes) - [Microsoft Store](https://www.microsoft.com/p/holopipes/9mszb3nnrxn9) の HoloLens 2 からダウンロード
 
 ### <a name="made-with-the-mixed-reality-toolkit-for-unreal"></a>Unreal 用 Mixed Reality ツールキットで作成
@@ -41,10 +41,9 @@ Microsoft のチームによって作成されたオープン ソースのサン
 
 ### <a name="made-by-epic-games"></a>Epic Games で作成
 
-Epic Games のパートナーは、Unreal Marketplace で優れた HoloLens 2 サンプル プロジェクトをリリースしました。 
+Epic Games のパートナーは、Unreal Marketplace で優れた HoloLens 2 サンプル プロジェクトをリリースしました。
 
-> [!NOTE] 
+> [!NOTE]
 > このエクスペリエンスは、ハイエンド PC からヘッドセットにストリーム配信する必要があります。
 
 * [Mission AR](https://docs.unrealengine.com/Resources/Showcases/MissionAR/index.html)
-

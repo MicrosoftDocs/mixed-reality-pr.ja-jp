@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: グラフィックス, cpu, gpu, レンダリング, ガベージ コレクション, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 738f9032b0e0500e0f5daa3b59cc1740ef570928
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f8757e5a5f5c9163dc70d8c8d0e93848c49a6694
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583187"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759728"
 ---
 # <a name="performance-recommendations-for-unity"></a>Unity のパフォーマンスに関する推奨事項
 
@@ -309,7 +309,7 @@ Unity のモデルでは、ベイク済みライティングを使用するこ�
 
 #### <a name="unity-standard-shader-alternatives"></a>Unity 標準シェーダーの代替手段
 
-物理ベースのレンダリング (PBR) や他の高品質シェーダーを使用する代わりに、より高パフォーマンスで低コストのシェーダーを利用することを検討します。 [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) では、複合現実プロジェクト用に最適化された [MRTK 標準シェーダー](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)が提供されています。
+物理ベースのレンダリング (PBR) や他の高品質シェーダーを使用する代わりに、より高パフォーマンスで低コストのシェーダーを利用することを検討します。 [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) では、複合現実プロジェクト用に最適化された [MRTK 標準シェーダー](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md)が提供されています。
 
 Unity には、Unity 標準シェーダーより高速な、unlit、vertex lit、diffuse、およびその他単純化されたシェーダー オプションも用意されています。 詳細については、「[組み込みシェーダーの使用とパフォーマンス](https://docs.unity3d.com/Manual/shader-Performance.html)」を参照してください。
 
